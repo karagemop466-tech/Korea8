@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "single_band_2d": true,
+    "dtype_float32": true,
+    "nan_count": 0,
+    "no_nan_inside_footprint": true,
+    "value_min": 0.02038659155368805,
+    "value_max": 1.0,
+    "values_in_0_1": true,
+    "shape": [
+      601,
+      601
+    ],
+    "n_pixels": 361201,
+    "n_finite": 361201,
+    "mean_over_finite": 0.26358339190483093,
+    "crs": "EPSG:32611",
+    "crs_ok": true,
+    "transform": [
+      100.0,
+      0.0,
+      300000.0,
+      0.0,
+      -100.0,
+      4360100.0
+    ],
+    "resolution_m": [
+      100.0,
+      100.0
+    ],
+    "resolution_ok": true,
+    "bands": 1,
+    "single_band": true,
+    "dtype": "float32",
+    "nodata": null,
+    "nan_anywhere": 0
+  },
+  "ok": true,
+  "errors": [],
+  "path": "submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif"
+}
