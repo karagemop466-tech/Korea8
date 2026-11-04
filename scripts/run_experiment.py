@@ -77,8 +77,7 @@ def canary(stack: np.ndarray, grid) -> dict:
         a = stack[:, :, b]
         yp = a.ravel()[pos]
         yn = a.ravel()[neg]
-        ok = np.isfinite(yp) & np.isfinite(yn)
-        # per-band finite masks
+        # per-band finite masks (positive/negative samples have different counts)
         vp = yp[np.isfinite(yp)]
         vn = yn[np.isfinite(yn)]
         if vp.size < 100 or vn.size < 100:
