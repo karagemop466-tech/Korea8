@@ -1,6 +1,6 @@
 {
   "schema": "korea8-feed-v1",
-  "generated_utc": "2026-11-04T20:38:22Z",
+  "generated_utc": "2026-11-04T20:39:40Z",
   "verdict": "negative",
   "holdout_dti": 0.021916420266959818,
   "holdout_ci95": [

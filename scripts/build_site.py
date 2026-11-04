@@ -225,7 +225,27 @@ section{margin:2rem 0}footer{color:#666;font-size:.85rem;border-top:1px solid #e
 <pubDate>{esc(now)}</pubDate></item>
 </channel></rss>"""
     (DOCS / "feed.xml").write_text(rss)
-    print("[site] built docs/index.html, submit.html, feed.json, feed.xml, evidence/")
+
+    # Mirror to repo root: GitHub Pages is configured with source path "/" and the
+    # integration token cannot change it. Serving the download home page at root
+    # satisfies the "download at the beginning/home page" requirement.
+    import shutil
+    for name in ("index.html", "style.css", "submit.html", "feed.json", "feed.xml"):
+        shutil.copyfile(DOCS / name, ROOT / name)
+    for sub in ("downloads", "evidence"):
+        (ROOT / sub).mkdir(parents=True, exist_ok=True)
+        for p in (DOCS / sub).iterdir():
+            if p.is_file():
+                shutil.copyfile(p, ROOT / sub / p.name)
+    for name in ("executive-summary.html", "limitations.html", "sources.html", "submit-howto.html"):
+        if (DOCS / name).exists():
+            shutil.copyfile(DOCS / name, ROOT / name)
+    (ROOT / ".nojekyll").write_text("")
+    # Drop stale failure receipts once a successful run card exists.
+    if card:
+        for stale in (EVID / "error.json", DOCS / "evidence" / "error.json", ROOT / "evidence" / "error.json"):
+            stale.unlink(missing_ok=True)
+    print("[site] built docs/ + root mirror (index, submit, feed, downloads, evidence)")
     return 0
 
 

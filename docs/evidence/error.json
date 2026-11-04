@@ -1,7 +1,0 @@
-{
-  "schema": "korea8-error-v1",
-  "generated_utc": "2026-11-04T20:24:12Z",
-  "type": "ValueError",
-  "message": "operands could not be broadcast together with shapes (60988,) (200000,) ",
-  "traceback": "Traceback (most recent call last):\n  File \"/home/runner/work/Korea8/Korea8/scripts/run_experiment.py\", line 239, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/home/runner/work/Korea8/Korea8/scripts/run_experiment.py\", line 133, in main\n    can = canary(np.asarray(stack), grid)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Korea8/Korea8/scripts/run_experiment.py\", line 80, in canary\n    ok = np.isfinite(yp) & np.isfinite(yn)\n         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\nValueError: operands could not be broadcast together with shapes (60988,) (200000,) \n"
-}
