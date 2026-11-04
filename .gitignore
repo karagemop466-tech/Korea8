@@ -1,0 +1,4 @@
+selftest_tmp/
+submissions/
+data/*.tif
+.venv/
