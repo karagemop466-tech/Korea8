@@ -3,7 +3,8 @@
 ## Verdict: NEGATIVE / DO-NOT-SUBMIT
 
 A new single-band GeoTIFF was generated (`docs/downloads/korea8_candidate.tif`,
-SHA-256 `328804…` → see run card for the current hash, 8,316 dots, 852 KB). It is
+SHA-256 `c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0`,
+8,316 dots, 852 KB). It is
 **not** a copy of any prior submission. It passes the format gate and is unique
 versus the nine focus sites, but it fails the literal uniqueness gate against the
 `r13-lattice-s5` covering witness and underperforms the distance-only control on
