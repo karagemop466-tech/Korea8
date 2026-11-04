@@ -1,0 +1,173 @@
+{
+  "schema": "korea8.delivery-verification.v1",
+  "generated_utc": "2026-11-04T21:01:13+00:00",
+  "all_passed": true,
+  "n_checks": 33,
+  "checks": [
+    {
+      "check": "JSON values finite",
+      "passed": true,
+      "detail": "No NaN/Infinity in machine-readable claims"
+    },
+    {
+      "check": "Pinned input hashes",
+      "passed": true,
+      "detail": "17/17 verified; bad=[]"
+    },
+    {
+      "check": "Shared tools unchanged",
+      "passed": true,
+      "detail": "Hash mismatches: []"
+    },
+    {
+      "check": "Candidate SHA-256 identity",
+      "passed": true,
+      "detail": "027d3bd4fb30f0e161e1b3ce844424a9b83926c05798107a59721735652cb962"
+    },
+    {
+      "check": "Exact grid/band/dtype",
+      "passed": true,
+      "detail": "EPSG:32611 (3730, 3292) 1 ('float32',)"
+    },
+    {
+      "check": "Full-grid finite range",
+      "passed": true,
+      "detail": "12,279,160/12,279,160 finite; min=0.0 max=1.0"
+    },
+    {
+      "check": "Known-fault leakage",
+      "passed": true,
+      "detail": "0 on-catalogue dots"
+    },
+    {
+      "check": "Final dot count and separation",
+      "passed": true,
+      "detail": "37,084 dots; minimum 3.605551275 px"
+    },
+    {
+      "check": "Independent shared-writer audit",
+      "passed": true,
+      "detail": "13 checks passed"
+    },
+    {
+      "check": "Literal lattice duplicate gate",
+      "passed": true,
+      "detail": "99.196418940783% > 70%; verdict must be negative"
+    },
+    {
+      "check": "Lattice coverage feasibility",
+      "passed": true,
+      "detail": "99.871327268227%; only 6,649 uncovered cells; no hole targeting"
+    },
+    {
+      "check": "Duplicate negative control",
+      "passed": true,
+      "detail": "Submitting the lattice itself would produce 100% overlap and stop"
+    },
+    {
+      "check": "HOLDOUT provenance tuple",
+      "passed": true,
+      "detail": "0.041593697077 CI [0.03385155070013819, 0.04939259691866673]"
+    },
+    {
+      "check": "Baseline not beaten",
+      "passed": true,
+      "detail": "0.041593697077 < 0.096743304016"
+    },
+    {
+      "check": "No fabricated organizer score",
+      "passed": true,
+      "detail": "Both organizer-confirmed score and leaderboard estimate are null"
+    },
+    {
+      "check": "Fail-closed verdict",
+      "passed": true,
+      "detail": "negative; research only; slot unused"
+    },
+    {
+      "check": "Scoped uniqueness disclosed",
+      "passed": true,
+      "detail": "Ten-raster scope is not global uniqueness"
+    },
+    {
+      "check": "Lane and selector not invented",
+      "passed": true,
+      "detail": "K8-TRC-E1 only; self-contained research interpretation because the referenced lane paragraph was not supplied"
+    },
+    {
+      "check": "Provenance limitation gated",
+      "passed": true,
+      "detail": "Mirror authentication/derivative license not claimed"
+    },
+    {
+      "check": "Submission note",
+      "passed": true,
+      "detail": "74 characters: RESEARCH ONLY; E1 Th/K-LiDAR tips; not submission-approved; no LB estimate"
+    },
+    {
+      "check": "Leakage canary below alarm",
+      "passed": true,
+      "detail": "All features <0.90; not a validity proof"
+    },
+    {
+      "check": "Pre-placement rank gate",
+      "passed": true,
+      "detail": "maximum rho=0.053564124"
+    },
+    {
+      "check": "Focus-only overlap is not global uniqueness",
+      "passed": true,
+      "detail": "Nine focus rasters pass, literal lattice fails"
+    },
+    {
+      "check": "Nine-site count and labels",
+      "passed": true,
+      "detail": "9 user-reported rows; all ineligible"
+    },
+    {
+      "check": "Nine-site near duplicates",
+      "passed": true,
+      "detail": "Every focus row exceeds 70% with another focus raster"
+    },
+    {
+      "check": "Champion lineage exact",
+      "passed": true,
+      "detail": "D2.8 >100 m = 40,199; D2.8 >200 m = 37,654; 2,545 second-stage removals"
+    },
+    {
+      "check": "Champion score not a receipt",
+      "passed": true,
+      "detail": "0.2778 remains user-reported; private-label causation unproven"
+    },
+    {
+      "check": "README decision consistency",
+      "passed": true,
+      "detail": "Negative verdict, score, lattice overlap, hash and research filename present"
+    },
+    {
+      "check": "Pages site decision consistency",
+      "passed": true,
+      "detail": "Negative verdict, score, lattice overlap, hash and research filename present"
+    },
+    {
+      "check": "Official sources and license limits",
+      "passed": true,
+      "detail": "Competition/USGS/DOE links plus mirror limitation"
+    },
+    {
+      "check": "Static assets and browser independence",
+      "passed": true,
+      "detail": "6 relative links resolve; broken=[]; no localhost dependency"
+    },
+    {
+      "check": "Range mutation negative control",
+      "passed": true,
+      "detail": "Submission audit failed for range-failure.tif: ['in_footprint_range_0_1', 'validator_range_0_1_guaranteed']"
+    },
+    {
+      "check": "Catalogue mutation negative control",
+      "passed": true,
+      "detail": "Submission audit failed for catalogue-failure.tif: ['zero_on_catalogue_leakage']"
+    }
+  ]
+}

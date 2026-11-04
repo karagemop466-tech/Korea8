@@ -1,0 +1,23 @@
+# Credentials and local environments
+.venv/
+.env
+*.pem
+*.key
+
+# Python / test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.tmp.json
+
+# Large or regenerable inputs and feature caches (restore with scripts/fetch_inputs.py)
+.cache/
+data/*.tif
+data/external/*.tif
+data/raw_parts/
+registry/focus9/*.tif
+registry/witness/*.tif
+
+# OS and editor files
+.DS_Store
+*.swp

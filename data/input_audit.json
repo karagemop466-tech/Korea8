@@ -1,0 +1,469 @@
+{
+  "data/sample_submission.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "nan",
+    "descriptions": [
+      null
+    ],
+    "finite": 5167373,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_finite": 60988,
+    "unique_finite": [
+      0.0,
+      1.0
+    ]
+  },
+  "data/labels.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "int8"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "-1.0",
+    "descriptions": [
+      null
+    ],
+    "finite": 12279160,
+    "min": -1.0,
+    "max": 1.0,
+    "valid_mask_pixels": 5167373
+  },
+  "data/external/derived_sgmc_faults_100m_u8.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "uint8"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "None",
+    "descriptions": [
+      null
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 1.0,
+    "valid_mask_pixels": 12279160
+  },
+  "data/external/geodawn_extensions_u8.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 4,
+    "dtypes": [
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "0.0",
+    "descriptions": [
+      "ThK",
+      "UK",
+      "UTh",
+      "TMI_up150"
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 255.0,
+    "valid_mask_pixels": 5166085
+  },
+  "data/external/geodawn_rad_u8.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 4,
+    "dtypes": [
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "0.0",
+    "descriptions": [
+      "K",
+      "Th",
+      "U",
+      "TC"
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 255.0,
+    "valid_mask_pixels": 5166085
+  },
+  "data/external/lidar_scarp_features_u8.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 12,
+    "dtypes": [
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8",
+      "uint8"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "0.0",
+    "descriptions": [
+      "ex_max",
+      "ex_mean",
+      "step_max",
+      "lapneg_max",
+      "lappos_max",
+      "downface_max",
+      "upface_max",
+      "cross_max",
+      "relief",
+      "coh100",
+      "strike",
+      "valid"
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 255.0,
+    "valid_mask_pixels": 3893184
+  },
+  "registry/focus9/GEMSDOE24-gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "nan",
+    "descriptions": [
+      null
+    ],
+    "finite": 5167373,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 60069,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE25-gems25-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "nan",
+    "descriptions": [
+      null
+    ],
+    "finite": 5167373,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 44090,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE27-gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "nan",
+    "descriptions": [
+      null
+    ],
+    "finite": 5167373,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 61328,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE28-gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "nan",
+    "descriptions": [
+      null
+    ],
+    "finite": 5167373,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 37660,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE30-gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "None",
+    "descriptions": [
+      null
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 44090,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE31-gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "nan",
+    "descriptions": [
+      null
+    ],
+    "finite": 5167373,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 40199,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE32-gemsdoe32-h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "None",
+    "descriptions": [
+      null
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 37654,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE33-GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "None",
+    "descriptions": [
+      "fault probability"
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 41865,
+    "unique_footprint_count": 2
+  },
+  "registry/focus9/GEMSDOE36-gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif": {
+    "driver": "GTiff",
+    "shape": [
+      3730,
+      3292
+    ],
+    "count": 1,
+    "dtypes": [
+      "float32"
+    ],
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ],
+    "nodata_repr": "None",
+    "descriptions": [
+      null
+    ],
+    "finite": 12279160,
+    "min": 0.0,
+    "max": 1.0,
+    "positive_footprint": 38854,
+    "unique_footprint_count": 2
+  }
+}

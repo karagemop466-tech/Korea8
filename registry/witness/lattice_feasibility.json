@@ -1,0 +1,11 @@
+{
+  "witness_sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2",
+  "footprint_pixels": 5167373,
+  "lattice_dots": 206895,
+  "footprint_within_3px": 5160724,
+  "footprint_coverage_fraction": 0.9987132726822701,
+  "footprint_uncovered_cells": 6649,
+  "random_dot_expected_overlap": 0.9987132726822701,
+  "rule": "duplicate if >70% candidate dots are within Euclidean 3px of any registry raster",
+  "implication": "A spatially representative dot field is expected to fail. Do not select only uncovered cells to evade the rule."
+}

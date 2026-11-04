@@ -1,0 +1,92 @@
+{
+  "method": "pooled across 8 holdout cells; all withheld positives and deterministic stride negatives",
+  "n_positives": 22232,
+  "n_negatives": 158328,
+  "cells": [
+    {
+      "cell": "draw20_fold0",
+      "positives": 1911,
+      "negatives": 19788
+    },
+    {
+      "cell": "draw20_fold1",
+      "positives": 2351,
+      "negatives": 19845
+    },
+    {
+      "cell": "draw20_fold2",
+      "positives": 3685,
+      "negatives": 19777
+    },
+    {
+      "cell": "draw20_fold3",
+      "positives": 3225,
+      "negatives": 19754
+    },
+    {
+      "cell": "draw21_fold0",
+      "positives": 2111,
+      "negatives": 19788
+    },
+    {
+      "cell": "draw21_fold1",
+      "positives": 2265,
+      "negatives": 19845
+    },
+    {
+      "cell": "draw21_fold2",
+      "positives": 3584,
+      "negatives": 19777
+    },
+    {
+      "cell": "draw21_fold3",
+      "positives": 3100,
+      "negatives": 19754
+    }
+  ],
+  "features": [
+    {
+      "feature": "scarp",
+      "auc": 0.5608988008214085,
+      "orientation_free_auc": 0.5608988008214085,
+      "leakage_alarm": false,
+      "catalogue_derived": false
+    },
+    {
+      "feature": "tip_halo",
+      "auc": 0.5181120022969793,
+      "orientation_free_auc": 0.5181120022969793,
+      "leakage_alarm": false,
+      "catalogue_derived": false
+    },
+    {
+      "feature": "radiometric_edge_100m",
+      "auc": 0.5252139879848956,
+      "orientation_free_auc": 0.5252139879848956,
+      "leakage_alarm": false,
+      "catalogue_derived": false
+    },
+    {
+      "feature": "radiometric_edge_300m",
+      "auc": 0.5386477159008654,
+      "orientation_free_auc": 0.5386477159008654,
+      "leakage_alarm": false,
+      "catalogue_derived": false
+    },
+    {
+      "feature": "radiometric_edge",
+      "auc": 0.5364733852598262,
+      "orientation_free_auc": 0.5364733852598262,
+      "leakage_alarm": false,
+      "catalogue_derived": false
+    },
+    {
+      "feature": "surface",
+      "auc": 0.5641678956166063,
+      "orientation_free_auc": 0.5641678956166063,
+      "leakage_alarm": false,
+      "catalogue_derived": false
+    }
+  ],
+  "any_leakage_alarm": false
+}

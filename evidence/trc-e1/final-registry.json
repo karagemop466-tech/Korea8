@@ -1,0 +1,102 @@
+[
+  {
+    "site": "GEMSDOE24",
+    "path": "registry/focus9/GEMSDOE24-gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif",
+    "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+    "surface_spearman_rho": 0.0535641236739838,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.27413439758386365,
+    "final_dot_spearman_rho": 0.006393315438168194,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE25",
+    "path": "registry/focus9/GEMSDOE25-gems25-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif",
+    "sha256": "91eae1ca42ec845eaa8c2ba32da49806e24751743459b8a10017c479bbe639b8",
+    "surface_spearman_rho": 0.046402766942773795,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.26189192104411607,
+    "final_dot_spearman_rho": 0.005348857758579091,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE27",
+    "path": "registry/focus9/GEMSDOE27-gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif",
+    "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+    "surface_spearman_rho": 0.052743273266989125,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.27693884154891596,
+    "final_dot_spearman_rho": 0.0062215306414420465,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE28",
+    "path": "registry/focus9/GEMSDOE28-gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif",
+    "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+    "surface_spearman_rho": 0.041779888587106385,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.24110128357243016,
+    "final_dot_spearman_rho": 0.0053565281517206085,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE30",
+    "path": "registry/focus9/GEMSDOE30-gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif",
+    "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+    "surface_spearman_rho": 0.046402766942773795,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.26189192104411607,
+    "final_dot_spearman_rho": 0.005348857758579091,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE31",
+    "path": "registry/focus9/GEMSDOE31-gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif",
+    "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+    "surface_spearman_rho": 0.043330710328022354,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.24560457340092762,
+    "final_dot_spearman_rho": 0.00504964109542891,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE32",
+    "path": "registry/focus9/GEMSDOE32-gemsdoe32-h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros.tif",
+    "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+    "surface_spearman_rho": 0.04146622675182755,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.23330816524646747,
+    "final_dot_spearman_rho": 0.004603348271324181,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE33",
+    "path": "registry/focus9/GEMSDOE33-GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif",
+    "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+    "surface_spearman_rho": 0.044076831886916384,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.2525078200841333,
+    "final_dot_spearman_rho": 0.0053848431853605865,
+    "final_duplicate": false
+  },
+  {
+    "site": "GEMSDOE36",
+    "path": "registry/focus9/GEMSDOE36-gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif",
+    "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+    "surface_spearman_rho": 0.042340468907525415,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.23751483119404596,
+    "final_dot_spearman_rho": 0.0045425345024873425,
+    "final_duplicate": false
+  },
+  {
+    "site": "13GEMSDOE",
+    "path": "registry/witness/13GEMSDOE-lattice-s5_v2_nan-outside.tif",
+    "sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2",
+    "surface_spearman_rho": 0.00015632567590960494,
+    "preplacement_duplicate": false,
+    "final_dot_overlap_within_3px": 0.9919641894078308,
+    "final_dot_spearman_rho": 0.0004467648150761601,
+    "final_duplicate": true
+  }
+]

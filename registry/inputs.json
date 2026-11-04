@@ -1,0 +1,176 @@
+{
+  "schema": "korea8.input-manifest.v1",
+  "note": "Hashes verify mirror integrity, not organizer authenticity. The 19-band training_features.tif mirror is unavailable and is not required for E1. Private test labels are never used.",
+  "files": [
+    {
+      "dest": "data/labels.tif",
+      "repo": "sassnarep3-star/GEMSDOESASS2",
+      "ref": "c9a579b186c8ee5a453b347f59c01bfb27c3ed98",
+      "path": "data/bridge/labels.tif",
+      "role": "core-mirror",
+      "sha256": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+      "bytes": 425830,
+      "provenance": "Public third-party mirror; SHA-256 agrees with independent GEMSDOE manifests. Not freshly organizer-authenticated; DrivenData data page requires login."
+    },
+    {
+      "dest": "data/existing_faults.tif",
+      "repo": "sassnarep3-star/GEMSDOESASS2",
+      "ref": "c9a579b186c8ee5a453b347f59c01bfb27c3ed98",
+      "path": "data/bridge/existing_faults.tif",
+      "role": "core-mirror",
+      "sha256": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+      "bytes": 425830,
+      "provenance": "Public third-party mirror; SHA-256 agrees with independent GEMSDOE manifests. Not freshly organizer-authenticated; DrivenData data page requires login."
+    },
+    {
+      "dest": "data/sample_submission.tif",
+      "repo": "sassnarep3-star/GEMSDOESASS2",
+      "ref": "c9a579b186c8ee5a453b347f59c01bfb27c3ed98",
+      "path": "data/bridge/sample_submission.tif",
+      "role": "core-mirror",
+      "sha256": "2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc",
+      "bytes": 1599597,
+      "provenance": "Public third-party mirror; SHA-256 agrees with independent GEMSDOE manifests. Not freshly organizer-authenticated; DrivenData data page requires login."
+    },
+    {
+      "dest": "data/external/derived_sgmc_faults_100m_u8.tif",
+      "repo": "kanlerxz87-cyber/KANLERGEMSDOE1",
+      "ref": "60abceb569d385f8d82c7ea2a07fb75617d1bb0f",
+      "path": "data/external/derived_sgmc_faults_100m_u8.tif",
+      "role": "external-derived",
+      "sha256": "643cbe992ef4ba37588fb469163ed8291e3ceb23d6c1f78a3cfaa462430c2da0",
+      "bytes": 198602,
+      "provenance": "Public third-party derived-data mirror; SHA-256 agrees with independent manifests. USGS-derived feature product, not organizer-authenticated raw data."
+    },
+    {
+      "dest": "data/external/geodawn_extensions_u8.tif",
+      "repo": "kanlerxz87-cyber/KANLERGEMSDOE1",
+      "ref": "60abceb569d385f8d82c7ea2a07fb75617d1bb0f",
+      "path": "data/external/geodawn_extensions_u8.tif",
+      "role": "external-derived",
+      "sha256": "a35a9c6d2a14786f4dab85481ee59769213072f5dab5b2535ea82ae4d9bb7d9b",
+      "bytes": 27132925,
+      "provenance": "Public third-party derived-data mirror; SHA-256 agrees with independent manifests. USGS-derived feature product, not organizer-authenticated raw data."
+    },
+    {
+      "dest": "data/external/geodawn_rad_u8.tif",
+      "repo": "kanlerxz87-cyber/KANLERGEMSDOE1",
+      "ref": "60abceb569d385f8d82c7ea2a07fb75617d1bb0f",
+      "path": "data/external/geodawn_rad_u8.tif",
+      "role": "external-derived",
+      "sha256": "c22420f75999030d7cc65c9e31e50d232ea6158423bca051613a18a8b20ba682",
+      "bytes": 26612970,
+      "provenance": "Public third-party derived-data mirror; SHA-256 agrees with independent manifests. USGS-derived feature product, not organizer-authenticated raw data."
+    },
+    {
+      "dest": "data/external/lidar_scarp_features_u8.tif",
+      "repo": "kanlerxz87-cyber/KANLERGEMSDOE1",
+      "ref": "60abceb569d385f8d82c7ea2a07fb75617d1bb0f",
+      "path": "data/external/lidar_scarp_features_u8.tif",
+      "role": "external-derived",
+      "sha256": "d580bb8bdcdb941e32fefb8b38044bc5bf04e199bf2e83498c3576e6fc465568",
+      "bytes": 36943606,
+      "provenance": "Public third-party derived-data mirror; SHA-256 agrees with independent manifests. USGS-derived feature product, not organizer-authenticated raw data."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE24-gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE24-gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif",
+      "role": "historical-research-registry",
+      "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+      "bytes": 1632732,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE25-gems25-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE25-gems25-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif",
+      "role": "historical-research-registry",
+      "sha256": "91eae1ca42ec845eaa8c2ba32da49806e24751743459b8a10017c479bbe639b8",
+      "bytes": 1603424,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE27-gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE27-gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif",
+      "role": "historical-research-registry",
+      "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+      "bytes": 1635084,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE28-gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE28-gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif",
+      "role": "historical-research-registry",
+      "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+      "bytes": 1590848,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE30-gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE30-gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif",
+      "role": "historical-research-registry",
+      "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+      "bytes": 806758,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE31-gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE31-gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif",
+      "role": "historical-research-registry",
+      "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+      "bytes": 199214,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE32-gemsdoe32-h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE32-gemsdoe32-h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros.tif",
+      "role": "historical-research-registry",
+      "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+      "bytes": 219065,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE33-GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE33-GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif",
+      "role": "historical-research-registry",
+      "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+      "bytes": 917544,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/focus9/GEMSDOE36-gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif",
+      "repo": "karagemop466-tech/GEMSDOEkarage3",
+      "ref": "6b0d7cd64b06c7b694eeae70032afc761f869171",
+      "path": "docs/downloads/GEMSDOE36-gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif",
+      "role": "historical-research-registry",
+      "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+      "bytes": 318190,
+      "provenance": "Historical prior-submission raster for learning and duplicate screening only; never a new submission."
+    },
+    {
+      "dest": "registry/witness/13gems_20261001_r13-lattice-s5_v2_nan-outside.tif",
+      "repo": "kanlerxz87-cyber/KANLERGEMSDOE1",
+      "ref": "60abceb569d385f8d82c7ea2a07fb75617d1bb0f",
+      "path": "data/scored/13gems_20261001_r13-lattice-s5_v2_nan-outside.tif",
+      "role": "literal-lattice-witness",
+      "sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2",
+      "bytes": 1706456,
+      "provenance": "User-listed 13GEMSDOE prior submission used for mandatory duplicate screening; research only."
+    }
+  ]
+}

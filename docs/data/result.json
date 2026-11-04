@@ -1,0 +1,31 @@
+{
+  "schema": "korea8.result-summary.v1",
+  "verdict": "negative",
+  "ok_to_download_and_submit": false,
+  "research_raster": "docs/research/gemsdoe32-k8-trc-tip-e1-research-only-20261104T203326Z-d9db992e-zeros.tif",
+  "raster_sha256": "027d3bd4fb30f0e161e1b3ce844424a9b83926c05798107a59721735652cb962",
+  "holdout_dti": {
+    "score_label": "HOLDOUT-DTI",
+    "evaluator_version": "GEMSDOE32-HIDE-RECOVER-v3.0",
+    "pooled_dti": 0.04159369707733275,
+    "ci95": [
+      0.03385155070013819,
+      0.04939259691866673
+    ],
+    "withheld_positives": 22232,
+    "spatial_clusters": 140,
+    "bootstrap_reps": 1000,
+    "baseline_label": "HOLDOUT-DTI, recomputed maximum among nine focus rasters",
+    "baseline_pooled_dti": 0.09674330401596999,
+    "beats_baseline": false,
+    "provenance_warning": "Static final-raster diagnostic; surface and placement are catalogue-free, and evaluation masks fold-visible faults. Not a leaderboard estimate."
+  },
+  "leaderboard_score_estimate": null,
+  "organizer_confirmed_score": null,
+  "final_lattice_overlap_3px": 0.9919641894078308,
+  "registry_complete": false,
+  "format_pass": true,
+  "focus9": "data/focus9.json",
+  "run_card": "run-card.json",
+  "weekly_slot_used": false
+}

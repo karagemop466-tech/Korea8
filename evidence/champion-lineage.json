@@ -1,0 +1,38 @@
+{
+  "schema": "korea8.gemsdoe32-lineage.v1",
+  "evidence_boundary": "Measured set algebra from public mirror bytes. User-reported scores are not receipts; private test labels are unavailable, so causation is unproven.",
+  "official_known_fault_mask": "https://community.drivendata.org/t/scoring-clarification-are-known-usgs-ingenious-faults-masked-when-scoring-and-are-they-in-the-final-round-label-set/11516",
+  "measured": {
+    "d28_dots": 44090,
+    "base31_dots": 40199,
+    "b2_dots": 37654,
+    "d28_on_catalogue_dots": 0,
+    "base31_on_catalogue_dots": 0,
+    "b2_on_catalogue_dots": 0,
+    "base31_is_strict_subset_of_d28": true,
+    "base31_equals_d28_beyond_1px_catalogue": true,
+    "d28_to_base31_removed_dots": 3891,
+    "b2_equals_d28_beyond_2px_catalogue": true,
+    "b2_is_strict_subset_of_base31": true,
+    "d28_to_b2_removed_dots": 6436,
+    "base31_to_b2_removed_dots": 2545,
+    "removed_equals_base31_within_2px": true,
+    "b2_min_distance_to_catalogue_px": 2.23606797749979,
+    "b2_fraction_within_3px_of_d28": 1.0
+  },
+  "user_reported": {
+    "GEMSDOE25": 0.26,
+    "GEMSDOE31": 0.2708,
+    "GEMSDOE32": 0.2778,
+    "d28_to_base31_delta": 0.0108,
+    "base31_to_b2_delta": 0.007
+  },
+  "interpretation": "No dots are added along this lineage. D2.8 already has zero on-catalogue dots; GEMSDOE31 exactly removes D2.8 pixels at catalogue distance <=100 m, and B2 exactly removes D2.8 pixels at distance <=200 m. Under distance-weighted Tversky DTI this can reduce low-credit false-positive mass while preserving off-catalogue coverage. The private-label effect is not observable here.",
+  "marginal_credit_identity": {
+    "alpha": 0.2,
+    "reported_dti": 0.2778,
+    "alpha_times_reported_dti": 0.05556,
+    "warning": "Idealized isolated-pixel intuition only; not a score estimate or general update rule"
+  },
+  "can_we_beat_02778": "UNKNOWN without a new organizer receipt. E1 did not clear the holdout or literal uniqueness gates."
+}
