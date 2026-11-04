@@ -133,9 +133,11 @@ def run_holdout(static: np.ndarray, static_names: list[str], grid, *, seeds=(20,
         for fold in folds:
             key = f"draw{seed}_{fold['name']}"
             surf, rec = train_fold_surface(static, static_names, grid, fold, seed=seed)
-            # emit candidate dots inside the fold with the marginal rule
+            # emit candidate dots inside the fold with the marginal rule.
+            # known = visible catalogue only; withheld truth is a valid target.
             expected = 0.05  # conservative prior; refined after first pooled pass
-            dots = emit_dots(surf, grid, expected_dti=expected, min_dist_px=2)
+            dots = emit_dots(surf, grid, expected_dti=expected, min_dist_px=2,
+                             known=fold["visible"])
             dots &= fold["region"]
             cand_pred = dots.astype(np.float32)
             res_c, terms_c = evaluate(cand_pred, fold, valid=grid.footprint, block_side=200,
@@ -200,12 +202,23 @@ def production_surface(static: np.ndarray, static_names: list[str], grid, *,
     return surface, rec
 
 
-def emit_dots(surface: np.ndarray, grid, expected_dti: float, *, min_dist_px: int = 2) -> np.ndarray:
-    """Metric-optimal threshold q > alpha*DTI, then greedy Poisson spacing."""
-    from scipy import ndimage as ndi
+def emit_dots(surface: np.ndarray, grid, expected_dti: float, *, min_dist_px: int = 2,
+              known: np.ndarray | None = None, max_candidates: int = 250_000) -> np.ndarray:
+    """Metric-optimal threshold q > alpha*DTI, then greedy Poisson spacing.
+
+    ``known`` is the pixel-exact mask of catalogue pixels that must not be emitted.
+    In holdout this is the *visible* catalogue (withheld truth is a valid target);
+    in production it is the full catalogue.
+    """
     q = float(marginal_inclusion_threshold(expected_dti))
-    cand = surface > q
-    cand &= grid.footprint & ~grid.catalogue
+    known = grid.catalogue if known is None else known
+    cand = (surface > q) & grid.footprint & ~known
+    # cap candidates to the highest-probability cells to bound the NMS loop
+    n_cand = int(cand.sum())
+    if n_cand > max_candidates:
+        vals = np.where(cand, surface, -1.0)
+        thresh = np.partition(vals.ravel(), -max_candidates)[-max_candidates]
+        cand &= surface >= thresh
     # greedy non-maximum suppression with spacing
     order = np.argsort(-surface[cand], kind="stable")
     ys, xs = np.nonzero(cand)

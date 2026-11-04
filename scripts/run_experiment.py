@@ -235,4 +235,19 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except SystemExit:
+        raise
+    except BaseException as exc:  # noqa: BLE001
+        import traceback
+        EVID.mkdir(parents=True, exist_ok=True)
+        (EVID / "error.json").write_text(json.dumps({
+            "schema": "korea8-error-v1",
+            "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+            "type": type(exc).__name__,
+            "message": str(exc),
+            "traceback": traceback.format_exc(),
+        }, indent=2, allow_nan=False) + "\n")
+        print(f"[exp] FATAL {type(exc).__name__}: {exc}", file=sys.stderr, flush=True)
+        raise SystemExit(1)
