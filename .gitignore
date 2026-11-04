@@ -13,3 +13,13 @@ node_modules/
 dist/
 build/
 data/mirror/
+# Data blocker: competition rasters are DrivenData-login-walled; never commit them
+*.pyo
+venv/
+.env
+.idea/
+.vscode/
+*.zip
+*.ipynb_checkpoints
+.coverage
+*.egg-info/
