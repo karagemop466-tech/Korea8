@@ -1,7 +1,7 @@
 {
   "path": "/home/runner/work/Korea8/Korea8/docs/downloads/korea8_candidate.tif",
-  "bytes": 843101,
-  "sha256": "328804d08ed2bb9db7f13fae866867a81ff82f06dd974ad1d23ee80811d4c31f",
+  "bytes": 852055,
+  "sha256": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0",
   "bands": 1,
   "dtype": "float32",
   "crs": "EPSG:32611",
@@ -38,10 +38,10 @@
   "infinity_pixels": 0,
   "n_nan": 0,
   "min": 0.0,
-  "max": 0.0,
-  "mean": 0.0,
-  "n_nonzero": 0,
-  "mass": 0.0,
+  "max": 1.0,
+  "mean": 0.0006772450287826359,
+  "n_nonzero": 8316,
+  "mass": 8316.0,
   "mass_outside_footprint": 0,
   "problems": [],
   "ok": true,
@@ -52,6 +52,6 @@
     "masked_inside_cells": 0,
     "data_band_all_finite": true,
     "data_band_min": 0.0,
-    "data_band_max": 0.0
+    "data_band_max": 1.0
   }
 }
