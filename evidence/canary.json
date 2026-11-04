@@ -1,0 +1,103 @@
+{
+  "evidence_class": "LEAKAGE-CANARY",
+  "auc_threshold": 0.9,
+  "note": "catalogue-vs-off-catalogue AUC on raw bands; >0.90 suspect until explained",
+  "bands": [
+    {
+      "band": 1,
+      "auc": 0.48992473830917554,
+      "suspect": false
+    },
+    {
+      "band": 2,
+      "auc": 0.496276000073785,
+      "suspect": false
+    },
+    {
+      "band": 3,
+      "auc": 0.5262127530415819,
+      "suspect": false
+    },
+    {
+      "band": 4,
+      "auc": 0.5697037813176362,
+      "suspect": false
+    },
+    {
+      "band": 5,
+      "auc": 0.5348690604299207,
+      "suspect": false
+    },
+    {
+      "band": 6,
+      "auc": 0.4480035341378632,
+      "suspect": false
+    },
+    {
+      "band": 7,
+      "auc": 0.5685494719043089,
+      "suspect": false
+    },
+    {
+      "band": 8,
+      "auc": 0.5249874056781662,
+      "suspect": false
+    },
+    {
+      "band": 9,
+      "auc": 0.4863444803895849,
+      "suspect": false
+    },
+    {
+      "band": 10,
+      "auc": 0.5501897956155309,
+      "suspect": false
+    },
+    {
+      "band": 11,
+      "auc": 0.5277992965829343,
+      "suspect": false
+    },
+    {
+      "band": 12,
+      "auc": 0.4842039650013117,
+      "suspect": false
+    },
+    {
+      "band": 13,
+      "auc": 0.45916114829966553,
+      "suspect": false
+    },
+    {
+      "band": 14,
+      "auc": 0.48746575035252837,
+      "suspect": false
+    },
+    {
+      "band": 15,
+      "auc": 0.5119690089033908,
+      "suspect": false
+    },
+    {
+      "band": 16,
+      "auc": 0.5677868658178657,
+      "suspect": false
+    },
+    {
+      "band": 17,
+      "auc": 0.48342402484915065,
+      "suspect": false
+    },
+    {
+      "band": 18,
+      "auc": 0.49963131661146454,
+      "suspect": false
+    },
+    {
+      "band": 19,
+      "auc": 0.5577652551731489,
+      "suspect": false
+    }
+  ],
+  "any_suspect": false
+}

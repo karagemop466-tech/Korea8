@@ -1,0 +1,90 @@
+{
+  "schema": "korea8-registry-index-v1",
+  "scope": "Nine focus sites + lattice covering witness; NOT organizer-complete",
+  "complete_accessible_scan": true,
+  "expected_raster_count": 10,
+  "registry_rasters_expected": 10,
+  "errors": [],
+  "rasters": [
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE24"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE24.tif",
+      "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE25"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE25.tif",
+      "sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE27"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE27.tif",
+      "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE28"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE28.tif",
+      "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE30"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE30.tif",
+      "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE31"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE31.tif",
+      "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE32"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE32.tif",
+      "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE33"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE33.tif",
+      "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "GEMSDOE36"
+      ],
+      "cache_file": "registry/focus9/GEMSDOE36.tif",
+      "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a"
+    },
+    {
+      "repo_first": "karagemop466-tech/GEMSDOEkarage1",
+      "sources": [
+        "13GEMSDOE_r13-lattice-s5_v2_nan-outside"
+      ],
+      "cache_file": "registry/lattice_s5.tif",
+      "sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2"
+    }
+  ]
+}

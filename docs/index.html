@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korea8 — DOE GEMS fault prediction</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <h1>Korea8 — DOE GEMS Prize Challenge</h1>
+  <p class="sub">Auditable, fail-closed fault-prediction research. Generated 2026-11-04 20:28 UTC.</p>
+</header>
+
+<section class="download" id="download">
+  <h2>Download candidate GeoTIFF</h2>
+  <div class="banner" style="background:#b42318">DO NOT SUBMIT — uniqueness/format/holdout gate failed (fail-closed)</div>
+  <p><a class="btn" href="downloads/korea8_candidate.tif" download>⬇ korea8_candidate.tif</a></p>
+  <p class="mono">SHA-256: 328804d08ed2bb9db7f13fae866867a81ff82f06dd974ad1d23ee80811d4c31f<br>Emitted dots: 0 · HOLDOUT-DTI: 0.0000 (95% CI [0.0000, 0.0000])</p>
+  <p><strong>Verdict:</strong> negative. <a href="submit.html">Submission instructions &rarr;</a></p>
+</section>
+
+<section>
+  <h2>Executive summary — requested sites</h2>
+  <p>Scores below are <strong>USER-REPORTED</strong>, not organizer-confirmed receipts. The live leaderboard is client-rendered and was not independently scraped in this pass.</p>
+  <table><thead><tr><th>Site</th><th>Score (evidence label)</th><th>Dots</th><th>Mechanism</th><th>Uniqueness</th></tr></thead>
+  <tbody><tr><td>GEMSDOE24</td><td>0.2477 <span class='tag'>USER-REPORTED</span></td><td>60,069</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE25</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>d28 dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE27</td><td>0.2449 <span class='tag'>USER-REPORTED</span></td><td>61,328</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE28</td><td>0.2710 <span class='tag'>USER-REPORTED</span></td><td>37,660</td><td>rung30 blind dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE30</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>poisson300m off-cat d28</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE31</td><td>0.2708 <span class='tag'>USER-REPORTED</span></td><td>40,199</td><td>solo-d28</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE32</td><td>0.2778 <span class='tag'>USER-REPORTED</span></td><td>37,654</td><td>h33-h33-2-b2 zeros (subset of 25)</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE33</td><td>0.2632 <span class='tag'>USER-REPORTED</span></td><td>41,865</td><td>analog-tip-stepover-r30</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE36</td><td>0.2750 <span class='tag'>USER-REPORTED</span></td><td>38,854</td><td>anderson-geothermal-pinn</td><td>near-duplicate dot family</td></tr>
+<tr class='candidate'><td>Korea8 candidate</td><td>0.0000 <span class='tag'>HOLDOUT-DTI</span></td><td>0</td><td>H1 accommodation-transfer lineaments (range-front polarity + gravity saddle + basement depth)</td><td>duplicate/drift vs registry</td></tr></tbody></table>
+</section>
+
+<section>
+  <h2>Why GEMSDOE32 reported 0.2778</h2>
+  <p>GEMSDOE32 is a strict subset of GEMSDOE25's 44,090 dots with 6,436 zero-credit dots (1–2 px from the catalogue) removed. For a binary map, DTI = TP / (0.2·D + 0.8·N); deleting zero-credit mass strictly raises the score. This is dot-pruning arithmetic, not hidden-fault detection skill.</p>
+</section>
+
+<section>
+  <h2>Evidence</h2>
+  <ul>
+    <li><a href="evidence/run_card.json">run_card.json</a></li>
+    <li><a href="evidence/holdout.json">holdout.json</a></li>
+    <li><a href="evidence/uniqueness_final.json">uniqueness_final.json</a></li>
+    <li><a href="evidence/format_report.json">format_report.json</a></li>
+    <li><a href="evidence/canary.json">canary.json</a></li>
+  </ul>
+</section>
+
+<footer><p>No contest submission was performed. Lane unspecified in brief; pre-registered H1. Data mirrors are hash-pinned but not organizer-authenticated.</p></footer>
+</body></html>
