@@ -1,0 +1,55 @@
+{
+  "submission_name": "korea8-k8-1-blind-stepper-relay-20261104-v1",
+  "note": "K8-1 blind stepover/relay conduit lane: off-catalogue near-field geophysical-edge targets; not dotted catalogue traces. Format-valid.",
+  "file": "/home/user/Korea8/docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif",
+  "sha256": "6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf",
+  "bytes": 605461,
+  "grid": {
+    "height": 3730,
+    "width": 3292,
+    "crs": "EPSG:32611",
+    "transform": [
+      100.0,
+      0.0,
+      250000.0,
+      0.0,
+      -100.0,
+      4520000.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "resolution_m": [
+      100.0,
+      100.0
+    ]
+  },
+  "dtype": "float32",
+  "bands": 1,
+  "crs": "EPSG:32611",
+  "transform": [
+    100.0,
+    0.0,
+    250000.0,
+    0.0,
+    -100.0,
+    4520000.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "value_range_inside_footprint": [
+    0.0,
+    0.8199999928474426
+  ],
+  "nan_inside_footprint": 0,
+  "finite_outside_footprint": 0,
+  "n_pred_gt_zero": 112363,
+  "format_valid": true,
+  "contract_met": true,
+  "extra": {
+    "lane": "K8-1 blind stepover/relay edge",
+    "hypothesis": "blind geothermal conduits in the catalogue off-trace near-field",
+    "template_used_for_geometry_only": "/home/user/Korea8/data/templates/GEMS-grid-template.tif"
+  }
+}

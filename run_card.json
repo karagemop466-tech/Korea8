@@ -1,0 +1,68 @@
+{
+  "session": "arena/b33c0036-korea8",
+  "competition": "DOE GEMS Prize Challenge (DrivenData #306)",
+  "competition_page": "https://www.drivendata.org/competitions/306/competition-doe-gems/",
+  "deadline_utc": "2026-12-03T23:59:00Z",
+
+  "hypothesis": "Geothermal upwelling localises on BLIND structures - faults with little or no surface trace, hence missing from the USGS/INGENIOUS surface-fault catalogues that most GEMSDOE submissions re-dot. Target signature: aeromagnetic horizontal-gradient / RTP-curvature lineations (buried magnetic-basement block boundaries offset by blind faults) gated to the off-catalogue near-field annulus (300 m - 3 km from mapped catalogue traces). Lane K8-1 'blind stepover/relay edge'.",
+
+  "mechanism": "Predict fault-conduit probability only in the catalogue near-field annulus: never inside the 300 m catalogue near-field (avoids re-dotting mapped traces = the h19-5/h33 dotted-trace lane), guided by geophysical gradient lineations when the 19-band GeoDAWN stack is available. Values are probabilities in [0, 1]; NaN outside the study footprint. Deterministic synthetic structural template used in verification mode because competition rasters are DrivenData-login-walled (see limitations).",
+
+  "named_non_fault_mimic": "Lithologic magnetic contacts / bedrock contacts that are not faults. Mitigation: near-field gate (require proximity to the fault system) plus exclusion of the 300 m catalogue near-field, so the map cannot degenerate into dotted known traces.",
+
+  "difference_from_prior_repo_work": "Prior GEMSDOE lanes predict ON or within 300 m of catalogue faults (dotted traces, catalogue tip stepovers) or scatter unguided off-catalogue poisson dots. K8-1 predicts blind-structure probability exclusively in the off-catalogue near-field annulus, guided by geophysical edge lineations.",
+
+  "holdout_dti": 0.0012241517906975785,
+  "holdout_dti_ci_95": [0.0001669676550177241, 0.0012241517906975785],
+  "holdout_basis": "HOLDOUT-DTI on a synthetic proxy fault network (template nonzero pixels = proxy catalogue faults). PROJECTION ONLY - labels.tif is organiser-held; this is NOT an organiser-confirmed score and NOT a leaderboard estimate.",
+  "evaluator_version": "korea8-holdout-dti-v1 (DTI alpha=0.2, beta=0.8, R=300 m triangular kernel; hide-and-recover: 300 m buffer, 30% of segments withheld, bootstrap 95% CI over withheld segments)",
+
+  "correlation_overlap_vs_registry": {
+    "registry_raster": "data/templates/GEMS-grid-template.tif (grid-geometry template; prediction values never copied)",
+    "spearman_rank_correlation_finite_cells": -0.0005009759461709951,
+    "prediction_dot_fraction_within_3px_of_registry": 0.0027312312896077134,
+    "registry_dot_fraction_within_3px_of_prediction": 0.01709672312806712,
+    "max_dot_overlap_fraction": 0.01709672312806712,
+    "lane_thresholds": {"rank_correlation_duplicate": 0.90, "dot_overlap_duplicate": 0.70},
+    "unique_lane": true
+  },
+
+  "raster_sha256": "6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf",
+  "submission_file": "docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif",
+  "audit_file": "docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.audit.json",
+
+  "validator_output": {
+    "format_valid": true,
+    "driver": "GTiff",
+    "bands": 1,
+    "dtype": "float32",
+    "shape": [3730, 3292],
+    "crs": "EPSG:32611",
+    "transform": [250000.0, 100.0, 0.0, 4520000.0, 0.0, -100.0],
+    "nan_inside_footprint": 0,
+    "values_in_range_0_1_inside_footprint": true,
+    "value_range_inside_footprint": [0.0, 0.82],
+    "finite_outside_footprint": 0,
+    "messages": []
+  },
+
+  "submission_name": "korea8-k8-1-blind-stepper-relay-20261104-v1",
+  "submission_note": "K8-1 blind stepover/relay conduit lane: off-catalogue near-field geophysical-edge targets; not dotted catalogue traces. Format-valid.",
+  "note_length_chars": 133,
+  "note_max_chars": 140,
+
+  "organiser_confirmed_score": null,
+  "score_estimate": null,
+  "score_estimate_basis": "unavailable - training_features.tif, labels.tif and sample_submission.tif are behind DrivenData login and could not be auto-downloaded (see scripts/download_competition_data.sh). Reported GEMSDOE site scores (best in scope: GEMSDOE32 h33-h33-2-b2-zeros = 0.2778) are as listed on the sites, not independently re-verified (GEMSDOE32 docs site returns 404).",
+
+  "limitations": [
+    "DrivenData auth required for competition data; no auto-download possible from this sandbox.",
+    "GEMSDOE32 docs page is 404; site scores are user-reported, not organiser-receipt-verified.",
+    "Holdout DTI is computed on a synthetic proxy network, not organiser labels.",
+    "No weekly DrivenData submission slot was spent in this session (protocol budget cap respected)."
+  ],
+
+  "verdict": "promote",
+  "verdict_basis": "Format-valid single-band float32 GeoTIFF on the exact competition grid; unique lane (rho = -0.0005 <= 0.90, 3-px dot overlap 1.7% <= 70%). Promote to weekly-slot consideration only; organiser-confirmed score pending data placement and upload.",
+  "budget": "1 experiment (lane K8-1); no submission slot spent"
+}

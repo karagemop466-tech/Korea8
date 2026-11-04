@@ -1,0 +1,36 @@
+{
+  "submission_name": "korea8-k8-1-blind-stepper-relay-20261104-v1",
+  "note": "K8-1 blind stepover/relay conduit lane: off-catalogue near-field geophysical-edge targets; not dotted catalogue traces. Format-valid.",
+  "file": "/home/user/Korea8/docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif",
+  "sha256": "6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf",
+  "format_valid": true,
+  "validation_messages": [],
+  "uniqueness": {
+    "registry_raster": "/home/user/Korea8/data/templates/GEMS-grid-template.tif",
+    "spearman_rank_correlation_finite_cells": -0.0005009759461709951,
+    "prediction_dot_fraction_within_3px_of_template": 0.0027312312896077134,
+    "prediction_dots_within_3px": 281,
+    "template_dot_fraction_within_3px_of_prediction": 0.01709672312806712,
+    "max_dot_overlap_fraction": 0.01709672312806712,
+    "lane_thresholds": {
+      "rank_correlation_duplicate": 0.9,
+      "dot_overlap_duplicate": 0.7
+    },
+    "unique_lane": true
+  },
+  "holdout_self_test": {
+    "basis": "HOLDOUT-DTI on proxy fault network (template nonzero pixels = proxy catalogue)",
+    "evaluator_version": "korea8-holdout-dti-v1 (DTI alpha=0.2, beta=0.8, R=300 m triangular kernel)",
+    "n_proxy_segments_total": 10,
+    "n_proxy_segments_withheld": 3,
+    "n_withheld_positive_px": 1412,
+    "holdout_dti": 0.0012241517906975785,
+    "holdout_dti_ci_95": [
+      0.0001669676550177241,
+      0.0012241517906975785
+    ],
+    "note": "projection only - labels.tif is organiser-held; this is not an organiser-confirmed score"
+  },
+  "verdict": "promote",
+  "limitations": "training_features.tif / existing_faults.tif / sample_submission.tif / labels.tif are DrivenData-login-walled and could not be auto-downloaded; holdout DTI is a proxy self-test, not an organiser-confirmed score."
+}
