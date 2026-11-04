@@ -44,10 +44,11 @@ def train_fold_surface(static: np.ndarray, static_names: list[str], grid, fold: 
     # Training domain: footprint, outside this region, not hidden truth, not catalogue collar.
     train_domain = grid.footprint & ~region & ~hidden_all
     pos_mask = train_domain & visible
-    # negatives must be off-catalogue (distance to visible > 3) to match the target
+    # Hard negatives: off-catalogue but NEAR visible faults (3-20 px). Training on
+    # all off-catalogue cells teaches the model to suppress the target domain.
     ctx, ctx_names = catalogue_context(visible)
     dist = ctx[:, :, 0]
-    neg_mask = train_domain & ~visible & (dist > 3)
+    neg_mask = train_domain & ~visible & (dist > 3) & (dist <= 20)
     pos_idx = _sample_rows(pos_mask, 60_000, rng)
     neg_idx = _sample_rows(neg_mask, max_neg, rng)
     if pos_idx.size < 50:
@@ -68,7 +69,7 @@ def train_fold_surface(static: np.ndarray, static_names: list[str], grid, fold: 
     )
     model.fit(X, y)
     # Predict inside region, off-catalogue, excluding visible pixels (masked anyway).
-    pred_mask = region & grid.footprint & ~visible
+    pred_mask = region & grid.footprint & ~visible & (dist > 3) & (dist <= 30)
     idx = np.flatnonzero(pred_mask.ravel())
     surface = np.zeros(grid.shape, np.float32)
     chunk = 250_000
@@ -89,29 +90,25 @@ def train_fold_surface(static: np.ndarray, static_names: list[str], grid, fold: 
     return surface, receipt
 
 
-def _control_surfaces(grid, fold: dict, candidate_emitted: int, rng: np.random.Generator) -> dict[str, np.ndarray]:
-    """Random and distance-only controls with the same emitted dot budget."""
+def _control_surfaces(grid, fold: dict, budget: int, rng: np.random.Generator) -> dict[str, np.ndarray]:
+    """Random and distance-only controls with a fixed dot budget (same as candidate)."""
     visible = fold["visible"]
     region = fold["region"]
     dist = ndi_distance(visible)
-    # distance-only probability: closer to visible faults = higher
-    dist_prob = np.exp(-dist / 6.0).astype(np.float32)
-    dist_prob[~region | ~grid.footprint | visible] = 0.0
+    mask = region & grid.footprint & ~visible & (dist > 3) & (dist <= 30)
+    idx = np.flatnonzero(mask.ravel())
     out = {}
-    for name, prob in (("distance", dist_prob), ("random", rng.random(grid.shape, dtype=np.float32))):
-        mask = region & grid.footprint & ~visible
-        if name == "random":
-            prob = np.where(mask, prob, 0.0).astype(np.float32)
-        idx = np.flatnonzero(mask.ravel())
+    # distance-only: closer to visible faults = higher
+    dist_prob = np.exp(-dist / 6.0).astype(np.float32)
+    rand_prob = rng.random(grid.shape, dtype=np.float32)
+    for name, prob in (("distance", dist_prob), ("random", rand_prob)):
         vals = prob.ravel()[idx]
-        k = min(candidate_emitted, idx.size)
+        k = min(budget, idx.size)
+        dots = np.zeros(grid.shape, np.float32)
         if k > 0:
             top = idx[np.argsort(-vals, kind="stable")[:k]]
             yy, xx = np.unravel_index(top, grid.shape)
-            dots = np.zeros(grid.shape, np.float32)
             dots[yy, xx] = 1.0
-        else:
-            dots = np.zeros(grid.shape, np.float32)
         out[name] = dots
     return out
 
@@ -133,11 +130,10 @@ def run_holdout(static: np.ndarray, static_names: list[str], grid, *, seeds=(20,
         for fold in folds:
             key = f"draw{seed}_{fold['name']}"
             surf, rec = train_fold_surface(static, static_names, grid, fold, seed=seed)
-            # emit candidate dots inside the fold with the marginal rule.
-            # known = visible catalogue only; withheld truth is a valid target.
-            expected = 0.05  # conservative prior; refined after first pooled pass
-            dots = emit_dots(surf, grid, expected_dti=expected, min_dist_px=2,
-                             known=fold["visible"])
+            # Fixed per-fold budget comparable to focus-site dot densities.
+            budget = max(1000, int(0.008 * float(fold["region"].sum())))
+            dots = emit_dots(surf, grid, expected_dti=0.0, min_dist_px=2,
+                             known=fold["visible"], budget=budget)
             dots &= fold["region"]
             cand_pred = dots.astype(np.float32)
             res_c, terms_c = evaluate(cand_pred, fold, valid=grid.footprint, block_side=200,
@@ -173,7 +169,7 @@ def production_surface(static: np.ndarray, static_names: list[str], grid, *,
     ctx, ctx_names = catalogue_context(visible)
     dist = ctx[:, :, 0]
     pos_mask = grid.footprint & visible
-    neg_mask = grid.footprint & ~visible & (dist > 3)
+    neg_mask = grid.footprint & ~visible & (dist > 3) & (dist <= 20)
     pos_idx = _sample_rows(pos_mask, 80_000, rng)
     neg_idx = _sample_rows(neg_mask, max_neg, rng)
 
@@ -188,7 +184,7 @@ def production_surface(static: np.ndarray, static_names: list[str], grid, *,
         min_samples_leaf=80, l2_regularization=1.0, early_stopping=False, random_state=seed,
     )
     model.fit(X, y)
-    pred_mask = grid.footprint & ~visible & (dist > 3)
+    pred_mask = grid.footprint & ~visible & (dist > 3) & (dist <= 30)
     idx = np.flatnonzero(pred_mask.ravel())
     surface = np.zeros(grid.shape, np.float32)
     chunk = 250_000
@@ -203,16 +199,28 @@ def production_surface(static: np.ndarray, static_names: list[str], grid, *,
 
 
 def emit_dots(surface: np.ndarray, grid, expected_dti: float, *, min_dist_px: int = 2,
-              known: np.ndarray | None = None, max_candidates: int = 250_000) -> np.ndarray:
-    """Metric-optimal threshold q > alpha*DTI, then greedy Poisson spacing.
+              known: np.ndarray | None = None, max_candidates: int = 250_000,
+              budget: int | None = None) -> np.ndarray:
+    """Select dots by probability, then greedy Poisson spacing.
 
-    ``known`` is the pixel-exact mask of catalogue pixels that must not be emitted.
-    In holdout this is the *visible* catalogue (withheld truth is a valid target);
-    in production it is the full catalogue.
+    If ``budget`` is given, take the top-``budget`` candidate cells (fixed dot
+    count, comparable across arms). Otherwise use the marginal-inclusion
+    threshold q > alpha*DTI. ``known`` is the pixel-exact catalogue mask that must
+    not be emitted: visible catalogue in holdout, full catalogue in production.
     """
-    q = float(marginal_inclusion_threshold(expected_dti))
     known = grid.catalogue if known is None else known
-    cand = (surface > q) & grid.footprint & ~known
+    cand = (surface > 0) & grid.footprint & ~known
+    if budget is not None:
+        vals = np.where(cand, surface, -1.0).ravel()
+        k = min(budget, int(cand.sum()))
+        if k <= 0:
+            return np.zeros(grid.shape, bool)
+        top = np.argpartition(vals, -k)[-k:]
+        cand = np.zeros(grid.shape, bool)
+        cand.ravel()[top] = True
+    else:
+        q = float(marginal_inclusion_threshold(expected_dti))
+        cand &= surface > q
     # cap candidates to the highest-probability cells to bound the NMS loop
     n_cand = int(cand.sum())
     if n_cand > max_candidates:

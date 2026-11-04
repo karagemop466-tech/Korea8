@@ -143,7 +143,7 @@ def main() -> int:
 
     # Experiment 3: production surface + dot emission + uniqueness + format
     surf, prod_rec = production_surface(static, names, grid)
-    dots = emit_dots(surf, grid, expected_dti=max(cand_dti, 0.02), min_dist_px=2)
+    dots = emit_dots(surf, grid, expected_dti=0.0, min_dist_px=2, budget=40_000)
     n_dots = int(dots.sum())
     print(f"[exp] production dots={n_dots}", flush=True)
 
@@ -186,7 +186,7 @@ def main() -> int:
         "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "elapsed_seconds": round(time.time() - t0, 1),
         "hypothesis": "H1 accommodation-transfer lineaments (range-front polarity + gravity saddle + basement depth)",
-        "mechanism": "Per-fold HistGradientBoosting on geophysical lineament transforms + visible-fault annulus; metric-optimal dot threshold",
+        "mechanism": "Per-fold HistGradientBoosting on geophysical lineament transforms + visible-fault annulus; hard negatives 3-20 px off catalogue; fixed 40k-dot budget with 2 px Poisson spacing",
         "named_non_fault_mimic": "Alluvial-fan / playa-margin topographic lineaments and flight-line corrugation",
         "holdout": {
             "evidence_class": "HOLDOUT-DTI",
