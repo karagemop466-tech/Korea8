@@ -1,72 +1,91 @@
-"""Prepare competition data for the Korea8 GEMS pipeline.
+#!/usr/bin/env python3
+"""Validate the restored grid and cache a float32 feature stack for reuse.
 
-Expected layout after placement (see scripts/download_competition_data.sh):
-
-  data/raw/
-    training_features.tif   # 19-band GeoDAWN feature stack (login-walled)
-    labels.tif              # organiser-held fault labels (login-walled, private)
-    sample_submission.tif   # format template (login-walled)
-    existing_faults.tif     # catalogue fault traces (login-walled)
-    1m_DEM_links.csv        # 3DEP 1 m lidar tile index (login-walled)
-
-This script verifies placement, records the grid contract from
-sample_submission.tif (CRS/shape/transform/footprint), and writes
-data/grid_contract.json used by the submission writer.  It deliberately does
-NOT download anything: the official data page requires DrivenData auth.
+Writes data/bridge/feature_stack.npy (H,W,F) and evidence/feature_cache.json.
+The cache is ignored by Git. No model is trained here.
 """
-
 from __future__ import annotations
 
 import json
+import sys
+import time
 from pathlib import Path
 
 import numpy as np
 import rasterio
+from rasterio.windows import Window
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-RAW_DIR = REPO_ROOT / "data" / "raw"
-GRID_CONTRACT = REPO_ROOT / "data" / "grid_contract.json"
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "vendor"))
+from gems57.grid import load_grid, EPSG, HEIGHT, WIDTH, TRANSFORM  # noqa: E402
 
-EXPECTED = {
-    "training_features.tif": "19-band GeoDAWN numerical feature stack (float32)",
-    "sample_submission.tif": "format template (EPSG:32611, 3730x3292, 100 m)",
-    "labels.tif": "organiser-held fault labels (private test set)",
-    "existing_faults.tif": "catalogue fault traces for holdout masking",
-    "1m_DEM_links.csv": "3DEP 1 m lidar tile index",
-}
+BRIDGE = ROOT / "data" / "bridge"
+SENTINEL = -1e38
 
 
 def main() -> int:
-    missing = [name for name in EXPECTED if not (RAW_DIR / name).exists()]
-    if missing:
-        print("DATA BLOCKER: the following files are missing from data/raw/:")
-        for name in missing:
-            print(f"  - {name}  ({EXPECTED[name]})")
-        print()
-        print("See scripts/download_competition_data.sh for the official source "
-              "(DrivenData login required).")
-        print("Pipeline cannot train/score without labels.tif; submission writer can "
-              "still run using data/templates/GEMS-grid-template.tif for grid geometry.")
-        return 1
-
-    RAW_DIR.mkdir(parents=True, exist_ok=True)
-    with rasterio.open(RAW_DIR / "sample_submission.tif") as src:
-        arr = src.read(1)
-        contract = {
-            "source": str(RAW_DIR / "sample_submission.tif"),
-            "height": int(src.height),
-            "width": int(src.width),
-            "count": int(src.count),
-            "dtype": str(src.dtypes[0]),
-            "crs": str(src.crs),
-            "transform": list(src.transform.to_gdal()),
-            "resolution_m": [100.0, 100.0],
-            "footprint_nan_px": int((~np.isfinite(arr)).sum()),
-            "finite_px": int(np.isfinite(arr).sum()),
-        }
-    GRID_CONTRACT.write_text(json.dumps(contract, indent=2))
-    print(f"Grid contract recorded: {GRID_CONTRACT}")
-    print(json.dumps(contract, indent=2))
+    grid = load_grid(BRIDGE)
+    feat_path = BRIDGE / "training_features.tif"
+    if not feat_path.exists():
+        raise FileNotFoundError(f"{feat_path} missing; run scripts/download_competition_data.py first")
+    with rasterio.open(feat_path) as src:
+        if (src.height, src.width) != (HEIGHT, WIDTH) or src.crs.to_epsg() != EPSG or tuple(src.transform)[:6] != tuple(TRANSFORM)[:6]:
+            raise ValueError("training_features grid does not match the pinned template")
+        descriptions = list(src.descriptions)
+        names = []
+        for d in descriptions:
+            names.append((d or "band").split(" - ")[0].strip())
+        nb = src.count
+        cache_path = BRIDGE / "feature_stack.npy"
+        stack = np.lib.format.open_memmap(cache_path, mode="w+", dtype="float32", shape=(HEIGHT, WIDTH, nb))
+        bands = []
+        for i in range(1, nb + 1):
+            a = np.empty((HEIGHT, WIDTH), np.float32)
+            for y in range(0, HEIGHT, 256):
+                h = min(256, HEIGHT - y)
+                win = Window(0, y, WIDTH, h)
+                b = src.read(i, window=win, masked=True).filled(np.nan).astype("float32")
+                b[(~np.isfinite(b)) | (b < SENTINEL)] = np.nan
+                a[y:y + h] = b
+            valid = np.isfinite(a) & grid.footprint
+            n_missing = int((~valid & grid.footprint).sum())
+            # nearest-valid fill so derivative filters do not see sentinel cliffs
+            from scipy import ndimage as ndi
+            if valid.any():
+                _, idx = ndi.distance_transform_edt(~valid, return_indices=True)
+                filled = a.copy()
+                bad = ~valid
+                filled[bad] = a[idx[0][bad], idx[1][bad]]
+            else:
+                filled = np.zeros_like(a)
+            stack[:, :, i - 1] = np.where(grid.footprint, filled, 0.0).astype("float32")
+            vals = a[valid]
+            bands.append({
+                "band": i, "name": names[i - 1], "description": descriptions[i - 1],
+                "missing_in_footprint": n_missing,
+                "min": float(vals.min()) if vals.size else None,
+                "median": float(np.median(vals)) if vals.size else None,
+                "max": float(vals.max()) if vals.size else None,
+            })
+            print(f"[prepare] band {i:02d} {names[i-1]} missing={n_missing}", flush=True)
+        stack.flush()
+    receipt = {
+        "schema": "korea8-feature-cache-v1",
+        "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "evidence_class": "DATA-MEASUREMENT",
+        "grid": {"epsg": EPSG, "height": HEIGHT, "width": WIDTH,
+                 "transform": list(TRANSFORM)[:6],
+                 "footprint_pixels": int(grid.footprint.sum()),
+                 "catalogue_pixels": int(grid.catalogue.sum())},
+        "feature_stack": str(cache_path.relative_to(ROOT)),
+        "n_bands": nb,
+        "bands": bands,
+        "provenance": "hash-verified public mirror; not organizer-authenticated",
+    }
+    out = ROOT / "evidence" / "feature_cache.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(receipt, indent=2, allow_nan=False) + "\n")
+    print(f"[prepare] cached {nb} bands -> {cache_path}")
     return 0
 
 

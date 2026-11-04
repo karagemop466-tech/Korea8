@@ -1,0 +1,127 @@
+{
+  "schema": "korea8-verification-v1",
+  "pass": "independent-release-verification",
+  "ok": true,
+  "n_checks": 21,
+  "n_failed": 0,
+  "checks": [
+    {
+      "check": "raster_exists",
+      "ok": true,
+      "detail": "/home/user/Korea8/docs/downloads/korea8_candidate.tif"
+    },
+    {
+      "check": "sha256_matches_run_card",
+      "ok": true,
+      "detail": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0"
+    },
+    {
+      "check": "single_band",
+      "ok": true,
+      "detail": 1
+    },
+    {
+      "check": "dtype_float32",
+      "ok": true,
+      "detail": "float32"
+    },
+    {
+      "check": "shape",
+      "ok": true,
+      "detail": [
+        3730,
+        3292
+      ]
+    },
+    {
+      "check": "crs",
+      "ok": true,
+      "detail": "EPSG:32611"
+    },
+    {
+      "check": "transform",
+      "ok": true,
+      "detail": [
+        100.0,
+        0.0,
+        243350.0,
+        0.0,
+        -100.0,
+        4508550.0
+      ]
+    },
+    {
+      "check": "all_finite",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "range_0_1",
+      "ok": true,
+      "detail": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "check": "no_positive_outside_footprint",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "mask_outside_footprint",
+      "ok": true,
+      "detail": 7111787
+    },
+    {
+      "check": "mask_inside_footprint_valid",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "emitted_dots_match",
+      "ok": true,
+      "detail": 8316
+    },
+    {
+      "check": "run_card_required_fields",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "note_le_140",
+      "ok": true,
+      "detail": 106
+    },
+    {
+      "check": "holdout_evidence_class",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "holdout_ci_present",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "no_submission_performed",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "uniqueness_stop_required",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "verdict_negative_consistent",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "check": "format_gate_ok",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

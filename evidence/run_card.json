@@ -1,0 +1,77 @@
+{
+  "schema": "korea8-run-card-v1",
+  "generated_utc": "2026-11-04T20:33:21Z",
+  "elapsed_seconds": 80.7,
+  "hypothesis": "H1 accommodation-transfer lineaments (range-front polarity + gravity saddle + basement depth)",
+  "mechanism": "Per-fold HistGradientBoosting on geophysical lineament transforms + visible-fault annulus; hard negatives 3-20 px off catalogue; fixed 40k-dot budget with 2 px Poisson spacing",
+  "named_non_fault_mimic": "Alluvial-fan / playa-margin topographic lineaments and flight-line corrugation",
+  "holdout": {
+    "evidence_class": "HOLDOUT-DTI",
+    "evaluator_version": "gems57-pooled-hide-v2",
+    "pooled_dti": 0.021916420266959818,
+    "ci95": [
+      0.017705055578650916,
+      0.026092391114912142
+    ],
+    "withheld_positive_pixels": 22893,
+    "distance_control_dti": 0.045990393690220746,
+    "random_control_dti": 0.03437245708553482,
+    "paired_delta_vs_distance": {
+      "evidence_class": "HOLDOUT-DTI",
+      "evaluator_version": "gems57-pooled-hide-v2",
+      "delta": -0.02407397342326093,
+      "ci95": [
+        -0.03893627797345865,
+        -0.009436979211054191
+      ],
+      "withheld_positive_pixels": 22893
+    },
+    "not_a_leaderboard_projection": true
+  },
+  "uniqueness": {
+    "final_rho": 0.0012710043862797441,
+    "final_overlap": 0.9984367484367485,
+    "final_unique": false,
+    "surface_unique": false,
+    "registry_rasters_checked": 10,
+    "scope": "All hash-verified accessible entries in the indexed public owner-repository inventory; not a complete organizer registry. External/private/unlinked/inaccessible files may be absent. Reverse overlap is diagnostic only.",
+    "stop_required": true
+  },
+  "raster_sha256": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0",
+  "raster_bytes": 852055,
+  "raster_path": "docs/downloads/korea8_candidate.tif",
+  "emitted_dots": 8316,
+  "validator": {
+    "ok": true,
+    "problems": [],
+    "footprint_nan_policy": "finite 0 data band + GDAL internal mask band declares outside-footprint cells null",
+    "range": [
+      0.0,
+      1.0
+    ],
+    "crs": "EPSG:32611",
+    "shape": [
+      3730,
+      3292
+    ],
+    "transform": [
+      100.0,
+      0.0,
+      243350.0,
+      0.0,
+      -100.0,
+      4508550.0
+    ]
+  },
+  "submission_name": "korea8-accommodation-transfer-v1",
+  "submission_note": "Off-catalogue accommodation-transfer lineaments; pooled hide-recover holdout; uniqueness gate fail-closed.",
+  "verdict": "negative",
+  "submission_performed": false,
+  "lane": "unspecified-in-brief; pre-registered H1",
+  "production": {
+    "train_positives": 60988,
+    "train_negatives": 220000,
+    "prediction_pixels": 2639515,
+    "n_features": 41
+  }
+}

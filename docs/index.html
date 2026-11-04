@@ -1,112 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Korea8 — DOE GEMS Prize Challenge submission pipeline</title>
-<style>
-  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #1a1a1a; line-height: 1.5; }
-  header { background: #0b3d62; color: #fff; padding: 28px 20px; }
-  header h1 { margin: 0; font-size: 1.5rem; }
-  header p { margin: 6px 0 0; opacity: 0.9; font-size: 0.95rem; }
-  .container { max-width: 980px; margin: 0 auto; padding: 24px 20px; }
-  .hero { border: 2px solid #1a7a3c; background: #e7f7ea; border-radius: 10px; padding: 20px 24px; margin-bottom: 24px; }
-  .hero .tag { display: inline-block; background: #1a7a3c; color: #fff; font-weight: 700; padding: 4px 10px; border-radius: 4px; font-size: 0.85rem; margin-bottom: 10px; }
-  .hero h2 { margin: 0 0 8px; font-size: 1.25rem; }
-  .hero p { margin: 0 0 14px; }
-  .download-btn { display: inline-block; background: #0b3d62; color: #fff; text-decoration: none; padding: 12px 20px; border-radius: 6px; font-weight: 700; margin-right: 10px; }
-  .download-btn:hover { background: #083252; }
-  .btn-outline { display: inline-block; border: 1.5px solid #0b3d62; color: #0b3d62; text-decoration: none; padding: 10px 18px; border-radius: 6px; font-weight: 600; margin-right: 10px; }
-  .btn-outline:hover { background: #0b3d62; color: #fff; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
-  .card { border: 1px solid #d5dbe1; border-radius: 8px; padding: 16px; background: #fbfdfe; }
-  .card h3 { margin: 0 0 8px; font-size: 1rem; color: #0b3d62; }
-  .card .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.82rem; word-break: break-all; }
-  .card p { margin: 6px 0 0; font-size: 0.9rem; color: #333; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
-  th, td { border: 1px solid #c3ccd4; padding: 8px 10px; text-align: left; }
-  th { background: #eef3f7; font-weight: 700; }
-  .ok { color: #1a7a3c; font-weight: 700; }
-  .warn { color: #b3541e; font-weight: 700; }
-  h2 { border-bottom: 2px solid #0b3d62; padding-bottom: 6px; margin-top: 32px; }
-  .note { background: #fff8e1; border-left: 4px solid #e3b505; padding: 12px 16px; margin: 16px 0; font-size: 0.9rem; }
-  .danger { background: #fdecec; border-left: 4px solid #b3261e; padding: 12px 16px; margin: 16px 0; font-size: 0.9rem; }
-  ul { margin: 8px 0 8px 20px; }
-  footer { margin-top: 40px; padding: 24px 0; border-top: 1px solid #d5dbe1; font-size: 0.85rem; color: #555; }
-  a { color: #0b5ed6; }
-  .small { font-size: 0.85rem; color: #555; }
-</style>
-</head>
-<body>
+<title>Korea8 — DOE GEMS fault prediction</title>
+<link rel="stylesheet" href="style.css">
+<link rel="alternate" type="application/rss+xml" title="Korea8 evidence feed" href="feed.xml">
+</head><body>
 <header>
-  <h1>Korea8 &mdash; DOE GEMS Prize Challenge (DrivenData #306)</h1>
-  <p>Unique, format-validated single-band GeoTIFF submission &mdash; ready to download and submit</p>
+  <h1>Korea8 — DOE GEMS Prize Challenge</h1>
+  <p class="sub">Auditable, fail-closed fault-prediction research. Generated 2026-11-04 20:38 UTC.</p>
 </header>
 
-<div class="container">
-  <section class="hero">
-    <span class="tag">OK TO DOWNLOAD &amp; SUBMIT — FORMAT VERIFIED</span>
-    <h2>One-click submission file</h2>
-    <p><strong>File:</strong> <code class="mono">korea8-k8-1-blind-stepper-relay-20261104-v1.tif</strong></p>
-    <p><strong>Lane:</strong> K8-1 "blind stepover/relay conduit" — off-catalogue near-field geophysical-edge targets, NOT dotted catalogue traces.</p>
-    <p><strong>Verified:</strong> single-band float32 GeoTIFF &bull; 3730 &times; 3292 &bull; EPSG:32611 &bull; 100 m &bull; values in [0, 1] inside footprint &bull; 0 NaN inside footprint &bull; CRS/shape/transform match the competition grid.</p>
-    <a class="download-btn" href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif" download>⬇ Download TIF to submit</a>
-    <a class="btn-outline" href="executive-summary.html">Executive summary &amp; score table</a>
-    <a class="btn-outline" href="submit-howto.html">How to submit on DrivenData</a>
-  </section>
+<section class="download" id="download">
+  <h2>Download candidate GeoTIFF</h2>
+  <div class="banner" style="background:#b42318">DO NOT SUBMIT — fail-closed (uniqueness witness + holdout below control)</div>
+  <p><a class="btn" href="downloads/korea8_candidate.tif" download>⬇ korea8_candidate.tif</a></p>
+  <p class="mono">SHA-256: c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0<br>Emitted dots: 8316 · HOLDOUT-DTI: 0.0219 (95% CI [0.0177, 0.0261])</p>
+  <p><strong>Verdict:</strong> negative. <a href="submit.html">Submission instructions &rarr;</a> ·
+     <a href="evidence/run_card.json">Run card JSON</a> · <a href="feed.xml">RSS feed</a></p>
+</section>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Submission name</h3>
-      <p class="mono">korea8-k8-1-blind-stepper-relay-20261104-v1</p>
-      <p class="small">Unique name; not a copy of any GEMSDOE submission</p>
-    </div>
-    <div class="card">
-      <h3>Submission note (140 char max)</h3>
-      <p class="mono">K8-1 blind stepover/relay conduit lane: off-catalogue near-field geophysical-edge targets; not dotted catalogue traces. Format-valid.</p>
-      <p class="small">133 characters</p>
-    </div>
-    <div class="card">
-      <h3>SHA-256</h3>
-      <p class="mono">6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf</p>
-      <p class="small">See docs/downloads/*.audit.json for the full receipt</p>
-    </div>
-    <div class="card">
-      <h3>Holdout self-test (proxy)</h3>
-      <p>HOLDOUT-DTI = 0.0012 (95% CI 0.00017&ndash;0.0012) on a synthetic proxy fault network &mdash; projection only, not organiser-confirmed. Organiser score unavailable until the DrivenData data blocker clears (labels.tif is login-walled).</p>
-    </div>
-  </div>
+<section>
+  <h2>Result in one paragraph</h2>
+  <p>The pre-registered H1 candidate (off-catalogue accommodation-transfer lineaments) scored
+  <strong>HOLDOUT-DTI 0.0219</strong> (95% CI [0.0177, 0.0261]; 22893 withheld positives),
+  which is <strong>below</strong> the distance-only control (0.0460)
+  and random control (0.0344).
+  This is a <strong>negative result</strong>: the learned geophysical-lineament model does not beat a simple
+  near-fault prior on catalogue recovery. The candidate is unique versus the nine focus sites
+  (overlap ~18%, ρ≈0.001) but fails the literal uniqueness gate against the <code>r13-lattice-s5</code>
+  covering witness (overlap 0.998).
+  The format gate passes and the portal range error is fixed. <strong>No submission was performed.</strong></p>
+</section>
 
-  <div class="note">
-    <strong>Why this is unique.</strong> Checked against the registry template raster before placement AND on the final dots: rank correlation -0.0005 (threshold |&rho;| &le; 0.90) and 1.7% of dots within 3 px of any registry dot (threshold &le; 70%). Verified unique lane &mdash; not a duplicate of any prior GEMSDOE submission.
-  </div>
+<section>
+  <h2>Executive summary — requested sites</h2>
+  <p>Scores below are <strong>USER-REPORTED</strong>, not organizer-confirmed receipts. The live leaderboard is
+  client-rendered and was not independently scraped in this pass; the conflicting targets (0.4413 / 0.3195 / 0.4625)
+  remain unverified.</p>
+  <table><thead><tr><th>Site</th><th>Score (evidence label)</th><th>Dots</th><th>Mechanism</th><th>Uniqueness</th></tr></thead>
+  <tbody><tr><td>GEMSDOE24</td><td>0.2477 <span class='tag'>USER-REPORTED</span></td><td>60,069</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE25</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>d28 dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE27</td><td>0.2449 <span class='tag'>USER-REPORTED</span></td><td>61,328</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE28</td><td>0.2710 <span class='tag'>USER-REPORTED</span></td><td>37,660</td><td>rung30 blind dot family</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE30</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>poisson300m off-cat d28</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE31</td><td>0.2708 <span class='tag'>USER-REPORTED</span></td><td>40,199</td><td>solo-d28</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE32</td><td>0.2778 <span class='tag'>USER-REPORTED</span></td><td>37,654</td><td>h33-h33-2-b2 zeros</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE33</td><td>0.2632 <span class='tag'>USER-REPORTED</span></td><td>41,865</td><td>analog-tip-stepover-r30</td><td>near-duplicate dot family</td></tr>
+<tr><td>GEMSDOE36</td><td>0.2750 <span class='tag'>USER-REPORTED</span></td><td>38,854</td><td>anderson-geothermal-pinn</td><td>near-duplicate dot family</td></tr>
+<tr class='candidate'><td>Korea8 candidate</td><td>0.0219 <span class='tag'>HOLDOUT-DTI</span></td><td>8316</td><td>H1 accommodation-transfer lineaments</td><td>duplicate/drift vs lattice witness</td></tr></tbody></table>
+  <div class="cards"><div class='card'><h3>GEMSDOE24 <span class='tag'>USER-REPORTED 0.2477</span></h3><p>Dense nan-outside dot family; high dot count, lower precision. Score is dot-pruning arithmetic, not hidden-fault skill.</p></div>
+<div class='card'><h3>GEMSDOE25 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>The d28 dot family that GEMSDOE32 prunes. Parent of the 0.2778 subset.</p></div>
+<div class='card'><h3>GEMSDOE27 <span class='tag'>USER-REPORTED 0.2449</span></h3><p>Near-duplicate of GEMSDOE24 with a different nan-outside encoding; no distinct geological mechanism.</p></div>
+<div class='card'><h3>GEMSDOE28 <span class='tag'>USER-REPORTED 0.2710</span></h3><p>Rung-30 blind placement; fewer dots than 24/27, slightly higher score via reduced zero-credit mass.</p></div>
+<div class='card'><h3>GEMSDOE30 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>Poisson-disc 300 m resampling of the d28 family; identical dot count to GEMSDOE25, same score.</p></div>
+<div class='card'><h3>GEMSDOE31 <span class='tag'>USER-REPORTED 0.2708</span></h3><p>Solo-d28 variant; dot count between 25 and 32, score between them. Same family.</p></div>
+<div class='card'><h3>GEMSDOE32 <span class='tag'>USER-REPORTED 0.2778</span></h3><p>Strict subset of GEMSDOE25 minus 6,436 zero-credit dots 1–2 px from the catalogue. Deleting zero-credit mass raises DTI = TP/(0.2·D+0.8·N). Highest reported focus score; not hidden-fault detection.</p></div>
+<div class='card'><h3>GEMSDOE33 <span class='tag'>USER-REPORTED 0.2632</span></h3><p>Analog tip/stepover placement at r30; geologically motivated naming but dot set overlaps the shared family.</p></div>
+<div class='card'><h3>GEMSDOE36 <span class='tag'>USER-REPORTED 0.2750</span></h3><p>Anderson geothermal PINN branding; dot count near GEMSDOE32, score just below it. Same near-duplicate family.</p></div></div>
+</section>
 
-  <h2>What this repo contains</h2>
+<section>
+  <h2>Why GEMSDOE32 reported 0.2778</h2>
+  <p>GEMSDOE32 is a strict subset of GEMSDOE25's 44,090 dots with 6,436 zero-credit dots (1–2 px from the
+  catalogue) removed. For a binary map, DTI = TP / (0.2·D + 0.8·N); deleting zero-credit mass strictly raises
+  the score. This is dot-pruning arithmetic, not hidden-fault detection skill. A higher-scoring <em>distinct</em>
+  strategy is <strong>not supported</strong> by this session's holdout evidence.</p>
+</section>
+
+<section>
+  <h2>Verification</h2>
+  <p>Independent release verification: <strong>PASS</strong>
+  (21 checks, 0 failed).
+  <a href="evidence/verification.json">verification.json</a></p>
   <ul>
-    <li><code>scripts/dti_metric.py</code> &mdash; distance-weighted Tversky index DTI(alpha=0.2, beta=0.8, R=300 m), verified against the published worked example and an independent reference implementation.</li>
-    <li><code>scripts/evaluate_holdout.py</code> &mdash; hide-and-recover holdout: whole fault segments withheld with a 300 m buffer, visible faults masked pixel-exactly, bootstrap 95% CI over withheld segments.</li>
-    <li><code>scripts/submission_writer.py</code> + <code>scripts/validate_submission.py</code> &mdash; format-validated GeoTIFF writer + validator (no NaN inside footprint, values [0,1], CRS/shape/transform match).</li>
-    <li><code>scripts/generate_submission.py</code> &mdash; generates the unique K8-1 candidate TIF and its audit receipt.</li>
-    <li><code>scripts/download_competition_data.sh</code> / <code>scripts/prepare_data.py</code> &mdash; document the DrivenData login-walled data blocker.</li>
-    <li><code>run_card.json</code> &mdash; full JSON run card (hypothesis, mechanism, holdout DTI + CI, uniqueness, sha256, validator output, verdict).</li>
-    <li><code>docs/downloads/</code> &mdash; the submission TIF + audit + report (one-click download above).</li>
+    <li><a href="evidence/run_card.json">run_card.json</a></li>
+    <li><a href="evidence/holdout.json">holdout.json</a></li>
+    <li><a href="evidence/uniqueness_final.json">uniqueness_final.json</a></li>
+    <li><a href="evidence/format_report.json">format_report.json</a></li>
+    <li><a href="evidence/canary.json">canary.json</a></li>
+    <li><a href="evidence/data_restore_receipt.json">data_restore_receipt.json</a></li>
   </ul>
+</section>
 
-  <h2>Leaderboard context (as reported)</h2>
-  <p>Best reported score across the nine focus GEMSDOE sites (GEMSDOE 24/25/27/28/30/31/32/33/36): <strong>GEMSDOE32 — 0.2778</strong> (<code>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</code>). Competition leaderboard high cited by the team: 0.4413. Our candidate's organiser-confirmed score is not yet available &mdash; see the executive summary and limitations for details.</p>
+<section>
+  <h2>Prior session (legacy template, preserved)</h2>
+  <p>The previous parallel session produced a 601×601 stepover-relay structural prior
+  (<code>submissions/korea8-h1-stepover-relay-prior-…tif</code>). It was format-valid but
+  <strong>not conformed to the official 3730×3292 grid</strong> and not holdout-validated
+  (data was unavailable in that sandbox). Verdict: negative. Preserved for provenance.</p>
+  <ul>
+    <li><a href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif">Legacy candidate TIFF</a> (601×601 template)</li>
+    <li><a href="executive-summary.html">Prior executive summary</a></li>
+    <li><a href="limitations.html">Prior limitations</a> · <a href="sources.html">Prior sources</a> · <a href="submit-howto.html">Prior submit how-to</a></li>
+  </ul>
+</section>
 
-  <h2>Honest limitations</h2>
-  <div class="danger">
-    <strong>Data blocker.</strong> <code>training_features.tif</code>, <code>labels.tif</code>, <code>sample_submission.tif</code> and <code>existing_faults.tif</code> require DrivenData login and could not be auto-downloaded from this sandbox (official page redirects to login). No organiser-confirmed score can be produced until a machine with DrivenData credentials places the rasters in <code>data/raw/</code> and <code>python scripts/prepare_data.py</code> is run. No weekly DrivenData submission slot was spent in this session (protocol budget: &le; 3 experiments, &le; 2 hours).
-  </div>
-  <div class="note">
-    <strong>Irregularity flagged.</strong> The GEMSDOE32 documentation site (<code>buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html</code>) returns 404; the 0.2778 figure is user-reported and could not be independently re-verified. All GEMSDOE site scores are reported values, not organiser-receipt-verified by this repo.
-  </div>
-
-  <footer>
-    <p>Sources: <a>DrivenData GEMS problem description</a> &bull; <a>Reference solution</a> &bull; <a>Rules PDF (NLR/DOE)</a> &bull; <a>USGS GeoDAWN</a> &bull; <a>INGENIOUS (GBCGE)</a> &bull; <a>EPSG:32611</a> &bull; <a>Tversky index</a></p>
-    <p><em>Korea8 &mdash; arena/b33c0036-korea8 &mdash; generated 2026-11-04. No submission slot spent; organiser score pending data placement.</em></p>
-  </footer>
-</div>
-</body>
-</html>
+<footer><p>No contest submission was performed. Lane unspecified in brief; pre-registered H1.
+Data mirrors are hash-pinned but not organizer-authenticated. Catalogue-fit holdout is not a leaderboard proxy
+(staff mask known faults; sibling measured ρ≈+0.143). See <a href="evidence/verification.json">verification</a>.</p></footer>
+</body></html>
