@@ -24,7 +24,8 @@
     "registry_dot_fraction_within_3px_of_prediction": 0.01709672312806712,
     "max_dot_overlap_fraction": 0.01709672312806712,
     "lane_thresholds": {"rank_correlation_duplicate": 0.90, "dot_overlap_duplicate": 0.70},
-    "unique_lane": true
+    "unique_lane": true,
+    "registry_comparison_note": "Also checked against the registry raster carried on main (submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif, prior session H1): that raster is on a 601 x 601 grid with origin (300000, 4360100) m - not the competition grid (3730 x 3292, origin 250000/4520000 m) - so pixel-wise rho/overlap are not applicable. Lanes are differentiated by design: prior H1 places Gaussian ridges ON catalogue fault stepovers/relays; K8-1 predicts exclusively in the off-catalogue near-field annulus (300 m - 3 km from catalogue traces), never inside the 300 m catalogue near-field."
   },
 
   "raster_sha256": "6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf",

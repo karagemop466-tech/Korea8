@@ -1,8 +1,18 @@
-.venv/
+# Data blocker: competition rasters are DrivenData-login-walled; never commit them
+data/raw/
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
 .env
 .DS_Store
-data/raw/*.tif
-data/raw/*.csv
-.ipynb_checkpoints/
+.idea/
+.vscode/
+*.zip
+*.ipynb_checkpoints
+.coverage
+.pytest_cache/
+*.egg-info/
+build/
+dist/

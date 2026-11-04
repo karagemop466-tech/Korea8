@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEMS Prize Challenge — Submission Portal (Korea8)</title>
+<style>
+  :root{--ink:#111827;--muted:#4b5563;--line:#e5e7eb;--bg:#ffffff;
+        --green:#15803d;--green-bg:#ecfdf5;--red:#b91c1c;--red-bg:#fef2f2;
+        --amber:#b45309;--amber-bg:#fffbeb;--blue:#1d4ed8;}
+  *{box-sizing:border-box} body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:var(--ink);line-height:1.5}
+  .bar{background:#0b1021;color:#fff;padding:16px 24px}
+  .bar h1{margin:0;font-size:1.15rem;font-weight:600;letter-spacing:0.02em}
+  .bar p{margin:4px 0 0;font-size:0.9rem;color:#cbd5e1}
+  .container{max-width:900px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 10px;border-bottom:1px solid var(--line)}
+  header h2{margin:0 0 6px;font-size:1.7rem}
+  header .sub{color:var(--muted);font-size:0.95rem}
+  section{padding:24px 0}
+  h3{margin:0 0 12px;font-size:1.15rem}
+  .download-card{border:1px solid var(--line);border-radius:10px;padding:22px;margin-top:14px;background:#fafafa}
+  .download-card .tag{display:inline-block;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--green);border:1px solid var(--green);border-radius:4px;padding:2px 8px;margin-bottom:10px}
+  .download-card h3{margin-top:0}
+  .download-card p{margin:6px 0}
+  .btn{display:inline-block;background:var(--green);color:#fff;font-weight:600;border:none;border-radius:8px;padding:14px 26px;font-size:1rem;cursor:pointer;text-decoration:none;margin-right:10px}
+  .btn:hover{background:#116b34}
+  .btn-secondary{background:#6b7280}
+  .btn-secondary:hover{background:#4b5563}
+  .status{margin-top:12px;border-radius:8px;padding:10px 14px;font-size:0.9rem;display:flex;gap:10px;align-items:flex-start}
+  .status-ok{background:var(--green-bg);border:1px solid var(--green);color:#064e2b}
+  .status-warn{background:var(--amber-bg);border:1px solid var(--amber);color:#7c3b0e}
+  .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:3px}
+  .dot-ok{background:var(--green)} .dot-warn{background:var(--amber)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:0.85rem}
+  th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.82rem;word-break:break-all}
+  .small{font-size:0.85rem;color:var(--muted)}
+  a{color:var(--blue)} a:hover{text-decoration:underline}
+  .kicker{color:var(--blue);font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;display:block}
+  footer{border-top:1px solid var(--line);padding:22px 0;font-size:0.85rem;color:var(--muted)}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:640px){.two-col{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="container">
+  <h1>GEMS Prize Challenge &middot; Submission Portal</h1>
+  <p>Korea8 &middot; Branch <code>arena/057f3280-korea8</code> &middot; U.S. DOE / National Lab of the Rockies via DrivenData</p>
+</div></div>
+
+<header class="container">
+  <h2>Download your submission GeoTIFF</h2>
+  <p class="sub">Single-band fault-probability GeoTIFF, ready to upload to DrivenData (&ldquo;Submit &rarr; Make new submission&rdquo;).</p>
+</header>
+
+<section class="container">
+  <div class="download-card">
+    <span class="tag">STEP 1 &mdash; Download</span>
+    <h3>korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif</h3>
+    <p>Unique dilatation stepover / relay-ramp structural prior (Hypothesis H1, see <a href="HYPOTHESES.md">HYPOTHESES.md</a>). Format-valid template.</p>
+    <a class="btn" href="submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif" download>Download .tif submission</a>
+    <a class="btn btn-secondary" href="executive-summary.html">Executive summary</a>
+    <div class="status status-ok"><span class="dot dot-ok"></span><b>OK to download.</b> Validator PASS: float32, single band, values in [0.0204, 1.0] &sub; [0,1], no NaN, EPSG:32611, 100 m, 601&times;601.</div>
+    <div class="status status-warn" style="margin-top:8px"><span class="dot dot-warn"></span><b>Not OK to submit as-is.</b> Grid is illustrative &mdash; not conformed to the official training CRS/shape/transform (requires <code>data/labels.tif</code>, DrivenData login) and not holdout-validated. Regrid with <code>scripts/submission_writer.py</code>, re-validate, then run holdout DTI + CI before using a daily submission slot.</div>
+  </div>
+
+  <div class="two-col">
+    <div>
+      <h3>How to submit on DrivenData</h3>
+      <ol>
+        <li>Enroll: click &ldquo;Compete!&rdquo; at <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">DrivenData competition page</a>.</li>
+        <li>Download competition data (login required): <code>training_features.tif</code>, <code>labels.tif</code>, <code>sample_submission.tif</code>, <code>1m_DEM_links.csv</code> &rarr; <code>data/</code>, then <code>python scripts/prepare_data.py</code>.</li>
+        <li>Conform this TIF to the training geometry and validate: <code>python scripts/validate_submission.py submissions/FILE.tif data/labels.tif</code>. It must pass: values in [0,1], no NaN inside the footprint, CRS/shape/transform match.</li>
+        <li>Submit &rarr; Make new submission &rarr; choose the .tif &rarr; add a short note (e.g. &ldquo;clustering with k=25&rdquo;) &rarr; submit.</li>
+        <li>Select ONE final submission before Dec. 3, 2026, 10 p.m. UTC. Limit: one scored submission per UTC day.</li>
+      </ol>
+      <p class="small">Full executive summary with the GEMSDOE site table: <a href="executive-summary.html">executive-summary.html</a>.</p>
+    </div>
+    <div>
+      <h3>Submission file facts</h3>
+      <table>
+        <tr><th>File name</th><td class="mono">korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif</td></tr>
+        <tr><th>SHA-256</th><td class="mono">0ae284c63764b70ee1f6c102ca3ddc04f843ce1bf16e546e5127166e852076eb</td></tr>
+        <tr><th>CRS</th><td>EPSG:32611 (UTM 11N)</td></tr>
+        <tr><th>Resolution</th><td>100 m</td></tr>
+        <tr><th>Shape</th><td>601 &times; 601 pixels</td></tr>
+        <tr><th>Band / dtype</th><td>1 / float32</td></tr>
+        <tr><th>Value range</th><td>[0.0204, 1.0000] &sub; [0, 1]</td></tr>
+        <tr><th>NaN inside footprint</th><td>0</td></tr>
+        <tr><th>Validator</th><td>PASS (<a href="artifacts/validator_report.json">report</a>)</td></tr>
+        <tr><th>Submission note (&le;140 chars)</th><td>Unique stepover-relay structural prior; format-valid template &mdash; regrid to official training geometry before scoring.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>Official sources</h3>
+  <ul class="small">
+    <li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">Competition page</a> &middot; <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">Problem description &amp; metric (DTI)</a> &middot; <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">Data tab (login required)</a></li>
+    <li><a href="https://github.com/drivendataorg/gems-prize-reference-solution">Reference solution (GitHub)</a> &middot; <a href="https://gdr.openei.org/submissions/1391">INGENIOUS compilation (GDR, CC BY 4.0)</a> &middot; <a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">GeoDAWN (USGS, CC0)</a></li>
+    <li><a href="https://www.usgs.gov/programs/earthquake-hazards/faults">USGS Quaternary Fault &amp; Fold Database</a> &middot; <a href="https://epsg.io/32611">EPSG:32611</a> &middot; <a href="https://en.wikipedia.org/wiki/Tversky_index">Tversky index (Wikipedia)</a></li>
+  </ul>
+</section>
+
+<footer class="container">
+  This portal is a format-valid template, not an Organizer-confirmed submission. GEMSDOE third-party site scores are self-reported and unverified; several GEMSDOE documentation sites return 404. Validate before spending a submission slot.
+</footer>
+</body>
+</html>
