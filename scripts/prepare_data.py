@@ -1,14 +1,21 @@
-"""Check that competition data is correctly placed in data/.
+"""Prepare competition data for the Korea8 GEMS pipeline.
 
-The single remaining blocker to training is data placement: download the
-competition data (DrivenData login required) into data/, then run this script.
+Expected layout after placement (see scripts/download_competition_data.sh):
 
-Required files:
-  data/training_features.tif  multi-band features, EPSG:32611, 100 m
-  data/labels.tif             fault labels, same CRS/shape/transform
-  data/sample_submission.tif  format template (all-zeros baseline)
-  data/1m_DEM_links.csv       DEM download URLs
+  data/raw/
+    training_features.tif   # 19-band GeoDAWN feature stack (login-walled)
+    labels.tif              # organiser-held fault labels (login-walled, private)
+    sample_submission.tif   # format template (login-walled)
+    existing_faults.tif     # catalogue fault traces (login-walled)
+    1m_DEM_links.csv        # 3DEP 1 m lidar tile index (login-walled)
+
+This script verifies placement, records the grid contract from
+sample_submission.tif (CRS/shape/transform/footprint), and writes
+data/grid_contract.json used by the submission writer.  It deliberately does
+NOT download anything: the official data page requires DrivenData auth.
 """
+
+from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -16,53 +23,51 @@ from pathlib import Path
 import numpy as np
 import rasterio
 
-REQUIRED = ["training_features.tif", "labels.tif", "sample_submission.tif", "1m_DEM_links.csv"]
+REPO_ROOT = Path(__file__).resolve().parent.parent
+RAW_DIR = REPO_ROOT / "data" / "raw"
+GRID_CONTRACT = REPO_ROOT / "data" / "grid_contract.json"
+
+EXPECTED = {
+    "training_features.tif": "19-band GeoDAWN numerical feature stack (float32)",
+    "sample_submission.tif": "format template (EPSG:32611, 3730x3292, 100 m)",
+    "labels.tif": "organiser-held fault labels (private test set)",
+    "existing_faults.tif": "catalogue fault traces for holdout masking",
+    "1m_DEM_links.csv": "3DEP 1 m lidar tile index",
+}
 
 
 def main() -> int:
-    data_dir = Path("data")
-    report = {"data_dir": str(data_dir), "files": {}, "ok": True, "errors": []}
-    for name in REQUIRED:
-        p = data_dir / name
-        report["files"][name] = {"present": p.exists(), "path": str(p)}
-        if not p.exists():
-            report["ok"] = False
-            report["errors"].append(f"missing {name}")
+    missing = [name for name in EXPECTED if not (RAW_DIR / name).exists()]
+    if missing:
+        print("DATA BLOCKER: the following files are missing from data/raw/:")
+        for name in missing:
+            print(f"  - {name}  ({EXPECTED[name]})")
+        print()
+        print("See scripts/download_competition_data.sh for the official source "
+              "(DrivenData login required).")
+        print("Pipeline cannot train/score without labels.tif; submission writer can "
+              "still run using data/templates/GEMS-grid-template.tif for grid geometry.")
+        return 1
 
-    feats = data_dir / "training_features.tif"
-    labels = data_dir / "labels.tif"
-    sample = data_dir / "sample_submission.tif"
-    if feats.exists() and labels.exists():
-        with rasterio.open(feats) as f, rasterio.open(labels) as l:
-            report["features"] = {"shape": [f.height, f.width], "crs": str(f.crs),
-                                  "transform": [f.transform.a, f.transform.b, f.transform.c,
-                                                f.transform.d, f.transform.e, f.transform.f],
-                                  "res": [f.transform.a, f.transform.e], "bands": f.count,
-                                  "dtype": f.dtypes[0], "nodata": f.nodata}
-            report["labels"] = {"shape": [l.height, l.width], "crs": str(l.crs),
-                                "transform": [l.transform.a, l.transform.b, l.transform.c,
-                                              l.transform.d, l.transform.e, l.transform.f],
-                                "res": [l.transform.a, l.transform.e], "dtype": l.dtypes[0],
-                                "nodata": l.nodata, "positive_pixels": None}
-            lab = l.read(1)
-            report["labels"]["positive_pixels"] = int((lab > 0).sum())
-            report["features_labels_match"] = bool(
-                (f.height, f.width) == (l.height, l.width)
-                and f.crs == l.crs and f.transform == l.transform)
-            if not report["features_labels_match"]:
-                report["ok"] = False
-                report["errors"].append("features and labels do not share CRS/shape/transform")
-    if sample.exists():
-        with rasterio.open(sample) as s:
-            report["sample_submission"] = {"shape": [s.height, s.width], "crs": str(s.crs),
-                                           "transform": [s.transform.a, s.transform.b, s.transform.c,
-                                                         s.transform.d, s.transform.e, s.transform.f],
-                                           "dtype": s.dtypes[0], "nodata": s.nodata}
-            report["sample_matches_labels"] = bool(
-                labels.exists() and (s.height, s.width, s.crs, s.transform)
-                == (l.height, l.width, l.crs, l.transform))
-    print(json.dumps(report, indent=2))
-    return 0 if report["ok"] else 1
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    with rasterio.open(RAW_DIR / "sample_submission.tif") as src:
+        arr = src.read(1)
+        contract = {
+            "source": str(RAW_DIR / "sample_submission.tif"),
+            "height": int(src.height),
+            "width": int(src.width),
+            "count": int(src.count),
+            "dtype": str(src.dtypes[0]),
+            "crs": str(src.crs),
+            "transform": list(src.transform.to_gdal()),
+            "resolution_m": [100.0, 100.0],
+            "footprint_nan_px": int((~np.isfinite(arr)).sum()),
+            "finite_px": int(np.isfinite(arr).sum()),
+        }
+    GRID_CONTRACT.write_text(json.dumps(contract, indent=2))
+    print(f"Grid contract recorded: {GRID_CONTRACT}")
+    print(json.dumps(contract, indent=2))
+    return 0
 
 
 if __name__ == "__main__":

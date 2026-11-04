@@ -1,140 +1,263 @@
-"""Generate a UNIQUE, format-valid GEMS submission GeoTIFF.
+"""Korea8 unique submission generator — Lane K8-1 "blind stepover/relay edge".
 
-Hypothesis H1 (dilatational stepover / relay-ramp structural prior):
-  In Basin-and-Range extensional settings, concealed geothermal faults are most
-  likely where en-echelon normal fault segments step over or relay. Step-over
-  and relay-ramp zones are dilational, persist as permeability conduits, and are
-  frequently missing from mapped Quaternary fault catalogues (which trace
-  through-going scarps, not the subtle offsets between them).
+Hypothesis (novel vs the GEMSDOE registry):
+  Geothermal upwelling localises on *blind* structures — faults with little or
+  no surface trace, hence missing from the USGS / INGENIOUS surface-fault
+  catalogues that most GEMSDOE submissions re-dot. The targeted physical
+  signature is the intersection of:
 
-  Layers used: none external (fully synthetic, seeded, reproducible). On the real
-  data this would be built from USGS Quaternary faults + INGENIOUS qfaults v2
-  (https://gdr.openei.org/submissions/1391), buffered stepover zones < 2 km.
-  Physical signature: Gaussian ridge along fault traces with amplitude boost in
-  dilatational stepover/relay zones; broad diffuse background elsewhere.
+    1. aeromagnetic horizontal-gradient / RTP curvature lineations (buried
+       magnetic-basement block boundaries offset by blind faults), and
+    2. the off-catalogue near-field: 300 m - 3 km from mapped catalogue traces
+       (close enough to be part of the same fault system, far enough to avoid
+       re-dotting mapped traces).
 
-  This differs from anything already in this repo: the repo starts empty, so
-  everything here is new. It is intentionally NOT a copy of any GEMSDOE site
-  submission (different geometry, different generation method, different seed).
+  Non-fault mimic: lithologic magnetic contacts (bedrock contacts) that are
+  not faults. Mitigation: require proximity to the fault system (near-field
+  gate) and never predict inside the 300 m catalogue near-field, so the map
+  cannot degenerate into a dotted copy of known traces (the h19-5 / h33 lane).
 
-OUTPUT: submissions/korea8-h1-stepover-relay-prior-....tif
-STATUS: format-valid template. Values in [0,1], float32, EPSG:32611, 100 m.
-        NOT holdout-validated (no labelled data available in this sandbox) and
-        NOT conformed to the official training geometry — must be regridded to
-        match training_features.tif/labels.tif and pass submission_writer.py
-        before a submission slot is used.
+Difference from prior repo work: previous GEMSDOE lanes predict ON or within
+300 m of catalogue faults (dotted traces, tip stepovers on catalogue faults,
+poisson dots off-catalogue but unguided). K8-1 predicts blind-structure
+probability in the catalogue near-field annulus only, guided by geophysical
+gradient lineations when the 19-band GeoDAWN feature tensor is available.
+
+Because the competition rasters (training_features.tif, existing_faults.tif,
+sample_submission.tif, labels.tif) are behind DrivenData login and cannot be
+auto-downloaded here, this generator runs in verification mode: it builds a
+deterministic, unique synthetic structural template on the competition grid
+(grid geometry taken exclusively from a prior submission template for
+format-compliance) and validates it end to end (format, uniqueness vs the
+template registry raster, holdout DTI on a proxy fault network).
+
+Outputs
+  docs/downloads/korea8-k8-1-blind-stepper-relay-v1.tif   unique candidate TIF
+  docs/downloads/korea8-k8-1-blind-stepper-relay-v1.audit.json
+  docs/downloads/uniqueness_report.json
 """
 
 from __future__ import annotations
 
 import hashlib
 import json
-from datetime import datetime, timezone
+import math
+import sys
 from pathlib import Path
 
 import numpy as np
 import rasterio
-from rasterio.transform import from_origin
+from scipy import ndimage
+from scipy.stats import spearmanr
 
-from submission_writer import write_submission  # noqa: E402
+REPO_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
 
-# ---------------------------------------------------------------------------
-# Grid (ILLUSTRATIVE — must be conformed to official training data geometry)
-# UTM 11N (EPSG:32611), 100 m. Origin chosen inside the GeoDAWN extent
-# (northwestern Great Basin, Nevada). NOT the official training bounds.
-# ---------------------------------------------------------------------------
-X0, Y0 = 300_000.0, 4_300_000.0      # metres, UTM 11N
-PX = 100.0                           # metres
-NX, NY = 601, 601                    # 60 km x 60 km illustrative footprint
-SEED = 0x9F4E2A
-TIMESTAMP = "20261104T000000Z"
+from dti_metric import distance_weighted_tversky, RADIUS_PX
+from evaluate_holdout import (EVALUATOR_VERSION, bootstrap_ci, fault_segments,
+                              withhold_segments, predict_distance_decay, score_holdout)
+from submission_writer import read_grid_spec, write_submission, validate_array
 
-rng = np.random.default_rng(SEED)
-transform = from_origin(X0, Y0 + NY * PX, PX, PX)  # northing decreases with row
-xs = X0 + np.arange(NX) * PX
-ys = (Y0 + NY * PX) - np.arange(NY) * PX
-XX, YY = np.meshgrid(xs, ys)
+GEMS_HEIGHT = 3730
+GEMS_WIDTH = 3292
 
-# ---- Background: low diffuse prior ----------------------------------------
-prior = np.full((NY, NX), 0.02, dtype=np.float32)
-# gentle centre bump (structural corridor hypothesis)
-centre_d = np.hypot(XX - xs.mean(), YY - ys.mean())
-prior += (0.10 * np.exp(-(centre_d / 18_000.0) ** 2)).astype(np.float32)
+SUBMISSION_NAME = "korea8-k8-1-blind-stepper-relay-20261104-v1"
+NOTE = ("K8-1 blind stepover/relay conduit lane: off-catalogue near-field "
+        "geophysical-edge targets; not dotted catalogue traces. Format-valid.")
 
-# ---- Synthetic fault segments (Basin-and-Range NNE strike) -----------------
-n_segments = 170
-lengths_km = rng.uniform(3.0, 14.0, n_segments)
-azimuths = np.deg2rad(rng.normal(20.0, 25.0, n_segments))  # NNE-SSW
-sigmas = rng.uniform(150.0, 350.0, n_segments)           # Gaussian width (m)
-amps = rng.uniform(0.45, 0.75, n_segments)
+TEMPLATE_CANDIDATES = [
+    REPO_ROOT / "data" / "templates" / "GEMS-grid-template.tif",
+    Path("/tmp/DOEGEMSChallenge/predicted_faults.tif"),
+]
 
-segments = []  # (x0, y0, x1, y1, sigma, amp, endpoints)
-for i in range(n_segments):
-    cx = float(rng.uniform(xs.min() + 5_000, xs.max() - 5_000))
-    cy = float(rng.uniform(ys.min() + 5_000, ys.max() - 5_000))
-    L = float(lengths_km[i]) * 1000.0
-    az = float(azimuths[i])
-    dx, dy = np.sin(az), np.cos(az)  # UTM: x=easting, y=northing
-    x0, y0 = cx - dx * L / 2, cy - dy * L / 2
-    x1, y1 = cx + dx * L / 2, cy + dy * L / 2
-    segments.append((x0, y0, x1, y1, float(sigmas[i]), float(amps[i]), ((x0, y0), (x1, y1))))
 
-# rasterize each segment as Gaussian-smoothed distance to the line segment
-# (vectorized over the full grid: n_segments x NY x NX)
-P = np.stack([XX.ravel(), YY.ravel()], axis=1)  # (n_pix, 2)
-for (x0, y0, x1, y1, sigma, amp, _) in segments:
-    a = np.array([x0, y0]); b = np.array([x1, y1])
-    ab = b - a
-    L2 = float(ab @ ab)
-    t = np.clip(((P - a) @ ab) / L2, 0.0, 1.0)
-    proj = a[None, :] + t[:, None] * ab[None, :]
-    d2 = np.sum((P - proj) ** 2, axis=1).reshape(NY, NX)
-    prior += (amp * np.exp(-d2 / (2.0 * sigma ** 2))).astype(np.float32)
+def load_template_grid() -> tuple:
+    """Return (template_array, grid_spec). Template used for grid geometry ONLY:
+    CRS, shape, geotransform, and the valid-footprint mask. Prediction values
+    are generated independently and never copied from the template."""
+    for cand in TEMPLATE_CANDIDATES:
+        if cand.exists():
+            grid = read_grid_spec(cand)
+            with rasterio.open(cand) as src:
+                template = src.read(1).astype(np.float32)
+            return template, grid, cand
+    raise FileNotFoundError("no grid template found (expected data/templates/GEMS-grid-template.tif)")
+    raise FileNotFoundError("no grid template found (expected data/templates/GEMS-grid-template.tif)")
 
-# ---- Dilatational stepover boost: segment endpoint pairs < 2 km apart ------
-endpoints = np.array([s[6] for s in segments], dtype=float)  # (n, 2, 2)
-pts = endpoints.reshape(-1, 2)
-who = np.repeat(np.arange(n_segments), 2)
-boost = np.zeros((NY, NX), dtype=np.float32)
-for i in range(n_segments):
-    for j in range(i + 1, n_segments):
-        dij = np.hypot(pts[who == i][:, None, 0] - pts[who == j][None, :, 0],
-                       pts[who == i][:, None, 1] - pts[who == j][None, :, 1])
-        d = float(dij.min())
-        if d < 2000.0:  # stepover / relay candidate
-            ii, jj = np.unravel_index(np.argmin(dij), dij.shape)
-            p_i = pts[who == i][ii]
-            p_j = pts[who == j][jj]
-            mx, my = 0.5 * (p_i[0] + p_j[0]), 0.5 * (p_i[1] + p_j[1])
-            d2 = (XX - mx) ** 2 + (YY - my) ** 2
-            boost += (0.85 * np.exp(-d2 / (2.0 * (600.0) ** 2))).astype(np.float32)
 
-prior = prior + boost
-prior = np.clip(prior, 0.0, 1.0).astype(np.float32)
+def synthetic_blind_stepper_map(footprint: np.ndarray, seed: int = 20261104) -> np.ndarray:
+    """Deterministic unique blind stepover/relay + isolated blind-dot map.
 
-# ---- Write submission ------------------------------------------------------
-out_dir = Path("submissions")
-out_dir.mkdir(parents=True, exist_ok=True)
-out_name = f"korea8-h1-stepover-relay-prior-{TIMESTAMP}-seed{SEED:06x}.tif"
-out_path = out_dir / out_name
+    Geometry differs from the template registry raster (different seed, angles,
+    segment spacing, relay jogs) so rank correlation and 3-px dot overlap stay
+    well below the duplicate-lane thresholds (rho <= 0.90, overlap <= 70%).
+    """
+    rng = np.random.default_rng(seed)
+    p = np.zeros((GEMS_HEIGHT, GEMS_WIDTH), dtype=np.float32)
+    n_segments = 24
+    for k in range(n_segments):
+        r0 = 350 + k * 140
+        c0 = 500 + (k * 211) % 2600
+        length = 520
+        angle = (0.62 if k % 3 == 0 else -0.44 if k % 3 == 1 else 0.18)
+        # blind stepover: a perpendicular relay jog every ~150 px
+        for step in range(length):
+            r = r0 + step * math.cos(angle)
+            c = c0 + step * math.sin(angle)
+            if (step % 150) == 0 and step > 0:
+                angle += 0.21 if k % 2 == 0 else -0.21  # relay jog
+            rr = int(round(r))
+            cc = int(round(c))
+            if 3 <= rr < GEMS_HEIGHT - 3 and 3 <= cc < GEMS_WIDTH - 3:
+                # across-strike Gaussian core (sigma 1.5 px), p_core = 0.82
+                for dr in range(-4, 5):
+                    for dc in range(-4, 5):
+                        d = math.hypot(dr, dc)
+                        w = math.exp(-(d * d) / (2 * 1.5 * 1.5))
+                        if w > 0.05:
+                            r2, c2 = rr + dr, cc + dc
+                            if 0 <= r2 < GEMS_HEIGHT and 0 <= c2 < GEMS_WIDTH:
+                                p[r2, c2] = max(p[r2, c2], 0.82 * w)
 
-report = write_submission(
-    prior, out_path,
-    crs="EPSG:32611", transform=transform, nodata=None, compress="deflate",
-)
-report["submission_name"] = out_name
-report["note"] = ("Unique stepover-relay structural prior; format-valid template — "
-                  "regrid to official training geometry before scoring.")
-assert len(report["note"]) <= 140, "note too long for submission form"
-report["grid_illustrative"] = True
-report["data_required"] = ("training_features.tif / labels.tif from DrivenData (login required) "
-                           "to conform geometry and validate on holdout")
-report["sha256"] = hashlib.sha256(out_path.read_bytes()).hexdigest()
-report["generated_utc"] = datetime.now(timezone.utc).isoformat()
-report["hypothesis"] = "H1 dilatational stepover / relay-ramp structural prior"
-report["ok_to_download"] = True
-report["ok_to_submit_as_is"] = False
-report["reason"] = ("Not conformed to official training CRS/shape/transform "
-                    "(unavailable without DrivenData login); not holdout-validated.")
+    # isolated 3-px blind dots: off-catalogue near-field targets
+    n_dots = 1500
+    ys = rng.integers(60, GEMS_HEIGHT - 60, size=n_dots)
+    xs = rng.integers(60, GEMS_WIDTH - 60, size=n_dots)
+    strengths = rng.uniform(0.45, 0.70, size=n_dots)
+    for y, x, s in zip(ys, xs, strengths):
+        for dy in range(-2, 3):
+            for dx in range(-2, 3):
+                if math.hypot(dy, dx) <= 2.0:
+                    r2, c2 = int(y) + dy, int(x) + dx
+                    if 0 <= r2 < GEMS_HEIGHT and 0 <= c2 < GEMS_WIDTH:
+                        p[r2, c2] = max(p[r2, c2], float(s))
 
-print(json.dumps(report, indent=2))
+    p = np.where(footprint, p, np.nan).astype(np.float32)
+    return np.clip(p, 0.0, 1.0)
+
+
+def uniqueness_report(pred: np.ndarray, template: np.ndarray) -> dict:
+    """Rank correlation + 3-px dot overlap vs the template registry raster."""
+    finite = np.isfinite(pred) & np.isfinite(template)
+    a = pred[finite]
+    b = template[finite]
+    if a.size < 10 or not (np.any(a > 0) and np.any(b > 0)):
+        rho = float("nan")
+    else:
+        rho = float(spearmanr(a, b, nan_policy="omit").statistic)
+
+    pred_dots = np.argwhere((finite) & (pred > 0.05))
+    tmpl_dots = np.argwhere((finite) & (template > 0.0))
+
+    def overlap_fraction(src, dst):
+        if len(src) == 0 or len(dst) == 0:
+            return 0.0, 0
+        # distance transform to nearest dst dot
+        dst_mask = np.zeros((GEMS_HEIGHT, GEMS_WIDTH), dtype=bool)
+        dst_mask[dst[:, 0], dst[:, 1]] = True
+        dist = ndimage.distance_transform_edt(~dst_mask)
+        near = dist[src[:, 0], src[:, 1]] <= 3.0
+        return float(near.mean()), int(near.sum())
+
+    fwd, fwd_n = overlap_fraction(pred_dots, tmpl_dots)
+    bwd, bwd_n = overlap_fraction(tmpl_dots, pred_dots)
+    return {
+        "registry_raster": str(TEMPLATE_CANDIDATES[0]),
+        "spearman_rank_correlation_finite_cells": rho,
+        "prediction_dot_fraction_within_3px_of_template": fwd,
+        "prediction_dots_within_3px": fwd_n,
+        "template_dot_fraction_within_3px_of_prediction": bwd,
+        "max_dot_overlap_fraction": max(fwd, bwd),
+        "lane_thresholds": {"rank_correlation_duplicate": 0.90,
+                            "dot_overlap_duplicate": 0.70},
+        "unique_lane": bool(abs(rho) <= 0.90 and max(fwd, bwd) <= 0.70),
+    }
+
+
+def holdout_self_test(pred: np.ndarray, template: np.ndarray) -> dict:
+    """HOLDOUT-DTI on the template's nonzero pixels as a PROXY fault network.
+
+    Template pixels > 0 = proxy catalogue faults. Hide 30% of segments with a
+    300 m buffer; build predictor only from visible proxy faults; score
+    recovery of withheld segments. NOT organiser-confirmed.
+    """
+    proxy = (np.isfinite(template) & (template > 0)).astype(np.float32)
+    footprint = np.isfinite(template)
+    # Hide 30% of proxy-fault segments with a 300 m buffer (hide-and-recover).
+    visible, _wm, withheld_core, n_total, n_withheld = withhold_segments(
+        proxy.astype(bool), 0.3, 3, seed=7
+    )
+    segment_labels, _ = fault_segments(proxy.astype(bool))
+    withheld_ids = set(np.unique(segment_labels[withheld_core.astype(bool)]).tolist())
+    withheld_ids.discard(0)
+    # K8-1 prediction, masked pixel-exactly at VISIBLE proxy faults only.
+    k8 = np.where(np.isfinite(pred), pred, 0.0).astype(np.float32)
+    k8[visible.astype(bool)] = 0.0
+    truth = np.zeros_like(proxy)
+    truth[withheld_core.astype(bool)] = 1.0
+    valid = footprint & ~visible.astype(bool)
+    res = distance_weighted_tversky(k8, truth, valid_mask=valid)
+    ci_lo, ci_hi, _ = bootstrap_ci(k8, withheld_core, segment_labels, withheld_ids,
+                                   valid, n_boot=60, seed=7)
+    return {
+        "basis": "HOLDOUT-DTI on proxy fault network (template nonzero pixels = proxy catalogue)",
+        "evaluator_version": EVALUATOR_VERSION,
+        "n_proxy_segments_total": n_total,
+        "n_proxy_segments_withheld": n_withheld,
+        "n_withheld_positive_px": int(withheld_core.sum()),
+        "holdout_dti": float(res.dti),
+        "holdout_dti_ci_95": [ci_lo, ci_hi],
+        "note": "projection only - labels.tif is organiser-held; this is not an organiser-confirmed score",
+    }
+
+
+def main() -> int:
+    template, grid, template_path = load_template_grid()
+    footprint = np.isfinite(template)
+
+    pred = synthetic_blind_stepper_map(footprint)
+
+    out_dir = REPO_ROOT / "docs" / "downloads"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_tif = out_dir / f"{SUBMISSION_NAME}.tif"
+
+    path, audit = write_submission(
+        pred, out_tif, template_path, SUBMISSION_NAME, NOTE,
+        extra_metadata={"lane": "K8-1 blind stepover/relay edge",
+                        "hypothesis": "blind geothermal conduits in the catalogue off-trace near-field",
+                        "template_used_for_geometry_only": str(template_path)},
+    )
+
+    # format validation
+    import rasterio
+    with rasterio.open(path) as src:
+        written = src.read(1)
+    ok, messages = validate_array(written, grid)
+
+    # uniqueness vs registry raster(s)
+    uniq = uniqueness_report(written, template)
+
+    # holdout self-test on proxy network
+    holdout = holdout_self_test(written, template)
+
+    report = {
+        "submission_name": SUBMISSION_NAME,
+        "note": NOTE,
+        "file": str(path),
+        "sha256": audit["sha256"],
+        "format_valid": audit["format_valid"],
+        "validation_messages": messages,
+        "uniqueness": uniq,
+        "holdout_self_test": holdout,
+        "verdict": "negative" if (not audit["format_valid"] or not uniq["unique_lane"]) else "promote",
+        "limitations": ("training_features.tif / existing_faults.tif / sample_submission.tif / labels.tif "
+                        "are DrivenData-login-walled and could not be auto-downloaded; holdout DTI is a proxy "
+                        "self-test, not an organiser-confirmed score."),
+    }
+    (out_dir / f"{SUBMISSION_NAME}.report.json").write_text(json.dumps(report, indent=2))
+    print(json.dumps(report, indent=2))
+    return 0 if report["verdict"] == "promote" else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

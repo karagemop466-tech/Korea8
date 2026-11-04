@@ -1,4 +1,5 @@
-data/
+# Data blocker: competition rasters are DrivenData-login-walled; never commit them
+data/raw/
 __pycache__/
 *.pyc
 *.pyo
