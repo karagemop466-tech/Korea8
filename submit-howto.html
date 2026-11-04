@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to submit — Korea8 GEMS pipeline</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #1a1a1a; line-height: 1.6; }
+  header { background: #0b3d62; color: #fff; padding: 20px 20px; }
+  header h1 { margin: 0; font-size: 1.4rem; }
+  header p { margin: 6px 0 0; opacity: 0.9; font-size: 0.95rem; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px 20px; }
+  a.btn { display: inline-block; background: #0b3d62; color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; margin-bottom: 16px; }
+  a.btn:hover { background: #083252; }
+  ol { margin: 10px 0 20px 22px; }
+  li { margin-bottom: 10px; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; background: #f4f7fa; padding: 2px 6px; border-radius: 4px; }
+  .callout { border-left: 4px solid; padding: 12px 16px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+  .callout.ok { border-color: #1a7a3c; background: #e7f7ea; }
+  .callout.warn { border-color: #b3541e; background: #fdf3e7; }
+  .callout.danger { border-color: #b3261e; background: #fdecec; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.9rem; }
+  th, td { border: 1px solid #c3ccd4; padding: 8px 10px; text-align: left; }
+  th { background: #eef3f7; font-weight: 700; }
+  .small { font-size: 0.85rem; color: #555; }
+  h2 { border-bottom: 2px solid #0b3d62; padding-bottom: 6px; margin-top: 30px; }
+  footer { margin-top: 32px; padding: 20px 0; border-top: 1px solid #d5dbe1; font-size: 0.85rem; color: #555; }
+</style>
+</head>
+<body>
+<header>
+  <h1>How to make a submission to the GEMS Prize Challenge</h1>
+  <p>Korea8 &mdash; arena/b33c0036-korea8 &bull; generated 2026-11-04</p>
+</header>
+
+<div class="container">
+  <a class="btn" href="index.html">⬅ Back to home / download</a>
+
+  <h2>Before you submit</h2>
+  <ol>
+    <li>Download the format-verified TIF from the home page:
+      <code class="mono">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</code>.</li>
+    <li>Confirm it passed validation: single-band float32 GeoTIFF, 3730 &times; 3292, EPSG:32611, 100 m, values in [0, 1] inside the footprint, no NaN inside the footprint (0 NaN found; values in [0, 0.82]).</li>
+    <li>Use the submission name and note exactly as recorded in <code>run_card.json</code> (note must be &le; 140 characters — ours is 133).</li>
+  </ol>
+
+  <h2>Submission steps on DrivenData</h2>
+  <ol>
+    <li>Go to the GEMS Prize Challenge submission page:
+      <a>https://www.drivendata.org/competitions/306/competition-doe-gems/</a> (log in with your DrivenData account).</li>
+    <li>On <strong>New submission</strong>, choose <strong>File to submit</strong> and upload the Korea8 TIF (or a .zip containing only that GeoTIFF).</li>
+    <li>Enter the <strong>Note</strong> (optional but recommended): <span class="mono">K8-1 blind stepover/relay conduit lane: off-catalogue near-field geophysical-edge targets; not dotted catalogue traces. Format-valid.</span> (133 characters &le; 140 max).</li>
+    <li>Click <strong>Submit</strong>.</li>
+    <li>Check the receipt. If you see <em>"Predicted values must be in range [0, 1]"</em>, the file has NaN or out-of-range values inside the footprint &mdash; re-download the Korea8 TIF (pre-verified) rather than editing it.</li>
+    <li>Record the organiser-confirmed score from the submission-page receipt; label it <strong>ORGANIZER-CONFIRMED</strong> in your records (never mix it with HOLDOUT-DTI projections).</li>
+  </ol>
+
+  <h2>Submission contract (from the competition problem description)</h2>
+  <table>
+    <tr><th>Property</th><th>Requirement</th><th>Korea8 TIF</th></tr>
+    <tr><td>Format</td><td>Single-band GeoTIFF (GTiff) or .zip of one GeoTIFF</td><td class="ok">GTiff, 1 band</td></tr>
+    <tr><td>Dimensions</td><td>3730 &times; 3292 pixels</td><td class="ok">3730 &times; 3292</td></tr>
+    <tr><td>CRS</td><td>EPSG:32611 (UTM zone 11N)</td><td class="ok">EPSG:32611</td></tr>
+    <tr><td>Resolution</td><td>100 m &times; 100 m</td><td class="ok">100 m &times; 100 m</td></tr>
+    <tr><td>Data type</td><td>32-bit float</td><td class="ok">float32</td></tr>
+    <tr><td>Value range</td><td>[0, 1] inside study bounds</td><td class="ok">[0, 0.82] inside footprint</td></tr>
+    <tr><td>Outside bounds</td><td>NaN</td><td class="ok">0 finite pixels outside footprint</td></tr>
+    <tr><td>Note length</td><td>&le; 140 characters</td><td class="ok">133 characters</td></tr>
+  </table>
+
+  <div class="callout ok">
+    <strong>Status:</strong> OK TO DOWNLOAD AND SUBMIT. Format validated by <code>scripts/validate_submission.py</code>; receipt at <code>docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.audit.json</code> (SHA-256: 6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf).
+  </div>
+
+  <div class="callout danger">
+    <strong>Score not yet organiser-confirmed.</strong> The competition rasters (<code>labels.tif</code>, <code>sample_submission.tif</code>, ...) are behind DrivenData login. Until they are placed in <code>data/raw/</code> (see <code>scripts/download_competition_data.sh</code>) and scored by the organisers, treat any score as unavailable &mdash; do not present a projection as an organiser score.
+  </div>
+
+  <footer>
+    <p><em>No submission slot was spent in this session (protocol budget: &le; 3 experiments, &le; 2 hours).</em></p>
+  </footer>
+</div>
+</body>
+</html>
