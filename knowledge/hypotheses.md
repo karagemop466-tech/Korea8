@@ -55,3 +55,15 @@ catalogue-distance dot families). This is an assumption, not a receipt.
   witness covers ~99.9% of the footprint), verdict = **negative / do-not-submit**,
   and the site shows a red banner. No silent exemption.
 - Stop after 3 experiments or 2 hours.
+
+## Post-measurement addendum (2026-11-04, experiment 3)
+
+H1 was tested and is a **negative result**. Pooled HOLDOUT-DTI 0.0219
+(95% CI 0.0177–0.0261; 22,893 withheld positives) is below the distance-only
+control (0.0460) and random (0.0344); paired Δ vs distance −0.0241
+(CI −0.0389 to −0.0094). The learned lineament model does not beat a near-fault
+prior on catalogue recovery. Two earlier runs were debugging, not geological
+experiments: (1) a canary broadcast bug, (2) a zero-dot suppression bug where a
+catalogue-vs-off-catalogue classifier correctly suppressed the target domain.
+The final run used near-fault hard negatives (3–20 px) and a fixed dot budget.
+H2–H5 remain untested. The experiment budget (3) is exhausted.

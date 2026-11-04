@@ -2,14 +2,6 @@ name: GEMS Korea8 pipeline
 
 on:
   workflow_dispatch:
-  push:
-    branches: [arena/d7026453-korea8]
-    paths:
-      - "scripts/**"
-      - "src/**"
-      - "vendor/**"
-      - "requirements.txt"
-      - ".github/workflows/gems-pipeline.yml"
 
 permissions:
   contents: write

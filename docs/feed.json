@@ -1,0 +1,15 @@
+{
+  "schema": "korea8-feed-v1",
+  "generated_utc": "2026-11-04T20:35:52Z",
+  "verdict": "negative",
+  "holdout_dti": 0.021916420266959818,
+  "holdout_ci95": [
+    0.017705055578650916,
+    0.026092391114912142
+  ],
+  "emitted_dots": 8316,
+  "raster_sha256": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0",
+  "raster": "downloads/korea8_candidate.tif",
+  "run_card": "evidence/run_card.json",
+  "verification": "evidence/verification.json"
+}

@@ -11,14 +11,27 @@ performed here.** A human selector must spend a slot.
   **submit / do-not-submit** banner.
 - Single JSON run card: [`evidence/run_card.json`](evidence/run_card.json).
 
-## Current verdict
+## Current verdict — NEGATIVE / DO-NOT-SUBMIT
 
-The pipeline is fail-closed. The literal uniqueness gate is checked against the
-nine focus sites **and** the `r13-lattice-s5` covering witness. That witness
-covers ~99.9% of the footprint, so the literal >70%/3 px rule is unsatisfiable for
-any dense candidate. The expected verdict is **negative / do-not-submit** unless a
-candidate is both geologically supported and passes the literal gate. We do not
-silently exempt the witness.
+The third (final) experiment produced a clean negative result:
+
+| Metric | Value | Evidence label |
+|---|---|---|
+| Candidate HOLDOUT-DTI | **0.0219** (95% CI 0.0177–0.0261; 22,893 withheld positives) | HOLDOUT-DTI, `gems57-pooled-hide-v2` |
+| Distance-only control | 0.0460 | HOLDOUT-DTI |
+| Random control | 0.0344 | HOLDOUT-DTI |
+| Paired Δ vs distance | −0.0241 (CI −0.0389 to −0.0094) | HOLDOUT-DTI |
+| Uniqueness vs focus9 | overlap ~18%, ρ≈0.001 → **passes** | REGISTRY-MEASUREMENT |
+| Uniqueness vs lattice witness | overlap 99.84% → **fails** | REGISTRY-MEASUREMENT |
+| Format gate | single-band float32, EPSG:32611, [0,1], mask band → **passes** | LOCAL VALIDATOR |
+| Independent verification | 21/21 checks pass | `evidence/verification.json` |
+
+The learned geophysical-lineament model does **not** beat a simple near-fault
+prior on catalogue recovery. The candidate is unique versus the nine focus sites
+but fails the literal uniqueness gate against the `r13-lattice-s5` covering
+witness (~99.9% footprint coverage). We do not silently exempt the witness.
+**No contest submission was performed.** A higher-scoring distinct strategy is
+not supported by this session's evidence.
 
 ## Why GEMSDOE32 reported 0.2778
 
