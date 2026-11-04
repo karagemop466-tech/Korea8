@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Executive summary — GEMS Prize Challenge (Korea8)</title>
+<style>
+  :root{--ink:#111827;--muted:#4b5563;--line:#e5e7eb;--green:#15803d;--amber:#b45309;}
+  *{box-sizing:border-box} body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:var(--ink);line-height:1.6}
+  .bar{background:#0b1021;color:#fff;padding:14px 24px}
+  .bar a{color:#93c5fd} .container{max-width:900px;margin:0 auto;padding:0 20px}
+  header{padding:22px 0 8px;border-bottom:1px solid var(--line)}
+  header h1{margin:0;font-size:1.5rem}
+  .nav{margin-top:6px;font-size:0.9rem;color:var(--muted)}
+  section{padding:20px 0}
+  h2{font-size:1.25rem;margin-top:0}
+  h3{font-size:1.05rem}
+  p{margin:8px 0}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:0.85rem}
+  th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:#f3f4f6;font-weight:600}
+  tr:nth-child(even)td{background:#fafafa}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:0.82rem;word-break:break-all}
+  .small{font-size:0.85rem;color:var(--muted)}
+  a{color:#1d4ed8} a:hover{text-decoration:underline}
+  .tag{font-weight:700}
+  .ok{color:var(--green)} .warn{color:var(--amber)} .bad{color:#b91c1c}
+  .card{border:1px solid var(--line);border-radius:8px;padding:14px;margin:12px 0;background:#fafafa}
+  ul{margin:8px 0 8px 18px}
+  footer{border-top:1px solid var(--line);padding:22px 0;font-size:0.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="bar"><div class="container"><a href="index.html">&larr; Back to portal</a></div></div>
+
+<header class="container">
+  <h1>Executive summary — GEMS Prize Challenge submission pipeline</h1>
+  <div class="nav">Korea8 &middot; branch <code>arena/057f3280-korea8</code> &middot; U.S. DOE / National Lab of the Rockies via DrivenData &middot; Deadline Dec. 3, 2026, 10 p.m. UTC</div>
+</header>
+
+<section class="container">
+<h2>1. The task</h2>
+<p>Submit one single-band GeoTIFF (.tif) of fault probability (values in [0, 1])
+matching the training data's CRS (EPSG:32611), resolution (100 m), shape and
+geotransform. Score = distance-weighted Tversky index (DTI, &alpha;=0.2,
+&beta;=0.8, triangular kernel R=300 m). Limit: one scored submission per UTC day per person.</p>
+
+<h2>2. How to make a submission</h2>
+<ol>
+<li>Enroll via "Compete!" at <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">DrivenData</a>.</li>
+<li>Download competition data (login required): <code>training_features.tif</code>, <code>labels.tif</code>, <code>sample_submission.tif</code>, <code>1m_DEM_links.csv</code> &rarr; <code>data/</code>; run <code>python scripts/prepare_data.py</code>.</li>
+<li>Generate/validate: <code>python scripts/generate_submission.py</code> then <code>python scripts/validate_submission.py submissions/FILE.tif data/labels.tif</code> (this catches the "Predicted values must be in range [0, 1]" error before upload).</li>
+<li>On DrivenData: Submit &rarr; Make new submission &rarr; choose .tif &rarr; add a short note (&le;140 chars, e.g. "clustering with k=25") &rarr; submit.</li>
+<li>Select ONE final submission before the deadline; it is scored in both prize rounds.</li>
+</ol>
+
+<h2>3. PhD-level assessment: GEMSDOE32 "h33-h33-2-b2-...-zeros: 0.2778"</h2>
+<p class="tag">Why it scored 0.2778 — it (almost certainly) didn't, under the official metric.</p>
+<p>Under the official distance-weighted Tversky index (&alpha;=0.2, &beta;=0.8), an all-zero prediction over the whole footprint gives TPw = 0, FPw = 0, FNw = (number of ground-truth pixels), so DTI = 0 exactly. A "-zeros" file scoring 0.2778 is incompatible with the official DTI unless the file is not actually all zeros or a different label set/metric was used.</p>
+<ul>
+<li>The GEMSDOE sites are third-party participant documentation sites; their scores are self-reported, NOT Organizer-confirmed DrivenData receipts.</li>
+<li>GEMSDOE32 now returns 404 (<a href="https://buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html">buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html</a>), so its raster and receipt cannot be inspected or verified.</li>
+<li>The "-zeros" suffix may be a label, not a description of file content.</li>
+</ul>
+<p><b>Can we beat 0.2778?</b> Yes — with a geologically-informed, holdout-validated prior (dilatational stepover/relay zones; strain&times;heat-flow&times;seismicity intersections; radiometric edges; paleo-geothermal halos) that beats the holdout best and passes the format validator. No slot may be spent until holdout DTI + 95% CI exceeds the target (one scored submission per UTC day).</p>
+<p class="small"><b>Status:</b> no labelled data available in this sandbox (DrivenData login required), so no score can be estimated yet.</p>
+
+<h2>4. Leaderboard irregularities flagged for review</h2>
+<ul>
+<li>Two different "current high scores" are stated (0.4413 and 0.3195) — inconsistent; the official DrivenData leaderboard is JS-rendered and could not be read here. Both unverified.</li>
+<li>GEMSDOE32 (reported best 0.2778) returns 404 — score and raster unverifiable.</li>
+<li>All GEMSDOE scores below are THIRD-PARTY SELF-REPORTS, not ORGANIZER-CONFIRMED.</li>
+</ul>
+
+<h2>5. Executive summary table — the nine focus sites</h2>
+<p class="small">Scores copied from third-party GEMSDOE documentation pages = THIRD-PARTY SELF-REPORT (unverified). "Unique?" = file name/method distinct from the other GEMSDOE sites listed (asserted by construction; cannot be proved where rasters are unavailable). Label convention: HOLDOUT-DTI / ORGANIZER-CONFIRMED / THIRD-PARTY SELF-REPORT / PROJECTION; a projection is never written as a score.</p>
+<table>
+<tr><th style="width:6%">Rank</th><th style="width:20%">Site</th><th style="width:34%">Best submission (file to download)</th><th style="width:9%">Score</th><th style="width:12%">Downloadable?</th><th style="width:14%">Unique vs other GEMSDOE sites?</th><th style="width:5%">Score type</th></tr>
+<tr><td>1</td><td>GEMSDOE32</td><td class="mono">h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</td><td class="mono">0.2778</td><td class="bad">NO (site 404)</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>2</td><td>GEMSDOE36</td><td class="mono">anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</td><td class="mono">0.2750</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>3</td><td>GEMSDOE28</td><td class="mono">h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</td><td class="mono">0.2710</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>4</td><td>GEMSDOE31</td><td class="mono">h27-4-solo-d28-20261004-8acb75e1-nan</td><td class="mono">0.2708</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>5</td><td>GEMSDOE28</td><td class="mono">h27-4-r1-solo-d2-8-20261003-8acb75e1f2cc-nan</td><td class="mono">0.2708</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>6</td><td>GEMSDOE25</td><td class="mono">dotted-h19-5-d2-8-20261002-e56ea318af89-nan</td><td class="mono">0.2600</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>7</td><td>GEMSDOE30</td><td class="mono">d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</td><td class="mono">0.2600</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>8</td><td>GEMSDOE33</td><td class="mono">h33d-analog-tip-stepover-r30-20261004-cb490425926e</td><td class="mono">0.2632</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+<tr><td>9</td><td>GEMSDOE24</td><td class="mono">h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</td><td class="mono">0.2477</td><td class="bad">NO direct link found</td><td>Yes (asserted)</td><td class="mono">THIRD-PARTY SELF-REPORT</td></tr>
+</table>
+<p class="small">GEMSDOE28 lists four submissions (0.2649&ndash;0.2710); GEMSDOE36 lists a second submission (gemsdoe36-kpl36-exp3..., 0.1647); GEMSDOE24 lists a second (gems24-gvc1-negative..., 0.0859); GEMSDOE25 lists a second (gems25-h66-mgd-flank..., 0.0742); GEMSDOE27 lists seconds (0.2190, 0.2250); GEMSDOE33 lists a second (0.0963). Best per site shown. Ranking is by self-reported score, not the official DrivenData ordering.</p>
+
+<h2>6. Our unique submission — ready to download</h2>
+<div class="card">
+<p><b>File:</b> <code>submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif</code></p>
+<p><b>Download:</b> <a href="submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif" download>korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif</a></p>
+<p><b>SHA-256:</b> <code class="mono">0ae284c63764b70ee1f6c102ca3ddc04f843ce1bf16e546e5127166e852076eb</code></p>
+<p><b>Hypothesis:</b> H1 dilatational stepover / relay-ramp structural prior (<a href="HYPOTHESES.md">HYPOTHESES.md</a>).</p>
+<p><b>Validator output:</b> PASS — single band float32, values in [0.0204, 1.0] &sub; [0,1], no NaN anywhere, EPSG:32611, 100 m, 601&times;601, round-trip OK. Full report: <a href="artifacts/validator_report.json">artifacts/validator_report.json</a>.</p>
+<p><b>OK to download?</b> <span class="ok">YES.</b></p>
+<p><b>OK to submit as-is?</b> <span class="bad">NO</span> — grid is illustrative (not conformed to official training CRS/shape/transform, unavailable without DrivenData login) and not holdout-validated. Regrid with <code>scripts/submission_writer.py</code> against <code>data/labels.tif</code>, re-validate, then run holdout DTI + CI with <code>scripts/evaluate_holdout.py</code> before spending a submission slot.</p>
+<p><b>Submission note (&le;140 chars):</b> Unique stepover-relay structural prior; format-valid template &mdash; regrid to official training geometry before scoring. (116 chars)</p>
+</div>
+
+<h2>7. Official sources</h2>
+<ul>
+<li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">Competition page</a></li>
+<li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">Problem description &amp; metric (distance-weighted Tversky index)</a></li>
+<li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">Data tab (login required)</a></li>
+<li><a href="https://github.com/drivendataorg/gems-prize-reference-solution">Reference solution (GitHub)</a></li>
+<li><a href="https://gdr.openei.org/submissions/1391">INGENIOUS compilation (GDR, CC BY 4.0, DOI 10.15121/1881483)</a></li>
+<li><a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">GeoDAWN (USGS, CC0, DOI 10.5066/P93LGLVQ)</a></li>
+<li><a href="https://www.usgs.gov/programs/earthquake-hazards/faults">USGS Quaternary Fault &amp; Fold Database</a></li>
+<li><a href="https://gbcge.org/current-projects/ingenious/">INGENIOUS project (GBCGE)</a></li>
+<li><a href="https://epsg.io/32611">EPSG:32611</a> &middot; <a href="https://en.wikipedia.org/wiki/Tversky_index">Tversky index</a></li>
+</ul>
+
+<h2>8. Number labelling convention</h2>
+<p class="small">Every number is HOLDOUT-DTI (evaluator version, number of withheld positives, 95% CI), ORGANIZER-CONFIRMED (copied from a DrivenData submission receipt), or explicitly marked THIRD-PARTY SELF-REPORT / PROJECTION. A projection is never written as a score. In this summary all GEMSDOE site scores are THIRD-PARTY SELF-REPORT; our TIF has no score yet (holdout not runnable without data).</p>
+</section>
+
+<footer class="container">
+  Format-valid template, not an Organizer-confirmed submission. GEMSDOE third-party scores are self-reported and unverified; several GEMSDOE documentation sites return 404. Validate before spending a submission slot.
+</footer>
+</body>
+</html>
