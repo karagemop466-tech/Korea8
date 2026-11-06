@@ -239,6 +239,22 @@ F-11 on the dashboard's Flagged for Review page.
    this project's public pages were asked to carry — not linked pending owner review — F-11.
 10. Owner photos pending; analysis is description-based — F-10.
 
+### T6 — Final integration — record (2026-11-06, `arena-82aa8544`)
+
+- **PR #14** (https://github.com/karagemop466-tech/Korea8/pull/14) — MERGED into `main` at
+  2026-11-06T13:45:55Z, merge commit `d097deb0e117c1cc7c2017952cfa63dd2f7db8ae`.
+- Combined-data re-verification before merge: 79 data rows link-checked, 0 enforcement failures,
+  0 broken internal links; 11/11 provider licenses re-verified on official CSLB pages.
+- **Pages deploy status:** post-merge build for `d097deb` reported `errored` (generic "Page build
+  failed"). Investigation: `.nojekyll` present, no symlinks, no reserved filenames, all UTF-8
+  clean, 201 files / 18.6 MB total (well under limits); build history shows the failures began at
+  the PR #9 merge (13:37Z) — builds for `5891eb1`, `6647cd7`, `67fc8fb`, `0bf6bbe`, `d097deb` all
+  errored; last successful build was `0932777` (PR #8, 13:29Z). The Nov-4 history shows the same
+  errored-then-built pattern, suggesting builder-side transient failures. Retriggered by the
+  record-keeping push that follows this entry; result to be recorded below.
+
+**Deploy verification result:** _(pending — filled by the next push after the retriggered build completes)_
+
 ### Integration decision (T6, session `arena-82aa8544`)
 
 Per the project protocol, the final integration session owns the site's index and navigation once
