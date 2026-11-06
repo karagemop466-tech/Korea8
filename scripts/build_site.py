@@ -226,10 +226,13 @@ section{margin:2rem 0}footer{color:#666;font-size:.85rem;border-top:1px solid #e
 </channel></rss>"""
     (DOCS / "feed.xml").write_text(rss)
 
-    # Mirror to repo root: GitHub Pages is configured with source path "/" and the
-    # integration token cannot change it. Serving the download home page at root
-    # satisfies the "download at the beginning/home page" requirement.
+    # Mirror to the frozen GEMS archive at gems_site/ (formerly repo root).
+    # The repo root now belongs to the trip-lever project; this pipeline must not
+    # overwrite it. gems_site/index.html is the GEMS download page. See
+    # REPO_REVIEW.md (I-09) for why the mirror target changed.
     import shutil
+    ROOT = ROOT / "gems_site"
+    ROOT.mkdir(exist_ok=True)
     for name in ("index.html", "style.css", "submit.html", "feed.json", "feed.xml"):
         shutil.copyfile(DOCS / name, ROOT / name)
     for sub in ("downloads", "evidence"):
@@ -245,7 +248,7 @@ section{margin:2rem 0}footer{color:#666;font-size:.85rem;border-top:1px solid #e
     if card:
         for stale in (EVID / "error.json", DOCS / "evidence" / "error.json", ROOT / "evidence" / "error.json"):
             stale.unlink(missing_ok=True)
-    print("[site] built docs/ + root mirror (index, submit, feed, downloads, evidence)")
+    print("[site] built docs/ + gems_site/ mirror (index, submit, feed, downloads, evidence)")
     return 0
 
 
