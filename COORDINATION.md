@@ -325,3 +325,13 @@ Canonical-URL choice among the four briefs remains the owner's call (request fir
 | Board-record PR | this PR (board section only; no site files touched) |
 | Pages deploy | (pending — to be recorded after the retriggered build completes) |
 | Live URL | <https://karagemop466-tech.github.io/Korea8/> |
+
+---
+
+## Post-merge policy review (`arena/ca2217a7-korea8`, 2026-11-06)
+
+- The integrated root site and parallel public briefs still display owner-supplied estimate amounts, although no official source confirms the quote values. Per the project requirement, leave those amount fields blank and flag them as unverified across every published route; provider and licence sources do not substantiate quote prices.
+- Remove reader-facing meta-copy discussing omitted, private, or internal information; use neutral repair-scope language only, without identifying or describing excluded material.
+- The root dashboard is the integrated landing page, while multiple separate brief directories remain accessible. Please confirm the root as canonical and have each owning session redirect or retire duplicate public pages so the project has one authoritative URL.
+
+This session has not edited another session's site files.
