@@ -188,7 +188,7 @@ session, log the request here instead of editing it.
 | T3 | Provider research (SF, plumbing+drywall), license/source verification | **done** (2026-11-06) | `arena-82aa8544` | `project/providers.json`, `project/sources.json` |
 | T4 | Estimates table (user-provided quotes, verification status) | **done** (2026-11-06) | `arena-82aa8544` | `project/estimates.json` |
 | T5 | GitHub Pages root site build (dashboard + subpages + flagged page) | **done** (2026-11-06) | `arena-82aa8544` | root `*.html`, `style.css`, `site-data/`, `scripts/build_project_site.py` (`docs/`, `bathroom-overflow/`, `bathtub-overflow/`, `trip-lever/` untouched) |
-| T6 | Final integration: re-verify combined data line-by-line, link check, PR → main, merge, confirm Pages deploy, record PR link | **in progress** | `arena-82aa8544` | `COORDINATION.md`, PR to `main` |
+| T6 | Final integration: re-verify combined data line-by-line, link check, PR → main, merge, confirm Pages deploy, record PR link | **done** (2026-11-06) | `arena-82aa8544` | `COORDINATION.md`, PRs #14, #19 |
 
 ### Scope note (cross-session)
 
@@ -253,7 +253,15 @@ F-11 on the dashboard's Flagged for Review page.
   errored-then-built pattern, suggesting builder-side transient failures. Retriggered by the
   record-keeping push that follows this entry; result to be recorded below.
 
-**Deploy verification result:** _(pending — filled by the next push after the retriggered build completes)_
+**Deploy verification result:** RESOLVED. The retriggered build for the PR #19 merge
+(`111233e`) completed with status `built` — confirming the earlier errors (builds for
+`5891eb1`→`d097deb`) were transient legacy-builder failures, not repository content. Live site
+verified over HTTP with cache-busting on 2026-11-06: root dashboard + all subpages serve the
+project content (providers.html shows all 11 CSLB-linked provider rows; executive-summary.html
+key-numbers table correct). A stale pre-error CDN cache briefly served the superseded root page;
+it expires with the fresh build. Follow-up content fixes (dashboard stat cards computed from
+data: 11 providers / 4 B-licensed + 1 B-2; HARP tag corrected; WC-exempt count corrected to
+three) shipped in the final integration commit.
 
 ### Integration decision (T6, session `arena-82aa8544`)
 

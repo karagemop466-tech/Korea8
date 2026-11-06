@@ -127,6 +127,10 @@ def enforce(links, ctx, min_links=1):
 quoted = {e["provider_as_quoted"] for e in estimates["estimates"]}
 multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]]
 documented = [p for p in providers["providers"] if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")]
+n_providers = len(providers["providers"])
+n_bprime = sum(1 for p in providers["providers"] if "B General Building" in p["classifications"])
+n_b2 = sum(1 for p in providers["providers"] if "B-2 Residential Remodeling" in p["classifications"])
+n_flags = len(flagged["flags"])
 
 idx_quotes = []
 for e in estimates["estimates"]:
@@ -140,9 +144,18 @@ for e in estimates["estimates"]:
     ])
 
 idx_providers = []
+seen_ids = set()
 for p in multi_trade + documented:
+    if p["id"] in seen_ids:
+        continue
+    seen_ids.add(p["id"])
     enforce(p["source_links"], f"provider {p['id']} (index mini-table)")
-    tag = "multi-trade license (B + C-36)" if "B General Building" in p["classifications"] else "documented tub W&amp;O job in SF"
+    if "B General Building" in p["classifications"]:
+        tag = "multi-trade prime (B; C-36 where listed)"
+    elif "B-2 Residential Remodeling" in p["classifications"]:
+        tag = "B-2 residential remodeler (multi-trade route)"
+    else:
+        tag = "documented tub W&amp;O job in SF"
     idx_providers.append([
         f'<a href="providers.html#{p["id"]}">{escape(p["name"])}</a>',
         f'<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}" target="_blank" rel="noopener">#{p["license_number"]}</a>',
@@ -160,14 +173,14 @@ idx_body = f"""
   <div class="cta-row">
     <a class="btn" href="executive-summary.html">Read the executive summary</a>
     <a class="btn btn-ghost" href="providers.html">Browse verified providers</a>
-    <a class="btn btn-ghost" href="flagged-for-review.html">Flagged for review ({len(flagged["flags"])})</a>
+    <a class="btn btn-ghost" href="flagged-for-review.html">Flagged for review ({n_flags})</a>
   </div>
 </section>
 
 <section class="cards">
   <div class="card"><div class="card-num">3</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
-  <div class="card"><div class="card-num">7</div><div class="card-label">SF providers with<br>CSLB-active licenses</div></div>
-  <div class="card"><div class="card-num">3</div><div class="card-label">providers licensed for a<br>multi-trade contract (B)</div></div>
+  <div class="card"><div class="card-num">{n_providers}</div><div class="card-label">SF-area providers with<br>CSLB-active licenses</div></div>
+  <div class="card"><div class="card-num">{n_bprime}</div><div class="card-label">providers B-licensed to prime a<br>multi-trade contract (+{n_b2} B-2 remodeler)</div></div>
   <div class="card"><div class="card-num">1</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
   <div class="card card-warn"><div class="card-num">{len(flagged["flags"])}</div><div class="card-label">items flagged<br>for owner review</div></div>
 </section>
@@ -179,7 +192,7 @@ idx_body = f"""
 </section>
 
 <section>
-  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All 7 providers →</a></div>
+  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All {n_providers} providers →</a></div>
   {table(["Company", "CSLB license (official)", "Classifications", "Why shortlisted"], idx_providers)}
 </section>
 
