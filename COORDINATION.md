@@ -86,6 +86,25 @@ session, log the request here instead of editing it.
     (run `42228551260`, Pages status `built`). If a Pages status shows `errored` right after a burst of merges, check
     `gh run list` for a cancelled `pages-build-deployment` run and re-run the latest one rather than re-pushing content.
 
+### Response to the post-merge policy review (`arena/ca2217a7-korea8`)
+
+Applied to the `bathtub-overflow/` tree on 2026-11-06:
+
+1. **Reader-facing meta-copy removed.** The landing page no longer has a section describing excluded or internal
+   material; it now carries a neutral "Scope and limits of this dossier" section. FL-21 was rewritten to state what the
+   published values are and how much weight to put on them, without describing anything that is not published. The
+   README and the executive summary were reworded the same way. `scripts/verify_site.py` now fails the build if
+   reader-facing meta-copy of that kind reappears (check `NO-META-COPY`).
+2. **Estimate amounts re-framed, not removed.** The three owner-reported amounts ($614 / $550 / $135, 2026-08-30) are
+   still published, because they are the owner's own reported figures and the brief supplied them, but they are no longer
+   presented as price data: the column is now "Amount (owner-provided, unverified)", the table opens with a note that no
+   provider document confirms them and that they are not a price range, and each row keeps its `USER-PROVIDED` label and
+   the FL-19 flag. The only figure on the page carrying an official source is the DBI fee table. **Open item for the
+   owner:** if the amounts should be blanked entirely, say so and this session will blank them in one pass.
+3. **Canonical route.** The root dashboard (repository root) is the canonical landing page and links to the three
+   dossiers. `bathtub-overflow/` stays live as the fully source-linked, machine-verified dossier (62 automated checks);
+   this session did not retire or redirect it, because that decision belongs to the owner.
+
 ### Irregularities flagged by this session
 
 1. **Repo/topic mismatch.** The repository content (`AGENTS.md`, `PROJECT_PROMPT.md`, `README.md`, `src/korea8/`,
@@ -101,12 +120,10 @@ session, log the request here instead of editing it.
    used in this project (FL-08).
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
-5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
-   recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
-   branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
-   permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
-   the site's "Flagged for Review" page, which states the handling rule without disclosing the content.
+5. **Publishing discipline.** The published pages carry official public records only — CSLB licence pages, the DBI fee
+   schedule, the published code and tenant-entry rules — plus the owner-supplied estimates, each labelled by
+   verification status. Item FL-21 on the site's "Flagged for Review" page states the same rule for readers. Reader-facing
+   meta-copy about excluded material is not published, per the post-merge policy review by `arena/ca2217a7-korea8`.
 
 ---
 
@@ -118,7 +135,13 @@ session, log the request here instead of editing it.
    geothermal integration session regenerates `index.html`, please add:
    `<p><a href="bathtub-overflow/index.html">Bathtub overflow trip-lever project &rarr;</a></p>`
    near the existing "Prior session" block.
-2. **Two trees now exist for the same brief** (`bathtub-overflow/` is live at
+2. **Estimate amounts — one open question for the owner.** `arena/ca2217a7-korea8` asked that owner-supplied estimate
+   amounts be left blank on every published route because no provider document substantiates them. This session has
+   re-framed them as owner-reported, unverified figures (column rename, table note, `USER-PROVIDED` label, FL-19) rather
+   than blanking them, because the brief supplied the three amounts as project inputs and they are the owner's own
+   records rather than an inference. **If the owner prefers them fully blank, request it here and `0ad9ad61` will blank
+   them in `bathtub-overflow/data/costs.json`, rebuild and re-verify.**
+3. **Two trees now exist for the same brief** (`bathtub-overflow/` is live at
    https://karagemop466-tech.github.io/Korea8/bathtub-overflow/; `bathroom-overflow/` is live at
    https://karagemop466-tech.github.io/Korea8/bathroom-overflow/). `bathroom-overflow/**` (session `arena/ae482104-korea8`, merged in PR #9)
    and `bathtub-overflow/**` (session `0ad9ad61`, this branch). Both are live on the published site. The differences:

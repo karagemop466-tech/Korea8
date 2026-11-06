@@ -122,7 +122,7 @@ def shell(title: str, current: str, body: str, subtitle: str, generated: str) ->
 <header class="top">
   <h1>Bathtub wastewater overflow trip lever — requirements, vendors and code findings</h1>
   <p class="sub">{esc(subtitle)}</p>
-  <p class="nav crumbs"><a href="../index.html">&#8592; Repository home</a> · <span class="mono">bathtub-overflow/</span> · San Francisco, California</p>
+  <p class="nav crumbs"><a href="../index.html">&#8592; Project dashboard (repository root)</a> · <span class="mono">bathtub-overflow/</span> · San Francisco, California</p>
 </header>
 {nav(current)}
 {body}
@@ -224,11 +224,11 @@ def build_index(sources, vendors, requirements, costs, code_facts, findings, fla
 </section>
 
 <section>
-  <h2>What this site does not contain</h2>
-  <p class="quote">Nothing about this project that is internal-only has been written into the repository, the data files,
-  the page text or the commit history. The published pages carry only the verifiable code facts, the verified licence
-  records and the owner-provided estimates. See item FL-21 on the
-  <a href="flagged.html">Flagged for Review</a> page.</p>
+  <h2>Scope and limits of this dossier</h2>
+  <p>This is research, not legal advice. The permit determination for this scope comes from DBI; the trade-licensing and
+  tenant-entry rules quoted here are the published rules, not a ruling on this job. Licence and fee values were read from
+  the official pages linked in each table on 2026-11-06 and can change — re-read them before signing anything. The
+  estimate amounts are the owner's reported figures and are labelled as such wherever they appear.</p>
 </section>
 """
     return shell("Overview", "index.html", body,
@@ -351,16 +351,18 @@ def build_costs(costs, generated):
     body = f"""
 <section>
   <h2>Estimates on file (owner-provided, {esc(costs["as_of"])} compilation)</h2>
-  <p>These three figures come from the project brief and describe three different scopes. They are not a price range and
-  they were not independently verifiable; each row links to the contractor's official CSLB record so the vendor can be
-  identified, and each is flagged on the <a href="flagged.html">Flagged for Review</a> page.</p>
-  <table><thead><tr><th>ID</th><th>Vendor</th><th>Amount</th><th>Scope as stated</th><th>Labour + materials</th><th>Wall access</th><th>Permit</th><th>Quoted</th><th>Verification</th><th>Source</th></tr></thead>
+  <p class="quote">The amounts below are the owner's reported figures from 2026-08-30. No provider document confirms them
+  and no official source publishes a price for this work, so they are <strong>not</strong> verified prices and they are
+  not a price range — each describes a different scope. Every row links to the contractor's official CSLB record so the
+  vendor can be identified, and each is flagged on the <a href="flagged.html">Flagged for Review</a> page (FL-19).</p>
+  <p>For a figure that carries an official source, see the DBI fee table below.</p>
+  <table><thead><tr><th>ID</th><th>Vendor</th><th>Amount (owner-provided, unverified)</th><th>Scope as stated</th><th>Labour + materials</th><th>Wall access</th><th>Permit</th><th>Quoted</th><th>Verification</th><th>Source</th></tr></thead>
   <tbody>{qrows}</tbody></table>
 </section>
 <section>
   <h2>Official cost the owner can verify — DBI fees (verified)</h2>
   <p>Read from the DBI plumbing/mechanical fee schedule in force for permits issued on and after 12 July 2026.</p>
-  <table><thead><tr><th>ID</th><th>Item</th><th>Amount</th><th>Applies</th><th>Verification</th><th>Source</th></tr></thead>
+  <table><thead><tr><th>ID</th><th>Item</th><th>Amount (owner-provided, unverified)</th><th>Applies</th><th>Verification</th><th>Source</th></tr></thead>
   <tbody>{frows}</tbody></table>
 </section>
 <section>

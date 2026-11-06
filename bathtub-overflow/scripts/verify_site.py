@@ -42,6 +42,15 @@ FORBIDDEN = [
     "skip the permit",
     "private reason",
 ]
+
+# Reader-facing meta-copy about omitted or non-public material is not published.
+META_COPY = [
+    "does not contain",
+    "internal-only",
+    "not been written into",
+    "is deliberately not",
+    "private notes",
+]
 PLACEHOLDERS = ["TODO", "TBD", "FIXME", "lorem ipsum", "XXX", "<placeholder>"]
 
 CSLB_LICENSE_BASE = "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/"
@@ -218,6 +227,8 @@ def main() -> int:
     # placeholders and leaked private content
     blob = "\n".join((DATA / n).read_text() for n in DATA_FILES)
     blob += "\n".join((SITE / p).read_text() for p in PAGES if (SITE / p).exists())
+    published_md = [ROOT / "README.md", ROOT / "EXECUTIVE_SUMMARY.md", ROOT / "SOURCES.md"]
+    blob += "\n".join(p.read_text() for p in published_md if p.exists())
     found = [w for w in PLACEHOLDERS if w.lower() in blob.lower()]
     ok_all &= check("NO-PLACEHOLDER", "no placeholder text anywhere in the data or the site", not found, ", ".join(found))
 
@@ -225,6 +236,11 @@ def main() -> int:
     ok_all &= check("NO-PRIVATE-LEAK",
                     "no internal permit-timing language appears in the published data or pages",
                     not leaked, ", ".join(leaked))
+
+    meta = [w for w in META_COPY if w.lower() in blob.lower()]
+    ok_all &= check("NO-META-COPY",
+                    "no reader-facing meta-copy about omitted material in the published pages or documents",
+                    not meta, ", ".join(meta))
 
     # every requirement and finding has a verification label
     bad = [r["id"] for r in requirements if not r.get("verification", "").strip()]

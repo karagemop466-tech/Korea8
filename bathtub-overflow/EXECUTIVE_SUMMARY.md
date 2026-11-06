@@ -128,7 +128,7 @@ Full text, evidence and the action to take for each: <https://karagemop466-tech.
 
 ## 10. Scope of this document
 
-This summary and the site contain only verifiable public information: official licence records, official code and fee
-rules, and the owner-provided estimates. No internal or private information from the brief appears in the repository, the
-data files, the page text or the commit history; the handling rule is recorded as FL-21 without disclosing its content.
-The site is internal-use guidance, not legal advice — the permit determination must come from DBI.
+This summary and the site are built from public official records — CSLB licence pages, the DBI fee schedule, the
+published code and tenant-entry rules — plus the estimates the owner supplied, which are labelled as owner-provided and
+unverified. Every table row links to the source it was read from. The site is research, not legal advice: the permit
+determination for this scope comes from DBI.
