@@ -300,6 +300,30 @@
       "url": "https://www.rapidflowbayarea.com/",
       "used_for": "License #1115649 B + C-36 as printed; GC + plumbing positioning; service area",
       "fetched": "2026-11-06"
+    },
+    {
+      "id": "S-38",
+      "type": "Official government",
+      "title": "CSLB — Contractor's License Detail #1105133 (Harp Services dba 24/7 SF Handyman & Remodeling Service)",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "used_for": "License status current/active, B-2 Residential Remodeling, corporation, active WC",
+      "fetched": "2026-11-06"
+    },
+    {
+      "id": "S-39",
+      "type": "Official government",
+      "title": "CSLB — Contractor's License Detail #1140843 (Discount Plumbing Rooter Services LLC)",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "used_for": "License status current/active, C-36 + A, LLC, WC + $2M liability + LLC bond",
+      "fetched": "2026-11-06"
+    },
+    {
+      "id": "S-40",
+      "type": "Official government",
+      "title": "CSLB — Contractor's License Detail #1009195 (Advanced Plumbing and Drain Inc)",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "used_for": "License status current/active with Additional Status (possible future suspension), C-36, corporation",
+      "fetched": "2026-11-06"
     }
   ]
 }

@@ -160,6 +160,34 @@
           "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json"
         }
       ]
+    },
+    {
+      "id": "F-12",
+      "severity": "caution",
+      "title": "Advanced Plumbing and Drain (#1009195): CSLB 'may be suspended at a future date' warning",
+      "detail": "The official CSLB record for license #1009195 (verified 2026-11-06) carries an Additional Status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.' The license is currently active. Re-check the CSLB page immediately before any engagement.",
+      "source_links": [
+        {
+          "label": "CSLB license detail #1009195 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+        }
+      ]
+    },
+    {
+      "id": "F-11",
+      "severity": "needs-review",
+      "title": "Parallel-session brief publishes city building-department administrative content — owner review requested",
+      "detail": "A parallel session's brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project's public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).",
+      "source_links": [
+        {
+          "label": "Parallel brief under review (bathtub-overflow/)",
+          "url": "https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow"
+        },
+        {
+          "label": "Cross-session coordination board",
+          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+        }
+      ]
     }
   ]
 }

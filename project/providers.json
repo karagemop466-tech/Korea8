@@ -326,6 +326,89 @@
           "url": "bathroom-overflow/providers.html"
         }
       ]
+    },
+    {
+      "id": "P-09",
+      "name": "24/7 SF Handyman & Remodeling Service (Harp Services)",
+      "cslb_entity": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
+      "license_number": "1105133",
+      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "classifications": [
+        "B-2 Residential Remodeling"
+      ],
+      "entity_type": "Corporation",
+      "issue_date": "2023-05-22",
+      "expire_date": "2027-05-31",
+      "address_cslb": "1546 Guerrero Street, San Francisco, CA 94110",
+      "phone": "(415) 304-1559",
+      "website": "",
+      "reviews": [],
+      "relevance": "Holds the B-2 Residential Remodeling classification — the CSLB classification created for residential remodel work involving multiple trades on existing homes; a structural alternative route to the all-in-one requirement (R-07) alongside B-licensed general contractors. Also surfaced by a parallel session's brief (trip-lever/).",
+      "fit_notes": "B-2 (not C-36): plumbing scope would be subcontracted to a licensed plumber under the remodeler's contract, or paired separately. No official site captured this session; no review counts captured — left blank (F-09). Workers' comp policy active (expires 2027-04-11).",
+      "verification": "License verified independently by this session on the official CSLB page (status current/active, B-2, corporation, bond $25,000, active WC) on 2026-11-06.",
+      "source_links": [
+        {
+          "label": "CSLB license detail #1105133 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133"
+        },
+        {
+          "label": "Parallel-session brief (provider pointer)",
+          "url": "trip-lever/contractors.html"
+        }
+      ]
+    },
+    {
+      "id": "P-10",
+      "name": "Discount Plumbing Rooter Services",
+      "cslb_entity": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "license_number": "1140843",
+      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "classifications": [
+        "C-36 Plumbing",
+        "A General Engineering"
+      ],
+      "entity_type": "Limited Liability Company",
+      "issue_date": "2025-07-22",
+      "expire_date": "2027-07-31",
+      "address_cslb": "1325 Howard Ave Bldg 710, Burlingame, CA 94010",
+      "phone": "(650) 991-2100",
+      "website": "",
+      "reviews": [],
+      "relevance": "C-36 + A licensed plumbing company serving the SF Bay Area (CSLB address of record is Burlingame — confirm SF service and any trip charge). Strong paper coverage on file with CSLB: active workers' comp, $2,000,000 liability insurance certificate, and the $100,000 LLC employee/worker bond required of LLCs.",
+      "fit_notes": "C-36 only for plumbing scope: drywall would need separate coordination (R-07). No official site captured this session; no review counts captured — left blank (F-09).",
+      "verification": "License verified independently by this session on the official CSLB page (status current/active, C-36 + A, LLC, bonds, WC, liability insurance) on 2026-11-06.",
+      "source_links": [
+        {
+          "label": "CSLB license detail #1140843 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843"
+        }
+      ]
+    },
+    {
+      "id": "P-11",
+      "name": "Advanced Plumbing and Drain",
+      "cslb_entity": "ADVANCED PLUMBING AND DRAIN INC",
+      "license_number": "1009195",
+      "license_status": "Current and active — with CSLB 'Additional Status' warning: may be suspended at a future date for failure to resolve an outstanding final liability (FTB / DIR / EDD / CSLB) (data as of 2026-11-06)",
+      "classifications": [
+        "C-36 Plumbing"
+      ],
+      "entity_type": "Corporation",
+      "issue_date": "2015-11-24",
+      "expire_date": "2027-11-30",
+      "address_cslb": "3450 Sacramento St #204, San Francisco, CA 94118",
+      "phone": "(415) 744-4944",
+      "website": "",
+      "reviews": [],
+      "relevance": "Long-standing SF plumbing company (licensed since 2015) that a parallel session also surveyed; included for completeness of the licensed-provider list.",
+      "fit_notes": "CAUTION — see flag F-12: CSLB shows an Additional Status that the license may be suspended at a future date for an outstanding final liability. Re-check the CSLB page immediately before any engagement. C-36 only: drywall needs separate coordination (R-07). No review counts captured — left blank (F-09).",
+      "verification": "License verified independently by this session on the official CSLB page on 2026-11-06, including the Additional Status warning (quoted on the Flagged for Review page). Phone recorded from the CSLB record.",
+      "source_links": [
+        {
+          "label": "CSLB license detail #1009195 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+        }
+      ]
     }
   ]
 }

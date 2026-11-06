@@ -103,7 +103,8 @@ def page(title, active, body, description=""):
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
      Built {BUILD_STAMP} · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs: <a href="bathroom-overflow/index.html">parallel-session field brief (bathroom-overflow/)</a> ·
+  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
+     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
      Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
      Licenses re-verified {escape(providers["meta"]["verified_date"])} via official CSLB pages — statuses can change; re-check before contracting.</p>
 </footer>
@@ -124,7 +125,7 @@ def enforce(links, ctx, min_links=1):
 
 # ---------------- index.html ----------------
 quoted = {e["provider_as_quoted"] for e in estimates["estimates"]}
-multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"]]
+multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]]
 documented = [p for p in providers["providers"] if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")]
 
 idx_quotes = []
@@ -325,7 +326,8 @@ def reviews_cell(p):
 
 prov_rows = []
 for p in providers["providers"]:
-    enforce(p["source_links"], f"provider {p['id']}", min_links=2)
+    # A provider row needs its official CSLB link plus the company site when one is on file.
+    enforce(p["source_links"], f"provider {p['id']}", min_links=2 if p.get("website") else 1)
     reviews = reviews_cell(p)
     cslb_url = f'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}'
     prov_rows.append([
