@@ -1,0 +1,77 @@
+{
+  "dataset": "requirements",
+  "title": "Full requirements list — bathtub waste-and-overflow trip-lever removal, San Francisco",
+  "compiled_utc": "2026-11-06",
+  "method": "Every requirement is traced to the place it originated: 'brief' = the requester's written project brief; 'derived' = inferred from the brief to make it testable; 'official' = required by a government source listed in source_url. Requirements with no official source are marked verified=false.",
+  "categories": [
+    {
+      "id": "C-1",
+      "name": "Scope of work",
+      "requirements": [
+        {"id": "REQ-01", "requirement": "Remove the bathtub waste-and-overflow trip-lever assembly that is stuck inside the concealed plumbing behind the wall.", "priority": "Must", "origin": "brief", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Headline scope. The unit is tenant-occupied."},
+        {"id": "REQ-02", "requirement": "Restore the tub to a fully usable state: stopper seals when closed, drain runs freely when open.", "priority": "Must", "origin": "derived", "status": "Open", "official_source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf", "official_source_label": "Watco Trip Lever Bath Waste instructions (official manufacturer)", "source_tier": "official-manufacturer", "verified": true, "notes": "Acceptance test defined by the manufacturer: fill the tub a few inches and operate the lever."},
+        {"id": "REQ-03", "requirement": "Do not destroy the concealed plumbing behind the wall.", "priority": "Must", "origin": "brief", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Reported reason five or more prior plumbers declined the from-above route."}
+      ]
+    },
+    {
+      "id": "C-2",
+      "name": "Access strategy",
+      "requirements": [
+        {"id": "REQ-04", "requirement": "Preferred: remove the assembly from above, through the overflow opening, with no demolition.", "priority": "Should (preferred)", "origin": "brief", "status": "Open", "official_source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf", "official_source_label": "Watco Trip Lever Bath Waste instructions (official manufacturer)", "source_tier": "official-manufacturer", "verified": true, "notes": "Manufacturer's documented service path reaches the whole mechanism through the overflow opening (see T-03)."},
+        {"id": "REQ-05", "requirement": "Fallback: access from below through the ceiling of the storage unit, opening the drywall ceiling as needed.", "priority": "Must (fallback)", "origin": "brief", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Requires consent/access arrangements for the space below; not verified — see flag F-12."},
+        {"id": "REQ-06", "requirement": "Provider must attempt and document the non-destructive route before cutting finished surfaces.", "priority": "Should", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Derived so REQ-04 is auditable rather than merely preferred."}
+      ]
+    },
+    {
+      "id": "C-3",
+      "name": "Provider capability",
+      "requirements": [
+        {"id": "REQ-07", "requirement": "Single provider covering BOTH plumbing and drywall/general building — one contract, one point of contact.", "priority": "Must", "origin": "brief", "status": "Open", "official_source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx", "official_source_label": "CSLB Check a Contractor License (official, State of California)", "source_tier": "official-government", "verified": true, "notes": "Testable: the licence must carry C-36 plus B (or C-9), or the provider must name the licensed second trade. See the Providers page — 4 of 10 verified providers qualify on a single licence."},
+        {"id": "REQ-08", "requirement": "Provider must be a licensed plumber or licensed contractor.", "priority": "Must", "origin": "brief", "status": "Open", "official_source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048", "official_source_label": "California Business and Professions Code section 7048 (official)", "source_tier": "official-government", "verified": true, "notes": "BPC 7048's sub-$1,000 unlicensed exemption expressly does not apply when the work requires a permit."},
+        {"id": "REQ-09", "requirement": "Provider must hold an active licence with the correct classification, a current $25,000 contractor bond, and active workers' compensation where they have employees.", "priority": "Must", "origin": "derived", "status": "Met (verified for 10 candidates)", "official_source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071", "official_source_label": "CSLB License Detail pages (official, State of California) — one per provider", "source_tier": "official-government", "verified": true, "notes": "All 10 candidates verified active on 2026-11-06. Three are workers'-comp exempt (no employees) — see flag F-04."},
+        {"id": "REQ-10", "requirement": "Provider must serve San Francisco.", "priority": "Must", "origin": "brief", "status": "Open", "official_source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364", "official_source_label": "CSLB License Detail pages (official, State of California)", "source_tier": "official-government", "verified": true, "notes": "8 of 10 verified providers have a San Francisco address of record; 2 are outside the city (see flag F-07)."},
+        {"id": "REQ-11", "requirement": "Provider must demonstrate experience with delicate work in occupied/sensitive environments.", "priority": "Should", "origin": "brief", "status": "Unverified", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "No government source certifies 'experience'. Cannot be verified from an official source — left blank and flagged (F-08). Must be established by direct questioning and references."},
+        {"id": "REQ-12", "requirement": "Provider must have reviewable third-party reviews (Yelp or equivalent).", "priority": "Should", "origin": "brief", "status": "Unverified", "official_source_url": null, "official_source_label": null, "source_tier": "third-party-unverified", "verified": false, "notes": "Yelp returns HTTP 403 to automated retrieval; no government source for ratings. Ratings shown on the Providers page are unverified observations, not confirmed values (F-08)."}
+      ]
+    },
+    {
+      "id": "C-4",
+      "name": "Tenant and occupancy",
+      "requirements": [
+        {"id": "REQ-13", "requirement": "Work is performed in a unit occupied by tenants.", "priority": "Constraint", "origin": "brief", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Drives REQ-14 through REQ-16."},
+        {"id": "REQ-14", "requirement": "Give the tenant reasonable written notice of intent to enter (date, approximate time, purpose); 24 hours is presumed reasonable. Enter only during normal business hours unless the tenant consents at the time.", "priority": "Must", "origin": "official", "status": "Open", "official_source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954", "official_source_label": "California Civil Code section 1954 (official)", "source_tier": "official-government", "verified": true, "notes": "Exceptions: emergency, tenant present and consenting, or abandonment. The right of access may not be used to harass the tenant."},
+        {"id": "REQ-15", "requirement": "Protect the occupied unit: containment, floor and fixture protection, debris removal, and end-of-day cleanup.", "priority": "Should", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Derived from REQ-11/REQ-13. No official source mandates specific methods."},
+        {"id": "REQ-16", "requirement": "If access to the space below is a separate unit or common area, obtain the necessary consent before scheduling.", "priority": "Must", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Not verifiable from an official source — flagged F-12."}
+      ]
+    },
+    {
+      "id": "C-5",
+      "name": "Permits and compliance",
+      "requirements": [
+        {"id": "REQ-17", "requirement": "Determine, from DBI, whether this specific scope requires a plumbing permit before work starts.", "priority": "Must", "origin": "official", "status": "Open", "official_source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/", "official_source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)", "source_tier": "official-government", "verified": true, "notes": "DBI states a permit is needed before cutting into or replacing pipes, particularly pipes that will be covered by a wall. Permit Center help desk: 628-652-4900."},
+        {"id": "REQ-18", "requirement": "If a permit is required, have the plumbing inspected BEFORE the pipes are covered.", "priority": "Must", "origin": "official", "status": "Open", "official_source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/", "official_source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)", "source_tier": "official-government", "verified": true, "notes": "Sequencing requirement: patching drywall before the inspection defeats the inspection."},
+        {"id": "REQ-19", "requirement": "The permit must be pulled by a contractor holding an appropriate licence (C4, C16, C20, C36, C54, B or A, scope-dependent).", "priority": "Must", "origin": "official", "status": "Open", "official_source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/", "official_source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)", "source_tier": "official-government", "verified": true, "notes": "Cross-reference REQ-07: a B+C36 licence satisfies both the permit rule and the all-in-one requirement."},
+        {"id": "REQ-20", "requirement": "Prefer a contractor already registered for Express Permits on PermitSF so the permit can be issued without City staff review.", "priority": "Should", "origin": "derived", "status": "Open", "official_source_url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf/", "official_source_label": "SF.gov — Licensed contractors: register on PermitSF", "source_tier": "official-government", "verified": true, "notes": "Directly addresses the project's scheduling constraint without any off-record workaround."}
+      ]
+    },
+    {
+      "id": "C-6",
+      "name": "Commercial",
+      "requirements": [
+        {"id": "REQ-21", "requirement": "Obtain a written, fixed-price scope covering plumbing AND the drywall open-and-patch, with a change-order clause for concealed damage found after opening.", "priority": "Must", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "None of the three quotes in hand includes a drywall line item — see flag F-09."},
+        {"id": "REQ-22", "requirement": "Re-quote on a single, identical scope so the three numbers are comparable.", "priority": "Must", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Current quotes differ in scope (replacement vs. replacement of lever/plug/spout vs. adjustment) — see flag F-10."},
+        {"id": "REQ-23", "requirement": "Confirm quotes are still valid; the supplied quote date is 8/30/26, about 10 weeks before this review.", "priority": "Must", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "See flag F-01."}
+      ]
+    },
+    {
+      "id": "C-7",
+      "name": "Documentation and privacy",
+      "requirements": [
+        {"id": "REQ-24", "requirement": "Photograph before, during (while open) and after the work; retain the images with the job record.", "priority": "Should", "origin": "derived", "status": "Open", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Also the only practical evidence for REQ-18 if an inspection is involved."},
+        {"id": "REQ-25", "requirement": "No private or sensitive information may appear on any public page, commit, email or shared artifact.", "priority": "Must", "origin": "brief", "status": "Met (by design)", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Applied to this repository: the published site contains only publicly verifiable, officially sourced material. Private scheduling/permit constraints are deliberately excluded and are not stored in any committed file."},
+        {"id": "REQ-26", "requirement": "Every published table row must carry a link to the official source it was verified against; anything unconfirmed must be left blank and flagged.", "priority": "Must", "origin": "brief", "status": "Met (enforced in build)", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "Enforced by tests/test_bathtub_site.py: any row without a source URL is rendered with an UNVERIFIED badge and fails the row check."},
+        {"id": "REQ-27", "requirement": "Reference photographs of the assembly should be attached to the job record.", "priority": "Should", "origin": "brief", "status": "Open — not supplied", "official_source_url": null, "official_source_label": null, "source_tier": "user-provided", "verified": false, "notes": "The brief said photos would be supplied. No images were present anywhere in the repository when this review ran — see flag F-13."}
+      ]
+    }
+  ]
+}

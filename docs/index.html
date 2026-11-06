@@ -1,101 +1,113 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Korea8 — DOE GEMS fault prediction</title>
-<link rel="stylesheet" href="style.css">
+<title>Korea8 — project index</title>
+<link rel="stylesheet" href="assets/bathtub.css">
 <link rel="alternate" type="application/rss+xml" title="Korea8 evidence feed" href="feed.xml">
-</head><body>
-<header>
-  <h1>Korea8 — DOE GEMS Prize Challenge</h1>
-  <p class="sub">Auditable, fail-closed fault-prediction research. Generated 2026-11-04 20:40 UTC.</p>
-</header>
+<style>
+  .land { padding: 30px 0 10px; }
+  .land h2 { font-size: 27px; margin: 0 0 6px; letter-spacing: -.02em; }
+  .land .tagline { color: var(--ink2); margin: 0 0 22px; font-size: 15px; }
+  .proj {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 8px 0 28px;
+  }
+  @media (max-width: 860px) { .proj { grid-template-columns: 1fr; } }
+  .pcard {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 20px 22px; box-shadow: var(--shadow); display: flex; flex-direction: column;
+  }
+  .pcard.primary { border-color: #cddff9; border-left: 4px solid var(--accent); }
+  .pcard.legacy { border-left: 4px solid #c9ced8; }
+  .pcard .eyebrow {
+    font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink3);
+    font-weight: 650; margin-bottom: 8px;
+  }
+  .pcard h3 { margin: 0 0 6px; font-size: 19px; letter-spacing: -.01em; }
+  .pcard p.desc { margin: 0 0 14px; color: var(--ink2); font-size: 14px; }
+  .pcard ul.links { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .pcard ul.links li { font-size: 13.5px; }
+  .pcard ul.links a { text-decoration: none; }
+  .pcard ul.links a:hover { text-decoration: underline; }
+  .pcard .go {
+    margin-top: 16px; display: inline-block; background: var(--accent); color: #fff;
+    text-decoration: none; padding: 9px 16px; border-radius: 7px; font-size: 13.5px; font-weight: 600;
+    align-self: flex-start;
+  }
+  .pcard.legacy .go { background: #6b7280; }
+  .meta { font-size: 12.5px; color: var(--ink3); margin: 10px 0 0; }
+  .frozen {
+    display: inline-block; font-size: 11px; font-weight: 650; text-transform: uppercase;
+    background: #eef1f6; color: var(--ink2); border-radius: 4px; padding: 2px 7px; margin-left: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="land">
+    <h2>Korea8 — project index</h2>
+    <p class="tagline">This repository holds two unrelated projects. Pick one.</p>
+  </div>
 
-<section class="download" id="download">
-  <h2>Download candidate GeoTIFF</h2>
-  <div class="banner" style="background:#b42318">DO NOT SUBMIT — fail-closed (uniqueness witness + holdout below control)</div>
-  <p><a class="btn" href="downloads/korea8_candidate.tif" download>⬇ korea8_candidate.tif</a></p>
-  <p class="mono">SHA-256: c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0<br>Emitted dots: 8316 · HOLDOUT-DTI: 0.0219 (95% CI [0.0177, 0.0261])</p>
-  <p><strong>Verdict:</strong> negative. <a href="submit.html">Submission instructions &rarr;</a> ·
-     <a href="evidence/run_card.json">Run card JSON</a> · <a href="feed.xml">RSS feed</a></p>
-</section>
+  <div class="proj">
+    <div class="pcard primary">
+      <div class="eyebrow">Current project · updated 2026-11-06</div>
+      <h3>Bathtub waste &amp; overflow — trip-lever removal</h3>
+      <p class="desc">
+        A seized trip-lever bath waste-and-overflow assembly in a tenant-occupied San Francisco unit.
+        Ten licensed providers checked directly against the California Contractors State License Board,
+        27 requirements tracked, three quotes compared, and the SF DBI permit and California tenant-entry
+        rules quoted from source.
+      </p>
+      <ul class="links">
+        <li><a href="bathtub/index.html">Dashboard</a> — the whole project on one page</li>
+        <li><a href="bathtub/executive-summary.html">Executive summary</a> — the decision-maker's read</li>
+        <li><a href="bathtub/providers.html">Providers</a> — licences verified, all-in-one capability called out</li>
+        <li><a href="bathtub/estimates.html">Estimates</a> — three quotes, three different scopes</li>
+        <li><a href="bathtub/compliance.html">Permits &amp; compliance</a> — DBI, CSLB, Civil Code 1954</li>
+        <li><a href="bathtub/flagged.html">Flagged for review</a> — 15 items, each with its source</li>
+      </ul>
+      <a class="go" href="bathtub/index.html">Open the dashboard &rarr;</a>
+      <p class="meta">Every row is labelled verified (retrieved from the linked official source) or
+      unverified. Nothing is inferred.</p>
+    </div>
 
-<section>
-  <h2>Result in one paragraph</h2>
-  <p>The pre-registered H1 candidate (off-catalogue accommodation-transfer lineaments) scored
-  <strong>HOLDOUT-DTI 0.0219</strong> (95% CI [0.0177, 0.0261]; 22893 withheld positives),
-  which is <strong>below</strong> the distance-only control (0.0460)
-  and random control (0.0344).
-  This is a <strong>negative result</strong>: the learned geophysical-lineament model does not beat a simple
-  near-fault prior on catalogue recovery. The candidate is unique versus the nine focus sites
-  (overlap ~18%, ρ≈0.001) but fails the literal uniqueness gate against the <code>r13-lattice-s5</code>
-  covering witness (overlap 0.998).
-  The format gate passes and the portal range error is fixed. <strong>No submission was performed.</strong></p>
-</section>
+    <div class="pcard legacy">
+      <div class="eyebrow">Earlier project · 2026-11-04 <span class="frozen">frozen</span></div>
+      <h3>DOE GEMS Prize Challenge <span class="frozen">unrelated</span></h3>
+      <p class="desc">
+        Fault-probability prediction for the U.S. Department of Energy GEMS Prize Challenge, run through
+        DrivenData. Kept exactly as it was published. It has no connection to the bathtub project —
+        the two simply share a repository.
+      </p>
+      <ul class="links">
+        <li><a href="executive-summary.html">Executive summary</a></li>
+        <li><a href="sources.html">Sources</a> · <a href="limitations.html">Limitations</a></li>
+        <li><a href="submit.html">Submit</a> · <a href="submit-howto.html">Submit how-to</a></li>
+        <li><a href="downloads/korea8_candidate.tif">Candidate GeoTIFF</a> (do not submit)</li>
+        <li><a href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif">Legacy candidate TIFF</a></li>
+        <li><a href="evidence/run_card.json">run_card.json</a> ·
+            <a href="evidence/verification.json">verification.json</a></li>
+        <li><a href="evidence/">All evidence JSON</a> · <a href="feed.xml">RSS feed</a></li>
+      </ul>
+      <a class="go" href="executive-summary.html">Open the legacy summary &rarr;</a>
+      <p class="meta">Verdict recorded at publication: negative. No contest submission was performed.
+      Scores on those pages are user-reported, not organizer-confirmed.</p>
+    </div>
+  </div>
 
-<section>
-  <h2>Executive summary — requested sites</h2>
-  <p>Scores below are <strong>USER-REPORTED</strong>, not organizer-confirmed receipts. The live leaderboard is
-  client-rendered and was not independently scraped in this pass; the conflicting targets (0.4413 / 0.3195 / 0.4625)
-  remain unverified.</p>
-  <table><thead><tr><th>Site</th><th>Score (evidence label)</th><th>Dots</th><th>Mechanism</th><th>Uniqueness</th></tr></thead>
-  <tbody><tr><td>GEMSDOE24</td><td>0.2477 <span class='tag'>USER-REPORTED</span></td><td>60,069</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE25</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>d28 dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE27</td><td>0.2449 <span class='tag'>USER-REPORTED</span></td><td>61,328</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE28</td><td>0.2710 <span class='tag'>USER-REPORTED</span></td><td>37,660</td><td>rung30 blind dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE30</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>poisson300m off-cat d28</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE31</td><td>0.2708 <span class='tag'>USER-REPORTED</span></td><td>40,199</td><td>solo-d28</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE32</td><td>0.2778 <span class='tag'>USER-REPORTED</span></td><td>37,654</td><td>h33-h33-2-b2 zeros</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE33</td><td>0.2632 <span class='tag'>USER-REPORTED</span></td><td>41,865</td><td>analog-tip-stepover-r30</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE36</td><td>0.2750 <span class='tag'>USER-REPORTED</span></td><td>38,854</td><td>anderson-geothermal-pinn</td><td>near-duplicate dot family</td></tr>
-<tr class='candidate'><td>Korea8 candidate</td><td>0.0219 <span class='tag'>HOLDOUT-DTI</span></td><td>8316</td><td>H1 accommodation-transfer lineaments</td><td>duplicate/drift vs lattice witness</td></tr></tbody></table>
-  <div class="cards"><div class='card'><h3>GEMSDOE24 <span class='tag'>USER-REPORTED 0.2477</span></h3><p>Dense nan-outside dot family; high dot count, lower precision. Score is dot-pruning arithmetic, not hidden-fault skill.</p></div>
-<div class='card'><h3>GEMSDOE25 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>The d28 dot family that GEMSDOE32 prunes. Parent of the 0.2778 subset.</p></div>
-<div class='card'><h3>GEMSDOE27 <span class='tag'>USER-REPORTED 0.2449</span></h3><p>Near-duplicate of GEMSDOE24 with a different nan-outside encoding; no distinct geological mechanism.</p></div>
-<div class='card'><h3>GEMSDOE28 <span class='tag'>USER-REPORTED 0.2710</span></h3><p>Rung-30 blind placement; fewer dots than 24/27, slightly higher score via reduced zero-credit mass.</p></div>
-<div class='card'><h3>GEMSDOE30 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>Poisson-disc 300 m resampling of the d28 family; identical dot count to GEMSDOE25, same score.</p></div>
-<div class='card'><h3>GEMSDOE31 <span class='tag'>USER-REPORTED 0.2708</span></h3><p>Solo-d28 variant; dot count between 25 and 32, score between them. Same family.</p></div>
-<div class='card'><h3>GEMSDOE32 <span class='tag'>USER-REPORTED 0.2778</span></h3><p>Strict subset of GEMSDOE25 minus 6,436 zero-credit dots 1–2 px from the catalogue. Deleting zero-credit mass raises DTI = TP/(0.2·D+0.8·N). Highest reported focus score; not hidden-fault detection.</p></div>
-<div class='card'><h3>GEMSDOE33 <span class='tag'>USER-REPORTED 0.2632</span></h3><p>Analog tip/stepover placement at r30; geologically motivated naming but dot set overlaps the shared family.</p></div>
-<div class='card'><h3>GEMSDOE36 <span class='tag'>USER-REPORTED 0.2750</span></h3><p>Anderson geothermal PINN branding; dot count near GEMSDOE32, score just below it. Same near-duplicate family.</p></div></div>
-</section>
+  <div class="note note-info">
+    <p><strong>Note on the two projects.</strong> The GEMS pages were generated by earlier sessions and are
+    left byte-for-byte as published so nothing that was already live breaks. The bathtub project is built
+    from <code>data/bathtub/*.json</code> by <code>scripts/build_bathtub_site.py</code> and published under
+    <code>/bathtub/</code>. If you only care about the bathtub job, go straight to the dashboard.</p>
+  </div>
+</div>
 
-<section>
-  <h2>Why GEMSDOE32 reported 0.2778</h2>
-  <p>GEMSDOE32 is a strict subset of GEMSDOE25's 44,090 dots with 6,436 zero-credit dots (1–2 px from the
-  catalogue) removed. For a binary map, DTI = TP / (0.2·D + 0.8·N); deleting zero-credit mass strictly raises
-  the score. This is dot-pruning arithmetic, not hidden-fault detection skill. A higher-scoring <em>distinct</em>
-  strategy is <strong>not supported</strong> by this session's holdout evidence.</p>
-</section>
-
-<section>
-  <h2>Verification</h2>
-  <p>Independent release verification: <strong>PASS</strong>
-  (21 checks, 0 failed).
-  <a href="evidence/verification.json">verification.json</a></p>
-  <ul>
-    <li><a href="evidence/run_card.json">run_card.json</a></li>
-    <li><a href="evidence/holdout.json">holdout.json</a></li>
-    <li><a href="evidence/uniqueness_final.json">uniqueness_final.json</a></li>
-    <li><a href="evidence/format_report.json">format_report.json</a></li>
-    <li><a href="evidence/canary.json">canary.json</a></li>
-    <li><a href="evidence/data_restore_receipt.json">data_restore_receipt.json</a></li>
-  </ul>
-</section>
-
-<section>
-  <h2>Prior session (legacy template, preserved)</h2>
-  <p>The previous parallel session produced a 601×601 stepover-relay structural prior
-  (<code>submissions/korea8-h1-stepover-relay-prior-…tif</code>). It was format-valid but
-  <strong>not conformed to the official 3730×3292 grid</strong> and not holdout-validated
-  (data was unavailable in that sandbox). Verdict: negative. Preserved for provenance.</p>
-  <ul>
-    <li><a href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif">Legacy candidate TIFF</a> (601×601 template)</li>
-    <li><a href="executive-summary.html">Prior executive summary</a></li>
-    <li><a href="limitations.html">Prior limitations</a> · <a href="sources.html">Prior sources</a> · <a href="submit-howto.html">Prior submit how-to</a></li>
-  </ul>
-</section>
-
-<footer><p>No contest submission was performed. Lane unspecified in brief; pre-registered H1.
-Data mirrors are hash-pinned but not organizer-authenticated. Catalogue-fit holdout is not a leaderboard proxy
-(staff mask known faults; sibling measured ρ≈+0.143). See <a href="evidence/verification.json">verification</a>.</p></footer>
-</body></html>
+<footer class="foot wrap">
+  <p>Repository: <a href="https://github.com/karagemop466-tech/Korea8" target="_blank" rel="noopener">github.com/karagemop466-tech/Korea8</a>
+  · Published with GitHub Pages.</p>
+</footer>
+</body>
+</html>
