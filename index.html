@@ -1,101 +1,202 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Korea8 — DOE GEMS fault prediction</title>
-<link rel="stylesheet" href="style.css">
-<link rel="alternate" type="application/rss+xml" title="Korea8 evidence feed" href="feed.xml">
-</head><body>
-<header>
-  <h1>Korea8 — DOE GEMS Prize Challenge</h1>
-  <p class="sub">Auditable, fail-closed fault-prediction research. Generated 2026-11-04 20:40 UTC.</p>
+<title>Bathtub Overflow Trip Lever Project — Internal Planning Site</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="trip-lever/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>Bathtub Wastewater Overflow Trip Lever — Project Dashboard</h1>
+    <span class="tag">Internal planning site · San Francisco · Data verified 2026-11-06</span>
+  </div>
 </header>
 
-<section class="download" id="download">
-  <h2>Download candidate GeoTIFF</h2>
-  <div class="banner" style="background:#b42318">DO NOT SUBMIT — fail-closed (uniqueness witness + holdout below control)</div>
-  <p><a class="btn" href="downloads/korea8_candidate.tif" download>⬇ korea8_candidate.tif</a></p>
-  <p class="mono">SHA-256: c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0<br>Emitted dots: 8316 · HOLDOUT-DTI: 0.0219 (95% CI [0.0177, 0.0261])</p>
-  <p><strong>Verdict:</strong> negative. <a href="submit.html">Submission instructions &rarr;</a> ·
-     <a href="evidence/run_card.json">Run card JSON</a> · <a href="feed.xml">RSS feed</a></p>
-</section>
+<nav class="topnav">
+  <div class="wrap">
+    <a class="active" href="./">Dashboard</a>
+    <a href="trip-lever/executive-summary.html">Executive Summary</a>
+    <a href="trip-lever/requirements.html">Requirements</a>
+    <a href="trip-lever/estimates.html">Estimates</a>
+    <a href="trip-lever/contractors.html">Contractors</a>
+    <a href="trip-lever/background.html">Technical Background</a>
+    <a href="trip-lever/methodology.html">Methodology &amp; Sources</a>
+    <a href="trip-lever/flagged-for-review.html">Flagged for Review</a>
+  </div>
+</nav>
 
-<section>
-  <h2>Result in one paragraph</h2>
-  <p>The pre-registered H1 candidate (off-catalogue accommodation-transfer lineaments) scored
-  <strong>HOLDOUT-DTI 0.0219</strong> (95% CI [0.0177, 0.0261]; 22893 withheld positives),
-  which is <strong>below</strong> the distance-only control (0.0460)
-  and random control (0.0344).
-  This is a <strong>negative result</strong>: the learned geophysical-lineament model does not beat a simple
-  near-fault prior on catalogue recovery. The candidate is unique versus the nine focus sites
-  (overlap ~18%, ρ≈0.001) but fails the literal uniqueness gate against the <code>r13-lattice-s5</code>
-  covering witness (overlap 0.998).
-  The format gate passes and the portal range error is fixed. <strong>No submission was performed.</strong></p>
-</section>
+<main class="wrap">
+  <div class="hero">
+    <h2>Find a licensed pro to remove a stuck bathtub waste &amp; overflow trip lever</h2>
+    <p>The trip lever is stuck inside hidden plumbing behind the wall in an occupied unit.
+       Five-plus licensed plumbers have declined to remove it from above for fear of destroying
+       the hidden plumbing; all recommend working from below, which would require opening the
+       drywall ceiling of the storage unit underneath.</p>
+    <p><strong>Goal:</strong> collect, organize, and analyze all requirements, compare the quotes
+       already in hand, and identify licensed San Francisco providers — ideally one team for both
+       plumbing <em>and</em> drywall — with real review histories for this delicate work.</p>
+  </div>
 
-<section>
-  <h2>Executive summary — requested sites</h2>
-  <p>Scores below are <strong>USER-REPORTED</strong>, not organizer-confirmed receipts. The live leaderboard is
-  client-rendered and was not independently scraped in this pass; the conflicting targets (0.4413 / 0.3195 / 0.4625)
-  remain unverified.</p>
-  <table><thead><tr><th>Site</th><th>Score (evidence label)</th><th>Dots</th><th>Mechanism</th><th>Uniqueness</th></tr></thead>
-  <tbody><tr><td>GEMSDOE24</td><td>0.2477 <span class='tag'>USER-REPORTED</span></td><td>60,069</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE25</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>d28 dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE27</td><td>0.2449 <span class='tag'>USER-REPORTED</span></td><td>61,328</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE28</td><td>0.2710 <span class='tag'>USER-REPORTED</span></td><td>37,660</td><td>rung30 blind dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE30</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>poisson300m off-cat d28</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE31</td><td>0.2708 <span class='tag'>USER-REPORTED</span></td><td>40,199</td><td>solo-d28</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE32</td><td>0.2778 <span class='tag'>USER-REPORTED</span></td><td>37,654</td><td>h33-h33-2-b2 zeros</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE33</td><td>0.2632 <span class='tag'>USER-REPORTED</span></td><td>41,865</td><td>analog-tip-stepover-r30</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE36</td><td>0.2750 <span class='tag'>USER-REPORTED</span></td><td>38,854</td><td>anderson-geothermal-pinn</td><td>near-duplicate dot family</td></tr>
-<tr class='candidate'><td>Korea8 candidate</td><td>0.0219 <span class='tag'>HOLDOUT-DTI</span></td><td>8316</td><td>H1 accommodation-transfer lineaments</td><td>duplicate/drift vs lattice witness</td></tr></tbody></table>
-  <div class="cards"><div class='card'><h3>GEMSDOE24 <span class='tag'>USER-REPORTED 0.2477</span></h3><p>Dense nan-outside dot family; high dot count, lower precision. Score is dot-pruning arithmetic, not hidden-fault skill.</p></div>
-<div class='card'><h3>GEMSDOE25 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>The d28 dot family that GEMSDOE32 prunes. Parent of the 0.2778 subset.</p></div>
-<div class='card'><h3>GEMSDOE27 <span class='tag'>USER-REPORTED 0.2449</span></h3><p>Near-duplicate of GEMSDOE24 with a different nan-outside encoding; no distinct geological mechanism.</p></div>
-<div class='card'><h3>GEMSDOE28 <span class='tag'>USER-REPORTED 0.2710</span></h3><p>Rung-30 blind placement; fewer dots than 24/27, slightly higher score via reduced zero-credit mass.</p></div>
-<div class='card'><h3>GEMSDOE30 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>Poisson-disc 300 m resampling of the d28 family; identical dot count to GEMSDOE25, same score.</p></div>
-<div class='card'><h3>GEMSDOE31 <span class='tag'>USER-REPORTED 0.2708</span></h3><p>Solo-d28 variant; dot count between 25 and 32, score between them. Same family.</p></div>
-<div class='card'><h3>GEMSDOE32 <span class='tag'>USER-REPORTED 0.2778</span></h3><p>Strict subset of GEMSDOE25 minus 6,436 zero-credit dots 1–2 px from the catalogue. Deleting zero-credit mass raises DTI = TP/(0.2·D+0.8·N). Highest reported focus score; not hidden-fault detection.</p></div>
-<div class='card'><h3>GEMSDOE33 <span class='tag'>USER-REPORTED 0.2632</span></h3><p>Analog tip/stepover placement at r30; geologically motivated naming but dot set overlaps the shared family.</p></div>
-<div class='card'><h3>GEMSDOE36 <span class='tag'>USER-REPORTED 0.2750</span></h3><p>Anderson geothermal PINN branding; dot count near GEMSDOE32, score just below it. Same near-duplicate family.</p></div></div>
-</section>
+  <div class="grid" style="margin-bottom:1.3rem;">
+    <div class="stat"><div class="k">Quotes collected</div><div class="v">3</div><div class="s">Owner-provided, dated 2026-08-30</div></div>
+    <div class="stat"><div class="k">Quote range</div><div class="v">$135 – $614</div><div class="s">Scope differs per quote — see Estimates</div></div>
+    <div class="stat"><div class="k">Providers researched &amp; sourced</div><div class="v">7</div><div class="s">Official sites + review pages</div></div>
+    <div class="stat"><div class="k">Flags logged</div><div class="v">10</div><div class="s">2 resolved in-session · see Flagged for Review</div></div>
+  </div>
 
-<section>
-  <h2>Why GEMSDOE32 reported 0.2778</h2>
-  <p>GEMSDOE32 is a strict subset of GEMSDOE25's 44,090 dots with 6,436 zero-credit dots (1–2 px from the
-  catalogue) removed. For a binary map, DTI = TP / (0.2·D + 0.8·N); deleting zero-credit mass strictly raises
-  the score. This is dot-pruning arithmetic, not hidden-fault detection skill. A higher-scoring <em>distinct</em>
-  strategy is <strong>not supported</strong> by this session's holdout evidence.</p>
-</section>
+  <div class="notice warn">
+    <p><strong>Internal use only.</strong> This site is a planning document. It contains no
+       private addresses, tenant details, or other sensitive information. Entry points are
+       <code>noindex</code>ed. Please do not forward outside the project team.</p>
+  </div>
 
-<section>
-  <h2>Verification</h2>
-  <p>Independent release verification: <strong>PASS</strong>
-  (21 checks, 0 failed).
-  <a href="evidence/verification.json">verification.json</a></p>
-  <ul>
-    <li><a href="evidence/run_card.json">run_card.json</a></li>
-    <li><a href="evidence/holdout.json">holdout.json</a></li>
-    <li><a href="evidence/uniqueness_final.json">uniqueness_final.json</a></li>
-    <li><a href="evidence/format_report.json">format_report.json</a></li>
-    <li><a href="evidence/canary.json">canary.json</a></li>
-    <li><a href="evidence/data_restore_receipt.json">data_restore_receipt.json</a></li>
-  </ul>
-</section>
+  <div class="card">
+    <h3>Quotes at a glance (owner-provided · 2026-08-30)</h3>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Provider</th><th>Quoted scope (as provided)</th><th class="num">Amount</th><th>Amount verification</th><th>Provider verified</th><th>Source</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Expert Plumbing Solutions</td>
+            <td>Replacing waste and overflow</td>
+            <td class="num">$614</td>
+            <td><span class="badge owner">OWNER-PROVIDED</span></td>
+            <td><span class="badge verified">VERIFIED</span> official site + Yelp</td>
+            <td class="src"><a href="https://www.eplumbingsolutions.com/">Site</a><a href="https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco">Yelp</a></td>
+          </tr>
+          <tr>
+            <td>Bay Area Plumbing</td>
+            <td>Replace lever for the bathtub plug and spout with diverter, incl. labor and materials</td>
+            <td class="num">$550</td>
+            <td><span class="badge owner">OWNER-PROVIDED</span></td>
+            <td><span class="badge verified">VERIFIED</span> official site + Yelp</td>
+            <td class="src"><a href="https://www.bayareaplumbingsf.com/">Site</a><a href="https://www.yelp.com/biz/bay-area-plumbing-san-francisco">Yelp</a></td>
+          </tr>
+          <tr>
+            <td>Fast Response Plumbing &amp; Rooter</td>
+            <td>Repair or adjust bathtub wastewater plunger handle</td>
+            <td class="num">$135</td>
+            <td><span class="badge owner">OWNER-PROVIDED</span></td>
+            <td><span class="badge verified">VERIFIED</span> official site + Yelp</td>
+            <td class="src"><a href="https://www.fastresponseplumbingsf.com/">Site</a><a href="https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3">Yelp</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Quote amounts came from the project owner and cannot be confirmed from an
+       official public source, so they are labeled <span class="badge owner">OWNER-PROVIDED</span>
+       and are also listed on the <a href="trip-lever/flagged-for-review.html">Flagged for Review</a> page.
+       Company identities, websites, license numbers (as published by the companies), and review
+       pages were verified separately — see <a href="trip-lever/estimates.html">Estimates</a>.</p>
+  </div>
 
-<section>
-  <h2>Prior session (legacy template, preserved)</h2>
-  <p>The previous parallel session produced a 601×601 stepover-relay structural prior
-  (<code>submissions/korea8-h1-stepover-relay-prior-…tif</code>). It was format-valid but
-  <strong>not conformed to the official 3730×3292 grid</strong> and not holdout-validated
-  (data was unavailable in that sandbox). Verdict: negative. Preserved for provenance.</p>
-  <ul>
-    <li><a href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif">Legacy candidate TIFF</a> (601×601 template)</li>
-    <li><a href="executive-summary.html">Prior executive summary</a></li>
-    <li><a href="limitations.html">Prior limitations</a> · <a href="sources.html">Prior sources</a> · <a href="submit-howto.html">Prior submit how-to</a></li>
-  </ul>
-</section>
+  <div class="card">
+    <h3>The three ways this can be done</h3>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Option</th><th>What happens</th><th>Wall / ceiling opening?</th><th>Status for this project</th><th>Background source</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>A — From above</strong> (preferred)</td>
+            <td>Remove the trip-lever plate and extract the linkage/plunger through the overflow opening.</td>
+            <td>None</td>
+            <td><span class="badge unverified">BLOCKED (owner-reported)</span> 5+ licensed plumbers declined, citing risk to hidden plumbing</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">This Old House</a></td>
+          </tr>
+          <tr>
+            <td><strong>B — From below</strong></td>
+            <td>Open the drywall ceiling of the storage unit below, access and replace the full waste &amp; overflow assembly, then patch the ceiling.</td>
+            <td>Yes — ceiling below</td>
+            <td><span class="badge info">REQUIRES ALL-IN-ONE CREW</span> plumbing + drywall in one team preferred</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">This Old House</a></td>
+          </tr>
+          <tr>
+            <td><strong>C — Convert stopper type</strong></td>
+            <td>If the internals can be extracted, cap with a blank overflow plate and fit a lift-and-turn / push-pull stopper instead.</td>
+            <td>Usually none</td>
+            <td><span class="badge owner">UNPROVEN HERE</span> depends on whether the stuck internals can be pulled</td>
+            <td class="src"><a href="https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/">Family Handyman</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Details, sources, and caveats on the
+      <a href="trip-lever/background.html">Technical Background</a> page.</p>
+  </div>
 
-<footer><p>No contest submission was performed. Lane unspecified in brief; pre-registered H1.
-Data mirrors are hash-pinned but not organizer-authenticated. Catalogue-fit holdout is not a leaderboard proxy
-(staff mask known faults; sibling measured ρ≈+0.143). See <a href="evidence/verification.json">verification</a>.</p></footer>
-</body></html>
+  <div class="card">
+    <h3>Shortlist — who fits the “all-in-one, occupied-unit, licensed” profile</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Provider</th><th>License — verified vs official CSLB records 2026-11-06</th><th>Reviews</th><th>Why they fit</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Ace Plumbing &amp; Rooter</td>
+            <td><span class="mono">#829071</span> — <span class="badge verified">ACTIVE</span> C-36 + <strong>B General Building</strong> + A, C-4, C-16, C-10</td>
+            <td>Yelp ~1,498 reviews</td>
+            <td>Only researched provider whose single ACTIVE license covers plumbing (C-36) <em>and</em> general building (B) — the strongest all-in-one licensing profile for plumbing + drywall.</td>
+            <td class="src"><a href="https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco">Yelp</a><a href="https://www.cslb.ca.gov/829071">CSLB</a></td>
+          </tr>
+          <tr>
+            <td>24/7 SF Handyman &amp; Remodeling Service</td>
+            <td><span class="mono">#1105133</span> — <span class="badge verified">ACTIVE</span> B-2 Residential Remodeling</td>
+            <td>Google 4.7★ (73)</td>
+            <td>The only provider advertising <em>one team for plumbing, electrical, doors, drywall</em> plus tenant-unit work orders. Licensed contractor — but B-2, not C-36 plumbing; ask who holds the C-36.</td>
+            <td class="src"><a href="https://24sfhandyman.com/">Site</a><a href="https://www.cslb.ca.gov/1105133">CSLB</a></td>
+          </tr>
+          <tr>
+            <td>Fast Response Plumbing &amp; Rooter</td>
+            <td><span class="mono">#1024971</span> — <span class="badge verified">ACTIVE</span> C-36 Plumbing</td>
+            <td>Yelp 4.8★ (906)</td>
+            <td>Lowest quote on the smallest-scope option; serves homeowners, HOAs, property managers.</td>
+            <td class="src"><a href="https://www.fastresponseplumbingsf.com/">Site</a><a href="https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3">Yelp</a><a href="https://www.cslb.ca.gov/1024971">CSLB</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Full researched roster (7 providers) with per-row sources and CSLB record links:
+      <a href="trip-lever/contractors.html">Contractors</a>. Review counts are point-in-time
+      snapshots retrieved 2026-11-06 and will drift — flagged on
+      <a href="trip-lever/flagged-for-review.html">Flagged for Review</a>.</p>
+  </div>
+
+  <div class="card">
+    <h3>Companion brief from parallel sessions</h3>
+    <p class="small">Two other agent sessions independently researched the same repair. Their
+       canonical, source-checked brief lives at
+       <a href="bathroom-overflow/index.html">bathroom-overflow/index.html</a> (the earlier
+       <code>docs/bathtub-overflow/</code> memo routes redirect to it). The deliverables are
+       complementary: that brief covers engagement strategy and license checks; this site adds the
+       named-provider roster with per-row sources, the quote comparison, and the technical
+       background. All three efforts are logged in
+       <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md">COORDINATION.md</a>
+       and on <a href="trip-lever/flagged-for-review.html#f7">Flag F7</a>.</p>
+  </div>
+
+  <div class="card">
+    <h3>Project history</h3>
+    <p class="small">This repository previously hosted an unrelated project (a DOE GEMS prize-challenge
+       evidence site). That legacy content is preserved and still served — see the archived copy at
+       <a href="docs/index.html">docs/index.html</a> — while this project now owns the landing page.
+       Full note: <a href="trip-lever/flagged-for-review.html#f7">Flag F7</a> and
+       <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md">COORDINATION.md</a>.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Internal use only.</strong> Planning information for the trip-lever project; no
+       private or sensitive information is published on this site.</p>
+    <p>Verified 2026-11-06 · Sources and method: <a href="trip-lever/methodology.html">Methodology &amp; Sources</a> ·
+       <a href="https://github.com/karagemop466-tech/Korea8">Repository</a></p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Technical Background — Bathtub Overflow Trip Lever Project</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>Bathtub Wastewater Overflow Trip Lever — Project Dashboard</h1>
+    <span class="tag">Internal planning site · San Francisco · Data verified 2026-11-06</span>
+  </div>
+</header>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="../">Dashboard</a>
+    <a href="executive-summary.html">Executive Summary</a>
+    <a href="requirements.html">Requirements</a>
+    <a href="estimates.html">Estimates</a>
+    <a href="contractors.html">Contractors</a>
+    <a class="active" href="background.html">Technical Background</a>
+    <a href="methodology.html">Methodology &amp; Sources</a>
+    <a href="flagged-for-review.html">Flagged for Review</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="hero">
+    <h2>Technical background — what the stuck part is, and why access is hard</h2>
+    <p>This page summarizes how a trip-lever bath waste works and what the trade literature says
+       about removing or replacing it when it seizes — with a source link for every claim. It is
+       context for the option analysis, not a how-to for this job.</p>
+  </div>
+
+  <div class="card" id="anatomy">
+    <h3>1 · Anatomy: trip lever = part of a “waste &amp; overflow” assembly</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Component</th><th>What it does</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Overflow plate + trip lever</td>
+            <td>The faceplate at tub level with the lever; the lever raises/lowers a plunger inside the overflow pipe. Behind the plate is a linkage connected to a plunger: lever up = plunger up = tub drains; lever down = plunger seats = tub holds water.</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">This Old House — How To Replace a Tub Drain</a></td>
+          </tr>
+          <tr>
+            <td>Waste &amp; overflow assembly</td>
+            <td>The pipe assembly under/behind the tub that connects the drain (shoe/strainer) and the overflow to the trap. The trade name for the whole unit is a Waste &amp; Overflow Assembly.</td>
+            <td class="src"><a href="https://diy.stackexchange.com/questions/282187/can-i-replace-this-trip-lever-drain-stopper-combo-by-myself">DIY Stack Exchange — trade terminology</a> · <a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf">Watco installation sheet (manufacturer PDF)</a></td>
+          </tr>
+          <tr>
+            <td>Linkage + plunger</td>
+            <td>Adjustable brass linkage with a cylindrical plunger that slides inside the overflow pipe; adjustment sets tub water depth. Extracted through the overflow opening after removing two plate screws — <em>when it is not seized</em>.</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">This Old House</a> · <a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf">Watco PDF</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>2 · Why the lever can be impossible to remove from above</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Cause documented in trade/DIY literature</th><th>Consequence for removal</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Decades of corrosion can fuse the plunger/bell to the pipe (a documented case: “the little bell on the inside was completely fused with the pipe and probably had been for a couple decades”).</td>
+            <td>Linkage will not pull out; the practical fix reported was replacing the whole waste &amp; overflow — which in that case was done by going “thru the drywall.”</td>
+            <td class="src"><a href="https://www.reddit.com/r/Plumbing/comments/170tvds/stuck_trip_lever_old_bathtub_wouldnt_turn_up_or/">r/Plumbing thread (documented case)</a></td>
+          </tr>
+          <tr>
+            <td>Damage risk: forcing the removal can destroy the pipe assembly under/behind the tub; the standard warning is that a damaged assembly means “opening up the wall behind or beside the tub” or access from below.</td>
+            <td>This matches the owner-reported position of the 5+ plumbers who declined the from-above attempt.</td>
+            <td class="src"><a href="https://diy.stackexchange.com/questions/282187/can-i-replace-this-trip-lever-drain-stopper-combo-by-myself">DIY Stack Exchange</a> · <a href="https://www.homeownershub.com/maintenance/trip-lever-bathtub-drain-screws-are-corroded-and-stuck-807699-.htm">HomeOwnersHub thread</a></td>
+          </tr>
+          <tr>
+            <td>Even the plate screws themselves can be corroded solid; trade-forum guidance covers cutting/acid techniques — and confirms full replacement requires access from behind or below.</td>
+            <td>Supports sequencing: non-invasive attempts first, structural access only as a deliberate step.</td>
+            <td class="src"><a href="https://www.homeownershub.com/maintenance/trip-lever-bathtub-drain-screws-are-corroded-and-stuck-807699-.htm">HomeOwnersHub thread</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">Forum/DIY threads are practitioner reports, not official standards; they are
+       cited only as documented case history, clearly separated from manufacturer and publisher
+       guidance above.</p>
+  </div>
+
+  <div class="card" id="options">
+    <h3>3 · The three options in trade terms</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Option</th><th>What trade literature says</th><th>Access needed</th><th>Sources</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>A. Extract from above</strong></td>
+            <td>Standard first step: remove the two overflow-plate screws and “carefully pull out the brass waste-and-overflow linkage”; adjust or replace the linkage. Works when the mechanism moves freely.</td>
+            <td>None — through the overflow opening</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">This Old House</a></td>
+          </tr>
+          <tr>
+            <td><strong>B. Replace assembly from below/behind</strong></td>
+            <td>Full replacement of a waste &amp; overflow requires access to the underside (“From below, align the rubber gasket and drain elbow with the shoe”); trade literature states a damaged assembly “will be looking at opening up the wall behind or beside the tub” or gaining access from below.</td>
+            <td>Ceiling opening below, or wall opening behind/beside the tub</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">This Old House</a> · <a href="https://diy.stackexchange.com/questions/282187/can-i-replace-this-trip-lever-drain-stopper-combo-by-myself">DIY Stack Exchange</a></td>
+          </tr>
+          <tr>
+            <td><strong>C. Convert the stopper type</strong></td>
+            <td>Convert a trip-lever tub to a lift-and-turn (or push-pull) stopper with a blank overflow plate; “unless there's an internal obstruction preventing the removal of the innards of the existing trip lever drain, there shouldn't be a need to either remove the tub or gain access behind the wall.”</td>
+            <td>None — if the seized internals can be pulled</td>
+            <td class="src"><a href="https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/">Family Handyman — conversion guide</a> · <a href="https://www.reddit.com/r/Plumbing/comments/5evbua/bathtub_internal_stopper_drain_is_stuck_and_disconnected/">r/Plumbing (practitioner note)</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small"><strong>Note on from-above retrofit products:</strong> a search was made for
+       top-install waste &amp; overflow retrofits (e.g., WingTite). The verified manufacturer page
+       shows WingTite is a top-install drain for <em>fiberglass/plastic shower stalls</em>, not for
+       bathtub waste &amp; overflow — it is <strong>not</strong> applicable here
+       (<a href="https://www.wingtite.com/pages/about-wingtite">WingTite official page</a>). No
+       manufacturer source was found for a from-above full waste &amp; overflow retrofit; if a
+       provider claims one, ask for the exact product and its manufacturer instructions.</p>
+  </div>
+
+  <div class="card">
+    <h3>4 · Manufacturer documentation</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Document</th><th>What it establishes</th><th>Link</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Watco Manufacturing — Trip Lever bath waste installation instructions (Model 500/501/600 series)</td>
+            <td>Official manufacturer steps and part names for trip-lever bath wastes (overflow plate, linkage, drain elbow, gaskets), including adjustment and slip-lock variants.</td>
+            <td class="src"><a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf">watcomfg.com PDF</a></td>
+          </tr>
+          <tr>
+            <td>Watco product index</td>
+            <td>Shows the trip-lever product family (600-TL, 500-TL, TurnStyle, Slip Lock) — useful when asking providers exactly <em>which</em> replacement assembly they plan to install.</td>
+            <td class="src"><a href="https://www.watcomfg.com/watco/">watcomfg.com</a></td>
+          </tr>
+          <tr>
+            <td>This Old House — How To Replace a Tub Drain (incl. video transcript)</td>
+            <td>Trade-publisher procedure for removing and replacing a tub drain/waste &amp; overflow, including which steps need a person below the tub.</td>
+            <td class="src"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain">thisoldhouse.com</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>5 · Verifying a California plumber/contractor</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Check</th><th>How</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>License status &amp; classification</td>
+            <td>Use the state's official CSLB “Check a License” tool: search by license number for an exact match; confirm status is active and the classification (e.g., C-36 Plumbing) covers the work.</td>
+            <td class="src"><a href="https://www.cslb.ca.gov/">cslb.ca.gov — CSLB “Check a License”</a></td>
+          </tr>
+          <tr>
+            <td>License numbers on this site</td>
+            <td>Reproduced from each provider's own website/Yelp profile; the CSLB portal is interactive and could not be machine-checked in this session, so each number needs one manual confirmation.</td>
+            <td class="src"><a href="flagged-for-review.html#f3">Flag F3</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Internal use only.</strong> Planning information for the trip-lever project; no
+       private or sensitive information is published on this site.</p>
+    <p>Verified 2026-11-06 · <a href="methodology.html">Methodology &amp; Sources</a> ·
+       <a href="../">Dashboard</a> ·
+       <a href="https://github.com/karagemop466-tech/Korea8">Repository</a></p>
+  </div>
+</footer>
+</body>
+</html>
