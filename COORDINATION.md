@@ -394,3 +394,94 @@ This session has not edited another session's site files.
 | Merge result | (recorded at merge time) |
 | Pages deploy | (recorded after deploy verification) |
 | Live URL | <https://karagemop466-tech.github.io/Korea8/> |
+
+---
+
+## Session `arena/b10e8d0e-korea8` — independent verification dossier (`bathtub/`)
+
+| Task | Status | Owner / session | Files in scope |
+|---|---|---|---|
+| Independent CSLB verification of 10 providers | done | `arena/b10e8d0e-korea8` | `data/bathtub/providers.json` |
+| Requirements capture (27 requirements, 7 categories) | done | `arena/b10e8d0e-korea8` | `data/bathtub/requirements.json` |
+| Quotes analysis (3 user-supplied quotes) | done | `arena/b10e8d0e-korea8` | `data/bathtub/estimates.json` |
+| Permit / licensing / tenant-entry rules (16 rows) | done | `arena/b10e8d0e-korea8` | `data/bathtub/regulations.json` |
+| Mechanism facts from manufacturer documentation (10 rows) | done | `arena/b10e8d0e-korea8` | `data/bathtub/technical.json` |
+| Source registry (30 URLs with retrieval status) | done | `arena/b10e8d0e-korea8` | `data/bathtub/url_registry.json` |
+| Dossier site (11 pages) + build + link check | done | `arena/b10e8d0e-korea8` | `bathtub/**`, `scripts/build_bathtub_site.py`, `tests/test_bathtub_site.py` |
+| Executive summary | done | `arena/b10e8d0e-korea8` | `EXECUTIVE_SUMMARY_bathtub.md` |
+
+### Scope note — deliberate non-overlap
+
+This session started from a base commit that predated every other bathtub session, so it
+initially created its own `COORDINATION.md` and published under `docs/bathtub/`. On merging
+`origin/main` the duplication was found. Corrections applied:
+
+- `COORDINATION.md` — the earlier boards are kept in full; this section is appended.
+- `docs/index.html` — reverted to the version on `main`. It is linked from the root dashboard as
+  the legacy DOE GEMS archive and must stay that way.
+- published output moved out of `docs/` (which the root dashboard treats as the legacy archive)
+  to a root-level `bathtub/` directory, matching how `trip-lever/`, `bathroom-overflow/` and
+  `bathtub-overflow/` are published.
+- No page owned by another session was modified.
+
+### Sources checked (all retrieved directly on 2026-11-06)
+
+- CSLB licence detail pages: 977638, 757796, 749536, 1024971, 1115649, 829071, 379364, 392967, 1009195, 966337
+- CSLB licence-check entry point; CSLB C-36 and B classification pages
+- SF.gov / DBI: apply-plumbing-and-mechanical-permit, apply-kitchen-or-bath-remodel-permit,
+  DBI Permit Services, PermitSF contractor (AUTH) registration
+- San Francisco code library: Plumbing Code §104.0, Building Code §106A (2026 S-96)
+- California Legislative Information: BPC §7048, Civil Code §1954
+- Watco Manufacturing Co. Trip Lever Installation Instructions (500-501-600TL sheet)
+
+### Verification performed
+
+Three passes; report at `artifacts/bathtub_linkcheck.json` and `bathtub/data/linkcheck.json`.
+
+1. Provenance — 116 dataset rows; 30 URLs registered, 22 retrieved, 4 blocked (Yelp HTTP 403),
+   4 read only via search excerpt and never used for verification.
+2. Cross-check — third-party values compared with the licensing authority. Surfaced F-02 (BBB
+   expiry conflicts with CSLB), F-03 (adverse CSLB status entry), F-04 (three workers'-comp
+   exempt licences).
+3. Build + link — `python scripts/build_bathtub_site.py` rebuilds 11 pages then runs
+   `tests/test_bathtub_site.py`. **PASS — 0 problems, 16 warnings**; 212 internal links OK.
+
+Enforced rule: a row only renders a `verified` badge when its source URL is in
+`url_registry.json` with `retrieval_status == "retrieved"`. Prices and ratings have no official
+source and are published as unverified.
+
+### Findings this session adds that were not on `main` at merge time
+
+- **CSLB #749536 (Save-On-Interior) holds B + C-36 at the same address and phone as #757796
+  (Bay Area Plumbing)** — the operator who quoted $550 already controls a licence covering the
+  general-building/drywall side. This is the single most actionable item in this dossier.
+- **CSLB #392967 (Ayoob & Peery Plumbing Co Inc)** holds B + C-36 with continuous licensure
+  since 1980 — the longest-established single-licence all-in-one candidate found.
+- **BPC §7048 now sets the unlicensed-contracting threshold at $1,000, not $500** (amended by
+  Stats. 2025 Ch. 67 (AB 1170), effective 2026-01-01), and the exemption expressly does not
+  apply when the work requires a building permit.
+- **BPC §7057(b)** — a B licence may take a prime contract for a project involving other trades
+  when the contract requires at least two unrelated trades, or the contractor holds the
+  specialty classification, or subcontracts it. Plumbing + drywall is two unrelated trades.
+- **Civil Code §1954** — the tenant-entry notice rule (reasonable written notice, 24 hours
+  presumed reasonable, normal business hours).
+- **Watco 500-501-600TL instruction sheet** — the manufacturer's own service path reaches every
+  working part through the overflow opening; step 7 is literally "remove overflow plate and drop
+  cylinder assembly and readjust".
+
+### Requests to other sessions
+
+- **To the owner of the root dashboard (`index.html`, `providers.html`, `flagged-for-review.html`):
+  please consider adding a link to `bathtub/index.html`** (labelled, for example, "independent
+  verification dossier (session b10e8d0e)") in the footer's "Related briefs (parallel sessions)"
+  line. This session did not edit those files because another session owns them.
+- If the integrated dashboard adopts the findings above, the `bathtub/` dossier can then be
+  redirected or retired; it is self-contained and safe to remove without breaking anything else.
+
+### Standing instruction honoured
+
+The brief contained scheduling and permit background the requester asked to keep private and
+never publish. **None of it was written to this repository or published.** The dossier states
+only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
+practical point that the normal permit route is fast for contractors registered for Express
+Permits on PermitSF, which addresses the timing concern without any off-record workaround.

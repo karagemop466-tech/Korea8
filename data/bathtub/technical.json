@@ -1,0 +1,109 @@
+{
+  "dataset": "technical",
+  "title": "The assembly, the failure mode and the access options",
+  "compiled_utc": "2026-11-06",
+  "rows": [
+    {
+      "id": "T-01",
+      "topic": "What the part is",
+      "claim": "A trip-lever bath waste is a waste-and-overflow assembly whose stopper is not in the drain. The visible control is a lever on the overflow cover plate on the tub wall; the lever is connected by a linkage to a drop cylinder (plunger) that travels inside the overflow tube and seats in the tee to close the drain.",
+      "verbatim_quote": "Screw / Linkage / Overflow Plate / Overflow Plate Screws / Linkage Nut ... Step 6. Install overflow plate and drop cylinder assembly with overflow plate screws. ... Make sure brass linkage is not kinked",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Bath Waste installation instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true
+    },
+    {
+      "id": "T-02",
+      "topic": "Parts behind the plate",
+      "claim": "Manufacturer documentation names these components: overflow plate, overflow plate screws, linkage, linkage nut, drop cylinder, retainer plate, overflow elbow, tee, and the screws that hold the retainer plate against the interior tub wall.",
+      "verbatim_quote": "Step 5. From inside the tub, start the two retainer plate screws in the bottom two holes in the overflow elbow. Hang the retainer plate over the screw heads and tighten the screws until the retainer plate makes contact with the interior tub wall and overflow gasket is tight against the exterior tub wall.",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Bath Waste installation instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true
+    },
+    {
+      "id": "T-03",
+      "topic": "Why it is accessible from above in principle",
+      "claim": "The manufacturer's own procedure reaches the whole working mechanism through the overflow opening: the drop cylinder assembly is inserted into and removed from the overflow, and the retainer plate is worked from inside the tub. Nothing in the installation sequence requires opening the wall, so an extraction from above is the designed service path.",
+      "verbatim_quote": "Insert drop-cylinder assembly into overflow with trip lever in down (open) position. Screw overflow plate onto overflow drain.",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Bath Waste installation instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true
+    },
+    {
+      "id": "T-04",
+      "topic": "Orientation constraint that matters during reassembly",
+      "claim": "On Schedule 40 trip-lever bath wastes the arrow on the tee must point down, and solvent cement must not enter the tee cavity. Getting either wrong during a replacement from below is a classic cause of a reassembly that never seals.",
+      "verbatim_quote": "IMPORTANT! On Schedule 40 trip lever bath wastes, the arrow on tee must be pointing down. Do not allow solvent cement to enter tee cavity.",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Bath Waste installation instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true
+    },
+    {
+      "id": "T-05",
+      "topic": "Adjustment is a first-class repair, not a workaround",
+      "claim": "The manufacturer's documented procedure is to remove the plate and drop cylinder assembly and readjust it until the drain seals; a slow drip from inside the tee is described as normal and acceptable. An adjustment-only visit is therefore a legitimate scope, which is what the $135 quote describes.",
+      "verbatim_quote": "Step 7. If necessary, remove overflow plate and drop cylinder assembly and readjust to ensure drain stops water when in the closed position. The drop cylinder should bottom out inside the tee slightly before the fully-closed position. A slow drip from inside the tee is normal and acceptable.",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Bath Waste installation instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true
+    },
+    {
+      "id": "T-06",
+      "topic": "Acceptance criterion after service",
+      "claim": "The manufacturer's stated acceptance condition is that the drain stops water in the closed position, with the drop cylinder bottoming out in the tee slightly before fully closed, and that a slow drip from inside the tee is normal and acceptable. Use this as the written sign-off test — it stops a contractor declaring 'done' while the tub still will not hold water, and it stops a slow drip being treated as a defect.",
+      "verbatim_quote": "If necessary, remove overflow plate and drop cylinder assembly and readjust to ensure drain stops water when in the closed position. The drop cylinder should bottom out inside the tee slightly before the fully-closed position. A slow drip from inside the tee is normal and acceptable.",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Bath Waste installation instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true,
+      "note": "The instruction sheet also warns: 'DO NOT USE OIL-BASED PUTTY PRODUCTS: Watco does not recommend and does not warranty this product when oil/petroleum based products are used when installing this product.' Worth putting in the work order."
+    },
+    {
+      "id": "T-07",
+      "topic": "Known product variants (what a replacement must match)",
+      "claim": "Watco's trip-lever bath waste line is documented in several model families and three trip-lever mechanisms, so a replacement is not automatically interchangeable with what is in the wall.",
+      "verbatim_quote": "Model 500-TL / Model 550-TL ... Models 501/502-TL / 551/552-TL ... Model 600-TL / Model 650-TL ... QUICK ADJUST / SLIP LOCK / TURNSTYLE Trip Lever",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco Manufacturing Co. — Trip Lever Installation Instructions (official manufacturer document)",
+      "source_tier": "official-manufacturer",
+      "verified": true,
+      "note": "The installed unit in this job has not been identified. Identification from photographs (see flag F-13) or from the removed parts is required before ordering a replacement."
+    },
+    {
+      "id": "T-08",
+      "topic": "Access option A — from above, through the overflow",
+      "claim": "Preferred by the requester. No wall or ceiling demolition. Requires the plate screws to come out and the plate + linkage + drop cylinder to pull free of the overflow tube.",
+      "source_url": null,
+      "source_label": "Derived from the project brief (requester preference) plus the official manufacturer service path T-03",
+      "source_tier": "user-provided",
+      "verified": false,
+      "note": "The brief states five or more licensed plumbers could not complete this route without concern about damaging concealed plumbing. That field history is requester-reported and is not independently verified."
+    },
+    {
+      "id": "T-09",
+      "topic": "Access option B — from behind the wall / below",
+      "claim": "Requires opening finished surfaces (wall behind the tub, or the ceiling of the storage unit below) to reach the concealed waste-and-overflow piping, then patching and finishing. This is why the provider must hold both a plumbing classification and a general-building/drywall classification, or subcontract the second trade.",
+      "source_url": null,
+      "source_label": "Derived from the project brief",
+      "source_tier": "user-provided",
+      "verified": false,
+      "note": "Cross-reference R-04: with a permit in place, DBI requires the plumbing inspection BEFORE the pipes are covered. Sequencing the drywall patch before the inspection would defeat the inspection."
+    },
+    {
+      "id": "T-10",
+      "topic": "Why one licence is not always enough",
+      "claim": "CSLB issues plumbing as a specialty C-36 classification. A contractor holding only C-36 is not licensed to contract for the general-building/drywall scope, so an all-in-one job either uses a licence that carries both classifications or pairs a plumber with a second licensed contractor.",
+      "verbatim_quote": "C-36 - Plumbing Contractor ... A plumbing contractor provides a means for a supply of safe water ... and the proper disposal of fluid waste from the premises",
+      "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "source_label": "CSLB — C-36 Plumbing Contractor classification (official, State of California)",
+      "source_tier": "official-government",
+      "verified": true
+    }
+  ]
+}

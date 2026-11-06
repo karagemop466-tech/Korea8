@@ -1,0 +1,31 @@
+{
+  "generated_utc": "2026-11-06",
+  "stats": {
+    "rows_checked": 116,
+    "rows_verified": 79,
+    "rows_unverified": 37,
+    "pages_checked": 11,
+    "internal_links_ok": 195,
+    "external_links_ok": 122
+  },
+  "problems": [],
+  "warnings": [
+    "external link present but not retrieved: providers.html: https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492 (not_retrieved)",
+    "external link present but not retrieved: providers.html: https://www.yelp.com/search?find_desc=Bay+Area+Plumbing&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: providers.html: https://www.yelp.com/search?find_desc=Fast+Response+Plumbing&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: providers.html: https://www.rapidflowbayarea.com/about (not_retrieved)",
+    "external link present but not retrieved: providers.html: https://www.yelp.com/search?find_desc=Ace+Plumbing+%26+Rooter&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: providers.html: https://cacciaplumbing.com/service-area/san-francisco-ca/ (not_retrieved)",
+    "external link present but not retrieved: providers.html: https://www.yelp.com/search?find_desc=Advanced+Plumbing+and+Drain&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: providers.html: https://flowmastersplumbing.com/plumbing-services-sf/repiping-services/ (not_retrieved)",
+    "external link present but not retrieved: sources.html: https://cacciaplumbing.com/service-area/san-francisco-ca/ (not_retrieved)",
+    "external link present but not retrieved: sources.html: https://flowmastersplumbing.com/plumbing-services-sf/repiping-services/ (not_retrieved)",
+    "external link present but not retrieved: sources.html: https://www.rapidflowbayarea.com/about (not_retrieved)",
+    "external link present but not retrieved: sources.html: https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492 (not_retrieved)",
+    "external link present but not retrieved: sources.html: https://www.yelp.com/search?find_desc=Ace+Plumbing+%26+Rooter&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: sources.html: https://www.yelp.com/search?find_desc=Advanced+Plumbing+and+Drain&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: sources.html: https://www.yelp.com/search?find_desc=Bay+Area+Plumbing&find_loc=San+Francisco%2C+CA (blocked)",
+    "external link present but not retrieved: sources.html: https://www.yelp.com/search?find_desc=Fast+Response+Plumbing&find_loc=San+Francisco%2C+CA (blocked)"
+  ],
+  "result": "PASS"
+}
