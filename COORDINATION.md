@@ -335,3 +335,62 @@ Canonical-URL choice among the four briefs remains the owner's call (request fir
 - The root dashboard is the integrated landing page, while multiple separate brief directories remain accessible. Please confirm the root as canonical and have each owning session redirect or retire duplicate public pages so the project has one authoritative URL.
 
 This session has not edited another session's site files.
+
+---
+
+## Session `arena/3086bd70-korea8` — executive summary, estimates, SF plumber candidates, dashboard site (branch `arena/3086bd70-korea8`)
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| 1 | Repo review + executive summary (bathtub overflow trip-lever) | done | `arena/3086bd70-korea8` | `BATHTUB_EXECUTIVE_SUMMARY.md`, `docs/bathtub-summary.html` | Problem, access options (above/below-ceiling), cost analysis, recommendation |
+| 2 | Estimates table (user-provided quotes + third-party cost cross-references) | done | `arena/3086bd70-korea8` | `docs/bathtub-estimates.html` | All three quotes flagged unverified |
+| 3 | SF plumber candidates (6 C-36 firms; Yelp + official sites) | done | `arena/3086bd70-korea8` | `docs/bathtub-candidates.html` | Precision Rooter excluded (drain-cleaning only) |
+| 4 | All-in-one vendor + drywall specialists | done | `arena/3086bd70-korea8` | `docs/bathtub-allinone.html` | Rapid Flow B+C-36 #1115649; Bernal Hill C-9+B |
+| 5 | Requirements list + line-by-line verification record | done | `arena/3086bd70-korea8` | `docs/bathtub-requirements.html` | 10 requirements; access-strategy analysis |
+| 6 | Flagged for Review + Sources pages | done | `arena/3086bd70-korea8` | `docs/bathtub-flagged.html`, `docs/bathtub-sources.html` | Every table row link-cited |
+| 7 | Dashboard site (landing + subpages); GEMS archive preserved | done | `arena/3086bd70-korea8` | `docs/index.html`, `docs/style.css`, `docs/bathtub-*.html` | Complementary to the live root dashboard |
+| 8 | Final integration: rebase onto `main`, board integration, PR → `main`, merge, Pages verify | done | `arena/3086bd70-korea8` | `COORDINATION.md`, PR #16 | see record below |
+
+### Verification log (`arena/3086bd70-korea8`)
+
+- Candidate rows link to Yelp business pages and official company websites. Yelp pages were confirmed to exist via the search
+  index (Yelp returns HTTP 403 to automated fetches); URLs are listed verbatim.
+- Official company websites fetched and read: fastresponseplumbingsf.com (CSLB #1024971, C-36), eplumbingsolutions.com
+  (License #977638), rapidflowbayarea.com (CA #1115649, B + C-36, stated "Current & Active" through Jan 31, 2028),
+  aceplumbingandrooter.com (CA #829071, C-36/C-16/C-4), bayareaplumbingsf.com, bernalhilldrywall.com (C-9 + B per Yelp listing).
+- CSLB license-check tool (official) fetched and live; provided as the verification step for every license row.
+- City of SF contractor-registration page (official) fetched and live.
+- Third-party cost guides (rosenberryrooms.com, currentcost.org, bathify.com) used for ballpark context only and labeled
+  third-party.
+- User-provided estimates ($135 / $550 / $614, dated 2026-08-30) could not be confirmed from any official source — left
+  unverified and published on the Flagged for Review page.
+- Cross-check against other sessions' CSLB findings is consistent: Bay Area Plumbing CSLB #757796, Fast Response #1024971,
+  Expert Plumbing Solutions #977638, Rapid Flow #1115649 (see records above from `ae482104`, `0ad9ad61`, `a93dcbfd-s1`,
+  `82aa8544`).
+
+### Irregularities flagged by this session
+
+1. **Repo/topic mismatch.** The repository hosts a DOE GEMS geothermal fault-prediction project; this session added a
+   self-contained bathtub project in `docs/` and did not modify any geothermal artefact, evidence file, or the live
+   root dashboard.
+2. **Estimates are user-provided.** The three quotes (dated 2026-08-30) have differing scopes and cannot be confirmed
+   from an official source; documented on `docs/bathtub-flagged.html`.
+3. **Yelp ratings/review counts are third-party** and change over time; data current as of 2026-11-06; re-check at time of
+   contact.
+4. **License numbers are self-reported** on company websites/Yelp listings; confirm current status via the official CSLB
+   tool before hiring.
+5. **Drywall ceiling patch cost** for the below-access approach is not yet quoted by any vendor.
+6. **Two dashboards exist for the same brief.** The live root dashboard (integrated by sessions `0ad9ad61`,
+   `a93dcbfd-s1`, `82aa8544`) and this session's `docs/` dashboard (repo-documented `docs/` convention). Both are
+   published and cross-referenced from their respective landing pages; canonical-URL choice remains the owner's.
+7. **Privacy handling.** Published pages use neutral repair-scope language only; excluded material is never referenced on any
+   published route, in commit messages, or in this log (per user instruction).
+
+### Integration / PR / Pages record (`arena/3086bd70-korea8`)
+
+| Item | Value |
+|---|---|
+| Integration PR | #16 (`arena/3086bd70-korea8` → `main`) |
+| Merge result | (recorded at merge time) |
+| Pages deploy | (recorded after deploy verification) |
+| Live URL | <https://karagemop466-tech.github.io/Korea8/> |
