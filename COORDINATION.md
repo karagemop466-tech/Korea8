@@ -48,7 +48,7 @@ session, log the request here instead of editing it.
 | `bt-04` | Cost-estimator table (owner-provided quotes + line-item build-up) | done | `0ad9ad61` | `bathtub-overflow/data/costs.json` | owner quotes labelled USER-PROVIDED |
 | `bt-05` | Site build: landing page + category subpages + Flagged for Review + published JSON | done | `0ad9ad61` | `bathtub-overflow/*.html`, `bathtub-overflow/style.css`, `bathtub-overflow/scripts/build_site.py` | static HTML, no external CDN |
 | `bt-06` | Verification pass: link check, blank-vs-unverified discipline, table/JSON consistency | done | `0ad9ad61` | `bathtub-overflow/scripts/verify_site.py`, `bathtub-overflow/evidence/**` | automated, no human inspection |
-| `bt-07` | Integration: PR to `main`, merge, confirm Pages deploy | done | `0ad9ad61` | repo-root nav link (see requests below) | only after bt-06 passes |
+| `bt-07` | Integration: PR to `main`, merge, confirm Pages deploy | done | `0ad9ad61` | repo-root nav link (see requests below) | PR #15 merged 2026-11-06T13:41:49Z (merge commit `67fc8fb`); Pages deploy confirmed |
 
 ### Log of completed work
 
@@ -70,8 +70,20 @@ session, log the request here instead of editing it.
   The checks cover source-per-row, source-id parity, CSLB-official vendor links, flag-id existence, blank-vs-unverified
   discipline, rendered-vs-JSON row counts, internal link integrity, placeholder text, and a check that no internal
   project information appears in any published file.
-- `bt-07` — integration: merged `origin/main` into this branch (board conflict resolved, both records kept), opened the
-  PR to `main`, merged it, and confirmed the GitHub Pages deployment.
+- `bt-07` — integration complete.
+  - **PR:** https://github.com/karagemop466-tech/Korea8/pull/15 — "Bathtub overflow trip-lever: full requirements, vendor shortlist, code facts and live dashboard".
+  - **Merge result:** merged into `main` at 2026-11-06T13:41:49Z, merge commit `67fc8fb` (verified present in `origin/main`).
+  - **Conflict resolved:** `main` had advanced with other sessions' merges (PR #9 and its follow-ups) while this work was in
+    progress; `origin/main` was merged into this branch and the add/add conflict on this board was resolved by keeping
+    both sessions' records in full. No other session's content was altered.
+  - **Pages deploy confirmed:** the live site is served at
+    https://karagemop466-tech.github.io/Korea8/bathtub-overflow/ — landing page, all six category subpages, the
+    "Flagged for Review" page and the published JSON data files were fetched and checked after the deploy.
+  - **Deploy note for other sessions:** the first Pages deploy after this merge was *cancelled* (run `42227585006`)
+    because further merges to `main` from other sessions started new deployments; the `build` job succeeded every time
+    and only the `deploy` job was cancelled. The deployment completed successfully once the push queue settled
+    (run `42228551260`, Pages status `built`). If a Pages status shows `errored` right after a burst of merges, check
+    `gh run list` for a cancelled `pages-build-deployment` run and re-run the latest one rather than re-pushing content.
 
 ### Irregularities flagged by this session
 
@@ -105,7 +117,9 @@ session, log the request here instead of editing it.
    geothermal integration session regenerates `index.html`, please add:
    `<p><a href="bathtub-overflow/index.html">Bathtub overflow trip-lever project &rarr;</a></p>`
    near the existing "Prior session" block.
-2. **Two trees now exist for the same brief.** `bathroom-overflow/**` (session `arena/ae482104-korea8`, merged in PR #9)
+2. **Two trees now exist for the same brief** (`bathtub-overflow/` is live at
+   https://karagemop466-tech.github.io/Korea8/bathtub-overflow/; `bathroom-overflow/` is live at
+   https://karagemop466-tech.github.io/Korea8/bathroom-overflow/). `bathroom-overflow/**` (session `arena/ae482104-korea8`, merged in PR #9)
    and `bathtub-overflow/**` (session `0ad9ad61`, this branch). Both are live on the published site. The differences:
    - `bathtub-overflow/` (this branch) carries the full requirement list (34 items, 7 categories), 14 vendors with their
      CSLB records, the owner estimates and the official DBI fee schedule, 18 code/permit/tenant-entry facts with verbatim
