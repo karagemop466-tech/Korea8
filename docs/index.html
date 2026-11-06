@@ -1,101 +1,85 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Korea8 — DOE GEMS fault prediction</title>
+<title>Korea8 — Bathtub Overflow Trip Lever Project</title>
 <link rel="stylesheet" href="style.css">
 <link rel="alternate" type="application/rss+xml" title="Korea8 evidence feed" href="feed.xml">
 </head><body>
 <header>
-  <h1>Korea8 — DOE GEMS Prize Challenge</h1>
-  <p class="sub">Auditable, fail-closed fault-prediction research. Generated 2026-11-04 20:40 UTC.</p>
+  <h1>Korea8 — Bathtub Overflow Trip Lever Project</h1>
+  <p class="sub">San Francisco · stuck waste-and-overflow trip lever behind wall · candidates &amp; estimates · updated 2026-11-06</p>
 </header>
 
-<section class="download" id="download">
-  <h2>Download candidate GeoTIFF</h2>
-  <div class="banner" style="background:#b42318">DO NOT SUBMIT — fail-closed (uniqueness witness + holdout below control)</div>
-  <p><a class="btn" href="downloads/korea8_candidate.tif" download>⬇ korea8_candidate.tif</a></p>
-  <p class="mono">SHA-256: c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0<br>Emitted dots: 8316 · HOLDOUT-DTI: 0.0219 (95% CI [0.0177, 0.0261])</p>
-  <p><strong>Verdict:</strong> negative. <a href="submit.html">Submission instructions &rarr;</a> ·
-     <a href="evidence/run_card.json">Run card JSON</a> · <a href="feed.xml">RSS feed</a></p>
+<div class="strip">
+  <span class="s">Project: ACTIVE — ready to contact candidates</span>
+  <span class="s ok">Requirements collected</span>
+  <span class="s ok">Candidates shortlisted</span>
+  <span class="s warn">Estimates: user-provided (unverified)</span>
+  <span class="s warn">Drywall patch cost: not yet quoted</span>
+</div>
+
+<div class="banner info">This site is the working dashboard for the bathtub overflow trip-lever repair project.
+Every table row links to its source. Values that could not be confirmed from an official source are left blank and flagged
+on the <a href="bathtub-flagged.html">Flagged for Review</a> page.</div>
+
+<section>
+  <h2>Dashboard</h2>
+  <div class="nav">
+    <a href="bathtub-summary.html"><span class="n-title">Executive summary</span><span class="n-desc">Problem, access options, analysis, recommendation</span></a>
+    <a href="bathtub-estimates.html"><span class="n-title">Estimates table</span><span class="n-desc">User-provided quotes + cost cross-references</span></a>
+    <a href="bathtub-candidates.html"><span class="n-title">Plumber candidates</span><span class="n-desc">SF C-36 plumbers with Yelp reviews</span></a>
+    <a href="bathtub-allinone.html"><span class="n-title">All-in-one &amp; drywall</span><span class="n-desc">Plumbing + building/drywall vendors</span></a>
+    <a href="bathtub-requirements.html"><span class="n-title">Requirements &amp; analysis</span><span class="n-desc">Full requirement list, verification</span></a>
+    <a href="bathtub-flagged.html"><span class="n-title">Flagged for review</span><span class="n-desc">Unverified items &amp; irregularities</span></a>
+    <a href="bathtub-sources.html"><span class="n-title">Sources</span><span class="n-desc">Official links &amp; verification tools</span></a>
+    <a href="#gems-archive"><span class="n-title">GEMS project archive</span><span class="n-desc">Previous DOE GEMS Prize Challenge work</span></a>
+  </div>
 </section>
 
 <section>
-  <h2>Result in one paragraph</h2>
-  <p>The pre-registered H1 candidate (off-catalogue accommodation-transfer lineaments) scored
-  <strong>HOLDOUT-DTI 0.0219</strong> (95% CI [0.0177, 0.0261]; 22893 withheld positives),
-  which is <strong>below</strong> the distance-only control (0.0460)
-  and random control (0.0344).
-  This is a <strong>negative result</strong>: the learned geophysical-lineament model does not beat a simple
-  near-fault prior on catalogue recovery. The candidate is unique versus the nine focus sites
-  (overlap ~18%, ρ≈0.001) but fails the literal uniqueness gate against the <code>r13-lattice-s5</code>
-  covering witness (overlap 0.998).
-  The format gate passes and the portal range error is fixed. <strong>No submission was performed.</strong></p>
+  <h2>Project at a glance</h2>
+  <div class="kpis">
+    <div class="kpi"><div class="k-val">5+</div><div class="k-lab">licensed plumbers could not remove from above without risking hidden plumbing</div></div>
+    <div class="kpi"><div class="k-val">3</div><div class="k-lab">user-provided estimates logged (amounts withheld, unverified)</div></div>
+    <div class="kpi"><div class="k-val">7</div><div class="k-lab">candidate vendors shortlisted (SF)</div></div>
+    <div class="kpi"><div class="k-val">2</div><div class="k-lab">access strategies (above / below-ceiling)</div></div>
+    <div class="kpi"><div class="k-val">—</div><div class="k-lab">drywall ceiling patch cost: not yet quoted</div></div>
+  </div>
 </section>
 
 <section>
-  <h2>Executive summary — requested sites</h2>
-  <p>Scores below are <strong>USER-REPORTED</strong>, not organizer-confirmed receipts. The live leaderboard is
-  client-rendered and was not independently scraped in this pass; the conflicting targets (0.4413 / 0.3195 / 0.4625)
-  remain unverified.</p>
-  <table><thead><tr><th>Site</th><th>Score (evidence label)</th><th>Dots</th><th>Mechanism</th><th>Uniqueness</th></tr></thead>
-  <tbody><tr><td>GEMSDOE24</td><td>0.2477 <span class='tag'>USER-REPORTED</span></td><td>60,069</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE25</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>d28 dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE27</td><td>0.2449 <span class='tag'>USER-REPORTED</span></td><td>61,328</td><td>nan-outside dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE28</td><td>0.2710 <span class='tag'>USER-REPORTED</span></td><td>37,660</td><td>rung30 blind dot family</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE30</td><td>0.2600 <span class='tag'>USER-REPORTED</span></td><td>44,090</td><td>poisson300m off-cat d28</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE31</td><td>0.2708 <span class='tag'>USER-REPORTED</span></td><td>40,199</td><td>solo-d28</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE32</td><td>0.2778 <span class='tag'>USER-REPORTED</span></td><td>37,654</td><td>h33-h33-2-b2 zeros</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE33</td><td>0.2632 <span class='tag'>USER-REPORTED</span></td><td>41,865</td><td>analog-tip-stepover-r30</td><td>near-duplicate dot family</td></tr>
-<tr><td>GEMSDOE36</td><td>0.2750 <span class='tag'>USER-REPORTED</span></td><td>38,854</td><td>anderson-geothermal-pinn</td><td>near-duplicate dot family</td></tr>
-<tr class='candidate'><td>Korea8 candidate</td><td>0.0219 <span class='tag'>HOLDOUT-DTI</span></td><td>8316</td><td>H1 accommodation-transfer lineaments</td><td>duplicate/drift vs lattice witness</td></tr></tbody></table>
-  <div class="cards"><div class='card'><h3>GEMSDOE24 <span class='tag'>USER-REPORTED 0.2477</span></h3><p>Dense nan-outside dot family; high dot count, lower precision. Score is dot-pruning arithmetic, not hidden-fault skill.</p></div>
-<div class='card'><h3>GEMSDOE25 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>The d28 dot family that GEMSDOE32 prunes. Parent of the 0.2778 subset.</p></div>
-<div class='card'><h3>GEMSDOE27 <span class='tag'>USER-REPORTED 0.2449</span></h3><p>Near-duplicate of GEMSDOE24 with a different nan-outside encoding; no distinct geological mechanism.</p></div>
-<div class='card'><h3>GEMSDOE28 <span class='tag'>USER-REPORTED 0.2710</span></h3><p>Rung-30 blind placement; fewer dots than 24/27, slightly higher score via reduced zero-credit mass.</p></div>
-<div class='card'><h3>GEMSDOE30 <span class='tag'>USER-REPORTED 0.2600</span></h3><p>Poisson-disc 300 m resampling of the d28 family; identical dot count to GEMSDOE25, same score.</p></div>
-<div class='card'><h3>GEMSDOE31 <span class='tag'>USER-REPORTED 0.2708</span></h3><p>Solo-d28 variant; dot count between 25 and 32, score between them. Same family.</p></div>
-<div class='card'><h3>GEMSDOE32 <span class='tag'>USER-REPORTED 0.2778</span></h3><p>Strict subset of GEMSDOE25 minus 6,436 zero-credit dots 1–2 px from the catalogue. Deleting zero-credit mass raises DTI = TP/(0.2·D+0.8·N). Highest reported focus score; not hidden-fault detection.</p></div>
-<div class='card'><h3>GEMSDOE33 <span class='tag'>USER-REPORTED 0.2632</span></h3><p>Analog tip/stepover placement at r30; geologically motivated naming but dot set overlaps the shared family.</p></div>
-<div class='card'><h3>GEMSDOE36 <span class='tag'>USER-REPORTED 0.2750</span></h3><p>Anderson geothermal PINN branding; dot count near GEMSDOE32, score just below it. Same near-duplicate family.</p></div></div>
+  <h2>Latest findings (quick view)</h2>
+  <p>Preferred access is <strong>from above</strong> if the stuck assembly can be freed without damaging hidden plumbing;
+  <strong>all plumbers contacted recommend working from below</strong>, through the ceiling of the storage unit beneath the tub.
+  That path requires opening the ceiling drywall — a vendor with both <strong>C-36 plumbing</strong> and <strong>B building</strong>
+  licensure (or a plumber + drywall pair) is preferred. Tenants occupy the unit; work must be dust- and noise-conscious.</p>
+  <table>
+    <thead><tr><th>Item</th><th>Detail</th><th>Source</th></tr></thead>
+    <tbody>
+      <tr><td>Top all-in-one candidate</td><td>Rapid Flow Plumbing &amp; Rooter Inc — CA #1115649 (B General Building + C-36 Plumbing), 230 Edinburgh St, SF</td><td><a href="https://www.rapidflowbayarea.com/">rapidflowbayarea.com</a> (official) · <a href="https://www.buildzoom.com/contractor/rapid-flow-plumbing-and-rooter">BuildZoom record</a></td></tr>
+      <tr><td>Plumber shortlist</td><td>Eric Brand (5.0/139), Fast Response (4.8/906), Expert Plumbing Solutions (4.8/81), Bay Area Plumbing (4.8/175), Ace (4.7/1,461), Discount Plumbing (4.5/1,292)</td><td>Yelp biz pages linked in <a href="bathtub-candidates.html">candidates table</a></td></tr>
+      <tr><td>Drywall partner</td><td>Bernal Hill Drywall — C-9 + B (GC), ceiling patch &amp; water-damage build-back, SF</td><td><a href="https://www.yelp.com/biz/bernal-hill-drywall-san-francisco">Yelp listing</a> · <a href="https://www.bernalhilldrywall.com/">official site</a></td></tr>
+      <tr><td>Estimate range (user-provided)</td><td>— (amounts withheld per verification rule; 3 quotes, scopes differ)</td><td>User-provided — <span class="tag unverify">UNVERIFIED</span> see <a href="bathtub-estimates.html">estimates table</a></td></tr>
+      <tr><td>License verification tool (official)</td><td>CSLB "Check a Contractor License or HIS Registration"</td><td><a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx">cslb.ca.gov license check</a></td></tr>
+    </tbody>
+  </table>
 </section>
 
-<section>
-  <h2>Why GEMSDOE32 reported 0.2778</h2>
-  <p>GEMSDOE32 is a strict subset of GEMSDOE25's 44,090 dots with 6,436 zero-credit dots (1–2 px from the
-  catalogue) removed. For a binary map, DTI = TP / (0.2·D + 0.8·N); deleting zero-credit mass strictly raises
-  the score. This is dot-pruning arithmetic, not hidden-fault detection skill. A higher-scoring <em>distinct</em>
-  strategy is <strong>not supported</strong> by this session's holdout evidence.</p>
-</section>
-
-<section>
-  <h2>Verification</h2>
-  <p>Independent release verification: <strong>PASS</strong>
-  (21 checks, 0 failed).
-  <a href="evidence/verification.json">verification.json</a></p>
+<section id="gems-archive">
+  <h2>GEMS project archive (previous work, preserved)</h2>
+  <p>The repository's prior DOE GEMS Prize Challenge research is preserved below. Its verdict was
+  <strong>negative / do-not-submit</strong> (HOLDOUT-DTI 0.0219, below controls; uniqueness gate failed against the
+  lattice covering witness). No contest submission was performed.</p>
   <ul>
-    <li><a href="evidence/run_card.json">run_card.json</a></li>
-    <li><a href="evidence/holdout.json">holdout.json</a></li>
-    <li><a href="evidence/uniqueness_final.json">uniqueness_final.json</a></li>
-    <li><a href="evidence/format_report.json">format_report.json</a></li>
-    <li><a href="evidence/canary.json">canary.json</a></li>
-    <li><a href="evidence/data_restore_receipt.json">data_restore_receipt.json</a></li>
+    <li><a href="executive-summary.html">Prior executive summary</a> (GEMSDOE sites + score table)</li>
+    <li><a href="submit-howto.html">Prior submission how-to</a></li>
+    <li><a href="sources.html">Prior sources</a> · <a href="limitations.html">Prior limitations &amp; irregularities</a></li>
+    <li><a href="downloads/korea8_candidate.tif">Legacy candidate TIFF</a> (format-valid, fail-closed) · <a href="evidence/run_card.json">run card JSON</a></li>
+    <li><a href="evidence/verification.json">Independent verification (21/21)</a> · <a href="feed.xml">RSS feed</a></li>
   </ul>
 </section>
 
-<section>
-  <h2>Prior session (legacy template, preserved)</h2>
-  <p>The previous parallel session produced a 601×601 stepover-relay structural prior
-  (<code>submissions/korea8-h1-stepover-relay-prior-…tif</code>). It was format-valid but
-  <strong>not conformed to the official 3730×3292 grid</strong> and not holdout-validated
-  (data was unavailable in that sandbox). Verdict: negative. Preserved for provenance.</p>
-  <ul>
-    <li><a href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif">Legacy candidate TIFF</a> (601×601 template)</li>
-    <li><a href="executive-summary.html">Prior executive summary</a></li>
-    <li><a href="limitations.html">Prior limitations</a> · <a href="sources.html">Prior sources</a> · <a href="submit-howto.html">Prior submit how-to</a></li>
-  </ul>
-</section>
-
-<footer><p>No contest submission was performed. Lane unspecified in brief; pre-registered H1.
-Data mirrors are hash-pinned but not organizer-authenticated. Catalogue-fit holdout is not a leaderboard proxy
-(staff mask known faults; sibling measured ρ≈+0.143). See <a href="evidence/verification.json">verification</a>.</p></footer>
+<footer><p>All external links in this dashboard are cited per-row on their pages. Yelp ratings are third-party review
+data current as of 2026-11-06; license numbers are self-reported and must be confirmed via the official CSLB tool before hiring.
+See <a href="bathtub-flagged.html">Flagged for Review</a> for unverified items.</p></footer>
 </body></html>
