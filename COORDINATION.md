@@ -177,3 +177,75 @@ session, log the request here instead of editing it.
 | Merge result | (to be recorded at merge time) |
 | Pages deploy | (to be recorded) |
 | Live URL | <https://karagemop466-tech.github.io/Korea8/> |
+---
+
+## Session `arena-82aa8544` — root dashboard site + canonical data (branch `arena/82aa8544-korea8`)
+
+| # | Task | Status | Owner | Files in scope |
+|---|---|---|---|---|
+| T1 | Repo review (line-by-line), irregularity flags | **done** (2026-11-06) | `arena-82aa8544` | `project/repo-review.md` |
+| T2 | Requirements list + executive summary content | **done** (2026-11-06) | `arena-82aa8544` | `project/requirements.json`, `project/summary.json`, `project/*.md` |
+| T3 | Provider research (SF, plumbing+drywall), license/source verification | **done** (2026-11-06) | `arena-82aa8544` | `project/providers.json`, `project/sources.json` |
+| T4 | Estimates table (user-provided quotes, verification status) | **done** (2026-11-06) | `arena-82aa8544` | `project/estimates.json` |
+| T5 | GitHub Pages root site build (dashboard + subpages + flagged page) | **done** (2026-11-06) | `arena-82aa8544` | root `*.html`, `style.css`, `site-data/`, `scripts/build_project_site.py` (`docs/`, `bathroom-overflow/`, `bathtub-overflow/`, `trip-lever/` untouched) |
+| T6 | Final integration: re-verify combined data line-by-line, link check, PR → main, merge, confirm Pages deploy, record PR link | **in progress** | `arena-82aa8544` | `COORDINATION.md`, PR to `main` |
+
+### Scope note (cross-session)
+
+This session was pinned by its platform to branch `arena/82aa8544-korea8` and could not create
+`session-*` branches; the claim was pushed before any work. Root dashboard + `project/` data are
+this session's scope; the parallel briefs' directories were never modified by this session. The
+root dashboard (rebuilt over the earlier root pages, which were byte-identical duplicates of the
+preserved `docs/` GEMS copies — verified with `diff -q` across 9 files) links to `trip-lever/`
+and `bathroom-overflow/` (both verified free of restricted administrative content before
+linking). It deliberately does **not** link `bathtub-overflow/` pending owner review — see flag
+F-11 on the dashboard's Flagged for Review page.
+
+### Verification log (`arena-82aa8544`)
+
+- **11 providers, all license-verified directly on official CSLB `LicenseDetail.aspx?LicNum=`
+  pages on 2026-11-06 (11/11 current-and-active):** #977638 Expert Plumbing Solutions (C-36);
+  #757796 Bay Area Plumbing (C-36; WC-exempt, no employees); #1024971 Fast Response Plumbing &
+  Rooter (C-36; WC policy expires 2026-12-18); #1089561 Heise's/Taro Group (C-36+C-10+A+C-20;
+  documented SF tub waste-and-overflow replacement job); #829071 Ace Plumbing & Rooter
+  (C-36+B+A+C-4+C-10+C-16); #1096552 We Do Construction (B+C-36); #1106131 SF Building Group
+  (B; WC-exempt); #1115649 Rapid Flow (B+C-36; WC-exempt); #1105133 HARP Services dba 24/7 SF
+  Handyman & Remodeling (**B-2 Residential Remodeling**); #1140843 Discount Plumbing Rooter
+  Services (C-36+A; WC + $2M liability + $100k LLC bond on file); #1009195 Advanced Plumbing and
+  Drain (C-36; **CSLB Additional Status: may be suspended at a future date for an outstanding
+  final liability** — published as flag F-12).
+- Adopted from parallel sessions only after this session's own independent CSLB verification:
+  Rapid Flow (from `bathroom-overflow/`), HARP / Discount / Advanced (from `trip-lever/`).
+- Build-time enforcement: 74 data rows each carry ≥1 source link (build fails otherwise);
+  unverified cells render blank/badged — never inferred; internal-link check 0 broken;
+  grep-verified no restricted brief content on any published page of this session.
+- Owner-provided estimates ($135 / $550 / $614, dated 2026-08-30) are published verbatim,
+  labeled user-provided and unverified (flag F-02), with third-party 2026 benchmarks
+  (HomeGuide, Angi) for context.
+
+### Irregularities flagged by this session
+
+1. Repo previously hosted an unrelated project (DOE GEMS) — F-01; legacy preserved in `docs/`.
+2. Estimates are user-provided quotes; no official source exists — F-02; scopes differ — F-03.
+3. Yelp blocks automated fetches (403) — review figures recorded as displayed in linked listing
+   titles via the search index; owner re-check advised — F-04.
+4. CSLB statuses are point-in-time; three providers WC-exempt (no employees); one WC policy
+   expires 2026-12-18 — F-05.
+5. No provider in this set holds C-9 Drywall; all-in-one must use the B-GC or B-2 structure — F-06.
+6. CPC access-panel section renumbered across editions (2022 §402.10 vs 2010 §404.2) — F-07.
+7. Fast Response: CSLB address differs from website address — F-08.
+8. Advanced Plumbing and Drain carries the CSLB future-suspension Additional Status — F-12.
+9. `bathtub-overflow/` publishes city building-department administrative content broader than
+   this project's public pages were asked to carry — not linked pending owner review — F-11.
+10. Owner photos pending; analysis is description-based — F-10.
+
+### Integration decision (T6, session `arena-82aa8544`)
+
+Per the project protocol, the final integration session owns the site's index and navigation once
+all other tasks are done. This session's root dashboard serves as the single integrated landing
+page (most complete combined dataset: 11 CSLB-verified providers, requirements register, the
+owner's three estimates with verification labels, code/manufacturer technical findings, 12
+flags), and links to the parallel briefs `trip-lever/` and `bathroom-overflow/` from its footer.
+The earlier root `index.html` replacements are superseded; nothing is deleted from history.
+Canonical-URL choice among the four briefs remains the owner's call (request first logged by
+`0ad9ad61`); this board and the dashboard's Flagged-for-Review page record the options.
