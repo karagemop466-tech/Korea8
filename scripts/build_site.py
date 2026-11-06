@@ -231,22 +231,22 @@ section{margin:2rem 0}footer{color:#666;font-size:.85rem;border-top:1px solid #e
     # overwrite it. gems_site/index.html is the GEMS download page. See
     # REPO_REVIEW.md (I-09) for why the mirror target changed.
     import shutil
-    ROOT = ROOT / "gems_site"
-    ROOT.mkdir(exist_ok=True)
+    MIRROR = ROOT / "gems_site"
+    MIRROR.mkdir(exist_ok=True)
     for name in ("index.html", "style.css", "submit.html", "feed.json", "feed.xml"):
-        shutil.copyfile(DOCS / name, ROOT / name)
+        shutil.copyfile(DOCS / name, MIRROR / name)
     for sub in ("downloads", "evidence"):
-        (ROOT / sub).mkdir(parents=True, exist_ok=True)
+        (MIRROR / sub).mkdir(parents=True, exist_ok=True)
         for p in (DOCS / sub).iterdir():
             if p.is_file():
-                shutil.copyfile(p, ROOT / sub / p.name)
+                shutil.copyfile(p, MIRROR / sub / p.name)
     for name in ("executive-summary.html", "limitations.html", "sources.html", "submit-howto.html"):
         if (DOCS / name).exists():
-            shutil.copyfile(DOCS / name, ROOT / name)
-    (ROOT / ".nojekyll").write_text("")
+            shutil.copyfile(DOCS / name, MIRROR / name)
+    (MIRROR / ".nojekyll").write_text("")
     # Drop stale failure receipts once a successful run card exists.
     if card:
-        for stale in (EVID / "error.json", DOCS / "evidence" / "error.json", ROOT / "evidence" / "error.json"):
+        for stale in (EVID / "error.json", DOCS / "evidence" / "error.json", MIRROR / "evidence" / "error.json"):
             stale.unlink(missing_ok=True)
     print("[site] built docs/ + gems_site/ mirror (index, submit, feed, downloads, evidence)")
     return 0
