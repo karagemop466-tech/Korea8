@@ -499,5 +499,14 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
   - the failure began with the merge of PR #16 (another session) at 13:58, before
     this session's merge, and a run of five consecutive builds had also errored
     earlier at 13:37–13:45 and then cleared on their own at 13:48–13:50.
-  - Conclusion: the failure is in GitHub's Pages build service, not in the
-    committed content. Retried by pushing to `main`.
+- **Refined diagnosis (14:06Z).** GitHub Pages enforces a **soft limit of 10 builds
+  per hour**. The trailing hour at 14:04Z contained 12 builds (13:37, 13:40, 13:41,
+  13:43, 13:45, 13:48, 13:49, 13:50, 13:58, 14:00, 14:04 plus 13:29), and every
+  failure reports `duration: 0` with a generic message — the signature of a build
+  that is rejected before it starts, not one that compiled and broke.
+  Content is ruled out: `.nojekyll` is present so Jekyll is skipped, there are no
+  symlinks or nested `.git`, the largest tracked file is 1.7 MB and the repo is
+  6.2 MB. Earlier evidence points the same way — session `82aa8544` logged
+  "pages deploy investigation + retrigger" at 13:47Z, and builds at 13:37-13:45
+  errored and then cleared on their own at 13:48-13:50 without any fix.
+- **Fix:** stop pushing to `main` and let the rate window drain, then push once.
