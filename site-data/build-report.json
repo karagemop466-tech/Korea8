@@ -1,0 +1,29 @@
+{
+  "built_at": "2026-11-06 13:40 UTC",
+  "outputs": [
+    "index.html",
+    "executive-summary.html",
+    "requirements.html",
+    "estimates.html",
+    "providers.html",
+    "technical-approach.html",
+    "sources.html",
+    "flagged-for-review.html",
+    "style.css",
+    "project/EXECUTIVE_SUMMARY.md"
+  ],
+  "enforcement": {
+    "rows_with_source_links_checked": 68,
+    "failures": [],
+    "broken_internal_links": []
+  },
+  "counts": {
+    "requirements": 14,
+    "estimates": 3,
+    "benchmarks": 5,
+    "providers": 7,
+    "technical_findings": 8,
+    "sources": 35,
+    "flags": 10
+  }
+}

@@ -1,192 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Executive summary — GEMSDOE site scores &amp; Korea8 submission</title>
-<style>
-  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #1a1a1a; line-height: 1.5; }
-  header { background: #0b3d62; color: #fff; padding: 20px 20px; }
-  header h1 { margin: 0; font-size: 1.4rem; }
-  header p { margin: 6px 0 0; opacity: 0.9; font-size: 0.95rem; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 24px 20px; }
-  a.btn { display: inline-block; background: #0b3d62; color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; margin-bottom: 16px; }
-  a.btn:hover { background: #083252; }
-  .callout { border: 1.5px solid #e3b505; background: #fff8e1; border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
-  .callout.ok { border-color: #1a7a3c; background: #e7f7ea; }
-  .callout.danger { border-color: #b3261e; background: #fdecec; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
-  th, td { border: 1px solid #c3ccd4; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #eef3f7; font-weight: 700; }
-  tr:nth-child(even) td { background: #f4f7fa; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; word-break: break-all; }
-  .ok { color: #1a7a3c; font-weight: 700; }
-  .warn { color: #b3541e; font-weight: 700; }
-  .neutral { color: #555; }
-  h2 { border-bottom: 2px solid #0b3d62; padding-bottom: 6px; margin-top: 32px; }
-  ul { margin: 8px 0; padding-left: 22px; }
-  .small { font-size: 0.85rem; color: #555; }
-  footer { margin-top: 32px; padding: 20px 0; border-top: 1px solid #d5dbe1; font-size: 0.85rem; color: #555; }
-</style>
+<title>Executive Summary — Bathtub Overflow Trip Lever Project</title>
+<meta name="description" content="Executive summary: situation, key numbers, recommendations, open items, verification statement.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Executive summary — GEMSDOE focus sites &amp; Korea8 submission</h1>
-  <p>DOE GEMS Prize Challenge (DrivenData #306) &bull; arena/b33c0036-korea8 &bull; generated 2026-11-04</p>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">◧</span> Trip Lever Project</a>
+    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html" class="active">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="technical-approach.html">Technical Approach</a><a href="sources.html">Sources</a><a href="flagged-for-review.html">Flagged for Review</a></nav>
+  </div>
 </header>
+<main class="wrap">
 
-<div class="container">
-  <a class="btn" href="index.html">⬅ Back to home / download</a>
-  <a class="btn" href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif" download>⬇ Download Korea8 submission TIF</a>
+<h1>Executive Summary</h1>
+<p class="updated">Compiled 2026-11-06 · session Session arena-82aa8544</p>
 
-  <div class="callout ok">
-    <strong>Best submission to download and submit from this repo:</strong>
-    <code class="mono">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</code> —
-    format-verified (single-band float32, 3730&times;3292, EPSG:32611, 100 m, values in [0,1], 0 NaN inside footprint),
-    unique lane verified (rank correlation -0.0005 &le; 0.90; 1.7% of dots within 3 px of registry &le; 70%),
-    submission note 133 chars (&le; 140).
-    <strong>Organiser-confirmed score: not yet available</strong> &mdash; the competition rasters are DrivenData-login-walled (see limitations below).
+<section>
+  <h2>Situation</h2>
+  <ul class="bullets"><li>The bathtub&#x27;s wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall of a tenant-occupied San Francisco unit; the overflow sits in a hard-to-access area.</li><li>Five or more licensed plumbers have already attempted/were consulted and could not remove it from above without risking destruction of the hidden plumbing; their consensus is to work from below.</li><li>The space below is a storage unit, so below-floor work likely requires opening the drywall ceiling to reach the assembly — the brief requires one coordinated service covering both plumbing and drywall, performed by licensed professionals in an occupied, sensitive environment.</li></ul>
+</section>
+
+<section>
+  <h2>Key numbers</h2>
+  <div class="tablewrap"><table class="grid"><thead><tr><th>Metric</th><th>Value</th><th>Detail</th><th>Verification</th><th>Flag</th></tr></thead><tbody><tr><td>Quotes received (2026-08-30)</td><td><strong>3</strong></td><td>$135 (adjust plunger handle, Fast Response) · $550 (lever + diverter, Bay Area Plumbing) · $614 (waste-and-overflow replacement, Expert Plumbing Solutions)</td><td><span class="badge badge-warn">unverified</span></td><td><a href="flagged-for-review.html#F-02">F-02</a></td></tr><tr><td>Providers verified active on official CSLB records</td><td><strong>7</strong></td><td>All license statuses checked directly on CSLB license-detail pages on 2026-11-06</td><td><span class="badge badge-ok">verified (official source)</span></td><td></td></tr><tr><td>Providers with documented tub waste-and-overflow work in SF</td><td><strong>1</strong></td><td>Heise&#x27;s Plumbing — documented Mission-district tub W&amp;O replacement job page with photos</td><td><span class="badge badge-ok">verified (official source)</span></td><td></td></tr><tr><td>Providers whose license can legally prime a multi-trade (plumbing + drywall) contract</td><td><strong>3</strong></td><td>Ace (#829071: B + C-36), We Do Construction (#1096552: B + C-36), SF Building Group (#1106131: B)</td><td><span class="badge badge-ok">verified (official source)</span></td><td><a href="flagged-for-review.html#F-06">F-06</a></td></tr><tr><td>Published range for tub drain work (third-party 2026 guides)</td><td><strong>$200 – $1,025</strong></td><td>HomeGuide $200–$700; Angi ~$700 easy access, $500–$1,025 difficult access</td><td><span class="badge badge-ok">verified (official source)</span></td><td></td></tr><tr><td>Published add-on for drywall patching (third-party guide)</td><td><strong>$300 – $930</strong></td><td>Angi (Oct 2026) — not included in any quote received so far</td><td><span class="badge badge-ok">verified (official source)</span></td><td><a href="flagged-for-review.html#F-03">F-03</a></td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Recommendations</h2>
+  <ol class="bullets"><li>Treat the three quotes as scope-differentiated, not comparable: adjust ($135) vs lever/diverter ($550) vs full W&amp;O replacement ($614). None includes the likely ceiling opening/patch.</li><li>For the preferred outcome (removal from above), re-engage the three quoting companies with the exact question: can the overflow faceplate and fused internals be extracted from the tub side without opening the wall — and get the answer in writing.</li><li>For the fallback (below-floor access), shortlist the multi-trade-licensed firms — Ace Plumbing &amp; Rooter (B + C-36, 25+ years, HOA/property-manager experience), We Do Construction (B + C-36, self-performed plumbing under one GC contract), and SF Building Group (B, occupied-space off-hours work) — and require the drywall scope (open, frame, fit access panel, patch, texture) in the same contract.</li><li>Whichever vendor opens the ceiling, require a code-aligned access panel (CPC 402.10: 12-inch minimum access for concealed slip-joint connections) rather than a solid patch, so future service does not require re-opening.</li><li>Before signing: click each provider&#x27;s CSLB link to re-verify status, confirm workers&#x27;-compensation and liability insurance certificates (two providers are WC-exempt sole/no-employee operations), and confirm tenant-notice/dust-containment logistics in writing.</li><li>Confirm the matched identity of the three quoting companies (generic names) before scheduling — see Flagged for Review F-02.</li></ol>
+</section>
+
+<section>
+  <h2>Open items</h2>
+  <ul class="bullets"><li>Reference photos from the owner (R-12) — all analysis is description-based until then.</li><li>Owner confirmation that the three matched companies are the ones that provided the quotes (F-02).</li><li>A combined plumbing + drywall quote for the below-floor fallback path (no such quote exists yet).</li></ul>
+</section>
+
+<section>
+  <div class="callout">
+    <h2 style="margin-top:0">Verification statement</h2>
+    <p>Every number and status on this site is either (a) verified against an official source on 2026-11-06 with a link, or (b) explicitly labeled user-provided/unverified and published on the Flagged for Review page. No values were inferred. Sensitive internal scoping details are intentionally excluded from all published pages.</p>
   </div>
+</section>
 
-  <h2>1. Score table — focus GEMSDOE sites (scores as reported on the sites)</h2>
-  <p><strong>How to read:</strong> the <em>estimate score</em> column shows each site's reported best submission score. These are <strong>reported values</strong>, not organiser-receipt-verified by this repo (GEMSDOE32's docs site returns 404). The <em>unique?</em> column states whether the submission is demonstrably unlike the other GEMSDOE submissions listed; the GEMSDOE sites' TIFs were not accessible to this sandbox, so uniqueness there is stated as reported, not verified. Korea8's K8-1 lane was verified unique against its registry template.</p>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Site</th>
-        <th>Best submission (reported)</th>
-        <th>Estimate score</th>
-        <th>Score basis / label</th>
-        <th>File to download</th>
-        <th>Unique vs other GEMSDOE sites?</th>
-        <th>Format risk</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>GEMSDOE32</strong></td>
-        <td>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</td>
-        <td class="ok">0.2778</td>
-        <td>reported on site (highest in scope)</td>
-        <td class="mono">docs/index.html (404 — file link not accessible)</td>
-        <td class="neutral">reported unique; not independently verifiable (site 404)</td>
-        <td class="ok">"-zeros" suffix: NaN replaced with 0, passes [0,1]</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE36</strong></td>
-        <td>anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</td>
-        <td class="ok">0.2750</td>
-        <td>reported on site</td>
-        <td class="mono">docs/ (link not accessible)</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="ok">"-zeros": NaN replaced with 0</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE28</strong></td>
-        <td>h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</td>
-        <td class="ok">0.2710</td>
-        <td>reported on site (also h27-4-r1-solo-d2-8 = 0.2708)</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained — may fail "[0,1] range" check if NaN inside footprint</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE31</strong></td>
-        <td>h27-4-solo-d28-20261004-8acb75e1-nan</td>
-        <td class="ok">0.2708</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE25</strong></td>
-        <td>dotted-h19-5-d2-8-20261002-e56ea318af89-nan</td>
-        <td class="ok">0.2600</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE30</strong></td>
-        <td>d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</td>
-        <td class="ok">0.2600</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="ok">no NaN suffix reported</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE33</strong></td>
-        <td>h33d-analog-tip-stepover-r30-20261004-cb490425926e</td>
-        <td class="ok">0.2632</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="ok">no NaN suffix reported</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE24</strong></td>
-        <td>h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</td>
-        <td class="ok">0.2477</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE27</strong></td>
-        <td>topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan</td>
-        <td class="ok">0.2449</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>Korea8 (this repo)</strong></td>
-        <td>korea8-k8-1-blind-stepper-relay-20261104-v1</td>
-        <td class="neutral">—</td>
-        <td>organiser score pending data placement (HOLDOUT-DTI proxy self-test 0.0012 — projection only, not a leaderboard estimate)</td>
-        <td class="mono ok">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</td>
-        <td class="ok">YES — verified: rho = -0.0005 (&le; 0.90), dot overlap 1.7% (&le; 70%)</td>
-        <td class="ok">pre-validated: no NaN inside footprint, values [0, 0.82]</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p class="small">Reference (not a GEMSDOE site): current competition leaderboard high cited by the team: <strong>0.4413</strong>; GEMSDOE32's own reported high was 0.2778. None of the reported figures were verified against organiser receipts by this repo.</p>
-
-  <h2>2. Which file to submit to obtain a high score</h2>
-  <div class="callout danger">
-    <strong>No file in this table carries a verified organiser score above 0.2778.</strong> The highest <em>reported</em> score in scope is GEMSDOE32's 0.2778, but its docs site is 404 and the figure could not be re-verified. The Korea8 K8-1 TIF is the only file in this repo that is (a) format-verified against the submission contract and (b) verified unique; its organiser score is unknown until <code>data/raw/</code> is populated (see &sect;4). Do not upload any "-nan" GEMSDOE file without first replacing NaN inside the footprint — the submission form returns "Predicted values must be in range [0, 1]".
-  </div>
-
-  <h2>3. Our candidate (Korea8 K8-1 lane)</h2>
-  <ul>
-    <li><strong>File:</strong> <code class="mono">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</code> (SHA-256: 6104ad…c24bf)</li>
-    <li><strong>Lane:</strong> blind stepover/relay geothermal-conduit targets in the off-catalogue near-field (300 m&ndash;3 km from catalogue traces); not dotted catalogue traces.</li>
-    <li><strong>Format:</strong> pre-validated — see &sect;validator output on the home page.</li>
-    <li><strong>Uniqueness:</strong> verified vs registry template — rank correlation -0.0005 (&le; 0.90), max 3-px dot overlap 1.7% (&le; 70%).</li>
-    <li><strong>Score:</strong> no organiser-confirmed score; proxy holdout self-test DTI = 0.0012 (95% CI 0.00017&ndash;0.0012) — projection only, not a leaderboard estimate.</li>
-  </ul>
-
-  <h2>4. Limitations &amp; data blocker</h2>
-  <div class="danger">
-    <strong>DrivenData login wall.</strong> <code>training_features.tif</code>, <code>labels.tif</code>, <code>sample_submission.tif</code>, <code>existing_faults.tif</code> require DrivenData credentials; the data page redirects to login without auth. Until a credentialed machine places them in <code>data/raw/</code> and <code>python scripts/prepare_data.py</code> is run, no organiser score or leaderboard estimate can be produced, and no weekly submission slot should be spent on an unverified candidate (protocol: &le; 3 experiments, &le; 2 hours; no slot spent this session).
-  </div>
-  <ul>
-    <li>GEMSDOE32 docs page (<code>buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html</code>) returns 404 &mdash; 0.2778 is user-reported, not organiser-verified.</li>
-    <li>GEMSDOE site TIFs are not accessible from this sandbox; uniqueness claims for those sites are reported, not verified.</li>
-    <li>Korea8's holdout DTI was computed on a synthetic proxy fault network, not organiser labels.</li>
-  </ul>
-
-  <footer>
-    <p>Sources: <a>DrivenData GEMS problem description</a> &bull; <a>Reference solution</a> &bull; <a>Rules PDF (NLR/DOE)</a> &bull; <a>USGS GeoDAWN</a> &bull; <a>INGENIOUS (GBCGE)</a> &bull; <a>EPSG:32611</a> &bull; <a>Tversky index</a></p>
-    <p><em>No hallucinations policy: every score in this table is marked as reported or projection. No projection is written as an organiser score.</em></p>
-  </footer>
-</div>
+</main>
+<footer class="wrap footer">
+  <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
+     Built 2026-11-06 13:40 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
+     Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
+  <p class="muted">Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
+     Licenses re-verified 2026-11-06 via official CSLB pages — statuses can change; re-check before contracting.</p>
+</footer>
 </body>
 </html>

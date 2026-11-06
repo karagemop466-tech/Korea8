@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review — Bathtub Overflow Trip Lever Project</title>
+<meta name="description" content="Non-blocking flagged items published for owner review, with source links.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">◧</span> Trip Lever Project</a>
+    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="technical-approach.html">Technical Approach</a><a href="sources.html">Sources</a><a href="flagged-for-review.html" class="active">Flagged for Review</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+<h1>Flagged for Review</h1>
+<p class="updated">Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here.</p>
+
+<article class="flagcard" id="F-01">
+  <div class="flag-head">
+    <code>F-01</code>
+    <span class="pill pill-info">informational</span>
+    <h3>Repository previously hosted a different project (DOE GEMS Prize Challenge)</h3>
+  </div>
+  <p>The repository&#x27;s existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The new project site now occupies the repository root (what GitHub Pages serves from main), while the complete legacy DOE GEMS evidence site remains untouched under docs/ for history.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/docs/index.html" target="_blank" rel="noopener">Legacy GEMS evidence site preserved at docs/index.html</a> <a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/README.md" target="_blank" rel="noopener">Legacy project README</a></p>
+</article>
+<article class="flagcard" id="F-02">
+  <div class="flag-head">
+    <code>F-02</code>
+    <span class="pill pill-warn">unverified-data</span>
+    <h3>All three estimates are user-provided and could not be independently verified</h3>
+  </div>
+  <p>E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor&#x27;s verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json" target="_blank" rel="noopener">Estimates data (project/estimates.json)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">CSLB license check entry point (official)</a></p>
+</article>
+<article class="flagcard" id="F-03">
+  <div class="flag-head">
+    <code>F-03</code>
+    <span class="pill pill-warn">scope-ambiguity</span>
+    <h3>The three quotes describe different scopes and are not directly comparable</h3>
+  </div>
+  <p>E-03 ($135) is &#x27;repair or adjust plunger handle&#x27;; E-02 ($550) is &#x27;replace lever for the bathtub plug and spout with diverter, labor and materials&#x27;; E-01 ($614) is &#x27;replacing waste and overflow&#x27; (full assembly). None of the three quotes explicitly includes drywall opening or ceiling restoration, which the fallback approach (working from below through a storage-unit ceiling) will likely require (R-06, R-07). Third-party guides put drywall patching at $300–$930 on top of plumbing work.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi — bathroom leak repair cost (drywall add-on range)</a></p>
+</article>
+<article class="flagcard" id="F-04">
+  <div class="flag-head">
+    <code>F-04</code>
+    <span class="pill pill-warn">unverified-data</span>
+    <h3>Yelp review figures could not be fetched directly (HTTP 403 bot-block)</h3>
+  </div>
+  <p>Yelp returned 403 to automated fetches. Review counts/ratings for Expert Plumbing Solutions (4.8 / 81) and Bay Area Plumbing (175 reviews) are recorded exactly as displayed in the Yelp listing titles surfaced via the search index on 2026-11-06, and flagged for manual re-verification by clicking the Yelp links. No rating was invented; where a value could not be seen it was left blank (e.g., Bay Area Plumbing star rating).</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco" target="_blank" rel="noopener">Yelp — Expert Plumbing Solutions</a> <a class="srclink flagged-link" href="https://www.yelp.com/biz/bay-area-plumbing-san-francisco" target="_blank" rel="noopener">Yelp — Bay Area Plumbing</a></p>
+</article>
+<article class="flagcard" id="F-05">
+  <div class="flag-head">
+    <code>F-05</code>
+    <span class="pill pill-info">verification-limit</span>
+    <h3>CSLB statuses are point-in-time (data as of 2026-11-06)</h3>
+  </div>
+  <p>License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status &#x27;can change at any time&#x27; and that its database may lag. Re-check each linked CSLB page before contracting. Worker&#x27;s-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response&#x27;s WC policy (#1024971) shows an expiration of 2026-12-18.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener">CSLB disclaimer on license-detail pages</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/" target="_blank" rel="noopener">CSLB — Hire a Contractor guidance</a></p>
+</article>
+<article class="flagcard" id="F-06">
+  <div class="flag-head">
+    <code>F-06</code>
+    <span class="pill pill-warn">gap</span>
+    <h3>No provider in the set holds a C-9 Drywall classification</h3>
+  </div>
+  <p>None of the verified licenses includes C-9 (Drywall). The all-in-one requirement (R-07) is therefore satisfiable in two CSLB-sanctioned ways: (a) hire a B-licensed general contractor who contracts both the C-36 plumbing and a licensed C-9 drywall subcontractor under one contract (Ace #829071 and We Do Construction #1096552 hold B + C-36; SF Building Group #1106131 holds B), or (b) hire a C-36 plumber and separately contract a licensed drywall contractor. CSLB&#x27;s official guidance: a B contractor is appropriate when a job requires more than two types of work and cannot legally contract for a single trade only.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx" target="_blank" rel="noopener">CSLB — Find A Licensed Contractor (B vs C multi-trade guidance)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/" target="_blank" rel="noopener">CSLB — License Classifications</a></p>
+</article>
+<article class="flagcard" id="F-07">
+  <div class="flag-head">
+    <code>F-07</code>
+    <span class="pill pill-info">citation-note</span>
+    <h3>Access-panel code section numbering differs across CPC editions</h3>
+  </div>
+  <p>The 12-inch access requirement for concealed slip-joint connections (directly relevant to tub waste/overflow serviceability) is numbered 402.10 in the 2022 California Plumbing Code / UPC, but 404.2 in the 2010 CPC. Links to both editions are provided; the requirement text itself is consistent.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://up.codes/s/concealed-joints" target="_blank" rel="noopener">CPC 2022 §402.10 (UpCodes reprint)</a> <a class="srclink flagged-link" href="https://archive.org/download/gov.ca.bsc.title24.2010.part05/gov.ca.bsc.2010.05.svg.html" target="_blank" rel="noopener">2010 CPC §404.2 (state publication scan)</a> <a class="srclink flagged-link" href="https://aa.iapmo.org/?code=UPC&amp;chapter=4" target="_blank" rel="noopener">IAPMO Answers &amp; Analysis (official code publisher)</a></p>
+</article>
+<article class="flagcard" id="F-08">
+  <div class="flag-head">
+    <code>F-08</code>
+    <span class="pill pill-warn">discrepancy</span>
+    <h3>Fast Response Plumbing &amp; Rooter: CSLB address differs from website address</h3>
+  </div>
+  <p>CSLB record of record for license #1024971 lists 236 W Portal Ave #459, San Francisco 94127; the company website displays 4444 Geary Blvd Ste 203, San Francisco 94118. Same license number and phone on both. Likely a mailing/office address difference; confirm at contract time.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" target="_blank" rel="noopener">CSLB license detail #1024971 (official)</a> <a class="srclink flagged-link" href="https://www.fastresponseplumbingsf.com/" target="_blank" rel="noopener">Company official site</a></p>
+</article>
+<article class="flagcard" id="F-09">
+  <div class="flag-head">
+    <code>F-09</code>
+    <span class="pill pill-warn">unverified-data</span>
+    <h3>Review counts for We Do Construction and SF Building Group unknown</h3>
+  </div>
+  <p>No review counts or ratings could be captured for these two providers from the sources fetched this session. Per the verification rule, those cells are left blank rather than estimated. Ask both for references from occupied-unit jobs.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/" target="_blank" rel="noopener">We Do Construction — official site</a> <a class="srclink flagged-link" href="https://sfbuildinggroup.com/" target="_blank" rel="noopener">SF Building Group — official site</a></p>
+</article>
+<article class="flagcard" id="F-10">
+  <div class="flag-head">
+    <code>F-10</code>
+    <span class="pill pill-warn">gap</span>
+    <h3>Photos of the work area not yet available</h3>
+  </div>
+  <p>The project owner states reference photos will be provided later; all analysis in this session is based on the written description only (R-12). Site access, tub type (alcove/freestanding), finish (tile/surround), and the storage-unit ceiling construction are unconfirmed and materially affect scope.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json" target="_blank" rel="noopener">Requirements record (project/requirements.json)</a></p>
+</article>
+
+</main>
+<footer class="wrap footer">
+  <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
+     Built 2026-11-06 13:40 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
+     Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
+  <p class="muted">Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
+     Licenses re-verified 2026-11-06 via official CSLB pages — statuses can change; re-check before contracting.</p>
+</footer>
+</body>
+</html>
