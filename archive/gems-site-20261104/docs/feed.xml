@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>Korea8 GEMS evidence feed</title>
+<link>https://karagemop466-tech.github.io/Korea8/</link>
+<description>Fail-closed DOE GEMS fault-prediction evidence</description>
+<lastBuildDate>2026-11-04T20:40:14Z</lastBuildDate>
+<item><title>Run 2026-11-04T20:40:14Z — verdict negative</title>
+<link>https://karagemop466-tech.github.io/Korea8/evidence/run_card.json</link>
+<guid isPermaLink="false">c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0</guid>
+<description>HOLDOUT-DTI 0.0219 (CI [0.0177, 0.0261]); dots 8316; verdict negative.</description>
+<pubDate>2026-11-04T20:40:14Z</pubDate></item>
+</channel></rss>

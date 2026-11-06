@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel>
-<title>Korea8 GEMS evidence feed</title>
-<link>https://karagemop466-tech.github.io/Korea8/</link>
-<description>Fail-closed DOE GEMS fault-prediction evidence</description>
-<lastBuildDate>2026-11-04T20:40:14Z</lastBuildDate>
-<item><title>Run 2026-11-04T20:40:14Z — verdict negative</title>
-<link>https://karagemop466-tech.github.io/Korea8/evidence/run_card.json</link>
-<guid isPermaLink="false">c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0</guid>
-<description>HOLDOUT-DTI 0.0219 (CI [0.0177, 0.0261]); dots 8316; verdict negative.</description>
-<pubDate>2026-11-04T20:40:14Z</pubDate></item>
-</channel></rss>
+<rss version="2.0">
+<channel>
+  <title>Korea8 — Bathtub Overflow Trip Lever Repair Research</title>
+  <link>https://karagemop466-tech.github.io/Korea8/</link>
+  <description>San Francisco plumber research for a stuck bathtub overflow trip lever behind concealed plumbing. Tenant-occupied unit. Internal use only.</description>
+  <lastBuildDate>Fri, 06 Nov 2026 00:00:00 UTC</lastBuildDate>
+  <item>
+    <title>Site published — contractor research dashboard</title>
+    <link>https://karagemop466-tech.github.io/Korea8/index.html</link>
+    <guid isPermaLink="false">korea8-bathtub-overflow-20261106</guid>
+    <description>Dashboard, executive summary, contractor table (9 SF-area plumbers from Yelp/company sites), client estimates $135-$614 (8/30/26), SFDBI permit guidance, flagged-for-review register. CSLB license statuses unverified.</description>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 UTC</pubDate>
+  </item>
+</channel>
+</rss>

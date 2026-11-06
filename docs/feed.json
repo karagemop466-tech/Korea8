@@ -1,15 +1,18 @@
 {
-  "schema": "korea8-feed-v1",
-  "generated_utc": "2026-11-04T20:40:14Z",
-  "verdict": "negative",
-  "holdout_dti": 0.021916420266959818,
-  "holdout_ci95": [
-    0.017705055578650916,
-    0.026092391114912142
+  "schema": "korea8-bathtub-feed-v1",
+  "generated_utc": "2026-11-06T00:00:00Z",
+  "project": "Bathtub wastewater overflow trip lever repair research",
+  "location": "San Francisco, CA",
+  "pages": [
+    {"title": "Dashboard", "path": "index.html"},
+    {"title": "Executive summary", "path": "executive-summary.html"},
+    {"title": "Estimates (8/30/26)", "path": "estimates.html"},
+    {"title": "Contractors &amp; licenses", "path": "contractors.html"},
+    {"title": "Permits &amp; regulations", "path": "permits.html"},
+    {"title": "Analysis &amp; findings", "path": "findings.html"},
+    {"title": "Flagged for review", "path": "flagged.html"},
+    {"title": "Official sources", "path": "sources.html"}
   ],
-  "emitted_dots": 8316,
-  "raster_sha256": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0",
-  "raster": "downloads/korea8_candidate.tif",
-  "run_card": "evidence/run_card.json",
-  "verification": "evidence/verification.json"
+  "verification_convention": "Every table row carries a source link; values not confirmable from an official source are left blank and flagged UNVERIFIED; no values are inferred.",
+  "flagged_items": 11
 }

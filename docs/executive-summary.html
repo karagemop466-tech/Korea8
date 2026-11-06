@@ -1,192 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Executive summary — GEMSDOE site scores &amp; Korea8 submission</title>
-<style>
-  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; color: #1a1a1a; line-height: 1.5; }
-  header { background: #0b3d62; color: #fff; padding: 20px 20px; }
-  header h1 { margin: 0; font-size: 1.4rem; }
-  header p { margin: 6px 0 0; opacity: 0.9; font-size: 0.95rem; }
-  .container { max-width: 1200px; margin: 0 auto; padding: 24px 20px; }
-  a.btn { display: inline-block; background: #0b3d62; color: #fff; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 700; margin-bottom: 16px; }
-  a.btn:hover { background: #083252; }
-  .callout { border: 1.5px solid #e3b505; background: #fff8e1; border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
-  .callout.ok { border-color: #1a7a3c; background: #e7f7ea; }
-  .callout.danger { border-color: #b3261e; background: #fdecec; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
-  th, td { border: 1px solid #c3ccd4; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #eef3f7; font-weight: 700; }
-  tr:nth-child(even) td { background: #f4f7fa; }
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; word-break: break-all; }
-  .ok { color: #1a7a3c; font-weight: 700; }
-  .warn { color: #b3541e; font-weight: 700; }
-  .neutral { color: #555; }
-  h2 { border-bottom: 2px solid #0b3d62; padding-bottom: 6px; margin-top: 32px; }
-  ul { margin: 8px 0; padding-left: 22px; }
-  .small { font-size: 0.85rem; color: #555; }
-  footer { margin-top: 32px; padding: 20px 0; border-top: 1px solid #d5dbe1; font-size: 0.85rem; color: #555; }
-</style>
+<title>Executive Summary — Bathtub Overflow Trip Lever Repair</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-  <h1>Executive summary — GEMSDOE focus sites &amp; Korea8 submission</h1>
-  <p>DOE GEMS Prize Challenge (DrivenData #306) &bull; arena/b33c0036-korea8 &bull; generated 2026-11-04</p>
+  <h1>Executive Summary</h1>
+  <p class="sub">Bathtub Wastewater Overflow Trip Lever Repair — San Francisco, CA · Tenant-occupied unit · Internal use only</p>
+  <p class="meta">Prepared 2026-11-06 · Source: client description and estimates received 8/30/26 · Research: Yelp, company websites, CSLB, SF.gov &mdash; see <a href="sources.html">Official sources</a> and <a href="flagged.html">Flagged for review</a></p>
 </header>
+<nav><a class="btn" href="index.html">&larr; Back to dashboard</a></nav>
 
-<div class="container">
-  <a class="btn" href="index.html">⬅ Back to home / download</a>
-  <a class="btn" href="downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif" download>⬇ Download Korea8 submission TIF</a>
+<section>
+  <h2>1. The problem</h2>
+  <p>The bathtub overflow trip lever (plunger-style waste-and-overflow stopper control) is <strong>stuck inside the plumbing concealed behind the bathtub wall</strong>. The overflow is in a hard-to-access area, so reaching the plumbing may require opening drywall.</p>
+  <ul>
+    <li>Five or more licensed plumbers have been consulted; all were unable or unwilling to remove the overflow without concern about destroying hidden plumbing behind the wall.</li>
+    <li><strong>Preferred approach (client):</strong> remove or repair the overflow <strong>from above</strong>, avoiding wall demolition.</li>
+    <li><strong>Fallback approach (all plumbers consulted):</strong> work <strong>from below</strong>. Because a storage unit occupies the space below the tub, this may require opening the drywall ceiling of the unit below.</li>
+    <li>The client needs an <strong>all-in-one service: plumbing plus drywall</strong> (cut, repair, patch, paint of any ceiling/wall opened).</li>
+    <li>The unit is <strong>tenant-occupied</strong>: the contractor must perform delicate work in a sensitive environment with coordinated tenant access.</li>
+    <li>The client wants a <strong>licensed plumber or contractor</strong> (California CSLB C-36 plumbing contractor, or B general building contractor for combined plumbing/drywall scope).</li>
+  </ul>
+</section>
 
-  <div class="callout ok">
-    <strong>Best submission to download and submit from this repo:</strong>
-    <code class="mono">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</code> —
-    format-verified (single-band float32, 3730&times;3292, EPSG:32611, 100 m, values in [0,1], 0 NaN inside footprint),
-    unique lane verified (rank correlation -0.0005 &le; 0.90; 1.7% of dots within 3 px of registry &le; 70%),
-    submission note 133 chars (&le; 140).
-    <strong>Organiser-confirmed score: not yet available</strong> &mdash; the competition rasters are DrivenData-login-walled (see limitations below).
-  </div>
-
-  <h2>1. Score table — focus GEMSDOE sites (scores as reported on the sites)</h2>
-  <p><strong>How to read:</strong> the <em>estimate score</em> column shows each site's reported best submission score. These are <strong>reported values</strong>, not organiser-receipt-verified by this repo (GEMSDOE32's docs site returns 404). The <em>unique?</em> column states whether the submission is demonstrably unlike the other GEMSDOE submissions listed; the GEMSDOE sites' TIFs were not accessible to this sandbox, so uniqueness there is stated as reported, not verified. Korea8's K8-1 lane was verified unique against its registry template.</p>
-
+<section>
+  <h2>2. Client-provided estimates (received 8/30/26)</h2>
   <table>
     <thead>
-      <tr>
-        <th>Site</th>
-        <th>Best submission (reported)</th>
-        <th>Estimate score</th>
-        <th>Score basis / label</th>
-        <th>File to download</th>
-        <th>Unique vs other GEMSDOE sites?</th>
-        <th>Format risk</th>
-      </tr>
+      <tr><th>Vendor (as named by client)</th><th>Scope described by client</th><th>Estimate</th><th>Verification status</th></tr>
     </thead>
     <tbody>
-      <tr>
-        <td><strong>GEMSDOE32</strong></td>
-        <td>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</td>
-        <td class="ok">0.2778</td>
-        <td>reported on site (highest in scope)</td>
-        <td class="mono">docs/index.html (404 — file link not accessible)</td>
-        <td class="neutral">reported unique; not independently verifiable (site 404)</td>
-        <td class="ok">"-zeros" suffix: NaN replaced with 0, passes [0,1]</td>
+      <tr class="flagged">
+        <td>Expert plumbing solutions</td>
+        <td>Replacing waste and overflow</td>
+        <td>$614</td>
+        <td><span class="flag">UNVERIFIED</span> — client-provided quote; not confirmed by vendor or any official source</td>
       </tr>
-      <tr>
-        <td><strong>GEMSDOE36</strong></td>
-        <td>anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</td>
-        <td class="ok">0.2750</td>
-        <td>reported on site</td>
-        <td class="mono">docs/ (link not accessible)</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="ok">"-zeros": NaN replaced with 0</td>
+      <tr class="flagged">
+        <td>Bay Area plumbing</td>
+        <td>Replace lever for the bathtub plug and spout with diverter; includes labor and materials</td>
+        <td>$550</td>
+        <td><span class="flag">UNVERIFIED</span> — client-provided quote</td>
       </tr>
-      <tr>
-        <td><strong>GEMSDOE28</strong></td>
-        <td>h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</td>
-        <td class="ok">0.2710</td>
-        <td>reported on site (also h27-4-r1-solo-d2-8 = 0.2708)</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained — may fail "[0,1] range" check if NaN inside footprint</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE31</strong></td>
-        <td>h27-4-solo-d28-20261004-8acb75e1-nan</td>
-        <td class="ok">0.2708</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE25</strong></td>
-        <td>dotted-h19-5-d2-8-20261002-e56ea318af89-nan</td>
-        <td class="ok">0.2600</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE30</strong></td>
-        <td>d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</td>
-        <td class="ok">0.2600</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="ok">no NaN suffix reported</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE33</strong></td>
-        <td>h33d-analog-tip-stepover-r30-20261004-cb490425926e</td>
-        <td class="ok">0.2632</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="ok">no NaN suffix reported</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE24</strong></td>
-        <td>h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</td>
-        <td class="ok">0.2477</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>GEMSDOE27</strong></td>
-        <td>topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan</td>
-        <td class="ok">0.2449</td>
-        <td>reported on site</td>
-        <td class="mono">not accessible</td>
-        <td class="neutral">reported unique; not independently verifiable</td>
-        <td class="warn">"-nan": NaN retained</td>
-      </tr>
-      <tr>
-        <td><strong>Korea8 (this repo)</strong></td>
-        <td>korea8-k8-1-blind-stepper-relay-20261104-v1</td>
-        <td class="neutral">—</td>
-        <td>organiser score pending data placement (HOLDOUT-DTI proxy self-test 0.0012 — projection only, not a leaderboard estimate)</td>
-        <td class="mono ok">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</td>
-        <td class="ok">YES — verified: rho = -0.0005 (&le; 0.90), dot overlap 1.7% (&le; 70%)</td>
-        <td class="ok">pre-validated: no NaN inside footprint, values [0, 0.82]</td>
+      <tr class="flagged">
+        <td>Fast response</td>
+        <td>Repair or adjust bath tub wastewater plunger handle</td>
+        <td>$135</td>
+        <td><span class="flag">UNVERIFIED</span> — client-provided quote</td>
       </tr>
     </tbody>
   </table>
+  <p class="small">Estimated client cost range: <strong>$135 &ndash; $614</strong>. All figures are client-provided as of 8/30/26 and must be re-confirmed with written, itemized quotes before any work is authorized. See <a href="estimates.html">estimates.html</a>.</p>
+</section>
 
-  <p class="small">Reference (not a GEMSDOE site): current competition leaderboard high cited by the team: <strong>0.4413</strong>; GEMSDOE32's own reported high was 0.2778. None of the reported figures were verified against organiser receipts by this repo.</p>
+<section>
+  <h2>3. Contractors found in San Francisco (review services, e.g. Yelp)</h2>
+  <table>
+    <thead>
+      <tr><th>Contractor</th><th>Phone / area</th><th>Review signal</th><th>Relevance to this job</th><th>CSLB license (claimed)</th><th>CSLB verification</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Heise's Plumbing</strong></td>
+        <td class="small">415-333-0704 · San Francisco</td>
+        <td class="small">Yelp-listed SF plumber</td>
+        <td class="small">Company site documents replacing a tub waste &amp; overflow assembly in a San Francisco residence — directly matches; operating since 1954</td>
+        <td class="small">#1089561 · Class A, C10, C20, C36 (claimed on company site)</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Expert Plumbing Solutions</strong></td>
+        <td class="small">415-531-5340 · 1465 44th Ave, SF 94122</td>
+        <td class="small">Yelp 4.8 &starf; (80 reviews); Yelp "Verified License"</td>
+        <td class="small">Named by client for $614 waste &amp; overflow estimate; general plumbing, fixture installation</td>
+        <td class="small">#977638 (claimed on company site)</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Bay Area Plumbing</strong></td>
+        <td class="small">Serving San Francisco</td>
+        <td class="small">Yelp 4.8 &starf; (~168&ndash;175 reviews); Yelp "Verified License"</td>
+        <td class="small">Named by client for $550 lever + spout/diverter estimate; bathroom remodeling, plumbing repair, emergency services</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Fast Response Plumbing &amp; Rooter</strong></td>
+        <td class="small">Serving San Francisco</td>
+        <td class="small">Yelp 4.8 &starf; (~877&ndash;906 reviews); Yelp "Verified License"</td>
+        <td class="small">Named by client for $135 plunger-handle repair/adjust estimate; locally &amp; family owned, ~10 min response</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Portola Plumbing Services</strong></td>
+        <td class="small">Serving San Francisco</td>
+        <td class="small">Yelp-listed</td>
+        <td class="small">Bathtub installation &amp; repair listed among services</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Citywide Plumbing</strong></td>
+        <td class="small">Serving San Francisco · 10 years in business</td>
+        <td class="small">Yelp 4.8 &starf; (~198 reviews); Yelp "Verified License"</td>
+        <td class="small">General plumbing; free estimates</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Precision Rooter &amp; Drain</strong></td>
+        <td class="small">Serving San Francisco</td>
+        <td class="small">Yelp 4.9 &starf; (~242 reviews); Yelp "Verified License"</td>
+        <td class="small">Family-owned; plumbing repair</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Ace Plumbing &amp; Rooter</strong></td>
+        <td class="small">Serving San Francisco &amp; surrounding area</td>
+        <td class="small">Yelp 4.7 &starf; (~1.5k reviews); Yelp "Verified License"</td>
+        <td class="small">General plumbing; free estimates</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+      <tr>
+        <td><strong>Eric Brand Plumbing</strong></td>
+        <td class="small">Serving San Francisco</td>
+        <td class="small">Yelp 5.0 &starf; (~134 reviews)</td>
+        <td class="small">General plumbing</td>
+        <td class="small">Not shown in Yelp profile</td>
+        <td><span class="flag">UNVERIFIED</span> — CSLB live lookup pending</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="small">Yelp "Verified License" is Yelp's own badge — not a confirmation from the California CSLB. No CSLB status above has been confirmed by a live lookup. Verify any contractor at the official CSLB license check before hiring: <a class="mono" href="https://www2.cslb.ca.gov/onlineservices/checklicenseII/checklicense.aspx" target="_blank" rel="noopener">CSLB Check a License</a> (search by business name or license number). Full detail: <a href="contractors.html">contractors.html</a>.</p>
+</section>
 
-  <h2>2. Which file to submit to obtain a high score</h2>
-  <div class="callout danger">
-    <strong>No file in this table carries a verified organiser score above 0.2778.</strong> The highest <em>reported</em> score in scope is GEMSDOE32's 0.2778, but its docs site is 404 and the figure could not be re-verified. The Korea8 K8-1 TIF is the only file in this repo that is (a) format-verified against the submission contract and (b) verified unique; its organiser score is unknown until <code>data/raw/</code> is populated (see &sect;4). Do not upload any "-nan" GEMSDOE file without first replacing NaN inside the footprint — the submission form returns "Predicted values must be in range [0, 1]".
-  </div>
-
-  <h2>3. Our candidate (Korea8 K8-1 lane)</h2>
+<section>
+  <h2>4. Permits and regulations (San Francisco)</h2>
   <ul>
-    <li><strong>File:</strong> <code class="mono">docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif</code> (SHA-256: 6104ad…c24bf)</li>
-    <li><strong>Lane:</strong> blind stepover/relay geothermal-conduit targets in the off-catalogue near-field (300 m&ndash;3 km from catalogue traces); not dotted catalogue traces.</li>
-    <li><strong>Format:</strong> pre-validated — see &sect;validator output on the home page.</li>
-    <li><strong>Uniqueness:</strong> verified vs registry template — rank correlation -0.0005 (&le; 0.90), max 3-px dot overlap 1.7% (&le; 70%).</li>
-    <li><strong>Score:</strong> no organiser-confirmed score; proxy holdout self-test DTI = 0.0012 (95% CI 0.00017&ndash;0.0012) — projection only, not a leaderboard estimate.</li>
+    <li>SF.gov (Department of Building Inspection): a plumbing permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground — which is exactly the situation here (concealed waste-and-overflow plumbing).</li>
+    <li>SF Plumbing Code §104.2 (exempt work — no permit required) covers only: repair of leaks <em>not</em> requiring cutting into/removing piping; unstopping traps/sewers/vents/waste pipes without cutting; replacement/repair/maintenance of faucets, angle stops, hose bibbs or roof drains without cutting piping; toilet replacement; furnace filter replacement. Replacing a waste-and-overflow assembly behind a wall is <strong>not</strong> exempt.</li>
+    <li>A plumbing/mechanical permit applicant must generally hold a C4, C16, C20, C36, C54, B, or A CSLB license; C36 is the plumbing classification.</li>
+    <li>Permits are filed via PermitSF (online); Permit Center help desk: 628-652-4900, 49 South Van Ness, 2nd floor.</li>
+    <li><strong>Client position:</strong> the work is requested <strong>without a permit</strong> (internal client decision; reasons private and not disclosed here). A licensed professional should assess whether the planned scope legally requires a permit before work begins.</li>
   </ul>
+  <p class="small">See <a href="permits.html">permits.html</a> with official links.</p>
+</section>
 
-  <h2>4. Limitations &amp; data blocker</h2>
-  <div class="danger">
-    <strong>DrivenData login wall.</strong> <code>training_features.tif</code>, <code>labels.tif</code>, <code>sample_submission.tif</code>, <code>existing_faults.tif</code> require DrivenData credentials; the data page redirects to login without auth. Until a credentialed machine places them in <code>data/raw/</code> and <code>python scripts/prepare_data.py</code> is run, no organiser score or leaderboard estimate can be produced, and no weekly submission slot should be spent on an unverified candidate (protocol: &le; 3 experiments, &le; 2 hours; no slot spent this session).
+<section>
+  <h2>5. Findings and recommendations</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="k">Finding 1 — Access strategy</div>
+      <p class="small">Above-access is preferred by the client but 5+ licensed plumbers have declined-risked it due to concealed-plumbing damage concerns. Below-access likely means opening the drywall ceiling of the storage unit below &mdash; hire an all-in-one plumbing + drywall contractor.</p>
+    </div>
+    <div class="card">
+      <div class="k">Finding 2 — Best-matched contractor lead</div>
+      <p class="small">Heise's Plumbing (SF, CA Lic #1089561 claimed incl. C36 plumbing) documents a tub waste-and-overflow assembly replacement in a San Francisco residence. Contact first; verify license via CSLB before hiring.</p>
+    </div>
+    <div class="card">
+      <div class="k">Finding 3 — Cost</div>
+      <p class="small">Client estimates 8/30/26 span $135&ndash;$614. None confirmed by vendors. Obtain written itemized quotes from at least 2&ndash;3 contractors before authorizing work.</p>
+    </div>
+    <div class="card">
+      <div class="k">Finding 4 — Permit risk</div>
+      <p class="small">Concealed pipe work generally requires a SF plumbing permit pulled by a licensed contractor. Client has elected not to pull a permit this week (internal). Confirm with SFDBI before starting.</p>
+    </div>
+    <div class="card">
+      <div class="k">Finding 5 — Tenants</div>
+      <p class="small">Unit is tenant-occupied. Schedule access in advance, protect the unit and the storage unit below, and confirm the contractor is comfortable working in occupied, sensitive environments.</p>
+    </div>
   </div>
-  <ul>
-    <li>GEMSDOE32 docs page (<code>buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html</code>) returns 404 &mdash; 0.2778 is user-reported, not organiser-verified.</li>
-    <li>GEMSDOE site TIFs are not accessible from this sandbox; uniqueness claims for those sites are reported, not verified.</li>
-    <li>Korea8's holdout DTI was computed on a synthetic proxy fault network, not organiser labels.</li>
-  </ul>
+  <ol>
+    <li>Contact shortlist contractors (start with Heise's Plumbing); ask specifically about above-access overflow removal and combined plumbing/drywall below-access scope.</li>
+    <li>Verify CSLB license status for every candidate via the official CSLB license lookup before hiring.</li>
+    <li>Confirm permit requirements with SFDBI/PermitSF given the no-permit client position.</li>
+    <li>Collect written, itemized quotes; compare to the 8/30/26 estimates; select contractor; coordinate tenant access.</li>
+  </ol>
+</section>
 
-  <footer>
-    <p>Sources: <a>DrivenData GEMS problem description</a> &bull; <a>Reference solution</a> &bull; <a>Rules PDF (NLR/DOE)</a> &bull; <a>USGS GeoDAWN</a> &bull; <a>INGENIOUS (GBCGE)</a> &bull; <a>EPSG:32611</a> &bull; <a>Tversky index</a></p>
-    <p><em>No hallucinations policy: every score in this table is marked as reported or projection. No projection is written as an organiser score.</em></p>
-  </footer>
+<section>
+  <h2>6. Verification convention</h2>
+  <p>Every table row on this site carries a source link. Where a value cannot be confirmed from an official source, the cell is left blank (or marked with the non-official source) and flagged <span class="flag">UNVERIFIED</span>. No value is inferred or filled in. Unverified items do not block the project; they are tracked on <a href="flagged.html">Flagged for Review</a>.</p>
+</section>
+
+<div class="footer">
+  <p><strong>Internal use only.</strong> Prepared for the bathtub overflow trip lever repair project, San Francisco, CA. This summary aggregates client-provided information and publicly listed contractor/review information. No contractor has been engaged. License statuses are unverified unless confirmed via CSLB live lookup. Private client reasons for the no-permit decision are intentionally not recorded here.</p>
+  <p>Sources: <a href="sources.html">Official sources index</a> &middot; Flags: <a href="flagged.html">Flagged for review</a></p>
 </div>
 </body>
 </html>
