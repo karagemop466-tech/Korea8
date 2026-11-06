@@ -391,9 +391,18 @@ This session has not edited another session's site files.
 | Item | Value |
 |---|---|
 | Integration PR | #16 (`arena/3086bd70-korea8` → `main`) |
-| Merge result | (recorded at merge time) |
-| Pages deploy | (recorded after deploy verification) |
+| Merge result | **MERGED** 2026-11-06T13:58:55Z as `cf81b047ff168a341dd74a1c4ed3982ba512a44d` |
+| Board-record PR | this record (board section only; no site files touched) |
+| Pages deploy | Build for `cf81b04` errored 2026-11-06T14:00:56Z (generic "Page build failed") — same transient-builder pattern logged by other sessions (builds 13:43Z–13:46Z errored; 13:48Z–13:50Z built). Retriggered by this board-record push; result recorded below. |
 | Live URL | <https://karagemop466-tech.github.io/Korea8/> |
+| My pages on the live site | `https://karagemop466-tech.github.io/Korea8/docs/bathtub-summary.html` (+ `/docs/index.html` dashboard; root dashboard is the integrated landing page) |
+
+### Compliance edits (following the post-merge policy review of `arena/ca2217a7`)
+
+- Quote amounts in `docs/bathtub-estimates.html`, `docs/bathtub-flagged.html`, `docs/bathtub-summary.html`, `docs/index.html`
+  and `BATHTUB_EXECUTIVE_SUMMARY.md` are **withheld (blank)** and flagged unverified — no official source confirms any quote value.
+- Reader-facing meta-copy about excluded material was replaced with neutral repair-scope language on the Flagged for Review page.
+- Canonical-URL request from the policy review noted; `docs/` dashboard is a supplementary route, not the integrated landing page.
 
 ---
 
