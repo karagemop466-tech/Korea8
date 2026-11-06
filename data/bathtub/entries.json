@@ -1,0 +1,362 @@
+{
+  "project": "Bathtub wastewater overflow trip lever — repair access and contractor sourcing (San Francisco)",
+  "location": "San Francisco, CA (tenant-occupied unit)",
+  "prepared": "2026-11-06",
+  "prepared_by": "Session arena/8b5274f2-korea8 (autonomous, no manual user input)",
+  "privacy_note": "Private reasons for not pulling a permit this week are intentionally never recorded here, on the site, or in any communication. Permit questions are referred to SF DBI.",
+  "verification_policy": "Every table row carries a source link. Values confirmed against an official/source page are marked verified=true. Values that cannot be confirmed from an official source are left as-is, marked verified=false, and flagged. Nothing is inferred or filled in. Contractor license statuses below were cross-checked against official CSLB license-detail records checked 6 Nov 2026 (public in the repo at bathroom-overflow/sources.html); no provider was contacted, so scope competence, availability, and pricing remain unconfirmed.",
+  "categories": [
+    {
+      "id": "estimates",
+      "title": "Estimates and quotes (user-provided, 8/30/26)",
+      "rows": [
+        {
+          "id": "est-1",
+          "item": "Remove bathtub wastewater overflow trip lever — replace waste and overflow",
+          "contractor": "Expert plumbing solutions",
+          "value": "$614",
+          "includes": "Replace waste and overflow",
+          "date": "8/30/26",
+          "source": "https://www.cslb.ca.gov/977638",
+          "source_label": "CSLB license detail — Expert Plumbing Solutions #977638 (active, C-36 plumbing, 1465 44th Avenue, San Francisco; checked 6 Nov 2026); company page https://www.eplumbingsolutions.com/",
+          "source_type": "official",
+          "verified": false,
+          "flagged": true,
+          "notes": "Contractor identity and active C-36 license confirmed via official CSLB record (checked 6 Nov 2026). The $614 amount is a user-provided quote dated 8/30/26; no provider-issued document or official published pricing supports it — amount unverified, flagged. No provider was contacted."
+        },
+        {
+          "id": "est-2",
+          "item": "Replace lever for bathtub plug and spout with diverter",
+          "contractor": "Bay Area plumbing",
+          "value": "$550",
+          "includes": "Labor and materials",
+          "date": "8/30/26",
+          "source": "https://www.cslb.ca.gov/757796",
+          "source_label": "CSLB license detail — Bay Area Plumbing #757796 (active, C-36 plumbing, 335 14th Avenue, San Francisco; checked 6 Nov 2026); company page https://www.bayareaplumbingsf.com/; Yelp listing 4.8 stars, 168 reviews",
+          "source_type": "official",
+          "verified": false,
+          "flagged": true,
+          "notes": "Contractor identity and active C-36 license confirmed via official CSLB record (checked 6 Nov 2026) and Yelp listing exists. The $550 amount is a user-provided quote dated 8/30/26; not confirmed by the contractor or any public source — amount unverified, flagged. No provider was contacted."
+        },
+        {
+          "id": "est-3",
+          "item": "Repair or adjust bath tub wastewater plunger handle",
+          "contractor": "Fast response",
+          "value": "$135",
+          "includes": "Repair or adjust",
+          "date": "8/30/26",
+          "source": "https://www.cslb.ca.gov/1024971",
+          "source_label": "CSLB license detail — Fast Response Plumbing & Rooter #1024971 (active, C-36 plumbing, Joseph Tinsley dba, San Francisco; checked 6 Nov 2026); company page https://www.fastresponseplumbingsf.com/; Yelp listing 4.8 stars, 877 reviews",
+          "source_type": "official",
+          "verified": false,
+          "flagged": true,
+          "notes": "Contractor identity and active C-36 license confirmed via official CSLB record (checked 6 Nov 2026) and Yelp listing exists (review describes stuck bathtub drain levers, lever assemblies replaced — anecdotal). The $135 amount is a user-provided quote dated 8/30/26; not confirmed by the contractor or any public source — amount unverified, flagged. No provider was contacted."
+        }
+      ]
+    },
+    {
+      "id": "plumbers",
+      "title": "Candidate plumbers / contractors — San Francisco (license status checked via official CSLB records)",
+      "rows": [
+        {
+          "id": "pl-1",
+          "contractor": "Bay Area Plumbing",
+          "location": "335 14th Ave, San Francisco, CA",
+          "yelp": "4.8 stars · 168 reviews",
+          "relevant_work_shown": "Bathtub/shower valve installation; bathtub & shower drain leak repair (Yelp photo captions — anecdotal)",
+          "license": "CSLB #757796 — Active, C-36 Plumbing (checked 6 Nov 2026)",
+          "license_source": "https://www.cslb.ca.gov/757796",
+          "company_page": "https://www.bayareaplumbingsf.com/",
+          "source": "https://www.cslb.ca.gov/757796",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "Active C-36 plumbing license confirmed via official CSLB record; Yelp listing exists (4.8 stars, 168 reviews, 'Verified License' badge — anecdotal). Trip-lever repair competence, availability, and pricing NOT confirmed — no provider contacted. See est-2 for the user-reported $550 quote (unverified)."
+        },
+        {
+          "id": "pl-2",
+          "contractor": "Fast Response Plumbing & Rooter",
+          "location": "Serving San Francisco and surrounding area",
+          "yelp": "4.8 stars · 877 reviews",
+          "relevant_work_shown": "Review describes two stuck bathtub drain levers; lever assemblies replaced (anecdotal Yelp account — directly relevant work type)",
+          "license": "CSLB #1024971 — Active, C-36 Plumbing, Joseph Tinsley dba (checked 6 Nov 2026)",
+          "license_source": "https://www.cslb.ca.gov/1024971",
+          "company_page": "https://www.fastresponseplumbingsf.com/",
+          "source": "https://www.cslb.ca.gov/1024971",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "Active C-36 plumbing license confirmed via official CSLB record; Yelp listing exists (4.8 stars, 877 reviews — anecdotal). Relevant-work account is user-submitted, not proof of competence. Availability and pricing NOT confirmed — no provider contacted. See est-3 for the user-reported $135 quote (unverified)."
+        },
+        {
+          "id": "pl-3",
+          "contractor": "Ace Plumbing & Rooter",
+          "location": "1090 Bryant St, SoMa, San Francisco, CA",
+          "yelp": "4.7 stars · 1,300+ reviews",
+          "relevant_work_shown": "Bathtub repair listed among services (Yelp — anecdotal)",
+          "license": "Not confirmed — no CSLB license number obtained",
+          "license_source": "",
+          "company_page": "",
+          "source": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+          "source_type": "listing",
+          "verified": false,
+          "flagged": true,
+          "notes": "Yelp listing exists (4.7 stars, 1,300+ reviews — anecdotal). CSLB license number not obtained; active status not confirmed. Flagged unverified — check cslb.ca.gov before hiring."
+        },
+        {
+          "id": "pl-4",
+          "contractor": "Atlas Plumbing & Rooter",
+          "location": "Serving San Francisco and surrounding area",
+          "yelp": "4.3 stars · 480 reviews",
+          "relevant_work_shown": "Plumbing / repipe repair; family-owned, minority-owned (Yelp — anecdotal)",
+          "license": "Not confirmed — no CSLB license number obtained",
+          "license_source": "",
+          "company_page": "",
+          "source": "https://www.yelp.com/search?find_desc=repipe+specialists&find_loc=San+Francisco%2C+CA+94131",
+          "source_type": "listing",
+          "verified": false,
+          "flagged": true,
+          "notes": "Yelp listing exists (4.3 stars, 480 reviews — anecdotal). CSLB license number not obtained; active status not confirmed. Flagged unverified — check cslb.ca.gov before hiring."
+        },
+        {
+          "id": "pl-5",
+          "contractor": "Eric Brand Plumbing",
+          "location": "Serving San Francisco and surrounding area",
+          "yelp": "5.0 stars · 139 reviews",
+          "relevant_work_shown": "Plumbing repair (Yelp — anecdotal)",
+          "license": "Not confirmed — no CSLB license number obtained",
+          "license_source": "",
+          "company_page": "",
+          "source": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+          "source_type": "listing",
+          "verified": false,
+          "flagged": true,
+          "notes": "Yelp listing exists (5.0 stars, 139 reviews — anecdotal). CSLB license number not obtained; active status not confirmed. Flagged unverified — check cslb.ca.gov before hiring."
+        },
+        {
+          "id": "pl-6",
+          "contractor": "Discount Plumbing Rooter",
+          "location": "Serving San Francisco and surrounding area",
+          "yelp": "4.5 stars · 1,200+ reviews",
+          "relevant_work_shown": "Bathtub leak repair reviews (Yelp — anecdotal)",
+          "license": "Not confirmed — no CSLB license number obtained",
+          "license_source": "",
+          "company_page": "",
+          "source": "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+          "source_type": "listing",
+          "verified": false,
+          "flagged": true,
+          "notes": "Yelp listing exists (4.5 stars, 1,200+ reviews — anecdotal). CSLB license number not obtained; active status not confirmed. Flagged unverified — check cslb.ca.gov before hiring."
+        },
+        {
+          "id": "pl-7",
+          "contractor": "Golden Heights Remodeling",
+          "location": "1110 Burnett Ave, San Francisco, CA",
+          "yelp": "4.6 stars · 101 reviews",
+          "relevant_work_shown": "Bathtub repair (Yelp — anecdotal)",
+          "license": "Not confirmed — no CSLB license number obtained",
+          "license_source": "",
+          "company_page": "",
+          "source": "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+          "source_type": "listing",
+          "verified": false,
+          "flagged": true,
+          "notes": "Yelp listing exists (4.6 stars, 101 reviews — anecdotal). CSLB license number not obtained; active status not confirmed. Flagged unverified — check cslb.ca.gov before hiring."
+        },
+        {
+          "id": "pl-8",
+          "contractor": "Expert Plumbing Solutions",
+          "location": "1465 44th Avenue, San Francisco, CA",
+          "yelp": "Yelp profile exists (reviews anecdotal)",
+          "relevant_work_shown": "San Francisco plumbing service, general repairs, drain work and fixtures (company page — anecdotal)",
+          "license": "CSLB #977638 — Active, C-36 Plumbing (checked 6 Nov 2026)",
+          "license_source": "https://www.cslb.ca.gov/977638",
+          "company_page": "https://www.eplumbingsolutions.com/",
+          "source": "https://www.cslb.ca.gov/977638",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "Active C-36 plumbing license confirmed via official CSLB record; company page exists. Trip-lever repair competence, availability, and pricing NOT confirmed — no provider contacted. Matches est-1 contractor; user-reported $614 quote unverified."
+        },
+        {
+          "id": "pl-9",
+          "contractor": "Rapid Flow Plumbing & Rooter Inc",
+          "location": "San Francisco, CA (CSLB-recorded address)",
+          "yelp": "Review search surfaced one tub-plug/wall-access account (anecdotal)",
+          "relevant_work_shown": "Plumbing and general contracting; one Yelp account described an adjacent tub-plug/wall-access event (explicitly anecdotal per sister-session sources page)",
+          "license": "CSLB #1115649 — Active, B General Building + C-36 Plumbing (checked 6 Nov 2026)",
+          "license_source": "https://www.cslb.ca.gov/1115649",
+          "company_page": "https://www.rapidflowbayarea.com/",
+          "source": "https://www.cslb.ca.gov/1115649",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "Active B + C-36 license confirmed via official CSLB record (checked 6 Nov 2026); company site lists plumbing services and general contracting. Drywall repair/paint NOT specifically confirmed on service list — relevant because work from below may need ceiling drywall repair. Scope competence for this job and availability NOT confirmed — no provider contacted. Source: sister-session canonical brief (bathroom-overflow/sources.html, merged to main via PR #9)."
+        }
+      ]
+    },
+    {
+      "id": "codes",
+      "title": "Plumbing code requirements (official sources)",
+      "rows": [
+        {
+          "id": "code-1",
+          "item": "Bathtub overflow — waste arrangement when overflow is provided",
+          "code": "2025 California Plumbing Code (CCR Title 24, Part 5), Section 404.2 Overflows",
+          "value": "Where a fixture is provided with an overflow, the waste shall be so arranged that standing water in the fixture cannot rise in the overflow when the stopper is closed and cannot remain in the overflow when the fixture is empty. Overflow pipe connects to the house/inlet side of the fixture trap.",
+          "source": "https://epubs.iapmo.org/2025/CPC/",
+          "source_label": "2025 California Plumbing Code, IAPMO official e-publication (Chapter 4)",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "Confirmed via IAPMO official e-pubs of the 2025 California Plumbing Code; section text also quoted in IAPMO Uniform Codes Spotlight (forms.iapmo.org/email_marketing/codespotlight/2019/Jan31.htm)."
+        },
+        {
+          "id": "code-2",
+          "item": "Concealed waste and overflow materials (typical bathtub installation)",
+          "code": "2025 California Plumbing Code, Section 404.2 (per IAPMO Code Spotlight)",
+          "value": "When waste and overflow fittings are concealed, as in most bathtub installations, they must be constructed from materials approved for drainage pipe.",
+          "source": "https://forms.iapmo.org/email_marketing/codespotlight/2019/Jan31.htm",
+          "source_label": "IAPMO Uniform Codes Spotlight quoting CPC Section 404.2",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "IAPMO is the publisher of the California Plumbing Code; the spotlight reproduces Section 404.2 language. Material approval should be confirmed with the installing contractor and SF DBI inspector."
+        },
+        {
+          "id": "code-3",
+          "item": "Contractor license requirement — California",
+          "code": "California State License Board (CSLB), Class C-36 plumbing contractor",
+          "value": "A C-36 license is required for plumbing work valued at $500 or more (labor + materials). License status, bond, and disciplinary history are publicly verifiable at cslb.ca.gov.",
+          "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+          "source_label": "CSLB License Check (official public lookup)",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "CSLB official site confirms C-36 classification covers installation/repair/maintenance of plumbing systems; $500 threshold per California Business & Professions Code as summarized by CSLB guidance."
+        },
+        {
+          "id": "code-4",
+          "item": "San Francisco plumbing permit — when required",
+          "code": "San Francisco Building Code, Section 104.0 Permits (exemptions)",
+          "value": "Exempt work includes 'replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping.' Work requiring cutting into or removal of piping (e.g., opening the wall to reach concealed overflow plumbing) falls outside that exemption and likely requires a plumbing permit. Confirm with SF DBI.",
+          "source": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+          "source_label": "San Francisco Building Code §104.0 (official SF code library, American Legal Publishing)",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "AmLegal is the official publisher of the San Francisco Code. The specific exemption boundary for this job must be confirmed with SF DBI before work."
+        },
+        {
+          "id": "code-5",
+          "item": "San Francisco DBI — plumbing permit and contractor requirements",
+          "code": "SF Department of Building Inspection (DBI), Online Permits & Scheduling",
+          "value": "Plumbing contractors must hold a valid California contractor license (C4 or C36 for plumbing permits), a valid San Francisco business license, workers' compensation certificate, and DBI contractor database registration to obtain plumbing permits via DBI Online Services. Central Permit Bureau: 49 South Van Ness Avenue, 2nd Floor.",
+          "source": "https://sfdbi.org/online-permits-instructions-and-registration-requirements",
+          "source_label": "SF DBI — Online Permits & Scheduling (official)",
+          "source_type": "official",
+          "verified": true,
+          "flagged": false,
+          "notes": "SF DBI official page. DBI also notes 'replacement in kind requires DBI permit equivalent to new work' (SFDBI Division of Plumbing Inspection document). Confirm permit need for this specific job with DBI."
+        }
+      ]
+    },
+    {
+      "id": "permits",
+      "title": "Permit status for this job (to be confirmed with contractor and SF DBI)",
+      "rows": [
+        {
+          "id": "perm-1",
+          "item": "Permit for bathtub overflow / trip lever repair",
+          "value": "Not determined — must be confirmed with SF DBI and the hired contractor.",
+          "source": "https://sfdbi.org/online-permits-instructions-and-registration-requirements",
+          "source_label": "SF DBI Online Permits & Scheduling (official)",
+          "source_type": "official",
+          "verified": false,
+          "flagged": true,
+          "notes": "Whether this specific repair requires a permit depends on scope (access from above vs. opening concealed piping). No permit decision is recorded here. Private reasons for not pulling a permit this week are intentionally not documented anywhere."
+        }
+      ]
+    },
+    {
+      "id": "access",
+      "title": "Access and work-approach considerations (user requirements)",
+      "rows": [
+        {
+          "id": "acc-1",
+          "item": "Preferred access",
+          "value": "Remove the overflow from above (no wall/ceiling opening).",
+          "source": "",
+          "source_label": "User requirement",
+          "source_type": "user_provided",
+          "verified": false,
+          "flagged": true,
+          "notes": "Stated preference of the requester. Feasibility must be confirmed by a plumber on site."
+        },
+        {
+          "id": "acc-2",
+          "item": "Above-access track record",
+          "value": "Over 5 licensed plumbers unable to remove the overflow from above without concern over destroying hidden plumbing behind the wall.",
+          "source": "",
+          "source_label": "User-provided observation",
+          "source_type": "user_provided",
+          "verified": false,
+          "flagged": true,
+          "notes": "User-provided; not independently verifiable. Flagged."
+        },
+        {
+          "id": "acc-3",
+          "item": "Fallback access",
+          "value": "Work from below — may require opening the drywall ceiling over the storage unit below.",
+          "source": "",
+          "source_label": "User-provided observation",
+          "source_type": "user_provided",
+          "verified": false,
+          "flagged": true,
+          "notes": "User-provided; flagged."
+        },
+        {
+          "id": "acc-4",
+          "item": "Service scope needed",
+          "value": "All-in-one service: plumbing + drywall repair (ceiling below, if opened).",
+          "source": "",
+          "source_label": "User requirement",
+          "source_type": "user_provided",
+          "verified": false,
+          "flagged": true,
+          "notes": "User requirement; flagged."
+        },
+        {
+          "id": "acc-5",
+          "item": "Occupancy and sensitivity",
+          "value": "Tenants occupy the unit; contractor must have experience in sensitive, tenant-occupied environments.",
+          "source": "",
+          "source_label": "User requirement",
+          "source_type": "user_provided",
+          "verified": false,
+          "flagged": true,
+          "notes": "User requirement; flagged."
+        },
+        {
+          "id": "acc-6",
+          "item": "Credential preference",
+          "value": "Licensed plumber or contractor preferred — verify California C-36 plumbing license at cslb.ca.gov before hiring.",
+          "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+          "source_label": "CSLB License Check (official) — verify C-36 status before hiring",
+          "source_type": "official",
+          "verified": false,
+          "flagged": true,
+          "notes": "The preference is user-stated; CSLB is the official source to confirm an active C-36 plumbing license for each candidate (three candidates confirmed active above)."
+        }
+      ]
+    }
+  ],
+  "flagged_summary": [
+    "All three estimate amounts ($614 / $550 / $135) are user-reported quotes dated 8/30/26. Contractor licenses for Expert Plumbing Solutions (#977638), Bay Area Plumbing (#757796), and Fast Response Plumbing & Rooter (#1024971) are active C-36 per CSLB records checked 6 Nov 2026, but the amounts themselves are NOT supported by provider-issued documents or official published pricing — amounts remain blank/unverified in the official record. Confirm in writing with each contractor.",
+    "Plumbers pl-3 through pl-7 (Ace, Atlas, Eric Brand, Discount Plumbing Rooter, Golden Heights Remodeling): CSLB license numbers not obtained — active status unconfirmed, flagged unverified. Check cslb.ca.gov before hiring.",
+    "pl-9 Rapid Flow: active B + C-36 per CSLB, but drywall repair/paint not specifically confirmed on its service list; trip-lever competence unconfirmed (no provider contacted).",
+    "Whether a San Francisco plumbing permit is required for this job is unconfirmed — confirm with SF DBI (scope-dependent: work cutting into/removing piping is outside the SF Building Code §104 exemption).",
+    "Above-access feasibility, drywall repair scope, and tenant scheduling are unconfirmed pending on-site assessment.",
+    "Private reasons for not pulling a permit this week are intentionally not recorded anywhere."
+  ]
+}

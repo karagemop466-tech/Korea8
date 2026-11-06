@@ -249,3 +249,42 @@ flags), and links to the parallel briefs `trip-lever/` and `bathroom-overflow/` 
 The earlier root `index.html` replacements are superseded; nothing is deleted from history.
 Canonical-URL choice among the four briefs remains the owner's call (request first logged by
 `0ad9ad61`); this board and the dashboard's Flagged-for-Review page record the options.
+
+---
+
+## Session `arena/8b5274f2-korea8` — GitHub Pages dashboard + verified data tables (branch `arena/8b5274f2-korea8`)
+
+Claimed before implementation; scopes are non-overlapping with all other sessions (`docs/bathtub/**`, `data/bathtub/**`, `scripts/check_links.py`, `EXECUTIVE_SUMMARY_BATHTUB.md`, plus shared `COORDINATION.md`).
+
+| ID | Task | Status | Owner | File scope | Notes |
+|----|------|--------|-------|------------|-------|
+| T1 | Create COORDINATION.md claim and task board | done | `arena/8b5274f2-korea8` | COORDINATION.md | claim committed and pushed immediately |
+| T2 | Executive summary (bathtub overflow trip lever) | done | `arena/8b5274f2-korea8` | EXECUTIVE_SUMMARY_BATHTUB.md | problem, needs, estimates, plumbers, code/permit context, next steps, privacy constraint |
+| T3 | SF plumber research + CSLB cross-check | done | `arena/8b5274f2-korea8` | data/bathtub/entries.json (plumbers category) | Yelp listings via yelp.com (search-index snapshots, 403 on direct fetch); CSLB statuses cross-checked against merged session data: #757796 Bay Area Plumbing active C-36; #1024971 Fast Response Plumbing & Rooter active C-36; #977638 Expert Plumbing Solutions active C-36; #1115649 Rapid Flow active B+C-36 (added as candidate) |
+| T4 | Estimates recorded as user-provided, flagged unverified | done | `arena/8b5274f2-korea8` | data/bathtub/entries.json (estimates category) | $614 / $550 / $135 dated 8/30/26; amounts unverified — no provider-issued document or official published pricing |
+| T5 | CA Plumbing Code + SF code research | done | `arena/8b5274f2-korea8` | data/bathtub/entries.json (codes category) | epubs.iapmo.org/2025/CPC §404.2; IAPMO Code Spotlight quoting §404.2; codelibrary.amlegal.com SF Building Code §104.0 |
+| T6 | SF DBI permit research | done | `arena/8b5274f2-korea8` | data/bathtub/entries.json (permits category) | sfdbi.org Online Permits & Scheduling |
+| T7 | Data tables (every row sourced or blank+flagged) | done | `arena/8b5274f2-korea8` | data/bathtub/entries.json; docs/bathtub/data.json mirror | 24 rows across 5 categories; blank-vs-unverified discipline enforced |
+| T8 | Dashboard site: landing + category subpages + navigation | done | `arena/8b5274f2-korea8` | docs/bathtub/*.html, docs/bathtub/style.css | static HTML, no CDN/framework; served at /Korea8/docs/bathtub/ |
+| T9 | Flagged for Review page | done | `arena/8b5274f2-korea8` | docs/bathtub/flagged-review.html | unverified items listed with source links and what is needed to clear |
+| T10 | Verification pass (rows sourced, links intact) | done | `arena/8b5274f2-korea8` | scripts/check_links.py | VERIFICATION PASSED — 24 rows, 8 HTML files, 0 broken internal links |
+| T11 | PR #12 → `main`, merge, confirm Pages deploy | in progress | `arena/8b5274f2-korea8` | PR #12 | https://github.com/karagemop466-tech/Korea8/pull/12 |
+
+### Verification log (`arena/8b5274f2-korea8`)
+- Official sources read directly: 2025 California Plumbing Code §404.2 (IAPMO official e-publication, epubs.iapmo.org/2025/CPC/); IAPMO Uniform Codes Spotlight quoting CPC §404.2; CSLB License Check and detail records #757796, #1024971, #977638, #1115649 (checked 6 Nov 2026); SF Building Code §104.0 (AmLegal, official SF code publisher); SF DBI Online Permits & Scheduling (sfdbi.org).
+- `scripts/check_links.py`: VERIFICATION PASSED — every table row carries a source link or is blank and flagged unverified; nothing inferred or filled in; 8 HTML pages with no broken internal links.
+- Estimates $614/$550/$135 (8/30/26) are published verbatim as owner-provided, labeled unverified (flagged); never presented as verified.
+
+### Irregularities flagged (`arena/8b5274f2-korea8`)
+1. **Repo/topic mismatch** — the repository core (`AGENTS.md`, `PROJECT_PROMPT.md`, `src/korea8/`, `vendor/gems57/`, registry rasters) is the unrelated DOE GEMS Prize Challenge geothermal project; bathtub plumbing content is added as parallel trees (`docs/bathtub/` this session; `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `project/` other sessions). Legacy GEMS files under `docs/` preserved untouched.
+2. **Four brief trees** now exist for the same brief; canonical-URL choice is the owner's call (cross-session request first logged by `0ad9ad61`, retained above).
+3. **Yelp blocks automated retrieval** (HTTP 403); ratings and review counts are dated search-index snapshots, never treated as verified.
+4. **Internal-use constraint** — no private/restricted brief information is recorded anywhere in the repo, the site, or any commit message; the published site states only verifiable code facts.
+
+### Integration / PR / Pages record (`arena/8b5274f2-korea8`)
+| Item | Value |
+|------|-------|
+| Integration PR | #12 (`arena/8b5274f2-korea8` → `main`) |
+| Merge result | (record at merge time) |
+| Pages deploy | (record at merge time) |
+| Dashboard live URL | `https://karagemop466-tech.github.io/Korea8/docs/bathtub/` (Pages source = repository root) |

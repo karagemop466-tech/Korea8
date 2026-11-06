@@ -1,0 +1,30 @@
+/* Bathtub overflow trip lever project — docs/bathtub/style.css */
+/* Extends docs/style.css; keep dashboard clean, simple, table-focused. */
+nav{background:#f4f4f4;border-bottom:1px solid #ddd;padding:.7rem 0;margin-bottom:1.5rem;position:sticky;top:0}
+nav a{margin-right:1rem;text-decoration:none;color:#0b5fff;font-weight:600;font-size:.95rem}
+nav a:hover{text-decoration:underline}
+nav .sep{color:#999;padding:0 .4rem}
+.banner{border-radius:8px;padding:.8rem 1rem;margin:.8rem 0;font-weight:700}
+.banner.warn{background:#fff3cd;color:#6b5400;border:1px solid #e2c855}
+.banner.info{background:#e7f3ff;color:#0857b3;border:1px solid #0b5fff}
+.tag{font-size:.7rem;border-radius:4px;padding:.1rem .35rem;color:#fff;vertical-align:middle}
+.tag.ok{background:#2e7d32}
+.tag.bad{background:#b3261e}
+.flag{color:#b3261e;font-weight:700}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid #ddd;padding:.55rem;text-align:left;vertical-align:top}
+th{background:#f4f4f4;position:sticky;top:0}
+tr.flagged{background:#fdecec}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.9rem;margin:1.2rem 0}
+.card{border:1px solid #e2e2e2;border-radius:8px;padding:1rem}
+.card h3{margin:0 0 .5rem;font-size:1.05rem}
+.kv{margin:.45rem 0;font-size:.92rem}
+.kv b{color:#333}
+.mono{font-family:ui-monospace,monospace;font-size:.85rem;word-break:break-all}
+.section-title{font-size:1.15rem;border-bottom:2px solid #0b5fff;padding-bottom:.3rem;margin:1.8rem 0 .8rem}
+ul{margin:.4rem 0 1rem 1.2rem}
+li{margin:.3rem 0}
+footer{color:#666;font-size:.85rem;border-top:1px solid #eee;padding-top:1rem;margin-top:2rem}
+a.src{color:#0b5fff;text-decoration:none;font-size:.88rem}
+a.src:hover{text-decoration:underline}
+.none{color:#999;font-style:small-caps}
