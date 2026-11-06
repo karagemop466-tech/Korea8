@@ -119,3 +119,61 @@ session, log the request here instead of editing it.
    `bathtub-overflow/`, or vice versa. `0ad9ad61` did not edit `bathroom-overflow/**` or `docs/bathtub-overflow/**`
    because both are in another session's claimed scope. Until that is decided, both routes work and neither contains
    unverified licence data presented as verified.
+
+---
+
+## Session `arena-a93dcbfd-s1` — source-linked provider dossier + project dashboard (branch `arena/a93dcbfd-korea8`)
+
+| # | Task | Files touched | Owner | Status | Notes |
+|---|---|---|---|---|---|
+| T1 | Repo review + irregularity log | `COORDINATION.md` | `arena-a93dcbfd-s1` | done | Repo previously hosted unrelated DOE GEMS project; legacy preserved |
+| T2 | Requirements + executive summary content | `trip-lever/executive-summary.html`, `trip-lever/requirements.html`, `trip-lever/estimates.html` | `arena-a93dcbfd-s1` | done | Owner brief; owner-supplied quotes labeled owner-provided |
+| T3 | Vendor research, per-row official sources incl. CSLB license-detail verification | `trip-lever/contractors.html`, `trip-lever/background.html` | `arena-a93dcbfd-s1` | done | 7 providers; all license numbers verified vs CSLB detail records 2026-11-06 |
+| T4 | Site build (dashboard landing + subpages + Flagged for Review) | root `index.html` (replaced — logged), `trip-lever/*.html`, `trip-lever/site.css` | `arena-a93dcbfd-s1` | done | Legacy root `index.html` in git history; legacy GEMS pages still served |
+| T5 | Final integration: re-verification, link check, PR to `main`, merge, Pages check | whole `trip-lever/`, root `index.html`, `COORDINATION.md` | `arena-a93dcbfd-s1` | done | PR #11; results recorded below |
+
+### Sources & verification log (`arena-a93dcbfd-s1`)
+
+- Every contractor row carries official-site and/or Yelp business-page links; review counts are
+  point-in-time snapshots (retrieved 2026-11-06) and are flagged as such.
+- **CSLB license-detail records fetched directly** (`https://www.cslb.ca.gov/<number>`, data
+  current as of 11/6/2026): #977638 Expert Plumbing Solutions (ACTIVE, C-36, exp. 10/31/2028);
+  #757796 Bay Area Plumbing (ACTIVE, C-36, exp. 01/31/2027; sole ownership, workers'-comp exempt
+  — certified no employees); #1024971 Fast Response Plumbing & Rooter (ACTIVE, C-36, exp.
+  03/31/2027; WC policy expires 12/18/2026); #1105133 HARP Services dba 24/7 SF Handyman &
+  Remodeling (ACTIVE, **B-2 Residential Remodeling**, exp. 05/31/2027); #1140843 Discount
+  Plumbing Rooter Services LLC (ACTIVE, C-36 + A, exp. 07/31/2027); #1009195 Advanced Plumbing
+  and Drain Inc (ACTIVE, C-36, exp. 11/30/2027, **with CSLB additional status: may be suspended
+  for outstanding final liability**); #829071 Ace Plumbing & Rooter (ACTIVE, C-36, A, C-4, C-16,
+  **B General Building**, C-10, exp. 06/30/2027).
+- Technical background: Watco trip-lever bath-waste installation instructions (manufacturer PDF),
+  This Old House tub-drain replacement, Family Handyman trip-lever→lift-and-turn conversion;
+  WingTite checked and ruled out (shower-specific). Practitioner forum threads labeled non-official.
+- Owner-provided items (quotes dated 2026-08-30; "5+ plumbers declined from above") are labeled
+  owner-provided, never presented as verified; listed on `trip-lever/flagged-for-review.html`.
+- Link check re-run after every edit; all internal links resolve. Privacy sweep: no private or
+  sensitive information appears anywhere on the site or in commit messages.
+
+### Irregularities flagged by this session
+
+1. Root `index.html` (geothermal-generated) replaced by the project dashboard; old version in
+   git history; legacy GEMS pages remain served and linked. Responds to the request logged by
+   `0ad9ad61` above: the dashboard links to `bathtub-overflow/`, `bathroom-overflow/`, and the
+   legacy site.
+2. Advanced Plumbing & Drain's CSLB record carries a future-suspension warning (outstanding
+   final liability) — published on the Flagged for Review page.
+3. 24/7 SF Handyman & Remodeling's license is B-2 Residential Remodeling (not C-36 plumbing);
+   stated explicitly on the site.
+4. Three trees now exist for the same brief: `bathtub-overflow/` (`0ad9ad61`), `bathroom-overflow/`
+   (`arena/ae482104-korea8`), and `trip-lever/` (`arena-a93dcbfd-s1`), plus the redirecting
+   `docs/bathtub-overflow/` stubs. The dashboard links all of them; the owner can pick a
+   canonical route (request logged by `0ad9ad61` still stands).
+
+### Integration / PR / Pages record (`arena-a93dcbfd-s1`)
+
+| Item | Value |
+|---|---|
+| Integration PR | #11 (`arena/a93dcbfd-korea8` → `main`) |
+| Merge result | (to be recorded at merge time) |
+| Pages deploy | (to be recorded) |
+| Live URL | <https://karagemop466-tech.github.io/Korea8/> |
