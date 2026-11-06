@@ -265,3 +265,63 @@ flags), and links to the parallel briefs `trip-lever/` and `bathroom-overflow/` 
 The earlier root `index.html` replacements are superseded; nothing is deleted from history.
 Canonical-URL choice among the four briefs remains the owner's call (request first logged by
 `0ad9ad61`); this board and the dashboard's Flagged-for-Review page record the options.
+
+---
+
+## Session `arena-a93dcbfd-s1` — source-linked provider dossier + project dashboard (branch `arena/a93dcbfd-korea8`)
+
+| # | Task | Files touched | Owner | Status | Notes |
+|---|---|---|---|---|---|
+| T1 | Repo review + irregularity log | `COORDINATION.md` | `arena-a93dcbfd-s1` | done | Repo previously hosted unrelated DOE GEMS project; legacy preserved |
+| T2 | Requirements + executive summary content | `trip-lever/executive-summary.html`, `trip-lever/requirements.html`, `trip-lever/estimates.html` | `arena-a93dcbfd-s1` | done | Owner brief; owner-supplied quotes labeled owner-provided |
+| T3 | Vendor research, per-row official sources incl. CSLB license-detail verification | `trip-lever/contractors.html`, `trip-lever/background.html` | `arena-a93dcbfd-s1` | done | 7 providers; all license numbers verified vs CSLB detail records 2026-11-06 |
+| T4 | Site build (dashboard landing + subpages + Flagged for Review) | root `index.html` (built; landing role later ceded to the integrated root dashboard from `arena-82aa8544` — logged) | `arena-a93dcbfd-s1` | done | My `trip-lever/` pages are byte-identical on `main`; landing cross-links them |
+| T5 | Final integration: re-verification, link check, PR to `main`, merge, Pages check | whole `trip-lever/`, root `index.html`, `COORDINATION.md` | `arena-a93dcbfd-s1` | done | PR #11 merged (`0bf6bbe`); landing superseded by PR #14's integrated dashboard — accepted to avoid churn |
+
+### Sources & verification log (`arena-a93dcbfd-s1`)
+
+- Every `trip-lever/contractors.html` row carries official-site and/or Yelp business-page links;
+  review counts are point-in-time snapshots (retrieved 2026-11-06) and are flagged as such.
+- **CSLB license-detail records fetched directly** (`https://www.cslb.ca.gov/<number>`, data
+  current as of 11/6/2026): #977638 Expert Plumbing Solutions (ACTIVE, C-36, exp. 10/31/2028);
+  #757796 Bay Area Plumbing (ACTIVE, C-36, exp. 01/31/2027; sole ownership, workers'-comp exempt
+  — certified no employees); #1024971 Fast Response Plumbing & Rooter (ACTIVE, C-36, exp.
+  03/31/2027; WC policy expires 12/18/2026); #1105133 HARP Services dba 24/7 SF Handyman &
+  Remodeling (ACTIVE, B-2 Residential Remodeling, exp. 05/31/2027); #1140843 Discount Plumbing
+  Rooter Services LLC (ACTIVE, C-36 + A, exp. 07/31/2027); #1009195 Advanced Plumbing and Drain
+  Inc (ACTIVE, C-36, exp. 11/30/2027, with CSLB additional status: may be suspended for
+  outstanding final liability); #829071 Ace Plumbing & Rooter (ACTIVE, C-36, A, C-4, C-16,
+  B General Building, C-10, exp. 06/30/2027). Also verified: CSLB "Check a License" portal
+  current URL; WingTite ruled out as shower-specific (manufacturer page).
+- Technical background: Watco trip-lever bath-waste installation instructions (manufacturer PDF);
+  This Old House tub-drain replacement; Family Handyman trip-lever→lift-and-turn conversion;
+  practitioner forum threads labeled non-official.
+- Owner-provided items (quotes dated 2026-08-30; "5+ plumbers declined from above") are labeled
+  owner-provided, never presented as verified; listed on `trip-lever/flagged-for-review.html`.
+- Link check re-run after every edit; all internal links resolve. Privacy sweep: no private or
+  sensitive information anywhere on the site or in commit messages.
+
+### Irregularities flagged by this session
+
+1. Root `index.html` ownership: `arena-a93dcbfd-s1` built a landing dashboard (PR #11,
+   `0bf6bbe`); PR #14 (`arena-82aa8544`) subsequently landed an integrated root dashboard.
+   Accepted the PR #14 landing to avoid churn (it cross-links `trip-lever/`, `bathroom-overflow/`
+   and the legacy site); no content was discarded — both dashboards remain in git history.
+2. Advanced Plumbing & Drain's CSLB record carries a future-suspension warning (outstanding
+   final liability) — published on `trip-lever/flagged-for-review.html` (F6).
+3. 24/7 SF Handyman & Remodeling's license is B-2 Residential Remodeling (not C-36 plumbing);
+   stated explicitly on the site.
+4. Fast Response's CSLB record lists workers'-comp insurance expiring 12/18/2026 (F10).
+5. Pages builds errored for every merge from PR #9 (13:37Z) onward while `0932777` (13:29Z)
+   built — matches `arena-82aa8544`'s transient-builder finding and the Nov-4 errored-then-built
+   history; six merges landed within 16 minutes. Retriggered by the PR that appends this
+   section; result to be recorded below.
+
+### Integration / PR / Pages record (`arena-a93dcbfd-s1`)
+
+| Item | Value |
+|---|---|
+| Integration PR | #11 (`arena/a93dcbfd-korea8` → `main`), merged 2026-11-06T13:43:24Z as `0bf6bbe` |
+| Board-record PR | this PR (board section only; no site files touched) |
+| Pages deploy | (pending — to be recorded after the retriggered build completes) |
+| Live URL | <https://karagemop466-tech.github.io/Korea8/> |
