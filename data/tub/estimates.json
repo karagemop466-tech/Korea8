@@ -1,0 +1,71 @@
+{
+  "schema": "tub-estimates-v1",
+  "generated_utc": "2026-11-06",
+  "provenance": "All three figures were supplied by the owner in the project brief under the heading 'Below are some estimates provided to me' with the single date 8/30/26. No written quote, PDF, email, or invoice exists in this repository. Amounts are reproduced exactly and are labelled USER-REPORTED, not verified.",
+  "estimates": [
+    {
+      "id": "E1",
+      "vendor_as_written": "Expert plumbing solutions",
+      "amount_usd": 614,
+      "amount_as_written": "$614",
+      "stated_scope_as_written": "Replacing waste and overflow",
+      "includes_labour_and_materials": "not stated in the brief",
+      "open_wall_work_included": "not stated",
+      "drywall_repair_included": "not stated",
+      "permit_included": "not stated",
+      "date": "8/30/26 (single date given for all three estimates)",
+      "licence_verified": "yes - CSLB #977638, current and active, C36 PLUMBING",
+      "evidence_label": "USER-REPORTED",
+      "source_ids": ["S03"],
+      "analysis": "The only quote that names the full waste-and-overflow assembly, which is the part that is actually seized. It is also the highest. The brief does not say whether it covers opening the ceiling, drywall repair, or a permit - get those three answers in writing."
+    },
+    {
+      "id": "E2",
+      "vendor_as_written": "Bay Area plumbing",
+      "amount_usd": 550,
+      "amount_as_written": "$550",
+      "stated_scope_as_written": "Replace lever for the bathtub plug and spout with diverter includes labor and materials",
+      "includes_labour_and_materials": "yes - explicitly stated",
+      "open_wall_work_included": "not stated",
+      "drywall_repair_included": "not stated",
+      "permit_included": "not stated",
+      "date": "8/30/26 (single date given for all three estimates)",
+      "licence_verified": "yes - CSLB #757796, current and active, C36 PLUMBING",
+      "evidence_label": "USER-REPORTED",
+      "source_ids": ["S05"],
+      "analysis": "Broader trim scope than E3 (lever plus spout/diverter) and includes materials, but 'lever' and 'spout with diverter' are the parts you can see. If the plunger barrel itself is seized inside the overflow tube, this scope may not reach the failure point, so the price could move after diagnosis."
+    },
+    {
+      "id": "E3",
+      "vendor_as_written": "Fast response",
+      "amount_usd": 135,
+      "amount_as_written": "$135",
+      "stated_scope_as_written": "repair or adjust bath tub wastewater plunger handle",
+      "includes_labour_and_materials": "not stated",
+      "open_wall_work_included": "not stated (implied no, by price and by the words 'repair or adjust')",
+      "drywall_repair_included": "no (not stated, and not consistent with a $135 price for two trades)",
+      "permit_included": "not stated",
+      "date": "8/30/26 (single date given for all three estimates)",
+      "licence_verified": "yes - CSLB #1024971, current and active, C36 PLUMBING",
+      "evidence_label": "USER-REPORTED",
+      "source_ids": ["S02"],
+      "analysis": "Cheapest by a wide margin and the only one priced as a repair rather than a replacement. That is consistent with an overflow-side attempt: if the linkage frees up, this is the whole job. It is not a price for opening a ceiling, and it cannot include drywall."
+    }
+  ],
+  "official_cost_reference": {
+    "label": "DBI plumbing permit, Category 1P (single residential unit, single plumbing fixture installation)",
+    "amount_usd": 290,
+    "effective": "permits issued on or after 2026-07-12",
+    "evidence_label": "OFFICIAL",
+    "source_ids": ["S32"],
+    "analysis": "Included so the three quotes can be compared against a permit-inclusive path without disclosing anything private. Also note the published inspection rates on the same table: $519/hour regular, $555/hour off-hour, $259 per half hour for a re-inspection."
+  },
+  "spread": {
+    "min_usd": 135,
+    "max_usd": 614,
+    "difference_usd": 479,
+    "ratio_max_over_min": 4.55,
+    "note": "The 4.5x spread is driven by scope, not by hourly rate: E3 is an adjust, E2 is trim replacement, E1 is the full waste-and-overflow assembly. They are not comparable quotes."
+  },
+  "decision_note": "Do not award on price alone. The three quotes differ in what they replace. Ask each firm the same four written questions (see the 'Questions to ask' page) and compare the answers, not the totals."
+}

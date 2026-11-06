@@ -1,0 +1,267 @@
+{
+  "schema": "tub-flagged-v1",
+  "generated_utc": "2026-11-06",
+  "note": "Everything on this page is something this project could NOT verify, or something that looked wrong while verifying. Nothing here blocks the shortlist; it tells you what to check by phone before you commit.",
+  "unverified_items": [
+    {
+      "id": "U-01",
+      "item": "'Five or more licensed plumbers could not remove it without concern over destroying the hidden plumbing.'",
+      "what_is_missing": "No names, licence numbers, dates, or written opinions. Nothing in the repository corroborates the count.",
+      "effect": "This is the single most important input to the access decision, and it is unverified. It is the reason the shortlist asks bidders to attempt overflow-side extraction as a priced first step rather than assuming it will work.",
+      "how_to_close_it": "Ask one shortlisted plumber, on site, to state in writing whether the assembly will come out from above and what happens if it does not.",
+      "source_ids": []
+    },
+    {
+      "id": "U-02",
+      "item": "The three estimates ($614 / $550 / $135)",
+      "what_is_missing": "No written quote for any of them. Only a single date (8/30/26) applies to all three. Labour/material breakdown, permit treatment, and ceiling work are all unstated.",
+      "effect": "Quotes may not be comparable and may not be current.",
+      "how_to_close_it": "Request written quotes valid for 30 days with a line-item breakdown.",
+      "source_ids": [
+        "S26",
+        "S27"
+      ]
+    },
+    {
+      "id": "U-03",
+      "item": "Yelp ratings and review counts for every firm",
+      "what_is_missing": "Yelp business pages returned HTTP 403 to automated retrieval on 2026-11-06. No rating, review count, or 'verified licence' badge is reported as a verified value anywhere on this site.",
+      "effect": "The 'find someone with reviews for this specific work' requirement is only partly met. Discovery was possible; review verification was not.",
+      "how_to_close_it": "Open the firm's Yelp page manually in a browser and read the bath/overflow reviews directly.",
+      "source_ids": [
+        "S41"
+      ]
+    },
+    {
+      "id": "U-04",
+      "item": "Year of construction of the building",
+      "what_is_missing": "Not in the repository. Determines whether the EPA lead RRP rule applies to the ceiling cut.",
+      "effect": "RULE-12 applicability is unknown; the rule itself is verified.",
+      "how_to_close_it": "Check the SF Assessor / Planning property record, or ask the contractor to test the paint.",
+      "source_ids": [
+        "S34"
+      ]
+    },
+    {
+      "id": "U-05",
+      "item": "Reference photographs",
+      "what_is_missing": "The brief offered to include pictures; no image file exists in the repository.",
+      "effect": "No photo-based assessment was made. Nothing was invented to fill the gap.",
+      "how_to_close_it": "Send the contractor a photo of the overflow plate (with a coin or ruler for scale), a photo of the tub, and a photo of the storage-unit ceiling directly below.",
+      "source_ids": []
+    },
+    {
+      "id": "U-06",
+      "item": "Whether the existing assembly is a slip-joint type or a soldered/glued type",
+      "what_is_missing": "Unknown without opening something. Determines whether option A is physically possible and whether RULE-06's access panel applies.",
+      "how_to_close_it": "Ask the plumber to identify the fitting type at diagnosis and photograph it.",
+      "source_ids": [
+        "S33"
+      ],
+      "effect": "(effect not stated)"
+    },
+    {
+      "id": "U-07",
+      "item": "Availability this week for any firm",
+      "what_is_missing": "Only self-published marketing claims exist (e.g. 'same-day or next-day, seven days a week'). No official source can confirm a dispatch date.",
+      "how_to_close_it": "Phone and book, then get the appointment window in writing.",
+      "source_ids": [
+        "S35"
+      ],
+      "effect": "(effect not stated)"
+    }
+  ],
+  "irregularities": [
+    {
+      "id": "I-01",
+      "severity": "high",
+      "finding": "The repository's contents have nothing to do with this project.",
+      "detail": "Before this session, the entire repository was a DOE GEMS Prize geothermal fault-mapping research project: vendor/gems57 evaluation tools, GeoTIFF submissions, holdout scoring receipts, and an evidence site. There was no bathtub, plumbing, contractor, or San Francisco content of any kind, and no COORDINATION.md.",
+      "action_taken": "Nothing was deleted. The GEMS evidence site was moved intact to gems_site/ and its build script was re-pointed there so a pipeline run cannot overwrite the new landing page. The GEMS working directories (registry/, vendor/, scripts/, src/, tests/) are untouched. Revert with a single git revert of the reorganisation commits if that project should own the root again.",
+      "review_question": "Is Korea8 the right repository for this task, or was the brief intended for a different repo?",
+      "source_ids": [
+        "S43"
+      ]
+    },
+    {
+      "id": "I-02",
+      "severity": "low",
+      "finding": "CSLB prints a misspelled street name on licence #1024971.",
+      "detail": "The record reads '236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127'. 'POTRAL' does not exist in San Francisco; the street is Portal Avenue. This is a CSLB data-entry error, reproduced verbatim here rather than silently corrected.",
+      "action_taken": "Recorded exactly as printed and annotated.",
+      "review_question": "Confirm the mailing address with the contractor before sending a cheque or a notice.",
+      "source_ids": [
+        "S02"
+      ]
+    },
+    {
+      "id": "I-03",
+      "severity": "medium",
+      "finding": "A cancelled licence shares the exact address and phone number of a live one.",
+      "detail": "Advance Plumbing #973345 (1465 44th Avenue, (415) 531-5340) was cancelled 05/14/2018 'PER REQUEST'. Expert Plumbing Solutions #977638 uses the identical address and phone and is active. Both are C-36.",
+      "action_taken": "Both records are published. Only the active licence is counted as a credential.",
+      "review_question": "Ask which legal entity will sign the contract and put that licence number on it.",
+      "source_ids": [
+        "S04",
+        "S03"
+      ]
+    },
+    {
+      "id": "I-04",
+      "severity": "medium",
+      "finding": "One active licence carries a future-suspension advisory.",
+      "detail": "#1009195 (Advanced Plumbing and Drain Inc) says: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.'",
+      "action_taken": "Ranked lowest of the active plumbing firms and flagged.",
+      "review_question": "Re-check this licence on the day of hire; a suspended licence cannot contract legally.",
+      "source_ids": [
+        "S09"
+      ]
+    },
+    {
+      "id": "I-05",
+      "severity": "medium",
+      "finding": "A widely repeated '$500 licensing threshold' is out of date.",
+      "detail": "Many third-party sites still say a CSLB licence is triggered at $500 of combined labour and materials. Business and Professions Code 7048, as amended by Stats. 2025 ch. 67 sec. 12 (AB 1170), effective 2026-01-01, sets the figure at $1,000 and adds the condition that the work must not require a building permit.",
+      "action_taken": "Only the statutory text is used on this site.",
+      "review_question": "Ignore blog-based thresholds; use BPC 7048 and the CSLB record.",
+      "source_ids": [
+        "S24"
+      ]
+    },
+    {
+      "id": "I-06",
+      "severity": "medium",
+      "finding": "One firm's marketing overstates the classifications on its CSLB record.",
+      "detail": "All Action Waterdamage markets 'One licensed crew does extraction, drying, and the rebuild'. Its CSLB record (#1043942) shows a single classification, C-61/D64 WATER AND MOLD REMEDIATION - no plumbing and no drywall classification. It was excluded from the shortlist.",
+      "action_taken": "Excluded, with the reason published.",
+      "review_question": "Marketing language about being 'fully licensed' does not state which classifications. Always match the classification, not the badge.",
+      "source_ids": [
+        "S13"
+      ]
+    },
+    {
+      "id": "I-07",
+      "severity": "low",
+      "finding": "A contractor's own website lists a different street address from CSLB.",
+      "detail": "Heise's Plumbing's website shows 260 Ocean Ave, San Francisco 94112; CSLB record #1089561 shows 1610 Evans Ave, San Francisco 94124. The phone number matches.",
+      "action_taken": "The CSLB address is published as the licence address; the website address is noted.",
+      "review_question": "Not unusual (office vs. yard), but confirm where the crew dispatches from.",
+      "source_ids": [
+        "S06"
+      ]
+    },
+    {
+      "id": "I-08",
+      "severity": "high",
+      "finding": "The pre-existing build script wrote site files into the repository root, conflicting with a new landing page.",
+      "detail": "scripts/build_site.py mirrored docs/ into the repo root, including index.html and style.css. A new project cannot own the root while that is true, and any pipeline run would silently overwrite the landing page.",
+      "action_taken": "The mirror target was changed to gems_site/ with a comment explaining why. No other line of that script was touched.",
+      "review_question": "If the GEMS pipeline is run again, confirm it writes only to docs/ and gems_site/.",
+      "source_ids": []
+    },
+    {
+      "id": "I-09",
+      "severity": "info",
+      "finding": "Duplicate site trees were consolidated.",
+      "detail": "The GEMS site previously existed twice - as docs/* and as a byte-identical copy at the repo root - plus two identical 1.5 MB raster sets under downloads/ and docs/downloads/.",
+      "action_taken": "gems_site/ links to the single shared downloads/ and evidence/ trees instead of carrying a third copy.",
+      "review_question": "None; recorded for provenance.",
+      "source_ids": []
+    }
+  ],
+  "private_exclusions": [
+    {
+      "id": "P-01",
+      "decision": "One owner-supplied constraint was deliberately excluded from this site and from every artefact in this repository.",
+      "reason": "The owner instructed that it must not become public and must never be mentioned. It is not stated in any page, table, commit message, or data file, and no plan is built on it.",
+      "how_to_handle": "The site instead publishes the official permit rules verbatim so the decision can be made privately, by the owner, with the contractor, before any work starts."
+    }
+  ],
+  "questions_to_ask": [
+    {
+      "n": 1,
+      "question": "Will you attempt extraction through the overflow opening first, and what do you charge if that attempt fails?",
+      "why": "Separates the cheap attempt from the expensive fallback before anyone commits.",
+      "sources": [
+        "S42"
+      ]
+    },
+    {
+      "n": 2,
+      "question": "Which legal entity and which licence number will sign the contract?",
+      "why": "Several firms have more than one licence or a cancelled predecessor at the same address.",
+      "sources": [
+        "S03",
+        "S04"
+      ]
+    },
+    {
+      "n": 3,
+      "question": "Does your price include opening and restoring the storage-unit ceiling, and who does the drywall?",
+      "why": "Two unrelated trades; the contract must name both licence holders.",
+      "sources": [
+        "S18",
+        "S19"
+      ]
+    },
+    {
+      "n": 4,
+      "question": "Is a permit required for the work you are proposing, and will you pull it?",
+      "why": "SF.gov states a permit is needed before cutting into pipes covered by a wall.",
+      "sources": [
+        "S20",
+        "S21"
+      ]
+    },
+    {
+      "n": 5,
+      "question": "If the assembly is slip-joint and concealed, will you install a 12-inch access panel instead of a flush patch?",
+      "why": "Code already requires 12 in. access for concealed slip joints.",
+      "sources": [
+        "S33"
+      ]
+    },
+    {
+      "n": 6,
+      "question": "Was the building built before 1978, and if so are you an EPA RRP certified firm?",
+      "why": "Lead-safe work practices may apply to the ceiling cut.",
+      "sources": [
+        "S34"
+      ]
+    },
+    {
+      "n": 7,
+      "question": "What dust containment and daily cleanup will you use in an occupied building?",
+      "why": "Tenant safety; requested explicitly by the owner.",
+      "sources": [
+        "S31"
+      ]
+    },
+    {
+      "n": 8,
+      "question": "Can you work inside 7:00 am - 8:00 pm and give a written arrival window?",
+      "why": "SF construction hours; unavailable windows are the usual cause of failed access.",
+      "sources": [
+        "S31",
+        "S30"
+      ]
+    },
+    {
+      "n": 9,
+      "question": "What is your warranty on the waste-and-overflow assembly and on the ceiling patch?",
+      "why": "Two trades means two warranties; get both in the contract.",
+      "sources": [
+        "S26"
+      ]
+    },
+    {
+      "n": 10,
+      "question": "Please confirm the licence is still active on the day you send the crew.",
+      "why": "CSLB status is point-in-time and one shortlisted licence carries a suspension advisory.",
+      "sources": [
+        "S01",
+        "S09"
+      ]
+    }
+  ]
+}

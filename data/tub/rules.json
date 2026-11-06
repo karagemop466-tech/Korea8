@@ -1,0 +1,143 @@
+{
+  "schema": "tub-rules-v1",
+  "generated_utc": "2026-11-06",
+  "note": "Rules that govern this exact job. Each rule quotes or closely paraphrases the official text and links it. Where a number is quoted it is copied from the source, not recalled.",
+  "rules": [
+    {
+      "id": "RULE-01",
+      "topic": "Who may contract for the work",
+      "statement": "A CSLB contractor licence is not required for work on one undertaking where the aggregate contract price for labour, materials and all other items is less than $1,000, that work is of a casual, minor or inconsequential nature, and the work does not require a building permit.",
+      "exact_limit": "$1,000 aggregate (raised from $500 by Stats. 2025, ch. 67, sec. 12 (AB 1170), effective 2026-01-01)",
+      "effect_on_this_job": "All three quotes are below $1,000, but the exemption is disqualified if the work needs a permit or is part of a larger operation. A licence is still the practical requirement the owner asked for.",
+      "source_ids": [
+        "S24"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-02",
+      "topic": "Scope of a C-36 plumbing licence",
+      "statement": "A plumbing contractor provides a means for a supply of safe water and the proper disposal of fluid waste from the premises in all structures, including 'the maintenance and replacement of all items described above'.",
+      "effect_on_this_job": "Replacing a tub waste-and-overflow assembly and its trip lever sits squarely inside C-36. Every shortlisted plumber holds it.",
+      "source_ids": [
+        "S16"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-03",
+      "topic": "When a San Francisco plumbing permit IS required",
+      "statement": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.",
+      "effect_on_this_job": "Opening the ceiling to reach the waste-and-overflow behind the wall is exactly the case SF.gov names. This is the operative fact for choosing the access route.",
+      "source_ids": [
+        "S20"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-04",
+      "topic": "Exempt work under the San Francisco Plumbing Code (Sec. 104.2)",
+      "statement": "A permit shall not be required for: (1) repair of leaks not requiring cutting into or removing piping; (2) unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping; (3) replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping; (4) replacement of toilets except in structures with alternate water piping; (5) replacement of furnace filters; (6) removal of drainage, water or gas piping when disconnected in an approved manner under a permit; (7) setting up display fixtures not connected to supply or drainage; (8) replacement of water conservation devices not requiring cutting; (9) work in State and Federal government buildings.",
+      "effect_on_this_job": "The exemption list is narrow and none of its items covers removing or replacing a concealed waste-and-overflow assembly. Item (2) covers unstopping only when no trap or piping is cut into or removed.",
+      "source_ids": [
+        "S21",
+        "S22"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-05",
+      "topic": "Permit fee, if a permit is taken out",
+      "statement": "Category 1P - single residential unit, single plumbing fixture installation (maximum two inspections): $290.",
+      "effective": "permits issued on or after 2026-07-12",
+      "source_ids": [
+        "S32"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-06",
+      "topic": "Concealed slip-joint access",
+      "statement": "Fixtures having concealed slip-joint connections shall be provided with an access panel or utility space not less than 12 inches (305 mm) in its least dimension, arranged without obstructions so the connections are accessible for inspection and repair.",
+      "effect_on_this_job": "If the existing installation uses slip joints and has no 12-inch access panel, that defect is what makes the job hard today. A durable fix can include installing an access panel rather than repeatedly opening drywall.",
+      "source_ids": [
+        "S33",
+        "S44"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-07",
+      "topic": "Two trades, one contractor",
+      "statement": "A B general building contractor may take a prime contract for a project involving trades other than framing or carpentry only where the project requires at least two unrelated trades, or where the contractor holds the appropriate specialty licence or subcontracts to an appropriately licensed specialty contractor. A B contractor may not count framing or carpentry toward the two trades.",
+      "effect_on_this_job": "Plumbing plus drywall is two unrelated trades, so a B licensee can prime the job; but B alone does not authorise self-performing plumbing. Ask for the licence numbers of everyone who will touch the pipes.",
+      "source_ids": [
+        "S18",
+        "S19"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-08",
+      "topic": "Contract form and deposit",
+      "statement": "For home improvement contracts over $500 the contract must be in writing and include the agreed amount in dollars and cents, with a downpayment not exceeding $1,000 or 10 percent of the contract amount, whichever is less, and a payment schedule tied to work performed. A 'service and repair contract' of $750 or less, where the buyer initiated contact and payment is due only on completion, may use the shorter form in BPC 7159.10.",
+      "effect_on_this_job": "E1 ($614) and E2 ($550) are over $500 and below $750: either a full home improvement contract or, if the buyer initiated contact and pays on completion, the service-and-repair form. E3 ($135) is below $500.",
+      "source_ids": [
+        "S26",
+        "S27",
+        "S28"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-09",
+      "topic": "Tenant notice before entry",
+      "statement": "Except in an emergency, a landlord must give the tenant reasonable written notice of intent to enter, stating date, approximate time and purpose; 24 hours is presumed reasonable. Entry may not be made outside normal business hours without the tenant's consent at the time of entry.",
+      "effect_on_this_job": "Two entries are needed: the unit above (tub) and the storage unit below (ceiling). Serve notice for both, with the full window, and name the trades attending.",
+      "source_ids": [
+        "S30"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-10",
+      "topic": "Permitted hours for the noisy part",
+      "statement": "Building construction can occur 7:00 am to 8:00 pm seven days a week, including holidays. Noise before 7 am or after 8 pm cannot exceed five decibels above ambient at the nearest lot line without a night noise permit.",
+      "effect_on_this_job": "Schedule the ceiling cut and any screw-gun work inside 7 am - 8 pm. A board-up at 9 pm would be a violation.",
+      "source_ids": [
+        "S31"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-11",
+      "topic": "Habitability duty",
+      "statement": "A dwelling is untenantable if it substantially lacks plumbing facilities that conformed to law at installation and are 'maintained in good working order'.",
+      "effect_on_this_job": "This is why the job cannot simply be deferred; a tub that will not hold or release water is a habitability item.",
+      "source_ids": [
+        "S29"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-12",
+      "topic": "Lead-safe work in pre-1978 housing",
+      "statement": "Paid renovation, repair or painting that disturbs painted surfaces in pre-1978 housing must be done by an EPA- or state-certified firm using a certified renovator, with the Renovate Right pamphlet given to the owner and to an adult occupant where the owner does not live there. Minor repair and maintenance - 6 sq ft or less of painted surface per room inside, 20 sq ft or less outside, no window replacement and no demolition - is outside the rule; jobs in the same room within 30 days count as one job.",
+      "effect_on_this_job": "Cutting a painted ceiling to reach the trap may or may not fall under the 6 sq ft minor-repair exception depending on the opening size. If the building predates 1978, ask for RRP certification before the ceiling is opened.",
+      "source_ids": [
+        "S34"
+      ],
+      "evidence_label": "OFFICIAL"
+    },
+    {
+      "id": "RULE-13",
+      "topic": "Consequence of permit violations for the contractor",
+      "statement": "Willful or deliberate disregard and violation of any state or local law relating to the issuance of building permits is a cause for disciplinary action against a licensee.",
+      "effect_on_this_job": "Listed because the exposure lands on the contractor's licence, which is why a licence check is a meaningful screen.",
+      "source_ids": [
+        "S25"
+      ],
+      "evidence_label": "OFFICIAL"
+    }
+  ]
+}

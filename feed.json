@@ -1,0 +1,49 @@
+{
+  "schema": "tub-feed-v1",
+  "generated_utc": "2026-11-06 13:43 UTC",
+  "pages": [
+    {
+      "path": "index.html",
+      "title": "Overview",
+      "description": "Executive summary and the decision in one screen."
+    },
+    {
+      "path": "providers.html",
+      "title": "Providers",
+      "description": "Every firm checked, with its CSLB record."
+    },
+    {
+      "path": "quotes.html",
+      "title": "Quotes",
+      "description": "The three estimates, normalised by scope."
+    },
+    {
+      "path": "requirements.html",
+      "title": "Requirements",
+      "description": "The full requirement list, verified against sources."
+    },
+    {
+      "path": "rules.html",
+      "title": "Permits & rules",
+      "description": "Official permit, licensing, tenancy and safety rules."
+    },
+    {
+      "path": "access.html",
+      "title": "Scope & access",
+      "description": "From above vs. from below, and what to ask before cutting."
+    },
+    {
+      "path": "sources.html",
+      "title": "Sources",
+      "description": "Every source, its publisher, and what it was used for."
+    },
+    {
+      "path": "flagged.html",
+      "title": "Flagged for review",
+      "description": "Unverified values, irregularities, and open questions."
+    }
+  ],
+  "sources": 45,
+  "unverified_items": 7,
+  "irregularities": 9
+}

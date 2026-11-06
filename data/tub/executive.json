@@ -1,0 +1,39 @@
+{
+  "schema": "tub-executive-v1",
+  "generated_utc": "2026-11-06",
+  "title": "Bathtub wastewater overflow trip lever — San Francisco",
+  "one_liner": "A seized overflow trip lever in an occupied San Francisco rental, where five-plus licensed plumbers reportedly declined to extract it from above. This site ranks verified licensed providers, separates the three quotes by scope, and publishes the rules that decide the access route.",
+  "bottom_line": [
+    "Start with the cheapest reversible attempt: ask a C-36 contractor to try extracting the linkage through the overflow opening, priced as a separate line item. If it frees, the job is roughly the $135 repair quote.",
+    "Do not authorise a ceiling cut until the access route is agreed in writing. Opening the storage-unit ceiling below reaches the trap tee that overflow-side work cannot, but it triggers a permit under SF.gov's own wording and needs a drywall trade.",
+    "Best single-provider fit: Ace Plumbing & Rooter, CSLB #829071 — the only shortlisted firm holding both the C-36 plumbing and B general building classifications, so one licensed entity can own both trades.",
+    "Every dollar figure in the brief is user-reported and undocumented. The spread from $135 to $614 is a scope difference, not a pricing difference; the three quotes are not comparable.",
+    "One constraint supplied by the owner is deliberately absent from this site and from every file in the repository. The official permit rules are published instead, so the decision can be made privately."
+  ],
+  "key_numbers": [
+    {"label": "Candidate providers checked against CSLB", "value": "13", "basis": "12 firms + 1 cancelled predecessor licence", "source_ids": ["S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S13", "S14"]},
+    {"label": "Active C-36 plumbing licences verified", "value": "9", "basis": "Read directly on cslb.ca.gov, data current 2026-11-06", "source_ids": ["S02", "S03", "S05", "S06", "S07", "S08", "S09", "S10", "S11"]},
+    {"label": "Firms holding both C-36 and B", "value": "1", "basis": "Ace Plumbing & Rooter #829071", "source_ids": ["S07"]},
+    {"label": "Quotes received", "value": "3", "basis": "$614 / $550 / $135, all USER-REPORTED, single date 8/30/26", "source_ids": []},
+    {"label": "Quote spread", "value": "4.6x", "basis": "$614 max vs $135 min", "source_ids": []},
+    {"label": "Official permit fee if a permit is taken (Cat. 1P)", "value": "$290", "basis": "DBI fee schedule effective 2026-07-12", "source_ids": ["S32"]},
+    {"label": "Requirements tracked", "value": "16", "basis": "R1-R16 in data/tub/requirements.json", "source_ids": []},
+    {"label": "Rules verified from official sources", "value": "13", "basis": "RULE-01 to RULE-13", "source_ids": ["S20", "S21", "S24", "S25", "S26", "S27", "S29", "S30", "S31", "S32", "S33", "S34"]},
+    {"label": "Unverified items flagged", "value": "7", "basis": "U-01 to U-07", "source_ids": []},
+    {"label": "Irregularities logged", "value": "9", "basis": "I-02 to I-14 (repository-level findings are in REPO_REVIEW.md)", "source_ids": []}
+  ],
+  "recommendation": {
+    "primary": "Ace Plumbing & Rooter, Inc. — CSLB #829071",
+    "why": "Active C-36 plus B general building on one licence, San Francisco address, workers' compensation on file, no advisory on the CSLB record. It is the only shortlisted firm that can legally own both the plumbing and the ceiling repair without subcontracting.",
+    "condition": "Only if they agree, in writing, to attempt overflow-side extraction first and to price the ceiling contingency separately. No published evidence of bath waste-and-overflow work was found for this firm.",
+    "runner_up": "Heise's Plumbing — CSLB #1089561. C-36 with a dated, published tub waste-and-overflow replacement in San Francisco. Needs a C-9 drywall partner (Drywall S F, #1050835) if the ceiling opens.",
+    "cheapest_first_move": "Fast Response Plumbing and Rooter — CSLB #1024971, the $135 adjust quote. Use it as the diagnostic-and-attempt visit, not as the whole job."
+  },
+  "source_count": 45,
+  "evidence_policy": [
+    "A value is published only if it was read from an official source (CSLB, SF.gov, California code, IAPMO/EPA) or is explicitly labelled USER-REPORTED.",
+    "A cell with no official source is left blank and flagged. Nothing is inferred to fill a gap.",
+    "Contractor ratings and review counts are blank because Yelp returned HTTP 403 to automated retrieval. Blank means unverified, not zero.",
+    "The three quotes are reproduced exactly as given and labelled USER-REPORTED, because no written quote exists in the repository."
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema": "tub-verification-v1",
+  "generated_utc": "2026-11-06 13:43 UTC",
+  "ok": true,
+  "n_checks": 19,
+  "n_failed": 0,
+  "data_counts": {
+    "requirements": 16,
+    "vendors": 13,
+    "estimates": 3,
+    "rules": 13,
+    "sources": 45,
+    "unverified": 7,
+    "irregularities": 9,
+    "questions": 10,
+    "options": 3
+  },
+  "checks": [
+    {
+      "check": "exists:index.html",
+      "ok": true,
+      "detail": "24600 bytes"
+    },
+    {
+      "check": "exists:providers.html",
+      "ok": true,
+      "detail": "31961 bytes"
+    },
+    {
+      "check": "exists:quotes.html",
+      "ok": true,
+      "detail": "7601 bytes"
+    },
+    {
+      "check": "exists:requirements.html",
+      "ok": true,
+      "detail": "25523 bytes"
+    },
+    {
+      "check": "exists:rules.html",
+      "ok": true,
+      "detail": "16352 bytes"
+    },
+    {
+      "check": "exists:access.html",
+      "ok": true,
+      "detail": "16148 bytes"
+    },
+    {
+      "check": "exists:sources.html",
+      "ok": true,
+      "detail": "30674 bytes"
+    },
+    {
+      "check": "exists:flagged.html",
+      "ok": true,
+      "detail": "22020 bytes"
+    },
+    {
+      "check": "exists:style.css",
+      "ok": true,
+      "detail": "3564 bytes"
+    },
+    {
+      "check": "exists:.nojekyll",
+      "ok": true,
+      "detail": "0 bytes"
+    },
+    {
+      "check": "exists:feed.json",
+      "ok": true,
+      "detail": "1335 bytes"
+    },
+    {
+      "check": "internal_links_resolve",
+      "ok": true,
+      "detail": "102 internal links checked; broken: none"
+    },
+    {
+      "check": "external_links_https_and_known",
+      "ok": true,
+      "detail": "328 external links checked; problems: none"
+    },
+    {
+      "check": "every_row_has_source_cell",
+      "ok": true,
+      "detail": "148 table rows checked; missing source: none"
+    },
+    {
+      "check": "no_placeholders",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "check": "private_constraint_absent",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "check": "data_matches_rendered_counts",
+      "ok": true,
+      "detail": "data vs html: {k: (data, rendered) for mismatches} = all equal (data counts: {'requirements': 16, 'vendors': 13, 'estimates': 3, 'rules': 13, 'sources': 45, 'unverified': 7, 'irregularities': 9, 'questions': 10, 'options': 3})"
+    },
+    {
+      "check": "all_source_ids_defined",
+      "ok": true,
+      "detail": "none"
+    },
+    {
+      "check": "gems_archive_links_resolve",
+      "ok": true,
+      "detail": "none"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schema": "tub-requirements-v1",
+  "generated_utc": "2026-11-06",
+  "project": "Remove/replace a stuck bathtub wastewater overflow trip lever in an occupied San Francisco rental unit",
+  "requirement_note": "Each requirement records the user's stated need, how it is satisfied by the shortlist, and its verification state. 'verified' means the supporting statement is quoted from an official source listed in sources.json. 'unverified' means no official source can confirm it and it is flagged.",
+  "requirements": [
+    {
+      "id": "R1",
+      "category": "Scope",
+      "requirement": "Remove the bathtub wastewater overflow trip lever (the assembly is stuck inside the concealed plumbing)",
+      "why": "The trip lever / plunger linkage is seized; the tub cannot hold or release water reliably.",
+      "how_addressed": "One licensed C-36 contractor performs diagnosis at the overflow opening first; replacement of the waste-and-overflow assembly only if extraction fails.",
+      "verification_state": "verified",
+      "source_ids": ["S16", "S42"],
+      "note": "C-36 scope expressly includes 'the maintenance and replacement of all items described above'; the manufacturer's own service path for the overflow is from the tub side (S42)."
+    },
+    {
+      "id": "R2",
+      "category": "Access",
+      "requirement": "Preference: work performed from above (through the overflow opening) without opening drywall",
+      "why": "Avoids tenant disruption, dust, and a second trade.",
+      "how_addressed": "Ask every bidder to attempt overflow-side extraction before proposing wall/ceiling work; require it in writing in the scope.",
+      "verification_state": "verified",
+      "source_ids": ["S42", "S33"],
+      "note": "There is no official source that guarantees a seized linkage can be extracted from above; see scope.json for the evidence grade."
+    },
+    {
+      "id": "R3",
+      "category": "Access",
+      "requirement": "Fallback: work from below through the storage-unit ceiling if above-work fails",
+      "why": "5+ licensed plumbers reportedly declined overhead extraction; the plumbing is behind a wall/ceiling.",
+      "how_addressed": "Scope includes a contingency line for a ceiling access opening in the storage unit below.",
+      "verification_state": "unverified",
+      "source_ids": [],
+      "note": "The '5+ plumbers declined' statement is user-reported. It is recorded here as the user's account (U-01 on the Flagged page), not as a verified fact."
+    },
+    {
+      "id": "R4",
+      "category": "Licensing",
+      "requirement": "Provider must be a licensed plumber and/or licensed contractor",
+      "why": "User requirement; state law separately restricts contracting above $1,000.",
+      "how_addressed": "Every shortlisted firm has an active CSLB licence with the C-36 plumbing classification, verified on the CSLB record for 2026-11-06.",
+      "verification_state": "verified",
+      "source_ids": ["S02", "S03", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S16"],
+      "note": "Licence status is point-in-time; CSLB advises re-checking before signing."
+    },
+    {
+      "id": "R5",
+      "category": "One-stop",
+      "requirement": "Single provider for both plumbing and drywall so there is one point of accountability",
+      "why": "User requirement: 'all in one service for dry wall and plumbing'.",
+      "how_addressed": "Preference order: (a) a firm holding BOTH C-36 and B (can self-perform both trades); (b) a C-36 firm that subcontracts a C-9 drywall licence; (c) two separate licensed firms with a written sequence.",
+      "verification_state": "verified",
+      "source_ids": ["S07", "S18", "S19", "S12", "S17"],
+      "note": "Only one shortlisted firm (Ace Plumbing & Rooter, #829071) holds both C-36 and B. B alone cannot self-perform plumbing (S19)."
+    },
+    {
+      "id": "R6",
+      "category": "Permit",
+      "requirement": "Internal: work to proceed without pulling a permit",
+      "why": "User constraint, to be kept private.",
+      "how_addressed": "Not represented anywhere on the public site as a plan. The site states only the official rule: SF Plumbing Code 104.2 exempt-work items and the requirement that a permit is needed before cutting into pipes covered by a wall.",
+      "verification_state": "purposely_omitted",
+      "source_ids": ["S20", "S21", "S22"],
+      "note": "PRIVACY: the private constraint is deliberately excluded per instruction. The site never states, implies, or plans permitless work; it publishes the code text so the reader can see the line. See rules.json (RULE-03/04) and flagged item P-01."
+    },
+    {
+      "id": "R7",
+      "category": "Tenancy",
+      "requirement": "Work in a unit occupied by tenants, with a storage unit below",
+      "why": "Sensitive environment; occupants present during work.",
+      "how_addressed": "Require dust containment, daily cleanup, and work inside permitted construction hours; give statutory entry notice.",
+      "verification_state": "verified",
+      "source_ids": ["S30", "S31"],
+      "note": "Civil Code 1954(d): 24-hour written notice presumed reasonable, must state date, approximate time, purpose. SF: construction 7:00 am-8:00 pm, 7 days."
+    },
+    {
+      "id": "R8",
+      "category": "Habitability",
+      "requirement": "Restore the tub to working order for the tenant",
+      "why": "Plumbing must be maintained in good working order for a dwelling to be tenantable.",
+      "how_addressed": "Completion criterion in the scope: tub holds water, drains fully, no leaks at overflow or drain, ceiling patch finished and painted.",
+      "verification_state": "verified",
+      "source_ids": ["S29"],
+      "note": "Civil Code 1941.1(a)(2) lists plumbing 'maintained in good working order' as an affirmative standard characteristic."
+    },
+    {
+      "id": "R9",
+      "category": "Cost",
+      "requirement": "Compare the three quotes already received",
+      "why": "User supplied three estimates; decision needs an apples-to-apples view.",
+      "how_addressed": "estimates.json normalises each quote by what is included (lever only vs. waste-and-overflow vs. spout/diverter).",
+      "verification_state": "verified",
+      "source_ids": ["S26", "S27"],
+      "note": "Quotes themselves are user-reported and unverified (U-02). Contract-form rules are verified."
+    },
+    {
+      "id": "R10",
+      "category": "Cost",
+      "requirement": "Know the official permit fee so a permit-inclusive alternative can be compared",
+      "why": "Enables a like-for-like comparison against the no-permit route without stating the private constraint.",
+      "how_addressed": "Published DBI fee: Category 1P (single residential unit, single plumbing fixture installation) $290, effective 2026-07-12.",
+      "verification_state": "verified",
+      "source_ids": ["S32"],
+      "note": "Fee table is the July 2026 schedule; scope-dependent."
+    },
+    {
+      "id": "R11",
+      "category": "Vendor",
+      "requirement": "Find providers serving San Francisco with reviews for this specific delicate work",
+      "why": "User request to search Yelp and other review sources.",
+      "how_addressed": "12 candidate firms surfaced; 10 with active CSLB C-36 licences; 1 with only remediation classification; 1 cancelled licence documented.",
+      "verification_state": "partial",
+      "source_ids": ["S41", "S02", "S03", "S05", "S06", "S07", "S08", "S09", "S10", "S11"],
+      "note": "Yelp business pages returned HTTP 403 to automated retrieval, so review counts/ratings are NOT reported as verified values anywhere on the site (U-03)."
+    },
+    {
+      "id": "R12",
+      "category": "Contract",
+      "requirement": "Written scope and price before work starts",
+      "why": "Protects the owner and the tenant; required form depends on contract amount.",
+      "how_addressed": "Ask for a written home improvement contract (>$500) or a service-and-repair contract ($750 or less, buyer-initiated, payment on completion).",
+      "verification_state": "verified",
+      "source_ids": ["S26", "S27", "S28"],
+      "note": "BPC 7159(b) applies to contracts between a contractor and a tenant as well as an owner."
+    },
+    {
+      "id": "R13",
+      "category": "Lead",
+      "requirement": "Lead-safe practice if the building pre-dates 1978",
+      "why": "Cutting a painted ceiling in older SF housing disturbs paint.",
+      "how_addressed": "Ask for the contractor's EPA RRP firm certification and the Renovate Right pamphlet if the building was built before 1978 and more than 6 sq ft of painted surface per room is disturbed.",
+      "verification_state": "unverified",
+      "source_ids": ["S34"],
+      "note": "Building year of construction is not in the repo (U-04). The rule itself is verified; its applicability is not."
+    },
+    {
+      "id": "R14",
+      "category": "Insurance",
+      "requirement": "Provider carries a bond and workers' compensation (or is legally exempt)",
+      "why": "Basic consumer protection for work inside an occupied building.",
+      "how_addressed": "Bond status and workers' comp recorded per firm from the CSLB record.",
+      "verification_state": "verified",
+      "source_ids": ["S02", "S05", "S06", "S07", "S08", "S11"],
+      "note": "Three shortlisted firms are CSLB-certified exempt from workers' comp because they report no employees (S05, S08, and see vendors.json)."
+    },
+    {
+      "id": "R15",
+      "category": "Timing",
+      "requirement": "Complete this week",
+      "why": "User statement that a permit cannot be pulled this week.",
+      "how_addressed": "Shortlist ranked partly on stated same-day / 7-day availability, but no arrival date is claimed as verified.",
+      "verification_state": "unverified",
+      "source_ids": ["S35"],
+      "note": "Availability claims are self-published. No official source can confirm scheduling."
+    },
+    {
+      "id": "R16",
+      "category": "Documentation",
+      "requirement": "Photos of the overflow and the ceiling below for bidders",
+      "why": "User offered to include reference pictures.",
+      "how_addressed": "Photo checklist produced (site page 'Scope & access'); no images were supplied to this repo.",
+      "verification_state": "unverified",
+      "source_ids": [],
+      "note": "No image files exist in the repository (U-05). Nothing was invented or substituted."
+    }
+  ]
+}

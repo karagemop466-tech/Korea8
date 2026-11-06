@@ -1,0 +1,78 @@
+{
+  "schema": "tub-scope-v1",
+  "generated_utc": "2026-11-06",
+  "disclaimer": "This page describes a decision process for a licensed contractor to execute. It is not a do-it-yourself instruction and it is not a diagnosis. Nothing here is based on having seen the tub, the wall, or the plumbing.",
+  "options": [
+    {
+      "id": "A",
+      "name": "Extract the linkage from the overflow opening (from above)",
+      "what_happens": "Remove the two screws holding the overflow plate, pull the plate and the attached linkage/plunger straight out of the overflow tube, free or replace the plunger barrel, reinstall with a new overflow gasket.",
+      "prerequisites_unverified": [
+        "The overflow plate screws are not seized or stripped",
+        "The linkage is still attached to the plate (not snapped off inside the tube)",
+        "There is enough clearance in the overflow tube for the plunger to slide up"
+      ],
+      "evidence_for": "Manufacturer documentation for concealed bath drains shows the overflow side as the service path for the control linkage (S42). Standard trip-lever bath waste construction puts the plunger barrel in the overflow tube above the drain tee.",
+      "evidence_against": "None official. The user reports that five or more licensed plumbers declined this route, which is user-reported only (U-01).",
+      "opens_drywall": false,
+      "tenant_impact": "Lowest: no dust, no ceiling access, typically one visit.",
+      "estimated_time_on_site": "1 hour or less if the linkage comes free (inference - not verified)",
+      "what_if_it_fails": "The plunger barrel or linkage may remain stuck inside the overflow tube. Fishing it out with a hooked wire or a claw tool is the next step; if that fails, option B.",
+      "source_ids": ["S42", "S33"],
+      "evidence_label": "MIXED - manufacturer documentation verified; the specific seized condition is user-reported"
+    },
+    {
+      "id": "B",
+      "name": "Open the ceiling of the storage unit below (from below)",
+      "what_happens": "Cut an access opening in the storage-unit ceiling, reach the waste-and-overflow tee and the trap, release the slip nut or cut and replace the assembly, then patch and paint the ceiling.",
+      "prerequisites_unverified": [
+        "The plumbing run is actually above the storage unit's ceiling in an accessible location",
+        "Clearance and safe working height under the ceiling",
+        "No asbestos-containing ceiling material, no concealed wiring or ductwork in the cut zone",
+        "The tenant in the storage unit consents to access and the work"
+      ],
+      "evidence_for": "SF.gov states a permit is needed before cutting into or replacing pipes, particularly pipes covered by a wall (S20); that is only a statement of when a permit is triggered, not that this route is required. The trap tee sits below the overflow, behind the tub apron, so ceiling access reaches the slip joint that overflow-side work cannot (S33).",
+      "evidence_against": "Requires a permit under the ordinary reading of S20/S21 plus a drywall trade, dust control, and a second space to access. It is the most disruptive option.",
+      "opens_drywall": true,
+      "tenant_impact": "Highest: dust, noise, a hole in a tenant's ceiling, two visits minimum (open, then close after inspection).",
+      "estimated_time_on_site": "4-8 hours across two visits (inference - not verified)",
+      "what_if_it_fails": "It generally does not fail; ceiling access is the deterministic route. The risk moves to damage and cost rather than feasibility.",
+      "source_ids": ["S20", "S21", "S33", "S34"],
+      "evidence_label": "MIXED - permit trigger verified; feasibility and timing are inference"
+    },
+    {
+      "id": "C",
+      "name": "Install or restore a 12-inch access panel and service through it",
+      "what_happens": "Instead of a plain drywall patch, close the opening with a removable access panel of at least 12 in. in its least dimension so the next failure is serviceable without demolition.",
+      "prerequisites_unverified": [
+        "A suitable wall or ceiling location adjacent to the tee that satisfies the 12 in. minimum"
+      ],
+      "evidence_for": "Code requires a 12 in. access panel or utility space where slip-joint connections are concealed (S33). This makes the current defect and future service the same problem, solved once.",
+      "evidence_against": "Cosmetic impact in a rented storage unit; the owner may prefer a flush patch.",
+      "opens_drywall": true,
+      "tenant_impact": "Same as option B on the day, better on every future visit.",
+      "estimated_time_on_site": "Same as B, plus panel installation",
+      "what_if_it_fails": "Not applicable - an access panel is a permanent improvement.",
+      "source_ids": ["S33", "S44"],
+      "evidence_label": "OFFICIAL for the code requirement; this is a design recommendation"
+    }
+  ],
+  "recommended_sequence": [
+    {"step": 1, "action": "Ask the C-36 contractor to attempt option A first, and get that in writing as a separate line item with its own price.", "sources": ["S42"]},
+    {"step": 2, "action": "If A fails, stop and re-quote before cutting anything. Do not let the visit convert into an open-ended hourly job.", "sources": ["S26"]},
+    {"step": 3, "action": "For option B, decide permit-or-not BEFORE the cut, based on RULE-03/RULE-04, and record the decision with the contractor in writing.", "sources": ["S20", "S21", "S22"]},
+    {"step": 4, "action": "If the building predates 1978, confirm EPA RRP firm certification and deliver the Renovate Right pamphlet before the ceiling is opened.", "sources": ["S34"]},
+    {"step": 5, "action": "Serve Civil Code 1954 written notice for BOTH spaces, naming date, window and purpose; keep all work inside 7:00 am - 8:00 pm.", "sources": ["S30", "S31"]},
+    {"step": 6, "action": "Close the opening with an access panel of at least 12 in. rather than a flush patch where the tee is concealed.", "sources": ["S33"]}
+  ],
+  "why_plumbers_may_have_declined": {
+    "label": "HYPOTHESIS - not verified",
+    "candidates": [
+      "A seized plunger barrel in a corroded overflow tube can shear the linkage, and a sheared linkage inside a concealed pipe converts a small repair into a demolition job with no clean stopping point.",
+      "The overflow tube may be a soldered or glued assembly rather than a slip-joint assembly, so nothing inside it is designed to come apart from the tub side.",
+      "A contractor who cannot see the tee cannot warrant the result, and a $135-$614 price cannot absorb an unknown.",
+      "Liability in an occupied building: a failed attempt that damages the ceiling below becomes the plumber's problem."
+    ],
+    "status": "These are plausible industry reasons assembled from the code text and manufacturer documentation. They are NOT statements from any of the plumbers who declined, and no plumber's reason is recorded in this repository."
+  }
+}
