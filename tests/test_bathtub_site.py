@@ -27,7 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "bathtub"
 DOCS = ROOT / "docs"
-OUT = DOCS / "bathtub"
+OUT = ROOT / "bathtub"
 ART = ROOT / "artifacts"
 
 REGISTRY = {e["url"]: e for e in json.loads((DATA / "url_registry.json").read_text())["entries"]}
@@ -98,7 +98,9 @@ def main() -> int:
     problems += verified_no_source
 
     # ---- 3 & 4: links in the built HTML ------------------------------------
-    pages = sorted(OUT.glob("*.html")) + [DOCS / "index.html"]
+    # only pages this session owns are link-checked; the integrated root
+    # dashboard belongs to another session and is out of scope here.
+    pages = sorted(OUT.glob("*.html"))
     stats["pages_checked"] = len(pages)
     internal_bad: list[str] = []
     external_unregistered: list[str] = []

@@ -25,8 +25,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "bathtub"
 DOCS = ROOT / "docs"
-OUT = DOCS / "bathtub"
-ASSETS = DOCS / "assets"
+OUT = ROOT / "bathtub"
+ASSETS = OUT / "assets"
 
 BASE = "/Korea8/bathtub/"
 
@@ -156,7 +156,7 @@ def page(title: str, subtitle: str, body: str, active: str) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)} — Bathtub waste &amp; overflow project</title>
-<link rel="stylesheet" href="../assets/bathtub.css">
+<link rel="stylesheet" href="assets/bathtub.css">
 </head>
 <body>
 <header class="top">
@@ -165,7 +165,7 @@ def page(title: str, subtitle: str, body: str, active: str) -> str:
       <span class="dot"></span>
       <div>
         <h1>Bathtub waste &amp; overflow — trip-lever removal</h1>
-        <p class="sub">San Francisco · tenant-occupied unit · licensed provider search, requirements and compliance review</p>
+        <p class="sub">San Francisco · tenant-occupied unit · independent verification dossier (session b10e8d0e) · compiled 2026-11-06</p>
       </div>
     </div>
     <nav class="nav">{nav}</nav>
@@ -184,7 +184,7 @@ def page(title: str, subtitle: str, body: str, active: str) -> str:
   Licence status changes over time — re-check at
   <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">cslb.ca.gov</a>
   before awarding work.</p>
-  <p><a href="../index.html">Site index</a> · <a href="data/">raw JSON data</a> ·
+  <p><a href="../index.html">Project dashboard (integrated)</a> · <a href="data/">raw JSON data</a> ·
      <a href="https://github.com/karagemop466-tech/Korea8" target="_blank" rel="noopener">repository</a></p>
 </footer>
 </body>
@@ -216,6 +216,16 @@ def page_index() -> str:
     reqs = [r for c in REQUIREMENTS["categories"] for r in c["requirements"]]
 
     body = []
+    body.append(note(
+        "<strong>What this is.</strong> This is an independent verification dossier produced by one "
+        "session working from the same brief. Several parallel sessions worked this repo, and the "
+        "integrated dashboard lives at the <a href=\"../index.html\">site root</a>; the other briefs are at "
+        "<a href=\"../trip-lever/executive-summary.html\">trip-lever/</a>, "
+        "<a href=\"../bathroom-overflow/index.html\">bathroom-overflow/</a> and "
+        "<a href=\"../bathtub-overflow/index.html\">bathtub-overflow/</a>. Nothing here overwrites their "
+        "pages. Every licence fact below was retrieved from CSLB on 2026-11-06 and is reproduced with its "
+        "source link so it can be re-checked independently.", "info"))
+
     body.append(kpis([
         (str(len(prov)), "providers verified", "licence checked directly at CSLB on 2026-11-06"),
         (str(len(allin)), "single-licence all-in-one", "hold both plumbing and general-building"),
@@ -917,6 +927,12 @@ def build() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     ASSETS.mkdir(parents=True, exist_ok=True)
     (OUT / "data").mkdir(parents=True, exist_ok=True)
+    ASSETS.mkdir(parents=True, exist_ok=True)
+    css_src = DATA / "site.css"
+    if css_src.exists():
+        (ASSETS / "bathtub.css").write_text(css_src.read_text())
+    else:
+        print("WARNING: data/bathtub/site.css missing — pages will be unstyled")
 
     pages = {
         "index.html": page_index(),
