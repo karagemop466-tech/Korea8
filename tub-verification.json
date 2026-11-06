@@ -19,7 +19,7 @@
     {
       "check": "exists:index.html",
       "ok": true,
-      "detail": "24600 bytes"
+      "detail": "24610 bytes"
     },
     {
       "check": "exists:providers.html",
@@ -54,7 +54,7 @@
     {
       "check": "exists:flagged.html",
       "ok": true,
-      "detail": "22020 bytes"
+      "detail": "21717 bytes"
     },
     {
       "check": "exists:style.css",
@@ -84,7 +84,7 @@
     {
       "check": "every_row_has_source_cell",
       "ok": true,
-      "detail": "148 table rows checked; missing source: none"
+      "detail": "147 table rows checked; missing source: none"
     },
     {
       "check": "no_placeholders",

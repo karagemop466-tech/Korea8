@@ -300,7 +300,11 @@ licence on this site was read from cslb.ca.gov on 2026-11-06, where the CSLB pag
 11/6/2026". Re-check any licence on the day you sign. No review score is reported because none could be
 verified.</div>
 """
-    return page("Bathtub overflow trip lever", esc(load("executive")["one_liner"]), body, "index.html", generated)
+    return page("Bathtub overflow trip lever",
+                "A dashboard for one small, awkward job: a seized overflow trip lever behind a wall, "
+                "in a rented unit in San Francisco, with tenants in place. Verified licences, "
+                "normalised quotes, and the official rules in one place.",
+                body, "index.html", generated)
 
 
 def build_providers(generated: str) -> str:
@@ -606,12 +610,7 @@ def build_flagged(generated: str) -> str:
     for q in fl["questions_to_ask"]:
         q_rows += (f'<tr><td class="mono">{esc(q["n"])}</td><td>{esc(q["question"])}</td>'
                    f'<td class="small">{esc(q["why"])}</td>{src_cell(q["sources"])}</tr>')
-    p_rows = ""
-    for p in fl["private_exclusions"]:
-        p_rows += (f'<tr><td class="mono">{esc(p["id"])}</td><td class="small">{esc(p["decision"])}</td>'
-                   f'<td class="small">{esc(p["reason"])}</td><td class="small">{esc(p["how_to_handle"])}</td>'
-                   f'<td class="blank">N/A — no source by design: this row records an omission, '
-                   f'not a value</td></tr>')
+    policy = esc(fl["redaction_policy"])
 
     body = f"""
 <div class="warnbox">{esc(fl["note"])}</div>
@@ -634,10 +633,8 @@ overwrote the site root, duplicate raster trees) are documented in
 <thead><tr><th>#</th><th>Question</th><th>Why it matters</th><th>Source</th></tr></thead>
 <tbody>{q_rows}</tbody></table>
 
-<h2>Deliberate exclusions</h2>
-<table><caption>Recorded so the omission is auditable rather than accidental.</caption>
-<thead><tr><th>ID</th><th>Decision</th><th>Reason</th><th>How it is handled</th><th>Source</th></tr></thead>
-<tbody>{p_rows}</tbody></table>
+<h2>Editorial policy</h2>
+<div class="note">{policy}</div>
 """
     return page("Flagged for review", "Everything this project could not verify, and everything that looked wrong while checking. Nothing here blocked publication — review it and ask for changes.", body, "flagged.html", generated)
 

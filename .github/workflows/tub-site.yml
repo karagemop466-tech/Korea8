@@ -1,0 +1,40 @@
+name: Trip-lever site gate
+
+on:
+  push:
+    paths:
+      - "data/tub/**"
+      - "scripts/build_tub_site.py"
+      - "scripts/verify_tub_site.py"
+      - "*.html"
+  pull_request:
+    paths:
+      - "data/tub/**"
+      - "scripts/build_tub_site.py"
+      - "scripts/verify_tub_site.py"
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the site from data (must be reproducible)
+        run: python3 scripts/build_tub_site.py
+      - name: Fail if the committed pages differ from the build
+        run: git diff --exit-code -- '*.html' style.css feed.json
+      - name: Run the verification gate
+        run: python3 scripts/verify_tub_site.py
+      - name: Upload the verification receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tub-verification
+          path: tub-verification.json
+          if-no-files-found: warn

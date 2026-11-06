@@ -58,7 +58,7 @@
       "source_ids": [
         "S33"
       ],
-      "effect": "(effect not stated)"
+      "effect": "Cannot say yet whether the overflow-side attempt is even possible, or whether the 12-inch access-panel requirement applies to this installation."
     },
     {
       "id": "U-07",
@@ -68,7 +68,7 @@
       "source_ids": [
         "S35"
       ],
-      "effect": "(effect not stated)"
+      "effect": "Availability is the one requirement with a hard deadline attached; it cannot be verified from any official source."
     }
   ],
   "irregularities": [
@@ -169,14 +169,6 @@
       "source_ids": []
     }
   ],
-  "private_exclusions": [
-    {
-      "id": "P-01",
-      "decision": "One owner-supplied constraint was deliberately excluded from this site and from every artefact in this repository.",
-      "reason": "The owner instructed that it must not become public and must never be mentioned. It is not stated in any page, table, commit message, or data file, and no plan is built on it.",
-      "how_to_handle": "The site instead publishes the official permit rules verbatim so the decision can be made privately, by the owner, with the contractor, before any work starts."
-    }
-  ],
   "questions_to_ask": [
     {
       "n": 1,
@@ -263,5 +255,6 @@
         "S09"
       ]
     }
-  ]
+  ],
+  "redaction_policy": "This site publishes only what the source brief said about scope, cost, licensing, access, tenancy and safety. Items in the brief that do not describe the work are not reproduced, and no plan on this site depends on them. Where a decision is needed, the site publishes the official rule instead, so it can be made privately."
 }

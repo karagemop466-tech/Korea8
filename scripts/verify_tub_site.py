@@ -68,6 +68,13 @@ FORBIDDEN = [
     "keep it private",
     "cannot pull a permit",
     "can't pull a permit",
+    "cannot pull a permit",
+    "for reasons that need to stay private",
+    "need to stay private",
+    "stays private",
+    "never mentioned",
+    "never becomes public",
+    "must stay private",
 ]
 
 PLACEHOLDERS = ["TODO", "TBD", "lorem ipsum", "FIXME", "XXX", "placeholder text"]

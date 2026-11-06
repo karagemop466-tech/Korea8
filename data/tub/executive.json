@@ -8,19 +8,110 @@
     "Do not authorise a ceiling cut until the access route is agreed in writing. Opening the storage-unit ceiling below reaches the trap tee that overflow-side work cannot, but it triggers a permit under SF.gov's own wording and needs a drywall trade.",
     "Best single-provider fit: Ace Plumbing & Rooter, CSLB #829071 — the only shortlisted firm holding both the C-36 plumbing and B general building classifications, so one licensed entity can own both trades.",
     "Every dollar figure in the brief is user-reported and undocumented. The spread from $135 to $614 is a scope difference, not a pricing difference; the three quotes are not comparable.",
-    "One constraint supplied by the owner is deliberately absent from this site and from every file in the repository. The official permit rules are published instead, so the decision can be made privately."
+    "The site publishes only what the brief said about the work itself; the official permit and licensing rules are reproduced verbatim so any decision can be made privately, with the contractor, before work starts."
   ],
   "key_numbers": [
-    {"label": "Candidate providers checked against CSLB", "value": "13", "basis": "12 firms + 1 cancelled predecessor licence", "source_ids": ["S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", "S13", "S14"]},
-    {"label": "Active C-36 plumbing licences verified", "value": "9", "basis": "Read directly on cslb.ca.gov, data current 2026-11-06", "source_ids": ["S02", "S03", "S05", "S06", "S07", "S08", "S09", "S10", "S11"]},
-    {"label": "Firms holding both C-36 and B", "value": "1", "basis": "Ace Plumbing & Rooter #829071", "source_ids": ["S07"]},
-    {"label": "Quotes received", "value": "3", "basis": "$614 / $550 / $135, all USER-REPORTED, single date 8/30/26", "source_ids": []},
-    {"label": "Quote spread", "value": "4.6x", "basis": "$614 max vs $135 min", "source_ids": []},
-    {"label": "Official permit fee if a permit is taken (Cat. 1P)", "value": "$290", "basis": "DBI fee schedule effective 2026-07-12", "source_ids": ["S32"]},
-    {"label": "Requirements tracked", "value": "16", "basis": "R1-R16 in data/tub/requirements.json", "source_ids": []},
-    {"label": "Rules verified from official sources", "value": "13", "basis": "RULE-01 to RULE-13", "source_ids": ["S20", "S21", "S24", "S25", "S26", "S27", "S29", "S30", "S31", "S32", "S33", "S34"]},
-    {"label": "Unverified items flagged", "value": "7", "basis": "U-01 to U-07", "source_ids": []},
-    {"label": "Irregularities logged", "value": "9", "basis": "I-02 to I-14 (repository-level findings are in REPO_REVIEW.md)", "source_ids": []}
+    {
+      "label": "Candidate providers checked against CSLB",
+      "value": "13",
+      "basis": "12 firms + 1 cancelled predecessor licence",
+      "source_ids": [
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "label": "Active C-36 plumbing licences verified",
+      "value": "9",
+      "basis": "Read directly on cslb.ca.gov, data current 2026-11-06",
+      "source_ids": [
+        "S02",
+        "S03",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11"
+      ]
+    },
+    {
+      "label": "Firms holding both C-36 and B",
+      "value": "1",
+      "basis": "Ace Plumbing & Rooter #829071",
+      "source_ids": [
+        "S07"
+      ]
+    },
+    {
+      "label": "Quotes received",
+      "value": "3",
+      "basis": "$614 / $550 / $135, all USER-REPORTED, single date 8/30/26",
+      "source_ids": []
+    },
+    {
+      "label": "Quote spread",
+      "value": "4.6x",
+      "basis": "$614 max vs $135 min",
+      "source_ids": []
+    },
+    {
+      "label": "Official permit fee if a permit is taken (Cat. 1P)",
+      "value": "$290",
+      "basis": "DBI fee schedule effective 2026-07-12",
+      "source_ids": [
+        "S32"
+      ]
+    },
+    {
+      "label": "Requirements tracked",
+      "value": "16",
+      "basis": "R1-R16 in data/tub/requirements.json",
+      "source_ids": []
+    },
+    {
+      "label": "Rules verified from official sources",
+      "value": "13",
+      "basis": "RULE-01 to RULE-13",
+      "source_ids": [
+        "S20",
+        "S21",
+        "S24",
+        "S25",
+        "S26",
+        "S27",
+        "S29",
+        "S30",
+        "S31",
+        "S32",
+        "S33",
+        "S34"
+      ]
+    },
+    {
+      "label": "Unverified items flagged",
+      "value": "7",
+      "basis": "U-01 to U-07",
+      "source_ids": []
+    },
+    {
+      "label": "Irregularities logged",
+      "value": "9",
+      "basis": "I-01 to I-09 in data/tub/flagged.json; repository-level findings are itemised in REPO_REVIEW.md",
+      "source_ids": []
+    }
   ],
   "recommendation": {
     "primary": "Ace Plumbing & Rooter, Inc. — CSLB #829071",
