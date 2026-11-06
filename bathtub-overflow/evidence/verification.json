@@ -1,0 +1,374 @@
+{
+  "schema": "bt-verification-v1",
+  "ok": true,
+  "n_checks": 61,
+  "n_failed": 0,
+  "checks": [
+    {
+      "id": "DATA-sources.json",
+      "description": "sources.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DATA-vendors.json",
+      "description": "vendors.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DATA-requirements.json",
+      "description": "requirements.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DATA-costs.json",
+      "description": "costs.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DATA-code_facts.json",
+      "description": "code_facts.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DATA-findings.json",
+      "description": "findings.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "DATA-flagged.json",
+      "description": "flagged.json parses as JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "SRC-SCHEME",
+      "description": "every source URL is https",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "SRC-PURPOSE",
+      "description": "every source states what it verifies",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "SRC-TYPE",
+      "description": "every source is labelled official / non-official",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "REQ-SRC",
+      "description": "REQ-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-EXTRA",
+      "description": "VEN-EXTRA: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FND-SRC",
+      "description": "FND-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-SRC",
+      "description": "FLG-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CST-Q-SRC",
+      "description": "CST-Q-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CST-F-SRC",
+      "description": "CST-F-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CST-C-SRC",
+      "description": "CST-C-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CF-SRC",
+      "description": "CF-SRC: every source reference resolves",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "REQ-ROW",
+      "description": "REQ-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FND-ROW",
+      "description": "FND-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-ROW",
+      "description": "FLG-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CST-Q-ROW",
+      "description": "CST-Q-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CST-F-ROW",
+      "description": "CST-F-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CST-C-ROW",
+      "description": "CST-C-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "CF-ROW",
+      "description": "CF-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-ROW",
+      "description": "VEN-ROW: every row carries a source link",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-OFFICIAL",
+      "description": "every vendor row links to an official CSLB record page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-FLAGREF",
+      "description": "every vendor flag id exists in flagged.json",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-UNVERIFIED-FLAGGED",
+      "description": "every vendor without an established licence carries a flag",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-STATUS",
+      "description": "every vendor with a licence number has a recorded licence status",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-CLASS",
+      "description": "every verified vendor records its classifications",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-RECO",
+      "description": "every vendor row carries a recommendation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "VEN-SUSPENDED",
+      "description": "suspended licences are marked DO NOT HIRE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-YELP",
+      "description": "flagged page covers 'Yelp'",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-SUSP",
+      "description": "flagged page covers 'suspended'",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-WC",
+      "description": "flagged page covers 'workers compensation'",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-DIR",
+      "description": "flagged page covers '#297604'",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FLG-PERMIT",
+      "description": "flagged page covers 'permit'",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "SITE-PAGES",
+      "description": "every expected page was generated",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "SOURCES-MD",
+      "description": "SOURCES.md was generated from data/sources.json",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "SOURCES-MD-IDS",
+      "description": "SOURCES.md lists every source id",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "HTML-ROW-SRC-index.html",
+      "description": "index.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-scope.html",
+      "description": "scope.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-vendors.html",
+      "description": "vendors.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-costs.html",
+      "description": "costs.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-code.html",
+      "description": "code.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-findings.html",
+      "description": "findings.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-flagged.html",
+      "description": "flagged.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-ROW-SRC-sources.html",
+      "description": "sources.html: every rendered table row carries a source link",
+      "ok": true,
+      "detail": "rows without links: []"
+    },
+    {
+      "id": "HTML-COUNT-scope.html",
+      "description": "scope.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 34, expected 34"
+    },
+    {
+      "id": "HTML-COUNT-vendors.html",
+      "description": "vendors.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 14, expected 14"
+    },
+    {
+      "id": "HTML-COUNT-costs.html",
+      "description": "costs.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 14, expected 14"
+    },
+    {
+      "id": "HTML-COUNT-code.html",
+      "description": "code.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 18, expected 18"
+    },
+    {
+      "id": "HTML-COUNT-findings.html",
+      "description": "findings.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 14, expected 14"
+    },
+    {
+      "id": "HTML-COUNT-flagged.html",
+      "description": "flagged.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 22, expected 22"
+    },
+    {
+      "id": "HTML-COUNT-sources.html",
+      "description": "sources.html: rendered row count equals JSON row count",
+      "ok": true,
+      "detail": "rendered 46, expected 46"
+    },
+    {
+      "id": "SITE-LINKS",
+      "description": "no broken internal links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "NO-PLACEHOLDER",
+      "description": "no placeholder text anywhere in the data or the site",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "NO-PRIVATE-LEAK",
+      "description": "no internal permit-timing language appears in the published data or pages",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "REQ-VERIF",
+      "description": "every requirement carries a verification label",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "id": "FND-VERIF",
+      "description": "every finding carries a verification label",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}
