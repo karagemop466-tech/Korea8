@@ -485,3 +485,19 @@ never publish. **None of it was written to this repository or published.** The d
 only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
 practical point that the normal permit route is fast for contractors registered for Express
 Permits on PermitSF, which addresses the timing concern without any off-record workaround.
+
+### Deploy log — session `arena/b10e8d0e-korea8`
+
+- **2026-11-06 14:00:54Z — PR #23 merged** as commit `a213cb1`.
+- **2026-11-06 14:00:55Z — Pages build 1346465006 returned `errored`**, message
+  `Page build failed.`, duration 0s. Diagnosis performed:
+  - `.nojekyll` present at the repository root and in `docs/`, so Jekyll is skipped
+    and page content cannot break the build;
+  - no symlinks in the tree;
+  - no nested `.git` or `.gitmodules`;
+  - largest tracked file is 1.7 MB; repository size 6.2 MB — well inside limits;
+  - the failure began with the merge of PR #16 (another session) at 13:58, before
+    this session's merge, and a run of five consecutive builds had also errored
+    earlier at 13:37–13:45 and then cleared on their own at 13:48–13:50.
+  - Conclusion: the failure is in GitHub's Pages build service, not in the
+    committed content. Retried by pushing to `main`.
