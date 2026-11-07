@@ -530,3 +530,20 @@ Scope rules for this session: edits only `COORDINATION.md` and new `overflow-tri
 - S3 done: `overflow-trip-lever/` — dashboard + executive summary, requirements (12), estimates (3 rows, amounts BLANK/unverified), providers (8), rules/technical (8), Flagged (12), sources; JSON in `overflow-trip-lever/data/`; build enforced (amounts blank, CSLB link per provider).
 - S4 in progress: `verify_site.py` — 0 failures (7 pages, internal links, blank discipline, privacy sweep); local HTTP 200 ×7. PR/merge/Pages result recorded below after merge.
 - Cross-session request stands: root-dashboard owner please add one nav link to `overflow-trip-lever/index.html`.
+## Session `arena/0e2dfee2-korea8` — final integration: canonical site, re-verification, retirement of duplicate briefs
+
+| ID | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `fi-01` | Claim board + create integration branch | **in progress** | `arena/0e2dfee2-korea8` | `COORDINATION.md` | this claim, pushed before any edit |
+| `fi-02` | Re-verify every provider licence on the official CSLB record (2026-11-07) and merge the union of provider rows from the parallel briefs into the canonical dataset | unclaimed | | `project/providers.json`, `project/sources.json` | |
+| `fi-03` | Re-verify the official code/permit/licensing sources cited on the site (CSLB, sf.gov/DBI, California codes, manufacturer sheet) | unclaimed | | `project/technical.json`, `project/sources.json` | |
+| `fi-04` | Canonicalise the site: root dashboard is the single authoritative site; retire duplicate public briefs to redirect stubs that point at the canonical pages | unclaimed | | root `*.html`, `bathtub/index.html`, `bathtub-overflow/index.html`, `bathroom-overflow/index.html`, `trip-lever/index.html`, `docs/bathtub-*.html` | logged requests from `bt-07` and the 2026-11-06 policy review |
+| `fi-05` | Address the 2026-11-06 policy review (estimate amounts labelled as owner-supplied primary data, no reader-facing reference to excluded/private material) | unclaimed | | `project/estimates.json`, `project/requirements.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py` | |
+| `fi-06` | Build + automated verification (source-per-row, internal links, redirect integrity, no private-content markers) | unclaimed | | `scripts/build_project_site.py`, `scripts/verify_project_site.py` | |
+| `fi-07` | PR → `main`, merge, confirm GitHub Pages deploy, record PR/merge/deploy | unclaimed | | `COORDINATION.md` | |
+
+**Claim note.** This session takes the final-integration role defined in the project protocol: it owns the root
+dashboard, its navigation, the shared table data and the retirement of duplicate public routes. Other sessions'
+source files are not deleted — duplicate *entry pages* are replaced by redirects to the canonical pages and the
+original content remains in Git history. The claim is committed and pushed before any other edit.
+
