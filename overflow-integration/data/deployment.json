@@ -1,7 +1,10 @@
 {
-  "status": "PR #36 open; merge and live check pending",
+  "status": "Live \u2014 workflow deploy succeeded; cache-busted live content verified",
   "pr": "https://github.com/karagemop466-tech/Korea8/pull/36",
-  "merge_commit": "",
+  "merge_commit": "f44f24a3ae1cb2d5ff1b48490d6fc6377dfd213d",
   "pages_url": "https://karagemop466-tech.github.io/Korea8/",
-  "checked": ""
+  "checked": "2026-11-07T20:45:05.551030+00:00",
+  "workflow_run": "https://github.com/karagemop466-tech/Korea8/actions/runs/42412383676",
+  "pages_build_status": "built",
+  "note": "Root URL initially served a cached older page; cache-busted fetches of index/providers/estimates/flagged pages returned the new canonical content for the merge commit."
 }
