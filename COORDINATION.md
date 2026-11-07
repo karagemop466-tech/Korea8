@@ -733,3 +733,75 @@ publishes. It does not delete any session's work: duplicate briefs are replaced 
 stubs and remain in git history.
 
 **Claim committed and pushed before any work began** (see commit message `claim(fi-01)`).
+
+
+### Log — session `arena/5d4c76bb-korea8` (final integration)
+
+**Scope worked:** root `*.html`, `style.css`, `site-data/**`, `scripts/build_canonical_site.py`,
+`scripts/verify_canonical_site.py`, `archive/superseded-2026-11-07/**`, the redirect stubs,
+`REPO_REVIEW_2026-11-07.md`, this board. No other session's research artefacts (GEMS, `vendor/`,
+`registry/`, `src/`) were modified.
+
+**What was done**
+
+1. **Consolidation.** The four parallel briefs and the `docs/bathtub-*` pages published the same
+   project in different words with different data. Each route is now one redirect stub to the
+   canonical root dashboard; nothing was deleted from git history. The root dashboard is the
+   single authoritative page, with nine category subpages.
+2. **Re-verification (new work, not a copy of earlier sessions).** All twelve provider licences
+   were re-retrieved from the official CSLB licence-detail page on 2026-11-07 and each page's own
+   "data current as of" time is published per row. Code, fee, licensing and tenant-entry rows were
+   re-read at source: SF.gov permit page, SF DBI Table 1A-C **July 2026** PDF, CSLB B and C-36
+   classification pages, BPC §7048, BPC §7057.5, Civ. Code §1954, and the Watco 500/501/600-TL
+   instruction sheet.
+3. **New finding adopted into the dossier:** CSLB #749536 (Save - On - Interior) holds
+   **B + C-36** at the *same street address and business phone* as #757796 (Bay Area Plumbing).
+   Published as flag F-13 with the explicit caveat that the CSLB record does not state who
+   controls each licence.
+4. **Amount discipline.** Earlier routes published the three owner-supplied quote amounts. They
+   are now blank in every published HTML and JSON file and flagged (F-02); `grep` over the served
+   tree finds no occurrence of the three values.
+5. **Dead links fixed.** Two sf.gov URLs cited by earlier briefs now return 404; the site uses the
+   live pages, and the dead URLs are recorded as S-35/S-36 (flag F-11).
+6. **Fee correction.** The permit fee is published as **$290** from the July 2026 DBI table,
+   superseding the $276 figure from the September 2025 table.
+7. **Build discipline.** `scripts/build_canonical_site.py` writes all ten pages from `site-data/`
+   and refuses to publish a row with neither a source link nor an explicit owner/unverified
+   marker. `scripts/verify_canonical_site.py` re-checks the generated HTML independently:
+   **15/15 checks pass**.
+8. **Archived, not deleted:** `build_project_site.py`, `build_bathtub_site.py`,
+   `test_bathtub_site.py` and `bathtub-overflow/scripts/` moved to
+   `archive/superseded-2026-11-07/` so a stray run cannot overwrite the canonical site.
+
+**Sources used** (all retrieved 2026-11-07): 12 × `cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=…`;
+`cslb.ca.gov` B and C-36 classification pages; `sf.gov/apply-plumbing-and-mechanical-permit`;
+`sf.gov/resource--2023--plumbing-inspection-division`;
+`sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf`;
+`leginfo.legislature.ca.gov` BPC §7048, BPC §7057.5, CIV §1954;
+`watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf`.
+Blocked/unretrievable: `aa.iapmo.org` (members-only), Yelp (HTTP 403), two dead sf.gov URLs.
+
+**Verification performed:** automated — row-level source check (133 rendered data rows),
+provider-row CSLB check, row-count parity against the data files, internal-link resolution,
+self-contained-asset check, HTML tag balance, forbidden-amount sweep, and a reader-facing
+phrase sweep for internal/private material. Results: `site-data/build-report.json` and
+`site-data/verification.json`, both PASS.
+
+**Irregularities flagged (all published on the site's Flagged for review page):**
+F-01 repo also hosts an unrelated archived project · F-02 quote amounts unverified, blanked ·
+F-03 quote scopes not comparable · F-04 review platforms block retrieval · F-05 licence status is
+point-in-time · F-06 no C-9 drywall licence in the set · F-07 SF Plumbing Code §104.2 and CPC
+§402.10 not verifiable from a free official source · F-08 Fast Response CSLB/website address
+mismatch · F-09 no evidence any listed firm has done this exact repair · F-10 photos pending ·
+F-11 two dead sf.gov URLs in earlier drafts · F-12 Advanced Plumbing future-suspension status ·
+F-13 Save-On-Interior shared address/phone · F-14 "5+ plumbers" is an owner report ·
+F-15 permit requirement for this job not confirmed in writing · F-16 no official dust-containment
+rule · F-17 CSLB entry page in maintenance during retrieval · F-18 Save-On-Interior 2015–2016
+CLSB miscellaneous entries · F-19 third-party price benchmarks unverified and not published ·
+F-20 duplicate briefs retired.
+
+**Deployment note.** GitHub Pages was in a failed state at the start of this session: the
+`build` job for `e622cdd` succeeded in 8 s while the `deploy` job timed out after 10 m 7 s
+(<https://github.com/karagemop466-tech/Korea8/actions/runs/42237367404>). Content causes were
+ruled out (`.nojekyll` present, no symlinks, 242 files / 20 MB). The site was rebuilt, verified,
+and deployed once after that incident aged out; the deploy result is recorded below.
