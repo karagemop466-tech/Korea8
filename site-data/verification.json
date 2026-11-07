@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-11-07 20:24 UTC",
+  "statement": "Automated checks run by scripts/build_project_site.py before the pages were written, then repeated against the written pages. A failing check aborts the build.",
+  "checks": [
+    {
+      "name": "source_link_per_row",
+      "result": "pass",
+      "detail": "every estimate, benchmark, provider, technical finding, source and flag row carries at least one source link; a provider row with a website carries two"
+    },
+    {
+      "name": "cslb_link_on_every_provider",
+      "result": "pass",
+      "detail": "every provider row links to its official CSLB licence-detail page as its first source"
+    },
+    {
+      "name": "no_out_of_scope_content",
+      "result": "pass",
+      "detail": "scanned the data files for 15 phrases that would indicate private or off-record material: 0 hits"
+    },
+    {
+      "name": "redirect_targets",
+      "result": "pass",
+      "detail": "every retired-brief redirect page points at a page that exists in this build"
+    },
+    {
+      "name": "internal_links",
+      "result": "pass",
+      "detail": "every relative href/src in every written page resolves to a file in the repository"
+    }
+  ],
+  "counts": {
+    "requirements": 20,
+    "estimates": 3,
+    "providers": 13,
+    "technical_findings": 11,
+    "sources": 46,
+    "flags": 16
+  },
+  "verified_dates": {
+    "provider_licences": "2026-11-07",
+    "sources_re_read": [
+      "2026-11-07"
+    ]
+  },
+  "independent_checks": {
+    "checks": {
+      "internal_links_checked": 156,
+      "redirect_check": "checked 51 redirect pages across 7 retired directories",
+      "data_pages_row_counted": 4,
+      "provider_licence_links_checked": 13,
+      "forbidden_phrase_scans": 135,
+      "pages_nav_checked": 9
+    },
+    "problems": [],
+    "result": "pass"
+  }
+}

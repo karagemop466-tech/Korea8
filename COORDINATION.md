@@ -608,3 +608,107 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 The private scheduling and permit-timing background supplied with the brief **was not written to
 this repository, any data file, any page, or any commit message.** The published pages state only
 the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
+
+---
+
+### Merge resolution — 2026-11-07, session `arena/a6db7ac6-korea8`
+
+This file conflicted add/add because two final-integration sessions worked from the same base. Resolution,
+recorded as required by the board protocol:
+
+- **Both records are kept in full.** This session's claim and completion log sit above; the
+  `arena/0e2dfee2-korea8` and `arena/64728bdf-korea8` records sit below, unedited.
+- **Their work was preserved, not overwritten.** The redirect stubs they generated
+  (`trip-lever/`, `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `docs/bathtub-summary.html`)
+  replaced the banners this session had added — theirs is the better mechanism (meta refresh, canonical
+  link, `noindex`). `overflow-trip-lever/**` and `scripts/build_redirects.py` are untouched.
+- **Their dataset was merged, not replaced.** Their `project/*.json` was extended: 13 licence rows to
+  19, their unique flags absorbed as F-18 to F-22, their two vendor-process requirements as RQ-17 and
+  RQ-18, their provider websites and remaining sources added to the register. Where both passes read the
+  same CSLB page they agree on every field.
+- **Their `verification.html` was regenerated** by this session's builder so that it covers all 19 rows
+  instead of 13. It keeps their structure — the four admission rules, the per-licence re-check table, the
+  check list — and adds the verifier output.
+- **Third-party cost benchmarks were removed** from `estimates.json` (their F-16 request), and their
+  `project/README.md` / `EXECUTIVE_SUMMARY.md` were refreshed to match the merged schema rather than
+  deleted.
+- Nothing of theirs was discarded from the working tree or the history.
+
+
+## Session `arena/0e2dfee2-korea8` — final integration: canonical site, re-verification, retirement of duplicate briefs
+
+| ID | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `fi-01` | Claim board + create integration branch | **in progress** | `arena/0e2dfee2-korea8` | `COORDINATION.md` | this claim, pushed before any edit |
+| `fi-02` | Re-verify every provider licence on the official CSLB record (2026-11-07) and merge the union of provider rows from the parallel briefs into the canonical dataset | unclaimed | | `project/providers.json`, `project/sources.json` | |
+| `fi-03` | Re-verify the official code/permit/licensing sources cited on the site (CSLB, sf.gov/DBI, California codes, manufacturer sheet) | unclaimed | | `project/technical.json`, `project/sources.json` | |
+| `fi-04` | Canonicalise the site: root dashboard is the single authoritative site; retire duplicate public briefs to redirect stubs that point at the canonical pages | unclaimed | | root `*.html`, `bathtub/index.html`, `bathtub-overflow/index.html`, `bathroom-overflow/index.html`, `trip-lever/index.html`, `docs/bathtub-*.html` | logged requests from `bt-07` and the 2026-11-06 policy review |
+| `fi-05` | Address the 2026-11-06 policy review (estimate amounts labelled as owner-supplied primary data, no reader-facing reference to excluded/private material) | unclaimed | | `project/estimates.json`, `project/requirements.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py` | |
+| `fi-06` | Build + automated verification (source-per-row, internal links, redirect integrity, no private-content markers) | unclaimed | | `scripts/build_project_site.py`, `scripts/verify_project_site.py` | |
+| `fi-07` | PR → `main`, merge, confirm GitHub Pages deploy, record PR/merge/deploy | unclaimed | | `COORDINATION.md` | |
+
+**Claim note.** This session takes the final-integration role defined in the project protocol: it owns the root
+dashboard, its navigation, the shared table data and the retirement of duplicate public routes. Other sessions'
+source files are not deleted — duplicate *entry pages* are replaced by redirects to the canonical pages and the
+original content remains in Git history. The claim is committed and pushed before any other edit.
+
+
+### `fi-01` … `fi-06` — completed record (session `arena/0e2dfee2-korea8`, 2026-11-07)
+
+**Merge conflict and handoff note.** While this session was working, `main` advanced with PR #27
+(session `arena/64728bdf-korea8`, adding a seventh copy of the brief under `overflow-trip-lever/`).
+`git pull --rebase` stopped on an add/add-style conflict in this file; both session records were kept
+in full (theirs first, then this one), nothing was discarded, and the rebase was completed. That
+session's cross-session request for a nav link to `overflow-trip-lever/index.html` is answered by
+consolidation instead of linking: its 8 licence rows are a subset of the 13 verified here and matched
+on every field, and one authoritative URL was required. `overflow-trip-lever/` is therefore retired
+to redirect stubs like the other duplicated briefs.
+
+| ID | Task | Status | Result |
+|---|---|---|---|
+| `fi-01` | Claim board, branch, coordination note | done | claim commit `6179a28`, pushed before any edit |
+| `fi-02` | Re-verify licences + merge the union into the canonical dataset | done | 13 licence rows re-read on CSLB 2026-11-07; 2 rows added (`749536`, `392967`); 0 corrections needed |
+| `fi-03` | Re-verify rule/code sources | done | CSLB B classification (B&P §7057), BPC §7048, Civil Code §1954, SF DBI plumbing-permit page re-read today; added T-09/T-10/T-11 and R-15…R-20 |
+| `fi-04` | Canonicalise the site, retire duplicate briefs | done | 51 pages across 7 directories replaced by redirect stubs (`scripts/build_redirects.py`); originals kept in Git history |
+| `fi-05` | Address the 2026-11-06 policy review | done | amounts now sit in an explicit "Quoted amount (owner-supplied)" column with the official-confirmation field blank; reader-facing meta-copy about omitted material removed from the requirements page, `project/README.md` and the summary verification statement |
+| `fi-06` | Build + automated verification | done | `build_project_site.py`: 94 rows link-checked, 0 failures, 0 broken links, 0 out-of-scope phrases. `verify_project_site.py`: 155 links, 51 redirects, 4 data pages row-counted, 13 licence links, 135 phrase scans, 9 pages with navigation — PASS |
+| `fi-07` | PR → `main`, merge, Pages deploy | see below | |
+
+**Sources read directly in this pass (2026-11-07):** CSLB licence-detail pages for 977638, 757796,
+749536, 1024971, 1089561, 829071, 1096552, 1106131, 1115649, 1105133, 1140843, 1009195 and 392967;
+CSLB B General Building classification page (quoting B&P §7057); BPC §7048 and Civil Code §1954 on
+leginfo.legislature.ca.gov; SF.gov / DBI "Apply for a plumbing and mechanical permit".
+
+**Irregularities found and recorded during this pass**
+
+1. `docs/index.html` was **not** the DOE GEMS archive the root footer claimed — it was a third
+   bathtub dashboard written by session `3086bd70`. The footer label was wrong; it now points at
+   `docs/executive-summary.html` (the real preserved GEMS page) and `docs/index.html` is retired to a
+   redirect. Logged on the site as part of F-11.
+2. Two root markdown files (`BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`) were
+   duplicate executive summaries; both are now pointer notes to the canonical summary.
+3. CSLB spells Fast Response's street "POTRAL" (#1024971) — reproduced verbatim, flagged F-14.
+4. Advanced Plumbing and Drain (#1009195) still carries the CSLB future-suspension Additional Status
+   (re-confirmed today) — F-12.
+5. Eight candidate contractors published by earlier briefs were not re-read in this pass
+   (FDL #1086935, Precision Rooter, Citywide, Kenneth Asire, Clever, Portola, Cahill, D G
+   Construction). They are deliberately excluded from a table that claims 2026-11-07 verification —
+   F-13.
+6. GitHub Pages has recorded `errored` with `duration: 0` for every build since 2026-11-06 13:37Z,
+   including four pushes made specifically to retrigger it. Content was previously ruled out
+   (`.nojekyll`, no symlinks, 1.7 MB largest file). This session's merge retests the deploy; the
+   outcome is recorded below. Flag F-17 (deployment, not the brief).
+
+#### `fi-07` — PR, merge and Pages deploy (session `arena/0e2dfee2-korea8`)
+
+| Item | Value |
+|---|---|
+| PR | #28 — https://github.com/karagemop466-tech/Korea8/pull/28 |
+| Merge | 2026-11-07T20:23:02Z, merge commit `742852383511c3145c3b0f39aafdb53250b6c22e` |
+| Pages build | commit `7428523` → **status `built`**, duration 21 s (the `errored / duration 0` streak since 2026-11-06 13:37Z did **not** recur after the rate window drained) |
+| Live checks | `providers.html` serves the 13 re-verified rows; `verification.html` serves the new log; `bathtub/index.html` redirects to the canonical dashboard; `bathtub-overflow/vendors.html` and the other 49 retired pages redirect to their canonical targets |
+| Post-deploy fix | reading the live dashboard exposed three rendering bugs that the local checks could not see: the "documented tub W&O job" card read 0 (my re-ordered source links broke a substring test), the B-licence card read 7 by counting the B-2 licence, and the 24/7 Harp row carried the wrong shortlist tag. Fixed in the builder (a real `licence_tag()` and a `has_recent_jobs()` test), rebuilt, re-verified (156 links, 0 failures) and shipped in the follow-up commit recorded below. |
+| Flag F-17 | GitHub Pages build failures were transient, not content: the same repository built normally once the per-hour build limit had drained. No site change was needed for it. |
+
+**Deploy record:** the canonical site is live at <https://karagemop466-tech.github.io/Korea8/> with the root dashboard as
+the single authoritative copy.
