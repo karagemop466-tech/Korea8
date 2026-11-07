@@ -198,6 +198,61 @@
       "sources": [
         "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
       ]
+    },
+    {
+      "id": "F-18",
+      "severity": "low",
+      "title": "No C-9 Drywall classification among the assessed licences",
+      "detail": "None of the nineteen licence numbers checked holds the C-9 Drywall classification. The drywall component is covered by a B General Building licence (or a licensed drywall subcontractor engaged by that B licensee) rather than by a drywall specialty licence on the same licence. Recorded by the preceding integration pass for the 13 licences it covered, and extended here to all 19.",
+      "effect": "The ceiling work is covered by the general-building trade, not by a specialist classification on the same licence.",
+      "action": "Ask the B-licence holder which drywall subcontractor it uses if a specialist finish is wanted.",
+      "sources": [
+        "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B"
+      ]
+    },
+    {
+      "id": "F-19",
+      "severity": "low",
+      "title": "The access-panel section number differs between code editions",
+      "detail": "The concealed slip-joint access-panel rule is cited as UPC §402.10 in the edition IAPMO documents, while some California Plumbing Code editions place the same requirement under different numbering. The substance (a 12-inch access panel or utility space for concealed slip joints) is unchanged; only the citation moves. Recorded by the preceding integration pass.",
+      "effect": "A contractor quoting a different section number is not necessarily wrong.",
+      "action": "Cite the requirement itself, not only the number, when specifying the ceiling detail.",
+      "sources": [
+        "https://aa.iapmo.org/?chapter=4&code=UPC"
+      ]
+    },
+    {
+      "id": "F-20",
+      "severity": "medium",
+      "title": "Fast Response's website address differs from its CSLB address of record",
+      "detail": "CSLB records licence 1024971 at 236 W Potral Ave #459, San Francisco 94127. The company's own site shows a different street address; the licence number and telephone match. Recorded by the preceding integration pass; the website was not re-checked in this session.",
+      "effect": "The address a customer sees is not the address of record.",
+      "action": "Use the CSLB address of record in any contract or notice, and ask the firm to explain the difference.",
+      "sources": [
+        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+      ]
+    },
+    {
+      "id": "F-21",
+      "severity": "medium",
+      "title": "No photographs of the work area were supplied",
+      "detail": "The brief said reference photographs might follow. None were received, so the wall and ceiling construction, the overflow trim and the visible condition of the plate are all unverified. Every technical statement on this site describes a typical assembly, not this one.",
+      "effect": "The access route cannot be narrowed down from evidence.",
+      "action": "Send photographs of the overflow plate from inside the tub, and of the storage-unit ceiling, before booking.",
+      "sources": [
+        "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+      ]
+    },
+    {
+      "id": "F-22",
+      "severity": "low",
+      "title": "Third-party cost benchmarks were removed rather than published",
+      "detail": "Earlier versions of this project quoted 'typical cost' ranges from third-party cost guides. Those have no official standing, so they were removed: they cannot be verified and they are not prices for this job. The official DBI fee schedule is linked instead.",
+      "effect": "The site shows three real quotes and no market range.",
+      "action": "None; recorded so the removal is visible rather than silent.",
+      "sources": [
+        "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+      ]
     }
   ]
 }

@@ -7,7 +7,7 @@
     "not_verified": "Company websites, Yelp/BBB ratings, review counts, service areas beyond the CSLB address, willingness to take this job, availability and prices were NOT verified. Yelp returned HTTP 403 to automated retrieval on 2026-11-07, so no rating or review count is published anywhere in this dataset.",
     "cslb_warning": "CSLB states on every licence page that licence status can change at any time and that the database may not yet reflect recent changes. Re-check the linked page immediately before signing any contract.",
     "license_types": "C-36 = Plumbing Contractor; B = General Building Contractor; A = General Engineering; B-2 = Residential Remodeling; C-4 = Boiler/Hot Water Heating; C-10 = Electrical; C-16 = Fire Protection; C-20 = Warm-Air Heating, Ventilating and Air-Conditioning.",
-    "merged": "This dataset merges two 2026-11-07 verification passes: the CSLB re-read performed for this build (19 licence numbers) and an independent re-read of 13 of them by the final-integration pass that preceded it. Where both recorded a value they agree. Company website URLs were carried over from that pass and are labelled as not re-checked here."
+    "merged": "This dataset merges two 2026-11-07 verification passes: a 13-row re-read by the preceding integration pass and the full 19-row re-read that produced this build. Where both read the same CSLB page they agree on every field. Company website URLs were carried over from the earlier pass and are labelled as not re-checked; no licence value comes from them."
   },
   "providers": [
     {
