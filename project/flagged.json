@@ -253,6 +253,28 @@
       "sources": [
         "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
       ]
+    },
+    {
+      "id": "F-23",
+      "severity": "low",
+      "title": "Candidates recorded by retired briefs are excluded unless re-verified here",
+      "detail": "Earlier parallel briefs listed licence numbers that this pass did not re-read: 966337, 379364, 1160613, and a 'Portola Plumbing' with no CSLB record returned by a business-name search. They are deliberately absent from the register rather than carried over unverified. The register holds 19 licence numbers, each read from its own CSLB page on 2026-11-07.",
+      "effect": "The register is complete only for the licences actually re-read.",
+      "action": "Look up any candidate proposed by hand at cslb.ca.gov before adding it.",
+      "sources": [
+        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+      ]
+    },
+    {
+      "id": "F-24",
+      "severity": "medium",
+      "title": "Every CSLB status on this site is point-in-time",
+      "detail": "CSLB states on each record that licence status can change at any time and that its database may not yet reflect recent changes. The register was read on 2026-11-07 and each row carries the timestamp CSLB printed. Bond and workers'-compensation entries expire on their own dates, several of them inside the likely contract window.",
+      "effect": "A licence that is active today may not be active when work starts.",
+      "action": "Re-read the linked CSLB page the day the contract is signed.",
+      "sources": [
+        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+      ]
     }
   ]
 }
