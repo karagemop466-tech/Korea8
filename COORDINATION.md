@@ -926,3 +926,11 @@ At 2026-11-07 20:19 UTC, the unfinished integrations owned by `arena/ae482104-ko
 Open PRs #12, #17, #21, #22 and #24 were inspected before claiming. They predate this session by more than 24 hours. Their unmerged changes will be assessed rather than silently overwritten; main already contains the earlier integrated dossiers. New research files use the exclusive `overflow-review/**` namespace to avoid conflicts.
 
 Publication will contain neutral repair information and source-linked findings only. Owner-supplied facts will be identified as such; unsupported factual/price cells remain blank and are flagged. No provider will be described as having accepted this exact job unless an official provider source establishes it.
+
+### R770 research checkpoint (2026-11-07)
+
+- Fresh direct CSLB checks completed for 23 numeric license records; one additional prior-draft name remains unidentified. Records are in `overflow-review/data/providers.json`, with exact relevant excerpts in `sources.json`.
+- New primary evidence: Heise’s Plumbing’s Ingleside project explicitly describes exterior-ceiling access for tub W&O replacement. Mission and Panhandle pages provide additional company-published W&O examples. Bernal Hill Drywall #995163 is independently verified C-9 + B.
+- Corrections: shared address/phone does not establish common ownership; B classification does not confirm exact-job acceptance; review snippets do not verify numeric ratings; the IAPMO access spotlight is not a current local code determination. Suspended/adverse-status candidates are explicitly separated.
+- Owner-only facts and quote amounts are not treated as official verification. Quote amount/date/inclusion cells are blank; 37 requirements, 10 technical rows, 12 findings and 22 review flags carry source links.
+- R770-02 research is complete in this session's exclusive namespace. Repository structural/provenance audit and unified build remain in progress. No unrelated research files edited.
