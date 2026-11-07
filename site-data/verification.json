@@ -1,7 +1,7 @@
 {
  "verified_on": "2026-11-07",
  "pages": 10,
- "rows_checked": 133,
+ "rows_checked": 137,
  "checks_run": 15,
  "checks_passed": 15,
  "checks_failed": 0,
@@ -45,12 +45,12 @@
   {
    "check": "every data row carries a source link or an explicit marker",
    "ok": true,
-   "detail": "133 rows checked; offenders: "
+   "detail": "137 rows checked; offenders: "
   },
   {
    "check": "every provider renders a row",
    "ok": true,
-   "detail": "12 of 12"
+   "detail": "13 of 13"
   },
   {
    "check": "every requirement renders a row",
@@ -65,7 +65,7 @@
   {
    "check": "every source renders",
    "ok": true,
-   "detail": "36 of 36"
+   "detail": "37 of 37"
   },
   {
    "check": "every provider row cites an official CSLB page",

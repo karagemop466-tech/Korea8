@@ -370,6 +370,36 @@
      "status": "retrieved 2026-11-07"
     }
    ]
+  },
+  {
+   "id": "P-13",
+   "name": "Ayoob & Peery Plumbing Co Inc",
+   "legal": "AYOOB & PEERY PLUMBING CO INC",
+   "license": "392967",
+   "classifications": [
+    "B General Building",
+    "C-4 Boiler/Steam",
+    "C-16 Fire Protection",
+    "C-36 Plumbing",
+    "C-20 HVAC"
+   ],
+   "entity": "Corporation",
+   "status": "Current and active",
+   "issue": "1980-09-08",
+   "expires": "2028-09-30",
+   "address": "975 Indiana St, San Francisco, CA 94107",
+   "phone": "(415) 550-0975",
+   "website": "",
+   "multitrade": "Yes — B General Building + C-36 Plumbing on one licence (BPC §7057(b))",
+   "notes": "Added after cross-checking the parallel integration session's table; re-read independently on CSLB on 2026-11-07. Longest continuously licensed firm in the set (licensed since 1980). No quote on file.",
+   "data_as_of": "2026-11-07 12:18 PM",
+   "sources": [
+    {
+     "label": "CSLB licence detail #392967 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+     "status": "retrieved 2026-11-07"
+    }
+   ]
   }
  ]
 }

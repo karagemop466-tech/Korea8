@@ -13,20 +13,20 @@
   "verification.html"
  ],
  "counts": {
-  "providers": 12,
+  "providers": 13,
   "code_rows": 16,
   "technical_rows": 8,
   "requirement_rows": 29,
   "quotes": 3,
   "official_fee_rows": 3,
-  "sources": 36,
+  "sources": 37,
   "flags": 20
  },
  "verified": {
-  "providers_verified_on_cslb": 12,
+  "providers_verified_on_cslb": 13,
   "code_rows_verified": 15,
   "code_rows_unverified": 1,
-  "sources_retrieved": 21,
+  "sources_retrieved": 22,
   "sources_blocked_or_dead": 15
  },
  "problems": [],

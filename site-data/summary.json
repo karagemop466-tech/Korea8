@@ -15,15 +15,15 @@
  "key_numbers": [
   {
    "metric": "Providers whose licence was re-verified on the official CSLB record this session",
-   "value": "12",
+   "value": "13",
    "detail": "All current and active on 2026-11-07; one carries a CSLB future-suspension warning (F-12)",
    "verified": true,
    "flag": "F-05"
   },
   {
    "metric": "Providers holding B + C-36 on one licence (can contract both trades)",
-   "value": "4",
-   "detail": "Ace Plumbing & Rooter #829071; We Do Construction #1096552; Rapid Flow Plumbing & Rooter #1115649; Save-On-Interior #749536",
+   "value": "5",
+   "detail": "Ace Plumbing & Rooter #829071; We Do Construction #1096552; Rapid Flow Plumbing & Rooter #1115649; Save-On-Interior #749536; Ayoob & Peery Plumbing #392967",
    "verified": true,
    "flag": "F-13"
   },
@@ -72,7 +72,7 @@
   "No retrieved source shows any shortlisted firm has actually done this repair through a ceiling below an occupied unit (F-09). Licences are verified; relevant experience is not."
  ],
  "recommendations": [
-  "Shortlist for the below-access path: Ace Plumbing & Rooter (#829071, B + C-36), We Do Construction (#1096552, B + C-36), Rapid Flow Plumbing & Rooter (#1115649, B + C-36). Ask all three for one written scope covering plumbing, ceiling opening, access panel, patch and paint.",
+  "Shortlist for the below-access path: Ace Plumbing & Rooter (#829071, B + C-36), We Do Construction (#1096552, B + C-36), Rapid Flow Plumbing & Rooter (#1115649, B + C-36) and Ayoob & Peery Plumbing (#392967, B + C-36, licensed since 1980). Ask each for one written scope covering plumbing, ceiling opening, access panel, patch and paint.",
   "Re-ask the three quoting firms the single question that decides the preferred path: can the overflow plate, linkage and drop cylinder be withdrawn from the tub side, and if the assembly is fused, what is the written plan?",
   "Before any work, get the permit answer in writing: which permit, who pulls it, what it costs, and which inspection is required before the pipes are covered.",
   "Confirm the relationship between Save-On-Interior (#749536) and Bay Area Plumbing (#757796) before treating the combined B + C-36 licence as one vendor's capability (F-13).",

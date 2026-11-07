@@ -328,6 +328,15 @@
    "verifies": "(no longer resolves)",
    "status": "404 — replaced, see F-11",
    "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-37",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #392967 (Ayoob & Peery Plumbing Co Inc)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
   }
  ]
 }

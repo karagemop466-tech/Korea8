@@ -16,7 +16,7 @@ Published site after this session: **10 pages at the repository root**, generate
 | Area | Contents | Relation to the current brief |
 |---|---|---|
 | Root pages (`index.html` … `verification.html`) | The canonical bathtub trip-lever dossier built this session | **The brief** |
-| `site-data/` | Canonical JSON: 12 providers, 16 code rows, 8 technical rows, 29 requirements, 3 quotes, 3 official fees, 36 sources, 20 flags | **The brief** — single source of truth |
+| `site-data/` | Canonical JSON: 13 providers, 16 code rows, 8 technical rows, 29 requirements, 3 quotes, 3 official fees, 37 sources, 20 flags | **The brief** — single source of truth |
 | `archive/superseded-2026-11-07/` | Earlier generators for the retired trees | Superseded, documented in its `README.md` |
 | `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `trip-lever/`, `docs/bathtub-*`, `docs/bathtub-overflow/` | One redirect stub each | Retired duplicates |
 | `project/` | Earlier dashboard dataset (amounts blanked, retained for provenance) | Superseded |
@@ -45,7 +45,7 @@ Published site after this session: **10 pages at the repository root**, generate
 
 | Check | Result |
 |---|---|
-| Provider licences re-read on the official CSLB licence-detail page | 12/12 current and active, 2026-11-07 (each row shows the page’s “data current as of” time) |
+| Provider licences re-read on the official CSLB licence-detail page | 13/13 current and active, 2026-11-07 (each row shows the page’s “data current as of” time) |
 | Code/permit/licensing/tenant rules re-read at source | 15 verified (SF.gov, SF DBI fee table, CSLB, BPC §7048, BPC §7057.5, Civ. Code §1954) + 1 unverified (§402.10) |
 | Manufacturer documentation re-read | Watco 500/501/600-TL instruction sheet, steps 4–7 |
 | Build | `python3 scripts/build_canonical_site.py` → 10 pages, 0 unsourced rows, 0 broken internal links |
