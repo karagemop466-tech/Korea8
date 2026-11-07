@@ -1,3 +1,8 @@
+> **Superseded 2026-11-07.** This dataset fed the earlier root dashboard. The published site is
+> generated from `site-data/` by `scripts/build_canonical_site.py`; the generators in this
+> directory's history are archived under `archive/superseded-2026-11-07/`. Quote amounts in these
+> files are blank by policy — see the Estimates page.
+
 # Bathtub Wastewater Overflow Trip Lever — Project Data & Site
 
 Canonical dataset for the project, maintained by the final integration session

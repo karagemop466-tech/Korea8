@@ -1,205 +1,267 @@
 {
-  "schema": "bt-flagged-v1",
-  "as_of": "2026-11-06",
-  "note": "Everything that could not be confirmed from an official source, every contradiction found between sources, and every handling decision a reviewer should know about. Nothing here blocks the merge of the site; each item is reviewable after the site is live.",
-  "items": [
-    {
-      "id": "FL-01",
-      "severity": "Low",
-      "area": "Repository scope",
-      "what": "This repository contains an unrelated project (the DOE GEMS Prize Challenge geothermal fault-prediction work). The bathtub trip-lever project was added as a self-contained subtree at bathtub-overflow/ and no geothermal artefact, evidence file, root page or build script was modified.",
-      "why": "So a reviewer can see that nothing from the existing project was overwritten or silently merged into this one.",
-      "action": "Confirm the separation is acceptable, or ask for the bathtub project to be moved to its own repository.",
-      "sources": ["https://github.com/karagemop466-tech/Korea8"]
-    },
-    {
-      "id": "FL-02",
-      "severity": "High",
-      "area": "Permit rule",
-      "what": "The DBI statement used here — 'For minor plumbing work not requiring cutting into or removal of piping, a permit is not required' — was read from the City of San Francisco's own archived copy of the DBI Frequently Asked Questions (October 2020 edition). The live sfdbi.org FAQ URL now redirects to sf.gov and could not be read directly from this environment.",
-      "why": "The permit determination for this job depends on this sentence; the wording may have changed with the 2025 codes and the PermitSF portal.",
-      "action": "Call DBI Inspection Services - Plumbing Inspection Division on (628) 652-3450 and ask for the current wording and the rule as it applies to a bathtub waste-and-overflow replacement that requires opening a wall.",
-      "sources": ["https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions", "https://www.sf.gov/departments--department-building-inspection"]
-    },
-    {
-      "id": "FL-03",
-      "severity": "Medium",
-      "area": "Permit process",
-      "what": "The contractor-validation detail used for DBI online permits (C-4 or C-36 for a plumbing permit, B for building inspections and kitchen/bath remodel applications, and DBI matching company name, licence number and business licence number) was captured from the indexed text of the official DBI page, not from a direct read of the page.",
-      "why": "The page is the authority on who may pull a permit in San Francisco.",
-      "action": "Open the DBI online-permits page and confirm the current requirements before relying on them.",
-      "sources": ["https://sfdbi.org/online-permits-instructions-and-registration-requirements"]
-    },
-    {
-      "id": "FL-04",
-      "severity": "Medium",
-      "area": "Code text",
-      "what": "Only the table of contents of the 2025 California Plumbing Code could be read (confirming §404.0/404.2.1 waste fittings and overflows and §409.2/409.3/409.6 bathtubs, waste outlet, overflow and installation/access), and the 2025 San Francisco Plumbing Code page loads its section text dynamically and was not readable.",
-      "why": "The exact dimensional and installation requirements for the replacement overflow have not been read.",
-      "action": "Open the cited sections before the contractor orders parts; the inspector will apply them.",
-      "sources": ["https://epubs.iapmo.org/2025/CPC/", "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85773"]
-    },
-    {
-      "id": "FL-05",
-      "severity": "Low",
-      "area": "Rental unit",
-      "what": "The 2025 San Francisco Housing Code is confirmed as the applicable code for rented units, but no section text was read, so no specific landlord-maintenance obligation is quoted on this site.",
-      "why": "Avoids asserting a code duty that was not read.",
-      "action": "If the housing-code position matters, read Chapter 5 of the 2025 SF Housing Code and DBI Housing Inspection Services (628) 652-3700.",
-      "sources": ["https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-52855", "https://www.sf.gov/departments--department-building-inspection"]
-    },
-    {
-      "id": "FL-06",
-      "severity": "Medium",
-      "area": "Site conditions",
-      "what": "Whether opening the wall or the ceiling below may disturb asbestos-containing material (if the building predates 1980) was not resolved; the DBI information sheet that would govern it was not identified.",
-      "why": "Opening an old wall can be a regulated activity with separate notification and survey obligations.",
-      "action": "Ask DBI which requirement applies to this building and this scope before any demolition of existing material.",
-      "sources": ["https://www.sf.gov/resource--2022--information-sheets-dbi/", "https://www.sf.gov/departments--department-building-inspection"]
-    },
-    {
-      "id": "FL-07",
-      "severity": "Medium",
-      "area": "Review data",
-      "what": "Every Yelp, BBB, HomeAdvisor, Houzz and BuildZoom page returned HTTP 403 to automated retrieval from this environment. All ratings, review counts and review quotes in this dataset are search-index snapshots taken on 2026-11-06, not pages that were read directly.",
-      "why": "Ratings change and some listings have several near-duplicate pages (Bay Area Plumbing shows 168 and 175 reviews on two URLs; Fast Response shows 725 and 906 on two URLs).",
-      "action": "Open each review link manually and record the rating you see next to the 2026-11-06 snapshot date.",
-      "sources": ["https://www.yelp.com/biz/bay-area-plumbing-san-francisco", "https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca"]
-    },
-    {
-      "id": "FL-08",
-      "severity": "High",
-      "area": "Data integrity",
-      "what": "The third-party directory contractorlicenseca.com lists 'Cahill Contractors' against CSLB licence #297604. The official CSLB record shows #297604 is D G Construction Co (B + C36) and Cahill Contractors Inc is #300647 (A + B, no C36).",
-      "why": "A wrong licence-to-company match is exactly the kind of error that leads to hiring the wrong contractor or an unlicensed subcontractor.",
-      "action": "Use cslb.ca.gov as the only authority; if any contract names #297604 for Cahill, stop and re-verify.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647", "https://contractorlicenseca.com/city/san-francisco/"]
-    },
-    {
-      "id": "FL-09",
-      "severity": "Medium",
-      "area": "Contact data",
-      "what": "Contact details disagree between the CSLB record and the review platforms. Bay Area Plumbing: CSLB (415) 668-8000 vs Yelp (628) 286-2015. Fast Response Plumbing and Rooter: CSLB address 236 W Potral Ave #459, SF 94127, vs Yelp 4444 Geary Blvd Ste 203, SF 94118.",
-      "why": "Both are San Francisco addresses and both phone numbers appear on Yelp, so neither can be assumed wrong.",
-      "action": "Confirm the service address and phone number when the contractor is engaged, and record which number answers.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"]
-    },
-    {
-      "id": "FL-10",
-      "severity": "High",
-      "area": "Insurance",
-      "what": "Four shortlisted contractors are licensed without employees and therefore carry no workers compensation coverage: Bay Area Plumbing #757796, Precision Rooter & Drain #961218, Citywide Plumbing #954385, Clever Plumbing & Rooter #1160613. The CSLB record shows workers compensation only — it is not a general liability policy.",
-      "why": "Work inside an occupied rental unit, with ceiling and wall openings, needs general liability cover from whoever is actually on site.",
-      "action": "Require a certificate of general liability insurance from the engaged contractor and from any drywall subcontractor, before the first work day.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"]
-    },
-    {
-      "id": "FL-11",
-      "severity": "Low",
-      "area": "Licensing law",
-      "what": "Business and Professions Code § 7128 (the statutory contractor-licensing requirement) is cited but its text did not render during this session, so no dollar threshold for when a licence is required is stated anywhere in this dataset.",
-      "why": "Thresholds quoted from third-party blogs were deliberately not used.",
-      "action": "Read the section on leginfo, or rely on CSLB's consumer guidance, before quoting a threshold to anyone.",
-      "sources": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7128"]
-    },
-    {
-      "id": "FL-12",
-      "severity": "Low",
-      "area": "Data integrity",
-      "what": "HomeAdvisor lists the FDL Plumbing trade licence 1086935 as expiring 10/31/2026, while the CSLB record shows expiry 10/31/2028 with reissue on 10/11/2022.",
-      "why": "A third-party expiry date can lead to a contractor being wrongly ruled out.",
-      "action": "Use the CSLB date (10/31/2028) and ignore the third-party value.",
-      "sources": ["https://www.homeadvisor.com/rated.fdlplumbinginc.136969159.html", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935"]
-    },
-    {
-      "id": "FL-13",
-      "severity": "Medium",
-      "area": "Licence status",
-      "what": "Advanced Plumbing and Drain Inc (#1009195) carries an additional CSLB status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.'",
-      "why": "The licence is active today but carries a forward-looking risk.",
-      "action": "Re-check the licence on the day of hiring; if suspended, do not contract.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"]
-    },
-    {
-      "id": "FL-14",
-      "severity": "Low",
-      "area": "Review data",
-      "what": "Citywide Plumbing's rating and review count come from a Yelp search-listing snapshot; a dedicated Yelp business-page URL was not confirmed.",
-      "why": "Keeps the dataset free of invented URLs.",
-      "action": "Find the business page manually if this candidate is used.",
-      "sources": ["https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"]
-    },
-    {
-      "id": "FL-15",
-      "severity": "Medium",
-      "area": "Licence status",
-      "what": "D G Construction Co (#297604) shows 'There is Complaint Disclosure information for this license' on its CSLB page.",
-      "why": "Complaint disclosure only appears when it exists and is restricted by law; it must be read before hiring.",
-      "action": "Open the complaint-disclosure link from the licence page and read it before treating this vendor as a candidate.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/PublicComplaintDisclosure.aspx"]
-    },
-    {
-      "id": "FL-16",
-      "severity": "High",
-      "area": "Licence status",
-      "what": "Kenneth Asire Plumbing (#1027286) is shown as SUSPENDED — 'License is under Contractors Bond Suspension' — with the contractor's bond cancelled on 08/16/2026.",
-      "why": "This vendor has one of the largest review counts in San Francisco (4.8 / 272 on a Yelp search listing), so it is likely to be contacted on reputation alone.",
-      "action": "Do not contract while the licence is suspended; re-check the record later because the suspension may be lifted retroactively.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"]
-    },
-    {
-      "id": "FL-17",
-      "severity": "Low",
-      "area": "Track record",
-      "what": "Clever Plumbing & Rooter Inc (#1160613) was issued on 04 September 2026, has no employees under its workers-comp certification, and no official Yelp business-page URL was captured for it.",
-      "why": "A licence issued weeks ago is not a track record, whatever the review count on an aggregator says.",
-      "action": "If contacted, ask for the individual technician's licence and recent San Francisco references.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"]
-    },
-    {
-      "id": "FL-18",
-      "severity": "Medium",
-      "area": "Unverified vendor",
-      "what": "No CSLB record was returned for the contractor-name search 'Portola Plumbing' on 2026-11-06, so the licence status of Portola Plumbing Services is UNVERIFIED, although its Yelp listing advertises 'Bathtub repair'.",
-      "why": "An unverified licence cannot be compared with the others, and the business appears on Yelp as 'New on Yelp' with no rating.",
-      "action": "Request the licence number and check it on cslb.ca.gov before any further contact; remove the candidate if no number is produced.",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx?NextName=Portola+Plumbing&NextLicNum=", "https://www.yelp.com/search?find_desc=Plumbing+Contractors&find_loc=Corona+Heights%2C+San+Francisco%2C+CA"]
-    },
-    {
-      "id": "FL-19",
-      "severity": "Medium",
-      "area": "Cost data",
-      "what": "The three estimates ($614, $550, $135, all dated 2026-08-30) are owner-provided. They could not be confirmed against any official source, and they describe three different scopes.",
-      "why": "They are the only price evidence in the project and are the most likely to be quoted onward.",
-      "action": "Re-quote one scope from at least three contractors, including at least one B + C-36 holder, and add the $290 permit fee plus a finish allowance to the comparison.",
-      "sources": ["https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"]
-    },
-    {
-      "id": "FL-20",
-      "severity": "Medium",
-      "area": "Scope",
-      "what": "The exact scope is not yet fixed: whether the waste-and-overflow assembly is replaced as a unit or only the linkage and plunger, whether the spout and diverter are in scope, the make of the existing trip lever and overflow plate, and the drain size are all unverified.",
-      "why": "Every quote and price in the project depends on these answers.",
-      "action": "Have the chosen contractor photograph and measure the assembly on the first visit and confirm parts compatibility in writing before ordering.",
-      "sources": ["https://epubs.iapmo.org/2025/CPC/"]
-    },
-    {
-      "id": "FL-21",
-      "severity": "Low",
-      "area": "Handling",
-      "what": "No internal or private information from the project brief has been written into this repository, the data files, the page text, the commit history or any published URL. The pages carry only verifiable code facts (what the DBI rule is, who to ask, what a permit would cost), the licence records read from CSLB, and the owner-provided estimates.",
-      "why": "Keeps internal scheduling and permit-timing information out of a public GitHub Pages site and out of the git history, while still giving the owner the code facts needed to make a lawful decision.",
-      "action": "Keep it that way: any internal constraint stays in the owner's own private notes and must never be added to this repository, the data files or the site text. If the constraint changes, re-check the permit requirement against the DBI answer.",
-      "sources": ["https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx", "https://www.sf.gov/departments--department-building-inspection"]
-    },
-    {
-      "id": "FL-22",
-      "severity": "Medium",
-      "area": "Site conditions",
-      "what": "The tenancy and ownership status of the space below the bathtub (the storage unit) is not established, so the right to open its ceiling and the permit count for the job are both unresolved.",
-      "why": "DBI requires a separate permit per dwelling unit or tenant space, and entry into a space the owner cannot lawfully enter is a legal problem, not just a scheduling one.",
-      "action": "Establish who controls the storage unit and whether it is a separate tenant space, then ask DBI how many permits the job needs.",
-      "sources": ["https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"]
-    }
-  ]
+ "schema": "bt-flagged-v1",
+ "as_of": "2026-11-06",
+ "note": "Everything that could not be confirmed from an official source, every contradiction found between sources, and every handling decision a reviewer should know about. Nothing here blocks the merge of the site; each item is reviewable after the site is live.",
+ "items": [
+  {
+   "id": "FL-01",
+   "severity": "Low",
+   "area": "Repository scope",
+   "what": "This repository contains an unrelated project (the DOE GEMS Prize Challenge geothermal fault-prediction work). The bathtub trip-lever project was added as a self-contained subtree at bathtub-overflow/ and no geothermal artefact, evidence file, root page or build script was modified.",
+   "why": "So a reviewer can see that nothing from the existing project was overwritten or silently merged into this one.",
+   "action": "Confirm the separation is acceptable, or ask for the bathtub project to be moved to its own repository.",
+   "sources": [
+    "https://github.com/karagemop466-tech/Korea8"
+   ]
+  },
+  {
+   "id": "FL-02",
+   "severity": "High",
+   "area": "Permit rule",
+   "what": "The DBI statement used here — 'For minor plumbing work not requiring cutting into or removal of piping, a permit is not required' — was read from the City of San Francisco's own archived copy of the DBI Frequently Asked Questions (October 2020 edition). The live sfdbi.org FAQ URL now redirects to sf.gov and could not be read directly from this environment.",
+   "why": "The permit determination for this job depends on this sentence; the wording may have changed with the 2025 codes and the PermitSF portal.",
+   "action": "Call DBI Inspection Services - Plumbing Inspection Division on (628) 652-3450 and ask for the current wording and the rule as it applies to a bathtub waste-and-overflow replacement that requires opening a wall.",
+   "sources": [
+    "https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions",
+    "https://www.sf.gov/departments--department-building-inspection"
+   ]
+  },
+  {
+   "id": "FL-03",
+   "severity": "Medium",
+   "area": "Permit process",
+   "what": "The contractor-validation detail used for DBI online permits (C-4 or C-36 for a plumbing permit, B for building inspections and kitchen/bath remodel applications, and DBI matching company name, licence number and business licence number) was captured from the indexed text of the official DBI page, not from a direct read of the page.",
+   "why": "The page is the authority on who may pull a permit in San Francisco.",
+   "action": "Open the DBI online-permits page and confirm the current requirements before relying on them.",
+   "sources": [
+    "https://sfdbi.org/online-permits-instructions-and-registration-requirements"
+   ]
+  },
+  {
+   "id": "FL-04",
+   "severity": "Medium",
+   "area": "Code text",
+   "what": "Only the table of contents of the 2025 California Plumbing Code could be read (confirming §404.0/404.2.1 waste fittings and overflows and §409.2/409.3/409.6 bathtubs, waste outlet, overflow and installation/access), and the 2025 San Francisco Plumbing Code page loads its section text dynamically and was not readable.",
+   "why": "The exact dimensional and installation requirements for the replacement overflow have not been read.",
+   "action": "Open the cited sections before the contractor orders parts; the inspector will apply them.",
+   "sources": [
+    "https://epubs.iapmo.org/2025/CPC/",
+    "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85773"
+   ]
+  },
+  {
+   "id": "FL-05",
+   "severity": "Low",
+   "area": "Rental unit",
+   "what": "The 2025 San Francisco Housing Code is confirmed as the applicable code for rented units, but no section text was read, so no specific landlord-maintenance obligation is quoted on this site.",
+   "why": "Avoids asserting a code duty that was not read.",
+   "action": "If the housing-code position matters, read Chapter 5 of the 2025 SF Housing Code and DBI Housing Inspection Services (628) 652-3700.",
+   "sources": [
+    "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-52855",
+    "https://www.sf.gov/departments--department-building-inspection"
+   ]
+  },
+  {
+   "id": "FL-06",
+   "severity": "Medium",
+   "area": "Site conditions",
+   "what": "Whether opening the wall or the ceiling below may disturb asbestos-containing material (if the building predates 1980) was not resolved; the DBI information sheet that would govern it was not identified.",
+   "why": "Opening an old wall can be a regulated activity with separate notification and survey obligations.",
+   "action": "Ask DBI which requirement applies to this building and this scope before any demolition of existing material.",
+   "sources": [
+    "https://www.sf.gov/resource--2022--information-sheets-dbi/",
+    "https://www.sf.gov/departments--department-building-inspection"
+   ]
+  },
+  {
+   "id": "FL-07",
+   "severity": "Medium",
+   "area": "Review data",
+   "what": "Every Yelp, BBB, HomeAdvisor, Houzz and BuildZoom page returned HTTP 403 to automated retrieval from this environment. All ratings, review counts and review quotes in this dataset are search-index snapshots taken on 2026-11-06, not pages that were read directly.",
+   "why": "Ratings change and some listings have several near-duplicate pages (Bay Area Plumbing shows 168 and 175 reviews on two URLs; Fast Response shows 725 and 906 on two URLs).",
+   "action": "Open each review link manually and record the rating you see next to the 2026-11-06 snapshot date.",
+   "sources": [
+    "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+    "https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca"
+   ]
+  },
+  {
+   "id": "FL-08",
+   "severity": "High",
+   "area": "Data integrity",
+   "what": "The third-party directory contractorlicenseca.com lists 'Cahill Contractors' against CSLB licence #297604. The official CSLB record shows #297604 is D G Construction Co (B + C36) and Cahill Contractors Inc is #300647 (A + B, no C36).",
+   "why": "A wrong licence-to-company match is exactly the kind of error that leads to hiring the wrong contractor or an unlicensed subcontractor.",
+   "action": "Use cslb.ca.gov as the only authority; if any contract names #297604 for Cahill, stop and re-verify.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+    "https://contractorlicenseca.com/city/san-francisco/"
+   ]
+  },
+  {
+   "id": "FL-09",
+   "severity": "Medium",
+   "area": "Contact data",
+   "what": "Contact details disagree between the CSLB record and the review platforms. Bay Area Plumbing: CSLB (415) 668-8000 vs Yelp (628) 286-2015. Fast Response Plumbing and Rooter: CSLB address 236 W Potral Ave #459, SF 94127, vs Yelp 4444 Geary Blvd Ste 203, SF 94118.",
+   "why": "Both are San Francisco addresses and both phone numbers appear on Yelp, so neither can be assumed wrong.",
+   "action": "Confirm the service address and phone number when the contractor is engaged, and record which number answers.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+   ]
+  },
+  {
+   "id": "FL-10",
+   "severity": "High",
+   "area": "Insurance",
+   "what": "Four shortlisted contractors are licensed without employees and therefore carry no workers compensation coverage: Bay Area Plumbing #757796, Precision Rooter & Drain #961218, Citywide Plumbing #954385, Clever Plumbing & Rooter #1160613. The CSLB record shows workers compensation only — it is not a general liability policy.",
+   "why": "Work inside an occupied rental unit, with ceiling and wall openings, needs general liability cover from whoever is actually on site.",
+   "action": "Require a certificate of general liability insurance from the engaged contractor and from any drywall subcontractor, before the first work day.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+   ]
+  },
+  {
+   "id": "FL-11",
+   "severity": "Low",
+   "area": "Licensing law",
+   "what": "Business and Professions Code § 7128 (the statutory contractor-licensing requirement) is cited but its text did not render during this session, so no dollar threshold for when a licence is required is stated anywhere in this dataset.",
+   "why": "Thresholds quoted from third-party blogs were deliberately not used.",
+   "action": "Read the section on leginfo, or rely on CSLB's consumer guidance, before quoting a threshold to anyone.",
+   "sources": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7128"
+   ]
+  },
+  {
+   "id": "FL-12",
+   "severity": "Low",
+   "area": "Data integrity",
+   "what": "HomeAdvisor lists the FDL Plumbing trade licence 1086935 as expiring 10/31/2026, while the CSLB record shows expiry 10/31/2028 with reissue on 10/11/2022.",
+   "why": "A third-party expiry date can lead to a contractor being wrongly ruled out.",
+   "action": "Use the CSLB date (10/31/2028) and ignore the third-party value.",
+   "sources": [
+    "https://www.homeadvisor.com/rated.fdlplumbinginc.136969159.html",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935"
+   ]
+  },
+  {
+   "id": "FL-13",
+   "severity": "Medium",
+   "area": "Licence status",
+   "what": "Advanced Plumbing and Drain Inc (#1009195) carries an additional CSLB status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.'",
+   "why": "The licence is active today but carries a forward-looking risk.",
+   "action": "Re-check the licence on the day of hiring; if suspended, do not contract.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+   ]
+  },
+  {
+   "id": "FL-14",
+   "severity": "Low",
+   "area": "Review data",
+   "what": "Citywide Plumbing's rating and review count come from a Yelp search-listing snapshot; a dedicated Yelp business-page URL was not confirmed.",
+   "why": "Keeps the dataset free of invented URLs.",
+   "action": "Find the business page manually if this candidate is used.",
+   "sources": [
+    "https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"
+   ]
+  },
+  {
+   "id": "FL-15",
+   "severity": "Medium",
+   "area": "Licence status",
+   "what": "D G Construction Co (#297604) shows 'There is Complaint Disclosure information for this license' on its CSLB page.",
+   "why": "Complaint disclosure only appears when it exists and is restricted by law; it must be read before hiring.",
+   "action": "Open the complaint-disclosure link from the licence page and read it before treating this vendor as a candidate.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/PublicComplaintDisclosure.aspx"
+   ]
+  },
+  {
+   "id": "FL-16",
+   "severity": "High",
+   "area": "Licence status",
+   "what": "Kenneth Asire Plumbing (#1027286) is shown as SUSPENDED — 'License is under Contractors Bond Suspension' — with the contractor's bond cancelled on 08/16/2026.",
+   "why": "This vendor has one of the largest review counts in San Francisco (4.8 / 272 on a Yelp search listing), so it is likely to be contacted on reputation alone.",
+   "action": "Do not contract while the licence is suspended; re-check the record later because the suspension may be lifted retroactively.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+   ]
+  },
+  {
+   "id": "FL-17",
+   "severity": "Low",
+   "area": "Track record",
+   "what": "Clever Plumbing & Rooter Inc (#1160613) was issued on 04 September 2026, has no employees under its workers-comp certification, and no official Yelp business-page URL was captured for it.",
+   "why": "A licence issued weeks ago is not a track record, whatever the review count on an aggregator says.",
+   "action": "If contacted, ask for the individual technician's licence and recent San Francisco references.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+   ]
+  },
+  {
+   "id": "FL-18",
+   "severity": "Medium",
+   "area": "Unverified vendor",
+   "what": "No CSLB record was returned for the contractor-name search 'Portola Plumbing' on 2026-11-06, so the licence status of Portola Plumbing Services is UNVERIFIED, although its Yelp listing advertises 'Bathtub repair'.",
+   "why": "An unverified licence cannot be compared with the others, and the business appears on Yelp as 'New on Yelp' with no rating.",
+   "action": "Request the licence number and check it on cslb.ca.gov before any further contact; remove the candidate if no number is produced.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx?NextName=Portola+Plumbing&NextLicNum=",
+    "https://www.yelp.com/search?find_desc=Plumbing+Contractors&find_loc=Corona+Heights%2C+San+Francisco%2C+CA"
+   ]
+  },
+  {
+   "id": "FL-19",
+   "severity": "Medium",
+   "area": "Cost data",
+   "what": "The three estimates ( all dated 2026-08-30) are owner-provided. They could not be confirmed against any official source, and they describe three different scopes.",
+   "why": "They are the only price evidence in the project and are the most likely to be quoted onward.",
+   "action": "Re-quote one scope from at least three contractors, including at least one B + C-36 holder, and add the permit fee plus a finish allowance to the comparison.",
+   "sources": [
+    "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+   ]
+  },
+  {
+   "id": "FL-20",
+   "severity": "Medium",
+   "area": "Scope",
+   "what": "The exact scope is not yet fixed: whether the waste-and-overflow assembly is replaced as a unit or only the linkage and plunger, whether the spout and diverter are in scope, the make of the existing trip lever and overflow plate, and the drain size are all unverified.",
+   "why": "Every quote and price in the project depends on these answers.",
+   "action": "Have the chosen contractor photograph and measure the assembly on the first visit and confirm parts compatibility in writing before ordering.",
+   "sources": [
+    "https://epubs.iapmo.org/2025/CPC/"
+   ]
+  },
+  {
+   "id": "FL-21",
+   "severity": "Low",
+   "area": "Handling",
+   "what": "No internal or private information from the project brief has been written into this repository, the data files, the page text, the commit history or any published URL. The pages carry only verifiable code facts (what the DBI rule is, who to ask, what a permit would cost), the licence records read from CSLB, and the owner-provided estimates.",
+   "why": "Keeps internal scheduling and permit-timing information out of a public GitHub Pages site and out of the git history, while still giving the owner the code facts needed to make a lawful decision.",
+   "action": "Keep it that way: any internal constraint stays in the owner's own private notes and must never be added to this repository, the data files or the site text. If the constraint changes, re-check the permit requirement against the DBI answer.",
+   "sources": [
+    "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx",
+    "https://www.sf.gov/departments--department-building-inspection"
+   ]
+  },
+  {
+   "id": "FL-22",
+   "severity": "Medium",
+   "area": "Site conditions",
+   "what": "The tenancy and ownership status of the space below the bathtub (the storage unit) is not established, so the right to open its ceiling and the permit count for the job are both unresolved.",
+   "why": "DBI requires a separate permit per dwelling unit or tenant space, and entry into a space the owner cannot lawfully enter is a legal problem, not just a scheduling one.",
+   "action": "Establish who controls the storage unit and whether it is a separate tenant space, then ask DBI how many permits the job needs.",
+   "sources": [
+    "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+   ]
+  }
+ ],
+ "_amounts_policy": "Quote amounts are withheld from this archived data file: no official source confirms them. The current figures and their labels are maintained in site-data/ and published on the canonical site root."
 }

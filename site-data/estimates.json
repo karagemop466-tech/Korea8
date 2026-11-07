@@ -1,0 +1,107 @@
+{
+ "meta": {
+  "title": "Estimates — owner-provided quotes and official fees",
+  "quote_date": "2026-08-30",
+  "recorded": "2026-11-07",
+  "policy": "Amount fields are published blank: no official source confirms a quote value, so per the project verification rule the value is left blank and flagged (F-02) rather than printed as an unverified number. Quoted scope wording is reproduced because it is what distinguishes the quotes.",
+  "fee_note": "Official city fees are published separately below and are fully sourced."
+ },
+ "quotes": [
+  {
+   "id": "E-01",
+   "provider": "Expert Plumbing Solutions",
+   "license": "977638",
+   "date": "2026-08-30",
+   "scope_owner_provided": "Replacing waste and overflow",
+   "amount": null,
+   "amount_display": "",
+   "verification": "Unverified — owner-provided quote; no official source",
+   "flag": "F-02",
+   "sources": [
+    {
+     "label": "CSLB licence #977638",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    }
+   ]
+  },
+  {
+   "id": "E-02",
+   "provider": "Bay Area Plumbing",
+   "license": "757796",
+   "date": "2026-08-30",
+   "scope_owner_provided": "Replace lever for the bathtub plug and spout with diverter, includes labour and materials",
+   "amount": null,
+   "amount_display": "",
+   "verification": "Unverified — owner-provided quote; no official source",
+   "flag": "F-02",
+   "sources": [
+    {
+     "label": "CSLB licence #757796",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    }
+   ]
+  },
+  {
+   "id": "E-03",
+   "provider": "Fast Response Plumbing & Rooter",
+   "license": "1024971",
+   "date": "2026-08-30",
+   "scope_owner_provided": "Repair or adjust bath tub wastewater plunger handle",
+   "amount": null,
+   "amount_display": "",
+   "verification": "Unverified — owner-provided quote; no official source",
+   "flag": "F-02",
+   "sources": [
+    {
+     "label": "CSLB licence #1024971",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    }
+   ]
+  }
+ ],
+ "official_fees": [
+  {
+   "id": "FEE-01",
+   "item": "Plumbing permit — Category 1P (single residential unit: single fixture installation or a single bathroom remodel)",
+   "amount": "$290",
+   "source_label": "SF DBI Table 1A-C, July 2026",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+  },
+  {
+   "id": "FEE-02",
+   "item": "Off-hour inspection",
+   "amount": "$555 per hour (2-hour minimum weekday 06:00–08:00 and 16:00–18:00; 4-hour minimum before 06:00, after 18:00, and weekends)",
+   "source_label": "SF DBI Table 1A-C, July 2026",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+  },
+  {
+   "id": "FEE-03",
+   "item": "Re-inspection / additional inspection",
+   "amount": "$259 per half hour",
+   "source_label": "SF DBI Table 1A-C, July 2026",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+  }
+ ],
+ "unverified_benchmarks": [
+  {
+   "id": "B-01",
+   "item": "Third-party market price ranges for tub drain / waste-and-overflow work",
+   "amount": "",
+   "note": "Earlier drafts of this project quoted Angi and HomeGuide ranges. Those pages were not re-retrieved and verified in this session, so no figure is published.",
+   "flag": "F-19"
+  },
+  {
+   "id": "B-02",
+   "item": "Drywall opening and patch cost for a ceiling access",
+   "amount": "",
+   "note": "No quote has been received and no official source publishes a price.",
+   "flag": "F-03"
+  }
+ ],
+ "analysis": [
+  "The three quotes describe three different scopes, so they cannot be compared as a single price range (F-03).",
+  "Only E-01 as worded ('replacing waste and overflow') corresponds to the full assembly that would be replaced if the internals are fused; E-03 is the narrowest scope (adjust/repair the handle).",
+  "None of the three quotes, as described, includes opening and restoring a drywall ceiling, so none covers the below-access fallback in one contract (R-07).",
+  "The official permit fee ($290 for Category 1P) is a separate, fully sourced cost that does not appear in any quote."
+ ]
+}

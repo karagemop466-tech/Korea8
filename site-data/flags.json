@@ -1,0 +1,277 @@
+{
+ "meta": {
+  "title": "Flagged for Review",
+  "compiled": "2026-11-07",
+  "note": "Flagged and unverified items do not block publication. Each item records what could not be confirmed, what was done about it, and the source links."
+ },
+ "flags": [
+  {
+   "id": "F-01",
+   "severity": "Low",
+   "title": "Repository also hosts an unrelated, earlier project",
+   "detail": "This repository's pre-existing content (README.md, AGENTS.md, docs/, evidence/, scripts/, vendor/, registry/, src/) documents a DOE GEMS geothermal fault-prediction study. It is unrelated to the bathtub trip-lever work and has been left in place, unmodified, as an archive.",
+   "action": "No action needed for the repair. The archive is reachable at docs/index.html and is labelled as a prior project.",
+   "links": [
+    {
+     "label": "Legacy archive",
+     "url": "docs/index.html"
+    }
+   ]
+  },
+  {
+   "id": "F-02",
+   "severity": "High",
+   "title": "Quote amounts cannot be verified, so they are published blank",
+   "detail": "The three quotes dated 2026-08-30 were supplied by the owner. No official or provider-issued document publishes those amounts, so under the project rule ('if a value cannot be confirmed from an official source, leave it blank and flag it') the amount cells on the Estimates page are empty.",
+   "action": "Send the written quotes (PDF/email) if you want the amounts published with an owner-provided label.",
+   "links": [
+    {
+     "label": "Estimates page",
+     "url": "estimates.html"
+    }
+   ]
+  },
+  {
+   "id": "F-03",
+   "severity": "Medium",
+   "title": "The three quotes cover different scopes and are not comparable",
+   "detail": "One quote adjusts the plunger handle, one replaces the lever for the plug and spout with a diverter, and one replaces the waste and overflow. None includes opening and restoring a drywall ceiling. Treating them as a price range would be wrong.",
+   "action": "Ask all three for the same written scope before comparing, and add a fourth line item for ceiling access and restoration.",
+   "links": [
+    {
+     "label": "Estimates page",
+     "url": "estimates.html"
+    }
+   ]
+  },
+  {
+   "id": "F-04",
+   "severity": "Medium",
+   "title": "Review-platform ratings could not be verified",
+   "detail": "Yelp and similar platforms blocked automated retrieval (HTTP 403) and no official source publishes ratings. No rating or review count is therefore published anywhere on this site; only listing links are recorded.",
+   "action": "Open the listings manually when shortlisting; treat ratings as indicative only.",
+   "links": [
+    {
+     "label": "Providers page",
+     "url": "providers.html"
+    }
+   ]
+  },
+  {
+   "id": "F-05",
+   "severity": "Medium",
+   "title": "Licence status is a point-in-time check",
+   "detail": "Every licence row was re-retrieved from the official CSLB licence-detail page on 2026-11-07, with each page's 'Data current as of' timestamp recorded. CSLB warns that status can change at any time and that its database may lag.",
+   "action": "Click the CSLB link for each provider again immediately before signing.",
+   "links": [
+    {
+     "label": "CSLB licence check",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    }
+   ]
+  },
+  {
+   "id": "F-06",
+   "severity": "Medium",
+   "title": "No drywall (C-9) licence exists in the shortlist",
+   "detail": "None of the twelve verified licences holds a C-9 Drywall classification. The 'one vendor for plumbing and drywall' requirement is therefore met either by a B General Building licensee (which may prime a multi-trade contract) or by a B/B-2 licensee that names its plastering/drywall subcontractor.",
+   "action": "Require the drywall scope to be named in the contract, with the subcontractor identified in writing.",
+   "links": [
+    {
+     "label": "CSLB B classification",
+     "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B"
+    }
+   ]
+  },
+  {
+   "id": "F-07",
+   "severity": "Medium",
+   "title": "Two code texts could not be confirmed from a free official source",
+   "detail": "San Francisco Plumbing Code §104.2 (permit exemptions) is cited by sf.gov but the section text could not be read in a usable form; California Plumbing Code §402.10 (12-inch access panel for concealed slip joints) is behind IAPMO's members-only service. Both are marked UNVERIFIED and neither is used as a verified finding.",
+   "action": "Ask DBI (628-652-3200) or the selected contractor to confirm both sections in writing before relying on them.",
+   "links": [
+    {
+     "label": "SF.gov permit page (cites §104.2)",
+     "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+     "label": "IAPMO Answers & Analysis",
+     "url": "https://aa.iapmo.org/?code=UPC&chapter=4"
+    }
+   ]
+  },
+  {
+   "id": "F-08",
+   "severity": "Low",
+   "title": "Fast Response: CSLB address differs from the company website address",
+   "detail": "The CSLB record for #1024971 lists '236 W Potral Ave #459, San Francisco, CA 94127'. The company's website shows a different address. The CSLB spelling of 'POTRAL' appears to be a typographical variant of Portal.",
+   "action": "Confirm the current business address and the workers'-comp renewal (policy expires 2026-12-18) before scheduling.",
+   "links": [
+    {
+     "label": "CSLB #1024971",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    }
+   ]
+  },
+  {
+   "id": "F-09",
+   "severity": "High",
+   "title": "No provider in this dossier is documented as having done this exact repair",
+   "detail": "Nothing retrieved this session shows that any shortlisted firm has performed a waste-and-overflow replacement reached through a ceiling opening below an occupied unit. Licences are verified; relevant job experience is not.",
+   "action": "Ask each candidate for two references for waste-and-overflow work reached from below, and for proof of occupied-unit work.",
+   "links": [
+    {
+     "label": "Providers page",
+     "url": "providers.html"
+    }
+   ]
+  },
+  {
+   "id": "F-10",
+   "severity": "Medium",
+   "title": "Work-area photographs are still pending",
+   "detail": "The owner intends to supply reference photographs. Until then every access judgement on this site is based on the written description.",
+   "action": "Add the photographs to the repository when available so the access assessment can be re-checked.",
+   "links": [
+    {
+     "label": "Requirements page",
+     "url": "requirements.html"
+    }
+   ]
+  },
+  {
+   "id": "F-11",
+   "severity": "Medium",
+   "title": "Earlier drafts of this site linked two sf.gov URLs that now return 404",
+   "detail": "The URLs https://www.sf.gov/information/apply-plumbing-and-mechanical-permit and https://www.sf.gov/information/apply-kitchen-or-bath-remodel-permit were used by earlier sessions and now return the sf.gov 'not found' page. They were replaced this session with the live pages listed on the Sources page.",
+   "action": "Fixed. Any other page or document that cites the old URLs should be updated.",
+   "links": [
+    {
+     "label": "SF.gov — current permit page",
+     "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    }
+   ]
+  },
+  {
+   "id": "F-12",
+   "severity": "Medium",
+   "title": "Advanced Plumbing and Drain carries a CSLB future-suspension warning",
+   "detail": "The official CSLB record for #1009195 states: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.' The licence is nonetheless shown as current and active.",
+   "action": "Re-check the licence immediately before contracting; prefer a provider without this status for a tenant-occupied job.",
+   "links": [
+    {
+     "label": "CSLB #1009195",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+    }
+   ]
+  },
+  {
+   "id": "F-13",
+   "severity": "Medium",
+   "title": "Save-On-Interior (#749536) shares an address and phone with listed provider #757796",
+   "detail": "CSLB lists 'SAVE - ON - INTERIOR' at 335 14th Ave, San Francisco 94118, phone (415) 668-8000 — the same address and phone as Bay Area Plumbing (#757796). It holds B + C-36, which would cover both trades on one licence. The CSLB records do not state who controls each licence or that the two businesses are the same operator.",
+   "action": "Confirm the relationship and the identity of the contracting entity before relying on the combined licence.",
+   "links": [
+    {
+     "label": "CSLB #749536",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
+    },
+    {
+     "label": "CSLB #757796",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    }
+   ]
+  },
+  {
+   "id": "F-14",
+   "severity": "Low",
+   "title": "'Five or more plumbers' is an owner report, not a verifiable record",
+   "detail": "The statement that five or more licensed plumbers have been unable to remove the trip lever from above comes from the owner's brief. No inspection report, invoice or provider statement records it.",
+   "action": "Keep any written notes from those visits: they are the best evidence of what was attempted.",
+   "links": [
+    {
+     "label": "Requirements page",
+     "url": "requirements.html"
+    }
+   ]
+  },
+  {
+   "id": "F-15",
+   "severity": "High",
+   "title": "The permit requirement for this specific job has not been confirmed in writing",
+   "detail": "SF.gov states a permit is needed before cutting into or replacing pipes, particularly pipes covered by a wall, and points to SF Plumbing Code §104.2 for exemptions. Whether this specific repair falls in an exemption has not been confirmed by DBI or by a contractor in writing.",
+   "action": "Ask the selected contractor to state in writing, before work starts, which permit the job requires and who pulls it.",
+   "links": [
+    {
+     "label": "SF.gov permit page",
+     "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    }
+   ]
+  },
+  {
+   "id": "F-16",
+   "severity": "Low",
+   "title": "No official source for dust containment or contents protection",
+   "detail": "Dust containment, protection or removal of stored contents, and shut-off scheduling are practical requirements with no government source. They are listed on the Requirements page as owner actions, not verified facts.",
+   "action": "Put them in the vendor's written scope.",
+   "links": [
+    {
+     "label": "Requirements page",
+     "url": "requirements.html"
+    }
+   ]
+  },
+  {
+   "id": "F-17",
+   "severity": "Low",
+   "title": "CSLB licence-check landing page showed a maintenance notice during retrieval",
+   "detail": "On 2026-11-07 the CSLB 'Check a License' entry page returned a DCA maintenance notice ('Estimated outage time is Nov 7th 10am-5pm'), while individual CSLB licence-detail pages still returned live data stamped 11/7/2026. Licence detail rows were therefore verified from the detail pages.",
+   "action": "If a CSLB detail page fails later, retry after the maintenance window.",
+   "links": [
+    {
+     "label": "CSLB licence check",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    }
+   ]
+  },
+  {
+   "id": "F-18",
+   "severity": "Low",
+   "title": "Save-On-Interior CSLB record contains two 2015–2016 cash-deposit letters",
+   "detail": "The official CSLB record for #749536 shows, under Miscellaneous Information: '11/06/2015 - CASH DEPOSIT LTR SENT $15,000' and '01/14/2016 - CASH DEPOSIT 15K FOLLOW UP LTR SENT'. The record does not explain them and no inference is drawn here.",
+   "action": "Ask the contractor about the entries if you shortlist this licence.",
+   "links": [
+    {
+     "label": "CSLB #749536",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
+    }
+   ]
+  },
+  {
+   "id": "F-19",
+   "severity": "Low",
+   "title": "Third-party price benchmarks were not re-verified and are not published",
+   "detail": "Earlier drafts of this project printed Angi/HomeGuide ranges for tub-drain work and drywall patching. Those pages were not re-retrieved and verified this session, so no figure is published; the cells are blank.",
+   "action": "If a benchmark is wanted, supply the retrieved page and it can be added with a third-party label.",
+   "links": [
+    {
+     "label": "Estimates page",
+     "url": "estimates.html"
+    }
+   ]
+  },
+  {
+   "id": "F-20",
+   "severity": "Low",
+   "title": "Earlier duplicate briefs are retained only as redirects",
+   "detail": "Four parallel briefs (bathroom-overflow/, bathtub-overflow/, bathtub/, trip-lever/) and the docs/bathtub-*.html pages previously published the same project in different words, some with unverified amounts. They now redirect here; the original files remain in git history.",
+   "action": "None. This is the single authoritative URL.",
+   "links": [
+    {
+     "label": "Dashboard",
+     "url": "index.html"
+    }
+   ]
+  }
+ ]
+}

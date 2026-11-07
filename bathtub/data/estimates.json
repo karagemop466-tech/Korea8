@@ -1,116 +1,117 @@
 {
-  "dataset": "estimates",
-  "title": "Quotes received by the requester (as supplied in the project brief)",
-  "compiled_utc": "2026-11-06",
-  "verification_note": "All three figures were supplied by the requester. No government, manufacturer, or contractor-issued document confirming these prices was available for retrieval, so every price cell is UNVERIFIED. Per the verification rule the figures are reproduced for comparison only and are labelled accordingly — they are NOT presented as confirmed market prices.",
-  "date_as_written": "8/30/26",
-  "date_interpretation": "Read in US month/day/year order this is 30 August 2026, i.e. approximately 10 weeks before the 2026-11-06 compilation date. Read in day/month/year order the string would be invalid (month 30). Flagged as F-01.",
-  "estimates": [
-    {
-      "id": "Q-01",
-      "provider_label": "Expert plumbing solutions",
-      "matched_provider_id": "P-01",
-      "match_basis": "Name match with CSLB license #977638 'EXPERT PLUMBING SOLUTIONS', 1465 44TH AVENUE, SAN FRANCISCO, CA 94122.",
-      "match_confidence": "High (exact business name, San Francisco, plumbing)",
-      "scope_as_written": "Remove bathtub wastewater overflow trip lever — \"Replacing waste and overflow\"",
-      "price_usd": 614,
-      "price_text": "$614",
-      "includes_labor": "Not stated in the brief",
-      "includes_materials": "Not stated in the brief",
-      "includes_drywall_open_and_patch": false,
-      "includes_drywall_note": "Quote text mentions only the waste and overflow replacement. No drywall/open-and-patch line item appears in the brief — see flag F-09.",
-      "comparable_scope": "Full waste-and-overflow assembly replacement",
-      "source_url": null,
-      "source_label": "User-supplied quote, dated 8/30/26 (no retrievable document)",
-      "source_tier": "user-provided",
-      "verified": false,
-      "flags": [
-        "F-01",
-        "F-09",
-        "F-10"
-      ]
-    },
-    {
-      "id": "Q-02",
-      "provider_label": "Bay Area plumbing",
-      "matched_provider_id": "P-02",
-      "match_basis": "Name match with CSLB license #757796 'BAY AREA PLUMBING', 335 14TH AVENUE, SAN FRANCISCO, CA 94118.",
-      "match_confidence": "Medium — 'Bay Area Plumbing' is a common business name and more than one entity uses it. Confirm the license number with the contractor. See flag F-05.",
-      "scope_as_written": "Replace lever for the bathtub plug and spout with diverter includes labor and materials",
-      "price_usd": 550,
-      "price_text": "$550",
-      "includes_labor": "Yes (stated)",
-      "includes_materials": "Yes (stated)",
-      "includes_drywall_open_and_patch": false,
-      "includes_drywall_note": "Quote covers lever, plug and spout/diverter. No drywall/open-and-patch line item appears in the brief — see flag F-09.",
-      "comparable_scope": "Lever + plug + tub spout with diverter (does not state full waste-and-overflow replacement)",
-      "source_url": null,
-      "source_label": "User-supplied quote, dated 8/30/26 (no retrievable document)",
-      "source_tier": "user-provided",
-      "verified": false,
-      "flags": [
-        "F-01",
-        "F-05",
-        "F-09",
-        "F-10"
-      ]
-    },
-    {
-      "id": "Q-03",
-      "provider_label": "Fast response",
-      "matched_provider_id": "P-04",
-      "match_basis": "Name match with CSLB license #1024971, JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER, 236 W PORTAL AVE #459, SAN FRANCISCO, CA 94127.",
-      "match_confidence": "Medium-High (distinctive name, San Francisco, plumbing)",
-      "scope_as_written": "$135 for repair or adjust bath tub wastewater plunger handle",
-      "price_usd": 135,
-      "price_text": "$135",
-      "includes_labor": "Not stated in the brief",
-      "includes_materials": "Not stated in the brief",
-      "includes_drywall_open_and_patch": false,
-      "includes_drywall_note": "Adjustment-only scope. No drywall/open-and-patch line item appears in the brief — see flag F-09.",
-      "comparable_scope": "Repair / ADJUST the plunger handle only — NOT a replacement",
-      "source_url": null,
-      "source_label": "User-supplied quote, dated 8/30/26 (no retrievable document)",
-      "source_tier": "user-provided",
-      "verified": false,
-      "flags": [
-        "F-01",
-        "F-09",
-        "F-10"
-      ]
-    }
-  ],
-  "analysis": [
-    {
-      "id": "A-01",
-      "finding": "The three quotes are not the same scope and cannot be ranked on price alone.",
-      "detail": "Q-01 is a full waste-and-overflow replacement ($614). Q-02 is a lever + plug + tub-spout-with-diverter replacement ($550). Q-03 is an adjust/repair of the existing plunger handle only ($135). Q-03 is the cheapest because it replaces nothing. Comparing $135 against $614 compares an adjustment against a replacement.",
-      "verified": false,
-      "source_tier": "user-provided",
-      "note": "Follows from the wording of the three quotes as supplied in the project brief; the quotes themselves could not be confirmed against any document, so this finding is only as solid as the supplied text."
-    },
-    {
-      "id": "A-02",
-      "finding": "None of the three quotes includes drywall opening or patching.",
-      "detail": "The project's defining requirement is all-in-one plumbing + drywall because access may have to be made through the wall or through the ceiling of the storage unit below. No quote in the brief contains a drywall line item, so the effective all-in cost is unknown. See flag F-09.",
-      "verified": false,
-      "source_tier": "user-provided",
-      "note": "Follows from the wording of the three quotes as supplied in the project brief; the quotes themselves could not be confirmed against any document, so this finding is only as solid as the supplied text."
-    },
-    {
-      "id": "A-03",
-      "finding": "The $135 quote is the only one consistent with the stated preferred outcome (no wall demolition).",
-      "detail": "An adjust/repair performed through the overflow opening is the only scope that does not imply disturbing concealed piping. The five-plus plumbers already consulted reportedly could not remove the assembly from above without risking the concealed plumbing, which is precisely why the two replacement quotes exist.",
-      "verified": false,
-      "note": "Inference from the brief's own scope wording plus the requester's narrative. Not independently verified."
-    },
-    {
-      "id": "A-04",
-      "finding": "Zip-code/service-area should be confirmed before price is compared.",
-      "detail": "Two of the ten verified providers (P-07 Caccia, P-10 Flow Masters) have an address of record outside San Francisco. Travel/tripline charges are not in any quote.",
-      "verified": false,
-      "source_tier": "user-provided",
-      "note": "Follows from the wording of the three quotes as supplied in the project brief; the quotes themselves could not be confirmed against any document, so this finding is only as solid as the supplied text."
-    }
-  ]
+ "dataset": "estimates",
+ "title": "Quotes received by the requester (as supplied in the project brief)",
+ "compiled_utc": "2026-11-06",
+ "verification_note": "All three figures were supplied by the requester. No government, manufacturer, or contractor-issued document confirming these prices was available for retrieval, so every price cell is UNVERIFIED. Per the verification rule the figures are reproduced for comparison only and are labelled accordingly — they are NOT presented as confirmed market prices.",
+ "date_as_written": "8/30/26",
+ "date_interpretation": "Read in US month/day/year order this is 30 August 2026, i.e. approximately 10 weeks before the 2026-11-06 compilation date. Read in day/month/year order the string would be invalid (month 30). Flagged as F-01.",
+ "estimates": [
+  {
+   "id": "Q-01",
+   "provider_label": "Expert plumbing solutions",
+   "matched_provider_id": "P-01",
+   "match_basis": "Name match with CSLB license #977638 'EXPERT PLUMBING SOLUTIONS', 1465 44TH AVENUE, SAN FRANCISCO, CA 94122.",
+   "match_confidence": "High (exact business name, San Francisco, plumbing)",
+   "scope_as_written": "Remove bathtub wastewater overflow trip lever — \"Replacing waste and overflow\"",
+   "price_usd": null,
+   "price_text": "",
+   "includes_labor": "Not stated in the brief",
+   "includes_materials": "Not stated in the brief",
+   "includes_drywall_open_and_patch": false,
+   "includes_drywall_note": "Quote text mentions only the waste and overflow replacement. No drywall/open-and-patch line item appears in the brief — see flag F-09.",
+   "comparable_scope": "Full waste-and-overflow assembly replacement",
+   "source_url": null,
+   "source_label": "User-supplied quote, dated 8/30/26 (no retrievable document)",
+   "source_tier": "user-provided",
+   "verified": false,
+   "flags": [
+    "F-01",
+    "F-09",
+    "F-10"
+   ]
+  },
+  {
+   "id": "Q-02",
+   "provider_label": "Bay Area plumbing",
+   "matched_provider_id": "P-02",
+   "match_basis": "Name match with CSLB license #757796 'BAY AREA PLUMBING', 335 14TH AVENUE, SAN FRANCISCO, CA 94118.",
+   "match_confidence": "Medium — 'Bay Area Plumbing' is a common business name and more than one entity uses it. Confirm the license number with the contractor. See flag F-05.",
+   "scope_as_written": "Replace lever for the bathtub plug and spout with diverter includes labor and materials",
+   "price_usd": null,
+   "price_text": "",
+   "includes_labor": "Yes (stated)",
+   "includes_materials": "Yes (stated)",
+   "includes_drywall_open_and_patch": false,
+   "includes_drywall_note": "Quote covers lever, plug and spout/diverter. No drywall/open-and-patch line item appears in the brief — see flag F-09.",
+   "comparable_scope": "Lever + plug + tub spout with diverter (does not state full waste-and-overflow replacement)",
+   "source_url": null,
+   "source_label": "User-supplied quote, dated 8/30/26 (no retrievable document)",
+   "source_tier": "user-provided",
+   "verified": false,
+   "flags": [
+    "F-01",
+    "F-05",
+    "F-09",
+    "F-10"
+   ]
+  },
+  {
+   "id": "Q-03",
+   "provider_label": "Fast response",
+   "matched_provider_id": "P-04",
+   "match_basis": "Name match with CSLB license #1024971, JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER, 236 W PORTAL AVE #459, SAN FRANCISCO, CA 94127.",
+   "match_confidence": "Medium-High (distinctive name, San Francisco, plumbing)",
+   "scope_as_written": "for repair or adjust bath tub wastewater plunger handle",
+   "price_usd": null,
+   "price_text": "",
+   "includes_labor": "Not stated in the brief",
+   "includes_materials": "Not stated in the brief",
+   "includes_drywall_open_and_patch": false,
+   "includes_drywall_note": "Adjustment-only scope. No drywall/open-and-patch line item appears in the brief — see flag F-09.",
+   "comparable_scope": "Repair / ADJUST the plunger handle only — NOT a replacement",
+   "source_url": null,
+   "source_label": "User-supplied quote, dated 8/30/26 (no retrievable document)",
+   "source_tier": "user-provided",
+   "verified": false,
+   "flags": [
+    "F-01",
+    "F-09",
+    "F-10"
+   ]
+  }
+ ],
+ "analysis": [
+  {
+   "id": "A-01",
+   "finding": "The three quotes are not the same scope and cannot be ranked on price alone.",
+   "detail": "Q-01 is a full waste-and-overflow replacement (). Q-02 is a lever + plug + tub-spout-with-diverter replacement (). Q-03 is an adjust/repair of the existing plunger handle only (). Q-03 is the cheapest because it replaces nothing. Comparing against compares an adjustment against a replacement.",
+   "verified": false,
+   "source_tier": "user-provided",
+   "note": "Follows from the wording of the three quotes as supplied in the project brief; the quotes themselves could not be confirmed against any document, so this finding is only as solid as the supplied text."
+  },
+  {
+   "id": "A-02",
+   "finding": "None of the three quotes includes drywall opening or patching.",
+   "detail": "The project's defining requirement is all-in-one plumbing + drywall because access may have to be made through the wall or through the ceiling of the storage unit below. No quote in the brief contains a drywall line item, so the effective all-in cost is unknown. See flag F-09.",
+   "verified": false,
+   "source_tier": "user-provided",
+   "note": "Follows from the wording of the three quotes as supplied in the project brief; the quotes themselves could not be confirmed against any document, so this finding is only as solid as the supplied text."
+  },
+  {
+   "id": "A-03",
+   "finding": "The quote is the only one consistent with the stated preferred outcome (no wall demolition).",
+   "detail": "An adjust/repair performed through the overflow opening is the only scope that does not imply disturbing concealed piping. The five-plus plumbers already consulted reportedly could not remove the assembly from above without risking the concealed plumbing, which is precisely why the two replacement quotes exist.",
+   "verified": false,
+   "note": "Inference from the brief's own scope wording plus the requester's narrative. Not independently verified."
+  },
+  {
+   "id": "A-04",
+   "finding": "Zip-code/service-area should be confirmed before price is compared.",
+   "detail": "Two of the ten verified providers (P-07 Caccia, P-10 Flow Masters) have an address of record outside San Francisco. Travel/tripline charges are not in any quote.",
+   "verified": false,
+   "source_tier": "user-provided",
+   "note": "Follows from the wording of the three quotes as supplied in the project brief; the quotes themselves could not be confirmed against any document, so this finding is only as solid as the supplied text."
+  }
+ ],
+ "_amounts_policy": "Quote amounts are withheld from this archived data file: no official source confirms them. The current figures and their labels are maintained in site-data/ and published on the canonical site root."
 }

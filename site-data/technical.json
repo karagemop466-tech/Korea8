@@ -1,0 +1,81 @@
+{
+ "meta": {
+  "title": "Technical findings — mechanism, access paths, licence structure",
+  "compiled": "2026-11-07",
+  "note": "'Manufacturer documentation' and statute rows carry the source link. Rows marked UNVERIFIED or owner-provided are not counted as verified findings."
+ },
+ "findings": [
+  {
+   "id": "T-01",
+   "topic": "What the assembly is made of",
+   "finding": "A trip-lever bath waste consists of a strainer body and drain elbow under the tub, a tee, an overflow elbow set against the back of the tub, an overflow gasket, a retainer plate with two screws, an overflow plate with two screws, a brass linkage with a linkage nut, and a drop cylinder that seats inside the tee.",
+   "kind": "Manufacturer documentation (parts list and installation steps)",
+   "source_label": "Watco — Trip Lever Installation Instructions (500/501/600-TL series), official",
+   "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "flag": null
+  },
+  {
+   "id": "T-02",
+   "topic": "The manufacturer's own service path runs through the overflow opening",
+   "finding": "Step 6 installs the overflow plate and drop cylinder assembly with the overflow plate screws, and Step 7 reads: 'If necessary, remove overflow plate and drop cylinder assembly and readjust to ensure drain stops water when in the closed position.' The parts listed as movable from the tub side are the overflow plate, the linkage and the drop cylinder.",
+   "kind": "Manufacturer documentation (verbatim)",
+   "source_label": "Watco — Trip Lever Installation Instructions, Steps 6–7",
+   "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "flag": null
+  },
+  {
+   "id": "T-03",
+   "topic": "Why removal 'from above' can stall",
+   "finding": "The overflow elbow and tee sit in the framed cavity behind/below the tub: the overflow gasket is placed on the overflow elbow against the back of the tub, and the retainer plate is screwed to the overflow elbow from inside the tub until the gasket is tight against the exterior tub wall. Anything fused or corroded at the tee, or a linkage that cannot be withdrawn, therefore lies in the concealed cavity.",
+   "kind": "Manufacturer documentation (Steps 4–5) — geometry, read from the installation sequence",
+   "source_label": "Watco — Trip Lever Installation Instructions, Steps 4–5",
+   "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "flag": null
+  },
+  {
+   "id": "T-04",
+   "topic": "Standard access-panel outcome when the ceiling is opened",
+   "finding": "If access is created from below, the code-aligned finish is an access panel rather than a solid patch, so concealed slip-joint connections remain reachable. The 12-inch minimum dimension is widely published for California Plumbing Code §402.10, but the text could not be confirmed from a free official source this session.",
+   "kind": "UNVERIFIED (code text) — recommend confirming with the inspecting authority before closing the ceiling",
+   "source_label": "IAPMO Answers & Analysis (members-only at retrieval)",
+   "url": "https://aa.iapmo.org/?code=UPC&chapter=4",
+   "flag": "F-07"
+  },
+  {
+   "id": "T-05",
+   "topic": "Permit and inspection sequence",
+   "finding": "The work needs a plumbing permit before pipes are cut or replaced, and the work must be inspected before the pipes are covered.",
+   "kind": "Official city service page (verified)",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "flag": null
+  },
+  {
+   "id": "T-06",
+   "topic": "Licence structure for a single plumbing-plus-drywall contract",
+   "finding": "Plumbing is C-36 work and drywall finishing is a separate trade, so a contract covering both is a multi-trade contract. A B General Building licence may take it (at least two unrelated trades, or the appropriate classification, or an appropriately licensed subcontractor), and a licence holding both B and C-36 covers both trades directly.",
+   "kind": "Statute + official classification pages (verified)",
+   "source_label": "Cal. Bus. & Prof. Code §7057(b) via CSLB B classification page",
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+   "flag": null
+  },
+  {
+   "id": "T-07",
+   "topic": "Tenant-occupied unit logistics",
+   "finding": "Entry to make agreed repairs requires reasonable written notice stating date, approximate time and purpose; 24 hours is presumed reasonable, and entry outside normal business hours needs the tenant's consent except in an emergency. Dust containment, contents protection and shut-off windows are practical requirements with no official source and are therefore listed as owner actions, not verified facts.",
+   "kind": "Statute (verified); practical items are analysis, not sourced",
+   "source_label": "Cal. Civ. Code §1954 (leginfo.legislature.ca.gov)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "flag": null
+  },
+  {
+   "id": "T-08",
+   "topic": "The three quotes are not like-for-like",
+   "finding": "The quoted scopes differ: one adjusts the plunger handle, one replaces the lever for the plug and spout with a diverter, and one replaces the waste and overflow. None of the three, as described, includes opening and restoring a drywall ceiling.",
+   "kind": "Owner-provided — the three quotes were supplied by the owner (dated 2026-08-30); no official source exists for quote contents",
+   "source_label": "Owner brief (owner-provided, unpublished amounts)",
+   "url": "flagged-for-review.html",
+   "flag": "F-02"
+  }
+ ]
+}

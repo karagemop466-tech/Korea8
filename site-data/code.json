@@ -1,0 +1,169 @@
+{
+ "meta": {
+  "title": "Code, permit and licensing rules — verified rows",
+  "compiled": "2026-11-07",
+  "rule": "Each row quotes or closely paraphrases the official source named in the row, with the link. A row whose text could not be confirmed from a free official source is marked UNVERIFIED and is not counted as a verified finding."
+ },
+ "rows": [
+  {
+   "id": "C-01",
+   "topic": "When a plumbing permit is required",
+   "statement": "A permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.",
+   "basis": "Official city service page (SF.gov, Department of Building Inspection).",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-02",
+   "topic": "Permit exemptions",
+   "statement": "Exemptions are set out in San Francisco Plumbing Code Section 104.2; sf.gov links to that section rather than restating it.",
+   "basis": "Official city service page naming the exact code section.",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (links SF Plumbing Code §104.2)",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Partially verified — section cited by the official page; full §104.2 text not retrieved in a readable form this session",
+   "flag": "F-07"
+  },
+  {
+   "id": "C-03",
+   "topic": "Which contractor licences may pull a plumbing permit",
+   "statement": "Contractors must hold a C4, C16, C20, C36, C54, B, or A licence to apply for a plumbing or mechanical permit in general; the permit scope may be further limited by licence type.",
+   "basis": "Official city service page.",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-04",
+   "topic": "Express Permits (faster issuance)",
+   "statement": "A contractor authorised for Express Permits on PermitSF can skip City staff review and pay for the permit right away; B-licence plumbing work related to a kitchen or bath permit on PermitSF can be approved immediately.",
+   "basis": "Official city service page.",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-05",
+   "topic": "Inspection before pipes are covered",
+   "statement": "After the permit is issued, the plumbing or mechanical work must be inspected before pipes are covered.",
+   "basis": "Official city service page.",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-06",
+   "topic": "Permit fee — Category 1P (single residential unit)",
+   "statement": "$290 for Category 1P: single residential unit — water service, sewer replacement, single plumbing fixture installation, shower pan installation, or a single kitchen or bathroom remodel (maximum two inspections). Effective for permits issued on or after 2026-07-12.",
+   "basis": "Official DBI fee schedule, Table 1A-C, July 2026 edition (PDF published by the City).",
+   "source_label": "SF DBI — Table 1A-C Plumbing/Mechanical issuance and inspection fees (July 2026)",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-07",
+   "topic": "Off-hour inspection rate",
+   "statement": "$555 per hour for off-hour inspections (weekdays 06:00–08:00 or 16:00–18:00, two-hour minimum; weekdays before 06:00 or after 18:00 and weekends, four-hour minimum).",
+   "basis": "Official DBI fee schedule, Table 1A-C, July 2026 edition.",
+   "source_label": "SF DBI — Table 1A-C (July 2026)",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-08",
+   "topic": "Re-inspection rate",
+   "statement": "$259 per half hour for re-inspection or additional inspection (Section 108A.8).",
+   "basis": "Official DBI fee schedule, Table 1A-C, July 2026 edition.",
+   "source_label": "SF DBI — Table 1A-C (July 2026)",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-09",
+   "topic": "Who may do the work themselves",
+   "statement": "Only property owners of stand-alone single-family dwellings (R-3 occupancy) may apply for a plumbing or mechanical permit to do the work themselves; other owners must use a licensed contractor.",
+   "basis": "Official city service page.",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (Homeowners section)",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-10",
+   "topic": "Unlicensed-contracting threshold",
+   "statement": "The licensing chapter does not apply to work under an aggregate contract price of $1,000 that is casual, minor or inconsequential — and only where the work does not require a building permit. The threshold was raised from $500 to $1,000 by Stats. 2025, Ch. 67 (AB 1170), effective 2026-01-01.",
+   "basis": "Primary statute text on the official California Legislative Information site.",
+   "source_label": "Cal. Bus. & Prof. Code §7048 (leginfo.legislature.ca.gov)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-11",
+   "topic": "B General Building licence — multi-trade prime contracts",
+   "statement": "A general building contractor may take a prime contract for a project involving trades other than framing/carpentry when the prime contract requires at least two unrelated building trades, or when the contractor holds the appropriate classification or subcontracts with an appropriately licensed specialty contractor.",
+   "basis": "Statute as published verbatim on the CSLB classification page for the B licence.",
+   "source_label": "CSLB — B General Building Contractor (BPC §7057)",
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-12",
+   "topic": "C-36 Plumbing licence scope",
+   "statement": "A plumbing contractor provides a supply of safe water and the proper disposal of fluid waste from the premises in all structures and fixed works, including maintenance and replacement of the listed items (16 CCR, Title 16, Div. 8, Art. 3).",
+   "basis": "Official CSLB classification definition.",
+   "source_label": "CSLB — C-36 Plumbing Contractor",
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-13",
+   "topic": "B-2 Residential Remodeling licence limits",
+   "statement": "A B-2 contractor must contract for at least three unrelated trades; it may not install, replace or substantially alter plumbing systems unless it holds the appropriate classification or subcontracts an appropriately licensed contractor, and it may not make structural changes.",
+   "basis": "Primary statute text on the official California Legislative Information site.",
+   "source_label": "Cal. Bus. & Prof. Code §7057.5 (leginfo.legislature.ca.gov)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-14",
+   "topic": "Tenant entry — notice and hours",
+   "statement": "A landlord may enter to make necessary or agreed repairs; except in an emergency, entry may not be made outside normal business hours without the tenant's consent, and the landlord must give reasonable written notice stating date, approximate time and purpose. Twenty-four hours is presumed reasonable notice.",
+   "basis": "Primary statute text on the official California Legislative Information site.",
+   "source_label": "Cal. Civ. Code §1954 (leginfo.legislature.ca.gov)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  },
+  {
+   "id": "C-15",
+   "topic": "Access panel for concealed slip joints",
+   "statement": "Fixtures having concealed slip-joint connections are to be provided with an access panel or utility space not less than 12 inches in its least dimension, arranged without obstructions so the connections are accessible for inspection and repair (California Plumbing Code §402.10 in recent editions; §404.2 in the 2010 edition).",
+   "basis": "Widely republished code text; the publisher's free answer service (aa.iapmo.org) is currently members-only, so the wording could not be confirmed from a free official source in this session.",
+   "source_label": "IAPMO Answers & Analysis (members-only at retrieval) — code text not verified",
+   "url": "https://aa.iapmo.org/?code=UPC&chapter=4",
+   "status": "UNVERIFIED — left out of the verified tables; see flag F-07",
+   "flag": "F-07"
+  },
+  {
+   "id": "C-16",
+   "topic": "Licence status is a point-in-time check",
+   "statement": "CSLB warns that a licence status check reflects its database, that complaint disclosure is restricted by law, and that relevant information may not yet have been entered; status can change at any time.",
+   "basis": "Official CSLB licence-detail page disclaimer, read on every licence page retrieved.",
+   "source_label": "CSLB — licence detail disclaimer (example page, #977638)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+   "status": "Verified — retrieved 2026-11-07",
+   "flag": null
+  }
+ ]
+}

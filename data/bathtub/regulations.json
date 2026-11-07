@@ -1,172 +1,173 @@
 {
-  "dataset": "regulations",
-  "title": "Permit, licensing and tenant-entry rules that govern this scope of work in San Francisco",
-  "compiled_utc": "2026-11-06",
-  "verification_note": "Every row was retrieved directly from the official government source listed in 'source_url' on 2026-11-06. Quotations are verbatim from the retrieved page.",
-  "rows": [
-    {
-      "id": "R-01",
-      "topic": "Plumbing permit",
-      "claim": "San Francisco requires a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall.",
-      "verbatim_quote": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.",
-      "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
-      "source_label": "SF.gov — Apply for a plumbing and mechanical permit (Dept. of Building Inspection)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-02",
-      "topic": "Plumbing permit — who may apply",
-      "claim": "The permit must be held by a contractor with a C4, C16, C20, C36, C54, B or A license (scope-dependent).",
-      "verbatim_quote": "Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general. Your permit scope may be further limited depending on your license type.",
-      "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
-      "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-03",
-      "topic": "Plumbing permit — speed",
-      "claim": "Contractors authorized for Express Permits on PermitSF can skip City staff review and pay for the permit immediately; no plans are required for this permit type.",
-      "verbatim_quote": "If you are a contractor authorized for Express Permits on PermitSF, you can skip City staff review and pay for your permit right away.",
-      "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
-      "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-04",
-      "topic": "Inspection before covering",
-      "claim": "Plumbing work must be inspected BEFORE the pipes are covered — this directly affects any plan to open and then re-close drywall.",
-      "verbatim_quote": "After your permit is issued, have your plumbing or mechanical work inspected before covering pipes",
-      "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
-      "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-05",
-      "topic": "Plumbing code exemptions",
-      "claim": "The exemptions DBI points to are in San Francisco Plumbing Code Section 104.2 (Exempt Work).",
-      "verbatim_quote": "See exemptions in San Francisco Plumbing Code Section 104.2",
-      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
-      "source_label": "San Francisco Plumbing Code Section 104.0 — Permits (official code library, 2026 S-96 current)",
-      "source_tier": "official-government",
-      "verified": true,
-      "caveat": "Section 104.0 was retrieved and the exemption reference confirmed, but the verbatim text of subsection 104.2 itself was not extracted into this dataset. Left UNVERIFIED at the subsection level — see flag F-11."
-    },
-    {
-      "id": "R-06",
-      "topic": "Building code exemptions",
-      "claim": "For fixture replacement work, DBI points to San Francisco Building Code Section 106A.2 (Work exempt from permit).",
-      "verbatim_quote": "See exemptions in San Francisco Building Code Section 106a.2",
-      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
-      "source_label": "San Francisco Building Code Section 106A — Permits (official code library, 2026 S-96 current)",
-      "source_tier": "official-government",
-      "verified": true,
-      "caveat": "Section 106A was retrieved and the exemption reference confirmed, but the verbatim text of subsection 106A.2 itself was not extracted into this dataset. Left UNVERIFIED at the subsection level — see flag F-11."
-    },
-    {
-      "id": "R-07",
-      "topic": "In-kind bath permit route",
-      "claim": "DBI offers a separate online 'kitchen or bath remodel permit' for replacing bath fixtures in-kind with no structural work; plumbing-only work uses the plumbing and mechanical permit instead.",
-      "verbatim_quote": "Apply online to renovate or replace kitchen or bath fixtures in-kind, with no structural work.",
-      "source_url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit/",
-      "source_label": "SF.gov — Apply for a kitchen or bath remodel permit (DBI)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-08",
-      "topic": "Bath permit valuation floor",
-      "claim": "DBI publishes a minimum valuation of $20,552 per bathroom used with the kitchen/bath permit cost schedule.",
-      "verbatim_quote": "Minimum valuations are $24,663 per kitchen and $20,552 per bathroom, according to DBI's cost schedule.",
-      "source_url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit/",
-      "source_label": "SF.gov — Apply for a kitchen or bath remodel permit (DBI)",
-      "source_tier": "official-government",
-      "verified": true,
-      "caveat": "This is a fee/valuation floor published by DBI for that permit type. It is not a statement that the job must cost that amount."
-    },
-    {
-      "id": "R-09",
-      "topic": "Contractor licence threshold",
-      "claim": "California exempts a project from contractor-licensing only when the aggregate contract price is under $1,000 AND the work does not require a building permit. If the work requires a permit, the exemption does not apply regardless of price.",
-      "verbatim_quote": "(a) This chapter does not apply to a work or operation on one undertaking or project by one or more contracts if the aggregate contract price for labor, materials, and all other items is less than one thousand dollars ($1,000), that work or operation being considered of casual, minor, or inconsequential nature, and the work or operation does not require a building permit.",
-      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
-      "source_label": "California Business and Professions Code section 7048 (official, California Legislative Information)",
-      "source_tier": "official-government",
-      "verified": true,
-      "note": "Amended by Stats. 2025, Ch. 67, Sec. 12 (AB 1170), effective January 1, 2026 — the threshold is $1,000, raised from the older $500 figure that many third-party web pages still quote."
-    },
-    {
-      "id": "R-10",
-      "topic": "Tenant entry notice",
-      "claim": "A landlord may enter a tenant's unit to make necessary or agreed repairs, but must give reasonable written notice; 24 hours is presumed reasonable. Entry is limited to normal business hours unless the tenant consents at the time. No notice is needed for an emergency, or if the tenant is present and consents.",
-      "verbatim_quote": "The landlord shall give the tenant reasonable notice in writing of his or her intent to enter and enter only during normal business hours. The notice shall include the date, approximate time, and purpose of the entry... Twenty-four hours shall be presumed to be reasonable notice in absence of evidence to the contrary.",
-      "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
-      "source_label": "California Civil Code section 1954 (official, California Legislative Information)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-11",
-      "topic": "C-36 scope covers this work",
-      "claim": "The C-36 Plumbing classification expressly includes maintenance and replacement of waste-disposal and related items, so a C-36 license is the correct classification for waste-and-overflow work.",
-      "verbatim_quote": "A plumbing contractor provides a means for a supply of safe water, ample in volume and of suitable temperature for the purpose intended and the proper disposal of fluid waste from the premises in all structures and fixed works... (f) The maintenance and replacement of all items described above...",
-      "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
-      "source_label": "CSLB — C-36 Plumbing Contractor classification (official, State of California)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-12",
-      "topic": "Permit centre contact",
-      "claim": "DBI operates a Permit Center help desk that can confirm whether a specific scope needs a permit.",
-      "verbatim_quote": "Permit Center help desk 628-652-4900",
-      "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
-      "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-13",
-      "topic": "Permit application channel",
-      "claim": "Since September 14, 2026 most over-the-counter construction permits in San Francisco are available exclusively through the PermitSF portal.",
-      "verbatim_quote": "Starting September 14, 2026, most over-the-counter construction permits will be available exclusively on the PermitSF portal.",
-      "source_url": "https://www.sf.gov/departments--department-building-inspection--permit-services-dbi/",
-      "source_label": "SF.gov — Permit Services at DBI",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-14",
-      "topic": "Contractor registration for fast permits",
-      "claim": "Licensed contractors can register for an AUTH number on PermitSF to get the streamlined/Express permit experience.",
-      "verbatim_quote": "Get a streamlined experience applying for building permits by getting an AUTH number",
-      "source_url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf/",
-      "source_label": "SF.gov — Licensed contractors: register yourself or authorized agents on PermitSF",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-15",
-      "topic": "B (General Building) licence scope",
-      "claim": "A B-licence holder may take a prime contract for a project involving trades other than framing/carpentry only if the prime contract requires at least two unrelated building trades, or the contractor holds the appropriate specialty classification, or subcontracts with an appropriately licensed specialty contractor. Plumbing plus drywall is two unrelated trades, so a B contractor can legitimately hold the single prime contract for this job — and a B + C-36 holder can self-perform both.",
-      "verbatim_quote": "A general building contractor shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor to perform the work.",
-      "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
-      "source_label": "CSLB — B General Building Contractor classification (official, State of California)",
-      "source_tier": "official-government",
-      "verified": true
-    },
-    {
-      "id": "R-16",
-      "topic": "Express permit eligibility",
-      "claim": "For eligible plumbing and mechanical projects, applicants connected to an AUTH record can get their permit right away; DBI verifies the licence and connects authorized agents within 2 business days.",
-      "verbatim_quote": "For eligible electrical, plumbing and mechanical, reroofing, and kitchen or bath projects, applicants connected to an AUTH record can get their permit right away.",
-      "source_url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf/",
-      "source_label": "SF.gov — Licensed contractors: register yourself or authorized agents on PermitSF",
-      "source_tier": "official-government",
-      "verified": true
-    }
-  ]
+ "dataset": "regulations",
+ "title": "Permit, licensing and tenant-entry rules that govern this scope of work in San Francisco",
+ "compiled_utc": "2026-11-06",
+ "verification_note": "Every row was retrieved directly from the official government source listed in 'source_url' on 2026-11-06. Quotations are verbatim from the retrieved page.",
+ "rows": [
+  {
+   "id": "R-01",
+   "topic": "Plumbing permit",
+   "claim": "San Francisco requires a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall.",
+   "verbatim_quote": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.",
+   "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (Dept. of Building Inspection)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-02",
+   "topic": "Plumbing permit — who may apply",
+   "claim": "The permit must be held by a contractor with a C4, C16, C20, C36, C54, B or A license (scope-dependent).",
+   "verbatim_quote": "Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general. Your permit scope may be further limited depending on your license type.",
+   "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-03",
+   "topic": "Plumbing permit — speed",
+   "claim": "Contractors authorized for Express Permits on PermitSF can skip City staff review and pay for the permit immediately; no plans are required for this permit type.",
+   "verbatim_quote": "If you are a contractor authorized for Express Permits on PermitSF, you can skip City staff review and pay for your permit right away.",
+   "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-04",
+   "topic": "Inspection before covering",
+   "claim": "Plumbing work must be inspected BEFORE the pipes are covered — this directly affects any plan to open and then re-close drywall.",
+   "verbatim_quote": "After your permit is issued, have your plumbing or mechanical work inspected before covering pipes",
+   "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-05",
+   "topic": "Plumbing code exemptions",
+   "claim": "The exemptions DBI points to are in San Francisco Plumbing Code Section 104.2 (Exempt Work).",
+   "verbatim_quote": "See exemptions in San Francisco Plumbing Code Section 104.2",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+   "source_label": "San Francisco Plumbing Code Section 104.0 — Permits (official code library, 2026 S-96 current)",
+   "source_tier": "official-government",
+   "verified": true,
+   "caveat": "Section 104.0 was retrieved and the exemption reference confirmed, but the verbatim text of subsection 104.2 itself was not extracted into this dataset. Left UNVERIFIED at the subsection level — see flag F-11."
+  },
+  {
+   "id": "R-06",
+   "topic": "Building code exemptions",
+   "claim": "For fixture replacement work, DBI points to San Francisco Building Code Section 106A.2 (Work exempt from permit).",
+   "verbatim_quote": "See exemptions in San Francisco Building Code Section 106a.2",
+   "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+   "source_label": "San Francisco Building Code Section 106A — Permits (official code library, 2026 S-96 current)",
+   "source_tier": "official-government",
+   "verified": true,
+   "caveat": "Section 106A was retrieved and the exemption reference confirmed, but the verbatim text of subsection 106A.2 itself was not extracted into this dataset. Left UNVERIFIED at the subsection level — see flag F-11."
+  },
+  {
+   "id": "R-07",
+   "topic": "In-kind bath permit route",
+   "claim": "DBI offers a separate online 'kitchen or bath remodel permit' for replacing bath fixtures in-kind with no structural work; plumbing-only work uses the plumbing and mechanical permit instead.",
+   "verbatim_quote": "Apply online to renovate or replace kitchen or bath fixtures in-kind, with no structural work.",
+   "source_url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit/",
+   "source_label": "SF.gov — Apply for a kitchen or bath remodel permit (DBI)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-08",
+   "topic": "Bath permit valuation floor",
+   "claim": "DBI publishes a minimum valuation of per bathroom used with the kitchen/bath permit cost schedule.",
+   "verbatim_quote": "Minimum valuations are per kitchen and per bathroom, according to DBI's cost schedule.",
+   "source_url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit/",
+   "source_label": "SF.gov — Apply for a kitchen or bath remodel permit (DBI)",
+   "source_tier": "official-government",
+   "verified": true,
+   "caveat": "This is a fee/valuation floor published by DBI for that permit type. It is not a statement that the job must cost that amount."
+  },
+  {
+   "id": "R-09",
+   "topic": "Contractor licence threshold",
+   "claim": "California exempts a project from contractor-licensing only when the aggregate contract price is under AND the work does not require a building permit. If the work requires a permit, the exemption does not apply regardless of price.",
+   "verbatim_quote": "(a) This chapter does not apply to a work or operation on one undertaking or project by one or more contracts if the aggregate contract price for labor, materials, and all other items is less than one thousand dollars (), that work or operation being considered of casual, minor, or inconsequential nature, and the work or operation does not require a building permit.",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+   "source_label": "California Business and Professions Code section 7048 (official, California Legislative Information)",
+   "source_tier": "official-government",
+   "verified": true,
+   "note": "Amended by Stats. 2025, Ch. 67, Sec. 12 (AB 1170), effective January 1, 2026 — the threshold is raised from the older figure that many third-party web pages still quote."
+  },
+  {
+   "id": "R-10",
+   "topic": "Tenant entry notice",
+   "claim": "A landlord may enter a tenant's unit to make necessary or agreed repairs, but must give reasonable written notice; 24 hours is presumed reasonable. Entry is limited to normal business hours unless the tenant consents at the time. No notice is needed for an emergency, or if the tenant is present and consents.",
+   "verbatim_quote": "The landlord shall give the tenant reasonable notice in writing of his or her intent to enter and enter only during normal business hours. The notice shall include the date, approximate time, and purpose of the entry... Twenty-four hours shall be presumed to be reasonable notice in absence of evidence to the contrary.",
+   "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "source_label": "California Civil Code section 1954 (official, California Legislative Information)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-11",
+   "topic": "C-36 scope covers this work",
+   "claim": "The C-36 Plumbing classification expressly includes maintenance and replacement of waste-disposal and related items, so a C-36 license is the correct classification for waste-and-overflow work.",
+   "verbatim_quote": "A plumbing contractor provides a means for a supply of safe water, ample in volume and of suitable temperature for the purpose intended and the proper disposal of fluid waste from the premises in all structures and fixed works... (f) The maintenance and replacement of all items described above...",
+   "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+   "source_label": "CSLB — C-36 Plumbing Contractor classification (official, State of California)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-12",
+   "topic": "Permit centre contact",
+   "claim": "DBI operates a Permit Center help desk that can confirm whether a specific scope needs a permit.",
+   "verbatim_quote": "Permit Center help desk 628-652-4900",
+   "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
+   "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-13",
+   "topic": "Permit application channel",
+   "claim": "Since September 14, 2026 most over-the-counter construction permits in San Francisco are available exclusively through the PermitSF portal.",
+   "verbatim_quote": "Starting September 14, 2026, most over-the-counter construction permits will be available exclusively on the PermitSF portal.",
+   "source_url": "https://www.sf.gov/departments--department-building-inspection--permit-services-dbi/",
+   "source_label": "SF.gov — Permit Services at DBI",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-14",
+   "topic": "Contractor registration for fast permits",
+   "claim": "Licensed contractors can register for an AUTH number on PermitSF to get the streamlined/Express permit experience.",
+   "verbatim_quote": "Get a streamlined experience applying for building permits by getting an AUTH number",
+   "source_url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf/",
+   "source_label": "SF.gov — Licensed contractors: register yourself or authorized agents on PermitSF",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-15",
+   "topic": "B (General Building) licence scope",
+   "claim": "A B-licence holder may take a prime contract for a project involving trades other than framing/carpentry only if the prime contract requires at least two unrelated building trades, or the contractor holds the appropriate specialty classification, or subcontracts with an appropriately licensed specialty contractor. Plumbing plus drywall is two unrelated trades, so a B contractor can legitimately hold the single prime contract for this job — and a B + C-36 holder can self-perform both.",
+   "verbatim_quote": "A general building contractor shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor to perform the work.",
+   "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+   "source_label": "CSLB — B General Building Contractor classification (official, State of California)",
+   "source_tier": "official-government",
+   "verified": true
+  },
+  {
+   "id": "R-16",
+   "topic": "Express permit eligibility",
+   "claim": "For eligible plumbing and mechanical projects, applicants connected to an AUTH record can get their permit right away; DBI verifies the licence and connects authorized agents within 2 business days.",
+   "verbatim_quote": "For eligible electrical, plumbing and mechanical, reroofing, and kitchen or bath projects, applicants connected to an AUTH record can get their permit right away.",
+   "source_url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf/",
+   "source_label": "SF.gov — Licensed contractors: register yourself or authorized agents on PermitSF",
+   "source_tier": "official-government",
+   "verified": true
+  }
+ ],
+ "_amounts_policy": "Quote amounts are withheld from this archived data file: no official source confirms them. The current figures and their labels are maintained in site-data/ and published on the canonical site root."
 }

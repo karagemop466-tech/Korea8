@@ -1,14 +1,76 @@
-{"flags":[
-{"id":"F-01","item":"Estimate amounts (all three)","detail":"Supplied in the owner brief dated as written '8/30/26'. No provider document or official price list confirms any figure. Published blank + UNVERIFIED everywhere in this brief.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"},
-{"id":"F-02","item":"Estimate scopes are not comparable","detail":"Q-01 reads as full waste-and-overflow replacement; Q-02 is lever + plug + spout/diverter with labour/materials; Q-03 is repair/adjust of the plunger handle only. Do not rank them by price.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"},
-{"id":"F-03","item":"No provider contacted; no job-specific experience confirmed","detail":"No official source can confirm that any listed firm will remove a stuck trip lever from above, has done this exact job, or is available. Those cells are blank. Yelp search results (Oct 2026 index snapshot) show the firms serve San Francisco plumbing generally — that is anecdotal review-platform evidence, not verification.","source":"https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA"},
-{"id":"F-04","item":"WC-exempt licences (P-02, P-02B, P-04)","detail":"CSLB records state each 'certified that they have no employees at this time'. Ask in writing who will physically perform the work and whose insurance covers them before contracting.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"},
-{"id":"F-05","item":"P-07 Advanced Plumbing — CSLB Additional Status","detail":"Record checked 2026-11-07 is current/active but states the licence 'may be suspended at a future date for failure to resolve an outstanding final liability'. Resolve before considering this firm.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"},
-{"id":"F-06","item":"P-03 Fast Response — record details to confirm","detail":"CSLB address spells '236 W POTRAL AVE #459' (expected 'Portal'); workers'-comp policy expires 2026-12-18, the soonest in this set. Confirm address and renewed coverage at contracting.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"},
-{"id":"F-07","item":"Yelp ratings/review counts","detail":"Yelp blocks automated retrieval; figures seen in search-index snippets are point-in-time, change continuously, and are never treated as verified in this brief. Use the linked Yelp search to read current reviews manually.","source":"https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA"},
-{"id":"F-08","item":"Old SF.gov permit URL is dead","detail":"https://www.sf.gov/information/apply-plumbing-and-mechanical-permit returns the SF.gov 404 page on 2026-11-07. The live page is https://www.sf.gov/apply-plumbing-and-mechanical-permit . Earlier briefs in this repo may still cite the dead URL.","source":"https://www.sf.gov/apply-plumbing-and-mechanical-permit"},
-{"id":"F-09","item":"No owner photos in the repository","detail":"The brief says photos may be included; none were found in this repo on 2026-11-07. All access analysis here is description-based only.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"},
-{"id":"F-10","item":"Duplicate briefs / canonical URL","detail":"This repo already publishes bathtub-overflow/, bathroom-overflow/, trip-lever/ and bathtub/ for the same job, plus a root dashboard. This session added overflow-trip-lever/ in its own claimed scope rather than editing another session's files. Owner: pick one canonical URL; the others can then redirect.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"},
-{"id":"F-11","item":"Repo topic mismatch","detail":"The repository's original project (AGENTS.md, README.md, src/korea8/) is an unrelated DOE GEMS geothermal project. Nothing from it was modified by this session.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"},
-{"id":"F-12","item":"GitHub Pages status at session start","detail":"gh api reported Pages status 'errored' for the repo on 2026-11-07 before this session's merge. Prior sessions diagnosed a 10-builds/hour soft limit after many rapid merges. Deploy must be re-checked after this merge and recorded in COORDINATION.md.","source":"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"}
-]}
+{
+ "flags": [
+  {
+   "id": "F-01",
+   "item": "Estimate amounts (all three)",
+   "detail": "Supplied in the owner brief dated as written '8/30/26'. No provider document or official price list confirms any figure. Published blank + UNVERIFIED everywhere in this brief.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  },
+  {
+   "id": "F-02",
+   "item": "Estimate scopes are not comparable",
+   "detail": "Q-01 reads as full waste-and-overflow replacement; Q-02 is lever + plug + spout/diverter with labour/materials; Q-03 is repair/adjust of the plunger handle only. Do not rank them by price.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  },
+  {
+   "id": "F-03",
+   "item": "No provider contacted; no job-specific experience confirmed",
+   "detail": "No official source can confirm that any listed firm will remove a stuck trip lever from above, has done this exact job, or is available. Those cells are blank. Yelp search results (Oct 2026 index snapshot) show the firms serve San Francisco plumbing generally — that is anecdotal review-platform evidence, not verification.",
+   "source": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA"
+  },
+  {
+   "id": "F-04",
+   "item": "WC-exempt licences (P-02, P-02B, P-04)",
+   "detail": "CSLB records state each 'certified that they have no employees at this time'. Ask in writing who will physically perform the work and whose insurance covers them before contracting.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+  },
+  {
+   "id": "F-05",
+   "item": "P-07 Advanced Plumbing — CSLB Additional Status",
+   "detail": "Record checked 2026-11-07 is current/active but states the licence 'may be suspended at a future date for failure to resolve an outstanding final liability'. Resolve before considering this firm.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+  },
+  {
+   "id": "F-06",
+   "item": "P-03 Fast Response — record details to confirm",
+   "detail": "CSLB address spells '236 W POTRAL AVE #459' (expected 'Portal'); workers'-comp policy expires 2026-12-18, the soonest in this set. Confirm address and renewed coverage at contracting.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+  },
+  {
+   "id": "F-07",
+   "item": "Yelp ratings/review counts",
+   "detail": "Yelp blocks automated retrieval; figures seen in search-index snippets are point-in-time, change continuously, and are never treated as verified in this brief. Use the linked Yelp search to read current reviews manually.",
+   "source": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA"
+  },
+  {
+   "id": "F-08",
+   "item": "Old SF.gov permit URL is dead",
+   "detail": "https://www.sf.gov/information/apply-plumbing-and-mechanical-permit returns the SF.gov 404 page on 2026-11-07. The live page is https://www.sf.gov/apply-plumbing-and-mechanical-permit. Earlier briefs in this repo may still cite the dead URL.",
+   "source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+  },
+  {
+   "id": "F-09",
+   "item": "No owner photos in the repository",
+   "detail": "The brief says photos may be included; none were found in this repo on 2026-11-07. All access analysis here is description-based only.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  },
+  {
+   "id": "F-10",
+   "item": "Duplicate briefs / canonical URL",
+   "detail": "This repo already publishes bathtub-overflow/, bathroom-overflow/, trip-lever/ and bathtub/ for the same job, plus a root dashboard. This session added overflow-trip-lever/ in its own claimed scope rather than editing another session's files. Owner: pick one canonical URL; the others can then redirect.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  },
+  {
+   "id": "F-11",
+   "item": "Repo topic mismatch",
+   "detail": "The repository's original project (AGENTS.md, README.md, src/korea8/) is an unrelated DOE GEMS geothermal project. Nothing from it was modified by this session.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  },
+  {
+   "id": "F-12",
+   "item": "GitHub Pages status at session start",
+   "detail": "gh api reported Pages status 'errored' for the repo on 2026-11-07 before this session's merge. Prior sessions diagnosed a 10-builds/hour soft limit after many rapid merges. Deploy must be re-checked after this merge and recorded in COORDINATION.md.",
+   "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  }
+ ]
+}
