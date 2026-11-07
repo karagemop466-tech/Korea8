@@ -907,3 +907,22 @@ legacy Pages status is not treated as proof of the current commit.
 | Local checks | 22/22 verifier checks, 10 unit tests, pytest 10 passed, local HTTP 200 for canonical pages/CSS/GEMS docs/redirect stub |
 
 F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and non-blocking. No provider was contacted or booked.
+## Session `arena/770fba4f-korea8` — independent re-verification and final integration (2026-11-07)
+
+Claim recorded before implementation. The Arena session branch is fixed; this is the session identifier used in place of a separately created `session-*` branch. No other branch will be created or pushed.
+
+| ID | Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|---|
+| R770-01 | Repository inventory and irregularity audit | in progress | `arena/770fba4f-korea8` | `overflow-review/repository/**`, `COORDINATION.md` |
+| R770-02 | Fresh official-source provider, technical and requirements research | in progress | `arena/770fba4f-korea8` | `overflow-review/data/**`, `overflow-review/sources/**` |
+| R770-03 | Executive summary and unified static dashboard | unclaimed | `arena/770fba4f-korea8` | `overflow-review/site/**`, `overflow-review/build.py`, `overflow-review/EXECUTIVE_SUMMARY.md` |
+| R770-04 | Automated row, source, link and responsive-browser checks | unclaimed | `arena/770fba4f-korea8` | `overflow-review/check.py`, `overflow-review/tests/**`, `overflow-review/evidence/**` |
+| R770-05 | Final integration, PR, merge and actual Pages verification | unclaimed | `arena/770fba4f-korea8` | Shared root HTML/CSS and `site-data/**`; duplicate public-route redirects; `COORDINATION.md`; `.github/workflows/overflow-site.yml` only after R770-01–04 finish |
+
+### Stale-claim handoff and concurrency boundary
+
+At 2026-11-07 20:19 UTC, the unfinished integrations owned by `arena/ae482104-korea8` and `arena-82aa8544` had no branch commits after 2026-11-06 13:40:12Z and 13:49:52Z respectively (official repository commit API checked). Both exceed the requested 60-minute takeover threshold. Their historical records remain intact. Shared-output editing is deferred until this session's research/build/check tasks finish; the stale final-integration responsibility is then handed to R770-05. No new edits touch the unrelated DOE GEMS research, its data/evidence, or `docs/index.html`.
+
+Open PRs #12, #17, #21, #22 and #24 were inspected before claiming. They predate this session by more than 24 hours. Their unmerged changes will be assessed rather than silently overwritten; main already contains the earlier integrated dossiers. New research files use the exclusive `overflow-review/**` namespace to avoid conflicts.
+
+Publication will contain neutral repair information and source-linked findings only. Owner-supplied facts will be identified as such; unsupported factual/price cells remain blank and are flagged. No provider will be described as having accepted this exact job unless an official provider source establishes it.
