@@ -1,0 +1,247 @@
+{
+  "dataset": "flags",
+  "rows": [
+    {
+      "id": "F-01",
+      "severity": "needs review",
+      "title": "Owner-reported / missing evidence",
+      "detail": "Condition, prior attempts, quote date and preferences come from the owner. No photos, inspection report, model ID or quote documents were supplied.",
+      "action": "Unsupported factual cells remain blank. Do not infer the failed part or access feasibility.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-02",
+      "severity": "needs review",
+      "title": "Unverified estimates",
+      "detail": "Three amount values were supplied in the brief but no provider-issued document or official price confirms them.",
+      "action": "Amount, quote-date and inclusion cells are blank. Scopes are labeled owner-reported; compare only after written like-for-like bids.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-03",
+      "severity": "needs review",
+      "title": "No accepted combined scope",
+      "detail": "No company was contacted; availability, exact-job acceptance, combined plumbing/drywall price and schedule are unconfirmed.",
+      "action": "Shortlist is for screening only. Require one written scope naming all licensed performers.",
+      "source_ids": [
+        "CSLB-Contracts"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-04",
+      "severity": "needs review",
+      "title": "Review-platform limitation",
+      "detail": "Yelp profile fetches were blocked or available only through changing search excerpts. Review platforms are not government licensing sources.",
+      "action": "Numeric ratings/counts stay blank. Links are provided for current review discovery; no review excerpt proves this exact repair.",
+      "source_ids": [
+        "RV-Heise"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-05",
+      "severity": "needs review",
+      "title": "Repository mismatch / duplicate drafts",
+      "detail": "The checkout mixes an unrelated DOE GEMS research project with several bathtub dossiers. Prior claims, counts and public routes differ.",
+      "action": "Preserve unrelated artifacts and Git history. Audit structure/provenance; do not claim scientific revalidation of the unrelated project. Root is canonical.",
+      "source_ids": [
+        "GH-Repo"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-06",
+      "severity": "needs review",
+      "title": "Point-in-time license data",
+      "detail": "CSLB statuses can change and its database may lag.",
+      "action": "All license rows were checked 2026-11-07; recheck immediately before contracting.",
+      "source_ids": [
+        "CSLB-977638"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-07",
+      "severity": "needs review",
+      "title": "Unsupported prior assertions",
+      "detail": "Earlier drafts used phrases such as legally capable, same operator and exact-job experience beyond what the cited records establish.",
+      "action": "New tables distinguish license classification, advertised services, published job examples and unconfirmed acceptance.",
+      "source_ids": [
+        "CSLB-B"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-08",
+      "severity": "needs review",
+      "title": "Workers-compensation exemption",
+      "detail": "Several records certify no employees and are exempt from workers-compensation insurance.",
+      "action": "Exemption is not evidence of general-liability insurance. Confirm actual crew and insurance certificates for every performer.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-09",
+      "severity": "needs review",
+      "title": "Address / experience wording differences",
+      "detail": "Fast Response CSLB record spells the street W POTRAL AVE; earlier drafts normalized it. Website says 25+ years while the license was issued in 2017.",
+      "action": "Preserve official record wording; do not infer an address correction or equate license age with worker experience.",
+      "source_ids": [
+        "CSLB-1024971"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-10",
+      "severity": "needs review",
+      "title": "Company-published job evidence / soft 404",
+      "detail": "Heise’s project articles render, but contain an embedded unrelated Page Not Found template. Job claims are self-published.",
+      "action": "Use the visible article/title as company evidence, flag the template irregularity, and request references. No drywall restoration or exact seized-part outcome is established.",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-11",
+      "severity": "needs review",
+      "title": "Minimum-job / commercial focus",
+      "detail": "Some B-licensed firms emphasize larger remodels, design-build or commercial projects.",
+      "action": "Do not assume they accept a small isolated repair; leave acceptance blank.",
+      "source_ids": [
+        "WEB-SFBG"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-12",
+      "severity": "needs review",
+      "title": "Shared contact details are not ownership proof",
+      "detail": "Save-On-Interior #749536 and Bay Area Plumbing #757796 share address/phone in CSLB records.",
+      "action": "Earlier same-operator wording is not adopted. Confirm contracting entity and license usage in writing.",
+      "source_ids": [
+        "CSLB-749536"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-13",
+      "severity": "needs review",
+      "title": "Drywall partner is not a plumber",
+      "detail": "Bernal Hill Drywall holds C-9 + B, not C36.",
+      "action": "Use an appropriately licensed plumbing performer under the chosen contract structure.",
+      "source_ids": [
+        "CSLB-995163"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-14",
+      "severity": "needs review",
+      "title": "Official future-suspension warning",
+      "detail": "Advanced Plumbing and Drain #1009195 is active but carries an outstanding-final-liability additional status.",
+      "action": "Hold pending direct review of the official record; do not describe the warning as an actual suspension.",
+      "source_ids": [
+        "CSLB-1009195"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-15",
+      "severity": "needs review",
+      "title": "B-2 scope not fully retrieved",
+      "detail": "HARP #1105133 is verified as B-2, but the classification page returned navigation only.",
+      "action": "Do not infer plumbing self-performance authority; require the appropriately licensed plumbing subcontractor.",
+      "source_ids": [
+        "CSLB-1105133"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-16",
+      "severity": "needs review",
+      "title": "Out-of-city address of record",
+      "detail": "Several candidates have CSLB addresses outside San Francisco.",
+      "action": "Address is not service-area proof. Dispatch, travel charges and exact-job acceptance remain blank until confirmed.",
+      "source_ids": [
+        "CSLB-1140843"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-17",
+      "severity": "needs review",
+      "title": "Complaint disclosure / license mapping",
+      "detail": "D G #297604 has official complaint disclosure. Cahill is #300647, not #297604.",
+      "action": "Review the official citation disclosure; do not use third-party license mappings.",
+      "source_ids": [
+        "CSLB-DG-Complaint"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-18",
+      "severity": "needs review",
+      "title": "Suspended candidate",
+      "detail": "Kenneth Asire #1027286 shows contractor-bond suspension; bond cancellation date 08/16/2026 is displayed.",
+      "action": "Excluded from active shortlist. Reconsider only after official status changes and bond is verified.",
+      "source_ids": [
+        "CSLB-1027286"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-19",
+      "severity": "needs review",
+      "title": "Unidentified license",
+      "detail": "Portola Plumbing Services appeared in a prior draft without a confirmed official license match.",
+      "action": "Identity/license fields remain blank; hold until an official record is established.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-20",
+      "severity": "needs review",
+      "title": "Code-edition / interpretation limitation",
+      "detail": "The directly retrieved access-panel explanation is a 2018 UPC training spotlight and expressly not an official interpretation. Current local section text was not confirmed.",
+      "action": "Do not present 12 inches as a verified local determination for this tub. Ask the licensed contractor to identify applicable current requirements.",
+      "source_ids": [
+        "IAPMO-Access"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-21",
+      "severity": "needs review",
+      "title": "Prior deployment diagnosis corrected",
+      "detail": "The latest legacy Pages run built successfully but its deploy job failed after about ten minutes. Earlier logs attributed failures to build-rate limits without sufficient evidence.",
+      "action": "Use an official GitHub Actions Pages workflow with explicit build gates and verify the deployed page content, not just a merge.",
+      "source_ids": [
+        "GH-Pages"
+      ],
+      "status": "needs review"
+    },
+    {
+      "id": "F-22",
+      "severity": "needs review",
+      "title": "No independent quality guarantee",
+      "detail": "License status, bonds, reviews and company project pages do not guarantee workmanship or fitness for this concealed repair.",
+      "action": "Use written scope, references, insurance checks and acceptance testing; flags remain visible after publication.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "status": "needs review"
+    }
+  ]
+}

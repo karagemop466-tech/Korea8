@@ -946,3 +946,9 @@ Rebasing onto PR #34 produced an append conflict in `COORDINATION.md`. All incom
 ### R770 task transition
 
 R770-01 repository audit and R770-02 official-source research are done. R770-03 unified dashboard and R770-04 automated checks are now in progress in the exclusive `overflow-review/**` scope. PR #33 was observed closed/unmerged at 2026-11-07 20:31 UTC; its branch work remains preserved. Shared-output integration will rebase on the latest main and retain all existing records before any root changes.
+
+### R770 build/check completion and final-integration claim
+
+R770-03 and R770-04 are complete in the exclusive namespace: 11 static pages generated from the reviewed JSON; 3,533 structural/provenance/link/blank-value checks pass; real Chromium checks pass on all 11 pages at 1440px and 390px, including provider filtering and zero JavaScript errors. Desktop/mobile screenshots and machine-readable reports are under `overflow-review/evidence/`.
+
+PR #33 is closed/unmerged and main remains at PR #34's canonical integration. With the independent tasks complete, R770-05 now claims final shared integration: root HTML/CSS, duplicate public-route redirects, `overflow-review/integrate.py`, and `.github/workflows/overflow-site.yml`. Existing main records and unrelated GEMS files will be preserved. The new root will be generated from `overflow-review/data/`; old `site-data/` remains historical, not a second authoritative input. Deployment will be verified from the actual public URL after merge.
