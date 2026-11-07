@@ -11,13 +11,13 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="index.html"><span class="brand-mark">◧</span> Trip Lever Project</a>
-    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="technical-approach.html">Technical Approach</a><a href="sources.html">Sources</a><a href="flagged-for-review.html" class="active">Flagged for Review</a></nav>
+    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="technical-approach.html">Technical Approach</a><a href="sources.html">Sources</a><a href="verification.html">Verification</a><a href="flagged-for-review.html" class="active">Flagged for Review</a></nav>
   </div>
 </header>
 <main class="wrap">
 
 <h1>Flagged for Review</h1>
-<p class="updated">Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here.</p>
+<p class="updated">Non-blocking items published for the owner&#x27;s review. Flagged items never block the site or the merge. Where a value could not be confirmed from an official source it is left blank on the data pages and described here.</p>
 
 <article class="flagcard" id="F-01">
   <div class="flag-head">
@@ -32,9 +32,9 @@
   <div class="flag-head">
     <code>F-02</code>
     <span class="pill pill-warn">unverified-data</span>
-    <h3>All three estimates are user-provided and could not be independently verified</h3>
+    <h3>The three estimates are owner-supplied quotes; no official source can confirm a private quote</h3>
   </div>
-  <p>E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor&#x27;s verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.</p>
+  <p>E-01 ($614), E-02 ($550) and E-03 ($135) are quotations the project owner received on 2026-08-30. No public or official register records what a contractor quotes privately, so these amounts are published in a column headed &#x27;Quoted amount (owner-supplied)&#x27; and the separate official-confirmation field is left blank for all three rows. Nothing was inferred, rounded or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification; the owner must confirm they are the same businesses he contacted.</p>
   <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json" target="_blank" rel="noopener">Estimates data (project/estimates.json)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">CSLB license check entry point (official)</a></p>
 </article>
 <article class="flagcard" id="F-03">
@@ -59,9 +59,9 @@
   <div class="flag-head">
     <code>F-05</code>
     <span class="pill pill-info">verification-limit</span>
-    <h3>CSLB statuses are point-in-time (data as of 2026-11-06)</h3>
+    <h3>CSLB statuses are point-in-time (all 13 rows re-verified 2026-11-07)</h3>
   </div>
-  <p>License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status &#x27;can change at any time&#x27; and that its database may lag. Re-check each linked CSLB page before contracting. Worker&#x27;s-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response&#x27;s WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).</p>
+  <p>All 13 licence rows were re-read line by line on the official CSLB licence-detail pages on 2026-11-07 and matched this site&#x27;s data (status, classification, entity, issue/expiry dates, address of record, phone, bond and workers&#x27; comp). CSLB states that status can change at any time and that its database may lag, so re-check each linked page before contracting. Four licences are workers&#x27;-compensation exempt (certified no employees): Bay Area Plumbing #757796, Save-On-Interior #749536, SF Building Group #1106131 and Rapid Flow #1115649. Fast Response&#x27;s policy #1024971 expires 2026-12-18; Heise&#x27;s #1089561 expires 2027-01-11; Discount #1140843 carries $2,000,000 liability cover to 2027-04-01.</p>
   <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener">CSLB disclaimer on license-detail pages</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/" target="_blank" rel="noopener">CSLB — Hire a Contractor guidance</a></p>
 </article>
 <article class="flagcard" id="F-06">
@@ -112,7 +112,7 @@
 <article class="flagcard" id="F-12">
   <div class="flag-head">
     <code>F-12</code>
-    <span class="pill pill-info">caution</span>
+    <span class="pill pill-warn">caution</span>
     <h3>Advanced Plumbing and Drain (#1009195): CSLB &#x27;may be suspended at a future date&#x27; warning</h3>
   </div>
   <p>The official CSLB record for license #1009195 (verified 2026-11-06) carries an Additional Status: &#x27;The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.&#x27; The license is currently active. Re-check the CSLB page immediately before any engagement.</p>
@@ -121,22 +121,61 @@
 <article class="flagcard" id="F-11">
   <div class="flag-head">
     <code>F-11</code>
-    <span class="pill pill-info">needs-review</span>
-    <h3>Parallel-session brief publishes city building-department administrative content — owner review requested</h3>
+    <span class="pill pill-info">informational</span>
+    <h3>Duplicate public briefs from parallel sessions are retired to redirects</h3>
   </div>
-  <p>A parallel session&#x27;s brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project&#x27;s public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow" target="_blank" rel="noopener">Parallel brief under review (bathtub-overflow/)</a> <a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">Cross-session coordination board</a></p>
+  <p>Earlier parallel sessions published their own copies of this brief at /bathtub/, /bathtub-overflow/, /bathroom-overflow/, /trip-lever/, /overflow-trip-lever/ and /docs/bathtub-*.html (plus their own copies of docs/index.html and two executive-summary markdown files at the root). Those 51 pages now open a redirect page that forwards to the matching page of this canonical site, so no old URL breaks and only one authoritative copy is browsable. The retired pages and their data files remain in the repository history and on disk; their unique verified findings (Save-On-Interior #749536 and Ayoob &amp; Peery #392967) were re-verified and carried into the canonical provider table.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8" target="_blank" rel="noopener">This repository (history retains the retired pages)</a></p>
+</article>
+<article class="flagcard" id="F-13">
+  <div class="flag-head">
+    <code>F-13</code>
+    <span class="pill pill-warn">unverified-data</span>
+    <h3>Provider candidates from the retired briefs that were not re-verified in this pass are excluded from the table</h3>
+  </div>
+  <p>The retired briefs also listed FDL Plumbing (#1086935), Precision Rooter &amp; Drain, Citywide Plumbing, Kenneth Asire Plumbing, Clever Plumbing &amp; Rooter, Portola Plumbing Services, Cahill Contractors and D G Construction. They are not published here because this pass did not re-read their CSLB records; publishing them would mix verification dates inside one table. They remain available in the repository history and can be added if the owner wants them checked.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">CSLB Check a Licence (official)</a></p>
+</article>
+<article class="flagcard" id="F-14">
+  <div class="flag-head">
+    <code>F-14</code>
+    <span class="pill pill-warn">discrepancy</span>
+    <h3>CSLB spells the street name on Fast Response&#x27;s record as &#x27;POTRAL&#x27;</h3>
+  </div>
+  <p>The official CSLB record for #1024971 (re-read 2026-11-07) gives the address of record as &#x27;236 W POTRAL AVE #459, San Francisco, CA 94127&#x27;. That is a spelling error in the CSLB database, reproduced here rather than silently corrected. The company&#x27;s own site shows a different address (4444 Geary Blvd Ste 203 — F-08), which is why the two must not be blended.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" target="_blank" rel="noopener">CSLB license detail #1024971 (official)</a></p>
+</article>
+<article class="flagcard" id="F-15">
+  <div class="flag-head">
+    <code>F-15</code>
+    <span class="pill pill-warn">gap</span>
+    <h3>No written confirmation from any provider that the lever can be removed from above</h3>
+  </div>
+  <p>The brief reports that five or more licensed plumbers could not remove the assembly from above without risking the hidden plumbing, but no provider has put that in writing and no provider has quoted the below-floor plumbing-plus-drywall scope as one itemised job. Until that exists, both the &#x27;from above&#x27; and the &#x27;from below&#x27; path remain options rather than decisions.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json" target="_blank" rel="noopener">Requirements register (project/requirements.json)</a></p>
+</article>
+<article class="flagcard" id="F-16">
+  <div class="flag-head">
+    <code>F-16</code>
+    <span class="pill pill-warn">unverified-data</span>
+    <h3>Cost benchmarks are third-party guide figures, not official prices</h3>
+  </div>
+  <p>The published ranges ($200–$1,025 for tub drain work; $300–$930 for drywall patching) come from 2026 consumer cost guides (HomeGuide, Angi). They are labelled as third-party and are not treated as verified; no government or licensing body publishes repair prices, and the money rows in the executive summary therefore show &#x27;unverified&#x27;.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://homeguide.com/costs/bathtub-repair-cost" target="_blank" rel="noopener">HomeGuide — bathtub repair cost</a> <a class="srclink flagged-link" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi — bathroom leak repair cost</a></p>
 </article>
 
 </main>
 <footer class="wrap footer">
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
-     Built 2026-11-06 13:45 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
+     Built 2026-11-07 20:22 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
-     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
-     Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
-     Licenses re-verified 2026-11-06 via official CSLB pages — statuses can change; re-check before contracting.</p>
+  <p class="muted">This root dashboard is the single authoritative copy of the brief. Earlier parallel-session copies
+     (<code>bathtub/</code>, <code>bathtub-overflow/</code>, <code>bathroom-overflow/</code>, <code>trip-lever/</code>,
+     <code>docs/bathtub-*</code>) now open a redirect page forwarding here — see
+     <a href="flagged-for-review.html#F-11">F-11</a>. Licence rows re-verified 2026-11-07
+     on the official CSLB pages; statuses can change, so re-check before contracting.
+     Preserved archive of the unrelated prior project (not part of this brief):
+     <a href="docs/executive-summary.html">DOE GEMS evidence site</a>.</p>
 </footer>
 </body>
 </html>

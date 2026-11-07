@@ -2,9 +2,11 @@
   "meta": {
     "title": "Estimates — User-provided quotes",
     "quote_date": "2026-08-30",
-    "recorded": "2026-11-06",
-    "verification_note": "All three estimates are quotations provided by the project owner from prior outreach. They were NOT re-verified against any official source in this session (none exists). Published as user-provided with verification = false. No price, scope, or provider name was altered or inferred.",
-    "related_flag": "F-02"
+    "recorded": "2026-11-07",
+    "verification_note": "The three amounts are primary data supplied by the project owner from his own outreach; no public or official register records what a contractor quoted privately. The site therefore keeps them in a column labelled 'Quoted amount (owner-supplied)' and keeps a separate 'Official-source confirmation' field blank for all three rows, because no official source exists (flag F-02). No amount, scope or provider name was altered, inferred or rounded.",
+    "related_flag": "F-02",
+    "amount_label": "Quoted amount (owner-supplied)",
+    "official_confirmation": "blank — no official source exists for a private quote (F-02)"
   },
   "estimates": [
     {
@@ -13,13 +15,19 @@
       "date": "2026-08-30",
       "quoted_scope": "Remove bathtub wastewater overflow trip lever — replacing waste and overflow",
       "price_usd": 614,
-      "price_basis": "As quoted by user (scope: waste-and-overflow replacement)",
+      "price_basis": "As quoted by user (scope: waste-and-overflow replacement); owner-supplied, not confirmed by any official source",
       "identified_entity": "Expert Plumbing Solutions — CSLB #977638 (name, SF address, plumbing classification match)",
       "identification_status": "Probable match, unconfirmed by project owner",
       "verified": false,
       "source_links": [
-        {"label": "Provider official site (eplumbingsolutions.com)", "url": "https://www.eplumbingsolutions.com/"},
-        {"label": "CSLB license detail #977638 (official)", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"}
+        {
+          "label": "Provider official site (eplumbingsolutions.com)",
+          "url": "https://www.eplumbingsolutions.com/"
+        },
+        {
+          "label": "CSLB license detail #977638 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+        }
       ]
     },
     {
@@ -28,13 +36,19 @@
       "date": "2026-08-30",
       "quoted_scope": "Replace lever for the bathtub plug and spout with diverter — includes labor and materials",
       "price_usd": 550,
-      "price_basis": "As quoted by user (scope: lever + diverter replacement, labor + materials)",
+      "price_basis": "As quoted by user (scope: lever + diverter replacement, labor + materials); owner-supplied, not confirmed by any official source",
       "identified_entity": "Bay Area Plumbing — CSLB #757796 (name, SF address, plumbing classification match)",
       "identification_status": "Probable match, unconfirmed by project owner",
       "verified": false,
       "source_links": [
-        {"label": "Provider official site (bayareaplumbingsf.com)", "url": "https://www.bayareaplumbingsf.com/"},
-        {"label": "CSLB license detail #757796 (official)", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"}
+        {
+          "label": "Provider official site (bayareaplumbingsf.com)",
+          "url": "https://www.bayareaplumbingsf.com/"
+        },
+        {
+          "label": "CSLB license detail #757796 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+        }
       ]
     },
     {
@@ -43,13 +57,19 @@
       "date": "2026-08-30",
       "quoted_scope": "Repair or adjust bathtub wastewater plunger handle",
       "price_usd": 135,
-      "price_basis": "As quoted by user (scope: repair/adjust — not replacement)",
+      "price_basis": "As quoted by user (scope: repair/adjust — not replacement); owner-supplied, not confirmed by any official source",
       "identified_entity": "Fast Response Plumbing & Rooter (dba of Joseph Tinsley) — CSLB #1024971 (name, SF service area, plumbing classification match)",
       "identification_status": "Probable match, unconfirmed by project owner",
       "verified": false,
       "source_links": [
-        {"label": "Provider official site (fastresponseplumbingsf.com)", "url": "https://www.fastresponseplumbingsf.com/"},
-        {"label": "CSLB license detail #1024971 (official)", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"}
+        {
+          "label": "Provider official site (fastresponseplumbingsf.com)",
+          "url": "https://www.fastresponseplumbingsf.com/"
+        },
+        {
+          "label": "CSLB license detail #1024971 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+        }
       ]
     }
   ],
