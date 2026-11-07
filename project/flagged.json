@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Flagged for Review",
-    "compiled": "2026-11-06",
-    "note": "Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here."
+    "compiled": "2026-11-07",
+    "note": "Non-blocking items published for the owner's review. Flagged items never block the site or the merge. Where a value could not be confirmed from an official source it is left blank on the data pages and described here."
   },
   "flags": [
     {
@@ -24,8 +24,8 @@
     {
       "id": "F-02",
       "severity": "unverified-data",
-      "title": "All three estimates are user-provided and could not be independently verified",
-      "detail": "E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor's verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.",
+      "title": "The three estimates are owner-supplied quotes; no official source can confirm a private quote",
+      "detail": "E-01 ($614), E-02 ($550) and E-03 ($135) are quotations the project owner received on 2026-08-30. No public or official register records what a contractor quotes privately, so these amounts are published in a column headed 'Quoted amount (owner-supplied)' and the separate official-confirmation field is left blank for all three rows. Nothing was inferred, rounded or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification; the owner must confirm they are the same businesses he contacted.",
       "source_links": [
         {
           "label": "Estimates data (project/estimates.json)",
@@ -68,8 +68,8 @@
     {
       "id": "F-05",
       "severity": "verification-limit",
-      "title": "CSLB statuses are point-in-time (data as of 2026-11-06)",
-      "detail": "License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status 'can change at any time' and that its database may lag. Re-check each linked CSLB page before contracting. Worker's-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response's WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).",
+      "title": "CSLB statuses are point-in-time (all 13 rows re-verified 2026-11-07)",
+      "detail": "All 13 licence rows were re-read line by line on the official CSLB licence-detail pages on 2026-11-07 and matched this site's data (status, classification, entity, issue/expiry dates, address of record, phone, bond and workers' comp). CSLB states that status can change at any time and that its database may lag, so re-check each linked page before contracting. Four licences are workers'-compensation exempt (certified no employees): Bay Area Plumbing #757796, Save-On-Interior #749536, SF Building Group #1106131 and Rapid Flow #1115649. Fast Response's policy #1024971 expires 2026-12-18; Heise's #1089561 expires 2027-01-11; Discount #1140843 carries $2,000,000 liability cover to 2027-04-01.",
       "source_links": [
         {
           "label": "CSLB disclaimer on license-detail pages",
@@ -175,17 +175,65 @@
     },
     {
       "id": "F-11",
-      "severity": "needs-review",
-      "title": "Parallel-session brief publishes city building-department administrative content — owner review requested",
-      "detail": "A parallel session's brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project's public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).",
+      "severity": "informational",
+      "title": "Duplicate public briefs from parallel sessions are retired to redirects",
+      "detail": "Earlier parallel sessions published their own copies of this brief at /bathtub/, /bathtub-overflow/, /bathroom-overflow/, /trip-lever/ and /docs/bathtub-*.html. Those routes now open a redirect page that forwards to the corresponding page of this canonical site, so no old URL breaks and only one authoritative copy is browsable. The retired pages and their data files remain in the repository history and on disk; their unique verified findings (Save-On-Interior #749536 and Ayoob & Peery #392967) were re-verified and carried into the canonical provider table.",
       "source_links": [
         {
-          "label": "Parallel brief under review (bathtub-overflow/)",
-          "url": "https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow"
+          "label": "This repository (history retains the retired pages)",
+          "url": "https://github.com/karagemop466-tech/Korea8"
+        }
+      ]
+    },
+    {
+      "id": "F-13",
+      "severity": "unverified-data",
+      "title": "Provider candidates from the retired briefs that were not re-verified in this pass are excluded from the table",
+      "detail": "The retired briefs also listed FDL Plumbing (#1086935), Precision Rooter & Drain, Citywide Plumbing, Kenneth Asire Plumbing, Clever Plumbing & Rooter, Portola Plumbing Services, Cahill Contractors and D G Construction. They are not published here because this pass did not re-read their CSLB records; publishing them would mix verification dates inside one table. They remain available in the repository history and can be added if the owner wants them checked.",
+      "source_links": [
+        {
+          "label": "CSLB Check a Licence (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+        }
+      ]
+    },
+    {
+      "id": "F-14",
+      "severity": "discrepancy",
+      "title": "CSLB spells the street name on Fast Response's record as 'POTRAL'",
+      "detail": "The official CSLB record for #1024971 (re-read 2026-11-07) gives the address of record as '236 W POTRAL AVE #459, San Francisco, CA 94127'. That is a spelling error in the CSLB database, reproduced here rather than silently corrected. The company's own site shows a different address (4444 Geary Blvd Ste 203 — F-08), which is why the two must not be blended.",
+      "source_links": [
+        {
+          "label": "CSLB license detail #1024971 (official)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+        }
+      ]
+    },
+    {
+      "id": "F-15",
+      "severity": "gap",
+      "title": "No written confirmation from any provider that the lever can be removed from above",
+      "detail": "The brief reports that five or more licensed plumbers could not remove the assembly from above without risking the hidden plumbing, but no provider has put that in writing and no provider has quoted the below-floor plumbing-plus-drywall scope as one itemised job. Until that exists, both the 'from above' and the 'from below' path remain options rather than decisions.",
+      "source_links": [
+        {
+          "label": "Requirements register (project/requirements.json)",
+          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json"
+        }
+      ]
+    },
+    {
+      "id": "F-16",
+      "severity": "unverified-data",
+      "title": "Cost benchmarks are third-party guide figures, not official prices",
+      "detail": "The published ranges ($200–$1,025 for tub drain work; $300–$930 for drywall patching) come from 2026 consumer cost guides (HomeGuide, Angi). They are labelled as third-party and are not treated as verified; no government or licensing body publishes repair prices, and the money rows in the executive summary therefore show 'unverified'.",
+      "source_links": [
+        {
+          "label": "HomeGuide — bathtub repair cost",
+          "url": "https://homeguide.com/costs/bathtub-repair-cost"
         },
         {
-          "label": "Cross-session coordination board",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+          "label": "Angi — bathroom leak repair cost",
+          "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm"
         }
       ]
     }

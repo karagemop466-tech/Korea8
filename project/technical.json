@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Technical Analysis — Trip Lever, Access Paths, and Licensing Structure",
-    "compiled": "2026-11-06",
-    "note": "Each finding row carries its source. Manufacturer and code sources are authoritative for what they describe; trade-media and community sources are labeled third-party."
+    "compiled": "2026-11-07",
+    "note": "Each row is a fact taken directly from the linked source; the 'Verified' column gives the date the page was read. Nothing is paraphrased beyond what the source states, and no code section is cited from memory."
   },
   "findings": [
     {
@@ -10,56 +10,88 @@
       "topic": "How a trip lever works",
       "finding": "A bathtub trip-lever assembly consists of an overflow faceplate with a lever, a brass linkage inside the overflow pipe, and a plunger/drop-cylinder that seats in the drain passage. Lever up = open (drain), lever down = closed (fill).",
       "source_label": "This Old House — How To Replace a Tub Drain",
-      "url": "https://www.thisoldhouse.com/plumbing/22850246/replacing-bath-tub-drain"
+      "url": "https://www.thisoldhouse.com/plumbing/22850246/replacing-bath-tub-drain",
+      "verified_on": "2026-11-06"
     },
     {
       "id": "T-02",
       "topic": "Adjust vs replace",
       "finding": "A stuck or slow trip lever is first addressed by adjusting/cleaning the linkage; a corroded or fused assembly typically ends in full waste-and-overflow (W&O) replacement. The brief's 5+ plumbers declining removal-from-above is consistent with a fused/corroded assembly rather than a simple linkage adjustment.",
       "source_label": "This Old House (adjust steps); r/Plumbing stuck trip-lever thread (anecdotal)",
-      "url": "https://www.reddit.com/r/Plumbing/comments/170tvds/stuck_trip_lever_old_bathtub_wouldnt_turn_up_or/"
+      "url": "https://www.reddit.com/r/Plumbing/comments/170tvds/stuck_trip_lever_old_bathtub_wouldnt_turn_up_or/",
+      "verified_on": "2026-11-06"
     },
     {
       "id": "T-03",
       "topic": "Why access from below is the standard fallback",
       "finding": "Manufacturer installation instructions show the W&O assembly is secured with a retainer plate and screws under/behind the tub, with the overflow elbow set against the tub wall inside the framing cavity — i.e., the assembly physically lives in the hidden cavity behind/below the tub. When the internals are fused, replacement generally requires reaching that cavity: from above via an access opening, or from below through the ceiling of the space underneath.",
       "source_label": "Watco Manufacturing official trip-lever installation instructions (PDF)",
-      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "verified_on": "2026-11-06"
     },
     {
       "id": "T-04",
       "topic": "Code — access openings",
       "finding": "The California Plumbing Code (2022 §402.10; 2010 §404.2) requires fixtures with concealed slip-joint connections to be provided with an access panel or utility space of at least 12 inches in the least dimension, unobstructed, so connections are inspectable and repairable. Tub W&O assemblies commonly use slip joints — so when the ceiling is opened below, fitting a proper access panel (rather than a solid patch) is the code-aligned outcome.",
       "source_label": "IAPMO Answers & Analysis (UPC Ch. 4) + CPC 2022 reprint + 2010 CPC scan",
-      "url": "https://aa.iapmo.org/?code=UPC&chapter=4"
+      "url": "https://aa.iapmo.org/?code=UPC&chapter=4",
+      "verified_on": "2026-11-06"
     },
     {
       "id": "T-05",
       "topic": "Code — tub waste and overflow sizing",
       "finding": "Bathtubs must have a waste outlet of at least 1-1/2 inches equipped with a watertight stopper; where an overflow is installed it must also be at least 1-1/2 inches, and the waste must be arranged so standing water does not rise in the overflow when the stopper is closed. Any replacement assembly must meet these dimensions — standard trip-lever kits comply.",
       "source_label": "CPC/UPC bathtub waste outlets & overflows (UpCodes reprint; IAPMO/CPC arrangement rule)",
-      "url": "https://up.codes/s/bathtub-waste-outlets-and-overflows"
+      "url": "https://up.codes/s/bathtub-waste-outlets-and-overflows",
+      "verified_on": "2026-11-06"
     },
     {
       "id": "T-06",
       "topic": "Licensing — who can legally do plumbing + drywall in one job",
-      "finding": "Per CSLB's official guidance, a C-36 contractor may contract only plumbing work; a B General Building contractor is the appropriate prime when a job requires more than two types of work (e.g., plumbing + drywall), and a B cannot legally contract a job involving only one trade. Therefore the brief's all-in-one requirement maps to: B-licensed GC prime (hiring C-36 plumbing + C-9 drywall subs), or a license combining B + C-36 (e.g., Ace #829071, We Do Construction #1096552) with a drywall sub for the ceiling.",
-      "source_label": "CSLB — Find A Licensed Contractor / License Classifications (official)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx"
+      "finding": "Business & Professions Code §7057(b), published on CSLB's own B-classification page: a B General Building licensee may not take a prime contract for a project involving trades other than framing/carpentry unless the contract requires at least two unrelated building trades or crafts, or the licensee holds the appropriate specialty classification, or it subcontracts with an appropriately licensed specialty contractor. A C-36 plumbing licensee may only contract for plumbing work. Plumbing plus drywall is two unrelated trades, so a B (or B+C-36) licensee is the single-contract route for the all-in-one requirement (R-07).",
+      "source_label": "CSLB — B General Building classification, quoting B&P §7057(b) (official)",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "verified_on": "2026-11-07"
     },
     {
       "id": "T-07",
       "topic": "Cost context",
       "finding": "Published 2026 ranges: bathtub plumbing repairs $100–$700+ (HomeGuide); tub drain replacement ~$700 with easy access, $500–$1,025 with difficult access (Angi); drywall patching adds $300–$930 (Angi). The received quotes ($135 adjust; $550 lever/diverter; $614 W&O replacement) sit inside these ranges for their respective scopes; a below-access ceiling opening + patch is additional and not yet quoted.",
       "source_label": "HomeGuide (2026) + Angi (Oct 2026) — third-party cost guides",
-      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm"
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "verified_on": "2026-11-06"
     },
     {
       "id": "T-08",
       "topic": "Occupied-unit logistics",
       "finding": "Ceiling opening in the storage unit below an occupied unit implies: tenant notice and scheduling around the unit above, dust containment in the storage unit, contents protection/relocation, water shut-off windows, and leak-testing the new assembly before closing the ceiling. Providers documenting property-manager/HOA programs and occupied-space work (Ace, Heise's, SF Building Group, Bay Area Plumbing) are structurally familiar with these constraints.",
       "source_label": "Provider sites: Ace (HOA/property managers), SF Building Group (occupied-space off-hours work), Bay Area Plumbing (landlord/HOA 24-7), Heise's (property maintenance division)",
-      "url": "https://sfbuildinggroup.com/"
+      "url": "https://sfbuildinggroup.com/",
+      "verified_on": "2026-11-06"
+    },
+    {
+      "id": "T-09",
+      "topic": "Permit — when San Francisco requires one",
+      "finding": "San Francisco DBI states that a permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground; the exemptions sit in SF Plumbing Code §104.2. Contractors holding an A, B (after scope approval), C-4 or C-36 (plumbing), C-16, C-20 or C-54 license may apply, and contractors authorised for Express Permits on PermitSF can pay and issue without City staff review. Work must be inspected before pipes are covered.",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
+      "verified_on": "2026-11-07"
+    },
+    {
+      "id": "T-10",
+      "topic": "Licensing — the small-job exemption",
+      "finding": "Business & Professions Code §7048(a) exempts an unlicensed operator only when the aggregate contract price is under $1,000, the work is casual, minor or inconsequential, AND the work does not require a building permit. §7048(c) removes the exemption entirely for anyone who advertises as a contractor or employs another person. Current text: amended by Stats. 2025 Ch. 67 (AB 1170), effective 1 January 2026.",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "source_label": "California Legislative Information — BPC §7048 (official statute)",
+      "verified_on": "2026-11-07"
+    },
+    {
+      "id": "T-11",
+      "topic": "Tenant-occupied unit — lawful entry",
+      "finding": "Civil Code §1954 allows a landlord to enter a rented dwelling to make necessary or agreed repairs, with reasonable written notice giving the date, approximate time and purpose of the entry; 24 hours is presumed reasonable, and entry is limited to normal business hours unless the tenant consents at the time of entry. No notice is required in an emergency. Practical translation for this job: the plumber's visit and the ceiling opening are both entries that the tenant must be notified about in writing.",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+      "source_label": "California Legislative Information — Civil Code §1954 (official statute)",
+      "verified_on": "2026-11-07"
     }
   ]
 }

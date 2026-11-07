@@ -1,39 +1,23 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cost — Bathtub overflow trip lever project</title>
-<link rel="stylesheet" href="style.css">
-</head><body>
-<header class="top">
-  <h1>Bathtub wastewater overflow trip lever — requirements, vendors and code findings</h1>
-  <p class="sub">The estimates on file, the official DBI fees, and what changes the price.</p>
-  <p class="nav crumbs"><a href="../index.html">&#8592; Repository home</a> · <span class="mono">bathtub-overflow/</span> · San Francisco, California</p>
-</header>
-<nav class="pages"><a href="index.html">Overview</a><a href="scope.html">Requirements</a><a href="vendors.html">Vendor shortlist</a><a href="costs.html" aria-current="page">Cost</a><a href="code.html">Code &amp; permits</a><a href="findings.html">Findings</a><a href="flagged.html">Flagged for review</a><a href="sources.html">Sources</a></nav>
-
-<section>
-  <h2>Estimates on file (owner-provided, 2026-11-06 compilation)</h2>
-  <p>These three figures come from the project brief and describe three different scopes. They are not a price range and
-  they were not independently verifiable; each row links to the contractor's official CSLB record so the vendor can be
-  identified, and each is flagged on the <a href="flagged.html">Flagged for Review</a> page.</p>
-  <table><thead><tr><th>ID</th><th>Vendor</th><th>Amount</th><th>Scope as stated</th><th>Labour + materials</th><th>Wall access</th><th>Permit</th><th>Quoted</th><th>Verification</th><th>Source</th></tr></thead>
-  <tbody><tr><td class="mono">Q01</td><td>Expert Plumbing Solutions</td><td class="num">$614</td><td>Replacing waste and overflow</td><td>not stated</td><td>not stated</td><td>not stated</td><td>2026-08-30</td><td><span class="tag warn">USER-PROVIDED — not verifiable from an official source; see FL-19</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638" rel="noopener">LicenseDetail.aspx</a></td></tr><tr><td class="mono">Q02</td><td>Bay Area Plumbing</td><td class="num">$550</td><td>Replace lever for the bathtub plug and spout with diverter; includes labour and materials</td><td>Yes (as stated)</td><td>not stated</td><td>not stated</td><td>2026-08-30</td><td><span class="tag warn">USER-PROVIDED — not verifiable from an official source; see FL-19</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" rel="noopener">LicenseDetail.aspx</a></td></tr><tr><td class="mono">Q03</td><td>Fast Response Plumbing and Rooter</td><td class="num">$135</td><td>Repair or adjust bathtub wastewater plunger handle</td><td>not stated</td><td>not stated</td><td>not stated</td><td>2026-08-30</td><td><span class="tag warn">USER-PROVIDED — not verifiable from an official source; see FL-19</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" rel="noopener">LicenseDetail.aspx</a></td></tr></tbody></table>
-</section>
-<section>
-  <h2>Official cost the owner can verify — DBI fees (verified)</h2>
-  <p>Read from the DBI plumbing/mechanical fee schedule in force for permits issued on and after 12 July 2026.</p>
-  <table><thead><tr><th>ID</th><th>Item</th><th>Amount</th><th>Applies</th><th>Verification</th><th>Source</th></tr></thead>
-  <tbody><tr><td class="mono">F01</td><td>DBI plumbing permit issuance — Category 1P (single residential unit: water service, sewer replacement, single plumbing fixture installation, shower pan installation, or a single kitchen or bathroom remodel; maximum two inspections)</td><td class="num">$290</td><td>permits issued on and after 2026-07-12</td><td><span class="tag ok">OFFICIAL-VERIFIED</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr><tr><td class="mono">F02</td><td>DBI regular inspection / issuance hourly rate for installations not covered by a fee category</td><td class="num">$519 / per hour</td><td>permits issued on and after 2026-07-12</td><td><span class="tag ok">OFFICIAL-VERIFIED</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr><tr><td class="mono">F03</td><td>DBI off-hour inspection hourly rate (weekdays 6:00–8:00am or 4:00–6:00pm, two-hour minimum; weekdays before 6:00am or after 6:00pm and weekends, four-hour minimum)</td><td class="num">$555 / per hour</td><td>permits issued on and after 2026-07-12</td><td><span class="tag ok">OFFICIAL-VERIFIED</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr><tr><td class="mono">F04</td><td>DBI re-inspection or additional inspection (per Section 108A.8)</td><td class="num">$259 / per half hour</td><td>permits issued on and after 2026-07-12</td><td><span class="tag ok">OFFICIAL-VERIFIED</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr><tr><td class="mono">F05</td><td>DBI plumbing/mechanical miscellaneous fee (Category 11P/M &#x27;Miscellaneous&#x27;)</td><td class="num">$320 / per permit category</td><td>permits issued on and after 2026-07-12</td><td><span class="tag ok">OFFICIAL-VERIFIED</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr></tbody></table>
-</section>
-<section>
-  <h2>What actually moves the price</h2>
-  <table><thead><tr><th>ID</th><th>Driver</th><th>Effect</th><th>Verification</th><th>Source</th></tr></thead>
-  <tbody><tr><td class="mono">C01</td><td>Access from below (opening the ceiling of the space beneath the tub) versus from above</td><td>Bidirectional. The five-plus plumbers who declined the from-above option recommend working from below, which is the conventional fallback but adds ceiling work and possible repair of the storage-unit ceiling.</td><td><span class="tag">USER-REPORTED</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" rel="noopener">LicenseDetail.aspx</a></td></tr><tr><td class="mono">C02</td><td>Whether the waste and overflow assembly is replaced as a unit or only the linkage and plunger</td><td>Explains most of the $614 vs $550 spread; the $135 quote covers a plunger-handle adjustment only and therefore excludes any wall opening.</td><td><span class="tag">USER-PROVIDED (three quotes) — see FL-19</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638" rel="noopener">LicenseDetail.aspx</a></td></tr><tr><td class="mono">C03</td><td>Drywall opening and finish, plus repainting the affected area</td><td>Adds a second trade when the plumbing contractor holds no drywall or general building classification — which is true of all three quoting plumbers.</td><td><span class="tag">OFFICIAL-VERIFIED (CSLB classifications)</span></td><td><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9" rel="noopener">Licensing_Classifications_Detail.aspx</a></td></tr><tr><td class="mono">C04</td><td>DBI permit issuance fee and inspection time</td><td>Adds $290 (Category 1P) plus inspection time if a permit is required for this scope.</td><td><span class="tag">OFFICIAL-VERIFIED</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr><tr><td class="mono">C05</td><td>Occupied-unit scheduling — work outside normal business hours or on short notice</td><td>If the work cannot be done during normal business hours, off-hour inspection rates ($555/hour, minimum two hours weekday / four hours weekend) and after-hours labour apply.</td><td><span class="tag">OFFICIAL-VERIFIED (DBI fee schedule); applicability depends on the permit decision — see R-P01</span></td><td><a href="https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf" rel="noopener">Table_1A-C_-_Plumbing_Mechanical_2026.pdf</a></td></tr><tr><td class="mono">C06</td><td>Site conditions inside the unit and inside the storage unit below (clearance, storage contents, power and water access)</td><td>Not yet inspected; must be cleared by the contractor or the owner before the work window is fixed.</td><td><span class="tag">UNVERIFIED — site not inspected in this pass</span></td><td><a href="https://www.sf.gov/departments--department-building-inspection" rel="noopener">departments--department-building-inspection</a></td></tr></tbody></table>
-</section>
-
-<footer>
-  <p>Generated 2026-11-06 13:40 UTC from the JSON data files in <span class="mono">bathtub-overflow/data/</span>. Every table row links to the source it was read from.
-  Values that could not be confirmed from an official source are left blank and listed on the
-  <a href="flagged.html">Flagged for Review</a> page. Nothing on this site was inferred.</p>
-</footer>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="refresh" content="0; url=../estimates.html">
+<link rel="canonical" href="https://karagemop466-tech.github.io/Korea8/estimates.html">
+<title>Consolidated — Bathtub Overflow Trip Lever Project</title>
+<style>body{font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+margin:0;background:#f6f7f9;color:#16212e}main{max-width:640px;margin:14vh auto;padding:28px;background:#fff;
+border:1px solid #e3e8ee;border-radius:12px}a{color:#0b5cad}</style>
+</head>
+<body>
+<main>
+<h1 style="font-size:22px;margin:0 0 8px">This page has moved</h1>
+<p>The separate brief that used to live here has been consolidated into the single authoritative site
+for this project. You are being forwarded to the matching page.</p>
+<p><a href="../estimates.html">Continue to the consolidated page</a>.</p>
+<p style="color:#5b6b7c;font-size:14px">Retired copy: <code>bathtub-overflow/costs.html</code> — kept in the
+repository history, no longer published as a separate version.</p>
+</main>
+</body>
+</html>
