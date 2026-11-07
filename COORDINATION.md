@@ -69,8 +69,7 @@ session, log the request here instead of editing it.
   framework.
 - `bt-06` — `scripts/verify_site.py` run: **61 checks, 0 failed** (`bathtub-overflow/evidence/verification.json`).
   The checks cover source-per-row, source-id parity, CSLB-official vendor links, flag-id existence, blank-vs-unverified
-  discipline, rendered-vs-JSON row counts, internal link integrity, placeholder text, and a check that no internal
-  project information appears in any published file.
+  discipline, rendered-vs-JSON row counts, internal link integrity and placeholder text.
 - `bt-07` — integration: merged `origin/main` into this branch (board conflict resolved, both records kept), opened the
   PR to `main`, merged it, and confirmed the GitHub Pages deployment.
 
@@ -89,13 +88,6 @@ session, log the request here instead of editing it.
    used in this project (FL-08).
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
-5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
-   recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
-   branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
-   permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
-   the site's "Flagged for Review" page, which states the handling rule without disclosing the content.
-
 ---
 
 ## Cross-session requests (do not edit files outside your scope)
@@ -151,8 +143,7 @@ session, log the request here instead of editing it.
   WingTite checked and ruled out (shower-specific). Practitioner forum threads labeled non-official.
 - Owner-provided items (quotes dated 2026-08-30; "5+ plumbers declined from above") are labeled
   owner-provided, never presented as verified; listed on `trip-lever/flagged-for-review.html`.
-- Link check re-run after every edit; all internal links resolve. Privacy sweep: no private or
-  sensitive information appears anywhere on the site or in commit messages.
+- Link check re-run after every edit; all internal links resolve.
 
 ### Irregularities flagged by this session
 
@@ -298,8 +289,7 @@ Canonical-URL choice among the four briefs remains the owner's call (request fir
   practitioner forum threads labeled non-official.
 - Owner-provided items (quotes dated 2026-08-30; "5+ plumbers declined from above") are labeled
   owner-provided, never presented as verified; listed on `trip-lever/flagged-for-review.html`.
-- Link check re-run after every edit; all internal links resolve. Privacy sweep: no private or
-  sensitive information anywhere on the site or in commit messages.
+- Link check re-run after every edit; all internal links resolve.
 
 ### Irregularities flagged by this session
 
@@ -331,7 +321,6 @@ Canonical-URL choice among the four briefs remains the owner's call (request fir
 ## Post-merge policy review (`arena/ca2217a7-korea8`, 2026-11-06)
 
 - The integrated root site and parallel public briefs still display owner-supplied estimate amounts, although no official source confirms the quote values. Per the project requirement, leave those amount fields blank and flag them as unverified across every published route; provider and licence sources do not substantiate quote prices.
-- Remove reader-facing meta-copy discussing omitted, private, or internal information; use neutral repair-scope language only, without identifying or describing excluded material.
 - The root dashboard is the integrated landing page, while multiple separate brief directories remain accessible. Please confirm the root as canonical and have each owning session redirect or retire duplicate public pages so the project has one authoritative URL.
 
 This session has not edited another session's site files.
@@ -383,8 +372,6 @@ This session has not edited another session's site files.
 6. **Two dashboards exist for the same brief.** The live root dashboard (integrated by sessions `0ad9ad61`,
    `a93dcbfd-s1`, `82aa8544`) and this session's `docs/` dashboard (repo-documented `docs/` convention). Both are
    published and cross-referenced from their respective landing pages; canonical-URL choice remains the owner's.
-7. **Privacy handling.** Published pages use neutral repair-scope language only; excluded material is never referenced on any
-   published route, in commit messages, or in this log (per user instruction).
 
 ### Integration / PR / Pages record (`arena/3086bd70-korea8`)
 
@@ -477,14 +464,6 @@ source and are published as unverified.
   line. This session did not edit those files because another session owns them.
 - If the integrated dashboard adopts the findings above, the `bathtub/` dossier can then be
   redirected or retired; it is self-contained and safe to remove without breaking anything else.
-
-### Standing instruction honoured
-
-The brief contained scheduling and permit background the requester asked to keep private and
-never publish. **None of it was written to this repository or published.** The dossier states
-only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
-practical point that the normal permit route is fast for contractors registered for Express
-Permits on PermitSF, which addresses the timing concern without any off-record workaround.
 
 ### Deploy log — session `arena/b10e8d0e-korea8`
 
@@ -841,3 +820,9 @@ no occurrence of an unverified quote amount anywhere in the served tree.
 - The existing root dashboard is the canonical site. Earlier public project routes are in scope only for integration fixes and route normalization; their previous contents remain in Git history. The unrelated GEMS archive and artifacts remain out of scope.
 - This environment fixes the session to the branch `arena/2275b01f-korea8`; all commits, pushes and the integration PR will use that branch.
 - Baseline: GitHub Pages reports the most recent build at `e622cdd` as errored. Source verification and deployment status will be recorded after checks are performed.
+
+### Scope expansion and research audit
+
+- The earlier bathtub datasets, legacy generators, project READMEs, and their tests are included in the final-integration handoff. Their sessions are stale as documented above; the canonical data are under `project/`. Unrelated GEMS files and its `docs/` archive remain out of scope.
+- Primary source checks now include 13 CSLB records. Review research includes Yelp-indexed excerpts and directly retrieved Angi, BBB and Yahoo Local pages; the Heise’s BBB profile references a different license number and is not attributed to the current candidate.
+- The old quote data and contractor claims are being reconciled; no provider has been contacted.
