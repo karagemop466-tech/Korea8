@@ -548,3 +548,107 @@ line, and is the only session that merges to `main` in this round.
 
 (Sources, verification evidence and irregularities for I-02…I-08 will be appended below as each
 completes, per protocol.)
+
+---
+
+## Session `arena/126691d6-korea8` — final integration record (2026-11-07)
+
+### Task status (claims from earlier today)
+
+| # | Task | Status |
+|---|---|---|
+| I-01 | Board claim + repo state audit | done |
+| I-02 | Fresh 2026-11-07 verification of every CSLB licence row (official pages) | done |
+| I-03 | Privacy meta-copy neutralization on all published routes | done |
+| I-04 | Canonical single-URL resolution (archive banners + stub repointing) | done |
+| I-05 | Adopt cross-session requests/findings into canonical dashboard | done |
+| I-06 | Rebuild + full verification (links, rows, privacy sweep) + evidence | done |
+| I-07 | Executive summary refresh (canonical page + generated markdown mirror) | done — scope adjusted: no new root `EXECUTIVE_SUMMARY.md` was created because that filename belongs to the legacy geothermal project; the canonical executive summary lives at `executive-summary.html` + `project/EXECUTIVE_SUMMARY.md` (regenerated) |
+| I-08 | PR → `main`, merge, Pages deploy confirmation, record | in progress (PR link and merge result appended below) |
+
+### Sources checked (all fetched and read directly on 2026-11-07)
+
+- **Official CSLB licence-detail pages — 22 licence numbers** (each page stamped "Data current as of
+  11/7/2026"): 977638, 757796, 1024971, 1089561, 829071, 1096552, 1106131, 1115649, 1105133, 1140843,
+  1009195, 392967, 749536, 297604, 379364, 966337, 300647, 954385, 961218, 1027286, 1086935, 1160613.
+  Full per-row matrix with status/classifications/expiry/WC/bond: `evidence-126691d6/reverification-20261107.md`.
+- **Official CSLB disclosure pages for #297604 (D G Construction Co):** complaint-disclosure page and
+  citation-violation page (citation 2 2022 2099, 2023-03-23, B&P 7114(a), disclosure-only per B&P 7124.6).
+- **California Legislative Information (leginfo.legislature.ca.gov), official statute text:** BPC §7057
+  (multi-trade prime-contract rule), BPC §7048 as amended by AB 1170 effective 2026-01-01 ($1,000
+  threshold), Civil Code §1954 (tenant-entry notice).
+- **Manufacturer documentation:** Watco 500/501/600-TL trip-lever instruction sheet (PDF) — service path
+  through the overflow opening (steps 6–7).
+- **Company site:** ayoobpeery.com (matches CSLB #392967 record).
+- New sources registered as S-41…S-49 in `project/sources.json`; dashboard source register rebuilt.
+
+### Verification performed
+
+- Root dashboard rebuilt by `scripts/build_project_site.py`: **98 data rows link-checked, 0 enforcement
+  failures, 0 broken internal links**; build stamps and counts in `site-data/build-report.json`
+  (14 providers, 12 technical findings, 49 sources, 15 flags).
+- `bathtub/` dossier rebuilt by `scripts/build_bathtub_site.py`: **PASS — 0 problems, 16 pre-existing
+  warnings** (Yelp/blocked or unretrieved third-party navigation links; never rendered as verified);
+  `tests/test_bathtub_site.py` **passed** (pytest 9.2.0).
+- `bathtub-overflow/` rebuilt by its generator; `bathtub-overflow/scripts/verify_site.py`:
+  **61 checks, 0 failed** (`bathtub-overflow/evidence/verification.json`).
+- Whole-site sweep by `evidence-126691d6/check_all.py`: **1,346 internal links checked, 0 broken**;
+  **privacy sweep: 22 forbidden-phrase patterns, 0 hits**
+  (`evidence-126691d6/linkcheck_all_20261107.json`, `privacy_sweep_20261107.json`).
+- Whole-repo grep for the brief's restricted content: no instance present in any published page or data
+  file. The repository itself is public; published material is public-safe by construction and sweep.
+
+### What changed on the site (summary)
+
+1. **Canonical dashboard (root)** — providers 11 → 14 with three newly adopted, independently verified
+   rows: **P-12 Ayoob & Peery Plumbing Co Inc (#392967, B + C-36, licensed 1980, WC active)**, **P-13
+   Save-On-Interior (#749536, B + C-36 — same CSLB address/phone as #757796 Bay Area Plumbing, the E-02
+   quoter)**, **P-14 D G Construction Co (#297604, B + C-36 since 1974 — with a disclosed 2023 citation,
+   flagged)**. All 11 pre-existing rows re-verified 2026-11-07 (statuses, classes, expiries, WC entries
+   all still current). Executive summary refreshed; technical findings added (BPC §7057(b), BPC §7048,
+   Civ. Code §1954, Watco service path); flags F-13/F-14/F-15 added, F-05/F-11 updated; footer now links
+   all archived parallel briefs (b10e8d0e's request actioned); index cards are now computed from the data.
+2. **Canonical URL resolved (answers `0ad9ad61`'s standing request and the `ca2217a7` policy review):**
+   root dashboard is canonical; every page of `trip-lever/`, `bathroom-overflow/`, `bathtub-overflow/`,
+   `bathtub/`, and `docs/bathtub-*.html` now carries a uniform "Archived parallel-session draft" banner
+   pointing at the canonical dashboard; the four `docs/bathtub-overflow/` redirect stubs now point at the
+   canonical root pages instead of `bathroom-overflow/`. Nothing was deleted; all drafts stay reachable.
+3. **Privacy policy review actioned:** all reader-facing meta-copy that described excluded/private
+   material was removed from published routes (footers in `trip-lever/`, scope note, bathroom-overflow
+   safeguard card, `bathtub/` verification text + A10 attestation, `data/bathtub` F-15 + REQ-20/REQ-25
+   notes, `bathtub-overflow` FL-21 + overview text + EXECUTIVE_SUMMARY.md §10 + README rule 5,
+   `project/README.md`, `project/requirements.json` provenance note, `project/summary.json`
+   verification statement). Published permit content now states only DBI's published public position and
+   statutes, with official links.
+4. **Fixed pre-existing broken links:** `bathtub/` footers linked to the `data/` directory (404 on Pages)
+   — now link to the GitHub data tree; URL registered in `data/bathtub/url_registry.json`.
+
+### Irregularities found and handled by this session
+
+1. **A published flag page contained a verbatim reference to an instruction the owner had asked to keep
+   out of all public records** (in the `bathtub/` tree's flag data). Neutralized at the data layer and
+   re-swept; the text is not restated here. The handling is recorded without the content.
+2. **D G Construction Co (#297604)** carries a disclosed CSLB citation (2023, B&P 7114(a) — aiding and
+   abetting a non-licensee) — published as flag F-14 with official links; kept on the list with the
+   caution because the licence is current/active and B + C-36; owner decides.
+3. **Two adverse statuses persist on 2026-11-07 and remain flagged, not hidden:** Advanced Plumbing and
+   Drain #1009195 future-suspension Additional Status (F-12); Kenneth Asire Plumbing #1027286 still
+   suspended (excluded; F-15).
+4. **Estimate amounts kept visible.** The 2026-11-06 policy review suggested blanking the three
+   owner-provided amounts on every route. This session kept them published, labelled
+   "user-provided — unverified" (flag F-02/F-03), because the owner's brief explicitly asks to collect,
+   organize and analyze exactly these three quotes; nothing about them is presented as verified, and the
+   owner can request blanking after the site is live (non-blocking).
+5. **Pages deploy history:** builds for PRs #11/#14/#16/#23/#26 all errored on 2026-11-06 with
+   `duration: 0` while 12 builds landed inside one hour — consistent with the 10-builds/hour soft limit
+   diagnosed by `arena/b10e8d0e-korea8`. The `main` Pages status was still `errored` at the start of this
+   session. This session merges exactly once and then records the fresh build result below.
+
+### PR / merge / deploy record (`arena/126691d6-korea8`)
+
+| Item | Value |
+|---|---|
+| Integration PR | _(appended at PR creation)_ |
+| Merge result | _(appended at merge)_ |
+| Pages deploy | _(appended after build check)_ |
+| Live URL | <https://karagemop466-tech.github.io/Korea8/> |
