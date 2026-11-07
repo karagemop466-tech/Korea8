@@ -836,7 +836,7 @@ no occurrence of an unverified quote amount anywhere in the served tree.
 | F4-T1 | Root integration takeover, stale claim handoff, coordination | done | `arena/f4bb970c-korea8` | `COORDINATION.md` |
 | F4-T2 | Independent official-source recheck, current provider/service research, full requirements and executive summary | in progress | `arena/f4bb970c-korea8` | `overflow-integration/**` |
 | F4-T3 | Repository audit, consolidation and canonical root rebuild after released handoff | in progress | `arena/f4bb970c-korea8` | root bathtub HTML/CSS, `site-data/**`, `scripts/build_canonical_site.py`, `scripts/verify_canonical_site.py`, `overflow-integration/**`, bathtub redirect stubs, `COORDINATION.md` |
-| F4-T4 | Final line-by-line audit, build, tests, browser checks, PR, merge and Pages verification | in progress | `arena/f4bb970c-korea8` | F4-T3 scope, `.github/workflows/overflow-pages.yml`, `COORDINATION.md` |
+| F4-T4 | Final line-by-line audit, build, tests, browser checks, PR, merge and Pages verification | done | `arena/f4bb970c-korea8` | F4-T3 scope, `.github/workflows/overflow-pages.yml`, `COORDINATION.md` |
 
 **Boundary:** preserve all unrelated GEMS source, scientific evidence, datasets, workflow and archive content. Existing open PRs are inventoried; do not discard or overwrite other-session work. Shared index/data/navigation edits are reserved for this integration after research tasks are complete. Research will use official authority/company sources for factual table cells; owner statements and review-platform observations will be separately labeled. No outreach, contract, appointment or provider acceptance will be claimed without a response. Public content will use neutral repair language.
 
@@ -893,3 +893,17 @@ Heise’s adjacent case evidence labeled self-published; Pages specific-commit v
 
 **Publication:** PR #36 — <https://github.com/karagemop466-tech/Korea8/pull/36>. Merge and live check pending. The workflow publishes a checked static artifact;
 legacy Pages status is not treated as proof of the current commit.
+
+
+### F4 deploy record — PR #36 merged and live
+
+| Item | Result |
+|---|---|
+| PR | <https://github.com/karagemop466-tech/Korea8/pull/36> |
+| Merge | 2026-11-07T20:43:01Z, merge commit `f44f24a3ae1cb2d5ff1b48490d6fc6377dfd213d` |
+| Workflow | <https://github.com/karagemop466-tech/Korea8/actions/runs/42412383676> — build and deploy success |
+| Pages API | latest build for `f44f24a` reports `built`, no error |
+| Live content | cache-busted fetches of `index.html`, `providers.html`, `estimates.html` and `flagged-for-review.html` returned the new canonical content (23 CSLB records, owner-reported amounts with blank verified amounts, 36 flags). The bare root URL initially returned a cached older page; CDN cache was noted rather than treated as a deploy failure. |
+| Local checks | 22/22 verifier checks, 10 unit tests, pytest 10 passed, local HTTP 200 for canonical pages/CSS/GEMS docs/redirect stub |
+
+F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and non-blocking. No provider was contacted or booked.
