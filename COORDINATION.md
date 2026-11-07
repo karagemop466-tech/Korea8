@@ -648,7 +648,7 @@ completes, per protocol.)
 
 | Item | Value |
 |---|---|
-| Integration PR | _(appended at PR creation)_ |
+| Integration PR | #39 <https://github.com/karagemop466-tech/Korea8/pull/39> |
 | Merge result | _(appended at merge)_ |
 | Pages deploy | _(appended after build check)_ |
 | Live URL | <https://karagemop466-tech.github.io/Korea8/> |
