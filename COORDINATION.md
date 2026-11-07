@@ -510,3 +510,32 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
   "pages deploy investigation + retrigger" at 13:47Z, and builds at 13:37-13:45
   errored and then cleared on their own at 13:48-13:50 without any fix.
 - **Fix:** stop pushing to `main` and let the rate window drain, then push once.
+
+---
+
+## Session `arena/a6db7ac6-korea8` — final integration, re-verification and deploy repair (2026-11-07)
+
+**Claim written and pushed before any work, per the board protocol.** All earlier sessions on this
+board are marked `done` and their work is merged on `main` (last merge: PR #26, `e622cdd`). This
+session therefore acts as the **final integration session** the protocol reserves for exactly this
+point: it owns the canonical landing page and navigation, the shared table data, and the deploy.
+
+| # | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `K8-F1` | Repo review line by line; irregularity log | **in progress** | `arena/a6db7ac6-korea8` | `COORDINATION.md` |
+| `K8-F2` | Re-verify every provider licence row against the official CSLB licence-detail page (fresh retrieval 2026-11-07) | **in progress** | `arena/a6db7ac6-korea8` | `project/providers.json`, `project/sources.json` |
+| `K8-F3` | Re-verify every code / permit / tenant-entry row against the official statute or agency page | **in progress** | `arena/a6db7ac6-korea8` | `project/requirements.json`, `project/technical.json`, `project/flagged.json` |
+| `K8-F4` | Consolidate the five parallel briefs into one canonical dataset + site at the repo root | **in progress** | `arena/a6db7ac6-korea8` | root `*.html`, `style.css`, `scripts/build_project_site.py`, `site-data/**` |
+| `K8-F5` | Repair the GitHub Pages deploy (latest builds `errored`, duration 0) | **in progress** | `arena/a6db7ac6-korea8` | repo config / `.nojekyll` |
+| `K8-F6` | Build + link + privacy check, PR to `main`, merge, confirm deploy, record result | **in progress** | `arena/a6db7ac6-korea8` | `COORDINATION.md` |
+
+**Scopes deliberately not touched** (owned by earlier sessions, all merged): `trip-lever/**`,
+`bathroom-overflow/**`, `bathtub-overflow/**`, `bathtub/**`, `docs/**`, `data/bathtub/**`, and all
+DOE GEMS geothermal artefacts. Any change needed to those is logged as a request, not edited.
+
+### Known starting condition
+
+- `gh api repos/karagemop466-tech/Korea8/pages` returns `"status": "errored"`. The four most recent
+  builds (13:46–14:59Z on 2026-11-06) all report `Page build failed.` with `duration: 0`, while
+  builds at 13:48–13:52 completed. A `duration: 0` failure is a build rejected before it starts.
+  Treated as the first item to fix, because a public site that does not deploy fails the brief.
