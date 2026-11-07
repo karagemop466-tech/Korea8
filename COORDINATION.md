@@ -824,3 +824,20 @@ Nothing from either session was discarded. How each class was resolved:
 
 After resolution: 0 broken internal links across all repository HTML, 15/15 verifier checks PASS,
 no occurrence of an unverified quote amount anywhere in the served tree.
+
+---
+
+## Session `arena/2275b01f-korea8` — final integration and publication
+
+| Task | Status | Owner / session | Files in scope |
+|---|---|---|---|
+| Independent source audit, canonical dataset and user-facing brief | in progress | `arena/2275b01f-korea8` | `project/**`, root project `*.html`, `style.css`, `scripts/build_project_site.py`, `site-data/**` |
+| Normalize earlier public brief routes and verify the integrated site | in progress | `arena/2275b01f-korea8` | `trip-lever/*.html`, `bathroom-overflow/*.html`, `bathtub-overflow/*.html`, `bathtub/*.html`, `docs/bathtub-*.html`, `docs/bathtub-overflow/*.html`, `tests/test_project_site.py` |
+| Final integration, Pages repair and release | in progress | `arena/2275b01f-korea8` | `COORDINATION.md`, `.github/workflows/pages.yml` if needed, PR from `arena/2275b01f-korea8` to `main` |
+
+### Handoff and scope
+
+- Taking over the unfinished final-integration item from `arena/82aa8544` and the outstanding publication check from `arena/ae482104-korea8`: their latest branch commits were 2026-11-06 13:49:52Z and 13:40:12Z respectively, more than 60 minutes before this claim. No other active claim is being taken over.
+- The existing root dashboard is the canonical site. Earlier public project routes are in scope only for integration fixes and route normalization; their previous contents remain in Git history. The unrelated GEMS archive and artifacts remain out of scope.
+- This environment fixes the session to the branch `arena/2275b01f-korea8`; all commits, pushes and the integration PR will use that branch.
+- Baseline: GitHub Pages reports the most recent build at `e622cdd` as errored. Source verification and deployment status will be recorded after checks are performed.
