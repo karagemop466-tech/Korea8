@@ -793,6 +793,54 @@
       "supports": "Official static-artifact upload action used with deploy-pages.",
       "limitations": "Workflow configuration must be tested in this repository.",
       "official": true
+    },
+    {
+      "id": "REPO-OLD-INDEX",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/09d76c181ffecde5150a313f6f3c78a61a057781/index.html#L26",
+      "title": "Pre-rebuild root dashboard line 26",
+      "publisher": "GitHub repository",
+      "kind": "repository-primary",
+      "checked": "2026-11-07",
+      "retrieval": "repository record",
+      "supports": "Earlier B + C-36 capability wording and unpublished quote amounts.",
+      "limitations": "",
+      "official": false
+    },
+    {
+      "id": "REPO-OLD-EXEC",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/09d76c181ffecde5150a313f6f3c78a61a057781/executive-summary.html#L33",
+      "title": "Pre-rebuild executive summary line 33",
+      "publisher": "GitHub repository",
+      "kind": "repository-primary",
+      "checked": "2026-11-07",
+      "retrieval": "repository record",
+      "supports": "Earlier absolute drywall/self-performance and C-36-only statements.",
+      "limitations": "",
+      "official": false
+    },
+    {
+      "id": "REPO-PR33",
+      "url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
+      "title": "Closed unmerged PR #33 commit",
+      "publisher": "GitHub repository",
+      "kind": "repository-primary",
+      "checked": "2026-11-07",
+      "retrieval": "repository record",
+      "supports": "Preserved parallel 22-license audit and analysis; branch deleted after close.",
+      "limitations": "",
+      "official": false
+    },
+    {
+      "id": "REPO-BOARD",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md",
+      "title": "Shared coordination board",
+      "publisher": "GitHub repository",
+      "kind": "repository-primary",
+      "checked": "2026-11-07",
+      "retrieval": "repository record",
+      "supports": "Claims, handoffs, merge/deploy logs and preservation decisions.",
+      "limitations": "",
+      "official": false
     }
   ]
 }
