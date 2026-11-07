@@ -1,0 +1,16 @@
+{
+  "checked": [
+    "internal links: 134, anchors: 38",
+    "source link per table row",
+    "external links: 163",
+    "privacy sweep",
+    "rendered rows match JSON",
+    "no placeholder or template markers"
+  ],
+  "problems": [],
+  "warnings": [
+    "requirements.html: 16 of 32 table rows carry no link (expected only on the first-party requirement table)"
+  ],
+  "ok": true,
+  "summary": "6 check groups, 0 problems, 1 warnings"
+}

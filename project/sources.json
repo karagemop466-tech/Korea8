@@ -1,329 +1,293 @@
 {
   "meta": {
-    "title": "Sources",
-    "compiled": "2026-11-06",
-    "note": "Every source consulted this session, classified by type. 'Official government' = federal/state/county agencies. 'Code publisher' = IAPMO (publishes the UPC/CPC) or complete code reprints. 'Manufacturer' = the manufacturer's own documentation. All other sources are third-party and labeled as such. Each URL was fetched and read during this session (2026-11-06) unless noted."
+    "title": "Source register",
+    "compiled": "2026-11-07",
+    "rule": "Every table row on this site cites one of these sources. Records marked 'retrieved' were read directly. Records marked blocked or linked-not-tabulated support no value; they are listed for transparency and manual follow-up.",
+    "counts": {
+      "total": 31,
+      "retrieved": 29,
+      "not_retrieved": 2
+    }
   },
   "sources": [
     {
       "id": "S-01",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #977638 (Expert Plumbing Solutions)",
+      "type": "official-regulator",
+      "label": "CSLB licence detail #977638 — EXPERT PLUMBING SOLUTIONS",
       "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
-      "used_for": "License status current/active, C-36, corporation, dates, bond, workers' comp",
-      "fetched": "2026-11-06"
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-01."
     },
     {
       "id": "S-02",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #757796 (Bay Area Plumbing)",
+      "type": "official-regulator",
+      "label": "CSLB licence detail #757796 — BAY AREA PLUMBING",
       "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
-      "used_for": "License status current/active, C-36, sole ownership, WC exemption (no employees)",
-      "fetched": "2026-11-06"
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-02."
     },
     {
       "id": "S-03",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1024971 (Fast Response Plumbing & Rooter)",
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1024971 — JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
       "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
-      "used_for": "License status current/active, C-36, sole ownership (Joseph Tinsley dba), address of record",
-      "fetched": "2026-11-06"
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-03."
     },
     {
       "id": "S-04",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1089561 (Taro Group Inc dba Heises Plumbing)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
-      "used_for": "License status current/active, C-36 + C-10 + A + C-20, corporation",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #749536 — SAVE - ON - INTERIOR",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-04."
     },
     {
       "id": "S-05",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #829071 (Ace Plumbing & Rooter)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
-      "used_for": "License status current/active, C-36 + B + A + C-4 + C-10 + C-16, corporation",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #392967 — AYOOB & PEERY PLUMBING CO INC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-05."
     },
     {
       "id": "S-06",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1096552 (We Do Construction Inc)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
-      "used_for": "License status current/active, B + C-36, corporation",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #829071 — ACE PLUMBING & ROOTER",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-06."
     },
     {
       "id": "S-07",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1106131 (SF Building Group)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
-      "used_for": "License status current/active, B, corporation, WC exemption",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1096552 — WE DO CONSTRUCTION INC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-07."
     },
     {
       "id": "S-08",
-      "type": "Official government",
-      "title": "CSLB — Find A Licensed Contractor (multi-trade B vs C classification guidance)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx",
-      "used_for": "Official explanation: a B contractor is appropriate when a job requires more than two types of work; B cannot contract single-trade jobs; C-36 is the plumbing specialty classification",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1115649 — RAPID FLOW PLUMBING & ROOTER INC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-08."
     },
     {
       "id": "S-09",
-      "type": "Official government",
-      "title": "CSLB — License Classifications",
-      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/",
-      "used_for": "Definitions of C-36 Plumbing, C-9 Drywall, B General Building, B-2 Residential Remodeling",
-      "fetched": "linked from CSLB detail pages 2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #297604 — D G CONSTRUCTION CO",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-09."
     },
     {
       "id": "S-10",
-      "type": "Official government",
-      "title": "CSLB — Public Data Portal",
-      "url": "https://www.cslb.ca.gov/Onlineservices/DataPortal/",
-      "used_for": "Identification of official verification channels (instant license check, lists by classification/county)",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1009195 — ADVANCED PLUMBING AND DRAIN INC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-10."
     },
     {
       "id": "S-11",
-      "type": "Code publisher",
-      "title": "IAPMO — Answers and Analysis, UPC Chapter 4 (Section 402.10 Slip Joint Connections)",
-      "url": "https://aa.iapmo.org/?code=UPC&chapter=4",
-      "used_for": "Official code-publisher interpretation: fixtures with concealed slip-joint connections need an access panel or utility space >= 12 inches in least dimension",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1089561 — TARO GROUP INC dba HEISES PLUMBING",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-11."
     },
     {
       "id": "S-12",
-      "type": "Code reprint (complete, unofficial)",
-      "title": "California Plumbing Code 2022, Section 402.10 Slip Joint Connections (UpCodes reprint)",
-      "url": "https://up.codes/s/concealed-joints",
-      "used_for": "CPC 2022 text of the access-panel requirement",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #961218 — PRECISION ROOTER & DRAIN",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-12."
     },
     {
       "id": "S-13",
-      "type": "Code publication (state scan)",
-      "title": "2010 California Plumbing Code, Chapter 4 (Section 404.2 Connections — access panel >= 12 in)",
-      "url": "https://archive.org/download/gov.ca.bsc.title24.2010.part05/gov.ca.bsc.2010.05.svg.html",
-      "used_for": "State-published CPC text showing the same access requirement (edition numbering differs: 404.2 in 2010 vs 402.10 in 2022)",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1086935 — FDL PLUMBING INC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-13."
     },
     {
       "id": "S-14",
-      "type": "Code publisher",
-      "title": "IAPMO / CPC — Bathtub waste arrangement & overflows (CPC 404.2.1: standing water must not rise in overflow when stopper closed)",
-      "url": "https://gocodebook.com/us/california/california-plumbing-code/plumbing-fixtures-and-fixture-fittings/fixtures-by-type-toilets-lavs-showers-sinks/water-closets-urinals-and-flush-valves",
-      "used_for": "Overflow/waste arrangement requirement relevant to trip-lever/plunger function",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #954385 — CW PLUMBING INC dba CITYWIDE PLUMBING",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-14."
     },
     {
       "id": "S-15",
-      "type": "Code reprint (complete, unofficial)",
-      "title": "Bathtub Waste Outlets and Overflows (IPC P2713.1 / CPC 407.2 equivalents)",
-      "url": "https://up.codes/s/bathtub-waste-outlets-and-overflows",
-      "used_for": "Waste outlet >= 1-1/2 in with watertight stopper; overflow >= 1-1/2 in where installed",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1140843 — DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-15."
     },
     {
       "id": "S-16",
-      "type": "Manufacturer",
-      "title": "Watco Manufacturing — Trip Lever Bath Waste Installation Instructions (Models 500/550/600, PDF)",
-      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
-      "used_for": "Manufacturer documentation of trip-lever assembly: overflow plate, drop-cylinder/linkage, retainer plate under tub, overflow elbow behind tub wall",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1105133 — HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-16."
     },
     {
       "id": "S-17",
-      "type": "Manufacturer",
-      "title": "Watco Manufacturing — Trip Lever Installation Instructions (Quick Adjust / Slip Lock / TurnStyle, PDF)",
-      "url": "https://www.watcomfg.com/Instructions/WIRE-TL-TS-SL%20Inst.black.pdf",
-      "used_for": "Linkage adjustment mechanics; brass linkage must not kink; drop cylinder setting",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1106131 — SF BUILDING GROUP",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-17."
     },
     {
       "id": "S-18",
-      "type": "Manufacturer index",
-      "title": "Watco Manufacturing — official product index (trip lever bath waste models)",
-      "url": "https://www.watcomfg.com/watco/",
-      "used_for": "Confirms Watco publishes official installation instructions for trip lever waste & overflow models",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #300647 — CAHILL CONTRACTORS INC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-18."
     },
     {
       "id": "S-19",
-      "type": "Third-party (reputable trade media)",
-      "title": "This Old House — How To Replace a Tub Drain",
-      "url": "https://www.thisoldhouse.com/plumbing/22850246/replacing-bath-tub-drain",
-      "used_for": "Trip-lever mechanism explanation (linkage + plunger), when replacement vs adjustment is needed",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB licence detail #1027286 — KENNETH ASIRE PLUMBING",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Licence status, classifications, issue/expiry dates, address, phone, bond and workers'-compensation record for P-19."
     },
     {
       "id": "S-20",
-      "type": "Third-party cost guide",
-      "title": "HomeGuide — Bathtub Repair Cost (2026)",
-      "url": "https://homeguide.com/costs/bathtub-repair-cost",
-      "used_for": "Benchmark: bathtub plumbing repairs $100–$700+; drain repair $200–$700",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB — Check a License entry point",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Official starting point for every licence lookup; the per-licence pages above are reached from it."
     },
     {
       "id": "S-21",
-      "type": "Third-party cost guide",
-      "title": "Angi — Bathroom Leak Repair Cost (Oct 2026)",
-      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
-      "used_for": "Benchmarks: tub drain replacement ~$700 (easy access), $500–$1,025 (difficult access); drywall patching adds $300–$930",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "CSLB — C-36 Plumbing Contractor classification (Cal. Code Regs., tit. 16, § 832.36)",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Verbatim scope of the plumbing classification, including 'maintenance and replacement'."
     },
     {
       "id": "S-22",
-      "type": "Third-party (community anecdote)",
-      "title": "r/Plumbing — 'Stuck trip lever, old bathtub' thread (2023)",
-      "url": "https://www.reddit.com/r/Plumbing/comments/170tvds/stuck_trip_lever_old_bathtub_wouldnt_turn_up_or/",
-      "used_for": "Real-world confirmation that fused/stuck trip-lever internals typically end in waste-and-overflow replacement, sometimes via drywall access (anecdotal, non-authoritative)",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "SF.gov / DBI — Apply for a plumbing and mechanical permit",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Permit requirement, §104.2 exemptions, permitted licence types, Express Permits, homeowner rules."
     },
     {
       "id": "S-23",
-      "type": "Provider official site",
-      "title": "Heise's Plumbing — Tub Assembly Replacement, Mission, San Francisco (documented job)",
-      "url": "https://www.heisesplumbing.com/recent-jobs/projects/a-tub-waste-and-overflow-assembly-san-francisco-158154/",
-      "used_for": "Documented comparable waste-and-overflow replacement in SF",
-      "fetched": "2026-11-06"
+      "type": "official-regulator",
+      "label": "DBI — Plumbing/Mechanical permit fee schedule, Table 1A-C (2026)",
+      "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-tabulated",
+      "used_for": "Official fee schedule referenced by DBI. Not copied into this dataset because the fee depends on the declared valuation, which is unknown."
     },
     {
       "id": "S-24",
-      "type": "Provider official site",
-      "title": "Expert Plumbing Solutions — official site",
-      "url": "https://www.eplumbingsolutions.com/",
-      "used_for": "Identity match for quote E-01; services; license #977638 as printed",
-      "fetched": "2026-11-06"
+      "type": "statute",
+      "label": "California Business and Professions Code §7048",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "$1,000 small-job exemption and its building-permit exclusion (AB 1170, eff. 2026-01-01)."
     },
     {
       "id": "S-25",
-      "type": "Provider official site",
-      "title": "Bay Area Plumbing — official site",
-      "url": "https://www.bayareaplumbingsf.com/",
-      "used_for": "Identity match for quote E-02; services; license #757796 as printed",
-      "fetched": "2026-11-06"
+      "type": "statute",
+      "label": "California Business and Professions Code §7057",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "General building contractor definition and the multi-trade prime-contract rule in subdivision (b)."
     },
     {
       "id": "S-26",
-      "type": "Provider official site",
-      "title": "Fast Response Plumbing & Rooter — official site",
-      "url": "https://www.fastresponseplumbingsf.com/",
-      "used_for": "Identity match for quote E-03; CSLB #1024971 C-36 as printed; 4.9 / 1,500+ reviews claim",
-      "fetched": "2026-11-06"
+      "type": "statute",
+      "label": "California Civil Code §1954",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Landlord entry: permitted purposes, business hours, written notice, 24-hour presumption."
     },
     {
       "id": "S-27",
-      "type": "Provider official site",
-      "title": "Heise's Plumbing — About Us",
-      "url": "https://www.heisesplumbing.com/about-us/",
-      "used_for": "License 1089561 as printed; since 1954; 4.9 from 1,700+ reviews",
-      "fetched": "2026-11-06"
+      "type": "code-guidance",
+      "label": "IAPMO Answers & Analysis, chapter 4 (UPC)",
+      "url": "https://aa.iapmo.org/?chapter=4&code=UPC",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "UPC §402.10 concealed slip joint connections, 12-inch access panel or utility space."
     },
     {
       "id": "S-28",
-      "type": "Provider official site",
-      "title": "Ace Plumbing & Rooter — official site",
-      "url": "https://www.aceplumbingandrooter.com/",
-      "used_for": "License #829071 + classifications A/B/C-4/C-10/C-16/C-36 as printed; HOA/property manager programs",
-      "fetched": "2026-11-06"
+      "type": "code-guidance",
+      "label": "IAPMO Code Spotlight — 402.10 Slip Joint Connections",
+      "url": "https://forms.iapmo.org/email_marketing/codespotlight/2020/Mar12.htm",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Explanation that the panel rule applies to slip joints and not to soldered or two-piece joints."
     },
     {
       "id": "S-29",
-      "type": "Provider official site",
-      "title": "We Do Construction — General Contractor in San Francisco",
-      "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
-      "used_for": "B + C-36 self-perform claim; design-build single-contract model",
-      "fetched": "2026-11-06"
+      "type": "manufacturer",
+      "label": "Watco — Trip Lever Installation Instructions (500/501/600/650-TL)",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Overflow plate held by two screws; step 7 removes the plate and drop-cylinder assembly for service."
     },
     {
       "id": "S-30",
-      "type": "Provider official site",
-      "title": "SF Building Group — official site",
-      "url": "https://sfbuildinggroup.com/",
-      "used_for": "Occupied-space off-hours work; landlord/tenant communication; MEP coordination; license #1106131 as printed",
-      "fetched": "2026-11-06"
+      "type": "manufacturer",
+      "label": "Watco — 501/502/551/552 series bath waste specification sheet",
+      "url": "https://www.watcomfg.com/Spec_Sheets/tubular_brass/Watco_Trip_Lever_501-502-551-552_Series_Bath_Waste_Sheet.pdf",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Describes the product family as a slip-joint assembly with retainer plate and brass slip nuts."
     },
     {
       "id": "S-31",
-      "type": "Third-party (independent ratings org)",
-      "title": "Diamond Certified — Ace Plumbing and Rooter report",
-      "url": "https://www.diamondcertified.org/report/ace-plumbing-and-rooter/",
-      "used_for": "4.6 avg score from 220 verified phone surveys; Diamond Certified since 2007",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-32",
-      "type": "Third-party (review platform, bot-blocked)",
-      "title": "Yelp — Expert Plumbing Solutions listing (81 reviews, 4.8)",
-      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
-      "used_for": "Review count/rating as surfaced in search index; direct fetch returned HTTP 403",
-      "fetched": "via search index 2026-11-06; manual re-check advised (F-04)"
-    },
-    {
-      "id": "S-33",
-      "type": "Third-party (review platform, bot-blocked)",
-      "title": "Yelp — Bay Area Plumbing listing (175 reviews)",
-      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
-      "used_for": "Review count as surfaced in search index; direct fetch returned HTTP 403",
-      "fetched": "via search index 2026-11-06; manual re-check advised (F-04)"
-    },
-    {
-      "id": "S-34",
-      "type": "Third-party (review platform, bot-blocked)",
-      "title": "Yelp search index — Fast Response Plumbing & Rooter / third-party directory (4.9, 532+ reviews)",
-      "url": "https://serviceagent.ai/directory/california/san-francisco/plumbing/fast-response-plumbing-rooter/",
-      "used_for": "Cross-check of review volume vs company-site claim of 1,500+ combined Yelp & Google",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-35",
-      "type": "Third-party directory",
-      "title": "Yellowpages — Expert Plumbing Solutions, 1465 44th Ave SF",
-      "url": "https://www.yellowpages.com/san-francisco-ca/mip/expert-plumbing-solutions-481560920",
-      "used_for": "Corroboration of address/phone for quote provider E-01",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-36",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1115649 (Rapid Flow Plumbing & Rooter Inc)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
-      "used_for": "License status current/active, B + C-36, corporation, WC exemption",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-37",
-      "type": "Provider official site",
-      "title": "Rapid Flow Plumbing & Rooter — official site",
-      "url": "https://www.rapidflowbayarea.com/",
-      "used_for": "License #1115649 B + C-36 as printed; GC + plumbing positioning; service area",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-38",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1105133 (Harp Services dba 24/7 SF Handyman & Remodeling Service)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
-      "used_for": "License status current/active, B-2 Residential Remodeling, corporation, active WC",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-39",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1140843 (Discount Plumbing Rooter Services LLC)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
-      "used_for": "License status current/active, C-36 + A, LLC, WC + $2M liability + LLC bond",
-      "fetched": "2026-11-06"
-    },
-    {
-      "id": "S-40",
-      "type": "Official government",
-      "title": "CSLB — Contractor's License Detail #1009195 (Advanced Plumbing and Drain Inc)",
-      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
-      "used_for": "License status current/active with Additional Status (possible future suspension), C-36, corporation",
-      "fetched": "2026-11-06"
+      "type": "review-platform",
+      "label": "Yelp — search for bathtub drain repair, San Francisco",
+      "url": "https://www.yelp.com/search?find_desc=Bathtub+Drain+Repair&find_loc=San+Francisco%2C+CA",
+      "retrieved": "2026-11-07",
+      "status": "blocked-http-403",
+      "used_for": "Attempted; returned HTTP 403. Not used for any value in this dataset. Provided as a manual starting point only."
     }
   ]
 }

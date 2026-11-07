@@ -1,70 +1,101 @@
 {
   "meta": {
-    "title": "Executive Summary",
-    "compiled": "2026-11-06",
-    "prepared_by": "Session arena-82aa8544"
+    "title": "Executive summary",
+    "subtitle": "Bathtub wastewater overflow trip lever — San Francisco",
+    "compiled": "2026-11-07",
+    "scope": "One stuck trip lever in one tenant-occupied San Francisco unit, and the search for a licensed firm that can remove it without damaging the concealed plumbing."
   },
   "situation": [
-    "The bathtub's wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall of a tenant-occupied San Francisco unit; the overflow sits in a hard-to-access area.",
-    "Five or more licensed plumbers have already attempted/were consulted and could not remove it from above without risking destruction of the hidden plumbing; their consensus is to work from below.",
-    "The space below is a storage unit, so below-floor work likely requires opening the drywall ceiling to reach the assembly — the brief requires one coordinated service covering both plumbing and drywall, performed by licensed professionals in an occupied, sensitive environment."
+    "A trip-lever bath waste is stuck inside the plumbing concealed behind the wall of an occupied unit. The assembly cannot be freed from the tub side by ordinary means, and more than five licensed plumbers have already declined to force it, warning that the concealed plumbing behind the wall could be destroyed.",
+    "There are only two routes. Either the assembly comes out through the overflow opening, or the wall/ceiling below is opened for access. The second route works from a storage unit, which means opening and later repairing a drywall ceiling.",
+    "The owner wants one accountable contractor for both the plumbing and the drywall, licensed, working in an occupied building, and drawn from review-backed sources."
+  ],
+  "what_the_evidence_shows": [
+    "Above-access is the manufacturer's own service path: the overflow plate is held by two screws and the drop-cylinder assembly and linkage hang from it (Watco instructions, steps 6–7). Above-access is therefore the right first attempt, not a hopeful one.",
+    "Above-access can still fail legitimately: if the linkage is kinked or the cylinder is seized in the tee, the plate comes off but the assembly does not, and the wall is the only way in. That is consistent with the reported refusals. Only an on-site attempt answers it.",
+    "The all-in-one requirement is a licensing question with a clear official answer. Plumbing plus drywall is two unrelated trades, so a single contract belongs with a B-licensed general contractor, either holding C-36 itself or subcontracting it (BPC §7057(b)). A C-36-only plumber cannot cover the drywall.",
+    "Nineteen licence numbers were checked one by one on the CSLB register. Six of them hold both B and C-36, which is the exact licence pair this job needs in one contract.",
+    "The single most useful finding: licence 757796 (Bay Area Plumbing, which has already quoted $550) and licence 749536 (Save-On-Interior, B + C-36) are both recorded by CSLB at 335 14th Avenue, San Francisco 94118, on the same telephone number. One company that has already priced the plumbing may already hold both trades. This is an inference from two official records, not a stated fact.",
+    "If the ceiling is opened, the code question is not 'patch or leave open' but 'slip joint or not'. UPC §402.10 requires a 12-inch access panel where a slip joint is concealed; soldered and two-piece joints do not trigger it. A framed access panel complies either way, which is why it is the recommended specification."
   ],
   "key_numbers": [
     {
-      "metric": "Quotes received (2026-08-30)",
       "value": "3",
-      "detail": "$135 (adjust plunger handle, Fast Response) · $550 (lever + diverter, Bay Area Plumbing) · $614 (waste-and-overflow replacement, Expert Plumbing Solutions)",
-      "verified": false,
-      "flag": "F-02"
+      "label": "quotes held, all unverified",
+      "note": "$614 waste-and-overflow replacement; $550 lever plus spout diverter; $135 repair or adjustment",
+      "where": "estimates.html"
     },
     {
-      "metric": "Providers verified active on official CSLB records",
-      "value": "11",
-      "detail": "All license statuses checked directly on CSLB license-detail pages on 2026-11-06 (one carries an additional CSLB future-suspension warning — see F-12)",
-      "verified": true,
-      "flag": null
+      "value": "19",
+      "label": "CSLB licence numbers re-read on 2026-11-07",
+      "note": "every one fetched from cslb.ca.gov the same day",
+      "where": "providers.html"
     },
     {
-      "metric": "Providers with documented tub waste-and-overflow work in SF",
-      "value": "1",
-      "detail": "Heise's Plumbing — documented Mission-district tub W&O replacement job page with photos",
-      "verified": true,
-      "flag": null
+      "value": "6",
+      "label": "licences holding both B and C-36",
+      "note": "the licence pair needed for one-contract plumbing plus drywall",
+      "where": "providers.html"
     },
     {
-      "metric": "Providers whose license can legally prime a multi-trade (plumbing + drywall) contract",
-      "value": "4",
-      "detail": "Ace (#829071: B + C-36), We Do Construction (#1096552: B + C-36), Rapid Flow (#1115649: B + C-36), SF Building Group (#1106131: B)",
-      "verified": true,
-      "flag": "F-06"
+      "value": "3",
+      "label": "licences not current or not clear",
+      "note": "1 suspended; 1 with a future-suspension warning; 1 with complaint disclosure",
+      "where": "providers.html#P-19"
     },
     {
-      "metric": "Published range for tub drain work (third-party 2026 guides)",
-      "value": "$200 – $1,025",
-      "detail": "HomeGuide $200–$700; Angi ~$700 easy access, $500–$1,025 difficult access",
-      "verified": true,
-      "flag": null
+      "value": "0",
+      "label": "providers contacted",
+      "note": "no availability, willingness or price has been confirmed",
+      "where": "flagged-for-review.html#F-05"
     },
     {
-      "metric": "Published add-on for drywall patching (third-party guide)",
-      "value": "$300 – $930",
-      "detail": "Angi (Oct 2026) — not included in any quote received so far",
-      "verified": true,
-      "flag": "F-03"
+      "value": "0",
+      "label": "quotes covering drywall",
+      "note": "the all-in-one scope has never been priced",
+      "where": "flagged-for-review.html#F-04"
     }
   ],
-  "recommendations": [
-    "Treat the three quotes as scope-differentiated, not comparable: adjust ($135) vs lever/diverter ($550) vs full W&O replacement ($614). None includes the likely ceiling opening/patch.",
-    "For the preferred outcome (removal from above), re-engage the three quoting companies with the exact question: can the overflow faceplate and fused internals be extracted from the tub side without opening the wall — and get the answer in writing.",
-    "For the fallback (below-floor access), shortlist the multi-trade-licensed firms — Ace Plumbing & Rooter (B + C-36, 25+ years, HOA/property-manager experience), We Do Construction (B + C-36, self-performed plumbing under one GC contract), Rapid Flow (B + C-36, GC positioning, 24/7), and SF Building Group (B, occupied-space off-hours work) — or a B-2 Residential Remodeler route (24/7 SF Handyman & Remodeling, #1105133). Require the drywall scope (open, frame, fit access panel, patch, texture) in the same contract.",
-    "Whichever vendor opens the ceiling, require a code-aligned access panel (CPC 402.10: 12-inch minimum access for concealed slip-joint connections) rather than a solid patch, so future service does not require re-opening.",
-    "Before signing: click each provider's CSLB link to re-verify status, confirm workers'-compensation and liability insurance certificates (two providers are WC-exempt sole/no-employee operations), and confirm tenant-notice/dust-containment logistics in writing.",
-    "Confirm the matched identity of the three quoting companies (generic names) before scheduling — see Flagged for Review F-02."
+  "recommendation": [
+    {
+      "step": 1,
+      "title": "Test the above-access route in writing, once",
+      "detail": "Send the same question to the three firms that already quoted: will you attempt extraction through the overflow opening, and where do you stop before the wall is opened? The answer decides the whole job. No new contractor is needed for this step."
+    },
+    {
+      "step": 2,
+      "title": "Ask Bay Area Plumbing to contract the drywall under licence 749536",
+      "detail": "If the firm will contract both trades under the B + C-36 licence at its own address, the one-accountable-contractor requirement is met by a company that has already priced the plumbing. Confirm the licence number printed on the contract and ask which individual qualifies each licence."
+    },
+    {
+      "step": 3,
+      "title": "Run a parallel quote from an independent B + C-36 firm",
+      "detail": "P-05 Ayoob & Peery (B + C-36 since 1980, active workers' compensation) and P-06 Ace Plumbing & Rooter (B + C-36 plus four more classifications) are the strongest independent all-in-one candidates. A second price is the only way to test the $550 and $614 figures."
+    },
+    {
+      "step": 4,
+      "title": "Specify the ceiling detail before anyone opens it",
+      "detail": "Require a framed 12-inch access panel rather than a solid patch, a photograph of the joint while it is open, and the drywall make-good inside the same contract. This satisfies UPC §402.10 whether or not the joint turns out to be a slip joint."
+    },
+    {
+      "step": 5,
+      "title": "Serve notice and book the visit",
+      "detail": "Civil Code §1954 requires written notice stating date, approximate time and purpose, in normal business hours, 24 hours being presumed reasonable. Two visits may be needed: the unit above for the plumbing, the storage unit below for the ceiling."
+    }
   ],
-  "open_items": [
-    "Reference photos from the owner (R-12) — all analysis is description-based until then.",
-    "Owner confirmation that the three matched companies are the ones that provided the quotes (F-02).",
-    "A combined plumbing + drywall quote for the below-floor fallback path (no such quote exists yet)."
+  "cost_analysis": [
+    "The three quotes are not comparable. $135 buys an adjustment of the existing mechanism; $550 buys a lever and spout diverter with labour and materials; $614 buys a waste-and-overflow replacement. Only the third matches 'remove the assembly and replace what is behind the tub'.",
+    "None of the three includes drywall, so every figure is incomplete if access comes from below. The drywall component is unpriced by any firm.",
+    "The San Francisco permit fee is set by DBI's published schedule and depends on the declared scope and valuation. No amount is reproduced here because the valuation is unknown and no official figure corresponds to this specific job yet.",
+    "Practical reading: budget the plumbing figure plus an unpriced drywall allowance, and treat any number quoted for the combined job as the only figure that answers the actual requirement."
   ],
-  "verification_statement": "Every number and status on this site is either (a) verified against an official source on 2026-11-06 with a link, or (b) explicitly labeled user-provided/unverified and published on the Flagged for Review page. No values were inferred. Sensitive internal scoping details are intentionally excluded from all published pages."
+  "open_questions": [
+    "Will any firm commit in writing to attempting removal from above, and stop at a defined point?",
+    "Is the concealed waste assembly a slip joint or a soldered/two-piece joint? It decides the access-panel requirement.",
+    "Does the single operator behind licences 757796 and 749536 hold the B qualifier as well as the C-36 qualifier?",
+    "What does the combined plumbing-plus-drywall job cost?",
+    "Which of the four out-of-town firms will actually travel to San Francisco?",
+    "What do the reviews say? Ratings could not be retrieved; they must be read by hand."
+  ],
+  "verification_statement": "Every provider row on this site was read from the official CSLB licence-detail page for that licence number on 2026-11-07 and carries that page as its source link. Every statutory and code row links to the statute or the regulator. Fields that could not be confirmed from an official source are blank: ratings, review counts, service areas, availability and all drywall prices. The three quote amounts are first-party data from the property owner and are labelled unverified. Unresolved, inferred or contradictory items are itemised on the Flagged for Review page."
 }
