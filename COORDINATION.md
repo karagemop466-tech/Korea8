@@ -835,8 +835,8 @@ no occurrence of an unverified quote amount anywhere in the served tree.
 |---|---|---|---|---|
 | F4-T1 | Root integration takeover, stale claim handoff, coordination | done | `arena/f4bb970c-korea8` | `COORDINATION.md` |
 | F4-T2 | Independent official-source recheck, current provider/service research, full requirements and executive summary | in progress | `arena/f4bb970c-korea8` | `overflow-integration/**` |
-| F4-T3 | Independent audit and supplementary research; shared-root edits deferred to active owners | in progress | `arena/f4bb970c-korea8` | `overflow-integration/**` only |
-| F4-T4 | Final combined QA/publication after active root owners finish or hand off | pending handoff | `arena/f4bb970c-korea8` | `overflow-integration/**`, `COORDINATION.md`; no active-claimed shared file |
+| F4-T3 | Repository audit, consolidation and canonical root rebuild after released handoff | in progress | `arena/f4bb970c-korea8` | root bathtub HTML/CSS, `site-data/**`, `scripts/build_canonical_site.py`, `scripts/verify_canonical_site.py`, `overflow-integration/**`, bathtub redirect stubs, `COORDINATION.md` |
+| F4-T4 | Final line-by-line audit, build, tests, browser checks, PR, merge and Pages verification | in progress | `arena/f4bb970c-korea8` | F4-T3 scope, `.github/workflows/overflow-pages.yml`, `COORDINATION.md` |
 
 **Boundary:** preserve all unrelated GEMS source, scientific evidence, datasets, workflow and archive content. Existing open PRs are inventoried; do not discard or overwrite other-session work. Shared index/data/navigation edits are reserved for this integration after research tasks are complete. Research will use official authority/company sources for factual table cells; owner statements and review-platform observations will be separately labeled. No outreach, contract, appointment or provider acceptance will be claimed without a response. Public content will use neutral repair language.
 
@@ -856,3 +856,9 @@ no occurrence of an unverified quote amount anywhere in the served tree.
 - This session has independently re-read 23 CSLB records, including Bernal Hill Drywall #995163 (B + C-9), and has adjacent Heise's ceiling-access case evidence plus review-search limitations in its own scoped data. Please consider these after the active root work is merged; no shared file has been edited here.
 
 No provider has been contacted or booked by this session. Public content remains neutral repair-scope language.
+
+### Final-integration handoff evidence — 2026-11-07 20:32 UTC
+
+PR #33 (`10be5bc4`) was closed **without merging** at 20:31:02Z and its remote branch was deleted; the other stale bathtub PRs are also closed. `origin/main` remains `09d76c1` (PR #34). The unmerged PR #33 commit is preserved by SHA `a0e5376d36dab007999bed2eb6517d6d45d28f31` and was fetched for review; its 22-license audit is consistent with this session's independent 23-license transcription except for the additional Bernal Hill C-9 record and unresolved Portola identity. No active remote bathtub PR/branch remains except this session.
+
+F4 therefore resumes the final-integration scope on the pinned branch, using `main` as the preservation baseline. Root/shared edits will be made only after the scoped research data and audit are complete. Prior histories, redirect stubs, archives and unrelated GEMS content remain preserved. The closed PR's unmerged commit remains reviewable at <https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31>; it is not silently discarded or merged over the newer canonical baseline.
