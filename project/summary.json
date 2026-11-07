@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Executive Summary",
-    "compiled": "2026-11-06",
-    "prepared_by": "Session arena-82aa8544"
+    "compiled": "2026-11-07",
+    "prepared_by": "Session arena/7be08189-korea8 (final integration; original research: session arena-82aa8544)"
   },
   "situation": [
     "The bathtub's wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall of a tenant-occupied San Francisco unit; the overflow sits in a hard-to-access area.",
@@ -13,7 +13,7 @@
     {
       "metric": "Quotes received (2026-08-30)",
       "value": "3",
-      "detail": "$135 (adjust plunger handle, Fast Response) · $550 (lever + diverter, Bay Area Plumbing) · $614 (waste-and-overflow replacement, Expert Plumbing Solutions)",
+      "detail": "Adjust/repair scope (Fast Response) · lever + diverter replacement (Bay Area Plumbing) · waste-and-overflow replacement (Expert Plumbing Solutions). Amounts on file with the owner — not published (F-02).",
       "verified": false,
       "flag": "F-02"
     },
@@ -41,20 +41,20 @@
     {
       "metric": "Published range for tub drain work (third-party 2026 guides)",
       "value": "$200 – $1,025",
-      "detail": "HomeGuide $200–$700; Angi ~$700 easy access, $500–$1,025 difficult access",
-      "verified": true,
-      "flag": null
+      "detail": "HomeGuide $200–$700; Angi ~$700 easy access, $500–$1,025 difficult access Third-party guide figure, not an official source — context only.",
+      "verified": false,
+      "flag": "F-14"
     },
     {
       "metric": "Published add-on for drywall patching (third-party guide)",
       "value": "$300 – $930",
-      "detail": "Angi (Oct 2026) — not included in any quote received so far",
-      "verified": true,
-      "flag": "F-03"
+      "detail": "Angi (Oct 2026) — not included in any quote received so far Third-party guide figure, not an official source — context only.",
+      "verified": false,
+      "flag": "F-14"
     }
   ],
   "recommendations": [
-    "Treat the three quotes as scope-differentiated, not comparable: adjust ($135) vs lever/diverter ($550) vs full W&O replacement ($614). None includes the likely ceiling opening/patch.",
+    "Treat the three quotes as scope-differentiated, not comparable: an adjust/repair scope versus a lever-and-diverter replacement versus a full waste-and-overflow replacement. Amounts are on file with the owner and are not published (F-02). None includes the likely ceiling opening/patch.",
     "For the preferred outcome (removal from above), re-engage the three quoting companies with the exact question: can the overflow faceplate and fused internals be extracted from the tub side without opening the wall — and get the answer in writing.",
     "For the fallback (below-floor access), shortlist the multi-trade-licensed firms — Ace Plumbing & Rooter (B + C-36, 25+ years, HOA/property-manager experience), We Do Construction (B + C-36, self-performed plumbing under one GC contract), Rapid Flow (B + C-36, GC positioning, 24/7), and SF Building Group (B, occupied-space off-hours work) — or a B-2 Residential Remodeler route (24/7 SF Handyman & Remodeling, #1105133). Require the drywall scope (open, frame, fit access panel, patch, texture) in the same contract.",
     "Whichever vendor opens the ceiling, require a code-aligned access panel (CPC 402.10: 12-inch minimum access for concealed slip-joint connections) rather than a solid patch, so future service does not require re-opening.",
@@ -66,5 +66,5 @@
     "Owner confirmation that the three matched companies are the ones that provided the quotes (F-02).",
     "A combined plumbing + drywall quote for the below-floor fallback path (no such quote exists yet)."
   ],
-  "verification_statement": "Every number and status on this site is either (a) verified against an official source on 2026-11-06 with a link, or (b) explicitly labeled user-provided/unverified and published on the Flagged for Review page. No values were inferred. Sensitive internal scoping details are intentionally excluded from all published pages."
+  "verification_statement": "Every value on this site is either (a) verified against a linked official source — CSLB license records, San Francisco DBI / sf.gov pages, the code publisher (IAPMO), or manufacturer documentation — or (b) explicitly labeled third-party or unverified together with its source link. Values that could not be confirmed from an official source are left blank and listed on the Flagged for Review page. Nothing on this site was inferred."
 }

@@ -103,8 +103,9 @@ def page(title, active, body, description=""):
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
      Built {BUILD_STAMP} · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
-     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
+  <p class="muted">Canonical route: this dashboard is the project's single published site — the parallel-session
+     briefs (bathtub-overflow/, bathroom-overflow/, trip-lever/, bathtub/) were consolidated here on 2026-11-07 and now
+     redirect to this page (record: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a>).
      Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
      Licenses re-verified {escape(providers["meta"]["verified_date"])} via official CSLB pages — statuses can change; re-check before contracting.</p>
 </footer>
@@ -126,7 +127,7 @@ def enforce(links, ctx, min_links=1):
 # ---------------- index.html ----------------
 quoted = {e["provider_as_quoted"] for e in estimates["estimates"]}
 multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]]
-documented = [p for p in providers["providers"] if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")]
+documented = [p for p in providers["providers"] if any("recent-jobs" in l.get("url", "") for l in (p.get("source_links") or []))]
 n_providers = len(providers["providers"])
 n_bprime = sum(1 for p in providers["providers"] if "B General Building" in p["classifications"])
 n_b2 = sum(1 for p in providers["providers"] if "B-2 Residential Remodeling" in p["classifications"])
@@ -135,12 +136,13 @@ n_flags = len(flagged["flags"])
 idx_quotes = []
 for e in estimates["estimates"]:
     enforce(e["source_links"], f"estimate {e['id']} (index mini-table)")
+    price = f'<strong>${e["price_usd"]}</strong>' if e.get("price_usd") is not None else '<span class="blank">— not published</span>'
     idx_quotes.append([
         f'<a href="estimates.html#{e["id"]}">{e["id"]}</a>',
         escape(e["provider_as_quoted"]),
         escape(e["quoted_scope"]),
-        f'<strong>${e["price_usd"]}</strong>',
-        badge(False, "", "user-provided — unverified (F-02)"),
+        price,
+        badge(False, "", "unverified — amount on file with owner (F-02)"),
     ])
 
 idx_providers = []
@@ -168,8 +170,8 @@ idx_body = f"""
   <h1>Bathtub Wastewater Overflow <span class="accent">Trip Lever</span> — Repair Coordination</h1>
   <p class="lede">A stuck trip lever inside hidden plumbing behind the wall of a tenant-occupied
   San Francisco unit. 5+ licensed plumbers could not remove it from above. This dashboard collects the
-  requirements, the three received estimates, and license-verified San Francisco providers — every row
-  sourced, unverified values flagged, nothing inferred.</p>
+  requirements, the record of the three estimates received (amounts not published), and license-verified
+  San Francisco providers — every row sourced, unverified values blanked and flagged, nothing inferred.</p>
   <div class="cta-row">
     <a class="btn" href="executive-summary.html">Read the executive summary</a>
     <a class="btn btn-ghost" href="providers.html">Browse verified providers</a>
@@ -188,7 +190,7 @@ idx_body = f"""
 <section>
   <div class="sec-head"><h2>Estimates at a glance</h2><a class="more" href="estimates.html">All details →</a></div>
   {table(["ID", "Provider (as quoted)", "Scope", "Price (USD)", "Verification"], idx_quotes)}
-  <p class="note">Quotes are user-provided (2026-08-30) and were not re-verifiable against any official source — published as-is with <a href="flagged-for-review.html#F-02">flag F-02</a>. Third-party 2026 benchmarks for tub drain work: <strong>$200–$1,025</strong> (<a class="srclink" href="https://homeguide.com/costs/bathtub-repair-cost" target="_blank" rel="noopener">HomeGuide</a>, <a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>); drywall patching adds <strong>$300–$930</strong> (<a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>).</p>
+  <p class="note">The three quotes were recorded by the owner on 2026-08-30; the amounts are <strong>not published</strong> because no official source confirms them (<a href="flagged-for-review.html#F-02">flag F-02</a>). For context only, third-party 2026 guides put tub drain work at <strong>$200–$1,025</strong> (<a class="srclink" href="https://homeguide.com/costs/bathtub-repair-cost" target="_blank" rel="noopener">HomeGuide</a>, <a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>) and drywall patching at <strong>$300–$930</strong> (<a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>) — third-party figures, not official sources.</p>
 </section>
 
 <section>
@@ -205,7 +207,8 @@ idx_body = f"""
     covering plumbing <em>and</em> drywall. CSLB's official rule: multi-trade jobs belong with a B-licensed general
     contractor (<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx" target="_blank" rel="noopener">source</a>)
     — see <a href="technical-approach.html">Technical Approach</a>. Require a code-aligned 12-inch access panel instead of a solid patch
-    (<a class="srclink" href="https://aa.iapmo.org/?code=UPC&amp;chapter=4" target="_blank" rel="noopener">CPC §402.10 via IAPMO</a>).</p>
+    (CPC §402.10, 2022 edition — <a class="srclink" href="https://up.codes/s/concealed-joints" target="_blank" rel="noopener">reprint</a>;
+    current edition: <a class="srclink" href="https://epubs.iapmo.org/2025/CPC/" target="_blank" rel="noopener">2025 CPC via IAPMO</a>).</p>
   </div>
 </section>
 """
@@ -283,13 +286,14 @@ nothing inferred. {escape(requirements["meta"]["provenance_note"].split(".")[0])
 est_rows = []
 for e in estimates["estimates"]:
     enforce(e["source_links"], f"estimate {e['id']}")
+    price = f'<strong>${e["price_usd"]}</strong>' if e.get("price_usd") is not None else '<span class="blank">— not published</span><br><span class="muted small">on file with the owner</span>'
     est_rows.append([
         f'<span id="{e["id"]}"><code>{e["id"]}</code></span>',
         f'<strong>{escape(e["provider_as_quoted"])}</strong><br><span class="muted small">{escape(e["identified_entity"])}</span>',
         escape(e["date"]),
         escape(e["quoted_scope"]),
-        f'<strong>${e["price_usd"]}</strong>',
-        badge(False, "", "unverified — user-provided") + f' <span class="muted small">{escape(e["identification_status"])}</span>',
+        price,
+        badge(False, "", "unverified — amount not published (F-02)") + f' <span class="muted small">{escape(e["identification_status"])}</span>',
         links_html(e["source_links"]),
     ])
 
@@ -299,7 +303,7 @@ for b in estimates["benchmarks_third_party"]:
         f'<code>{b["id"]}</code>',
         escape(b["metric"]),
         f"<strong>{escape(b['value'])}</strong>",
-        f'<span class="pill">third-party guide</span>',
+        f'<span class="pill pill-warn">third-party — not an official source</span>',
         f'<a class="srclink" href="{escape(b["url"], quote=True)}" target="_blank" rel="noopener">{escape(b["source_label"])}</a>',
     ])
 
@@ -312,7 +316,7 @@ est_body = f"""
 <h2>Scope analysis</h2>
 <p>{escape(estimates["analysis"])}</p>
 
-<h2>Published cost benchmarks (third-party guides)</h2>
+<h2>Published cost benchmarks (third-party guides — context only, not official sources)</h2>
 {table(["ID", "Metric", "Range", "Type", "Source"], bench_rows)}
 """
 

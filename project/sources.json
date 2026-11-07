@@ -88,10 +88,10 @@
     {
       "id": "S-11",
       "type": "Code publisher",
-      "title": "IAPMO — Answers and Analysis, UPC Chapter 4 (Section 402.10 Slip Joint Connections)",
-      "url": "https://aa.iapmo.org/?code=UPC&chapter=4",
-      "used_for": "Official code-publisher interpretation: fixtures with concealed slip-joint connections need an access panel or utility space >= 12 inches in least dimension",
-      "fetched": "2026-11-06"
+      "title": "IAPMO — 2025 California Plumbing Code (official epub; Ch. 4 Plumbing Fixtures and Fixture Fittings)",
+      "url": "https://epubs.iapmo.org/2025/CPC/",
+      "used_for": "Official code-publisher interpretation: fixtures with concealed slip-joint connections need an access panel or utility space >= 12 inches in least dimension. (2026-11-07: aa.iapmo.org/?code=UPC&chapter=4 became members-only; replaced with the official 2025 CPC epub)",
+      "fetched": "2026-11-06; re-checked 2026-11-07 (URL replaced)"
     },
     {
       "id": "S-12",
@@ -128,18 +128,18 @@
     {
       "id": "S-16",
       "type": "Manufacturer",
-      "title": "Watco Manufacturing — Trip Lever Bath Waste Installation Instructions (Models 500/550/600, PDF)",
-      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "title": "Watco Manufacturing — Trip Lever Bath Waste Installation Instructions (official instruction sheet)",
+      "url": "https://www.watcomfg.com/watco/Instructions/TL-TS-SL-Instructions-color.html",
       "used_for": "Manufacturer documentation of trip-lever assembly: overflow plate, drop-cylinder/linkage, retainer plate under tub, overflow elbow behind tub wall",
-      "fetched": "2026-11-06"
+      "fetched": "2026-11-06; re-checked 2026-11-07 (URL replaced — former PDF path removed by Watco site update)"
     },
     {
       "id": "S-17",
       "type": "Manufacturer",
-      "title": "Watco Manufacturing — Trip Lever Installation Instructions (Quick Adjust / Slip Lock / TurnStyle, PDF)",
-      "url": "https://www.watcomfg.com/Instructions/WIRE-TL-TS-SL%20Inst.black.pdf",
+      "title": "Watco Manufacturing — Cutting & Sizing Instructions for trip-lever bath wastes (Quick Adjust / Slip Lock / TurnStyle)",
+      "url": "https://www.watcomfg.com/watco/Instructions/WIRE-TL-TS-SL-Inst-black.html",
       "used_for": "Linkage adjustment mechanics; brass linkage must not kink; drop cylinder setting",
-      "fetched": "2026-11-06"
+      "fetched": "2026-11-06; re-checked 2026-11-07 (URL replaced — former PDF path removed by Watco site update)"
     },
     {
       "id": "S-18",

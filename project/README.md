@@ -1,13 +1,14 @@
 # Bathtub Wastewater Overflow Trip Lever — Project Data & Site
 
-Session `arena-82aa8544`, 2026-11-06.
+Session `arena-82aa8544`, 2026-11-06 · final integration `arena/7be08189-korea8`, 2026-11-07.
 
 ## What lives here
 
-- `requirements.json` — compiled requirements list (public-safe restatement of the brief).
-- `estimates.json` — the three user-provided quotes + third-party cost benchmarks.
-- `providers.json` — seven San Francisco providers, license statuses verified against
-  official CSLB license-detail pages on 2026-11-06.
+- `requirements.json` — compiled requirements list (restatements of the brief).
+- `estimates.json` — the three owner-recorded quotes (amounts not published; see F-02)
+  + third-party cost benchmarks (context only).
+- `providers.json` — eleven San Francisco providers, license statuses verified against
+  official CSLB license-detail pages on 2026-11-06 and re-verified 2026-11-07.
 - `sources.json` — master source register (official government, code publisher, manufacturer,
   third-party), each fetched this session.
 - `technical.json` — verified technical findings (trip-lever mechanics, access paths, code
@@ -28,6 +29,7 @@ repository root (which is what GitHub Pages serves). The build enforces:
 
 ## Integrity note
 
-Sensitive internal scoping details from the brief are intentionally excluded from every
-published page and from these data files. The requirements list contains only the
-public-safe restatements needed to source the work.
+Every value served by the site is either verified against a linked official source or
+labeled unverified/third-party with its link; values not confirmable from an official
+source (including the three quote amounts) are left blank and flagged on the site's
+Flagged for Review page.

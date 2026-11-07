@@ -22,16 +22,16 @@
     {
       "id": "T-03",
       "topic": "Why access from below is the standard fallback",
-      "finding": "Manufacturer installation instructions show the W&O assembly is secured with a retainer plate and screws under/behind the tub, with the overflow elbow set against the tub wall inside the framing cavity — i.e., the assembly physically lives in the hidden cavity behind/below the tub. When the internals are fused, replacement generally requires reaching that cavity: from above via an access opening, or from below through the ceiling of the space underneath.",
-      "source_label": "Watco Manufacturing official trip-lever installation instructions (PDF)",
-      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+      "finding": "Manufacturer installation instructions show the W&O assembly is secured with a retainer plate and screws under/behind the tub, with the overflow elbow set against the tub wall inside the framing cavity — i.e., the assembly physically lives in the hidden cavity behind/below the tub. When the internals are fused, replacement generally requires reaching that cavity: from above via an access opening, or from below through the ceiling of the space underneath. (URL updated 2026-11-07: Watco reorganized its instruction library and the former PDF path now 404s; the current official instructions page is linked.)",
+      "source_label": "Watco Manufacturing — official Trip Lever Installation Instructions (Quick Adjust / Slip Lock / TurnStyle)",
+      "url": "https://www.watcomfg.com/watco/Instructions/TL-TS-SL-Instructions-color.html"
     },
     {
       "id": "T-04",
       "topic": "Code — access openings",
-      "finding": "The California Plumbing Code (2022 §402.10; 2010 §404.2) requires fixtures with concealed slip-joint connections to be provided with an access panel or utility space of at least 12 inches in the least dimension, unobstructed, so connections are inspectable and repairable. Tub W&O assemblies commonly use slip joints — so when the ceiling is opened below, fitting a proper access panel (rather than a solid patch) is the code-aligned outcome.",
-      "source_label": "IAPMO Answers & Analysis (UPC Ch. 4) + CPC 2022 reprint + 2010 CPC scan",
-      "url": "https://aa.iapmo.org/?code=UPC&chapter=4"
+      "finding": "The California Plumbing Code (2022 §402.10; numbered §404.2 in the 2010 edition) requires fixtures with concealed slip-joint connections to be provided with an access panel or utility space of at least 12 inches in the least dimension, unobstructed, so connections are inspectable and repairable. Tub W&O assemblies commonly use slip joints — so when the ceiling is opened below, fitting a proper access panel (rather than a solid patch) is the code-aligned outcome. (Link updated 2026-11-07: IAPMO's 'Answers and Analysis' page is now members-only; the official 2025 CPC epub is linked instead, and the 12-inch §402.10 wording is confirmed in the linked 2022 CPC/UPC reprint. Section numbering varies by edition — see flag F-07.)",
+      "source_label": "IAPMO — 2025 California Plumbing Code (official epub) + CPC 2022 §402.10 reprint",
+      "url": "https://epubs.iapmo.org/2025/CPC/"
     },
     {
       "id": "T-05",
@@ -50,7 +50,7 @@
     {
       "id": "T-07",
       "topic": "Cost context",
-      "finding": "Published 2026 ranges: bathtub plumbing repairs $100–$700+ (HomeGuide); tub drain replacement ~$700 with easy access, $500–$1,025 with difficult access (Angi); drywall patching adds $300–$930 (Angi). The received quotes ($135 adjust; $550 lever/diverter; $614 W&O replacement) sit inside these ranges for their respective scopes; a below-access ceiling opening + patch is additional and not yet quoted.",
+      "finding": "Published 2026 third-party ranges (context only, not official): bathtub plumbing repairs $100–$700+ (HomeGuide); tub drain replacement ~$700 with easy access, $500–$1,025 with difficult access (Angi); drywall patching adds $300–$930 (Angi). The three owner-recorded quotes (amounts on file, not published — F-02) cover an adjust scope, a lever/diverter replacement, and a full W&O replacement; a below-access ceiling opening + patch is additional and not yet quoted by anyone.",
       "source_label": "HomeGuide (2026) + Angi (Oct 2026) — third-party cost guides",
       "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm"
     },

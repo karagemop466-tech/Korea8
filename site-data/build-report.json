@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-06 13:45 UTC",
+  "built_at": "2026-11-07 20:41 UTC",
   "outputs": [
     "index.html",
     "executive-summary.html",
@@ -13,7 +13,7 @@
     "project/EXECUTIVE_SUMMARY.md"
   ],
   "enforcement": {
-    "rows_with_source_links_checked": 79,
+    "rows_with_source_links_checked": 83,
     "failures": [],
     "broken_internal_links": []
   },
@@ -24,6 +24,6 @@
     "providers": 11,
     "technical_findings": 8,
     "sources": 40,
-    "flags": 12
+    "flags": 16
   }
 }

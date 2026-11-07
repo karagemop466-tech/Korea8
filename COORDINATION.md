@@ -89,12 +89,12 @@ session, log the request here instead of editing it.
    used in this project (FL-08).
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
-5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
-   recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
-   branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
-   permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
-   the site's "Flagged for Review" page, which states the handling rule without disclosing the content.
+5. **Non-public context handling.** The brief included non-public context that must never appear on the site, in
+   email, or in any public record. **It is not recorded anywhere in this repository, in the site's data files, in the
+   page text, or in any commit message on this branch.** The published site states only the verifiable code facts:
+   what the official DBI rule is, who to ask, what a permit would cost, and the trade-licensing and tenant-entry rules.
+   *(Neutralized 2026-11-07 by the final-integration session: the original wording of this item named the category of
+   the excluded material; the handling record is kept, the category is not.)*
 
 ---
 
@@ -219,7 +219,7 @@ F-11 on the dashboard's Flagged for Review page.
 - Build-time enforcement: 74 data rows each carry ≥1 source link (build fails otherwise);
   unverified cells render blank/badged — never inferred; internal-link check 0 broken;
   grep-verified no restricted brief content on any published page of this session.
-- Owner-provided estimates ($135 / $550 / $614, dated 2026-08-30) are published verbatim,
+- Owner-provided estimates (three amounts, dated 2026-08-30) are published verbatim,
   labeled user-provided and unverified (flag F-02), with third-party 2026 benchmarks
   (HomeGuide, Angi) for context.
 
@@ -362,7 +362,7 @@ This session has not edited another session's site files.
 - City of SF contractor-registration page (official) fetched and live.
 - Third-party cost guides (rosenberryrooms.com, currentcost.org, bathify.com) used for ballpark context only and labeled
   third-party.
-- User-provided estimates ($135 / $550 / $614, dated 2026-08-30) could not be confirmed from any official source — left
+- User-provided estimates (three amounts, dated 2026-08-30) could not be confirmed from any official source — left
   unverified and published on the Flagged for Review page.
 - Cross-check against other sessions' CSLB findings is consistent: Bay Area Plumbing CSLB #757796, Fast Response #1024971,
   Expert Plumbing Solutions #977638, Rapid Flow #1115649 (see records above from `ae482104`, `0ad9ad61`, `a93dcbfd-s1`,
@@ -453,7 +453,7 @@ source and are published as unverified.
 ### Findings this session adds that were not on `main` at merge time
 
 - **CSLB #749536 (Save-On-Interior) holds B + C-36 at the same address and phone as #757796
-  (Bay Area Plumbing)** — the operator who quoted $550 already controls a licence covering the
+  (Bay Area Plumbing)** — the operator behind the E-02 quote already controls a licence covering the
   general-building/drywall side. This is the single most actionable item in this dossier.
 - **CSLB #392967 (Ayoob & Peery Plumbing Co Inc)** holds B + C-36 with continuous licensure
   since 1980 — the longest-established single-licence all-in-one candidate found.
@@ -480,11 +480,13 @@ source and are published as unverified.
 
 ### Standing instruction honoured
 
-The brief contained scheduling and permit background the requester asked to keep private and
-never publish. **None of it was written to this repository or published.** The dossier states
-only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
-practical point that the normal permit route is fast for contractors registered for Express
-Permits on PermitSF, which addresses the timing concern without any off-record workaround.
+The brief included non-public context that the requester asked to keep out of the repository,
+the site, and anything public. This session's intent was to exclude it entirely; however, the
+final-integration audit (2026-11-07, session `arena/7be08189-korea8`) found that one flag in this
+session's published dossier alluded to it — that text has been removed from the served site (see
+the `arena/7be08189-korea8` section below). The dossier otherwise states only the San Francisco
+DBI's published, publicly citable position. *(Category-naming wording from the original note was
+neutralized 2026-11-07 by the final-integration session.)*
 
 ### Deploy log — session `arena/b10e8d0e-korea8`
 
@@ -549,5 +551,78 @@ remains in git history.
   as unverified" — is applied literally to the three owner-held quote amounts on every served route.
   Rows keep provider identity, date, and scope with official links; the amount cells are blank with an
   unverified flag. The owner can request the figures be displayed by leaving a note on any flagged item.
+
+### Completion log (2026-11-07)
+
+- **int-1 — done.** PR #21 could not be merged (unrelated-history base; conflicts after PRs #23/#25/#26),
+  so its substantive changes were applied to this branch (commit `c2bdb29`: computed dashboard counts,
+  WC-exempt correction, HARP tag fix, first-link bug in the `documented` computation also fixed) and the
+  PR was closed with an explanatory comment.
+- **int-2 — done.** PRs #21, #22, #24, #17, #12 closed with comments recording why (superseded by the
+  consolidation; records preserved in the PR threads). PR #7 (unrelated GEMS project) left open — not
+  this project's call.
+- **int-3 — done (privacy scrub).** Removed from every served file: the disclosed non-public context in
+  `bathtub/flagged.html` + `bathtub/data/flags.json` + `data/bathtub/flags.json` (a flag detail stating
+  what the brief asked for), the category-naming wording in `scripts/build_bathtub_site.py`,
+  `bathtub-overflow/data/flagged.json` (FL-21 note), `bathtub-overflow/evidence/verification.json` +
+  `scripts/verify_site.py` ("permit-timing" phrasing), `bathtub/verification.html` ("scheduling and
+  background"), the "Sensitive internal scoping details" notes in `project/README.md` /
+  `project/requirements.json` / the old verification statement, and the category-naming phrases in this
+  board (0ad9ad61 item 5 and b10e8d0e's "Standing instruction honoured", both rewritten neutrally with a
+  note that they were neutralized). Automated sweep over every served .html/.json/.md/.py/.css/.xml/.txt
+  file: 0 hits for the disclosure phrase set.
+- **int-4 — done (policy applied).** `project/estimates.json`: `price_usd` set to null for E-01/E-02/E-03
+  with an `amount_note` (amounts on file with the owner); analysis rewritten amount-free;
+  `project/summary.json`: recommendation and key-numbers amount-free, benchmark rows now `verified:false`
+  with flag F-14; `project/flagged.json`: F-02 rewritten (amounts not published; restorable on request),
+  F-11 rewritten as the consolidation record, F-01/F-05 updated, new F-13 (canonical URL), F-14
+  (third-party ≠ official), F-15 (non-public-context scrub note, neutral), F-16 (link-rot corrections);
+  `scripts/build_project_site.py`: price cells render blank + "unverified — amount not published (F-02)",
+  benchmarks badged "third-party — not an official source", footer rewritten (canonical-route note
+  replaces the parallel-brief links). Rebuilt: **83 rows link-checked, 0 enforcement failures, 0 broken
+  internal links**.
+- **int-5 — done (consolidation).** Retired to single redirect stubs (→ the root dashboard):
+  `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `bathtub/`, `docs/bathtub-overflow/`.
+  Removed entirely: `data/bathtub/` (duplicate datasets), the seven `docs/bathtub-*.html` dashboard
+  pages, root duplicate MDs (`BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`),
+  `scripts/build_bathtub_site.py`, `tests/test_bathtub_site.py`. **Restored the DOE GEMS legacy
+  `docs/index.html` and `docs/style.css` from git history** (pre-PR-16 versions) — PR #16 had
+  overwritten the GEMS archive index with a bathtub dashboard while the root footer still labelled the
+  link "DOE GEMS evidence site"; the label is truthful again. GEMS content otherwise untouched.
+- **int-6 — done (line-by-line re-verification, 2026-11-07).**
+  - **CSLB license-detail pages re-fetched directly, 11/11 current-and-active, data-as-of stamps
+    11/7/2026:** #977638 Expert Plumbing Solutions (C-36, exp 10/31/2028, WC Everest Premier);
+    #757796 Bay Area Plumbing (C-36, exp 01/31/2027, WC-exempt); #1024971 Fast Response (C-36, exp
+    03/31/2027, WC policy expires 12/18/2026); #1089561 Taro Group dba Heises Plumbing (C-36/C-10/A/C-20,
+    exp 04/30/2028); #829071 Ace Plumbing & Rooter (C-36/A/C-4/C-16/B/C-10, exp 06/30/2027); #1096552
+    We Do Construction (B + C-36, exp 09/30/2028); #1106131 SF Building Group (B, exp 06/30/2027,
+    WC-exempt); #1115649 Rapid Flow (B + C-36, exp 01/31/2028, WC-exempt); #1105133 HARP Services dba
+    24/7 SF Handyman & Remodeling (B-2, exp 05/31/2027); #1140843 Discount Plumbing Rooter (C-36 + A,
+    exp 07/31/2027, $100k LLC bond + $2M liability on file); #1009195 Advanced Plumbing and Drain (C-36,
+    exp 11/30/2027, **Additional Status warning still present** — F-12). All match the published rows;
+    status strings updated to "data as of 2026-11-07".
+  - **Provider official sites re-fetched and consistent:** eplumbingsolutions.com (license # printed),
+    bayareaplumbingsf.com, fastresponseplumbingsf.com (CSLB #1024971 + C-36 printed),
+    heisesplumbing.com tub-W&O job page (documents the exact job type — Mission, SF), aceplumbingandrooter.com
+    (license #829071 + all six classifications printed), wedoconstructions.com (CSLB #1096552 B + C-36),
+    sfbuildinggroup.com (CSLB #1106131; weekend/off-hours occupied-space work), rapidflowbayarea.com
+    (license #1115649 B + C-36, "Current & Active", Jan 31 2028 — matches CSLB).
+  - **Link-rot found and fixed (flag F-16):** aa.iapmo.org (UPC Ch. 4) is now members-only → replaced
+    with the official IAPMO-published 2025 CPC epub; two Watco instruction PDF paths 404 after a site
+    reorganization → replaced with the current official instruction pages; the 12-inch access-opening
+    wording re-confirmed via the 2022 CPC §402.10 reprint ("access panel or utility space not less than
+    12 inches"). T-03/T-04 and S-11/S-16/S-17 updated with the live URLs.
+  - Site-wide internal link check (all served .html files): **134 links, all resolve**. Privacy and
+    amount sweeps: 0 hits.
+- **int-7 — done (branch hygiene).** Deleted 29 stale bathtub-session branches from origin (08f03e4c,
+  0966a777, 0ad9ad61, 0e2dfee2, 10be5bc4, 126691d6, 2275b01f, 3086bd70, 3d852b51, 3d85e1cc, 53785c93,
+  5404ab5c, 5ba575d1, 5ca4164c, 5d4c76bb, 64728bdf, 6d0d9ff0, 770fba4f, 82aa8544, 8607f8bc, 8b5274f2,
+  a6db7ac6, a93dcbfd, ac6cd45b, ae482104, b10e8d0e, bc5bdaaa, ca2217a7, f4bb970c). Several contained
+  category-naming references to non-public context (notably `arena/3d852b51` and `arena/8b5274f2`), so
+  deletion doubles as privacy remediation; PR threads preserve the records. Kept: `main`, this branch,
+  and the unrelated GEMS branches (0013ec15 [open PR #7], 057f3280, 282485de, b33c0036, ba5bb68d,
+  d7026453).
+- **int-8 — in progress.** Integration PR opened from this branch; result recorded below when complete.
+
 
 

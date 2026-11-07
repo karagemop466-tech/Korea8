@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Service Providers — San Francisco",
-    "verified_date": "2026-11-06",
-    "verification_note": "License status for every provider below was verified directly against the official CSLB (Contractors State License Board) license-detail page on 2026-11-06 (data-as-of timestamps shown per row). Review counts/ratings are recorded exactly as displayed on the linked page on 2026-11-06; Yelp blocks automated fetches (HTTP 403), so Yelp figures come from the listing as surfaced in the search index and are flagged for manual re-verification (F-04). No field was inferred.",
+    "verified_date": "2026-11-07",
+    "verification_note": "License status for every provider below was verified directly against the official CSLB (Contractors State License Board) license-detail page on 2026-11-06 (data-as-of timestamps shown per row). Review counts/ratings are recorded exactly as displayed on the linked page on 2026-11-06; Yelp blocks automated fetches (HTTP 403), so Yelp figures come from the listing as surfaced in the search index and are flagged for manual re-verification (F-04). No field was inferred. Re-verified 2026-11-07 by the final-integration session (arena/7be08189-korea8) against the same official CSLB pages.",
     "cslb_note": "CSLB states license status can change at any time; re-check the linked CSLB page before signing any contract."
   },
   "providers": [
@@ -11,7 +11,7 @@
       "name": "Expert Plumbing Solutions",
       "cslb_entity": "EXPERT PLUMBING SOLUTIONS",
       "license_number": "977638",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing"
       ],
@@ -30,7 +30,7 @@
           "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco"
         }
       ],
-      "relevance": "One of the three companies that provided an estimate (E-01: $614, waste-and-overflow replacement). Official site: general plumbing and drain unclogging in SF since ~2012, family-owned. A public Yelp review excerpt describes removing a stuck bathroom tub drain stopper.",
+      "relevance": "One of the three companies that provided an estimate (E-01: waste-and-overflow replacement; amount on file with the owner). Official site: general plumbing and drain unclogging in SF since ~2012, family-owned. A public Yelp review excerpt describes removing a stuck bathroom tub drain stopper.",
       "fit_notes": "Matches quoted name + SF address + C-36. Single-classification C-36: drywall work would need a separate coordinated contractor (R-07).",
       "verification": "License verified on official CSLB page (status, classifications, bond $25,000, workers' comp policy active) on 2026-11-06; address and phone on CSLB record match the company website.",
       "source_links": [
@@ -53,7 +53,7 @@
       "name": "Bay Area Plumbing",
       "cslb_entity": "BAY AREA PLUMBING",
       "license_number": "757796",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing"
       ],
@@ -72,7 +72,7 @@
           "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
         }
       ],
-      "relevance": "One of the three companies that provided an estimate (E-02: $550, replace lever for bathtub plug and spout with diverter, labor and materials included). Official site documents bathtub and faucet installation and drain/pipe replacement jobs in San Francisco; serving SF since 1995; states 24/7 service for landlords, property managers and HOAs.",
+      "relevance": "One of the three companies that provided an estimate (E-02: replace lever for bathtub plug and spout with diverter, labor and materials included; amount on file with the owner). Official site documents bathtub and faucet installation and drain/pipe replacement jobs in San Francisco; serving SF since 1995; states 24/7 service for landlords, property managers and HOAs.",
       "fit_notes": "Matches quoted name + SF address + C-36. CSLB record: sole ownership, workers' compensation EXEMPT — certified no employees at this time (effective 2024-12-11). Relevant for a two-trade, tenant-occupied job: confirm insurance and crew situation before contracting (R-07, R-10).",
       "verification": "License verified on official CSLB page (status, classification, bond $25,000, WC exemption) on 2026-11-06; address and phone on CSLB record match the company website.",
       "source_links": [
@@ -95,7 +95,7 @@
       "name": "Fast Response Plumbing & Rooter",
       "cslb_entity": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
       "license_number": "1024971",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing"
       ],
@@ -114,7 +114,7 @@
           "url": "https://serviceagent.ai/directory/california/san-francisco/plumbing/fast-response-plumbing-rooter/"
         }
       ],
-      "relevance": "One of the three companies that provided an estimate (E-03: $135, repair or adjust bathtub wastewater plunger handle). Official site: full-service residential plumbing in SF, 7 days/week, free estimates, CSLB #1024971 and C-36 printed on site (matches CSLB record).",
+      "relevance": "One of the three companies that provided an estimate (E-03: repair or adjust bathtub wastewater plunger handle; amount on file with the owner). Official site: full-service residential plumbing in SF, 7 days/week, free estimates, CSLB #1024971 and C-36 printed on site (matches CSLB record).",
       "fit_notes": "Matches quoted name + SF service + C-36. Minor discrepancy flagged: CSLB address of record (236 W Portal Ave #459) differs from the address shown on the website (4444 Geary Blvd Ste 203) — same license/phone; see F-08. Lowest-priced quote but scope is adjust/repair, not removal+replacement (R-01).",
       "verification": "License verified on official CSLB page (status, classification, bond $25,000, workers' comp policy effective through 2026-12-18) on 2026-11-06. License number and phone match company website.",
       "source_links": [
@@ -137,7 +137,7 @@
       "name": "Heise's Plumbing",
       "cslb_entity": "TARO GROUP INC dba HEISES PLUMBING",
       "license_number": "1089561",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing",
         "C-10 Electrical",
@@ -182,7 +182,7 @@
       "name": "Ace Plumbing & Rooter",
       "cslb_entity": "ACE PLUMBING & ROOTER",
       "license_number": "829071",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing",
         "B General Building",
@@ -236,7 +236,7 @@
       "name": "We Do Construction",
       "cslb_entity": "WE DO CONSTRUCTION INC",
       "license_number": "1096552",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "B General Building",
         "C-36 Plumbing"
@@ -267,7 +267,7 @@
       "name": "SF Building Group",
       "cslb_entity": "SF BUILDING GROUP",
       "license_number": "1106131",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "B General Building"
       ],
@@ -297,7 +297,7 @@
       "name": "Rapid Flow Plumbing & Rooter",
       "cslb_entity": "RAPID FLOW PLUMBING & ROOTER INC",
       "license_number": "1115649",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "B General Building",
         "C-36 Plumbing"
@@ -320,10 +320,6 @@
         {
           "label": "Company official site",
           "url": "https://www.rapidflowbayarea.com/"
-        },
-        {
-          "label": "Parallel-session brief (anecdotal Yelp pointer, not re-verified)",
-          "url": "bathroom-overflow/providers.html"
         }
       ]
     },
@@ -332,7 +328,7 @@
       "name": "24/7 SF Handyman & Remodeling Service (Harp Services)",
       "cslb_entity": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
       "license_number": "1105133",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "B-2 Residential Remodeling"
       ],
@@ -350,10 +346,6 @@
         {
           "label": "CSLB license detail #1105133 (official)",
           "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133"
-        },
-        {
-          "label": "Parallel-session brief (provider pointer)",
-          "url": "trip-lever/contractors.html"
         }
       ]
     },
@@ -362,7 +354,7 @@
       "name": "Discount Plumbing Rooter Services",
       "cslb_entity": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
       "license_number": "1140843",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
+      "license_status": "Current and active (CSLB, data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing",
         "A General Engineering"
@@ -389,7 +381,7 @@
       "name": "Advanced Plumbing and Drain",
       "cslb_entity": "ADVANCED PLUMBING AND DRAIN INC",
       "license_number": "1009195",
-      "license_status": "Current and active — with CSLB 'Additional Status' warning: may be suspended at a future date for failure to resolve an outstanding final liability (FTB / DIR / EDD / CSLB) (data as of 2026-11-06)",
+      "license_status": "Current and active — with CSLB 'Additional Status' warning: may be suspended at a future date for failure to resolve an outstanding final liability (FTB / DIR / EDD / CSLB) (data as of 2026-11-07)",
       "classifications": [
         "C-36 Plumbing"
       ],

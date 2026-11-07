@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Flagged for Review",
-    "compiled": "2026-11-06",
+    "compiled": "2026-11-07",
     "note": "Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here."
   },
   "flags": [
@@ -9,7 +9,7 @@
       "id": "F-01",
       "severity": "informational",
       "title": "Repository previously hosted a different project (DOE GEMS Prize Challenge)",
-      "detail": "The repository's existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The new project site now occupies the repository root (what GitHub Pages serves from main), while the complete legacy DOE GEMS evidence site remains untouched under docs/ for history.",
+      "detail": "The repository's existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The bathtub project site occupies the repository root (what GitHub Pages serves from main). The legacy DOE GEMS evidence site remains under docs/ — its index page was temporarily overwritten by a parallel session's draft (PR #16) and was restored from git history during final integration on 2026-11-07.",
       "source_links": [
         {
           "label": "Legacy GEMS evidence site preserved at docs/index.html",
@@ -24,8 +24,8 @@
     {
       "id": "F-02",
       "severity": "unverified-data",
-      "title": "All three estimates are user-provided and could not be independently verified",
-      "detail": "E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor's verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.",
+      "title": "All three estimates are owner-recorded; the amounts are not published",
+      "detail": "E-01, E-02 and E-03 are quotations recorded by the project owner from outreach dated 2026-08-30. No official source exists for a vendor's verbal or written quote, so per the project verification rule the dollar amounts are left blank on every served page and data file; the figures remain on file with the owner. The provider names were matched to licensed entities by name + San Francisco address + classification (official links in each row), but the owner must confirm these are the same businesses contacted. If the owner wants the three figures displayed on this site, request it against this flag and they will be published labeled owner-provided.",
       "source_links": [
         {
           "label": "Estimates data (project/estimates.json)",
@@ -41,7 +41,7 @@
       "id": "F-03",
       "severity": "scope-ambiguity",
       "title": "The three quotes describe different scopes and are not directly comparable",
-      "detail": "E-03 ($135) is 'repair or adjust plunger handle'; E-02 ($550) is 'replace lever for the bathtub plug and spout with diverter, labor and materials'; E-01 ($614) is 'replacing waste and overflow' (full assembly). None of the three quotes explicitly includes drywall opening or ceiling restoration, which the fallback approach (working from below through a storage-unit ceiling) will likely require (R-06, R-07). Third-party guides put drywall patching at $300–$930 on top of plumbing work.",
+      "detail": "E-03 is 'repair or adjust plunger handle'; E-02 is 'replace lever for the bathtub plug and spout with diverter, labor and materials'; E-01 is 'replacing waste and overflow' (full assembly). The amounts are on file with the owner and are not published (F-02). None of the three quotes explicitly includes drywall opening or ceiling restoration, which the fallback approach (working from below through a storage-unit ceiling) will likely require (R-06, R-07). Third-party guides put drywall patching at $300–$930 on top of plumbing work.",
       "source_links": [
         {
           "label": "Angi — bathroom leak repair cost (drywall add-on range)",
@@ -68,8 +68,8 @@
     {
       "id": "F-05",
       "severity": "verification-limit",
-      "title": "CSLB statuses are point-in-time (data as of 2026-11-06)",
-      "detail": "License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status 'can change at any time' and that its database may lag. Re-check each linked CSLB page before contracting. Worker's-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response's WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).",
+      "title": "CSLB statuses are point-in-time (data as of 2026-11-07)",
+      "detail": "License status was verified against official CSLB license-detail pages on 2026-11-06 and re-verified 2026-11-07 (final-integration session). CSLB states status 'can change at any time' and that its database may lag. Re-check each linked CSLB page before contracting. Worker's-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response's WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).",
       "source_links": [
         {
           "label": "CSLB disclaimer on license-detail pages",
@@ -175,9 +175,9 @@
     },
     {
       "id": "F-11",
-      "severity": "needs-review",
-      "title": "Parallel-session brief publishes city building-department administrative content — owner review requested",
-      "detail": "A parallel session's brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project's public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).",
+      "severity": "informational",
+      "title": "Duplicate public routes consolidated into this dashboard (resolved)",
+      "detail": "During final integration (2026-11-07) the parallel-session brief directories (bathtub-overflow/, bathroom-overflow/, trip-lever/, bathtub/, the docs/bathtub-* pages and the docs/bathtub-overflow/ stubs) were retired to redirect stubs pointing at this dashboard, making the repository root the single authoritative URL, as requested in the post-merge policy review (PR #18) and the standing canonical-URL request on the coordination board. No content was discarded: the full text of every brief remains in git history and in the closed pull-request threads (#8–#17, #21–#24). The record of the consolidation decision is in COORDINATION.md on GitHub.",
       "source_links": [
         {
           "label": "Parallel brief under review (bathtub-overflow/)",
@@ -186,6 +186,74 @@
         {
           "label": "Cross-session coordination board",
           "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F-13",
+      "severity": "informational",
+      "title": "Canonical URL: the repository root is the project's single published site",
+      "detail": "This dashboard (repository root, served from main) is the only authoritative route for the bathtub trip-lever project. Former parallel routes now redirect here. The canonical URL is https://karagemop466-tech.github.io/Korea8/ . The shared coordination board recording the multi-session work is COORDINATION.md in the repository.",
+      "source_links": [
+        {
+          "label": "Live dashboard (canonical URL)",
+          "url": "https://karagemop466-tech.github.io/Korea8/"
+        },
+        {
+          "label": "COORDINATION.md — shared task board (GitHub)",
+          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F-14",
+      "severity": "verification-limit",
+      "title": "Third-party cost benchmarks and review figures are not official sources",
+      "detail": "Cost ranges from HomeGuide and Angi, and review counts/ratings from Yelp and similar platforms, are shown on this site only as clearly-labeled third-party context with links for manual re-checking; they are never badged 'verified'. The only cost figures this site treats as officially sourced are government fee schedules and the license/code/fee facts published by CSLB, sf.gov/DBI, IAPMO, and manufacturers. No official source publishes a price for this specific repair.",
+      "source_links": [
+        {
+          "label": "HomeGuide — bathtub repair cost guide (third-party)",
+          "url": "https://homeguide.com/costs/bathtub-repair-cost"
+        },
+        {
+          "label": "Angi — bathroom leak repair cost (third-party)",
+          "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm"
+        }
+      ]
+    },
+    {
+      "id": "F-15",
+      "severity": "informational",
+      "title": "Non-public project context is kept out of all served files",
+      "detail": "During final integration (2026-11-07), references to non-public project context were removed from every served file — pages, data files, and the coordination board — leaving only publicly verifiable material. Content committed before that date remains in git history and in the diff views of previously merged or closed pull requests; a history rewrite was deliberately not performed because it would break the shared branch and pull-request structure. The owner can request removal of specific historical content from GitHub if ever needed (GitHub documents this process for sensitive data in repositories).",
+      "source_links": [
+        {
+          "label": "GitHub Docs — removing sensitive data from a repository",
+          "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository"
+        },
+        {
+          "label": "COORDINATION.md — shared task board (GitHub)",
+          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F-16",
+      "severity": "citation-note",
+      "title": "Source link-rot found and corrected during final-integration re-verification",
+      "detail": "During the 2026-11-07 line-by-line re-verification, three sources cited on 2026-11-06 stopped serving their content: IAPMO's 'Answers and Analysis' page (aa.iapmo.org) became members-only, and two Watco instruction PDF paths were removed in a site reorganization. They were replaced with live official equivalents — the IAPMO-published 2025 California Plumbing Code epub and Watco's current trip-lever instruction pages — and the affected findings (T-03, T-04) and source rows (S-11, S-16, S-17) now carry the corrected URLs. All 11 CSLB license pages and all reachable provider sites were re-verified live on 2026-11-07 with matching data.",
+      "source_links": [
+        {
+          "label": "IAPMO — 2025 California Plumbing Code (official epub, replacement)",
+          "url": "https://epubs.iapmo.org/2025/CPC/"
+        },
+        {
+          "label": "Watco — Trip Lever Installation Instructions (current page, replacement)",
+          "url": "https://www.watcomfg.com/watco/Instructions/TL-TS-SL-Instructions-color.html"
+        },
+        {
+          "label": "CSLB — Check a License (re-verification entry point)",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
         }
       ]
     }
