@@ -164,9 +164,9 @@
    "id": "F-15",
    "severity": "Informational",
    "category": "Permits",
-   "title": "DBI's published guidance is that a permit is needed for this kind of pipe work; that is the position this site documents",
-   "detail": "The brief asks for the work to be done without a permit. The published, citable position of the San Francisco Department of Building Inspection is that a permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall. This site documents only DBI's published position. No private scheduling or background information from the brief has been recorded in the repository or published on the site.",
-   "action": "Call the DBI Permit Center help desk (628-652-4900) to confirm the determination for this exact scope. If a permit is needed, a contractor registered for Express Permits on PermitSF can be issued one without City staff review, which addresses the timing concern through the normal channel.",
+   "title": "Confirm the plumbing permit for the actual scope",
+   "detail": "San Francisco DBI says a permit is needed before cutting into or replacing pipes, particularly when they will be covered by a wall, subject to listed exemptions.",
+   "action": "Ask DBI or the selected contractor to confirm the permit and inspection requirements for the actual work.",
    "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit/",
    "source_label": "SF.gov — Apply for a plumbing and mechanical permit (DBI)",
    "verified": true

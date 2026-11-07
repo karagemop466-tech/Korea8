@@ -776,11 +776,6 @@ ANALYSIS = [
      "substitute is a short questionnaire: have they removed a seized trip-lever through the overflow opening before; "
      "what do they do when it will not come; who patches; will they pull the permit; who will be on site.",
      True, "flagged.html#F-08"),
-    ("A10", "Nothing on this site records the requester's private constraints",
-     "The brief contained scheduling and permit background that the requester asked to keep private. No part of it was "
-     "written to this repository, and none of it appears on any page. The site documents only DBI's published, "
-     "publicly citable position on permits, which anyone could look up.",
-     True, "flagged.html#F-15"),
 ]
 
 
@@ -903,12 +898,6 @@ match is by name and city, and the contractor should be asked to state their lic
 repository (F-13). Model identification matters because the manufacturer documents several model families
 and three different trip-lever mechanisms that are not automatically interchangeable.
 
-## Standing instruction honoured
-
-The brief asked that certain scheduling and background information remain private and never appear on the
-site, in email, or in anything public. Nothing from that part of the brief was written to this repository
-or published. The site states only the San Francisco Department of Building Inspection's published,
-publicly citable position on permits.
 """
 
 

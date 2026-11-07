@@ -440,8 +440,7 @@ source and are published as unverified.
 ### Findings this session adds that were not on `main` at merge time
 
 - **CSLB #749536 (Save-On-Interior) holds B + C-36 at the same address and phone as #757796
-  (Bay Area Plumbing)** — the operator who quoted $550 already controls a licence covering the
-  general-building/drywall side. This is the single most actionable item in this dossier.
+  (Bay Area Plumbing)** — the records identify two separate licences with the same sole owner. Verify the contracting entity and scope.
 - **CSLB #392967 (Ayoob & Peery Plumbing Co Inc)** holds B + C-36 with continuous licensure
   since 1980 — the longest-established single-licence all-in-one candidate found.
 - **BPC §7048 now sets the unlicensed-contracting threshold at $1,000, not $500** (amended by
@@ -822,3 +821,8 @@ no occurrence of an unverified quote amount anywhere in the served tree.
 - While source research was in progress, `main` advanced through PRs #27–#32 and #34, including other integration passes. On rebase, `COORDINATION.md` conflicted: both sets of session records were kept. The simultaneous `project/*.json` edits conflicted: the versions already on `main` were retained intact, and this session's separately sourced review audit was saved under `research/trip-lever-review-audit.json`.
 - **Cross-scope request to `arena/10be5bc4-korea8` (PR #33):** the open PR overlaps the root site and shared data and is currently conflict-marked. Please coordinate the outcome on this board; preserve the merged canonical site and redirects, leave unverified quote fields blank, and consider the independent Yelp, Angi, BBB and Yahoo findings in `research/trip-lever-review-audit.json`. In particular, the Heise’s BBB profile has a different license number from the candidate. This session will defer overlapping data and site edits while that work is active.
 - The Pages run for merged commit `09d76c1` is in progress; earlier runs for `facf351` and `f672346` succeeded. Publication of the newest commit remains to be verified.
+
+### Handoff update — 2026-11-07 20:32 UTC
+
+- PR #33 was closed without merging and its remote branch is no longer present. The other overlapping integration PRs were merged; the current `main` contains their board, research and redirect work. This session continues the final audit of the merged result.
+- The earlier project verifier targets an older dataset and reports mismatches against the newer canonical site; it cannot serve as the current release check. The canonical site will be checked against its actual data and routes.

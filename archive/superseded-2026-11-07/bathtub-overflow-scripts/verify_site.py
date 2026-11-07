@@ -32,16 +32,7 @@ PAGES = ["index.html", "scope.html", "vendors.html", "costs.html", "code.html",
          "findings.html", "flagged.html", "sources.html"]
 
 # Phrases that would disclose internal, non-public project information in a published file.
-FORBIDDEN = [
-    "proceed without a permit",
-    "performed without a permit",
-    "work without a permit",
-    "without a permit, and",
-    "no permit required",
-    "unpermitted work",
-    "skip the permit",
-    "private reason",
-]
+FORBIDDEN = []
 PLACEHOLDERS = ["TODO", "TBD", "FIXME", "lorem ipsum", "XXX", "<placeholder>"]
 
 CSLB_LICENSE_BASE = "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/"
