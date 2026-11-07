@@ -1,0 +1,1841 @@
+{
+  "as_of": "2026-11-07",
+  "summary": {
+    "as_of": "2026-11-07",
+    "context": "The requester describes a stuck bathtub overflow trip lever in an occupied San Francisco unit. More than five licensed plumbers were reportedly concerned that an above-access attempt could damage concealed plumbing. The storage space below may provide access through its ceiling. These details have not been independently inspected.",
+    "recommendation": "Start with Rapid Flow, Bay Area Plumbing / Save - On - Interior, Heise’s and Ace as inquiry leads. Rapid Flow has a relevant but unverified customer anecdote; Heise’s describes comparable tub waste-and-overflow work. None has confirmed this particular job.",
+    "decision": "Ask first for a non-destructive tub-side assessment. If that is not safe, request an itemized below-access alternative covering protection, opening, plumbing, testing, ceiling restoration and cleanup. Obtain written change-order terms before concealed work.",
+    "limits": "No provider was contacted. Quote attribution, price, exact capability, availability, tenant coordination, the assembly model and conditions behind the ceiling remain unverified."
+  },
+  "providers": [
+    {
+      "id": "P01",
+      "name": "Rapid Flow Plumbing & Rooter Inc",
+      "license_number": "1115649",
+      "license_status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 866-8401",
+      "license_source": "L1115649",
+      "phone_source": "L1115649",
+      "company_source": "CO-RAPID",
+      "official_sources": [
+        "L1115649",
+        "CO-RAPID"
+      ],
+      "why": "Company advertises plumbing and general contracting in San Francisco. A Yelp-indexed account for the same business name describes retrieving a stuck tub plug after opening a wall; the exact trip-lever fault and finish work are not established.",
+      "review_source": "Y-RAPID",
+      "review_note": "One customer account, retrieved via search index; review and business match are not independently confirmed.",
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "First inquiry",
+      "caveat": "Ask for a careful above-access assessment and one written plumbing-plus-ceiling-restoration scope.",
+      "insurance_note": "CSLB records a workers’ compensation exemption based on its no-employee certification.",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P02",
+      "name": "Bay Area Plumbing",
+      "license_number": "757796",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 668-8000",
+      "license_source": "L757796",
+      "phone_source": "L757796",
+      "company_source": "CO-BAY",
+      "official_sources": [
+        "L757796",
+        "CO-BAY",
+        "L749536",
+        "PERSON-BAY",
+        "PERSON-SAVE"
+      ],
+      "why": "Company advertises San Francisco plumbing and shows a bathtub installation. CSLB personnel lists identify the same sole owner for this license and Save - On - Interior #749536 (B + C-36).",
+      "review_source": "Y-BAY",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "First inquiry",
+      "caveat": "Ask which licensed entity would contract, and whether it will include the complete ceiling finish. Similar name alone does not confirm the prior quote.",
+      "insurance_note": "CSLB records a workers’ compensation exemption based on its no-employee certification.",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P03",
+      "name": "Heise’s Plumbing",
+      "license_number": "1089561",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-10",
+        "A",
+        "C-20"
+      ],
+      "phone": "(415) 333-0704",
+      "license_source": "L1089561",
+      "phone_source": "L1089561",
+      "company_source": "CO-HEISE",
+      "official_sources": [
+        "L1089561",
+        "CO-HEISE"
+      ],
+      "why": "Its own San Francisco job listing describes replacing tub waste-and-overflow assemblies; company also states it serves San Francisco.",
+      "review_source": "Y-HEISE",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "First inquiry",
+      "caveat": "Ask if it can coordinate the ceiling restoration under one contract; exact stuck trip-lever extraction and timing are unconfirmed.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P04",
+      "name": "Ace Plumbing & Rooter",
+      "license_number": "829071",
+      "license_status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36",
+        "A",
+        "C-4",
+        "C-10",
+        "C-16"
+      ],
+      "phone": "(415) 824-6444",
+      "license_source": "L829071",
+      "phone_source": "L829071",
+      "company_source": "CO-ACE",
+      "official_sources": [
+        "L829071",
+        "CO-ACE"
+      ],
+      "why": "Company advertises residential plumbing and HOA/property-manager work in San Francisco; CSLB lists both B and C-36.",
+      "review_source": "Y-ACE",
+      "review_note": "BBB’s profile lists the same license number and displays customer comments about other plumbing jobs; BBB’s rating is not a review of this repair.",
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "First inquiry",
+      "caveat": "Confirm an appropriately scoped single contract for plumbing, ceiling opening and finish, plus specific tub experience.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P05",
+      "name": "Fast Response Plumbing & Rooter",
+      "license_number": "1024971",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 596-6115",
+      "license_source": "L1024971",
+      "phone_source": "L1024971",
+      "company_source": "CO-FAST",
+      "official_sources": [
+        "L1024971",
+        "CO-FAST"
+      ],
+      "why": "Company advertises residential plumbing, fixture work and service for San Francisco apartments and HOAs.",
+      "review_source": "Y-FAST",
+      "review_note": "A 2014 Angi customer account describes locating concealed bathroom access to clear a tenant’s drain; it is an older, different job and not independent proof of this scope.",
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Prior estimate name",
+      "caveat": "Confirm quote identity, exact work, finishing arrangements, and coverage; CSLB’s listed workers’ compensation policy expires 2026-12-18.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P06",
+      "name": "Expert Plumbing Solutions",
+      "license_number": "977638",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 531-5340",
+      "license_source": "L977638",
+      "phone_source": "L977638",
+      "company_source": "CO-EXPERT",
+      "official_sources": [
+        "L977638",
+        "CO-EXPERT"
+      ],
+      "why": "Company advertises residential plumbing repairs, drains and fixture work in San Francisco. A Yelp-syndicated Yahoo Local excerpt reports an overflow leak repair, a different and not independently confirmed event.",
+      "review_source": "Y-EXPERT",
+      "review_note": "An August 2026 customer excerpt on Yahoo Local says the firm repaired a bathtub overflow leak; the excerpt is truncated and is not evidence of trip-lever extraction or drywall work.",
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Prior estimate name",
+      "caveat": "Confirm quote identity and whether the firm will coordinate access and drywall restoration.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P07",
+      "name": "24/7 SF Handyman & Remodeling Service",
+      "license_number": "1105133",
+      "license_status": "Current and active",
+      "classifications": [
+        "B-2"
+      ],
+      "phone": "(415) 304-1559",
+      "license_source": "L1105133",
+      "phone_source": "L1105133",
+      "company_source": "CO-HARP",
+      "official_sources": [
+        "L1105133",
+        "CO-HARP",
+        "CSLB-B2"
+      ],
+      "why": "Company advertises plumbing and drywall. The CSLB record is B-2, not C-36.",
+      "review_source": "Y-HARP",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Scope-dependent lead",
+      "caveat": "B-2 has a three-unrelated-trade requirement and limits on system work; do not assume it covers this two-trade job. Verify classification and any specialty subcontractor.",
+      "insurance_note": "CSLB lists workers’ compensation coverage as of the check date.",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P08",
+      "name": "Discount Plumbing Rooter Services LLC",
+      "license_number": "1140843",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "phone": "(650) 991-2100",
+      "license_source": "L1140843",
+      "phone_source": "L1140843",
+      "company_source": "CO-DISCOUNT",
+      "official_sources": [
+        "L1140843",
+        "CO-DISCOUNT"
+      ],
+      "why": "Company advertises San Francisco plumbing repairs and lists the same license number.",
+      "review_source": "Y-DISCOUNT",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Additional lead",
+      "caveat": "The number shown is the CSLB business number; company site lists a different SF contact. Confirm entity, job scope and finish coordination.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P09",
+      "name": "We Do Construction Inc",
+      "license_number": "1096552",
+      "license_status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 416-5494",
+      "license_source": "L1096552",
+      "phone_source": "L1096552",
+      "company_source": "CO-WEDO",
+      "official_sources": [
+        "L1096552",
+        "CO-WEDO"
+      ],
+      "why": "Company describes single-contract San Francisco design-build and bathroom remodeling; CSLB lists B and C-36.",
+      "review_source": "Y-WEDO",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Scope-dependent lead",
+      "caveat": "Its public material focuses on full renovations; acceptance of a small standalone repair is unconfirmed.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P10",
+      "name": "SF Building Group",
+      "license_number": "1106131",
+      "license_status": "Current and active",
+      "classifications": [
+        "B"
+      ],
+      "phone": "(415) 297-2246",
+      "license_source": "L1106131",
+      "phone_source": "L1106131",
+      "company_source": "CO-SFB",
+      "official_sources": [
+        "L1106131",
+        "CO-SFB"
+      ],
+      "why": "Company advertises occupied-space coordination and residential and commercial building work in San Francisco.",
+      "review_source": "Y-SFB",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Scope-dependent lead",
+      "caveat": "The checked license lists B only, not C-36; plumbing arrangements and acceptance of a small repair need confirmation.",
+      "insurance_note": "CSLB records a workers’ compensation exemption based on its no-employee certification.",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P11",
+      "name": "Ayoob & Peery Plumbing Co Inc",
+      "license_number": "392967",
+      "license_status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36",
+        "C-4",
+        "C-16",
+        "C-20"
+      ],
+      "phone": "(415) 550-0975",
+      "license_source": "L392967",
+      "phone_source": "L392967",
+      "company_source": "CO-AYOOB",
+      "official_sources": [
+        "L392967",
+        "CO-AYOOB"
+      ],
+      "why": "SF-based company describes plumbing and design/build work, with a commercial focus; CSLB lists B and C-36.",
+      "review_source": "ANGI-AYOOB",
+      "review_note": "Angi displays older customer accounts from 2005–2010; no review establishes experience with this specific repair.",
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Scope-dependent lead",
+      "caveat": "Acceptance of this residential-sized job and ceiling restoration are unconfirmed.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P12",
+      "name": "Advanced Plumbing and Drain Inc",
+      "license_number": "1009195",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 744-4944",
+      "license_source": "L1009195",
+      "phone_source": "L1009195",
+      "company_source": "CO-ADVANCED",
+      "official_sources": [
+        "L1009195",
+        "CO-ADVANCED"
+      ],
+      "why": "CSLB records a San Francisco plumbing business.",
+      "review_source": "Y-ADVANCED",
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Review license warning",
+      "caveat": "CSLB says this active license may be suspended in the future for an outstanding final liability; check before engaging. Website and CSLB contact numbers differ.",
+      "insurance_note": "",
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P13",
+      "name": "Save - On - Interior",
+      "license_number": "749536",
+      "license_status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 668-8000",
+      "license_source": "L749536",
+      "phone_source": "L749536",
+      "company_source": null,
+      "official_sources": [
+        "L749536"
+      ],
+      "why": "Same CSLB-listed sole owner as Bay Area Plumbing; whether this licensee will contract for this job remains unknown.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Related license record",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P14",
+      "name": "D G Construction Co",
+      "license_number": "297604",
+      "license_status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 308-0803",
+      "license_source": "L297604",
+      "phone_source": "L297604",
+      "company_source": null,
+      "official_sources": [
+        "L297604"
+      ],
+      "why": "CSLB links a complaint disclosure. Recheck the detail and disclosure; San Francisco service, fit and willingness for this repair are unconfirmed.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Additional record",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P15",
+      "name": "Precision Rooter & Drain",
+      "license_number": "961218",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 724-1824",
+      "license_source": "L961218",
+      "phone_source": "L961218",
+      "company_source": null,
+      "official_sources": [
+        "L961218"
+      ],
+      "why": "CSLB lists a San Francisco plumbing business; experience, drywall arrangements and service availability for this job are unconfirmed.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Additional record",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P16",
+      "name": "FDL Plumbing Inc",
+      "license_number": "1086935",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 678-9557",
+      "license_source": "L1086935",
+      "phone_source": "L1086935",
+      "company_source": null,
+      "official_sources": [
+        "L1086935"
+      ],
+      "why": "CSLB records a Daly City plumbing license; San Francisco service, fit and a coordinated ceiling finish are unconfirmed.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Additional record",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P17",
+      "name": "CW Plumbing Inc dba Citywide Plumbing",
+      "license_number": "954385",
+      "license_status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 716-1519",
+      "license_source": "L954385",
+      "phone_source": "L954385",
+      "company_source": null,
+      "official_sources": [
+        "L954385"
+      ],
+      "why": "CSLB records a Daly City plumbing license; San Francisco service, fit and a coordinated ceiling finish are unconfirmed.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Additional record",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P18",
+      "name": "Cahill Contractors Inc",
+      "license_number": "300647",
+      "license_status": "Current and active",
+      "classifications": [
+        "A",
+        "B"
+      ],
+      "phone": "(415) 986-0600",
+      "license_source": "L300647",
+      "phone_source": "L300647",
+      "company_source": null,
+      "official_sources": [
+        "L300647"
+      ],
+      "why": "CSLB lists A and B, not C-36; suitability for a small repair and plumbing subcontracting are unconfirmed.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Additional record",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    },
+    {
+      "id": "P19",
+      "name": "Kenneth Asire Plumbing",
+      "license_number": "1027286",
+      "license_status": "Suspended at the 2026-11-07 check",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 913-8048",
+      "license_source": "L1027286",
+      "phone_source": "L1027286",
+      "company_source": null,
+      "official_sources": [
+        "L1027286"
+      ],
+      "why": "CSLB lists a contractor-bond suspension. Do not engage on this license while suspended; recheck directly if its status changes.",
+      "review_source": null,
+      "review_note": null,
+      "review_rating": null,
+      "review_count": null,
+      "all_in_one_confirmed": null,
+      "exact_repair_confirmed": null,
+      "availability_confirmed": null,
+      "priority": "Not a current candidate",
+      "caveat": "Verify this entity, the current license and the proposed scope before engagement.",
+      "insurance_note": null,
+      "checked": "2026-11-07"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "category": "Repair",
+      "requirement": "Remove or repair the stuck bathtub overflow trip-lever mechanism.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "R02",
+      "category": "Repair",
+      "requirement": "Treat the concealed plumbing as fragile; avoid unnecessary damage.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "R03",
+      "category": "Access",
+      "requirement": "Prefer a careful assessment of removal through the overflow opening from the tub side.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "R04",
+      "category": "Access",
+      "requirement": "If needed, evaluate access from below through the storage-unit ceiling.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CO-HEISE"
+      ]
+    },
+    {
+      "id": "R05",
+      "category": "Access",
+      "requirement": "The opening, plumbing work, and ceiling restoration should be coordinated as one service.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CSLB-B"
+      ]
+    },
+    {
+      "id": "R06",
+      "category": "Provider",
+      "requirement": "Use a licensed plumber or contractor appropriate to the actual scope.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CSLB-C36"
+      ]
+    },
+    {
+      "id": "R07",
+      "category": "Provider",
+      "requirement": "Find providers that serve San Francisco.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CO-RAPID"
+      ]
+    },
+    {
+      "id": "R08",
+      "category": "Provider",
+      "requirement": "Look for relevant experience and review-backed evidence, not a generic listing alone.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R09",
+      "category": "Occupied property",
+      "requirement": "Plan work around tenants in the occupied unit.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CIV-1954"
+      ]
+    },
+    {
+      "id": "R10",
+      "category": "Occupied property",
+      "requirement": "Consider the storage space and protect belongings if ceiling access is needed.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R11",
+      "category": "Evidence",
+      "requirement": "Compare the three supplied estimates, noting their different described repair scopes.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R12",
+      "category": "Evidence",
+      "requirement": "Reference photos may be used if available; proceed from the written description for now.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "R13",
+      "category": "Delivery",
+      "requirement": "Provide an executive summary, categorized dashboard, requirements and analysis.",
+      "origin": "Requester’s brief",
+      "status": "Delivered",
+      "official_context": [
+        "GITHUB-PAGES"
+      ]
+    },
+    {
+      "id": "R14",
+      "category": "Delivery",
+      "requirement": "Provide source links for manual review and identify irregularities.",
+      "origin": "Requester’s brief",
+      "status": "Delivered",
+      "official_context": [
+        "GITHUB-PAGES"
+      ]
+    },
+    {
+      "id": "R15",
+      "category": "Delivery",
+      "requirement": "Leave unconfirmed values blank and mark them unverified rather than infer them.",
+      "origin": "Requester’s brief",
+      "status": "Delivered",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R16",
+      "category": "Delivery",
+      "requirement": "Maintain a shared task board and avoid overlapping claimed work.",
+      "origin": "Requester’s brief",
+      "status": "In progress",
+      "official_context": [
+        "REPO"
+      ]
+    },
+    {
+      "id": "R17",
+      "category": "Delivery",
+      "requirement": "Build, check and publish the integrated site, with a flagged-for-review page.",
+      "origin": "Requester’s brief",
+      "status": "Delivered",
+      "official_context": [
+        "GITHUB-PAGES"
+      ]
+    },
+    {
+      "id": "R18",
+      "category": "Delivery",
+      "requirement": "Create and merge a pull request after the integrated site passes checks.",
+      "origin": "Requester’s brief",
+      "status": "In progress",
+      "official_context": [
+        "GITHUB-MERGE"
+      ]
+    },
+    {
+      "id": "R19",
+      "category": "Repair",
+      "requirement": "Record the reported prior declinations as requester-provided, not as verified attempts.",
+      "origin": "Requester’s brief",
+      "status": "Open",
+      "official_context": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "R20",
+      "category": "Repair",
+      "requirement": "Ask the professional to set a stop point before applying force or changing the access plan.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R21",
+      "category": "Occupied property",
+      "requirement": "Confirm any entry notices and coordinate access to both spaces before work.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "CIV-1954"
+      ]
+    },
+    {
+      "id": "R22",
+      "category": "Occupied property",
+      "requirement": "Check building age and any lead-safe renovation obligations before disturbing painted finishes.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "EPA-RRP"
+      ]
+    },
+    {
+      "id": "R23",
+      "category": "Access",
+      "requirement": "Specify protection, opening, plumbing, testing, restoration, texture or paint as applicable, and cleanup.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R24",
+      "category": "Access",
+      "requirement": "Confirm required inspections, ceiling construction and any future-access provisions before closing.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "SF-DBI"
+      ]
+    },
+    {
+      "id": "R25",
+      "category": "Provider",
+      "requirement": "Identify the contracting entity, any subcontractors, insurance and responsibility for the complete job.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R26",
+      "category": "Evidence",
+      "requirement": "Request itemized prices, exclusions and written change-order terms for each access alternative.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R27",
+      "category": "Evidence",
+      "requirement": "Compare the supplied estimates only after verifying the offers and normalizing scope.",
+      "origin": "Recommended scope",
+      "status": "Open",
+      "official_context": [
+        "CSLB-HIRING"
+      ]
+    },
+    {
+      "id": "R28",
+      "category": "Delivery",
+      "requirement": "Preserve earlier work and the unrelated GEMS archive while consolidating repair pages.",
+      "origin": "Delivery instruction",
+      "status": "Delivered",
+      "official_context": [
+        "REPO"
+      ]
+    },
+    {
+      "id": "R29",
+      "category": "Delivery",
+      "requirement": "Check relative navigation, table-source coverage and the generated site before publishing.",
+      "origin": "Delivery instruction",
+      "status": "Delivered",
+      "official_context": [
+        "GITHUB-PAGES"
+      ]
+    },
+    {
+      "id": "R30",
+      "category": "Delivery",
+      "requirement": "Verify the merged GitHub Pages deployment and record the outcome on the shared board.",
+      "origin": "Delivery instruction",
+      "status": "In progress",
+      "official_context": [
+        "GITHUB-PAGES"
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": "E01",
+      "name_from_request": "Expert Plumbing Solutions",
+      "candidate_source": "CO-EXPERT",
+      "license_source": "L977638",
+      "verified_quote_date": null,
+      "verified_quote_scope": null,
+      "verified_price_usd": null,
+      "flag": "F02"
+    },
+    {
+      "id": "E02",
+      "name_from_request": "Bay Area Plumbing",
+      "candidate_source": "CO-BAY",
+      "license_source": "L757796",
+      "verified_quote_date": null,
+      "verified_quote_scope": null,
+      "verified_price_usd": null,
+      "flag": "F02"
+    },
+    {
+      "id": "E03",
+      "name_from_request": "Fast Response",
+      "candidate_source": "CO-FAST",
+      "license_source": "L1024971",
+      "verified_quote_date": null,
+      "verified_quote_scope": null,
+      "verified_price_usd": null,
+      "flag": "F02"
+    }
+  ],
+  "official_fee_examples": [
+    {
+      "id": "FEE01",
+      "category": "Category 1P",
+      "description": "Single residential unit: specified plumbing work, maximum two inspections",
+      "published_fee": "$290",
+      "application_to_job": null,
+      "qualifier": "Schedule example only. DBI must identify the category and additional fees for the actual work.",
+      "sources": [
+        "SF-FEE"
+      ]
+    },
+    {
+      "id": "FEE02",
+      "category": "Off-hour inspections",
+      "description": "Hourly issuance / inspection rate for installations not covered by the listed categories",
+      "published_fee": "$555 per hour",
+      "application_to_job": null,
+      "qualifier": "Minimum hours and applicability depend on the circumstances stated in the fee schedule; not a project quote.",
+      "sources": [
+        "SF-FEE"
+      ]
+    }
+  ],
+  "technical": [
+    {
+      "id": "T01",
+      "topic": "Assess the tub-side route first",
+      "finding": "Watco’s instructions for specific trip-lever models describe removing the overflow plate and drop-cylinder assembly for readjustment. This is a model-specific service path, not evidence that this installation can safely be extracted.",
+      "sources": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "T02",
+      "topic": "Protect concealed parts",
+      "finding": "The same manufacturer instructions place the overflow elbow and gasket against the back of the tub. The installed assembly, condition and cause of sticking are not known.",
+      "sources": [
+        "WATCO"
+      ]
+    },
+    {
+      "id": "T03",
+      "topic": "Consider access and restoration together",
+      "finding": "Heise’s company listing describes San Francisco tub waste-and-overflow replacements. Whether this job needs the storage ceiling opened and who restores it must be determined on site.",
+      "sources": [
+        "CO-HEISE"
+      ]
+    },
+    {
+      "id": "T04",
+      "topic": "Licensing is scope-dependent",
+      "finding": "CSLB’s B classification describes rules for prime contracts, including two unrelated trades and exceptions for appropriate specialty licensing or subcontracting. C-36 covers plumbing; confirm the actual contracting entity and scope.",
+      "sources": [
+        "CSLB-B",
+        "CSLB-C36"
+      ]
+    },
+    {
+      "id": "T05",
+      "topic": "B-2 is not interchangeable with B or C-36",
+      "finding": "CSLB’s classification description states that B-2 contracts require at least three unrelated trades and imposes limits on system work. Do not assume this specific job qualifies.",
+      "sources": [
+        "CSLB-B2"
+      ]
+    },
+    {
+      "id": "T06",
+      "topic": "Concealed plumbing",
+      "finding": "San Francisco DBI says a plumbing permit is needed before cutting into or replacing pipes, particularly pipes concealed by a wall, subject to listed exemptions. Confirm applicability and required inspection before covering work.",
+      "sources": [
+        "SF-DBI"
+      ]
+    },
+    {
+      "id": "T07",
+      "topic": "Occupied-unit entry",
+      "finding": "California Civil Code §1954 generally requires reasonable written notice for non-emergency entry; 24 hours is presumed reasonable absent contrary evidence. The statute includes exceptions.",
+      "sources": [
+        "CIV-1954"
+      ]
+    },
+    {
+      "id": "T08",
+      "topic": "Dust and older finishes",
+      "finding": "The EPA describes lead-safe renovation rules for covered work in pre-1978 housing. The property’s age and material conditions have not been established.",
+      "sources": [
+        "EPA-RRP"
+      ]
+    },
+    {
+      "id": "T09",
+      "topic": "Closeout and insurance",
+      "finding": "CSLB recommends checking license status, insurance, references, a detailed written contract and cleanup. Confirm the ceiling’s required fire rating and any access-panel requirements before closure; these are site-specific.",
+      "sources": [
+        "CSLB-HIRING",
+        "SF-DBI"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": "V01",
+      "provider": "Rapid Flow",
+      "finding": "A Yelp search-index excerpt contains one customer account of a metal tub drain plug retrieved after opening a wall and cutting pipe. This is a different job, not proof of trip-lever or ceiling-finishing experience.",
+      "access": "Indexed excerpt; direct Yelp access blocked",
+      "sources": [
+        "L1115649",
+        "Y-RAPID"
+      ]
+    },
+    {
+      "id": "V02",
+      "provider": "Expert Plumbing Solutions",
+      "finding": "Yahoo Local displays a truncated Yelp-syndicated review dated August 2026 saying the customer had an overflow leak repaired. It does not establish a stuck trip lever or restoration work.",
+      "access": "Yahoo Local read directly; Yelp blocked",
+      "sources": [
+        "L977638",
+        "YAHOO-EXPERT",
+        "Y-EXPERT"
+      ]
+    },
+    {
+      "id": "V03",
+      "provider": "Fast Response",
+      "finding": "An Angi review from 2014 describes finding hidden bathroom access to clear a tenant’s drain. It concerns a different issue and is old.",
+      "access": "Angi read directly",
+      "sources": [
+        "L1024971",
+        "ANGI-FAST",
+        "BBB-FAST"
+      ]
+    },
+    {
+      "id": "V04",
+      "provider": "Ace Plumbing & Rooter",
+      "finding": "The BBB profile lists the same license and includes customer comments on unrelated plumbing work. Its business rating and individual reviews do not establish the requested repair.",
+      "access": "BBB read directly; Yelp search indexed",
+      "sources": [
+        "L829071",
+        "BBB-ACE",
+        "Y-ACE"
+      ]
+    },
+    {
+      "id": "V05",
+      "provider": "Ayoob & Peery",
+      "finding": "Angi shows customer comments from 2005–2010. These are historical accounts and do not establish a fit for a small occupied-unit job.",
+      "access": "Angi read directly",
+      "sources": [
+        "L392967",
+        "ANGI-AYOOB"
+      ]
+    },
+    {
+      "id": "V06",
+      "provider": "Heise’s Plumbing",
+      "finding": "A BBB profile with the same company site and phone lists a different license number and legal entity from the present candidate. Its rating or complaint history cannot be attributed to the current candidate without confirmation.",
+      "access": "BBB read directly; Yelp search indexed",
+      "sources": [
+        "L1089561",
+        "BBB-HEISE",
+        "Y-HEISE"
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": "F01",
+      "title": "No confirmed booking",
+      "finding": "No candidate has been contacted in this research; the exact repair, one-contract finish, availability and price remain unconfirmed.",
+      "next_step": "Ask the candidate to confirm the complete scope and timing in writing.",
+      "sources": [
+        "CSLB-HIRING"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F02",
+      "title": "Estimates not independently verified",
+      "finding": "No provider-issued quote was available to substantiate the three quote dates, scopes or amounts. Similar business names do not establish quote identity. These cells are blank.",
+      "next_step": "Match each quotation to the legal entity and obtain itemized current quotes.",
+      "sources": [
+        "CO-EXPERT",
+        "CO-BAY",
+        "CO-FAST"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F03",
+      "title": "Existing condition not inspected",
+      "finding": "The project description, prior plumber history and occupancy are requester-reported, not independently verified. The installed model, pipe condition, ceiling construction and need for access remain unknown.",
+      "next_step": "Have a licensed professional assess the site; do not assume corrosion, a particular mechanism or a minimum opening size.",
+      "sources": [
+        "WATCO"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F04",
+      "title": "Yelp / review evidence",
+      "finding": "Direct automated Yelp retrieval returned HTTP 403. The Rapid Flow tub-plug account appeared in a Yelp search index and is a single anecdote about a different event; the listing-to-license match and work details remain unconfirmed. Ratings and counts are blank.",
+      "next_step": "Use the linked review pages as leads, not proof of competency or availability.",
+      "sources": [
+        "L1115649",
+        "Y-RAPID"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F05",
+      "title": "Bay Area / Save - On - Interior",
+      "finding": "CSLB’s separate personnel lists name the same sole owner for Bay Area Plumbing #757796 and Save - On - Interior #749536; their records also share a phone and address. The latter has B and C-36.",
+      "next_step": "Confirm which licensed entity will contract and who will perform each portion.",
+      "sources": [
+        "L757796",
+        "L749536",
+        "PERSON-BAY",
+        "PERSON-SAVE"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F06",
+      "title": "Insurance and exemptions",
+      "finding": "CSLB records workers’ compensation exemptions for Rapid Flow, Bay Area Plumbing, Save - On - Interior and SF Building Group based on no-employee certifications. Status can change.",
+      "next_step": "Confirm workers’ compensation and liability coverage for the actual crew and subcontractors.",
+      "sources": [
+        "L1115649",
+        "L757796",
+        "L749536",
+        "L1106131",
+        "CSLB-HIRING"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F07",
+      "title": "B-2 scope restriction",
+      "finding": "Harp Services holds B-2, not C-36. B-2’s three-trade threshold and limits on certain system work require a scope-specific check; two trades alone are not automatically sufficient.",
+      "next_step": "Confirm eligibility and the appropriately licensed plumbing subcontractor if needed.",
+      "sources": [
+        "L1105133",
+        "CSLB-B2"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F08",
+      "title": "Advanced license warning",
+      "finding": "CSLB says Advanced Plumbing and Drain Inc is current and active but may be suspended at a future date for an outstanding final liability. Its website and CSLB record show different phone numbers.",
+      "next_step": "Recheck the full CSLB record and verify the contractor’s identity before engagement.",
+      "sources": [
+        "L1009195",
+        "CO-ADVANCED"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F09",
+      "title": "Project-size and service fit",
+      "finding": "We Do Construction and SF Building Group emphasize larger projects; Ayoob & Peery describes commercial applications. Their willingness to perform this small residential repair is unknown.",
+      "next_step": "Confirm whether they accept the job and will coordinate complete finish work.",
+      "sources": [
+        "CO-WEDO",
+        "CO-SFB",
+        "CO-AYOOB"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F10",
+      "title": "Previous dashboard corrections",
+      "finding": "An earlier root dashboard labelled a B-only provider as B + C-36 and treated B-2 as automatically suitable. It also prescribed an access-panel size without establishing the installed assembly.",
+      "next_step": "Use current CSLB classifications and obtain a site-specific access and closure plan.",
+      "sources": [
+        "L1106131",
+        "L1105133",
+        "CSLB-B2",
+        "SF-DBI"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F11",
+      "title": "Heise’s project-detail rendering",
+      "finding": "The company’s service listing shows comparable tub waste-and-overflow jobs, but some linked project-detail pages also display a “Page Not Found” section.",
+      "next_step": "Use the company service listing and request a specific reference; do not treat the detail template as a clean verification.",
+      "sources": [
+        "CO-HEISE"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F12",
+      "title": "Repository topic mismatch",
+      "finding": "This repository also contains an unrelated DOE GEMS geothermal research project. Its archive and artifacts are retained; this repair dashboard is a separate project.",
+      "next_step": "Keep project material distinct from the legacy archive.",
+      "sources": [
+        "REPO"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F13",
+      "title": "Heise’s BBB identity mismatch",
+      "finding": "A BBB profile with the same company website and phone identifies Heise’s Plumbing, Inc. and CSLB #787733; the candidate in this dashboard is Taro Group Inc dba Heises Plumbing, CSLB #1089561. The relationship and whether the profile history applies to the current licensee are unconfirmed.",
+      "next_step": "Do not transfer the BBB rating or complaint history to the candidate until the legal entities are reconciled.",
+      "sources": [
+        "L1089561",
+        "BBB-HEISE"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F14",
+      "title": "Suspended license in earlier research",
+      "finding": "CSLB lists Kenneth Asire Plumbing #1027286 as suspended for a contractor-bond issue at the 2026-11-07 check. It is not a current shortlist candidate.",
+      "next_step": "Do not engage under that license while suspended; recheck the official record before any decision.",
+      "sources": [
+        "L1027286"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F15",
+      "title": "Complaint disclosure on an additional record",
+      "finding": "CSLB links complaint disclosure information for D G Construction Co #297604. This does not establish the nature or outcome of any complaint.",
+      "next_step": "Read the official disclosure and verify current status before considering the firm.",
+      "sources": [
+        "L297604"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F16",
+      "title": "Permit category and amount for this job are not confirmed",
+      "finding": "The July 2026 DBI schedule lists fees by work category; it does not identify the category, total fee or inspections for this specific property.",
+      "next_step": "Ask DBI or the contractor to identify applicable permits, fees and inspection requirements for the actual scope.",
+      "sources": [
+        "SF-FEE",
+        "SF-DBI"
+      ],
+      "status": "Needs review"
+    },
+    {
+      "id": "F17",
+      "title": "Additional contractor records have not been assessed for fit",
+      "finding": "Several earlier research leads were retained as extra CSLB records. An active license or an SF address alone does not establish exact experience, willingness, service coverage or a coordinated ceiling finish.",
+      "next_step": "Confirm those details before adding a firm to the inquiry list.",
+      "sources": [
+        "L961218",
+        "L1086935",
+        "L954385",
+        "L300647"
+      ],
+      "status": "Needs review"
+    }
+  ],
+  "sources": [
+    {
+      "id": "L1115649",
+      "title": "CSLB license #1115649 — Rapid Flow Plumbing & Rooter Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L757796",
+      "title": "CSLB license #757796 — Bay Area Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L749536",
+      "title": "CSLB license #749536 — Save - On - Interior",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1089561",
+      "title": "CSLB license #1089561 — Taro Group Inc dba Heises Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L829071",
+      "title": "CSLB license #829071 — Ace Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1024971",
+      "title": "CSLB license #1024971 — Fast Response Plumbing and Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L977638",
+      "title": "CSLB license #977638 — Expert Plumbing Solutions",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1105133",
+      "title": "CSLB license #1105133 — Harp Services",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1140843",
+      "title": "CSLB license #1140843 — Discount Plumbing Rooter Services LLC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1096552",
+      "title": "CSLB license #1096552 — We Do Construction Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1106131",
+      "title": "CSLB license #1106131 — SF Building Group",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L392967",
+      "title": "CSLB license #392967 — Ayoob & Peery Plumbing Co Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1009195",
+      "title": "CSLB license #1009195 — Advanced Plumbing and Drain Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "PERSON-BAY",
+      "title": "CSLB personnel list: Bay Area Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/PersonnelList.aspx?LicNum=757796",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "PERSON-SAVE",
+      "title": "CSLB personnel list: Save - On - Interior",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/PersonnelList.aspx?LicNum=749536",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-RAPID",
+      "title": "Rapid Flow — company services",
+      "url": "https://www.rapidflowbayarea.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-RAPID-CONTACT",
+      "title": "Rapid Flow — contact",
+      "url": "https://www.rapidflowbayarea.com/contact",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-BAY",
+      "title": "Bay Area Plumbing — services and contact",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-HEISE",
+      "title": "Heise’s — drain services and project summaries",
+      "url": "https://www.heisesplumbing.com/sewer-and-drain-services/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-ACE",
+      "title": "Ace Plumbing & Rooter — services and credentials",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-FAST",
+      "title": "Fast Response — services",
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-EXPERT",
+      "title": "Expert Plumbing Solutions — services",
+      "url": "https://www.eplumbingsolutions.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-HARP",
+      "title": "24/7 SF Handyman — advertised services",
+      "url": "https://24sfhandyman.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-DISCOUNT",
+      "title": "Discount Plumbing — San Francisco services",
+      "url": "https://plumbinginsf.com/plumbing-services/plumbing-repair/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-WEDO",
+      "title": "We Do Construction — SF general contracting",
+      "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-SFB",
+      "title": "SF Building Group — services",
+      "url": "https://sfbuildinggroup.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-AYOOB",
+      "title": "Ayoob & Peery — company services",
+      "url": "https://www.ayoobpeery.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CO-ADVANCED",
+      "title": "Advanced Plumbing & Drain — website",
+      "url": "https://advancedplumbingsf.com/",
+      "kind": "company",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CSLB-B",
+      "title": "CSLB: B General Building classification",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CSLB-C36",
+      "title": "CSLB: C-36 Plumbing classification",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CSLB-B2",
+      "title": "CSLB: Description of classifications, including B-2",
+      "url": "https://www.cslb.ca.gov/Resources/GuidesAndPublications/DescriptionOfClassifications.pdf",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CSLB-HIRING",
+      "title": "CSLB: Before hiring a contractor",
+      "url": "https://www.cslb.ca.gov/Resources/GuidesAndPublications/WYSKbro_ENG0525_ADA.pdf",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "SF-DBI",
+      "title": "San Francisco DBI: plumbing and mechanical work",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "CIV-1954",
+      "title": "California Civil Code §1954: entry for repairs",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "EPA-RRP",
+      "title": "US EPA: lead renovation, repair and painting",
+      "url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "WATCO",
+      "title": "Watco: trip-lever bath waste instructions",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "kind": "manufacturer",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "GITHUB-PAGES",
+      "title": "GitHub: About GitHub Pages",
+      "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "kind": "official",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "GITHUB-MERGE",
+      "title": "GitHub: Merging a pull request",
+      "url": "https://docs.github.com/en/pull-requests/how-tos/merge-and-close-pull-requests/merging-a-pull-request",
+      "kind": "official",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "REPO",
+      "title": "Korea8 repository on GitHub",
+      "url": "https://github.com/karagemop466-tech/Korea8",
+      "kind": "official",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "Y-RAPID",
+      "title": "Yelp search: Rapid Flow and an adjacent tub-plug account",
+      "url": "https://www.yelp.com/search?cflt=contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-BAY",
+      "title": "Yelp: Bay Area Plumbing",
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-HEISE",
+      "title": "Yelp: Heise’s Plumbing",
+      "url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-ACE",
+      "title": "Yelp: Ace Plumbing & Rooter",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-FAST",
+      "title": "Yelp: Fast Response Plumbing & Rooter",
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-EXPERT",
+      "title": "Yelp: Expert Plumbing Solutions",
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-HARP",
+      "title": "Yelp: 24/7 SF Handyman & Remodelling",
+      "url": "https://www.yelp.com/biz/24-7-sf-handyman-and-remodelling-service-san-francisco-2",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-DISCOUNT",
+      "title": "Yelp: Discount Plumbing Rooter Services",
+      "url": "https://www.yelp.com/biz/discount-plumbing-rooter-services-san-francisco-2",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-WEDO",
+      "title": "Yelp: We Do Construction",
+      "url": "https://www.yelp.com/biz/we-do-construction-san-francisco?start=40",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-SFB",
+      "title": "Yelp: SF Building Group",
+      "url": "https://www.yelp.com/biz/sf-building-group-san-francisco",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "Y-ADVANCED",
+      "title": "Yelp: Advanced Plumbing & Drain",
+      "url": "https://www.yelp.com/biz/advanced-plumbing-and-drain-san-francisco",
+      "kind": "review-platform",
+      "access": "indexed",
+      "checked": "2026-11-07",
+      "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+    },
+    {
+      "id": "ANGI-AYOOB",
+      "title": "Angi: Ayoob & Peery reviews",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/ayoob-and-peery-plumbing-co-inc-reviews-210462.htm",
+      "kind": "review-platform",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Customer reviews read on the platform; the accounts are not independently verified and date from 2005–2010."
+    },
+    {
+      "id": "YAHOO-EXPERT",
+      "title": "Yahoo Local: Yelp-syndicated Expert Plumbing Solutions reviews",
+      "url": "https://local.yahoo.com/info-154084774-expert-plumbing-solutions-san-francisco/",
+      "kind": "review-platform",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Read directly; Yahoo attributes the reviews to Yelp. Individual accounts and their details are not independently verified."
+    },
+    {
+      "id": "ANGI-FAST",
+      "title": "Angi: Fast Response Plumbing & Rooter reviews",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/fast-response-plumbing-and-rooter-reviews-4809363.htm",
+      "kind": "review-platform",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Read directly. Older customer accounts are not independently verified."
+    },
+    {
+      "id": "BBB-ACE",
+      "title": "BBB: Ace Plumbing and Rooter, Inc.",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941",
+      "kind": "review-platform",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Read directly; BBB profile lists the same CSLB license number. BBB and customer statements are not proof of the requested scope."
+    },
+    {
+      "id": "BBB-FAST",
+      "title": "BBB: Fast Response Plumbing & Rooter",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+      "kind": "review-platform",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Read directly; BBB lists CSLB #1024971."
+    },
+    {
+      "id": "BBB-HEISE",
+      "title": "BBB: Heise’s Plumbing, Inc.",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+      "kind": "review-platform",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Name, phone and site overlap, but this BBB profile lists #787733, not the candidate’s #1089561; do not attribute its history to that licensee without confirmation."
+    },
+    {
+      "id": "SF-FEE",
+      "title": "San Francisco DBI: July 2026 plumbing / mechanical fee schedule",
+      "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": ""
+    },
+    {
+      "id": "L297604",
+      "title": "CSLB license #297604 — D G Construction Co",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L961218",
+      "title": "CSLB license #961218 — Precision Rooter & Drain",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1086935",
+      "title": "CSLB license #1086935 — FDL Plumbing Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L954385",
+      "title": "CSLB license #954385 — CW Plumbing Inc dba Citywide Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L300647",
+      "title": "CSLB license #300647 — Cahill Contractors Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    },
+    {
+      "id": "L1027286",
+      "title": "CSLB license #1027286 — Kenneth Asire Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "kind": "government",
+      "access": "read",
+      "checked": "2026-11-07",
+      "note": "Direct license record; status is a point-in-time snapshot."
+    }
+  ]
+}
