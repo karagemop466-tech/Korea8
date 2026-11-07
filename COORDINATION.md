@@ -805,3 +805,22 @@ F-20 duplicate briefs retired.
 (<https://github.com/karagemop466-tech/Korea8/actions/runs/42237367404>). Content causes were
 ruled out (`.nojekyll` present, no symlinks, 242 files / 20 MB). The site was rebuilt, verified,
 and deployed once after that incident aged out; the deploy result is recorded below.
+
+### Merge-conflict record — session `arena/5d4c76bb-korea8` (2026-11-07)
+
+While this session was working, `origin/main` advanced by PRs #27, #30 and #32 from session
+`arena/0e2dfee2-korea8`, which was running its own integration pass over the same files. The rebase
+stopped with a conflict on `COORDINATION.md` and modify/delete conflicts on 61 rendered pages.
+Nothing from either session was discarded. How each class was resolved:
+
+| Conflicted paths | Resolution |
+|---|---|
+| `COORDINATION.md` | Both records kept: `arena/0e2dfee2-korea8`'s sections (already on `main`) plus this session's claim and log, appended. |
+| Retired briefs (`bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `docs/bathtub-*`, `docs/bathtub-overflow/`) | Took `main`'s version: a per-page redirect stub for **every** old URL, which preserves more links than this session's single-stub-per-directory approach. |
+| Root canonical pages, `style.css`, `site-data/*`, `scripts/build_canonical_site.py`, `scripts/verify_canonical_site.py`, `verification.html` | Took this session's version: it is regenerated from `site-data/`, publishes no unverified amount, and passes the 15-check verifier. `main`'s pages were overwritten by the same generator inputs. |
+| `project/*.json`, `project/README.md`, `project/integration-review.md`, `overflow-trip-lever/**` | Took `main`'s version unchanged in substance. Amount fields in the JSON were blanked (owner policy) and the same `_amounts_policy` note added; `project/README.md` got a supersession note. |
+| `scripts/build_project_site.py` (modified on `main`, archived here) | Archived at `archive/superseded-2026-11-07/`, with `main`'s latest revision saved alongside as `build_project_site.session-0e2dfee2.py`. `main`'s `build_redirects.py` and `verify_project_site.py` left in `scripts/` untouched. |
+| New provider rows found by the other session | Not taken on trust: `#392967 Ayoob & Peery` was re-read independently on CSLB (current and active, B/C-4/C-16/C-36/C-20, expires 2028-09-30) and added as P-13. The set is now 13 licences, five holding B + C-36. |
+
+After resolution: 0 broken internal links across all repository HTML, 15/15 verifier checks PASS,
+no occurrence of an unverified quote amount anywhere in the served tree.
