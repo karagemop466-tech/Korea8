@@ -1,0 +1,472 @@
+{
+  "dataset": "requirements",
+  "rows": [
+    {
+      "id": "R-01",
+      "category": "Problem",
+      "requirement": "Remove or repair the stuck bathtub overflow trip-lever mechanism.",
+      "basis": "Owner brief",
+      "verification": "Owner-reported condition; not independently inspected.",
+      "source_ids": [
+        "CSLB-C36"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-02",
+      "category": "Problem",
+      "requirement": "The linkage/part is reported stuck in concealed plumbing behind the wall.",
+      "basis": "Owner brief",
+      "verification": "Owner-reported condition; exact failed component unknown.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-03",
+      "category": "History",
+      "requirement": "More than five licensed plumbers reportedly could not safely remove it from above.",
+      "basis": "Owner brief",
+      "verification": "Unverified history; no visit reports supplied.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-04",
+      "category": "Access",
+      "requirement": "Prefer safe removal through the overflow opening / tub side.",
+      "basis": "Owner preference + manufacturer example",
+      "verification": "Preference captured; feasibility for this tub unverified.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-05",
+      "category": "Access",
+      "requirement": "Do not force seized parts or risk damaging concealed drainage.",
+      "basis": "Recommended safeguard",
+      "verification": "Analysis based on manufacturer linkage and concealed-joint guidance.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "R-06",
+      "category": "Access",
+      "requirement": "If tub-side service fails, evaluate access from the storage-unit ceiling below.",
+      "basis": "Owner brief",
+      "verification": "Owner-reported fallback; exact opening location/size unverified.",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "R-07",
+      "category": "Identification",
+      "requirement": "Identify overflow plate, waste manufacturer/model and linkage type before ordering parts.",
+      "basis": "Recommended verification step",
+      "verification": "Unknown fields remain blank; Watco is an example, not an identified match.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-08",
+      "category": "Photos",
+      "requirement": "Use reference photos when available; no photos were supplied with this brief.",
+      "basis": "Owner brief",
+      "verification": "No image-based diagnosis performed.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-09",
+      "category": "Scope",
+      "requirement": "Obtain a written diagnosis and separate tub-side versus ceiling-access options.",
+      "basis": "Recommended procurement step",
+      "verification": "CSLB recommends identical specifications for comparable bids.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "R-10",
+      "category": "Vendor",
+      "requirement": "Provide one accountable contract for plumbing and any drywall opening/restoration.",
+      "basis": "Owner requirement",
+      "verification": "No combined-scope acceptance confirmed.",
+      "source_ids": [
+        "CSLB-B"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "R-11",
+      "category": "Licensing",
+      "requirement": "Use a currently licensed plumbing contractor or properly structured general contractor.",
+      "basis": "Owner requirement + CSLB guidance",
+      "verification": "Candidate license records checked; recheck before contracting.",
+      "source_ids": [
+        "CSLB-C36"
+      ],
+      "flags": [
+        "F-06"
+      ]
+    },
+    {
+      "id": "R-12",
+      "category": "Licensing",
+      "requirement": "Plumbing work requires C-36 coverage by the performing contractor.",
+      "basis": "CSLB classification",
+      "verification": "Official classification confirms plumbing waste disposal and replacement scope.",
+      "source_ids": [
+        "CSLB-C36"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-13",
+      "category": "Licensing",
+      "requirement": "Drywall installation, taping and texturing fall within C-9 scope.",
+      "basis": "CSLB classification",
+      "verification": "Official classification verified.",
+      "source_ids": [
+        "CSLB-C9"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-14",
+      "category": "Licensing",
+      "requirement": "A B contractor may prime a multi-trade contract under the statutory conditions; name the licensed plumbing and drywall performers.",
+      "basis": "CSLB classification",
+      "verification": "B + C36 is not automatic proof of C-9 workmanship or exact-job acceptance.",
+      "source_ids": [
+        "CSLB-B"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "R-15",
+      "category": "Location",
+      "requirement": "Provider must serve the San Francisco unit.",
+      "basis": "Owner requirement",
+      "verification": "Company service-area statements checked where available; dispatch unconfirmed.",
+      "source_ids": [
+        "WEB-Rapid"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "R-16",
+      "category": "Occupancy",
+      "requirement": "Coordinate work in a tenant-occupied unit.",
+      "basis": "Owner requirement",
+      "verification": "Owner-reported occupancy; scheduling not confirmed.",
+      "source_ids": [
+        "CA-1954"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "R-17",
+      "category": "Occupancy",
+      "requirement": "Plan lawful repair entry, date/approximate time and purpose with the tenant.",
+      "basis": "California Civil Code §1954",
+      "verification": "Official statutory guidance verified; not legal advice for a disputed entry.",
+      "source_ids": [
+        "CA-1954"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-18",
+      "category": "Protection",
+      "requirement": "Require dust containment, floor/storage protection, cleanup and debris removal in the contract.",
+      "basis": "Recommended scope; CSLB contract guidance",
+      "verification": "Provider-specific protection plan unverified.",
+      "source_ids": [
+        "CSLB-Contracts"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "R-19",
+      "category": "Protection",
+      "requirement": "Confirm who protects stored belongings and restores affected finishes.",
+      "basis": "Recommended scope",
+      "verification": "No provider-specific restoration plan supplied.",
+      "source_ids": [
+        "CSLB-Contracts"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "R-20",
+      "category": "Insurance",
+      "requirement": "Recheck license, bond, workers-compensation status and request general-liability evidence for every actual performer.",
+      "basis": "CSLB consumer guidance",
+      "verification": "Exempt means no employees certified, not general-liability coverage.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-08"
+      ]
+    },
+    {
+      "id": "R-21",
+      "category": "Reviews",
+      "requirement": "Search Yelp and other review sources for relevant work.",
+      "basis": "Owner requirement",
+      "verification": "Review links provided; numeric ratings/counts left blank when not directly verified.",
+      "source_ids": [
+        "RV-Heise"
+      ],
+      "flags": [
+        "F-04"
+      ]
+    },
+    {
+      "id": "R-22",
+      "category": "Experience",
+      "requirement": "Prefer documented tub waste-and-overflow work and occupied-property references.",
+      "basis": "Owner requirement + recommended screening",
+      "verification": "Heise’s job pages are company-published evidence, not independent certification.",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "R-23",
+      "category": "Estimates",
+      "requirement": "Collect the three received estimates and compare identical scope, not just price.",
+      "basis": "Owner requirement + CSLB guidance",
+      "verification": "Quote amounts/documents not officially verified; amount cells blank.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "R-24",
+      "category": "Estimates",
+      "requirement": "Explicitly price access opening, plumbing parts/labor, drywall repair, texture/paint, protection and cleanup.",
+      "basis": "Recommended bid specification",
+      "verification": "No complete combined quote supplied.",
+      "source_ids": [
+        "CSLB-Contracts"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "R-25",
+      "category": "Estimates",
+      "requirement": "State exclusions, diagnostic fees, dispatch/minimum charges and change-order triggers.",
+      "basis": "Recommended bid specification",
+      "verification": "Commercial terms remain blank until provider-confirmed.",
+      "source_ids": [
+        "CSLB-Contracts"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "R-26",
+      "category": "Technical",
+      "requirement": "After repair, test stopper sealing and drainage; document results.",
+      "basis": "Recommended acceptance test; manufacturer example",
+      "verification": "Watco notes a slow drip inside the tee can be normal for its models; actual model unknown.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "R-27",
+      "category": "Technical",
+      "requirement": "If concealed slip joints are present, ask the contractor to address applicable service-access requirements.",
+      "basis": "Code-publisher training guidance",
+      "verification": "Current San Francisco section-level application not independently confirmed; do not treat the 2018 spotlight as a local determination.",
+      "source_ids": [
+        "IAPMO-Access"
+      ],
+      "flags": [
+        "F-20"
+      ]
+    },
+    {
+      "id": "R-28",
+      "category": "Technical",
+      "requirement": "Consider a serviceable access panel where appropriate instead of repeatedly opening finishes.",
+      "basis": "Recommended option",
+      "verification": "Panel location, size, finish and fire-rating requirements need contractor determination.",
+      "source_ids": [
+        "IAPMO-Access"
+      ],
+      "flags": [
+        "F-20"
+      ]
+    },
+    {
+      "id": "R-29",
+      "category": "Contract",
+      "requirement": "Put the full agreed scope, materials, price, schedule, cleanup and changes in writing.",
+      "basis": "CSLB consumer guidance",
+      "verification": "Official guidance verified; no signed contract supplied.",
+      "source_ids": [
+        "CSLB-Contracts"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "R-30",
+      "category": "Deliverable",
+      "requirement": "Provide an executive summary and full requirements register.",
+      "basis": "Owner requirement",
+      "verification": "Delivered by this dashboard.",
+      "source_ids": [
+        "GH-Repo"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-31",
+      "category": "Deliverable",
+      "requirement": "Provide a clean landing page and category subpages with readable tables.",
+      "basis": "Owner requirement",
+      "verification": "Static site; no external runtime dependencies.",
+      "source_ids": [
+        "GH-Pages"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-32",
+      "category": "Verification",
+      "requirement": "Every table row must carry an official-source link; unsupported values stay blank and are flagged.",
+      "basis": "Owner requirement",
+      "verification": "Build-time source and blank-field checks enforced.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "R-33",
+      "category": "Repository",
+      "requirement": "Review existing repository and flag irregularities without deleting prior work.",
+      "basis": "Owner requirement",
+      "verification": "Inventory and content audit recorded; unrelated research not scientifically revalidated.",
+      "source_ids": [
+        "GH-Repo"
+      ],
+      "flags": [
+        "F-05"
+      ]
+    },
+    {
+      "id": "R-34",
+      "category": "Coordination",
+      "requirement": "Read and update the shared task board; respect claims and record stale handoffs.",
+      "basis": "Owner requirement",
+      "verification": "Claim committed before implementation; fixed Arena branch used.",
+      "source_ids": [
+        "GH-Repo"
+      ],
+      "flags": [
+        "F-05"
+      ]
+    },
+    {
+      "id": "R-35",
+      "category": "Integration",
+      "requirement": "Re-verify combined data, check links, open and merge a PR, then confirm live Pages deployment.",
+      "basis": "Owner requirement",
+      "verification": "Publication record maintained on verification page and task board.",
+      "source_ids": [
+        "GH-Pages"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-36",
+      "category": "Review",
+      "requirement": "Publish unverified and irregular items on a clearly labeled Flagged for Review page.",
+      "basis": "Owner requirement",
+      "verification": "Flags do not imply provider wrongdoing or block publication.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": []
+    },
+    {
+      "id": "R-37",
+      "category": "Automation",
+      "requirement": "Complete the research/build/publication workflow without asking the owner for manual input.",
+      "basis": "Owner requirement",
+      "verification": "No provider outreach, booking or contract execution performed.",
+      "source_ids": [
+        "GH-Repo"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    }
+  ]
+}

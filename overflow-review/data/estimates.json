@@ -1,0 +1,81 @@
+{
+  "dataset": "estimates",
+  "owner_reported_date": "2026-08-30",
+  "rows": [
+    {
+      "id": "E-01",
+      "provider_as_quoted": "Expert Plumbing Solutions",
+      "quote_date": "",
+      "amount_usd": "",
+      "scope_owner_reported": "Replacing waste and overflow",
+      "provider_identity_match": "",
+      "labor_included": "",
+      "materials_included": "",
+      "ceiling_access_included": "",
+      "drywall_restore_included": "",
+      "paint_included": "",
+      "dispatch_fee": "",
+      "valid_until": "",
+      "source_ids": [
+        "CSLB-977638",
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02",
+        "F-01"
+      ],
+      "analysis": "Full waste-and-overflow replacement wording; access route and drywall not stated.",
+      "verification": "Owner-reported scope only. Amount and commercial terms blank: no provider-issued document or official published price confirmed. CSLB link verifies candidate identity, not the quote."
+    },
+    {
+      "id": "E-02",
+      "provider_as_quoted": "Bay Area Plumbing",
+      "quote_date": "",
+      "amount_usd": "",
+      "scope_owner_reported": "Replace lever for bathtub plug and spout with diverter; labor and materials included",
+      "provider_identity_match": "",
+      "labor_included": "",
+      "materials_included": "",
+      "ceiling_access_included": "",
+      "drywall_restore_included": "",
+      "paint_included": "",
+      "dispatch_fee": "",
+      "valid_until": "",
+      "source_ids": [
+        "CSLB-757796",
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02",
+        "F-01"
+      ],
+      "analysis": "Lever/diverter wording may describe different components; clarify against the actual overflow assembly.",
+      "verification": "Owner-reported scope only. Amount and commercial terms blank: no provider-issued document or official published price confirmed. CSLB link verifies candidate identity, not the quote."
+    },
+    {
+      "id": "E-03",
+      "provider_as_quoted": "Fast Response Plumbing & Rooter",
+      "quote_date": "",
+      "amount_usd": "",
+      "scope_owner_reported": "Repair or adjust bathtub wastewater plunger handle",
+      "provider_identity_match": "",
+      "labor_included": "",
+      "materials_included": "",
+      "ceiling_access_included": "",
+      "drywall_restore_included": "",
+      "paint_included": "",
+      "dispatch_fee": "",
+      "valid_until": "",
+      "source_ids": [
+        "CSLB-1024971",
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02",
+        "F-01"
+      ],
+      "analysis": "Adjustment/repair wording is narrower than replacement; seized concealed parts may change scope.",
+      "verification": "Owner-reported scope only. Amount and commercial terms blank: no provider-issued document or official published price confirmed. CSLB link verifies candidate identity, not the quote."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "dataset": "findings",
+  "rows": [
+    {
+      "id": "A-01",
+      "topic": "Best documented access analogy",
+      "finding": "Heise’s Plumbing publishes an Ingleside tub W&O replacement using exterior-ceiling access.",
+      "recommendation": "Use as the first plumbing-specialist screening call; require a separate written drywall/restoration scope.",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "A-02",
+      "topic": "Best combined-license screening group",
+      "finding": "Rapid Flow, Ace, We Do Construction and Save-On-Interior show active B + C36 classifications.",
+      "recommendation": "Ask each for one contract covering the actual plumbing and drywall performers, exact repair experience and occupied-unit references.",
+      "source_ids": [
+        "CSLB-1115649",
+        "CSLB-829071",
+        "CSLB-1096552",
+        "CSLB-749536"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "A-03",
+      "topic": "Drywall specialist",
+      "finding": "Bernal Hill Drywall shows active C-9 + B and advertises small repairs, patching and texture matching.",
+      "recommendation": "Screen as the drywall/build-back partner under a general contractor or coordinated single prime; no C36 on its license.",
+      "source_ids": [
+        "CSLB-995163"
+      ],
+      "flags": [
+        "F-13"
+      ]
+    },
+    {
+      "id": "A-04",
+      "topic": "Quote comparison",
+      "finding": "The three owner-reported scopes are adjustment, lever/diverter replacement and W&O replacement.",
+      "recommendation": "Do not rank by price. Normalize the scope and obtain written access/restoration inclusions first.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "A-05",
+      "topic": "Preferred path",
+      "finding": "A manufacturer example supports tub-side linkage service on specified models.",
+      "recommendation": "Ask for a non-destructive, model-specific assessment first; do not assume prior failed attempts can be repeated safely.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "A-06",
+      "topic": "Fallback path",
+      "finding": "The owner reports below-ceiling access may be needed; a local company documents a similar access route.",
+      "recommendation": "Require opening location, protection, restoration and future-service access in the written scope before authorization.",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "A-07",
+      "topic": "Larger-project mismatch",
+      "finding": "We Do Construction, SF Building Group and Ayoob & Peery emphasize larger/design-build or commercial work.",
+      "recommendation": "Keep as secondary candidates until small isolated-repair acceptance is confirmed.",
+      "source_ids": [
+        "WEB-SFBG"
+      ],
+      "flags": [
+        "F-11"
+      ]
+    },
+    {
+      "id": "A-08",
+      "topic": "Identity caution",
+      "finding": "Save-On-Interior and Bay Area Plumbing share CSLB address and phone, but that does not prove common ownership or one combined contract.",
+      "recommendation": "Treat as separate license records; confirm the contracting entity and actual performers.",
+      "source_ids": [
+        "CSLB-749536"
+      ],
+      "flags": [
+        "F-12"
+      ]
+    },
+    {
+      "id": "A-09",
+      "topic": "Risk screening",
+      "finding": "Kenneth Asire is suspended; Advanced carries a future-suspension warning; D G has complaint disclosure.",
+      "recommendation": "Exclude suspended work; review official adverse/additional-status records before considering the others.",
+      "source_ids": [
+        "CSLB-1027286",
+        "CSLB-1009195",
+        "CSLB-DG-Complaint"
+      ],
+      "flags": [
+        "F-18"
+      ]
+    },
+    {
+      "id": "A-10",
+      "topic": "Evidence boundary",
+      "finding": "No provider has confirmed availability, exact-job acceptance or a combined price in this research.",
+      "recommendation": "The output is a verified screening shortlist, not a booked service or guaranteed repair outcome.",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "A-11",
+      "topic": "Review evidence",
+      "finding": "Yelp links support discovery, but direct numeric review data was blocked or inconsistent across excerpts.",
+      "recommendation": "Ratings and counts remain blank; read current reviews and request job-specific references.",
+      "source_ids": [
+        "RV-Heise"
+      ],
+      "flags": [
+        "F-04"
+      ]
+    },
+    {
+      "id": "A-12",
+      "topic": "Repository consolidation",
+      "finding": "Multiple prior public drafts disagree on counts, prices, canonical route and verification strength.",
+      "recommendation": "Use the root dashboard as canonical; preserve old work in Git and redirect superseded public HTML routes.",
+      "source_ids": [
+        "GH-Repo"
+      ],
+      "flags": [
+        "F-05"
+      ]
+    }
+  ]
+}
