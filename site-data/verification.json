@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07 20:24 UTC",
+  "generated_at": "2026-11-07 20:25 UTC",
   "statement": "Automated checks run by scripts/build_project_site.py before the pages were written, then repeated against the written pages. A failing check aborts the build.",
   "checks": [
     {

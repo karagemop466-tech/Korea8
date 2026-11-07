@@ -9,11 +9,11 @@
       "id": "F-01",
       "severity": "informational",
       "title": "Repository previously hosted a different project (DOE GEMS Prize Challenge)",
-      "detail": "The repository's existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The new project site now occupies the repository root (what GitHub Pages serves from main), while the complete legacy DOE GEMS evidence site remains untouched under docs/ for history.",
+      "detail": "The repository's existing content (README, AGENTS.md, evidence/, vendor/, registry/, scripts/build_site.py) documents a DOE GEMS fault-prediction research project, unrelated to this bathtub trip-lever brief. The bathtub brief now occupies the repository root (what GitHub Pages serves); the legacy DOE GEMS pages are preserved untouched under docs/ and reachable at docs/executive-summary.html.",
       "source_links": [
         {
-          "label": "Legacy GEMS evidence site preserved at docs/index.html",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/docs/index.html"
+          "label": "Preserved DOE GEMS page (docs/executive-summary.html)",
+          "url": "https://karagemop466-tech.github.io/Korea8/docs/executive-summary.html"
         },
         {
           "label": "Legacy project README",
@@ -85,15 +85,11 @@
       "id": "F-06",
       "severity": "gap",
       "title": "No provider in the set holds a C-9 Drywall classification",
-      "detail": "None of the verified licenses includes C-9 (Drywall). The all-in-one requirement (R-07) is therefore satisfiable in two CSLB-sanctioned ways: (a) hire a B-licensed general contractor who contracts both the C-36 plumbing and a licensed C-9 drywall subcontractor under one contract (Ace #829071 and We Do Construction #1096552 hold B + C-36; SF Building Group #1106131 holds B), or (b) hire a C-36 plumber and separately contract a licensed drywall contractor. CSLB's official guidance: a B contractor is appropriate when a job requires more than two types of work and cannot legally contract for a single trade only.",
+      "detail": "None of the 13 verified licences carries C-9 (Drywall). The all-in-one requirement (R-07) is satisfiable in two CSLB-sanctioned ways under B&P §7057: (a) one B General Building licensee as prime, subcontracting the drywall to a licensed contractor and, where it holds C-36, doing the plumbing itself — six candidates hold B: Ace #829071 (B+C-36), We Do #1096552 (B+C-36), Rapid Flow #1115649 (B+C-36), Save-On-Interior #749536 (B+C-36), Ayoob & Peery #392967 (B+C-36) and SF Building Group #1106131 (B only); or (b) a C-36 plumber as prime with a separately contracted licensed drywall firm.",
       "source_links": [
         {
-          "label": "CSLB — Find A Licensed Contractor (B vs C multi-trade guidance)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx"
-        },
-        {
-          "label": "CSLB — License Classifications",
-          "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/"
+          "label": "CSLB — B General Building classification, B&P §7057 (official)",
+          "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B"
         }
       ]
     },
@@ -165,7 +161,7 @@
       "id": "F-12",
       "severity": "caution",
       "title": "Advanced Plumbing and Drain (#1009195): CSLB 'may be suspended at a future date' warning",
-      "detail": "The official CSLB record for license #1009195 (verified 2026-11-06) carries an Additional Status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.' The license is currently active. Re-check the CSLB page immediately before any engagement.",
+      "detail": "The official CSLB record for license #1009195 (re-verified 2026-11-07) carries an Additional Status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.' The license is currently active. Re-check the CSLB page immediately before any engagement.",
       "source_links": [
         {
           "label": "CSLB license detail #1009195 (official)",
