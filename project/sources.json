@@ -4,10 +4,11 @@
     "compiled": "2026-11-07",
     "rule": "Every table row on this site cites one of these sources. Records marked 'retrieved' were read directly. Records marked blocked or linked-not-tabulated support no value; they are listed for transparency and manual follow-up.",
     "counts": {
-      "total": 31,
-      "retrieved": 29,
-      "not_retrieved": 2
-    }
+      "total": 41,
+      "retrieved": 31,
+      "not_retrieved": 10
+    },
+    "merged": "Union of the sources registered by both 2026-11-07 verification passes. Company websites carried over from the earlier pass are marked linked-not-rechecked and support no licence value."
   },
   "sources": [
     {
@@ -288,6 +289,96 @@
       "retrieved": "2026-11-07",
       "status": "blocked-http-403",
       "used_for": "Attempted; returned HTTP 403. Not used for any value in this dataset. Provided as a manual starting point only."
+    },
+    {
+      "id": "S-32",
+      "type": "provider-site",
+      "label": "Expert Plumbing Solutions — company site",
+      "url": "https://www.eplumbingsolutions.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding 2026-11-07 pass; not re-checked here. Contact page only — no licence value taken from it."
+    },
+    {
+      "id": "S-33",
+      "type": "provider-site",
+      "label": "Bay Area Plumbing — company site",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here."
+    },
+    {
+      "id": "S-34",
+      "type": "provider-site",
+      "label": "Fast Response Plumbing & Rooter — company site",
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here. Its stated address differs from the CSLB address (F-20)."
+    },
+    {
+      "id": "S-35",
+      "type": "provider-site",
+      "label": "Heise's Plumbing — company site",
+      "url": "https://www.heisesplumbing.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here."
+    },
+    {
+      "id": "S-36",
+      "type": "provider-site",
+      "label": "Ace Plumbing & Rooter — company site",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here."
+    },
+    {
+      "id": "S-37",
+      "type": "provider-site",
+      "label": "We Do Construction — company site",
+      "url": "https://www.wedoconstructions.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here."
+    },
+    {
+      "id": "S-38",
+      "type": "provider-site",
+      "label": "SF Building Group — company site",
+      "url": "https://sfbuildinggroup.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here."
+    },
+    {
+      "id": "S-39",
+      "type": "provider-site",
+      "label": "Rapid Flow Plumbing & Rooter — company site",
+      "url": "https://www.rapidflowbayarea.com/",
+      "retrieved": "2026-11-07",
+      "status": "linked-not-rechecked",
+      "used_for": "Recorded by the preceding pass; not re-checked here."
+    },
+    {
+      "id": "S-40",
+      "type": "official-regulator",
+      "label": "CSLB — licence classifications index",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Used for the C-9 drywall finding (F-18)."
+    },
+    {
+      "id": "S-41",
+      "type": "official-regulator",
+      "label": "CSLB — Find a licensed contractor (ZIP search)",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx",
+      "retrieved": "2026-11-07",
+      "status": "retrieved",
+      "used_for": "Official contractor search; not used to source any table value."
     }
   ]
 }

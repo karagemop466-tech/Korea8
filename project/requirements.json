@@ -120,21 +120,95 @@
     }
   ],
   "brief": [
-    { "id": "RQ-01", "topic": "Problem", "requirement": "The bathtub wastewater overflow trip lever is stuck inside the plumbing concealed behind the wall, and has to be removed." },
-    { "id": "RQ-02", "topic": "Access", "requirement": "The overflow sits in a hard-to-reach area; opening drywall to reach the plumbing is possible but not the preferred route." },
-    { "id": "RQ-03", "topic": "History", "requirement": "More than five licensed plumbers have already been unable to remove the assembly from above without warning that the concealed plumbing could be destroyed." },
-    { "id": "RQ-04", "topic": "Preference", "requirement": "Removal from above is preferred, if a provider can do it without damaging the concealed plumbing." },
-    { "id": "RQ-05", "topic": "Fallback", "requirement": "If above-access is not possible, work from below is the accepted approach recommended by the plumbers consulted." },
-    { "id": "RQ-06", "topic": "Access", "requirement": "The space below is a storage unit, so below-floor work may require opening the drywall ceiling." },
-    { "id": "RQ-07", "topic": "Vendor", "requirement": "One accountable service must handle both the plumbing and the drywall opening and repair." },
-    { "id": "RQ-08", "topic": "Vendor", "requirement": "The vendor must be a licensed plumber or licensed contractor." },
-    { "id": "RQ-09", "topic": "Location", "requirement": "The vendor must serve San Francisco." },
-    { "id": "RQ-10", "topic": "Environment", "requirement": "The vendor must have experience of delicate work in a sensitive environment, because tenants occupy the unit." },
-    { "id": "RQ-11", "topic": "Vendor", "requirement": "Candidates must be surfaced from review-backed services such as Yelp and similar platforms, filtered for this specific type of work in San Francisco." },
-    { "id": "RQ-12", "topic": "Evidence", "requirement": "Reference photographs of the work area may be supplied later; planning proceeds from the written description until then." },
-    { "id": "RQ-13", "topic": "Deliverable", "requirement": "Collect, organise and analyse the full requirement list plus the three received estimates into a reviewable dossier with a published site." },
-    { "id": "RQ-14", "topic": "Verification", "requirement": "Every published row must carry a source link; anything that cannot be confirmed from an official source stays blank and is flagged as unverified." },
-    { "id": "RQ-15", "topic": "Vendor", "requirement": "The vendor must be able to work through a single point of contact, so the owner is not coordinating two trades." },
-    { "id": "RQ-16", "topic": "Environment", "requirement": "The unit where the lever is stuck is occupied by tenants, so the work happens in and around an occupied home." }
+    {
+      "id": "RQ-01",
+      "topic": "Problem",
+      "requirement": "The bathtub wastewater overflow trip lever is stuck inside the plumbing concealed behind the wall, and has to be removed."
+    },
+    {
+      "id": "RQ-02",
+      "topic": "Access",
+      "requirement": "The overflow sits in a hard-to-reach area; opening drywall to reach the plumbing is possible but not the preferred route."
+    },
+    {
+      "id": "RQ-03",
+      "topic": "History",
+      "requirement": "More than five licensed plumbers have already been unable to remove the assembly from above without warning that the concealed plumbing could be destroyed."
+    },
+    {
+      "id": "RQ-04",
+      "topic": "Preference",
+      "requirement": "Removal from above is preferred, if a provider can do it without damaging the concealed plumbing."
+    },
+    {
+      "id": "RQ-05",
+      "topic": "Fallback",
+      "requirement": "If above-access is not possible, work from below is the accepted approach recommended by the plumbers consulted."
+    },
+    {
+      "id": "RQ-06",
+      "topic": "Access",
+      "requirement": "The space below is a storage unit, so below-floor work may require opening the drywall ceiling."
+    },
+    {
+      "id": "RQ-07",
+      "topic": "Vendor",
+      "requirement": "One accountable service must handle both the plumbing and the drywall opening and repair."
+    },
+    {
+      "id": "RQ-08",
+      "topic": "Vendor",
+      "requirement": "The vendor must be a licensed plumber or licensed contractor."
+    },
+    {
+      "id": "RQ-09",
+      "topic": "Location",
+      "requirement": "The vendor must serve San Francisco."
+    },
+    {
+      "id": "RQ-10",
+      "topic": "Environment",
+      "requirement": "The vendor must have experience of delicate work in a sensitive environment, because tenants occupy the unit."
+    },
+    {
+      "id": "RQ-11",
+      "topic": "Vendor",
+      "requirement": "Candidates must be surfaced from review-backed services such as Yelp and similar platforms, filtered for this specific type of work in San Francisco."
+    },
+    {
+      "id": "RQ-12",
+      "topic": "Evidence",
+      "requirement": "Reference photographs of the work area may be supplied later; planning proceeds from the written description until then."
+    },
+    {
+      "id": "RQ-13",
+      "topic": "Deliverable",
+      "requirement": "Collect, organise and analyse the full requirement list plus the three received estimates into a reviewable dossier with a published site."
+    },
+    {
+      "id": "RQ-14",
+      "topic": "Verification",
+      "requirement": "Every published row must carry a source link; anything that cannot be confirmed from an official source stays blank and is flagged as unverified."
+    },
+    {
+      "id": "RQ-15",
+      "topic": "Vendor",
+      "requirement": "The vendor must be able to work through a single point of contact, so the owner is not coordinating two trades."
+    },
+    {
+      "id": "RQ-16",
+      "topic": "Environment",
+      "requirement": "The unit where the lever is stuck is occupied by tenants, so the work happens in and around an occupied home."
+    },
+    {
+      "id": "RQ-17",
+      "topic": "Vendor",
+      "requirement": "Before signing, confirm on the CSLB record that the licence is current and active, that the classification matches the work, and that the entity named on the contract is the licensee."
+    },
+    {
+      "id": "RQ-18",
+      "topic": "Vendor",
+      "requirement": "Every candidate must give a written, itemised scope and price covering the removal, the make-good of the trip lever and trim, any ceiling opening and closing, and the permit."
+    }
   ]
 }

@@ -24,12 +24,21 @@ from urllib.parse import urlparse
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGES = [
     "index.html", "executive-summary.html", "requirements.html", "estimates.html",
-    "providers.html", "technical-approach.html", "sources.html", "flagged-for-review.html",
+    "providers.html", "technical-approach.html", "sources.html", "verification.html",
+    "flagged-for-review.html",
 ]
 OFFICIAL_DOMAINS = {
     "www.cslb.ca.gov", "leginfo.legislature.ca.gov", "www.sf.gov", "aa.iapmo.org",
     "forms.iapmo.org", "www.watcomfg.com", "www.yelp.com",
     "github.com",
+}
+# Company websites carried over from the earlier verification pass. Permitted as contact links only:
+# the Sources page marks every one of them 'linked-not-rechecked', and no licence value comes from them.
+PROVIDER_DOMAINS = {
+    "www.eplumbingsolutions.com", "www.bayareaplumbingsf.com",
+    "www.fastresponseplumbingsf.com", "www.heisesplumbing.com",
+    "www.aceplumbingandrooter.com", "www.wedoconstructions.com",
+    "sfbuildinggroup.com", "www.rapidflowbayarea.com",
 }
 # Phrases that must never appear on the published site.
 BANNED = [
@@ -138,9 +147,9 @@ def main() -> int:
             u = urlparse(value)
             if u.scheme != "https":
                 problems.append(f"{page}: non-https external link -> {value}")
-            if u.netloc not in OFFICIAL_DOMAINS:
+            if u.netloc not in OFFICIAL_DOMAINS and u.netloc not in PROVIDER_DOMAINS:
                 problems.append(f"{page}: unlisted external domain -> {u.netloc}")
-    report["checked"].append(f"external links: {external}")
+    report["checked"].append(f"external links: {external} (official/primary domains, plus provider contact sites)")
 
     # 5: privacy sweep over every published root file
     published = PAGES + ["style.css"]

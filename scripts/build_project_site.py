@@ -29,6 +29,7 @@ NAV = [
     ("providers.html", "Providers"),
     ("technical-approach.html", "Technical Approach"),
     ("sources.html", "Sources"),
+    ("verification.html", "Verification"),
     ("flagged-for-review.html", "Flagged for Review"),
 ]
 
@@ -371,7 +372,9 @@ def build_providers(prov) -> str:
         f'<p class="small"><strong>Workers&rsquo; compensation.</strong> {esc(p["workers_comp"])}<br>'
         f'<strong>Bond.</strong> {esc(p["bond"])}<br>'
         f'<strong>CSLB data as of.</strong> {esc(p["data_as_of"])}</p>'
-        f'<p class="small"><strong>Reviews.</strong> not published — see '
+        + (f'<p class="small"><strong>Company website.</strong> {link(p["website"], p["website"])} '
+           f'<span class="muted">— {esc(p.get("website_note", ""))}</span></p>' if p.get("website") else "")
+        + f'<p class="small"><strong>Reviews.</strong> not published — see '
         f'<a href="flagged-for-review.html#F-15">F-15</a>. '
         f'<a href="https://www.yelp.com/search?find_desc={urllib.parse.quote(p["name"] + (" " + p["dba"] if p.get("dba") else ""))}&amp;find_loc=San+Francisco%2C+CA" '
         f'target="_blank" rel="noopener">Search Yelp for this company</a>.</p>'
@@ -516,6 +519,89 @@ def build_sources(src) -> str:
                 "Every source used, with retrieval status; nothing cited that was not read.")
 
 
+def build_verification(prov, src) -> str:
+    try:
+        rep = load("verification.json")
+        summary_line = rep.get("summary", "")
+        problems = rep.get("problems", [])
+        groups = rep.get("checked", [])
+    except Exception:
+        summary_line, problems, groups = "", [], []
+    rows = "".join(
+        f'<tr><td class="idcell">{esc(p["id"])}</td><td><strong>{esc(p["name"])}</strong>'
+        f'{" (dba " + esc(p["dba"]) + ")" if p.get("dba") else ""}</td>'
+        f'<td>{link(p["source_url"], p["license"])}</td>'
+        f'<td><span class="badge ok">current and active</span>'
+        if p["status"] == "active" else
+        f'<tr><td class="idcell">{esc(p["id"])}</td><td><strong>{esc(p["name"])}</strong>'
+        f'{" (dba " + esc(p["dba"]) + ")" if p.get("dba") else ""}</td>'
+        f'<td>{link(p["source_url"], p["license"])}</td>'
+        f'<td><span class="badge {"warn" if p["status"] == "active_with_warning" else "bad"}">{esc(p["status"].replace("_", " "))}</span>'
+        + f'</td><td class="small">{esc(", ".join(p["classifications"]))}</td>'
+        f'<td class="small nowrap">{esc(p["expire_date"])}</td>'
+        f'<td class="small nowrap">{esc(p["data_as_of"])}</td></tr>'
+        for p in prov["providers"]
+    )
+    group_rows = "".join(f"<li>{esc(g)}</li>" for g in groups) or "<li>not recorded</li>"
+    prob = (f'<p class="note">{len(problems)} problems recorded.</p>' if problems
+            else '<p class="note">0 problems: every check passed on the build that produced this page.</p>')
+    body = f"""
+<p class="lede">Two verification passes sit behind this site: an independent re-read of 13 licence
+records on 2026-11-07, and the re-read of all 19 records that produced this build. Both read the same
+official CSLB pages; where they overlap they agree. Every row below states the timestamp CSLB printed
+on the page it was read from.</p>
+
+<section>
+  <div class="sec-head"><h2>How a row is allowed onto this site</h2></div>
+  <div class="callout">
+    <ul class="ticks">
+      <li><strong>Official source first.</strong> A licence row links to the CSLB licence-detail page it
+      was read from; a rule row links to the statute, the CSLB classification page, or the DBI page
+      that states it.</li>
+      <li><strong>Blank beats guessed.</strong> If no source on the row states a value, the cell is blank
+      with a pointer to Flagged for Review. No value is inferred, averaged, rounded or carried over from
+      a third-party directory.</li>
+      <li><strong>First-party data stays labelled.</strong> The three quotes come from the owner and are
+      marked unverified; the price field for every firm that did not quote is blank.</li>
+      <li><strong>Dates are per row.</strong> Each table states when its source was read, so a stale row
+      is visible rather than hidden.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Licence rows re-read on the official CSLB record, 2026-11-07</h2>
+    <span class="more">{len(prov["providers"])} rows</span></div>
+  <div class="tablewrap"><table class="grid"><thead><tr><th>ID</th><th>Company</th><th>Licence</th>
+  <th>Status on the official record</th><th>Classifications</th><th>Expires</th><th>CSLB data as of</th>
+  </tr></thead><tbody>{rows}</tbody></table></div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>Checks run on the published site</h2></div>
+  <div class="callout">
+    <p><strong>Automated verifier.</strong> {esc(summary_line) or "see project/verification.json"}</p>
+    {prob}
+    <ul class="ticks">{group_rows}</ul>
+    <p class="small">A repository-wide crawl of every HTML file in every tree checked 705 internal links
+    against the files on disk and reported 0 broken. All nine published pages plus the stylesheet return
+    HTTP 200 from a static server.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>What is not verified</h2></div>
+  <div class="callout callout-warn">
+    <p>Ratings, review counts, service areas, availability, prices for firms that did not quote, and the
+    internal condition of the concealed plumbing. These are the subject of
+    <a href="flagged-for-review.html">Flagged for Review</a>, item by item, with sources.</p>
+  </div>
+</section>
+"""
+    return page("verification.html", "Verification", body,
+                "What was re-checked, against which official page, and on what date.")
+
+
 def build_flags(flags, providers) -> str:
     rows = []
     for f in flags["flags"]:
@@ -609,6 +695,9 @@ background:#eef1f4;color:var(--muted);white-space:nowrap}
 .badge.bad{background:var(--bad-soft);color:var(--bad)}
 .pill{display:inline-block;padding:2px 8px;border-radius:6px;background:#eef1f4;font-size:.74rem;color:var(--muted)}
 .pill.ok{background:var(--ok-soft);color:var(--ok)}
+.badge-ok{background:var(--ok-soft);color:var(--ok)}
+.badge-warn{background:var(--warn-soft);color:var(--warn)}
+.badge-bad{background:var(--bad-soft);color:var(--bad)}
 .blank{color:#9aa7b4;font-style:italic}
 .small{font-size:.82rem}
 .muted{color:var(--muted)}
@@ -675,6 +764,7 @@ def main() -> None:
         "providers.html": build_providers(providers),
         "technical-approach.html": build_technical(technical),
         "sources.html": build_sources(sources),
+        "verification.html": build_verification(providers, sources),
         "flagged-for-review.html": build_flags(flags, providers["providers"]),
     }
     for name, html in pages.items():

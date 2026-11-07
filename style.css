@@ -44,6 +44,9 @@ background:#eef1f4;color:var(--muted);white-space:nowrap}
 .badge.bad{background:var(--bad-soft);color:var(--bad)}
 .pill{display:inline-block;padding:2px 8px;border-radius:6px;background:#eef1f4;font-size:.74rem;color:var(--muted)}
 .pill.ok{background:var(--ok-soft);color:var(--ok)}
+.badge-ok{background:var(--ok-soft);color:var(--ok)}
+.badge-warn{background:var(--warn-soft);color:var(--warn)}
+.badge-bad{background:var(--bad-soft);color:var(--bad)}
 .blank{color:#9aa7b4;font-style:italic}
 .small{font-size:.82rem}
 .muted{color:var(--muted)}
