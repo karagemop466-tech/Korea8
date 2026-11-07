@@ -1,0 +1,33 @@
+{
+ "supplied_date_as_written": "8/30/26",
+ "note": "Amounts were supplied in the owner brief. No provider-issued document or official published price confirms any amount, so every amount cell is published BLANK and flagged unverified (F-01). Scopes differ, so the three are not like-for-like (F-02). Identity matching is by business name against the CSLB record in providers.json.",
+ "estimates": [
+  {
+   "id": "Q-01",
+   "provider": "Expert Plumbing Solutions (P-01)",
+   "scope_as_supplied": "Remove bathtub wastewater overflow trip lever — 'Replacing waste and overflow'",
+   "amount": "",
+   "status": "UNVERIFIED — amount blank, no official source",
+   "includes": "Not stated in brief",
+   "flags": "F-01, F-02"
+  },
+  {
+   "id": "Q-02",
+   "provider": "Bay Area Plumbing (P-02)",
+   "scope_as_supplied": "Replace lever for the bathtub plug and spout with diverter, includes labor and materials",
+   "amount": "",
+   "status": "UNVERIFIED — amount blank, no official source",
+   "includes": "Labor and materials stated in brief",
+   "flags": "F-01, F-02"
+  },
+  {
+   "id": "Q-03",
+   "provider": "Fast Response (P-03)",
+   "scope_as_supplied": "Repair or adjust bathtub wastewater plunger handle",
+   "amount": "",
+   "status": "UNVERIFIED — amount blank, no official source",
+   "includes": "Not stated in brief",
+   "flags": "F-01, F-02"
+  }
+ ]
+}

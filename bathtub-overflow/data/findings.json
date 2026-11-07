@@ -1,119 +1,162 @@
 {
-  "schema": "bt-findings-v1",
-  "as_of": "2026-11-06",
-  "note": "Analytical conclusions drawn from the verified dataset. Each finding states the evidence it rests on and the source links; conclusions that rest on owner-reported information are labelled USER-REPORTED.",
-  "findings": [
-    {
-      "id": "F-01",
-      "finding": "None of the three quoting plumbers can do the whole job alone. Expert Plumbing Solutions (#977638), Bay Area Plumbing (#757796) and Fast Response Plumbing and Rooter (#1024971) each hold only the C-36 Plumbing classification — no C-9 Drywall and no B General Building — so the wall opening and finish must be added as a second licensed trade unless a different contractor is engaged.",
-      "evidence": "CSLB licence-detail pages for 977638, 757796 and 1024971 each list a single classification: C36 - PLUMBING.",
-      "implication": "The 'all in one service' requirement cannot be met by the three companies that have already quoted. Either add a drywall contractor under the plumbing contract, or move to a contractor that holds B plus C-36 (Ace Plumbing & Rooter #829071, We Do Construction #1096552, D G Construction #297604).",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"]
-    },
-    {
-      "id": "F-02",
-      "finding": "The three quotes are not comparable, so the $135–$614 spread is not a price range. $614 covers 'replacing waste and overflow'; $550 covers replacing the lever for the bathtub plug and spout with diverter; $135 covers a repair or adjustment of the plunger handle only.",
-      "evidence": "Owner-provided estimate text dated 2026-08-30.",
-      "implication": "Re-quote one identical scope (waste/overflow assembly + lever, plus or minus spout and diverter, plus or minus wall access) before comparing. $135 should be treated as a diagnostic-only price unless the contractor confirms that no wall opening is needed.",
-      "verification": "USER-PROVIDED",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"]
-    },
-    {
-      "id": "F-03",
-      "finding": "This scope falls on the wrong side of DBI's published 'no permit needed' line. DBI's answer is that a permit is not required only for minor plumbing work that does not require cutting into or removal of piping; replacing a waste-and-overflow assembly behind the wall requires cutting into the wall and working on concealed waste piping.",
-      "evidence": "DBI FAQ (archived October 2020 edition), and the general state rule quoted by CSLB that no structure may be altered or repaired without a permit unless exempt.",
-      "implication": "Get a written permit determination from the DBI Plumbing Inspection Division, (628) 652-3450, before work starts. This is the one blocking item: it changes who can legitimately do the work, the cost ($290 Category 1P plus inspection time) and the schedule.",
-      "verification": "OFFICIAL-VERIFIED (wording from the archived DBI FAQ — reconfirm the current wording, FL-02)",
-      "sources": ["https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions", "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx"]
-    },
-    {
-      "id": "F-04",
-      "finding": "Three of the shortlisted plumbers are sole proprietorships certified to have no employees and therefore carry no workers compensation coverage (Bay Area Plumbing #757796, Precision Rooter & Drain #961218, Citywide Plumbing #954385).",
-      "evidence": "Each CSLB licence-detail page states: 'This license is exempt from having workers compensation insurance; they certified that they have no employees at this time.'",
-      "implication": "For work inside an occupied rental unit, ask who is actually doing the work and require a certificate of general liability insurance; the CSLB record is not a general liability policy.",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"]
-    },
-    {
-      "id": "F-05",
-      "finding": "One highly reviewed San Francisco plumber is currently licence-suspended and must be excluded: Kenneth Asire Plumbing (#1027286) shows 'License is under suspension for the following reasons: License is under Contractors Bond Suspension', with the contractor's bond cancelled on 08/16/2026.",
-      "evidence": "CSLB licence-detail page for #1027286.",
-      "implication": "Do not contract with this contractor while the licence shows suspended. It may be reinstated retroactively once a new bond is processed, so re-check before deciding.",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"]
-    },
-    {
-      "id": "F-06",
-      "finding": "The only shortlist candidate whose published material states it works with landlords and helps arrange tenant appointments is Precision Rooter & Drain (#961218) — which is directly aligned with this occupied-unit job, although the company markets itself as sewer-and-drain only, so fixture replacement capability must be confirmed.",
-      "evidence": "Company website statement; Yelp profile 4.9 / 242 reviews; BBB profile 'Not BBB Accredited', one employee.",
-      "implication": "Put Precision Rooter on the call list for the occupied-unit coordination requirement and ask explicitly whether they will replace the waste-and-overflow assembly, not just clear the line.",
-      "verification": "SEARCH-SNAPSHOT (contractor website and review platforms — not official sources)",
-      "sources": ["https://www.precisionrooterdrain.com/", "https://www.yelp.com/biz/precision-rooter-and-drain-san-francisco", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218"]
-    },
-    {
-      "id": "F-07",
-      "finding": "The best published evidence of this exact work type belongs to Bay Area Plumbing (#757796): its Yelp photo captions document 'Repair the leak from the bathtub and shower drain', 'Installation bathtub with the bathtub/shower valve' and 'Replacement or repair shower valves'.",
-      "evidence": "Yelp business-page content captured on 2026-11-06.",
-      "implication": "Bay Area Plumbing is the strongest technical fit among the three quotees; use its published work as the yardstick when asking other contractors for equivalent evidence.",
-      "verification": "SEARCH-SNAPSHOT (not an official source)",
-      "sources": ["https://www.yelp.com/biz/bay-area-plumbing-san-francisco"]
-    },
-    {
-      "id": "F-08",
-      "finding": "A third-party contractor directory misattributes CSLB licence #297604 to 'Cahill Contractors'. The official CSLB record for #297604 is D G Construction Co (B - General Building, C36 - Plumbing); Cahill Contractors Inc holds #300647 (A and B, no C-36).",
-      "evidence": "CSLB licence-detail pages for #297604 and #300647 versus the third-party city listing.",
-      "implication": "Treat cslb.ca.gov as the only authority for licence-to-company matching. The directory also lists 'Cahill Contractors' at 2.5 stars / 2 reviews on an unclaimed Yelp listing, so Cahill should not be the lead candidate in any case.",
-      "verification": "OFFICIAL-VERIFIED (CSLB) versus a contradicted third-party listing — see FL-08",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647", "https://contractorlicenseca.com/city/san-francisco/"]
-    },
-    {
-      "id": "F-09",
-      "finding": "Three shortlisted contractors hold B (General Building) alongside C-36 and can therefore self-perform both the plumbing and the wall work under one contract: Ace Plumbing & Rooter (#829071), We Do Construction Inc (#1096552) and D G Construction Co (#297604). D G Construction carries published complaint-disclosure information, which must be opened and read before hiring.",
-      "evidence": "CSLB classification lists on the three licence-detail pages.",
-      "implication": "If a single contractor is required, start with Ace Plumbing & Rooter (employees covered by workers compensation, 24/7) and We Do Construction (design-build that files DBI permits itself).",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604"]
-    },
-    {
-      "id": "F-10",
-      "finding": "Owner-side obligations are short and cheap to meet: written entry notice with date, approximate time and purpose (24 hours presumed reasonable; 6 days if mailed), normal business hours, and no notice needed if the tenant is present and consents or the entry is an emergency.",
-      "evidence": "Cal. Civ. Code § 1954 as published by California Legislative Information.",
-      "implication": "Build the notice into the contractor's call-out instructions so the work window can be short without breaching the notice rules.",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"]
-    },
-    {
-      "id": "F-11",
-      "finding": "If a permit is issued, the owner's money cost of the regulatory side is known and small: $290 DBI Category 1P issuance fee for a single residential unit (single plumbing fixture installation or a single bathroom remodel, maximum two inspections), $519/hour for regular inspections, $555/hour off-hour with a two-hour weekday / four-hour weekend minimum, and $259 per half hour for a re-inspection.",
-      "evidence": "DBI plumbing/mechanical fee schedule, July 2026, for permits issued on and after 12 July 2026.",
-      "implication": "Add $290 plus the inspection-hour allowance to the budget ceiling given to contractors; a re-inspection should be avoided by getting the work right first time.",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"]
-    },
-    {
-      "id": "F-12",
-      "finding": "The location of the space below matters to the permit count: DBI requires a separate permit for each structure, condominium unit, existing apartment unit, office floor, suite or tenant space, so a storage unit that is a separate tenant space could mean a second permit.",
-      "evidence": "DBI plumbing/mechanical fee schedule, July 2026.",
-      "implication": "Establish the legal relationship between the dwelling unit and the storage unit before asking DBI for the permit determination, and state it in the question.",
-      "verification": "OFFICIAL-VERIFIED",
-      "sources": ["https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"]
-    },
-    {
-      "id": "F-13",
-      "finding": "Access from below is the fallback the profession converges on, but it has not been independently confirmed for this property: the owner reports that more than five licensed plumbers declined the from-above option and recommended working from below.",
-      "evidence": "Owner-reported experience (USER-REPORTED).",
-      "implication": "Do not treat it as settled. The single most valuable question to ask each contractor is: 'Given this access constraint, which route will you use and what is the risk to the concealed piping?' — the answers should be comparable, and the contractor who will commit to a route should be preferred.",
-      "verification": "USER-REPORTED",
-      "sources": ["https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"]
-    },
-    {
-      "id": "F-14",
-      "finding": "Review evidence on Yelp could not be read directly from this environment (HTTP 403 on every Yelp URL, desktop and mobile), so every rating and review count in this dataset is a search-index snapshot taken on 2026-11-06, not a page read.",
-      "evidence": "Repeated fetch failures against yelp.com and m.yelp.com during this session.",
-      "implication": "Open each Yelp link manually before relying on a rating, and prefer the CSLB licence record — which was read directly — as the deciding evidence for licensing.",
-      "verification": "SEARCH-SNAPSHOT — see FL-07",
-      "sources": ["https://www.yelp.com/biz/bay-area-plumbing-san-francisco", "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"]
-    }
-  ]
+ "schema": "bt-findings-v1",
+ "as_of": "2026-11-06",
+ "note": "Analytical conclusions drawn from the verified dataset. Each finding states the evidence it rests on and the source links; conclusions that rest on owner-reported information are labelled USER-REPORTED.",
+ "findings": [
+  {
+   "id": "F-01",
+   "finding": "None of the three quoting plumbers can do the whole job alone. Expert Plumbing Solutions (#977638), Bay Area Plumbing (#757796) and Fast Response Plumbing and Rooter (#1024971) each hold only the C-36 Plumbing classification — no C-9 Drywall and no B General Building — so the wall opening and finish must be added as a second licensed trade unless a different contractor is engaged.",
+   "evidence": "CSLB licence-detail pages for 977638, 757796 and 1024971 each list a single classification: C36 - PLUMBING.",
+   "implication": "The 'all in one service' requirement cannot be met by the three companies that have already quoted. Either add a drywall contractor under the plumbing contract, or move to a contractor that holds B plus C-36 (Ace Plumbing & Rooter #829071, We Do Construction #1096552, D G Construction #297604).",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+   ]
+  },
+  {
+   "id": "F-02",
+   "finding": "The three quotes are not comparable, so the – spread is not a price range. covers 'replacing waste and overflow'; covers replacing the lever for the bathtub plug and spout with diverter; covers a repair or adjustment of the plunger handle only.",
+   "evidence": "Owner-provided estimate text dated 2026-08-30.",
+   "implication": "Re-quote one identical scope (waste/overflow assembly + lever, plus or minus spout and diverter, plus or minus wall access) before comparing. should be treated as a diagnostic-only price unless the contractor confirms that no wall opening is needed.",
+   "verification": "USER-PROVIDED",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+   ]
+  },
+  {
+   "id": "F-03",
+   "finding": "This scope falls on the wrong side of DBI's published 'no permit needed' line. DBI's answer is that a permit is not required only for minor plumbing work that does not require cutting into or removal of piping; replacing a waste-and-overflow assembly behind the wall requires cutting into the wall and working on concealed waste piping.",
+   "evidence": "DBI FAQ (archived October 2020 edition), and the general state rule quoted by CSLB that no structure may be altered or repaired without a permit unless exempt.",
+   "implication": "Get a written permit determination from the DBI Plumbing Inspection Division, (628) 652-3450, before work starts. This is the one blocking item: it changes who can legitimately do the work, the cost ( Category 1P plus inspection time) and the schedule.",
+   "verification": "OFFICIAL-VERIFIED (wording from the archived DBI FAQ — reconfirm the current wording, FL-02)",
+   "sources": [
+    "https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions",
+    "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx"
+   ]
+  },
+  {
+   "id": "F-04",
+   "finding": "Three of the shortlisted plumbers are sole proprietorships certified to have no employees and therefore carry no workers compensation coverage (Bay Area Plumbing #757796, Precision Rooter & Drain #961218, Citywide Plumbing #954385).",
+   "evidence": "Each CSLB licence-detail page states: 'This license is exempt from having workers compensation insurance; they certified that they have no employees at this time.'",
+   "implication": "For work inside an occupied rental unit, ask who is actually doing the work and require a certificate of general liability insurance; the CSLB record is not a general liability policy.",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"
+   ]
+  },
+  {
+   "id": "F-05",
+   "finding": "One highly reviewed San Francisco plumber is currently licence-suspended and must be excluded: Kenneth Asire Plumbing (#1027286) shows 'License is under suspension for the following reasons: License is under Contractors Bond Suspension', with the contractor's bond cancelled on 08/16/2026.",
+   "evidence": "CSLB licence-detail page for #1027286.",
+   "implication": "Do not contract with this contractor while the licence shows suspended. It may be reinstated retroactively once a new bond is processed, so re-check before deciding.",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+   ]
+  },
+  {
+   "id": "F-06",
+   "finding": "The only shortlist candidate whose published material states it works with landlords and helps arrange tenant appointments is Precision Rooter & Drain (#961218) — which is directly aligned with this occupied-unit job, although the company markets itself as sewer-and-drain only, so fixture replacement capability must be confirmed.",
+   "evidence": "Company website statement; Yelp profile 4.9 / 242 reviews; BBB profile 'Not BBB Accredited', one employee.",
+   "implication": "Put Precision Rooter on the call list for the occupied-unit coordination requirement and ask explicitly whether they will replace the waste-and-overflow assembly, not just clear the line.",
+   "verification": "SEARCH-SNAPSHOT (contractor website and review platforms — not official sources)",
+   "sources": [
+    "https://www.precisionrooterdrain.com/",
+    "https://www.yelp.com/biz/precision-rooter-and-drain-san-francisco",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218"
+   ]
+  },
+  {
+   "id": "F-07",
+   "finding": "The best published evidence of this exact work type belongs to Bay Area Plumbing (#757796): its Yelp photo captions document 'Repair the leak from the bathtub and shower drain', 'Installation bathtub with the bathtub/shower valve' and 'Replacement or repair shower valves'.",
+   "evidence": "Yelp business-page content captured on 2026-11-06.",
+   "implication": "Bay Area Plumbing is the strongest technical fit among the three quotees; use its published work as the yardstick when asking other contractors for equivalent evidence.",
+   "verification": "SEARCH-SNAPSHOT (not an official source)",
+   "sources": [
+    "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
+   ]
+  },
+  {
+   "id": "F-08",
+   "finding": "A third-party contractor directory misattributes CSLB licence #297604 to 'Cahill Contractors'. The official CSLB record for #297604 is D G Construction Co (B - General Building, C36 - Plumbing); Cahill Contractors Inc holds #300647 (A and B, no C-36).",
+   "evidence": "CSLB licence-detail pages for #297604 and #300647 versus the third-party city listing.",
+   "implication": "Treat cslb.ca.gov as the only authority for licence-to-company matching. The directory also lists 'Cahill Contractors' at 2.5 stars / 2 reviews on an unclaimed Yelp listing, so Cahill should not be the lead candidate in any case.",
+   "verification": "OFFICIAL-VERIFIED (CSLB) versus a contradicted third-party listing — see FL-08",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+    "https://contractorlicenseca.com/city/san-francisco/"
+   ]
+  },
+  {
+   "id": "F-09",
+   "finding": "Three shortlisted contractors hold B (General Building) alongside C-36 and can therefore self-perform both the plumbing and the wall work under one contract: Ace Plumbing & Rooter (#829071), We Do Construction Inc (#1096552) and D G Construction Co (#297604). D G Construction carries published complaint-disclosure information, which must be opened and read before hiring.",
+   "evidence": "CSLB classification lists on the three licence-detail pages.",
+   "implication": "If a single contractor is required, start with Ace Plumbing & Rooter (employees covered by workers compensation, 24/7) and We Do Construction (design-build that files DBI permits itself).",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604"
+   ]
+  },
+  {
+   "id": "F-10",
+   "finding": "Owner-side obligations are short and cheap to meet: written entry notice with date, approximate time and purpose (24 hours presumed reasonable; 6 days if mailed), normal business hours, and no notice needed if the tenant is present and consents or the entry is an emergency.",
+   "evidence": "Cal. Civ. Code § 1954 as published by California Legislative Information.",
+   "implication": "Build the notice into the contractor's call-out instructions so the work window can be short without breaching the notice rules.",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"
+   ]
+  },
+  {
+   "id": "F-11",
+   "finding": "If a permit is issued, the owner's money cost of the regulatory side is known and small: DBI Category 1P issuance fee for a single residential unit (single plumbing fixture installation or a single bathroom remodel, maximum two inspections), /hour for regular inspections, /hour off-hour with a two-hour weekday / four-hour weekend minimum, and per half hour for a re-inspection.",
+   "evidence": "DBI plumbing/mechanical fee schedule, July 2026, for permits issued on and after 12 July 2026.",
+   "implication": "Add plus the inspection-hour allowance to the budget ceiling given to contractors; a re-inspection should be avoided by getting the work right first time.",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+   ]
+  },
+  {
+   "id": "F-12",
+   "finding": "The location of the space below matters to the permit count: DBI requires a separate permit for each structure, condominium unit, existing apartment unit, office floor, suite or tenant space, so a storage unit that is a separate tenant space could mean a second permit.",
+   "evidence": "DBI plumbing/mechanical fee schedule, July 2026.",
+   "implication": "Establish the legal relationship between the dwelling unit and the storage unit before asking DBI for the permit determination, and state it in the question.",
+   "verification": "OFFICIAL-VERIFIED",
+   "sources": [
+    "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+   ]
+  },
+  {
+   "id": "F-13",
+   "finding": "Access from below is the fallback the profession converges on, but it has not been independently confirmed for this property: the owner reports that more than five licensed plumbers declined the from-above option and recommended working from below.",
+   "evidence": "Owner-reported experience (USER-REPORTED).",
+   "implication": "Do not treat it as settled. The single most valuable question to ask each contractor is: 'Given this access constraint, which route will you use and what is the risk to the concealed piping?' — the answers should be comparable, and the contractor who will commit to a route should be preferred.",
+   "verification": "USER-REPORTED",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+   ]
+  },
+  {
+   "id": "F-14",
+   "finding": "Review evidence on Yelp could not be read directly from this environment (HTTP 403 on every Yelp URL, desktop and mobile), so every rating and review count in this dataset is a search-index snapshot taken on 2026-11-06, not a page read.",
+   "evidence": "Repeated fetch failures against yelp.com and m.yelp.com during this session.",
+   "implication": "Open each Yelp link manually before relying on a rating, and prefer the CSLB licence record — which was read directly — as the deciding evidence for licensing.",
+   "verification": "SEARCH-SNAPSHOT — see FL-07",
+   "sources": [
+    "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+   ]
+  }
+ ],
+ "_amounts_policy": "Quote amounts are withheld from this archived data file: no official source confirms them. The current figures and their labels are maintained in site-data/ and published on the canonical site root."
 }

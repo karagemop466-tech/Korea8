@@ -1,0 +1,279 @@
+{
+ "meta": {
+  "title": "Requirements register",
+  "compiled": "2026-11-07",
+  "note": "'Owner-provided' rows restate the project brief; there is no official source for an owner's own requirement, so they are labelled as owner-provided rather than given a fabricated citation. Rows marked 'Official' carry the link to the government source the requirement is derived from."
+ },
+ "categories": [
+  "A. Problem",
+  "B. Access",
+  "C. Scope",
+  "D. Licensing",
+  "E. Permit & code",
+  "F. Tenant & building",
+  "G. Evidence & budget"
+ ],
+ "requirements": [
+  {
+   "id": "R-01",
+   "category": "A. Problem",
+   "requirement": "Remove or repair the bathtub wastewater overflow trip lever, which is stuck in the concealed plumbing behind the wall.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-02",
+   "category": "A. Problem",
+   "requirement": "Treat the overflow location as hard to access; opening drywall is a possible but non-preferred outcome.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-03",
+   "category": "A. Problem",
+   "requirement": "Record that five or more licensed plumbers have already been unable to remove it from above without concern about damaging the concealed plumbing.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Recorded as owner-provided",
+   "flag": "F-14"
+  },
+  {
+   "id": "R-04",
+   "category": "A. Problem",
+   "requirement": "Reference photographs of the work area are pending; analysis is description-based until they arrive.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Pending",
+   "flag": "F-10"
+  },
+  {
+   "id": "R-05",
+   "category": "B. Access",
+   "requirement": "Above-tub removal is the preferred outcome if a provider can do it without damaging the concealed plumbing.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-06",
+   "category": "B. Access",
+   "requirement": "Below-tub access is the accepted fallback recommended by the plumbers consulted.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-07",
+   "category": "B. Access",
+   "requirement": "The space below the tub is a storage unit; below-floor work may require opening the drywall ceiling.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-08",
+   "category": "B. Access",
+   "requirement": "Any ceiling opening must be restored, and the restored finish should keep the concealed connections serviceable in future.",
+   "origin": "Owner-provided (project brief)",
+   "link": "https://aa.iapmo.org/?code=UPC&chapter=4",
+   "status": "Open",
+   "flag": "F-07"
+  },
+  {
+   "id": "R-09",
+   "category": "C. Scope",
+   "requirement": "Replace the waste-and-overflow assembly as a unit if the linkage, drop cylinder or tee cannot be freed; adjust the linkage first if it can be.",
+   "origin": "Owner-provided (project brief)",
+   "link": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-10",
+   "category": "C. Scope",
+   "requirement": "Confirm the exact scope in writing for each quote: adjust only, lever/diverter, or full waste-and-overflow replacement.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": "F-03"
+  },
+  {
+   "id": "R-11",
+   "category": "C. Scope",
+   "requirement": "Re-quote one identical scope across the shortlisted providers before comparing prices.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": "F-03"
+  },
+  {
+   "id": "R-12",
+   "category": "C. Scope",
+   "requirement": "One accountable vendor must deliver both the plumbing work and the drywall opening and restoration.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": "F-06"
+  },
+  {
+   "id": "R-13",
+   "category": "D. Licensing",
+   "requirement": "The work must be performed by a licensed plumber or contractor; verify the licence number on CSLB before signing.",
+   "origin": "Owner-provided (project brief)",
+   "link": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-14",
+   "category": "D. Licensing",
+   "requirement": "The licence must be current and active on the day the contract is signed.",
+   "origin": "Owner-provided (project brief)",
+   "link": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-15",
+   "category": "D. Licensing",
+   "requirement": "Confirm workers'-compensation and liability coverage for whoever works in the unit.",
+   "origin": "Owner-provided (project brief)",
+   "link": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-16",
+   "category": "D. Licensing",
+   "requirement": "Confirm the vendor services San Francisco.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-17",
+   "category": "D. Licensing",
+   "requirement": "Prefer vendors whose licence covers both trades, or who name their plumbing/drywall subcontractors in writing.",
+   "origin": "Owner-provided (project brief)",
+   "link": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-18",
+   "category": "E. Permit & code",
+   "requirement": "Confirm with the vendor which permit the work requires before it starts, and who pulls it.",
+   "origin": "Official (derived from SF.gov permit page)",
+   "link": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Open",
+   "flag": "F-15"
+  },
+  {
+   "id": "R-19",
+   "category": "E. Permit & code",
+   "requirement": "Budget the official plumbing permit fee (Category 1P) separately from the quote.",
+   "origin": "Official (SF DBI Table 1A-C, July 2026)",
+   "link": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-20",
+   "category": "E. Permit & code",
+   "requirement": "Schedule the inspection before pipes are covered.",
+   "origin": "Official (SF.gov)",
+   "link": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-21",
+   "category": "F. Tenant & building",
+   "requirement": "Give the tenant reasonable written notice stating date, approximate time and purpose of entry; 24 hours is presumed reasonable.",
+   "origin": "Official (Cal. Civ. Code §1954)",
+   "link": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-22",
+   "category": "F. Tenant & building",
+   "requirement": "Keep entry within normal business hours unless the tenant consents otherwise.",
+   "origin": "Official (Cal. Civ. Code §1954)",
+   "link": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-23",
+   "category": "F. Tenant & building",
+   "requirement": "Plan dust containment, protection or relocation of stored contents in the space below, and a water shut-off window.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": "F-16"
+  },
+  {
+   "id": "R-24",
+   "category": "F. Tenant & building",
+   "requirement": "Leak-test the new assembly before the ceiling is closed.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-25",
+   "category": "G. Evidence & budget",
+   "requirement": "Photograph the existing condition, the opened cavity and the finished work for the record.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-26",
+   "category": "G. Evidence & budget",
+   "requirement": "Obtain a written scope, price and schedule from the selected vendor before work starts.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": null
+  },
+  {
+   "id": "R-27",
+   "category": "G. Evidence & budget",
+   "requirement": "Keep the three existing quotes as the budget baseline only — they are not a price range for one scope.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": "F-03"
+  },
+  {
+   "id": "R-28",
+   "category": "G. Evidence & budget",
+   "requirement": "Obtain a combined plumbing-plus-drywall quote for the below-access fallback; none exists yet.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Open",
+   "flag": "F-06"
+  },
+  {
+   "id": "R-29",
+   "category": "G. Evidence & budget",
+   "requirement": "Publish every data row with a source link; leave unconfirmable values blank and flag them.",
+   "origin": "Owner-provided (project brief)",
+   "link": null,
+   "status": "Enforced by this site",
+   "flag": null
+  }
+ ]
+}

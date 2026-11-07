@@ -1,0 +1,86 @@
+{
+ "verified_on": "2026-11-07",
+ "pages": 10,
+ "rows_checked": 137,
+ "checks_run": 15,
+ "checks_passed": 15,
+ "checks_failed": 0,
+ "result": "PASS",
+ "checks": [
+  {
+   "check": "all pages present",
+   "ok": true,
+   "detail": "10/10: none missing"
+  },
+  {
+   "check": "every page links every other page in the nav",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no broken internal links",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no external script/style/image dependencies",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no unverified quote amount is published",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "no reader-facing text about omitted/internal/private material",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "punctuation check \u2014 no 'None' or 'nan' literals",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every data row carries a source link or an explicit marker",
+   "ok": true,
+   "detail": "137 rows checked; offenders: "
+  },
+  {
+   "check": "every provider renders a row",
+   "ok": true,
+   "detail": "13 of 13"
+  },
+  {
+   "check": "every requirement renders a row",
+   "ok": true,
+   "detail": "29 of 29"
+  },
+  {
+   "check": "every flag renders",
+   "ok": true,
+   "detail": "20 of 20"
+  },
+  {
+   "check": "every source renders",
+   "ok": true,
+   "detail": "37 of 37"
+  },
+  {
+   "check": "every provider row cites an official CSLB page",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "pages are well-formed HTML (tag balance)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "every page states it is the single authoritative copy",
+   "ok": true,
+   "detail": ""
+  }
+ ]
+}

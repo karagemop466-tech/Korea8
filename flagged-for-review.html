@@ -3,140 +3,153 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flagged for Review — Bathtub Overflow Trip Lever Project</title>
-<meta name="description" content="Non-blocking flagged items published for owner review, with source links.">
+<title>Flagged for review — Bathtub overflow trip lever</title>
+<meta name="description" content="Non-blocking flagged items, unverified values and irregularities, with source links.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">◧</span> Trip Lever Project</a>
-    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="technical-approach.html">Technical Approach</a><a href="sources.html">Sources</a><a href="flagged-for-review.html" class="active">Flagged for Review</a></nav>
+    <a class="brand" href="index.html"><span class="brand-mark">&#9635;</span> Trip Lever Project</a>
+    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive summary</a><a href="requirements.html">Requirements</a><a href="providers.html">Providers</a><a href="estimates.html">Estimates</a><a href="technical-approach.html">Technical approach</a><a href="code-and-permit.html">Code &amp; permit</a><a href="sources.html">Sources</a><a href="flagged-for-review.html" class="active">Flagged for review</a><a href="verification.html">Verification</a></nav>
   </div>
 </header>
 <main class="wrap">
 
-<h1>Flagged for Review</h1>
-<p class="updated">Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here.</p>
+<h1>Flagged for review</h1>
+<p class="updated">Compiled 2026-11-07 &middot; 20 items &middot; non-blocking</p>
+<div class="callout">
+  These items do not block publication. Each one records something that could not be confirmed from an official source, something contradictory, or a decision the owner should make — with the links needed to check it.
+</div>
 
-<article class="flagcard" id="F-01">
-  <div class="flag-head">
-    <code>F-01</code>
-    <span class="pill pill-info">informational</span>
-    <h3>Repository previously hosted a different project (DOE GEMS Prize Challenge)</h3>
-  </div>
-  <p>The repository&#x27;s existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The new project site now occupies the repository root (what GitHub Pages serves from main), while the complete legacy DOE GEMS evidence site remains untouched under docs/ for history.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/docs/index.html" target="_blank" rel="noopener">Legacy GEMS evidence site preserved at docs/index.html</a> <a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/README.md" target="_blank" rel="noopener">Legacy project README</a></p>
-</article>
-<article class="flagcard" id="F-02">
-  <div class="flag-head">
-    <code>F-02</code>
-    <span class="pill pill-warn">unverified-data</span>
-    <h3>All three estimates are user-provided and could not be independently verified</h3>
-  </div>
-  <p>E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor&#x27;s verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json" target="_blank" rel="noopener">Estimates data (project/estimates.json)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">CSLB license check entry point (official)</a></p>
-</article>
-<article class="flagcard" id="F-03">
-  <div class="flag-head">
-    <code>F-03</code>
-    <span class="pill pill-warn">scope-ambiguity</span>
-    <h3>The three quotes describe different scopes and are not directly comparable</h3>
-  </div>
-  <p>E-03 ($135) is &#x27;repair or adjust plunger handle&#x27;; E-02 ($550) is &#x27;replace lever for the bathtub plug and spout with diverter, labor and materials&#x27;; E-01 ($614) is &#x27;replacing waste and overflow&#x27; (full assembly). None of the three quotes explicitly includes drywall opening or ceiling restoration, which the fallback approach (working from below through a storage-unit ceiling) will likely require (R-06, R-07). Third-party guides put drywall patching at $300–$930 on top of plumbing work.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi — bathroom leak repair cost (drywall add-on range)</a></p>
-</article>
-<article class="flagcard" id="F-04">
-  <div class="flag-head">
-    <code>F-04</code>
-    <span class="pill pill-warn">unverified-data</span>
-    <h3>Yelp review figures could not be fetched directly (HTTP 403 bot-block)</h3>
-  </div>
-  <p>Yelp returned 403 to automated fetches. Review counts/ratings for Expert Plumbing Solutions (4.8 / 81) and Bay Area Plumbing (175 reviews) are recorded exactly as displayed in the Yelp listing titles surfaced via the search index on 2026-11-06, and flagged for manual re-verification by clicking the Yelp links. No rating was invented; where a value could not be seen it was left blank (e.g., Bay Area Plumbing star rating).</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco" target="_blank" rel="noopener">Yelp — Expert Plumbing Solutions</a> <a class="srclink flagged-link" href="https://www.yelp.com/biz/bay-area-plumbing-san-francisco" target="_blank" rel="noopener">Yelp — Bay Area Plumbing</a></p>
-</article>
-<article class="flagcard" id="F-05">
-  <div class="flag-head">
-    <code>F-05</code>
-    <span class="pill pill-info">verification-limit</span>
-    <h3>CSLB statuses are point-in-time (data as of 2026-11-06)</h3>
-  </div>
-  <p>License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status &#x27;can change at any time&#x27; and that its database may lag. Re-check each linked CSLB page before contracting. Worker&#x27;s-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response&#x27;s WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener">CSLB disclaimer on license-detail pages</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/" target="_blank" rel="noopener">CSLB — Hire a Contractor guidance</a></p>
-</article>
-<article class="flagcard" id="F-06">
-  <div class="flag-head">
-    <code>F-06</code>
-    <span class="pill pill-warn">gap</span>
-    <h3>No provider in the set holds a C-9 Drywall classification</h3>
-  </div>
-  <p>None of the verified licenses includes C-9 (Drywall). The all-in-one requirement (R-07) is therefore satisfiable in two CSLB-sanctioned ways: (a) hire a B-licensed general contractor who contracts both the C-36 plumbing and a licensed C-9 drywall subcontractor under one contract (Ace #829071 and We Do Construction #1096552 hold B + C-36; SF Building Group #1106131 holds B), or (b) hire a C-36 plumber and separately contract a licensed drywall contractor. CSLB&#x27;s official guidance: a B contractor is appropriate when a job requires more than two types of work and cannot legally contract for a single trade only.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx" target="_blank" rel="noopener">CSLB — Find A Licensed Contractor (B vs C multi-trade guidance)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/" target="_blank" rel="noopener">CSLB — License Classifications</a></p>
-</article>
-<article class="flagcard" id="F-07">
-  <div class="flag-head">
-    <code>F-07</code>
-    <span class="pill pill-info">citation-note</span>
-    <h3>Access-panel code section numbering differs across CPC editions</h3>
-  </div>
-  <p>The 12-inch access requirement for concealed slip-joint connections (directly relevant to tub waste/overflow serviceability) is numbered 402.10 in the 2022 California Plumbing Code / UPC, but 404.2 in the 2010 CPC. Links to both editions are provided; the requirement text itself is consistent.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://up.codes/s/concealed-joints" target="_blank" rel="noopener">CPC 2022 §402.10 (UpCodes reprint)</a> <a class="srclink flagged-link" href="https://archive.org/download/gov.ca.bsc.title24.2010.part05/gov.ca.bsc.2010.05.svg.html" target="_blank" rel="noopener">2010 CPC §404.2 (state publication scan)</a> <a class="srclink flagged-link" href="https://aa.iapmo.org/?code=UPC&amp;chapter=4" target="_blank" rel="noopener">IAPMO Answers &amp; Analysis (official code publisher)</a></p>
-</article>
-<article class="flagcard" id="F-08">
-  <div class="flag-head">
-    <code>F-08</code>
-    <span class="pill pill-warn">discrepancy</span>
-    <h3>Fast Response Plumbing &amp; Rooter: CSLB address differs from website address</h3>
-  </div>
-  <p>CSLB record of record for license #1024971 lists 236 W Portal Ave #459, San Francisco 94127; the company website displays 4444 Geary Blvd Ste 203, San Francisco 94118. Same license number and phone on both. Likely a mailing/office address difference; confirm at contract time.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" target="_blank" rel="noopener">CSLB license detail #1024971 (official)</a> <a class="srclink flagged-link" href="https://www.fastresponseplumbingsf.com/" target="_blank" rel="noopener">Company official site</a></p>
-</article>
-<article class="flagcard" id="F-09">
-  <div class="flag-head">
-    <code>F-09</code>
-    <span class="pill pill-warn">unverified-data</span>
-    <h3>Review counts unknown for We Do Construction, SF Building Group, and Rapid Flow</h3>
-  </div>
-  <p>No review counts or ratings could be captured for these three providers from the sources fetched this session. Per the verification rule, those cells are left blank rather than estimated. Ask both for references from occupied-unit jobs.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/" target="_blank" rel="noopener">We Do Construction — official site</a> <a class="srclink flagged-link" href="https://sfbuildinggroup.com/" target="_blank" rel="noopener">SF Building Group — official site</a></p>
-</article>
-<article class="flagcard" id="F-10">
-  <div class="flag-head">
-    <code>F-10</code>
-    <span class="pill pill-warn">gap</span>
-    <h3>Photos of the work area not yet available</h3>
-  </div>
-  <p>The project owner states reference photos will be provided later; all analysis in this session is based on the written description only (R-12). Site access, tub type (alcove/freestanding), finish (tile/surround), and the storage-unit ceiling construction are unconfirmed and materially affect scope.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json" target="_blank" rel="noopener">Requirements record (project/requirements.json)</a></p>
-</article>
-<article class="flagcard" id="F-12">
-  <div class="flag-head">
-    <code>F-12</code>
-    <span class="pill pill-info">caution</span>
-    <h3>Advanced Plumbing and Drain (#1009195): CSLB &#x27;may be suspended at a future date&#x27; warning</h3>
-  </div>
-  <p>The official CSLB record for license #1009195 (verified 2026-11-06) carries an Additional Status: &#x27;The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.&#x27; The license is currently active. Re-check the CSLB page immediately before any engagement.</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195" target="_blank" rel="noopener">CSLB license detail #1009195 (official)</a></p>
-</article>
-<article class="flagcard" id="F-11">
-  <div class="flag-head">
-    <code>F-11</code>
-    <span class="pill pill-info">needs-review</span>
-    <h3>Parallel-session brief publishes city building-department administrative content — owner review requested</h3>
-  </div>
-  <p>A parallel session&#x27;s brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project&#x27;s public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).</p>
-  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow" target="_blank" rel="noopener">Parallel brief under review (bathtub-overflow/)</a> <a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">Cross-session coordination board</a></p>
-</article>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-01</span> &nbsp;Repository also hosts an unrelated, earlier project &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>This repository&#x27;s pre-existing content (README.md, AGENTS.md, docs/, evidence/, scripts/, vendor/, registry/, src/) documents a DOE GEMS geothermal fault-prediction study. It is unrelated to the bathtub trip-lever work and has been left in place, unmodified, as an archive.</p>
+  <p class="small"><strong>What to do:</strong> No action needed for the repair. The archive is reachable at docs/index.html and is labelled as a prior project.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="docs/index.html">Legacy archive</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-02</span> &nbsp;Quote amounts cannot be verified, so they are published blank &nbsp;<span class="pill danger">High</span></h3>
+  <p>The three quotes dated 2026-08-30 were supplied by the owner. No official or provider-issued document publishes those amounts, so under the project rule (&#x27;if a value cannot be confirmed from an official source, leave it blank and flag it&#x27;) the amount cells on the Estimates page are empty.</p>
+  <p class="small"><strong>What to do:</strong> Send the written quotes (PDF/email) if you want the amounts published with an owner-provided label.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="estimates.html">Estimates page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-03</span> &nbsp;The three quotes cover different scopes and are not comparable &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>One quote adjusts the plunger handle, one replaces the lever for the plug and spout with a diverter, and one replaces the waste and overflow. None includes opening and restoring a drywall ceiling. Treating them as a price range would be wrong.</p>
+  <p class="small"><strong>What to do:</strong> Ask all three for the same written scope before comparing, and add a fourth line item for ceiling access and restoration.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="estimates.html">Estimates page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-04</span> &nbsp;Review-platform ratings could not be verified &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>Yelp and similar platforms blocked automated retrieval (HTTP 403) and no official source publishes ratings. No rating or review count is therefore published anywhere on this site; only listing links are recorded.</p>
+  <p class="small"><strong>What to do:</strong> Open the listings manually when shortlisting; treat ratings as indicative only.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="providers.html">Providers page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-05</span> &nbsp;Licence status is a point-in-time check &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>Every licence row was re-retrieved from the official CSLB licence-detail page on 2026-11-07, with each page&#x27;s &#x27;Data current as of&#x27; timestamp recorded. CSLB warns that status can change at any time and that its database may lag.</p>
+  <p class="small"><strong>What to do:</strong> Click the CSLB link for each provider again immediately before signing.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx">CSLB licence check</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-06</span> &nbsp;No drywall (C-9) licence exists in the shortlist &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>None of the twelve verified licences holds a C-9 Drywall classification. The &#x27;one vendor for plumbing and drywall&#x27; requirement is therefore met either by a B General Building licensee (which may prime a multi-trade contract) or by a B/B-2 licensee that names its plastering/drywall subcontractor.</p>
+  <p class="small"><strong>What to do:</strong> Require the drywall scope to be named in the contract, with the subcontractor identified in writing.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B">CSLB B classification</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-07</span> &nbsp;Two code texts could not be confirmed from a free official source &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>San Francisco Plumbing Code §104.2 (permit exemptions) is cited by sf.gov but the section text could not be read in a usable form; California Plumbing Code §402.10 (12-inch access panel for concealed slip joints) is behind IAPMO&#x27;s members-only service. Both are marked UNVERIFIED and neither is used as a verified finding.</p>
+  <p class="small"><strong>What to do:</strong> Ask DBI (628-652-3200) or the selected contractor to confirm both sections in writing before relying on them.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.sf.gov/apply-plumbing-and-mechanical-permit">SF.gov permit page (cites §104.2)</a> <a class="small" href="https://aa.iapmo.org/?code=UPC&amp;chapter=4">IAPMO Answers &amp; Analysis</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-08</span> &nbsp;Fast Response: CSLB address differs from the company website address &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>The CSLB record for #1024971 lists &#x27;236 W Potral Ave #459, San Francisco, CA 94127&#x27;. The company&#x27;s website shows a different address. The CSLB spelling of &#x27;POTRAL&#x27; appears to be a typographical variant of Portal.</p>
+  <p class="small"><strong>What to do:</strong> Confirm the current business address and the workers&#x27;-comp renewal (policy expires 2026-12-18) before scheduling.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971">CSLB #1024971</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-09</span> &nbsp;No provider in this dossier is documented as having done this exact repair &nbsp;<span class="pill danger">High</span></h3>
+  <p>Nothing retrieved this session shows that any shortlisted firm has performed a waste-and-overflow replacement reached through a ceiling opening below an occupied unit. Licences are verified; relevant job experience is not.</p>
+  <p class="small"><strong>What to do:</strong> Ask each candidate for two references for waste-and-overflow work reached from below, and for proof of occupied-unit work.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="providers.html">Providers page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-10</span> &nbsp;Work-area photographs are still pending &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>The owner intends to supply reference photographs. Until then every access judgement on this site is based on the written description.</p>
+  <p class="small"><strong>What to do:</strong> Add the photographs to the repository when available so the access assessment can be re-checked.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="requirements.html">Requirements page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-11</span> &nbsp;Earlier drafts of this site linked two sf.gov URLs that now return 404 &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>The URLs https://www.sf.gov/information/apply-plumbing-and-mechanical-permit and https://www.sf.gov/information/apply-kitchen-or-bath-remodel-permit were used by earlier sessions and now return the sf.gov &#x27;not found&#x27; page. They were replaced this session with the live pages listed on the Sources page.</p>
+  <p class="small"><strong>What to do:</strong> Fixed. Any other page or document that cites the old URLs should be updated.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.sf.gov/apply-plumbing-and-mechanical-permit">SF.gov — current permit page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-12</span> &nbsp;Advanced Plumbing and Drain carries a CSLB future-suspension warning &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>The official CSLB record for #1009195 states: &#x27;The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.&#x27; The licence is nonetheless shown as current and active.</p>
+  <p class="small"><strong>What to do:</strong> Re-check the licence immediately before contracting; prefer a provider without this status for a tenant-occupied job.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195">CSLB #1009195</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-13</span> &nbsp;Save-On-Interior (#749536) shares an address and phone with listed provider #757796 &nbsp;<span class="pill warn">Medium</span></h3>
+  <p>CSLB lists &#x27;SAVE - ON - INTERIOR&#x27; at 335 14th Ave, San Francisco 94118, phone (415) 668-8000 — the same address and phone as Bay Area Plumbing (#757796). It holds B + C-36, which would cover both trades on one licence. The CSLB records do not state who controls each licence or that the two businesses are the same operator.</p>
+  <p class="small"><strong>What to do:</strong> Confirm the relationship and the identity of the contracting entity before relying on the combined licence.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536">CSLB #749536</a> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796">CSLB #757796</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-14</span> &nbsp;&#x27;Five or more plumbers&#x27; is an owner report, not a verifiable record &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>The statement that five or more licensed plumbers have been unable to remove the trip lever from above comes from the owner&#x27;s brief. No inspection report, invoice or provider statement records it.</p>
+  <p class="small"><strong>What to do:</strong> Keep any written notes from those visits: they are the best evidence of what was attempted.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="requirements.html">Requirements page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-15</span> &nbsp;The permit requirement for this specific job has not been confirmed in writing &nbsp;<span class="pill danger">High</span></h3>
+  <p>SF.gov states a permit is needed before cutting into or replacing pipes, particularly pipes covered by a wall, and points to SF Plumbing Code §104.2 for exemptions. Whether this specific repair falls in an exemption has not been confirmed by DBI or by a contractor in writing.</p>
+  <p class="small"><strong>What to do:</strong> Ask the selected contractor to state in writing, before work starts, which permit the job requires and who pulls it.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.sf.gov/apply-plumbing-and-mechanical-permit">SF.gov permit page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-16</span> &nbsp;No official source for dust containment or contents protection &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>Dust containment, protection or removal of stored contents, and shut-off scheduling are practical requirements with no government source. They are listed on the Requirements page as owner actions, not verified facts.</p>
+  <p class="small"><strong>What to do:</strong> Put them in the vendor&#x27;s written scope.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="requirements.html">Requirements page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-17</span> &nbsp;CSLB licence-check landing page showed a maintenance notice during retrieval &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>On 2026-11-07 the CSLB &#x27;Check a License&#x27; entry page returned a DCA maintenance notice (&#x27;Estimated outage time is Nov 7th 10am-5pm&#x27;), while individual CSLB licence-detail pages still returned live data stamped 11/7/2026. Licence detail rows were therefore verified from the detail pages.</p>
+  <p class="small"><strong>What to do:</strong> If a CSLB detail page fails later, retry after the maintenance window.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx">CSLB licence check</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-18</span> &nbsp;Save-On-Interior CSLB record contains two 2015–2016 cash-deposit letters &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>The official CSLB record for #749536 shows, under Miscellaneous Information: &#x27;11/06/2015 - CASH DEPOSIT LTR SENT $15,000&#x27; and &#x27;01/14/2016 - CASH DEPOSIT 15K FOLLOW UP LTR SENT&#x27;. The record does not explain them and no inference is drawn here.</p>
+  <p class="small"><strong>What to do:</strong> Ask the contractor about the entries if you shortlist this licence.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536">CSLB #749536</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-19</span> &nbsp;Third-party price benchmarks were not re-verified and are not published &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>Earlier drafts of this project printed Angi/HomeGuide ranges for tub-drain work and drywall patching. Those pages were not re-retrieved and verified this session, so no figure is published; the cells are blank.</p>
+  <p class="small"><strong>What to do:</strong> If a benchmark is wanted, supply the retrieved page and it can be added with a third-party label.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="estimates.html">Estimates page</a></p>
+</div>
+<div class="panel">
+  <h3 style="margin-top:0"><span class="mono">F-20</span> &nbsp;Earlier duplicate briefs are retained only as redirects &nbsp;<span class="pill neutral">Low</span></h3>
+  <p>Four parallel briefs (bathroom-overflow/, bathtub-overflow/, bathtub/, trip-lever/) and the docs/bathtub-*.html pages previously published the same project in different words, some with unverified amounts. They now redirect here; the original files remain in git history.</p>
+  <p class="small"><strong>What to do:</strong> None. This is the single authoritative URL.</p>
+  <p class="small"><strong>Links:</strong> <a class="small" href="index.html">Dashboard</a></p>
+</div>
 
 </main>
-<footer class="wrap footer">
-  <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
-     Built 2026-11-06 13:45 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
-     Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
-     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
-     Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
-     Licenses re-verified 2026-11-06 via official CSLB pages — statuses can change; re-check before contracting.</p>
+<footer>
+  <div class="wrap">
+    <p><strong>Single authoritative copy.</strong> This site is the canonical brief for the bathtub wastewater overflow trip-lever project. Parallel briefs published earlier in this repository now redirect here.</p>
+    <p>Compiled 2026-11-07. Every table row links to the source it came from; values that could not be confirmed from an official source are left blank and listed on <a href="flagged-for-review.html">Flagged for review</a>.</p>
+    <p class="small">Unrelated prior project retained as an archive: <a href="docs/index.html">DOE GEMS research (archived)</a>.</p>
+  </div>
 </footer>
 </body>
 </html>

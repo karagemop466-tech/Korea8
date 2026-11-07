@@ -1,29 +1,34 @@
 {
-  "built_at": "2026-11-06 13:45 UTC",
-  "outputs": [
-    "index.html",
-    "executive-summary.html",
-    "requirements.html",
-    "estimates.html",
-    "providers.html",
-    "technical-approach.html",
-    "sources.html",
-    "flagged-for-review.html",
-    "style.css",
-    "project/EXECUTIVE_SUMMARY.md"
-  ],
-  "enforcement": {
-    "rows_with_source_links_checked": 79,
-    "failures": [],
-    "broken_internal_links": []
-  },
-  "counts": {
-    "requirements": 14,
-    "estimates": 3,
-    "benchmarks": 5,
-    "providers": 11,
-    "technical_findings": 8,
-    "sources": 40,
-    "flags": 12
-  }
+ "built_utc_date": "2026-11-07",
+ "pages": [
+  "index.html",
+  "executive-summary.html",
+  "requirements.html",
+  "providers.html",
+  "estimates.html",
+  "technical-approach.html",
+  "code-and-permit.html",
+  "sources.html",
+  "flagged-for-review.html",
+  "verification.html"
+ ],
+ "counts": {
+  "providers": 13,
+  "code_rows": 16,
+  "technical_rows": 8,
+  "requirement_rows": 29,
+  "quotes": 3,
+  "official_fee_rows": 3,
+  "sources": 37,
+  "flags": 20
+ },
+ "verified": {
+  "providers_verified_on_cslb": 13,
+  "code_rows_verified": 15,
+  "code_rows_unverified": 1,
+  "sources_retrieved": 22,
+  "sources_blocked_or_dead": 15
+ },
+ "problems": [],
+ "result": "PASS"
 }

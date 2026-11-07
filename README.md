@@ -1,4 +1,26 @@
+> ### This repository hosts two projects
+>
+> **1. Bathtub wastewater overflow trip-lever (current).** The published dossier is the site at
+> the repository root — start at [`index.html`](index.html). It is generated from
+> [`site-data/`](site-data/) by `scripts/build_canonical_site.py` and checked by
+> `scripts/verify_canonical_site.py`. Earlier parallel drafts now redirect to it.
+> See also [`REPO_REVIEW_2026-11-07.md`](REPO_REVIEW_2026-11-07.md) and
+> [`COORDINATION.md`](COORDINATION.md).
+>
+> **2. DOE GEMS Prize Challenge research (archived, unrelated).** Everything below this note
+> describes that project, preserved unmodified. Its evidence site lives in [`docs/`](docs/index.html).
+
+---
+
 # Korea8 — DOE GEMS Prize Challenge
+
+> **Repository note.** This repository hosts two unrelated projects. The DOE GEMS
+> geothermal work described below is the original one. The bathtub wastewater
+> overflow trip-lever project — a San Francisco repair brief with a source-verified
+> contractor register, requirement register, cost analysis and flagged-for-review
+> page — is served at <https://karagemop466-tech.github.io/Korea8/> and is built from
+> `project/*.json` by `scripts/build_project_site.py`. See `COORDINATION.md` for the
+> task board. The two projects share no data and no build step.
 
 > **Session update (2026-11-04, arena/d7026453-korea8):** This session solved the
 > data-acquisition blocker (hash-verified public Dropbox mirrors restored on
