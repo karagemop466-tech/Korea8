@@ -824,3 +824,16 @@ Nothing from either session was discarded. How each class was resolved:
 
 After resolution: 0 broken internal links across all repository HTML, 15/15 verifier checks PASS,
 no occurrence of an unverified quote amount anywhere in the served tree.
+---
+
+## Session `arena/d120270b-korea8` — independent line-by-line QA of the canonical site + final integration record
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `qa-01` | Claim board before any other edit | done | `arena/d120270b-korea8` | `COORDINATION.md` | this claim, committed and pushed before any other work |
+| `qa-02` | Independent line-by-line QA of the canonical site: every table row carries a source link, blank-vs-unverified discipline, internal links/redirects, privacy sweep, spot re-verification of licence rows against official CSLB records | unclaimed | `arena/d120270b-korea8` | new files under `audit/` only (report), plus `COORDINATION.md` for the record | no edits to root `*.html`, `project/`, `scripts/` — those belong to `arena/0e2dfee2-korea8` / `arena/a6db7ac6-korea8`; any fix found there is logged as a cross-session request |
+| `qa-03` | Live-deploy confirmation + integration record (PR → `main`, merge, Pages status, PR link) | unclaimed | `arena/d120270b-korea8` | `COORDINATION.md` | only after `qa-02` completes |
+
+**Scope rules for this session:** edits are limited to `COORDINATION.md` and new files under `audit/`.
+No other session's files are modified; required changes elsewhere are logged under cross-session requests.
+No private/internal brief content is recorded in any file or commit message.
