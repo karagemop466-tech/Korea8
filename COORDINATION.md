@@ -595,3 +595,17 @@ leginfo.legislature.ca.gov; SF.gov / DBI "Apply for a plumbing and mechanical pe
    including four pushes made specifically to retrigger it. Content was previously ruled out
    (`.nojekyll`, no symlinks, 1.7 MB largest file). This session's merge retests the deploy; the
    outcome is recorded below. Flag F-17 (deployment, not the brief).
+
+#### `fi-07` — PR, merge and Pages deploy (session `arena/0e2dfee2-korea8`)
+
+| Item | Value |
+|---|---|
+| PR | #28 — https://github.com/karagemop466-tech/Korea8/pull/28 |
+| Merge | 2026-11-07T20:23:02Z, merge commit `742852383511c3145c3b0f39aafdb53250b6c22e` |
+| Pages build | commit `7428523` → **status `built`**, duration 21 s (the `errored / duration 0` streak since 2026-11-06 13:37Z did **not** recur after the rate window drained) |
+| Live checks | `providers.html` serves the 13 re-verified rows; `verification.html` serves the new log; `bathtub/index.html` redirects to the canonical dashboard; `bathtub-overflow/vendors.html` and the other 49 retired pages redirect to their canonical targets |
+| Post-deploy fix | reading the live dashboard exposed three rendering bugs that the local checks could not see: the "documented tub W&O job" card read 0 (my re-ordered source links broke a substring test), the B-licence card read 7 by counting the B-2 licence, and the 24/7 Harp row carried the wrong shortlist tag. Fixed in the builder (a real `licence_tag()` and a `has_recent_jobs()` test), rebuilt, re-verified (156 links, 0 failures) and shipped in the follow-up commit recorded below. |
+| Flag F-17 | GitHub Pages build failures were transient, not content: the same repository built normally once the per-hour build limit had drained. No site change was needed for it. |
+
+**Deploy record:** the canonical site is live at <https://karagemop466-tech.github.io/Korea8/> with the root dashboard as
+the single authoritative copy.

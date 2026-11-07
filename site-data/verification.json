@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07 20:22 UTC",
+  "generated_at": "2026-11-07 20:24 UTC",
   "statement": "Automated checks run by scripts/build_project_site.py before the pages were written, then repeated against the written pages. A failing check aborts the build.",
   "checks": [
     {
@@ -44,7 +44,7 @@
   },
   "independent_checks": {
     "checks": {
-      "internal_links_checked": 155,
+      "internal_links_checked": 156,
       "redirect_check": "checked 51 redirect pages across 7 retired directories",
       "data_pages_row_counted": 4,
       "provider_licence_links_checked": 13,

@@ -135,11 +135,33 @@ def enforce(links, ctx, min_links=1):
 quoted = {e["provider_as_quoted"] for e in estimates["estimates"]}
 PROV = providers["providers"]
 N_PROV = len(PROV)
-N_MULTI = len([p for p in PROV if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]])
-N_DOC = len([p for p in PROV if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")])
+
+
+def has_recent_jobs(p):
+    """True when a provider page documents an actual tub waste-and-overflow job."""
+    return any("recent-jobs" in (l.get("url") or "") for l in p.get("source_links") or [])
+
+
+def licence_tag(p):
+    c = p["classifications"]
+    if "B General Building" in c and "C-36 Plumbing" in c:
+        return "B + C-36 on one licence"
+    if "B General Building" in c:
+        return "B licence — multi-trade prime"
+    if "B-2 Residential Remodeling" in c:
+        return "B-2 residential remodeling"
+    if has_recent_jobs(p):
+        return "documented tub W&amp;O job in SF"
+    return "C-36 plumbing"
+
+
+# Providers that can carry the whole job on one licence (B = General Building, B&P 7057(b)),
+# plus the one provider with a documented tub waste-and-overflow job in San Francisco.
+SHORTLIST = [p for p in PROV if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"] or has_recent_jobs(p)]
+N_MULTI = len([p for p in PROV if "B General Building" in p["classifications"]])
+N_DOC = len([p for p in PROV if has_recent_jobs(p)])
 N_FLAGS = len(flagged["flags"])
-multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]]
-documented = [p for p in providers["providers"] if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")]
+
 
 idx_quotes = []
 for e in estimates["estimates"]:
@@ -153,9 +175,9 @@ for e in estimates["estimates"]:
     ])
 
 idx_providers = []
-for p in multi_trade + documented:
+for p in SHORTLIST:
     enforce(p["source_links"], f"provider {p['id']} (index mini-table)")
-    tag = "multi-trade license (B + C-36)" if "B General Building" in p["classifications"] else "documented tub W&amp;O job in SF"
+    tag = licence_tag(p)
     idx_providers.append([
         f'<a href="providers.html#{p["id"]}">{escape(p["name"])}</a>',
         f'<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}" target="_blank" rel="noopener">#{p["license_number"]}</a>',
@@ -180,7 +202,7 @@ idx_body = f"""
 <section class="cards">
   <div class="card"><div class="card-num">{len(estimates["estimates"])}</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
   <div class="card"><div class="card-num">{N_PROV}</div><div class="card-label">providers, licence re-checked<br>on CSLB 2026-11-07</div></div>
-  <div class="card"><div class="card-num">{N_MULTI}</div><div class="card-label">licences that can prime a<br>plumbing + drywall contract</div></div>
+  <div class="card"><div class="card-num">{N_MULTI}</div><div class="card-label">B-licensed: can prime plumbing<br>+ a second trade (B&amp;P §7057)</div></div>
   <div class="card"><div class="card-num">{N_DOC}</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
   <div class="card card-warn"><div class="card-num">{N_FLAGS}</div><div class="card-label">items flagged<br>for owner review</div></div>
 </section>
@@ -203,7 +225,7 @@ idx_body = f"""
     written yes/no on extracting the faceplate and fused internals from the tub side without opening the wall.</p>
     <p><strong>Fallback path — access from below (storage-unit ceiling).</strong> Requires one accountable contract
     covering plumbing <em>and</em> drywall. CSLB's official rule: multi-trade jobs belong with a B-licensed general
-    contractor (<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx" target="_blank" rel="noopener">source</a>)
+    contractor (<a class="srclink" href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B" target="_blank" rel="noopener">CSLB B classification, B&amp;P §7057</a>)
     — see <a href="technical-approach.html">Technical Approach</a>. Require a code-aligned 12-inch access panel instead of a solid patch
     (<a class="srclink" href="https://aa.iapmo.org/?code=UPC&amp;chapter=4" target="_blank" rel="noopener">CPC §402.10 via IAPMO</a>).</p>
   </div>
@@ -596,7 +618,7 @@ outputs = {
     "estimates.html": page("Estimates", "estimates.html", est_body,
                            "The three received estimates with verification status and third-party cost benchmarks."),
     "providers.html": page("Providers", "providers.html", prov_body,
-                           "Seven San Francisco providers with CSLB-verified license statuses, classifications, reviews and source links."),
+                           "San Francisco providers with CSLB-verified licence statuses, classifications, reviews and source links."),
     "technical-approach.html": page("Technical Approach", "technical-approach.html", tech_body,
                                     "Trip lever mechanics, access paths, plumbing code access requirements and licensing structure."),
     "sources.html": page("Sources", "sources.html", src_body,
