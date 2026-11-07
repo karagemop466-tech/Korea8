@@ -1,0 +1,65 @@
+{
+  "dataset": "brief",
+  "source": "Owner request received in this session",
+  "received_date": "2026-11-07",
+  "source_ids": [
+    "GH-Repo"
+  ],
+  "rows": [
+    {
+      "id": "B-01",
+      "fact": "Stuck bathtub overflow trip lever in concealed plumbing; San Francisco; tenant occupied.",
+      "verification": "owner-reported",
+      "source_ids": [
+        "CSLB-C36"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "B-02",
+      "fact": "Tub-side removal preferred; below-ceiling access through a storage unit may be needed.",
+      "verification": "owner-reported",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "B-03",
+      "fact": "One accountable plumbing + drywall service and licensed performers requested.",
+      "verification": "owner requirement",
+      "source_ids": [
+        "CSLB-B"
+      ],
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "B-04",
+      "fact": "Three estimates reported dated 8/30/26; scopes differ.",
+      "verification": "owner-reported; amounts not published without confirmation",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "flags": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "B-05",
+      "fact": "No reference photos attached to the received request.",
+      "verification": "session inventory",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "flags": [
+        "F-01"
+      ]
+    }
+  ]
+}

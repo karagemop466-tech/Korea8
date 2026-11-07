@@ -34,7 +34,8 @@
       "finding": "Bernal Hill Drywall shows active C-9 + B and advertises small repairs, patching and texture matching.",
       "recommendation": "Screen as the drywall/build-back partner under a general contractor or coordinated single prime; no C36 on its license.",
       "source_ids": [
-        "CSLB-995163"
+        "CSLB-995163",
+        "WEB-Bernal"
       ],
       "flags": [
         "F-13"
@@ -82,7 +83,9 @@
       "finding": "We Do Construction, SF Building Group and Ayoob & Peery emphasize larger/design-build or commercial work.",
       "recommendation": "Keep as secondary candidates until small isolated-repair acceptance is confirmed.",
       "source_ids": [
-        "WEB-SFBG"
+        "WEB-SFBG",
+        "WEB-WDC",
+        "WEB-Ayoob"
       ],
       "flags": [
         "F-11"
@@ -94,7 +97,8 @@
       "finding": "Save-On-Interior and Bay Area Plumbing share CSLB address and phone, but that does not prove common ownership or one combined contract.",
       "recommendation": "Treat as separate license records; confirm the contracting entity and actual performers.",
       "source_ids": [
-        "CSLB-749536"
+        "CSLB-749536",
+        "CSLB-757796"
       ],
       "flags": [
         "F-12"
@@ -111,7 +115,9 @@
         "CSLB-DG-Complaint"
       ],
       "flags": [
-        "F-18"
+        "F-18",
+        "F-14",
+        "F-17"
       ]
     },
     {

@@ -1,7 +1,7 @@
 {
   "checked_utc": "2026-11-07",
   "status": "PASS",
-  "checks": 3533,
+  "checks": 3616,
   "failures": [],
   "results": [
     {
@@ -2695,6 +2695,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-01",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-01",
       "pass": true,
       "detail": ""
@@ -2761,6 +2766,11 @@
     },
     {
       "name": "license classifications P-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-02",
       "pass": true,
       "detail": ""
     },
@@ -2835,6 +2845,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-03",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-03",
       "pass": true,
       "detail": ""
@@ -2901,6 +2916,11 @@
     },
     {
       "name": "license classifications P-04",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-04",
       "pass": true,
       "detail": ""
     },
@@ -2975,6 +2995,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-05",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-05",
       "pass": true,
       "detail": ""
@@ -3041,6 +3066,11 @@
     },
     {
       "name": "license classifications P-06",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-06",
       "pass": true,
       "detail": ""
     },
@@ -3115,6 +3145,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-07",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-07",
       "pass": true,
       "detail": ""
@@ -3181,6 +3216,11 @@
     },
     {
       "name": "license classifications P-08",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-08",
       "pass": true,
       "detail": ""
     },
@@ -3255,6 +3295,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-09",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-09",
       "pass": true,
       "detail": ""
@@ -3321,6 +3366,11 @@
     },
     {
       "name": "license classifications P-10",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-10",
       "pass": true,
       "detail": ""
     },
@@ -3395,6 +3445,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-11",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-11",
       "pass": true,
       "detail": ""
@@ -3461,6 +3516,11 @@
     },
     {
       "name": "license classifications P-12",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-12",
       "pass": true,
       "detail": ""
     },
@@ -3535,6 +3595,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-13",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-13",
       "pass": true,
       "detail": ""
@@ -3601,6 +3666,11 @@
     },
     {
       "name": "license classifications P-14",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-14",
       "pass": true,
       "detail": ""
     },
@@ -3675,6 +3745,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-15",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-15",
       "pass": true,
       "detail": ""
@@ -3741,6 +3816,11 @@
     },
     {
       "name": "license classifications P-16",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-16",
       "pass": true,
       "detail": ""
     },
@@ -3815,6 +3895,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-17",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-17",
       "pass": true,
       "detail": ""
@@ -3881,6 +3966,11 @@
     },
     {
       "name": "license classifications P-18",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-18",
       "pass": true,
       "detail": ""
     },
@@ -3955,6 +4045,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-19",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-19",
       "pass": true,
       "detail": ""
@@ -4021,6 +4116,11 @@
     },
     {
       "name": "license classifications P-20",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-20",
       "pass": true,
       "detail": ""
     },
@@ -4095,6 +4195,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-21",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-21",
       "pass": true,
       "detail": ""
@@ -4165,6 +4270,11 @@
       "detail": ""
     },
     {
+      "name": "workers-comp evidence P-22",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "address in evidence P-22",
       "pass": true,
       "detail": ""
@@ -4231,6 +4341,11 @@
     },
     {
       "name": "license classifications P-23",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workers-comp evidence P-23",
       "pass": true,
       "detail": ""
     },
@@ -4385,7 +4500,7 @@
       "detail": ""
     },
     {
-      "name": "external URL syntax index.html https://www.heisesplumbing.com/property-maintenance/",
+      "name": "external URL syntax index.html https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "pass": true,
       "detail": ""
     },
@@ -5075,12 +5190,12 @@
       "detail": ""
     },
     {
-      "name": "internal link requirements.html flagged-for-review.html#flags-table-F-10",
+      "name": "internal link requirements.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "fragment requirements.html flagged-for-review.html#flags-table-F-10",
+      "name": "fragment requirements.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
@@ -5360,12 +5475,12 @@
       "detail": ""
     },
     {
-      "name": "internal link requirements.html flagged-for-review.html#flags-table-F-10",
+      "name": "internal link requirements.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "fragment requirements.html flagged-for-review.html#flags-table-F-10",
+      "name": "fragment requirements.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
@@ -5855,6 +5970,246 @@
       "detail": ""
     },
     {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax estimates.html https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax estimates.html https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax estimates.html https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax estimates.html https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment estimates.html flagged-for-review.html#flags-table-F-02",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax estimates.html https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax estimates.html https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "external URL syntax estimates.html https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
       "pass": true,
       "detail": ""
@@ -5921,6 +6276,21 @@
     },
     {
       "name": "table row source estimates.html Fast Response Plumbing & Rooter F-02 Repair or adjust bathtub was",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source estimates.html F-02 F-02 F-02 F-02 F-02 F-02 F-02 CSLB-977638  \u2197 CSLB-Bids  \u2197",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source estimates.html F-02 F-02 F-02 F-02 F-02 F-02 F-02 CSLB-757796  \u2197 CSLB-Bids  \u2197",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source estimates.html F-02 F-02 F-02 F-02 F-02 F-02 F-02 CSLB-1024971  \u2197 CSLB-Bids  \u2197",
       "pass": true,
       "detail": ""
     },
@@ -7160,12 +7530,12 @@
       "detail": ""
     },
     {
-      "name": "internal link technical.html flagged-for-review.html#flags-table-F-10",
+      "name": "internal link technical.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "fragment technical.html flagged-for-review.html#flags-table-F-10",
+      "name": "fragment technical.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
@@ -7190,12 +7560,12 @@
       "detail": ""
     },
     {
-      "name": "internal link technical.html flagged-for-review.html#flags-table-F-10",
+      "name": "internal link technical.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "fragment technical.html flagged-for-review.html#flags-table-F-10",
+      "name": "fragment technical.html flagged-for-review.html#flags-table-F-01",
       "pass": true,
       "detail": ""
     },
@@ -7510,6 +7880,11 @@
       "detail": ""
     },
     {
+      "name": "external URL syntax analysis.html https://www.bernalhilldrywall.com/",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "internal link analysis.html flagged-for-review.html#flags-table-F-02",
       "pass": true,
       "detail": ""
@@ -7570,6 +7945,16 @@
       "detail": ""
     },
     {
+      "name": "external URL syntax analysis.html https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax analysis.html https://www.ayoobpeery.com/",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "internal link analysis.html flagged-for-review.html#flags-table-F-12",
       "pass": true,
       "detail": ""
@@ -7585,12 +7970,37 @@
       "detail": ""
     },
     {
+      "name": "external URL syntax analysis.html https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "internal link analysis.html flagged-for-review.html#flags-table-F-18",
       "pass": true,
       "detail": ""
     },
     {
       "name": "fragment analysis.html flagged-for-review.html#flags-table-F-18",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link analysis.html flagged-for-review.html#flags-table-F-14",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment analysis.html flagged-for-review.html#flags-table-F-14",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "internal link analysis.html flagged-for-review.html#flags-table-F-17",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "fragment analysis.html flagged-for-review.html#flags-table-F-17",
       "pass": true,
       "detail": ""
     },
@@ -17435,6 +17845,11 @@
       "detail": "3"
     },
     {
+      "name": "rendered IDs estimate-terms",
+      "pass": true,
+      "detail": "3"
+    },
+    {
       "name": "rendered IDs estimate-analysis",
       "pass": true,
       "detail": "3"
@@ -17671,6 +18086,6 @@
     }
   ],
   "pages": 11,
-  "table_rows": 489,
+  "table_rows": 492,
   "scope": "Data provenance, row parity, HTML structure, internal links, self-contained assets, blank-value discipline, responsive CSS and JS syntax. External URLs are syntax-checked here; live retrievals are recorded separately in sources.json. Browser evidence is separate."
 }

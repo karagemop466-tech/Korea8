@@ -36,6 +36,7 @@ for p in D['providers']['rows']:
   check('license expiry '+p['id'],p['expire_date'] in ex)
   check('license phone '+p['id'],p['phone'] in ex)
   check('license classifications '+p['id'],all(c in ex for c in p['classifications']))
+  check('workers-comp evidence '+p['id'],('exempt from having workers compensation' in ex) if p['workers_comp'].startswith('Exempt') else ('workers compensation insurance' in ex and all(x in ex for x in __import__('re').findall(r'\d{2}/\d{2}/\d{4}',p['workers_comp']))))
   check('address in evidence '+p['id'],all(part.strip() in ex for part in p['address'].split(',') if part.strip() not in ['CA']))
  else:check('unverified identity blank '+p['id'],not p['license'] and not p['address'] and not p['phone'] and not p['classifications'])
 for r in D['estimates']['rows']:check('quote blank '+r['id'],all(r[k]=='' for k in ['amount_usd','quote_date','labor_included','materials_included','ceiling_access_included','drywall_restore_included','paint_included','dispatch_fee','valid_until']))
@@ -83,12 +84,12 @@ for p in SITE.glob('*.html'):
  for row,links in q.table_rows:
   check('table row source '+p.name+' '+row[:65],any(urlparse(x).netloc or x=='sources.html' for x in links))
 # exact dataset row parity on category pages
-pairs={'providers.html':['providers-table','provider-fit'],'requirements.html':['requirements-table'],'estimates.html':['estimates-table','estimate-analysis'],'technical.html':['technical-table'],'analysis.html':['analysis-table'],'sources.html':['sources-table'],'flagged-for-review.html':['flags-table']}
+pairs={'providers.html':['providers-table','provider-fit'],'requirements.html':['requirements-table'],'estimates.html':['estimates-table','estimate-terms','estimate-analysis'],'technical.html':['technical-table'],'analysis.html':['analysis-table'],'sources.html':['sources-table'],'flagged-for-review.html':['flags-table']}
 for page,tables in pairs.items():
  text=(SITE/page).read_text()
  for tid in tables:
   block=re.search(r'<table id="'+re.escape(tid)+r'".*?</table>',text,re.S).group(0)
-  key={'providers-table':'providers','provider-fit':'providers','requirements-table':'requirements','estimates-table':'estimates','estimate-analysis':'estimates','technical-table':'technical','analysis-table':'findings','sources-table':'sources','flags-table':'flags'}[tid]
+  key={'providers-table':'providers','provider-fit':'providers','requirements-table':'requirements','estimates-table':'estimates','estimate-terms':'estimates','estimate-analysis':'estimates','technical-table':'technical','analysis-table':'findings','sources-table':'sources','flags-table':'flags'}[tid]
   found=[x[len(tid)+1:] for x in re.findall(r'<tr id="([^"]+)"',block)]
   check('rendered IDs '+tid,found==[r['id'] for r in D[key]['rows']],str(len(found)))
 # no unsupported amounts anywhere in served artifact

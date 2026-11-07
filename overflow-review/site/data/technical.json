@@ -22,7 +22,7 @@
       ],
       "interpretation": "Supports asking for a model-specific tub-side assessment; does not prove a seized assembly can be extracted.",
       "flags": [
-        "F-10"
+        "F-01"
       ]
     },
     {
@@ -46,7 +46,7 @@
       ],
       "interpretation": "Do not apply this expectation to an unidentified model or confuse internal tee drip with tub sealing failure.",
       "flags": [
-        "F-10"
+        "F-01"
       ]
     },
     {
