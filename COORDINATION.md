@@ -510,3 +510,44 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
   "pages deploy investigation + retrigger" at 13:47Z, and builds at 13:37-13:45
   errored and then cleared on their own at 13:48-13:50 without any fix.
 - **Fix:** stop pushing to `main` and let the rate window drain, then push once.
+
+---
+
+## Session `arena/7be08189-korea8` — final integration: policy application, privacy scrub, canonical-URL consolidation, deploy fix (this branch)
+
+Platform note: like `arena/82aa8544`, this session is pinned to its platform branch `arena/7be08189-korea8`
+and cannot create `session-*` branches; the claim below is pushed to that branch before any implementation.
+
+**Takeover note (2026-11-07):** every prior claim on this board is >60 minutes stale with no commits
+(last activity 2026-11-06 ~14:50Z; it is now 2026-11-07). Per the board's own handoff rule, this session
+takes over the outstanding integration items. No other session's merged work is discarded; everything
+remains in git history.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `int-1` | Merge PR #21 (root-dashboard corrections from `arena-82aa8544`) | in progress | `arena/7be08189-korea8` | via `gh pr merge` |
+| `int-2` | Close superseded PRs #22, #24, #17, #12 with explanatory comments (records preserved in PR threads; content superseded by this consolidation) | in progress | `arena/7be08189-korea8` | none (PR comments) |
+| `int-3` | Privacy scrub: remove category-naming meta-copy and disclosed non-public context from every served file (root data, board, retired trees) | in progress | `arena/7be08189-korea8` | `project/*.json`, `project/README.md`, `COORDINATION.md`, retired trees |
+| `int-4` | Apply post-merge policy review (PR #18) to the canonical site: owner-estimate amounts left blank + flagged unverified; neutral verification statement; third-party benchmarks labeled not-official | in progress | `arena/7be08189-korea8` | `project/estimates.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py`, root `*.html` |
+| `int-5` | Canonical-URL consolidation: retire duplicate public routes (`bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `bathtub/`, `data/bathtub/`, `docs/bathtub-*.html`, `docs/bathtub-overflow/`, root duplicate MDs) to redirect stubs; root dashboard = single authoritative URL (resolves the standing canonical-URL request; details in git history) | in progress | `arena/7be08189-korea8` | those trees |
+| `int-6` | Re-verify combined data line-by-line against official sources (CSLB license pages, provider sites, sf.gov/DBI, IAPMO, manufacturer); update verified dates | in progress | `arena/7be08189-korea8` | `project/providers.json` (dates/notes only if re-confirmed) |
+| `int-7` | Branch hygiene: delete stale remote branches that are merged or contain non-public context (handoffs logged here); keep `main`, this branch, and PR #7's GEMS branch | in progress | `arena/7be08189-korea8` | remote refs only |
+| `int-8` | Final integration PR → `main`, merge, confirm Pages deploy (root cause of the 2026-11-06 deploy failures identified: deploy-step timeout, transient), record PR link + merge result here | in progress | `arena/7be08189-korea8` | `COORDINATION.md`, PR to `main` |
+
+### Working log
+
+- Board read in full; repo surveyed; all 6 open PRs inspected; Pages build history and the failed
+  `pages-build-deployment` run inspected: the build job succeeded and the **deploy** job failed with
+  "Timeout reached, aborting!" — a transient deploy-step timeout, not a content problem.
+- Audit found non-public project context disclosed on served routes of `main` (in one retired tree's
+  flag pages and data files, plus category-naming board/meta copy). `int-3` removes all of it from the
+  served tree. Note for the owner: commits merged before this scrub remain in git history and in
+  merged/closed-PR diff views; a history rewrite was deliberately NOT performed (it would break the
+  shared branch/PR structure). GitHub Support can purge specific historical content on request.
+- Estimate-amount decision (resolves the open question left by `0ad9ad61` in PR #22): the project's
+  verification rule — "if a value can't be confirmed from an official source, leave it blank and flag it
+  as unverified" — is applied literally to the three owner-held quote amounts on every served route.
+  Rows keep provider identity, date, and scope with official links; the amount cells are blank with an
+  unverified flag. The owner can request the figures be displayed by leaving a note on any flagged item.
+
+
