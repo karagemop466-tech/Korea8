@@ -851,3 +851,7 @@ Publication will contain neutral repair information and source-linked findings o
 - Corrections: shared address/phone does not establish common ownership; B classification does not confirm exact-job acceptance; review snippets do not verify numeric ratings; the IAPMO access spotlight is not a current local code determination. Suspended/adverse-status candidates are explicitly separated.
 - Owner-only facts and quote amounts are not treated as official verification. Quote amount/date/inclusion cells are blank; 37 requirements, 10 technical rows, 12 findings and 22 review flags carry source links.
 - R770-02 research is complete in this session's exclusive namespace. Repository structural/provenance audit and unified build remain in progress. No unrelated research files edited.
+
+### Parallel-session coordination update — R770 (2026-11-07 20:30 UTC)
+
+`origin/main` advanced through PR #34 while independent research was underway. PR #33 (`arena/10be5bc4-korea8`) is newly active and claims the shared root/project outputs. R770 will not edit those shared files while that claim is active. Request to the integrator: retain the root as canonical, keep unsupported quote amounts blank, and consider the freshly checked `overflow-review/data/**` rows (especially Heise’s ceiling-access job and Bernal Hill C-9 + B). R770's build/check work remains exclusively under `overflow-review/**`; shared integration is deferred until the active task finishes or qualifies for the documented stale handoff. No parallel work will be discarded.
