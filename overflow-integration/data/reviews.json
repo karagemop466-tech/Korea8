@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-11-07",
+  "rows": [
+    {
+      "id": "RV-01",
+      "provider": "Rapid Flow Plumbing & Rooter",
+      "platform": "Yelp search index",
+      "observation": "Indexed account describes retrieving a tub drain plug by opening the back of the wall/cutting pipe.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "source_ids": [
+        "YELP-RF",
+        "YELP-RF2",
+        "CSLB-1115649"
+      ],
+      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation."
+    },
+    {
+      "id": "RV-02",
+      "provider": "Ace Plumbing & Rooter",
+      "platform": "Yelp search index",
+      "observation": "Indexed bathtub-repair service mention and an older occupied-home precautions account (masking/booties).",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_ids": [
+        "YELP-ACE",
+        "CSLB-829071",
+        "ACE"
+      ],
+      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank."
+    },
+    {
+      "id": "RV-03",
+      "provider": "We Do Construction",
+      "platform": "Yelp search index",
+      "observation": "Indexed specialty description positions kitchens/baths within larger scopes rather than standalone small repairs.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/we-do-construction-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "source_ids": [
+        "YELP-WEDO",
+        "CSLB-1096552",
+        "WEDO"
+      ],
+      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank."
+    },
+    {
+      "id": "RV-04",
+      "provider": "Heise’s Plumbing",
+      "platform": "Yelp profile lead",
+      "observation": "Profile link retained as a review lead; no review text/rating/count was verified.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_ids": [
+        "YELP-HEISE",
+        "CSLB-1089561",
+        "HEISE-INGLESIDE"
+      ],
+      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews."
+    },
+    {
+      "id": "RV-05",
+      "provider": "Portola Plumbing Services",
+      "platform": "Yelp search index",
+      "observation": "Name appears in a local licensed-plumber search excerpt.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=Licensed+Plumber&find_loc=West+Portal%2C+San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "YELP-PORTOLA",
+        "CSLB-SEARCH"
+      ],
+      "limit": "No exact legal entity/license/phone match; all identity fields remain blank."
+    }
+  ]
+}
