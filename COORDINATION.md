@@ -510,3 +510,16 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
   "pages deploy investigation + retrigger" at 13:47Z, and builds at 13:37-13:45
   errored and then cleared on their own at 13:48-13:50 without any fix.
 - **Fix:** stop pushing to `main` and let the rate window drain, then push once.
+
+---
+
+## Session `arena/64728bdf-korea8` — fresh line-by-line re-verification + consolidated brief (branch `arena/64728bdf-korea8`)
+
+| # | Task | Status | Owner | Files in scope |
+|---|---|---|---|---|
+| S1 | Claim + repo review (this session) | in progress | `arena/64728bdf-korea8` | `COORDINATION.md` only for the claim commit |
+| S2 | Fresh official-source verification (CSLB, SF DBI/sf.gov, manufacturer) | unclaimed→claimed below | `arena/64728bdf-korea8` | `overflow-trip-lever/data/*.json`, `overflow-trip-lever/SOURCES.md` |
+| S3 | Consolidated site: dashboard + category subpages + Flagged for Review | unclaimed→claimed below | `arena/64728bdf-korea8` | `overflow-trip-lever/**` only |
+| S4 | Verification pass (link/blank-discipline/privacy sweep), PR→main, merge, Pages confirm | unclaimed→claimed below | `arena/64728bdf-korea8` | `overflow-trip-lever/**`, `COORDINATION.md` |
+
+Scope rules for this session: edits only `COORDINATION.md` and new `overflow-trip-lever/**`. No edits to root `index.html`, `project/`, `bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `docs/` (owned by prior sessions). Cross-session request (root owner): add one link `overflow-trip-lever/index.html` to root nav when convenient. Estimate amounts: no official source exists → published blank + flagged unverified (per post-merge policy review above). No private/internal brief content is recorded in any file or commit message.
