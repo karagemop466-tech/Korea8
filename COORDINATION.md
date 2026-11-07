@@ -510,3 +510,20 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
   "pages deploy investigation + retrigger" at 13:47Z, and builds at 13:37-13:45
   errored and then cleared on their own at 13:48-13:50 without any fix.
 - **Fix:** stop pushing to `main` and let the rate window drain, then push once.
+
+---
+
+## Session `arena/f4bb970c-korea8` — current requirements-to-delivery integration
+
+**Claimed:** 2026-11-07. The platform fixes all work to branch `arena/f4bb970c-korea8`; no other branch will be created or pushed. This session takes over the stale root integration task T6 and the outstanding integration portions of the merged briefs under the board's 60-minute/no-commit takeover rule. The last relevant remote activity was 2026-11-06. Earlier claims and historical logs are preserved, not overwritten. Root ownership is now the final-integration scope below; historical research claims remain credited to their original sessions.
+
+| ID | Task | Status | Owning session | Files in scope |
+|---|---|---|---|---|
+| F4-T1 | Root integration takeover, stale claim handoff, coordination | in progress | `arena/f4bb970c-korea8` | `COORDINATION.md` |
+| F4-T2 | Independent official-source recheck, current provider/service research, full requirements and executive summary | unclaimed | `arena/f4bb970c-korea8` | `overflow-integration/**` |
+| F4-T3 | Repository audit and consolidation of published bathtub routes; preserve unrelated legacy files | unclaimed | `arena/f4bb970c-korea8` | root bathtub HTML/CSS, `bathtub/**`, `bathtub-overflow/**`, `bathroom-overflow/**`, `trip-lever/**`, `docs/bathtub-*.html`, `project/**`, bathtub JSON under `data/bathtub/**`, bathtub build/test scripts, `.github/workflows/overflow-site.yml`, `overflow-integration/**` |
+| F4-T4 | Final line-by-line source audit, reproducible build, tests, browser checks and publication | unclaimed | `arena/f4bb970c-korea8` | `overflow-integration/**`, shared outputs within F4-T3 scope, `COORDINATION.md` |
+
+**Boundary:** preserve all unrelated GEMS source, scientific evidence, datasets, workflow and archive content. Existing open PRs are inventoried; do not discard or overwrite other-session work. Shared index/data/navigation edits are reserved for this integration after research tasks are complete. Research will use official authority/company sources for factual table cells; owner statements and review-platform observations will be separately labeled. No outreach, contract, appointment or provider acceptance will be claimed without a response. Public content will use neutral repair language.
+
+**Initial observations:** Pages API reports `errored` for current main `e622cdd2ce83ebaf85996c98695a42328a028750`; open bathtub PRs #12, #17, #21, #22 and #24 require review before integration. Existing root counters and classifications disagree with their own records; matching CSLB address/phone has not established common ownership; supplied quote amounts and scopes require distinct provenance. These are review items, not verified contractor performance findings.
