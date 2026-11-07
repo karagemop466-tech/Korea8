@@ -1,637 +1,356 @@
 #!/usr/bin/env python3
-"""Build the canonical bathtub trip-lever site at the repository root.
+"""Build the static repair dashboard from the audited, versioned dataset.
 
-Single source of truth: the JSON files in ``site-data/``.
-The build fails if any table row would publish without a source link and without
-an explicit owner-provided / unverified marker, or if an internal link is broken.
-
-Usage:  python3 scripts/build_canonical_site.py
+Run ``python scripts/build_canonical_site.py`` to render the site, or pass
+``--check`` to verify that committed pages match the current data. This builder
+uses only the Python standard library and never makes network requests.
 """
 from __future__ import annotations
 
+import argparse
 import html
 import json
-import pathlib
-import re
 import sys
+from pathlib import Path
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA = ROOT / "site-data"
-
-PROBLEMS: list[str] = []
-
-
-def load(name: str) -> dict:
-    return json.loads((DATA / name).read_text(encoding="utf-8"))
-
-
-def e(value) -> str:
-    return html.escape(str(value), quote=True)
-
-
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "site-data" / "dashboard.json"
+D = json.loads(DATA.read_text(encoding="utf-8"))
+S = {s["id"]: s for s in D["sources"]}
 NAV = [
-    ("index.html", "Dashboard"),
-    ("executive-summary.html", "Executive summary"),
-    ("requirements.html", "Requirements"),
-    ("providers.html", "Providers"),
-    ("estimates.html", "Estimates"),
-    ("technical-approach.html", "Technical approach"),
-    ("code-and-permit.html", "Code & permit"),
-    ("sources.html", "Sources"),
-    ("flagged-for-review.html", "Flagged for review"),
-    ("verification.html", "Verification"),
+    ("index.html", "Overview", "◫"),
+    ("executive-summary.html", "Executive summary", "◧"),
+    ("requirements.html", "Requirements", "☷"),
+    ("providers.html", "Provider shortlist", "◇"),
+    ("reviews.html", "Review evidence", "☆"),
+    ("estimates.html", "Estimate analysis", "≋"),
+    ("technical-approach.html", "Repair approach", "↗"),
+    ("code-and-permit.html", "Code & permits", "§"),
+    ("flagged-for-review.html", "Flagged for review", "!"),
+    ("sources.html", "Sources", "⌁"),
+    ("verification.html", "Verification", "✓"),
 ]
 
 
-def page(slug: str, title: str, body: str, desc: str = "", active: str | None = None) -> str:
-    active = active or slug
+def e(value: object) -> str:
+    return html.escape("" if value is None else str(value), quote=True)
+
+
+def refs(ids: list[str], prefix: str = "Sources") -> str:
+    """Render source links with their actual publisher, without inventing evidence."""
+    if not ids:
+        return ""
     links = []
-    for h, t in NAV:
-        cls = ' class="active"' if h == active else ""
-        links.append(f'<a href="{h}"{cls}>{e(t)}</a>')
-    nav = "".join(links)
-    return f"""<!doctype html>
+    for source_id in dict.fromkeys(ids):
+        source = S[source_id]
+        label = source["title"]
+        if source_id.startswith("L") and source_id[1:].isdigit():
+            label = "CSLB #" + source_id[1:]
+        links.append(f'<a href="{e(source["url"])}">{e(label)}</a>')
+    return f'<div class="refs"><span class="muted">{e(prefix)}:</span> {" ".join(links)}</div>'
+
+
+def src_inline(ids: list[str]) -> str:
+    links = []
+    for source_id in dict.fromkeys(ids):
+        source = S[source_id]
+        label = source["title"]
+        if source_id.startswith("L") and source_id[1:].isdigit():
+            label = "CSLB #" + source_id[1:]
+        links.append(f'<a href="{e(source["url"])}">{e(label)}</a>')
+    return " · ".join(links)
+
+
+def heading(title: str, description: str, eyebrow: str = "PROJECT BRIEF") -> str:
+    return (f'<header class="page-header"><p class="eyebrow">{e(eyebrow)}</p>'
+            f'<h1>{e(title)}</h1><p>{e(description)}</p></header>')
+
+
+def page(slug: str, title: str, body: str) -> str:
+    nav_items = []
+    for url, label, icon in NAV:
+        current = ' aria-current="page"' if url == slug else ""
+        nav_items.append(f'<a href="{e(url)}"{current}><span class="nav-icon" aria-hidden="true">{e(icon)}</span>{e(label)}</a>')
+    nav = "".join(nav_items)
+    return f'''<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{e(title)} — Bathtub overflow trip lever</title>
-<meta name="description" content="{e(desc)}">
+<title>{e(title)} · Bathtub repair brief</title>
+<meta name="description" content="A source-linked San Francisco bathtub overflow repair brief.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="index.html"><span class="brand-mark">&#9635;</span> Trip Lever Project</a>
-    <nav class="nav">{nav}</nav>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">↗</span><span class="brand-title">Repair brief<span class="brand-sub">San Francisco</span></span></a>
+    <div><div class="nav-label">Project navigation</div><nav class="nav" aria-label="Project navigation">{nav}</nav></div>
+    <div class="sidebar-foot">Source snapshot<br><strong>November 7, 2026</strong><br><a href="verification.html">How this was checked →</a></div>
+  </aside>
+  <div class="workspace">
+    <div class="topline"><strong>BATHTUB OVERFLOW / {e(title.upper())}</strong><span><i class="status-dot" aria-hidden="true"></i>Research snapshot · Nov 7, 2026</span></div>
+    <main class="main" id="main">
+      {body.lstrip()}
+      <footer class="footer"><p>Independent research · Check current license and coverage before hiring.</p><p><a href="flagged-for-review.html">Open questions</a> &nbsp;·&nbsp; <a href="docs/gems-archive.html">GEMS archive</a></p></footer>
+    </main>
   </div>
-</header>
-<main class="wrap">
-{body}
-</main>
-<footer>
-  <div class="wrap">
-    <p><strong>Single authoritative copy.</strong> This site is the canonical brief for the bathtub wastewater overflow trip-lever project. Parallel briefs published earlier in this repository now redirect here.</p>
-    <p>Compiled 2026-11-07. Every table row links to the source it came from; values that could not be confirmed from an official source are left blank and listed on <a href="flagged-for-review.html">Flagged for review</a>.</p>
-    <p class="small">Unrelated prior project retained as an archive: <a href="docs/index.html">DOE GEMS research (archived)</a>.</p>
-  </div>
-</footer>
+</div>
 </body>
 </html>
-"""
+'''
 
 
-# --------------------------------------------------------------------------- helpers
-def src_links(sources: list[dict], *, inline: bool = True) -> str:
-    if not sources:
-        return '<span class="blank">none</span>'
-    out = []
-    for s in sources:
-        status = s.get("status", "")
-        label = e(s.get("label") or s["url"])
-        stat = f' <span class="st">({e(status)})</span>' if status else ""
-        out.append(f'<a class="src" href="{e(s["url"])}">{label}</a>{stat}')
-    return "".join(out) if inline else "<br>".join(out)
+def table(headers: list[str], rows: list[list[str]]) -> str:
+    head = "".join(f'<th scope="col">{e(h)}</th>' for h in headers)
+    body = "".join('<tr>' + ''.join(f'<td>{cell}</td>' if not cell.startswith('<td ') else cell for cell in row) + '</tr>' for row in rows)
+    return f'<div class="table-wrap"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
 
 
-def chip(kind: str, text: str) -> str:
-    return f'<span class="chip {kind}">{e(text)}</span>'
+def empty_cell() -> str:
+    return '<td class="empty" aria-label="Unverified" data-unverified="true"></td>'
 
 
-ORIGIN_CHIP = {
-    "owner": chip("own", "owner-provided"),
-    "official": chip("off", "official source"),
-    "unverified": chip("unv", "unverified"),
-    "verified": chip("ver", "verified"),
+def overview() -> str:
+    total = len(D["providers"])
+    active = sum(p["license_status"].startswith("Current") for p in D["providers"])
+    flags = len(D["flags"])
+    lead = e(D["summary"]["context"])
+    top = [p for p in D["providers"] if p["priority"] == "First inquiry"]
+    cards = []
+    for p in top:
+        card_refs = list(p["official_sources"])
+        if p.get("review_source") and p["id"] == "P01":
+            card_refs.append(p["review_source"])
+        cards.append(f'''<article class="card"><span class="card-num">{e(p['id'][1:])}</span><h3>{e(p['name'])}</h3>
+<p>{e(p['why'])}</p><a class="more" href="providers.html#{e(p['id'])}">View inquiry details →</a>{refs(card_refs)}</article>''')
+    body = f'''
+<section class="hero" aria-labelledby="overview-title">
+  <div class="hero-copy"><p class="eyebrow">Occupied rental · San Francisco</p>
+  <h1 id="overview-title">A careful plan for a <em>stuck trip lever.</em></h1>
+  <p class="lead">{lead}</p>
+  <div class="actions"><a class="button" href="providers.html">Explore the shortlist →</a><a class="button alt" href="executive-summary.html">Read the brief</a></div></div>
+  <div class="hero-side"><div><p class="eyebrow">THE ACCESS DECISION</p><h2>Start gently. Keep a fallback.</h2></div>
+    <div class="path-step"><div class="path-num">01</div><div><strong>Assess from the tub side</strong><span>Preferred if a professional judges it safe.</span></div></div>
+    <div class="path-step"><div class="path-num">02</div><div><strong>Plan access from below</strong><span>Consider the storage ceiling if needed.</span></div></div>
+    <div class="path-step"><div class="path-num">03</div><div><strong>Restore and close out</strong><span>One accountable written scope.</span></div></div>
+  </div>
+</section>
+<div class="stats" aria-label="Research snapshot">
+  <div class="stat"><strong>{total}</strong><span>CSLB records reviewed<br>{active} active at the check</span></div>
+  <div class="stat"><strong>3</strong><span>Estimate names supplied<br>details unverified</span></div>
+  <div class="stat"><strong>{flags}</strong><span>Items flagged<br>for follow-up</span></div>
+  <div class="stat"><strong>0</strong><span>Providers contacted<br>by this research</span></div>
+</div>
+<div class="notice"><strong>Before deciding:</strong> A license snapshot is not an agreement to take the job. Exact capability, price, availability and responsibility for ceiling finishing remain unconfirmed.</div>
+<div class="section-head"><div><p class="eyebrow">Where to start</p><h2>First inquiry leads</h2><p>Selected for relevant public evidence, not confirmed availability.</p></div><a href="providers.html">All researched records →</a></div>
+<div class="grid">{''.join(cards)}</div>
+<div class="section-head"><div><p class="eyebrow">The essentials</p><h2>What’s in this brief</h2></div></div>
+<div class="grid three">
+  <article class="card"><span class="card-num">01</span><h3>Requirements</h3><p>The repair, occupied-unit and delivery requirements, with each row linked to official context.</p><a class="more" href="requirements.html">Open the register →</a></article>
+  <article class="card"><span class="card-num">02</span><h3>Estimate analysis</h3><p>Different possible scopes, blank unverified quote fields, and a checklist for comparable bids.</p><a class="more" href="estimates.html">Compare the scopes →</a></article>
+  <article class="card"><span class="card-num">03</span><h3>Unresolved items</h3><p>License nuances, review limitations, permit questions and other irregularities to check.</p><a class="more" href="flagged-for-review.html">Review the flags →</a></article>
+</div>'''
+    return page("index.html", "Overview", body)
+
+
+def executive() -> str:
+    s = D["summary"]
+    body = heading("Executive summary", "A decision-ready view of the reported problem, the inquiry strategy and the limits of the evidence.")
+    body += f'''
+<div class="grid"><section class="panel"><p class="eyebrow">Situation</p><h2>Delicate access, occupied building</h2><p>{e(s['context'])}</p></section>
+<section class="panel"><p class="eyebrow">Recommendation</p><h2>Ask for a staged assessment</h2><p>{e(s['decision'])}</p>{refs(['WATCO','SF-DBI'])}</section></div>
+<section class="panel"><p class="eyebrow">Who to ask first</p><h2>A short, qualified inquiry list</h2><p>{e(s['recommendation'])}</p><p>Bay Area Plumbing and Save - On - Interior have separate CSLB licenses; their personnel records name the same sole owner. Confirm which entity would contract and who would perform each trade.</p>{refs(['L1115649','L757796','L749536','PERSON-BAY','PERSON-SAVE','CO-HEISE','L829071'])}<p><a href="providers.html">View the complete provider research →</a></p></section>
+<section class="panel"><p class="eyebrow">What to request</p><h2>One written scope, two possible paths</h2><ol class="checklist"><li>Ask whether an above-tub assessment is appropriate and where the professional would stop if the assembly resists.</li><li>Request an itemized alternative for access below, protection, plumbing, testing, ceiling restoration and cleanup.</li><li>Name the prime contractor and any subcontractors; confirm current licensing, insurance, permits and inspections for the actual work.</li><li>Compare written offers on the same scope and agree on exclusions and change-order terms.</li></ol>{refs(['CSLB-HIRING','SF-DBI','CIV-1954'])}</section>
+<div class="notice"><strong>Evidence limit:</strong> {e(s['limits'])} <a href="flagged-for-review.html">See all flagged items.</a></div>'''
+    return page("executive-summary.html", "Executive summary", body)
+
+
+def requirements() -> str:
+    rows = []
+    for r in D["requirements"]:
+        rows.append([f'<span class="mono">{e(r["id"])}</span>', e(r["category"]), e(r["requirement"]), e(r["origin"]), e(r["status"]), src_inline(r["official_context"])])
+    body = heading("Requirements register", "The project brief, practical scope recommendations and delivery requirements in one place.")
+    body += '''<div class="notice"><strong>Source distinction:</strong> Project facts and preferences are requester-reported. The official links in those rows provide relevant background; they do not independently verify the request.</div>'''
+    body += table(["ID", "Category", "Requirement", "Origin", "Status", "Official context"], rows)
+    return page("requirements.html", "Requirements", body)
+
+
+def provider_card(p: dict) -> str:
+    bad = p["priority"] == "Not a current candidate"
+    badges = "".join(f'<span class="badge">{e(c)}</span>' for c in p["classifications"])
+    status = f'<span class="badge {"danger" if bad else ""}">{e(p["license_status"])}</span>'
+    phone = e(p["phone"])
+    num = ''.join(c for c in p["phone"] if c.isdigit())
+    note = f'<p><strong>Contact note:</strong> {e(p["contact_note"])}</p>' if p.get("contact_note") else ""
+    insurance = f'<p><strong>CSLB insurance note:</strong> {e(p["insurance_note"])}</p>' if p.get("insurance_note") else ""
+    review = f'<p><strong>Review context:</strong> {e(p["review_note"])}</p>' if p.get("review_note") else ""
+    ids = list(p["official_sources"])
+    if p.get("review_source"):
+        ids.append(p["review_source"])
+    ids.extend(p.get("review_evidence_sources", []))
+    return f'''<article class="vendor-card anchor" id="{e(p['id'])}">
+<div class="vendor-top"><div><p class="eyebrow">{e(p['priority'])} · {e(p['id'])}</p><h3>{e(p['name'])}</h3><p>CSLB #{e(p['license_number'])} · checked {e(p['checked'])}</p></div><a class="phone" href="tel:{e(num)}">{phone}</a></div>
+<div class="badges">{status}{badges}</div><p><strong>Why it is listed:</strong> {e(p['why'])}</p>
+<p><strong>Confirm:</strong> {e(p['caveat'])}</p>{note}{insurance}{review}{refs(ids)}</article>'''
+
+
+def providers() -> str:
+    body = heading("Provider research", "A prioritized set of leads and retained license records. A license is not a commitment to perform this job.")
+    body += '''<div class="notice"><strong>Important:</strong> Nobody was contacted for this research. Exact trip-lever experience, willingness to coordinate drywall, availability and price are unverified for every candidate. Telephone numbers are CSLB business numbers unless otherwise noted.</div>'''
+    groups = [
+        ("First inquiries", "The most relevant public evidence for an initial conversation.", lambda p: p["priority"] == "First inquiry"),
+        ("Names from the estimate brief", "Business names are possible matches only; quote identity and contents remain unverified.", lambda p: p["priority"] == "Prior estimate name"),
+        ("Additional and scope-dependent records", "Retained from parallel research; some may not accept a small residential repair.", lambda p: p["priority"] not in ("First inquiry", "Prior estimate name", "Not a current candidate")),
+        ("Not a current candidate", "An earlier research record is retained for the license-status warning.", lambda p: p["priority"] == "Not a current candidate"),
+    ]
+    for title, sub, select in groups:
+        matching = [p for p in D["providers"] if select(p)]
+        body += f'<div class="section-head"><div><h2>{e(title)}</h2><p>{e(sub)}</p></div></div><div class="stack">' + ''.join(provider_card(p) for p in matching) + '</div>'
+    return page("providers.html", "Provider shortlist", body)
+
+
+def reviews() -> str:
+    cards=[]
+    for r in D["reviews"]:
+        cards.append(f'''<article class="review-card anchor" id="{e(r['id'])}"><p class="eyebrow">{e(r['access'])}</p><h3>{e(r['provider'])}</h3><p>{e(r['finding'])}</p>{refs(r['sources'])}</article>''')
+    body = heading("Review evidence", "Anecdotes and business-profile findings are separate from official license records.")
+    body += '''<div class="notice"><strong>Read this evidence cautiously.</strong> Yelp blocked direct automated retrieval; the Rapid Flow detail came from a search-index excerpt. Yahoo Local syndicated a Yelp excerpt, and Angi and BBB were read directly. Individual customer accounts have not been independently verified and do not establish this project’s outcome.</div>'''
+    body += '<div class="grid">'+''.join(cards)+'</div>'
+    body += '''<section class="panel"><h2>How to use these sources</h2><ul class="checklist"><li>Use the platform links to read the underlying reviews and any responses; reviews describe other customers’ experiences.</li><li>Match the legal entity and license number before carrying a reputation across a similarly named listing.</li><li>Ask for recent, relevant references and a written description of who handles plumbing and restoration.</li></ul>'''+refs(['CSLB-HIRING'])+'</section>'
+    return page("reviews.html", "Review evidence", body)
+
+
+def estimates() -> str:
+    rows = []
+    for q in D["quotes"]:
+        rows.append([f'<span class="mono">{e(q["id"])}</span>', e(q["name_from_request"]), empty_cell(), empty_cell(), empty_cell(), f'<a href="flagged-for-review.html#{e(q["flag"])}">Unverified</a> · {src_inline([q["license_source"], q["candidate_source"]])}'])
+    fee_rows=[]
+    for f in D["official_fee_examples"]:
+        fee_rows.append([e(f["category"]), e(f["description"]), e(f["published_fee"]), empty_cell(), e(f["qualifier"])+" "+src_inline(f["sources"])])
+    body = heading("Estimate analysis", "The supplied names are leads, not verified quotations. Amounts, dates and offered scopes remain blank until supported.")
+    body += '''<div class="notice"><strong>Not a price ranking.</strong> No provider-issued quotes were available for verification, and a similar business name does not confirm the issuer. None of these rows establishes the complete cost of below-ceiling access and restoration.</div>'''
+    body += table(["ID", "Name as supplied", "Verified date", "Verified scope", "Verified amount", "Status / possible match"], rows)
+    body += '''<div class="section-head"><div><p class="eyebrow">Compare like with like</p><h2>Scope categories in the brief</h2><p>These categories describe possible work, not verified offers from a particular business.</p></div></div>
+<div class="grid"><article class="card"><h3>Handle / linkage adjustment</h3><p>Assessment or adjustment of the existing mechanism; any extraction and replacement must be specified.</p></article>
+<article class="card"><h3>Lever and diverter spout</h3><p>Fixture components can involve distinct work at the overflow and spout; clarify what is included.</p></article>
+<article class="card"><h3>Waste-and-overflow assembly</h3><p>Replacement of the assembly is a broader category than adjustment. Access, parts and finish must be explicit.</p></article>
+<article class="card"><h3>Below-ceiling restoration</h3><p>Protection, opening, plumbing, testing, ceiling finish and cleanup need a single accountable scope.</p></article></div>
+<section class="panel"><h2>Ask for the same line items</h2><ul class="checklist"><li>Inspection and a tub-side assessment, with a defined stop point.</li><li>Parts, labor, access, storage protection, permits and inspections if applicable.</li><li>Drywall, texture, painting, cleanup, warranty and written change-order terms.</li></ul>'''+refs(['CSLB-HIRING','WATCO','SF-DBI'])+'</section>'
+    body += '''<div class="section-head"><div><p class="eyebrow">City fee schedule</p><h2>Official examples, not project prices</h2><p>Confirm the applicable fee category and total with DBI.</p></div></div>'''
+    body += table(["Category", "Published description", "Schedule fee", "Applies here?", "Qualification / official source"], fee_rows)
+    return page("estimates.html", "Estimate analysis", body)
+
+
+def technical() -> str:
+    cards=[]
+    for t in D["technical"]:
+        cards.append(f'''<article class="card anchor" id="{e(t['id'])}"><p class="eyebrow">{e(t['id'])} · Technical context</p><h3>{e(t['topic'])}</h3><p>{e(t['finding'])}</p>{refs(t['sources'])}</article>''')
+    body = heading("Repair approach", "A professional should choose the method after inspecting the actual installation.")
+    body += '''<div class="flow"><article class="card"><span class="card-num">01</span><h3>Assess above</h3><p>Identify the assembly and ask whether careful tub-side service is appropriate. Do not assume a stuck part can be pulled free.</p></article><article class="card"><span class="card-num">02</span><h3>Evaluate below</h3><p>If needed, plan controlled access through the storage ceiling with protection and a clear stop/change-order process.</p></article><article class="card"><span class="card-num">03</span><h3>Test & restore</h3><p>Confirm the required inspections, testing, ceiling finish and any future-access provisions before closing.</p></article></div>
+<div class="section-head"><div><p class="eyebrow">Source-linked context</p><h2>What the sources do—and do not—say</h2></div></div>'''
+    body += '<div class="grid">'+''.join(cards)+'</div>'
+    body += '''<div class="notice"><strong>Site-specific decisions:</strong> The installed model, concealed condition, safe access route, opening size, fire rating and need for an access panel are not established. Do not infer them from an example manufacturer diagram.</div>'''
+    return page("technical-approach.html", "Repair approach", body)
+
+
+def code() -> str:
+    ids={'T04','T05','T06','T07','T08','T09'}
+    cards=[]
+    for t in D["technical"]:
+        if t["id"] in ids:
+            cards.append(f'''<article class="card"><h3>{e(t['topic'])}</h3><p>{e(t['finding'])}</p>{refs(t['sources'])}</article>''')
+    body=heading("Code & permits", "Official context to discuss with the contractor or San Francisco DBI; the actual scope controls.")
+    body+='''<div class="notice"><strong>Confirm before work:</strong> Permit applicability, inspection, licensing and any ceiling-assembly requirements are not established for this property. These summaries are not a legal determination.</div>'''
+    body+='<div class="grid">'+''.join(cards)+'</div>'
+    body+='''<section class="panel"><h2>Permit fee examples</h2><p>The city fee schedule lists categories and conditions. The category and total applicable to this repair remain unconfirmed.</p><p><a href="estimates.html">See the sourced fee examples →</a></p>'''+refs(['SF-FEE'])+'</section>'
+    return page("code-and-permit.html", "Code & permits", body)
+
+
+def flags() -> str:
+    cards=[]
+    for f in D["flags"]:
+        cards.append(f'''<article class="flag-card anchor" id="{e(f['id'])}"><p class="eyebrow">{e(f['id'])} · {e(f['status'])}</p><h3>{e(f['title'])}</h3><p>{e(f['finding'])}</p><p><strong>Next step:</strong> {e(f['next_step'])}</p>{refs(f['sources'])}</article>''')
+    body=heading("Flagged for review", "Unverified details, source discrepancies and decisions that need an on-site or current-record check.")
+    body+='<div class="stack">'+''.join(cards)+'</div>'
+    return page("flagged-for-review.html", "Flagged for review", body)
+
+
+def sources() -> str:
+    labels=[('government','Government and statutes'),('manufacturer','Manufacturer'),('company','Company statements'),('review-platform','Reviews and business profiles'),('official','Official project and platform documentation')]
+    body=heading("Source library", "Links are grouped by publisher so primary records, company claims and customer accounts are not confused.")
+    body+='''<div class="notice">The date shown is the research snapshot, not a guarantee that a page or license remains current. Review and business-profile entries are third-party material; several Yelp links were available only through search indexing.</div>'''
+    for kind,label in labels:
+        entries=[]
+        for s in D["sources"]:
+            if s['kind']!=kind: continue
+            note=f' · {e(s["note"])}' if s.get('note') else ''
+            entries.append(f'''<li id="{e(s['id'])}" class="anchor"><a href="{e(s['url'])}">{e(s['title'])}</a><p>{e(s['id'])} · {e(s['access'])} · checked {e(s['checked'])}{note}</p></li>''')
+        body+=f'<section class="source-group"><h2>{e(label)}</h2><ul class="source-list">'+''.join(entries)+'</ul></section>'
+    return page("sources.html", "Sources", body)
+
+
+def verification() -> str:
+    total=len(D['providers']); active=sum(p['license_status'].startswith('Current') for p in D['providers'])
+    body=heading("Verification", "What was checked, what remains open, and how to reproduce the local site checks.")
+    body+=f'''<div class="grid"><section class="panel"><h2>Evidence checked</h2><ul class="checklist"><li>{total} separate CSLB license records read on November 7, 2026: {active} current and active at that check and one suspended.</li><li>Government, manufacturer, company and review-platform sources are labeled separately in the source library.</li><li>Yelp direct access was blocked; Angi, BBB and Yahoo Local pages supplied additional, attributed review context.</li><li>All three quote dates, scopes and amounts remain blank because no provider-issued documents were available.</li></ul></section>
+<section class="panel"><h2>Checks performed locally</h2><ul class="checklist"><li>Build output matches the source data.</li><li>Every rendered table row links to an official source, with contextual links labeled as such.</li><li>Relative links, redirects, data references, and blank unverified fields are checked.</li><li>The website uses only local assets and works without client-side JavaScript.</li></ul><p class="small">Reproduce with <code>python scripts/build_canonical_site.py --check</code> and <code>python tests/test_project_site.py</code>.</p></section></div>
+<section class="panel"><h2>What this cannot verify</h2><p>The exact installation and condition, the identity or terms of prior quotes, the willingness and capability of any vendor, insurance for the actual crew, and the required permit for this specific scope.</p><p><a href="flagged-for-review.html">Read the unresolved items →</a> · <a href="sources.html">Open the source library →</a></p></section>'''
+    return page("verification.html", "Verification", body)
+
+
+BUILDERS = {
+    "index.html": overview,
+    "executive-summary.html": executive,
+    "requirements.html": requirements,
+    "providers.html": providers,
+    "reviews.html": reviews,
+    "estimates.html": estimates,
+    "technical-approach.html": technical,
+    "code-and-permit.html": code,
+    "flagged-for-review.html": flags,
+    "sources.html": sources,
+    "verification.html": verification,
 }
 
 
-def table(headers: list[str], rows: list[list[str]], classes: str = "") -> str:
-    head = "".join(f"<th>{h}</th>" for h in headers)
-    body = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in rows)
-    return (
-        f'<div class="tablewrap"><table class="{classes}"><thead><tr>{head}</tr></thead>'
-        f"<tbody>{body}</tbody></table></div>"
-    )
-
-
-def require_marker(row_id: str, has_source: bool, marker: bool) -> None:
-    """A published data row must carry a source link or an explicit marker."""
-    if not has_source and not marker:
-        PROBLEMS.append(f"{row_id}: row has neither a source link nor an explicit unverified/owner-provided marker")
-
-
-def build_report(summary: dict) -> dict:
-    providers = load("providers.json")["providers"]
-    code = load("code.json")["rows"]
-    tech = load("technical.json")["findings"]
-    reqs = load("requirements.json")["requirements"]
-    est = load("estimates.json")
-    sources = load("sources.json")["sources"]
-    flags = load("flags.json")["flags"]
-    return {
-        "built_utc_date": "2026-11-07",
-        "pages": [h for h, _ in NAV],
-        "counts": {
-            "providers": len(providers),
-            "code_rows": len(code),
-            "technical_rows": len(tech),
-            "requirement_rows": len(reqs),
-            "quotes": len(est["quotes"]),
-            "official_fee_rows": len(est["official_fees"]),
-            "sources": len(sources),
-            "flags": len(flags),
-        },
-        "verified": {
-            "providers_verified_on_cslb": sum(1 for p in providers if any("cslb.ca.gov" in s["url"] for s in p["sources"])),
-            "code_rows_verified": sum(1 for r in code if not r["status"].startswith("UNVERIFIED")),
-            "code_rows_unverified": sum(1 for r in code if r["status"].startswith("UNVERIFIED")),
-            "sources_retrieved": sum(1 for s in sources if s["status"].startswith("Verified")),
-            "sources_blocked_or_dead": sum(1 for s in sources if not s["status"].startswith("Verified")),
-        },
-    }
-
-
-# --------------------------------------------------------------------------- pages
-def page_index() -> str:
-    providers = load("providers.json")["providers"]
-    flags = load("flags.json")["flags"]
-    reqs = load("requirements.json")["requirements"]
-    code = load("code.json")["rows"]
-    summary = load("summary.json")
-    multitrade = [p for p in providers if p["multitrade"].startswith("Yes")]
-    mult_pills = ", ".join(f'{p["name"]} &middot; #{p["license"]}' for p in multitrade)
-
-    kpis = f"""
-  <div class="grid kpis">
-    <div class="kpi"><span class="n">{len(providers)}</span><span class="l">licences re-verified on CSLB</span><span class="s"><span class="pill ok">2026-11-07</span></span></div>
-    <div class="kpi"><span class="n">{len(multitrade)}</span><span class="l">hold B + C-36 on one licence</span><span class="s small">can contract plumbing + drywall</span></div>
-    <div class="kpi"><span class="n">3</span><span class="l">quotes on file (2026-08-30)</span><span class="s"><span class="pill warn">amounts unpublished</span></span></div>
-    <div class="kpi"><span class="n">$290</span><span class="l">official permit fee (Category 1P)</span><span class="s small">SF DBI Table 1A-C, July 2026</span></div>
-    <div class="kpi"><span class="n">{len(flags)}</span><span class="l">items flagged for review</span><span class="s"><span class="pill warn">non-blocking</span></span></div>
-  </div>"""
-
-    cards = [
-        ("executive-summary.html", "Executive summary", "Situation, key numbers, findings, recommendations and open items in one page."),
-        ("requirements.html", "Requirements", f"The full register: {len(reqs)} requirements across seven categories, with origin marked."),
-        ("providers.html", "Providers", f"{len(providers)} San Francisco licence records read from CSLB today, with classifications and multi-trade capability."),
-        ("estimates.html", "Estimates", "The three owner-provided quotes (amounts blank), the official DBI fees, and what is missing."),
-        ("technical-approach.html", "Technical approach", "How the assembly works, the two access paths, and the licence structure for a single contract."),
-        ("code-and-permit.html", "Code &amp; permit", f"{sum(1 for r in code if not r['status'].startswith('UNVERIFIED'))} verified rules from SF.gov, DBI, CSLB and the California codes."),
-        ("sources.html", "Sources", "Every source consulted, with what it verifies and whether it could be retrieved."),
-        ("flagged-for-review.html", "Flagged for review", "What could not be confirmed, what was done about it, and the links."),
-        ("verification.html", "Verification", "Exactly what was checked this session, when, and how the build enforces it."),
-    ]
-    card_html = "".join(
-        f'<a class="card" href="{h}"><h3>{t}</h3><p>{d}</p></a>' for h, t, d in cards
-    )
-
-    recs = "".join(f"<li>{e(r)}</li>" for r in summary["recommendations"][:5])
-
-    snapshot_rows = []
-    for item in summary["key_numbers"]:
-        badge = '<span class="pill ok">verified</span>' if item["verified"] else '<span class="pill warn">unverified</span>'
-        flag = f'<a href="flagged-for-review.html">{e(item["flag"])}</a>' if item["flag"] else '<span class="blank">—</span>'
-        snapshot_rows.append([e(item["metric"]), f'<strong>{e(item["value"])}</strong>', badge, e(item["detail"]), flag])
-
-    body = f"""
-<section class="hero">
-  <h1>Bathtub wastewater overflow <span class="accent">trip lever</span> — repair coordination</h1>
-  <p class="lede">{e(summary["headline"])}</p>
-  <p class="updated">Compiled 2026-11-07 &middot; final integration session &middot; single authoritative copy of the brief</p>
-  {kpis}
-</section>
-
-<h2>Browse the dossier</h2>
-<div class="grid cards">{card_html}</div>
-
-<h2>Status snapshot</h2>
-<p class="small">Each figure is either read from the linked official source during this session or explicitly marked unverified. Quote amounts are deliberately not printed.</p>
-{table(["Item", "Value", "Status", "What it means", "Flag"], snapshot_rows)}
-
-<div class="panel">
-  <h3 style="margin-top:0">Five things to do next</h3>
-  <ol class="tight">{recs}</ol>
-  <p class="small" style="margin-top:10px">Full list on the <a href="executive-summary.html">executive summary</a>.</p>
-</div>
-
-<div class="callout">
-  <strong>One vendor for both trades.</strong> {len(multitrade)} of the {len(providers)} verified licences hold both B General Building and C-36 Plumbing, which covers a single plumbing-plus-drywall contract: {mult_pills}.
-</div>
-
-<div class="callout warn">
-  <strong>Two openings, one decision.</strong> The preferred route is removal from the tub side. Manufacturer instructions show the linkage and drop cylinder are reachable through the overflow opening, but the tee sits in the cavity behind the tub — so if the assembly is fused, the ceiling below is the realistic way in. See the <a href="technical-approach.html">technical approach</a>.
-</div>
-"""
-    return page(
-        "index.html",
-        "Dashboard",
-        body,
-        "Bathtub wastewater overflow trip lever: requirements, licence-verified San Francisco providers, estimates and flagged items.",
-    )
-
-
-def page_summary() -> str:
-    s = load("summary.json")
-    kpi_rows, findings, recs, opens = [], [], [], []
-    for item in s["key_numbers"]:
-        badge = '<span class="pill ok">verified</span>' if item["verified"] else '<span class="pill warn">unverified</span>'
-        flag = f'<a href="flagged-for-review.html">{e(item["flag"])}</a>' if item["flag"] else '<span class="blank">—</span>'
-        kpi_rows.append([e(item["metric"]), f'<strong>{e(item["value"])}</strong>', e(item["detail"]), badge, flag])
-    findings = "".join(f"<li>{e(x)}</li>" for x in s["findings"])
-    recs = "".join(f"<li>{e(x)}</li>" for x in s["recommendations"])
-    opens = "".join(f"<li>{e(x)}</li>" for x in s["open_items"])
-    sit = "".join(f"<li>{e(x)}</li>" for x in s["situation"])
-
-    body = f"""
-<h1>Executive summary</h1>
-<p class="updated">Compiled 2026-11-07 from sources retrieved and read on the same day</p>
-
-<div class="panel">
-  <p class="lede" style="margin:0"><strong>{e(s["headline"])}</strong></p>
-</div>
-
-<h2>The situation</h2>
-<ul class="tight">{sit}</ul>
-
-<h2>Key numbers</h2>
-{table(["Item", "Value", "Detail", "Status", "Flag"], kpi_rows)}
-
-<h2>Findings</h2>
-<ul class="tight">{findings}</ul>
-
-<h2>Recommended actions</h2>
-<ol class="tight">{recs}</ol>
-
-<h2>Open items</h2>
-<ul class="tight">{opens}</ul>
-
-<h2>Verification statement</h2>
-<div class="callout">{e(s["verification_statement"])}</div>
-"""
-    return page("executive-summary.html", "Executive summary", body,
-                "Executive summary of the bathtub trip-lever repair project.")
-
-
-def page_requirements() -> str:
-    reqs = load("requirements.json")
-    rows = []
-    for r in reqs["requirements"]:
-        if r["link"]:
-            marker = chip("off", "official source")
-            source = f'<a href="{e(r["link"])}">source</a>'
-        else:
-            marker = chip("own", "owner-provided")
-            source = '<span class="blank">no official source exists</span>'
-        require_marker(r["id"], bool(r["link"]), not r["link"])
-        flag = f'<a href="flagged-for-review.html">{e(r["flag"])}</a>' if r["flag"] else '<span class="blank">—</span>'
-        rows.append([f'<span class="mono">{e(r["id"])}</span>', e(r["category"]), e(r["requirement"]), marker, source, e(r["status"]), flag])
-
-    body = f"""
-<h1>Requirements</h1>
-<p class="updated">Compiled 2026-11-07 &middot; {len(rows)} requirements &middot; seven categories</p>
-<p class="lede">The register below restates what the job has to achieve. Where a requirement comes from the project brief it is labelled <strong>owner-provided</strong>, because an owner's own requirement has no official source and inventing a citation would breach the verification rule. Where a requirement follows from a government rule, the link goes to that rule.</p>
-{table(["ID", "Category", "Requirement", "Origin", "Source", "Status", "Flag"], rows)}
-<div class="callout">
-  Rows marked <em>owner-provided</em> are not unverified claims about the world — they are the client's own scope statements. Everything factual that this site publishes is on the <a href="code-and-permit.html">code &amp; permit</a>, <a href="providers.html">providers</a> and <a href="technical-approach.html">technical</a> pages, each with its source.
-</div>
-"""
-    return page("requirements.html", "Requirements", body,
-                "Full requirements register for the bathtub trip-lever repair.")
-
-
-def page_providers() -> str:
-    d = load("providers.json")
-    rows, notes = [], []
-    for p in d["providers"]:
-        official = any("cslb.ca.gov" in s["url"] for s in p["sources"])
-        require_marker(p["id"], official, False)
-        status = '<span class="pill ok">current &amp; active</span>' if p["status"].startswith("Current") else f'<span class="pill warn">{e(p["status"])}</span>'
-        if "additional" in p["status"]:
-            status += ' <a class="small" href="flagged-for-review.html">F-12</a>'
-        multi = p["multitrade"]
-        multi_pill = ('<span class="pill ok">yes</span>' if multi.startswith("Yes")
-                      else '<span class="pill warn">partial</span>' if multi.startswith(("Partially", "Restricted"))
-                      else '<span class="pill neutral">no</span>')
-        rows.append([
-            f'<span class="mono">{e(p["id"])}</span>',
-            f'<strong>{e(p["name"])}</strong><br><span class="small">{e(p["legal"])}</span>',
-            f'<span class="mono">{e(p["license"])}</span>',
-            e(", ".join(p["classifications"])),
-            status,
-            e(p["expires"]),
-            e(p["address"]),
-            e(p["phone"]),
-            multi_pill,
-            src_links(p["sources"]),
-        ])
-        cslb = next(s for s in p["sources"] if "cslb.ca.gov" in s["url"])
-        notes.append([f'<span class="mono">{e(p["id"])}</span>', e(p["name"]), e(p["notes"]),
-                      e(p["data_as_of"]), e(p["multitrade"]),
-                      f'<a class="src" href="{e(cslb["url"])}">CSLB #{e(p["license"])}</a>'])
-
-    body = f"""
-<h1>Providers — San Francisco</h1>
-<p class="updated">All {len(rows)} licence records re-retrieved from the official CSLB licence-detail page on 2026-11-07; each row shows the page's own &ldquo;data current as of&rdquo; time</p>
-<p class="lede">Nothing here is scraped from a directory. Each row is copied from the California Contractors State License Board record named in the Sources column, and the multi-trade column is an analysis of the licence classifications against BPC §7057 and §7057.5 — not a statement that the firm will accept the job.</p>
-
-{table(["ID", "Provider", "Licence", "Classifications", "CSLB status", "Expires", "Address (CSLB)", "Phone (CSLB)", "B + C-36 prime", "Sources"], rows)}
-
-<h2>Provider notes and limits</h2>
-<p class="small">Ratings and review counts are deliberately absent: no official source publishes them and Yelp blocked automated retrieval (F-04). Licence status is a point-in-time check (F-05).</p>
-{table(["ID", "Provider", "Notes", "CSLB data as of", "Multi-trade assessment", "Licence record"], notes)}
-
-<div class="callout warn">
-  No retrieved source shows that any firm on this list has carried out this exact repair through a ceiling below an occupied unit (F-09). Ask for references for that specific access path before scheduling.
-</div>
-"""
-    return page("providers.html", "Providers", body,
-                "San Francisco providers with CSLB-verified licences for plumbing and drywall work.")
-
-
-def page_estimates() -> str:
-    d = load("estimates.json")
-    qrows = []
-    for q in d["quotes"]:
-        amount_cell = '<span class="blank">blank — unverified</span>'
-        qrows.append([
-            f'<span class="mono">{e(q["id"])}</span>',
-            f'<strong>{e(q["provider"])}</strong><br><span class="small mono">#{e(q["license"])}</span>',
-            e(q["date"]),
-            e(q["scope_owner_provided"]),
-            amount_cell,
-            f'{chip("own", "owner-provided")}<br><a class="small" href="flagged-for-review.html">{e(q["flag"])}</a>',
-            src_links(q["sources"]),
-        ])
-        require_marker(q["id"], True, True)
-
-    frows = [[f'<span class="mono">{e(f["id"])}</span>', e(f["item"]), f'<strong>{e(f["amount"])}</strong>', src_links([{"label": f["source_label"], "url": f["url"], "status": "retrieved 2026-11-07"}])]
-             for f in d["official_fees"]]
-    brows = [[f'<span class="mono">{e(b["id"])}</span>', e(b["item"]), '<span class="blank">blank — unverified</span>',
-              e(b["note"]), f'<a href="flagged-for-review.html">{e(b["flag"])}</a>'] for b in d["unverified_benchmarks"]]
-    for b, brow in zip(d["unverified_benchmarks"], brows):
-        require_marker(b["id"], False, True)
-
-    analysis = "".join(f"<li>{e(a)}</li>" for a in d["analysis"])
-
-    body = f"""
-<h1>Estimates</h1>
-<p class="updated">Quoted 2026-08-30 &middot; recorded 2026-11-07 &middot; official fees as published by SF DBI (July 2026)</p>
-<div class="callout warn">
-  <strong>Amounts are published blank on purpose.</strong> {e(d["meta"]["policy"])}
-</div>
-
-<h2>The three owner-provided quotes</h2>
-{table(["ID", "Provider", "Date", "Quoted scope (owner-provided wording)", "Amount", "Verification", "Provider source"], qrows)}
-
-<h2>Official city fees (fully sourced)</h2>
-<p class="small">These are the only prices on this site that come from an official source. They are permit fees, not contractor prices.</p>
-{table(["ID", "Item", "Fee", "Source"], frows)}
-
-<h2>Benchmarks that could not be verified</h2>
-{table(["ID", "Item", "Amount", "Why it is blank", "Flag"], brows)}
-
-<h2>What the quotes do and do not tell you</h2>
-<ul class="tight">{analysis}</ul>
-
-<div class="callout">
-  If you send the written quotes or invoices, the amounts can be published with an owner-provided label and a retrieval date — that is the only thing missing from this page.
-</div>
-"""
-    return page("estimates.html", "Estimates", body,
-                "The three owner-provided quotes, published without unverified amounts, plus official DBI permit fees.")
-
-
-def page_technical() -> str:
-    d = load("technical.json")
-    rows = []
-    for f in d["findings"]:
-        verified = not f["kind"].startswith("UNVERIFIED") and "owner" not in f["kind"].lower()
-        badge = '<span class="pill ok">verified</span>' if verified else (
-            '<span class="pill warn">owner-provided</span>' if "owner" in f["kind"].lower() else '<span class="pill danger">unverified</span>')
-        url = f["url"]
-        link = f'<a href="{e(url)}">{e(f["source_label"])}</a>' if url.startswith("http") else f'<a href="{e(url)}">Flagged for review</a>'
-        require_marker(f["id"], True, not verified)
-        rows.append([f'<span class="mono">{e(f["id"])}</span>', e(f["topic"]), e(f["finding"]), badge, e(f["kind"]), link])
-
-    body = f"""
-<h1>Technical approach</h1>
-<p class="updated">Compiled 2026-11-07 &middot; manufacturer documentation, statute and official city pages</p>
-<p class="lede">Two access paths are possible and they carry different licence requirements. The rows below separate what the manufacturer's own instructions show from what remains an assessment.</p>
-
-{table(["ID", "Topic", "Finding", "Status", "Basis", "Source"], rows)}
-
-<h2>The two paths, side by side</h2>
-<div class="tablewrap"><table>
-<thead><tr><th>Path</th><th>What it involves</th><th>Licence / contract shape</th><th>Open risk</th></tr></thead>
-<tbody>
-<tr><td><strong>A. From the tub side</strong> (preferred)</td>
-<td>Overflow plate, linkage and drop cylinder withdrawn through the overflow opening; no wall opening. Manufacturer step 7 covers exactly this removal and readjustment.</td>
-<td>Single C-36 plumbing contract is enough if only the trip-lever parts move.</td>
-<td>Five-plus plumbers have already declined (owner report). If the linkage is fused or the tee is damaged, the opening is not sufficient and path B is needed.</td></tr>
-<tr><td><strong>B. From below</strong> (fallback)</td>
-<td>Open the storage-unit ceiling, reach the tee and overflow elbow, replace the waste-and-overflow assembly, close the ceiling.</td>
-<td>Two unrelated trades: B General Building prime, or a licence holding B + C-36 (four such licences are verified on the <a href="providers.html">providers</a> page).</td>
-<td>Ceiling restoration is not in any quote yet; permit and inspection sequencing; occupied unit above.</td></tr>
-</tbody></table></div>
-
-<div class="callout">
-  <strong>Sequencing that avoids doing the work twice.</strong> Get the written answer to path A first. If the answer is no, the ceiling opening becomes the contract scope — including the access panel, patch, texture and paint — so the vendor is accountable for the whole path, not just the plumbing.
-</div>
-"""
-    return page("technical-approach.html", "Technical approach", body,
-                "Trip-lever mechanism, the two access paths and the licence structure for a single plumbing-plus-drywall contract.")
-
-
-def page_code() -> str:
-    d = load("code.json")
-    verified, unverified = [], []
-    for r in d["rows"]:
-        is_unv = r["status"].startswith("UNVERIFIED")
-        badge = '<span class="pill danger">unverified</span>' if is_unv else '<span class="pill ok">verified</span>'
-        row = [f'<span class="mono">{e(r["id"])}</span>', e(r["topic"]), e(r["statement"]),
-               badge, f'<a href="{e(r["url"])}">{e(r["source_label"])}</a>', e(r["basis"])]
-        require_marker(r["id"], bool(r["url"]), is_unv)
-        (unverified if is_unv else verified).append(row)
-
-    body = f"""
-<h1>Code &amp; permit</h1>
-<p class="updated">Compiled 2026-11-07 &middot; {len(verified)} verified rows from government sources &middot; {len(unverified)} row that could not be verified and is published separately</p>
-<p class="lede">These are the rules that decide who may do the work, what the permit costs and what the tenant must be told. Each row is quoted or closely paraphrased from the official page linked beside it.</p>
-
-<h2>Verified rules</h2>
-{table(["ID", "Topic", "Rule", "Status", "Source", "Basis"], verified)}
-
-<h2>Not verified — published for completeness</h2>
-{table(["ID", "Topic", "Statement", "Status", "Source attempt", "Basis"], unverified)}
-
-<div class="callout warn">
-  <strong>What this means for the job.</strong> A permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall (C-01). The contractor who pulls it must hold a C4, C16, C20, C36, C54, B or A licence (C-03). The Category 1P fee is $290 (C-06). Only an owner of a stand-alone single-family dwelling may do the work themselves (C-09), so a licensed contractor must be engaged for a tenant-occupied flat. Ask the selected contractor to state in writing which permit applies and who pulls it (F-15).
-</div>
-"""
-    return page("code-and-permit.html", "Code and permit", body,
-                "Verified San Francisco permit, fee, licensing and tenant-entry rules with official source links.")
-
-
-def page_sources() -> str:
-    d = load("sources.json")
-    rows = []
-    styles = {"Official — regulator": "ok", "Official — statute": "ok", "Official — city": "ok",
-              "Manufacturer": "ok", "Code publisher": "neutral", "Third-party": "neutral", "Dead link (recorded)": "unv"}
-    for s in d["sources"]:
-        cls = styles.get(s["type"], "neutral")
-        status_cls = "ok" if s["status"].startswith("Verified") else ("unv" if "404" in s["status"] or "Blocked" in s["status"] else "warn")
-        rows.append([f'<span class="mono">{e(s["id"])}</span>', chip(cls, s["type"]),
-                     f'<a href="{e(s["url"])}">{e(s["label"])}</a>', e(s["verifies"]),
-                     chip(status_cls, s["status"]), e(s["retrieved"])])
-    body = f"""
-<h1>Sources</h1>
-<p class="updated">Compiled 2026-11-07 &middot; {len(rows)} entries &middot; {sum(1 for s in d["sources"] if s["status"].startswith("Verified"))} retrieved and read</p>
-<p class="lede">{e(d["meta"]["note"])}</p>
-{table(["ID", "Type", "Source", "What it verifies", "Status", "Retrieved"], rows)}
-<div class="callout">
-  Two sf.gov addresses used by earlier drafts of this brief now return &ldquo;page not found&rdquo; (S-35, S-36). They are recorded here rather than deleted, and every page on this site now uses the live address (S-19).
-</div>
-"""
-    return page("sources.html", "Sources", body,
-                "Every source consulted, what it verifies, and whether it could be retrieved.")
-
-
-def page_flags() -> str:
-    d = load("flags.json")
-    cards = []
-    sev_pill = {"High": "danger", "Medium": "warn", "Low": "neutral"}
-    for f in d["flags"]:
-        links = " ".join(f'<a class="small" href="{e(l["url"])}">{e(l["label"])}</a>' for l in f["links"])
-        cards.append(f"""
-<div class="panel">
-  <h3 style="margin-top:0"><span class="mono">{e(f["id"])}</span> &nbsp;{e(f["title"])} &nbsp;<span class="pill {sev_pill.get(f["severity"], "neutral")}">{e(f["severity"])}</span></h3>
-  <p>{e(f["detail"])}</p>
-  <p class="small"><strong>What to do:</strong> {e(f["action"])}</p>
-  <p class="small"><strong>Links:</strong> {links}</p>
-</div>""")
-    body = f"""
-<h1>Flagged for review</h1>
-<p class="updated">Compiled 2026-11-07 &middot; {len(d["flags"])} items &middot; non-blocking</p>
-<div class="callout">
-  These items do not block publication. Each one records something that could not be confirmed from an official source, something contradictory, or a decision the owner should make — with the links needed to check it.
-</div>
-{"".join(cards)}
-"""
-    return page("flagged-for-review.html", "Flagged for review", body,
-                "Non-blocking flagged items, unverified values and irregularities, with source links.")
-
-
-def page_verification() -> str:
-    rep = build_report(load("summary.json"))
-    providers = load("providers.json")
-    prov_rows = [[f'<span class="mono">{e(p["id"])}</span>', e(p["name"]), f'<span class="mono">{e(p["license"])}</span>',
-                  e(p["status"]), e(p["data_as_of"]), '<span class="pill ok">re-read today</span>',
-                  src_links([s for s in p["sources"] if "cslb.ca.gov" in s["url"]])]
-                 for p in providers["providers"]]
-    c = rep["counts"]
-    v = rep["verified"]
-
-    body = f"""
-<h1>Verification</h1>
-<p class="updated">Run 2026-11-07 &middot; no manual editing of any published value</p>
-<p class="lede">This page records exactly what was checked, when, and what the build enforces. It is generated from the same data files as every other page, so it cannot drift out of step with them.</p>
-
-<h2>What was checked this session</h2>
-<div class="panel"><dl class="kv">
-  <dt>Provider licences</dt><dd>{v["providers_verified_on_cslb"]} of {c["providers"]} re-read from the official CSLB licence-detail page on 2026-11-07; each page's &ldquo;data current as of&rdquo; timestamp is published per row</dd>
-  <dt>Code / permit rows</dt><dd>{v["code_rows_verified"]} verified against SF.gov, SF DBI fee tables, CSLB and leginfo statutes; {v["code_rows_unverified"]} could not be verified and is published separately</dd>
-  <dt>Sources</dt><dd>{v["sources_retrieved"]} of {c["sources"]} retrieved and read; {v["sources_blocked_or_dead"]} blocked, members-only, unretrieved or dead — recorded, never used to substantiate a verified row</dd>
-  <dt>Requirements</dt><dd>{c["requirement_rows"]} rows, each marked owner-provided or linked to the official rule it follows from</dd>
-  <dt>Quotes</dt><dd>{c["quotes"]} owner-provided quotes; every amount left blank</dd>
-  <dt>Official fees</dt><dd>{c["official_fee_rows"]} rows from the DBI July 2026 fee table</dd>
-  <dt>Flagged items</dt><dd>{c["flags"]} published on the Flagged for review page</dd>
-</dl></div>
-
-<h2>Licence records re-read today</h2>
-{table(["ID", "Provider", "Licence", "CSLB status", "CSLB data as of", "Result", "Source"], prov_rows)}
-
-<h2>What the build enforces</h2>
-<div class="panel"><ul class="tight">
-  <li><strong>Source per row.</strong> The build refuses to publish a row that has neither a source link nor an explicit owner-provided / unverified marker.</li>
-  <li><strong>Blank instead of inferred.</strong> Any value that could not be read from the linked official source is empty, and the row is listed on Flagged for review.</li>
-  <li><strong>Internal links.</strong> Every relative link in the generated pages is resolved against the generated file set; the build fails on a broken link.</li>
-  <li><strong>One source of truth.</strong> All pages are generated from <span class="mono">site-data/*.json</span>; no page is hand-edited.</li>
-</ul></div>
-
-<h2>How to re-run</h2>
-<div class="panel"><pre class="mono" style="margin:0;white-space:pre-wrap">python3 scripts/build_canonical_site.py
-python3 scripts/verify_canonical_site.py</pre>
-<p class="small" style="margin-top:8px">The verifier re-checks the generated HTML independently of the builder and writes <span class="mono">site-data/verification.json</span>.</p></div>
-
-<h2>What is not verified</h2>
-<ul class="tight">
-  <li>Quote amounts and the work history they imply (F-02, F-03).</li>
-  <li>Whether any listed firm has done this exact repair through a ceiling below an occupied unit (F-09).</li>
-  <li>San Francisco Plumbing Code §104.2 and CPC §402.10 text (F-07).</li>
-  <li>Review ratings — deliberately not published (F-04).</li>
-  <li>Whether this specific job needs a permit, until a contractor or DBI says so in writing (F-15).</li>
-</ul>
-"""
-    return page("verification.html", "Verification", body,
-                "What was verified in this session, when, and what the build enforces.")
-
-
-# --------------------------------------------------------------------------- build
-def check_internal_links(pages: dict[str, str]) -> list[str]:
-    """Every relative href must resolve to a generated page or an existing file."""
-    broken = []
-    for slug, html_text in pages.items():
-        for href in re.findall(r'href="([^"#:]+)"', html_text):
-            if href.startswith(("http", "mailto:", "//")):
-                continue
-            if href in pages:
-                continue
-            target = (ROOT / href).resolve()
-            if not target.exists():
-                broken.append(f"{slug} -> {href}")
-    return broken
+def validate_data() -> list[str]:
+    errors=[]
+    if len(S)!=len(D['sources']): errors.append('Duplicate source IDs')
+    for group, fields in [('providers',['official_sources']),('requirements',['official_context']),('technical',['sources']),('reviews',['sources']),('flags',['sources']),('official_fee_examples',['sources'])]:
+        seen=set()
+        for row in D[group]:
+            if row['id'] in seen: errors.append(f"Duplicate {group} ID {row['id']}")
+            seen.add(row['id'])
+            for field in fields:
+                if not row.get(field): errors.append(f"{group}/{row['id']} has no {field}")
+                for source_id in row.get(field,[]):
+                    if source_id not in S: errors.append(f"{group}/{row['id']}: unknown source {source_id}")
+    for q in D['quotes']:
+        for key in ('verified_quote_date','verified_quote_scope','verified_price_usd'):
+            if q.get(key) is not None: errors.append(f"{q['id']}: {key} must be blank until substantiated")
+        if q['license_source'] not in S or q['candidate_source'] not in S: errors.append(f"{q['id']}: missing sources")
+    return errors
 
 
 def main() -> int:
-    builders = {
-        "index.html": page_index,
-        "executive-summary.html": page_summary,
-        "requirements.html": page_requirements,
-        "providers.html": page_providers,
-        "estimates.html": page_estimates,
-        "technical-approach.html": page_technical,
-        "code-and-permit.html": page_code,
-        "sources.html": page_sources,
-        "flagged-for-review.html": page_flags,
-        "verification.html": page_verification,
-    }
-    pages: dict[str, str] = {}
-    for slug, fn in builders.items():
-        pages[slug] = fn()
-
-    for slug, text in pages.items():
-        (ROOT / slug).write_text(text, encoding="utf-8")
-
-    broken = check_internal_links(pages)
-    if broken:
-        PROBLEMS.extend(f"broken internal link: {b}" for b in broken)
-
-    report = build_report(load("summary.json"))
-    report["problems"] = PROBLEMS
-    report["result"] = "PASS" if not PROBLEMS else "FAIL"
-    (DATA / "build-report.json").write_text(json.dumps(report, indent=1) + "\n", encoding="utf-8")
-
-    print(f"built {len(pages)} pages")
-    print(json.dumps(report["counts"], indent=1))
-    if PROBLEMS:
-        print("\nPROBLEMS:")
-        for p in PROBLEMS:
-            print(" -", p)
-        return 1
-    print("PASS — no unsourced rows, no broken internal links")
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check',action='store_true',help='check generated pages without changing files')
+    args=parser.parse_args()
+    problems=validate_data()
+    if problems:
+        print('\n'.join(problems),file=sys.stderr); return 1
+    pages={name:builder() for name,builder in BUILDERS.items()}
+    if args.check:
+        outdated=[name for name,text in pages.items() if not (ROOT/name).is_file() or (ROOT/name).read_text(encoding='utf-8') != text]
+        if outdated:
+            print('Out-of-date generated pages: '+', '.join(outdated),file=sys.stderr); return 1
+        print(f'PASS: {len(pages)} generated pages match the audited dataset')
+    else:
+        for name,text in pages.items(): (ROOT/name).write_text(text,encoding='utf-8')
+        print(f'Built {len(pages)} pages from {DATA.relative_to(ROOT)}')
     return 0
 
-
-if __name__ == "__main__":
-    sys.exit(main())
+if __name__=='__main__':
+    raise SystemExit(main())

@@ -23,7 +23,8 @@
       "company_source": "CO-RAPID",
       "official_sources": [
         "L1115649",
-        "CO-RAPID"
+        "CO-RAPID",
+        "CO-RAPID-CONTACT"
       ],
       "why": "Company advertises plumbing and general contracting in San Francisco. A Yelp-indexed account for the same business name describes retrieving a stuck tub plug after opening a wall; the exact trip-lever fault and finish work are not established.",
       "review_source": "Y-RAPID",
@@ -36,7 +37,8 @@
       "priority": "First inquiry",
       "caveat": "Ask for a careful above-access assessment and one written plumbing-plus-ceiling-restoration scope.",
       "insurance_note": "CSLB records a workers’ compensation exemption based on its no-employee certification.",
-      "checked": "2026-11-07"
+      "checked": "2026-11-07",
+      "contact_note": "CSLB lists (415) 866-8401; the company lists 844-229-3569 for calls and the CSLB number for texting photos."
     },
     {
       "id": "P02",
@@ -91,7 +93,7 @@
       ],
       "why": "Its own San Francisco job listing describes replacing tub waste-and-overflow assemblies; company also states it serves San Francisco.",
       "review_source": "Y-HEISE",
-      "review_note": null,
+      "review_note": "A BBB profile with the same phone and company website cites a different legal entity and license number; do not apply its history to this licensee without confirming the relationship.",
       "review_rating": null,
       "review_count": null,
       "all_in_one_confirmed": null,
@@ -100,7 +102,10 @@
       "priority": "First inquiry",
       "caveat": "Ask if it can coordinate the ceiling restoration under one contract; exact stuck trip-lever extraction and timing are unconfirmed.",
       "insurance_note": "",
-      "checked": "2026-11-07"
+      "checked": "2026-11-07",
+      "review_evidence_sources": [
+        "BBB-HEISE"
+      ]
     },
     {
       "id": "P04",
@@ -134,7 +139,10 @@
       "priority": "First inquiry",
       "caveat": "Confirm an appropriately scoped single contract for plumbing, ceiling opening and finish, plus specific tub experience.",
       "insurance_note": "",
-      "checked": "2026-11-07"
+      "checked": "2026-11-07",
+      "review_evidence_sources": [
+        "BBB-ACE"
+      ]
     },
     {
       "id": "P05",
@@ -163,7 +171,11 @@
       "priority": "Prior estimate name",
       "caveat": "Confirm quote identity, exact work, finishing arrangements, and coverage; CSLB’s listed workers’ compensation policy expires 2026-12-18.",
       "insurance_note": "",
-      "checked": "2026-11-07"
+      "checked": "2026-11-07",
+      "review_evidence_sources": [
+        "ANGI-FAST",
+        "BBB-FAST"
+      ]
     },
     {
       "id": "P06",
@@ -192,7 +204,10 @@
       "priority": "Prior estimate name",
       "caveat": "Confirm quote identity and whether the firm will coordinate access and drywall restoration.",
       "insurance_note": "",
-      "checked": "2026-11-07"
+      "checked": "2026-11-07",
+      "review_evidence_sources": [
+        "YAHOO-EXPERT"
+      ]
     },
     {
       "id": "P07",
@@ -389,7 +404,10 @@
       "phone_source": "L749536",
       "company_source": null,
       "official_sources": [
-        "L749536"
+        "L749536",
+        "L757796",
+        "PERSON-BAY",
+        "PERSON-SAVE"
       ],
       "why": "Same CSLB-listed sole owner as Bay Area Plumbing; whether this licensee will contract for this job remains unknown.",
       "review_source": null,
@@ -613,7 +631,7 @@
       "origin": "Requester’s brief",
       "status": "Open",
       "official_context": [
-        "CO-HEISE"
+        "SF-DBI"
       ]
     },
     {
@@ -970,7 +988,7 @@
     {
       "id": "T05",
       "topic": "B-2 is not interchangeable with B or C-36",
-      "finding": "CSLB’s classification description states that B-2 contracts require at least three unrelated trades and imposes limits on system work. Do not assume this specific job qualifies.",
+      "finding": "CSLB’s classification description states that B-2 contracts are for existing residential wood-frame structures, require at least three unrelated trades and impose limits on plumbing-system work. Do not assume this specific job qualifies.",
       "sources": [
         "CSLB-B2"
       ]
