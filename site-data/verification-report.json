@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-11-07 20:25 UTC",
+  "pages_checked": 10,
+  "checks_run": 957,
+  "problems": [],
+  "stats": {
+    "licences": 22,
+    "active": 21,
+    "suspended": 1,
+    "all_in_one": 6,
+    "in_sf": 15,
+    "flagged": 19,
+    "analysis_rows": 13,
+    "sources": 56,
+    "rows_rendered": {
+      "providers.html (quick view)": 22,
+      "providers.html (full detail)": 22,
+      "analysis.html": 13,
+      "technical-approach.html": 13,
+      "sources.html": 56
+    }
+  }
+}

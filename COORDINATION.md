@@ -539,3 +539,49 @@ It does **not** edit `trip-lever/**`, `bathroom-overflow/**`, `bathtub-overflow/
 and `82aa8544` is resolved by this session only in the publishing sense: the root dashboard is the single landing
 page and links every parallel dossier, so no route is retired and nothing is lost. Retiring the duplicate trees
 remains the owner's decision.
+
+### `k8-02` … `k8-05` — work log (2026-11-07)
+
+**`k8-02` Independent CSLB re-verification (done).** Every licence cited by any session on this repository was re-retrieved
+directly from `https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=<number>` on 2026-11-07 and each
+page's own "Data current as of" line (12:16–12:21 PM) is stored with it. **22 licences checked: 21 current and active, 1 suspended,
+15 with a San Francisco address of record, 7 addressed outside SF.** Audit trail: `project/cslb_verification_2026-11-07.json`.
+Also re-read today, in full: `sf.gov/apply-plumbing-and-mechanical-permit` (DBI permit rule and the licence classes that may apply),
+`sf.gov/plumbing-inspection-division`, BPC §7048, BPC §7057, Civil Code §1954, and the Heise's published tub waste-and-overflow job page.
+
+**`k8-03` Consolidated dataset (done).** `project/providers.json` is now the union (22 rows, ids P-01…P-22) with `status_code`,
+`in_sf` and `all_in_one` flags; `project/analysis.json` (13 findings with sources) and `project/dossiers.json` are new;
+`project/technical.json` gained T-09…T-13; `project/sources.json` gained S-41…S-56 and every CSLB row is re-stamped 2026-11-07;
+`project/flagged.json` gained F-13…F-19; `project/summary.json` was rewritten around today's numbers.
+
+**`k8-04` Site rebuild (done).** The root dashboard is regenerated: 10 pages (Dashboard, Executive Summary, Requirements,
+Estimates, Providers, **Analysis** (new), Technical Approach, **Dossiers** (new), Sources, Flagged for Review). Cards and headings
+are computed from the data, not hard-coded. The Providers page has a quick-view table plus full detail, with suspended licences
+badged and sorted last. The footer links every parallel dossier.
+
+**`k8-05` Automated verification (done).** `python scripts/build_project_site.py` → enforcement passed, 131 rows link-checked,
+0 broken internal links. `python scripts/verify_project_site.py` → **PASS, 957 checks, 0 problems** across 10 pages
+(`site-data/verification-report.json`): internal files and `#anchors`, https-only outbound links, source-per-row for every table,
+every provider carrying its official CSLB link with a matching licence number, rendered-row counts vs JSON, build-report
+consistency, placeholder sweep, and a restricted-content sweep (no internal-only material anywhere in the published files).
+
+### Irregularities this session adds
+
+1. **Kenneth Asire Plumbing #1027286 is still suspended** (contractor's bond suspension; bond cancelled 2026-08-16). Excluded from
+   the shortlist and published on the Flagged page (F-13).
+2. **D G Construction Co #297604 publishes complaint-disclosure information** on CSLB while showing current-and-active with
+   B + C-36. It is listed with the disclosure link, not summarised (F-14).
+3. **Seven of the 22 licence addresses of record are outside San Francisco** (South San Francisco, Burlingame ×2, Daly City ×3,
+   San Bruno). Earlier briefs listed these firms without that distinction; CSLB records an address, not a service area (F-15).
+4. **Two licences share one address and phone** — Bay Area Plumbing #757796 (C-36, the $550 quote) and Save-On-Interior #749536
+   (B + C-36) — so the quoting operator may already control a licence covering the drywall side. Unconfirmed with the contractor (F-16).
+5. **A sf.gov URL used by the parallel dossiers now 404s** — `/information/apply-plumbing-and-mechanical-permit`. The live official
+   page is `/apply-plumbing-and-mechanical-permit` and is what this site links. The parallel dossiers are outside this session's file
+   scope and were not edited (F-17).
+6. **The earlier "rate limit" diagnosis of the Pages failures does not hold up.** Builds reported `errored` from 2026-11-06 13:37Z
+   onward, yet pages merged after the last successful build (`bathtub/`, `data/bathtub/`, `docs/bathtub-*`) are served today, and
+   `COORDINATION.md` served the pre-14:05 revision — i.e. content publishes but the reported status lags. Treated as a publishing-service
+   anomaly, not a content defect; the deploy for this merge is verified separately below.
+7. **Root `EXECUTIVE_SUMMARY.md` is not a bathtub document** — it is the legacy DOE GEMS executive summary. It was left untouched
+   (it belongs to the preserved prior project); the bathtub executive summary this session publishes is `project/EXECUTIVE_SUMMARY.md`
+   (generated) and `executive-summary.html`.

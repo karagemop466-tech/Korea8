@@ -1,414 +1,799 @@
 {
-  "meta": {
-    "title": "Service Providers — San Francisco",
-    "verified_date": "2026-11-06",
-    "verification_note": "License status for every provider below was verified directly against the official CSLB (Contractors State License Board) license-detail page on 2026-11-06 (data-as-of timestamps shown per row). Review counts/ratings are recorded exactly as displayed on the linked page on 2026-11-06; Yelp blocks automated fetches (HTTP 403), so Yelp figures come from the listing as surfaced in the search index and are flagged for manual re-verification (F-04). No field was inferred.",
-    "cslb_note": "CSLB states license status can change at any time; re-check the linked CSLB page before signing any contract."
-  },
-  "providers": [
+ "meta": {
+  "title": "Service Providers — consolidated, re-verified 2026-11-07",
+  "verified_date": "2026-11-07",
+  "scope": "Union of every licence cited by any parallel session on this repository (11 from the original root dashboard + 11 surfaced by the bathtub/, bathtub-overflow/ and trip-lever/ dossiers).",
+  "verification_note": "Every licence below was re-retrieved from the official CSLB licence-detail page on 2026-11-07 and the page's own 'Data current as of' timestamp is recorded in project/cslb_verification_2026-11-07.json. Nothing on this page is inferred: fields the CSLB page does not state are left blank, and ratings are shown only as dated third-party snapshots.",
+  "cslb_note": "CSLB states licence status can change at any time; re-check the linked CSLB page on the day you sign."
+ },
+ "providers": [
+  {
+   "id": "P-01",
+   "name": "Expert Plumbing Solutions",
+   "cslb_entity": "EXPERT PLUMBING SOLUTIONS",
+   "license_number": "977638",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2012-10-09",
+   "expire_date": "2028-10-31",
+   "address_cslb": "1465 44th Avenue, San Francisco, CA 94122",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 531-5340",
+   "website": "https://www.eplumbingsolutions.com/",
+   "reviews": [
     {
-      "id": "P-01",
-      "name": "Expert Plumbing Solutions",
-      "cslb_entity": "EXPERT PLUMBING SOLUTIONS",
-      "license_number": "977638",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2012-10-09",
-      "expire_date": "2028-10-31",
-      "address_cslb": "1465 44th Avenue, San Francisco, CA 94122",
-      "phone": "(415) 531-5340",
-      "website": "https://www.eplumbingsolutions.com/",
-      "reviews": [
-        {
-          "platform": "Yelp",
-          "rating": "4.8",
-          "count": "81",
-          "as_recorded": "As shown on Yelp listing title 'Updated October 2026 — 81 Reviews'; direct fetch blocked (403), re-verify manually",
-          "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco"
-        }
-      ],
-      "relevance": "One of the three companies that provided an estimate (E-01: $614, waste-and-overflow replacement). Official site: general plumbing and drain unclogging in SF since ~2012, family-owned. A public Yelp review excerpt describes removing a stuck bathroom tub drain stopper.",
-      "fit_notes": "Matches quoted name + SF address + C-36. Single-classification C-36: drywall work would need a separate coordinated contractor (R-07).",
-      "verification": "License verified on official CSLB page (status, classifications, bond $25,000, workers' comp policy active) on 2026-11-06; address and phone on CSLB record match the company website.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #977638 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
-        },
-        {
-          "label": "Company official site",
-          "url": "https://www.eplumbingsolutions.com/"
-        },
-        {
-          "label": "Yelp listing",
-          "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco"
-        }
-      ]
-    },
-    {
-      "id": "P-02",
-      "name": "Bay Area Plumbing",
-      "cslb_entity": "BAY AREA PLUMBING",
-      "license_number": "757796",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing"
-      ],
-      "entity_type": "Sole Ownership",
-      "issue_date": "1999-01-07",
-      "expire_date": "2027-01-31",
-      "address_cslb": "335 14th Avenue, San Francisco, CA 94118",
-      "phone": "(415) 668-8000",
-      "website": "https://www.bayareaplumbingsf.com/",
-      "reviews": [
-        {
-          "platform": "Yelp",
-          "rating": "",
-          "count": "175",
-          "as_recorded": "Review count from Yelp listing title 'Updated October 2026 — 175 Reviews'; star rating not captured; direct fetch blocked (403), re-verify manually",
-          "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
-        }
-      ],
-      "relevance": "One of the three companies that provided an estimate (E-02: $550, replace lever for bathtub plug and spout with diverter, labor and materials included). Official site documents bathtub and faucet installation and drain/pipe replacement jobs in San Francisco; serving SF since 1995; states 24/7 service for landlords, property managers and HOAs.",
-      "fit_notes": "Matches quoted name + SF address + C-36. CSLB record: sole ownership, workers' compensation EXEMPT — certified no employees at this time (effective 2024-12-11). Relevant for a two-trade, tenant-occupied job: confirm insurance and crew situation before contracting (R-07, R-10).",
-      "verification": "License verified on official CSLB page (status, classification, bond $25,000, WC exemption) on 2026-11-06; address and phone on CSLB record match the company website.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #757796 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
-        },
-        {
-          "label": "Company official site",
-          "url": "https://www.bayareaplumbingsf.com/"
-        },
-        {
-          "label": "Yelp listing",
-          "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
-        }
-      ]
-    },
-    {
-      "id": "P-03",
-      "name": "Fast Response Plumbing & Rooter",
-      "cslb_entity": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
-      "license_number": "1024971",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing"
-      ],
-      "entity_type": "Sole Ownership",
-      "issue_date": "2017-03-20",
-      "expire_date": "2027-03-31",
-      "address_cslb": "236 W Portal Ave #459, San Francisco, CA 94127",
-      "phone": "(415) 596-6115",
-      "website": "https://www.fastresponseplumbingsf.com/",
-      "reviews": [
-        {
-          "platform": "Yelp & Google (combined, per company site)",
-          "rating": "4.9",
-          "count": "1,500+",
-          "as_recorded": "As displayed on company official site; independent directory shows 532+ reviews at 4.9 (counts differ; treat exact counts as unconfirmed)",
-          "url": "https://serviceagent.ai/directory/california/san-francisco/plumbing/fast-response-plumbing-rooter/"
-        }
-      ],
-      "relevance": "One of the three companies that provided an estimate (E-03: $135, repair or adjust bathtub wastewater plunger handle). Official site: full-service residential plumbing in SF, 7 days/week, free estimates, CSLB #1024971 and C-36 printed on site (matches CSLB record).",
-      "fit_notes": "Matches quoted name + SF service + C-36. Minor discrepancy flagged: CSLB address of record (236 W Portal Ave #459) differs from the address shown on the website (4444 Geary Blvd Ste 203) — same license/phone; see F-08. Lowest-priced quote but scope is adjust/repair, not removal+replacement (R-01).",
-      "verification": "License verified on official CSLB page (status, classification, bond $25,000, workers' comp policy effective through 2026-12-18) on 2026-11-06. License number and phone match company website.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1024971 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
-        },
-        {
-          "label": "Company official site",
-          "url": "https://www.fastresponseplumbingsf.com/"
-        },
-        {
-          "label": "Third-party directory listing",
-          "url": "https://serviceagent.ai/directory/california/san-francisco/plumbing/fast-response-plumbing-rooter/"
-        }
-      ]
-    },
-    {
-      "id": "P-04",
-      "name": "Heise's Plumbing",
-      "cslb_entity": "TARO GROUP INC dba HEISES PLUMBING",
-      "license_number": "1089561",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing",
-        "C-10 Electrical",
-        "A General Engineering",
-        "C-20 HVAC"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2022-04-06",
-      "expire_date": "2028-04-30",
-      "address_cslb": "1610 Evans Ave, San Francisco, CA 94124",
-      "phone": "(415) 333-0704",
-      "website": "https://www.heisesplumbing.com/",
-      "reviews": [
-        {
-          "platform": "Company site (aggregated customer reviews)",
-          "rating": "4.9",
-          "count": "1,700+",
-          "as_recorded": "As displayed on company official site ('4.9 stars from 1,700+ customer reviews')",
-          "url": "https://www.heisesplumbing.com/about-us/"
-        }
-      ],
-      "relevance": "Strongest documented evidence of the exact job type: official 'Recent Jobs' page documents a tub waste-and-overflow assembly replacement in the Mission, San Francisco — removed existing P-trap and overflow, installed new assembly with brass P-trap, trap adapter and CK-115. Serving SF since 1954; multi-division (plumbing, electrical, appliance, property maintenance).",
-      "fit_notes": "Multi-classification (A + C-36 + C-10 + C-20) can legally take a multi-trade contract; drywall ceiling work would still need a licensed drywall sub or a coordinated GC. Property-maintenance division is relevant for tenant-occupied coordination (R-10).",
-      "verification": "License verified on official CSLB page (status, all four classifications, bond $25,000, active workers' comp) on 2026-11-06. The documented W&O job page was fetched directly from the company site on 2026-11-06.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1089561 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
-        },
-        {
-          "label": "Documented tub waste-and-overflow replacement job, Mission SF (company site)",
-          "url": "https://www.heisesplumbing.com/recent-jobs/projects/a-tub-waste-and-overflow-assembly-san-francisco-158154/"
-        },
-        {
-          "label": "Company about page (license + reviews as displayed)",
-          "url": "https://www.heisesplumbing.com/about-us/"
-        }
-      ]
-    },
-    {
-      "id": "P-05",
-      "name": "Ace Plumbing & Rooter",
-      "cslb_entity": "ACE PLUMBING & ROOTER",
-      "license_number": "829071",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing",
-        "B General Building",
-        "A General Engineering",
-        "C-4 Boiler/HW Heating",
-        "C-10 Electrical",
-        "C-16 Fire Protection"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2003-12-18",
-      "expire_date": "2027-06-30",
-      "address_cslb": "1090 Bryant Street, San Francisco, CA 94103",
-      "phone": "(415) 824-6444",
-      "website": "https://www.aceplumbingandrooter.com/",
-      "reviews": [
-        {
-          "platform": "Diamond Certified (independent ratings org)",
-          "rating": "4.6 avg score",
-          "count": "220 verified phone surveys",
-          "as_recorded": "As displayed on Diamond Certified company report (Diamond Certified since 2007)",
-          "url": "https://www.diamondcertified.org/report/ace-plumbing-and-rooter/"
-        },
-        {
-          "platform": "Google (via third-party directory)",
-          "rating": "4.9",
-          "count": "~979",
-          "as_recorded": "Directory-recorded; not independently re-verified",
-          "url": "https://www.uptocode.build/fire-safety/providers/ace-plumbing-and-rooter-san-francisco"
-        }
-      ],
-      "relevance": "Holds B General Building + C-36 Plumbing on one license — the CSLB-published route to a single contract covering both plumbing and multi-trade coordination (drywall via licensed sub). Official site: 25+ years in SF, HOA and property-manager plumbing programs (tenant-occupied relevance), emergency service.",
-      "fit_notes": "Best positioned among plumbers for the all-in-one requirement (R-07) via its B classification; confirm it will subcontract/coordinate a C-9 drywall contractor for the ceiling opening and patch.",
-      "verification": "License verified on official CSLB page (status, six classifications, bond $25,000, active workers' comp) on 2026-11-06. Company site prints the same license number and links directly to the CSLB detail page.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #829071 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
-        },
-        {
-          "label": "Company official site (certifications)",
-          "url": "https://www.aceplumbingandrooter.com/"
-        },
-        {
-          "label": "Diamond Certified report",
-          "url": "https://www.diamondcertified.org/report/ace-plumbing-and-rooter/"
-        }
-      ]
-    },
-    {
-      "id": "P-06",
-      "name": "We Do Construction",
-      "cslb_entity": "WE DO CONSTRUCTION INC",
-      "license_number": "1096552",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "B General Building",
-        "C-36 Plumbing"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2022-09-14",
-      "expire_date": "2028-09-30",
-      "address_cslb": "1528 Union Street, San Francisco, CA 94123",
-      "phone": "(415) 416-5494",
-      "website": "https://www.wedoconstructions.com/",
-      "reviews": [],
-      "relevance": "General contractor that holds B + C-36 on one license and states it self-performs plumbing while GC-coordinating all other trades on one contract — a structural match for the all-in-one plumbing + drywall requirement (R-07).",
-      "fit_notes": "Youngest license in this set (issued 2022). No review data captured — left blank per verification rules; ask for references for occupied-unit work (R-10).",
-      "verification": "License verified on official CSLB page (status, B + C-36, bond $25,000, active workers' comp through 2027-11-14) on 2026-11-06. License number and B/C-36 claim also printed on company site.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1096552 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552"
-        },
-        {
-          "label": "Company official site (GC + C-36 plumbing claim)",
-          "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/"
-        }
-      ]
-    },
-    {
-      "id": "P-07",
-      "name": "SF Building Group",
-      "cslb_entity": "SF BUILDING GROUP",
-      "license_number": "1106131",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "B General Building"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2023-06-18",
-      "expire_date": "2027-06-30",
-      "address_cslb": "2128 Greendale Dr, South San Francisco, CA 94080",
-      "phone": "(415) 297-2246",
-      "website": "https://sfbuildinggroup.com/",
-      "reviews": [],
-      "relevance": "Licensed B general contractor whose official site explicitly targets the operating constraints in the brief: 'Weekend & off-hours occupied-space work', 'MEP coordination across trades', 'Landlord, tenant & owner communication', and water-damage repair scopes.",
-      "fit_notes": "B-only license: plumbing and drywall are performed through licensed subcontractors under one GC contract (the standard CSLB-described multi-trade structure). CSLB record shows workers' comp exemption (certified no employees) — confirm sub insurance certificates. No review data captured — left blank per verification rules.",
-      "verification": "License verified on official CSLB page (status, B classification, bond $25,000, WC exemption effective 2025-06-27) on 2026-11-06. License number printed on company site.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1106131 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
-        },
-        {
-          "label": "Company official site",
-          "url": "https://sfbuildinggroup.com/"
-        }
-      ]
-    },
-    {
-      "id": "P-08",
-      "name": "Rapid Flow Plumbing & Rooter",
-      "cslb_entity": "RAPID FLOW PLUMBING & ROOTER INC",
-      "license_number": "1115649",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "B General Building",
-        "C-36 Plumbing"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2024-01-29",
-      "expire_date": "2028-01-31",
-      "address_cslb": "230 Edinburgh St, San Francisco, CA 94112",
-      "phone": "(415) 866-8401",
-      "website": "https://www.rapidflowbayarea.com/",
-      "reviews": [],
-      "relevance": "B + C-36 on one license with explicit GC positioning ('licensed general building contractors who can take your project from a simple repair to a complete renovation — one call, one crew') plus 24/7 service. A parallel session's brief (bathroom-overflow/) records a Yelp customer report of a stuck tub plug retrieved by opening the wall behind the tub — anecdotal, adjacent (not this exact fault), and not independently re-verified here.",
-      "fit_notes": "Candidate for the all-in-one structure (R-07): B-licensed prime with self-performed plumbing; confirm it will coordinate a licensed drywall sub for the ceiling opening and patch. CSLB record: workers' comp EXEMPT (certified no employees, effective 2026-02-03) — confirm insurance and crew situation. No review counts captured — left blank (F-09).",
-      "verification": "License verified independently by this session on the official CSLB page (status current/active, B + C-36, corporation, bond $25,000, WC exemption) on 2026-11-06; license number and classifications also printed on the company's own site.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1115649 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
-        },
-        {
-          "label": "Company official site",
-          "url": "https://www.rapidflowbayarea.com/"
-        },
-        {
-          "label": "Parallel-session brief (anecdotal Yelp pointer, not re-verified)",
-          "url": "bathroom-overflow/providers.html"
-        }
-      ]
-    },
-    {
-      "id": "P-09",
-      "name": "24/7 SF Handyman & Remodeling Service (Harp Services)",
-      "cslb_entity": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
-      "license_number": "1105133",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "B-2 Residential Remodeling"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2023-05-22",
-      "expire_date": "2027-05-31",
-      "address_cslb": "1546 Guerrero Street, San Francisco, CA 94110",
-      "phone": "(415) 304-1559",
-      "website": "",
-      "reviews": [],
-      "relevance": "Holds the B-2 Residential Remodeling classification — the CSLB classification created for residential remodel work involving multiple trades on existing homes; a structural alternative route to the all-in-one requirement (R-07) alongside B-licensed general contractors. Also surfaced by a parallel session's brief (trip-lever/).",
-      "fit_notes": "B-2 (not C-36): plumbing scope would be subcontracted to a licensed plumber under the remodeler's contract, or paired separately. No official site captured this session; no review counts captured — left blank (F-09). Workers' comp policy active (expires 2027-04-11).",
-      "verification": "License verified independently by this session on the official CSLB page (status current/active, B-2, corporation, bond $25,000, active WC) on 2026-11-06.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1105133 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133"
-        },
-        {
-          "label": "Parallel-session brief (provider pointer)",
-          "url": "trip-lever/contractors.html"
-        }
-      ]
-    },
-    {
-      "id": "P-10",
-      "name": "Discount Plumbing Rooter Services",
-      "cslb_entity": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
-      "license_number": "1140843",
-      "license_status": "Current and active (CSLB, data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing",
-        "A General Engineering"
-      ],
-      "entity_type": "Limited Liability Company",
-      "issue_date": "2025-07-22",
-      "expire_date": "2027-07-31",
-      "address_cslb": "1325 Howard Ave Bldg 710, Burlingame, CA 94010",
-      "phone": "(650) 991-2100",
-      "website": "",
-      "reviews": [],
-      "relevance": "C-36 + A licensed plumbing company serving the SF Bay Area (CSLB address of record is Burlingame — confirm SF service and any trip charge). Strong paper coverage on file with CSLB: active workers' comp, $2,000,000 liability insurance certificate, and the $100,000 LLC employee/worker bond required of LLCs.",
-      "fit_notes": "C-36 only for plumbing scope: drywall would need separate coordination (R-07). No official site captured this session; no review counts captured — left blank (F-09).",
-      "verification": "License verified independently by this session on the official CSLB page (status current/active, C-36 + A, LLC, bonds, WC, liability insurance) on 2026-11-06.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1140843 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843"
-        }
-      ]
-    },
-    {
-      "id": "P-11",
-      "name": "Advanced Plumbing and Drain",
-      "cslb_entity": "ADVANCED PLUMBING AND DRAIN INC",
-      "license_number": "1009195",
-      "license_status": "Current and active — with CSLB 'Additional Status' warning: may be suspended at a future date for failure to resolve an outstanding final liability (FTB / DIR / EDD / CSLB) (data as of 2026-11-06)",
-      "classifications": [
-        "C-36 Plumbing"
-      ],
-      "entity_type": "Corporation",
-      "issue_date": "2015-11-24",
-      "expire_date": "2027-11-30",
-      "address_cslb": "3450 Sacramento St #204, San Francisco, CA 94118",
-      "phone": "(415) 744-4944",
-      "website": "",
-      "reviews": [],
-      "relevance": "Long-standing SF plumbing company (licensed since 2015) that a parallel session also surveyed; included for completeness of the licensed-provider list.",
-      "fit_notes": "CAUTION — see flag F-12: CSLB shows an Additional Status that the license may be suspended at a future date for an outstanding final liability. Re-check the CSLB page immediately before any engagement. C-36 only: drywall needs separate coordination (R-07). No review counts captured — left blank (F-09).",
-      "verification": "License verified independently by this session on the official CSLB page on 2026-11-06, including the Additional Status warning (quoted on the Flagged for Review page). Phone recorded from the CSLB record.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1009195 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
-        }
-      ]
+     "platform": "Yelp",
+     "rating": "4.8",
+     "count": "81",
+     "as_recorded": "As shown on Yelp listing title 'Updated October 2026 — 81 Reviews'; direct fetch blocked (403), re-verify manually",
+     "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco"
     }
-  ]
+   ],
+   "all_in_one": false,
+   "relevance": "One of the three companies that provided an estimate (E-01: $614, waste-and-overflow replacement). Official site: general plumbing and drain unclogging in SF since ~2012, family-owned. A public Yelp review excerpt describes removing a stuck bathroom tub drain stopper.",
+   "fit_notes": "Matches quoted name + SF address + C-36. Single-classification C-36: drywall work would need a separate coordinated contractor (R-07).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:17:23 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #977638 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.eplumbingsolutions.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-02",
+   "name": "Bay Area Plumbing",
+   "cslb_entity": "BAY AREA PLUMBING",
+   "license_number": "757796",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Sole Ownership",
+   "issue_date": "1999-01-07",
+   "expire_date": "2027-01-31",
+   "address_cslb": "335 14th Avenue, San Francisco, CA 94118",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 668-8000",
+   "website": "https://www.bayareaplumbingsf.com/",
+   "reviews": [
+    {
+     "platform": "Yelp",
+     "rating": "",
+     "count": "175",
+     "as_recorded": "Review count from Yelp listing title 'Updated October 2026 — 175 Reviews'; star rating not captured; direct fetch blocked (403), re-verify manually",
+     "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
+    }
+   ],
+   "all_in_one": false,
+   "relevance": "One of the three companies that provided an estimate (E-02: $550, replace lever for bathtub plug and spout with diverter, labor and materials included). Official site documents bathtub and faucet installation and drain/pipe replacement jobs in San Francisco; serving SF since 1995; states 24/7 service for landlords, property managers and HOAs.",
+   "fit_notes": "Matches quoted name + SF address + C-36. CSLB record: sole ownership, workers' compensation EXEMPT — certified no employees at this time (effective 2024-12-11). Relevant for a two-trade, tenant-occupied job: confirm insurance and crew situation before contracting (R-07, R-10).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:16:50 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Same business address and phone as licence 749536 (SAVE - ON - INTERIOR).",
+   "source_links": [
+    {
+     "label": "CSLB license detail #757796 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.bayareaplumbingsf.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-03",
+   "name": "Fast Response Plumbing & Rooter",
+   "cslb_entity": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+   "license_number": "1024971",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Sole Ownership",
+   "issue_date": "2017-03-20",
+   "expire_date": "2027-03-31",
+   "address_cslb": "236 W Potral Ave #459, San Francisco, CA 94127",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 596-6115",
+   "website": "https://www.fastresponseplumbingsf.com/",
+   "reviews": [
+    {
+     "platform": "Yelp & Google (combined, per company site)",
+     "rating": "4.9",
+     "count": "1,500+",
+     "as_recorded": "As displayed on company official site; independent directory shows 532+ reviews at 4.9 (counts differ; treat exact counts as unconfirmed)",
+     "url": "https://serviceagent.ai/directory/california/san-francisco/plumbing/fast-response-plumbing-rooter/"
+    }
+   ],
+   "all_in_one": false,
+   "relevance": "One of the three companies that provided an estimate (E-03: $135, repair or adjust bathtub wastewater plunger handle). Official site: full-service residential plumbing in SF, 7 days/week, free estimates, CSLB #1024971 and C-36 printed on site (matches CSLB record).",
+   "fit_notes": "Matches quoted name + SF service + C-36. Minor discrepancy flagged: CSLB address of record (236 W Portal Ave #459) differs from the address shown on the website (4444 Geary Blvd Ste 203) — same license/phone; see F-08. Lowest-priced quote but scope is adjust/repair, not removal+replacement (R-01).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:12 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. CSLB prints the street as 'POTRAL' (company site and mapping spell it 'Portal').",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1024971 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.fastresponseplumbingsf.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-04",
+   "name": "Heise's Plumbing",
+   "cslb_entity": "TARO GROUP INC dba HEISES PLUMBING",
+   "license_number": "1089561",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing",
+    "C-10 Electrical",
+    "A General Engineering",
+    "C-20 HVAC"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2022-04-06",
+   "expire_date": "2028-04-30",
+   "address_cslb": "1610 Evans Ave, San Francisco, CA 94124",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 333-0704",
+   "website": "https://www.heisesplumbing.com/",
+   "reviews": [
+    {
+     "platform": "Company site (aggregated customer reviews)",
+     "rating": "4.9",
+     "count": "1,700+",
+     "as_recorded": "As displayed on company official site ('4.9 stars from 1,700+ customer reviews')",
+     "url": "https://www.heisesplumbing.com/about-us/"
+    }
+   ],
+   "all_in_one": false,
+   "relevance": "Publishes a documented job of exactly this type: 'Tub Assembly Replacement in Mission, San Francisco', where the crew 'removed the existing P-trap and overflow, and installed a new assembly with a brass P-trap, trap adapter, and CK-115'. Read from the company's own job page on 2026-11-07 (the only provider in the verified set with such a published job in San Francisco).",
+   "fit_notes": "C-36 Plumbing plus C-10 Electrical, A General Engineering and C-20 HVAC on one licence — but no B (general building) or C-9 classification, so the drywall open-and-patch would need a second licensed contractor or a B-licensed prime.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:17:58 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1089561 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.heisesplumbing.com/"
+    },
+    {
+     "label": "Documented tub waste-and-overflow replacement, Mission, San Francisco (company site)",
+     "url": "https://www.heisesplumbing.com/recent-jobs/projects/a-tub-waste-and-overflow-assembly-san-francisco-158154/"
+    }
+   ]
+  },
+  {
+   "id": "P-05",
+   "name": "Ace Plumbing & Rooter",
+   "cslb_entity": "ACE PLUMBING & ROOTER",
+   "license_number": "829071",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing",
+    "A General Engineering",
+    "C-4 Boiler/HW Heating",
+    "C-16 Fire Protection",
+    "B General Building",
+    "C-10 Electrical"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2003-12-18",
+   "expire_date": "2027-06-30",
+   "address_cslb": "1090 Bryant Street, San Francisco, CA 94103-4417",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 824-6444",
+   "website": "https://www.aceplumbingandrooter.com/",
+   "reviews": [
+    {
+     "platform": "Diamond Certified (independent ratings org)",
+     "rating": "4.6 avg score",
+     "count": "220 verified phone surveys",
+     "as_recorded": "As displayed on Diamond Certified company report (Diamond Certified since 2007)",
+     "url": "https://www.diamondcertified.org/report/ace-plumbing-and-rooter/"
+    },
+    {
+     "platform": "Google (via third-party directory)",
+     "rating": "4.9",
+     "count": "~979",
+     "as_recorded": "Directory-recorded; not independently re-verified",
+     "url": "https://www.uptocode.build/fire-safety/providers/ace-plumbing-and-rooter-san-francisco"
+    }
+   ],
+   "all_in_one": true,
+   "relevance": "Holds B General Building + C-36 Plumbing on one license — the CSLB-published route to a single contract covering both plumbing and multi-trade coordination (drywall via licensed sub). Official site: 25+ years in SF, HOA and property-manager plumbing programs (tenant-occupied relevance), emergency service.",
+   "fit_notes": "Best positioned among plumbers for the all-in-one requirement (R-07) via its B classification; confirm it will subcontract/coordinate a C-9 drywall contractor for the ceiling opening and patch.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:55 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Misc: 06/07/2007 - LICENSE REISSUED TO ANOTHER ENTITY.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #829071 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.aceplumbingandrooter.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-06",
+   "name": "We Do Construction",
+   "cslb_entity": "WE DO CONSTRUCTION INC",
+   "license_number": "1096552",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "B General Building",
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2022-09-14",
+   "expire_date": "2028-09-30",
+   "address_cslb": "1528 Union Street, San Francisco, CA 94123",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 416-5494",
+   "website": "https://www.wedoconstructions.com/",
+   "reviews": [],
+   "all_in_one": true,
+   "relevance": "General contractor that holds B + C-36 on one license and states it self-performs plumbing while GC-coordinating all other trades on one contract — a structural match for the all-in-one plumbing + drywall requirement (R-07).",
+   "fit_notes": "Youngest license in this set (issued 2022). No review data captured — left blank per verification rules; ask for references for occupied-unit work (R-10).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:55 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1096552 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.wedoconstructions.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-07",
+   "name": "SF Building Group",
+   "cslb_entity": "SF BUILDING GROUP",
+   "license_number": "1106131",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "B General Building"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2023-06-18",
+   "expire_date": "2027-06-30",
+   "address_cslb": "2128 Greendale Dr, South San Francisco, CA 94080",
+   "in_sf": false,
+   "city": "South San Francisco",
+   "phone": "(415) 297-2246",
+   "website": "https://sfbuildinggroup.com/",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "Licensed B general contractor whose official site explicitly targets the operating constraints in the brief: 'Weekend & off-hours occupied-space work', 'MEP coordination across trades', 'Landlord, tenant & owner communication', and water-damage repair scopes.",
+   "fit_notes": "B-only license: plumbing and drywall are performed through licensed subcontractors under one GC contract (the standard CSLB-described multi-trade structure). CSLB record shows workers' comp exemption (certified no employees) — confirm sub insurance certificates. No review data captured — left blank per verification rules.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:25 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Business name contains 'SF' but the address of record is in South San Francisco.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1106131 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://sfbuildinggroup.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-08",
+   "name": "Rapid Flow Plumbing & Rooter",
+   "cslb_entity": "RAPID FLOW PLUMBING & ROOTER INC",
+   "license_number": "1115649",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "B General Building",
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2024-01-29",
+   "expire_date": "2028-01-31",
+   "address_cslb": "230 Edinburgh St, San Francisco, CA 94112",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 866-8401",
+   "website": "https://www.rapidflowbayarea.com/",
+   "reviews": [],
+   "all_in_one": true,
+   "relevance": "B + C-36 on one license with explicit GC positioning ('licensed general building contractors who can take your project from a simple repair to a complete renovation — one call, one crew') plus 24/7 service. A parallel session's brief (bathroom-overflow/) records a Yelp customer report of a stuck tub plug retrieved by opening the wall behind the tub — anecdotal, adjacent (not this exact fault), and not independently re-verified here.",
+   "fit_notes": "Candidate for the all-in-one structure (R-07): B-licensed prime with self-performed plumbing; confirm it will coordinate a licensed drywall sub for the ceiling opening and patch. CSLB record: workers' comp EXEMPT (certified no employees, effective 2026-02-03) — confirm insurance and crew situation. No review counts captured — left blank (F-09).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:31 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1115649 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.rapidflowbayarea.com/"
+    }
+   ]
+  },
+  {
+   "id": "P-09",
+   "name": "24/7 SF Handyman & Remodeling Service (Harp Services)",
+   "cslb_entity": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
+   "license_number": "1105133",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "B-2 Residential Remodeling"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2023-05-22",
+   "expire_date": "2027-05-31",
+   "address_cslb": "1546 Guerrero Street, San Francisco, CA 94110",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 304-1559",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "Holds the B-2 Residential Remodeling classification — the CSLB classification created for residential remodel work involving multiple trades on existing homes; a structural alternative route to the all-in-one requirement (R-07) alongside B-licensed general contractors. Also surfaced by a parallel session's brief (trip-lever/).",
+   "fit_notes": "B-2 (not C-36): plumbing scope would be subcontracted to a licensed plumber under the remodeler's contract, or paired separately. No official site captured this session; no review counts captured — left blank (F-09). Workers' comp policy active (expires 2027-04-11).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:19:07 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Holds B-2 (residential remodeling), not C-36 plumbing.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1105133 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133"
+    }
+   ]
+  },
+  {
+   "id": "P-10",
+   "name": "Discount Plumbing Rooter Services",
+   "cslb_entity": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+   "license_number": "1140843",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing",
+    "A General Engineering"
+   ],
+   "entity_type": "Ltd Liability",
+   "issue_date": "2025-07-22",
+   "expire_date": "2027-07-31",
+   "address_cslb": "1325 Howard Ave Bldg 710, Burlingame, CA 94010",
+   "in_sf": false,
+   "city": "Burlingame",
+   "phone": "(650) 991-2100",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 + A licensed plumbing company serving the SF Bay Area (CSLB address of record is Burlingame — confirm SF service and any trip charge). Strong paper coverage on file with CSLB: active workers' comp, $2,000,000 liability insurance certificate, and the $100,000 LLC employee/worker bond required of LLCs.",
+   "fit_notes": "C-36 only for plumbing scope: drywall would need separate coordination (R-07). No official site captured this session; no review counts captured — left blank (F-09).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:19:02 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Address of record is in Burlingame; San Francisco service area not confirmed by CSLB.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1140843 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843"
+    }
+   ]
+  },
+  {
+   "id": "P-11",
+   "name": "Advanced Plumbing and Drain",
+   "cslb_entity": "ADVANCED PLUMBING AND DRAIN INC",
+   "license_number": "1009195",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2015-11-24",
+   "expire_date": "2027-11-30",
+   "address_cslb": "3450 Sacramento St 204, San Francisco, CA 94118",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 744-4944",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "Long-standing SF plumbing company (licensed since 2015) that a parallel session also surveyed; included for completeness of the licensed-provider list.",
+   "fit_notes": "CAUTION — see flag F-12: CSLB shows an Additional Status that the license may be suspended at a future date for an outstanding final liability. Re-check the CSLB page immediately before any engagement. C-36 only: drywall needs separate coordination (R-07). No review counts captured — left blank (F-09).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:38 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. CSLB 'Additional Status' future-suspension warning published on the licence.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1009195 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+    }
+   ]
+  },
+  {
+   "id": "P-12",
+   "name": "Save-On-Interior (same operator as Bay Area Plumbing)",
+   "cslb_entity": "SAVE - ON - INTERIOR",
+   "license_number": "749536",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "B General Building",
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Sole Ownership",
+   "issue_date": "1998-05-18",
+   "expire_date": "2028-05-31",
+   "address_cslb": "335 14th Ave, San Francisco, CA 94118",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 668-8000",
+   "website": "",
+   "reviews": [],
+   "all_in_one": true,
+   "relevance": "Single-licence all-in-one candidate: B General Building plus C-36 Plumbing on one licence, at the same address and phone as Bay Area Plumbing (P-02), the company that quoted $550.",
+   "fit_notes": "Drywall/general-building and plumbing both sit on this licence. Confirm with the contractor which licence (P-02 or P-12) would hold the contract, and that the insurance and bond for the licence used are current at signing.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:40 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Same address and phone as licence 757796 (BAY AREA PLUMBING). Misc: 11/06/2015 cash deposit letter $15,000; 01/14/2016 follow-up letter.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #749536 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
+    }
+   ]
+  },
+  {
+   "id": "P-13",
+   "name": "Ayoob & Peery Plumbing Co Inc",
+   "cslb_entity": "AYOOB & PEERY PLUMBING CO INC",
+   "license_number": "392967",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "B General Building",
+    "C-4 Boiler/HW Heating",
+    "C-16 Fire Protection",
+    "C-36 Plumbing",
+    "C-20 HVAC"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "1980-09-08",
+   "expire_date": "2028-09-30",
+   "address_cslb": "975 Indiana St, San Francisco, CA 94107",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 550-0975",
+   "website": "",
+   "reviews": [],
+   "all_in_one": true,
+   "relevance": "Holds both B General Building and C-36 Plumbing on one licence, with the earliest continuous issue date in this set (CSLB issue date 09/08/1980).",
+   "fit_notes": "Multi-trade capable on one licence (B + C-36). No review data captured here; nothing about quality or availability is claimed.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:18:38 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #392967 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967"
+    }
+   ]
+  },
+  {
+   "id": "P-14",
+   "name": "Caccia Home Services (James Caccia Plumbing Inc)",
+   "cslb_entity": "JAMES CACCIA PLUMBING INC dba CACCIA HOME SERVICES",
+   "license_number": "379364",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing",
+    "C-31 Traffic Control",
+    "C-34 Pipeline",
+    "C-10 Electrical"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "1979-07-26",
+   "expire_date": "2027-04-30",
+   "address_cslb": "1660 Gilbreth Rd, Burlingame, CA 94010",
+   "in_sf": false,
+   "city": "Burlingame",
+   "phone": "(650) 342-5363",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 Plumbing plus C-10 Electrical, C-31 and C-34 classifications on one licence.",
+   "fit_notes": "Plumbing-only for this scope: no B or C-9 classification, so the drywall portion needs a second licensed contractor. Address of record is outside San Francisco.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:49 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Address of record is in Burlingame; San Francisco service area not confirmed by CSLB.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #379364 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364"
+    }
+   ]
+  },
+  {
+   "id": "P-15",
+   "name": "Flow Masters Plumbing Inc",
+   "cslb_entity": "FLOW MASTERS PLUMBING INC",
+   "license_number": "966337",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing",
+    "C-16 Fire Protection",
+    "C-20 HVAC"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2011-10-04",
+   "expire_date": "2027-10-31",
+   "address_cslb": "6169 Mission St, Daly City, CA 94014",
+   "in_sf": false,
+   "city": "Daly City",
+   "phone": "(415) 751-1933",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 Plumbing with C-16 Fire Protection and C-20 HVAC on one licence.",
+   "fit_notes": "Plumbing-only for this scope: no B or C-9 classification, so the drywall portion needs a second licensed contractor. Address of record is outside San Francisco.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:49 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Address of record is in Daly City; San Francisco service area not confirmed by CSLB.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #966337 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337"
+    }
+   ]
+  },
+  {
+   "id": "P-16",
+   "name": "FDL Plumbing Inc",
+   "cslb_entity": "FDL PLUMBING INC",
+   "license_number": "1086935",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2022-02-03",
+   "expire_date": "2028-10-31",
+   "address_cslb": "4547 Callan Blvd, Daly City, CA 94015",
+   "in_sf": false,
+   "city": "Daly City",
+   "phone": "(415) 678-9557",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 Plumbing licence; address of record outside San Francisco.",
+   "fit_notes": "Plumbing-only: no B or C-9 classification. Service to San Francisco is not confirmed by any official source and is left unverified.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:33 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Address of record is in Daly City; San Francisco service area not confirmed by CSLB.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1086935 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935"
+    }
+   ]
+  },
+  {
+   "id": "P-17",
+   "name": "Precision Rooter & Drain",
+   "cslb_entity": "PRECISION ROOTER & DRAIN",
+   "license_number": "961218",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Sole Ownership",
+   "issue_date": "2011-05-19",
+   "expire_date": "2027-05-31",
+   "address_cslb": "945 Taraval St Unit 1214, San Francisco, CA 94116",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 724-1824",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 Plumbing licence based in San Francisco.",
+   "fit_notes": "Plumbing-only: no B or C-9 classification, so the drywall portion needs a second licensed contractor.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:35 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #961218 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218"
+    }
+   ]
+  },
+  {
+   "id": "P-18",
+   "name": "Citywide Plumbing (CW Plumbing Inc)",
+   "cslb_entity": "CW PLUMBING INC dba CITYWIDE PLUMBING",
+   "license_number": "954385",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2010-11-08",
+   "expire_date": "2028-07-31",
+   "address_cslb": "244 Dennis Dr, Daly City, CA 94015",
+   "in_sf": false,
+   "city": "Daly City",
+   "phone": "(415) 716-1519",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 Plumbing licence; reissued to another entity 07/06/2026. Address of record outside San Francisco.",
+   "fit_notes": "Plumbing-only: no B or C-9 classification. Service to San Francisco is not confirmed by any official source and is left unverified.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:35 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Address of record is in Daly City; San Francisco service area not confirmed by CSLB.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #954385 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"
+    }
+   ]
+  },
+  {
+   "id": "P-19",
+   "name": "Cahill Contractors Inc",
+   "cslb_entity": "CAHILL CONTRACTORS INC",
+   "license_number": "300647",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "A General Engineering",
+    "B General Building"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "1974-12-05",
+   "expire_date": "2027-11-30",
+   "address_cslb": "425 California St Ste 2200, San Francisco, CA 94104",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 986-0600",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "A General Engineering plus B General Building on one licence.",
+   "fit_notes": "No C-36 plumbing classification on this licence: it can hold a multi-trade contract but would need a licensed plumbing subcontractor. Included for completeness of the verified set.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:19:28 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. A + B only: no C-36 plumbing classification on this licence.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #300647 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647"
+    }
+   ]
+  },
+  {
+   "id": "P-20",
+   "name": "D G Construction Co",
+   "cslb_entity": "D G CONSTRUCTION CO",
+   "license_number": "297604",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "CSLB page displays 'There is Complaint Disclosure information for this license.' with a link to the complaint-disclosure record.",
+   "classifications": [
+    "B General Building",
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Sole Ownership",
+   "issue_date": "1974-08-23",
+   "expire_date": "2027-04-30",
+   "address_cslb": "PO Box 22217, San Francisco, CA 94122",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 308-0803",
+   "website": "",
+   "reviews": [],
+   "all_in_one": true,
+   "relevance": "B General Building plus C-36 Plumbing on one licence.",
+   "fit_notes": "Multi-trade capable on one licence (B + C-36). CSLB publishes complaint-disclosure information for this licence — read it before contacting (see F-14).",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:49 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Complaint disclosure information is published on the CSLB licence record.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #297604 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604"
+    }
+   ]
+  },
+  {
+   "id": "P-21",
+   "name": "Kenneth Asire Plumbing",
+   "cslb_entity": "KENNETH ASIRE PLUMBING",
+   "license_number": "1027286",
+   "license_status": "SUSPENDED — contractor's bond suspension (CSLB, data as of 2026-11-07)",
+   "status_code": "suspended",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Sole Ownership",
+   "issue_date": "2017-05-25",
+   "expire_date": "2027-05-31",
+   "address_cslb": "1559 Sloat Blvd #319, San Francisco, CA 94132",
+   "in_sf": true,
+   "city": "San Francisco",
+   "phone": "(415) 913-8048",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "CSLB lists this licence as SUSPENDED for contractor's bond suspension (bond cancellation date 08/16/2026).",
+   "fit_notes": "Excluded from the shortlist. CSLB notes the suspension is lifted retroactively once a bond is processed, so re-check the CSLB page before reconsidering.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:20:49 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Suspended: contractor's bond cancelled 08/16/2026. Excluded from the shortlist.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1027286 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+    }
+   ]
+  },
+  {
+   "id": "P-22",
+   "name": "Clever Plumbing & Rooter Inc",
+   "cslb_entity": "CLEVER PLUMBING & ROOTER INC",
+   "license_number": "1160613",
+   "license_status": "Current and active (CSLB, data as of 2026-11-07)",
+   "status_code": "active",
+   "additional_status": "",
+   "classifications": [
+    "C-36 Plumbing"
+   ],
+   "entity_type": "Corporation",
+   "issue_date": "2026-09-04",
+   "expire_date": "2028-09-30",
+   "address_cslb": "585 Huntington Ave Apt 4, San Bruno, CA 94066",
+   "in_sf": false,
+   "city": "San Bruno",
+   "phone": "(650) 834-0821",
+   "website": "",
+   "reviews": [],
+   "all_in_one": false,
+   "relevance": "C-36 Plumbing licence issued 09/04/2026; address of record outside San Francisco.",
+   "fit_notes": "Plumbing-only: no B or C-9 classification. Very recent licence issue date from the CSLB record; no other information is claimed.",
+   "verification": "Re-verified on the official CSLB licence-detail page on 2026-11-07 (page printed 'Data current as of 11/7/2026 12:21:30 PM'): status, classifications, entity type, issue/expire dates, address, phone, bond and workers'-compensation entries read directly. Licence issued 09/04/2026 (new); address of record is in San Bruno.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1160613 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+    }
+   ]
+  }
+ ]
 }

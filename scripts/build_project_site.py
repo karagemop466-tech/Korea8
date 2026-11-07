@@ -40,6 +40,8 @@ sources = load("sources.json")
 technical = load("technical.json")
 flagged = load("flagged.json")
 summary = load("summary.json")
+analysis = load("analysis.json")
+dossiers = load("dossiers.json")
 
 errors = []
 
@@ -49,7 +51,9 @@ NAV = [
     ("requirements.html", "Requirements"),
     ("estimates.html", "Estimates"),
     ("providers.html", "Providers"),
+    ("analysis.html", "Analysis"),
     ("technical-approach.html", "Technical Approach"),
+    ("dossiers.html", "Dossiers"),
     ("sources.html", "Sources"),
     ("flagged-for-review.html", "Flagged for Review"),
 ]
@@ -103,10 +107,14 @@ def page(title, active, body, description=""):
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
      Built {BUILD_STAMP} · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
-     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
+  <p class="muted">Parallel dossiers on the same brief (all still published, nothing deleted):
+     <a href="bathtub-overflow/index.html">bathtub-overflow/</a> ·
+     <a href="bathtub/index.html">bathtub/</a> ·
+     <a href="trip-lever/executive-summary.html">trip-lever/</a> ·
+     <a href="bathroom-overflow/index.html">bathroom-overflow/</a> ·
+     <a href="dossiers.html">full dossier index</a>.
      Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
-     Licenses re-verified {escape(providers["meta"]["verified_date"])} via official CSLB pages — statuses can change; re-check before contracting.</p>
+     Licences re-verified {escape(providers["meta"]["verified_date"])} via official CSLB pages — statuses can change; re-check before contracting.</p>
 </footer>
 </body>
 </html>"""
@@ -125,8 +133,12 @@ def enforce(links, ctx, min_links=1):
 
 # ---------------- index.html ----------------
 quoted = {e["provider_as_quoted"] for e in estimates["estimates"]}
-multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]]
-documented = [p for p in providers["providers"] if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")]
+all_prov = providers["providers"]
+active = [p for p in all_prov if p.get("status_code", "active") == "active"]
+suspended = [p for p in all_prov if p.get("status_code") == "suspended"]
+multi_trade = [p for p in active if p.get("all_in_one")]
+documented = [p for p in active if "recent-jobs" in (p.get("source_links") or [{}])[-1].get("url", "")]
+in_sf = [p for p in all_prov if p.get("in_sf")]
 
 idx_quotes = []
 for e in estimates["estimates"]:
@@ -142,21 +154,23 @@ for e in estimates["estimates"]:
 idx_providers = []
 for p in multi_trade + documented:
     enforce(p["source_links"], f"provider {p['id']} (index mini-table)")
-    tag = "multi-trade license (B + C-36)" if "B General Building" in p["classifications"] else "documented tub W&amp;O job in SF"
+    tag = "one licence: B + C-36" if p.get("all_in_one") else "documented tub W&amp;O job in SF"
     idx_providers.append([
         f'<a href="providers.html#{p["id"]}">{escape(p["name"])}</a>',
         f'<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}" target="_blank" rel="noopener">#{p["license_number"]}</a>',
         escape(", ".join(p["classifications"])),
+        escape(p.get("city", "")),
         f'<span class="pill">{tag}</span>',
     ])
 
 idx_body = f"""
 <section class="hero">
   <h1>Bathtub Wastewater Overflow <span class="accent">Trip Lever</span> — Repair Coordination</h1>
-  <p class="lede">A stuck trip lever inside hidden plumbing behind the wall of a tenant-occupied
-  San Francisco unit. 5+ licensed plumbers could not remove it from above. This dashboard collects the
-  requirements, the three received estimates, and license-verified San Francisco providers — every row
-  sourced, unverified values flagged, nothing inferred.</p>
+  <p class="lede">A stuck trip lever inside the plumbing behind the wall of a tenant-occupied
+  San Francisco unit. The requester reports that 5+ licensed plumbers could not remove it from above and
+  recommended working from below through the storage-unit ceiling. This dashboard collects the requirements,
+  the three estimates on file, and the {len(all_prov)} contractor licences re-checked at the California
+  Contractors State License Board on {escape(providers["meta"]["verified_date"])} — every row sourced, unverified values flagged, nothing inferred.</p>
   <div class="cta-row">
     <a class="btn" href="executive-summary.html">Read the executive summary</a>
     <a class="btn btn-ghost" href="providers.html">Browse verified providers</a>
@@ -165,10 +179,11 @@ idx_body = f"""
 </section>
 
 <section class="cards">
+  <div class="card"><div class="card-num">{len(all_prov)}</div><div class="card-label">licences re-checked at CSLB<br>on {escape(providers["meta"]["verified_date"])}</div></div>
+  <div class="card"><div class="card-num">{len(active)}</div><div class="card-label">current and active<br>({len(suspended)} suspended)</div></div>
+  <div class="card"><div class="card-num">{len(multi_trade)}</div><div class="card-label">hold B + C-36 on<br>one licence (all-in-one)</div></div>
+  <div class="card"><div class="card-num">{len(in_sf)}</div><div class="card-label">licence addresses of record<br>in San Francisco ({len(in_sf) - len([p for p in suspended if p.get("in_sf")])} active)</div></div>
   <div class="card"><div class="card-num">3</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
-  <div class="card"><div class="card-num">7</div><div class="card-label">SF providers with<br>CSLB-active licenses</div></div>
-  <div class="card"><div class="card-num">3</div><div class="card-label">providers licensed for a<br>multi-trade contract (B)</div></div>
-  <div class="card"><div class="card-num">1</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
   <div class="card card-warn"><div class="card-num">{len(flagged["flags"])}</div><div class="card-label">items flagged<br>for owner review</div></div>
 </section>
 
@@ -179,8 +194,11 @@ idx_body = f"""
 </section>
 
 <section>
-  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All 7 providers →</a></div>
-  {table(["Company", "CSLB license (official)", "Classifications", "Why shortlisted"], idx_providers)}
+  <div class="sec-head"><h2>Shortlist — the all-in-one candidates</h2><a class="more" href="providers.html">All {len(all_prov)} providers →</a></div>
+  {table(["Company", "CSLB licence (official)", "Classifications", "Address of record", "Why shortlisted"], idx_providers)}
+  <p class="note">A B (general building) licence may hold a contract covering plumbing <em>and</em> drywall where at least two unrelated trades are involved,
+  or where the holder also carries the plumbing classification — <a class="srclink" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7057" target="_blank" rel="noopener">BPC §7057</a>.
+  Suspended licences are excluded; see <a href="flagged-for-review.html#F-13">F-13</a> and <a href="flagged-for-review.html#F-14">F-14</a>.</p>
 </section>
 
 <section>
@@ -189,10 +207,14 @@ idx_body = f"""
     <p><strong>Preferred path — removal from above.</strong> Re-engage the three quoting companies and get a
     written yes/no on extracting the faceplate and fused internals from the tub side without opening the wall.</p>
     <p><strong>Fallback path — access from below (storage-unit ceiling).</strong> Requires one accountable contract
-    covering plumbing <em>and</em> drywall. CSLB's official rule: multi-trade jobs belong with a B-licensed general
-    contractor (<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx" target="_blank" rel="noopener">source</a>)
-    — see <a href="technical-approach.html">Technical Approach</a>. Require a code-aligned 12-inch access panel instead of a solid patch
+    covering plumbing <em>and</em> drywall: the {len(multi_trade)} licences holding B + C-36, or a named drywall contractor inside the same contract
+    (<a class="srclink" href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7057" target="_blank" rel="noopener">BPC §7057</a>)
+    — see <a href="analysis.html">Analysis</a>. Require a code-aligned 12-inch access panel instead of a solid patch
     (<a class="srclink" href="https://aa.iapmo.org/?code=UPC&amp;chapter=4" target="_blank" rel="noopener">CPC §402.10 via IAPMO</a>).</p>
+    <p><strong>The blocking question.</strong> DBI publishes that a permit is needed before cutting into or replacing pipes, particularly pipes
+    covered by a wall; exemptions sit in SF Plumbing Code §104.2 and the determination for this scope has not been obtained
+    (<a class="srclink" href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener">sf.gov/DBI</a>, flag
+    <a href="flagged-for-review.html#F-18">F-18</a>). Permit Center help desk: 628-652-4900.</p>
   </div>
 </section>
 """
@@ -324,27 +346,69 @@ def reviews_cell(p):
     return "".join(parts)
 
 
+def status_badge(p):
+    if p.get("status_code") == "suspended":
+        return '<span class="badge badge-warn">SUSPENDED — excluded</span>'
+    if p.get("additional_status"):
+        return '<span class="badge badge-warn">active — CSLB caution (F-12)</span>'
+    return '<span class="badge badge-ok">current and active</span>'
+
+
+prov_sorted = ([p for p in providers["providers"] if p.get("status_code") != "suspended"]
+               + [p for p in providers["providers"] if p.get("status_code") == "suspended"])
+
 prov_rows = []
-for p in providers["providers"]:
+for p in prov_sorted:
     # A provider row needs its official CSLB link plus the company site when one is on file.
     enforce(p["source_links"], f"provider {p['id']}", min_links=2 if p.get("website") else 1)
     reviews = reviews_cell(p)
     cslb_url = f'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}'
+    addr = escape(p["address_cslb"])
+    if not p.get("in_sf"):
+        addr += ' <span class="pill pill-warn">address outside SF</span>'
     prov_rows.append([
         f'<span id="{p["id"]}"><code>{p["id"]}</code></span>',
         f'<strong>{escape(p["name"])}</strong><br><span class="muted small">{escape(p["phone"])}</span>',
         f'<a class="srclink" href="{escape(cslb_url, quote=True)}" target="_blank" rel="noopener">#{p["license_number"]}</a>',
-        f'{escape(p["license_status"])}<br><span class="muted small">{escape(p["entity_type"])} · exp. {escape(p["expire_date"])}</span>',
-        escape(", ".join(p["classifications"])),
-        escape(p["address_cslb"]),
+        f'{status_badge(p)}<br><span class="muted small">{escape(p["entity_type"])} · issued {escape(p["issue_date"])} · exp. {escape(p["expire_date"])}</span>',
+        escape(", ".join(p["classifications"])) + ('<br><span class="pill">B + C-36 on one licence</span>' if p.get("all_in_one") else ""),
+        addr,
         reviews,
         f'{escape(p["relevance"])}<br><span class="muted small">{escape(p["fit_notes"])}</span>',
         links_html(p["source_links"]),
     ])
 
+quick_rows = []
+for p in prov_sorted:
+    quick_rows.append([
+        f'<a href="#{p["id"]}"><code>{p["id"]}</code></a>',
+        f'<strong>{escape(p["name"])}</strong>',
+        f'<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}" target="_blank" rel="noopener">#{p["license_number"]}</a>',
+        escape(p.get("city", "")),
+        status_badge(p),
+        '<span class="pill">B + C-36</span>' if p.get("all_in_one") else blank("—"),
+        f'<a href="analysis.html#A-01">{escape(", ".join(p["classifications"]))}</a>' if p.get("all_in_one") else escape(", ".join(p["classifications"])),
+    ])
+
 prov_body = f"""
-<h1>Providers — San Francisco</h1>
-<p class="updated">License statuses verified {escape(providers["meta"]["verified_date"])} · {escape(providers["meta"]["verification_note"])}</p>
+<h1>Providers — {len(providers["providers"])} licences, re-verified {escape(providers["meta"]["verified_date"])}</h1>
+<p class="updated">{escape(providers["meta"]["scope"])} <br>{escape(providers["meta"]["verification_note"])}</p>
+<div class="callout">
+  <p><strong>Read this first.</strong> {len(providers["providers"])} licences checked at CSLB today:
+  {sum(1 for p in providers["providers"] if p.get("status_code") == "active")} current and active,
+  {sum(1 for p in providers["providers"] if p.get("status_code") == "suspended")} suspended and excluded,
+  {sum(1 for p in providers["providers"] if p.get("all_in_one"))} holding B + C-36 on one licence,
+  {sum(1 for p in providers["providers"] if not p.get("in_sf"))} with an address of record outside San Francisco.
+  No company was contacted by this project, so availability, willingness and price are all unconfirmed.
+  {escape(providers["meta"]["cslb_note"])}</p>
+</div>
+<h2>Quick view</h2>
+{table(["ID", "Company", "CSLB licence", "City of record", "Status", "One licence for both trades?", "Classifications"], quick_rows)}
+<p class="note">Full detail — address of record, issue and expiry dates, bond and workers'-compensation entries, review snapshots and the exact source links —
+follows in the full table below. The machine-readable audit trail of every field read on 2026-11-07 is
+<a href="project/cslb_verification_2026-11-07.json">project/cslb_verification_2026-11-07.json</a>.</p>
+
+<h2>Full detail</h2>
 {table(["ID", "Company", "CSLB", "Status (official)", "Classifications", "Address of record", "Reviews (as displayed)", "Relevance & fit", "Source links"], prov_rows)}
 """
 
@@ -423,6 +487,48 @@ flag_body = f"""
 <h1>Flagged for Review</h1>
 <p class="updated">{escape(flagged["meta"]["note"])}</p>
 {"".join(flag_blocks)}
+"""
+
+# ---------------- analysis.html ----------------
+ana_rows = []
+for a in analysis["rows"]:
+    enforce(a["source_links"], f"analysis {a['id']}")
+    ok = a["strength"] == "verified"
+    ana_rows.append([
+        f'<span id="{a["id"]}"><code>{a["id"]}</code></span>',
+        f'<strong>{escape(a["topic"])}</strong>',
+        escape(a["finding"]),
+        badge(ok, "verified (official source)", "unverified / owner-provided"),
+        links_html(a["source_links"]),
+    ])
+
+ana_body = f"""
+<h1>Analysis</h1>
+<p class="updated">{escape(analysis["meta"]["note"])}</p>
+{table(["ID", "Question", "Finding", "Basis", "Sources"], ana_rows)}
+"""
+
+# ---------------- dossiers.html ----------------
+dos_rows = []
+for d in dossiers["dossiers"]:
+    dos_rows.append([
+        f'<code>{d["id"]}</code>',
+        f'<strong><a href="{escape(d["path"], quote=True)}">{escape(d["label"])}</a></strong>',
+        escape(d["session"]),
+        escape(d["contains"]),
+        f'<span class="pill">{escape(d["status"])}</span>',
+    ])
+
+dos_body = f"""
+<h1>Dossiers on the same brief</h1>
+<p class="updated">{escape(dossiers["meta"]["note"])}</p>
+{table(["ID", "Dossier", "Session", "What it contains", "Status"], dos_rows)}
+<div class="callout">
+  <p><strong>Which one is canonical?</strong> This root dashboard is the landing page and the only place where every licence is
+  verified as of {escape(providers["meta"]["verified_date"])}. The other dossiers were written independently from the same brief on
+  the same day and each links its own sources; where they disagree with this page, this page's dated CSLB re-verification wins.
+  Nothing was deleted or overwritten, and retiring any duplicate route is left to the owner.</p>
+</div>
 """
 
 # ---------------- style.css ----------------
@@ -505,13 +611,17 @@ outputs = {
     "estimates.html": page("Estimates", "estimates.html", est_body,
                            "The three received estimates with verification status and third-party cost benchmarks."),
     "providers.html": page("Providers", "providers.html", prov_body,
-                           "Seven San Francisco providers with CSLB-verified license statuses, classifications, reviews and source links."),
+                           f"All {len(providers['providers'])} licences cited by any session, re-verified at CSLB on {providers['meta']['verified_date']} with classifications, addresses and source links."),
     "technical-approach.html": page("Technical Approach", "technical-approach.html", tech_body,
                                     "Trip lever mechanics, access paths, plumbing code access requirements and licensing structure."),
     "sources.html": page("Sources", "sources.html", src_body,
                          "Master source register: official government, code publisher, manufacturer and third-party sources."),
     "flagged-for-review.html": page("Flagged for Review", "flagged-for-review.html", flag_body,
                                     "Non-blocking flagged items published for owner review, with source links."),
+    "analysis.html": page("Analysis", "analysis.html", ana_body,
+                          "Findings drawn across the consolidated dataset: licensing, access paths, permit rule, tenant notice and gaps."),
+    "dossiers.html": page("Dossiers", "dossiers.html", dos_body,
+                          "Index of every parallel dossier published on this repository for the same brief."),
 }
 
 # enforcement pass over remaining row types
@@ -524,6 +634,12 @@ for t in technical["findings"]:
 for b in estimates["benchmarks_third_party"]:
     if not b.get("url"):
         errors.append(f"benchmark {b['id']}: missing source url")
+for a in analysis["rows"]:
+    if not a.get("source_links"):
+        errors.append(f"analysis {a['id']}: missing source link")
+for d in dossiers["dossiers"]:
+    if not d.get("path"):
+        errors.append(f"dossier {d['id']}: missing path")
 
 if errors:
     for e in errors:
@@ -594,7 +710,7 @@ report = {
     "built_at": BUILD_STAMP,
     "outputs": built,
     "enforcement": {
-        "rows_with_source_links_checked": len(estimates["estimates"]) + len(estimates["benchmarks_third_party"]) + len(providers["providers"]) + len(technical["findings"]) + len(sources["sources"]) + len(flagged["flags"]),
+        "rows_with_source_links_checked": len(estimates["estimates"]) + len(estimates["benchmarks_third_party"]) + len(providers["providers"]) + len(technical["findings"]) + len(sources["sources"]) + len(flagged["flags"]) + len(analysis["rows"]),
         "failures": [],
         "broken_internal_links": [],
     },
@@ -606,6 +722,12 @@ report = {
         "technical_findings": len(technical["findings"]),
         "sources": len(sources["sources"]),
         "flags": len(flagged["flags"]),
+        "analysis_rows": len(analysis["rows"]),
+        "dossiers": len(dossiers["dossiers"]),
+        "providers_active": sum(1 for p in providers["providers"] if p.get("status_code") == "active"),
+        "providers_suspended": sum(1 for p in providers["providers"] if p.get("status_code") == "suspended"),
+        "providers_all_in_one": sum(1 for p in providers["providers"] if p.get("all_in_one")),
+        "providers_in_sf": sum(1 for p in providers["providers"] if p.get("in_sf")),
     },
 }
 with open(os.path.join(OUT, "site-data", "build-report.json"), "w", encoding="utf-8") as fh:

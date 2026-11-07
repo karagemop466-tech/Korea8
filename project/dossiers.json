@@ -1,0 +1,72 @@
+{
+ "meta": {
+  "title": "Dossiers",
+  "compiled": "2026-11-07",
+  "note": "Six parallel sessions worked this same brief on this repository. Nothing was deleted: this consolidated dashboard is the landing page, and every parallel dossier is still published and linked below, with what it contains. Page and row counts were read from the files themselves on 2026-11-07."
+ },
+ "dossiers": [
+  {
+   "id": "D-01",
+   "path": "index.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/",
+   "label": "This consolidated dashboard (root)",
+   "session": "10be5bc4 (final integration)",
+   "contains": "Landing dashboard plus Executive Summary, Requirements, Estimates, Providers, Analysis, Technical Approach, Dossiers, Sources and Flagged for Review. 22 CSLB licences re-verified 2026-11-07, 13 analysis findings, 19 flags.",
+   "status": "current"
+  },
+  {
+   "id": "D-02",
+   "path": "bathtub-overflow/index.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/bathtub-overflow/",
+   "label": "bathtub-overflow/ — requirements, code and vendor dossier",
+   "session": "0ad9ad61",
+   "contains": "8 pages (overview, scope, code & permits, costs, vendors, findings, sources, flagged). 14 contractors screened against CSLB and 34 requirements.",
+   "status": "published"
+  },
+  {
+   "id": "D-03",
+   "path": "bathtub/index.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/bathtub/",
+   "label": "bathtub/ — independent verification dossier",
+   "session": "b10e8d0e",
+   "contains": "11 pages (dashboard, executive summary, requirements, providers, estimates, permits & compliance, assembly, analysis, flagged, sources, verification). 10 providers verified at CSLB on 2026-11-06.",
+   "status": "published"
+  },
+  {
+   "id": "D-04",
+   "path": "trip-lever/executive-summary.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/trip-lever/executive-summary.html",
+   "label": "trip-lever/ — source-linked provider dossier",
+   "session": "a93dcbfd-s1",
+   "contains": "7 pages (executive summary, requirements, estimates, contractors, background, methodology, flagged). 7 providers, each with its CSLB licence-detail link.",
+   "status": "published"
+  },
+  {
+   "id": "D-05",
+   "path": "bathroom-overflow/index.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/bathroom-overflow/",
+   "label": "bathroom-overflow/ — field brief",
+   "session": "ae482104",
+   "contains": "6 pages (index, scope, providers, quotes, sources, flagged). 4 providers; prices deliberately left blank where no provider document supported them.",
+   "status": "published"
+  },
+  {
+   "id": "D-06",
+   "path": "docs/bathtub-summary.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/docs/bathtub-summary.html",
+   "label": "docs/bathtub-*.html — earlier summary set",
+   "session": "3086bd70",
+   "contains": "7 pages (summary, estimates, candidates, requirements, all-in-one, sources, flagged) published under docs/. These are the earlier drafts of the same analysis.",
+   "status": "published (earlier draft)"
+  },
+  {
+   "id": "D-07",
+   "path": "docs/index.html",
+   "live": "https://karagemop466-tech.github.io/Korea8/docs/index.html",
+   "label": "docs/ — preserved DOE GEMS archive",
+   "session": "legacy",
+   "contains": "The unrelated project this repository previously hosted. Preserved unchanged and linked for completeness; it has nothing to do with the bathtub work.",
+   "status": "legacy archive"
+  }
+ ]
+}

@@ -1,193 +1,301 @@
 {
-  "meta": {
-    "title": "Flagged for Review",
-    "compiled": "2026-11-06",
-    "note": "Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here."
-  },
-  "flags": [
+ "meta": {
+  "title": "Flagged for Review",
+  "compiled": "2026-11-07",
+  "note": "Non-blocking items published for owner review, per project protocol. Flagged items do not block the site or the merge. Unverified values are left blank wherever they would otherwise appear and are marked here."
+ },
+ "flags": [
+  {
+   "id": "F-01",
+   "severity": "informational",
+   "title": "Repository previously hosted a different project (DOE GEMS Prize Challenge)",
+   "detail": "The repository's existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The new project site now occupies the repository root (what GitHub Pages serves from main), while the complete legacy DOE GEMS evidence site remains untouched under docs/ for history.",
+   "source_links": [
     {
-      "id": "F-01",
-      "severity": "informational",
-      "title": "Repository previously hosted a different project (DOE GEMS Prize Challenge)",
-      "detail": "The repository's existing content (README, docs/, evidence/, scripts/) documents a DOE GEMS fault-prediction research project, which is unrelated to the current bathtub trip-lever brief. The new project site now occupies the repository root (what GitHub Pages serves from main), while the complete legacy DOE GEMS evidence site remains untouched under docs/ for history.",
-      "source_links": [
-        {
-          "label": "Legacy GEMS evidence site preserved at docs/index.html",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/docs/index.html"
-        },
-        {
-          "label": "Legacy project README",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/README.md"
-        }
-      ]
+     "label": "Legacy GEMS evidence site preserved at docs/index.html",
+     "url": "https://github.com/karagemop466-tech/Korea8/blob/main/docs/index.html"
     },
     {
-      "id": "F-02",
-      "severity": "unverified-data",
-      "title": "All three estimates are user-provided and could not be independently verified",
-      "detail": "E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor's verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.",
-      "source_links": [
-        {
-          "label": "Estimates data (project/estimates.json)",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json"
-        },
-        {
-          "label": "CSLB license check entry point (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
-        }
-      ]
-    },
-    {
-      "id": "F-03",
-      "severity": "scope-ambiguity",
-      "title": "The three quotes describe different scopes and are not directly comparable",
-      "detail": "E-03 ($135) is 'repair or adjust plunger handle'; E-02 ($550) is 'replace lever for the bathtub plug and spout with diverter, labor and materials'; E-01 ($614) is 'replacing waste and overflow' (full assembly). None of the three quotes explicitly includes drywall opening or ceiling restoration, which the fallback approach (working from below through a storage-unit ceiling) will likely require (R-06, R-07). Third-party guides put drywall patching at $300–$930 on top of plumbing work.",
-      "source_links": [
-        {
-          "label": "Angi — bathroom leak repair cost (drywall add-on range)",
-          "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm"
-        }
-      ]
-    },
-    {
-      "id": "F-04",
-      "severity": "unverified-data",
-      "title": "Yelp review figures could not be fetched directly (HTTP 403 bot-block)",
-      "detail": "Yelp returned 403 to automated fetches. Review counts/ratings for Expert Plumbing Solutions (4.8 / 81) and Bay Area Plumbing (175 reviews) are recorded exactly as displayed in the Yelp listing titles surfaced via the search index on 2026-11-06, and flagged for manual re-verification by clicking the Yelp links. No rating was invented; where a value could not be seen it was left blank (e.g., Bay Area Plumbing star rating).",
-      "source_links": [
-        {
-          "label": "Yelp — Expert Plumbing Solutions",
-          "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco"
-        },
-        {
-          "label": "Yelp — Bay Area Plumbing",
-          "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
-        }
-      ]
-    },
-    {
-      "id": "F-05",
-      "severity": "verification-limit",
-      "title": "CSLB statuses are point-in-time (data as of 2026-11-06)",
-      "detail": "License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status 'can change at any time' and that its database may lag. Re-check each linked CSLB page before contracting. Worker's-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response's WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).",
-      "source_links": [
-        {
-          "label": "CSLB disclaimer on license-detail pages",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
-        },
-        {
-          "label": "CSLB — Hire a Contractor guidance",
-          "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/"
-        }
-      ]
-    },
-    {
-      "id": "F-06",
-      "severity": "gap",
-      "title": "No provider in the set holds a C-9 Drywall classification",
-      "detail": "None of the verified licenses includes C-9 (Drywall). The all-in-one requirement (R-07) is therefore satisfiable in two CSLB-sanctioned ways: (a) hire a B-licensed general contractor who contracts both the C-36 plumbing and a licensed C-9 drywall subcontractor under one contract (Ace #829071 and We Do Construction #1096552 hold B + C-36; SF Building Group #1106131 holds B), or (b) hire a C-36 plumber and separately contract a licensed drywall contractor. CSLB's official guidance: a B contractor is appropriate when a job requires more than two types of work and cannot legally contract for a single trade only.",
-      "source_links": [
-        {
-          "label": "CSLB — Find A Licensed Contractor (B vs C multi-trade guidance)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx"
-        },
-        {
-          "label": "CSLB — License Classifications",
-          "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/"
-        }
-      ]
-    },
-    {
-      "id": "F-07",
-      "severity": "citation-note",
-      "title": "Access-panel code section numbering differs across CPC editions",
-      "detail": "The 12-inch access requirement for concealed slip-joint connections (directly relevant to tub waste/overflow serviceability) is numbered 402.10 in the 2022 California Plumbing Code / UPC, but 404.2 in the 2010 CPC. Links to both editions are provided; the requirement text itself is consistent.",
-      "source_links": [
-        {
-          "label": "CPC 2022 §402.10 (UpCodes reprint)",
-          "url": "https://up.codes/s/concealed-joints"
-        },
-        {
-          "label": "2010 CPC §404.2 (state publication scan)",
-          "url": "https://archive.org/download/gov.ca.bsc.title24.2010.part05/gov.ca.bsc.2010.05.svg.html"
-        },
-        {
-          "label": "IAPMO Answers & Analysis (official code publisher)",
-          "url": "https://aa.iapmo.org/?code=UPC&chapter=4"
-        }
-      ]
-    },
-    {
-      "id": "F-08",
-      "severity": "discrepancy",
-      "title": "Fast Response Plumbing & Rooter: CSLB address differs from website address",
-      "detail": "CSLB record of record for license #1024971 lists 236 W Portal Ave #459, San Francisco 94127; the company website displays 4444 Geary Blvd Ste 203, San Francisco 94118. Same license number and phone on both. Likely a mailing/office address difference; confirm at contract time.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1024971 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
-        },
-        {
-          "label": "Company official site",
-          "url": "https://www.fastresponseplumbingsf.com/"
-        }
-      ]
-    },
-    {
-      "id": "F-09",
-      "severity": "unverified-data",
-      "title": "Review counts unknown for We Do Construction, SF Building Group, and Rapid Flow",
-      "detail": "No review counts or ratings could be captured for these three providers from the sources fetched this session. Per the verification rule, those cells are left blank rather than estimated. Ask both for references from occupied-unit jobs.",
-      "source_links": [
-        {
-          "label": "We Do Construction — official site",
-          "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/"
-        },
-        {
-          "label": "SF Building Group — official site",
-          "url": "https://sfbuildinggroup.com/"
-        }
-      ]
-    },
-    {
-      "id": "F-10",
-      "severity": "gap",
-      "title": "Photos of the work area not yet available",
-      "detail": "The project owner states reference photos will be provided later; all analysis in this session is based on the written description only (R-12). Site access, tub type (alcove/freestanding), finish (tile/surround), and the storage-unit ceiling construction are unconfirmed and materially affect scope.",
-      "source_links": [
-        {
-          "label": "Requirements record (project/requirements.json)",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json"
-        }
-      ]
-    },
-    {
-      "id": "F-12",
-      "severity": "caution",
-      "title": "Advanced Plumbing and Drain (#1009195): CSLB 'may be suspended at a future date' warning",
-      "detail": "The official CSLB record for license #1009195 (verified 2026-11-06) carries an Additional Status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.' The license is currently active. Re-check the CSLB page immediately before any engagement.",
-      "source_links": [
-        {
-          "label": "CSLB license detail #1009195 (official)",
-          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
-        }
-      ]
-    },
-    {
-      "id": "F-11",
-      "severity": "needs-review",
-      "title": "Parallel-session brief publishes city building-department administrative content — owner review requested",
-      "detail": "A parallel session's brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project's public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).",
-      "source_links": [
-        {
-          "label": "Parallel brief under review (bathtub-overflow/)",
-          "url": "https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow"
-        },
-        {
-          "label": "Cross-session coordination board",
-          "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
-        }
-      ]
+     "label": "Legacy project README",
+     "url": "https://github.com/karagemop466-tech/Korea8/blob/main/README.md"
     }
-  ]
+   ]
+  },
+  {
+   "id": "F-02",
+   "severity": "unverified-data",
+   "title": "All three estimates are user-provided and could not be independently verified",
+   "detail": "E-01 ($614), E-02 ($550) and E-03 ($135) are quotations supplied by the project owner from outreach dated 2026-08-30. No official source exists for a vendor's verbal/written quote; per the verification rule they are published as user-provided with verification=false, and nothing was inferred or adjusted. The provider names were matched to licensed entities by name + San Francisco address + classification, but the project owner must confirm these are the same businesses contacted.",
+   "source_links": [
+    {
+     "label": "Estimates data (project/estimates.json)",
+     "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json"
+    },
+    {
+     "label": "CSLB license check entry point (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    }
+   ]
+  },
+  {
+   "id": "F-03",
+   "severity": "scope-ambiguity",
+   "title": "The three quotes describe different scopes and are not directly comparable",
+   "detail": "E-03 ($135) is 'repair or adjust plunger handle'; E-02 ($550) is 'replace lever for the bathtub plug and spout with diverter, labor and materials'; E-01 ($614) is 'replacing waste and overflow' (full assembly). None of the three quotes explicitly includes drywall opening or ceiling restoration, which the fallback approach (working from below through a storage-unit ceiling) will likely require (R-06, R-07). Third-party guides put drywall patching at $300–$930 on top of plumbing work.",
+   "source_links": [
+    {
+     "label": "Angi — bathroom leak repair cost (drywall add-on range)",
+     "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm"
+    }
+   ]
+  },
+  {
+   "id": "F-04",
+   "severity": "unverified-data",
+   "title": "Yelp review figures could not be fetched directly (HTTP 403 bot-block)",
+   "detail": "Yelp returned 403 to automated fetches. Review counts/ratings for Expert Plumbing Solutions (4.8 / 81) and Bay Area Plumbing (175 reviews) are recorded exactly as displayed in the Yelp listing titles surfaced via the search index on 2026-11-06, and flagged for manual re-verification by clicking the Yelp links. No rating was invented; where a value could not be seen it was left blank (e.g., Bay Area Plumbing star rating).",
+   "source_links": [
+    {
+     "label": "Yelp — Expert Plumbing Solutions",
+     "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco"
+    },
+    {
+     "label": "Yelp — Bay Area Plumbing",
+     "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco"
+    }
+   ]
+  },
+  {
+   "id": "F-05",
+   "severity": "verification-limit",
+   "title": "CSLB statuses are point-in-time (re-verified 2026-11-07)",
+   "detail": "Every licence in this consolidated set was re-retrieved from its official CSLB licence-detail page on 2026-11-07, and each page's own 'Data current as of' timestamp is recorded in project/cslb_verification_2026-11-07.json. CSLB states that licence status can change at any time and that its database may lag, so re-check the linked page on the day of signing. Workers'-compensation notes: eight licences are exempt (certified no employees); Fast Response #1024971 shows a policy expiring 2026-12-18.",
+   "source_links": [
+    {
+     "label": "CSLB disclaimer on license-detail pages",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    },
+    {
+     "label": "CSLB — Hire a Contractor guidance",
+     "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/"
+    }
+   ]
+  },
+  {
+   "id": "F-06",
+   "severity": "gap",
+   "title": "No provider in the set holds a C-9 Drywall classification",
+   "detail": "None of the verified licenses includes C-9 (Drywall). The all-in-one requirement (R-07) is therefore satisfiable in two CSLB-sanctioned ways: (a) hire a B-licensed general contractor who contracts both the C-36 plumbing and a licensed C-9 drywall subcontractor under one contract (Ace #829071 and We Do Construction #1096552 hold B + C-36; SF Building Group #1106131 holds B), or (b) hire a C-36 plumber and separately contract a licensed drywall contractor. CSLB's official guidance: a B contractor is appropriate when a job requires more than two types of work and cannot legally contract for a single trade only.",
+   "source_links": [
+    {
+     "label": "CSLB — Find A Licensed Contractor (B vs C multi-trade guidance)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx"
+    },
+    {
+     "label": "CSLB — License Classifications",
+     "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/"
+    }
+   ]
+  },
+  {
+   "id": "F-07",
+   "severity": "citation-note",
+   "title": "Access-panel code section numbering differs across CPC editions",
+   "detail": "The 12-inch access requirement for concealed slip-joint connections (directly relevant to tub waste/overflow serviceability) is numbered 402.10 in the 2022 California Plumbing Code / UPC, but 404.2 in the 2010 CPC. Links to both editions are provided; the requirement text itself is consistent.",
+   "source_links": [
+    {
+     "label": "CPC 2022 §402.10 (UpCodes reprint)",
+     "url": "https://up.codes/s/concealed-joints"
+    },
+    {
+     "label": "2010 CPC §404.2 (state publication scan)",
+     "url": "https://archive.org/download/gov.ca.bsc.title24.2010.part05/gov.ca.bsc.2010.05.svg.html"
+    },
+    {
+     "label": "IAPMO Answers & Analysis (official code publisher)",
+     "url": "https://aa.iapmo.org/?code=UPC&chapter=4"
+    }
+   ]
+  },
+  {
+   "id": "F-08",
+   "severity": "discrepancy",
+   "title": "Fast Response Plumbing & Rooter: CSLB address differs from website address",
+   "detail": "CSLB record of record for license #1024971 lists 236 W Portal Ave #459, San Francisco 94127; the company website displays 4444 Geary Blvd Ste 203, San Francisco 94118. Same license number and phone on both. Likely a mailing/office address difference; confirm at contract time.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1024971 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    },
+    {
+     "label": "Company official site",
+     "url": "https://www.fastresponseplumbingsf.com/"
+    }
+   ]
+  },
+  {
+   "id": "F-09",
+   "severity": "unverified-data",
+   "title": "Review counts unknown for We Do Construction, SF Building Group, and Rapid Flow",
+   "detail": "No review counts or ratings could be captured for these three providers from the sources fetched this session. Per the verification rule, those cells are left blank rather than estimated. Ask both for references from occupied-unit jobs.",
+   "source_links": [
+    {
+     "label": "We Do Construction — official site",
+     "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/"
+    },
+    {
+     "label": "SF Building Group — official site",
+     "url": "https://sfbuildinggroup.com/"
+    }
+   ]
+  },
+  {
+   "id": "F-10",
+   "severity": "gap",
+   "title": "Photos of the work area not yet available",
+   "detail": "The project owner states reference photos will be provided later; all analysis in this session is based on the written description only (R-12). Site access, tub type (alcove/freestanding), finish (tile/surround), and the storage-unit ceiling construction are unconfirmed and materially affect scope.",
+   "source_links": [
+    {
+     "label": "Requirements record (project/requirements.json)",
+     "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json"
+    }
+   ]
+  },
+  {
+   "id": "F-12",
+   "severity": "caution",
+   "title": "Advanced Plumbing and Drain (#1009195): CSLB 'may be suspended at a future date' warning",
+   "detail": "The official CSLB record for license #1009195 (verified 2026-11-06) carries an Additional Status: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.' The license is currently active. Re-check the CSLB page immediately before any engagement.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1009195 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+    }
+   ]
+  },
+  {
+   "id": "F-11",
+   "severity": "needs-review",
+   "title": "Parallel-session brief publishes city building-department administrative content — owner review requested",
+   "detail": "A parallel session's brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project's public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).",
+   "source_links": [
+    {
+     "label": "Parallel brief under review (bathtub-overflow/)",
+     "url": "https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow"
+    },
+    {
+     "label": "Cross-session coordination board",
+     "url": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+    }
+   ]
+  },
+  {
+   "id": "F-13",
+   "severity": "caution",
+   "title": "Kenneth Asire Plumbing (#1027286) is licence-suspended",
+   "detail": "CSLB shows this licence under 'Contractors Bond Suspension' with the contractor's bond cancelled on 2026-08-16. It is published in the provider table for completeness and marked excluded. CSLB notes the suspension is lifted retroactively once a bond is processed, so re-check before reconsidering this firm.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1027286 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+    }
+   ]
+  },
+  {
+   "id": "F-14",
+   "severity": "caution",
+   "title": "D G Construction Co (#297604) has published complaint-disclosure information",
+   "detail": "The CSLB page for #297604 displays that complaint-disclosure information exists for this licence, alongside a current-and-active status and B + C-36 classifications. The disclosure record is linked, not summarised here.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #297604 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604"
+    },
+    {
+     "label": "CSLB complaint disclosure record #297604",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604"
+    }
+   ]
+  },
+  {
+   "id": "F-15",
+   "severity": "verification-limit",
+   "title": "Seven licence addresses of record are outside San Francisco",
+   "detail": "Fifteen of the 22 licences are addressed in San Francisco; seven are in South San Francisco, Burlingame, Daly City or San Bruno. CSLB records a licence address, not a service area, so whether each firm actually works in San Francisco is unverified and must be asked directly.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #1106131 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
+    },
+    {
+     "label": "CSLB license detail #1140843 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843"
+    },
+    {
+     "label": "CSLB license detail #966337 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337"
+    },
+    {
+     "label": "CSLB license detail #1160613 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+    }
+   ]
+  },
+  {
+   "id": "F-16",
+   "severity": "needs-review",
+   "title": "Two licences share one address and phone number (Bay Area Plumbing / Save-On-Interior)",
+   "detail": "CSLB records #757796 (Bay Area Plumbing, C-36) and #749536 (Save-On-Interior, B + C-36) at 335 14th Avenue with the same phone number, and both are workers'-comp exempt. Bay Area Plumbing quoted $550. Whether both licences would be used for one job, and which licence would hold the contract, is unconfirmed and must be asked.",
+   "source_links": [
+    {
+     "label": "CSLB license detail #757796 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    },
+    {
+     "label": "CSLB license detail #749536 (official)",
+     "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
+    }
+   ]
+  },
+  {
+   "id": "F-17",
+   "severity": "discrepancy",
+   "title": "A sf.gov permit URL used by parallel dossiers now returns 404",
+   "detail": "The parallel dossiers in this repository link the permit rule as /information/apply-plumbing-and-mechanical-permit, which returned 'Not Found' when fetched on 2026-11-07. The current official page is /apply-plumbing-and-mechanical-permit and is the link used throughout this consolidated site. The parallel dossiers are outside this session's file scope and were not edited.",
+   "source_links": [
+    {
+     "label": "Working page (fetched 2026-11-07)",
+     "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+     "label": "Page that returned Not Found on 2026-11-07",
+     "url": "https://www.sf.gov/information/apply-plumbing-and-mechanical-permit"
+    }
+   ]
+  },
+  {
+   "id": "F-18",
+   "severity": "gap",
+   "title": "The permit determination for this exact scope has not been obtained",
+   "detail": "DBI publishes that a permit is required before cutting into or replacing pipes, particularly pipes covered by a wall, with exemptions in SF Plumbing Code §104.2. Whether this specific repair falls inside or outside that exemption list has not been confirmed with DBI. The Permit Center help desk is 628-652-4900. This is the single question that decides who can legitimately do the work and what it costs.",
+   "source_links": [
+    {
+     "label": "sf.gov — Apply for a plumbing and mechanical permit (DBI)",
+     "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    }
+   ]
+  },
+  {
+   "id": "F-19",
+   "severity": "gap",
+   "title": "No drywall or drywall-repair quote is on file",
+   "detail": "None of the three owner-provided estimates prices opening and patching the storage-unit ceiling, and no provider in the set describes that scope in writing. The all-in cost of the below-access route is therefore unknown. The provider table shows which licences could hold it on one contract.",
+   "source_links": [
+    {
+     "label": "Project brief — owner-provided estimates (data file)",
+     "url": "https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json"
+    }
+   ]
+  }
+ ]
 }

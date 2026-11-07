@@ -11,7 +11,7 @@
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="index.html"><span class="brand-mark">◧</span> Trip Lever Project</a>
-    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="technical-approach.html">Technical Approach</a><a href="sources.html">Sources</a><a href="flagged-for-review.html" class="active">Flagged for Review</a></nav>
+    <nav class="nav"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="providers.html">Providers</a><a href="analysis.html">Analysis</a><a href="technical-approach.html">Technical Approach</a><a href="dossiers.html">Dossiers</a><a href="sources.html">Sources</a><a href="flagged-for-review.html" class="active">Flagged for Review</a></nav>
   </div>
 </header>
 <main class="wrap">
@@ -59,9 +59,9 @@
   <div class="flag-head">
     <code>F-05</code>
     <span class="pill pill-info">verification-limit</span>
-    <h3>CSLB statuses are point-in-time (data as of 2026-11-06)</h3>
+    <h3>CSLB statuses are point-in-time (re-verified 2026-11-07)</h3>
   </div>
-  <p>License status was verified against official CSLB license-detail pages on 2026-11-06. CSLB states status &#x27;can change at any time&#x27; and that its database may lag. Re-check each linked CSLB page before contracting. Worker&#x27;s-comp notes: Bay Area Plumbing (#757796) and SF Building Group (#1106131) are WC-exempt (certified no employees); Fast Response&#x27;s WC policy (#1024971) shows an expiration of 2026-12-18. Rapid Flow (#1115649) is also WC-exempt (certified no employees, effective 2026-02-03).</p>
+  <p>Every licence in this consolidated set was re-retrieved from its official CSLB licence-detail page on 2026-11-07, and each page&#x27;s own &#x27;Data current as of&#x27; timestamp is recorded in project/cslb_verification_2026-11-07.json. CSLB states that licence status can change at any time and that its database may lag, so re-check the linked page on the day of signing. Workers&#x27;-compensation notes: eight licences are exempt (certified no employees); Fast Response #1024971 shows a policy expiring 2026-12-18.</p>
   <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener">CSLB disclaimer on license-detail pages</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/" target="_blank" rel="noopener">CSLB — Hire a Contractor guidance</a></p>
 </article>
 <article class="flagcard" id="F-06">
@@ -127,16 +127,83 @@
   <p>A parallel session&#x27;s brief (bathtub-overflow/) publishes San Francisco Department of Building Inspection administrative fee-schedule and process content alongside its research tables. That content is broader than what this project&#x27;s public pages were asked to carry, and this dashboard therefore does not link to it pending owner review. The owner should review bathtub-overflow/ and decide whether to keep, trim, or remove that content, and designate one canonical public URL for the project (see COORDINATION.md, cross-session requests).</p>
   <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/tree/main/bathtub-overflow" target="_blank" rel="noopener">Parallel brief under review (bathtub-overflow/)</a> <a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">Cross-session coordination board</a></p>
 </article>
+<article class="flagcard" id="F-13">
+  <div class="flag-head">
+    <code>F-13</code>
+    <span class="pill pill-info">caution</span>
+    <h3>Kenneth Asire Plumbing (#1027286) is licence-suspended</h3>
+  </div>
+  <p>CSLB shows this licence under &#x27;Contractors Bond Suspension&#x27; with the contractor&#x27;s bond cancelled on 2026-08-16. It is published in the provider table for completeness and marked excluded. CSLB notes the suspension is lifted retroactively once a bond is processed, so re-check before reconsidering this firm.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286" target="_blank" rel="noopener">CSLB license detail #1027286 (official)</a></p>
+</article>
+<article class="flagcard" id="F-14">
+  <div class="flag-head">
+    <code>F-14</code>
+    <span class="pill pill-info">caution</span>
+    <h3>D G Construction Co (#297604) has published complaint-disclosure information</h3>
+  </div>
+  <p>The CSLB page for #297604 displays that complaint-disclosure information exists for this licence, alongside a current-and-active status and B + C-36 classifications. The disclosure record is linked, not summarised here.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604" target="_blank" rel="noopener">CSLB license detail #297604 (official)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&amp;LicNum=297604" target="_blank" rel="noopener">CSLB complaint disclosure record #297604</a></p>
+</article>
+<article class="flagcard" id="F-15">
+  <div class="flag-head">
+    <code>F-15</code>
+    <span class="pill pill-info">verification-limit</span>
+    <h3>Seven licence addresses of record are outside San Francisco</h3>
+  </div>
+  <p>Fifteen of the 22 licences are addressed in San Francisco; seven are in South San Francisco, Burlingame, Daly City or San Bruno. CSLB records a licence address, not a service area, so whether each firm actually works in San Francisco is unverified and must be asked directly.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131" target="_blank" rel="noopener">CSLB license detail #1106131 (official)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843" target="_blank" rel="noopener">CSLB license detail #1140843 (official)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337" target="_blank" rel="noopener">CSLB license detail #966337 (official)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613" target="_blank" rel="noopener">CSLB license detail #1160613 (official)</a></p>
+</article>
+<article class="flagcard" id="F-16">
+  <div class="flag-head">
+    <code>F-16</code>
+    <span class="pill pill-info">needs-review</span>
+    <h3>Two licences share one address and phone number (Bay Area Plumbing / Save-On-Interior)</h3>
+  </div>
+  <p>CSLB records #757796 (Bay Area Plumbing, C-36) and #749536 (Save-On-Interior, B + C-36) at 335 14th Avenue with the same phone number, and both are workers&#x27;-comp exempt. Bay Area Plumbing quoted $550. Whether both licences would be used for one job, and which licence would hold the contract, is unconfirmed and must be asked.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener">CSLB license detail #757796 (official)</a> <a class="srclink flagged-link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536" target="_blank" rel="noopener">CSLB license detail #749536 (official)</a></p>
+</article>
+<article class="flagcard" id="F-17">
+  <div class="flag-head">
+    <code>F-17</code>
+    <span class="pill pill-warn">discrepancy</span>
+    <h3>A sf.gov permit URL used by parallel dossiers now returns 404</h3>
+  </div>
+  <p>The parallel dossiers in this repository link the permit rule as /information/apply-plumbing-and-mechanical-permit, which returned &#x27;Not Found&#x27; when fetched on 2026-11-07. The current official page is /apply-plumbing-and-mechanical-permit and is the link used throughout this consolidated site. The parallel dossiers are outside this session&#x27;s file scope and were not edited.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener">Working page (fetched 2026-11-07)</a> <a class="srclink flagged-link" href="https://www.sf.gov/information/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener">Page that returned Not Found on 2026-11-07</a></p>
+</article>
+<article class="flagcard" id="F-18">
+  <div class="flag-head">
+    <code>F-18</code>
+    <span class="pill pill-warn">gap</span>
+    <h3>The permit determination for this exact scope has not been obtained</h3>
+  </div>
+  <p>DBI publishes that a permit is required before cutting into or replacing pipes, particularly pipes covered by a wall, with exemptions in SF Plumbing Code §104.2. Whether this specific repair falls inside or outside that exemption list has not been confirmed with DBI. The Permit Center help desk is 628-652-4900. This is the single question that decides who can legitimately do the work and what it costs.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener">sf.gov — Apply for a plumbing and mechanical permit (DBI)</a></p>
+</article>
+<article class="flagcard" id="F-19">
+  <div class="flag-head">
+    <code>F-19</code>
+    <span class="pill pill-warn">gap</span>
+    <h3>No drywall or drywall-repair quote is on file</h3>
+  </div>
+  <p>None of the three owner-provided estimates prices opening and patching the storage-unit ceiling, and no provider in the set describes that scope in writing. The all-in cost of the below-access route is therefore unknown. The provider table shows which licences could hold it on one contract.</p>
+  <p class="srclinks"><a class="srclink flagged-link" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/estimates.json" target="_blank" rel="noopener">Project brief — owner-provided estimates (data file)</a></p>
+</article>
 
 </main>
 <footer class="wrap footer">
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
-     Built 2026-11-06 13:45 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
+     Built 2026-11-07 20:25 UTC · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
-     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
+  <p class="muted">Parallel dossiers on the same brief (all still published, nothing deleted):
+     <a href="bathtub-overflow/index.html">bathtub-overflow/</a> ·
+     <a href="bathtub/index.html">bathtub/</a> ·
+     <a href="trip-lever/executive-summary.html">trip-lever/</a> ·
+     <a href="bathroom-overflow/index.html">bathroom-overflow/</a> ·
+     <a href="dossiers.html">full dossier index</a>.
      Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
-     Licenses re-verified 2026-11-06 via official CSLB pages — statuses can change; re-check before contracting.</p>
+     Licences re-verified 2026-11-07 via official CSLB pages — statuses can change; re-check before contracting.</p>
 </footer>
 </body>
 </html>
