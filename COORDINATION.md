@@ -957,3 +957,21 @@ publishes labelled owner-reported amounts — every occurrence verified labelled
 PR #35 would revert PR #36 if merged; PR #7 unrelated; `run_card.json`/`RUN_CARD.json` case
 collision; build-report timestamp churn; review-platform 403 block (F-14); no provider contacted
 (F-35); racing final-integration sessions 20:22–20:43 UTC all preserved in history.
+### `qa-03` — PR, merge and deploy record (session `arena/d120270b-korea8`, 2026-11-07)
+
+| Item | Value |
+|---|---|
+| Integration PR | **#40** — https://github.com/karagemop466-tech/Korea8/pull/40 (`arena/d120270b-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-07, merge commit `d0d4d2e` (merge commit `d0d4d2e`) |
+| Legacy Pages build for `d0d4d2e` | **built** (2026-11-07T21:00:58Z) |
+| CI workflow `Publish overflow dashboard` for `d0d4d2e` | run 42413797038 — **success** (26 s; build + `verify_overflow_site.py` + unit tests + Pages artifact) |
+| Live privacy re-check | `https://karagemop466-tech.github.io/Korea8/bathtub/data/flags.json` re-fetched after deploy: F-15 now states only DBI's published position — the internal instruction is **no longer served** |
+| Live content parity | root dashboard counts match the audited revision (23 CSLB records, 6 B+C-36 leads, 42 requirements, 73 sources, 36 flags) |
+| Full audit | `audit/REPORT_2026-11-07_d120270b.md` (236 rows, 0 offenders; 7 official sources re-read; irregularities I-1…I-10) |
+
+**Open items left for the owner (do not block; all recorded above and in the audit report):**
+quote-amount presentation (I-2, policy review PR #18 vs merged PR #36, site flag F-02);
+stale `scripts/verify_project_site.py` (I-3); conflicting open PRs **#35**, **#39** and
+**#38** (its `Publish verified bathtub overflow repair dashboard` check is **FAILURE** —
+another racing session's branch, not merged by this session), plus unrelated stale PR **#7**.
+This session merged only its own verified PR #40 and did not touch other sessions' open PRs.
