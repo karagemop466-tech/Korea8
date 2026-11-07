@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-11-07T20:42:52.864443+00:00",
+  "result": "PASS",
+  "checks_run": 22,
+  "checks_passed": 22,
+  "checks_failed": 0,
+  "canonical_rows_checked": 236,
+  "tracked_html_files": 67,
+  "checks": [
+    {
+      "check": "all canonical pages present",
+      "ok": true,
+      "detail": "10/10"
+    },
+    {
+      "check": "HTML tag balance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "every page links every canonical page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no broken internal links/anchors in canonical pages",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "every canonical table row has an official/source link",
+      "ok": true,
+      "detail": "236 rows; offenders: "
+    },
+    {
+      "check": "provider count parity",
+      "ok": true,
+      "detail": "24/24"
+    },
+    {
+      "check": "requirement count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "estimate count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "source count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "flag count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "CSLB link parity and provider source ids",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "unresolved identity fields blank",
+      "ok": true,
+      "detail": "1 unresolved"
+    },
+    {
+      "check": "verified estimate amounts blank",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "review ratings/counts blank",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "owner amounts published as owner-reported",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no numeric star ratings in canonical pages",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "all row source ids resolve and official urls are https",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "suspended provider excluded from priority leads",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "neutral public wording and no placeholders/conflict markers",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "no None/nan literals in canonical pages",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "build report counts match data",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no broken internal links across tracked HTML",
+      "ok": true,
+      "detail": "203 links; offenders: "
+    }
+  ]
+}

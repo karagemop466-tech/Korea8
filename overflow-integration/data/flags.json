@@ -1,0 +1,534 @@
+{
+  "as_of": "2026-11-07",
+  "rows": [
+    {
+      "id": "F-01",
+      "severity": "High",
+      "category": "Provider fit",
+      "title": "No provider confirms the exact all-in-one job",
+      "detail": "No retrieved source confirms this exact stuck trip-lever extraction plus storage-unit ceiling restoration, nor current availability or acceptance.",
+      "action": "Use the shortlist as inquiry leads only; obtain one written combined scope and schedule before claiming a provider can do the job.",
+      "source_ids": [
+        "OWNER",
+        "HEISE-INGLESIDE",
+        "CSLB-1115649"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-02",
+      "severity": "High",
+      "category": "Estimates",
+      "title": "Supplied quote amounts are owner reports, not verified prices",
+      "detail": "The $614/$550/$135 amounts and scopes came from the owner; no quote documents or contractor confirmations were supplied. Earlier canonical pages suppressed the amounts, preventing the requested comparison.",
+      "action": "Show supplied amounts in an owner-reported column, leave independently verified amounts blank, and requote one identical scope.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-977638",
+        "CSLB-757796",
+        "CSLB-1024971"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-03",
+      "severity": "High",
+      "category": "Estimates",
+      "title": "The three estimates are not like-for-like",
+      "detail": "Replacement, lever/plug/spout-diverter, and handle adjustment are different scopes. “Spout/diverter” may not mean the waste-and-overflow assembly.",
+      "action": "Annotate parts and access/restoration assumptions before comparing prices.",
+      "source_ids": [
+        "OWNER",
+        "WATCO",
+        "CSLB-757796"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-04",
+      "severity": "High",
+      "category": "Estimates",
+      "title": "No supplied quote explicitly prices ceiling opening/restoration",
+      "detail": "Silence about drywall is not proof of exclusion, but no combined plumbing-plus-restoration price is on file.",
+      "action": "Obtain a written fallback price with opening, patch/panel, texture, paint, cleanup and permit assumptions.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-C9",
+        "SF-FEES"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-05",
+      "severity": "Medium",
+      "category": "Estimates",
+      "title": "Quote validity and current pricing are unconfirmed",
+      "detail": "The supplied date is 2026-08-30; no validity period or current requote was supplied.",
+      "action": "Ask each provider to confirm validity or issue a current written quote.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-06",
+      "severity": "High",
+      "category": "Licensing",
+      "title": "B + C-36 does not automatically prove drywall self-performance",
+      "detail": "Earlier pages said B + C-36 “covers both trades directly.” Official C-9/BPC §7057 sources require an appropriate contract/classification structure; C-36 is plumbing, C-9 is drywall.",
+      "action": "Name the restoration party and license in the contract; ask whether work is self-performed or subcontracted.",
+      "source_ids": [
+        "CSLB-C9",
+        "CSLB-C36",
+        "BPC-7057",
+        "CSLB-B-FAST",
+        "REPO-OLD-EXEC"
+      ],
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-07",
+      "severity": "Medium",
+      "category": "Licensing",
+      "title": "SF Building Group is B-only on the checked record",
+      "detail": "#1106131 shows B, not C-36. Plumbing must be appropriately licensed/subcontracted; the site also emphasizes larger planned projects.",
+      "action": "Do not label it a plumber; identify the C-36 and restoration parties and confirm small-job acceptance.",
+      "source_ids": [
+        "CSLB-1106131",
+        "SFBG",
+        "BPC-7057"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-08",
+      "severity": "Medium",
+      "category": "Licensing",
+      "title": "HARP/24-7 is B-2, not B or C-36",
+      "detail": "#1105133 is B-2 only. BPC §7057.5 requires three unrelated trades and restricts structural work and plumbing-system replacement/substantial alteration.",
+      "action": "Do not group it with multi-trade B licensees or treat it as an automatic plumbing-plus-drywall fit.",
+      "source_ids": [
+        "CSLB-1105133",
+        "BPC-7057-5"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-09",
+      "severity": "High",
+      "category": "License status",
+      "title": "Kenneth Asire Plumbing is bond-suspended",
+      "detail": "#1027286 is suspended for contractors-bond suspension; recorded bond cancellation is 2026-08-16. CSLB notes a replacement bond may not yet be processed.",
+      "action": "Exclude from the active shortlist; recheck the official record before any reconsideration.",
+      "source_ids": [
+        "CSLB-1027286"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "status": "Open"
+    },
+    {
+      "id": "F-10",
+      "severity": "Medium",
+      "category": "License status",
+      "title": "Advanced Plumbing carries a future-suspension warning",
+      "detail": "#1009195 is current and active but CSLB warns it may be suspended at a future date for an unresolved final liability.",
+      "action": "Review the official warning and recheck before engagement; do not infer the underlying merits.",
+      "source_ids": [
+        "CSLB-1009195"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "status": "Open"
+    },
+    {
+      "id": "F-11",
+      "severity": "Medium",
+      "category": "License status",
+      "title": "D G Construction has a complaint-disclosure link",
+      "detail": "#297604 is active B + C-36; the disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
+      "action": "Read the official citation/disclosure and CSLB limits; active status is not a clean-history guarantee.",
+      "source_ids": [
+        "CSLB-297604",
+        "DG-COMPLAINT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "status": "Open"
+    },
+    {
+      "id": "F-12",
+      "severity": "Medium",
+      "category": "Identity",
+      "title": "Save-On-Interior and Bay Area Plumbing share address/phone, not proven ownership",
+      "detail": "#749536 (B + C-36) and #757796 (C-36) share a registered street address and phone. CSLB does not establish common control or which entity would contract.",
+      "action": "Confirm the legal contracting entity and license used on any quote; do not merge the identities.",
+      "source_ids": [
+        "CSLB-749536",
+        "CSLB-757796"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "status": "Open"
+    },
+    {
+      "id": "F-13",
+      "severity": "Medium",
+      "category": "Identity",
+      "title": "Portola Plumbing Services identity is unresolved",
+      "detail": "The name appears in prior research/Yelp excerpts, but no exact CSLB legal entity/license match was confirmed.",
+      "action": "Leave license, phone, status and expiry blank; use the official lookup before adding it to a shortlist.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "YELP-PORTOLA"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "status": "Open"
+    },
+    {
+      "id": "F-14",
+      "severity": "Medium",
+      "category": "Reviews",
+      "title": "Yelp business pages were blocked; ratings/counts are blank",
+      "detail": "Business-page fetches returned HTTP 403. Only search-index excerpts were available for some providers; numeric ratings and review counts were not verified.",
+      "action": "Publish review links as unverified leads with retrieval limits; do not present ratings as facts.",
+      "source_ids": [
+        "YELP-RF",
+        "YELP-ACE",
+        "YELP-WEDO",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
+      "status": "Open"
+    },
+    {
+      "id": "F-15",
+      "severity": "Medium",
+      "category": "Reviews",
+      "title": "Rapid Flow wall-opening account is adjacent, not exact-job proof",
+      "detail": "A Yelp-indexed account describes tub-plug retrieval through a wall opening/pipe cut. It does not establish this trip-lever job, ceiling restoration or a current protocol.",
+      "action": "Ask for a direct reference and written scope; keep the observation unverified.",
+      "source_ids": [
+        "YELP-RF",
+        "YELP-RF2",
+        "CSLB-1115649"
+      ],
+      "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
+      "status": "Open"
+    },
+    {
+      "id": "F-16",
+      "severity": "Medium",
+      "category": "Reviews",
+      "title": "Ace occupied-home review is old and not a current protocol",
+      "detail": "An indexed older account mentions masking/booties; the business page was blocked and no current written containment plan was retrieved.",
+      "action": "Request the provider’s current occupied-unit plan and insurance evidence.",
+      "source_ids": [
+        "YELP-ACE",
+        "ACE",
+        "CSLB-829071"
+      ],
+      "official_url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "status": "Open"
+    },
+    {
+      "id": "F-17",
+      "severity": "Medium",
+      "category": "Technical evidence",
+      "title": "Heise’s case studies are self-published and contain a 404 template block",
+      "detail": "The Ingleside/Mission/Marina project pages render project content but embed a “Page Not Found (404)” template block. The Ingleside page describes ceiling access; none proves drywall restoration.",
+      "action": "Treat as adjacent company evidence, not independent verification; ask for references and the restoration party.",
+      "source_ids": [
+        "HEISE-INGLESIDE",
+        "HEISE-MISSION",
+        "HEISE-MARINA",
+        "CSLB-1089561"
+      ],
+      "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "status": "Open"
+    },
+    {
+      "id": "F-18",
+      "severity": "Medium",
+      "category": "Provider fit",
+      "title": "Heise’s license has no B or C-9",
+      "detail": "#1089561 shows A/C-10/C-20/C-36. It is a strong plumbing case-study lead, not a verified drywall/restoration contractor.",
+      "action": "Name a properly licensed restoration partner or contract structure.",
+      "source_ids": [
+        "CSLB-1089561",
+        "CSLB-C9",
+        "BPC-7057"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "status": "Open"
+    },
+    {
+      "id": "F-19",
+      "severity": "Medium",
+      "category": "Provider fit",
+      "title": "Bernal Hill is a restoration partner, not a plumber",
+      "detail": "#995163 shows B + C-9 and advertises patch/paint/texture/build-back, but no C-36.",
+      "action": "Use only for the restoration leg under a lawful combined contract; verify the plumber separately.",
+      "source_ids": [
+        "CSLB-995163",
+        "BERNAL",
+        "CSLB-C36"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "status": "Open"
+    },
+    {
+      "id": "F-20",
+      "severity": "Medium",
+      "category": "Provider fit",
+      "title": "We Do, Ayoob & Peery and SF Building Group emphasize larger/commercial work",
+      "detail": "Official sites position these firms around design-build, commercial wet-side systems or larger planned projects. Small occupied-unit repair acceptance is unconfirmed.",
+      "action": "Confirm minimum job size and availability before prioritizing; do not infer refusal.",
+      "source_ids": [
+        "WEDO",
+        "AYOOB",
+        "SFBG",
+        "CSLB-1096552",
+        "CSLB-392967",
+        "CSLB-1106131"
+      ],
+      "official_url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "status": "Open"
+    },
+    {
+      "id": "F-21",
+      "severity": "High",
+      "category": "Permit",
+      "title": "Job-specific permit determination is still open",
+      "detail": "SF.gov requires a permit before cutting/replacing pipes; §104.2 exemptions are conditional. No DBI written determination for this exact scope was supplied.",
+      "action": "Get the permit answer in writing before work; do not assume exemption or infer a permit-free path.",
+      "source_ids": [
+        "SF-PERMIT",
+        "SF-CODE-104",
+        "SF-DBI"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "status": "Open"
+    },
+    {
+      "id": "F-22",
+      "severity": "Medium",
+      "category": "Permit",
+      "title": "SF Plumbing Code §104.2 is now retrieved; earlier “unverified” flag is corrected",
+      "detail": "The operative exemption text was directly retrieved from American Legal Publishing chunk 14. Earlier canonical pages still listed it as not retrievable.",
+      "action": "Publish the exact conditional exemptions and link the code; keep job applicability open.",
+      "source_ids": [
+        "SF-CODE-104",
+        "REPO-OLD-INDEX"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-23",
+      "severity": "Medium",
+      "category": "Code",
+      "title": "Access-panel dimensions remain unverified",
+      "detail": "IAPMO chapter 4 redirected to a members-only login; no operative 12-inch access-panel text was retrieved. A SF code-amendments URL returned 404.",
+      "action": "Leave dimensions blank and ask DBI/contractor for the applicable written requirement.",
+      "source_ids": [
+        "IAPMO",
+        "SF-CODE-104",
+        "SF-DBI"
+      ],
+      "official_url": "https://aa.iapmo.org/?code=UPC&chapter=4",
+      "status": "Open"
+    },
+    {
+      "id": "F-24",
+      "severity": "Medium",
+      "category": "Permit fees",
+      "title": "Official fee category is not a confirmed job price",
+      "detail": "Table 1A-C lists Category 1P at $290 and separate inspection rates, but the job category and whether quotes include fees are unconfirmed.",
+      "action": "Budget fees separately only after DBI/quote confirmation; do not add them blindly or present them as total cost.",
+      "source_ids": [
+        "SF-FEES",
+        "OWNER"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "status": "Open"
+    },
+    {
+      "id": "F-25",
+      "severity": "Medium",
+      "category": "Site conditions",
+      "title": "Building age, paint and suspect materials are unknown",
+      "detail": "Lead RRP and asbestos controls are conditional. No age/material assessment or photographs were supplied.",
+      "action": "Screen before disturbing finishes; use qualified professionals if suspect material is present.",
+      "source_ids": [
+        "EPA-RRP",
+        "EPA-ASBESTOS",
+        "OWNER"
+      ],
+      "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+      "status": "Open"
+    },
+    {
+      "id": "F-26",
+      "severity": "Medium",
+      "category": "Site conditions",
+      "title": "Storage-unit authority and affected tenancies are unconfirmed",
+      "detail": "The space below may be a separate unit/common area; ownership, consent and notice recipients were not supplied.",
+      "action": "Confirm authority and give each affected tenant the required notice before scheduling.",
+      "source_ids": [
+        "CIV-1954",
+        "OWNER"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "status": "Open"
+    },
+    {
+      "id": "F-27",
+      "severity": "Medium",
+      "category": "Evidence",
+      "title": "No reference photographs or exact assembly model were supplied",
+      "detail": "Analysis is description-based; manufacturer instructions are model-specific and cannot identify the stuck unit.",
+      "action": "Collect photos/model/size before finalizing parts and access strategy.",
+      "source_ids": [
+        "OWNER",
+        "WATCO"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-28",
+      "severity": "Medium",
+      "category": "Insurance",
+      "title": "Workers-comp “exempt” is not general-liability proof",
+      "detail": "Several CSLB records certify no employees. That does not establish general-liability coverage or coverage for subcontractors.",
+      "action": "Request current certificates for every onsite party and match the legal entity.",
+      "source_ids": [
+        "CSLB-1115649",
+        "CSLB-749536",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "status": "Open"
+    },
+    {
+      "id": "F-29",
+      "severity": "Low",
+      "category": "Address",
+      "title": "Fast Response registered-address wording differs from the website",
+      "detail": "CSLB prints “236 W POTRAL AVE #459”; the company site uses a different address presentation. The official record is not silently corrected.",
+      "action": "Use the CSLB wording for the license row and confirm the current business address directly.",
+      "source_ids": [
+        "CSLB-1024971",
+        "FAST"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "status": "Open"
+    },
+    {
+      "id": "F-30",
+      "severity": "Low",
+      "category": "History",
+      "title": "Save-On-Interior has 2015–2016 CSLB miscellaneous entries",
+      "detail": "The record lists cash-deposit letters. No current disciplinary inference is made from those entries.",
+      "action": "Read the official record and ask the contractor if relevant; do not infer misconduct.",
+      "source_ids": [
+        "CSLB-749536"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "status": "Open"
+    },
+    {
+      "id": "F-31",
+      "severity": "Medium",
+      "category": "Directory error",
+      "title": "A third-party directory misattributes license #297604",
+      "detail": "Earlier research found contractorlicenseca.com associating #297604 with Cahill; the official CSLB record for #297604 is D G Construction, while Cahill is #300647.",
+      "action": "Use CSLB as the license authority; do not publish the directory attribution.",
+      "source_ids": [
+        "CSLB-297604",
+        "CSLB-300647",
+        "REPO"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-32",
+      "severity": "Low",
+      "category": "Repository",
+      "title": "The repository also hosts unrelated DOE GEMS research",
+      "detail": "Legacy GEMS source/evidence/docs/downloads remain preserved and are not part of the repair analysis.",
+      "action": "Keep the repair dashboard canonical and link the legacy archive separately; do not delete unrelated work.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-33",
+      "severity": "Medium",
+      "category": "Repository",
+      "title": "Parallel sessions produced duplicate and conflicting bathtub routes",
+      "detail": "Earlier root/bathtub/bathtub-overflow/bathroom-overflow/trip-lever/docs routes disagreed on counts, classifications, amounts and permit/code claims. Main now uses redirect stubs and archives.",
+      "action": "Preserve stubs/archives/history; publish one canonical root dashboard and log superseded claims.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "REPO-PR33"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-34",
+      "severity": "Medium",
+      "category": "Publication",
+      "title": "GitHub Pages status has lagged/errored across rapid merges",
+      "detail": "The Pages API reported errored/building states during multiple same-hour merges; an old successful build is not proof of the current commit.",
+      "action": "Verify the specific merge commit, served content and build result; use a checked static-artifact workflow if legacy deployment remains unreliable.",
+      "source_ids": [
+        "PAGES-API",
+        "REPO-BOARD",
+        "GH-ACTIONS"
+      ],
+      "official_url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
+      "status": "Open"
+    },
+    {
+      "id": "F-35",
+      "severity": "Low",
+      "category": "Outreach",
+      "title": "No provider has been contacted or booked",
+      "detail": "This research did not submit forms, call providers, confirm availability, negotiate price or create an appointment.",
+      "action": "Use the ready-to-send scope sheet for inquiries; record responses before updating fit/availability fields.",
+      "source_ids": [
+        "OWNER",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-36",
+      "severity": "Low",
+      "category": "Parallel work",
+      "title": "PR #33 was closed unmerged and its branch deleted",
+      "detail": "The 22-license audit/analysis commit remains accessible by SHA and was reviewed; it is not merged over the newer main baseline.",
+      "action": "Preserve the commit reference and incorporate independently rechecked facts; do not silently discard the parallel work.",
+      "source_ids": [
+        "REPO-PR33",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
+      "status": "Resolved by preservation"
+    }
+  ]
+}

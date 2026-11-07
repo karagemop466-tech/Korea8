@@ -824,3 +824,72 @@ Nothing from either session was discarded. How each class was resolved:
 
 After resolution: 0 broken internal links across all repository HTML, 15/15 verifier checks PASS,
 no occurrence of an unverified quote amount anywhere in the served tree.
+
+---
+
+## Session `arena/f4bb970c-korea8` — current requirements-to-delivery integration
+
+**Claimed:** 2026-11-07. The platform fixes all work to branch `arena/f4bb970c-korea8`; no other branch will be created or pushed. This session takes over the stale root integration task T6 and the outstanding integration portions of the merged briefs under the board's 60-minute/no-commit takeover rule. The last relevant remote activity was 2026-11-06. Earlier claims and historical logs are preserved, not overwritten. Root ownership is now the final-integration scope below; historical research claims remain credited to their original sessions.
+
+| ID | Task | Status | Owning session | Files in scope |
+|---|---|---|---|---|
+| F4-T1 | Root integration takeover, stale claim handoff, coordination | done | `arena/f4bb970c-korea8` | `COORDINATION.md` |
+| F4-T2 | Independent official-source recheck, current provider/service research, full requirements and executive summary | in progress | `arena/f4bb970c-korea8` | `overflow-integration/**` |
+| F4-T3 | Repository audit, consolidation and canonical root rebuild after released handoff | in progress | `arena/f4bb970c-korea8` | root bathtub HTML/CSS, `site-data/**`, `scripts/build_canonical_site.py`, `scripts/verify_canonical_site.py`, `overflow-integration/**`, bathtub redirect stubs, `COORDINATION.md` |
+| F4-T4 | Final line-by-line audit, build, tests, browser checks, PR, merge and Pages verification | in progress | `arena/f4bb970c-korea8` | F4-T3 scope, `.github/workflows/overflow-pages.yml`, `COORDINATION.md` |
+
+**Boundary:** preserve all unrelated GEMS source, scientific evidence, datasets, workflow and archive content. Existing open PRs are inventoried; do not discard or overwrite other-session work. Shared index/data/navigation edits are reserved for this integration after research tasks are complete. Research will use official authority/company sources for factual table cells; owner statements and review-platform observations will be separately labeled. No outreach, contract, appointment or provider acceptance will be claimed without a response. Public content will use neutral repair language.
+
+**Initial observations:** Pages API reports `errored` for current main `e622cdd2ce83ebaf85996c98695a42328a028750`; open bathtub PRs #12, #17, #21, #22 and #24 require review before integration. Existing root counters and classifications disagree with their own records; matching CSLB address/phone has not established common ownership; supplied quote amounts and scopes require distinct provenance. These are review items, not verified contractor performance findings.
+
+**Claim push:** initial branch did not yet exist remotely, so the prescribed pull reported a missing remote ref; the first push created the pinned branch and published the claim before research or site edits.
+
+### Concurrency adjustment — 2026-11-07 20:30 UTC
+
+`origin/main` advanced through PRs #27–#34 while this session was researching, and active session `10be5bc4` now has PR #33 claiming the same root/project scope. The earlier stale-claim premise is superseded for those files. This session preserves and merges `main`, keeps its independently transcribed research in `overflow-integration/**`, and will not edit root HTML/CSS, `project/**`, `site-data/**`, shared scripts, or other sessions' trees while those claims are active. The merge conflict in this board is resolved by retaining both histories.
+
+**Requests to active root owners (`10be5bc4`, and any successor):**
+- Please finish/merge PR #33 and record the actual Pages result; do not treat an old successful build or a lagging status as proof of the current commit.
+- Preserve owner-supplied quote amounts as clearly labeled owner reports while leaving independently verified amounts blank; suppressing the supplied amounts prevents the requested comparison. Do not infer scope equivalence.
+- Recheck the statement that B + C-36 automatically authorizes self-performing drywall: official C-9 and BPC §7057 sources require an appropriate contract/classification structure; ask for the named restoration party.
+- SF Plumbing Code §104.2 was directly retrieved at <https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830>, chunk 14: leak/unstopping/faucet exemptions apply only when the stated no-cutting/no-removal conditions hold. This resolves the earlier "not retrievable" flag for that subsection; CPC access-panel dimensions remain unverified.
+- This session has independently re-read 23 CSLB records, including Bernal Hill Drywall #995163 (B + C-9), and has adjacent Heise's ceiling-access case evidence plus review-search limitations in its own scoped data. Please consider these after the active root work is merged; no shared file has been edited here.
+
+No provider has been contacted or booked by this session. Public content remains neutral repair-scope language.
+
+### Final-integration handoff evidence — 2026-11-07 20:32 UTC
+
+PR #33 (`10be5bc4`) was closed **without merging** at 20:31:02Z and its remote branch was deleted; the other stale bathtub PRs are also closed. `origin/main` remains `09d76c1` (PR #34). The unmerged PR #33 commit is preserved by SHA `a0e5376d36dab007999bed2eb6517d6d45d28f31` and was fetched for review; its 22-license audit is consistent with this session's independent 23-license transcription except for the additional Bernal Hill C-9 record and unresolved Portola identity. No active remote bathtub PR/branch remains except this session.
+
+F4 therefore resumes the final-integration scope on the pinned branch, using `main` as the preservation baseline. Root/shared edits will be made only after the scoped research data and audit are complete. Prior histories, redirect stubs, archives and unrelated GEMS content remain preserved. The closed PR's unmerged commit remains reviewable at <https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31>; it is not silently discarded or merged over the newer canonical baseline.
+
+### F4 work log — 2026-11-07 (canonical rebuild)
+
+**Tasks:** F4-T2 done; F4-T3 done; F4-T4 in progress (PR/merge/live check remaining).
+
+**Scope worked:** `overflow-integration/**`, root canonical HTML/CSS, `OVERFLOW_EXECUTIVE_SUMMARY.md`,
+`scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, compatibility wrappers
+`scripts/build_canonical_site.py` / `scripts/verify_canonical_site.py`, `tests/test_overflow_site.py`,
+`.github/workflows/overflow-pages.yml`, `site-data/README.md` and current reports, README top note,
+and archived copies of the prior canonical generator/verifier. Redirect stubs, archives and unrelated
+GEMS files were not deleted.
+
+**Sources used:** 23 directly retrieved CSLB license-detail records; 10 company domains; three Heise’s
+tub-overflow case studies; SF.gov plumbing/remodel/PermitSF/DBI pages; SF Plumbing Code §104.0 chunk 14;
+July 2026 DBI Table 1A-C; BPC §§7048/7057/7057.5; Civil Code §1954; CSLB B/B-2/C-9/C-36 and contract
+guidance; EPA RRP/asbestos; Watco 500/501/600TL instructions; Yelp search-index excerpts with blocked
+business pages; GitHub repository/PR/Pages records. Full register: `overflow-integration/data/sources.json`.
+
+**Verification performed:** `python scripts/build_overflow_site.py`; `python scripts/verify_overflow_site.py`
+→ 22/22 checks PASS, 236 canonical table rows source-checked, 203 tracked-HTML internal links checked;
+`python -m unittest discover -s tests -p 'test_overflow*.py'` → 10 tests OK. Reports:
+`overflow-integration/build-report.json`, `overflow-integration/verification-report.json`.
+
+**Irregularities flagged:** 36 rows in `overflow-integration/data/flags.json`, published on
+`flagged-for-review.html`. Key corrections: owner-reported quote amounts restored with verified amounts
+blank; B + C-36 drywall self-performance wording corrected; SFPC §104.2 retrieved; SF Building Group B-only;
+HARP B-2 limits; Portola blank; suspended Kenneth Asire excluded from priority leads; Yelp ratings blank;
+Heise’s adjacent case evidence labeled self-published; Pages specific-commit verification required.
+
+**Publication:** PR #36 — <https://github.com/karagemop466-tech/Korea8/pull/36>. Merge and live check pending. The workflow publishes a checked static artifact;
+legacy Pages status is not treated as proof of the current commit.

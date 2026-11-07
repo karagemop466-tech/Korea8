@@ -1,0 +1,131 @@
+{
+  "as_of": "2026-11-07",
+  "rows": [
+    {
+      "id": "C-01",
+      "topic": "Permit trigger",
+      "rule": "A permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.",
+      "source_ids": [
+        "SF-PERMIT"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "application": "If the repair cuts/replaces concealed drainage piping, plan the permit/inspection path before work."
+    },
+    {
+      "id": "C-02",
+      "topic": "Conditional exemptions",
+      "rule": "SF Plumbing Code §104.2 exempts leak repair, unstopping and certain faucet/fixture work only when the stated no-cutting/no-removal conditions hold.",
+      "source_ids": [
+        "SF-CODE-104"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "application": "Do not assume a stuck trip-lever replacement is exempt; match the exact scope to the text."
+    },
+    {
+      "id": "C-03",
+      "topic": "Permit holder",
+      "rule": "DBI lists eligible license classes and limits owner-self-work; registered contractors use PermitSF/AUTH.",
+      "source_ids": [
+        "SF-PERMIT",
+        "SF-AUTH",
+        "SF-REMODEL"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "application": "Confirm the actual permit holder and license class; registration is not verified for any lead."
+    },
+    {
+      "id": "C-04",
+      "topic": "Inspection before covering",
+      "rule": "Plumbing/mechanical work must be inspected before pipes are covered; remodel final inspection waits for trade finals.",
+      "source_ids": [
+        "SF-PERMIT",
+        "SF-REMODEL"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "application": "Keep the cavity open until required sign-off."
+    },
+    {
+      "id": "C-05",
+      "topic": "B general building contracts",
+      "rule": "BPC §7057 allows a B prime contract for other trades when it requires at least two unrelated trades, or the B holds the appropriate classification/subcontracts appropriately.",
+      "source_ids": [
+        "BPC-7057",
+        "CSLB-B-FAST"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "application": "Name the plumbing and restoration parties; do not infer drywall self-performance from B + C-36 alone."
+    },
+    {
+      "id": "C-06",
+      "topic": "B-2 limits",
+      "rule": "B-2 requires at least three unrelated trades on existing residential wood-frame work and restricts structural work and plumbing-system installation/replacement/substantial alteration.",
+      "source_ids": [
+        "BPC-7057-5"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5.",
+      "application": "HARP/24-7 #1105133 is not an automatic two-trade plumbing-plus-drywall fit."
+    },
+    {
+      "id": "C-07",
+      "topic": "Small-work exemption",
+      "rule": "BPC §7048 has a conditional under-$1,000 aggregate exemption; it does not apply when a building permit is required or the work is part of a larger operation.",
+      "source_ids": [
+        "BPC-7048"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
+      "application": "The supplied quote amounts do not establish an exemption; confirm permit status and aggregate scope."
+    },
+    {
+      "id": "C-08",
+      "topic": "Tenant entry",
+      "rule": "Civil Code §1954 permits necessary/agreed repairs during normal business hours with reasonable written notice; 24 hours is presumed reasonable, mailed notice six days.",
+      "source_ids": [
+        "CIV-1954"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "application": "Document notice, hours and any consent/exception for each affected tenancy."
+    },
+    {
+      "id": "C-09",
+      "topic": "Written contract and payment",
+      "rule": "CSLB requires a written contract over $500; down payment is no more than the lesser of 10% or $1,000, with a rare blanket-bond exception; change orders are written.",
+      "source_ids": [
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "application": "Put scope, permits, cleanup, schedule, price, warranty and payment terms in writing."
+    },
+    {
+      "id": "C-10",
+      "topic": "Lead-safe work",
+      "rule": "EPA RRP requires certified firms/trained lead-safe practices for paid paint-disturbing work in pre-1978 rentals.",
+      "source_ids": [
+        "EPA-RRP",
+        "EPA-RRP-RULES"
+      ],
+      "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+      "application": "Building age is unknown; screen before disturbing paint and leave applicability unconfirmed until assessed."
+    },
+    {
+      "id": "C-11",
+      "topic": "Suspect asbestos",
+      "rule": "EPA advises leaving suspect material alone and using trained/accredited professionals for sampling or disturbance.",
+      "source_ids": [
+        "EPA-ASBESTOS",
+        "CSLB-B-FAST"
+      ],
+      "official_url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos",
+      "application": "Conditional screening control; no asbestos finding is made."
+    },
+    {
+      "id": "C-12",
+      "topic": "Official fee schedule",
+      "rule": "July 2026 DBI Table 1A-C lists Category 1P at $290, with separate inspection/reinspection rates.",
+      "source_ids": [
+        "SF-FEES"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "application": "Fee category and total project cost are unconfirmed; fees are not contractor quotes."
+    }
+  ]
+}
