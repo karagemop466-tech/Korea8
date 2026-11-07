@@ -891,5 +891,5 @@ blank; B + C-36 drywall self-performance wording corrected; SFPC §104.2 retriev
 HARP B-2 limits; Portola blank; suspended Kenneth Asire excluded from priority leads; Yelp ratings blank;
 Heise’s adjacent case evidence labeled self-published; Pages specific-commit verification required.
 
-**Publication:** pending PR creation, merge and live check. The workflow publishes a checked static artifact;
+**Publication:** PR #36 — <https://github.com/karagemop466-tech/Korea8/pull/36>. Merge and live check pending. The workflow publishes a checked static artifact;
 legacy Pages status is not treated as proof of the current commit.
