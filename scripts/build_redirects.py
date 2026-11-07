@@ -26,6 +26,7 @@ RETIRED = {
     "bathtub-overflow": ".",
     "bathroom-overflow": ".",
     "trip-lever": ".",
+    "overflow-trip-lever": ".",
     "docs": "docs",
     "docs/bathtub-overflow": "docs",
 }
@@ -45,6 +46,7 @@ TARGETS = [
     ("candidates", "providers.html"),
     ("allinone", "providers.html"),
     ("technical", "technical-approach.html"),
+    ("rules", "technical-approach.html"),
     ("background", "technical-approach.html"),
     ("findings", "technical-approach.html"),
     ("analysis", "technical-approach.html"),

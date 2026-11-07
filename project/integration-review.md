@@ -9,7 +9,7 @@ not be confirmed says so.
 | # | Observation | Evidence | Disposition |
 |---|---|---|---|
 | 1 | The repository hosts two unrelated bodies of work: a DOE GEMS geothermal fault-prediction project (root README/AGENTS/PROJECT_PROMPT, `docs/`, `evidence/`, `vendor/`, `registry/`, `src/`, `scripts/build_site.py`) and this bathtub trip-lever brief (root site pages, `project/`). | `git ls-tree` of `main`; file headers | The GEMS material is untouched and still served at `docs/`; the bathtub brief owns the root dashboard. Flag F-01. |
-| 2 | Five separate copies of the same brief were published by parallel sessions: `bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `docs/bathtub-*` (plus `docs/bathtub-overflow/`), and two duplicate executive-summary markdown files at the root. | directory listing; `grep` of navigation links | Retired: 43 pages replaced by redirect stubs to the canonical pages, the two markdown duplicates replaced by pointer notes. Originals remain in Git history at commit `e622cdd`. Flag F-11. |
+| 2 | Five separate copies of the same brief were published by parallel sessions: `bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `docs/bathtub-*` (plus `docs/bathtub-overflow/`), and two duplicate executive-summary markdown files at the root. | directory listing; `grep` of navigation links | Retired: 51 pages replaced by redirect stubs to the canonical pages, the two markdown duplicates replaced by pointer notes. Originals remain in Git history at commit `e622cdd` and in the `overflow-trip-lever/` merge commit. A seventh copy (`overflow-trip-lever/`, merged as PR #27 while this pass was running) was retired the same way; its 8 licence rows are a subset of the 13 verified here and matched. Flag F-11. |
 | 3 | GitHub Pages is configured as branch `main`, path `/`, with `.nojekyll` present, so the repository root is published verbatim. | `gh api repos/karagemop466-tech/Korea8/pages` (2026-11-07) | New pages therefore use relative links only; no CDN and no client-side framework. |
 | 4 | The last four Pages builds before this session (`5891eb1`, `0bf6bbe`, `d097deb`, `87e2e17`, `a213cb1`, `e622cdd`) are recorded as `errored` with `duration: 0`, while builds at 13:29, 13:48, 13:49 and 13:50 succeeded. | `gh api .../pages/builds` (2026-11-07) | Content was already ruled out by an earlier session (`.nojekyll` present, no symlinks, largest tracked file 1.7 MB). This session reduces the published file count and re-verifies the deploy below. Flag F-17 in COORDINATION.md. |
 | 5 | The owner-supplied quotes and the "5+ plumbers" history exist only in the brief. | brief | Published as owner-supplied, never as verified. F-02, F-03, F-15. |
@@ -59,10 +59,10 @@ Sources not re-read in this pass are still published, but each carries the date 
 - `python scripts/build_project_site.py` — 94 data rows checked for source links, 0 failures, 0 broken
   internal links, 0 out-of-scope phrases; writes `site-data/build-report.json` and
   `site-data/verification.json`.
-- `python scripts/verify_project_site.py` — 155 relative links, 43 redirect pages, 4 data pages
+- `python scripts/verify_project_site.py` — 155 relative links, 51 redirect pages, 4 data pages
   row-counted against their JSON, 13 licence links, 135 phrase scans, 9 pages with full navigation:
   **PASS**.
-- `python scripts/build_redirects.py --check` — 43 of 43 retired pages redirect to an existing
+- `python scripts/build_redirects.py --check` — 51 of 51 retired pages redirect to an existing
   canonical page.
 
 ## 5. Irregularities carried forward

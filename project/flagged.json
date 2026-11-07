@@ -177,7 +177,7 @@
       "id": "F-11",
       "severity": "informational",
       "title": "Duplicate public briefs from parallel sessions are retired to redirects",
-      "detail": "Earlier parallel sessions published their own copies of this brief at /bathtub/, /bathtub-overflow/, /bathroom-overflow/, /trip-lever/ and /docs/bathtub-*.html. Those routes now open a redirect page that forwards to the corresponding page of this canonical site, so no old URL breaks and only one authoritative copy is browsable. The retired pages and their data files remain in the repository history and on disk; their unique verified findings (Save-On-Interior #749536 and Ayoob & Peery #392967) were re-verified and carried into the canonical provider table.",
+      "detail": "Earlier parallel sessions published their own copies of this brief at /bathtub/, /bathtub-overflow/, /bathroom-overflow/, /trip-lever/, /overflow-trip-lever/ and /docs/bathtub-*.html (plus their own copies of docs/index.html and two executive-summary markdown files at the root). Those 51 pages now open a redirect page that forwards to the matching page of this canonical site, so no old URL breaks and only one authoritative copy is browsable. The retired pages and their data files remain in the repository history and on disk; their unique verified findings (Save-On-Interior #749536 and Ayoob & Peery #392967) were re-verified and carried into the canonical provider table.",
       "source_links": [
         {
           "label": "This repository (history retains the retired pages)",

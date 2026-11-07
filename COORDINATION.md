@@ -547,3 +547,49 @@ dashboard, its navigation, the shared table data and the retirement of duplicate
 source files are not deleted — duplicate *entry pages* are replaced by redirects to the canonical pages and the
 original content remains in Git history. The claim is committed and pushed before any other edit.
 
+
+### `fi-01` … `fi-06` — completed record (session `arena/0e2dfee2-korea8`, 2026-11-07)
+
+**Merge conflict and handoff note.** While this session was working, `main` advanced with PR #27
+(session `arena/64728bdf-korea8`, adding a seventh copy of the brief under `overflow-trip-lever/`).
+`git pull --rebase` stopped on an add/add-style conflict in this file; both session records were kept
+in full (theirs first, then this one), nothing was discarded, and the rebase was completed. That
+session's cross-session request for a nav link to `overflow-trip-lever/index.html` is answered by
+consolidation instead of linking: its 8 licence rows are a subset of the 13 verified here and matched
+on every field, and one authoritative URL was required. `overflow-trip-lever/` is therefore retired
+to redirect stubs like the other duplicated briefs.
+
+| ID | Task | Status | Result |
+|---|---|---|---|
+| `fi-01` | Claim board, branch, coordination note | done | claim commit `6179a28`, pushed before any edit |
+| `fi-02` | Re-verify licences + merge the union into the canonical dataset | done | 13 licence rows re-read on CSLB 2026-11-07; 2 rows added (`749536`, `392967`); 0 corrections needed |
+| `fi-03` | Re-verify rule/code sources | done | CSLB B classification (B&P §7057), BPC §7048, Civil Code §1954, SF DBI plumbing-permit page re-read today; added T-09/T-10/T-11 and R-15…R-20 |
+| `fi-04` | Canonicalise the site, retire duplicate briefs | done | 51 pages across 7 directories replaced by redirect stubs (`scripts/build_redirects.py`); originals kept in Git history |
+| `fi-05` | Address the 2026-11-06 policy review | done | amounts now sit in an explicit "Quoted amount (owner-supplied)" column with the official-confirmation field blank; reader-facing meta-copy about omitted material removed from the requirements page, `project/README.md` and the summary verification statement |
+| `fi-06` | Build + automated verification | done | `build_project_site.py`: 94 rows link-checked, 0 failures, 0 broken links, 0 out-of-scope phrases. `verify_project_site.py`: 155 links, 51 redirects, 4 data pages row-counted, 13 licence links, 135 phrase scans, 9 pages with navigation — PASS |
+| `fi-07` | PR → `main`, merge, Pages deploy | see below | |
+
+**Sources read directly in this pass (2026-11-07):** CSLB licence-detail pages for 977638, 757796,
+749536, 1024971, 1089561, 829071, 1096552, 1106131, 1115649, 1105133, 1140843, 1009195 and 392967;
+CSLB B General Building classification page (quoting B&P §7057); BPC §7048 and Civil Code §1954 on
+leginfo.legislature.ca.gov; SF.gov / DBI "Apply for a plumbing and mechanical permit".
+
+**Irregularities found and recorded during this pass**
+
+1. `docs/index.html` was **not** the DOE GEMS archive the root footer claimed — it was a third
+   bathtub dashboard written by session `3086bd70`. The footer label was wrong; it now points at
+   `docs/executive-summary.html` (the real preserved GEMS page) and `docs/index.html` is retired to a
+   redirect. Logged on the site as part of F-11.
+2. Two root markdown files (`BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`) were
+   duplicate executive summaries; both are now pointer notes to the canonical summary.
+3. CSLB spells Fast Response's street "POTRAL" (#1024971) — reproduced verbatim, flagged F-14.
+4. Advanced Plumbing and Drain (#1009195) still carries the CSLB future-suspension Additional Status
+   (re-confirmed today) — F-12.
+5. Eight candidate contractors published by earlier briefs were not re-read in this pass
+   (FDL #1086935, Precision Rooter, Citywide, Kenneth Asire, Clever, Portola, Cahill, D G
+   Construction). They are deliberately excluded from a table that claims 2026-11-07 verification —
+   F-13.
+6. GitHub Pages has recorded `errored` with `duration: 0` for every build since 2026-11-06 13:37Z,
+   including four pushes made specifically to retrigger it. Content was previously ruled out
+   (`.nojekyll`, no symlinks, 1.7 MB largest file). This session's merge retests the deploy; the
+   outcome is recorded below. Flag F-17 (deployment, not the brief).
