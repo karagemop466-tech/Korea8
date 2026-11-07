@@ -1,8 +1,10 @@
 """One-time transcription of directly reviewed sources; not a live scraper.
 Run from repo root. The JSON, not this script, is the reviewed source of record.
 """
-import json
+import json, sys
 from pathlib import Path
+if (Path(__file__).parent/'data'/'providers.json').exists() and '--force' not in sys.argv:
+ print('Final registers already exist; this one-time CSLB transcription helper is skipped. Use the JSON records as authoritative.'); sys.exit(0)
 D=Path(__file__).parent/'data'
 def save(name,obj): (D/name).write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
 def cslb(n): return f'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={n}'

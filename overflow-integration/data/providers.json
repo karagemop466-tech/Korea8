@@ -35,9 +35,9 @@
       "review_source": "YELP-RF",
       "additional_status": "",
       "flags": [
-        "F-06",
-        "F-07",
-        "F-08"
+        "F-01",
+        "F-14",
+        "F-15"
       ]
     },
     {
@@ -78,8 +78,9 @@
       "review_source": "YELP-ACE",
       "additional_status": "",
       "flags": [
-        "F-06",
-        "F-08"
+        "F-01",
+        "F-14",
+        "F-16"
       ]
     },
     {
@@ -118,9 +119,9 @@
       "review_source": "YELP-HEISE",
       "additional_status": "",
       "flags": [
-        "F-06",
-        "F-09",
-        "F-10"
+        "F-01",
+        "F-17",
+        "F-18"
       ]
     },
     {
@@ -156,9 +157,10 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
+        "F-02",
         "F-03",
         "F-04",
-        "F-06"
+        "F-05"
       ]
     },
     {
@@ -194,11 +196,10 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
+        "F-02",
         "F-03",
         "F-04",
-        "F-06",
-        "F-07",
-        "F-11"
+        "F-12"
       ]
     },
     {
@@ -234,10 +235,10 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
+        "F-02",
         "F-03",
         "F-04",
-        "F-06",
-        "F-12"
+        "F-29"
       ]
     },
     {
@@ -273,9 +274,8 @@
       "review_source": "",
       "additional_status": "CSLB miscellaneous entries: 11/06/2015 cash deposit letter $15,000; 01/14/2016 follow-up letter. No interpretation supplied.",
       "flags": [
-        "F-07",
-        "F-11",
-        "F-13"
+        "F-12",
+        "F-30"
       ]
     },
     {
@@ -312,8 +312,8 @@
       "review_source": "YELP-WEDO",
       "additional_status": "",
       "flags": [
-        "F-06",
-        "F-14"
+        "F-14",
+        "F-20"
       ]
     },
     {
@@ -353,8 +353,7 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
-        "F-06",
-        "F-15"
+        "F-20"
       ]
     },
     {
@@ -391,8 +390,7 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
-        "F-06",
-        "F-16"
+        "F-19"
       ]
     },
     {
@@ -428,9 +426,8 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
-        "F-06",
         "F-07",
-        "F-17"
+        "F-20"
       ]
     },
     {
@@ -465,7 +462,7 @@
       "review_source": "",
       "additional_status": "",
       "flags": [
-        "F-18"
+        "F-08"
       ]
     },
     {
@@ -500,7 +497,7 @@
       "review_source": "",
       "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
       "flags": [
-        "F-19"
+        "F-10"
       ]
     },
     {
@@ -775,8 +772,8 @@
       "review_source": "",
       "additional_status": "CSLB links to complaint disclosure information; separate disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
       "flags": [
-        "F-07",
-        "F-20"
+        "F-11",
+        "F-31"
       ]
     },
     {
@@ -811,7 +808,7 @@
       "review_source": "",
       "additional_status": "License under Contractors Bond Suspension. Recorded bond cancellation date 08/16/2026. CSLB notes a received replacement bond may not yet be processed.",
       "flags": [
-        "F-21"
+        "F-09"
       ]
     },
     {
@@ -877,7 +874,7 @@
       "review_source": "YELP-PORTOLA",
       "additional_status": "",
       "flags": [
-        "F-22"
+        "F-13"
       ]
     }
   ]

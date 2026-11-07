@@ -1,11 +1,13 @@
 > ### This repository hosts two projects
 >
-> **1. Bathtub wastewater overflow trip-lever (current).** The published dossier is the site at
-> the repository root — start at [`index.html`](index.html). It is generated from
-> [`site-data/`](site-data/) by `scripts/build_canonical_site.py` and checked by
-> `scripts/verify_canonical_site.py`. Earlier parallel drafts now redirect to it.
-> See also [`REPO_REVIEW_2026-11-07.md`](REPO_REVIEW_2026-11-07.md) and
-> [`COORDINATION.md`](COORDINATION.md).
+> **1. Bathtub wastewater overflow trip-lever (current).** Start at [`index.html`](index.html)
+> or the live dashboard <https://karagemop466-tech.github.io/Korea8/>. The canonical build reads
+> [`overflow-integration/data/`](overflow-integration/data/) via `scripts/build_overflow_site.py`
+> and is checked by `scripts/verify_overflow_site.py` plus `tests/test_overflow_site.py`.
+> Executive summary: [`OVERFLOW_EXECUTIVE_SUMMARY.md`](OVERFLOW_EXECUTIVE_SUMMARY.md).
+> Audit: [`overflow-integration/REPO_AUDIT.md`](overflow-integration/REPO_AUDIT.md).
+> Earlier parallel drafts are preserved as redirect stubs/archives.
+> See [`COORDINATION.md`](COORDINATION.md) for claims, sources and publication records.
 >
 > **2. DOE GEMS Prize Challenge research (archived, unrelated).** Everything below this note
 > describes that project, preserved unmodified. Its evidence site lives in [`docs/`](docs/index.html).

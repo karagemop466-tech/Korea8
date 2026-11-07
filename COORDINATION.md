@@ -862,3 +862,34 @@ No provider has been contacted or booked by this session. Public content remains
 PR #33 (`10be5bc4`) was closed **without merging** at 20:31:02Z and its remote branch was deleted; the other stale bathtub PRs are also closed. `origin/main` remains `09d76c1` (PR #34). The unmerged PR #33 commit is preserved by SHA `a0e5376d36dab007999bed2eb6517d6d45d28f31` and was fetched for review; its 22-license audit is consistent with this session's independent 23-license transcription except for the additional Bernal Hill C-9 record and unresolved Portola identity. No active remote bathtub PR/branch remains except this session.
 
 F4 therefore resumes the final-integration scope on the pinned branch, using `main` as the preservation baseline. Root/shared edits will be made only after the scoped research data and audit are complete. Prior histories, redirect stubs, archives and unrelated GEMS content remain preserved. The closed PR's unmerged commit remains reviewable at <https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31>; it is not silently discarded or merged over the newer canonical baseline.
+
+### F4 work log — 2026-11-07 (canonical rebuild)
+
+**Tasks:** F4-T2 done; F4-T3 done; F4-T4 in progress (PR/merge/live check remaining).
+
+**Scope worked:** `overflow-integration/**`, root canonical HTML/CSS, `OVERFLOW_EXECUTIVE_SUMMARY.md`,
+`scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, compatibility wrappers
+`scripts/build_canonical_site.py` / `scripts/verify_canonical_site.py`, `tests/test_overflow_site.py`,
+`.github/workflows/overflow-pages.yml`, `site-data/README.md` and current reports, README top note,
+and archived copies of the prior canonical generator/verifier. Redirect stubs, archives and unrelated
+GEMS files were not deleted.
+
+**Sources used:** 23 directly retrieved CSLB license-detail records; 10 company domains; three Heise’s
+tub-overflow case studies; SF.gov plumbing/remodel/PermitSF/DBI pages; SF Plumbing Code §104.0 chunk 14;
+July 2026 DBI Table 1A-C; BPC §§7048/7057/7057.5; Civil Code §1954; CSLB B/B-2/C-9/C-36 and contract
+guidance; EPA RRP/asbestos; Watco 500/501/600TL instructions; Yelp search-index excerpts with blocked
+business pages; GitHub repository/PR/Pages records. Full register: `overflow-integration/data/sources.json`.
+
+**Verification performed:** `python scripts/build_overflow_site.py`; `python scripts/verify_overflow_site.py`
+→ 22/22 checks PASS, 236 canonical table rows source-checked, 203 tracked-HTML internal links checked;
+`python -m unittest discover -s tests -p 'test_overflow*.py'` → 10 tests OK. Reports:
+`overflow-integration/build-report.json`, `overflow-integration/verification-report.json`.
+
+**Irregularities flagged:** 36 rows in `overflow-integration/data/flags.json`, published on
+`flagged-for-review.html`. Key corrections: owner-reported quote amounts restored with verified amounts
+blank; B + C-36 drywall self-performance wording corrected; SFPC §104.2 retrieved; SF Building Group B-only;
+HARP B-2 limits; Portola blank; suspended Kenneth Asire excluded from priority leads; Yelp ratings blank;
+Heise’s adjacent case evidence labeled self-published; Pages specific-commit verification required.
+
+**Publication:** pending PR creation, merge and live check. The workflow publishes a checked static artifact;
+legacy Pages status is not treated as proof of the current commit.
