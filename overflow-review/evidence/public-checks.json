@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": 2684,
+  "failures": [],
+  "html_files": 70,
+  "scope": "Curated public artifact: internal links/fragments/assets, canonical parity, redirect targets, unsupported amounts and private wording."
+}

@@ -1,0 +1,976 @@
+{
+  "dataset": "providers",
+  "checked_utc": "2026-11-07",
+  "rows": [
+    {
+      "id": "P-01",
+      "license": "977638",
+      "legal_name": "EXPERT PLUMBING SOLUTIONS",
+      "address": "1465 44TH AVENUE, SAN FRANCISCO, CA 94122",
+      "phone": "(415) 531-5340",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "10/31/2028",
+      "workers_comp": "Insurance recorded; expires 07/19/2027",
+      "source_ids": [
+        "CSLB-977638",
+        "WEB-EPS",
+        "RV-EPS"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-02",
+        "F-04"
+      ],
+      "display_name": "Expert Plumbing Solutions",
+      "role": "Quote-origin candidate",
+      "fit_evidence": "Plumbing repairs and fixture installation advertised; exact stuck-linkage extraction not established.",
+      "website": "https://www.eplumbingsolutions.com/",
+      "review_url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-02",
+      "license": "757796",
+      "legal_name": "BAY AREA PLUMBING",
+      "address": "335 14TH AVENUE, SAN FRANCISCO, CA 94118",
+      "phone": "(415) 668-8000",
+      "entity": "Sole Ownership",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "01/31/2027",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-757796",
+        "WEB-BAP",
+        "RV-BAP"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-02",
+        "F-04",
+        "F-08"
+      ],
+      "display_name": "Bay Area Plumbing",
+      "role": "Quote-origin candidate",
+      "fit_evidence": "San Francisco plumbing and bathroom work advertised; exact access method not established.",
+      "website": "https://www.bayareaplumbingsf.com/",
+      "review_url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-03",
+      "license": "1024971",
+      "legal_name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "address": "236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127",
+      "phone": "(415) 596-6115",
+      "entity": "Sole Ownership",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "03/31/2027",
+      "workers_comp": "Insurance recorded; expires 12/18/2026",
+      "source_ids": [
+        "CSLB-1024971",
+        "WEB-Fast",
+        "RV-Fast"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-02",
+        "F-04",
+        "F-09"
+      ],
+      "display_name": "Fast Response Plumbing & Rooter",
+      "role": "Quote-origin candidate",
+      "fit_evidence": "San Francisco residential plumbing, apartments and HOAs advertised; exact access method not established.",
+      "website": "https://www.fastresponseplumbingsf.com/",
+      "review_url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-04",
+      "license": "1089561",
+      "legal_name": "TARO GROUP INC dba HEISES PLUMBING",
+      "address": "1610 EVANS AVE, SAN FRANCISCO, CA 94124",
+      "phone": "(415) 333-0704",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING",
+        "C10 - ELECTRICAL",
+        "A - GENERAL ENGINEERING",
+        "C20 - WARM-AIR HEATING, VENTILATING AND AIR-CONDITIONING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "04/30/2028",
+      "workers_comp": "Insurance recorded; expires 01/11/2027",
+      "source_ids": [
+        "CSLB-1089561",
+        "WEB-Heise-Maintenance",
+        "RV-Heise",
+        "WEB-Heise-Ingleside",
+        "WEB-Heise-Mission",
+        "WEB-Heise-Panhandle"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-04",
+        "F-10"
+      ],
+      "display_name": "Heise’s Plumbing",
+      "role": "Plumbing specialist — strongest job evidence",
+      "fit_evidence": "Company documents Ingleside tub W&O replacement using exterior-ceiling access, plus Mission and Panhandle W&O replacements. Drywall restoration and exact seized-part job acceptance not established.",
+      "website": "https://www.heisesplumbing.com/property-maintenance/",
+      "review_url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-05",
+      "license": "1115649",
+      "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+      "address": "230 EDINBURGH ST, SAN FRANCISCO, CA 94112",
+      "phone": "(415) 866-8401",
+      "entity": "Corporation",
+      "classifications": [
+        "B - GENERAL BUILDING",
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "01/31/2028",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-1115649",
+        "WEB-Rapid",
+        "RV-Rapid"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-04",
+        "F-08"
+      ],
+      "display_name": "Rapid Flow Plumbing & Rooter",
+      "role": "Combined-scope candidate",
+      "fit_evidence": "B + C36 on one license; company advertises plumbing plus general contracting and one crew. Exact repair, drywall finish and occupied-unit references not established.",
+      "website": "https://www.rapidflowbayarea.com/",
+      "review_url": "https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&find_loc=San+Francisco%2C+CA",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-06",
+      "license": "829071",
+      "legal_name": "ACE PLUMBING & ROOTER",
+      "address": "1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417",
+      "phone": "(415) 824-6444",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING",
+        "A - GENERAL ENGINEERING",
+        "C-4 - BOILER, HOT WATER HEATING AND STEAM FITTING",
+        "C16 - FIRE PROTECTION",
+        "B - GENERAL BUILDING",
+        "C10 - ELECTRICAL"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "06/30/2027",
+      "workers_comp": "Insurance recorded; expires 07/13/2027",
+      "source_ids": [
+        "CSLB-829071",
+        "WEB-Ace",
+        "RV-Ace"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-04"
+      ],
+      "display_name": "Ace Plumbing & Rooter",
+      "role": "Combined-scope candidate",
+      "fit_evidence": "B + C36 on one license; San Francisco residential service and HOA/property-manager coordination advertised. Exact repair and ceiling restoration not established.",
+      "website": "https://www.aceplumbingandrooter.com/",
+      "review_url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco-11",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-07",
+      "license": "1096552",
+      "legal_name": "WE DO CONSTRUCTION INC",
+      "address": "1528 UNION STREET, SAN FRANCISCO, CA 94123",
+      "phone": "(415) 416-5494",
+      "entity": "Corporation",
+      "classifications": [
+        "B - GENERAL BUILDING",
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "09/30/2028",
+      "workers_comp": "Insurance recorded; expires 11/14/2027",
+      "source_ids": [
+        "CSLB-1096552",
+        "WEB-WDC",
+        "RV-WDC"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-04",
+        "F-11"
+      ],
+      "display_name": "We Do Construction",
+      "role": "Combined-scope candidate — larger-project focus",
+      "fit_evidence": "B + C36; one-contract design/build and self-performed plumbing advertised. Small isolated repair acceptance not established.",
+      "website": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "review_url": "https://www.yelp.com/biz/we-do-construction-san-francisco",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-08",
+      "license": "1106131",
+      "legal_name": "SF BUILDING GROUP",
+      "address": "2128 GREENDALE DR, SOUTH SAN FRANCISCO, CA 94080",
+      "phone": "(415) 297-2246",
+      "entity": "Corporation",
+      "classifications": [
+        "B - GENERAL BUILDING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "06/30/2027",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-1106131",
+        "WEB-SFBG",
+        "RV-SFBG"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-08",
+        "F-11"
+      ],
+      "display_name": "SF Building Group",
+      "role": "Occupied-space coordinator — larger-project focus",
+      "fit_evidence": "B license; occupied-space work and tenant communication advertised. C36 plumbing must be held or appropriately subcontracted; small-job acceptance not established.",
+      "website": "https://sfbuildinggroup.com/",
+      "review_url": "https://www.yelp.com/search?find_desc=SF+Building+Group&find_loc=San+Francisco%2C+CA",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-09",
+      "license": "749536",
+      "legal_name": "SAVE - ON - INTERIOR",
+      "address": "335 14TH AVE, SAN FRANCISCO, CA 94118",
+      "phone": "(415) 668-8000",
+      "entity": "Sole Ownership",
+      "classifications": [
+        "B - GENERAL BUILDING",
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "05/31/2028",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-749536"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-08",
+        "F-12"
+      ],
+      "display_name": "Save-On-Interior",
+      "role": "Combined-scope candidate",
+      "fit_evidence": "B + C36; CSLB address and phone match Bay Area Plumbing records. Common ownership/operator and willingness to combine scopes are not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-10",
+      "license": "392967",
+      "legal_name": "AYOOB & PEERY PLUMBING CO INC",
+      "address": "975 INDIANA ST, SAN FRANCISCO, CA 94107",
+      "phone": "(415) 550-0975",
+      "entity": "Corporation",
+      "classifications": [
+        "B - GENERAL BUILDING",
+        "C-4 - BOILER, HOT WATER HEATING AND STEAM FITTING",
+        "C16 - FIRE PROTECTION",
+        "C36 - PLUMBING",
+        "C20 - WARM-AIR HEATING, VENTILATING AND AIR-CONDITIONING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "09/30/2028",
+      "workers_comp": "Insurance recorded; expires 08/31/2027",
+      "source_ids": [
+        "CSLB-392967",
+        "WEB-Ayoob"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-11"
+      ],
+      "display_name": "Ayoob & Peery Plumbing",
+      "role": "Secondary candidate — commercial focus",
+      "fit_evidence": "B + C36; San Francisco mechanical contractor. Official homepage emphasizes commercial applications; small residential repair acceptance not established.",
+      "website": "https://www.ayoobpeery.com/",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-11",
+      "license": "995163",
+      "legal_name": "BERNAL HILL DRYWALL INC",
+      "address": "720 ANDERSON ST, SAN FRANCISCO, CA 94110",
+      "phone": "(415) 533-8274",
+      "entity": "Corporation",
+      "classifications": [
+        "C-9 - DRYWALL",
+        "B - GENERAL BUILDING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "07/31/2028",
+      "workers_comp": "Insurance recorded; expires 03/10/2027",
+      "source_ids": [
+        "CSLB-995163",
+        "WEB-Bernal",
+        "RV-Bernal"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-04",
+        "F-13"
+      ],
+      "display_name": "Bernal Hill Drywall",
+      "role": "Drywall / build-back specialist",
+      "fit_evidence": "C-9 + B; small wall repairs, patching, texture matching and post-water-damage build-back advertised. No C36 on this license; plumbing partner required.",
+      "website": "https://www.bernalhilldrywall.com/",
+      "review_url": "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
+      "official_status_verified": true,
+      "service_area_verified": true,
+      "review_verified": false,
+      "fit_verified_as_advertised": true,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-12",
+      "license": "1009195",
+      "legal_name": "ADVANCED PLUMBING AND DRAIN INC",
+      "address": "3450 SACRAMENTO ST 204, SAN FRANCISCO, CA 94118",
+      "phone": "(415) 744-4944",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "11/30/2027",
+      "workers_comp": "Insurance recorded; expires 08/21/2027",
+      "source_ids": [
+        "CSLB-1009195"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "Future suspension warning for outstanding final liability",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-14"
+      ],
+      "display_name": "Advanced Plumbing and Drain",
+      "role": "Hold — official additional-status warning",
+      "fit_evidence": "Active C36 record also carries a future-suspension warning for outstanding final liability.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-13",
+      "license": "1105133",
+      "legal_name": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
+      "address": "1546 GUERRERO STREET, SAN FRANCISCO, CA 94110",
+      "phone": "(415) 304-1559",
+      "entity": "Corporation",
+      "classifications": [
+        "B-2 - RESIDENTIAL REMODELING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "05/31/2027",
+      "workers_comp": "Insurance recorded; expires 04/11/2027",
+      "source_ids": [
+        "CSLB-1105133"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-15"
+      ],
+      "display_name": "24/7 SF Handyman & Remodeling",
+      "role": "Secondary remodel candidate",
+      "fit_evidence": "B-2 classification only; appropriately licensed plumbing subcontractor required for this scope.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-14",
+      "license": "1140843",
+      "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "address": "1325 HOWARD AVE BLDG 710, BURLINGAME, CA 94010",
+      "phone": "(650) 991-2100",
+      "entity": "Ltd Liability",
+      "classifications": [
+        "C36 - PLUMBING",
+        "A - GENERAL ENGINEERING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "07/31/2027",
+      "workers_comp": "Workers compensation and liability insurance recorded; both expire 04/01/2027",
+      "source_ids": [
+        "CSLB-1140843"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-16"
+      ],
+      "display_name": "Discount Plumbing Rooter Services",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36 + A; address of record in Burlingame. San Francisco dispatch and exact job acceptance not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-15",
+      "license": "1086935",
+      "legal_name": "FDL PLUMBING INC",
+      "address": "4547 CALLAN BLVD, DALY CITY, CA 94015",
+      "phone": "(415) 678-9557",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "10/31/2028",
+      "workers_comp": "Insurance recorded; expires 01/21/2027",
+      "source_ids": [
+        "CSLB-1086935"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-16"
+      ],
+      "display_name": "FDL Plumbing",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36; address of record in Daly City. San Francisco dispatch and exact job acceptance not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-16",
+      "license": "961218",
+      "legal_name": "PRECISION ROOTER & DRAIN",
+      "address": "945 TARAVAL ST, UNIT 1214, SAN FRANCISCO, CA 94116",
+      "phone": "(415) 724-1824",
+      "entity": "Sole Ownership",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "05/31/2027",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-961218"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-08"
+      ],
+      "display_name": "Precision Rooter & Drain",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36; San Francisco address of record. Exact W&O and drywall scope not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-17",
+      "license": "954385",
+      "legal_name": "CW PLUMBING INC dba CITYWIDE PLUMBING",
+      "address": "244 DENNIS DR, DALY CITY, CA 94015",
+      "phone": "(415) 716-1519",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "07/31/2028",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-954385"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-16"
+      ],
+      "display_name": "Citywide Plumbing",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36; Daly City address of record; license reissued to another entity in 2026. Exact service scope not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-18",
+      "license": "379364",
+      "legal_name": "JAMES CACCIA PLUMBING INC dba CACCIA HOME SERVICES",
+      "address": "1660 GILBRETH RD, BURLINGAME, CA 94010",
+      "phone": "(650) 342-5363",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING",
+        "C31 - CONSTRUCTION ZONE TRAFFIC CONTROL",
+        "C34 - PIPELINE",
+        "C10 - ELECTRICAL"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "04/30/2027",
+      "workers_comp": "Insurance recorded; expires 10/01/2027",
+      "source_ids": [
+        "CSLB-379364"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-16"
+      ],
+      "display_name": "Caccia Home Services",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36 plus other specialty classifications; Burlingame address of record. Exact service scope not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-19",
+      "license": "966337",
+      "legal_name": "FLOW MASTERS PLUMBING INC",
+      "address": "6169 MISSION ST, DALY CITY, CA 94014",
+      "phone": "(415) 751-1933",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING",
+        "C16 - FIRE PROTECTION",
+        "C20 - WARM-AIR HEATING, VENTILATING AND AIR-CONDITIONING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "10/31/2027",
+      "workers_comp": "Insurance recorded; expires 06/01/2027",
+      "source_ids": [
+        "CSLB-966337"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-16"
+      ],
+      "display_name": "Flow Masters Plumbing",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36 plus other specialty classifications; Daly City address of record. Exact service scope not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-20",
+      "license": "300647",
+      "legal_name": "CAHILL CONTRACTORS INC",
+      "address": "425 CALIFORNIA ST, STE 2200, SAN FRANCISCO, CA 94104",
+      "phone": "(415) 986-0600",
+      "entity": "Corporation",
+      "classifications": [
+        "A - GENERAL ENGINEERING",
+        "B - GENERAL BUILDING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "11/30/2027",
+      "workers_comp": "Insurance recorded; expires 07/01/2027",
+      "source_ids": [
+        "CSLB-300647"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-11",
+        "F-17"
+      ],
+      "display_name": "Cahill Contractors",
+      "role": "General-contractor candidate",
+      "fit_evidence": "A + B, no C36. Plumbing specialty subcontractor required; small-job acceptance not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-21",
+      "license": "297604",
+      "legal_name": "D G CONSTRUCTION CO",
+      "address": "P O BOX 22217, SAN FRANCISCO, CA 94122",
+      "phone": "(415) 308-0803",
+      "entity": "Sole Ownership",
+      "classifications": [
+        "B - GENERAL BUILDING",
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "04/30/2027",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-297604",
+        "CSLB-DG-Complaint"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "Complaint disclosure available",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-08",
+        "F-17"
+      ],
+      "display_name": "D G Construction",
+      "role": "Hold — complaint disclosure",
+      "fit_evidence": "B + C36, but official complaint-disclosure record requires review before consideration.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-22",
+      "license": "1027286",
+      "legal_name": "KENNETH ASIRE PLUMBING",
+      "address": "1559 SLOAT BLVD #319, SAN FRANCISCO, CA 94132",
+      "phone": "(415) 913-8048",
+      "entity": "Sole Ownership",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "License is under suspension for the following reasons: License is under Contractors Bond Suspension.",
+      "expire_date": "05/31/2027",
+      "workers_comp": "Insurance recorded; expires 08/30/2027; contractor bond cancellation 08/16/2026",
+      "source_ids": [
+        "CSLB-1027286"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "Contractor bond suspension",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-18"
+      ],
+      "display_name": "Kenneth Asire Plumbing",
+      "role": "Excluded — suspended",
+      "fit_evidence": "Official record shows contractor-bond suspension. Not an active-license candidate at this check.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-23",
+      "license": "1160613",
+      "legal_name": "CLEVER PLUMBING & ROOTER INC",
+      "address": "585 HUNTINGTON AVE APT 4, SAN BRUNO, CA 94066",
+      "phone": "(650) 834-0821",
+      "entity": "Corporation",
+      "classifications": [
+        "C36 - PLUMBING"
+      ],
+      "status": "This license is current and active.",
+      "expire_date": "09/30/2028",
+      "workers_comp": "Exempt; certified no employees",
+      "source_ids": [
+        "CSLB-1160613"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-16"
+      ],
+      "display_name": "Clever Plumbing & Rooter",
+      "role": "Additional licensed candidate",
+      "fit_evidence": "C36; San Bruno address of record. San Francisco dispatch and exact job acceptance not established.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": true,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "License fields verified against CSLB. Company service claims are publisher statements, not independent work-quality guarantees. Blank commercial fields are unverified."
+    },
+    {
+      "id": "P-24",
+      "display_name": "Portola Plumbing Services",
+      "license": "",
+      "legal_name": "",
+      "address": "",
+      "phone": "",
+      "entity": "",
+      "classifications": [],
+      "status": "",
+      "expire_date": "",
+      "workers_comp": "",
+      "source_ids": [
+        "CSLB-Bids"
+      ],
+      "verified_date": "2026-11-07",
+      "additional_status": "License identity not established",
+      "rating": "",
+      "review_count": "",
+      "current_quote": "",
+      "availability": "",
+      "exact_job_acceptance": "",
+      "combined_scope_confirmed": "",
+      "flags": [
+        "F-19"
+      ],
+      "role": "Hold — license not established",
+      "fit_evidence": "Prior repository draft listed this name without a confirmed license. No official identity match adopted.",
+      "website": "",
+      "review_url": "",
+      "official_status_verified": false,
+      "service_area_verified": false,
+      "review_verified": false,
+      "fit_verified_as_advertised": false,
+      "notes": "All identity and license values remain blank. CSLB consumer guidance is the verification route, not evidence that this business is licensed."
+    }
+  ]
+}

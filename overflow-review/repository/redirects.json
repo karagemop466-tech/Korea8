@@ -1,0 +1,229 @@
+{
+  "canonical": [
+    "index.html",
+    "executive-summary.html",
+    "requirements.html",
+    "providers.html",
+    "estimates.html",
+    "technical.html",
+    "analysis.html",
+    "sources.html",
+    "flagged-for-review.html",
+    "repository.html",
+    "verification.html"
+  ],
+  "redirects": [
+    {
+      "path": "bathroom-overflow/flagged.html",
+      "target": "../flagged-for-review.html"
+    },
+    {
+      "path": "bathroom-overflow/index.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "bathroom-overflow/providers.html",
+      "target": "../providers.html"
+    },
+    {
+      "path": "bathroom-overflow/quotes.html",
+      "target": "../estimates.html"
+    },
+    {
+      "path": "bathroom-overflow/scope.html",
+      "target": "../requirements.html"
+    },
+    {
+      "path": "bathroom-overflow/sources.html",
+      "target": "../sources.html"
+    },
+    {
+      "path": "bathtub-overflow/code.html",
+      "target": "../technical.html"
+    },
+    {
+      "path": "bathtub-overflow/costs.html",
+      "target": "../estimates.html"
+    },
+    {
+      "path": "bathtub-overflow/findings.html",
+      "target": "../analysis.html"
+    },
+    {
+      "path": "bathtub-overflow/flagged.html",
+      "target": "../flagged-for-review.html"
+    },
+    {
+      "path": "bathtub-overflow/index.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "bathtub-overflow/scope.html",
+      "target": "../requirements.html"
+    },
+    {
+      "path": "bathtub-overflow/sources.html",
+      "target": "../sources.html"
+    },
+    {
+      "path": "bathtub-overflow/vendors.html",
+      "target": "../providers.html"
+    },
+    {
+      "path": "bathtub/analysis.html",
+      "target": "../analysis.html"
+    },
+    {
+      "path": "bathtub/compliance.html",
+      "target": "../technical.html"
+    },
+    {
+      "path": "bathtub/estimates.html",
+      "target": "../estimates.html"
+    },
+    {
+      "path": "bathtub/executive-summary.html",
+      "target": "../executive-summary.html"
+    },
+    {
+      "path": "bathtub/flagged.html",
+      "target": "../flagged-for-review.html"
+    },
+    {
+      "path": "bathtub/index.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "bathtub/providers.html",
+      "target": "../providers.html"
+    },
+    {
+      "path": "bathtub/requirements.html",
+      "target": "../requirements.html"
+    },
+    {
+      "path": "bathtub/sources.html",
+      "target": "../sources.html"
+    },
+    {
+      "path": "bathtub/technical.html",
+      "target": "../technical.html"
+    },
+    {
+      "path": "bathtub/verification.html",
+      "target": "../verification.html"
+    },
+    {
+      "path": "code-and-permit.html",
+      "target": "technical.html"
+    },
+    {
+      "path": "docs/bathtub-allinone.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "docs/bathtub-candidates.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "docs/bathtub-estimates.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "docs/bathtub-flagged.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/index.html",
+      "target": "../../index.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/providers.html",
+      "target": "../../providers.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/requirements.html",
+      "target": "../../requirements.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/review.html",
+      "target": "../../flagged-for-review.html"
+    },
+    {
+      "path": "docs/bathtub-requirements.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "docs/bathtub-sources.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "docs/bathtub-summary.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "overflow-trip-lever/estimates.html",
+      "target": "../estimates.html"
+    },
+    {
+      "path": "overflow-trip-lever/flagged.html",
+      "target": "../flagged-for-review.html"
+    },
+    {
+      "path": "overflow-trip-lever/index.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "overflow-trip-lever/providers.html",
+      "target": "../providers.html"
+    },
+    {
+      "path": "overflow-trip-lever/requirements.html",
+      "target": "../requirements.html"
+    },
+    {
+      "path": "overflow-trip-lever/rules.html",
+      "target": "../technical.html"
+    },
+    {
+      "path": "overflow-trip-lever/sources.html",
+      "target": "../sources.html"
+    },
+    {
+      "path": "technical-approach.html",
+      "target": "technical.html"
+    },
+    {
+      "path": "trip-lever/background.html",
+      "target": "../technical.html"
+    },
+    {
+      "path": "trip-lever/contractors.html",
+      "target": "../providers.html"
+    },
+    {
+      "path": "trip-lever/estimates.html",
+      "target": "../estimates.html"
+    },
+    {
+      "path": "trip-lever/executive-summary.html",
+      "target": "../executive-summary.html"
+    },
+    {
+      "path": "trip-lever/flagged-for-review.html",
+      "target": "../flagged-for-review.html"
+    },
+    {
+      "path": "trip-lever/index.html",
+      "target": "../index.html"
+    },
+    {
+      "path": "trip-lever/methodology.html",
+      "target": "../repository.html"
+    },
+    {
+      "path": "trip-lever/requirements.html",
+      "target": "../requirements.html"
+    }
+  ]
+}

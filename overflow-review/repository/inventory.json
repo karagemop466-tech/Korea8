@@ -1,0 +1,2908 @@
+{
+  "scope": "Every tracked file inventoried; every decodable text file scanned line-by-line for encoding and applicable JSON/Python syntax. External factual claims only revalidated where official plumbing sources were retrieved. Unrelated GEMS scientific claims are not validated.",
+  "base_commit": "db514cd49787f52d4c0c0c7f36536d36a7123f69",
+  "files": 289,
+  "text_files": 265,
+  "text_lines": 37916,
+  "issue_files": 4,
+  "rows": [
+    {
+      "path": ".github/workflows/gems-pipeline.yml",
+      "bytes": 1861,
+      "sha256": "94bdf18b9d40f437474ce2920bd11d51571f6f9c07a49558344bb29ad813fe4c",
+      "lines": 70,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/.github/workflows/gems-pipeline.yml"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 324,
+      "sha256": "3c4cd026269cdc48006cc246c58a7b7294af984ab16955555e43ae6a2b507899",
+      "lines": 25,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/.gitignore"
+    },
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/.nojekyll"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2230,
+      "sha256": "7a55b78d0e48d04916396f5d0032f2bdd3e3f2f4fd7cebfccc5599ab73a75650",
+      "lines": 39,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/AGENTS.md"
+    },
+    {
+      "path": "BATHTUB_EXECUTIVE_SUMMARY.md",
+      "bytes": 521,
+      "sha256": "2455199e728a1511398d74bf4c64dfd710e802a21a0878d79e2cf6d0c5cf006f",
+      "lines": 10,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/BATHTUB_EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "path": "COORDINATION.md",
+      "bytes": 73484,
+      "sha256": "1d11585463347f879c7b9b34b6bd25a4e95849b22b280fac903544434ad5f225",
+      "lines": 861,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/COORDINATION.md"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY.md",
+      "bytes": 9294,
+      "sha256": "e435760db0f12c030dfa0eb23eb67e361b1a410cf606700b5e85f1216ac72ba0",
+      "lines": 142,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "path": "EXECUTIVE_SUMMARY_bathtub.md",
+      "bytes": 521,
+      "sha256": "41fced284d0798e492d543821f1ba327f6b0238dadda072b143a41be292d10de",
+      "lines": 10,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/EXECUTIVE_SUMMARY_bathtub.md"
+    },
+    {
+      "path": "HYPOTHESES.md",
+      "bytes": 5499,
+      "sha256": "558cdd2dc529b84cd189170a475bbdee37a8a6f73613c2baf8c289f74c807d05",
+      "lines": 97,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/HYPOTHESES.md"
+    },
+    {
+      "path": "PROJECT_PROMPT.md",
+      "bytes": 3152,
+      "sha256": "819771767563456abd34339b0f078150275ac6e0fbea22eaf79fe0d8d0c77731",
+      "lines": 50,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/PROJECT_PROMPT.md"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15023,
+      "sha256": "36d7e02964d405487a1d34fe3c13215978a24b15a981d8acb76dc053ea87344d",
+      "lines": 243,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/README.md"
+    },
+    {
+      "path": "REPO_REVIEW_2026-11-07.md",
+      "bytes": 8438,
+      "sha256": "db84c7b769b30459795b935a6535fc8810baea966fbfd5341811d6f0818e7266",
+      "lines": 67,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/REPO_REVIEW_2026-11-07.md"
+    },
+    {
+      "path": "RUN_CARD.json",
+      "bytes": 4530,
+      "sha256": "f0e9f84359c7b2fc70dfc64b4a97f2288639f40e8f55536af472082dc99d11dd",
+      "lines": 37,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/RUN_CARD.json"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/README.md",
+      "bytes": 1715,
+      "sha256": "044a87ecd52c80b74ff2c0aae2719f8c10712ee2cf2effcedd761d26cde55c99",
+      "lines": 26,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/README.md"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/bathtub-overflow-scripts/build_site.py",
+      "bytes": 30193,
+      "sha256": "1a3768091d649eb7523f9954f3fd97e7665b37f9087764fc3d7359955aa6be81",
+      "lines": 546,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/bathtub-overflow-scripts/build_site.py"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/bathtub-overflow-scripts/verify_site.py",
+      "bytes": 12032,
+      "sha256": "cf3157a9698d760416fbf350e061f4362e78a0041d85779c287890e84e1f5cda",
+      "lines": 256,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/bathtub-overflow-scripts/verify_site.py"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/build_bathtub_site.py",
+      "bytes": 53637,
+      "sha256": "c9465dbaaea934db39b7afa1df050b262a9b86f5936e188abf47b12e6c159721",
+      "lines": 974,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/build_bathtub_site.py"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/build_project_site.py",
+      "bytes": 39953,
+      "sha256": "58dbea161cd2b4c79e24125184505738de4ece7a8609c24d370b1f06d422abd9",
+      "lines": 783,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/build_project_site.py"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/build_project_site.session-0e2dfee2.py",
+      "bytes": 38269,
+      "sha256": "de2253e2da97457290ddbeaa38049bb8546ad84c62598eff2dd5487376829bde",
+      "lines": 788,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/build_project_site.session-0e2dfee2.py"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/build_project_site.session-a6db7ac6.py",
+      "bytes": 39953,
+      "sha256": "58dbea161cd2b4c79e24125184505738de4ece7a8609c24d370b1f06d422abd9",
+      "lines": 783,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/build_project_site.session-a6db7ac6.py"
+    },
+    {
+      "path": "archive/superseded-2026-11-07/test_bathtub_site.py",
+      "bytes": 7649,
+      "sha256": "0626f165227e4940f0501d01fb20ca678b140faea422ac34ad0de73dd186dd5d",
+      "lines": 195,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/archive/superseded-2026-11-07/test_bathtub_site.py"
+    },
+    {
+      "path": "artifacts/bathtub_linkcheck.json",
+      "bytes": 2737,
+      "sha256": "83ccf0278e9e9e18a25296509a429130e7ca5b3bd6317a96a9f51c65968b0e0e",
+      "lines": 31,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/artifacts/bathtub_linkcheck.json"
+    },
+    {
+      "path": "artifacts/validator_report.json",
+      "bytes": 815,
+      "sha256": "55d9b73996e4bc260d2dc000bc8a7e2c978c374120bf53d49e7fc1396e5723bd",
+      "lines": 41,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/artifacts/validator_report.json"
+    },
+    {
+      "path": "audit/sources/GEMSDOEkarage1-tree.json",
+      "bytes": 242275,
+      "sha256": "1a878e0ed3ea9fdc11e2041f419b8eda8f44f8fda51d1e9c4b9f75eb6b58679a",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/GEMSDOEkarage1-tree.json"
+    },
+    {
+      "path": "audit/sources/GEMSDOEkarage2-tree.json",
+      "bytes": 266767,
+      "sha256": "0a694f0fa107f87a2e794c9dc89b4382b3613c9064d3123b4606d21508612c42",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/GEMSDOEkarage2-tree.json"
+    },
+    {
+      "path": "audit/sources/GEMSDOEkarage3-tree.json",
+      "bytes": 216916,
+      "sha256": "e5141bfe3b0d3046ecb5460a3315cf69d0a9f4c500de6a984c42db250af3cbc9",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/GEMSDOEkarage3-tree.json"
+    },
+    {
+      "path": "audit/sources/Korea4-tree.json",
+      "bytes": 232466,
+      "sha256": "4381bdc54b0795339a161b8ec082f5678eb4ddfb1a676dd2db619b0f748a33c4",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/Korea4-tree.json"
+    },
+    {
+      "path": "audit/sources/Korea5-tree.json",
+      "bytes": 30225,
+      "sha256": "34596cee152afef899780acf4d0854c7208f34e322c37f713e4847f6745c6f20",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/Korea5-tree.json"
+    },
+    {
+      "path": "audit/sources/Korea6-tree.json",
+      "bytes": 17770,
+      "sha256": "9ec972bf64f287664dc6f8f1375653a4828ca1b09df8b3b9d83b0fb17305e225",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/Korea6-tree.json"
+    },
+    {
+      "path": "audit/sources/kanlerxz87-cyber_KANLERGEMSDOE2-tree.json",
+      "bytes": 125201,
+      "sha256": "4765a60c4eef6f3ca9bd0410516e22a0f1d2d041d0ad7bcec4f749c772e65c57",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/kanlerxz87-cyber_KANLERGEMSDOE2-tree.json"
+    },
+    {
+      "path": "audit/sources/sassnarep3-star_GEMSDOESASS3-tree.json",
+      "bytes": 152106,
+      "sha256": "7dd754fba299adc7e7292138e5df4f9b442a5c2847d1ea7cfe101698e3fc7560",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/sassnarep3-star_GEMSDOESASS3-tree.json"
+    },
+    {
+      "path": "audit/sources/wingbangboozle1-lang_WBGGEMSDOE1-tree.json",
+      "bytes": 308345,
+      "sha256": "87db1d24e52dacd9a50f5142442db5c37d747dc47fe3ecc5f0042d151bf7457a",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/wingbangboozle1-lang_WBGGEMSDOE1-tree.json"
+    },
+    {
+      "path": "audit/sources/wingbangboozle1-lang_WBGGEMSDOE3-tree.json",
+      "bytes": 338779,
+      "sha256": "bf7db24cebb9f1ef497865b3ab70bfbdca9f6c831278ec3241f4e0a6447ef1e2",
+      "lines": 1,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/audit/sources/wingbangboozle1-lang_WBGGEMSDOE3-tree.json"
+    },
+    {
+      "path": "bathroom-overflow/README.md",
+      "bytes": 2265,
+      "sha256": "da02ad1406afc97f755c4a23d2e02b2938d1c70652faae3df2bba5627987ed87",
+      "lines": 38,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/README.md"
+    },
+    {
+      "path": "bathroom-overflow/flagged.html",
+      "bytes": 1177,
+      "sha256": "c75b9b27e84e690e75907d522ab86a1799121ebb83c53dfc9dde82db5ae89511",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/flagged.html"
+    },
+    {
+      "path": "bathroom-overflow/index.html",
+      "bytes": 1136,
+      "sha256": "1aa6d9a36f004ebc741163f2bfcabd764e7ff1f81125aa8921d743cc89c155b7",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/index.html"
+    },
+    {
+      "path": "bathroom-overflow/providers.html",
+      "bytes": 1152,
+      "sha256": "4026419f2735f3b4a35b6caf48c56ff57e8fbb90e63056a5bafff63954cfc299",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/providers.html"
+    },
+    {
+      "path": "bathroom-overflow/quotes.html",
+      "bytes": 1149,
+      "sha256": "563bd3dd343683067f6a30773ac3ac5f0fec77c90f7d0a2c9144af5aba23bedd",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/quotes.html"
+    },
+    {
+      "path": "bathroom-overflow/scope.html",
+      "bytes": 1157,
+      "sha256": "2244760d25301d53215f2970ee93e2da296d8b163c6136de21ea546beed3189f",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/scope.html"
+    },
+    {
+      "path": "bathroom-overflow/sources.html",
+      "bytes": 1144,
+      "sha256": "1efa7ab1ad3b41263203c40e3a8659598a96de1cffed29f3b7704915344d4207",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/sources.html"
+    },
+    {
+      "path": "bathroom-overflow/style.css",
+      "bytes": 7169,
+      "sha256": "44d1fc8ad5bb99c33c08272072539994152380eb96c8938121651c31dba4bfa5",
+      "lines": 4,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathroom-overflow/style.css"
+    },
+    {
+      "path": "bathtub-overflow/EXECUTIVE_SUMMARY.md",
+      "bytes": 12829,
+      "sha256": "14281f11f5a1a21d91c2d74a928f5be12da86a3f2796891ed649aecc805fd33b",
+      "lines": 134,
+      "check": "UTF-8 text scanned",
+      "issues": [
+        "Legacy unsupported quote amount present; superseded public routes must not expose it"
+      ],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "path": "bathtub-overflow/README.md",
+      "bytes": 4953,
+      "sha256": "0a7b5c7e5787cbc1908594e4427b9eccaa2d070f45468a09fc33e8eea87976d2",
+      "lines": 87,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/README.md"
+    },
+    {
+      "path": "bathtub-overflow/SOURCES.md",
+      "bytes": 18212,
+      "sha256": "adbe8e2c04b80338f1dc77dfbfe2d229666c349f1823e70728ec2ec3c890ccc7",
+      "lines": 62,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/SOURCES.md"
+    },
+    {
+      "path": "bathtub-overflow/code.html",
+      "bytes": 1173,
+      "sha256": "05190020603b9e064dbbb91092d0873c083ea6e56fceee064c1a351689274fda",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/code.html"
+    },
+    {
+      "path": "bathtub-overflow/costs.html",
+      "bytes": 1147,
+      "sha256": "22c219072e0f330cf6f9f6cc6c120f1d08ace687d6830180159ae98a8dc58bad",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/costs.html"
+    },
+    {
+      "path": "bathtub-overflow/data/code_facts.json",
+      "bytes": 14848,
+      "sha256": "be6bf724e171fc5f6e22b6663073b943745540c514203ed987aaa97516105ef9",
+      "lines": 170,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/code_facts.json"
+    },
+    {
+      "path": "bathtub-overflow/data/costs.json",
+      "bytes": 7350,
+      "sha256": "3130461eec983f20f48cd5440dfc7a43a9b7ab3c647eb3d6b834ad9da1412616",
+      "lines": 168,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/costs.json"
+    },
+    {
+      "path": "bathtub-overflow/data/findings.json",
+      "bytes": 13316,
+      "sha256": "cc4132b235ed17445456928c4426d04f2f70f4660cda7e535d92a40680731c55",
+      "lines": 162,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/findings.json"
+    },
+    {
+      "path": "bathtub-overflow/data/flagged.json",
+      "bytes": 17220,
+      "sha256": "92553c1c42a2a92175da25e8fa339bb0ca265fa091038f74e871566a82d6f654",
+      "lines": 267,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/flagged.json"
+    },
+    {
+      "path": "bathtub-overflow/data/requirements.json",
+      "bytes": 22885,
+      "sha256": "e6f5bb4e871108cc3459c518902f299479a58e8f832b889d9ee6022ddc08fed8",
+      "lines": 443,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/requirements.json"
+    },
+    {
+      "path": "bathtub-overflow/data/sources.json",
+      "bytes": 23299,
+      "sha256": "a3c3271bbf62199ee425336315120f7c53bca1dc7562e39ce414ea91459a755b",
+      "lines": 423,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/sources.json"
+    },
+    {
+      "path": "bathtub-overflow/data/vendors.json",
+      "bytes": 23747,
+      "sha256": "c900e0ec4ec4d3efa05f871e4dca351e75a372b775f60db9cd08a3c205a8ed31",
+      "lines": 421,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/data/vendors.json"
+    },
+    {
+      "path": "bathtub-overflow/evidence/verification.json",
+      "bytes": 9496,
+      "sha256": "d3499fbf2f195cba3be2ae381f82dded64b7ceceb7d5c5fe4c6ca676f16da065",
+      "lines": 374,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/evidence/verification.json"
+    },
+    {
+      "path": "bathtub-overflow/findings.html",
+      "bytes": 1177,
+      "sha256": "1ad7259ed00460b1ecc18f83a9d6a68ddcee8d8cb059fb874cfc2d891a3964ef",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/findings.html"
+    },
+    {
+      "path": "bathtub-overflow/flagged.html",
+      "bytes": 1176,
+      "sha256": "39902e430879a6ff58cc16664865124e4d741626110ba1084a8d3f1ffca23d9d",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/flagged.html"
+    },
+    {
+      "path": "bathtub-overflow/index.html",
+      "bytes": 1135,
+      "sha256": "2da0e51eec6201b072695eb2a539a5490aeb0f335e876ebd6e3f2beaf43ab0ec",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/index.html"
+    },
+    {
+      "path": "bathtub-overflow/scope.html",
+      "bytes": 1156,
+      "sha256": "b9eb3f3131f5e9923a5b02df79237c814b21de5bdc57ba04574b99550c4c58d3",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/scope.html"
+    },
+    {
+      "path": "bathtub-overflow/sources.html",
+      "bytes": 1143,
+      "sha256": "807f5420ffffa45eba60f6281d21707f334de0c5cddc5d90c0e1ef2db7b346af",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/sources.html"
+    },
+    {
+      "path": "bathtub-overflow/style.css",
+      "bytes": 3096,
+      "sha256": "f34a48437c7ff973dd02e36cf3fbff74b0034321d0e2acf0fb5fbb04efad976a",
+      "lines": 42,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/style.css"
+    },
+    {
+      "path": "bathtub-overflow/vendors.html",
+      "bytes": 1149,
+      "sha256": "3a5313d6140be771b705ae9909e251ce4a850407669f9892a48deb2e1c45e8e2",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub-overflow/vendors.html"
+    },
+    {
+      "path": "bathtub/analysis.html",
+      "bytes": 1168,
+      "sha256": "10b34fbbf6242e194c68a6982e5be75d8fb077400c1e2c63f3d7ff15fe2a059b",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/analysis.html"
+    },
+    {
+      "path": "bathtub/assets/bathtub.css",
+      "bytes": 7841,
+      "sha256": "7a19f1bb20ebf0b8b797f58a549c409978987c1fe36940fac82fa77094f8438a",
+      "lines": 201,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/assets/bathtub.css"
+    },
+    {
+      "path": "bathtub/compliance.html",
+      "bytes": 1170,
+      "sha256": "a64192dee9f4b4985540f6774a69600687d02a146235724820571883e64a4b93",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/compliance.html"
+    },
+    {
+      "path": "bathtub/data/estimates.json",
+      "bytes": 6883,
+      "sha256": "ba497cb0cde48305e977e51de9e839fb6087ea8776eb35c9fc3f0e8c13efc5c3",
+      "lines": 117,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/estimates.json"
+    },
+    {
+      "path": "bathtub/data/executive-summary.md",
+      "bytes": 6608,
+      "sha256": "4e453f8b80cf37e4ba1d06bc06af0a6210144a0b606464c8ef2c2e2f98c69a98",
+      "lines": 97,
+      "check": "UTF-8 text scanned",
+      "issues": [
+        "Legacy unsupported quote amount present; superseded public routes must not expose it"
+      ],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/executive-summary.md"
+    },
+    {
+      "path": "bathtub/data/flags.json",
+      "bytes": 12869,
+      "sha256": "96f833beccfd8861306e41db61c26a29b74d5bbf1f2eebac7f9cd7d0a743afaa",
+      "lines": 176,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/flags.json"
+    },
+    {
+      "path": "bathtub/data/linkcheck.json",
+      "bytes": 2686,
+      "sha256": "66e9dea0beb27b9250fa02f186699ce37406d2744937ae3b02eecadbdbafb036",
+      "lines": 31,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/linkcheck.json"
+    },
+    {
+      "path": "bathtub/data/providers.json",
+      "bytes": 18186,
+      "sha256": "c6fa288b35e7c7d07cc6ccd181827424086e2c91c2f79fab3c8c286d6a9def25",
+      "lines": 356,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/providers.json"
+    },
+    {
+      "path": "bathtub/data/regulations.json",
+      "bytes": 12652,
+      "sha256": "5fde024ea16c0cc9e21e1086b114708920b8be78af01b47eb32ce75cfbafe992",
+      "lines": 173,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/regulations.json"
+    },
+    {
+      "path": "bathtub/data/requirements.json",
+      "bytes": 16051,
+      "sha256": "5a8767fe570b7479b5ad86f1babdf7423a80679e499dc8f298b3f6b679e37ef4",
+      "lines": 375,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/requirements.json"
+    },
+    {
+      "path": "bathtub/data/technical.json",
+      "bytes": 9635,
+      "sha256": "ecfadee87bb5684aae06c36fbe9cc3b2f3c6146ef6e68b72091e9210a4c6d5d5",
+      "lines": 110,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/technical.json"
+    },
+    {
+      "path": "bathtub/data/url_registry.json",
+      "bytes": 15382,
+      "sha256": "e6157c3c130c45df7f441c4e70a8f076f1df65eeddd77330a0e7e0edafefd0b4",
+      "lines": 319,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/data/url_registry.json"
+    },
+    {
+      "path": "bathtub/estimates.html",
+      "bytes": 1142,
+      "sha256": "f6895843b818f14ea1d0b7caad2d07f6c49d0f4edb5b8386575753358edf48bd",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/estimates.html"
+    },
+    {
+      "path": "bathtub/executive-summary.html",
+      "bytes": 1174,
+      "sha256": "fdd8759c9faa8be8e3b01b610b0bb1c4c40e7e781ead39e83edac4f45ffb292a",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/executive-summary.html"
+    },
+    {
+      "path": "bathtub/flagged.html",
+      "bytes": 1167,
+      "sha256": "05868c2ff711b4cc799b8d63e621e9eecdc8166ede572b98e1d80471e38cd2dc",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/flagged.html"
+    },
+    {
+      "path": "bathtub/index.html",
+      "bytes": 1126,
+      "sha256": "e2f1a786715d903ac761bb2a6fdb25e343c41ae5218e2975e3497e082cfb2248",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/index.html"
+    },
+    {
+      "path": "bathtub/providers.html",
+      "bytes": 1142,
+      "sha256": "eab075453cbd2bd1f9c1b24380a7f283ed784f66258700661d24937cd3988294",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/providers.html"
+    },
+    {
+      "path": "bathtub/requirements.html",
+      "bytes": 1154,
+      "sha256": "2036db156b82094c917a481b7b5a2c1119ec527eb54a3c8e10e14bb58a0497de",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/requirements.html"
+    },
+    {
+      "path": "bathtub/sources.html",
+      "bytes": 1134,
+      "sha256": "b150b1e88e69493412b97256a493d3313a30bdd5eeb7d8ebf6f127fb5eec744f",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/sources.html"
+    },
+    {
+      "path": "bathtub/technical.html",
+      "bytes": 1169,
+      "sha256": "06dfe58b5c55f49da6b1383b4217b6991f8cb2a7d7c0aec37f8594af20e742ab",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/technical.html"
+    },
+    {
+      "path": "bathtub/verification.html",
+      "bytes": 1154,
+      "sha256": "99351990914bfee5ecfa42386a7e4c4b1927d2e4c1c51056f4e0c349140a8896",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/bathtub/verification.html"
+    },
+    {
+      "path": "code-and-permit.html",
+      "bytes": 12668,
+      "sha256": "3860be6c4b773cf2e85508aca0c778c667766f97bd42aeb3695dfc320c1b90ac",
+      "lines": 42,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/code-and-permit.html"
+    },
+    {
+      "path": "data/bathtub/estimates.json",
+      "bytes": 6883,
+      "sha256": "ba497cb0cde48305e977e51de9e839fb6087ea8776eb35c9fc3f0e8c13efc5c3",
+      "lines": 117,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/estimates.json"
+    },
+    {
+      "path": "data/bathtub/flags.json",
+      "bytes": 12869,
+      "sha256": "96f833beccfd8861306e41db61c26a29b74d5bbf1f2eebac7f9cd7d0a743afaa",
+      "lines": 176,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/flags.json"
+    },
+    {
+      "path": "data/bathtub/providers.json",
+      "bytes": 18186,
+      "sha256": "c6fa288b35e7c7d07cc6ccd181827424086e2c91c2f79fab3c8c286d6a9def25",
+      "lines": 356,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/providers.json"
+    },
+    {
+      "path": "data/bathtub/regulations.json",
+      "bytes": 12652,
+      "sha256": "5fde024ea16c0cc9e21e1086b114708920b8be78af01b47eb32ce75cfbafe992",
+      "lines": 173,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/regulations.json"
+    },
+    {
+      "path": "data/bathtub/requirements.json",
+      "bytes": 16051,
+      "sha256": "5a8767fe570b7479b5ad86f1babdf7423a80679e499dc8f298b3f6b679e37ef4",
+      "lines": 375,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/requirements.json"
+    },
+    {
+      "path": "data/bathtub/site.css",
+      "bytes": 7841,
+      "sha256": "7a19f1bb20ebf0b8b797f58a549c409978987c1fe36940fac82fa77094f8438a",
+      "lines": 201,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/site.css"
+    },
+    {
+      "path": "data/bathtub/technical.json",
+      "bytes": 9635,
+      "sha256": "ecfadee87bb5684aae06c36fbe9cc3b2f3c6146ef6e68b72091e9210a4c6d5d5",
+      "lines": 110,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/technical.json"
+    },
+    {
+      "path": "data/bathtub/url_registry.json",
+      "bytes": 15382,
+      "sha256": "e6157c3c130c45df7f441c4e70a8f076f1df65eeddd77330a0e7e0edafefd0b4",
+      "lines": 319,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/bathtub/url_registry.json"
+    },
+    {
+      "path": "data/templates/GEMS-grid-template.tif",
+      "bytes": 86850,
+      "sha256": "caad89a967f4fbbb8978c9d2042da2b81c096daf2527f282af3342f1c7a43b17",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/data/templates/GEMS-grid-template.tif"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/.nojekyll"
+    },
+    {
+      "path": "docs/bathtub-allinone.html",
+      "bytes": 1146,
+      "sha256": "57590ffb1fc707c60047d9d8848a5d01561bd0cb1e31060ef59c1fccd37f307c",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-allinone.html"
+    },
+    {
+      "path": "docs/bathtub-candidates.html",
+      "bytes": 1148,
+      "sha256": "96997d439ec458cbedb983da9ef850231bee7eadf811c33e305b9c5954a69944",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-candidates.html"
+    },
+    {
+      "path": "docs/bathtub-estimates.html",
+      "bytes": 1147,
+      "sha256": "064c169a22bd8a80ac4f1a3de0e4489bed76b763c95fcdd1e47fd9fad108ea63",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-estimates.html"
+    },
+    {
+      "path": "docs/bathtub-flagged.html",
+      "bytes": 1172,
+      "sha256": "f9a42b282488a981a82020ba44cc8a93b1480136a0975c75990e658a0a3fbd6a",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-flagged.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/index.html",
+      "bytes": 1146,
+      "sha256": "98c5eea47011f94847ae412cc07195a4a2ceef2d42da32b631744632a0335db5",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-overflow/index.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/providers.html",
+      "bytes": 1162,
+      "sha256": "205b3d12230b3cf22535fa38866ebb807df1a4fdcfdb5c6edec18fb1891d8fec",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-overflow/providers.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/requirements.html",
+      "bytes": 1174,
+      "sha256": "a057c20a83a76cc1b989f64aa4a8de9743b8bf82ecee09077f854a6bc4669b75",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-overflow/requirements.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/review.html",
+      "bytes": 1186,
+      "sha256": "3f605ecf9708376832be7733d60f22aaec7b24772a5596c212eb61a39e77e537",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-overflow/review.html"
+    },
+    {
+      "path": "docs/bathtub-overflow/style.css",
+      "bytes": 1370,
+      "sha256": "8ac2a4536840e3dc83186b522c3e7d69e5f9dd57fdadbc81e1966a57b1229520",
+      "lines": 1,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-overflow/style.css"
+    },
+    {
+      "path": "docs/bathtub-requirements.html",
+      "bytes": 1159,
+      "sha256": "b991a457759ab7fc4b7e4e1bc9295754744896547ea6491a08c2028c47893177",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-requirements.html"
+    },
+    {
+      "path": "docs/bathtub-sources.html",
+      "bytes": 1139,
+      "sha256": "a47e690d89c49caf74abbba7a7929ad94ca95a4b8bcd65e7bb7230cad3f424e0",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-sources.html"
+    },
+    {
+      "path": "docs/bathtub-summary.html",
+      "bytes": 1169,
+      "sha256": "0cd69ee559d51e643bf6cd8e33cc0d89f718d2ba5bdd744b6faba7d9e5f4a18d",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/bathtub-summary.html"
+    },
+    {
+      "path": "docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.audit.json",
+      "bytes": 1318,
+      "sha256": "a7f67c600901aff7095636a3d086f9e4f9ffede9d6064ebc6e6c8d4503eee19c",
+      "lines": 55,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.audit.json"
+    },
+    {
+      "path": "docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.report.json",
+      "bytes": 1820,
+      "sha256": "7fce29a0fb8019a90d40215c6cfc848d9d31cfe7cbcec41891e2d66358679ab1",
+      "lines": 36,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.report.json"
+    },
+    {
+      "path": "docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif",
+      "bytes": 605461,
+      "sha256": "6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif"
+    },
+    {
+      "path": "docs/downloads/korea8_candidate.tif",
+      "bytes": 852055,
+      "sha256": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/downloads/korea8_candidate.tif"
+    },
+    {
+      "path": "docs/evidence/canary.json",
+      "bytes": 1842,
+      "sha256": "843a83b301ad4317ea6c7f6d6073347d107e536aa07e292769891d0f1d6ab5dc",
+      "lines": 103,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/canary.json"
+    },
+    {
+      "path": "docs/evidence/data_restore_receipt.json",
+      "bytes": 1825,
+      "sha256": "11662353f28abfd698a7f1c3af4db50593fc32df3af43cb7cf913c9d844ef28c",
+      "lines": 42,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/data_restore_receipt.json"
+    },
+    {
+      "path": "docs/evidence/feature_cache.json",
+      "bytes": 6244,
+      "sha256": "d46a68d4d0531cb36f848253ddc4c773cb74d1b1a84e1a1fd18457412dae573e",
+      "lines": 196,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/feature_cache.json"
+    },
+    {
+      "path": "docs/evidence/format_report.json",
+      "bytes": 1152,
+      "sha256": "3e2a3aa3c02c20dde4a98e1a52c17ae38fe80287cfcb9312bf208519fc7dacbb",
+      "lines": 57,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/format_report.json"
+    },
+    {
+      "path": "docs/evidence/holdout.json",
+      "bytes": 13609,
+      "sha256": "a6400ec6c73b684a7a2ee9e602902331766d0db3b99d48e7a3cbc1e1f464ac77",
+      "lines": 578,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/holdout.json"
+    },
+    {
+      "path": "docs/evidence/registry_index.json",
+      "bytes": 2816,
+      "sha256": "10d492d39a317f6a49378ab9750bd31261f46dd960db85d250a3e5d967aba261",
+      "lines": 90,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/registry_index.json"
+    },
+    {
+      "path": "docs/evidence/run_card.json",
+      "bytes": 2695,
+      "sha256": "e04eb8aaa8b5e2ae62aa9495eb3868045ba4fa60bd5841c997b47c8fe839d551",
+      "lines": 77,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/run_card.json"
+    },
+    {
+      "path": "docs/evidence/uniqueness_final.json",
+      "bytes": 9206,
+      "sha256": "d9eac3dea7ddd4cde03c21c3371a51187a962d3c1a417f9a855ab43dbc13abd8",
+      "lines": 203,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/uniqueness_final.json"
+    },
+    {
+      "path": "docs/evidence/uniqueness_surface.json",
+      "bytes": 9161,
+      "sha256": "1ee9e3d146638f6bd2772ad094d4cb6f5c0ef7968b8229b05ead327342a23ec5",
+      "lines": 203,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/uniqueness_surface.json"
+    },
+    {
+      "path": "docs/evidence/verification.json",
+      "bytes": 2283,
+      "sha256": "b12a85b0adb3b5239b1158e229dca169f0e54e35d54b6932c708c873b7d69092",
+      "lines": 127,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/evidence/verification.json"
+    },
+    {
+      "path": "docs/executive-summary.html",
+      "bytes": 11484,
+      "sha256": "a3df002c18c78f2284e45f477c4e21e736df2f8a6b6eb855ade01497c89276d9",
+      "lines": 192,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/executive-summary.html"
+    },
+    {
+      "path": "docs/executive-summary.md",
+      "bytes": 6226,
+      "sha256": "10dadc9e9a55019f8860f7efbfc059b8e42b005017d733fb47c0c430ac69f76a",
+      "lines": 94,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/executive-summary.md"
+    },
+    {
+      "path": "docs/feed.json",
+      "bytes": 461,
+      "sha256": "af7352ed3577cf14a2563018d9dca2f45de7ebe250ed5a30c8fce571a2f1aa41",
+      "lines": 15,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/feed.json"
+    },
+    {
+      "path": "docs/feed.xml",
+      "bytes": 697,
+      "sha256": "8e8daa1c0e1b5a856be0fd87769c08801d805764c1e77a3b2568b5cbf43f16c9",
+      "lines": 12,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/feed.xml"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 1123,
+      "sha256": "7ebf898d90916320df2873c301aa417845e6fc5156d20da44e5b05e62b02d561",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/index.html"
+    },
+    {
+      "path": "docs/limitations.html",
+      "bytes": 6378,
+      "sha256": "993b7c894748966a8a4aad255f0680258099d50b58bc6fe4fbe1b68cefce60e3",
+      "lines": 86,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/limitations.html"
+    },
+    {
+      "path": "docs/sources.html",
+      "bytes": 6582,
+      "sha256": "88a05bf25a4c2bb238048f7b5248ff9a6d11afe4e93d0b549d561c003caad3dc",
+      "lines": 127,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/sources.html"
+    },
+    {
+      "path": "docs/style.css",
+      "bytes": 2766,
+      "sha256": "ae3becafb7a244cd228e0338b877398035ae68b04bb59c40565e8625bcefa9a2",
+      "lines": 34,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/style.css"
+    },
+    {
+      "path": "docs/submit-howto.html",
+      "bytes": 5632,
+      "sha256": "72e79e8105bf1dab6624b274bbfe05713bc514fca7fcaf7908b124d058790b66",
+      "lines": 84,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/submit-howto.html"
+    },
+    {
+      "path": "docs/submit.html",
+      "bytes": 1595,
+      "sha256": "7dace38fb9a4c8532c47c2cd40092fb1f306f6e8711cb0e9dc5c2746b4976452",
+      "lines": 19,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/docs/submit.html"
+    },
+    {
+      "path": "downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.audit.json",
+      "bytes": 1318,
+      "sha256": "a7f67c600901aff7095636a3d086f9e4f9ffede9d6064ebc6e6c8d4503eee19c",
+      "lines": 55,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.audit.json"
+    },
+    {
+      "path": "downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.report.json",
+      "bytes": 1820,
+      "sha256": "7fce29a0fb8019a90d40215c6cfc848d9d31cfe7cbcec41891e2d66358679ab1",
+      "lines": 36,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.report.json"
+    },
+    {
+      "path": "downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif",
+      "bytes": 605461,
+      "sha256": "6104ad7379bc003da0e36db059c73c1a8953f383741aa4b09f7c3e824bf187bf",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/downloads/korea8-k8-1-blind-stepper-relay-20261104-v1.tif"
+    },
+    {
+      "path": "downloads/korea8_candidate.tif",
+      "bytes": 852055,
+      "sha256": "c560211b418d40721d906e5a748b4fa4be2fe379bcce2304611027b419911ed0",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/downloads/korea8_candidate.tif"
+    },
+    {
+      "path": "estimates.html",
+      "bytes": 7414,
+      "sha256": "6f6926aa28dd1a03de399702380285e43688ce6ba4af84e5078559dae4b4d42e",
+      "lines": 51,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/estimates.html"
+    },
+    {
+      "path": "evidence/canary.json",
+      "bytes": 1842,
+      "sha256": "843a83b301ad4317ea6c7f6d6073347d107e536aa07e292769891d0f1d6ab5dc",
+      "lines": 103,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/canary.json"
+    },
+    {
+      "path": "evidence/data_restore_receipt.json",
+      "bytes": 1825,
+      "sha256": "11662353f28abfd698a7f1c3af4db50593fc32df3af43cb7cf913c9d844ef28c",
+      "lines": 42,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/data_restore_receipt.json"
+    },
+    {
+      "path": "evidence/feature_cache.json",
+      "bytes": 6244,
+      "sha256": "d46a68d4d0531cb36f848253ddc4c773cb74d1b1a84e1a1fd18457412dae573e",
+      "lines": 196,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/feature_cache.json"
+    },
+    {
+      "path": "evidence/format_report.json",
+      "bytes": 1152,
+      "sha256": "3e2a3aa3c02c20dde4a98e1a52c17ae38fe80287cfcb9312bf208519fc7dacbb",
+      "lines": 57,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/format_report.json"
+    },
+    {
+      "path": "evidence/holdout.json",
+      "bytes": 13609,
+      "sha256": "a6400ec6c73b684a7a2ee9e602902331766d0db3b99d48e7a3cbc1e1f464ac77",
+      "lines": 578,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/holdout.json"
+    },
+    {
+      "path": "evidence/registry_index.json",
+      "bytes": 2816,
+      "sha256": "10d492d39a317f6a49378ab9750bd31261f46dd960db85d250a3e5d967aba261",
+      "lines": 90,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/registry_index.json"
+    },
+    {
+      "path": "evidence/run_card.json",
+      "bytes": 2695,
+      "sha256": "e04eb8aaa8b5e2ae62aa9495eb3868045ba4fa60bd5841c997b47c8fe839d551",
+      "lines": 77,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/run_card.json"
+    },
+    {
+      "path": "evidence/uniqueness_final.json",
+      "bytes": 9206,
+      "sha256": "d9eac3dea7ddd4cde03c21c3371a51187a962d3c1a417f9a855ab43dbc13abd8",
+      "lines": 203,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/uniqueness_final.json"
+    },
+    {
+      "path": "evidence/uniqueness_surface.json",
+      "bytes": 9161,
+      "sha256": "1ee9e3d146638f6bd2772ad094d4cb6f5c0ef7968b8229b05ead327342a23ec5",
+      "lines": 203,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/uniqueness_surface.json"
+    },
+    {
+      "path": "evidence/verification.json",
+      "bytes": 2283,
+      "sha256": "b12a85b0adb3b5239b1158e229dca169f0e54e35d54b6932c708c873b7d69092",
+      "lines": 127,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/evidence/verification.json"
+    },
+    {
+      "path": "executive-summary.html",
+      "bytes": 9533,
+      "sha256": "b851c3f01ff03501df6b7342dce0c22c3d7cd38284e1dbb4ccc4045b5d3f4f26",
+      "lines": 53,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/executive-summary.html"
+    },
+    {
+      "path": "flagged-for-review.html",
+      "bytes": 17542,
+      "sha256": "4e6ea426c4530ca6b2a6df3cece386fb58a731cce553f99506ce083c37baa38b",
+      "lines": 155,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/flagged-for-review.html"
+    },
+    {
+      "path": "index.html",
+      "bytes": 9406,
+      "sha256": "d16c2c4a2f7061e8477b83474e82d5fdda7ae6e6d7ef62e1926729a375efa75f",
+      "lines": 63,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/index.html"
+    },
+    {
+      "path": "knowledge/executive_summary.md",
+      "bytes": 2943,
+      "sha256": "85c4c105d0a7d457d932ab7de35f29fc8a9e61ac5d4a778e8ed430fedb82804b",
+      "lines": 55,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/knowledge/executive_summary.md"
+    },
+    {
+      "path": "knowledge/hypotheses.md",
+      "bytes": 4044,
+      "sha256": "076e083849d0e96d623fe9d29a4230df3c04d0411c6f4ba2307fa03c11f84f5c",
+      "lines": 69,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/knowledge/hypotheses.md"
+    },
+    {
+      "path": "knowledge/limitations.md",
+      "bytes": 1786,
+      "sha256": "03680c2eb563475d376bb2da7cb15c778a142ff01bea9b062499724dd663ddb2",
+      "lines": 30,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/knowledge/limitations.md"
+    },
+    {
+      "path": "knowledge/sources.md",
+      "bytes": 2322,
+      "sha256": "8b3ea7db1d594c0a1a48768f55b509f306ac3e4240b3c79ffb4ec8a8bc823285",
+      "lines": 28,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/knowledge/sources.md"
+    },
+    {
+      "path": "overflow-review/data/brief.json",
+      "bytes": 1488,
+      "sha256": "0c6d1ef49fd4c48beefa0425a0c5c039cb0a6959d1333a0f53c2a9d87fc7f5c5",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/brief.json"
+    },
+    {
+      "path": "overflow-review/data/estimates.json",
+      "bytes": 2874,
+      "sha256": "3ad46c6ffd496e28468e68de8e94ad5292505445016d7c8d0d7ef602d3c09ffd",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/estimates.json"
+    },
+    {
+      "path": "overflow-review/data/findings.json",
+      "bytes": 5194,
+      "sha256": "c6cbfee21bcaac9079948dbebeb33084067c6b0afe4a1b96193ddcc4aeba31a8",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/findings.json"
+    },
+    {
+      "path": "overflow-review/data/flags.json",
+      "bytes": 10211,
+      "sha256": "5fe75ca30e9839d3e74cad11474d2dec6738fa975ffb091ec676d206fa6a18e1",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/flags.json"
+    },
+    {
+      "path": "overflow-review/data/providers.json",
+      "bytes": 36640,
+      "sha256": "ee7e3254423c392bc265d03828758b4f24dc153bc0eb03e5d4dfc3732a086960",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/providers.json"
+    },
+    {
+      "path": "overflow-review/data/requirements.json",
+      "bytes": 14338,
+      "sha256": "7905bca981671628faaa51867df9209f3d2ec110d8a57ef6aee59ca7e15e5f20",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/requirements.json"
+    },
+    {
+      "path": "overflow-review/data/sources.json",
+      "bytes": 39035,
+      "sha256": "a973ff83d1a152ef750ff9aba0fad9815ac4690350bbf7871f712724a040a712",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/sources.json"
+    },
+    {
+      "path": "overflow-review/data/technical.json",
+      "bytes": 4132,
+      "sha256": "d7530cffbb681bc4446d198f8b758c60585d19af719eb15572214e6c2e64a79c",
+      "lines": null,
+      "check": "current-session output; excluded from baseline audit",
+      "issues": [],
+      "domain": "current session",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-review/data/technical.json"
+    },
+    {
+      "path": "overflow-trip-lever/EXECUTIVE_SUMMARY.md",
+      "bytes": 2176,
+      "sha256": "9f3e2087e6e504590794df9ca9bf6d9a9b76ba80d8c0c634010c6024182fc8de",
+      "lines": 15,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "path": "overflow-trip-lever/SOURCES.md",
+      "bytes": 858,
+      "sha256": "278bfa62d1efb5d9eddd29250e7a0ed297ea602a315cfdf011abd9feb86cbfe1",
+      "lines": 8,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/SOURCES.md"
+    },
+    {
+      "path": "overflow-trip-lever/build_site.py",
+      "bytes": 9012,
+      "sha256": "58ad8446f16038727ec948613e65ed2d8daf90483808934d3c76c7dda67f245e",
+      "lines": 61,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/build_site.py"
+    },
+    {
+      "path": "overflow-trip-lever/data/estimates.json",
+      "bytes": 1364,
+      "sha256": "697a879103ae60e0d2238992ffb070fa8b3d09e7ab2008db73444ca454d9fa0a",
+      "lines": 33,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/data/estimates.json"
+    },
+    {
+      "path": "overflow-trip-lever/data/flags.json",
+      "bytes": 4772,
+      "sha256": "1c243a6d6befbefb2ea4eabe8b701faa6558c4e6f8dedfe8430b58c13581d324",
+      "lines": 76,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/data/flags.json"
+    },
+    {
+      "path": "overflow-trip-lever/data/providers.json",
+      "bytes": 5597,
+      "sha256": "85f6d4b3c8b19d88db2a84531c07a77fa00c6db960af0e54391be87cd18bd3d9",
+      "lines": 126,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/data/providers.json"
+    },
+    {
+      "path": "overflow-trip-lever/data/requirements.json",
+      "bytes": 5482,
+      "sha256": "18fba0bec16f97de6a94b1ca89773423c8b081d24e4cde47450a97dbe74335af",
+      "lines": 89,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/data/requirements.json"
+    },
+    {
+      "path": "overflow-trip-lever/data/rules.json",
+      "bytes": 4057,
+      "sha256": "0538100476f78cb578bb9b9ba70723ea03d5c37031096e301c2ea1040d7c189c",
+      "lines": 54,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/data/rules.json"
+    },
+    {
+      "path": "overflow-trip-lever/estimates.html",
+      "bytes": 1154,
+      "sha256": "2e04236dff6ed6b5706d7624ec5f6f00d45c816b40c3c33a246939cba4977956",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/estimates.html"
+    },
+    {
+      "path": "overflow-trip-lever/flagged.html",
+      "bytes": 1179,
+      "sha256": "d6156d34db6747a26e2e25491e26ebe37cc364d58e14ee8e3f4ba67a65d106ac",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/flagged.html"
+    },
+    {
+      "path": "overflow-trip-lever/index.html",
+      "bytes": 1138,
+      "sha256": "2eb1286412f1d0402a9ed25cde5c47791d0f9ed74f5d64a456c80257c8696e1e",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/index.html"
+    },
+    {
+      "path": "overflow-trip-lever/providers.html",
+      "bytes": 1154,
+      "sha256": "27136a780b602c0df234c284f5e4106784f80639fc19f65a96f7106693d50b99",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/providers.html"
+    },
+    {
+      "path": "overflow-trip-lever/requirements.html",
+      "bytes": 1166,
+      "sha256": "f467a5364e7adb21ddb488b0e0d1f43b84fa60dfd74827256c9c211218c528d4",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/requirements.html"
+    },
+    {
+      "path": "overflow-trip-lever/rules.html",
+      "bytes": 1177,
+      "sha256": "06e82f1f9b69f86e2d78ffc55dc188449de17b81286a19b1c02587a7cff2949d",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/rules.html"
+    },
+    {
+      "path": "overflow-trip-lever/sources.html",
+      "bytes": 1146,
+      "sha256": "a6ef93ae699d98632ff5d354aa2d12cc2c98980e372af9bfd194f97808ca47bb",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/sources.html"
+    },
+    {
+      "path": "overflow-trip-lever/style.css",
+      "bytes": 924,
+      "sha256": "722255963bc270ec92ea84ba5a7ab2f20cf6e1a70cbed77821833e3cd3fef995",
+      "lines": 6,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/style.css"
+    },
+    {
+      "path": "overflow-trip-lever/verify_site.py",
+      "bytes": 1494,
+      "sha256": "72d247fa458bd3db036f5da18aa914a729b85e00cf879999b5684482220d8951",
+      "lines": 27,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/overflow-trip-lever/verify_site.py"
+    },
+    {
+      "path": "project/EXECUTIVE_SUMMARY.md",
+      "bytes": 6958,
+      "sha256": "b16cad3250b5362616293a5081ccdfc92689c6426e11ae40a41bbad0e1f7d6e1",
+      "lines": 51,
+      "check": "UTF-8 text scanned",
+      "issues": [
+        "Legacy unsupported quote amount present; superseded public routes must not expose it"
+      ],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "path": "project/README.md",
+      "bytes": 4312,
+      "sha256": "ac19d0f753f077d87a07c6c7639ea0dddec22925c9b13bd57bbb40247fdb9c94",
+      "lines": 69,
+      "check": "UTF-8 text scanned",
+      "issues": [
+        "Legacy unsupported quote amount present; superseded public routes must not expose it"
+      ],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/README.md"
+    },
+    {
+      "path": "project/estimates.json",
+      "bytes": 5273,
+      "sha256": "5ee1b2374c7777b20a5bd4a01967dd43a506232b6f1585a1b5f8f4d1f71d7882",
+      "lines": 89,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/estimates.json"
+    },
+    {
+      "path": "project/flagged.json",
+      "bytes": 19269,
+      "sha256": "e69a8e7f3eb35d3c85144644e58e7bf2a54ab43c9e8b8e0a041fb9c8e3340202",
+      "lines": 281,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/flagged.json"
+    },
+    {
+      "path": "project/integration-review.md",
+      "bytes": 8235,
+      "sha256": "da01c5ec82a0a138c9f1c1bcb84aecc131fcab028ad2b963fc5b7d1f6cc64ed0",
+      "lines": 77,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/integration-review.md"
+    },
+    {
+      "path": "project/providers.json",
+      "bytes": 23864,
+      "sha256": "284cf1085042139738cc54f8c02aa8e6fd7e87b2a9ee911f3b0e725b76567200",
+      "lines": 568,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/providers.json"
+    },
+    {
+      "path": "project/repo-review.md",
+      "bytes": 2988,
+      "sha256": "1d7e55e1266acb2f38f000e77c61f8892dd2d17bd39fad59894372b275c5114a",
+      "lines": 30,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/repo-review.md"
+    },
+    {
+      "path": "project/requirements.json",
+      "bytes": 11372,
+      "sha256": "96260309d823cb66515f9a8a9670a7d106032c65419c521382a3ce79ed377b77",
+      "lines": 215,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/requirements.json"
+    },
+    {
+      "path": "project/sources.json",
+      "bytes": 16742,
+      "sha256": "1cbf20a40d350f0a9e213ad4ebbad015d33c061236a2c99a2d3645b7b1dfa92f",
+      "lines": 385,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/sources.json"
+    },
+    {
+      "path": "project/summary.json",
+      "bytes": 7992,
+      "sha256": "804095d17a60976632dd1f609db8db78e6e033762210f30d78b3fed3d5b28ea8",
+      "lines": 102,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/summary.json"
+    },
+    {
+      "path": "project/technical.json",
+      "bytes": 9206,
+      "sha256": "b619c80469be84c8dba78dbfba3feb576a6f9ba4650c68b74ae3e0134a4c70f0",
+      "lines": 120,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/technical.json"
+    },
+    {
+      "path": "project/verification.json",
+      "bytes": 492,
+      "sha256": "d201e864508784a916aeb992680a445553ffd327cd23f4c729d5218863b98335",
+      "lines": 16,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/project/verification.json"
+    },
+    {
+      "path": "providers.html",
+      "bytes": 19949,
+      "sha256": "94998135636076b4ddaf1360d16b6f2fe4eb9ba96a3d111a259ff73dcf48556a",
+      "lines": 42,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/providers.html"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 488,
+      "sha256": "f724913758220568e4cf2f58b0e4bc41fcb911a638939e69300911f75b32827e",
+      "lines": 24,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/pyproject.toml"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE24.tif",
+      "bytes": 1632732,
+      "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE24.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE25.tif",
+      "bytes": 836982,
+      "sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE25.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE27.tif",
+      "bytes": 1635084,
+      "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE27.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE28.tif",
+      "bytes": 1590848,
+      "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE28.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE30.tif",
+      "bytes": 806758,
+      "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE30.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE31.tif",
+      "bytes": 199214,
+      "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE31.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE32.tif",
+      "bytes": 219065,
+      "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE32.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE33.tif",
+      "bytes": 917544,
+      "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE33.tif"
+    },
+    {
+      "path": "registry/focus9/GEMSDOE36.tif",
+      "bytes": 318190,
+      "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/focus9/GEMSDOE36.tif"
+    },
+    {
+      "path": "registry/lattice_s5.tif",
+      "bytes": 1706456,
+      "sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/registry/lattice_s5.tif"
+    },
+    {
+      "path": "requirements.html",
+      "bytes": 13422,
+      "sha256": "02a20991c914ef814e65c923e1ec272f4d78fb4b8d7111e951bb6105eda29c00",
+      "lines": 36,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/requirements.html"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 140,
+      "sha256": "6509eac7bd42bf16b1e7776a37261a340a35eea9080d217d1e506fcbe084df90",
+      "lines": 10,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/requirements.txt"
+    },
+    {
+      "path": "run_card.json",
+      "bytes": 5749,
+      "sha256": "8c23fc9c8799c4fb38c49fbac4fe3210ab8414e1c14fd83bc4c169aa233f7593",
+      "lines": 69,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/run_card.json"
+    },
+    {
+      "path": "scripts/LEGACY.md",
+      "bytes": 761,
+      "sha256": "6f5d7aa9ca5b55b50ebb9253e641cca95b4e439ee5ef1a81c2be9e2054293b17",
+      "lines": 14,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/LEGACY.md"
+    },
+    {
+      "path": "scripts/build_canonical_site.py",
+      "bytes": 33465,
+      "sha256": "f8c97053db01b8b3f1a2c0f456c4577ca8324c7364eb00f81594bd074b7cc20c",
+      "lines": 637,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/build_canonical_site.py"
+    },
+    {
+      "path": "scripts/build_redirects.py",
+      "bytes": 5919,
+      "sha256": "6e7074e906159846f886c7992857c049286e821fa5821b58cb1187024079a8a1",
+      "lines": 153,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/build_redirects.py"
+    },
+    {
+      "path": "scripts/build_site.py",
+      "bytes": 14691,
+      "sha256": "edc0c21275e6de01d1f375947cda8ffc1b56d61cbc3f56010522060955ab3a46",
+      "lines": 253,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/build_site.py"
+    },
+    {
+      "path": "scripts/download_competition_data.py",
+      "bytes": 5413,
+      "sha256": "15bc744d40dbc46da187b63ccc59acfe50ca103a6c5af5e11a266390a1bff2e5",
+      "lines": 127,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/download_competition_data.py"
+    },
+    {
+      "path": "scripts/download_competition_data.sh",
+      "bytes": 2623,
+      "sha256": "9e8606ac7f5e5e48d73320f3afa15e428b00c23cf1ec4452350baf60f386fe1f",
+      "lines": 53,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/download_competition_data.sh"
+    },
+    {
+      "path": "scripts/dti_metric.py",
+      "bytes": 6333,
+      "sha256": "a9e6a92d03bf9e624abb5f597f3105a31e4755bdbe20e07161746e546cf2932a",
+      "lines": 170,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/dti_metric.py"
+    },
+    {
+      "path": "scripts/evaluate_holdout.py",
+      "bytes": 9383,
+      "sha256": "afbc0a5b33118003cb1fa707d65d0119eaa8da77210d78d3c7688854b8864b9f",
+      "lines": 247,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/evaluate_holdout.py"
+    },
+    {
+      "path": "scripts/gems_dti.py",
+      "bytes": 4898,
+      "sha256": "f811931aa899caae777a15703fe2f588a764ad1cc36b71b8ae08875cf8f5ac30",
+      "lines": 127,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/gems_dti.py"
+    },
+    {
+      "path": "scripts/generate_submission.py",
+      "bytes": 11658,
+      "sha256": "842a13a36d663065a17092d2301bc674103b0a34de8df375aa681814044a7240",
+      "lines": 263,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/generate_submission.py"
+    },
+    {
+      "path": "scripts/legacy_prepare_data.py",
+      "bytes": 2893,
+      "sha256": "4ccb3f5b27be90e59cc57deb357fbf3b1792a4a252ff8f19661c664da2520927",
+      "lines": 74,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/legacy_prepare_data.py"
+    },
+    {
+      "path": "scripts/make_submission.py",
+      "bytes": 2800,
+      "sha256": "677047b8ac5273cfef17b6f38d17f34496a42650a44e5161e1cc6d8e23d1eae2",
+      "lines": 70,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/make_submission.py"
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "bytes": 3955,
+      "sha256": "5ada415e66ab3d145d05490c7f86885eb89726dc087bbfa623b1ed3c1837a396",
+      "lines": 93,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/prepare_data.py"
+    },
+    {
+      "path": "scripts/run_experiment.py",
+      "bytes": 11402,
+      "sha256": "cf3732a72839ed23342f164517927a97314d1cbc42c937621b3654c3bb171ce2",
+      "lines": 252,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/run_experiment.py"
+    },
+    {
+      "path": "scripts/selftest_synthetic.py",
+      "bytes": 1895,
+      "sha256": "3c9d4c17deb9699155b2349a2156b60ba7522dca2a43b0ec22e4bf545315a0b6",
+      "lines": 43,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/selftest_synthetic.py"
+    },
+    {
+      "path": "scripts/submission_writer.py",
+      "bytes": 6645,
+      "sha256": "f09fd8c22c7f0e49a6bb139aea10a34a21a9cff4b170d0e033b8cda16626936f",
+      "lines": 174,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/submission_writer.py"
+    },
+    {
+      "path": "scripts/test_dti.py",
+      "bytes": 2237,
+      "sha256": "3b70f7cd2a5a32e834e8936e8ac7a9e6273e36de9de876395a48b6c90b8c7289",
+      "lines": 76,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/test_dti.py"
+    },
+    {
+      "path": "scripts/tests/test_metric.py",
+      "bytes": 4109,
+      "sha256": "ae859d5ac36ca796b88d4be4315e548649481f5b558301c04e1d7f30cf055827",
+      "lines": 119,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/tests/test_metric.py"
+    },
+    {
+      "path": "scripts/validate_submission.py",
+      "bytes": 3375,
+      "sha256": "0d04829daccecd2575188c9cd08b9cf0a60764df2427744cc75fd501a37f5ab2",
+      "lines": 88,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/validate_submission.py"
+    },
+    {
+      "path": "scripts/verify_canonical_site.py",
+      "bytes": 8322,
+      "sha256": "29cc1fcf22adfe908772ca7390137f21eb4a21ce05833e0919bac916caa08ec2",
+      "lines": 227,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/verify_canonical_site.py"
+    },
+    {
+      "path": "scripts/verify_project_site.py",
+      "bytes": 9969,
+      "sha256": "5b285ed2f5dea888678a8289ddb36cede3eca1887e4a79f2001759b9016170bf",
+      "lines": 239,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/verify_project_site.py"
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "bytes": 3954,
+      "sha256": "d1a5e7560882242ed4ce76c84a62d4b43eff5e8dae9d61f9002f581d0169ea6c",
+      "lines": 88,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/scripts/verify_release.py"
+    },
+    {
+      "path": "site-data/build-report.json",
+      "bytes": 666,
+      "sha256": "9864a5fb3f93a3298972d8c569b1381b6916929112ffbf6026f892882dde66ec",
+      "lines": 34,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/build-report.json"
+    },
+    {
+      "path": "site-data/code.json",
+      "bytes": 10532,
+      "sha256": "4453f24840e7f7ca421b21d5352e083844dcb73074da3d0ffb29bf5684313817",
+      "lines": 169,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/code.json"
+    },
+    {
+      "path": "site-data/estimates.json",
+      "bytes": 4216,
+      "sha256": "2c1a3c17cbfb986e961c72cfd1dabcb4ddb0c95aad5c0a3ff48bd8866454398f",
+      "lines": 107,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/estimates.json"
+    },
+    {
+      "path": "site-data/flags.json",
+      "bytes": 13225,
+      "sha256": "9aa4748e0cb5dd45a243ee8de779df3d890df667af5abc5bbaca685249579fc2",
+      "lines": 277,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/flags.json"
+    },
+    {
+      "path": "site-data/providers.json",
+      "bytes": 15595,
+      "sha256": "d1d84d2c62cf117c35944a7b5c98752b773ac8b663cd28a704b78617ced10942",
+      "lines": 405,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/providers.json"
+    },
+    {
+      "path": "site-data/requirements.json",
+      "bytes": 9512,
+      "sha256": "80117f709c11539edfc7db569b37b16037a10d5df7d4a554875399d9a33d4357",
+      "lines": 279,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/requirements.json"
+    },
+    {
+      "path": "site-data/sources.json",
+      "bytes": 13686,
+      "sha256": "526015926c65aa4cca8f6f876e5cdff0c4071ee27416a42c16cacbf4e366845b",
+      "lines": 342,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/sources.json"
+    },
+    {
+      "path": "site-data/summary.json",
+      "bytes": 7029,
+      "sha256": "37a8c92c15f4ba1555f606e2b904440c1f891259fd68348b2672edd8ffb594a3",
+      "lines": 92,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/summary.json"
+    },
+    {
+      "path": "site-data/technical.json",
+      "bytes": 5814,
+      "sha256": "31420befc2cb2e08ac0b875d42955576e3ec760915bd1229d24e1e9bc1b1b7c3",
+      "lines": 81,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/technical.json"
+    },
+    {
+      "path": "site-data/verification.json",
+      "bytes": 1660,
+      "sha256": "d5987cd3daea8314fd46b30f5d821f3920b802445e68887044aab14d37b8ae89",
+      "lines": 86,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/site-data/verification.json"
+    },
+    {
+      "path": "sources.html",
+      "bytes": 17494,
+      "sha256": "7b3193b9f5cb44c2cd427de1209a82ab02e429ce90923f708a8ac9db4b863609",
+      "lines": 36,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/sources.html"
+    },
+    {
+      "path": "src/korea8/candidate.py",
+      "bytes": 11823,
+      "sha256": "508d358014eb1fb51b75f65ecb83dc0dc6b71616e0564ee6bc9c8383192b7927",
+      "lines": 247,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/src/korea8/candidate.py"
+    },
+    {
+      "path": "src/korea8/features.py",
+      "bytes": 4111,
+      "sha256": "6754884e51d992ea5f1a18d92a46e5603e73606b33bcc68edebcd78e58cc280a",
+      "lines": 101,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/src/korea8/features.py"
+    },
+    {
+      "path": "style.css",
+      "bytes": 5736,
+      "sha256": "99e137b458415074a83b91c5963e393be7c8539e9c8db02ca9b9cdbadddcd10b",
+      "lines": 90,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/style.css"
+    },
+    {
+      "path": "submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif",
+      "bytes": 1187847,
+      "sha256": "0ae284c63764b70ee1f6c102ca3ddc04f843ce1bf16e546e5127166e852076eb",
+      "lines": null,
+      "check": "binary inventory only",
+      "issues": [],
+      "domain": "binary legacy artifact",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/submissions/korea8-h1-stepover-relay-prior-20261104T000000Z-seed9f4e2a.tif"
+    },
+    {
+      "path": "technical-approach.html",
+      "bytes": 9454,
+      "sha256": "8d5f4c0164d1e10e816076a5c8d2ee2b1265c0d7e38f8291cf7177e106ee3623",
+      "lines": 52,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/technical-approach.html"
+    },
+    {
+      "path": "tests/test_metric.py",
+      "bytes": 857,
+      "sha256": "e52d6faabaf81c523be802688877087760383540b47848bfa38e0f2040541d3e",
+      "lines": 30,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/tests/test_metric.py"
+    },
+    {
+      "path": "tests/test_uniqueness_gate.py",
+      "bytes": 922,
+      "sha256": "6f72d3435cf0ddde880a09aaf2ad67be06e6b422dc943e3420e892afe44388d0",
+      "lines": 25,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/tests/test_uniqueness_gate.py"
+    },
+    {
+      "path": "trip-lever/background.html",
+      "bytes": 1173,
+      "sha256": "d777d4f367e6a02af1a90f8f3f0709dc9b029c023e3e27dbe8d1c788f6f5f643",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/background.html"
+    },
+    {
+      "path": "trip-lever/contractors.html",
+      "bytes": 1147,
+      "sha256": "d0c215cd474896573b7b3922aa918aa18a413857cfaea36ce6ac72b093ad8d12",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/contractors.html"
+    },
+    {
+      "path": "trip-lever/estimates.html",
+      "bytes": 1145,
+      "sha256": "c8a45bdfde0fba11f9eee33501f9a886d437f9d02d0f899223f6a20d00cbcc09",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/estimates.html"
+    },
+    {
+      "path": "trip-lever/executive-summary.html",
+      "bytes": 1177,
+      "sha256": "6f980f858e620806621b1775a296e326879e28a4a7718562e513b2698057bd3a",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/executive-summary.html"
+    },
+    {
+      "path": "trip-lever/flagged-for-review.html",
+      "bytes": 1181,
+      "sha256": "803181230ee1470b3d02aab6d516e62c0d540782c8894464282ad868e3b9fc97",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/flagged-for-review.html"
+    },
+    {
+      "path": "trip-lever/index.html",
+      "bytes": 1112,
+      "sha256": "005bbaf432dc00b93ca15f829443f47066421d4dfa526c7820074f82fab58618",
+      "lines": 25,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/index.html"
+    },
+    {
+      "path": "trip-lever/methodology.html",
+      "bytes": 1174,
+      "sha256": "47e106e3e0f8a8e73f82dc82a1d3d7ea9a35fcfdcd60da820a3c069144a9a7f4",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/methodology.html"
+    },
+    {
+      "path": "trip-lever/requirements.html",
+      "bytes": 1157,
+      "sha256": "5bbcb0691bf933134d54dc0deea3676f135cf07efecb8a05f6e2801499e31df3",
+      "lines": 23,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/requirements.html"
+    },
+    {
+      "path": "trip-lever/site.css",
+      "bytes": 4616,
+      "sha256": "8949d5a6ae849bcf96867b424256ffa2d6a8aade01eba43d58d05ee5e6ba7f31",
+      "lines": 146,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "plumbing dossier / shared output",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/trip-lever/site.css"
+    },
+    {
+      "path": "vendor/PROVENANCE.json",
+      "bytes": 3003,
+      "sha256": "6790e3a5a2ea0fc6ebcdb560ddc40a0dca202f3e2d621ede315f69e153449b5d",
+      "lines": 35,
+      "check": "JSON parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/PROVENANCE.json"
+    },
+    {
+      "path": "vendor/README.md",
+      "bytes": 718,
+      "sha256": "18cbdffb1b40742546b3de32e99220e67b9c3c37c87ddc200e5d5b5968c11cb0",
+      "lines": 11,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/README.md"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/.gitignore",
+      "bytes": 53,
+      "sha256": "4d723fbd0391079727326bf3bbeff44aea645bf5a6c5c72bd9af1e7183a129e9",
+      "lines": 5,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/.gitignore"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/README.md",
+      "bytes": 2367,
+      "sha256": "cfa4d55559c9128313beb9417eae7e0a94c31677132afb1120f9e86222804239",
+      "lines": 58,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/README.md"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/data/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/data/.gitkeep"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/environment-cpu.yml",
+      "bytes": 395,
+      "sha256": "76e03b116f74513a4b6298f863664c3ee5b8e40e33f7cb68c24f63ab307bb62d",
+      "lines": 17,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/environment-cpu.yml"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/environment.yml",
+      "bytes": 636,
+      "sha256": "9ac6e26b3506dbd72c09ff126c988594e8f4dd6c4833f8c8c5006eda3d1eba23",
+      "lines": 22,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/environment.yml"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/pyproject.toml",
+      "bytes": 2207,
+      "sha256": "00dae72777985013ac2f32cf1c6647229dd77fc5a0c81f70b7ed19f8a222cba4",
+      "lines": 62,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/pyproject.toml"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/unet-mc-cv-reference-solution.ipynb",
+      "bytes": 1578736,
+      "sha256": "1a7622732ba00f67237058bc0efe79b45ba4e87c449fc9c1e5d6ea659de92ca0",
+      "lines": 1116,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/unet-mc-cv-reference-solution.ipynb"
+    },
+    {
+      "path": "vendor/gems-prize-reference-solution-main/uv.lock",
+      "bytes": 571212,
+      "sha256": "af1cc93b2cd3006e8c561e83e76175e97e0f54168d34393f288732e8db7f1be1",
+      "lines": 3409,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems-prize-reference-solution-main/uv.lock"
+    },
+    {
+      "path": "vendor/gems57/__init__.py",
+      "bytes": 641,
+      "sha256": "bd7f12b45caf67b7b4d0da4656c7c3895513bec524ec0b7f251227ecbdd39d26",
+      "lines": 15,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/__init__.py"
+    },
+    {
+      "path": "vendor/gems57/anatomy.py",
+      "bytes": 20081,
+      "sha256": "f47103ae0f615a0f04ef0427ea83ad2dd11ecd4af34e53b99f2e20e557025cf9",
+      "lines": 394,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/anatomy.py"
+    },
+    {
+      "path": "vendor/gems57/damagezone_envelope.py",
+      "bytes": 9838,
+      "sha256": "5e5cc359f3ccc239a0906d96f642057461ae7928e967f02249b62dab2ac98a36",
+      "lines": 194,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/damagezone_envelope.py"
+    },
+    {
+      "path": "vendor/gems57/emit.py",
+      "bytes": 19204,
+      "sha256": "05c473e736e4a599b35be77b2791b62d72460383853c8fba0eb56ea26c99055d",
+      "lines": 444,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/emit.py"
+    },
+    {
+      "path": "vendor/gems57/evaluate_holdout.py",
+      "bytes": 7490,
+      "sha256": "ad86640b46f3c5fc6b1aceec4c4bfc82d03e35008b37ab2a8ad6076e6810ff3a",
+      "lines": 143,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/evaluate_holdout.py"
+    },
+    {
+      "path": "vendor/gems57/evaluator_provenance.py",
+      "bytes": 2952,
+      "sha256": "6f1d1932fbe427ceb028f74d80926aa836b2cb77c982625c97d1c4141b7b80e2",
+      "lines": 91,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/evaluator_provenance.py"
+    },
+    {
+      "path": "vendor/gems57/faultzone.py",
+      "bytes": 17696,
+      "sha256": "620537490173e565898911577f6cdf95e288d8eff326830a1da9c71f4b467bdd",
+      "lines": 413,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/faultzone.py"
+    },
+    {
+      "path": "vendor/gems57/fit.py",
+      "bytes": 5891,
+      "sha256": "936488cc00c0f71c64d7e36a94dd1ddd0f17625abeefb41e7c6e75360ac14ae8",
+      "lines": 131,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/fit.py"
+    },
+    {
+      "path": "vendor/gems57/fitting.py",
+      "bytes": 10707,
+      "sha256": "91fbc11fc51374ca07b5246d5221edee33636e546fa457331e84272b80a7cbc7",
+      "lines": 231,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/fitting.py"
+    },
+    {
+      "path": "vendor/gems57/gates.py",
+      "bytes": 10238,
+      "sha256": "7c57f70dbba58bb1112df4193a3de56516af0f981970d4b943b394f99b573dae",
+      "lines": 189,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/gates.py"
+    },
+    {
+      "path": "vendor/gems57/geo.py",
+      "bytes": 6015,
+      "sha256": "4320d4fb718a66a794b21c35af28cc1f2ce7b6e49649b17e86b3e9eb34235ff8",
+      "lines": 133,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/geo.py"
+    },
+    {
+      "path": "vendor/gems57/grid.py",
+      "bytes": 8704,
+      "sha256": "b96df7ec0f33658a61b0baa5db85fcd19be2cd8b1873f99699bd26bddae8cd8d",
+      "lines": 198,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/grid.py"
+    },
+    {
+      "path": "vendor/gems57/holdout.py",
+      "bytes": 14883,
+      "sha256": "7a0a84176986190b527aa9c6a84216c2dab4b599f25b1143db5f420e85020ab1",
+      "lines": 316,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/holdout.py"
+    },
+    {
+      "path": "vendor/gems57/metric.py",
+      "bytes": 9895,
+      "sha256": "4afe10cbaa229948520c75194b1ebc32676e72544f05582f0725092b097b4d7f",
+      "lines": 235,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/metric.py"
+    },
+    {
+      "path": "vendor/gems57/network.py",
+      "bytes": 9095,
+      "sha256": "d5e53d7df182e69bb22a6e39ac16f43d3f5b730e503d86538d5f8f7360020943",
+      "lines": 222,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/network.py"
+    },
+    {
+      "path": "vendor/gems57/offcatalogue.py",
+      "bytes": 16436,
+      "sha256": "5c1937dda9f16563d8679446bb60e66c8c878e7440c522c44afa0e7879b7b6e8",
+      "lines": 330,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/offcatalogue.py"
+    },
+    {
+      "path": "vendor/gems57/prepare_data.py",
+      "bytes": 9029,
+      "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+      "lines": 176,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/prepare_data.py"
+    },
+    {
+      "path": "vendor/gems57/relay_bend_anatomy.py",
+      "bytes": 13742,
+      "sha256": "cb9b79b9b61feaaaf6305009f571b6222c1ec390d1f94a1b05a91e05e7eb5dcb",
+      "lines": 330,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/relay_bend_anatomy.py"
+    },
+    {
+      "path": "vendor/gems57/spatial.py",
+      "bytes": 9879,
+      "sha256": "fad7b09db9efc512247b9a176a7e7ce8631e287592b4e07902d0b9c38bed00f8",
+      "lines": 176,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/spatial.py"
+    },
+    {
+      "path": "vendor/gems57/strand_orientation.py",
+      "bytes": 5342,
+      "sha256": "c1dd6d8bc39c48c4cda11321c116e600b59b18cf1764e23ce3d5438bea9dd0bc",
+      "lines": 101,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/strand_orientation.py"
+    },
+    {
+      "path": "vendor/gems57/strike_zone.py",
+      "bytes": 5132,
+      "sha256": "eaf5b1030b731ec743650568d28598d3b6104e641a089dd6cca196e05be4e9c4",
+      "lines": 124,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/strike_zone.py"
+    },
+    {
+      "path": "vendor/gems57/submission_writer.py",
+      "bytes": 6423,
+      "sha256": "73b8d88f4e49f039a70254ce5a22dfe9729a8d0cae607a74c4416ace9e12039d",
+      "lines": 144,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/submission_writer.py"
+    },
+    {
+      "path": "vendor/gems57/uniqueness.py",
+      "bytes": 26100,
+      "sha256": "415a90b9fadc8308c9c9f6fd44b57ca73ffc1b32667187bea16b0f30a6b263bc",
+      "lines": 485,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/uniqueness.py"
+    },
+    {
+      "path": "vendor/gems57/validate.py",
+      "bytes": 4765,
+      "sha256": "e7849554b47f6a2b66aeb2f7cfd5db06267412f049f52a73f1c41f934a2c34dd",
+      "lines": 109,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/gems57/validate.py"
+    },
+    {
+      "path": "vendor/template57/prepare_data.py",
+      "bytes": 9029,
+      "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+      "lines": 176,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/template57/prepare_data.py"
+    },
+    {
+      "path": "vendor/template57/test_evaluate_holdout.py",
+      "bytes": 5978,
+      "sha256": "2e354c977536dcf85dd6230420c1ca2ffec525f7068941e1206736b73061cf68",
+      "lines": 145,
+      "check": "Python syntax parsed; UTF-8 text scanned",
+      "issues": [],
+      "domain": "unrelated or mixed legacy research",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/vendor/template57/test_evaluate_holdout.py"
+    },
+    {
+      "path": "verification.html",
+      "bytes": 10529,
+      "sha256": "d62a4482a157cc67f0377d22f741e9699edfbc0598dc74c3489ff2785804a483",
+      "lines": 68,
+      "check": "UTF-8 text scanned",
+      "issues": [],
+      "domain": "repository infrastructure / other",
+      "source_url": "https://github.com/karagemop466-tech/Korea8/blob/db514cd49787f52d4c0c0c7f36536d36a7123f69/verification.html"
+    }
+  ]
+}

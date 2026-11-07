@@ -1,0 +1,2 @@
+const filter=document.getElementById('provider-filter');
+if(filter){const rows=[...document.querySelectorAll('#providers-table tbody tr')];const count=document.getElementById('filter-count');const update=()=>{let n=0;rows.forEach(r=>{const show=r.textContent.toLowerCase().includes(filter.value.toLowerCase());r.hidden=!show;if(show)n++;});count.textContent=n+' of '+rows.length+' records';};filter.addEventListener('input',update);update();}

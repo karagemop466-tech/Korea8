@@ -907,3 +907,64 @@ legacy Pages status is not treated as proof of the current commit.
 | Local checks | 22/22 verifier checks, 10 unit tests, pytest 10 passed, local HTTP 200 for canonical pages/CSS/GEMS docs/redirect stub |
 
 F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and non-blocking. No provider was contacted or booked.
+## Session `arena/770fba4f-korea8` — independent re-verification and final integration (2026-11-07)
+
+Claim recorded before implementation. The Arena session branch is fixed; this is the session identifier used in place of a separately created `session-*` branch. No other branch will be created or pushed.
+
+| ID | Task | Status | Owner | Exclusive file scope |
+|---|---|---|---|---|
+| R770-01 | Repository inventory and irregularity audit | in progress | `arena/770fba4f-korea8` | `overflow-review/repository/**`, `COORDINATION.md` |
+| R770-02 | Fresh official-source provider, technical and requirements research | in progress | `arena/770fba4f-korea8` | `overflow-review/data/**`, `overflow-review/sources/**` |
+| R770-03 | Executive summary and unified static dashboard | unclaimed | `arena/770fba4f-korea8` | `overflow-review/site/**`, `overflow-review/build.py`, `overflow-review/EXECUTIVE_SUMMARY.md` |
+| R770-04 | Automated row, source, link and responsive-browser checks | unclaimed | `arena/770fba4f-korea8` | `overflow-review/check.py`, `overflow-review/tests/**`, `overflow-review/evidence/**` |
+| R770-05 | Final integration, PR, merge and actual Pages verification | unclaimed | `arena/770fba4f-korea8` | Shared root HTML/CSS and `site-data/**`; duplicate public-route redirects; `COORDINATION.md`; `.github/workflows/overflow-site.yml` only after R770-01–04 finish |
+
+### Stale-claim handoff and concurrency boundary
+
+At 2026-11-07 20:19 UTC, the unfinished integrations owned by `arena/ae482104-korea8` and `arena-82aa8544` had no branch commits after 2026-11-06 13:40:12Z and 13:49:52Z respectively (official repository commit API checked). Both exceed the requested 60-minute takeover threshold. Their historical records remain intact. Shared-output editing is deferred until this session's research/build/check tasks finish; the stale final-integration responsibility is then handed to R770-05. No new edits touch the unrelated DOE GEMS research, its data/evidence, or `docs/index.html`.
+
+Open PRs #12, #17, #21, #22 and #24 were inspected before claiming. They predate this session by more than 24 hours. Their unmerged changes will be assessed rather than silently overwritten; main already contains the earlier integrated dossiers. New research files use the exclusive `overflow-review/**` namespace to avoid conflicts.
+
+Publication will contain neutral repair information and source-linked findings only. Owner-supplied facts will be identified as such; unsupported factual/price cells remain blank and are flagged. No provider will be described as having accepted this exact job unless an official provider source establishes it.
+
+### R770 research checkpoint (2026-11-07)
+
+- Fresh direct CSLB checks completed for 23 numeric license records; one additional prior-draft name remains unidentified. Records are in `overflow-review/data/providers.json`, with exact relevant excerpts in `sources.json`.
+- New primary evidence: Heise’s Plumbing’s Ingleside project explicitly describes exterior-ceiling access for tub W&O replacement. Mission and Panhandle pages provide additional company-published W&O examples. Bernal Hill Drywall #995163 is independently verified C-9 + B.
+- Corrections: shared address/phone does not establish common ownership; B classification does not confirm exact-job acceptance; review snippets do not verify numeric ratings; the IAPMO access spotlight is not a current local code determination. Suspended/adverse-status candidates are explicitly separated.
+- Owner-only facts and quote amounts are not treated as official verification. Quote amount/date/inclusion cells are blank; 37 requirements, 10 technical rows, 12 findings and 22 review flags carry source links.
+- R770-02 research is complete in this session's exclusive namespace. Repository structural/provenance audit and unified build remain in progress. No unrelated research files edited.
+
+### Parallel-session coordination update — R770 (2026-11-07 20:30 UTC)
+
+`origin/main` advanced through PR #34 while independent research was underway. PR #33 (`arena/10be5bc4-korea8`) is newly active and claims the shared root/project outputs. R770 will not edit those shared files while that claim is active. Request to the integrator: retain the root as canonical, keep unsupported quote amounts blank, and consider the freshly checked `overflow-review/data/**` rows (especially Heise’s ceiling-access job and Bernal Hill C-9 + B). R770's build/check work remains exclusively under `overflow-review/**`; shared integration is deferred until the active task finishes or qualifies for the documented stale handoff. No parallel work will be discarded.
+
+### R770 rebase conflict resolution
+
+Rebasing onto PR #34 produced an append conflict in `COORDINATION.md`. All incoming main-board records and this session's claim/checkpoint/active-PR boundary were retained; only conflict markers were removed. No other session's record or file was discarded. Shared root integration remains deferred while PR #33 is active.
+
+### R770 task transition
+
+R770-01 repository audit and R770-02 official-source research are done. R770-03 unified dashboard and R770-04 automated checks are now in progress in the exclusive `overflow-review/**` scope. PR #33 was observed closed/unmerged at 2026-11-07 20:31 UTC; its branch work remains preserved. Shared-output integration will rebase on the latest main and retain all existing records before any root changes.
+
+### R770 build/check completion and final-integration claim
+
+R770-03 and R770-04 are complete in the exclusive namespace: 11 static pages generated from the reviewed JSON; 3,533 structural/provenance/link/blank-value checks pass; real Chromium checks pass on all 11 pages at 1440px and 390px, including provider filtering and zero JavaScript errors. Desktop/mobile screenshots and machine-readable reports are under `overflow-review/evidence/`.
+
+PR #33 is closed/unmerged and main remains at PR #34's canonical integration. With the independent tasks complete, R770-05 now claims final shared integration: root HTML/CSS, duplicate public-route redirects, `overflow-review/integrate.py`, and `.github/workflows/overflow-site.yml`. Existing main records and unrelated GEMS files will be preserved. The new root will be generated from `overflow-review/data/`; old `site-data/` remains historical, not a second authoritative input. Deployment will be verified from the actual public URL after merge.
+
+### R770 shared integration result
+
+The checked 11-page namespace build is promoted to the canonical root. `overflow-review/integrate.py` copies only the generated canonical pages/assets/data and preserves unrelated GEMS files. Duplicate bathtub HTML routes are per-page redirect stubs (recorded in `overflow-review/repository/redirects.json`); old root `technical-approach.html` and `code-and-permit.html` redirect to the neutral technical page. Historical `site-data/` and prior dossiers remain in Git as non-authoritative records. A second official CSLB pass rechecked all 23 numeric licenses and persisted workers-compensation evidence excerpts; no status changed. The canonical amount cells remain blank.
+
+### R770 deployment workflow and public-artifact checks
+
+Added `.github/workflows/overflow-site.yml`: PRs run build/data/link/browser gates; only main pushes/dispatch upload the curated `overflow-review/public` artifact and deploy through GitHub Pages Actions. The artifact excludes repository internals, coordination history and source scripts; it includes canonical pages, neutral legacy redirects, public data, and preserved GEMS docs/downloads. Local curated-artifact checks pass (2,684 checks; 70 HTML files), and Chromium passes all 11 canonical pages at desktop/mobile sizes with zero JS errors. The generated staging directory is ignored; CI regenerates it from committed inputs.
+
+### R770 concurrency update — PR #38 opened; main advanced through PRs #36/#37
+
+PR #38 was opened from the pinned branch. While checks were running, `origin/main` advanced through the completed `arena/f4bb970c-korea8` integration (PRs #36/#37, merged 20:43/20:45 UTC). That session records its tasks done and a successful deploy. R770 will rebase PR #38 onto that baseline, preserve all board records and the `overflow-integration/**` research, and resolve generated-root conflicts in favor of the newly checked R770 canonical build only after the completed handoff. The prior root remains preserved in Git history. To avoid competing deploy workflows, the completed F4 workflow will be archived and the curated, PR-gated R770 workflow will be the single publication path. No active session work is overwritten.
+
+### R770 rebase conflict resolution and single deploy path
+
+Rebasing PR #38 onto PRs #36/#37 conflicted in `COORDINATION.md` and 11 generated root pages/CSS. All board histories and the completed F4 research tree were retained. Generated-root conflicts were resolved to the R770 checked build (the prior root remains in Git history and F4's generator/data remain preserved). The completed F4 `overflow-pages.yml` workflow was archived at `archive/superseded-2026-11-07/overflow-pages.session-f4bb970c.yml` and removed from active workflows so it cannot race the curated R770 `overflow-site.yml` deploy. After regeneration: 3,628 data/site checks and 2,684 curated-artifact checks pass.

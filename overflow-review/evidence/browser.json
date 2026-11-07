@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "browser": "Chromium",
+  "base_url": "http://127.0.0.1:8080/",
+  "results": [
+    {
+      "viewport": "desktop",
+      "page": "index.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "executive-summary.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "requirements.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "estimates.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "providers.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "technical.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "analysis.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "sources.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "flagged-for-review.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "repository.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "desktop",
+      "page": "verification.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "index.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "executive-summary.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "requirements.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "estimates.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "providers.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "technical.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "analysis.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "sources.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "flagged-for-review.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "repository.html",
+      "http": 200,
+      "page_overflow": false
+    },
+    {
+      "viewport": "mobile",
+      "page": "verification.html",
+      "http": 200,
+      "page_overflow": false
+    }
+  ],
+  "filter_test": "PASS: license 1089561 -> one Heise row; reset -> 24 rows",
+  "javascript_errors": 0
+}

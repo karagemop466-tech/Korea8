@@ -1,0 +1,124 @@
+{
+  "dataset": "technical",
+  "rows": [
+    {
+      "id": "T-01",
+      "category": "Mechanism example",
+      "statement": "Watco trip-lever families use an overflow plate, linkage and drop cylinder that seats in the tee.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "interpretation": "Manufacturer example only; actual tub brand/model is unknown.",
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "T-02",
+      "category": "Tub-side service example",
+      "statement": "Watco Step 7 removes the overflow plate and drop-cylinder assembly for readjustment.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "interpretation": "Supports asking for a model-specific tub-side assessment; does not prove a seized assembly can be extracted.",
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "T-03",
+      "category": "Linkage condition",
+      "statement": "Watco instructs that brass linkage must not be kinked.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "interpretation": "A visible symptom does not identify the failed part without inspection.",
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "T-04",
+      "category": "Sealing expectation",
+      "statement": "For the documented Watco models, the cylinder bottoms slightly before fully closed; a slow drip inside the tee is normal and acceptable.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "interpretation": "Do not apply this expectation to an unidentified model or confuse internal tee drip with tub sealing failure.",
+      "flags": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "T-05",
+      "category": "Relevant job evidence",
+      "statement": "Heise’s Ingleside project says it accessed the exterior ceiling to replace a tub waste-and-overflow assembly.",
+      "source_ids": [
+        "WEB-Heise-Ingleside"
+      ],
+      "interpretation": "Closest published access analogy found; company-published, not an independent review orcommitment of this job.",
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "T-06",
+      "category": "Additional job evidence",
+      "statement": "Heise’s Mission and Panhandle pages document further San Francisco tub W&O replacements.",
+      "source_ids": [
+        "WEB-Heise-Mission",
+        "WEB-Heise-Panhandle"
+      ],
+      "interpretation": "Neither page establishes drywall restoration or seized trip-lever extraction.",
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "id": "T-07",
+      "category": "Access planning",
+      "statement": "IAPMO’s 2018 UPC training spotlight describes at least 12-inch least-dimension access for concealed slip joints.",
+      "source_ids": [
+        "IAPMO-Access"
+      ],
+      "interpretation": "Publisher explicitly says the email is not an official interpretation; current local section/application remains unverified.",
+      "flags": [
+        "F-20"
+      ]
+    },
+    {
+      "id": "T-08",
+      "category": "Licensing structure",
+      "statement": "C36 covers plumbing waste disposal/replacement; C9 covers drywall; B multi-trade authority is conditional.",
+      "source_ids": [
+        "CSLB-B"
+      ],
+      "interpretation": "A single contract can coordinate licensed trades; it does not confirm any candidate accepts this particular job.",
+      "flags": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "T-09",
+      "category": "Occupied-unit entry",
+      "statement": "Civil Code §1954 governs repair entry notice and timing, including an agreed-repair oral-entry route.",
+      "source_ids": [
+        "CA-1954"
+      ],
+      "interpretation": "Coordinate with the tenant; this dashboard is not legal advice.",
+      "flags": []
+    },
+    {
+      "id": "T-10",
+      "category": "Diagnostic boundary",
+      "statement": "No photos, model identification, physical inspection or provider acceptance were available.",
+      "source_ids": [
+        "WATCO-TL"
+      ],
+      "interpretation": "No definitive diagnosis, access dimensions, repair method or total cost is asserted.",
+      "flags": [
+        "F-01"
+      ]
+    }
+  ]
+}
