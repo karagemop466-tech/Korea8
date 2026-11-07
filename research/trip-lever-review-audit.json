@@ -1,0 +1,198 @@
+{
+  "note": "Reviews are independent of the requester’s specific job and are unverified customer accounts. BBB is a review and complaint service, not an official license authority. Review identities and platform information can change.",
+  "findings": [
+    {
+      "id": "V01",
+      "provider": "Rapid Flow",
+      "finding": "A Yelp search-index excerpt contains one customer account of a metal tub drain plug retrieved after opening a wall and cutting pipe. This is a different job, not proof of trip-lever or ceiling-finishing experience.",
+      "access": "Indexed excerpt; direct Yelp access blocked",
+      "sources": [
+        {
+          "id": "L1115649",
+          "title": "CSLB license #1115649 — Rapid Flow Plumbing & Rooter Inc",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+          "kind": "government",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Direct license record; status is a point-in-time snapshot."
+        },
+        {
+          "id": "Y-RAPID",
+          "title": "Yelp search: Rapid Flow and an adjacent tub-plug account",
+          "url": "https://www.yelp.com/search?cflt=contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
+          "kind": "review-platform",
+          "access": "indexed",
+          "checked": "2026-11-07",
+          "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "provider": "Expert Plumbing Solutions",
+      "finding": "Yahoo Local displays a truncated Yelp-syndicated review dated August 2026 saying the customer had an overflow leak repaired. It does not establish a stuck trip lever or restoration work.",
+      "access": "Yahoo Local read directly; Yelp blocked",
+      "sources": [
+        {
+          "id": "L977638",
+          "title": "CSLB license #977638 — Expert Plumbing Solutions",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+          "kind": "government",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Direct license record; status is a point-in-time snapshot."
+        },
+        {
+          "id": "YAHOO-EXPERT",
+          "title": "Yahoo Local: Yelp-syndicated Expert Plumbing Solutions reviews",
+          "url": "https://local.yahoo.com/info-154084774-expert-plumbing-solutions-san-francisco/",
+          "kind": "review-platform",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Read directly; Yahoo attributes the reviews to Yelp. Individual accounts and their details are not independently verified."
+        },
+        {
+          "id": "Y-EXPERT",
+          "title": "Yelp: Expert Plumbing Solutions",
+          "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+          "kind": "review-platform",
+          "access": "indexed",
+          "checked": "2026-11-07",
+          "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+        }
+      ]
+    },
+    {
+      "id": "V03",
+      "provider": "Fast Response",
+      "finding": "An Angi review from 2014 describes finding hidden bathroom access to clear a tenant’s drain. It concerns a different issue and is old.",
+      "access": "Angi read directly",
+      "sources": [
+        {
+          "id": "L1024971",
+          "title": "CSLB license #1024971 — Fast Response Plumbing and Rooter",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+          "kind": "government",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Direct license record; status is a point-in-time snapshot."
+        },
+        {
+          "id": "ANGI-FAST",
+          "title": "Angi: Fast Response Plumbing & Rooter reviews",
+          "url": "https://www.angi.com/companylist/us/ca/san-francisco/fast-response-plumbing-and-rooter-reviews-4809363.htm",
+          "kind": "review-platform",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Read directly. Older customer accounts are not independently verified."
+        },
+        {
+          "id": "BBB-FAST",
+          "title": "BBB: Fast Response Plumbing & Rooter",
+          "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+          "kind": "review-platform",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Read directly; BBB lists CSLB #1024971."
+        }
+      ]
+    },
+    {
+      "id": "V04",
+      "provider": "Ace Plumbing & Rooter",
+      "finding": "The BBB profile lists the same license and includes customer comments on unrelated plumbing work. Its business rating and individual reviews do not establish the requested repair.",
+      "access": "BBB read directly; Yelp search indexed",
+      "sources": [
+        {
+          "id": "L829071",
+          "title": "CSLB license #829071 — Ace Plumbing & Rooter",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+          "kind": "government",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Direct license record; status is a point-in-time snapshot."
+        },
+        {
+          "id": "BBB-ACE",
+          "title": "BBB: Ace Plumbing and Rooter, Inc.",
+          "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941",
+          "kind": "review-platform",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Read directly; BBB profile lists the same CSLB license number. BBB and customer statements are not proof of the requested scope."
+        },
+        {
+          "id": "Y-ACE",
+          "title": "Yelp: Ace Plumbing & Rooter",
+          "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+          "kind": "review-platform",
+          "access": "indexed",
+          "checked": "2026-11-07",
+          "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+        }
+      ]
+    },
+    {
+      "id": "V05",
+      "provider": "Ayoob & Peery",
+      "finding": "Angi shows customer comments from 2005–2010. These are historical accounts and do not establish a fit for a small occupied-unit job.",
+      "access": "Angi read directly",
+      "sources": [
+        {
+          "id": "L392967",
+          "title": "CSLB license #392967 — Ayoob & Peery Plumbing Co Inc",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+          "kind": "government",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Direct license record; status is a point-in-time snapshot."
+        },
+        {
+          "id": "ANGI-AYOOB",
+          "title": "Angi: Ayoob & Peery reviews",
+          "url": "https://www.angi.com/companylist/us/ca/san-francisco/ayoob-and-peery-plumbing-co-inc-reviews-210462.htm",
+          "kind": "review-platform",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Customer reviews read on the platform; the accounts are not independently verified and date from 2005–2010."
+        }
+      ]
+    },
+    {
+      "id": "V06",
+      "provider": "Heise’s Plumbing",
+      "finding": "A BBB profile with the same company site and phone lists a different license number and legal entity from the present candidate. Its rating or complaint history cannot be attributed to the current candidate without confirmation.",
+      "access": "BBB read directly; Yelp search indexed",
+      "sources": [
+        {
+          "id": "L1089561",
+          "title": "CSLB license #1089561 — Taro Group Inc dba Heises Plumbing",
+          "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+          "kind": "government",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Direct license record; status is a point-in-time snapshot."
+        },
+        {
+          "id": "BBB-HEISE",
+          "title": "BBB: Heise’s Plumbing, Inc.",
+          "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+          "kind": "review-platform",
+          "access": "read",
+          "checked": "2026-11-07",
+          "note": "Name, phone and site overlap, but this BBB profile lists #787733, not the candidate’s #1089561; do not attribute its history to that licensee without confirmation."
+        },
+        {
+          "id": "Y-HEISE",
+          "title": "Yelp: Heise’s Plumbing",
+          "url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+          "kind": "review-platform",
+          "access": "indexed",
+          "checked": "2026-11-07",
+          "note": "Direct automated retrieval was blocked or not performed; search-index excerpts are not independently verified. Reviews are user accounts, not official license or work verification."
+        }
+      ]
+    }
+  ],
+  "checked_at": "2026-11-07"
+}
