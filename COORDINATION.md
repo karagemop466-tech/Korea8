@@ -938,3 +938,7 @@ Publication will contain neutral repair information and source-linked findings o
 ### Parallel-session coordination update — R770 (2026-11-07 20:30 UTC)
 
 `origin/main` advanced through PR #34 while independent research was underway. PR #33 (`arena/10be5bc4-korea8`) is newly active and claims the shared root/project outputs. R770 will not edit those shared files while that claim is active. Request to the integrator: retain the root as canonical, keep unsupported quote amounts blank, and consider the freshly checked `overflow-review/data/**` rows (especially Heise’s ceiling-access job and Bernal Hill C-9 + B). R770's build/check work remains exclusively under `overflow-review/**`; shared integration is deferred until the active task finishes or qualifies for the documented stale handoff. No parallel work will be discarded.
+
+### R770 rebase conflict resolution
+
+Rebasing onto PR #34 produced an append conflict in `COORDINATION.md`. All incoming main-board records and this session's claim/checkpoint/active-PR boundary were retained; only conflict markers were removed. No other session's record or file was discarded. Shared root integration remains deferred while PR #33 is active.
