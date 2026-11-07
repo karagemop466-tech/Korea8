@@ -920,3 +920,41 @@ F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and n
 **Scope rules for this session:** edits are limited to `COORDINATION.md` and new files under `audit/`.
 No other session's files are modified; required changes elsewhere are logged under cross-session requests.
 No private/internal brief content is recorded in any file or commit message.
+
+### `qa-02` — completed record (session `arena/d120270b-korea8`, 2026-11-07)
+
+**Report:** `audit/REPORT_2026-11-07_d120270b.md` · **Machine-readable:** `audit/independent_audit_report.json`
+· **Audit script (independent parser, does not import the site's verifiers):** `audit/independent_audit.py`
+
+- **Structural audit (own parser):** 10 pages, **236 table rows — 232 with an official/primary source
+  link, 4 explicit blank/unverified markers, 0 offenders**; 143 internal links, 0 broken; amount
+  cells all carry owner-reported/unverified labels; privacy sweep 0 hits after the fix below.
+- **Cross-check with the site's own stack:** `verify_overflow_site.py` 22/22 PASS ·
+  `verify_canonical_site.py` 22/22 PASS · `test_overflow*.py` 10/10 OK · CI `overflow-pages` run
+  42412383676 success · legacy Pages build for `f44f24a` built (27 s).
+- **Official sources re-read directly on 2026-11-07 (independent of the producing sessions):**
+  CSLB licence-detail pages [#977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638),
+  [#757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796),
+  [#1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971)
+  (incl. the official "POTRAL" spelling), [#1027286](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286)
+  (bond suspension confirmed); [BPC §7057](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057)
+  (two-trade prime-contract rule, verbatim); [sf.gov plumbing-permit page](https://www.sf.gov/apply-plumbing-and-mechanical-permit)
+  (permit trigger, §104.2 exemptions, Express Permits, help-desk number); [SF DBI Table 1A-C fee
+  schedule, July 2026 (PDF)](https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf)
+  — all five published fee amounts ($290 / $320 / $519 / $555 / $259) match the PDF exactly.
+- **Live site** fetched cache-busted: counts identical to the audited revision (23 CSLB records,
+  6 B+C-36 leads, 42 requirements, 73 sources, 36 flags); nav consistent on all 10 pages.
+- **Privacy fix (takeover, logged here):** `bathtub/data/flags.json` and `data/bathtub/flags.json`
+  still stated the internal no-permit instruction after the PR #36 scrub, and both files'
+  `requirements.json` carried meta-copy about a private scheduling constraint. Neutralised in
+  commit `27348da` (4 lines, 4 files); owning session `arena/b10e8d0e-korea8` claim is >60 min
+  stale, so the protocol takeover applies. Re-swept: 0 hits.
+
+**Irregularities added by this session (full detail in the audit report, §7):** quote-amount
+presentation remains an owner decision (policy review PR #18 asked for blank; merged PR #36
+publishes labelled owner-reported amounts — every occurrence verified labelled, F-02); stale
+`scripts/verify_project_site.py` fails against current pages but is not run by CI; open conflicting
+PR #35 would revert PR #36 if merged; PR #7 unrelated; `run_card.json`/`RUN_CARD.json` case
+collision; build-report timestamp churn; review-platform 403 block (F-14); no provider contacted
+(F-35); racing final-integration sessions 20:22–20:43 UTC all preserved in history.
+
