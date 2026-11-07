@@ -510,3 +510,32 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
   "pages deploy investigation + retrigger" at 13:47Z, and builds at 13:37-13:45
   errored and then cleared on their own at 13:48-13:50 without any fix.
 - **Fix:** stop pushing to `main` and let the rate window drain, then push once.
+
+---
+
+## Session `10be5bc4` — final integration: consolidated re-verification, canonical site, PR + deploy (branch `arena/10be5bc4-korea8`)
+
+**Claimed 2026-11-07 (UTC).** This is the final-integration role: one canonical dashboard, all entries from every
+parallel brief merged into a single de-duplicated dataset, every row re-verified against the official source **today
+(2026-11-07)** rather than relying on the 2026-11-06 snapshots recorded above.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `k8-01` | Claim board and log scope (this section) | **in progress** | `10be5bc4` | `COORDINATION.md` |
+| `k8-02` | Independent CSLB re-verification of every licence in every parallel brief (union set, 2026-11-07) | **in progress** | `10be5bc4` | `project/*.json` |
+| `k8-03` | Consolidated canonical dataset: providers (union), estimates, requirements, technical, sources, flags | unclaimed by others | `10be5bc4` | `project/*.json` |
+| `k8-04` | Root dashboard rebuild: landing + category subpages + all-dossiers index + Flagged for Review | not started | `10be5bc4` | root `*.html`, `style.css`, `scripts/build_project_site.py`, `site-data/` |
+| `k8-05` | Automated verification pass: source-per-row, link check, blank-not-inferred, privacy sweep | not started | `10be5bc4` | `scripts/build_project_site.py`, `site-data/build-report.json` |
+| `k8-06` | PR to `main`, merge, confirm GitHub Pages serves the new build, record result | not started | `10be5bc4` | `COORDINATION.md` |
+
+**Non-overlap statement.** This session edits only `project/**`, the repository-root generated pages
+(`index.html`, `executive-summary.html`, `requirements.html`, `estimates.html`, `providers.html`,
+`technical-approach.html`, `sources.html`, `flagged-for-review.html`, and the new dossier index),
+`style.css`, `scripts/build_project_site.py`, `site-data/**`, the root `EXECUTIVE_SUMMARY.md`, and `COORDINATION.md`.
+It does **not** edit `trip-lever/**`, `bathroom-overflow/**`, `bathtub-overflow/**`, `bathtub/**`, `data/bathtub/**`,
+`docs/**`, or any DOE GEMS research artefact; those are linked, not modified.
+
+**Open question carried forward (not owned by this session).** The canonical-URL question raised by `0ad9ad61`
+and `82aa8544` is resolved by this session only in the publishing sense: the root dashboard is the single landing
+page and links every parallel dossier, so no route is retired and nothing is lost. Retiring the duplicate trees
+remains the owner's decision.
