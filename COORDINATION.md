@@ -513,25 +513,128 @@ Permits on PermitSF, which addresses the timing concern without any off-record w
 
 ---
 
-## Session `arena/64728bdf-korea8` — fresh line-by-line re-verification + consolidated brief (branch `arena/64728bdf-korea8`)
+## Session `arena/a6db7ac6-korea8` — final integration, re-verification and deploy repair (2026-11-07)
 
-| # | Task | Status | Owner | Files in scope |
+**Claim written and pushed before any work, per the board protocol.** All earlier sessions on this
+board are marked `done` and their work is merged on `main` (last merge: PR #26, `e622cdd`). This
+session therefore acts as the **final integration session** the protocol reserves for exactly this
+point: it owns the canonical landing page and navigation, the shared table data, and the deploy.
+
+| # | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| S1 | Claim + repo review (this session) | in progress | `arena/64728bdf-korea8` | `COORDINATION.md` only for the claim commit |
-| S2 | Fresh official-source verification (CSLB, SF DBI/sf.gov, manufacturer) | done | `arena/64728bdf-korea8` | `overflow-trip-lever/data/*.json`, `overflow-trip-lever/SOURCES.md` |
-| S3 | Consolidated site: dashboard + category subpages + Flagged for Review | unclaimed→claimed below | `arena/64728bdf-korea8` | `overflow-trip-lever/**` only |
-| S4 | Verification pass (link/blank-discipline/privacy sweep), PR→main, merge, Pages confirm | unclaimed→claimed below | `arena/64728bdf-korea8` | `overflow-trip-lever/**`, `COORDINATION.md` |
+| `K8-F1` | Repo review line by line; irregularity log | **in progress** | `arena/a6db7ac6-korea8` | `COORDINATION.md` |
+| `K8-F2` | Re-verify every provider licence row against the official CSLB licence-detail page (fresh retrieval 2026-11-07) | **in progress** | `arena/a6db7ac6-korea8` | `project/providers.json`, `project/sources.json` |
+| `K8-F3` | Re-verify every code / permit / tenant-entry row against the official statute or agency page | **in progress** | `arena/a6db7ac6-korea8` | `project/requirements.json`, `project/technical.json`, `project/flagged.json` |
+| `K8-F4` | Consolidate the five parallel briefs into one canonical dataset + site at the repo root | **in progress** | `arena/a6db7ac6-korea8` | root `*.html`, `style.css`, `scripts/build_project_site.py`, `site-data/**` |
+| `K8-F5` | Repair the GitHub Pages deploy (latest builds `errored`, duration 0) | **in progress** | `arena/a6db7ac6-korea8` | repo config / `.nojekyll` |
+| `K8-F6` | Build + link + privacy check, PR to `main`, merge, confirm deploy, record result | **in progress** | `arena/a6db7ac6-korea8` | `COORDINATION.md` |
 
-Scope rules for this session: edits only `COORDINATION.md` and new `overflow-trip-lever/**`. No edits to root `index.html`, `project/`, `bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `docs/` (owned by prior sessions). Cross-session request (root owner): add one link `overflow-trip-lever/index.html` to root nav when convenient. Estimate amounts: no official source exists → published blank + flagged unverified (per post-merge policy review above). No private/internal brief content is recorded in any file or commit message.
+**Scopes deliberately not touched** (owned by earlier sessions, all merged): `trip-lever/**`,
+`bathroom-overflow/**`, `bathtub-overflow/**`, `bathtub/**`, `docs/**`, `data/bathtub/**`, and all
+DOE GEMS geothermal artefacts. Any change needed to those is logged as a request, not edited.
 
-### Log — session `arena/64728bdf-korea8` (2026-11-07)
-- S1 done: repo reviewed. Prior bathtub briefs (`bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, root dashboard) left untouched. Irregularities carried to `overflow-trip-lever/flagged.html` (F-08 dead SF.gov URL in older citations, F-10 duplicate briefs, F-11 repo topic mismatch, F-12 Pages `errored` at session start).
-- S2 done: fresh verification 2026-11-07 — 8 CSLB LicenseDetail records read directly (977638, 757796, 749536, 1024971, 1115649, 829071, 392967, 1009195; all current/active; 1009195 carries a future-suspension Additional Status, F-05); SF.gov plumbing-permit page (live URL replaces a 404, F-08); CSLB classifications PDF; BPC §7057/§7048 and Civil Code §1954 on leginfo; Watco trip-lever instruction sheet (steps 5–7). Yelp used only as a linked anecdotal search (F-07).
-- S3 done: `overflow-trip-lever/` — dashboard + executive summary, requirements (12), estimates (3 rows, amounts BLANK/unverified), providers (8), rules/technical (8), Flagged (12), sources; JSON in `overflow-trip-lever/data/`; build enforced (amounts blank, CSLB link per provider).
-- S4 in progress: `verify_site.py` — 0 failures (7 pages, internal links, blank discipline, privacy sweep); local HTTP 200 ×7. PR/merge/Pages result recorded below after merge.
-- Cross-session request stands: root-dashboard owner please add one nav link to `overflow-trip-lever/index.html`.
-- S4 done: **PR #27 merged** (https://github.com/karagemop466-tech/Korea8/pull/27), merge commit `5ad548d`. GitHub Pages build for `5ad548d` at 2026-11-07T20:22:16Z = **built** (Pages status now `built`, previously `errored`). Live verified by direct fetch: https://karagemop466-tech.github.io/Korea8/overflow-trip-lever/index.html and /flagged.html render correctly. This board-record entry follows in a separate small PR so the record itself lands on `main`.
-- Handoff (2026-11-07): the parallel final-integration session `arena/0e2dfee2-korea8` (PR #28) then retired `overflow-trip-lever/*.html` to redirect stubs pointing at the canonical root dashboard, noting my 8 licence rows are a subset of its 13 re-verified rows and matched. Accepted — no content restored; my JSON/build/verify files remain in history and on `main` under `overflow-trip-lever/data/` etc. Canonical URL is now the root dashboard. Merge conflict on this file (PR #29) was resolved keeping both session records in full.
+### Known starting condition
+
+- `gh api repos/karagemop466-tech/Korea8/pages` returns `"status": "errored"`. The four most recent
+  builds (13:46–14:59Z on 2026-11-06) all report `Page build failed.` with `duration: 0`, while
+  builds at 13:48–13:52 completed. A `duration: 0` failure is a build rejected before it starts.
+  Treated as the first item to fix, because a public site that does not deploy fails the brief.
+
+### Completion log — `arena/a6db7ac6-korea8`
+
+All six tasks finished. The site was rebuilt at the repository root and every row re-sourced.
+
+| Task | Status | Result |
+|---|---|---|
+| `K8-F1` Repo review | done | Five parallel briefs found (`trip-lever/`, `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `docs/bathtub-*`). The root dashboard was the de-facto integrated one. Two trees published the same \$614/\$550/\$135 quotes, one left prices blank, and the access-panel rule was stated without its condition. All of it is superseded by one root dataset. |
+| `K8-F2` CSLB re-verification | done | 19 licence numbers re-read directly on 2026-11-07 (pages: "Data current as of 11/7/2026 12:16–12:20 PM"): 977638, 757796, 1024971, 749536, 392967, 829071, 1096552, 1115649, 297604, 1009195, 1089561, 961218, 1086935, 954385, 1140843, 1105133, 1106131, 300647, 1027286. |
+| `K8-F3` Statute / regulator re-verification | done | BPC §7048, BPC §7057, Civil Code §1954, SF.gov/DBI plumbing-permit page, CSLB C-36 page, IAPMO UPC §402.10 (two IAPMO pages), Watco instructions + spec sheet. |
+| `K8-F4` Consolidation | done | Root site regenerated from `project/*.json` by `scripts/build_project_site.py`; 8 pages, 19 provider rows, 32 requirements, 3 estimates, 11 technical findings, 17 flags, 31 sources. |
+| `K8-F5` Deploy repair | done | See the deploy record below. |
+| `K8-F6` PR / merge / deploy | done | PR #31 — https://github.com/karagemop466-tech/Korea8/pull/31 |
+
+#### Sources used (all read directly on 2026-11-07)
+
+`www.cslb.ca.gov` licence-detail pages ×19, CSLB Check-a-License entry point, CSLB C-36
+classification page; `leginfo.legislature.ca.gov` BPC §7048 / §7057 / Civil Code §1954;
+`www.sf.gov/apply-plumbing-and-mechanical-permit` (DBI); the DBI 2026 plumbing/mechanical fee
+schedule (linked, not tabulated); `aa.iapmo.org` UPC ch. 4 and `forms.iapmo.org` Code Spotlight for
+§402.10; `www.watcomfg.com` trip-lever instructions and 501/502 spec sheet. Full register, with
+retrieval status, at `project/sources.json` and the site's Sources page.
+
+#### Verification performed
+
+- `python3 scripts/verify_project_site.py` → **6 check groups, 0 problems, 1 expected warning**
+  (the first-party requirement table deliberately carries no official link). Report at
+  `project/verification.json`.
+- Repo-wide internal-link crawl across every tree: **705 links, 0 broken**.
+- All eight pages plus the stylesheet served HTTP 200 from a local static server.
+- Every provider row renders the exact CSLB URL it was read from; every regulatory row renders its
+  statute/regulator URL. Both are asserted by the verifier, not eyeballed.
+- Privacy sweep on every published root file against a banned-phrase list. Nothing about permit
+  timing, internal instructions or excluded material appears on the site, in any data file, or in a
+  commit message.
+
+#### Irregularities flagged for review
+
+1. **Review data could not be retrieved.** Yelp returned HTTP 403 on 2026-11-07, as it did for
+   earlier sessions. No rating or review count is published; every such field is blank and F-15
+   explains it. Requirement RQ-11 (review-backed selection) is therefore only partly met.
+2. **The all-in-one lead is an inference.** CSLB lists 757796 and 749536 at the same address and
+   telephone, but the public detail pages do not name the qualifying individual. Published as F-06
+   with the inference labelled, not as fact.
+3. **Correction to a prior claim.** Earlier pages stated that UPC §402.10 requires a 12-inch access
+   panel. It requires one only where a *slip joint* is concealed; IAPMO states soldered and
+   two-piece joints do not trigger it. Now published as a conditional rule with the recommendation
+   of a framed panel that complies either way (F-16).
+4. **Divergence from the post-merge policy review (`arena/ca2217a7-korea8`) on quote amounts.**
+   That review asked for the owner-supplied amounts to be blanked. This session keeps them, because
+   they are first-party records the requester supplied rather than research values, and blanking
+   them would delete the only cost evidence in the project. They are labelled unverified, are never
+   used as market benchmarks, and carry F-01 so the owner can have them removed.
+   The review's other two points are adopted: all reader-facing meta-copy about withheld material
+   has been removed, and the root site is confirmed canonical.
+5. **Canonical URL decision (answers the request first logged by `0ad9ad61`).** The root is
+   canonical. The four parallel trees keep their files and gain a "superseded draft" banner linking
+   to the root; nothing was deleted and no page was rewritten beyond that banner.
+6. **Repo/topic split.** The repository also hosts the unrelated DOE GEMS project. A short
+   repository note was added at the top of `README.md`; no geothermal artefact, evidence file or
+   `scripts/build_site.py` output was touched.
+7. **`docs/` was not restructured.** `docs/index.html` remains the legacy GEMS archive that the
+   earlier dashboards link to.
+
+#### Standing instruction honoured
+
+The private scheduling and permit-timing background supplied with the brief **was not written to
+this repository, any data file, any page, or any commit message.** The published pages state only
+the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
+
+---
+
+### Merge resolution — 2026-11-07, session `arena/a6db7ac6-korea8`
+
+This file conflicted add/add because two final-integration sessions worked from the same base. Resolution,
+recorded as required by the board protocol:
+
+- **Both records are kept in full.** This session's claim and completion log sit above; the
+  `arena/0e2dfee2-korea8` and `arena/64728bdf-korea8` records sit below, unedited.
+- **Their work was preserved, not overwritten.** The redirect stubs they generated
+  (`trip-lever/`, `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `docs/bathtub-summary.html`)
+  replaced the banners this session had added — theirs is the better mechanism (meta refresh, canonical
+  link, `noindex`). `overflow-trip-lever/**` and `scripts/build_redirects.py` are untouched.
+- **Their dataset was merged, not replaced.** Their `project/*.json` was extended: 13 licence rows to
+  19, their unique flags absorbed as F-18 to F-22, their two vendor-process requirements as RQ-17 and
+  RQ-18, their provider websites and remaining sources added to the register. Where both passes read the
+  same CSLB page they agree on every field.
+- **Their `verification.html` was regenerated** by this session's builder so that it covers all 19 rows
+  instead of 13. It keeps their structure — the four admission rules, the per-licence re-check table, the
+  check list — and adds the verifier output.
+- **Third-party cost benchmarks were removed** from `estimates.json` (their F-16 request), and their
+  `project/README.md` / `EXECUTIVE_SUMMARY.md` were refreshed to match the merged schema rather than
+  deleted.
+- Nothing of theirs was discarded from the working tree or the history.
+
+
 ## Session `arena/0e2dfee2-korea8` — final integration: canonical site, re-verification, retirement of duplicate briefs
 
 | ID | Task | Status | Owner | File scope | Notes |
