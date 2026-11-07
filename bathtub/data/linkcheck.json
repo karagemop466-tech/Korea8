@@ -1,12 +1,12 @@
 {
   "generated_utc": "2026-11-06",
   "stats": {
-    "rows_checked": 116,
-    "rows_verified": 79,
+    "rows_checked": 117,
+    "rows_verified": 80,
     "rows_unverified": 37,
     "pages_checked": 11,
-    "internal_links_ok": 195,
-    "external_links_ok": 122
+    "internal_links_ok": 194,
+    "external_links_ok": 134
   },
   "problems": [],
   "warnings": [

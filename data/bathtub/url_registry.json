@@ -9,9 +9,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 977638",
-      "data_as_of": "11/6/2026 5:24:49 AM",
+      "data_as_of": "11/7/2026",
       "notes": "Business name EXPERT PLUMBING SOLUTIONS; C36; current and active."
     },
     {
@@ -19,9 +19,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 757796",
-      "data_as_of": "11/6/2026 5:25:58 AM",
+      "data_as_of": "11/7/2026",
       "notes": "Business name BAY AREA PLUMBING; C36; current and active."
     },
     {
@@ -29,9 +29,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 749536",
-      "data_as_of": "11/6/2026 5:32:24 AM",
+      "data_as_of": "11/7/2026",
       "notes": "Business name SAVE-ON-INTERIOR; B plus C36; current and active; same address and phone as #757796."
     },
     {
@@ -39,9 +39,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 1024971",
-      "data_as_of": "11/6/2026 5:23:51 AM",
+      "data_as_of": "11/7/2026",
       "notes": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER; C36; current and active."
     },
     {
@@ -49,9 +49,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 1115649",
-      "data_as_of": "11/6/2026 5:31:23 AM",
+      "data_as_of": "11/7/2026",
       "notes": "RAPID FLOW PLUMBING & ROOTER INC; B plus C36; current and active."
     },
     {
@@ -59,9 +59,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 829071",
-      "data_as_of": "11/6/2026 5:26:26 AM",
+      "data_as_of": "11/7/2026",
       "notes": "ACE PLUMBING & ROOTER; C36, A, C-4, C16, B, C10; current and active."
     },
     {
@@ -69,9 +69,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 379364",
-      "data_as_of": "11/6/2026 5:33:03 AM",
+      "data_as_of": "11/7/2026",
       "notes": "JAMES CACCIA PLUMBING INC dba CACCIA HOME SERVICES; C36, C31, C34, C10; current and active."
     },
     {
@@ -79,9 +79,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 392967",
-      "data_as_of": "11/6/2026 5:34:23 AM",
+      "data_as_of": "11/7/2026",
       "notes": "AYOOB & PEERY PLUMBING CO INC; B, C-4, C16, C36, C20; current and active."
     },
     {
@@ -89,9 +89,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 1009195",
-      "data_as_of": "11/6/2026 5:23:51 AM",
+      "data_as_of": "11/7/2026",
       "notes": "ADVANCED PLUMBING AND DRAIN INC; C36; current and active, but carries an adverse Additional Status entry (flag F-03)."
     },
     {
@@ -99,9 +99,9 @@
       "publisher": "Contractors State License Board (State of California)",
       "tier": "official-government",
       "retrieval_status": "retrieved",
-      "retrieved_utc": "2026-11-06",
+      "retrieved_utc": "2026-11-07",
       "page_title": "Contractor's License Detail for License # 966337",
-      "data_as_of": "11/6/2026 5:34:23 AM",
+      "data_as_of": "11/7/2026",
       "notes": "FLOW MASTERS PLUMBING INC; C36, C16, C20; current and active."
     },
     {
@@ -313,6 +313,15 @@
       "page_title": "karagemop466-tech/Korea8",
       "data_as_of": null,
       "notes": "The repository is checked out in the build sandbox and was inspected with git and the GitHub CLI on 2026-11-06; it was not fetched over HTTP by the page builder. Used for flags F-13 and F-14."
+    },
+    {
+      "url": "https://github.com/karagemop466-tech/Korea8/tree/main/data/bathtub",
+      "publisher": "GitHub (this repository)",
+      "tier": "navigation",
+      "retrieval_status": "retrieved",
+      "retrieved_utc": "2026-11-07",
+      "page_title": "karagemop466-tech/Korea8 — data/bathtub directory",
+      "notes": "Footer navigation link to the raw JSON datasets (repository view). Navigational only; not a verification source for any row."
     }
   ]
 }

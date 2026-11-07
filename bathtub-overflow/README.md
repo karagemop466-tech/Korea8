@@ -70,8 +70,8 @@ python3 bathtub-overflow/scripts/verify_site.py   # 61 checks, exit 1 on any fai
    snapshots because those sites block automated retrieval.
 4. **Licences are read, not assumed.** Vendor licence status, classifications, bond, workers-compensation status and
    complaint disclosure come from the CSLB licence-detail page linked in that row ("Data current as of 11/6/2026").
-5. **No private content.** Nothing internal to the brief is written into the data, the pages or the commit history; only
-   the verifiable code facts are published. See FL-21.
+5. **Scope hygiene.** Only verifiable, citable material is published: official records, public code and city pages,
+   and clearly labelled owner-provided items. See FL-21.
 
 ## Deployment
 

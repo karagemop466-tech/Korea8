@@ -119,6 +119,7 @@ def shell(title: str, current: str, body: str, subtitle: str, generated: str) ->
 <title>{esc(title)} — Bathtub overflow trip lever project</title>
 <link rel="stylesheet" href="style.css">
 </head><body>
+<div style="background:#fff7e0;border-bottom:2px solid #ecd9a0;padding:10px 18px;font-size:14px;line-height:1.5;color:#4a3b00"><strong>Archived parallel-session draft.</strong> One of several working briefs prepared in parallel; superseded by the <a href="../index.html" style="color:#0b5cad;font-weight:600">canonical project dashboard</a> (root of this site), re-verified against official sources on 2026-11-07. Kept for traceability — use the dashboard for decisions.</div>
 <header class="top">
   <h1>Bathtub wastewater overflow trip lever — requirements, vendors and code findings</h1>
   <p class="sub">{esc(subtitle)}</p>
@@ -224,9 +225,8 @@ def build_index(sources, vendors, requirements, costs, code_facts, findings, fla
 </section>
 
 <section>
-  <h2>What this site does not contain</h2>
-  <p class="quote">Nothing about this project that is internal-only has been written into the repository, the data files,
-  the page text or the commit history. The published pages carry only the verifiable code facts, the verified licence
+  <h2>Scope hygiene</h2>
+  <p class="quote">The published pages carry only verifiable, citable material: the public code facts, the verified licence
   records and the owner-provided estimates. See item FL-21 on the
   <a href="flagged.html">Flagged for Review</a> page.</p>
 </section>

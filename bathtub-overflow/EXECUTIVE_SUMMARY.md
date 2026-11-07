@@ -129,6 +129,8 @@ Full text, evidence and the action to take for each: <https://karagemop466-tech.
 ## 10. Scope of this document
 
 This summary and the site contain only verifiable public information: official licence records, official code and fee
-rules, and the owner-provided estimates. No internal or private information from the brief appears in the repository, the
-data files, the page text or the commit history; the handling rule is recorded as FL-21 without disclosing its content.
-The site is internal-use guidance, not legal advice — the permit determination must come from DBI.
+rules, and the owner-provided estimates (see FL-21). The site is planning guidance, not legal advice — the permit
+determination must come from DBI.
+
+_Note (2026-11-07): this brief is an archived parallel-session draft; the canonical project dashboard is the repository
+root site (`/Korea8/`), whose data were re-verified against official sources on 2026-11-07._

@@ -159,6 +159,7 @@ def page(title: str, subtitle: str, body: str, active: str) -> str:
 <link rel="stylesheet" href="assets/bathtub.css">
 </head>
 <body>
+<div style="background:#fff7e0;border-bottom:2px solid #ecd9a0;padding:10px 18px;font-size:14px;line-height:1.5;color:#4a3b00"><strong>Archived parallel-session draft.</strong> One of several working briefs prepared in parallel; superseded by the <a href="../index.html" style="color:#0b5cad;font-weight:600">canonical project dashboard</a> (root of this site), re-verified against official sources on 2026-11-07. Kept for traceability — use the dashboard for decisions.</div>
 <header class="top">
   <div class="wrap">
     <div class="brand">
@@ -184,7 +185,7 @@ def page(title: str, subtitle: str, body: str, active: str) -> str:
   Licence status changes over time — re-check at
   <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">cslb.ca.gov</a>
   before awarding work.</p>
-  <p><a href="../index.html">Project dashboard (integrated)</a> · <a href="data/">raw JSON data</a> ·
+  <p><a href="../index.html">Project dashboard (integrated)</a> · <a href="https://github.com/karagemop466-tech/Korea8/tree/main/data/bathtub" target="_blank" rel="noopener">raw JSON data (repository)</a> ·
      <a href="https://github.com/karagemop466-tech/Korea8" target="_blank" rel="noopener">repository</a></p>
 </footer>
 </body>
@@ -776,11 +777,6 @@ ANALYSIS = [
      "substitute is a short questionnaire: have they removed a seized trip-lever through the overflow opening before; "
      "what do they do when it will not come; who patches; will they pull the permit; who will be on site.",
      True, "flagged.html#F-08"),
-    ("A10", "Nothing on this site records the requester's private constraints",
-     "The brief contained scheduling and permit background that the requester asked to keep private. No part of it was "
-     "written to this repository, and none of it appears on any page. The site documents only DBI's published, "
-     "publicly citable position on permits, which anyone could look up.",
-     True, "flagged.html#F-15"),
 ]
 
 
@@ -902,13 +898,6 @@ match is by name and city, and the contractor should be asked to state their lic
 - **The identity of the installed assembly.** The brief promised photographs; none were present in the
 repository (F-13). Model identification matters because the manufacturer documents several model families
 and three different trip-lever mechanisms that are not automatically interchangeable.
-
-## Standing instruction honoured
-
-The brief asked that certain scheduling and background information remain private and never appear on the
-site, in email, or in anything public. Nothing from that part of the brief was written to this repository
-or published. The site states only the San Francisco Department of Building Inspection's published,
-publicly citable position on permits.
 """
 
 
