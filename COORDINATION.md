@@ -957,4 +957,3 @@ publishes labelled owner-reported amounts — every occurrence verified labelled
 PR #35 would revert PR #36 if merged; PR #7 unrelated; `run_card.json`/`RUN_CARD.json` case
 collision; build-report timestamp churn; review-platform 403 block (F-14); no provider contacted
 (F-35); racing final-integration sessions 20:22–20:43 UTC all preserved in history.
-
