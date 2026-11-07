@@ -859,3 +859,7 @@ Publication will contain neutral repair information and source-linked findings o
 ### R770 rebase conflict resolution
 
 Rebasing onto PR #34 produced an append conflict in `COORDINATION.md`. All incoming main-board records and this session's claim/checkpoint/active-PR boundary were retained; only conflict markers were removed. No other session's record or file was discarded. Shared root integration remains deferred while PR #33 is active.
+
+### R770 task transition
+
+R770-01 repository audit and R770-02 official-source research are done. R770-03 unified dashboard and R770-04 automated checks are now in progress in the exclusive `overflow-review/**` scope. PR #33 was observed closed/unmerged at 2026-11-07 20:31 UTC; its branch work remains preserved. Shared-output integration will rebase on the latest main and retain all existing records before any root changes.
