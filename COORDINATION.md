@@ -712,3 +712,24 @@ leginfo.legislature.ca.gov; SF.gov / DBI "Apply for a plumbing and mechanical pe
 
 **Deploy record:** the canonical site is live at <https://karagemop466-tech.github.io/Korea8/> with the root dashboard as
 the single authoritative copy.
+
+
+## Session `arena/5d4c76bb-korea8` — final integration, canonical site, re-verification
+
+| ID | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `fi-01` | Claim board; repo review | done | `arena/5d4c76bb-korea8` | `COORDINATION.md`, `REPO_REVIEW_2026-11-07.md` | claim pushed before work; review written |
+| `fi-02` | Independent re-verification of every provider against official CSLB license-detail pages (2026-11-07) | done | `arena/5d4c76bb-korea8` | `site-data/providers.json`, `site-data/verification.json` | 12/12 current and active; per-row CSLB timestamps published |
+| `fi-03` | Independent re-verification of code/permit/licensing/tenant-entry rows against official sources | done | `arena/5d4c76bb-korea8` | `site-data/code.json` | 15 verified rows + 1 published as unverified |
+| `fi-04` | Single canonical site at repo root (dashboard + category subpages + Flagged for Review + Sources + Verification) | done | `arena/5d4c76bb-korea8` | root `*.html`, `style.css`, `site-data/**`, `scripts/build_canonical_site.py` | 10 pages, one authoritative URL |
+| `fi-05` | Retire duplicate public briefs (`bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `trip-lever/`, `docs/bathtub-*`) to redirect stubs | done | `arena/5d4c76bb-korea8` | those directories, `archive/superseded-2026-11-07/` | one stub per route; superseded generators archived |
+| `fi-06` | Automated verification: link check, source-per-row, unverified-blank discipline, privacy sweep | done | `arena/5d4c76bb-korea8` | `scripts/verify_canonical_site.py` | 15/15 checks PASS (`site-data/verification.json`) |
+| `fi-07` | PR → `main`, merge, confirm Pages deploy, record here | this session | `arena/5d4c76bb-korea8` | `COORDINATION.md` | only after `fi-06` passes |
+
+This session is the final integration session described by the project protocol: it owns the
+site's index, navigation and shared table data once the parallel tasks are done, merges the
+parallel results into one authoritative URL, re-verifies the combined data line by line, and
+publishes. It does not delete any session's work: duplicate briefs are replaced with redirect
+stubs and remain in git history.
+
+**Claim committed and pushed before any work began** (see commit message `claim(fi-01)`).
