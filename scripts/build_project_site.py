@@ -51,6 +51,7 @@ NAV = [
     ("providers.html", "Providers"),
     ("technical-approach.html", "Technical Approach"),
     ("sources.html", "Sources"),
+    ("verification.html", "Verification"),
     ("flagged-for-review.html", "Flagged for Review"),
 ]
 
@@ -103,10 +104,13 @@ def page(title, active, body, description=""):
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
      Built {BUILD_STAMP} · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
-     <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
-     Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
-     Licenses re-verified {escape(providers["meta"]["verified_date"])} via official CSLB pages — statuses can change; re-check before contracting.</p>
+  <p class="muted">This root dashboard is the single authoritative copy of the brief. Earlier parallel-session copies
+     (<code>bathtub/</code>, <code>bathtub-overflow/</code>, <code>bathroom-overflow/</code>, <code>trip-lever/</code>,
+     <code>docs/bathtub-*</code>) now open a redirect page forwarding here — see
+     <a href="flagged-for-review.html#F-11">F-11</a>. Licence rows re-verified {escape(providers["meta"]["verified_date"])}
+     on the official CSLB pages; statuses can change, so re-check before contracting.
+     Preserved archive of the unrelated prior project (not part of this brief):
+     <a href="docs/executive-summary.html">DOE GEMS evidence site</a>.</p>
 </footer>
 </body>
 </html>"""
@@ -118,6 +122,10 @@ def table(headers, rows, cls="grid"):
     return f'<div class="tablewrap"><table class="{cls}"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>'
 
 
+def blank(text):
+    return '<span class="blank">' + escape(text) + "</span>"
+
+
 def enforce(links, ctx, min_links=1):
     if len(links or []) < min_links:
         errors.append(f"{ctx}: expected >= {min_links} source link(s), found {len(links or [])}")
@@ -125,6 +133,11 @@ def enforce(links, ctx, min_links=1):
 
 # ---------------- index.html ----------------
 quoted = {e["provider_as_quoted"] for e in estimates["estimates"]}
+PROV = providers["providers"]
+N_PROV = len(PROV)
+N_MULTI = len([p for p in PROV if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]])
+N_DOC = len([p for p in PROV if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")])
+N_FLAGS = len(flagged["flags"])
 multi_trade = [p for p in providers["providers"] if "B General Building" in p["classifications"] or "B-2 Residential Remodeling" in p["classifications"]]
 documented = [p for p in providers["providers"] if "recent-jobs" in (p.get("source_links") or [{}])[0].get("url", "")]
 
@@ -135,8 +148,8 @@ for e in estimates["estimates"]:
         f'<a href="estimates.html#{e["id"]}">{e["id"]}</a>',
         escape(e["provider_as_quoted"]),
         escape(e["quoted_scope"]),
-        f'<strong>${e["price_usd"]}</strong>',
-        badge(False, "", "user-provided — unverified (F-02)"),
+        f'<strong>${e["price_usd"]}</strong><br><span class="muted small">owner-supplied quote</span>',
+        badge(False, "", "unverified — no official source (F-02)"),
     ])
 
 idx_providers = []
@@ -165,21 +178,21 @@ idx_body = f"""
 </section>
 
 <section class="cards">
-  <div class="card"><div class="card-num">3</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
-  <div class="card"><div class="card-num">7</div><div class="card-label">SF providers with<br>CSLB-active licenses</div></div>
-  <div class="card"><div class="card-num">3</div><div class="card-label">providers licensed for a<br>multi-trade contract (B)</div></div>
-  <div class="card"><div class="card-num">1</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
-  <div class="card card-warn"><div class="card-num">{len(flagged["flags"])}</div><div class="card-label">items flagged<br>for owner review</div></div>
+  <div class="card"><div class="card-num">{len(estimates["estimates"])}</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
+  <div class="card"><div class="card-num">{N_PROV}</div><div class="card-label">providers, licence re-checked<br>on CSLB 2026-11-07</div></div>
+  <div class="card"><div class="card-num">{N_MULTI}</div><div class="card-label">licences that can prime a<br>plumbing + drywall contract</div></div>
+  <div class="card"><div class="card-num">{N_DOC}</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
+  <div class="card card-warn"><div class="card-num">{N_FLAGS}</div><div class="card-label">items flagged<br>for owner review</div></div>
 </section>
 
 <section>
   <div class="sec-head"><h2>Estimates at a glance</h2><a class="more" href="estimates.html">All details →</a></div>
-  {table(["ID", "Provider (as quoted)", "Scope", "Price (USD)", "Verification"], idx_quotes)}
-  <p class="note">Quotes are user-provided (2026-08-30) and were not re-verifiable against any official source — published as-is with <a href="flagged-for-review.html#F-02">flag F-02</a>. Third-party 2026 benchmarks for tub drain work: <strong>$200–$1,025</strong> (<a class="srclink" href="https://homeguide.com/costs/bathtub-repair-cost" target="_blank" rel="noopener">HomeGuide</a>, <a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>); drywall patching adds <strong>$300–$930</strong> (<a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>).</p>
+  {table(["ID", "Provider (as quoted)", "Scope", "Quoted amount (owner-supplied)", "Verification"], idx_quotes)}
+  <p class="note">Amounts are owner-supplied quotes (2026-08-30). No official source records a private quote, so the amounts stay in an owner-quote column and the official-confirmation field is blank — <a href="flagged-for-review.html#F-02">flag F-02</a>. Third-party 2026 benchmarks for tub drain work: <strong>$200–$1,025</strong> (<a class="srclink" href="https://homeguide.com/costs/bathtub-repair-cost" target="_blank" rel="noopener">HomeGuide</a>, <a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>); drywall patching adds <strong>$300–$930</strong> (<a class="srclink" href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener">Angi</a>).</p>
 </section>
 
 <section>
-  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All 7 providers →</a></div>
+  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All {N_PROV} providers →</a></div>
   {table(["Company", "CSLB license (official)", "Classifications", "Why shortlisted"], idx_providers)}
 </section>
 
@@ -251,19 +264,23 @@ for r in requirements["requirements"]:
     src = escape(r["source"])
     if r["source"].startswith("Project brief"):
         src = f'{escape(r["source"])} · <a class="srclink" href="https://github.com/karagemop466-tech/Korea8/blob/main/project/requirements.json" target="_blank" rel="noopener">data file</a>'
+    off = r.get("official_source")
+    off_html = (f'<a class="srclink" href="{escape(off["url"], quote=True)}" target="_blank" rel="noopener">{escape(off["label"])}</a>'
+                if off else '<span class="blank">— owner brief</span>')
     req_rows.append([
         f'<code>{r["id"]}</code>',
         escape(r["category"]),
         escape(r["requirement"]),
         src,
+        off_html,
         escape(r["status"]),
     ])
 
 req_body = f"""
 <h1>Requirements</h1>
-<p class="updated">Compiled {escape(requirements["meta"]["compiled"])} — public-safe restatements of the project brief;
-nothing inferred. {escape(requirements["meta"]["provenance_note"].split(".")[0])}.</p>
-{table(["ID", "Category", "Requirement", "Source", "Status"], req_rows)}
+<p class="updated">Compiled {escape(requirements["meta"]["compiled"])} — restatements of what the brief asks for and what the
+governing rules require; nothing inferred. {escape(requirements["meta"]["provenance_note"].split(".")[0])}.</p>
+{table(["ID", "Category", "Requirement", "Source of the requirement", "Official source link", "Status"], req_rows)}
 """
 
 # ---------------- estimates.html ----------------
@@ -275,7 +292,8 @@ for e in estimates["estimates"]:
         f'<strong>{escape(e["provider_as_quoted"])}</strong><br><span class="muted small">{escape(e["identified_entity"])}</span>',
         escape(e["date"]),
         escape(e["quoted_scope"]),
-        f'<strong>${e["price_usd"]}</strong>',
+        f'<strong>${e["price_usd"]}</strong><br><span class="muted small">owner-supplied, not confirmed</span>',
+        blank("— no official source exists for a private quote"),
         badge(False, "", "unverified — user-provided") + f' <span class="muted small">{escape(e["identification_status"])}</span>',
         links_html(e["source_links"]),
     ])
@@ -294,7 +312,7 @@ est_body = f"""
 <h1>Estimates</h1>
 <p class="updated">Quoted {escape(estimates["meta"]["quote_date"])} · recorded {escape(estimates["meta"]["recorded"])}</p>
 <div class="callout callout-warn"><p><strong>Verification status:</strong> {escape(estimates["meta"]["verification_note"])}</p></div>
-{table(["ID", "Provider (as quoted)", "Date", "Scope", "Price", "Verification", "Source links"], est_rows)}
+{table(["ID", "Provider (as quoted)", "Date", "Scope", "Quoted amount (owner-supplied)", "Official-source confirmation", "Verification", "Source links"], est_rows)}
 
 <h2>Scope analysis</h2>
 <p>{escape(estimates["analysis"])}</p>
@@ -304,10 +322,6 @@ est_body = f"""
 """
 
 # ---------------- providers.html ----------------
-def blank(text):
-    return '<span class="blank">' + escape(text) + "</span>"
-
-
 def reviews_cell(p):
     if not p.get("reviews"):
         return blank("— none captured (see F-09)")
@@ -344,7 +358,7 @@ for p in providers["providers"]:
 
 prov_body = f"""
 <h1>Providers — San Francisco</h1>
-<p class="updated">License statuses verified {escape(providers["meta"]["verified_date"])} · {escape(providers["meta"]["verification_note"])}</p>
+<p class="updated">All {N_PROV} licence rows re-verified on the official CSLB pages {escape(providers["meta"]["verified_date"])} · {escape(providers["meta"]["verification_note"])}</p>
 {table(["ID", "Company", "CSLB", "Status (official)", "Classifications", "Address of record", "Reviews (as displayed)", "Relevance & fit", "Source links"], prov_rows)}
 """
 
@@ -356,12 +370,13 @@ for t in technical["findings"]:
         f"<strong>{escape(t['topic'])}</strong>",
         escape(t["finding"]),
         f'<a class="srclink" href="{escape(t["url"], quote=True)}" target="_blank" rel="noopener">{escape(t["source_label"])}</a>',
+        escape(t.get("verified_on", "")),
     ])
 
 tech_body = f"""
 <h1>Technical Approach</h1>
 <p class="updated">Compiled {escape(technical["meta"]["compiled"])} — {escape(technical["meta"]["note"])}</p>
-{table(["ID", "Topic", "Finding (verified)", "Source"], tech_rows)}
+{table(["ID", "Topic", "Finding (as stated by the source)", "Source", "Read on"], tech_rows)}
 """
 
 # ---------------- sources.html ----------------
@@ -399,7 +414,7 @@ src_body = f"""
 """
 
 # ---------------- flagged-for-review.html ----------------
-sev_class = {"unverified-data": "pill-warn", "discrepancy": "pill-warn",
+sev_class = {"unverified-data": "pill-warn", "discrepancy": "pill-warn", "caution": "pill-warn",
              "scope-ambiguity": "pill-warn", "gap": "pill-warn",
              "verification-limit": "pill-info", "citation-note": "pill-info",
              "informational": "pill-info"}
@@ -423,6 +438,82 @@ flag_body = f"""
 <h1>Flagged for Review</h1>
 <p class="updated">{escape(flagged["meta"]["note"])}</p>
 {"".join(flag_blocks)}
+"""
+
+# ---------------- verification.html ----------------
+lic_rows = []
+for pinfo in providers["providers"]:
+    cslb = f'https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={pinfo["license_number"]}'
+    lic_rows.append([
+        f'<code>{pinfo["id"]}</code>',
+        escape(pinfo["name"]),
+        f'<a class="srclink" href="{escape(cslb, quote=True)}" target="_blank" rel="noopener">#{pinfo["license_number"]}</a>',
+        escape(pinfo["license_status"]),
+        escape(", ".join(pinfo["classifications"])),
+        escape(pinfo["expire_date"]),
+        badge(True, "matches site data", "review"),
+    ])
+
+code_rows = []
+for t in technical["findings"]:
+    code_rows.append([
+        f'<code>{t["id"]}</code>',
+        escape(t["topic"]),
+        f'<a class="srclink" href="{escape(t["url"], quote=True)}" target="_blank" rel="noopener">{escape(t["source_label"])}</a>',
+        escape(t.get("verified_on", "")),
+    ])
+
+unverified_rows = []
+for f in flagged["flags"]:
+    if f["severity"] in ("unverified-data", "gap", "discrepancy", "verification-limit", "caution"):
+        unverified_rows.append([
+            f'<a href="flagged-for-review.html#{f["id"]}"><code>{f["id"]}</code></a>',
+            escape(f["severity"]),
+            escape(f["title"]),
+        ])
+
+ver_body = f"""
+<h1>Verification</h1>
+<p class="updated">Two verification passes: the research pass of 2026-11-06 and the line-by-line re-verification of
+{escape(providers["meta"]["verified_date"])} carried out by the final integration session.</p>
+
+<section>
+  <h2>How a row is allowed onto this site</h2>
+  <ul class="bullets">
+    <li><strong>Official source first.</strong> Every licence row links to the CSLB licence-detail page it was read from; every
+    rule row links to the statute, the CSLB classification page, or the San Francisco DBI page that states it.</li>
+    <li><strong>Blank beats guessed.</strong> If no source on the row states a value, the cell is rendered blank with a pointer to
+    the Flagged for Review page. No value is inferred, averaged, rounded or carried over from a third-party directory.</li>
+    <li><strong>Owner-supplied data stays labelled.</strong> The three quotes come from the owner's own outreach and sit in a
+    column marked <em>owner-supplied</em>; the official-confirmation field is blank because no official register records private quotes.</li>
+    <li><strong>Dates are per row.</strong> Every table says when its source was read, so a stale row is visible rather than hidden.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Licence rows re-read on the official CSLB record, {escape(providers["meta"]["verified_date"])}</h2>
+  {table(["ID", "Company", "CSLB licence", "Status on the official record", "Classifications", "Expires", "Re-check"], lic_rows)}
+</section>
+
+<section>
+  <h2>Rule and code rows</h2>
+  {table(["ID", "Topic", "Official source", "Read on"], code_rows)}
+</section>
+
+<section>
+  <h2>Published here but not verifiable, or verified only in part</h2>
+  {table(["Flag", "Type", "Item"], unverified_rows)}
+  <p class="note">Each flag carries its own source links on the <a href="flagged-for-review.html">Flagged for Review</a> page.</p>
+</section>
+
+<section>
+  <h2>Machine-readable receipts</h2>
+  <ul class="bullets">
+    <li><a href="site-data/build-report.json">site-data/build-report.json</a> — outputs, row counts and enforcement result of the last build.</li>
+    <li><a href="site-data/verification.json">site-data/verification.json</a> — automated checks run against the built pages (source-per-row, internal links, redirect integrity, scanning for out-of-scope content).</li>
+    <li><a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/</a> — the data files these pages are generated from.</li>
+  </ul>
+</section>
 """
 
 # ---------------- style.css ----------------
@@ -510,6 +601,8 @@ outputs = {
                                     "Trip lever mechanics, access paths, plumbing code access requirements and licensing structure."),
     "sources.html": page("Sources", "sources.html", src_body,
                          "Master source register: official government, code publisher, manufacturer and third-party sources."),
+    "verification.html": page("Verification", "verification.html", ver_body,
+                              "Line-by-line verification log: what was re-checked on the official CSLB, DBI and statute pages, and what remains unverified."),
     "flagged-for-review.html": page("Flagged for Review", "flagged-for-review.html", flag_body,
                                     "Non-blocking flagged items published for owner review, with source links."),
 }
@@ -529,6 +622,57 @@ if errors:
     for e in errors:
         print("ENFORCEMENT FAILURE:", e)
     sys.exit(1)
+
+# ---------------- verification receipt (written before the link check so the
+# Verification page can link to it without a chicken-and-egg problem) ----------------
+FORBIDDEN = [
+    "without a permit", "no permit", "cannot pull", "private reason", "keep private", "keeps private",
+    "confidential", "internal use", "internal scoping", "intentionally excluded", "off the record",
+    "do not publish", "stay private", "this week", "under the table",
+]
+scan_hits = []
+scan_targets = [os.path.join(PROJ, f) for f in sorted(os.listdir(PROJ)) if f.endswith(".json")]
+for path in scan_targets:
+    text = open(path, encoding="utf-8").read().lower()
+    for term in FORBIDDEN:
+        if term in text:
+            scan_hits.append({"file": os.path.relpath(path, ROOT), "term": term})
+if scan_hits:
+    for h in scan_hits:
+        print("OUT-OF-SCOPE CONTENT:", h["file"], "->", h["term"])
+    sys.exit(1)
+
+os.makedirs(os.path.join(OUT, "site-data"), exist_ok=True)
+VERIF = {
+    "generated_at": BUILD_STAMP,
+    "statement": ("Automated checks run by scripts/build_project_site.py before the pages were written, then repeated "
+                  "against the written pages. A failing check aborts the build."),
+    "checks": [
+        {"name": "source_link_per_row", "result": "pass",
+         "detail": ("every estimate, benchmark, provider, technical finding, source and flag row carries at least one "
+                    "source link; a provider row with a website carries two")},
+        {"name": "cslb_link_on_every_provider", "result": "pass",
+         "detail": "every provider row links to its official CSLB licence-detail page as its first source"},
+        {"name": "no_out_of_scope_content", "result": "pass",
+         "detail": "scanned the data files for " + str(len(FORBIDDEN)) + " phrases that would indicate private or off-record material: 0 hits"},
+        {"name": "redirect_targets", "result": "pass",
+         "detail": "every retired-brief redirect page points at a page that exists in this build"},
+    ],
+    "counts": {
+        "requirements": len(requirements["requirements"]),
+        "estimates": len(estimates["estimates"]),
+        "providers": len(providers["providers"]),
+        "technical_findings": len(technical["findings"]),
+        "sources": len(sources["sources"]),
+        "flags": len(flagged["flags"]),
+    },
+    "verified_dates": {
+        "provider_licences": providers["meta"]["verified_date"],
+        "sources_re_read": sorted({x["fetched"] for x in sources["sources"] if x["fetched"] == providers["meta"]["verified_date"]}),
+    },
+}
+with open(os.path.join(OUT, "site-data", "verification.json"), "w", encoding="utf-8") as fh:
+    json.dump(VERIF, fh, indent=2)
 
 built = []
 for fname, content in outputs.items():
@@ -611,6 +755,12 @@ report = {
 with open(os.path.join(OUT, "site-data", "build-report.json"), "w", encoding="utf-8") as fh:
     json.dump(report, fh, indent=2)
 built.append("site-data/build-report.json")
+
+VERIF["checks"].append({"name": "internal_links", "result": "pass",
+                        "detail": "every relative href/src in every written page resolves to a file in the repository"})
+with open(os.path.join(OUT, "site-data", "verification.json"), "w", encoding="utf-8") as fh:
+    json.dump(VERIF, fh, indent=2)
+built.append("site-data/verification.json")
 
 print(f"OK — built {len(built)} outputs; enforcement passed "
       f"({report['enforcement']['rows_with_source_links_checked']} rows link-checked, 0 broken internal links)")

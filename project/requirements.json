@@ -1,25 +1,192 @@
 {
   "meta": {
     "title": "Requirements — Bathtub Wastewater Overflow Trip Lever",
-    "compiled": "2026-11-06",
+    "compiled": "2026-11-07",
     "compiled_by": "session arena-82aa8544",
-    "provenance_note": "Each requirement is a public-safe restatement of a verbatim statement in the project brief (2026-11-06 session). No requirements were inferred beyond the brief. Sensitive internal scoping decisions intentionally excluded from all published pages; see project/README.md.",
+    "provenance_note": "Each requirement is a restatement of a statement in the project brief, or of a rule published by the official body that regulates the work (CSLB, San Francisco DBI, California statute, California Plumbing Code). Owner-stated requirements cite the data file; code-derived requirements cite the official page. No requirement is inferred beyond those two sources.",
     "source_of_record": "project/requirements.json (this file)"
   },
   "requirements": [
-    {"id": "R-01", "category": "Problem", "requirement": "Bathtub wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall and must be removed/repaired.", "source": "Project brief (2026-11-06), problem statement", "status": "Open"},
-    {"id": "R-02", "category": "Access", "requirement": "The overflow is in a hard-to-access area; opening drywall to reach the plumbing is a possible but non-preferred outcome.", "source": "Project brief (2026-11-06), problem statement", "status": "Open"},
-    {"id": "R-03", "category": "History", "requirement": "5+ licensed plumbers have already been unable to remove it from above without concern over destroying the hidden plumbing behind the wall.", "source": "Project brief (2026-11-06), provider search section", "status": "Confirmed by brief"},
-    {"id": "R-04", "category": "Preference", "requirement": "Removal from above is the preferred outcome if a provider can perform it safely.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-05", "category": "Fallback", "requirement": "If above-access is not possible, the accepted approach recommended by consulted plumbers is working from below.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-06", "category": "Access", "requirement": "The space below is a storage unit; below-floor work may require opening the drywall ceiling to access the hidden plumbing.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-07", "category": "Vendor", "requirement": "A single coordinated service must perform both the plumbing work and the drywall (ceiling) opening and restoration — one accountable vendor for both trades.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-08", "category": "Vendor", "requirement": "The vendor must be a licensed plumber or contractor.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-09", "category": "Location", "requirement": "The vendor must service San Francisco.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-10", "category": "Environment", "requirement": "Vendor must have experience doing delicate work in a sensitive environment: the unit is tenant-occupied.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-11", "category": "Vendor", "requirement": "Candidate vendors must be surfaced from review-backed services (e.g., Yelp and similar review platforms) for this specific type of work.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-12", "category": "Evidence", "requirement": "Reference photos of the work area may be supplied later; until then, planning proceeds from the written description only.", "source": "Project brief (2026-11-06), provider search section", "status": "Pending photos"},
-    {"id": "R-13", "category": "Deliverable", "requirement": "Collect, organize, and analyze the full requirements list plus the three received estimates into a reviewable dashboard with per-row source links.", "source": "Project brief (2026-11-06), goal statement", "status": "In progress (this site)"},
-    {"id": "R-14", "category": "Verification", "requirement": "Every published data row must carry a source link; values that cannot be confirmed from an official source are left blank and flagged as unverified — never inferred.", "source": "Project brief (2026-11-06), verification section", "status": "Enforced by site build"}
+    {
+      "id": "R-01",
+      "category": "Problem",
+      "requirement": "Bathtub wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall and must be removed/repaired.",
+      "source": "Project brief (2026-11-06), problem statement",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-02",
+      "category": "Access",
+      "requirement": "The overflow is in a hard-to-access area; opening drywall to reach the plumbing is a possible but non-preferred outcome.",
+      "source": "Project brief (2026-11-06), problem statement",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-03",
+      "category": "History",
+      "requirement": "5+ licensed plumbers have already been unable to remove it from above without concern over destroying the hidden plumbing behind the wall.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Confirmed by brief",
+      "official_source": null
+    },
+    {
+      "id": "R-04",
+      "category": "Preference",
+      "requirement": "Removal from above is the preferred outcome if a provider can perform it safely.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-05",
+      "category": "Fallback",
+      "requirement": "If above-access is not possible, the accepted approach recommended by consulted plumbers is working from below.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-06",
+      "category": "Access",
+      "requirement": "The space below is a storage unit; below-floor work may require opening the drywall ceiling to access the hidden plumbing.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-07",
+      "category": "Vendor",
+      "requirement": "A single coordinated service must perform both the plumbing work and the drywall (ceiling) opening and restoration — one accountable vendor for both trades.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-08",
+      "category": "Vendor",
+      "requirement": "The vendor must be a licensed plumber or contractor.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-09",
+      "category": "Location",
+      "requirement": "The vendor must service San Francisco.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-10",
+      "category": "Environment",
+      "requirement": "Vendor must have experience doing delicate work in a sensitive environment: the unit is tenant-occupied.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-11",
+      "category": "Vendor",
+      "requirement": "Candidate vendors must be surfaced from review-backed services (e.g., Yelp and similar review platforms) for this specific type of work.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Open",
+      "official_source": null
+    },
+    {
+      "id": "R-12",
+      "category": "Evidence",
+      "requirement": "Reference photos of the work area may be supplied later; until then, planning proceeds from the written description only.",
+      "source": "Project brief (2026-11-06), provider search section",
+      "status": "Pending photos",
+      "official_source": null
+    },
+    {
+      "id": "R-13",
+      "category": "Deliverable",
+      "requirement": "Collect, organize, and analyze the full requirements list plus the three received estimates into a reviewable dashboard with per-row source links.",
+      "source": "Project brief (2026-11-06), goal statement",
+      "status": "In progress (this site)",
+      "official_source": null
+    },
+    {
+      "id": "R-14",
+      "category": "Verification",
+      "requirement": "Every published data row must carry a source link; values that cannot be confirmed from an official source are left blank and flagged as unverified — never inferred.",
+      "source": "Project brief (2026-11-06), verification section",
+      "status": "Enforced by site build",
+      "official_source": null
+    },
+    {
+      "id": "R-15",
+      "category": "Compliance",
+      "requirement": "Any entry into the tenant-occupied unit for the repair must follow California Civil Code §1954: reasonable written notice stating date, approximate time and purpose; 24 hours is presumed reasonable; normal business hours unless the tenant consents at the time.",
+      "source": "California Civil Code §1954 (official statute)",
+      "status": "Legal requirement",
+      "official_source": {
+        "label": "Civil Code §1954 (leginfo)",
+        "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"
+      },
+      "source_link": null
+    },
+    {
+      "id": "R-16",
+      "category": "Access",
+      "requirement": "Any concealed slip-joint connection reached through a ceiling opening must be left with an accessible opening of the size the Plumbing Code requires (12 in. × 12 in. in the 2022 CPC §402.10; §404.2 in the 2010 edition) — a solid patch without an access panel does not meet the code.",
+      "source": "California Plumbing Code §402.10 (2022) / §404.2 (2010) via IAPMO and UpCodes",
+      "status": "Code requirement",
+      "official_source": {
+        "label": "CPC §402.10 via IAPMO",
+        "url": "https://aa.iapmo.org/?code=UPC&chapter=4"
+      },
+      "source_link": null
+    },
+    {
+      "id": "R-17",
+      "category": "Compliance",
+      "requirement": "San Francisco DBI states a permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall; exemptions are listed in SF Plumbing Code §104.2. The licensed contractor applies for it (A, B, C-4/C-36, C-16, C-20 or C-54 licences may apply).",
+      "source": "SF.gov / DBI — Apply for a plumbing and mechanical permit",
+      "status": "Permit rule — official",
+      "official_source": {
+        "label": "SF.gov DBI permit page",
+        "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+      },
+      "source_link": null
+    },
+    {
+      "id": "R-18",
+      "category": "Vendor",
+      "requirement": "The contract structure must be legal under B&P §7057: either one B (or B+C-36) licensee as prime for plumbing plus the second unrelated trade (drywall), or a C-36 plumber as prime with a licensed drywall contractor subcontracted. A C-36 licensee alone may not contract for drywall.",
+      "source": "CSLB — B General Building classification page quoting B&P §7057",
+      "status": "Licensing rule — official",
+      "official_source": {
+        "label": "CSLB B classification (official)",
+        "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B"
+      },
+      "source_link": null
+    },
+    {
+      "id": "R-19",
+      "category": "Vendor",
+      "requirement": "Before signing, confirm on the CSLB record that the licence is current and active, that the classification matches the work, and check the contractor's bond and workers'-compensation entry (three candidates in this set are workers'-comp exempt, meaning they certify no employees).",
+      "source": "CSLB licence-detail records linked per provider",
+      "status": "In progress (per-provider rows)",
+      "official_source": {
+        "label": "CSLB Check a Licence",
+        "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+      },
+      "source_link": null
+    },
+    {
+      "id": "R-20",
+      "category": "Vendor",
+      "requirement": "Every candidate must give a written, itemised scope and price covering: making good the trip lever, the ceiling opening, framing, the access panel, patching/texture/paint, protection of the tenant's belongings, and debris removal — one document, one accountable party.",
+      "source": "Project brief (all-in-one requirement R-07)",
+      "status": "Open",
+      "official_source": null,
+      "source_link": null
+    }
   ]
 }
