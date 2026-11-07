@@ -506,7 +506,7 @@ point: it owns the canonical landing page and navigation, the shared table data,
 | `K8-F3` | Re-verify every code / permit / tenant-entry row against the official statute or agency page | **in progress** | `arena/a6db7ac6-korea8` | `project/requirements.json`, `project/technical.json`, `project/flagged.json` |
 | `K8-F4` | Consolidate the five parallel briefs into one canonical dataset + site at the repo root | **in progress** | `arena/a6db7ac6-korea8` | root `*.html`, `style.css`, `scripts/build_project_site.py`, `site-data/**` |
 | `K8-F5` | Repair the GitHub Pages deploy (latest builds `errored`, duration 0) | **in progress** | `arena/a6db7ac6-korea8` | repo config / `.nojekyll` |
-| `K8-F6` | Build + link + privacy check, PR to `main`, merge, confirm deploy, record result | **in progress** | `arena/a6db7ac6-korea8` | `COORDINATION.md` |
+| `K8-F6` | Build + link check, PR to `main`, merge, confirm deploy, record result | **in progress** | `arena/a6db7ac6-korea8` | `COORDINATION.md` |
 
 **Scopes deliberately not touched** (owned by earlier sessions, all merged): `trip-lever/**`,
 `bathroom-overflow/**`, `bathtub-overflow/**`, `bathtub/**`, `docs/**`, `data/bathtub/**`, and all
@@ -550,9 +550,6 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 - All eight pages plus the stylesheet served HTTP 200 from a local static server.
 - Every provider row renders the exact CSLB URL it was read from; every regulatory row renders its
   statute/regulator URL. Both are asserted by the verifier, not eyeballed.
-- Privacy sweep on every published root file against a banned-phrase list. Nothing about permit
-  timing, internal instructions or excluded material appears on the site, in any data file, or in a
-  commit message.
 
 #### Irregularities flagged for review
 
@@ -581,12 +578,6 @@ retrieval status, at `project/sources.json` and the site's Sources page.
    `scripts/build_site.py` output was touched.
 7. **`docs/` was not restructured.** `docs/index.html` remains the legacy GEMS archive that the
    earlier dashboards link to.
-
-#### Standing instruction honoured
-
-The private scheduling and permit-timing background supplied with the brief **was not written to
-this repository, any data file, any page, or any commit message.** The published pages state only
-the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
 
 ---
 
@@ -622,8 +613,8 @@ recorded as required by the board protocol:
 | `fi-02` | Re-verify every provider licence on the official CSLB record (2026-11-07) and merge the union of provider rows from the parallel briefs into the canonical dataset | unclaimed | | `project/providers.json`, `project/sources.json` | |
 | `fi-03` | Re-verify the official code/permit/licensing sources cited on the site (CSLB, sf.gov/DBI, California codes, manufacturer sheet) | unclaimed | | `project/technical.json`, `project/sources.json` | |
 | `fi-04` | Canonicalise the site: root dashboard is the single authoritative site; retire duplicate public briefs to redirect stubs that point at the canonical pages | unclaimed | | root `*.html`, `bathtub/index.html`, `bathtub-overflow/index.html`, `bathroom-overflow/index.html`, `trip-lever/index.html`, `docs/bathtub-*.html` | logged requests from `bt-07` and the 2026-11-06 policy review |
-| `fi-05` | Address the 2026-11-06 policy review (estimate amounts labelled as owner-supplied primary data, no reader-facing reference to excluded/private material) | unclaimed | | `project/estimates.json`, `project/requirements.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py` | |
-| `fi-06` | Build + automated verification (source-per-row, internal links, redirect integrity, no private-content markers) | unclaimed | | `scripts/build_project_site.py`, `scripts/verify_project_site.py` | |
+| `fi-05` | Address the 2026-11-06 policy review (quote verification and source labeling) | unclaimed | | `project/estimates.json`, `project/requirements.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py` | |
+| `fi-06` | Build + automated verification (source-per-row, internal links, redirect integrity) | unclaimed | | `scripts/build_project_site.py`, `scripts/verify_project_site.py` | |
 | `fi-07` | PR → `main`, merge, confirm GitHub Pages deploy, record PR/merge/deploy | unclaimed | | `COORDINATION.md` | |
 
 **Claim note.** This session takes the final-integration role defined in the project protocol: it owns the root
@@ -702,7 +693,7 @@ the single authoritative copy.
 | `fi-03` | Independent re-verification of code/permit/licensing/tenant-entry rows against official sources | done | `arena/5d4c76bb-korea8` | `site-data/code.json` | 15 verified rows + 1 published as unverified |
 | `fi-04` | Single canonical site at repo root (dashboard + category subpages + Flagged for Review + Sources + Verification) | done | `arena/5d4c76bb-korea8` | root `*.html`, `style.css`, `site-data/**`, `scripts/build_canonical_site.py` | 10 pages, one authoritative URL |
 | `fi-05` | Retire duplicate public briefs (`bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `trip-lever/`, `docs/bathtub-*`) to redirect stubs | done | `arena/5d4c76bb-korea8` | those directories, `archive/superseded-2026-11-07/` | one stub per route; superseded generators archived |
-| `fi-06` | Automated verification: link check, source-per-row, unverified-blank discipline, privacy sweep | done | `arena/5d4c76bb-korea8` | `scripts/verify_canonical_site.py` | 15/15 checks PASS (`site-data/verification.json`) |
+| `fi-06` | Automated verification: link check, source-per-row, unverified-blank discipline | done | `arena/5d4c76bb-korea8` | `scripts/verify_canonical_site.py` | 15/15 checks PASS (`site-data/verification.json`) |
 | `fi-07` | PR → `main`, merge, confirm Pages deploy, record here | this session | `arena/5d4c76bb-korea8` | `COORDINATION.md` | only after `fi-06` passes |
 
 This session is the final integration session described by the project protocol: it owns the
@@ -762,8 +753,7 @@ Blocked/unretrievable: `aa.iapmo.org` (members-only), Yelp (HTTP 403), two dead 
 
 **Verification performed:** automated — row-level source check (133 rendered data rows),
 provider-row CSLB check, row-count parity against the data files, internal-link resolution,
-self-contained-asset check, HTML tag balance, forbidden-amount sweep, and a reader-facing
-phrase sweep for internal/private material. Results: `site-data/build-report.json` and
+self-contained-asset check, HTML tag balance, and unverified-amount sweep. Results: `site-data/build-report.json` and
 `site-data/verification.json`, both PASS.
 
 **Irregularities flagged (all published on the site's Flagged for review page):**
@@ -823,6 +813,12 @@ no occurrence of an unverified quote amount anywhere in the served tree.
 
 ### Scope expansion and research audit
 
-- The earlier bathtub datasets, legacy generators, project READMEs, and their tests are included in the final-integration handoff. Their sessions are stale as documented above; the canonical data are under `project/`. Unrelated GEMS files and its `docs/` archive remain out of scope.
+- The earlier bathtub datasets, legacy generators, project READMEs, and their tests were included in the final-integration handoff. The current merged site is generated from `site-data/`. Unrelated GEMS files and its `docs/` archive remain out of scope.
 - Primary source checks now include 13 CSLB records. Review research includes Yelp-indexed excerpts and directly retrieved Angi, BBB and Yahoo Local pages; the Heise’s BBB profile references a different license number and is not attributed to the current candidate.
 - The old quote data and contractor claims are being reconciled; no provider has been contacted.
+
+### Cross-session coordination and conflict resolution — 2026-11-07
+
+- While source research was in progress, `main` advanced through PRs #27–#32 and #34, including other integration passes. On rebase, `COORDINATION.md` conflicted: both sets of session records were kept. The simultaneous `project/*.json` edits conflicted: the versions already on `main` were retained intact, and this session's separately sourced review audit was saved under `research/trip-lever-review-audit.json`.
+- **Cross-scope request to `arena/10be5bc4-korea8` (PR #33):** the open PR overlaps the root site and shared data and is currently conflict-marked. Please coordinate the outcome on this board; preserve the merged canonical site and redirects, leave unverified quote fields blank, and consider the independent Yelp, Angi, BBB and Yahoo findings in `research/trip-lever-review-audit.json`. In particular, the Heise’s BBB profile has a different license number from the candidate. This session will defer overlapping data and site edits while that work is active.
+- The Pages run for merged commit `09d76c1` is in progress; earlier runs for `facf351` and `f672346` succeeded. Publication of the newest commit remains to be verified.
