@@ -956,3 +956,7 @@ PR #33 is closed/unmerged and main remains at PR #34's canonical integration. Wi
 ### R770 shared integration result
 
 The checked 11-page namespace build is promoted to the canonical root. `overflow-review/integrate.py` copies only the generated canonical pages/assets/data and preserves unrelated GEMS files. Duplicate bathtub HTML routes are per-page redirect stubs (recorded in `overflow-review/repository/redirects.json`); old root `technical-approach.html` and `code-and-permit.html` redirect to the neutral technical page. Historical `site-data/` and prior dossiers remain in Git as non-authoritative records. A second official CSLB pass rechecked all 23 numeric licenses and persisted workers-compensation evidence excerpts; no status changed. The canonical amount cells remain blank.
+
+### R770 deployment workflow and public-artifact checks
+
+Added `.github/workflows/overflow-site.yml`: PRs run build/data/link/browser gates; only main pushes/dispatch upload the curated `overflow-review/public` artifact and deploy through GitHub Pages Actions. The artifact excludes repository internals, coordination history and source scripts; it includes canonical pages, neutral legacy redirects, public data, and preserved GEMS docs/downloads. Local curated-artifact checks pass (2,684 checks; 70 HTML files), and Chromium passes all 11 canonical pages at desktop/mobile sizes with zero JS errors. The generated staging directory is ignored; CI regenerates it from committed inputs.

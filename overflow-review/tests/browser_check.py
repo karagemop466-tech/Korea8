@@ -3,7 +3,7 @@
 import json,os,sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-HERE=Path(__file__).resolve().parents[1]; base=os.environ.get('SITE_URL','http://127.0.0.1:8080/'); exe=os.environ.get('CHROMIUM_PATH','/tmp/chromium')
+HERE=Path(__file__).resolve().parents[1]; base=os.environ.get('SITE_URL','http://127.0.0.1:8080/'); exe=os.environ.get('CHROMIUM_PATH') or None
 results=[]
 with sync_playwright() as pw:
  browser=pw.chromium.launch(executable_path=exe,headless=True,args=['--no-sandbox','--disable-dev-shm-usage'])

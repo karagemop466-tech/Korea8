@@ -105,8 +105,17 @@ for r in inv['rows']:
  rows.append([str(len(rows)+1),a(r['source_url'],r['path']),cell(r['domain']),cell(r['check']),cell(r['lines']),flags(['F-05','F-22']) if not r['issues'] else flags(['F-02','F-05'])])
 body+=sec('Tracked-file inventory',table(['#','File / official repository link','Domain','Structural check','Lines','Review'],rows,'inventory-table'))
 page('repository.html','Repository audit','Line-by-line structural/provenance review with official repository links.',body)
-# Verification placeholder updated by checker
-page('verification.html','Verification & publication','Build gates, source discipline and the final deployment record.',note('Verification is running. The final report will replace this notice.')+sec('Checks','<p>See <a href="data/counts.json">computed dataset counts</a> and the source register.</p>'))
+# Verification from the latest available local reports; deployment is recorded after merge.
+def report(name):
+ p=HERE/'evidence'/name
+ return json.loads(p.read_text()) if p.exists() else {}
+c=report('checks.json');b=report('browser.json');pub=report('public-checks.json')
+vrows=[['V-01','Data / HTML / link checks',cell(c.get('status','Pending')),cell(str(c.get('checks',''))+' checks; '+str(c.get('pages',''))+' pages'),sources(['GH-Repo'])],['V-02','Curated public artifact',cell(pub.get('status','Pending')),cell(str(pub.get('checks',''))+' checks; '+str(pub.get('html_files',''))+' HTML files'),sources(['GH-Pages'])],['V-03','Real Chromium desktop/mobile',cell(b.get('status','Pending')),cell(str(len(b.get('results',[])))+' page loads; filter test: '+str(b.get('filter_test',''))),sources(['GH-Pages'])],['V-04','JavaScript errors',cell(b.get('javascript_errors','Pending')),'Browser pageerror listener',sources(['GH-Pages'])],['V-05','Public deployment','Pending','Recorded in the coordination board after the merged workflow and public URL are checked.',sources(['GH-Pages','GH-Repo'])]]
+body='<div class="metrics">'+card(c.get('checks','—'),'data/site checks','Fail-closed generator and verifier')+card(pub.get('checks','—'),'public-artifact checks','Links, redirects, parity and privacy')+card(len(b.get('results',[])),'browser page loads','Desktop and mobile')+card(counts['flags'],'review flags','Unverified items remain visible')+'</div>'
+body+=note('Publication is gated on passing checks. Unverified research items and review flags do not block publication. Deployment is not inferred from a merge: the final public URL and workflow result are recorded separately.')
+body+=sec('Verification record',table(['ID','Gate','Result','Evidence','Official source'],vrows,'verification-table'))
+body+=sec('Reproduce locally','<p><code>python overflow-review/build.py</code> → <code>python overflow-review/check.py</code> → <code>python overflow-review/integrate.py</code> → <code>python overflow-review/stage_public.py</code> → <code>python overflow-review/tests/site_check.py</code>. Browser checks use Playwright/Chromium against the curated artifact.</p>'+sources(['GH-Repo','GH-Pages']))
+page('verification.html','Verification & publication','Build gates, source discipline and the final deployment record.',body)
 # Exec summary markdown
 md='''# Executive summary — bathtub overflow trip lever
 

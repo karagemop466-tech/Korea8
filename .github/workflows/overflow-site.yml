@@ -1,0 +1,84 @@
+name: Overflow dashboard checks and Pages deploy
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: overflow-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build and verify canonical data/site
+        run: |
+          python overflow-review/build.py
+          python overflow-review/check.py
+          python overflow-review/integrate.py
+          python overflow-review/stage_public.py
+          python overflow-review/tests/site_check.py
+      - name: Install browser test dependency
+        run: |
+          python -m pip install playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Serve curated artifact and run Chromium checks
+        run: |
+          python -m http.server 8080 --bind 127.0.0.1 --directory overflow-review/public &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID' EXIT
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(30):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:8080/', timeout=1)
+                  break
+              except Exception:
+                  time.sleep(0.2)
+          else:
+              raise SystemExit('local server did not start')
+          PY
+          SITE_URL=http://127.0.0.1:8080/ CHROMIUM_PATH='' python overflow-review/tests/browser_check.py
+      - name: Upload verification evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: overflow-verification
+          path: overflow-review/evidence/
+      - name: Configure Pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+      - name: Upload curated Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: overflow-review/public
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,7 +1,7 @@
 {
   "checked_utc": "2026-11-07",
   "status": "PASS",
-  "checks": 3616,
+  "checks": 3628,
   "failures": [],
   "results": [
     {
@@ -17795,7 +17795,42 @@
       "detail": ""
     },
     {
-      "name": "internal link verification.html data/counts.json",
+      "name": "external URL syntax verification.html https://github.com/karagemop466-tech/Korea8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://github.com/karagemop466-tech/Korea8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://github.com/karagemop466-tech/Korea8",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "external URL syntax verification.html https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
       "pass": true,
       "detail": ""
     },
@@ -17821,6 +17856,31 @@
     },
     {
       "name": "self-contained asset verification.html assets/app.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source verification.html Data / HTML / link checks PASS 3616 checks; 11 pages GH-Repo  \u2197",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source verification.html Curated public artifact PASS 2677 checks; 70 HTML files GH-Pages ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source verification.html Real Chromium desktop/mobile PASS 22 page loads; filter test: PAS",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source verification.html JavaScript errors 0 Browser pageerror listener GH-Pages  \u2197",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "table row source verification.html Public deployment Pending Recorded in the coordination board afte",
       "pass": true,
       "detail": ""
     },
@@ -18086,6 +18146,6 @@
     }
   ],
   "pages": 11,
-  "table_rows": 492,
+  "table_rows": 497,
   "scope": "Data provenance, row parity, HTML structure, internal links, self-contained assets, blank-value discipline, responsive CSS and JS syntax. External URLs are syntax-checked here; live retrievals are recorded separately in sources.json. Browser evidence is separate."
 }
