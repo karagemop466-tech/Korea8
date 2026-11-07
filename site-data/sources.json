@@ -1,0 +1,342 @@
+{
+ "meta": {
+  "title": "Source register",
+  "compiled": "2026-11-07",
+  "note": "Status is what happened when the URL was retrieved during this session on 2026-11-07. 'Verified — retrieved' means the page was opened and the cited fact was read from it. Blocked, unretrieved and dead links are recorded as such and are never used to substantiate a verified row."
+ },
+ "sources": [
+  {
+   "id": "S-01",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #977638 (Expert Plumbing Solutions)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-02",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #757796 (Bay Area Plumbing)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-03",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1024971 (Fast Response Plumbing & Rooter)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-04",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1089561 (Heise's Plumbing (Taro Group Inc))",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-05",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #829071 (Ace Plumbing & Rooter)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-06",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1096552 (We Do Construction Inc)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-07",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1106131 (SF Building Group)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-08",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1115649 (Rapid Flow Plumbing & Rooter Inc)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-09",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1105133 (HARP Services dba 24/7 SF Handyman)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-10",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1140843 (Discount Plumbing Rooter Services LLC)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-11",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #1009195 (Advanced Plumbing and Drain Inc)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-12",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #749536 (Save-On-Interior)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-13",
+   "type": "Official — regulator",
+   "label": "CSLB — B General Building Contractor classification (BPC §7057)",
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+   "verifies": "B-licence scope and multi-trade prime contract rule",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-14",
+   "type": "Official — regulator",
+   "label": "CSLB — C-36 Plumbing Contractor classification",
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+   "verifies": "C-36 scope definition",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-15",
+   "type": "Official — regulator",
+   "label": "CSLB — Check a License entry point",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "verifies": "Licence-check portal and status disclaimer",
+   "status": "Returned a DCA maintenance notice during retrieval (see F-17)",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-16",
+   "type": "Official — statute",
+   "label": "Cal. Bus. & Prof. Code §7048 (unlicensed-contracting threshold)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+   "verifies": "$1,000 threshold; exemption only where no building permit is required",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-17",
+   "type": "Official — statute",
+   "label": "Cal. Bus. & Prof. Code §7057.5 (B-2 Residential Remodeling)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5",
+   "verifies": "B-2 limits: three trades, plumbing systems, structural work",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-18",
+   "type": "Official — statute",
+   "label": "Cal. Civ. Code §1954 (landlord entry)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "verifies": "Entry purpose, notice, 24-hour presumption, business hours",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-19",
+   "type": "Official — city",
+   "label": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "verifies": "When a permit is required; permitted licence types; inspections; Express Permits",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-20",
+   "type": "Official — city",
+   "label": "SF.gov — Plumbing Inspection Division",
+   "url": "https://www.sf.gov/resource--2023--plumbing-inspection-division",
+   "verifies": "DBI plumbing resources; link to current fee table and SF Plumbing Code",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-21",
+   "type": "Official — city",
+   "label": "SF DBI — Table 1A-C Plumbing/Mechanical fee schedule, July 2026 (PDF)",
+   "url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "verifies": "Category 1P $290; off-hour $555/hr; re-inspection $259 per half hour",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-22",
+   "type": "Official — city",
+   "label": "San Francisco Plumbing Code (2025), city code library",
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85773",
+   "verifies": "The city's own plumbing code edition (§104.2 exemptions live here)",
+   "status": "Page retrieved; section text not readable in this session (F-07)",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-23",
+   "type": "Manufacturer",
+   "label": "Watco — Trip Lever Installation Instructions (500/501/600-TL series), official PDF",
+   "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "verifies": "Assembly parts list, steps 4–7, service access through the overflow opening",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-24",
+   "type": "Code publisher",
+   "label": "IAPMO Answers & Analysis — UPC chapter 4",
+   "url": "https://aa.iapmo.org/?code=UPC&chapter=4",
+   "verifies": "CPC/UPC §402.10 access-panel text",
+   "status": "Blocked — members-only login (F-07)",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-25",
+   "type": "Third-party",
+   "label": "Yelp — Expert Plumbing Solutions listing",
+   "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+   "verifies": "Review presence",
+   "status": "Blocked — HTTP 403 (F-04)",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-26",
+   "type": "Third-party",
+   "label": "Yelp — Bay Area Plumbing listing",
+   "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+   "verifies": "Review presence",
+   "status": "Blocked — HTTP 403 (F-04)",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-27",
+   "type": "Third-party",
+   "label": "Expert Plumbing Solutions — company website",
+   "url": "https://www.eplumbingsolutions.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-28",
+   "type": "Third-party",
+   "label": "Bay Area Plumbing — company website",
+   "url": "https://www.bayareaplumbingsf.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-29",
+   "type": "Third-party",
+   "label": "Fast Response Plumbing & Rooter — company website",
+   "url": "https://www.fastresponseplumbingsf.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-30",
+   "type": "Third-party",
+   "label": "Heise's Plumbing — company website",
+   "url": "https://www.heisesplumbing.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-31",
+   "type": "Third-party",
+   "label": "Ace Plumbing & Rooter — company website",
+   "url": "https://www.aceplumbingandrooter.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-32",
+   "type": "Third-party",
+   "label": "We Do Construction — company website",
+   "url": "https://www.wedoconstructions.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-33",
+   "type": "Third-party",
+   "label": "SF Building Group — company website",
+   "url": "https://sfbuildinggroup.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-34",
+   "type": "Third-party",
+   "label": "Rapid Flow Plumbing & Rooter — company website",
+   "url": "https://www.rapidflowbayarea.com/",
+   "verifies": "Company self-description",
+   "status": "Not re-retrieved this session",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-35",
+   "type": "Dead link (recorded)",
+   "label": "sf.gov URL used by earlier drafts — now 404",
+   "url": "https://www.sf.gov/information/apply-plumbing-and-mechanical-permit",
+   "verifies": "(no longer resolves)",
+   "status": "404 — replaced, see F-11",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-36",
+   "type": "Dead link (recorded)",
+   "label": "sf.gov URL used by earlier drafts — now 404",
+   "url": "https://www.sf.gov/information/apply-kitchen-or-bath-remodel-permit",
+   "verifies": "(no longer resolves)",
+   "status": "404 — replaced, see F-11",
+   "retrieved": "2026-11-07"
+  },
+  {
+   "id": "S-37",
+   "type": "Official — regulator",
+   "label": "CSLB licence detail #392967 (Ayoob & Peery Plumbing Co Inc)",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+   "verifies": "Status, classifications, entity, issue/expiry dates, address, phone, bond and insurance",
+   "status": "Verified — retrieved",
+   "retrieved": "2026-11-07"
+  }
+ ]
+}

@@ -1,280 +1,281 @@
 {
-  "meta": {
-    "title": "Flagged for review",
-    "purpose": "Everything in this project that is unverified, inferred, incomplete or contradicted is listed here with its source. Nothing on this page blocks publication; it exists so the owner can accept or correct each item.",
-    "count_rule": "A flag is raised rather than smoothed over. Where a value could not be confirmed it is left blank in the tables and explained here."
+ "meta": {
+  "title": "Flagged for review",
+  "purpose": "Everything in this project that is unverified, inferred, incomplete or contradicted is listed here with its source. Nothing on this page blocks publication; it exists so the owner can accept or correct each item.",
+  "count_rule": "A flag is raised rather than smoothed over. Where a value could not be confirmed it is left blank in the tables and explained here."
+ },
+ "flags": [
+  {
+   "id": "F-01",
+   "severity": "high",
+   "title": "The three quote amounts cannot be confirmed by any official source",
+   "detail": "The and figures are first-party: the owner received them on 2026-08-30 and supplied them to this project. CSLB confirms that each company holds a licence; it says nothing about price. No provider document was seen. The amounts are published with an explicit unverified label and were not averaged, rounded or benchmarked.",
+   "effect": "Treat the prices as the owner's records, not as verified market rates.",
+   "action": "Confirm each figure against the written quote or email before relying on it; ask for any amount to be removed from the public site if preferred.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+   ]
   },
-  "flags": [
-    {
-      "id": "F-01",
-      "severity": "high",
-      "title": "The three quote amounts cannot be confirmed by any official source",
-      "detail": "The $614, $550 and $135 figures are first-party: the owner received them on 2026-08-30 and supplied them to this project. CSLB confirms that each company holds a licence; it says nothing about price. No provider document was seen. The amounts are published with an explicit unverified label and were not averaged, rounded or benchmarked.",
-      "effect": "Treat the prices as the owner's records, not as verified market rates.",
-      "action": "Confirm each figure against the written quote or email before relying on it; ask for any amount to be removed from the public site if preferred.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
-      ]
-    },
-    {
-      "id": "F-02",
-      "severity": "medium",
-      "title": "'Fast Response' matches a CSLB licensee only by partial name",
-      "detail": "The quote says 'Fast Response'. CSLB licence 1024971 is JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER. The name match is probable, not exact, so the company is identified but not confirmed.",
-      "effect": "The $135 figure is attached to a probable rather than certain licensee.",
-      "action": "Confirm the legal name on the written quote.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
-      ]
-    },
-    {
-      "id": "F-03",
-      "severity": "high",
-      "title": "No provider has confirmed in writing that the assembly can come out from above",
-      "detail": "Above-access removal is the preferred route, and the manufacturer's service step is to remove the plate and pull the assembly (T-02). But more than five licensed plumbers have already declined to force it, and none of the three quoted companies has been asked the direct question in writing. No provider has been contacted by this project.",
-      "effect": "The preferred route remains untested, and no one has committed to it.",
-      "action": "Put one question to each of the three quoting firms in writing: will you attempt extraction from the tub side, and if the linkage is seized, what is the stop point before the wall is opened?",
-      "sources": [
-        "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
-      ]
-    },
-    {
-      "id": "F-04",
-      "severity": "high",
-      "title": "The required all-in-one scope has never been priced",
-      "detail": "All three quotes are plumbing-only in wording; none mentions opening or patching a ceiling. The single-contract scope (plumbing plus drywall plus make-good in an occupied building) has no quotation from any firm.",
-      "effect": "There is no evidence of what the complete job costs.",
-      "action": "Ask the B + C-36 candidates (P-04, P-05, P-06, P-07, P-08, P-09) for a single fixed-price quote covering both trades.",
-      "sources": [
-        "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057"
-      ]
-    },
-    {
-      "id": "F-05",
-      "severity": "high",
-      "title": "No provider has been contacted, so availability and willingness are unknown",
-      "detail": "This register is built from official licence records only. No phone call, email or site visit was made by this project, and no company has confirmed it will take the job, can reach the location, or has capacity.",
-      "effect": "Every row is a licensed firm, not a booked or available contractor.",
-      "action": "Contact the shortlist and record each response.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
-      ]
-    },
-    {
-      "id": "F-06",
-      "severity": "high",
-      "title": "Two CSLB licences share one address and phone number — the all-in-one lead",
-      "detail": "Licence 757796 (BAY AREA PLUMBING, C-36, sole ownership) and licence 749536 (SAVE - ON - INTERIOR, B General Building + C-36, sole ownership) are both recorded by CSLB at 335 14th Avenue, San Francisco 94118, on telephone (415) 668-8000. Two official records therefore show one C-36 licence and one B + C-36 licence operating from the same premises. The CSLB public detail pages do not name the qualifying individual, so 'same operator' is an inference from the two records, not a stated fact.",
-      "effect": "This is the only route found in which the company that has already quoted $550 may already control both trades — but the link is inferred.",
-      "action": "Ask Bay Area Plumbing directly whether it will contract under 749536 for the drywall scope, and confirm the licence number on the contract and the name of the qualifier for both licences.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
-      ]
-    },
-    {
-      "id": "F-07",
-      "severity": "medium",
-      "title": "One licence carries a future-suspension warning",
-      "detail": "Licence 1009195 (ADVANCED PLUMBING AND DRAIN INC) is current and active, but CSLB adds: the licence 'may be suspended at a future date for failure to resolve an outstanding final liability' from the Franchise Tax Board, DIR, EDD or CSLB.",
-      "effect": "Status could change before the work starts.",
-      "action": "Re-check the page before contracting, and ask the firm about the outstanding liability.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
-      ]
-    },
-    {
-      "id": "F-08",
-      "severity": "medium",
-      "title": "A B-2 licence is not eligible for a plumbing permit",
-      "detail": "Licence 1105133 (HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE) holds B-2 Residential Remodeling only. DBI's published list of licence types that may apply for a plumbing or mechanical permit is A, B, C-4, C-36, C-16, C-20 and C-54; B-2 is not on it.",
-      "effect": "This firm can do the patch but cannot be the plumbing permit holder.",
-      "action": "If used, pair it with a C-36 or B licence holder.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
-        "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
-      ]
-    },
-    {
-      "id": "F-09",
-      "severity": "medium",
-      "title": "An all-in-one licence with no employees on record",
-      "detail": "Licence 1115649 (RAPID FLOW PLUMBING & ROOTER INC) holds B + C-36 but is exempt from workers' compensation because it certified it has no employees at this time.",
-      "effect": "Who physically performs the plumbing and the patch is unknown, which matters for supervision and for two-trade work.",
-      "action": "Ask who will be on site and whether any work is subcontracted.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
-      ]
-    },
-    {
-      "id": "F-10",
-      "severity": "low",
-      "title": "Several licences are workers'-compensation exempt",
-      "detail": "Licences 961218 (PRECISION ROOTER & DRAIN) and 954385 (CW PLUMBING INC dba CITYWIDE PLUMBING) also certify no employees. 749536 and 297604 and 757796 are exempt as well. Exemption is lawful; it simply means CSLB records no employees covered by the firm's own policy.",
-      "effect": "Insurance and crew arrangements need a question, not an assumption.",
-      "action": "Ask each shortlisted firm for its certificate of insurance.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218"
-      ]
-    },
-    {
-      "id": "F-11",
-      "severity": "medium",
-      "title": "One licence in the roster is suspended",
-      "detail": "Licence 1027286 (KENNETH ASIRE PLUMBING) states: 'License is under suspension… License is under Contractors Bond Suspension.' The contractor's bond shows a cancellation date of 08/16/2026. It is published as a worked example of why each licence number is checked individually rather than trusting a company name.",
-      "effect": "Do not contract with this firm while it is suspended.",
-      "action": "None beyond exclusion; re-check if it is reconsidered.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
-      ]
-    },
-    {
-      "id": "F-12",
-      "severity": "medium",
-      "title": "Complaint disclosure on one record, and a directory that contradicts CSLB",
-      "detail": "Licence 297604 (D G CONSTRUCTION CO) shows 'There is Complaint Disclosure information for this license' with a link to the disclosure record, which this project did not open. Separately, a third-party directory maps licence 297604 to a different company name; the CSLB record is authoritative and says D G CONSTRUCTION CO.",
-      "effect": "The complaint record is unread, and third-party licence lookups in this space are unreliable.",
-      "action": "Open the CSLB complaint-disclosure record before shortlisting; use only cslb.ca.gov for licence data.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604"
-      ]
-    },
-    {
-      "id": "F-13",
-      "severity": "low",
-      "title": "B-only licences would have to subcontract the plumbing",
-      "detail": "Licences 1106131 (SF BUILDING GROUP, B only) and 300647 (CAHILL CONTRACTORS INC, A + B, licensed since 1974, no C-36) cannot do the plumbing in house. Under BPC §7057(b) a B contractor may take the prime contract on a two-trade job but must subcontract an appropriately licensed contractor for the trade it does not hold.",
-      "effect": "Either firm could be the single point of contact, but not a single crew.",
-      "action": "If either is approached, require the plumbing subcontractor's licence number in the quote.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
-        "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057"
-      ]
-    },
-    {
-      "id": "F-14",
-      "severity": "medium",
-      "title": "Four firms are licensed outside San Francisco",
-      "detail": "CSLB business addresses: 1086935 FDL PLUMBING (Daly City), 954385 CW PLUMBING (Daly City), 1140843 DISCOUNT PLUMBING ROOTER SERVICES (Burlingame), 1106131 SF BUILDING GROUP (South San Francisco). A business address is not a service area, and no official source states whether any of them works in San Francisco.",
-      "effect": "San Francisco service is unconfirmed for these four rows.",
-      "action": "Ask each firm to confirm it will work at the San Francisco address before shortlisting.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"
-      ]
-    },
-    {
-      "id": "F-15",
-      "severity": "high",
-      "title": "No review data is published, because the review platforms blocked retrieval",
-      "detail": "The request asked for review-backed candidates filtered for this specific work. Yelp returned HTTP 403 to automated retrieval on 2026-11-07, as did the other major review platforms in earlier passes. Rather than copy an unverified star rating from a search snippet, this dataset publishes none: every rating and review-count field is blank.",
-      "effect": "The register proves licensing and trade coverage; it does not prove reputation. Requirement RQ-11 is only partly met.",
-      "action": "Open the provider on Yelp using the search links on the Providers page and read the reviews directly; ratings can then be recorded by hand.",
-      "sources": [
-        "https://www.yelp.com/search?find_desc=Bathtub+Drain+Repair&find_loc=San+Francisco%2C+CA"
-      ]
-    },
-    {
-      "id": "F-16",
-      "severity": "medium",
-      "title": "Whether a ceiling access panel is required depends on a joint nobody has seen",
-      "detail": "UPC §402.10 requires a 12-inch access panel only where a slip joint is concealed; soldered or two-piece joints do not trigger it. The joint type behind this wall is unknown until the assembly is opened, so the code answer is conditional.",
-      "effect": "A solid patch may or may not comply, depending on what is found.",
-      "action": "Specify a framed access panel in the quote so the result complies either way, and have the contractor photograph the joint while it is open.",
-      "sources": [
-        "https://aa.iapmo.org/?chapter=4&code=UPC",
-        "https://forms.iapmo.org/email_marketing/codespotlight/2020/Mar12.htm"
-      ]
-    },
-    {
-      "id": "F-17",
-      "severity": "low",
-      "title": "Four earlier parallel briefs exist in this repository",
-      "detail": "trip-lever/, bathroom-overflow/, bathtub-overflow/ and bathtub/ are separate dossiers produced by earlier sessions on the same request. This site at the repository root is the consolidated one: it carries the largest licence-register (19 licence numbers, every one re-read on 2026-11-07). The other trees are kept for provenance and are banner-marked as superseded; nothing was deleted.",
-      "effect": "A reader who lands on an older tree may see an older provider list.",
-      "action": "Use this root site as the reference; treat the other trees as history.",
-      "sources": [
-        "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
-      ]
-    },
-    {
-      "id": "F-18",
-      "severity": "low",
-      "title": "No C-9 Drywall classification among the assessed licences",
-      "detail": "None of the nineteen licence numbers checked holds the C-9 Drywall classification. The drywall component is covered by a B General Building licence (or a licensed drywall subcontractor engaged by that B licensee) rather than by a drywall specialty licence on the same licence. Recorded by the preceding integration pass for the 13 licences it covered, and extended here to all 19.",
-      "effect": "The ceiling work is covered by the general-building trade, not by a specialist classification on the same licence.",
-      "action": "Ask the B-licence holder which drywall subcontractor it uses if a specialist finish is wanted.",
-      "sources": [
-        "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B"
-      ]
-    },
-    {
-      "id": "F-19",
-      "severity": "low",
-      "title": "The access-panel section number differs between code editions",
-      "detail": "The concealed slip-joint access-panel rule is cited as UPC §402.10 in the edition IAPMO documents, while some California Plumbing Code editions place the same requirement under different numbering. The substance (a 12-inch access panel or utility space for concealed slip joints) is unchanged; only the citation moves. Recorded by the preceding integration pass.",
-      "effect": "A contractor quoting a different section number is not necessarily wrong.",
-      "action": "Cite the requirement itself, not only the number, when specifying the ceiling detail.",
-      "sources": [
-        "https://aa.iapmo.org/?chapter=4&code=UPC"
-      ]
-    },
-    {
-      "id": "F-20",
-      "severity": "medium",
-      "title": "Fast Response's website address differs from its CSLB address of record",
-      "detail": "CSLB records licence 1024971 at 236 W Potral Ave #459, San Francisco 94127. The company's own site shows a different street address; the licence number and telephone match. Recorded by the preceding integration pass; the website was not re-checked in this session.",
-      "effect": "The address a customer sees is not the address of record.",
-      "action": "Use the CSLB address of record in any contract or notice, and ask the firm to explain the difference.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
-      ]
-    },
-    {
-      "id": "F-21",
-      "severity": "medium",
-      "title": "No photographs of the work area were supplied",
-      "detail": "The brief said reference photographs might follow. None were received, so the wall and ceiling construction, the overflow trim and the visible condition of the plate are all unverified. Every technical statement on this site describes a typical assembly, not this one.",
-      "effect": "The access route cannot be narrowed down from evidence.",
-      "action": "Send photographs of the overflow plate from inside the tub, and of the storage-unit ceiling, before booking.",
-      "sources": [
-        "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
-      ]
-    },
-    {
-      "id": "F-22",
-      "severity": "low",
-      "title": "Third-party cost benchmarks were removed rather than published",
-      "detail": "Earlier versions of this project quoted 'typical cost' ranges from third-party cost guides. Those have no official standing, so they were removed: they cannot be verified and they are not prices for this job. The official DBI fee schedule is linked instead.",
-      "effect": "The site shows three real quotes and no market range.",
-      "action": "None; recorded so the removal is visible rather than silent.",
-      "sources": [
-        "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
-      ]
-    },
-    {
-      "id": "F-23",
-      "severity": "low",
-      "title": "Candidates recorded by retired briefs are excluded unless re-verified here",
-      "detail": "Earlier parallel briefs listed licence numbers that this pass did not re-read: 966337, 379364, 1160613, and a 'Portola Plumbing' with no CSLB record returned by a business-name search. They are deliberately absent from the register rather than carried over unverified. The register holds 19 licence numbers, each read from its own CSLB page on 2026-11-07.",
-      "effect": "The register is complete only for the licences actually re-read.",
-      "action": "Look up any candidate proposed by hand at cslb.ca.gov before adding it.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
-      ]
-    },
-    {
-      "id": "F-24",
-      "severity": "medium",
-      "title": "Every CSLB status on this site is point-in-time",
-      "detail": "CSLB states on each record that licence status can change at any time and that its database may not yet reflect recent changes. The register was read on 2026-11-07 and each row carries the timestamp CSLB printed. Bond and workers'-compensation entries expire on their own dates, several of them inside the likely contract window.",
-      "effect": "A licence that is active today may not be active when work starts.",
-      "action": "Re-read the linked CSLB page the day the contract is signed.",
-      "sources": [
-        "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
-      ]
-    }
-  ]
+  {
+   "id": "F-02",
+   "severity": "medium",
+   "title": "'Fast Response' matches a CSLB licensee only by partial name",
+   "detail": "The quote says 'Fast Response'. CSLB licence 1024971 is JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER. The name match is probable, not exact, so the company is identified but not confirmed.",
+   "effect": "The figure is attached to a probable rather than certain licensee.",
+   "action": "Confirm the legal name on the written quote.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+   ]
+  },
+  {
+   "id": "F-03",
+   "severity": "high",
+   "title": "No provider has confirmed in writing that the assembly can come out from above",
+   "detail": "Above-access removal is the preferred route, and the manufacturer's service step is to remove the plate and pull the assembly (T-02). But more than five licensed plumbers have already declined to force it, and none of the three quoted companies has been asked the direct question in writing. No provider has been contacted by this project.",
+   "effect": "The preferred route remains untested, and no one has committed to it.",
+   "action": "Put one question to each of the three quoting firms in writing: will you attempt extraction from the tub side, and if the linkage is seized, what is the stop point before the wall is opened?",
+   "sources": [
+    "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+   ]
+  },
+  {
+   "id": "F-04",
+   "severity": "high",
+   "title": "The required all-in-one scope has never been priced",
+   "detail": "All three quotes are plumbing-only in wording; none mentions opening or patching a ceiling. The single-contract scope (plumbing plus drywall plus make-good in an occupied building) has no quotation from any firm.",
+   "effect": "There is no evidence of what the complete job costs.",
+   "action": "Ask the B + C-36 candidates (P-04, P-05, P-06, P-07, P-08, P-09) for a single fixed-price quote covering both trades.",
+   "sources": [
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057"
+   ]
+  },
+  {
+   "id": "F-05",
+   "severity": "high",
+   "title": "No provider has been contacted, so availability and willingness are unknown",
+   "detail": "This register is built from official licence records only. No phone call, email or site visit was made by this project, and no company has confirmed it will take the job, can reach the location, or has capacity.",
+   "effect": "Every row is a licensed firm, not a booked or available contractor.",
+   "action": "Contact the shortlist and record each response.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+   ]
+  },
+  {
+   "id": "F-06",
+   "severity": "high",
+   "title": "Two CSLB licences share one address and phone number — the all-in-one lead",
+   "detail": "Licence 757796 (BAY AREA PLUMBING, C-36, sole ownership) and licence 749536 (SAVE - ON - INTERIOR, B General Building + C-36, sole ownership) are both recorded by CSLB at 335 14th Avenue, San Francisco 94118, on telephone (415) 668-8000. Two official records therefore show one C-36 licence and one B + C-36 licence operating from the same premises. The CSLB public detail pages do not name the qualifying individual, so 'same operator' is an inference from the two records, not a stated fact.",
+   "effect": "This is the only route found in which the company that has already quoted may already control both trades — but the link is inferred.",
+   "action": "Ask Bay Area Plumbing directly whether it will contract under 749536 for the drywall scope, and confirm the licence number on the contract and the name of the qualifier for both licences.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
+   ]
+  },
+  {
+   "id": "F-07",
+   "severity": "medium",
+   "title": "One licence carries a future-suspension warning",
+   "detail": "Licence 1009195 (ADVANCED PLUMBING AND DRAIN INC) is current and active, but CSLB adds: the licence 'may be suspended at a future date for failure to resolve an outstanding final liability' from the Franchise Tax Board, DIR, EDD or CSLB.",
+   "effect": "Status could change before the work starts.",
+   "action": "Re-check the page before contracting, and ask the firm about the outstanding liability.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+   ]
+  },
+  {
+   "id": "F-08",
+   "severity": "medium",
+   "title": "A B-2 licence is not eligible for a plumbing permit",
+   "detail": "Licence 1105133 (HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE) holds B-2 Residential Remodeling only. DBI's published list of licence types that may apply for a plumbing or mechanical permit is A, B, C-4, C-36, C-16, C-20 and C-54; B-2 is not on it.",
+   "effect": "This firm can do the patch but cannot be the plumbing permit holder.",
+   "action": "If used, pair it with a C-36 or B licence holder.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+    "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+   ]
+  },
+  {
+   "id": "F-09",
+   "severity": "medium",
+   "title": "An all-in-one licence with no employees on record",
+   "detail": "Licence 1115649 (RAPID FLOW PLUMBING & ROOTER INC) holds B + C-36 but is exempt from workers' compensation because it certified it has no employees at this time.",
+   "effect": "Who physically performs the plumbing and the patch is unknown, which matters for supervision and for two-trade work.",
+   "action": "Ask who will be on site and whether any work is subcontracted.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+   ]
+  },
+  {
+   "id": "F-10",
+   "severity": "low",
+   "title": "Several licences are workers'-compensation exempt",
+   "detail": "Licences 961218 (PRECISION ROOTER & DRAIN) and 954385 (CW PLUMBING INC dba CITYWIDE PLUMBING) also certify no employees. 749536 and 297604 and 757796 are exempt as well. Exemption is lawful; it simply means CSLB records no employees covered by the firm's own policy.",
+   "effect": "Insurance and crew arrangements need a question, not an assumption.",
+   "action": "Ask each shortlisted firm for its certificate of insurance.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218"
+   ]
+  },
+  {
+   "id": "F-11",
+   "severity": "medium",
+   "title": "One licence in the roster is suspended",
+   "detail": "Licence 1027286 (KENNETH ASIRE PLUMBING) states: 'License is under suspension… License is under Contractors Bond Suspension.' The contractor's bond shows a cancellation date of 08/16/2026. It is published as a worked example of why each licence number is checked individually rather than trusting a company name.",
+   "effect": "Do not contract with this firm while it is suspended.",
+   "action": "None beyond exclusion; re-check if it is reconsidered.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+   ]
+  },
+  {
+   "id": "F-12",
+   "severity": "medium",
+   "title": "Complaint disclosure on one record, and a directory that contradicts CSLB",
+   "detail": "Licence 297604 (D G CONSTRUCTION CO) shows 'There is Complaint Disclosure information for this license' with a link to the disclosure record, which this project did not open. Separately, a third-party directory maps licence 297604 to a different company name; the CSLB record is authoritative and says D G CONSTRUCTION CO.",
+   "effect": "The complaint record is unread, and third-party licence lookups in this space are unreliable.",
+   "action": "Open the CSLB complaint-disclosure record before shortlisting; use only cslb.ca.gov for licence data.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604"
+   ]
+  },
+  {
+   "id": "F-13",
+   "severity": "low",
+   "title": "B-only licences would have to subcontract the plumbing",
+   "detail": "Licences 1106131 (SF BUILDING GROUP, B only) and 300647 (CAHILL CONTRACTORS INC, A + B, licensed since 1974, no C-36) cannot do the plumbing in house. Under BPC §7057(b) a B contractor may take the prime contract on a two-trade job but must subcontract an appropriately licensed contractor for the trade it does not hold.",
+   "effect": "Either firm could be the single point of contact, but not a single crew.",
+   "action": "If either is approached, require the plumbing subcontractor's licence number in the quote.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057"
+   ]
+  },
+  {
+   "id": "F-14",
+   "severity": "medium",
+   "title": "Four firms are licensed outside San Francisco",
+   "detail": "CSLB business addresses: 1086935 FDL PLUMBING (Daly City), 954385 CW PLUMBING (Daly City), 1140843 DISCOUNT PLUMBING ROOTER SERVICES (Burlingame), 1106131 SF BUILDING GROUP (South San Francisco). A business address is not a service area, and no official source states whether any of them works in San Francisco.",
+   "effect": "San Francisco service is unconfirmed for these four rows.",
+   "action": "Ask each firm to confirm it will work at the San Francisco address before shortlisting.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"
+   ]
+  },
+  {
+   "id": "F-15",
+   "severity": "high",
+   "title": "No review data is published, because the review platforms blocked retrieval",
+   "detail": "The request asked for review-backed candidates filtered for this specific work. Yelp returned HTTP 403 to automated retrieval on 2026-11-07, as did the other major review platforms in earlier passes. Rather than copy an unverified star rating from a search snippet, this dataset publishes none: every rating and review-count field is blank.",
+   "effect": "The register proves licensing and trade coverage; it does not prove reputation. Requirement RQ-11 is only partly met.",
+   "action": "Open the provider on Yelp using the search links on the Providers page and read the reviews directly; ratings can then be recorded by hand.",
+   "sources": [
+    "https://www.yelp.com/search?find_desc=Bathtub+Drain+Repair&find_loc=San+Francisco%2C+CA"
+   ]
+  },
+  {
+   "id": "F-16",
+   "severity": "medium",
+   "title": "Whether a ceiling access panel is required depends on a joint nobody has seen",
+   "detail": "UPC §402.10 requires a 12-inch access panel only where a slip joint is concealed; soldered or two-piece joints do not trigger it. The joint type behind this wall is unknown until the assembly is opened, so the code answer is conditional.",
+   "effect": "A solid patch may or may not comply, depending on what is found.",
+   "action": "Specify a framed access panel in the quote so the result complies either way, and have the contractor photograph the joint while it is open.",
+   "sources": [
+    "https://aa.iapmo.org/?chapter=4&code=UPC",
+    "https://forms.iapmo.org/email_marketing/codespotlight/2020/Mar12.htm"
+   ]
+  },
+  {
+   "id": "F-17",
+   "severity": "low",
+   "title": "Four earlier parallel briefs exist in this repository",
+   "detail": "trip-lever/, bathroom-overflow/, bathtub-overflow/ and bathtub/ are separate dossiers produced by earlier sessions on the same request. This site at the repository root is the consolidated one: it carries the largest licence-register (19 licence numbers, every one re-read on 2026-11-07). The other trees are kept for provenance and are banner-marked as superseded; nothing was deleted.",
+   "effect": "A reader who lands on an older tree may see an older provider list.",
+   "action": "Use this root site as the reference; treat the other trees as history.",
+   "sources": [
+    "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+   ]
+  },
+  {
+   "id": "F-18",
+   "severity": "low",
+   "title": "No C-9 Drywall classification among the assessed licences",
+   "detail": "None of the nineteen licence numbers checked holds the C-9 Drywall classification. The drywall component is covered by a B General Building licence (or a licensed drywall subcontractor engaged by that B licensee) rather than by a drywall specialty licence on the same licence. Recorded by the preceding integration pass for the 13 licences it covered, and extended here to all 19.",
+   "effect": "The ceiling work is covered by the general-building trade, not by a specialist classification on the same licence.",
+   "action": "Ask the B-licence holder which drywall subcontractor it uses if a specialist finish is wanted.",
+   "sources": [
+    "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B"
+   ]
+  },
+  {
+   "id": "F-19",
+   "severity": "low",
+   "title": "The access-panel section number differs between code editions",
+   "detail": "The concealed slip-joint access-panel rule is cited as UPC §402.10 in the edition IAPMO documents, while some California Plumbing Code editions place the same requirement under different numbering. The substance (a 12-inch access panel or utility space for concealed slip joints) is unchanged; only the citation moves. Recorded by the preceding integration pass.",
+   "effect": "A contractor quoting a different section number is not necessarily wrong.",
+   "action": "Cite the requirement itself, not only the number, when specifying the ceiling detail.",
+   "sources": [
+    "https://aa.iapmo.org/?chapter=4&code=UPC"
+   ]
+  },
+  {
+   "id": "F-20",
+   "severity": "medium",
+   "title": "Fast Response's website address differs from its CSLB address of record",
+   "detail": "CSLB records licence 1024971 at 236 W Potral Ave #459, San Francisco 94127. The company's own site shows a different street address; the licence number and telephone match. Recorded by the preceding integration pass; the website was not re-checked in this session.",
+   "effect": "The address a customer sees is not the address of record.",
+   "action": "Use the CSLB address of record in any contract or notice, and ask the firm to explain the difference.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+   ]
+  },
+  {
+   "id": "F-21",
+   "severity": "medium",
+   "title": "No photographs of the work area were supplied",
+   "detail": "The brief said reference photographs might follow. None were received, so the wall and ceiling construction, the overflow trim and the visible condition of the plate are all unverified. Every technical statement on this site describes a typical assembly, not this one.",
+   "effect": "The access route cannot be narrowed down from evidence.",
+   "action": "Send photographs of the overflow plate from inside the tub, and of the storage-unit ceiling, before booking.",
+   "sources": [
+    "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+   ]
+  },
+  {
+   "id": "F-22",
+   "severity": "low",
+   "title": "Third-party cost benchmarks were removed rather than published",
+   "detail": "Earlier versions of this project quoted 'typical cost' ranges from third-party cost guides. Those have no official standing, so they were removed: they cannot be verified and they are not prices for this job. The official DBI fee schedule is linked instead.",
+   "effect": "The site shows three real quotes and no market range.",
+   "action": "None; recorded so the removal is visible rather than silent.",
+   "sources": [
+    "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+   ]
+  },
+  {
+   "id": "F-23",
+   "severity": "low",
+   "title": "Candidates recorded by retired briefs are excluded unless re-verified here",
+   "detail": "Earlier parallel briefs listed licence numbers that this pass did not re-read: 966337, 379364, 1160613, and a 'Portola Plumbing' with no CSLB record returned by a business-name search. They are deliberately absent from the register rather than carried over unverified. The register holds 19 licence numbers, each read from its own CSLB page on 2026-11-07.",
+   "effect": "The register is complete only for the licences actually re-read.",
+   "action": "Look up any candidate proposed by hand at cslb.ca.gov before adding it.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+   ]
+  },
+  {
+   "id": "F-24",
+   "severity": "medium",
+   "title": "Every CSLB status on this site is point-in-time",
+   "detail": "CSLB states on each record that licence status can change at any time and that its database may not yet reflect recent changes. The register was read on 2026-11-07 and each row carries the timestamp CSLB printed. Bond and workers'-compensation entries expire on their own dates, several of them inside the likely contract window.",
+   "effect": "A licence that is active today may not be active when work starts.",
+   "action": "Re-read the linked CSLB page the day the contract is signed.",
+   "sources": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+   ]
+  }
+ ],
+ "_amounts_policy": "Quote amounts withheld: no official source confirms them. Published figures and labels live in site-data/ and on the canonical pages at the repository root."
 }

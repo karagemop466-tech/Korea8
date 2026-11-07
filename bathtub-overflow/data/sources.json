@@ -1,55 +1,423 @@
 {
-  "schema": "bt-src-v1",
-  "compiled_utc": "2026-11-06T12:40:00Z",
-  "compiled_by": "session 0ad9ad61",
-  "rule": "Every value in this dataset that is labelled OFFICIAL-VERIFIED was read on the linked official page during this session. Values labelled SEARCH-SNAPSHOT or USER-PROVIDED were not readable on an official page and are listed on the Flagged for Review page. No value was inferred.",
-  "sources": [
-    {"id": "CSLB-CHECK", "title": "Check A License or Home Improvement Salesperson (HIS) Registration", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx", "accessed": "2026-11-06", "verifies": "How a license number or contractor business name is checked against the CSLB database; CSLB's own search tips and database-maintenance window."},
-    {"id": "CSLB-NAMESEARCH", "title": "Contractor Name Search Results (CSLB)", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx?NextName=Portola+Plumbing&NextLicNum=", "accessed": "2026-11-06", "verifies": "Existence and status of licenses held under a given business name; used to discover license numbers and to document that no record was returned for 'Portola Plumbing'."},
-    {"id": "CSLB-DATA", "title": "CSLB Public Data Portal — List of Contractors by Classification and County", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/Onlineservices/DataPortal/ListByCounty.aspx", "accessed": "2026-11-06", "verifies": "Official list of active CSLB classification names including 'C-9 - Drywall Contractor' and 'C-36 - Plumbing Contractor'; downloadable lists of licensed contractors by classification and county."},
-    {"id": "CSLB-CLASS-PDF", "title": "Description of Classifications (CSLB publication, ENG0525)", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://web.cslb.ca.gov/Resources/GuidesAndPublications/DescriptionClassifications_ENG0525_ADA.pdf", "accessed": "2026-11-06", "verifies": "Scope text for Class B, B-2, C-35 and C-36 classifications, including the rule that a B-2 residential remodeling contractor may not install, replace or extend plumbing systems unless it holds the appropriate classification or subcontracts to an appropriately licensed subcontractor."},
-    {"id": "CSLB-C9", "title": "Licensing Classifications Detail — C-9 Drywall Contractor", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9", "accessed": "2026-11-06", "verifies": "Definition and scope of the C-9 Drywall Contractor classification (Title 16, Division 8, Article 3)."},
-    {"id": "CSLB-HIRE", "title": "Hire a Licensed Contractor (consumer guidance hub)", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/", "accessed": "2026-11-06", "verifies": "CSLB's official consumer process for selecting a licensed contractor; links to license check, contractor search, contract guidance and permit guidance."},
-    {"id": "CSLB-PERMIT", "title": "Do I need a building permit for my project?", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx", "accessed": "2026-11-06", "verifies": "Quotation of the California Building Standards Code permit rule and the instruction to check with the local building department."},
-    {"id": "CSLB-HIC", "title": "Learn About Home Improvement Contracts", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Home_Improvement_Contracts/", "accessed": "2026-11-06", "verifies": "CSLB's official guidance on what a contractor contract must contain and what to check before signing."},
-    {"id": "CSLB-PAYMENTS", "title": "Don't Pay Too Much Money Upfront for Home Improvement Projects (CSLB press release)", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/Resources/PressReleases/2024/ADU-payments.FINAL.pdf", "accessed": "2026-11-06", "verifies": "Fixed-price contract requirement and the home-improvement down-payment rule quoted on the CSLB home page (no more than $1,000 or 10%)."},
-    {"id": "CSLB-COMPLAINT", "title": "Public Complaint Disclosure (CSLB)", "publisher": "California Contractors State License Board (CSLB)", "official": true, "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/PublicComplaintDisclosure.aspx", "accessed": "2026-11-06", "verifies": "How and where CSLB discloses public complaint information for a license."},
-    {"id": "CA-CIV1954", "title": "California Civil Code § 1954 (landlord's right of entry)", "publisher": "California Legislative Information (leginfo.legislature.ca.gov)", "official": true, "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954", "accessed": "2026-11-06", "verifies": "Notice requirements before a landlord or contractor enters an occupied dwelling unit: written notice stating date, approximate time and purpose; 24 hours presumed reasonable; normal business hours; emergency and tenant-consent exceptions."},
-    {"id": "CA-BPC7128", "title": "California Business and Professions Code § 7128 (license requirement)", "publisher": "California Legislative Information (leginfo.legislature.ca.gov)", "official": true, "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7128", "accessed": "2026-11-06", "verifies": "Statutory licensing requirement for contractors. NOTE: the statutory text did not render in this session's fetch, so the dollar threshold is NOT stated anywhere in this dataset. See Flagged for Review item FL-11."},
-    {"id": "CA-CPC2025", "title": "2025 California Plumbing Code (official e-publication, Part 5 of Title 24)", "publisher": "IAPMO — official publisher for the California Building Standards Commission", "official": true, "url": "https://epubs.iapmo.org/2025/CPC/", "accessed": "2026-11-06", "verifies": "Table of contents of the active California Plumbing Code, including §409.0 Bathtubs and Whirlpool Bathtubs (409.2 Waste Outlet, 409.3 Overflow, 409.6 Installation and Access) and §404.0 Waste Fittings and Overflows (404.2.1 Sinks, Lavatories, and Bathtubs)."},
-    {"id": "DGS-CODES", "title": "Codes — California Building Standards Code (Title 24)", "publisher": "California Department of General Services, Building Standards Commission", "official": true, "url": "https://www.dgs.ca.gov/BSC/Codes", "accessed": "2026-11-06", "verifies": "2025 Triennial Edition of Title 24 published 2025-07-01, effective 2026-01-01; links to Part 5 California Plumbing Code and the 2022 edition now superseded."},
-    {"id": "SF-DBI", "title": "Department of Building Inspection", "publisher": "City and County of San Francisco (sf.gov)", "official": true, "url": "https://www.sf.gov/departments--department-building-inspection", "accessed": "2026-11-06", "verifies": "DBI mission, contact numbers (Customer Service 628-652-3200; permit fee estimate 628-652-3240; dbi.cpbrequest@sfgov.org), PermitSF portal, and the rule that filings on or after 2026-01-01 must use 2025 California Codes and 2025 SF Code Amendments with no grace period."},
-    {"id": "SF-DBI-FAQ", "title": "Frequently Asked Questions (DBI, October 2020 edition, archived by the City of San Francisco Archive-It collection 20246)", "publisher": "City and County of San Francisco, Department of Building Inspection", "official": true, "url": "https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions", "accessed": "2026-11-06", "verifies": "Verbatim DBI answer on plumbing permits: 'For minor plumbing work not requiring cutting into or removal of piping, a permit is not required. You may contact the Department of Building Inspection, Inspection Services - Plumbing Inspection Division at (628) 652-3450 for more information regarding permit requirements.' The live sfdbi.org URL now redirects to sf.gov and could not be read directly — see FL-02."},
-    {"id": "SF-DBI-ONLINE", "title": "Online Permits & Scheduling — Instructions and Registration Requirements", "publisher": "City and County of San Francisco, Department of Building Inspection", "official": true, "url": "https://sfdbi.org/online-permits-instructions-and-registration-requirements", "accessed": "2026-11-06", "verifies": "Contractor license prerequisites for DBI online permits (C-4 or C-36 for a plumbing permit; B license for building inspections / kitchen-bath remodel applications; DBI matches company name, contractor license number and business license number). Captured from the official page's indexed text; the page itself was not rendered in this session — see FL-03."},
-    {"id": "SF-DBI-FEES", "title": "Fee Schedule — Plumbing/Mechanical Issuance and Inspection Fees, July 2026 (DBI Table 1A-C)", "publisher": "City and County of San Francisco, Department of Building Inspection", "official": true, "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf", "accessed": "2026-11-06", "verifies": "Permit issuance fee categories and inspection rates in force for permits issued on or after 2026-07-12 (Category 1P $290; regular inspection $519/hour; off-hour $555/hour; re-inspection $259 per half hour; a separate permit is required per dwelling unit / tenant space)."},
-    {"id": "SF-DBI-FEEINDEX", "title": "Fees for the Department of Building Inspection", "publisher": "City and County of San Francisco (sf.gov)", "official": true, "url": "https://www.sf.gov/resource--fees-department-building-inspection/", "accessed": "2026-11-06", "verifies": "Official index of all DBI fee schedules (building, plumbing/mechanical, electrical, inspections, code enforcement) with publication date 2026-07-12."},
-    {"id": "SF-CODES-2025", "title": "Current San Francisco building codes", "publisher": "City and County of San Francisco (sf.gov)", "official": true, "url": "https://www.sf.gov/resource--2025--current-san-francisco-building-codes/", "accessed": "2026-11-06", "verifies": "Official links to the 2025 California codes and the 2025 San Francisco code amendments (Building, Electrical, Mechanical, Plumbing, Green, Housing, Existing Building) and the no-grace-period rule for filings on or after 2026-01-01."},
-    {"id": "SF-PLUMBING-CODE", "title": "2025 San Francisco Plumbing Code (official SF code library)", "publisher": "City and County of San Francisco (codelibrary.amlegal.com)", "official": true, "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85773", "accessed": "2026-11-06", "verifies": "Locally amended plumbing code that applies in San Francisco. Section text is loaded dynamically and could not be read in this session — see FL-04."},
-    {"id": "SF-HOUSING-CODE", "title": "2025 San Francisco Housing Code (official SF code library)", "publisher": "City and County of San Francisco (codelibrary.amlegal.com)", "official": true, "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-52855", "accessed": "2026-11-06", "verifies": "The Housing Code that governs maintenance of rented dwelling units in San Francisco. Section text was not read in this session — see FL-05."},
-    {"id": "SF-PERMITSF", "title": "PermitSF portal", "publisher": "City and County of San Francisco", "official": true, "url": "https://sanfranciscoca.portal.opengov.com/", "accessed": "2026-11-06", "verifies": "The online portal where a plumbing or building permit application is filed and where permit status can be tracked (linked from the DBI page)."},
-    {"id": "SF-INFO-SHEETS", "title": "Information sheets for DBI", "publisher": "City and County of San Francisco, Department of Building Inspection", "official": true, "url": "https://www.sf.gov/resource--2022--information-sheets-dbi/", "accessed": "2026-11-06", "verifies": "DBI information sheets that clarify code implementation for specific topics (including G-13 Construction Cost Estimate for Determination of Permit Fee); the sheet that governs a specific pre-1980 building or asbestos question was not identified in this pass — see FL-06."},
-
-    {"id": "YELP-EPS", "title": "Expert Plumbing Solutions — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco", "accessed": "2026-11-06", "verifies": "Snapshot only: 4.8 stars / 81 reviews; address 1465 44th Ave, SF 94122; phone (415) 531-5340; 'Established in 2012'. Yelp blocks automated retrieval (HTTP 403) — see FL-07."},
-    {"id": "YELP-BAP", "title": "Bay Area Plumbing — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco", "accessed": "2026-11-06", "verifies": "Snapshot only: 4.8 stars / 175 reviews; address 335 14th Ave, SF 94118; photo captions evidencing bathtub/shower drain leak repair, bathtub installation with valve and shower-valve replacement. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-FRP", "title": "Fast Response Plumbing & Rooter — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3", "accessed": "2026-11-06", "verifies": "Snapshot only: 906 reviews; 4444 Geary Blvd Ste 203, SF 94118; phone (415) 596-6115. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-FDL", "title": "FDL Plumbing — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/fdl-plumbing-daly-city", "accessed": "2026-11-06", "verifies": "Snapshot only: 5.0 stars / 1 review; 4547 Callan Blvd, Daly City CA 94015; phone (415) 678-9557. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-PRD", "title": "Precision Rooter & Drain — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/precision-rooter-and-drain-san-francisco", "accessed": "2026-11-06", "verifies": "Snapshot only: 4.9 stars / 242 reviews; 945 Taraval St Ste 1214, SF 94116; phone (415) 724-1824. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-APD", "title": "Advanced Plumbing & Drain — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/advanced-plumbing-and-drain-san-francisco", "accessed": "2026-11-06", "verifies": "Snapshot only: 213 reviews; 3450 Sacramento St Ste 204, SF 94118. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-CAHILL", "title": "Cahill Contractors — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/cahill-contractors-san-francisco-3", "accessed": "2026-11-06", "verifies": "Snapshot only: 2.5 stars / 2 reviews, listing Unclaimed; 425 California St Ste 2200, SF 94104; phone (415) 986-0600. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-WDC", "title": "We Do Construction — Yelp business page", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/biz/we-do-construction-san-francisco", "accessed": "2026-11-06", "verifies": "Snapshot only: 5.0 stars / 101 reviews (as stated on the contractor's own site); Yelp business page URL taken from the contractor's own schema.org markup. Yelp blocks automated retrieval — see FL-07."},
-    {"id": "YELP-SEARCH-PLUMB", "title": "Yelp search listing — Plumber, San Francisco CA", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca", "accessed": "2026-11-06", "verifies": "Snapshot only: the San Francisco plumbing search page that lists Fast Response Plumbing & Rooter 4.8 / 906 reviews and other candidates."},
-    {"id": "YELP-SEARCH-PORTOLA", "title": "Yelp search listing — Plumbing Contractors near Corona Heights, San Francisco CA", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/search?find_desc=Plumbing+Contractors&find_loc=Corona+Heights%2C+San+Francisco%2C+CA", "accessed": "2026-11-06", "verifies": "Snapshot only: Portola Plumbing Services listing ('New on Yelp') with service tags 'Bathtub installation', 'Bathtub repair', 'Drain installation'."},
-    {"id": "YELP-SEARCH-ACE", "title": "Yelp search listing — Gas Plumber, San Francisco CA", "publisher": "Yelp (review platform, not an official source)", "official": false, "url": "https://www.yelp.com/search?find_desc=Gas+Plumber&find_loc=San+Francisco%2C+CA", "accessed": "2026-11-06", "verifies": "Snapshot only: Ace Plumbing & Rooter listing; the dedicated Ace business-page URL was not confirmed, so a search listing is cited instead."},
-    {"id": "BBB-PRD", "title": "Precision Rooter & Drain — BBB business profile", "publisher": "Better Business Bureau (not an official source)", "official": false, "url": "https://www.bbb.org/us/ca/san-francisco/profile/sewer-cleaning/precision-rooter-drain-1116-383134", "accessed": "2026-11-06", "verifies": "Snapshot only: not BBB accredited; sole proprietorship; owner Ray Willis; one employee; BBB-licensing record for #961218 expiring 5/31/2027."},
-    {"id": "BBB-FDL", "title": "FDL Plumbing — BBB business profile", "publisher": "Better Business Bureau (not an official source)", "official": false, "url": "https://www.bbb.org/us/ca/daly-city/profile/plumber/fdl-plumbing-1116-976869", "accessed": "2026-11-06", "verifies": "Snapshot only: BBB profile for FDL Plumbing, Daly City."},
-    {"id": "WEB-PRD", "title": "Precision Rooter & Drain — company website", "publisher": "Contractor's own website (not an official source)", "official": false, "url": "https://www.precisionrooterdrain.com/", "accessed": "2026-11-06", "verifies": "Snapshot only: states the business 'also work with various landlords and help set up appointments with tenants', and that it is 'a Licensed Plumbing Contractor. Lic. # 961218'."},
-    {"id": "WEB-EPS", "title": "Expert Plumbing Solutions — contact page", "publisher": "Contractor's own website (not an official source)", "official": false, "url": "https://www.eplumbingsolutions.com/contact-us", "accessed": "2026-11-06", "verifies": "Snapshot only: contractor-stated 'License # 977638', address 1465 44th Avenue, phone (415) 531-5340, email paul@eplumbingsolutions.com (matched to the CSLB record)."},
-    {"id": "WEB-FDL", "title": "FDL Plumbing — company website", "publisher": "Contractor's own website (not an official source)", "official": false, "url": "https://fdlplumbing.com/", "accessed": "2026-11-06", "verifies": "Snapshot only: contractor-stated 'License # 1086935'; 'Master Plumber Francisco De Leon'; service list includes bathroom and kitchen remodels."},
-    {"id": "WEB-WDC", "title": "We Do Construction — company website", "publisher": "Contractor's own website (not an official source)", "official": false, "url": "https://www.wedoconstructions.com/", "accessed": "2026-11-06", "verifies": "Snapshot only: design-build GC, 'CSLB Lic. # 1096552' (B General Building + C-36 Plumbing), self-reported '500+ permits pulled', 'Google 5.0 (160 reviews)', 'Yelp 5.0 (101)'."},
-    {"id": "HOUZZ-ACE", "title": "Ace Plumbing and Rooter — Houzz project profile", "publisher": "Houzz (not an official source)", "official": false, "url": "https://www.houzz.com/professionals/plumbers/ace-plumbing-and-rooter-pfvwus-pf~1512016390", "accessed": "2026-11-06", "verifies": "Snapshot only: 'CA Lic #829071', San Francisco CA 94116."},
-    {"id": "HOMEOA-FDL", "title": "FDL Plumbing, Inc. — HomeAdvisor listing", "publisher": "HomeAdvisor (not an official source)", "official": false, "url": "https://www.homeadvisor.com/rated.fdlplumbinginc.136969159.html", "accessed": "2026-11-06", "verifies": "Snapshot only: 5.0 / 41 reviews; trade license number 1086935, expiration 10/31/2026 as listed by HomeAdvisor."},
-    {"id": "BUILDZOOM-EPS", "title": "Expert Plumbing Solutions — BuildZoom contractor profile", "publisher": "BuildZoom (not an official source)", "official": false, "url": "https://www.buildzoom.com/contractor/expert-plumbing-solutions", "accessed": "2026-11-06", "verifies": "Snapshot only: 'Verified License' flag, address 1465 44th Ave, San Francisco, phone (415) 531-5340, BZ score 128."},
-    {"id": "GREASETRAP-ACE", "title": "Ace Plumbing & Rooter, Inc. — Greasetrap Locator listing", "publisher": "Greasetrap Locator (not an official source)", "official": false, "url": "https://greasetraplocator.com/places/ace-plumbing-rooter-inc/", "accessed": "2026-11-06", "verifies": "Snapshot only: 'CA License #829071 (C-36, C-16)', phone +1 415-824-6444."},
-    {"id": "THIRDPARTY-DIR", "title": "Licensed Contractors in San Francisco, California", "publisher": "contractorlicenseca.com (third-party directory, not an official source)", "official": false, "url": "https://contractorlicenseca.com/city/san-francisco/", "accessed": "2026-11-06", "verifies": "CONTRADICTED BY THE OFFICIAL RECORD: this directory associates CSLB #297604 with 'Cahill Contractors'. The official CSLB record for #297604 is D G Construction Co. See Flagged for Review item FL-08."}
-  ]
+ "schema": "bt-src-v1",
+ "compiled_utc": "2026-11-06T12:40:00Z",
+ "compiled_by": "session 0ad9ad61",
+ "rule": "Every value in this dataset that is labelled OFFICIAL-VERIFIED was read on the linked official page during this session. Values labelled SEARCH-SNAPSHOT or USER-PROVIDED were not readable on an official page and are listed on the Flagged for Review page. No value was inferred.",
+ "sources": [
+  {
+   "id": "CSLB-CHECK",
+   "title": "Check A License or Home Improvement Salesperson (HIS) Registration",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "accessed": "2026-11-06",
+   "verifies": "How a license number or contractor business name is checked against the CSLB database; CSLB's own search tips and database-maintenance window."
+  },
+  {
+   "id": "CSLB-NAMESEARCH",
+   "title": "Contractor Name Search Results (CSLB)",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx?NextName=Portola+Plumbing&NextLicNum=",
+   "accessed": "2026-11-06",
+   "verifies": "Existence and status of licenses held under a given business name; used to discover license numbers and to document that no record was returned for 'Portola Plumbing'."
+  },
+  {
+   "id": "CSLB-DATA",
+   "title": "CSLB Public Data Portal — List of Contractors by Classification and County",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/Onlineservices/DataPortal/ListByCounty.aspx",
+   "accessed": "2026-11-06",
+   "verifies": "Official list of active CSLB classification names including 'C-9 - Drywall Contractor' and 'C-36 - Plumbing Contractor'; downloadable lists of licensed contractors by classification and county."
+  },
+  {
+   "id": "CSLB-CLASS-PDF",
+   "title": "Description of Classifications (CSLB publication, ENG0525)",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://web.cslb.ca.gov/Resources/GuidesAndPublications/DescriptionClassifications_ENG0525_ADA.pdf",
+   "accessed": "2026-11-06",
+   "verifies": "Scope text for Class B, B-2, C-35 and C-36 classifications, including the rule that a B-2 residential remodeling contractor may not install, replace or extend plumbing systems unless it holds the appropriate classification or subcontracts to an appropriately licensed subcontractor."
+  },
+  {
+   "id": "CSLB-C9",
+   "title": "Licensing Classifications Detail — C-9 Drywall Contractor",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+   "accessed": "2026-11-06",
+   "verifies": "Definition and scope of the C-9 Drywall Contractor classification (Title 16, Division 8, Article 3)."
+  },
+  {
+   "id": "CSLB-HIRE",
+   "title": "Hire a Licensed Contractor (consumer guidance hub)",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/",
+   "accessed": "2026-11-06",
+   "verifies": "CSLB's official consumer process for selecting a licensed contractor; links to license check, contractor search, contract guidance and permit guidance."
+  },
+  {
+   "id": "CSLB-PERMIT",
+   "title": "Do I need a building permit for my project?",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx",
+   "accessed": "2026-11-06",
+   "verifies": "Quotation of the California Building Standards Code permit rule and the instruction to check with the local building department."
+  },
+  {
+   "id": "CSLB-HIC",
+   "title": "Learn About Home Improvement Contracts",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Home_Improvement_Contracts/",
+   "accessed": "2026-11-06",
+   "verifies": "CSLB's official guidance on what a contractor contract must contain and what to check before signing."
+  },
+  {
+   "id": "CSLB-PAYMENTS",
+   "title": "Don't Pay Too Much Money Upfront for Home Improvement Projects (CSLB press release)",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/Resources/PressReleases/2024/ADU-payments.FINAL.pdf",
+   "accessed": "2026-11-06",
+   "verifies": "Fixed-price contract requirement and the home-improvement down-payment rule quoted on the CSLB home page (no more than or 10%)."
+  },
+  {
+   "id": "CSLB-COMPLAINT",
+   "title": "Public Complaint Disclosure (CSLB)",
+   "publisher": "California Contractors State License Board (CSLB)",
+   "official": true,
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/PublicComplaintDisclosure.aspx",
+   "accessed": "2026-11-06",
+   "verifies": "How and where CSLB discloses public complaint information for a license."
+  },
+  {
+   "id": "CA-CIV1954",
+   "title": "California Civil Code § 1954 (landlord's right of entry)",
+   "publisher": "California Legislative Information (leginfo.legislature.ca.gov)",
+   "official": true,
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+   "accessed": "2026-11-06",
+   "verifies": "Notice requirements before a landlord or contractor enters an occupied dwelling unit: written notice stating date, approximate time and purpose; 24 hours presumed reasonable; normal business hours; emergency and tenant-consent exceptions."
+  },
+  {
+   "id": "CA-BPC7128",
+   "title": "California Business and Professions Code § 7128 (license requirement)",
+   "publisher": "California Legislative Information (leginfo.legislature.ca.gov)",
+   "official": true,
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7128",
+   "accessed": "2026-11-06",
+   "verifies": "Statutory licensing requirement for contractors. NOTE: the statutory text did not render in this session's fetch, so the dollar threshold is NOT stated anywhere in this dataset. See Flagged for Review item FL-11."
+  },
+  {
+   "id": "CA-CPC2025",
+   "title": "2025 California Plumbing Code (official e-publication, Part 5 of Title 24)",
+   "publisher": "IAPMO — official publisher for the California Building Standards Commission",
+   "official": true,
+   "url": "https://epubs.iapmo.org/2025/CPC/",
+   "accessed": "2026-11-06",
+   "verifies": "Table of contents of the active California Plumbing Code, including §409.0 Bathtubs and Whirlpool Bathtubs (409.2 Waste Outlet, 409.3 Overflow, 409.6 Installation and Access) and §404.0 Waste Fittings and Overflows (404.2.1 Sinks, Lavatories, and Bathtubs)."
+  },
+  {
+   "id": "DGS-CODES",
+   "title": "Codes — California Building Standards Code (Title 24)",
+   "publisher": "California Department of General Services, Building Standards Commission",
+   "official": true,
+   "url": "https://www.dgs.ca.gov/BSC/Codes",
+   "accessed": "2026-11-06",
+   "verifies": "2025 Triennial Edition of Title 24 published 2025-07-01, effective 2026-01-01; links to Part 5 California Plumbing Code and the 2022 edition now superseded."
+  },
+  {
+   "id": "SF-DBI",
+   "title": "Department of Building Inspection",
+   "publisher": "City and County of San Francisco (sf.gov)",
+   "official": true,
+   "url": "https://www.sf.gov/departments--department-building-inspection",
+   "accessed": "2026-11-06",
+   "verifies": "DBI mission, contact numbers (Customer Service 628-652-3200; permit fee estimate 628-652-3240; dbi.cpbrequest@sfgov.org), PermitSF portal, and the rule that filings on or after 2026-01-01 must use 2025 California Codes and 2025 SF Code Amendments with no grace period."
+  },
+  {
+   "id": "SF-DBI-FAQ",
+   "title": "Frequently Asked Questions (DBI, October 2020 edition, archived by the City of San Francisco Archive-It collection 20246)",
+   "publisher": "City and County of San Francisco, Department of Building Inspection",
+   "official": true,
+   "url": "https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions",
+   "accessed": "2026-11-06",
+   "verifies": "Verbatim DBI answer on plumbing permits: 'For minor plumbing work not requiring cutting into or removal of piping, a permit is not required. You may contact the Department of Building Inspection, Inspection Services - Plumbing Inspection Division at (628) 652-3450 for more information regarding permit requirements.' The live sfdbi.org URL now redirects to sf.gov and could not be read directly — see FL-02."
+  },
+  {
+   "id": "SF-DBI-ONLINE",
+   "title": "Online Permits & Scheduling — Instructions and Registration Requirements",
+   "publisher": "City and County of San Francisco, Department of Building Inspection",
+   "official": true,
+   "url": "https://sfdbi.org/online-permits-instructions-and-registration-requirements",
+   "accessed": "2026-11-06",
+   "verifies": "Contractor license prerequisites for DBI online permits (C-4 or C-36 for a plumbing permit; B license for building inspections / kitchen-bath remodel applications; DBI matches company name, contractor license number and business license number). Captured from the official page's indexed text; the page itself was not rendered in this session — see FL-03."
+  },
+  {
+   "id": "SF-DBI-FEES",
+   "title": "Fee Schedule — Plumbing/Mechanical Issuance and Inspection Fees, July 2026 (DBI Table 1A-C)",
+   "publisher": "City and County of San Francisco, Department of Building Inspection",
+   "official": true,
+   "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "accessed": "2026-11-06",
+   "verifies": "Permit issuance fee categories and inspection rates in force for permits issued on or after 2026-07-12 (Category 1P; regular inspection /hour; off-hour /hour; re-inspection per half hour; a separate permit is required per dwelling unit / tenant space)."
+  },
+  {
+   "id": "SF-DBI-FEEINDEX",
+   "title": "Fees for the Department of Building Inspection",
+   "publisher": "City and County of San Francisco (sf.gov)",
+   "official": true,
+   "url": "https://www.sf.gov/resource--fees-department-building-inspection/",
+   "accessed": "2026-11-06",
+   "verifies": "Official index of all DBI fee schedules (building, plumbing/mechanical, electrical, inspections, code enforcement) with publication date 2026-07-12."
+  },
+  {
+   "id": "SF-CODES-2025",
+   "title": "Current San Francisco building codes",
+   "publisher": "City and County of San Francisco (sf.gov)",
+   "official": true,
+   "url": "https://www.sf.gov/resource--2025--current-san-francisco-building-codes/",
+   "accessed": "2026-11-06",
+   "verifies": "Official links to the 2025 California codes and the 2025 San Francisco code amendments (Building, Electrical, Mechanical, Plumbing, Green, Housing, Existing Building) and the no-grace-period rule for filings on or after 2026-01-01."
+  },
+  {
+   "id": "SF-PLUMBING-CODE",
+   "title": "2025 San Francisco Plumbing Code (official SF code library)",
+   "publisher": "City and County of San Francisco (codelibrary.amlegal.com)",
+   "official": true,
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85773",
+   "accessed": "2026-11-06",
+   "verifies": "Locally amended plumbing code that applies in San Francisco. Section text is loaded dynamically and could not be read in this session — see FL-04."
+  },
+  {
+   "id": "SF-HOUSING-CODE",
+   "title": "2025 San Francisco Housing Code (official SF code library)",
+   "publisher": "City and County of San Francisco (codelibrary.amlegal.com)",
+   "official": true,
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-52855",
+   "accessed": "2026-11-06",
+   "verifies": "The Housing Code that governs maintenance of rented dwelling units in San Francisco. Section text was not read in this session — see FL-05."
+  },
+  {
+   "id": "SF-PERMITSF",
+   "title": "PermitSF portal",
+   "publisher": "City and County of San Francisco",
+   "official": true,
+   "url": "https://sanfranciscoca.portal.opengov.com/",
+   "accessed": "2026-11-06",
+   "verifies": "The online portal where a plumbing or building permit application is filed and where permit status can be tracked (linked from the DBI page)."
+  },
+  {
+   "id": "SF-INFO-SHEETS",
+   "title": "Information sheets for DBI",
+   "publisher": "City and County of San Francisco, Department of Building Inspection",
+   "official": true,
+   "url": "https://www.sf.gov/resource--2022--information-sheets-dbi/",
+   "accessed": "2026-11-06",
+   "verifies": "DBI information sheets that clarify code implementation for specific topics (including G-13 Construction Cost Estimate for Determination of Permit Fee); the sheet that governs a specific pre-1980 building or asbestos question was not identified in this pass — see FL-06."
+  },
+  {
+   "id": "YELP-EPS",
+   "title": "Expert Plumbing Solutions — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 4.8 stars / 81 reviews; address 1465 44th Ave, SF 94122; phone (415) 531-5340; 'Established in 2012'. Yelp blocks automated retrieval (HTTP 403) — see FL-07."
+  },
+  {
+   "id": "YELP-BAP",
+   "title": "Bay Area Plumbing — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 4.8 stars / 175 reviews; address 335 14th Ave, SF 94118; photo captions evidencing bathtub/shower drain leak repair, bathtub installation with valve and shower-valve replacement. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-FRP",
+   "title": "Fast Response Plumbing & Rooter — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 906 reviews; 4444 Geary Blvd Ste 203, SF 94118; phone (415) 596-6115. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-FDL",
+   "title": "FDL Plumbing — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/fdl-plumbing-daly-city",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 5.0 stars / 1 review; 4547 Callan Blvd, Daly City CA 94015; phone (415) 678-9557. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-PRD",
+   "title": "Precision Rooter & Drain — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/precision-rooter-and-drain-san-francisco",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 4.9 stars / 242 reviews; 945 Taraval St Ste 1214, SF 94116; phone (415) 724-1824. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-APD",
+   "title": "Advanced Plumbing & Drain — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/advanced-plumbing-and-drain-san-francisco",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 213 reviews; 3450 Sacramento St Ste 204, SF 94118. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-CAHILL",
+   "title": "Cahill Contractors — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/cahill-contractors-san-francisco-3",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 2.5 stars / 2 reviews, listing Unclaimed; 425 California St Ste 2200, SF 94104; phone (415) 986-0600. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-WDC",
+   "title": "We Do Construction — Yelp business page",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/biz/we-do-construction-san-francisco",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 5.0 stars / 101 reviews (as stated on the contractor's own site); Yelp business page URL taken from the contractor's own schema.org markup. Yelp blocks automated retrieval — see FL-07."
+  },
+  {
+   "id": "YELP-SEARCH-PLUMB",
+   "title": "Yelp search listing — Plumber, San Francisco CA",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: the San Francisco plumbing search page that lists Fast Response Plumbing & Rooter 4.8 / 906 reviews and other candidates."
+  },
+  {
+   "id": "YELP-SEARCH-PORTOLA",
+   "title": "Yelp search listing — Plumbing Contractors near Corona Heights, San Francisco CA",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/search?find_desc=Plumbing+Contractors&find_loc=Corona+Heights%2C+San+Francisco%2C+CA",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: Portola Plumbing Services listing ('New on Yelp') with service tags 'Bathtub installation', 'Bathtub repair', 'Drain installation'."
+  },
+  {
+   "id": "YELP-SEARCH-ACE",
+   "title": "Yelp search listing — Gas Plumber, San Francisco CA",
+   "publisher": "Yelp (review platform, not an official source)",
+   "official": false,
+   "url": "https://www.yelp.com/search?find_desc=Gas+Plumber&find_loc=San+Francisco%2C+CA",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: Ace Plumbing & Rooter listing; the dedicated Ace business-page URL was not confirmed, so a search listing is cited instead."
+  },
+  {
+   "id": "BBB-PRD",
+   "title": "Precision Rooter & Drain — BBB business profile",
+   "publisher": "Better Business Bureau (not an official source)",
+   "official": false,
+   "url": "https://www.bbb.org/us/ca/san-francisco/profile/sewer-cleaning/precision-rooter-drain-1116-383134",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: not BBB accredited; sole proprietorship; owner Ray Willis; one employee; BBB-licensing record for #961218 expiring 5/31/2027."
+  },
+  {
+   "id": "BBB-FDL",
+   "title": "FDL Plumbing — BBB business profile",
+   "publisher": "Better Business Bureau (not an official source)",
+   "official": false,
+   "url": "https://www.bbb.org/us/ca/daly-city/profile/plumber/fdl-plumbing-1116-976869",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: BBB profile for FDL Plumbing, Daly City."
+  },
+  {
+   "id": "WEB-PRD",
+   "title": "Precision Rooter & Drain — company website",
+   "publisher": "Contractor's own website (not an official source)",
+   "official": false,
+   "url": "https://www.precisionrooterdrain.com/",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: states the business 'also work with various landlords and help set up appointments with tenants', and that it is 'a Licensed Plumbing Contractor. Lic. # 961218'."
+  },
+  {
+   "id": "WEB-EPS",
+   "title": "Expert Plumbing Solutions — contact page",
+   "publisher": "Contractor's own website (not an official source)",
+   "official": false,
+   "url": "https://www.eplumbingsolutions.com/contact-us",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: contractor-stated 'License # 977638', address 1465 44th Avenue, phone (415) 531-5340, email paul@eplumbingsolutions.com (matched to the CSLB record)."
+  },
+  {
+   "id": "WEB-FDL",
+   "title": "FDL Plumbing — company website",
+   "publisher": "Contractor's own website (not an official source)",
+   "official": false,
+   "url": "https://fdlplumbing.com/",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: contractor-stated 'License # 1086935'; 'Master Plumber Francisco De Leon'; service list includes bathroom and kitchen remodels."
+  },
+  {
+   "id": "WEB-WDC",
+   "title": "We Do Construction — company website",
+   "publisher": "Contractor's own website (not an official source)",
+   "official": false,
+   "url": "https://www.wedoconstructions.com/",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: design-build GC, 'CSLB Lic. # 1096552' (B General Building + C-36 Plumbing), self-reported '500+ permits pulled', 'Google 5.0 (160 reviews)', 'Yelp 5.0 (101)'."
+  },
+  {
+   "id": "HOUZZ-ACE",
+   "title": "Ace Plumbing and Rooter — Houzz project profile",
+   "publisher": "Houzz (not an official source)",
+   "official": false,
+   "url": "https://www.houzz.com/professionals/plumbers/ace-plumbing-and-rooter-pfvwus-pf~1512016390",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 'CA Lic #829071', San Francisco CA 94116."
+  },
+  {
+   "id": "HOMEOA-FDL",
+   "title": "FDL Plumbing, Inc. — HomeAdvisor listing",
+   "publisher": "HomeAdvisor (not an official source)",
+   "official": false,
+   "url": "https://www.homeadvisor.com/rated.fdlplumbinginc.136969159.html",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 5.0 / 41 reviews; trade license number 1086935, expiration 10/31/2026 as listed by HomeAdvisor."
+  },
+  {
+   "id": "BUILDZOOM-EPS",
+   "title": "Expert Plumbing Solutions — BuildZoom contractor profile",
+   "publisher": "BuildZoom (not an official source)",
+   "official": false,
+   "url": "https://www.buildzoom.com/contractor/expert-plumbing-solutions",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 'Verified License' flag, address 1465 44th Ave, San Francisco, phone (415) 531-5340, BZ score 128."
+  },
+  {
+   "id": "GREASETRAP-ACE",
+   "title": "Ace Plumbing & Rooter, Inc. — Greasetrap Locator listing",
+   "publisher": "Greasetrap Locator (not an official source)",
+   "official": false,
+   "url": "https://greasetraplocator.com/places/ace-plumbing-rooter-inc/",
+   "accessed": "2026-11-06",
+   "verifies": "Snapshot only: 'CA License #829071 (C-36, C-16)', phone +1 415-824-6444."
+  },
+  {
+   "id": "THIRDPARTY-DIR",
+   "title": "Licensed Contractors in San Francisco, California",
+   "publisher": "contractorlicenseca.com (third-party directory, not an official source)",
+   "official": false,
+   "url": "https://contractorlicenseca.com/city/san-francisco/",
+   "accessed": "2026-11-06",
+   "verifies": "CONTRADICTED BY THE OFFICIAL RECORD: this directory associates CSLB #297604 with 'Cahill Contractors'. The official CSLB record for #297604 is D G Construction Co. See Flagged for Review item FL-08."
+  }
+ ],
+ "_amounts_policy": "Quote amounts are withheld from this archived data file: no official source confirms them. The current figures and their labels are maintained in site-data/ and published on the canonical site root."
 }
