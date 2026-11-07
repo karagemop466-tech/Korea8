@@ -28,6 +28,5 @@ repository root (which is what GitHub Pages serves). The build enforces:
 
 ## Integrity note
 
-Sensitive internal scoping details from the brief are intentionally excluded from every
-published page and from these data files. The requirements list contains only the
-public-safe restatements needed to source the work.
+These data files and the published pages contain only publicly verifiable,
+officially sourced material plus clearly labeled owner-provided items.

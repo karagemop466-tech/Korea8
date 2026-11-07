@@ -1,25 +1,109 @@
 {
-  "meta": {
-    "title": "Requirements — Bathtub Wastewater Overflow Trip Lever",
-    "compiled": "2026-11-06",
-    "compiled_by": "session arena-82aa8544",
-    "provenance_note": "Each requirement is a public-safe restatement of a verbatim statement in the project brief (2026-11-06 session). No requirements were inferred beyond the brief. Sensitive internal scoping decisions intentionally excluded from all published pages; see project/README.md.",
-    "source_of_record": "project/requirements.json (this file)"
+ "meta": {
+  "title": "Requirements — Bathtub Wastewater Overflow Trip Lever",
+  "compiled": "2026-11-07",
+  "compiled_by": "session arena-82aa8544; re-verified and republished by final integration session arena/126691d6-korea8 on 2026-11-07",
+  "provenance_note": "Each requirement is a public-safe restatement of a verbatim statement in the project brief. No requirements were inferred beyond the brief.",
+  "source_of_record": "project/requirements.json (this file)"
+ },
+ "requirements": [
+  {
+   "id": "R-01",
+   "category": "Problem",
+   "requirement": "Bathtub wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall and must be removed/repaired.",
+   "source": "Project brief (2026-11-06), problem statement",
+   "status": "Open"
   },
-  "requirements": [
-    {"id": "R-01", "category": "Problem", "requirement": "Bathtub wastewater overflow trip lever is stuck inside the hidden plumbing behind the wall and must be removed/repaired.", "source": "Project brief (2026-11-06), problem statement", "status": "Open"},
-    {"id": "R-02", "category": "Access", "requirement": "The overflow is in a hard-to-access area; opening drywall to reach the plumbing is a possible but non-preferred outcome.", "source": "Project brief (2026-11-06), problem statement", "status": "Open"},
-    {"id": "R-03", "category": "History", "requirement": "5+ licensed plumbers have already been unable to remove it from above without concern over destroying the hidden plumbing behind the wall.", "source": "Project brief (2026-11-06), provider search section", "status": "Confirmed by brief"},
-    {"id": "R-04", "category": "Preference", "requirement": "Removal from above is the preferred outcome if a provider can perform it safely.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-05", "category": "Fallback", "requirement": "If above-access is not possible, the accepted approach recommended by consulted plumbers is working from below.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-06", "category": "Access", "requirement": "The space below is a storage unit; below-floor work may require opening the drywall ceiling to access the hidden plumbing.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-07", "category": "Vendor", "requirement": "A single coordinated service must perform both the plumbing work and the drywall (ceiling) opening and restoration — one accountable vendor for both trades.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-08", "category": "Vendor", "requirement": "The vendor must be a licensed plumber or contractor.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-09", "category": "Location", "requirement": "The vendor must service San Francisco.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-10", "category": "Environment", "requirement": "Vendor must have experience doing delicate work in a sensitive environment: the unit is tenant-occupied.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-11", "category": "Vendor", "requirement": "Candidate vendors must be surfaced from review-backed services (e.g., Yelp and similar review platforms) for this specific type of work.", "source": "Project brief (2026-11-06), provider search section", "status": "Open"},
-    {"id": "R-12", "category": "Evidence", "requirement": "Reference photos of the work area may be supplied later; until then, planning proceeds from the written description only.", "source": "Project brief (2026-11-06), provider search section", "status": "Pending photos"},
-    {"id": "R-13", "category": "Deliverable", "requirement": "Collect, organize, and analyze the full requirements list plus the three received estimates into a reviewable dashboard with per-row source links.", "source": "Project brief (2026-11-06), goal statement", "status": "In progress (this site)"},
-    {"id": "R-14", "category": "Verification", "requirement": "Every published data row must carry a source link; values that cannot be confirmed from an official source are left blank and flagged as unverified — never inferred.", "source": "Project brief (2026-11-06), verification section", "status": "Enforced by site build"}
-  ]
+  {
+   "id": "R-02",
+   "category": "Access",
+   "requirement": "The overflow is in a hard-to-access area; opening drywall to reach the plumbing is a possible but non-preferred outcome.",
+   "source": "Project brief (2026-11-06), problem statement",
+   "status": "Open"
+  },
+  {
+   "id": "R-03",
+   "category": "History",
+   "requirement": "5+ licensed plumbers have already been unable to remove it from above without concern over destroying the hidden plumbing behind the wall.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Confirmed by brief"
+  },
+  {
+   "id": "R-04",
+   "category": "Preference",
+   "requirement": "Removal from above is the preferred outcome if a provider can perform it safely.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-05",
+   "category": "Fallback",
+   "requirement": "If above-access is not possible, the accepted approach recommended by consulted plumbers is working from below.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-06",
+   "category": "Access",
+   "requirement": "The space below is a storage unit; below-floor work may require opening the drywall ceiling to access the hidden plumbing.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-07",
+   "category": "Vendor",
+   "requirement": "A single coordinated service must perform both the plumbing work and the drywall (ceiling) opening and restoration — one accountable vendor for both trades.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-08",
+   "category": "Vendor",
+   "requirement": "The vendor must be a licensed plumber or contractor.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-09",
+   "category": "Location",
+   "requirement": "The vendor must service San Francisco.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-10",
+   "category": "Environment",
+   "requirement": "Vendor must have experience doing delicate work in a sensitive environment: the unit is tenant-occupied.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-11",
+   "category": "Vendor",
+   "requirement": "Candidate vendors must be surfaced from review-backed services (e.g., Yelp and similar review platforms) for this specific type of work.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Open"
+  },
+  {
+   "id": "R-12",
+   "category": "Evidence",
+   "requirement": "Reference photos of the work area may be supplied later; until then, planning proceeds from the written description only.",
+   "source": "Project brief (2026-11-06), provider search section",
+   "status": "Pending photos"
+  },
+  {
+   "id": "R-13",
+   "category": "Deliverable",
+   "requirement": "Collect, organize, and analyze the full requirements list plus the three received estimates into a reviewable dashboard with per-row source links.",
+   "source": "Project brief (2026-11-06), goal statement",
+   "status": "In progress (this site)"
+  },
+  {
+   "id": "R-14",
+   "category": "Verification",
+   "requirement": "Every published data row must carry a source link; values that cannot be confirmed from an official source are left blank and flagged as unverified — never inferred.",
+   "source": "Project brief (2026-11-06), verification section",
+   "status": "Enforced by site build"
+  }
+ ]
 }

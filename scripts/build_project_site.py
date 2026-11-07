@@ -103,8 +103,13 @@ def page(title, active, body, description=""):
   <p>Bathtub wastewater overflow trip lever — requirements, estimates &amp; provider research ·
      Built {BUILD_STAMP} · Data: <a href="https://github.com/karagemop466-tech/Korea8/tree/main/project" target="_blank" rel="noopener">project/ (GitHub)</a> ·
      Board: <a href="https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md" target="_blank" rel="noopener">COORDINATION.md</a></p>
-  <p class="muted">Related briefs (parallel sessions): <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
+  <p class="muted">This dashboard is the canonical project site (resolved 2026-11-07 — see <a href="flagged-for-review.html#F-11">F-11</a>).
+     Archived parallel-session briefs (superseded drafts, kept for traceability — each carries an archive banner):
+     <a href="trip-lever/executive-summary.html">trip-lever/ dossier</a> ·
      <a href="bathroom-overflow/index.html">bathroom-overflow/ field brief</a> ·
+     <a href="bathtub-overflow/index.html">bathtub-overflow/ data dossier</a> ·
+     <a href="bathtub/index.html">bathtub/ independent verification dossier</a> ·
+     <a href="docs/bathtub-summary.html">docs/ bathtub summary</a>.
      Legacy archive (unrelated prior project, preserved): <a href="docs/index.html">DOE GEMS evidence site</a>.
      Licenses re-verified {escape(providers["meta"]["verified_date"])} via official CSLB pages — statuses can change; re-check before contracting.</p>
 </footer>
@@ -142,7 +147,12 @@ for e in estimates["estimates"]:
 idx_providers = []
 for p in multi_trade + documented:
     enforce(p["source_links"], f"provider {p['id']} (index mini-table)")
-    tag = "multi-trade license (B + C-36)" if "B General Building" in p["classifications"] else "documented tub W&amp;O job in SF"
+    if "B General Building" in p["classifications"]:
+        tag = "multi-trade license (B, with C-36)" if "C-36 Plumbing" in p["classifications"] else "B general building (multi-trade prime)"
+    elif "B-2 Residential Remodeling" in p["classifications"]:
+        tag = "B-2 residential remodeling license"
+    else:
+        tag = "documented tub W&amp;O job in SF"
     idx_providers.append([
         f'<a href="providers.html#{p["id"]}">{escape(p["name"])}</a>',
         f'<a class="srclink" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={p["license_number"]}" target="_blank" rel="noopener">#{p["license_number"]}</a>',
@@ -165,10 +175,10 @@ idx_body = f"""
 </section>
 
 <section class="cards">
-  <div class="card"><div class="card-num">3</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
-  <div class="card"><div class="card-num">7</div><div class="card-label">SF providers with<br>CSLB-active licenses</div></div>
-  <div class="card"><div class="card-num">3</div><div class="card-label">providers licensed for a<br>multi-trade contract (B)</div></div>
-  <div class="card"><div class="card-num">1</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
+  <div class="card"><div class="card-num">{len(estimates["estimates"])}</div><div class="card-label">estimates received<br>(2026-08-30, unverified)</div></div>
+  <div class="card"><div class="card-num">{len(providers["providers"])}</div><div class="card-label">listed providers, all licenses<br>re-verified 2026-11-07 (CSLB)</div></div>
+  <div class="card"><div class="card-num">{len(multi_trade)}</div><div class="card-label">can prime a multi-trade<br>(plumbing+drywall) contract</div></div>
+  <div class="card"><div class="card-num">{len(documented)}</div><div class="card-label">documented tub W&amp;O<br>replacement job in SF</div></div>
   <div class="card card-warn"><div class="card-num">{len(flagged["flags"])}</div><div class="card-label">items flagged<br>for owner review</div></div>
 </section>
 
@@ -179,7 +189,7 @@ idx_body = f"""
 </section>
 
 <section>
-  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All 7 providers →</a></div>
+  <div class="sec-head"><h2>Shortlist starters</h2><a class="more" href="providers.html">All {len(providers["providers"])} providers →</a></div>
   {table(["Company", "CSLB license (official)", "Classifications", "Why shortlisted"], idx_providers)}
 </section>
 
@@ -505,7 +515,7 @@ outputs = {
     "estimates.html": page("Estimates", "estimates.html", est_body,
                            "The three received estimates with verification status and third-party cost benchmarks."),
     "providers.html": page("Providers", "providers.html", prov_body,
-                           "Seven San Francisco providers with CSLB-verified license statuses, classifications, reviews and source links."),
+                           f"{len(providers['providers'])} San Francisco-area providers with CSLB-verified license statuses (re-verified {providers['meta']['verified_date']}), classifications, reviews and source links."),
     "technical-approach.html": page("Technical Approach", "technical-approach.html", tech_body,
                                     "Trip lever mechanics, access paths, plumbing code access requirements and licensing structure."),
     "sources.html": page("Sources", "sources.html", src_body,
