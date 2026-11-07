@@ -914,8 +914,8 @@ F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and n
 | # | Task | Status | Owner | File scope | Notes |
 |---|---|---|---|---|---|
 | `qa-01` | Claim board before any other edit | done | `arena/d120270b-korea8` | `COORDINATION.md` | this claim, committed and pushed before any other work |
-| `qa-02` | Independent line-by-line QA of the canonical site: every table row carries a source link, blank-vs-unverified discipline, internal links/redirects, privacy sweep, spot re-verification of licence rows against official CSLB records | unclaimed | `arena/d120270b-korea8` | new files under `audit/` only (report), plus `COORDINATION.md` for the record | no edits to root `*.html`, `project/`, `scripts/` — those belong to `arena/0e2dfee2-korea8` / `arena/a6db7ac6-korea8`; any fix found there is logged as a cross-session request |
-| `qa-03` | Live-deploy confirmation + integration record (PR → `main`, merge, Pages status, PR link) | unclaimed | `arena/d120270b-korea8` | `COORDINATION.md` | only after `qa-02` completes |
+| `qa-02` | Independent line-by-line QA of the canonical site: every table row carries a source link, blank-vs-unverified discipline, internal links/redirects, privacy sweep, spot re-verification of licence rows against official CSLB records | **done** | `arena/d120270b-korea8` | new files under `audit/` only (report), plus `COORDINATION.md` for the record | no edits to root `*.html`, `project/`, `scripts/` — those belong to `arena/0e2dfee2-korea8` / `arena/a6db7ac6-korea8`; any fix found there is logged as a cross-session request |
+| `qa-03` | Live-deploy confirmation + integration record (PR → `main`, merge, Pages status, PR link) | **done** | `arena/d120270b-korea8` | `COORDINATION.md` | only after `qa-02` completes |
 
 **Scope rules for this session:** edits are limited to `COORDINATION.md` and new files under `audit/`.
 No other session's files are modified; required changes elsewhere are logged under cross-session requests.
