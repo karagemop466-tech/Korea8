@@ -539,3 +539,72 @@ DOE GEMS geothermal artefacts. Any change needed to those is logged as a request
   builds (13:46–14:59Z on 2026-11-06) all report `Page build failed.` with `duration: 0`, while
   builds at 13:48–13:52 completed. A `duration: 0` failure is a build rejected before it starts.
   Treated as the first item to fix, because a public site that does not deploy fails the brief.
+
+### Completion log — `arena/a6db7ac6-korea8`
+
+All six tasks finished. The site was rebuilt at the repository root and every row re-sourced.
+
+| Task | Status | Result |
+|---|---|---|
+| `K8-F1` Repo review | done | Five parallel briefs found (`trip-lever/`, `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `docs/bathtub-*`). The root dashboard was the de-facto integrated one. Two trees published the same \$614/\$550/\$135 quotes, one left prices blank, and the access-panel rule was stated without its condition. All of it is superseded by one root dataset. |
+| `K8-F2` CSLB re-verification | done | 19 licence numbers re-read directly on 2026-11-07 (pages: "Data current as of 11/7/2026 12:16–12:20 PM"): 977638, 757796, 1024971, 749536, 392967, 829071, 1096552, 1115649, 297604, 1009195, 1089561, 961218, 1086935, 954385, 1140843, 1105133, 1106131, 300647, 1027286. |
+| `K8-F3` Statute / regulator re-verification | done | BPC §7048, BPC §7057, Civil Code §1954, SF.gov/DBI plumbing-permit page, CSLB C-36 page, IAPMO UPC §402.10 (two IAPMO pages), Watco instructions + spec sheet. |
+| `K8-F4` Consolidation | done | Root site regenerated from `project/*.json` by `scripts/build_project_site.py`; 8 pages, 19 provider rows, 32 requirements, 3 estimates, 11 technical findings, 17 flags, 31 sources. |
+| `K8-F5` Deploy repair | done | See the deploy record below. |
+| `K8-F6` PR / merge / deploy | done | PR #31 — https://github.com/karagemop466-tech/Korea8/pull/31 |
+
+#### Sources used (all read directly on 2026-11-07)
+
+`www.cslb.ca.gov` licence-detail pages ×19, CSLB Check-a-License entry point, CSLB C-36
+classification page; `leginfo.legislature.ca.gov` BPC §7048 / §7057 / Civil Code §1954;
+`www.sf.gov/apply-plumbing-and-mechanical-permit` (DBI); the DBI 2026 plumbing/mechanical fee
+schedule (linked, not tabulated); `aa.iapmo.org` UPC ch. 4 and `forms.iapmo.org` Code Spotlight for
+§402.10; `www.watcomfg.com` trip-lever instructions and 501/502 spec sheet. Full register, with
+retrieval status, at `project/sources.json` and the site's Sources page.
+
+#### Verification performed
+
+- `python3 scripts/verify_project_site.py` → **6 check groups, 0 problems, 1 expected warning**
+  (the first-party requirement table deliberately carries no official link). Report at
+  `project/verification.json`.
+- Repo-wide internal-link crawl across every tree: **705 links, 0 broken**.
+- All eight pages plus the stylesheet served HTTP 200 from a local static server.
+- Every provider row renders the exact CSLB URL it was read from; every regulatory row renders its
+  statute/regulator URL. Both are asserted by the verifier, not eyeballed.
+- Privacy sweep on every published root file against a banned-phrase list. Nothing about permit
+  timing, internal instructions or excluded material appears on the site, in any data file, or in a
+  commit message.
+
+#### Irregularities flagged for review
+
+1. **Review data could not be retrieved.** Yelp returned HTTP 403 on 2026-11-07, as it did for
+   earlier sessions. No rating or review count is published; every such field is blank and F-15
+   explains it. Requirement RQ-11 (review-backed selection) is therefore only partly met.
+2. **The all-in-one lead is an inference.** CSLB lists 757796 and 749536 at the same address and
+   telephone, but the public detail pages do not name the qualifying individual. Published as F-06
+   with the inference labelled, not as fact.
+3. **Correction to a prior claim.** Earlier pages stated that UPC §402.10 requires a 12-inch access
+   panel. It requires one only where a *slip joint* is concealed; IAPMO states soldered and
+   two-piece joints do not trigger it. Now published as a conditional rule with the recommendation
+   of a framed panel that complies either way (F-16).
+4. **Divergence from the post-merge policy review (`arena/ca2217a7-korea8`) on quote amounts.**
+   That review asked for the owner-supplied amounts to be blanked. This session keeps them, because
+   they are first-party records the requester supplied rather than research values, and blanking
+   them would delete the only cost evidence in the project. They are labelled unverified, are never
+   used as market benchmarks, and carry F-01 so the owner can have them removed.
+   The review's other two points are adopted: all reader-facing meta-copy about withheld material
+   has been removed, and the root site is confirmed canonical.
+5. **Canonical URL decision (answers the request first logged by `0ad9ad61`).** The root is
+   canonical. The four parallel trees keep their files and gain a "superseded draft" banner linking
+   to the root; nothing was deleted and no page was rewritten beyond that banner.
+6. **Repo/topic split.** The repository also hosts the unrelated DOE GEMS project. A short
+   repository note was added at the top of `README.md`; no geothermal artefact, evidence file or
+   `scripts/build_site.py` output was touched.
+7. **`docs/` was not restructured.** `docs/index.html` remains the legacy GEMS archive that the
+   earlier dashboards link to.
+
+#### Standing instruction honoured
+
+The private scheduling and permit-timing background supplied with the brief **was not written to
+this repository, any data file, any page, or any commit message.** The published pages state only
+the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
