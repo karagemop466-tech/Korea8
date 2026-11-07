@@ -907,3 +907,16 @@ legacy Pages status is not treated as proof of the current commit.
 | Local checks | 22/22 verifier checks, 10 unit tests, pytest 10 passed, local HTTP 200 for canonical pages/CSS/GEMS docs/redirect stub |
 
 F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and non-blocking. No provider was contacted or booked.
+---
+
+## Session `arena/d120270b-korea8` — independent line-by-line QA of the canonical site + final integration record
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `qa-01` | Claim board before any other edit | done | `arena/d120270b-korea8` | `COORDINATION.md` | this claim, committed and pushed before any other work |
+| `qa-02` | Independent line-by-line QA of the canonical site: every table row carries a source link, blank-vs-unverified discipline, internal links/redirects, privacy sweep, spot re-verification of licence rows against official CSLB records | unclaimed | `arena/d120270b-korea8` | new files under `audit/` only (report), plus `COORDINATION.md` for the record | no edits to root `*.html`, `project/`, `scripts/` — those belong to `arena/0e2dfee2-korea8` / `arena/a6db7ac6-korea8`; any fix found there is logged as a cross-session request |
+| `qa-03` | Live-deploy confirmation + integration record (PR → `main`, merge, Pages status, PR link) | unclaimed | `arena/d120270b-korea8` | `COORDINATION.md` | only after `qa-02` completes |
+
+**Scope rules for this session:** edits are limited to `COORDINATION.md` and new files under `audit/`.
+No other session's files are modified; required changes elsewhere are logged under cross-session requests.
+No private/internal brief content is recorded in any file or commit message.
