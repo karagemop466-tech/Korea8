@@ -50,8 +50,8 @@
     },
     {
       "topic": "Deployment",
-      "result": "Pending this integration merge; prior live deployment is not proof of the new commit. Parallel main ranking work was preserved during conflict resolution.",
-      "evidence": "overflow-integration/data/deployment.json"
+      "result": "PR #52 merged as 3c37250; workflow run 42534974124 and Pages build succeeded for the exact commit; cache-busted live index/ranking/flags returned merged content.",
+      "evidence": "overflow-integration/data/deployment.json; COORDINATION.md"
     }
   ]
 }
