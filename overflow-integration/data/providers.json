@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "P-01",
@@ -38,7 +38,8 @@
         "F-01",
         "F-14",
         "F-15"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-02",
@@ -81,7 +82,8 @@
         "F-01",
         "F-14",
         "F-16"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-03",
@@ -122,7 +124,8 @@
         "F-01",
         "F-17",
         "F-18"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-04",
@@ -161,7 +164,8 @@
         "F-03",
         "F-04",
         "F-05"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-05",
@@ -200,7 +204,8 @@
         "F-03",
         "F-04",
         "F-12"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-06",
@@ -239,7 +244,8 @@
         "F-03",
         "F-04",
         "F-29"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-07",
@@ -276,7 +282,8 @@
       "flags": [
         "F-12",
         "F-30"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-08",
@@ -314,7 +321,8 @@
       "flags": [
         "F-14",
         "F-20"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-09",
@@ -354,7 +362,8 @@
       "additional_status": "",
       "flags": [
         "F-20"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-10",
@@ -391,7 +400,8 @@
       "additional_status": "",
       "flags": [
         "F-19"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-11",
@@ -428,7 +438,8 @@
       "flags": [
         "F-07",
         "F-20"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-12",
@@ -463,7 +474,8 @@
       "additional_status": "",
       "flags": [
         "F-08"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-13",
@@ -498,7 +510,8 @@
       "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
       "flags": [
         "F-10"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-14",
@@ -534,7 +547,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-15",
@@ -569,7 +583,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-16",
@@ -603,7 +618,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "CSLB also records $2,000,000 liability insurance and a $100,000 LLC employee/worker bond.",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-17",
@@ -636,7 +652,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-18",
@@ -669,7 +686,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-19",
@@ -702,7 +720,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "License reissued to another entity 07/06/2026.",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-20",
@@ -736,7 +755,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-21",
@@ -774,7 +794,8 @@
       "flags": [
         "F-11",
         "F-31"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-22",
@@ -809,7 +830,8 @@
       "additional_status": "License under Contractors Bond Suspension. Recorded bond cancellation date 08/16/2026. CSLB notes a received replacement bond may not yet be processed.",
       "flags": [
         "F-09"
-      ]
+      ],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-23",
@@ -842,7 +864,8 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "recheck_2026_11_08": "Matched CSLB licence-detail page field by field on 2026-11-08"
     },
     {
       "id": "P-24",
@@ -875,7 +898,8 @@
       "additional_status": "",
       "flags": [
         "F-13"
-      ]
+      ],
+      "recheck_2026_11_08": "No CSLB record located; identity unresolved"
     }
   ]
 }

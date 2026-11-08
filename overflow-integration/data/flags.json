@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "F-01",
@@ -529,6 +529,93 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Medium",
+      "category": "Verification",
+      "title": "Public phone number differs between the company site and the CSLB record",
+      "detail": "Rapid Flow's own site advertises 844-BAY-FLOW, while the CSLB licence record publishes (415) 866-8401. This analysis lists the CSLB number so the number traces to a government record, but the two were not reconciled by contacting the company.",
+      "action": "Call the CSLB-listed number, or confirm the 844 number is the same business before relying on it.",
+      "source_ids": [
+        "RF",
+        "CSLB-1115649"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "status": "Open"
+    },
+    {
+      "id": "F-38",
+      "severity": "Medium",
+      "category": "Source quality",
+      "title": "The strongest technical case page also renders a 404 block",
+      "detail": "The Heise's Ingleside project page returns case content and an embedded 'Page Not Found (404)' section in the same response. The case wording is usable as a company-published claim, but the page is unstable and cannot be relied on as a stable public citation without monitoring.",
+      "action": "Treat it as marketing content; confirm the ceiling-access approach by phone and re-check the URL before publishing it anywhere formal.",
+      "source_ids": [
+        "HEISE-INGLESIDE"
+      ],
+      "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "status": "Open"
+    },
+    {
+      "id": "F-39",
+      "severity": "Medium",
+      "category": "Provider identity",
+      "title": "Two licences share one address and phone number",
+      "detail": "Bay Area Plumbing #757796 and Save-On-Interior #749536 both record 335 14th Avenue, San Francisco and (415) 668-8000 on CSLB. Common ownership or control is not stated by CSLB and was not established. Which entity would hold a contract for this work is therefore unclear.",
+      "action": "Ask which legal entity issues the contract and confirm the licence number on the written agreement.",
+      "source_ids": [
+        "CSLB-757796",
+        "CSLB-749536"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "status": "Open"
+    },
+    {
+      "id": "F-40",
+      "severity": "High",
+      "category": "Verification gap",
+      "title": "Review evidence could not be verified for any provider",
+      "detail": "Yelp returned HTTP 403 to automated retrieval in this session, and the review figures visible on company sites are self-published badges. No star rating or review count was independently verified for any candidate, so review evidence contributes nothing to this ranking.",
+      "action": "Read the review platforms manually before contacting, and treat the ranking as licence-and-evidence based only.",
+      "source_ids": [
+        "YELP-HEISE",
+        "YELP-ACE",
+        "FAST",
+        "HEISE"
+      ],
+      "official_url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "status": "Open"
+    },
+    {
+      "id": "F-41",
+      "severity": "Medium",
+      "category": "Method limitation",
+      "title": "No provider was contacted, so acceptance and availability are unknown",
+      "detail": "This ranking is built from official records and published company material only. Whether any provider will take this job, when, at what price, and with which restoration party is unconfirmed for every row. The order is an inquiry sequence, not a shortlist of confirmed suppliers.",
+      "action": "Send one identical written scope to ranks 1 to 3 and record the answers before ranking them again on price and availability.",
+      "source_ids": [
+        "OWNER",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
+    },
+    {
+      "id": "F-42",
+      "severity": "Low",
+      "category": "Assessment independence",
+      "title": "Four rows were reported as lacking a source link; the report used an incomplete host list",
+      "detail": "An earlier independent audit reported four table rows without a recognised source link. All four do carry links; three point to codelibrary.amlegal.com, which is the City and County of San Francisco's published code host, and two to company sites that were missing from that audit's host list. The rows were re-checked and are correctly sourced; the audit's host list is incomplete, not the data.",
+      "action": "Extend that audit's official-host list to include the code publisher and the company sites, or note the limitation in its output.",
+      "source_ids": [
+        "SF-CODE-104",
+        "AYOOB",
+        "BERNAL",
+        "REPO"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "status": "Open"
     }
   ]
 }
