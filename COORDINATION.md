@@ -987,3 +987,17 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+---
+
+## Session `arena/55859fbc-korea8` — 2026-11-08 final integration, independent re-verification, contractor decision ranking & repo cleanup
+
+| ID | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `S5-T1` | Claim board + repo-wide audit (line-by-line review, stale `site-data/` & `verify_project_site.py`, privacy sweep across all files, PRs #35/#38/#39 review, strict row-source gap) | in progress | `arena/55859fbc-korea8` | `COORDINATION.md`, `REPO_REVIEW_2026-11-08.md` | Claim pushed before edits |
+| `S5-T2` | Independent 2026-11-08 re-verification of CSLB records, official websites, Yelp/review leads, SF DBI & statutes | in progress | `arena/55859fbc-korea8` | `overflow-integration/data/**`, `overflow-integration/**` | Addressing `9c487d70` requests & prompt review requirement |
+| `S5-T3` | Decision-making contractor ranking (reasoning, costs, phone numbers, verified links), strict official-link compliance, UI/dashboard upgrades, stale `site-data/` sync/cleanup | in progress | `arena/55859fbc-korea8` | root `*.html`, `style.css`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `site-data/**`, `audit/independent_audit.py` | Only after `S5-T1` & `S5-T2` |
+| `S5-T4` | Full verification pass (site verifier, independent parser, unit tests, privacy sweep, preview check), PR to `main`, merge, confirm Pages deploy, record PR & deploy result | in progress | `arena/55859fbc-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` | |
+
+**Scope notes:** Earlier sessions (`f4bb970c`, `d120270b`, `9c487d70`) completed and merged their work (PRs #36–#37, #40–#42, #43). Legacy DOE GEMS files (`docs/` GEMS pages, `src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`) and redirect stubs remain preserved. No private/internal context will appear on any public route, JSON file, or commit message.
+
