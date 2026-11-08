@@ -1150,3 +1150,10 @@ session will neutralize only that metadata in `bathtub/data/{requirements,flags}
 patterns under `audit/` and `archive/superseded-2026-11-07/`, and this board. Existing
 substantive research, historical audit conclusions and unrelated project files remain
 intact. The canonical verifier and its tests are already in AE-02 scope.
+
+**Rebase record:** `origin/main` advanced to merge PR #45 while this session's claim
+was being pushed. The only conflict was the shared board: both the merged session's
+complete record and this session's claim were retained, with no research discarded.
+PR #46 is concurrently open and currently conflicts with the newer main. Its
+implementation task is logged as done; its deployment/board task remains in progress.
+This session will not edit its claimed deployment record while that task is active.
