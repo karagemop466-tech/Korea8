@@ -14,12 +14,12 @@
     {
       "id": "C-02",
       "topic": "Conditional exemptions",
-      "rule": "SF Plumbing Code §104.2 exempts leak repair, unstopping and certain faucet/fixture work only when the stated no-cutting/no-removal conditions hold.",
+      "rule": "SF Plumbing Code §104.2 lists nine exempt items. The first three — leak repair, unstopping, and faucet/angle-stop/hose-bibb/roof-drain work — apply only when no cutting into or removal of piping is required.",
       "source_ids": [
         "SF-CODE-104"
       ],
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
-      "application": "Do not assume a stuck trip-lever replacement is exempt; match the exact scope to the text."
+      "application": "A stuck trip-lever body is not on the exempt list, and freeing it behind a wall normally means cutting or removing piping. Match the exact written scope to the text; do not assume exemption."
     },
     {
       "id": "C-03",
@@ -68,12 +68,12 @@
     {
       "id": "C-07",
       "topic": "Small-work exemption",
-      "rule": "BPC §7048 has a conditional under-$1,000 aggregate exemption; it does not apply when a building permit is required or the work is part of a larger operation.",
+      "rule": "BPC §7048 exempts from contractor licensing only work under $1,000 aggregate that is casual, minor or inconsequential and requires no building permit. It does not apply when the work is part of a larger operation, or to a person who advertises as a contractor or employs others to help perform the work.",
       "source_ids": [
         "BPC-7048"
       ],
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
-      "application": "The supplied quote amounts do not establish an exemption; confirm permit status and aggregate scope."
+      "application": "The three supplied amounts ($614, $550, $135) are each below $1,000, but the exemption also requires casual/minor work that needs no building permit, and SF.gov requires a permit before cutting into or replacing pipes. Confirm the permit position and the full aggregate scope rather than relying on a dollar figure."
     },
     {
       "id": "C-08",
@@ -126,6 +126,16 @@
       ],
       "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
       "application": "Fee category and total project cost are unconfirmed; fees are not contractor quotes."
+    },
+    {
+      "id": "C-13",
+      "topic": "Permit fee exemption",
+      "rule": "San Francisco Plumbing Code §104.5: replacement of a plumbing fixture or a gas appliance without a change in drainage, piping or venting does not require payment of the permit issuance fee.",
+      "source_ids": [
+        "SF-CODE-104"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "application": "A like-for-like overflow assembly swap may therefore carry no issuance fee, but whether this job changes piping or venting is unconfirmed. The $290 Category 1P figure is published as a conditional budget line, never as a total."
     }
   ]
 }

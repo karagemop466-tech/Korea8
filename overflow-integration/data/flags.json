@@ -585,6 +585,21 @@
         "REPO"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
+    },
+    {
+      "id": "F-41",
+      "severity": "Medium",
+      "category": "Cost basis",
+      "title": "Only three owner-reported amounts exist and none of them is a verified price",
+      "detail": "Ten ranked or partner entries carry no price at all. The three owner-supplied amounts cover three different scopes — removal/replacement of the assembly, lever/plug/spout with diverter, and adjustment of the handle only — and none of the three prices the ceiling opening, the drywall patch or texture. The official $290 Category 1P fee is conditional and §104.5 may remove the issuance fee entirely.",
+      "action": "Request one identical written scope from the top three ranked firms and treat every amount as unverified until it appears in a signed contract.",
+      "source_ids": [
+        "OWNER",
+        "SF-FEES",
+        "SF-CODE-104"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "status": "Open"
     }
   ]
 }

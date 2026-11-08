@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-08T23:06:46.176155+00:00",
+  "checked_at": "2026-11-08T23:07:44.437653+00:00",
   "result": "PASS",
-  "checks_run": 22,
-  "checks_passed": 22,
+  "checks_run": 25,
+  "checks_passed": 25,
   "checks_failed": 0,
-  "canonical_rows_checked": 274,
+  "canonical_rows_checked": 288,
   "tracked_html_files": 68,
   "checks": [
     {
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "274 rows; offenders: "
+      "detail": "288 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -111,6 +111,21 @@
       "check": "build report counts match data",
       "ok": true,
       "detail": ""
+    },
+    {
+      "check": "ranking cross-check scores, order and sources",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking cross-check table parity",
+      "ok": true,
+      "detail": "12/12"
+    },
+    {
+      "check": "canonical ranking rows carry official link, phone and reproducible score",
+      "ok": true,
+      "detail": "10 ranked + partner"
     },
     {
       "check": "no broken internal links across tracked HTML",

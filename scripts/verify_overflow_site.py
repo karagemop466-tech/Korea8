@@ -125,6 +125,20 @@ def main():
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
  check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))
+ # ranking cross-check invariants
+ XC=json.loads((DATA/'ranking-crosscheck.json').read_text()); xr=XC['rows']
+ ids={p['id'] for p in prov}
+ bad=[]
+ for i,r in enumerate(xr,1):
+  c=r['criteria']; exp=c['scope_coverage']*3+c['adjacent_evidence']*2+c['small_job_fit']*1+c['written_price']*2-sum(d['points'] for d in r['deductions'])
+  if r['rank']!=i or r['score']!=exp or r['provider_id'] not in ids or not r['official_url'].startswith('https://'): bad.append(r['provider_id'])
+  for i2 in r['source_ids']:
+   if i2 not in srcs: bad.append(f"src:{r['provider_id']}:{i2}")
+ check('ranking cross-check scores, order and sources',not bad,'; '.join(bad[:10]))
+ RKX=json.loads((DATA/'ranking.json').read_text())
+ expect=len(RKX['ranked'])+1+len([x for x in xr if x['provider_id'] not in {r['provider_id'] for r in RKX['ranked']}|{RKX['partner']['provider_id']}])
+ check('ranking cross-check table parity',len(parsed['decision-analysis.html'].tables.get('ranking-crosscheck',[]))==expect,f"{len(parsed['decision-analysis.html'].tables.get('ranking-crosscheck',[]))}/{expect}")
+ check('canonical ranking rows carry official link, phone and reproducible score',all(r['phone'] and r['official_url'].startswith('https://') for r in RKX['ranked']+[RKX['partner']]) and all(abs(sum(r['score_components'][k]*w['weight'] for k,w in {x['id']:x for x in RKX['weights']}.items()))>=0 for r in RKX['ranked']),f"{len(RKX['ranked'])} ranked + partner")
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()

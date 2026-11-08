@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "quote_date": "2026-08-30",
   "rows": [
     {
@@ -113,6 +113,7 @@
     "The supplied amounts are owner reports, not independently verified prices. They are shown only in an owner-reported column; verified amounts remain blank.",
     "The arithmetic spread is $479 and the highest supplied amount is about 4.55 times the lowest, but the scopes differ, so this is not a market range or a like-for-like comparison.",
     "None of the supplied scopes explicitly mentions opening and restoring the storage-unit ceiling. Silence is not an exclusion; obtain a combined written scope.",
-    "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category."
+    "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category.",
+    "Official fee context: DBI Table 1A-C (July 2026) lists Category 1P at $290, and San Francisco Plumbing Code §104.5 says replacing a fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. None of the three supplied amounts states whether any fee, access work or ceiling restoration is included."
   ]
 }
