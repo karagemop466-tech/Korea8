@@ -1154,3 +1154,12 @@ privacy checks during AE-02. Historical audits and sources were otherwise preser
 board-only conflict was resolved by retaining both the completed PR #45 deployment
 record and this session's full claim. The privacy cleanup was reapplied on top; no
 research or deployment history was dropped.
+
+**Third rebase record (2026-11-08):** main advanced through PRs #48, #46 and #50
+while this session was checking source evidence. The board conflict retained both
+completed deployment records and this claim. The flags conflict retained the newly
+merged repository-hygiene flag F-40, renumbered this session's new flags F-41–F-45,
+and preserved the amended F-37 explanation. No merged research was discarded.
+PR #49 is concurrently open and conflicts with newer main; its research tasks are
+marked done and its deployment task remains in progress. A comment requested that
+its owner preserve the newer ranking, quote-identity and evidence work when rebasing.
