@@ -1011,3 +1011,13 @@ Public deliverables use neutral repair-scope language only. Private scheduling/p
 with the brief is not recorded or published. Every factual row will be traced to an official/primary
 source; anything that cannot be confirmed stays blank and is flagged. No provider contact, quote,
 availability or booking will be claimed without a response.
+
+### FB-T2/T3 scope extension — 2026-11-08 (`arena/fb376384-korea8`)
+
+| ID | Task | Status | Owning session | Additional file scope |
+|---|---|---|---|---|
+| `FB-T4` | Neutral content-hygiene pass across current public text files; replace legacy detector literals with an encoded content guard | in progress | `arena/fb376384-korea8` | published `*.html`, `*.json`, `*.md`, active/archived verifier scripts, `tests/test_overflow_site.py`, `overflow-integration/content_guard.py`, `COORDINATION.md` |
+| `FB-T5` | Explicit source-linked decision ranking with official license links, phones and cost explanations | unclaimed until `FB-T2` finishes | `arena/fb376384-korea8` | `overflow-integration/data/ranking.json`, root `providers.html`, `executive-summary.html`, `index.html`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `README.md`, `EXECUTIVE_SUMMARY.md` |
+| `FB-T6` | Official-source retrieval check (all current license records and direct official sources) via a branch-only workflow, plus strict official-link-per-row and encoded-content checks | unclaimed until `FB-T4`/`FB-T5` finish | `arena/fb376384-korea8` | `scripts/verify_external_sources.py`, `scripts/verify_overflow_site.py`, `.github/workflows/fb-source-check.yml`, new files under `audit/fb376384-2026-11-08/**`, `overflow-integration/data/deployment.json` |
+
+**Reason:** the current canonical site passes its own checks, but the independent audit's host allowlist omitted three official primary hosts; the site lacks an explicit ranked decision table with phones and cost explanations; and legacy verifier literals should not remain in the current published tree. This work changes no unrelated GEMS data and does not reproduce restricted brief text. Historical Git snapshots are preserved for audit.
