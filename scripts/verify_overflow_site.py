@@ -3,8 +3,11 @@
 from __future__ import annotations
 import json,pathlib,re,sys,datetime
 from html.parser import HTMLParser
+from urllib.parse import urlparse
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
+sys.path.insert(0,str(ROOT/'overflow-integration'))
+from content_guard import restricted_hits
 PAGES=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
@@ -72,16 +75,38 @@ def main():
      q=Links();q.feed(target.read_text());
      if frag not in q.ids:broken.append(f'{p}:{u}')
  check('no broken internal links/anchors in canonical pages',not broken,'; '.join(broken[:20]))
- # row-source coverage: every tbody row in canonical tables has an external https link
- missing=[];rowcount=0
+ # Strict row-source coverage: every rendered row links an official/primary source host,
+ # and every blank cell is explicitly flagged unverified.
+ source_rows=load('sources.json')['rows']
+ trusted_hosts={urlparse(s['url']).netloc.lower() for s in source_rows
+                if s['kind'].startswith('official-') or s['kind'] in {'repository-primary','official-tool'}}
+ for name in ['providers.json','requirements.json','estimates.json','technical.json','compliance.json','reviews.json','flags.json','ranking.json']:
+  path=DATA/name
+  if not path.exists():continue
+  obj=load(name)
+  for r in obj.get('rows',[]):
+   u=r.get('official_url')
+   if u:trusted_hosts.add(urlparse(u).netloc.lower())
+   if name=='estimates.json':
+    for r2 in obj.get('official_fees',[]):
+     u2=r2.get('official_url')
+     if u2:trusted_hosts.add(urlparse(u2).netloc.lower())
+ def is_trusted(url):
+  host=urlparse(url).netloc.lower()
+  return host in trusted_hosts or host.endswith(('.gov','.ca.gov','.gob'))
+ missing=[];strict_missing=[];blank_bad=[];rowcount=0
  for p,t in texts.items():
-  l=Links();l.feed(t)
-  # parse rows with raw regex to retain hrefs
   for tbl in re.findall(r'<tbody>(.*?)</tbody>',t,re.S):
    for tr in re.findall(r'<tr>(.*?)</tr>',tbl,re.S):
     rowcount+=1
-    if not re.search(r'href="https://',tr):missing.append(f'{p}:{tr[:80]}')
- check('every canonical table row has an official/source link',not missing,f'{rowcount} rows; offenders: '+'; '.join(missing[:10]))
+    urls=re.findall(r'href="(https://[^"]+)"',tr)
+    if not urls:missing.append(f'{p}:{tr[:80]}')
+    elif not any(is_trusted(u) for u in urls):strict_missing.append(f'{p}:{tr[:100]}')
+    for cell in re.findall(r'<td[^>]*>(.*?)</td>',tr,re.S):
+     if 'class="blank"' in cell and 'pill unv' not in cell:blank_bad.append(f'{p}:{cell[:100]}')
+ check('every canonical table row has a source link',not missing,f'{rowcount} rows; offenders: '+'; '.join(missing[:10]))
+ check('every canonical table row has an official/primary source link',not strict_missing,f'{rowcount} rows; offenders: '+'; '.join(strict_missing[:10]))
+ check('every blank cell is explicitly flagged unverified',not blank_bad,'; '.join(blank_bad[:10]))
  # data invariants
  prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
@@ -117,10 +142,15 @@ def main():
  susp=[p['name'] for p in prov if p['status']=='Suspended']
  first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)
  check('suspended provider excluded from priority leads',all(n not in first_table for n in susp))
- # neutral public wording / no conflict markers / no placeholder literals
- banned=['private reason','must stay private','without a permit for this week','cannot pull a permit','cannot obtain a permit','<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
- hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
- check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
+ # neutral repair-scope wording / no conflict markers / no placeholder literals
+ markers=['<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
+ hits=[]
+ for p,t in texts.items():
+  for w in markers:
+   if w in t:hits.append((p,w))
+  digests=restricted_hits(t)
+  if digests:hits.append((p,f'{len(digests)} restricted digests'))
+ check('neutral repair-scope wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())

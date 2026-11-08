@@ -6,7 +6,7 @@ Session `arena/64728bdf-korea8`, checked 2026-11-07. Full tables: https://karage
 **Verified facts (official sources only).**
 - Watco's trip-lever instructions service the overflow plate, linkage and drop cylinder *through the overflow opening from inside the tub* (steps 5–7). From-above is the documented first attempt for those parts; it does not cover replacing a damaged hidden tee/elbow.
 - SF.gov/DBI: a permit is needed before cutting into or replacing pipes that will be covered by a wall; City-registered licensed contractors can get plumbing permits online (Express Permit where eligible). Who may apply: A, B (scope-approved), C-4/C-36, C-16, C-20, C-54 (shower-pan only).
-- BPC §7057(b): a B contractor may prime a multi-trade (plumbing + drywall) job; BPC §7048: unlicensed exemption is <$1,000 *and* no-permit-required; Civil Code §1954: tenant entry on reasonable written notice (24 h presumed), normal business hours.
+- BPC §7057(b): a B contractor may prime a multi-trade (plumbing + drywall) job; BPC §7048: unlicensed exemption is <$1,000 *and* applies only when the work does not require a building permit; Civil Code §1954: tenant entry on reasonable written notice (24 h presumed), normal business hours.
 
 **Providers (CSLB-checked 2026-11-07; none contacted).** All-in-one structural fits (B+C-36 on one licence): Save-On-Interior #749536 (same CSLB address/phone as estimate firm Bay Area Plumbing #757796), Rapid Flow #1115649, Ace Plumbing & Rooter #829071, Ayoob & Peery #392967. C-36-only estimate firms: Expert Plumbing Solutions #977638, Fast Response #1024971.
 

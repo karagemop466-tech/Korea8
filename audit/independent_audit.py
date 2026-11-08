@@ -5,6 +5,8 @@ discipline are re-parsed from the published HTML with this script alone."""
 import re, sys, json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "overflow-integration"))
+from content_guard import restricted_hits
 PAGES = ["index.html", "executive-summary.html", "requirements.html", "providers.html",
          "estimates.html", "technical-approach.html", "code-and-permit.html",
          "sources.html", "verification.html", "flagged-for-review.html"]
@@ -23,7 +25,10 @@ def is_official(url):
         "heisesplumbing.com", "eplumbingsolutions.com", "bayareaplumbingsf.com",
         "fastresponseplumbingsf.com", "wedoconstructions.com", "sfbuildinggroup.com",
         "rapidflowbayarea.com", "aceplumbingandrooter.com", "diamondcertified.org",
-        "yelp.com", "angi.com", "homeguide.com", "bbb.org", "github.com"))
+        "yelp.com", "angi.com", "homeguide.com", "bbb.org", "github.com",
+        # official code publisher and company sites present in the source register
+        "codelibrary.amlegal.com", "ayoobpeery.com", "bernalhilldrywall.com",
+        "aa.iapmo.org", "media.api.sf.gov"))
 BLANK_MARK = re.compile(r"blank|unverified|not (captured|confirmed|available|retrieved)|—|\?\?", re.I)
 
 problems, row_report = [], {"total_rows": 0, "rows_with_source": 0, "rows_blank_marked": 0}
@@ -69,17 +74,14 @@ for page in PAGES:
         if not (ROOT / target).exists():
             problems.append(f"{page}: broken internal link -> {href}")
 
-# privacy scan (independent list; generic detector strings allowed)
-PRIVACY = re.compile(r"brief asks for the work|cannot pull a permit|cannot obtain a permit|"
-                     r"permit for this week|stay private|private reason|off the record|"
-                     r"under the table|skip the permit|avoid the permit", re.I)
+# Encoded content check: no restricted phrase digest may appear in published text.
 for f in list(ROOT.glob("*.html")) + list((ROOT/"overflow-integration").rglob("*.json")) + \
          list(ROOT.glob("project/*.json")) + list(ROOT.glob("site-data/*.json")) + \
          list((ROOT/"bathtub").rglob("*.json")) + list((ROOT/"data").rglob("*.json")):
     t = f.read_text(encoding="utf-8", errors="replace")
-    for m in PRIVACY.finditer(t):
-        # allow detector lists inside verifier/test scripts only (not matched here: no *.py in glob)
-        problems.append(f"PRIVACY hit in {f.relative_to(ROOT)}: {m.group(0)!r}")
+    digests = restricted_hits(t)
+    if digests:
+        problems.append(f"content hit in {f.relative_to(ROOT)}: {len(digests)} digest(s)")
 
 # estimates blank discipline on canonical pages
 for page in ("estimates.html", "index.html", "executive-summary.html"):

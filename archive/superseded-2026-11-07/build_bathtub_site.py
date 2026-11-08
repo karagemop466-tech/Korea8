@@ -777,7 +777,7 @@ ANALYSIS = [
      "what do they do when it will not come; who patches; will they pull the permit; who will be on site.",
      True, "flagged.html#F-08"),
     ("A10", "Nothing on this site records the requester's private constraints",
-     "The brief contained scheduling and permit background that the requester asked to keep private. No part of it was "
+     "legacy-content-token"
      "written to this repository, and none of it appears on any page. The site documents only DBI's published, "
      "publicly citable position on permits, which anyone could look up.",
      True, "flagged.html#F-15"),

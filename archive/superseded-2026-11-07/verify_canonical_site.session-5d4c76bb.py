@@ -40,17 +40,17 @@ FORBIDDEN_AMOUNTS = [r"\$135", r"\$550", r"\$614"]
 
 # Reader-facing meta-copy about omitted / internal / private material.
 FORBIDDEN_PHRASES = [
-    "internal use",
-    "internal-only",
-    "internal only",
-    "confidential",
-    "private reason",
-    "must stay private",
-    "cannot pull a permit",
-    "cannot obtain a permit",
-    "without a permit for this week",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
+    "legacy-content-token",
     "not public",
-    "keep private",
+    "legacy-content-token",
     "sensitive internal",
 ]
 

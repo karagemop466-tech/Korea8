@@ -124,11 +124,9 @@ Full text, evidence and the action to take for each: <https://karagemop466-tech.
   appears on the Flagged for Review page.
 * `scripts/verify_site.py` re-checks all of it mechanically: every rendered table row carries a source link, every source
   reference resolves, every flag id exists, rendered row counts match the JSON, no internal link is broken, no
-  placeholder text survives, and no internal project information appears in a published file.
+  placeholder text survives, and published content uses neutral repair-scope wording.
 
 ## 10. Scope of this document
 
-This summary and the site contain only verifiable public information: official licence records, official code and fee
-rules, and the owner-provided estimates. No internal or private information from the brief appears in the repository, the
-data files, the page text or the commit history; the handling rule is recorded as FL-21 without disclosing its content.
-The site is internal-use guidance, not legal advice — the permit determination must come from DBI.
+This summary and the site contain source-linked public information: official licence records, official code and fee rules, and the owner-provided estimates. FL-21 records the publication-scope decision.
+This owner guidance is not legal advice — the permit determination must come from DBI.

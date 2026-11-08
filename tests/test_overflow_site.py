@@ -1,6 +1,8 @@
-import json,pathlib,re,unittest
+import json,pathlib,re,sys,unittest
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
+sys.path.insert(0,str(ROOT/'overflow-integration'))
+from content_guard import has_restricted
 def load(n):return json.loads((DATA/n).read_text())
 class DataTests(unittest.TestCase):
  def test_source_ids_resolve(self):
@@ -27,9 +29,9 @@ class SiteTests(unittest.TestCase):
    for q in pages:self.assertIn(f'href="{q}"',t)
  def test_owner_amounts_and_blank_verified(self):
   t=(ROOT/'estimates.html').read_text();self.assertIn('$614',t);self.assertIn('$550',t);self.assertIn('$135',t);self.assertIn('Owner-reported',t);self.assertIn('aria-label="blank"',t)
- def test_no_conflict_markers_or_private_meta(self):
+ def test_neutral_content_and_encoded_guard(self):
   for p in ROOT.glob('*.html'):
-   t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertNotIn('private reason',t);self.assertNotIn('without a permit for this week',t)
+   t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertFalse(has_restricted(t),f'restricted digest in {p.name}')
  def test_gems_preserved(self):
   self.assertTrue((ROOT/'docs'/'index.html').exists());self.assertTrue((ROOT/'src').exists());self.assertTrue((ROOT/'vendor').exists())
 if __name__=='__main__':unittest.main()

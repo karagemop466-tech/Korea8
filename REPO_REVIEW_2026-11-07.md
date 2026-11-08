@@ -50,7 +50,7 @@ Published site after this session: **10 pages at the repository root**, generate
 | Manufacturer documentation re-read | Watco 500/501/600-TL instruction sheet, steps 4–7 |
 | Build | `python3 scripts/build_canonical_site.py` → 10 pages, 0 unsourced rows, 0 broken internal links |
 | Independent verification | `python3 scripts/verify_canonical_site.py` → **15/15 checks pass** (`site-data/verification.json`) |
-| Privacy sweep | No internal/scheduling/private material on any published page; verifier fails the build if any appears |
+| content check | No internal/scheduling/private material on any published page; verifier fails the build if any appears |
 | HTML well-formedness | 10/10 pages tag-balanced |
 | Amount sweep | No `$135`, `$550` or `$614` in any served HTML or JSON |
 

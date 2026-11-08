@@ -4,7 +4,7 @@
   "quote_date": "2026-08-30",
   "recorded": "2026-11-07",
   "source": "The three figures below are first-party data: they were given to this project by the property owner, who received them from the named companies on 2026-08-30. They are the requester's own records, not research findings.",
-  "verification": "No official source can confirm a private quotation. Each amount is therefore published with verified=false. Nothing has been added, rounded, averaged or inferred, and no market benchmark is substituted for a missing figure.",
+  "verification": "No official source can confirm an owner-supplied quotation. Each amount is therefore published with verified=false. Nothing has been added, rounded, averaged or inferred, and no market benchmark is substituted for a missing figure.",
   "why_not_blank": "The project rule blanks values that research could not confirm. These are not research values: they are the only cost evidence that exists for this job, supplied by the owner. Blanking them would delete primary data, so they are shown with an explicit unverified label and listed on the Flagged for Review page (F-01). Any figure the owner does not want public can be removed on request.",
   "not_published": "Third-party 'typical cost' benchmarks (HomeGuide, Angi and similar) were deliberately left out: they are not official sources and cannot be verified, so under the project rule they carry no place in a sourced table."
  },

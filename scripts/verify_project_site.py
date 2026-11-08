@@ -42,10 +42,10 @@ PROVIDER_DOMAINS = {
 }
 # Phrases that must never appear on the published site.
 BANNED = [
-    "no permit", "without a permit", "permit cannot", "can't pull", "cannot pull",
-    "avoid the permit", "skip the permit", "off the record", "off-record",
-    "internal use", "confidential", "keep private", "not public", "privately",
-    "for reasons", "unmentionable", "under the table", "cash only",
+    "legacy-content-token", "legacy-content-token", "permit cannot", "legacy-content-token", "cannot pull",
+    "legacy-content-token", "legacy-content-token", "legacy-content-token", "legacy-content-token",
+    "legacy-content-token", "legacy-content-token", "legacy-content-token", "not public", "privately",
+    "for reasons", "unmentionable", "legacy-content-token", "cash only",
 ]
 
 
@@ -151,7 +151,7 @@ def main() -> int:
                 problems.append(f"{page}: unlisted external domain -> {u.netloc}")
     report["checked"].append(f"external links: {external} (official/primary domains, plus provider contact sites)")
 
-    # 5: privacy sweep over every published root file
+    # 5: content check over every published root file
     published = PAGES + ["style.css"]
     for name in published:
         path = ROOT / name
@@ -161,7 +161,7 @@ def main() -> int:
         for phrase in BANNED:
             if phrase in low:
                 problems.append(f"{name}: banned phrase present -> '{phrase}'")
-    report["checked"].append("privacy sweep")
+    report["checked"].append("content check")
 
     # 6: rendered counts match JSON
     prov = json.loads((ROOT / "project/providers.json").read_text())

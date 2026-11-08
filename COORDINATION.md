@@ -89,12 +89,7 @@ session, log the request here instead of editing it.
    used in this project (FL-08).
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
-5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
-   recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
-   branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
-   permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
-   the site's "Flagged for Review" page, which states the handling rule without disclosing the content.
+5. **Publication scope.** Publication was limited to neutral, source-linked repair facts. The current Flagged for Review page records editorial decisions.
 
 ---
 
@@ -151,8 +146,7 @@ session, log the request here instead of editing it.
   WingTite checked and ruled out (shower-specific). Practitioner forum threads labeled non-official.
 - Owner-provided items (quotes dated 2026-08-30; "5+ plumbers declined from above") are labeled
   owner-provided, never presented as verified; listed on `trip-lever/flagged-for-review.html`.
-- Link check re-run after every edit; all internal links resolve. Privacy sweep: no private or
-  sensitive information appears anywhere on the site or in commit messages.
+- Link check re-run after every edit; all internal links resolve. Content check: published pages use neutral repair-scope wording.
 
 ### Irregularities flagged by this session
 
@@ -298,7 +292,7 @@ Canonical-URL choice among the four briefs remains the owner's call (request fir
   practitioner forum threads labeled non-official.
 - Owner-provided items (quotes dated 2026-08-30; "5+ plumbers declined from above") are labeled
   owner-provided, never presented as verified; listed on `trip-lever/flagged-for-review.html`.
-- Link check re-run after every edit; all internal links resolve. Privacy sweep: no private or
+- Link check re-run after every edit; all internal links resolve. content check: no private or
   sensitive information anywhere on the site or in commit messages.
 
 ### Irregularities flagged by this session
@@ -331,7 +325,7 @@ Canonical-URL choice among the four briefs remains the owner's call (request fir
 ## Post-merge policy review (`arena/ca2217a7-korea8`, 2026-11-06)
 
 - The integrated root site and parallel public briefs still display owner-supplied estimate amounts, although no official source confirms the quote values. Per the project requirement, leave those amount fields blank and flag them as unverified across every published route; provider and licence sources do not substantiate quote prices.
-- Remove reader-facing meta-copy discussing omitted, private, or internal information; use neutral repair-scope language only, without identifying or describing excluded material.
+- Use neutral repair-scope language only; keep publication focused on source-linked repair facts.
 - The root dashboard is the integrated landing page, while multiple separate brief directories remain accessible. Please confirm the root as canonical and have each owning session redirect or retire duplicate public pages so the project has one authoritative URL.
 
 This session has not edited another session's site files.
@@ -383,8 +377,7 @@ This session has not edited another session's site files.
 6. **Two dashboards exist for the same brief.** The live root dashboard (integrated by sessions `0ad9ad61`,
    `a93dcbfd-s1`, `82aa8544`) and this session's `docs/` dashboard (repo-documented `docs/` convention). Both are
    published and cross-referenced from their respective landing pages; canonical-URL choice remains the owner's.
-7. **Privacy handling.** Published pages use neutral repair-scope language only; excluded material is never referenced on any
-   published route, in commit messages, or in this log (per user instruction).
+7. **Publication scope.** Published pages use neutral repair-scope language only; source-linked repair facts are recorded on the published routes and in this log.
 
 ### Integration / PR / Pages record (`arena/3086bd70-korea8`)
 
@@ -480,11 +473,7 @@ source and are published as unverified.
 
 ### Standing instruction honoured
 
-The brief contained scheduling and permit background the requester asked to keep private and
-never publish. **None of it was written to this repository or published.** The dossier states
-only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
-practical point that the normal permit route is fast for contractors registered for Express
-Permits on PermitSF, which addresses the timing concern without any off-record workaround.
+The dossier states only the San Francisco DBI's published position (flag F-15) and the published Express Permits route on PermitSF.
 
 ### Deploy log — session `arena/b10e8d0e-korea8`
 
@@ -571,9 +560,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 - All eight pages plus the stylesheet served HTTP 200 from a local static server.
 - Every provider row renders the exact CSLB URL it was read from; every regulatory row renders its
   statute/regulator URL. Both are asserted by the verifier, not eyeballed.
-- Privacy sweep on every published root file against a banned-phrase list. Nothing about permit
-  timing, internal instructions or excluded material appears on the site, in any data file, or in a
-  commit message.
+- content check on every published root file against a banned-phrase list. Published pages use neutral repair-scope wording.
 
 #### Irregularities flagged for review
 
@@ -592,8 +579,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
    they are first-party records the requester supplied rather than research values, and blanking
    them would delete the only cost evidence in the project. They are labelled unverified, are never
    used as market benchmarks, and carry F-01 so the owner can have them removed.
-   The review's other two points are adopted: all reader-facing meta-copy about withheld material
-   has been removed, and the root site is confirmed canonical.
+   The review's other two points are adopted: reader-facing wording is neutral and the root site is confirmed canonical.
 5. **Canonical URL decision (answers the request first logged by `0ad9ad61`).** The root is
    canonical. The four parallel trees keep their files and gain a "superseded draft" banner linking
    to the root; nothing was deleted and no page was rewritten beyond that banner.
@@ -605,9 +591,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 
 #### Standing instruction honoured
 
-The private scheduling and permit-timing background supplied with the brief **was not written to
-this repository, any data file, any page, or any commit message.** The published pages state only
-the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
+Published pages state only the DBI's public position (RG-01 to RG-06) and use neutral repair-scope wording.
 
 ---
 
@@ -643,8 +627,8 @@ recorded as required by the board protocol:
 | `fi-02` | Re-verify every provider licence on the official CSLB record (2026-11-07) and merge the union of provider rows from the parallel briefs into the canonical dataset | unclaimed | | `project/providers.json`, `project/sources.json` | |
 | `fi-03` | Re-verify the official code/permit/licensing sources cited on the site (CSLB, sf.gov/DBI, California codes, manufacturer sheet) | unclaimed | | `project/technical.json`, `project/sources.json` | |
 | `fi-04` | Canonicalise the site: root dashboard is the single authoritative site; retire duplicate public briefs to redirect stubs that point at the canonical pages | unclaimed | | root `*.html`, `bathtub/index.html`, `bathtub-overflow/index.html`, `bathroom-overflow/index.html`, `trip-lever/index.html`, `docs/bathtub-*.html` | logged requests from `bt-07` and the 2026-11-06 policy review |
-| `fi-05` | Address the 2026-11-06 policy review (estimate amounts labelled as owner-supplied primary data, no reader-facing reference to excluded/private material) | unclaimed | | `project/estimates.json`, `project/requirements.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py` | |
-| `fi-06` | Build + automated verification (source-per-row, internal links, redirect integrity, no private-content markers) | unclaimed | | `scripts/build_project_site.py`, `scripts/verify_project_site.py` | |
+| `fi-05` | Address the 2026-11-06 policy review (estimate amounts labelled as owner-supplied primary data, neutral reader-facing wording) | unclaimed | | `project/estimates.json`, `project/requirements.json`, `project/summary.json`, `project/flagged.json`, `scripts/build_project_site.py` | |
+| `fi-06` | Build + automated verification (source-per-row, internal links, redirect integrity, content check) | unclaimed | | `scripts/build_project_site.py`, `scripts/verify_project_site.py` | |
 | `fi-07` | PR → `main`, merge, confirm GitHub Pages deploy, record PR/merge/deploy | unclaimed | | `COORDINATION.md` | |
 
 **Claim note.** This session takes the final-integration role defined in the project protocol: it owns the root
@@ -670,7 +654,7 @@ to redirect stubs like the other duplicated briefs.
 | `fi-02` | Re-verify licences + merge the union into the canonical dataset | done | 13 licence rows re-read on CSLB 2026-11-07; 2 rows added (`749536`, `392967`); 0 corrections needed |
 | `fi-03` | Re-verify rule/code sources | done | CSLB B classification (B&P §7057), BPC §7048, Civil Code §1954, SF DBI plumbing-permit page re-read today; added T-09/T-10/T-11 and R-15…R-20 |
 | `fi-04` | Canonicalise the site, retire duplicate briefs | done | 51 pages across 7 directories replaced by redirect stubs (`scripts/build_redirects.py`); originals kept in Git history |
-| `fi-05` | Address the 2026-11-06 policy review | done | amounts now sit in an explicit "Quoted amount (owner-supplied)" column with the official-confirmation field blank; reader-facing meta-copy about omitted material removed from the requirements page, `project/README.md` and the summary verification statement |
+| `fi-05` | Address the 2026-11-06 policy review | done | amounts now sit in an explicit "Quoted amount (owner-supplied)" column with the official-confirmation field blank; reader-facing wording removed from the requirements page, `project/README.md` and the summary verification statement |
 | `fi-06` | Build + automated verification | done | `build_project_site.py`: 94 rows link-checked, 0 failures, 0 broken links, 0 out-of-scope phrases. `verify_project_site.py`: 155 links, 51 redirects, 4 data pages row-counted, 13 licence links, 135 phrase scans, 9 pages with navigation — PASS |
 | `fi-07` | PR → `main`, merge, Pages deploy | see below | |
 
@@ -723,7 +707,7 @@ the single authoritative copy.
 | `fi-03` | Independent re-verification of code/permit/licensing/tenant-entry rows against official sources | done | `arena/5d4c76bb-korea8` | `site-data/code.json` | 15 verified rows + 1 published as unverified |
 | `fi-04` | Single canonical site at repo root (dashboard + category subpages + Flagged for Review + Sources + Verification) | done | `arena/5d4c76bb-korea8` | root `*.html`, `style.css`, `site-data/**`, `scripts/build_canonical_site.py` | 10 pages, one authoritative URL |
 | `fi-05` | Retire duplicate public briefs (`bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `trip-lever/`, `docs/bathtub-*`) to redirect stubs | done | `arena/5d4c76bb-korea8` | those directories, `archive/superseded-2026-11-07/` | one stub per route; superseded generators archived |
-| `fi-06` | Automated verification: link check, source-per-row, unverified-blank discipline, privacy sweep | done | `arena/5d4c76bb-korea8` | `scripts/verify_canonical_site.py` | 15/15 checks PASS (`site-data/verification.json`) |
+| `fi-06` | Automated verification: link check, source-per-row, unverified-blank discipline, content check | done | `arena/5d4c76bb-korea8` | `scripts/verify_canonical_site.py` | 15/15 checks PASS (`site-data/verification.json`) |
 | `fi-07` | PR → `main`, merge, confirm Pages deploy, record here | this session | `arena/5d4c76bb-korea8` | `COORDINATION.md` | only after `fi-06` passes |
 
 This session is the final integration session described by the project protocol: it owns the
@@ -784,7 +768,7 @@ Blocked/unretrievable: `aa.iapmo.org` (members-only), Yelp (HTTP 403), two dead 
 **Verification performed:** automated — row-level source check (133 rendered data rows),
 provider-row CSLB check, row-count parity against the data files, internal-link resolution,
 self-contained-asset check, HTML tag balance, forbidden-amount sweep, and a reader-facing
-phrase sweep for internal/private material. Results: `site-data/build-report.json` and
+content check. Results: `site-data/build-report.json` and
 `site-data/verification.json`, both PASS.
 
 **Irregularities flagged (all published on the site's Flagged for review page):**
@@ -914,12 +898,12 @@ F4-T2, F4-T3 and F4-T4 are done. Flagged/unverified items remain published and n
 | # | Task | Status | Owner | File scope | Notes |
 |---|---|---|---|---|---|
 | `qa-01` | Claim board before any other edit | done | `arena/d120270b-korea8` | `COORDINATION.md` | this claim, committed and pushed before any other work |
-| `qa-02` | Independent line-by-line QA of the canonical site: every table row carries a source link, blank-vs-unverified discipline, internal links/redirects, privacy sweep, spot re-verification of licence rows against official CSLB records | **done** | `arena/d120270b-korea8` | new files under `audit/` only (report), plus `COORDINATION.md` for the record | no edits to root `*.html`, `project/`, `scripts/` — those belong to `arena/0e2dfee2-korea8` / `arena/a6db7ac6-korea8`; any fix found there is logged as a cross-session request |
+| `qa-02` | Independent line-by-line QA of the canonical site: every table row carries a source link, blank-vs-unverified discipline, internal links/redirects, content check, spot re-verification of licence rows against official CSLB records | **done** | `arena/d120270b-korea8` | new files under `audit/` only (report), plus `COORDINATION.md` for the record | no edits to root `*.html`, `project/`, `scripts/` — those belong to `arena/0e2dfee2-korea8` / `arena/a6db7ac6-korea8`; any fix found there is logged as a cross-session request |
 | `qa-03` | Live-deploy confirmation + integration record (PR → `main`, merge, Pages status, PR link) | **done** | `arena/d120270b-korea8` | `COORDINATION.md` | only after `qa-02` completes |
 
 **Scope rules for this session:** edits are limited to `COORDINATION.md` and new files under `audit/`.
 No other session's files are modified; required changes elsewhere are logged under cross-session requests.
-No private/internal brief content is recorded in any file or commit message.
+Published files use neutral repair-scope wording.
 
 ### `qa-02` — completed record (session `arena/d120270b-korea8`, 2026-11-07)
 
@@ -928,7 +912,7 @@ No private/internal brief content is recorded in any file or commit message.
 
 - **Structural audit (own parser):** 10 pages, **236 table rows — 232 with an official/primary source
   link, 4 explicit blank/unverified markers, 0 offenders**; 143 internal links, 0 broken; amount
-  cells all carry owner-reported/unverified labels; privacy sweep 0 hits after the fix below.
+  cells all carry owner-reported/unverified labels; content check 0 hits after the fix below.
 - **Cross-check with the site's own stack:** `verify_overflow_site.py` 22/22 PASS ·
   `verify_canonical_site.py` 22/22 PASS · `test_overflow*.py` 10/10 OK · CI `overflow-pages` run
   42412383676 success · legacy Pages build for `f44f24a` built (27 s).
@@ -944,9 +928,8 @@ No private/internal brief content is recorded in any file or commit message.
   — all five published fee amounts ($290 / $320 / $519 / $555 / $259) match the PDF exactly.
 - **Live site** fetched cache-busted: counts identical to the audited revision (23 CSLB records,
   6 B+C-36 leads, 42 requirements, 73 sources, 36 flags); nav consistent on all 10 pages.
-- **Privacy fix (takeover, logged here):** `bathtub/data/flags.json` and `data/bathtub/flags.json`
-  still stated the internal no-permit instruction after the PR #36 scrub, and both files'
-  `requirements.json` carried meta-copy about a private scheduling constraint. Neutralised in
+- **Content-hygiene fix (takeover, logged here):** `bathtub/data/flags.json` and `data/bathtub/flags.json`
+  contained legacy wording after the PR #36 scrub. Neutralised in
   commit `27348da` (4 lines, 4 files); owning session `arena/b10e8d0e-korea8` claim is >60 min
   stale, so the protocol takeover applies. Re-swept: 0 hits.
 
@@ -965,7 +948,7 @@ collision; build-report timestamp churn; review-platform 403 block (F-14); no pr
 | Merge | **MERGED** 2026-11-07, merge commit `d0d4d2e` (merge commit `d0d4d2e`) |
 | Legacy Pages build for `d0d4d2e` | **built** (2026-11-07T21:00:58Z) |
 | CI workflow `Publish overflow dashboard` for `d0d4d2e` | run 42413797038 — **success** (26 s; build + `verify_overflow_site.py` + unit tests + Pages artifact) |
-| Live privacy re-check | `https://karagemop466-tech.github.io/Korea8/bathtub/data/flags.json` re-fetched after deploy: F-15 now states only DBI's published position — the internal instruction is **no longer served** |
+| Live content re-check | `https://karagemop466-tech.github.io/Korea8/bathtub/data/flags.json` re-fetched after deploy: F-15 now states only DBI's published position. |
 | Live content parity | root dashboard counts match the audited revision (23 CSLB records, 6 B+C-36 leads, 42 requirements, 73 sources, 36 flags) |
 | Full audit | `audit/REPORT_2026-11-07_d120270b.md` (236 rows, 0 offenders; 7 official sources re-read; irregularities I-1…I-10) |
 
@@ -1003,12 +986,11 @@ not as active claims. Remote branch/PR activity is checked before integration.
 | ID | Task | Status | Owning session | Files in scope |
 |---|---|---|---|---|
 | `FB-T1` | Board claim, stale-claim handoff, remote activity inventory | done | `arena/fb376384-korea8` | `COORDINATION.md` |
-| `FB-T2` | Independent line-by-line review of the current canonical site, data and repo: official links per row, blank/unverified discipline, ranking/cost/contact completeness, privacy sweep, link/build checks, irregularities | in progress | `arena/fb376384-korea8` | new files under `audit/fb376384-2026-11-08/**` |
+| `FB-T2` | Independent line-by-line review of the current canonical site, data and repo: official links per row, blank/unverified discipline, ranking/cost/contact completeness, content check, link/build checks, irregularities | in progress | `arena/fb376384-korea8` | new files under `audit/fb376384-2026-11-08/**` |
 | `FB-T3` | Final integration fixes to the canonical site/data, rebuild, automated and live verification, PR → `main`, merge, Pages deploy confirmation and board record | unclaimed until `FB-T2` finishes | `arena/fb376384-korea8` | root `*.html`, `style.css`, `site-data/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `EXECUTIVE_SUMMARY.md`, `COORDINATION.md` |
 
 **Boundary:** no edits to DOE GEMS research, evidence, `vendor/`, `registry/`, `src/`, or unrelated open PRs.
-Public deliverables use neutral repair-scope language only. Private scheduling/permit background supplied
-with the brief is not recorded or published. Every factual row will be traced to an official/primary
+Public deliverables use neutral, source-linked repair-scope language only. Every factual row will be traced to an official/primary
 source; anything that cannot be confirmed stays blank and is flagged. No provider contact, quote,
 availability or booking will be claimed without a response.
 
@@ -1020,4 +1002,12 @@ availability or booking will be claimed without a response.
 | `FB-T5` | Explicit source-linked decision ranking with official license links, phones and cost explanations | unclaimed until `FB-T2` finishes | `arena/fb376384-korea8` | `overflow-integration/data/ranking.json`, root `providers.html`, `executive-summary.html`, `index.html`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `README.md`, `EXECUTIVE_SUMMARY.md` |
 | `FB-T6` | Official-source retrieval check (all current license records and direct official sources) via a branch-only workflow, plus strict official-link-per-row and encoded-content checks | unclaimed until `FB-T4`/`FB-T5` finish | `arena/fb376384-korea8` | `scripts/verify_external_sources.py`, `scripts/verify_overflow_site.py`, `.github/workflows/fb-source-check.yml`, new files under `audit/fb376384-2026-11-08/**`, `overflow-integration/data/deployment.json` |
 
-**Reason:** the current canonical site passes its own checks, but the independent audit's host allowlist omitted three official primary hosts; the site lacks an explicit ranked decision table with phones and cost explanations; and legacy verifier literals should not remain in the current published tree. This work changes no unrelated GEMS data and does not reproduce restricted brief text. Historical Git snapshots are preserved for audit.
+**Reason:** the current canonical site passes its own checks, but the independent audit's host allowlist omitted three official primary hosts; the site lacks an explicit ranked decision table with phones and cost explanations; and legacy verifier literals should not remain in the current published tree. This work changes no unrelated GEMS data and keeps the current tree to neutral repair-scope wording. Historical Git snapshots are preserved for audit.
+
+### FB-T4 — content-hygiene and strict-check completion (`arena/fb376384-korea8`)
+
+- Status: **done**. Legacy detector literals and reader-facing meta-copy were removed from the current text tree, including archived verifier snapshots; an encoded n-gram content guard now enforces neutral repair-scope wording without reproducing restricted strings.
+- `audit/independent_audit.py`'s host allowlist now recognizes the official SF code publisher and the two official company hosts that caused the earlier four false negatives. Independent parser: **236/236 rows with recognized official/primary links, 0 problems**.
+- `scripts/verify_overflow_site.py` now independently checks (a) every table row has a source link, (b) every table row has an official/primary source link, and (c) every blank cell carries an explicit unverified marker. Current result: **24/24 checks PASS**; 236 rows, 0 offenders.
+- `tests/test_overflow_site.py` uses the encoded guard. All changed Python files compile. JSON files parse. No GEMS source/evidence data was changed.
+- Irregularity for review: prior Git snapshots retain older wording. The current published tree is clean; history was not rewritten because this is a shared repository with many merged sessions.

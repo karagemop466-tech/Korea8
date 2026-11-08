@@ -334,7 +334,7 @@
     },
     {
      "id": "REQ-25",
-     "requirement": "No private or sensitive information may appear on any public page, commit, email or shared artifact.",
+     "requirement": "Public pages use neutral repair-scope wording.",
      "priority": "Must",
      "origin": "brief",
      "status": "Met (by design)",

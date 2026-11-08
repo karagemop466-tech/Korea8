@@ -243,9 +243,9 @@
    "id": "FL-21",
    "severity": "Low",
    "area": "Handling",
-   "what": "No internal or private information from the project brief has been written into this repository, the data files, the page text, the commit history or any published URL. The pages carry only verifiable code facts (what the DBI rule is, who to ask, what a permit would cost), the licence records read from CSLB, and the owner-provided estimates.",
-   "why": "Keeps internal scheduling and permit-timing information out of a public GitHub Pages site and out of the git history, while still giving the owner the code facts needed to make a lawful decision.",
-   "action": "Keep it that way: any internal constraint stays in the owner's own private notes and must never be added to this repository, the data files or the site text. If the constraint changes, re-check the permit requirement against the DBI answer.",
+   "what": "Published pages carry only source-linked repair facts: the DBI rule, CSLB license records and owner-provided estimates.",
+   "why": "Keeps the public GitHub Pages site focused on source-linked repair facts.",
+   "action": "Keep public pages focused on source-linked repair facts and re-check the permit requirement against the DBI answer.",
    "sources": [
     "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Building_Permit_Requirements.aspx",
     "https://www.sf.gov/departments--department-building-inspection"
