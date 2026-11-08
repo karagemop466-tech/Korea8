@@ -10,25 +10,166 @@
     "Step 5 - Unknowns stay blank. Availability, exact-job acceptance, ceiling-restoration scope, review ratings and verified prices are unconfirmed for every row and are left blank rather than estimated."
   ],
   "criteria": [
-    {"rank": 1, "name": "Both trades lawfully covered, or a named licensed partner", "why": "The job needs waste-piping work plus a ceiling opening and finish. A single licence that covers both, or a prime contract that names a C-9 partner, removes the two-contractor handoff that this unit cannot easily absorb.", "source_ids": ["BPC-7057", "CSLB-C36", "CSLB-C9", "CSLB-B"]},
-    {"rank": 2, "name": "Published evidence of this exact assembly or this access route", "why": "The lever is stuck inside concealed piping and five or more licensed plumbers have declined to force it. Prior documented experience with a tub waste-and-overflow assembly reached through a ceiling is the closest verifiable proxy for that judgement.", "source_ids": ["HEISE-INGLESIDE"]},
-    {"rank": 3, "name": "Occupied-tenant and property-manager experience", "why": "The unit is occupied, so scheduling, notice, protection of contents and clean-up are part of the deliverable, not extras.", "source_ids": ["CIV-1954"]},
-    {"rank": 4, "name": "Licence and insurance condition on the day of hiring", "why": "Classifications and insurance change. A current status, a recorded workers-compensation position and any CSLB additional status are re-checkable facts a ranking should respect.", "source_ids": ["CSLB-SEARCH"]},
-    {"rank": 5, "name": "Responsiveness to a small, precise scope", "why": "A published minimum project size or a commercial-project focus makes a small repair less likely to be accepted, even when the licence is correct.", "source_ids": ["WEDO", "AYOOB", "SFBG"]}
+    {
+      "rank": 1,
+      "name": "Both trades lawfully covered, or a named licensed partner",
+      "why": "The job needs waste-piping work plus a ceiling opening and finish. A single licence that covers both, or a prime contract that names a C-9 partner, removes the two-contractor handoff that this unit cannot easily absorb.",
+      "source_ids": [
+        "BPC-7057",
+        "CSLB-C36",
+        "CSLB-C9",
+        "CSLB-B"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Published evidence of this exact assembly or this access route",
+      "why": "The lever is stuck inside concealed piping and five or more licensed plumbers have declined to force it. Prior documented experience with a tub waste-and-overflow assembly reached through a ceiling is the closest verifiable proxy for that judgement.",
+      "source_ids": [
+        "HEISE-INGLESIDE"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Occupied-tenant and property-manager experience",
+      "why": "The unit is occupied, so scheduling, notice, protection of contents and clean-up are part of the deliverable, not extras.",
+      "source_ids": [
+        "CIV-1954"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Licence and insurance condition on the day of hiring",
+      "why": "Classifications and insurance change. A current status, a recorded workers-compensation position and any CSLB additional status are re-checkable facts a ranking should respect.",
+      "source_ids": [
+        "CSLB-SEARCH"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Responsiveness to a small, precise scope",
+      "why": "A published minimum project size or a commercial-project focus makes a small repair less likely to be accepted, even when the licence is correct.",
+      "source_ids": [
+        "WEDO",
+        "AYOOB",
+        "SFBG"
+      ]
+    }
   ],
   "tiers": [
-    {"id": "A", "name": "Tier A - combined-scope prime leads", "definition": "Licence covers plumbing and building work, and the company publishes scope evidence consistent with a small repair through to finish work. Ask these first."},
-    {"id": "B", "name": "Tier B - plumbing or building prime leads", "definition": "Lawfully able to be the plumbing prime, but the ceiling restoration must be expressly named or subcontracted. Includes the three providers who supplied the owner estimates."},
-    {"id": "C", "name": "Tier C - restoration partner and conditional leads", "definition": "A specialist restoration partner to be named by the prime, or a building licence with a published limit that needs checking before use."},
-    {"id": "D", "name": "Excluded", "definition": "Suspended licence, or identity not verifiable against an official record. Not ranked."}
+    {
+      "id": "A",
+      "name": "Tier A - combined-scope prime leads",
+      "definition": "Licence covers plumbing and building work, and the company publishes scope evidence consistent with a small repair through to finish work. Ask these first.",
+      "source_ids": [
+        "CSLB-C36",
+        "CSLB-B",
+        "BPC-7057"
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Tier B - plumbing or building prime leads",
+      "definition": "Lawfully able to be the plumbing prime, but the ceiling restoration must be expressly named or subcontracted. Includes the three providers who supplied the owner estimates.",
+      "source_ids": [
+        "CSLB-C36",
+        "BPC-7057"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Tier C - restoration partner and conditional leads",
+      "definition": "A specialist restoration partner to be named by the prime, or a building licence with a published limit that needs checking before use.",
+      "source_ids": [
+        "CSLB-C9",
+        "CSLB-B",
+        "BPC-7057-5"
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Excluded",
+      "definition": "Suspended licence, or identity not verifiable against an official record. Not ranked.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "CSLB-1027286",
+        "CSLB-757796"
+      ]
+    }
   ],
   "cost_model": [
-    {"id": "CM-01", "component": "Plumbing labour and parts (tub waste-and-overflow assembly, trip lever, P-trap and trap adapter)", "what_it_is": "The trade portion of the work. Scope and parts vary by assembly, so no single verified price exists.", "amount_owner_supplied": null, "amount_verified": null, "evidence": "Two owner-supplied amounts describe replacement-type scopes: $614 replacement of waste and overflow, and $550 lever/plug/spout with diverter including labour and materials. A third owner-supplied amount of $135 describes adjustment only. None is a verified price.", "source_ids": ["OWNER", "CSLB-977638", "CSLB-757796", "CSLB-1024971"]},
-    {"id": "CM-02", "component": "Opening and restoring the storage-unit ceiling (cut, patch, tape, texture, paint)", "what_it_is": "A separate trade from plumbing. No supplied estimate names it, so it is unpriced in every document on file.", "amount_owner_supplied": null, "amount_verified": null, "evidence": "None of the three owner-supplied scopes mentions opening or restoring a ceiling. Silence is not an exclusion, and it is not a price.", "source_ids": ["OWNER", "CSLB-C9", "BERNAL"]},
-    {"id": "CM-03", "component": "SF DBI permit fee, if the work requires a permit", "what_it_is": "A municipal fee paid for the permit, separate from any contractor price.", "amount_owner_supplied": null, "amount_verified": 290, "evidence": "Official DBI Table 1A-C lists Category 1P at $290 for a single residential unit fixture/shower pan/kitchen-bath remodel with up to two inspections. The applicable category for this job is unconfirmed, so this is a reference fee and not a quote.", "source_ids": ["SF-FEES"]},
-    {"id": "CM-04", "component": "Inspection and reinspection charges", "what_it_is": "Hourly or per-half-hour municipal charges that apply if extra visits are needed.", "amount_owner_supplied": null, "amount_verified": 259, "evidence": "Official DBI Table 1A-C lists regular inspection at $519 per hour, off-hour inspection at $555 per hour and reinspection at $259 per half hour. Applicability to this job is unconfirmed.", "source_ids": ["SF-FEES"]},
-    {"id": "CM-05", "component": "Contract deposit and payment structure", "what_it_is": "A legal constraint on how a deposit may be taken, not a price.", "amount_owner_supplied": null, "amount_verified": null, "evidence": "CSLB guidance states a written contract is required over $500 and a down payment may be no more than the lesser of 10 percent or $1,000, with a narrow blanket-bond exception.", "source_ids": ["CSLB-CONTRACT"]},
-    {"id": "CM-06", "component": "Total all-in cost for this unit", "what_it_is": "The figure the owner actually needs before authorising work.", "amount_owner_supplied": null, "amount_verified": null, "evidence": "Not established. No provider has supplied a combined quote covering plumbing, ceiling opening, restoration, permit and clean-up. Publishing a total would require inventing at least two of the components.", "source_ids": ["OWNER", "REPO-BOARD"]}
+    {
+      "id": "CM-01",
+      "component": "Plumbing labour and parts (tub waste-and-overflow assembly, trip lever, P-trap and trap adapter)",
+      "what_it_is": "The trade portion of the work. Scope and parts vary by assembly, so no single verified price exists.",
+      "amount_owner_supplied": null,
+      "amount_verified": null,
+      "evidence": "Two owner-supplied amounts describe replacement-type scopes: $614 replacement of waste and overflow, and $550 lever/plug/spout with diverter including labour and materials. A third owner-supplied amount of $135 describes adjustment only. None is a verified price.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-977638",
+        "CSLB-757796",
+        "CSLB-1024971"
+      ]
+    },
+    {
+      "id": "CM-02",
+      "component": "Opening and restoring the storage-unit ceiling (cut, patch, tape, texture, paint)",
+      "what_it_is": "A separate trade from plumbing. No supplied estimate names it, so it is unpriced in every document on file.",
+      "amount_owner_supplied": null,
+      "amount_verified": null,
+      "evidence": "None of the three owner-supplied scopes mentions opening or restoring a ceiling. Silence is not an exclusion, and it is not a price.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-C9",
+        "BERNAL"
+      ]
+    },
+    {
+      "id": "CM-03",
+      "component": "SF DBI permit fee, if the work requires a permit",
+      "what_it_is": "A municipal fee paid for the permit, separate from any contractor price.",
+      "amount_owner_supplied": null,
+      "amount_verified": 290,
+      "evidence": "Official DBI Table 1A-C lists Category 1P at $290 for a single residential unit fixture/shower pan/kitchen-bath remodel with up to two inspections. The applicable category for this job is unconfirmed, so this is a reference fee and not a quote.",
+      "source_ids": [
+        "SF-FEES"
+      ]
+    },
+    {
+      "id": "CM-04",
+      "component": "Inspection and reinspection charges",
+      "what_it_is": "Hourly or per-half-hour municipal charges that apply if extra visits are needed.",
+      "amount_owner_supplied": null,
+      "amount_verified": 259,
+      "evidence": "Official DBI Table 1A-C lists regular inspection at $519 per hour, off-hour inspection at $555 per hour and reinspection at $259 per half hour. Applicability to this job is unconfirmed.",
+      "source_ids": [
+        "SF-FEES"
+      ]
+    },
+    {
+      "id": "CM-05",
+      "component": "Contract deposit and payment structure",
+      "what_it_is": "A legal constraint on how a deposit may be taken, not a price.",
+      "amount_owner_supplied": null,
+      "amount_verified": null,
+      "evidence": "CSLB guidance states a written contract is required over $500 and a down payment may be no more than the lesser of 10 percent or $1,000, with a narrow blanket-bond exception.",
+      "source_ids": [
+        "CSLB-CONTRACT"
+      ]
+    },
+    {
+      "id": "CM-06",
+      "component": "Total all-in cost for this unit",
+      "what_it_is": "The figure the owner actually needs before authorising work.",
+      "amount_owner_supplied": null,
+      "amount_verified": null,
+      "evidence": "Not established. No provider has supplied a combined quote covering plumbing, ceiling opening, restoration, permit and clean-up. Publishing a total would require inventing at least two of the components.",
+      "source_ids": [
+        "OWNER",
+        "REPO-BOARD"
+      ]
+    }
   ],
   "rows": [
     {
@@ -38,7 +179,10 @@
       "name": "Rapid Flow Plumbing & Rooter",
       "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
       "license": "1115649",
-      "classifications": ["B", "C-36"],
+      "classifications": [
+        "B",
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-01-31",
       "phone": "(415) 866-8401",
@@ -52,7 +196,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1115649", "RF", "BPC-7057"]
+      "source_ids": [
+        "CSLB-1115649",
+        "RF",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 2,
@@ -61,7 +209,14 @@
       "name": "Ace Plumbing & Rooter",
       "legal_name": "ACE PLUMBING & ROOTER",
       "license": "829071",
-      "classifications": ["C-36", "A", "C-4", "C-16", "B", "C-10"],
+      "classifications": [
+        "C-36",
+        "A",
+        "C-4",
+        "C-16",
+        "B",
+        "C-10"
+      ],
       "status": "Current and active",
       "expiry": "2027-06-30",
       "phone": "(415) 824-6444",
@@ -75,7 +230,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-829071", "ACE", "BPC-7057"]
+      "source_ids": [
+        "CSLB-829071",
+        "ACE",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 3,
@@ -84,7 +243,12 @@
       "name": "Heise's Plumbing",
       "legal_name": "TARO GROUP INC dba HEISES PLUMBING",
       "license": "1089561",
-      "classifications": ["C-36", "A", "C-10", "C-20"],
+      "classifications": [
+        "C-36",
+        "A",
+        "C-10",
+        "C-20"
+      ],
       "status": "Current and active",
       "expiry": "2028-04-30",
       "phone": "(415) 333-0704",
@@ -98,7 +262,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1089561", "HEISE", "HEISE-INGLESIDE"]
+      "source_ids": [
+        "CSLB-1089561",
+        "HEISE",
+        "HEISE-INGLESIDE"
+      ]
     },
     {
       "rank": 4,
@@ -107,7 +275,10 @@
       "name": "We Do Construction",
       "legal_name": "WE DO CONSTRUCTION INC",
       "license": "1096552",
-      "classifications": ["B", "C-36"],
+      "classifications": [
+        "B",
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-09-30",
       "phone": "(415) 416-5494",
@@ -121,7 +292,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1096552", "WEDO", "BPC-7057"]
+      "source_ids": [
+        "CSLB-1096552",
+        "WEDO",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 5,
@@ -130,7 +305,9 @@
       "name": "Expert Plumbing Solutions",
       "legal_name": "EXPERT PLUMBING SOLUTIONS",
       "license": "977638",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-10-31",
       "phone": "(415) 531-5340",
@@ -144,7 +321,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-977638", "EXPERT", "OWNER"]
+      "source_ids": [
+        "CSLB-977638",
+        "EXPERT",
+        "OWNER"
+      ]
     },
     {
       "rank": 6,
@@ -153,7 +334,9 @@
       "name": "Bay Area Plumbing",
       "legal_name": "BAY AREA PLUMBING",
       "license": "757796",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2027-01-31",
       "phone": "(415) 668-8000",
@@ -167,7 +350,12 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-757796", "CSLB-749536", "BAY", "OWNER"]
+      "source_ids": [
+        "CSLB-757796",
+        "CSLB-749536",
+        "BAY",
+        "OWNER"
+      ]
     },
     {
       "rank": 7,
@@ -176,7 +364,9 @@
       "name": "Fast Response Plumbing & Rooter",
       "legal_name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
       "license": "1024971",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2027-03-31",
       "phone": "(415) 596-6115",
@@ -190,7 +380,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1024971", "FAST", "OWNER"]
+      "source_ids": [
+        "CSLB-1024971",
+        "FAST",
+        "OWNER"
+      ]
     },
     {
       "rank": 8,
@@ -199,7 +393,13 @@
       "name": "Ayoob & Peery Plumbing",
       "legal_name": "AYOOB & PEERY PLUMBING CO INC",
       "license": "392967",
-      "classifications": ["B", "C-4", "C-16", "C-36", "C-20"],
+      "classifications": [
+        "B",
+        "C-4",
+        "C-16",
+        "C-36",
+        "C-20"
+      ],
       "status": "Current and active",
       "expiry": "2028-09-30",
       "phone": "(415) 550-0975",
@@ -213,7 +413,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-392967", "AYOOB", "BPC-7057"]
+      "source_ids": [
+        "CSLB-392967",
+        "AYOOB",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 9,
@@ -222,7 +426,10 @@
       "name": "Save-On-Interior",
       "legal_name": "SAVE - ON - INTERIOR",
       "license": "749536",
-      "classifications": ["B", "C-36"],
+      "classifications": [
+        "B",
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-05-31",
       "phone": "(415) 668-8000",
@@ -236,7 +443,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-749536", "CSLB-757796", "BPC-7057"]
+      "source_ids": [
+        "CSLB-749536",
+        "CSLB-757796",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 10,
@@ -245,7 +456,10 @@
       "name": "D G Construction",
       "legal_name": "D G CONSTRUCTION CO",
       "license": "297604",
-      "classifications": ["B", "C-36"],
+      "classifications": [
+        "B",
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2027-04-30",
       "phone": "(415) 308-0803",
@@ -259,7 +473,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-297604", "DG-COMPLAINT", "BPC-7057"]
+      "source_ids": [
+        "CSLB-297604",
+        "DG-COMPLAINT",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 11,
@@ -268,7 +486,10 @@
       "name": "Bernal Hill Drywall",
       "legal_name": "BERNAL HILL DRYWALL INC",
       "license": "995163",
-      "classifications": ["C-9", "B"],
+      "classifications": [
+        "C-9",
+        "B"
+      ],
       "status": "Current and active",
       "expiry": "2028-07-31",
       "phone": "(415) 533-8274",
@@ -282,7 +503,12 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-995163", "BERNAL", "CSLB-C9", "BPC-7057"]
+      "source_ids": [
+        "CSLB-995163",
+        "BERNAL",
+        "CSLB-C9",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 12,
@@ -291,7 +517,9 @@
       "name": "SF Building Group",
       "legal_name": "SF BUILDING GROUP",
       "license": "1106131",
-      "classifications": ["B"],
+      "classifications": [
+        "B"
+      ],
       "status": "Current and active",
       "expiry": "2027-06-30",
       "phone": "(415) 297-2246",
@@ -305,7 +533,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1106131", "SFBG", "BPC-7057"]
+      "source_ids": [
+        "CSLB-1106131",
+        "SFBG",
+        "BPC-7057"
+      ]
     },
     {
       "rank": 13,
@@ -314,7 +546,9 @@
       "name": "24/7 SF Handyman & Remodeling Service",
       "legal_name": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE",
       "license": "1105133",
-      "classifications": ["B-2"],
+      "classifications": [
+        "B-2"
+      ],
       "status": "Current and active",
       "expiry": "2027-05-31",
       "phone": "(415) 304-1559",
@@ -328,7 +562,11 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1105133", "BPC-7057-5", "CSLB-B"]
+      "source_ids": [
+        "CSLB-1105133",
+        "BPC-7057-5",
+        "CSLB-B"
+      ]
     },
     {
       "rank": 14,
@@ -337,7 +575,9 @@
       "name": "Advanced Plumbing and Drain",
       "legal_name": "ADVANCED PLUMBING AND DRAIN INC",
       "license": "1009195",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2027-11-30",
       "phone": "(415) 744-4944",
@@ -351,7 +591,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1009195"]
+      "source_ids": [
+        "CSLB-1009195"
+      ]
     },
     {
       "rank": 15,
@@ -360,7 +602,12 @@
       "name": "Caccia Home Services",
       "legal_name": "JAMES CACCIA PLUMBING INC dba CACCIA HOME SERVICES",
       "license": "379364",
-      "classifications": ["C-36", "C-31", "C-34", "C-10"],
+      "classifications": [
+        "C-36",
+        "C-31",
+        "C-34",
+        "C-10"
+      ],
       "status": "Current and active",
       "expiry": "2027-04-30",
       "phone": "(650) 342-5363",
@@ -374,7 +621,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-379364"]
+      "source_ids": [
+        "CSLB-379364"
+      ]
     },
     {
       "rank": 16,
@@ -383,7 +632,11 @@
       "name": "Flow Masters Plumbing",
       "legal_name": "FLOW MASTERS PLUMBING INC",
       "license": "966337",
-      "classifications": ["C-36", "C-16", "C-20"],
+      "classifications": [
+        "C-36",
+        "C-16",
+        "C-20"
+      ],
       "status": "Current and active",
       "expiry": "2027-10-31",
       "phone": "(415) 751-1933",
@@ -397,7 +650,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-966337"]
+      "source_ids": [
+        "CSLB-966337"
+      ]
     },
     {
       "rank": 17,
@@ -406,7 +661,10 @@
       "name": "Discount Plumbing Rooter Services",
       "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
       "license": "1140843",
-      "classifications": ["C-36", "A"],
+      "classifications": [
+        "C-36",
+        "A"
+      ],
       "status": "Current and active",
       "expiry": "2027-07-31",
       "phone": "(650) 991-2100",
@@ -420,7 +678,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1140843"]
+      "source_ids": [
+        "CSLB-1140843"
+      ]
     },
     {
       "rank": 18,
@@ -429,7 +689,9 @@
       "name": "FDL Plumbing",
       "legal_name": "FDL PLUMBING INC",
       "license": "1086935",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-10-31",
       "phone": "(415) 678-9557",
@@ -443,7 +705,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1086935"]
+      "source_ids": [
+        "CSLB-1086935"
+      ]
     },
     {
       "rank": 19,
@@ -452,7 +716,9 @@
       "name": "Precision Rooter & Drain",
       "legal_name": "PRECISION ROOTER & DRAIN",
       "license": "961218",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2027-05-31",
       "phone": "(415) 724-1824",
@@ -466,7 +732,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-961218"]
+      "source_ids": [
+        "CSLB-961218"
+      ]
     },
     {
       "rank": 20,
@@ -475,7 +743,9 @@
       "name": "Citywide Plumbing",
       "legal_name": "CW PLUMBING INC dba CITYWIDE PLUMBING",
       "license": "954385",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-07-31",
       "phone": "(415) 716-1519",
@@ -489,7 +759,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-954385"]
+      "source_ids": [
+        "CSLB-954385"
+      ]
     },
     {
       "rank": 21,
@@ -498,7 +770,10 @@
       "name": "Cahill Contractors",
       "legal_name": "CAHILL CONTRACTORS INC",
       "license": "300647",
-      "classifications": ["A", "B"],
+      "classifications": [
+        "A",
+        "B"
+      ],
       "status": "Current and active",
       "expiry": "2027-11-30",
       "phone": "(415) 986-0600",
@@ -512,7 +787,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-300647"]
+      "source_ids": [
+        "CSLB-300647"
+      ]
     },
     {
       "rank": 22,
@@ -521,7 +798,9 @@
       "name": "Clever Plumbing & Rooter",
       "legal_name": "CLEVER PLUMBING & ROOTER INC",
       "license": "1160613",
-      "classifications": ["C-36"],
+      "classifications": [
+        "C-36"
+      ],
       "status": "Current and active",
       "expiry": "2028-09-30",
       "phone": "(650) 834-0821",
@@ -535,7 +814,9 @@
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
-      "source_ids": ["CSLB-1160613"]
+      "source_ids": [
+        "CSLB-1160613"
+      ]
     }
   ],
   "excluded_rows": [
@@ -547,7 +828,9 @@
       "phone": "(415) 913-8048",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
       "reason": "Excluded, not ranked. CSLB states the licence is under suspension for a contractors-bond suspension, with the bond cancellation recorded on 2026-08-16. CSLB notes that a received replacement bond may not yet be processed, which is why the status must be rechecked rather than assumed either way.",
-      "source_ids": ["CSLB-1027286"]
+      "source_ids": [
+        "CSLB-1027286"
+      ]
     },
     {
       "provider_id": "P-24",
@@ -557,7 +840,10 @@
       "phone": "",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
       "reason": "Excluded, not ranked. No CSLB licence record was located for this business name in this session, so its identity, licence number and phone number are blank. Name appears only in a review-platform search excerpt. Do not hire until a licence number is verified on CSLB.",
-      "source_ids": ["CSLB-SEARCH", "YELP-PORTOLA"]
+      "source_ids": [
+        "CSLB-SEARCH",
+        "YELP-PORTOLA"
+      ]
     }
   ],
   "irregularities": [
@@ -568,7 +854,10 @@
       "title": "Public phone number differs between the company site and the CSLB record",
       "detail": "Rapid Flow's own site advertises 844-BAY-FLOW, while the CSLB licence record publishes (415) 866-8401. This analysis lists the CSLB number so the number traces to a government record, but the two were not reconciled by contacting the company.",
       "action": "Call the CSLB-listed number, or confirm the 844 number is the same business before relying on it.",
-      "source_ids": ["RF", "CSLB-1115649"],
+      "source_ids": [
+        "RF",
+        "CSLB-1115649"
+      ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
       "status": "Open"
     },
@@ -579,7 +868,9 @@
       "title": "The strongest technical case page also renders a 404 block",
       "detail": "The Heise's Ingleside project page returns case content and an embedded 'Page Not Found (404)' section in the same response. The case wording is usable as a company-published claim, but the page is unstable and cannot be relied on as a stable public citation without monitoring.",
       "action": "Treat it as marketing content; confirm the ceiling-access approach by phone and re-check the URL before publishing it anywhere formal.",
-      "source_ids": ["HEISE-INGLESIDE"],
+      "source_ids": [
+        "HEISE-INGLESIDE"
+      ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "status": "Open"
     },
@@ -590,7 +881,10 @@
       "title": "Two licences share one address and phone number",
       "detail": "Bay Area Plumbing #757796 and Save-On-Interior #749536 both record 335 14th Avenue, San Francisco and (415) 668-8000 on CSLB. Common ownership or control is not stated by CSLB and was not established. Which entity would hold a contract for this work is therefore unclear.",
       "action": "Ask which legal entity issues the contract and confirm the licence number on the written agreement.",
-      "source_ids": ["CSLB-757796", "CSLB-749536"],
+      "source_ids": [
+        "CSLB-757796",
+        "CSLB-749536"
+      ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "status": "Open"
     },
@@ -601,7 +895,12 @@
       "title": "Review evidence could not be verified for any provider",
       "detail": "Yelp returned HTTP 403 to automated retrieval in this session, and the review figures visible on company sites are self-published badges. No star rating or review count was independently verified for any candidate, so review evidence contributes nothing to this ranking.",
       "action": "Read the review platforms manually before contacting, and treat the ranking as licence-and-evidence based only.",
-      "source_ids": ["YELP-HEISE", "YELP-ACE", "FAST", "HEISE"],
+      "source_ids": [
+        "YELP-HEISE",
+        "YELP-ACE",
+        "FAST",
+        "HEISE"
+      ],
       "official_url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
       "status": "Open"
     },
@@ -612,7 +911,10 @@
       "title": "No provider was contacted, so acceptance and availability are unknown",
       "detail": "This ranking is built from official records and published company material only. Whether any provider will take this job, when, at what price, and with which restoration party is unconfirmed for every row. The order is an inquiry sequence, not a shortlist of confirmed suppliers.",
       "action": "Send one identical written scope to ranks 1 to 3 and record the answers before ranking them again on price and availability.",
-      "source_ids": ["OWNER", "REPO-BOARD"],
+      "source_ids": [
+        "OWNER",
+        "REPO-BOARD"
+      ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
       "status": "Open"
     },
@@ -623,7 +925,12 @@
       "title": "Four rows were reported as lacking a source link; the report used an incomplete host list",
       "detail": "An earlier independent audit reported four table rows without a recognised source link. All four do carry links; three point to codelibrary.amlegal.com, which is the City and County of San Francisco's published code host, and two to company sites that were missing from that audit's host list. The rows were re-checked and are correctly sourced; the audit's host list is incomplete, not the data.",
       "action": "Extend that audit's official-host list to include the code publisher and the company sites, or note the limitation in its output.",
-      "source_ids": ["SF-CODE-104", "AYOOB", "BERNAL", "REPO"],
+      "source_ids": [
+        "SF-CODE-104",
+        "AYOOB",
+        "BERNAL",
+        "REPO"
+      ],
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
       "status": "Open"
     }

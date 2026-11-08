@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-07T20:45:05.772816+00:00",
+  "checked_at": "2026-11-08T23:07:28.876695+00:00",
   "result": "PASS",
-  "checks_run": 22,
-  "checks_passed": 22,
+  "checks_run": 29,
+  "checks_passed": 29,
   "checks_failed": 0,
-  "canonical_rows_checked": 236,
+  "canonical_rows_checked": 289,
   "tracked_html_files": 67,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "10/10"
+      "detail": "11/11"
     },
     {
       "check": "HTML tag balance",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "289 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -108,6 +108,41 @@
       "detail": ""
     },
     {
+      "check": "ranking count parity",
+      "ok": true,
+      "detail": "22/22"
+    },
+    {
+      "check": "ranking is a strict rank order",
+      "ok": true,
+      "detail": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]"
+    },
+    {
+      "check": "every ranked row has a CSLB link, a phone, resolvable sources and no invented verified cost",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "excluded providers are absent from the ranking",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "suspended provider not ranked as a hire option",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "owner-reported amounts labelled on the ranking page",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "check": "every registered provider is ranked or explicitly excluded",
+      "ok": true,
+      "detail": "24/24"
+    },
+    {
       "check": "build report counts match data",
       "ok": true,
       "detail": ""
@@ -115,7 +150,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "203 links; offenders: "
+      "detail": "215 links; offenders: "
     }
   ]
 }

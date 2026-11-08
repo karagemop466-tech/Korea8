@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -122,9 +122,33 @@ def main():
  hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
+ # ranking page checks (decision analysis)
+ rk=load('ranking.json'); rkrows=rk['rows']; excl=rk['excluded_rows']
+ rkt=parsed['decision-analysis.html'].tables.get('ranking-table',[])
+ check('ranking count parity',len(rkt)==len(rkrows),f'{len(rkt)}/{len(rkrows)}')
+ check('ranking is a strict rank order',[r['rank'] for r in rkrows]==list(range(1,len(rkrows)+1)),str([r['rank'] for r in rkrows]))
+ rkbad=[]
+ pv_by={p['id']:p for p in prov}
+ for r in rkrows:
+  u=f"https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum={r['license']}"
+  if u not in texts['decision-analysis.html']: rkbad.append(f"{r['rank']}:no-cslb-link")
+  if not r['phone']: rkbad.append(f"{r['rank']}:no-phone")
+  if r['provider_id'] not in pv_by: rkbad.append(f"{r['rank']}:unknown-provider")
+  for i in r['source_ids']:
+   if i not in srcs: rkbad.append(f"{r['rank']}:{i}")
+  if r['cost_verified'] is not None: rkbad.append(f"{r['rank']}:invented-verified-cost")
+ check('every ranked row has a CSLB link, a phone, resolvable sources and no invented verified cost',not rkbad,'; '.join(rkbad[:10]))
+ check('excluded providers are absent from the ranking',not ({e['provider_id'] for e in excl} & {r['provider_id'] for r in rkrows}))
+ susp2={p['id'] for p in prov if p['status']=='Suspended'}
+ check('suspended provider not ranked as a hire option',not (susp2 & {r['provider_id'] for r in rkrows}))
+ badcost=[r['rank'] for r in rkrows if r['cost_amount_owner'] is not None and f"${r['cost_amount_owner']}" not in texts['decision-analysis.html']]
+ check('owner-reported amounts labelled on the ranking page',not badcost and 'Owner-reported' in texts['decision-analysis.html'],str(badcost))
+ # every provider in the register is either ranked or explicitly excluded
+ covered={r['provider_id'] for r in rkrows}|{x['provider_id'] for x in excl}
+ check('every registered provider is ranked or explicitly excluded',covered=={p['id'] for p in prov},f'{len(covered)}/{len(prov)}')
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
- check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))
+ check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts'].get('ranked')==len(rkrows) and br['counts'].get('excluded')==len(excl))
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()
