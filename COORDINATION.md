@@ -987,3 +987,27 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+---
+
+## Session `arena/b0d7ecf7-korea8` — 2026-11-08 fresh re-verification + ranked decision analysis
+
+**Claim time:** 2026-11-08 (committed and pushed before any other edit, per protocol.)
+**Platform-pinned branch:** `arena/b0d7ecf7-korea8` (the protocol's `session-<id>/<task>` name cannot be created: the
+platform pins every session to one branch. This is recorded, not silently ignored.)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `k8-01` | Claim this board before any other edit | in progress | `arena/b0d7ecf7-korea8` | `COORDINATION.md` |
+| `k8-02` | Independent 2026-11-08 re-verification: all 23 CSLB records re-read on cslb.ca.gov, key official rule sources re-read, stored data corrected where the official record differs | unclaimed | `arena/b0d7ecf7-korea8` | `overflow-integration/data/*.json`, `audit/REPORT_2026-11-08_b0d7ecf7.md` |
+| `k8-03` | Ranked decision analysis (owner-requested best-choice ranking with reasoning, cost basis, phone and official links) as a new category page | unclaimed | `arena/b0d7ecf7-korea8` | `overflow-integration/data/ranking.json`, `overflow-integration/data/providers.json`, `scripts/build_overflow_site.py`, generated root `*.html`, `style.css` |
+| `k8-04` | Rebuild, run verifier and unit tests, internal link check, cache-busted live check | unclaimed | `arena/b0d7ecf7-korea8` | `overflow-integration/build-report.json`, `overflow-integration/verification-report.json`, `scripts/verify_overflow_site.py` (checks only, no new data) |
+| `k8-05` | PR → `main`, merge, confirm Pages deploy for the merge commit, record PR link and result here | unclaimed | `arena/b0d7ecf7-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+
+**Scope rules.** This session edits only the canonical bathtub tree (`overflow-integration/**`, the root dashboard pages
+it generates, and `COORDINATION.md`). It does **not** touch the parallel brief directories
+(`bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `project/`, `docs/`) or the DOE GEMS research
+artefacts; any needed change there is logged here as a cross-session request instead of being edited.
+
+**No-open-PR rule.** PRs **#35**, **#38** and **#39** remain open from earlier sessions. This session will not merge or
+close another session's PR; that remains an item for the owner (see the Flagged for Review page).
