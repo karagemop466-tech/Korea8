@@ -1121,3 +1121,22 @@ All earlier overlapping implementation claims are more than 60 minutes old and t
 | Legacy Pages build | [1352718355](https://api.github.com/repos/karagemop466-tech/Korea8/pages/builds/1352718355) — **built**, no error, commit `60844f3` |
 | Live verification | Cache-busted `verification.html`, `decision-analysis.html`, `flagged-for-review.html` and the new audit returned the 11-page summary, ranked candidates, 40 flags and audit content/link |
 | Final status | `215-01`, `215-02`, `215-03` **done**. All 40 irregularities/open items remain published and non-blocking. No provider contacted/booked. |
+## Session `arena/aeb846ac-korea8` — current-state integration and verified delivery
+
+**Claimed:** 2026-11-08 UTC. This session uses the platform-assigned branch
+`arena/aeb846ac-korea8`. The earlier root-integration claims are completed per their
+completion logs or are more than 60 minutes old without further commits; this is a
+logged takeover for the final integration scope, not a discard of their work. The
+2026-11-08 independent audit explicitly marked its separate audit task done. Its
+report and all other prior work remain intact.
+
+| ID | Task | Status | Owner | Files in scope |
+|---|---|---|---|---|
+| AE-01 | Independent current-state review of requirements, sources, providers, prices and site; record findings | in progress | `arena/aeb846ac-korea8` | new `audit/*aeb846ac*` files; `COORDINATION.md` |
+| AE-02 | Final integration: address actionable verification and usability discrepancies; rebuild source-linked canonical pages and tests | in progress | `arena/aeb846ac-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, root dashboard `*.html` and `style.css`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `site-data/**`, `COORDINATION.md` |
+| AE-03 | Run build and link/privacy checks; PR, merge and verify the specific live Pages deployment | in progress | `arena/aeb846ac-korea8` | `COORDINATION.md`, integration reports under `overflow-integration/**` |
+
+**Boundary:** preserve unrelated GEMS research and all earlier audit histories. Do not
+claim any vendor has accepted the job, confirmed its availability or issued a new quote
+without direct evidence. Shared data and navigation are changed only as needed for this
+final integration. Unknown values remain blank and are flagged for review.
