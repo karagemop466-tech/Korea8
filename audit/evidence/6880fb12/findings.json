@@ -191,5 +191,26 @@
     "cslb_records": 24,
     "sources": 85,
     "flags": 46
+  },
+  "tested_integration_patch": {
+    "path": "audit/evidence/6880fb12/apply_remaining_corrections.py",
+    "applied_to_canonical_tree": false,
+    "scratch_test_result": {
+      "canonical_pages": 11,
+      "providers": 25,
+      "cslb_records": 24,
+      "requirements": 42,
+      "compliance": 13,
+      "sources": 87,
+      "flags": 46,
+      "rows_total": 303,
+      "rows_with_official_primary_link": 303,
+      "canonical_verifier": "27/27 PASS",
+      "unit_tests": "17/17 PASS",
+      "internal_links_checked": 237,
+      "broken_internal_links": 0,
+      "ranking_order_unchanged": true
+    },
+    "note": "Scratch checkout applied the patch, rebuilt, verified and tested successfully. Main canonical files remain untouched until handoff."
   }
 }
