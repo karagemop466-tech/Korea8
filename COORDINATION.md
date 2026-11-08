@@ -1153,3 +1153,16 @@ Combined local checks before merge commit: build OK; `verify_overflow_site.py` 2
 | Live verification | Cache-busted `index.html`, `decision-analysis.html` and `flagged-for-review.html` returned the merged dashboard: 24 CSLB records, 25 identities, 85 sources, 46 flags, final-verification note and Atlas conditional hold |
 | Final checks | 27/27 canonical verifier checks; 300/300 rows official-primary source-covered; 11/11 unit tests; independent audit 0 problems |
 | Status | T3946905e-A/B/C **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked. |
+## Session `arena/0404117b-korea8` — fresh independent verification and final integration (2026-11-08)
+
+The platform fixes this session to `arena/0404117b-korea8`; no alternate session branch will be created. The preceding research/integration tasks have completion records through PR #40 and the independent QA/PR #42 record. Historical `in progress` labels above are superseded by their later completion logs; the latest root work is merged and more than 60 minutes old. This session takes the released final-integration role, preserving earlier claims, research, archives and unrelated GEMS artifacts. Only this session's pinned branch is used.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| K8-N1 | Claim released integration scope; review current board, repository and GitHub state | in progress | `arena/0404117b-korea8` | `COORDINATION.md`, `audit/0404117b/**` |
+| K8-N2 | Fresh official-source verification of combined provider, review, requirement, cost and technical records | unclaimed | `arena/0404117b-korea8` | `overflow-integration/data/**`, `audit/0404117b/**` |
+| K8-N3 | Refresh executive summary and clean canonical dashboard; preserve historical/unrelated work | unclaimed | `arena/0404117b-korea8` | root bathtub HTML/CSS, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `overflow-integration/**` |
+| K8-N4 | Independent row/link/privacy checks, build, unit/browser tests and repository review | unclaimed | `arena/0404117b-korea8` | `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `.github/workflows/overflow-pages.yml`, `audit/0404117b/**`, `README.md` top project note only |
+| K8-N5 | Final integration PR to main, merge, specific-commit Pages verification and completion record | unclaimed | `arena/0404117b-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+
+No shared files have been changed before this claim. Source observations will distinguish fresh retrieval, historical transcription, owner statements and analytical judgments. Public content will use neutral repair language. No contractor acceptance, booking or exact-job capability will be claimed without direct evidence.
