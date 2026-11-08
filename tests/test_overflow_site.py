@@ -5,7 +5,7 @@ def load(n):return json.loads((DATA/n).read_text())
 class DataTests(unittest.TestCase):
  def test_source_ids_resolve(self):
   srcs={s['id'] for s in load('sources.json')['rows']}
-  for name in ['providers.json','requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
+  for name in ['providers.json','requirements.json','technical.json','compliance.json','reviews.json','flags.json','sources.json']:
    for r in load(name)['rows']:
     for i in r.get('source_ids',[]):self.assertIn(i,srcs,f'{name}:{r.get("id")}')
  def test_estimates_owner_reported_verified_blank(self):
@@ -19,9 +19,26 @@ class DataTests(unittest.TestCase):
   self.assertTrue(all(v['rating'] is None and v['review_count'] is None for v in load('reviews.json')['rows']))
  def test_requirements_have_official_context(self):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
+ def test_ranking_data(self):
+  k=load('ranking.json');srcs={s['id'] for s in load('sources.json')['rows']}
+  self.assertEqual([r['rank'] for r in k['ranks']],list(range(1,13)))
+  for r in k['ranks']:
+   self.assertTrue(r['official_url'].startswith('https://www.cslb.ca.gov/'))
+   self.assertIn(f"LicNum={r['license']}",r['official_url'])
+   self.assertTrue(r['phone'].startswith('('))
+   self.assertTrue(r['cost']);self.assertTrue(r['reason']);self.assertTrue(r['unverified'])
+   for i in r['source_ids']:self.assertIn(i,srcs)
+  for r in k['criteria']+k['excluded']:
+   for i in r['source_ids']:self.assertIn(i,srcs)
+ def test_ranking_page_rows(self):
+  t=(ROOT/'decision-analysis.html').read_text()
+  self.assertIn('id="ranking-table"',t);self.assertIn('id="criteria-table"',t)
+  self.assertEqual(t.count('LicNum=')>=12,True)
+  for p in ['index.html','executive-summary.html','providers.html','estimates.html']:
+   self.assertIn('decision-analysis.html',(ROOT/p).read_text())
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
-  pages=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+  pages=['index.html','executive-summary.html','requirements.html','providers.html','decision-analysis.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)

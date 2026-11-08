@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','requirements.html','providers.html','decision-analysis.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -47,6 +47,13 @@ class Links(HTMLParser):
     else:self.links.append(u)
 def main():
  texts={p:(ROOT/p).read_text() for p in PAGES if (ROOT/p).exists()}
+ all_sources=load('sources.json')['rows']
+ def host_of(u):
+  import urllib.parse
+  try:return (urllib.parse.urlparse(u).hostname or '').lower()
+  except ValueError:return ''
+ official_kinds={'official-government','official-company','official-manufacturer','official-code-publisher','official-tool','repository-primary','owner-record'}
+ official_hosts={host_of(s['url']) for s in all_sources if s['kind'] in official_kinds and host_of(s['url'])}
  check('all canonical pages present',len(texts)==len(PAGES),f'{len(texts)}/{len(PAGES)}')
  parsed={p:Parse() for p in texts}
  for p,t in texts.items():parsed[p].feed(t)
@@ -82,13 +89,38 @@ def main():
     rowcount+=1
     if not re.search(r'href="https://',tr):missing.append(f'{p}:{tr[:80]}')
  check('every canonical table row has an official/source link',not missing,f'{rowcount} rows; offenders: '+'; '.join(missing[:10]))
+ # strict policy: each row must link a host registered in sources.json as official/primary
+ strict=[]
+ for p,t in texts.items():
+  for tbl in re.findall(r'<tbody>(.*?)</tbody>',t,re.S):
+   for tr in re.findall(r'<tr>(.*?)</tr>',tbl,re.S):
+    hrefs=re.findall(r'href="(https?://[^"]+)"',tr)
+    if not any(host_of(u) in official_hosts for u in hrefs):
+     snippet=re.sub(r'<[^>]*>',' ',tr)[:90]
+     strict.append(f'{p}:{snippet}')
+ check('strict: every row links a registered official/primary host',not strict,f'{rowcount} rows; offenders: '+'; '.join(strict[:10]))
  # data invariants
- prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
+ prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']};rank=load('ranking.json')
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
  check('requirement count parity',len(parsed['requirements.html'].tables.get('requirements-table',[]))==len(req))
  check('estimate count parity',len(parsed['estimates.html'].tables.get('estimates-table',[]))==len(est['rows']))
  check('source count parity',len(parsed['sources.html'].tables.get('sources-table',[]))==len(srcs))
  check('flag count parity',len(parsed['flagged-for-review.html'].tables.get('flags-table',[]))==len(flags))
+ check('ranking count parity',len(parsed['decision-analysis.html'].tables.get('ranking-table',[]))==len(rank['ranks']),f"{len(parsed['decision-analysis.html'].tables.get('ranking-table',[]))}/{len(rank['ranks'])}")
+ check('criteria count parity',len(parsed['decision-analysis.html'].tables.get('criteria-table',[]))==len(rank['criteria']))
+ check('excluded count parity',len(parsed['decision-analysis.html'].tables.get('excluded-table',[]))==len(rank['excluded']))
+ check('cost note count parity',len(parsed['decision-analysis.html'].tables.get('cost-notes-table',[]))==len(rank['cost_notes']))
+ rbad=[]
+ for x in rank['ranks']+rank['criteria']+rank['excluded']:
+  for i in x.get('source_ids',[]):
+   if i not in srcs:rbad.append(f"{x.get('rank') or x.get('id') or x.get('provider')}:{i}")
+  if not x.get('official_url','').startswith('https://'):rbad.append(f"no official_url:{x.get('rank') or x.get('id') or x.get('provider')}")
+ for i in rank['cost_note_source_ids']:
+  if i not in srcs:rbad.append(f'cost_notes:{i}')
+ check('ranking source ids and official urls resolve',not rbad,'; '.join(rbad[:10]))
+ check('ranks are unique 1..N',sorted(x['rank'] for x in rank['ranks'])==list(range(1,len(rank['ranks'])+1)))
+ check('every rank has an official CSLB licence link and a phone',all(f"LicNum={x['license']}" in texts['decision-analysis.html'] and x['phone'] in texts['decision-analysis.html'] for x in rank['ranks']))
+ check('every rank explains cost evidence',all(len(x['cost'])>80 and 'verified' in x['cost'].lower() for x in rank['ranks']))
  bad=[]
  for p in prov:
   if p['license']:
@@ -105,7 +137,7 @@ def main():
  check('no numeric star ratings in canonical pages',not re.search(r'\d(?:\.\d)?\s*(?:stars|out of 5)',' '.join(texts.values()),re.I))
  # all source ids resolve and official urls are https
  bad=[]
- for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
+ for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json','providers.json','sources.json']:
   for r in load(name)['rows']:
    for i in r.get('source_ids',[]):
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')
@@ -124,7 +156,7 @@ def main():
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
- check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))
+ check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts']['ranks']==len(rank['ranks']) and br['counts']['ranking_criteria']==len(rank['criteria']))
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()
