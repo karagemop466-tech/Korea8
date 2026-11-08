@@ -1095,7 +1095,7 @@ No provider was contacted, booked or paid.
 |---|---|---|---|---|
 | `215-01` | Claim board before other edits | done | `arena/215f5c79-korea8` | `COORDINATION.md` |
 | `215-02` | Independently review canonical data/site, refresh priority-provider and review-platform evidence, correct only evidenced defects | done | `arena/215f5c79-korea8` | `overflow-integration/**`, `site-data/**`, root canonical HTML/CSS, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `audit/2026-11-08-215f5c79/**` |
-| `215-03` | Build, source/link/privacy verification, PR to main, merge, Pages deployment and final record | in progress | `arena/215f5c79-korea8` | `COORDINATION.md`, workflow/deployment configuration only if required |
+| `215-03` | Build, source/link/privacy verification, PR to main, merge, Pages deployment and final record | done | `arena/215f5c79-korea8` | `COORDINATION.md`, workflow/deployment configuration only if required |
 
 All earlier overlapping implementation claims are more than 60 minutes old and their latest completed canonical handoff is PR #40/#42; this session takes over only the final integration scope and preserves their work. Arena fixes this session to `arena/215f5c79-korea8`; no additional worktree or task branch will be created. No provider will be contacted or booked. Owner-supplied estimates will remain labelled and distinct from verified current prices.
 
@@ -1110,3 +1110,14 @@ All earlier overlapping implementation claims are more than 60 minutes old and t
 
 - **PR #45 combined handoff:** main advanced again with all 23 CSLB records freshly re-read and a 10-candidate ranked decision page. Its generator/data/pages were retained; only this audit link/log was reapplied. The combined build now has 11 pages, 274 source-linked rows and 40 published flags. Generator/report conflicts were resolved from the combined data and the complete checks rerun successfully.
 - **Final clean integration:** main advanced through PR #47 and PR #48 while merge was attempted. This session reapplied only its new audit, Verification link and board record onto PR #48, retaining all parallel ranking/deployment/repository-review work. Final checks: 22/22 PASS, 274 source-linked rows, 235 tracked-HTML links, 10/10 tests, independent parser 245 rows/161 links/0 problems. All 40 flags remain published.
+
+### `215-03` — PR, merge and live deployment record
+
+| Item | Result |
+|---|---|
+| Integration PR | **#46** — https://github.com/karagemop466-tech/Korea8/pull/46 |
+| Merge | **MERGED** 2026-11-08T23:08:28Z; merge commit `60844f346fb6129fce5eb6b3ac77e19c37d341d6` |
+| Workflow | [Run 42533706759](https://github.com/karagemop466-tech/Korea8/actions/runs/42533706759) — build and deploy **success** for the exact merge commit |
+| Legacy Pages build | [1352718355](https://api.github.com/repos/karagemop466-tech/Korea8/pages/builds/1352718355) — **built**, no error, commit `60844f3` |
+| Live verification | Cache-busted `verification.html`, `decision-analysis.html`, `flagged-for-review.html` and the new audit returned the 11-page summary, ranked candidates, 40 flags and audit content/link |
+| Final status | `215-01`, `215-02`, `215-03` **done**. All 40 irregularities/open items remain published and non-blocking. No provider contacted/booked. |

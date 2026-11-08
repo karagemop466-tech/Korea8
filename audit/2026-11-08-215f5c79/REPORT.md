@@ -55,7 +55,7 @@ blank/source exceptions were manually reviewed: the §104.2 requirement row, Ayo
 Bernal Hill Drywall source row and SF-CODE-104 source row each contain a direct primary-source link.
 The older independent parser merely omitted American Legal Publishing, Ayoob & Peery and Bernal Hill
 from its hostname allowlist; these are not missing-source rows. The canonical strict verifier separately
-requires an HTTPS source link on all 236 rows and passes. Heise’s embedded 404 template block was already
+requires an HTTPS source link on all 274 rows and passes. Heise’s embedded 404 template block was already
 recorded in the canonical source limitations and remains disclosed above and in the source register.
 
 Rebase conflicts in `COORDINATION.md`, the generator and generated reports were resolved by retaining PR #43, PR #45 and this session’s audit link/log, then rebuilding from the combined canonical data; no parallel work was discarded.
