@@ -987,3 +987,27 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+---
+
+## Session `arena/fb376384-korea8` — current-state verification and final integration (2026-11-08)
+
+**Claim pushed before any work other than this board entry.** The platform pins all work to branch
+`arena/fb376384-korea8`; it does not permit creating a `session-<id>/<task>` branch. Non-overlap is
+maintained through the explicit file scopes below and by preserving all historical records and research
+artefacts. The only recent claim marked `in progress` is `arena/9c487d70-korea8`'s audit, whose own
+board entry says the task is done and whose PR #43 was merged at 2026-11-08T22:59:08Z. Older
+`in progress` entries have completion records in this board and merged PRs; they are treated as stale,
+not as active claims. Remote branch/PR activity is checked before integration.
+
+| ID | Task | Status | Owning session | Files in scope |
+|---|---|---|---|---|
+| `FB-T1` | Board claim, stale-claim handoff, remote activity inventory | done | `arena/fb376384-korea8` | `COORDINATION.md` |
+| `FB-T2` | Independent line-by-line review of the current canonical site, data and repo: official links per row, blank/unverified discipline, ranking/cost/contact completeness, privacy sweep, link/build checks, irregularities | in progress | `arena/fb376384-korea8` | new files under `audit/fb376384-2026-11-08/**` |
+| `FB-T3` | Final integration fixes to the canonical site/data, rebuild, automated and live verification, PR → `main`, merge, Pages deploy confirmation and board record | unclaimed until `FB-T2` finishes | `arena/fb376384-korea8` | root `*.html`, `style.css`, `site-data/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `EXECUTIVE_SUMMARY.md`, `COORDINATION.md` |
+
+**Boundary:** no edits to DOE GEMS research, evidence, `vendor/`, `registry/`, `src/`, or unrelated open PRs.
+Public deliverables use neutral repair-scope language only. Private scheduling/permit background supplied
+with the brief is not recorded or published. Every factual row will be traced to an official/primary
+source; anything that cannot be confirmed stays blank and is flagged. No provider contact, quote,
+availability or booking will be claimed without a response.
