@@ -96,7 +96,7 @@
       "why": "Broadest single-licence coverage in the set: B + C-36 plus A, C-4, C-16 and C-10 on the CSLB record, so one prime contract can lawfully carry both the concealed pipe work and the ceiling repair if it names the trades. Licensed since 2003 with a current workers-compensation policy; the company advertises HOA and property-manager work, which matches a tenant-occupied building. Indexed review text mentions bathtub repair, but no source shows this trip-lever job.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. Owner-supplied comparators for replacement-type scopes are $550 and $614 (owner-reported, unverified); the official DBI Category 1P plumbing fee is $290 if a permit applies (a fee, not a price).",
-      "ask": "Ask for one written combined scope: tub-side attempt first, ceiling opening method, named drywall/texture party, occupied-unit schedule, and a fixed price with the permit position stated.",
+      "ask": "Ask for one written combined scope: tub-side attempt first, ceiling opening method, named drywall/texture party, occupied-unit schedule, and a fixed price with the permit position stated. Final verification gate: Confirm drywall/texture/paint party, occupied-unit protections and small-job acceptance.",
       "short_why": "broadest single-licence coverage (B + C-36 plus A, C-4, C-16, C-10), active since 2003 with current workers comp and published HOA/property-manager work"
     },
     {
@@ -134,7 +134,7 @@
       "why": "The only provider with company-published San Francisco tub waste-and-overflow cases, including one that says the crew accessed the exterior ceiling to remove the old overflow. That is the closest published match to the below-ceiling fallback. The licence is C-36 + C-10 + A + C-20 with no B or C-9, so the drywall half must be subcontracted or separately contracted; the case page also embeds a 404 template block.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources.",
-      "ask": "Ask who performs and warrants the ceiling patch and texture, whether the same crew can do both under one contract, and for a price for the two-path scope.",
+      "ask": "Ask who performs and warrants the ceiling patch and texture, whether the same crew can do both under one contract, and for a price for the two-path scope. Final verification gate: Confirm whether exterior-ceiling case resembles this storage-unit access; provide direct reference and restoration subcontractor.",
       "short_why": "only company-published San Francisco ceiling-access tub waste-and-overflow case, but no B or C-9, so the ceiling party must be named"
     },
     {
@@ -158,7 +158,8 @@
       "flags": [
         "F-01",
         "F-14",
-        "F-15"
+        "F-15",
+        "F-43"
       ],
       "score_components": {
         "C1": 5,
@@ -170,7 +171,7 @@
       "why": "B + C-36 combined licence and a published offer that runs from simple repairs to complete renovations, which is the shortest single-contract path if the ceiling has to be opened. The licence was issued in 2024 and the CSLB record shows a workers-compensation exemption (certified no employees), so crew size and supervision should be confirmed. The indexed Yelp account describes retrieving a tub plug by opening a wall; it is adjacent evidence, not this job.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. Owner-supplied comparators are $550 and $614 for replacement-type scopes (unverified); no labour or restoration line is documented.",
-      "ask": "Ask whether the crew is employees or subcontractors, who patches and textures the ceiling, and for a fixed combined price.",
+      "ask": "Ask whether the crew is employees or subcontractors, who patches and textures the ceiling, and for a fixed combined price. Final verification gate: Name restoration party; confirm occupied-unit plan, insurance, permit path and current phone.",
       "short_why": "B + C-36 with a published simple-repair-to-renovation offer; 2024 licence and workers-comp exemption to check"
     },
     {
@@ -242,7 +243,7 @@
       "why": "B + C-36 with a current workers-compensation policy covering subcontracted construction work. The indexed description positions kitchens and baths inside larger renovation scopes, so a small single-fixture repair may not be accepted; no tub-overflow case or quote was found.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file.",
-      "ask": "Ask first whether a one-fixture repair with ceiling patching is in scope, then request the combined written scope.",
+      "ask": "Ask first whether a one-fixture repair with ceiling patching is in scope, then request the combined written scope. Final verification gate: Confirm minimum job size, restoration self-performance and occupied-unit plan.",
       "short_why": "B + C-36 with current workers comp, but positioned toward larger renovations"
     },
     {
@@ -278,7 +279,7 @@
       "why": "The supplied 2026-08-30 wording — \"replace waste and overflow\" — is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: the licence does not cover the ceiling repair, so a second licensed party is required if the ceiling is opened. This ranking does not endorse the $614 figure, which remains owner-reported.",
       "cost_amount_owner": 614,
       "cost_note": "Owner-reported $614 on 2026-08-30 for \"replace waste and overflow\". Verified amount blank; no access route, drywall restoration, permit, cleanup or warranty line is included.",
-      "ask": "Requote the identical combined scope and ask for the access method and the named restoration party in writing.",
+      "ask": "Requote the identical combined scope and ask for the access method and the named restoration party in writing. Final verification gate: Confirm access route, parts, drywall, permit, cleanup, warranty and validity in writing.",
       "short_why": "C-36 only; owner-reported $614 is the closest supplied scope wording"
     },
     {
@@ -348,7 +349,7 @@
       "why": "Long-standing C-36 licence (since 1999) with an owner-reported $550 for \"lever, plug and spout with diverter, labor and materials\". Those words may describe a spout/diverter assembly rather than the waste-and-overflow body, which is the part at issue, so the price may not cover this job. C-36 only, with a workers-compensation exemption; the shared address and phone with Save-On-Interior do not by themselves prove common ownership.",
       "cost_amount_owner": 550,
       "cost_note": "Owner-reported $550 on 2026-08-30 for lever, plug and spout with diverter, labour and materials. Verified amount blank; scope wording may not match the failed assembly.",
-      "ask": "Confirm in writing that the price covers the overflow body and linkage, not only the spout/diverter, and who restores the ceiling.",
+      "ask": "Confirm in writing that the price covers the overflow body and linkage, not only the spout/diverter, and who restores the ceiling. Final verification gate: Confirm legal contracting entity, license, exact parts and restoration party before comparison.",
       "short_why": "C-36 only; owner-reported $550 may describe a spout/diverter rather than the overflow body"
     },
     {
@@ -415,7 +416,7 @@
       "why": "The $135 owner-reported price is for \"repair or adjust plunger handle\", an adjustment rather than a replacement, so it is not comparable to the other two. C-36 only; the CSLB workers-compensation policy expires 2026-12-18, before some likely work dates, and the registered address wording differs from the website.",
       "cost_amount_owner": 135,
       "cost_note": "Owner-reported $135 on 2026-08-30 for repair or adjust of the plunger handle. Verified amount blank; adjustment-only scope, not a replacement-plus-access price.",
-      "ask": "Ask what happens if adjustment fails, and request a replacement scope with ceiling access priced separately.",
+      "ask": "Ask what happens if adjustment fails, and request a replacement scope with ceiling access priced separately. Final verification gate: Clarify whether adjustment can free this stuck assembly; price fallback separately.",
       "short_why": "C-36 only; the $135 quote is adjustment-only, and workers comp expires 2026-12-18"
     }
   ],
@@ -450,7 +451,7 @@
     "why": "C-9 drywall plus B, active since 2014 with a current workers-compensation policy. This is the only drywall specialist in the register, and it is a restoration partner for whichever plumbing lead is hired, not a candidate for the plumbing work itself (no C-36).",
     "cost_amount_owner": null,
     "cost_note": "No quote on file. No patch/texture/paint price has been supplied by any party.",
-    "ask": "Ask for a fixed patch-texture-paint price conditional on a defined opening size, and whether work can be scheduled after the plumbing inspection.",
+    "ask": "Ask for a fixed patch-texture-paint price conditional on a defined opening size, and whether work can be scheduled after the plumbing inspection. Final verification gate: Pair with licensed plumber under lawful combined contract; confirm ceiling finish match and contents protection.",
     "short_why": "C-9 + B drywall specialist, paired with a plumbing lead"
   },
   "not_recommended": [
@@ -612,6 +613,28 @@
       "phone": "",
       "license": "",
       "status": "Unresolved"
+    },
+    {
+      "provider_id": "P-25",
+      "name": "Atlas Plumbing & Rooter",
+      "reason": "Active C-36 San Francisco plumbing lead. An unverified Yelp search excerpt mentions stuck bathtub drain levers and the BBB profile lists adjacent drain work, but no B/C-9 or ceiling-restoration proof was found. CSLB, company and BBB phone numbers differ. Hold as a conditional review lead until a direct trip-lever reference, restoration party and current dispatch number are confirmed.",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS",
+        "ATLAS-CONTACT",
+        "YELP-ATLAS",
+        "BBB-ATLAS"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "phone": "(650) 871-9863",
+      "license": "868994",
+      "status": "Current and active",
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-42"
+      ]
     }
-  ]
+  ],
+  "final_verification_note": "Final integration on 2026-11-08 re-fetched all 24 CSLB records, added Atlas as a conditional hold, corrected the AmLegal chunk reference, and added phone-discrepancy flags. The weighted order remains editorial decision support, not a verified performance rating; no provider was contacted or booked."
 }

@@ -26,9 +26,10 @@ evidence; full reasoning, scores and cost basis are on the Ranked decision analy
 10. Fast Response Plumbing & Rooter #1024971, (415) 596-6115 — C-36 only; owner-reported $135 is adjustment-only; workers comp expires 2026-12-18.
 
 Restoration partner: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B; not a plumbing candidate.
+Atlas Plumbing & Rooter #868994 is a conditional review lead held outside the hiring order pending a direct trip-lever reference, restoration party and current dispatch number.
 Held back: D G Construction (CSLB citation disclosed), Advanced Plumbing (future-suspension warning),
 24/7 SF Handyman (B-2), SF Building Group (B only), Precision (drain cleaning), Clever (licensed 2026-09-04),
-Cahill (no C-36), Kenneth Asire (suspended), Portola (identity unresolved).
+Cahill (no C-36), Kenneth Asire (suspended), Portola (identity unresolved), Atlas (conditional review lead).
 
 ## Estimates
 Owner-supplied amounts dated 2026-08-30: Expert $614 (replace waste and overflow), Bay Area $550
@@ -49,4 +50,4 @@ are unconfirmed.
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 36 items.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 46 items.

@@ -1,0 +1,57 @@
+{
+  "session": "arena/3946905e-korea8",
+  "date": "2026-11-08",
+  "scope": "Canonical overflow dashboard verification/integration",
+  "observations": [
+    {
+      "topic": "CSLB",
+      "result": "All 23 prior license records plus Atlas #868994 directly re-fetched; fields matched prior records except added Atlas. Asire remains suspended; Advanced retains future-suspension warning; D G retains disclosure-only citation.",
+      "evidence": "cslb_receipts.json"
+    },
+    {
+      "topic": "Company sites",
+      "result": "Rapid Flow, Ace, Heise\u2019s, Expert, Bay Area, Fast Response, We Do, Ayoob & Peery, Bernal Hill, SF Building Group and Atlas sites retrieved. Service claims are self-descriptions; Rapid Flow and Atlas phone discrepancies flagged.",
+      "evidence": "overflow-integration/data/sources.json"
+    },
+    {
+      "topic": "Heise\u2019s cases",
+      "result": "Ingleside/Mission/Marina case text retrieved but each embeds a 404 block. Ingleside says exterior ceiling; not confirmed as storage-unit ceiling below this tub; no restoration proof.",
+      "evidence": "overflow-integration/data/technical.json; flags F-17"
+    },
+    {
+      "topic": "Reviews",
+      "result": "Yelp business/search pages remain HTTP 403; search excerpts are unverified leads. BBB Atlas and Angi SF directory retrieved directly; no exact shortlisted trip-lever job established. Numeric ratings/counts remain blank.",
+      "evidence": "overflow-integration/data/reviews.json; flags F-14"
+    },
+    {
+      "topic": "Official rules",
+      "result": "SF permit/remodel/AUTH/DBI/fees, AmLegal \u00a7104 chunks 12/13, CSLB contract/classifications/Fast Facts, BPC \u00a7\u00a77048/7057/7057.5, CIV \u00a71954, EPA RRP/asbestos and Watco PDF retrieved. \u00a7104.2 is in chunk 13; chunk 14 is \u00a7104.5. CSLB B page reproduces older statute; current BPC \u00a77057 separately retrieved.",
+      "evidence": "overflow-integration/data/compliance.json; sources.json; flags F-22/F-40"
+    },
+    {
+      "topic": "Portola",
+      "result": "No exact legal-entity/license match established; identity fields remain blank and flagged. Not rechecked beyond prior unresolved status.",
+      "evidence": "providers.json P-24; flags F-10"
+    },
+    {
+      "topic": "Ranking",
+      "result": "Preserved the merged editorial weighted ranking in ranking.json, enriched it with final-verification gates, and added Atlas as a conditional hold. No verified combined prices or provider acceptance invented.",
+      "evidence": "overflow-integration/data/ranking.json; decision-analysis.html"
+    },
+    {
+      "topic": "Strict source coverage",
+      "result": "Canonical verifier requires a registered official-primary source link in every tbody row; review platforms/repository records alone do not count. Independent audit allowlist corrected for AmLegal/Ayoob/Bernal/Atlas and official GitHub docs/API; Yelp/Angi/BBB are not official.",
+      "evidence": "scripts/verify_overflow_site.py; audit/independent_audit.py"
+    },
+    {
+      "topic": "Privacy",
+      "result": "Canonical public wording scan passes; tracked-file exact private-pattern scan found no hits. Legacy findings.json hit was generic code discussion, not owner-private content.",
+      "evidence": "overflow-integration/verification-report.json"
+    },
+    {
+      "topic": "Deployment",
+      "result": "Pending this integration merge; prior live deployment is not proof of the new commit. Parallel main ranking work was preserved during conflict resolution.",
+      "evidence": "overflow-integration/data/deployment.json"
+    }
+  ]
+}

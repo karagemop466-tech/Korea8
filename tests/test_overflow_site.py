@@ -17,6 +17,11 @@ class DataTests(unittest.TestCase):
   p=[x for x in load('providers.json')['rows'] if x['license']=='1027286'][0];self.assertEqual(p['status'],'Suspended');self.assertIn('F-09',p['flags'])
  def test_no_numeric_reviews(self):
   self.assertTrue(all(v['rating'] is None and v['review_count'] is None for v in load('reviews.json')['rows']))
+ def test_ranking_active_and_source_linked(self):
+  prov={p['id']:p for p in load('providers.json')['rows']};rk=load('ranking.json')
+  for r in rk['ranked']+[rk['partner']]:
+   self.assertEqual(prov[r['provider_id']]['status'],'Current and active');self.assertTrue(r['source_ids']);self.assertTrue(r['official_url'].startswith('https://'))
+  self.assertAlmostEqual(sum(w['weight'] for w in rk['weights']),1.0)
  def test_requirements_have_official_context(self):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
 class SiteTests(unittest.TestCase):

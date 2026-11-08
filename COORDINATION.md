@@ -1121,3 +1121,22 @@ All earlier overlapping implementation claims are more than 60 minutes old and t
 | Legacy Pages build | [1352718355](https://api.github.com/repos/karagemop466-tech/Korea8/pages/builds/1352718355) — **built**, no error, commit `60844f3` |
 | Live verification | Cache-busted `verification.html`, `decision-analysis.html`, `flagged-for-review.html` and the new audit returned the 11-page summary, ranked candidates, 40 flags and audit content/link |
 | Final status | `215-01`, `215-02`, `215-03` **done**. All 40 irregularities/open items remain published and non-blocking. No provider contacted/booked. |
+
+## Session `arena/3946905e-korea8` — fresh verification and final integration (2026-11-08)
+
+| Task | Status | Owning session ID | Files touched |
+|---|---|---|---|
+| T3946905e-A: fresh official-source provider/review research and line-by-line repository audit | in progress | `arena/3946905e-korea8` | `audit/REPORT_2026-11-08_3946905e.md`, `audit/verification_3946905e/`, `COORDINATION.md` |
+| T3946905e-B: canonical data correction, decision analysis and dashboard integration | in progress (prerequisite research claimed by this same session) | `arena/3946905e-korea8` | `overflow-integration/data/`, `overflow-integration/OWNER_RECORD.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root canonical HTML/CSS and generated summaries/reports, `README.md`, `COORDINATION.md` |
+| T3946905e-C: PR, merge, deploy and live verification | unclaimed (reserved for this session after A/B) | `arena/3946905e-korea8` | `COORDINATION.md`, canonical generated verification/deployment records |
+
+**Claim boundaries:** No other session has an active bathtub task on current `main`; the most recent audit task is done. This session is the final integrator for the unresolved four-row source gap, source deterioration, decision-ranking and publication checks. No historical open PR is assumed merge-ready or authorized for takeover. DOE GEMS code/data and other sessions' scoped drafts are read-only. Any required cross-scope edit will be logged here, not made silently.
+
+**Branch coordination exception:** Arena fixes this session to `arena/3946905e-korea8`; creating/switching to `session-<id>/<task>` branches is prohibited by the active workspace rules. All commits and the integration PR stay on this fixed branch. Coordination edits are append-only and rebase-checked before each push. Historical claims over 60 minutes old are not automatically taken over. No outreach, booking or private circumstances will be published.
+
+
+### T3946905e-B merge-resolution record — 2026-11-08
+
+`origin/main` advanced through PRs #45/#46/#47/#48/#50 while this session was verifying sources. The merge conflicted in the shared board, canonical generator/verifier/tests, generated pages/reports, flags and sources. Resolution preserved the merged editorial weighted ranking (`ranking.json` / `decision-analysis.html`) and all prior coordination/audit records, then reapplied this session’s fresh CSLB/company/statute rechecks, Atlas conditional lead, strict official-primary row coverage, corrected AmLegal chunk metadata, phone-discrepancy flags and final-verification gates. This session’s six new flags were renumbered F-41–F-46 to avoid overwriting main’s F-37–F-40. The superseded `decision.json` was removed after its per-provider gates were folded into `ranking.json`.
+
+Combined local checks before merge commit: build OK; `verify_overflow_site.py` 27/27 PASS (300 source-covered rows, 574 tracked-HTML links); 11/11 unit tests; independent audit 300/300 rows recognized, 0 problems. No provider contacted/booked; owner estimates remain owner-reported with verified amounts blank.

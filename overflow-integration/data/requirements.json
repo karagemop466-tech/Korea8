@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "R-01",
@@ -12,7 +12,7 @@
         "WATCO"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-01/R-03; bt R-S01/R-S03; data REQ-01/03",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -27,7 +27,7 @@
         "OWNER"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "data REQ-02",
       "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
     },
@@ -42,7 +42,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-04/R-25; bt R-S05; data REQ-24/27",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -57,7 +57,7 @@
         "OWNER"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-A04",
       "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
     },
@@ -72,7 +72,7 @@
         "WATCO"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-05; data REQ-04/06",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -87,7 +87,7 @@
         "HEISE-INGLESIDE"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-06/R-07; bt R-A01; data REQ-05",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -102,7 +102,7 @@
         "OWNER"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-A02/R-A03; data REQ-16",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
     },
@@ -118,7 +118,7 @@
         "WATCO"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-08; bt R-S04",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -133,7 +133,7 @@
         "WATCO"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-09/R-10; bt R-S01",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -148,7 +148,7 @@
         "CSLB-C36"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-10; bt R-S02",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -164,7 +164,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "bt R-S03",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -179,7 +179,7 @@
         "OWNER"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-08/R-12; bt R-S04; data REQ-07",
       "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
     },
@@ -194,7 +194,7 @@
         "OWNER"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-T04; data REQ-15",
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
     },
@@ -210,7 +210,7 @@
         "CSLB-SEARCH"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-13/R-14; bt R-L01/R-L05; data REQ-08/09",
       "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36"
     },
@@ -228,7 +228,7 @@
         "BPC-7057-5"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "root R-12/R-17; bt R-L02; data REQ-07",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057."
     },
@@ -244,7 +244,7 @@
         "DG-COMPLAINT"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-14; bt R-L05/R-V04; data REQ-09",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
     },
@@ -259,7 +259,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-15; bt R-L06/R-V03",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
     },
@@ -276,7 +276,7 @@
         "OWNER"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-16; bt R-V05; data REQ-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
     },
@@ -292,7 +292,7 @@
         "OWNER"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "bt R-V01; data REQ-11",
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/"
     },
@@ -308,7 +308,7 @@
         "CSLB-SEARCH"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "data REQ-12",
       "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA"
     },
@@ -325,7 +325,7 @@
         "OWNER"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "bt R-V02; data REQ-11/13",
       "official_url": "https://www.aceplumbingandrooter.com/"
     },
@@ -341,7 +341,7 @@
         "SF-DBI"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "root R-18; bt R-P01; data REQ-17",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -356,7 +356,7 @@
         "SF-PERMIT"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "bt R-P01; root code C-02 correction",
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
     },
@@ -372,7 +372,7 @@
         "SF-REMODEL"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "bt R-P02; data REQ-19/20",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -387,7 +387,7 @@
         "SF-REMODEL"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "root R-20; bt R-P02; data REQ-18",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -402,7 +402,7 @@
         "SF-CODE-104"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-19; bt R-P03/R-B03",
       "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
     },
@@ -418,7 +418,7 @@
         "SF-DBI"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-P04/R-P05; root code C-15 correction",
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
     },
@@ -432,7 +432,7 @@
         "CIV-1954"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "root R-21; bt R-T01; data REQ-14",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
     },
@@ -446,7 +446,7 @@
         "CIV-1954"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "root R-22; bt R-T01/T02; data REQ-14",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
     },
@@ -462,7 +462,7 @@
         "ACE"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-T03; data REQ-13/15",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -477,7 +477,7 @@
         "EPA-RRP-RULES"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "new conditional control",
       "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
     },
@@ -492,7 +492,7 @@
         "CSLB-B-FAST"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-A05",
       "official_url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos"
     },
@@ -507,7 +507,7 @@
         "OWNER"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-26; bt R-L03; data REQ-21",
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
     },
@@ -521,7 +521,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Official rule",
-      "status": "Official source reviewed; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
       "legacy_ids": "bt R-L04",
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
     },
@@ -536,7 +536,7 @@
         "SF-PERMIT"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-L03; data REQ-21",
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
     },
@@ -551,7 +551,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-11/R-27/R-28; bt R-B01/B02; data REQ-22",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -566,7 +566,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "data REQ-23; root R-28",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -582,7 +582,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-B03",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -597,7 +597,7 @@
         "CIV-1954"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "bt R-B04; root R-26",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -612,7 +612,7 @@
         "SF-PERMIT"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-24/R-25; data REQ-02/24",
       "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
     },
@@ -627,7 +627,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Proposed control",
-      "status": "Open — confirm in writing",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "bt R-V05",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -639,12 +639,13 @@
       "acceptance_check": "Automated row-source, blank-field and link checks pass before publication.",
       "source_ids": [
         "REPO",
-        "OWNER"
+        "OWNER",
+        "GH-PAGES"
       ],
       "origin": "Owner requirement",
-      "status": "Open — confirm in writing",
+      "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-29; data REQ-26",
-      "official_url": "https://github.com/karagemop466-tech/Korea8"
+      "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
     }
   ]
 }

@@ -37,7 +37,8 @@
       "flags": [
         "F-01",
         "F-14",
-        "F-15"
+        "F-15",
+        "F-43"
       ]
     },
     {
@@ -875,6 +876,46 @@
       "additional_status": "",
       "flags": [
         "F-13"
+      ]
+    },
+    {
+      "id": "P-25",
+      "name": "Atlas Plumbing & Rooter",
+      "legal_name": "ATLAS PLUMBING & ROOTER",
+      "license": "868994",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(650) 871-9863",
+      "expiry": "2028-03-31",
+      "status": "Current and active",
+      "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
+      "source_timestamp": "11/8/2026 3:00:50 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS"
+      ],
+      "website": "https://www.atlasplumbingandrooter.com/",
+      "service_claim": "The company advertises San Francisco residential/commercial plumbing, fixture repairs and drain services.",
+      "service_source": "ATLAS",
+      "service_verified": true,
+      "group": "Conditional review lead",
+      "fit": "Active C-36 plumbing lead with San Francisco service claims. A Yelp search excerpt describes stuck bathtub drain levers, but the business page was blocked and the account is unverified. No B/C-9 on this license; ceiling restoration is unconfirmed.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2?start=240",
+      "review_source": "YELP-ATLAS",
+      "additional_status": "CSLB phone differs from the company contact page; both are source-linked, neither is silently substituted.",
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-46",
+        "F-42"
       ]
     }
   ]

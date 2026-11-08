@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "C-01",
@@ -68,7 +68,7 @@
     {
       "id": "C-07",
       "topic": "Small-work exemption",
-      "rule": "BPC §7048 has a conditional under-$1,000 aggregate exemption; it does not apply when a building permit is required or the work is part of a larger operation.",
+      "rule": "BPC §7048 (effective 2026-01-01) has a conditional under-$1,000 aggregate exemption; it does not apply when a building permit is required, for larger operations, or to persons advertising as contractors/employing others.",
       "source_ids": [
         "BPC-7048"
       ],
