@@ -83,6 +83,22 @@ These were fetched directly by this session on 2026-11-08 and are not yet in the
 7. Dashboard/summary counts and ranking prose should be generated from canonical data, not hardcoded.
 8. Flag and provider IDs must be deduplicated across parallel branches before merge. In particular, do not reuse F-37/F-40/P-25/P-26 for different meanings.
 
+## Addendum — parallel evidence rechecked by this session
+
+After the initial read-only pass, this session independently rechecked several sources raised by parallel audits/branches. These observations are ready for final integration but do not edit the canonical dashboard while overlapping claims are active.
+
+| Item | Rechecked observation | Integration consequence |
+|---|---|---|
+| Heise's Paint, Patch & Drywall Repair | Official page advertises plumbing-access drywall cutout repair, ceiling patching after leak verification, paint/texture prep, occupied homes/rentals and tenant-schedule coordination. | Strong conditional all-in-one service evidence. CSLB #1089561 still has no B/C-9, so the written contract must name the properly licensed restoration party or lawful subcontract structure. |
+| Five Star official homepage | Repeats diagnosis/permits through final restoration, one accountable team, in-house phases, flat-rate pricing and property-manager service. | Supports first-inquiry all-in-one lead status, but remains a company claim; entity/phone reconciliation and exact-job acceptance are still required. |
+| Atlas contact page | Official site lists 415-849-2346 and 3311 Mission Street Suite 165; CSLB #868994 lists (650) 871-9863. | Preserve both source-linked numbers and flag the role/contact discrepancy; do not silently substitute. |
+| In & Out bathroom-plumbing URL | `https://inandoutplumbing.com/bathroom-plumbing/` returned a 404 page while displaying license #878184. | Do not cite that URL as live service evidence without another retrieved official page. CSLB complaint disclosure lists six citations dated 2017–2018: three completed and three for disclosure only. |
+| SF Plumbing Code §104.0 | Chunk 13 contains §104.1/§104.2 administration/exemption text; chunk 14 contains §104.3–§104.5, including the conditional permit-issuance-fee waiver for fixture/gas-appliance replacement without drainage/piping/venting change. | Correct chunk attribution; publish the fee waiver as conditional, not a permit exemption or inspection-fee waiver. |
+| BPC §7048 | Subdivision (c) excludes persons who advertise/hold out as contractors or employ another person to perform/assist the work. | Add the advertising/employment exclusions to the small-job exemption summary. |
+| BPC §7057 | Subdivision (b) excludes framing/carpentry from the two-unrelated-trades count for prime/subcontracts involving other trades. | Add the framing/carpentry exclusion to the B-license combined-scope summary. |
+
+The parallel independent audit `arena/6880fb12-korea8` reached compatible conclusions on Heise drywall evidence, Watco step 7, §104.2/§104.5 chunks, BPC exclusions and registered-primary-source row checks. Final integration should preserve both audits and apply the corrections once the active canonical claims are released or stale under the coordination rule.
+
 ## Privacy and outreach
 
 No provider was contacted, booked, or paid. Public wording remains neutral repair-scope language and uses DBI's published permit position; no permit exemption is assumed.
