@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "RV-01",
@@ -16,7 +16,7 @@
         "YELP-RF2",
         "CSLB-1115649"
       ],
-      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation."
+      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation. Rechecked 2026-11-08; still not exact-job confirmation."
     },
     {
       "id": "RV-02",
@@ -31,9 +31,10 @@
       "source_ids": [
         "YELP-ACE",
         "CSLB-829071",
-        "ACE"
+        "ACE",
+        "YELP-ACE-Q"
       ],
-      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank."
+      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation."
     },
     {
       "id": "RV-03",
@@ -50,7 +51,7 @@
         "CSLB-1096552",
         "WEDO"
       ],
-      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank."
+      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation."
     },
     {
       "id": "RV-04",
@@ -67,7 +68,7 @@
         "CSLB-1089561",
         "HEISE-INGLESIDE"
       ],
-      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews."
+      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews. Rechecked 2026-11-08; still not exact-job confirmation."
     },
     {
       "id": "RV-05",
@@ -83,7 +84,108 @@
         "YELP-PORTOLA",
         "CSLB-SEARCH"
       ],
-      "limit": "No exact legal entity/license/phone match; all identity fields remain blank."
+      "limit": "No exact legal entity/license/phone match; all identity fields remain blank. Rechecked 2026-11-08; still not exact-job confirmation."
+    },
+    {
+      "id": "RV-06",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "Yelp search index",
+      "observation": "Indexed account says two bathtub drain levers were stuck; profile lists bathtub/drain repair services.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2?start=240",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "YELP-ATLAS",
+        "CSLB-868994",
+        "ATLAS"
+      ],
+      "limit": "Business page HTTP 403; search excerpt is unverified, not proof of concealed trip-lever extraction or ceiling restoration."
+    },
+    {
+      "id": "RV-07",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "BBB business profile",
+      "observation": "Directly retrieved profile lists bathtub repair/replacement and a customer review about kitchen-sink drain/pipe repair after another plumber could not clear it.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/atlas-plumbing-rooter-1116-116593",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "BBB-ATLAS",
+        "CSLB-868994",
+        "ATLAS"
+      ],
+      "limit": "Profile text retrieved, but review authenticity/outcome not independently investigated; adjacent sink work, not this tub job. BBB rating is not a CSLB endorsement."
+    },
+    {
+      "id": "RV-08",
+      "provider": "Expert Plumbing Solutions",
+      "platform": "Yelp search index",
+      "observation": "Indexed profile lists bathtub installation/repair and drain installation/repair.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://m.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_ids": [
+        "YELP-EXPERT",
+        "CSLB-977638",
+        "EXPERT"
+      ],
+      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified."
+    },
+    {
+      "id": "RV-09",
+      "provider": "Bay Area Plumbing",
+      "platform": "Yelp search index",
+      "observation": "Indexed photos describe bathtub/shower drain leak repair; an indexed account describes apartment-manager plumbing service.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_ids": [
+        "YELP-BAY",
+        "CSLB-757796",
+        "BAY"
+      ],
+      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified."
+    },
+    {
+      "id": "RV-10",
+      "provider": "Fast Response Plumbing & Rooter",
+      "platform": "Yelp search index",
+      "observation": "Indexed profile lists bathtub among plumbing services and San Francisco service area.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_ids": [
+        "YELP-FAST",
+        "CSLB-1024971",
+        "FAST"
+      ],
+      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified."
+    },
+    {
+      "id": "RV-11",
+      "provider": "San Francisco directory screen",
+      "platform": "Angi",
+      "observation": "Directly retrieved local plumbing review directory includes an adjacent bathtub pipe-repair account for a different provider; no exact shortlisted trip-lever job was established.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "ANGI-SF",
+        "CSLB-SEARCH"
+      ],
+      "limit": "Directory-level ratings are not provider-specific; different-provider review is not evidence for a shortlisted firm."
     }
   ]
 }

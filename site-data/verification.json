@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-07T20:45:05.772816+00:00",
+  "checked_at": "2026-11-08T23:12:48.072573+00:00",
   "result": "PASS",
-  "checks_run": 22,
-  "checks_passed": 22,
+  "checks_run": 26,
+  "checks_passed": 26,
   "checks_failed": 0,
-  "canonical_rows_checked": 236,
+  "canonical_rows_checked": 271,
   "tracked_html_files": 67,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "10/10"
+      "detail": "11/11"
     },
     {
       "check": "HTML tag balance",
@@ -28,14 +28,14 @@
       "detail": ""
     },
     {
-      "check": "every canonical table row has an official/source link",
+      "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "271 rows; offenders: "
     },
     {
       "check": "provider count parity",
       "ok": true,
-      "detail": "24/24"
+      "detail": "25/25"
     },
     {
       "check": "requirement count parity",
@@ -108,6 +108,26 @@
       "detail": ""
     },
     {
+      "check": "decision rank parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "decision excludes suspended/unresolved identities",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "source kinds explicit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no inferred decision scores",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "check": "build report counts match data",
       "ok": true,
       "detail": ""
@@ -115,7 +135,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "203 links; offenders: "
+      "detail": "215 links; offenders: "
     }
   ]
 }

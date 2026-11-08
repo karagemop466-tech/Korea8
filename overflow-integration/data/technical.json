@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "T-01",
@@ -38,14 +38,14 @@
     {
       "id": "T-04",
       "topic": "Below-ceiling fallback",
-      "statement": "Heise’s Ingleside case study says it accessed the exterior ceiling to remove the old overflow and replace the tub waste-and-overflow assembly.",
+      "statement": "Heise’s Ingleside case says it accessed the exterior ceiling to remove the old overflow and replace the tub waste-and-overflow assembly.",
       "source_ids": [
         "HEISE-INGLESIDE",
         "CSLB-1089561"
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "status": "Adjacent self-published case evidence",
-      "limit": "No drywall-restoration proof and no independent verification; page embeds a 404 template block."
+      "limit": "“Exterior ceiling” is not confirmed to mean the storage-unit ceiling below this tub. No drywall-restoration proof; self-published; embedded 404 block persists."
     },
     {
       "id": "T-05",
@@ -75,14 +75,14 @@
     {
       "id": "T-07",
       "topic": "Testing before closing",
-      "statement": "Watco instructions include filling the tub and operating the lever to check for leaks; DBI requires inspection before pipes are covered.",
+      "statement": "Watco step 7 readjusts the drop cylinder to ensure the drain stops water when closed; DBI requires inspection before pipes are covered.",
       "source_ids": [
         "WATCO",
         "SF-PERMIT"
       ],
       "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
       "status": "Manufacturer + agency evidence",
-      "limit": "Actual test/inspection sequence depends on the confirmed assembly and permit."
+      "limit": "Model-specific instruction; actual test/inspection sequence depends on confirmed assembly and permit."
     },
     {
       "id": "T-08",

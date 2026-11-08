@@ -1,0 +1,142 @@
+{
+  "as_of": "2026-11-08",
+  "method": "Lexicographic inquiry priority using only source-checked evidence: (1) active appropriate license and San Francisco service evidence; (2) published combined plumbing/building scope; (3) adjacent technical case evidence; (4) occupied-property evidence; (5) existing owner estimate. Unknowns are not scored as zero or as success. This is an inquiry order, not a verified performance ranking or award recommendation.",
+  "rows": [
+    {
+      "rank": 1,
+      "provider_id": "P-01",
+      "decision": "First combined-scope inquiry",
+      "reason": "Active B + C-36; official site explicitly offers simple repairs through complete renovations in San Francisco. Strongest published single-contract scope lead, but no exact stuck-lever or ceiling-restoration confirmation.",
+      "cost": "No verified price. Ask for separate tub-side and ceiling-fallback line items.",
+      "gates": "Name restoration party; confirm occupied-unit plan, insurance, permit path and current phone.",
+      "source_ids": [
+        "CSLB-1115649",
+        "RF",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 2,
+      "provider_id": "P-02",
+      "decision": "Combined-scope alternative",
+      "reason": "Active B + C-36 plus other classes; official site describes San Francisco HOA/property-manager work and insurance/purchase-order coordination. Exact concealed lever work and ceiling finishing remain unconfirmed.",
+      "cost": "No verified price. Request the same itemized scope as rank 1.",
+      "gates": "Confirm drywall/texture/paint party, occupied-unit protections and small-job acceptance.",
+      "source_ids": [
+        "CSLB-829071",
+        "ACE",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 3,
+      "provider_id": "P-03",
+      "decision": "Technical case-study lead",
+      "reason": "Active C-36; strongest adjacent self-published tub waste/overflow cases, including exterior-ceiling access. No B/C-9 on the license and no restoration proof.",
+      "cost": "No verified price. Obtain plumbing price plus named restoration allowance.",
+      "gates": "Confirm whether exterior-ceiling case resembles this storage-unit access; provide direct reference and restoration subcontractor.",
+      "source_ids": [
+        "CSLB-1089561",
+        "HEISE-INGLESIDE",
+        "HEISE",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 4,
+      "provider_id": "P-10",
+      "decision": "Restoration partner, not standalone plumber",
+      "reason": "Active B + C-9; official site advertises small wall repairs, patching, painting, texture matching and build-backs in San Francisco. No C-36.",
+      "cost": "No verified price. Request restoration-only allowance after plumbing access/testing plan.",
+      "gates": "Pair with licensed plumber under lawful combined contract; confirm ceiling finish match and contents protection.",
+      "source_ids": [
+        "CSLB-995163",
+        "BERNAL",
+        "CSLB-C9",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 5,
+      "provider_id": "P-04",
+      "decision": "Requote existing estimate",
+      "reason": "Active C-36 San Francisco plumbing lead; owner-supplied scope is closest to waste-and-overflow replacement. No combined restoration evidence.",
+      "cost": "Owner-reported $614 (2026-08-30); verified current price blank.",
+      "gates": "Confirm access route, parts, drywall, permit, cleanup, warranty and validity in writing.",
+      "source_ids": [
+        "CSLB-977638",
+        "EXPERT",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 6,
+      "provider_id": "P-06",
+      "decision": "Requote adjustment estimate",
+      "reason": "Active C-36; official site serves San Francisco houses/apartments/HOAs. Owner wording is adjustment-only, not replacement plus access.",
+      "cost": "Owner-reported $135 (2026-08-30); verified current price blank.",
+      "gates": "Clarify whether adjustment can free this stuck assembly; price fallback separately.",
+      "source_ids": [
+        "CSLB-1024971",
+        "FAST",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 7,
+      "provider_id": "P-05",
+      "decision": "Requote after identity/scope clarification",
+      "reason": "Active C-36 San Francisco plumbing lead; owner wording mentions spout/diverter, which may be a different assembly. Shared address/phone with Save-On-Interior does not establish common ownership.",
+      "cost": "Owner-reported $550 (2026-08-30); verified current price blank.",
+      "gates": "Confirm legal contracting entity, license, exact parts and restoration party before comparison.",
+      "source_ids": [
+        "CSLB-757796",
+        "CSLB-749536",
+        "BAY",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 8,
+      "provider_id": "P-25",
+      "decision": "Conditional review lead",
+      "reason": "Active C-36 San Francisco plumbing lead; unverified Yelp excerpt mentions stuck bathtub drain levers and BBB profile lists adjacent drain work. No B/C-9 or restoration proof.",
+      "cost": "No verified price. Request the same itemized scope if references check out.",
+      "gates": "Obtain direct trip-lever reference, restoration party and current dispatch number.",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS",
+        "YELP-ATLAS",
+        "BBB-ATLAS",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 9,
+      "provider_id": "P-08",
+      "decision": "Larger-project combined-scope fallback",
+      "reason": "Active B + C-36 and published design-build/self-performed plumbing, but official positioning emphasizes whole-home/kitchen/bath projects. Small occupied-unit repair acceptance unconfirmed.",
+      "cost": "No verified price for this repair. Published remodel bands are not applicable quotes.",
+      "gates": "Confirm minimum job size, restoration self-performance and occupied-unit plan.",
+      "source_ids": [
+        "CSLB-1096552",
+        "WEDO",
+        "OWNER"
+      ]
+    },
+    {
+      "rank": 10,
+      "provider_id": "P-11",
+      "decision": "Occupied-space coordination fallback",
+      "reason": "Active B general contractor advertises all San Francisco neighborhoods and occupied-space work, but focuses on larger planned projects and has no C-36 on the checked license.",
+      "cost": "No verified price. Request combined scope only if small-job acceptance is confirmed.",
+      "gates": "Name licensed plumbing and restoration parties; confirm permit coordination and schedule.",
+      "source_ids": [
+        "CSLB-1106131",
+        "SFBG",
+        "BPC-7057",
+        "OWNER"
+      ]
+    }
+  ]
+}

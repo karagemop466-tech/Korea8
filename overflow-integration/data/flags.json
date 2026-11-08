@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "F-01",
@@ -195,12 +195,14 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Business-page fetches returned HTTP 403. Only search-index excerpts were available for some providers; numeric ratings and review counts were not verified.",
-      "action": "Publish review links as unverified leads with retrieval limits; do not present ratings as facts.",
+      "detail": "Rechecked 2026-11-08: Yelp business/search pages still return HTTP 403. Web-search excerpts are available for some providers; BBB and Angi pages were directly retrieved but do not establish this exact job. Numeric ratings/counts remain blank.",
+      "action": "Keep review observations labeled by retrieval method; request direct references and a current occupied-unit plan.",
       "source_ids": [
         "YELP-RF",
         "YELP-ACE",
-        "YELP-WEDO",
+        "YELP-ATLAS",
+        "BBB-ATLAS",
+        "ANGI-SF",
         "CSLB-SEARCH"
       ],
       "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
@@ -241,8 +243,8 @@
       "severity": "Medium",
       "category": "Technical evidence",
       "title": "Heise’s case studies are self-published and contain a 404 template block",
-      "detail": "The Ingleside/Mission/Marina project pages render project content but embed a “Page Not Found (404)” template block. The Ingleside page describes ceiling access; none proves drywall restoration.",
-      "action": "Treat as adjacent company evidence, not independent verification; ask for references and the restoration party.",
+      "detail": "Rechecked 2026-11-08: Ingleside, Mission and Marina pages still render case content alongside a Page Not Found (404) template block. Ingleside says exterior ceiling; that is not confirmed to be the storage-unit ceiling below this tub. None proves drywall restoration.",
+      "action": "Treat as adjacent self-published evidence only; ask for a direct reference, exact access location and named restoration party.",
       "source_ids": [
         "HEISE-INGLESIDE",
         "HEISE-MISSION",
@@ -320,8 +322,8 @@
       "severity": "Medium",
       "category": "Permit",
       "title": "SF Plumbing Code §104.2 is now retrieved; earlier “unverified” flag is corrected",
-      "detail": "The operative exemption text was directly retrieved from American Legal Publishing chunk 14. Earlier canonical pages still listed it as not retrievable.",
-      "action": "Publish the exact conditional exemptions and link the code; keep job applicability open.",
+      "detail": "Operative §104.2 text was directly retrieved again on 2026-11-08 in zero-based chunk 13; chunk 14 contains §104.5. Earlier chunk numbering was off by one. The publisher disclaims definitive authority; confirm job applicability with DBI.",
+      "action": "Keep conditional exemptions and publisher limitation visible; do not infer a permit-free path.",
       "source_ids": [
         "SF-CODE-104",
         "REPO-OLD-INDEX"
@@ -467,7 +469,9 @@
       "action": "Keep the repair dashboard canonical and link the legacy archive separately; do not delete unrelated work.",
       "source_ids": [
         "REPO",
-        "REPO-BOARD"
+        "REPO-BOARD",
+        "GH-PAGES",
+        "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8",
       "status": "Resolved in canonical rebuild"
@@ -482,7 +486,9 @@
       "source_ids": [
         "REPO",
         "REPO-BOARD",
-        "REPO-PR33"
+        "REPO-PR33",
+        "GH-PAGES",
+        "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8",
       "status": "Resolved in canonical rebuild"
@@ -492,8 +498,8 @@
       "severity": "Medium",
       "category": "Publication",
       "title": "GitHub Pages status has lagged/errored across rapid merges",
-      "detail": "The Pages API reported errored/building states during multiple same-hour merges; an old successful build is not proof of the current commit.",
-      "action": "Verify the specific merge commit, served content and build result; use a checked static-artifact workflow if legacy deployment remains unreliable.",
+      "detail": "Pages API currently reports built on legacy main/root source, while the repository also has a successful Actions Pages workflow. A prior successful build is not proof of the new merge commit.",
+      "action": "After this integration merge, verify the specific workflow run, Pages build commit and cache-busted live content.",
       "source_ids": [
         "PAGES-API",
         "REPO-BOARD",
@@ -511,7 +517,9 @@
       "action": "Use the ready-to-send scope sheet for inquiries; record responses before updating fit/availability fields.",
       "source_ids": [
         "OWNER",
-        "REPO-BOARD"
+        "REPO-BOARD",
+        "GH-PAGES",
+        "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
       "status": "Open"
@@ -525,10 +533,103 @@
       "action": "Preserve the commit reference and incorporate independently rechecked facts; do not silently discard the parallel work.",
       "source_ids": [
         "REPO-PR33",
-        "REPO-BOARD"
+        "REPO-BOARD",
+        "GH-PAGES",
+        "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Medium",
+      "category": "Repository verification",
+      "title": "Independent auditor source allowlist omitted three official primary domains",
+      "detail": "The prior audit counted four rows as lacking a recognized source: SF code publisher American Legal, Ayoob & Peery and Bernal Hill Drywall. The rows did contain source links; the independent allowlist omitted amlegal.com, ayoobpeery.com and bernalhilldrywall.com. This was a classifier gap, not permission to publish unsupported rows.",
+      "action": "Use the canonical source registry kinds and explicit official-primary domains in a stricter row audit; retain the prior audit as history.",
+      "source_ids": [
+        "REPO-BOARD",
+        "SF-CODE-104",
+        "AYOOB",
+        "BERNAL"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/REPORT_2026-11-08_9c487d70.md",
+      "status": "Resolved in this integration"
+    },
+    {
+      "id": "F-38",
+      "severity": "Medium",
+      "category": "Provider contact",
+      "title": "Atlas phone numbers differ across official primary sources",
+      "detail": "CSLB #868994 lists (650) 871-9863; the company contact page lists (415) 849-2346; the directly retrieved BBB profile lists another contact number. The register uses the CSLB business phone and links the company contact page without silently substituting numbers.",
+      "action": "Confirm the current dispatch number and legal entity before contact; keep the discrepancy visible.",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS-CONTACT",
+        "BBB-ATLAS"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "status": "Open"
+    },
+    {
+      "id": "F-39",
+      "severity": "Medium",
+      "category": "Provider contact",
+      "title": "Rapid Flow website and CSLB phone numbers differ",
+      "detail": "CSLB #1115649 lists (415) 866-8401; the official company site advertises 844-BAY-FLOW. Both are primary-source observations, not proof that one is a current dispatch line.",
+      "action": "Show the CSLB phone in the license row and link the company site; confirm the number before scheduling.",
+      "source_ids": [
+        "CSLB-1115649",
+        "RF"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "status": "Open"
+    },
+    {
+      "id": "F-40",
+      "severity": "Medium",
+      "category": "Code source",
+      "title": "CSLB B classification page reproduces older statutory text",
+      "detail": "The CSLB B page quotes an older version of BPC §7057. The current California Legislature page was separately retrieved and controls the contract-limit summary; the official Fast Facts sheet is a summary, not a job-specific ruling.",
+      "action": "Use current BPC §7057 and ask CSLB/DBI about the exact combined contract; do not infer drywall self-performance from B alone.",
+      "source_ids": [
+        "CSLB-B",
+        "BPC-7057",
+        "CSLB-B-FAST"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "status": "Open"
+    },
+    {
+      "id": "F-41",
+      "severity": "Low",
+      "category": "Repository navigation",
+      "title": "Earlier executive-summary redirect stubs point to a superseded project mirror",
+      "detail": "BATHTUB_EXECUTIVE_SUMMARY.md and EXECUTIVE_SUMMARY_bathtub.md still describe project/summary.json as authoritative. The canonical build now reads overflow-integration/data and generates OVERFLOW_EXECUTIVE_SUMMARY.md. The old files remain preserved but their wording is stale.",
+      "action": "Use the root executive-summary.html and OVERFLOW_EXECUTIVE_SUMMARY.md; update stubs only in a separately claimed navigation scope.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "GH-PAGES",
+        "GH-PR"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/OVERFLOW_EXECUTIVE_SUMMARY.md",
+      "status": "Needs review"
+    },
+    {
+      "id": "F-42",
+      "severity": "Medium",
+      "category": "Decision analysis",
+      "title": "No verified comparable all-in price exists for ranking",
+      "detail": "The three supplied amounts are owner-reported and cover different scopes. No provider has confirmed a current combined plumbing/access/restoration price. Ranking therefore uses source-checked fit evidence, not invented price scores.",
+      "action": "Keep verified price cells blank; rank inquiry order transparently and requote one identical scope before award.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-CONTRACT",
+        "SF-FEES"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "status": "Open"
     }
   ]
 }

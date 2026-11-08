@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-07T20:45:05.589718+00:00",
+  "built_at": "2026-11-08T23:12:47.764163+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
@@ -7,6 +7,7 @@
     "executive-summary.html",
     "requirements.html",
     "providers.html",
+    "decision-analysis.html",
     "estimates.html",
     "technical-approach.html",
     "code-and-permit.html",
@@ -15,9 +16,9 @@
     "verification.html"
   ],
   "counts": {
-    "providers": 24,
-    "cslb_records": 23,
-    "active": 22,
+    "providers": 25,
+    "cslb_records": 24,
+    "active": 23,
     "suspended": 1,
     "unresolved": 1,
     "b_c36": 6,
@@ -26,9 +27,10 @@
     "estimates": 3,
     "technical": 8,
     "compliance": 12,
-    "reviews": 5,
-    "sources": 73,
-    "flags": 36
+    "reviews": 11,
+    "sources": 85,
+    "flags": 42,
+    "decision_rows": 10
   },
   "preserved": [
     "redirect stubs",

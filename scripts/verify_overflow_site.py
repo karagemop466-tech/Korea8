@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Independent checks for the canonical overflow dashboard (stdlib only)."""
 from __future__ import annotations
-import json,pathlib,re,sys,datetime
+import json,pathlib,re,sys,datetime,html
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','requirements.html','providers.html','decision-analysis.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -72,16 +72,19 @@ def main():
      q=Links();q.feed(target.read_text());
      if frag not in q.ids:broken.append(f'{p}:{u}')
  check('no broken internal links/anchors in canonical pages',not broken,'; '.join(broken[:20]))
- # row-source coverage: every tbody row in canonical tables has an external https link
+ # row-source coverage: every tbody row must link a registered official-primary source.
+ # Review platforms and repository records alone do not satisfy the official-source rule.
+ srcs_for_rows={s['id']:s for s in load('sources.json')['rows']}
+ official_ids={i for i,s in srcs_for_rows.items() if s['kind'] in {'official-government','official-company','official-manufacturer','official-code-publisher','official-tool'}}
+ official_urls={srcs_for_rows[i]['url'] for i in official_ids}
  missing=[];rowcount=0
  for p,t in texts.items():
-  l=Links();l.feed(t)
-  # parse rows with raw regex to retain hrefs
   for tbl in re.findall(r'<tbody>(.*?)</tbody>',t,re.S):
    for tr in re.findall(r'<tr>(.*?)</tr>',tbl,re.S):
     rowcount+=1
-    if not re.search(r'href="https://',tr):missing.append(f'{p}:{tr[:80]}')
- check('every canonical table row has an official/source link',not missing,f'{rowcount} rows; offenders: '+'; '.join(missing[:10]))
+    hrefs=[html.unescape(u) for u in re.findall(r'href="([^"]+)"',tr)]
+    if not any(u in official_urls for u in hrefs):missing.append(f'{p}:{tr[:80]}')
+ check('every canonical table row has a registered official-primary source link',not missing,f'{rowcount} rows; offenders: '+'; '.join(missing[:10]))
  # data invariants
  prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
@@ -105,7 +108,7 @@ def main():
  check('no numeric star ratings in canonical pages',not re.search(r'\d(?:\.\d)?\s*(?:stars|out of 5)',' '.join(texts.values()),re.I))
  # all source ids resolve and official urls are https
  bad=[]
- for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
+ for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json','decision.json']:
   for r in load(name)['rows']:
    for i in r.get('source_ids',[]):
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')
@@ -122,9 +125,15 @@ def main():
  hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
+ # decision ranking is contiguous, active-only, and source-linked
+ dec=load('decision.json')['rows'];prov_by_id={p['id']:p for p in prov}
+ check('decision rank parity',len(parsed['decision-analysis.html'].tables.get('decision-table',[]))==len(dec) and [d['rank'] for d in dec]==list(range(1,len(dec)+1)))
+ check('decision excludes suspended/unresolved identities',all(prov_by_id[d['provider_id']]['status']=='Current and active' for d in dec))
+ check('source kinds explicit',all(s.get('kind') for s in srcs.values()))
+ check('no inferred decision scores',all('score' not in d for d in dec))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
- check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))
+ check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts']['decision_rows']==len(load('decision.json')['rows']))
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()

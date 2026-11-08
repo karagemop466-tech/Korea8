@@ -17,11 +17,15 @@ class DataTests(unittest.TestCase):
   p=[x for x in load('providers.json')['rows'] if x['license']=='1027286'][0];self.assertEqual(p['status'],'Suspended');self.assertIn('F-09',p['flags'])
  def test_no_numeric_reviews(self):
   self.assertTrue(all(v['rating'] is None and v['review_count'] is None for v in load('reviews.json')['rows']))
+ def test_decision_active_and_contiguous(self):
+  prov={p['id']:p for p in load('providers.json')['rows']};dec=load('decision.json')['rows']
+  self.assertEqual([d['rank'] for d in dec],list(range(1,len(dec)+1)))
+  for d in dec:self.assertEqual(prov[d['provider_id']]['status'],'Current and active');self.assertTrue(d['source_ids'])
  def test_requirements_have_official_context(self):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
-  pages=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+  pages=['index.html','executive-summary.html','requirements.html','providers.html','decision-analysis.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)

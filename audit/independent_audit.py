@@ -7,7 +7,7 @@ import re, sys, json, pathlib
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGES = ["index.html", "executive-summary.html", "requirements.html", "providers.html",
          "estimates.html", "technical-approach.html", "code-and-permit.html",
-         "sources.html", "verification.html", "flagged-for-review.html"]
+         "sources.html", "verification.html", "flagged-for-review.html", "decision-analysis.html"]
 def is_official(url):
     """Official = any government host (.gov/.ca.gov), plus the specific non-gov
     primary sources this project cites (code publisher, manufacturers, registries)."""
@@ -19,17 +19,19 @@ def is_official(url):
     return any(host.endswith(h) for h in (
         "iapmo.org", "watcomfg.com", "archive.org", "up.codes", "calchamber.com",
         "cslb.ca.gov", "leginfo.legislature.ca.gov", "sf.gov",
-        # company official sites and review platforms cited as sources
+        # company official sites cited as sources; review platforms are not official
         "heisesplumbing.com", "eplumbingsolutions.com", "bayareaplumbingsf.com",
         "fastresponseplumbingsf.com", "wedoconstructions.com", "sfbuildinggroup.com",
         "rapidflowbayarea.com", "aceplumbingandrooter.com", "diamondcertified.org",
-        "yelp.com", "angi.com", "homeguide.com", "bbb.org", "github.com"))
+        "amlegal.com", "ayoobpeery.com", "bernalhilldrywall.com", "atlasplumbingandrooter.com",
+        "docs.github.com", "api.github.com"))
 BLANK_MARK = re.compile(r"blank|unverified|not (captured|confirmed|available|retrieved)|—|\?\?", re.I)
 
 problems, row_report = [], {"total_rows": 0, "rows_with_source": 0, "rows_blank_marked": 0}
 
 def links_of(row_html):
-    return re.findall(r'href="([^"]+)"', row_html)
+    import html
+    return [html.unescape(u) for u in re.findall(r'href="([^"]+)"', row_html)]
 
 for page in PAGES:
     p = ROOT / page
