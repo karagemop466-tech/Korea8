@@ -1,0 +1,62 @@
+{
+  "session": "arena/6880fb12-korea8",
+  "checked_utc": "2026-11-08T23:47:40.518707+00:00",
+  "scope": "Supplemental direct rechecks of sources added/changed by PR #52; no canonical edits.",
+  "results": [
+    {
+      "source_id": "BBB-ATLAS",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/atlas-plumbing-rooter-1116-116593",
+      "result": "success",
+      "observed": "Profile lists shower bathtub repairs and replacement; latest review describes kitchen-sink snake/pipe replacement after another plumber failed. Primary phone (415) 845-9199; additional phone (415) 849-2346. CSLB license 868994, expiry 3/31/2028. BBB A+ is not a government license or exact-job proof."
+    },
+    {
+      "source_id": "ANGI-SF",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
+      "result": "success",
+      "observed": "Directory-level reviews; adjacent bathtub pipe-repair account is for Adolfo Plumbing - Unlicensed Contractor, not a shortlisted firm. Directory also shows a Kenneth Asire review; Asire is CSLB-suspended and excluded. No exact shortlisted trip-lever job established."
+    },
+    {
+      "source_id": "ATLAS-CONTACT",
+      "url": "https://www.atlasplumbingandrooter.com/contact/",
+      "result": "success",
+      "observed": "Company contact page lists 415-849-2346 and 3311 Mission Street Suite 165, San Francisco. Differs from CSLB business phone (650) 871-9863; canonical F-42 preserves the discrepancy."
+    },
+    {
+      "source_id": "YELP-ATLAS",
+      "url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2?start=240",
+      "result": "HTTP 403",
+      "observed": "Business page blocked; search-excerpt lead remains unverified."
+    },
+    {
+      "source_id": "YELP-EXPERT",
+      "url": "https://m.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "result": "HTTP 403",
+      "observed": "Business page blocked; search-excerpt lead remains unverified."
+    },
+    {
+      "source_id": "WATCO",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "result": "success",
+      "observed": "Step 7: remove/readjust overflow plate and drop cylinder to ensure drain stops water when closed; drop cylinder should bottom out slightly before fully-closed; slow drip from inside tee is normal/acceptable. No explicit fill/operate leak-test step."
+    },
+    {
+      "source_id": "SF-CODE-104",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "chunk": 14,
+      "result": "success",
+      "observed": "§104.5: replacement of a plumbing fixture or gas appliance without a change in drainage, piping or venting shall not require payment of permit issuance fee; separate issuance fee per class of work; final inspection requires outstanding fees paid. This is a conditional fee rule, not a permit exemption."
+    },
+    {
+      "source_id": "BPC-7048",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
+      "result": "success",
+      "observed": "§7048(c) excludes persons who advertise/hold out as contractors or employ another person to perform/assist the work; under-$1,000 aggregate exemption also requires no building permit and excludes larger operations."
+    },
+    {
+      "source_id": "BPC-7057",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "result": "fetch failed twice in this supplemental pass",
+      "observed": "Earlier 2026-11-08 retrieval recorded framing/carpentry exclusion from the two-unrelated-trade count; canonical BPC-7057 source support already includes it, but C-05 rule text still omits it. Retry before final canonical application."
+    }
+  ]
+}
