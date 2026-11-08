@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-08T23:06:46.176155+00:00",
+  "checked_at": "2026-11-08T23:07:54.903673+00:00",
   "result": "PASS",
   "checks_run": 22,
   "checks_passed": 22,
@@ -115,7 +115,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "234 links; offenders: "
+      "detail": "235 links; offenders: "
     }
   ]
 }
