@@ -975,3 +975,23 @@ stale `scripts/verify_project_site.py` (I-3); conflicting open PRs **#35**, **#3
 **#38** (its `Publish verified bathtub overflow repair dashboard` check is **FAILURE** —
 another racing session's branch, not merged by this session), plus unrelated stale PR **#7**.
 This session merged only its own verified PR #40 and did not touch other sessions' open PRs.
+
+---
+
+## Session `arena/a8da1cca-korea8` — 2026-11-08 re-verification + ranked decision analysis (current)
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| `rv-01` | Claim board before any other edit | **in progress → done** | `arena/a8da1cca-korea8` | `COORDINATION.md` | this claim, committed and pushed before any other work |
+| `rv-02` | Line-by-line re-verification of every provider licence against the official CSLB licence-detail pages, retrieved 2026-11-08; refresh each row's official "data current as of" timestamp | claimed | `arena/a8da1cca-korea8` | `overflow-integration/data/providers.json` | no field is changed unless the official page shows it |
+| `rv-03` | Re-verification of the load-bearing official code/fee facts (permit trigger, DBI fee amounts, licensing sections, tenant notice) | claimed | `arena/a8da1cca-korea8` | `overflow-integration/data/compliance.json`, `overflow-integration/data/estimates.json`, `overflow-integration/data/sources.json` | official pages only; blanks where a value cannot be read |
+| `rv-04` | **Ranked decision analysis**: explicit rank order with stated criteria, per-rank reasoning, cost basis (owner-reported quote vs blank), official business link and phone | claimed | `arena/a8da1cca-korea8` | new `overflow-integration/data/ranking.json`, root `ranking.html` | ranking is a documented decision aid, not a verified performance rating — published as such |
+| `rv-05` | Build + independent verification of the combined site; extend the verifier to cover the ranking page | claimed | `arena/a8da1cca-korea8` | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, generated root `*.html`, `style.css` | all existing checks must still pass |
+| `rv-06` | PR → `main`, merge, confirm the GitHub Pages deploy for the merge commit, record the result here | pending `rv-05` | `arena/a8da1cca-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` | no other session's open PR is touched |
+
+**Scope rules.** Work is pinned to branch `arena/a8da1cca-korea8`; no other branch is created or pushed. This session edits only the files
+listed above plus this board. Earlier briefs, redirect stubs, archives, `docs/` and all unrelated DOE GEMS research files are left untouched.
+No private or internal brief content is recorded in any file, page or commit message.
+
+**Claim committed and pushed before any other work** (`claim(rv-01)`).
+
