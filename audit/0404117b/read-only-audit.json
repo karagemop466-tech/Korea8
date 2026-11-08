@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-08T23:15:56.736622+00:00",
+  "base_commit": "2e6eece87cf19f81af5a36ee3ba656a8e269a572",
+  "tracked_files": 316,
+  "json_files_parsed": 100,
+  "json_errors": [],
+  "tracked_html_internal_links": 235,
+  "broken_internal_links": [],
+  "canonical_rows": 274,
+  "canonical_rows_with_recognized_official_primary_link": 274,
+  "strict_row_source_gaps": [],
+  "data_counts": {
+    "providers": 24,
+    "requirements": 42,
+    "sources": 73,
+    "flags": 40,
+    "reviews": 5,
+    "technical": 8,
+    "compliance": 12,
+    "estimates": 3,
+    "ranked": 10
+  },
+  "note": "Read-only audit; shared build/verification reports were not rewritten."
+}
