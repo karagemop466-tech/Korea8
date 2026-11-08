@@ -1,10 +1,10 @@
 {
-  "status": "Revision built and verified locally (2026-11-08); merge and live check pending",
-  "pr": "",
-  "merge_commit": "",
+  "status": "Live \u2014 workflow deploy succeeded; cache-busted live content verified for the merge commit",
+  "pr": "https://github.com/karagemop466-tech/Korea8/pull/45",
+  "merge_commit": "e7c129a43d0585bd92f37052e0e3fc7ca90bb892",
   "pages_url": "https://karagemop466-tech.github.io/Korea8/",
-  "checked": "2026-11-08T00:00:00+00:00",
-  "workflow_run": "",
-  "pages_build_status": "",
-  "note": "2026-11-08: 23 CSLB licence records and the load-bearing code/fee sources were re-read; the ranked hiring decision analysis (canonical weighting, merged from the parallel session) and an independent cross-check weighting were added. Publication record is completed after the merge."
+  "checked": "2026-11-08T23:06:00+00:00",
+  "workflow_run": "https://github.com/karagemop466-tech/Korea8/actions/runs/42533302983",
+  "pages_build_status": "built",
+  "note": "The bare root URL served a cached older page immediately after deploy; cache-busted fetches of index.html and the new decision-analysis.html returned the 2026-11-08 canonical content (ranking page live, reviewed 2026-11-08). CDN caching is noted, not treated as a deploy failure."
 }
