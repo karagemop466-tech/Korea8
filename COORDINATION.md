@@ -1054,7 +1054,7 @@ deliverable rather than restating the disclaimers.
 
 | Check | Result |
 |---|---|
-| `python scripts/build_overflow_site.py` | 11 pages built; 24 provider identities, 23 CSLB records, 42 requirements, 73 sources, 39 flags, 10 ranked |
+| `python scripts/build_overflow_site.py` | 11 pages built; 24 provider identities, 23 CSLB records, 42 requirements, 73 sources, 40 flags, 10 ranked |
 | `python scripts/verify_overflow_site.py` | **22/22 PASS** — 273 canonical table rows each carry an external source link, 220 tracked-HTML internal links resolve, no broken anchors |
 | `python -m unittest discover -s tests -p 'test_overflow*.py'` | 10 tests OK |
 | Blank-vs-unverified discipline | every `amount_verified`, rating and review count is null; Portola's fields remain blank |
@@ -1086,3 +1086,27 @@ deliverable rather than restating the disclaimers.
 
 Flagged and unverified items remain published on `flagged-for-review.html` and do not block the merge.
 No provider was contacted, booked or paid.
+
+---
+
+## Session `arena/215f5c79-korea8` — final freshness review and integration (2026-11-08)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `215-01` | Claim board before other edits | done | `arena/215f5c79-korea8` | `COORDINATION.md` |
+| `215-02` | Independently review canonical data/site, refresh priority-provider and review-platform evidence, correct only evidenced defects | done | `arena/215f5c79-korea8` | `overflow-integration/**`, `site-data/**`, root canonical HTML/CSS, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `audit/2026-11-08-215f5c79/**` |
+| `215-03` | Build, source/link/privacy verification, PR to main, merge, Pages deployment and final record | in progress | `arena/215f5c79-korea8` | `COORDINATION.md`, workflow/deployment configuration only if required |
+
+All earlier overlapping implementation claims are more than 60 minutes old and their latest completed canonical handoff is PR #40/#42; this session takes over only the final integration scope and preserves their work. Arena fixes this session to `arena/215f5c79-korea8`; no additional worktree or task branch will be created. No provider will be contacted or booked. Owner-supplied estimates will remain labelled and distinct from verified current prices.
+
+### `215-02` verification record — 2026-11-08
+
+- **Fresh official sources:** directly retrieved CSLB #1115649, #829071, #1089561, #977638, #757796, #1024971 and #1027286 on 2026-11-08; all compared legal names, classifications, status, phone, expiry and workers-compensation summaries match the canonical rows. Kenneth Asire remains bond-suspended and excluded. Official Rapid Flow and Ace homepages still support their published service/classification statements. Heise’s Marina overflow assembly/gasket case remains adjacent self-published evidence, not exact-job proof.
+- **Review platforms:** Yelp search results exposed changing snippets/ratings, but business pages were not directly verified; canonical numeric ratings/counts remain blank and no evidence-supported ranking change was made.
+- **Independent report:** `audit/2026-11-08-215f5c79/REPORT.md` and `freshness-check.json`, linked from the public Verification page. Full field-level source URLs and CSLB timestamps are recorded there.
+- **Build/tests:** `python scripts/build_overflow_site.py`; `python scripts/verify_overflow_site.py` → 22/22 PASS after PR #45/#47/#48 integration, 274 table rows source-covered, 271 tracked-HTML internal links with no broken targets; 10/10 unit tests PASS; independent audit 10 pages/245 rows/161 canonical internal links/0 problems; `git diff --check` PASS; neutral public-text sweep no hits.
+- **Irregularities:** existing 40 flags remain published and non-blocking. No provider confirms exact-job acceptance, current availability, all-in-one ceiling restoration or current pricing. Owner estimates remain labelled owner-reported with verified amounts blank; Portola fields remain unresolved/blank. No ranking or provider value was changed without evidence.
+- **Parallel handoff:** `origin/main` advanced with PR #43 during final integration. Rebase conflicted only in this shared board; both PR #43's audit and this session's records were retained without discarding either. PR #43's four parser exceptions were manually checked: §104.2, Ayoob & Peery, Bernal Hill and SF-CODE-104 all have direct primary-source links; the older parser hostname allowlist omitted their hosts. Heise's embedded 404 template was already disclosed in the source register and remains flagged as a limitation.
+
+- **PR #45 combined handoff:** main advanced again with all 23 CSLB records freshly re-read and a 10-candidate ranked decision page. Its generator/data/pages were retained; only this audit link/log was reapplied. The combined build now has 11 pages, 274 source-linked rows and 40 published flags. Generator/report conflicts were resolved from the combined data and the complete checks rerun successfully.
+- **Final clean integration:** main advanced through PR #47 and PR #48 while merge was attempted. This session reapplied only its new audit, Verification link and board record onto PR #48, retaining all parallel ranking/deployment/repository-review work. Final checks: 22/22 PASS, 274 source-linked rows, 235 tracked-HTML links, 10/10 tests, independent parser 245 rows/161 links/0 problems. All 40 flags remain published.

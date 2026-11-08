@@ -1,0 +1,141 @@
+{
+  "checked_on": "2026-11-08",
+  "scope": "Independent final-integration freshness check; no provider contacted or booked",
+  "cslb_records": [
+    {
+      "provider": "Rapid Flow Plumbing & Rooter",
+      "license": "1115649",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "source_data_current": "11/8/2026 2:57:46 PM",
+      "confirmed": {
+        "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+        "status": "Current and active",
+        "classifications": ["B", "C-36"],
+        "phone": "(415) 866-8401",
+        "expiry": "2028-01-31",
+        "workers_comp": "Exempt: certified no employees"
+      },
+      "canonical_match": true
+    },
+    {
+      "provider": "Ace Plumbing & Rooter",
+      "license": "829071",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_data_current": "11/8/2026 2:58:07 PM",
+      "confirmed": {
+        "legal_name": "ACE PLUMBING & ROOTER",
+        "status": "Current and active",
+        "classifications": ["C-36", "A", "C-4", "C-16", "B", "C-10"],
+        "phone": "(415) 824-6444",
+        "expiry": "2027-06-30",
+        "workers_comp": "Policy recorded; expires 07/13/2027"
+      },
+      "canonical_match": true
+    },
+    {
+      "provider": "Heise’s Plumbing",
+      "license": "1089561",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_data_current": "11/8/2026 2:58:07 PM",
+      "confirmed": {
+        "legal_name": "TARO GROUP INC · dba HEISES PLUMBING",
+        "status": "Current and active",
+        "classifications": ["C-36", "C-10", "A", "C-20"],
+        "phone": "(415) 333-0704",
+        "expiry": "2028-04-30",
+        "workers_comp": "Policy recorded; expires 01/11/2027"
+      },
+      "canonical_match": true
+    },
+    {
+      "provider": "Expert Plumbing Solutions",
+      "license": "977638",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_data_current": "11/8/2026 2:58:08 PM",
+      "confirmed": {
+        "legal_name": "EXPERT PLUMBING SOLUTIONS",
+        "status": "Current and active",
+        "classifications": ["C-36"],
+        "phone": "(415) 531-5340",
+        "expiry": "2028-10-31",
+        "workers_comp": "Policy recorded; expires 07/19/2027"
+      },
+      "canonical_match": true
+    },
+    {
+      "provider": "Bay Area Plumbing",
+      "license": "757796",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_data_current": "11/8/2026 2:58:08 PM",
+      "confirmed": {
+        "legal_name": "BAY AREA PLUMBING",
+        "status": "Current and active",
+        "classifications": ["C-36"],
+        "phone": "(415) 668-8000",
+        "expiry": "2027-01-31",
+        "workers_comp": "Exempt: certified no employees"
+      },
+      "canonical_match": true
+    },
+    {
+      "provider": "Fast Response Plumbing & Rooter",
+      "license": "1024971",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_data_current": "11/8/2026 2:58:12 PM",
+      "confirmed": {
+        "legal_name": "JOSEPH TINSLEY · dba FAST RESPONSE PLUMBING AND ROOTER",
+        "status": "Current and active",
+        "classifications": ["C-36"],
+        "phone": "(415) 596-6115",
+        "expiry": "2027-03-31",
+        "workers_comp": "Policy recorded; expires 12/18/2026"
+      },
+      "canonical_match": true
+    },
+    {
+      "provider": "Kenneth Asire Plumbing",
+      "license": "1027286",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "source_data_current": "11/8/2026 2:58:32 PM",
+      "confirmed": {
+        "legal_name": "KENNETH ASIRE PLUMBING",
+        "status": "Suspended — Contractors Bond Suspension",
+        "classifications": ["C-36"],
+        "phone": "(415) 913-8048",
+        "expiry": "2027-05-31",
+        "workers_comp": "Policy recorded; expires 08/30/2027"
+      },
+      "canonical_match": true,
+      "priority_shortlist_excluded": true
+    }
+  ],
+  "company_sources": [
+    {
+      "id": "RF",
+      "url": "https://www.rapidflowbayarea.com/",
+      "confirmed": "San Francisco/Bay Area plumbing and general contracting; simple repair through complete renovation; license #1115649 and B/C-36 displayed",
+      "limit": "Company self-description, not proof of exact-job acceptance, performance, restoration or availability",
+      "canonical_match": true
+    },
+    {
+      "id": "ACE",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "confirmed": "San Francisco residential plumbing and HOA/property-manager service; license #829071 and classifications displayed",
+      "limit": "Company self-description, not proof of exact-job acceptance, performance, restoration or availability",
+      "canonical_match": true
+    },
+    {
+      "id": "HEISE-MARINA",
+      "url": "https://www.heisesplumbing.com/recent-jobs/projects/an-overflow-gasket-on-a-bathtub-san-francisco-176011/",
+      "confirmed": "Self-published Marina case describes service to a bathtub overflow assembly and gasket",
+      "limit": "Adjacent case only; not stuck-trip-lever extraction, ceiling restoration or independent performance verification; page also emits a 404 template block",
+      "canonical_match": true
+    }
+  ],
+  "review_platform": {
+    "url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+    "observation": "Search results expose changing business snippets and numeric ratings, but the canonical review table intentionally leaves ratings/counts blank because business pages were not directly verified.",
+    "action": "No ranking change; preserve the existing limitation rather than treating search-index metrics as stable verified facts."
+  },
+  "result": "PASS — no canonical value mismatch in the refreshed records; no evidence-supported ranking change"
+}
