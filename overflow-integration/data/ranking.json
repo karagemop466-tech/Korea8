@@ -1,12 +1,12 @@
 {
   "as_of": "2026-11-08",
-  "method_note": "Editorial decision support, not a verified performance or quality rating. Scores use only the fields on the official CSLB records, company-published service statements and the owner-supplied quote wording, each re-read on 2026-11-08. No provider was contacted, no reference was taken and no availability or price was confirmed.",
+  "method_note": "Subjective editorial inquiry order, not a verified quality rating. Four criteria use point-in-time official license records, company claims and limited review accounts; 1–5 scores and weights are judgment. No provider was contacted. There is no comparable, attributed, current combined quote, so price is excluded from all scores.",
   "weights": [
     {
       "id": "C1",
-      "criterion": "Combined plumbing + building capability on one licence",
+      "criterion": "License evidence for a one-contract plumbing/building path",
       "weight": 0.3,
-      "basis": "B + C-36 on the checked CSLB record supports a single prime contract covering the concealed drainage work and the ceiling repair, subject to BPC §7057. A C-36-only licence needs a named restoration party.",
+      "basis": "Editorial proxy: 5 for a checked B + C-36 combination; 2 for a C-36 plumbing lead without B; 1 for a restoration-only partner. B-only may also prime an appropriately structured job with a licensed plumbing subcontractor. No class proves acceptance, restoration skill, legal compliance or insurance.",
       "source_ids": [
         "BPC-7057",
         "CSLB-C36",
@@ -15,46 +15,35 @@
     },
     {
       "id": "C2",
-      "criterion": "Evidence of this specific scope (tub waste-and-overflow / overflow access)",
-      "weight": 0.2,
-      "basis": "Company-published case evidence, owner-supplied quote wording, or indexed review text. Every item is labelled by strength; none is proof of this exact stuck-lever job.",
+      "criterion": "Evidence adjacent to the stuck-lever and access scope",
+      "weight": 0.35,
+      "basis": "Subjective 1–5, favoring a directly retrieved company case on ceiling-access overflow replacement over a blocked/search-index review or generic service. Third-party accounts are not adjudicated; absence of published evidence is not inability.",
       "source_ids": [
         "HEISE-INGLESIDE",
-        "OWNER",
+        "YELP-ATLAS",
         "YELP-RF"
       ]
     },
     {
       "id": "C3",
-      "criterion": "Licence standing and tenure on the official CSLB record",
+      "criterion": "License standing and disclosed history",
       "weight": 0.2,
-      "basis": "Current-and-active status, years since issue, workers-compensation record, bond record and any additional status or complaint disclosure. Active status is not an endorsement.",
+      "basis": "Subjective 1–5 using active status, issue/reissue dates, workers-comp entry and disclosed historical citations. These are not a quality guarantee; CSLB limits disclosure and does not verify classification-code accuracy.",
       "source_ids": [
         "CSLB-SEARCH",
-        "DG-COMPLAINT"
+        "CSLB-829071",
+        "IO-DISCLOSURE"
       ]
     },
     {
       "id": "C4",
-      "criterion": "Occupied-unit and property-management experience",
+      "criterion": "Evidence relevant to residential and occupied work",
       "weight": 0.15,
-      "basis": "Published company statements about HOA/property-manager work, property maintenance or occupied-home protocol. Absence of a statement scores low; it is not evidence of inability.",
+      "basis": "Subjective 1–5 based on company property-management/residential statements and limited review accounts; not a verified current protocol. Low means limited evidence found, not that a company cannot do the job.",
       "source_ids": [
         "ACE",
-        "HEISE",
-        "ACE"
-      ]
-    },
-    {
-      "id": "C5",
-      "criterion": "Price evidence for a comparable scope",
-      "weight": 0.15,
-      "basis": "Only owner-supplied quote wording dated 2026-08-30 is available; those amounts are owner-reported and not verified. No provider has issued a document to this project.",
-      "source_ids": [
-        "OWNER",
-        "CSLB-977638",
-        "CSLB-757796",
-        "CSLB-1024971"
+        "HEISE-MAINT",
+        "ANGI-ATLAS"
       ]
     }
   ],
@@ -79,25 +68,27 @@
       "website": "https://www.aceplumbingandrooter.com/",
       "source_ids": [
         "CSLB-829071",
-        "ACE"
+        "ACE",
+        "ANGI-ACE",
+        "ANGI-ACE-OLD"
       ],
       "flags": [
         "F-01",
         "F-14",
-        "F-16"
+        "F-16",
+        "F-46"
       ],
       "score_components": {
         "C1": 5,
         "C2": 3,
-        "C3": 5,
-        "C4": 4,
-        "C5": 1
+        "C3": 4,
+        "C4": 4
       },
-      "why": "Broadest single-licence coverage in the set: B + C-36 plus A, C-4, C-16 and C-10 on the CSLB record, so one prime contract can lawfully carry both the concealed pipe work and the ceiling repair if it names the trades. Licensed since 2003 with a current workers-compensation policy; the company advertises HOA and property-manager work, which matches a tenant-occupied building. Indexed review text mentions bathtub repair, but no source shows this trip-lever job.",
+      "why": "B + C-36 and the company’s published property-manager work make it the strongest initial combined-scope inquiry. The 2003 issue date was followed by reissue to another entity in 2007. An old Angi bathtub-faucet account is positive; another reports an invoice/billing concern. Neither establishes this exact job or ceiling finish.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file. Owner-supplied comparators for replacement-type scopes are $550 and $614 (owner-reported, unverified); the official DBI Category 1P plumbing fee is $290 if a permit applies (a fee, not a price).",
-      "ask": "Ask for one written combined scope: tub-side attempt first, ceiling opening method, named drywall/texture party, occupied-unit schedule, and a fixed price with the permit position stated.",
-      "short_why": "broadest single-licence coverage (B + C-36 plus A, C-4, C-16, C-10), active since 2003 with current workers comp and published HOA/property-manager work"
+      "cost_note": "No attributed comparable quote. Request one fixed combined price; the owner reports are not Ace prices.",
+      "ask": "Ask for the named ceiling finisher, safety plan, permitted access alternatives, itemized fixed price and warranty.",
+      "short_why": "B + C-36 and advertised property-manager work; verify the ceiling party and current price"
     },
     {
       "provider_id": "P-03",
@@ -117,25 +108,29 @@
       "website": "https://www.heisesplumbing.com/",
       "source_ids": [
         "CSLB-1089561",
-        "HEISE"
+        "HEISE",
+        "HEISE-INGLESIDE",
+        "HEISE-MAINT",
+        "CSLB-787733",
+        "BBB-HEISE-OLD"
       ],
       "flags": [
         "F-01",
         "F-17",
-        "F-18"
+        "F-18",
+        "F-47"
       ],
       "score_components": {
-        "C1": 3,
+        "C1": 2,
         "C2": 5,
         "C3": 4,
-        "C4": 4,
-        "C5": 1
+        "C4": 4
       },
-      "why": "The only provider with company-published San Francisco tub waste-and-overflow cases, including one that says the crew accessed the exterior ceiling to remove the old overflow. That is the closest published match to the below-ceiling fallback. The licence is C-36 + C-10 + A + C-20 with no B or C-9, so the drywall half must be subcontracted or separately contracted; the case page also embeds a 404 template block.",
+      "why": "A directly retrieved company case describes accessing an exterior ceiling to replace a tub waste-and-overflow. It is adjacent, self-published evidence with an embedded 404 template; restoration is not shown. Current website identifies TARO Group #1089561; a BBB profile uses expired #787733, so its complaint cannot be automatically assigned to the current entity.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources.",
-      "ask": "Ask who performs and warrants the ceiling patch and texture, whether the same crew can do both under one contract, and for a price for the two-path scope.",
-      "short_why": "only company-published San Francisco ceiling-access tub waste-and-overflow case, but no B or C-9, so the ceiling party must be named"
+      "cost_note": "No attributed comparable quote. The published case gives no price and does not establish ceiling restoration.",
+      "ask": "Ask whether one contract can name an appropriately licensed ceiling-restoration party, and confirm which legal entity and license will contract.",
+      "short_why": "closest directly retrieved ceiling-access overflow case; restoration and older-entity relationship remain unconfirmed"
     },
     {
       "provider_id": "P-01",
@@ -153,7 +148,8 @@
       "website": "https://www.rapidflowbayarea.com/",
       "source_ids": [
         "CSLB-1115649",
-        "RF"
+        "RF",
+        "YELP-RF"
       ],
       "flags": [
         "F-01",
@@ -164,14 +160,13 @@
         "C1": 5,
         "C2": 3,
         "C3": 3,
-        "C4": 2,
-        "C5": 1
+        "C4": 2
       },
-      "why": "B + C-36 combined licence and a published offer that runs from simple repairs to complete renovations, which is the shortest single-contract path if the ceiling has to be opened. The licence was issued in 2024 and the CSLB record shows a workers-compensation exemption (certified no employees), so crew size and supervision should be confirmed. The indexed Yelp account describes retrieving a tub plug by opening a wall; it is adjacent evidence, not this job.",
+      "why": "Active B + C-36 and a company repair-to-renovation offer are promising for one contract. A Yelp-indexed tub-plug account describes wall access and pipe cutting, but the underlying page was blocked. The 2024 license record certifies a workers-comp exemption; ask about all employees or subcontractors.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file. Owner-supplied comparators are $550 and $614 for replacement-type scopes (unverified); no labour or restoration line is documented.",
-      "ask": "Ask whether the crew is employees or subcontractors, who patches and textures the ceiling, and for a fixed combined price.",
-      "short_why": "B + C-36 with a published simple-repair-to-renovation offer; 2024 licence and workers-comp exemption to check"
+      "cost_note": "No attributed comparable quote; no evidence fixes this project’s restoration cost.",
+      "ask": "Ask who opens and patches the ceiling, who carries insurance, and whether the written quote covers both paths.",
+      "short_why": "B + C-36; related wall-access review is only an unverified index excerpt"
     },
     {
       "provider_id": "P-09",
@@ -201,14 +196,13 @@
         "C1": 5,
         "C2": 1,
         "C3": 5,
-        "C4": 2,
-        "C5": 1
+        "C4": 1
       },
-      "why": "B + C-36 with C-4, C-16 and C-20, licensed since 1980 and carrying a current workers-compensation policy: the strongest tenure and standing among combined-classification leads. No published tub waste-and-overflow case, no occupied-unit statement and no quote were found, so it ranks on capability rather than evidence.",
+      "why": "B + C-36 with an active record, 1980 issue date and workers-comp policy on file. The company emphasizes commercial wet-side systems; no specific tub overflow work, residential acceptance or price was found.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file. No published pricing for this scope was found.",
-      "ask": "Ask whether the firm takes small occupied-unit repair work at all, then request the same combined written scope.",
-      "short_why": "B + C-36, licensed since 1980 with current workers comp; no scope evidence yet"
+      "cost_note": "No attributed comparable quote; do not infer small-job pricing from its commercial positioning.",
+      "ask": "Ask first whether this small occupied-unit repair is accepted and who would handle ceiling finishing.",
+      "short_why": "B + C-36 and long-standing record; small-job acceptance unknown"
     },
     {
       "provider_id": "P-08",
@@ -236,14 +230,13 @@
         "C1": 5,
         "C2": 1,
         "C3": 4,
-        "C4": 2,
-        "C5": 1
+        "C4": 2
       },
-      "why": "B + C-36 with a current workers-compensation policy covering subcontracted construction work. The indexed description positions kitchens and baths inside larger renovation scopes, so a small single-fixture repair may not be accepted; no tub-overflow case or quote was found.",
+      "why": "B + C-36 and a company-published one-contract design/build offer; public material emphasizes larger renovation scopes. CSLB records workers compensation, but its classification codes do not verify actual coverage of a particular subcontractor or activity.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file.",
-      "ask": "Ask first whether a one-fixture repair with ceiling patching is in scope, then request the combined written scope.",
-      "short_why": "B + C-36 with current workers comp, but positioned toward larger renovations"
+      "cost_note": "No attributed comparable quote. Ask about small-job minimums rather than assuming them.",
+      "ask": "Confirm the exact repair size, on-site trades, insured parties and combined price.",
+      "short_why": "B + C-36, but willingness to accept a small fixture repair is unknown"
     },
     {
       "provider_id": "P-04",
@@ -260,26 +253,27 @@
       "website": "https://www.eplumbingsolutions.com/",
       "source_ids": [
         "CSLB-977638",
-        "EXPERT"
+        "EXPERT",
+        "OWNER"
       ],
       "flags": [
         "F-02",
         "F-03",
         "F-04",
-        "F-05"
+        "F-05",
+        "F-42"
       ],
       "score_components": {
         "C1": 2,
-        "C2": 3,
+        "C2": 1,
         "C3": 4,
-        "C5": 5,
-        "C4": 1
+        "C4": 2
       },
-      "why": "The supplied 2026-08-30 wording — \"replace waste and overflow\" — is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: the licence does not cover the ceiling repair, so a second licensed party is required if the ceiling is opened. This ranking does not endorse the $614 figure, which remains owner-reported.",
-      "cost_amount_owner": 614,
-      "cost_note": "Owner-reported $614 on 2026-08-30 for \"replace waste and overflow\". Verified amount blank; no access route, drywall restoration, permit, cleanup or warranty line is included.",
-      "ask": "Requote the identical combined scope and ask for the access method and the named restoration party in writing.",
-      "short_why": "C-36 only; owner-reported $614 is the closest supplied scope wording"
+      "why": "Active C-36 and a residential plumbing offer. The owner reported $614 for a similarly named business, but no quote document confirms this CSLB record as the issuer; the scope does not explicitly mention ceiling restoration.",
+      "cost_amount_owner": null,
+      "cost_note": "Possible same-name owner report: $614 for waste-and-overflow replacement, unverified and not assigned to this license.",
+      "ask": "Confirm the issuing legal entity and obtain a current combined price naming the restoration party.",
+      "short_why": "C-36; possible $614 quote-name match is not a verified identity"
     },
     {
       "provider_id": "P-07",
@@ -296,7 +290,8 @@
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
       "website": "",
       "source_ids": [
-        "CSLB-749536"
+        "CSLB-749536",
+        "CSLB-757796"
       ],
       "flags": [
         "F-12",
@@ -306,14 +301,13 @@
         "C1": 5,
         "C2": 1,
         "C3": 3,
-        "C4": 1,
-        "C5": 1
+        "C4": 1
       },
-      "why": "B + C-36 at the same registered address and phone as Bay Area Plumbing, which makes it the natural second half of that firm's combined scope if the relationship is confirmed. The CSLB record also carries 2015–2016 cash-deposit letters, and the workers-compensation record is an exemption (no employees), so entity and crew questions come before price.",
+      "why": "B + C-36 record shares a phone and address with Bay Area Plumbing, but that does not prove common ownership, a quote relationship or that it will accept the work. CSLB lists historical cash-deposit letters and a workers-comp exemption.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file. Owner-reported $550 exists for Bay Area Plumbing only; that price cannot be attributed to this licence.",
-      "ask": "Ask whether the two licence holders operate as one contracting entity, and which licence would sign the contract.",
-      "short_why": "B + C-36 at Bay Area Plumbing’s address and phone; entity relationship unconfirmed"
+      "cost_note": "No attributed comparable quote. The owner’s Bay Area report cannot be assigned to this entity.",
+      "ask": "Identify the actual contracting entity and ceiling finisher; ask for current insurance and a written combined quote.",
+      "short_why": "B + C-36; shared contact details do not establish a relationship"
     },
     {
       "provider_id": "P-05",
@@ -330,26 +324,28 @@
       "website": "https://www.bayareaplumbingsf.com/",
       "source_ids": [
         "CSLB-757796",
-        "BAY"
+        "BAY",
+        "CSLB-749536",
+        "OWNER"
       ],
       "flags": [
         "F-02",
         "F-03",
         "F-04",
-        "F-12"
+        "F-12",
+        "F-42"
       ],
       "score_components": {
         "C1": 2,
-        "C2": 2,
+        "C2": 1,
         "C3": 4,
-        "C5": 4,
-        "C4": 1
+        "C4": 2
       },
-      "why": "Long-standing C-36 licence (since 1999) with an owner-reported $550 for \"lever, plug and spout with diverter, labor and materials\". Those words may describe a spout/diverter assembly rather than the waste-and-overflow body, which is the part at issue, so the price may not cover this job. C-36 only, with a workers-compensation exemption; the shared address and phone with Save-On-Interior do not by themselves prove common ownership.",
-      "cost_amount_owner": 550,
-      "cost_note": "Owner-reported $550 on 2026-08-30 for lever, plug and spout with diverter, labour and materials. Verified amount blank; scope wording may not match the failed assembly.",
-      "ask": "Confirm in writing that the price covers the overflow body and linkage, not only the spout/diverter, and who restores the ceiling.",
-      "short_why": "C-36 only; owner-reported $550 may describe a spout/diverter rather than the overflow body"
+      "why": "Active C-36 and residential plumbing offer; the owner reported $550 for a similarly named business, but the CSLB match is unconfirmed and spout/diverter may be a different part. Shared contact details with Save-On-Interior do not establish ownership.",
+      "cost_amount_owner": null,
+      "cost_note": "Possible same-name owner report: $550 for lever/plug/spout, labor and materials; issuer and comparable scope unverified.",
+      "ask": "Confirm the legal issuer, parts, access method and ceiling-restoration provision.",
+      "short_why": "C-36; possible $550 quote-name match and scope are unverified"
     },
     {
       "provider_id": "P-16",
@@ -370,17 +366,16 @@
       ],
       "flags": [],
       "score_components": {
-        "C1": 4,
+        "C1": 2,
         "C2": 1,
         "C3": 3,
-        "C4": 1,
-        "C5": 1
+        "C4": 1
       },
-      "why": "C-36 + A with an unusually complete insurance file on the CSLB record: workers compensation, $2,000,000 liability and a $100,000 LLC employee bond. No B or C-9, and no tub-overflow or occupied-unit evidence was found; the licence was issued in 2025 and the firm is registered in Burlingame.",
+      "why": "Current C-36/A record in Burlingame; CSLB records workers-comp, liability and LLC bond information. The records are point-in-time disclosures, not confirmation of coverage for this job. No specific tub-overflow or ceiling-restoration evidence found.",
       "cost_amount_owner": null,
-      "cost_note": "No quote on file.",
-      "ask": "Ask whether San Francisco occupied-unit repair work is accepted and who holds the drywall classification.",
-      "short_why": "C-36 + A with $2M liability and LLC bond on file; no building classification"
+      "cost_note": "No attributed comparable quote.",
+      "ask": "Confirm service location, actual policy scope, named finisher and combined written price.",
+      "short_why": "C-36/A backup with no documented exact-job or restoration offer"
     },
     {
       "provider_id": "P-06",
@@ -397,26 +392,176 @@
       "website": "https://www.fastresponseplumbingsf.com/",
       "source_ids": [
         "CSLB-1024971",
-        "FAST"
+        "FAST",
+        "OWNER"
       ],
       "flags": [
         "F-02",
         "F-03",
         "F-04",
-        "F-29"
+        "F-29",
+        "F-42"
       ],
       "score_components": {
         "C1": 2,
-        "C2": 2,
+        "C2": 1,
         "C3": 3,
-        "C4": 1,
-        "C5": 3
+        "C4": 2
       },
-      "why": "The $135 owner-reported price is for \"repair or adjust plunger handle\", an adjustment rather than a replacement, so it is not comparable to the other two. C-36 only; the CSLB workers-compensation policy expires 2026-12-18, before some likely work dates, and the registered address wording differs from the website.",
-      "cost_amount_owner": 135,
-      "cost_note": "Owner-reported $135 on 2026-08-30 for repair or adjust of the plunger handle. Verified amount blank; adjustment-only scope, not a replacement-plus-access price.",
-      "ask": "Ask what happens if adjustment fails, and request a replacement scope with ceiling access priced separately.",
-      "short_why": "C-36 only; the $135 quote is adjustment-only, and workers comp expires 2026-12-18"
+      "why": "Active C-36 record and residential plumbing offer. The owner supplied the generic name “Fast Response” for an adjustment quote, but the match to this licensee is unconfirmed. The workers-comp policy on CSLB expires 2026-12-18; check the policy on the work date.",
+      "cost_amount_owner": null,
+      "cost_note": "Possible name match to $135 owner-reported adjustment; issuer not confirmed and scope differs from replacement.",
+      "ask": "Verify the issuer and policy, then request an itemized price for both paths and a named restoration party.",
+      "short_why": "C-36; generic $135 quote-name match is unconfirmed and adjustment-only"
+    },
+    {
+      "provider_id": "P-25",
+      "name": "In & Out Plumbing and Construction",
+      "legal_name": "IN & OUT PLUMBING AND CONSTRUCTION INC",
+      "license": "878184",
+      "classifications": [
+        "A",
+        "B",
+        "C-36"
+      ],
+      "status": "Current and active",
+      "phone": "(650) 589-4855",
+      "city": "South San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=878184",
+      "website": "https://inandoutplumbing.com/",
+      "source_ids": [
+        "CSLB-878184",
+        "IO-BATH",
+        "IO-DISCLOSURE",
+        "IO-CITE-1017",
+        "IO-CITE-2536",
+        "HA-IO-MULTI",
+        "HA-IO-BATH"
+      ],
+      "flags": [
+        "F-01",
+        "F-41",
+        "F-43"
+      ],
+      "score_components": {
+        "C1": 5,
+        "C2": 2,
+        "C3": 1,
+        "C4": 3
+      },
+      "why": "Cautious inquiry only: B + C-36, company advertises bathroom reconstruction, and an identified HomeAdvisor profile contains a positive separate electrical/drywall account plus complaints about prices, diagnosis and leaks. CSLB discloses six citations dated 2017–2018, including a completed building-permit violation and completed trade/contract/down-payment entries. A second bathtub review’s match to #878184 is unconfirmed.",
+      "cost_amount_owner": null,
+      "cost_note": "No attributed comparable quote; no ceiling-restoration amount is established.",
+      "ask": "Review each historical citation and mixed review; ask for an explanation, references, the named ceiling party, insurance and an itemized two-path quote. Website also lists (650) 679-7982.",
+      "short_why": "B + C-36 with related drywall review, but six historical citations and mixed reviews warrant extra diligence"
+    },
+    {
+      "provider_id": "P-26",
+      "name": "Atlas Plumbing & Rooter",
+      "legal_name": "ATLAS PLUMBING & ROOTER",
+      "license": "868994",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "status": "Current and active",
+      "phone": "(650) 871-9863",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "website": "https://www.atlasplumbingandrooter.com/",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS",
+        "ATLAS-FIXTURES",
+        "YELP-ATLAS",
+        "ANGI-ATLAS",
+        "BBB-ATLAS"
+      ],
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-48"
+      ],
+      "score_components": {
+        "C1": 2,
+        "C2": 4,
+        "C3": 4,
+        "C4": 3
+      },
+      "why": "C-36/A specialty lead with a company fixture-repair offer. A Yelp-indexed account expressly names Atlas and describes stuck bathtub-lever assemblies, but the business page was blocked. Direct Angi accounts include both praise for occupied-home care and a missed-follow-up complaint; the 2008 license reissue is noted.",
+      "cost_amount_owner": null,
+      "cost_note": "No attributed comparable quote. No quote for a combined ceiling restoration is available.",
+      "ask": "Ask whether they can safely attempt tub-side removal, arrange the ceiling finisher under one contract, and provide one written two-path price. CSLB phone is shown; website lists (415) 849-2346.",
+      "short_why": "C-36 plumbing specialist; indexed stuck-lever account is promising but not directly verified"
+    },
+    {
+      "provider_id": "P-27",
+      "name": "Discover Plumbing & Rooter",
+      "legal_name": "DISCOVER PLUMBING AND ROOTER INC",
+      "license": "1041846",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "status": "Current and active",
+      "phone": "(415) 728-2520",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1041846",
+      "website": "https://discoverplumbingandrooter.com/",
+      "source_ids": [
+        "CSLB-1041846",
+        "DISCOVER",
+        "BBB-DISCOVER"
+      ],
+      "flags": [
+        "F-01",
+        "F-48"
+      ],
+      "score_components": {
+        "C1": 2,
+        "C2": 1,
+        "C3": 4,
+        "C4": 3
+      },
+      "why": "C-36/A plumbing backup with an active CSLB record and a residential SF service offer. No exact overflow case or ceiling-restoration acceptance was found. The company site and CSLB record list different phone numbers.",
+      "cost_amount_owner": null,
+      "cost_note": "No attributed comparable quote. Request the same written scope as other candidates.",
+      "ask": "Ask about below-ceiling coordination, insurance and written price; the website also lists (415) 689-3544.",
+      "short_why": "residential C-36 plumbing backup; no exact-job or restoration proof"
+    },
+    {
+      "provider_id": "P-28",
+      "name": "Plumbing 1 Builder's",
+      "legal_name": "PLUMBING 1 BUILDER'S INC",
+      "license": "1034873",
+      "classifications": [
+        "C-36",
+        "B"
+      ],
+      "status": "Current and active",
+      "phone": "(650) 868-8059",
+      "city": "Hayward",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "website": "",
+      "source_ids": [
+        "CSLB-1034873",
+        "PLUMBING1"
+      ],
+      "flags": [
+        "F-01",
+        "F-49"
+      ],
+      "score_components": {
+        "C1": 5,
+        "C2": 1,
+        "C3": 3,
+        "C4": 1
+      },
+      "why": "Active B + C-36 in Hayward, a possible one-contract path. The license was reissued to another entity in 2021, and a similarly named website returned site-not-published; association, SF service and small-job acceptance are unconfirmed.",
+      "cost_amount_owner": null,
+      "cost_note": "No attributed comparable quote; do not assume any travel surcharge.",
+      "ask": "Use the CSLB business phone to confirm the legal entity, service address, restoration trade and written price.",
+      "short_why": "B + C-36 backup; website association and San Francisco acceptance unconfirmed"
     }
   ],
   "partner": {
@@ -435,7 +580,8 @@
     "website": "https://www.bernalhilldrywall.com/",
     "source_ids": [
       "CSLB-995163",
-      "BERNAL"
+      "BERNAL",
+      "BPC-7057"
     ],
     "flags": [
       "F-19"
@@ -444,23 +590,23 @@
       "C1": 1,
       "C2": 3,
       "C3": 4,
-      "C4": 2,
-      "C5": 1
+      "C4": 2
     },
-    "why": "C-9 drywall plus B, active since 2014 with a current workers-compensation policy. This is the only drywall specialist in the register, and it is a restoration partner for whichever plumbing lead is hired, not a candidate for the plumbing work itself (no C-36).",
+    "why": "Active B + C-9 and advertised patching, texture and painting; no C-36. A possible restoration partner. A B general contractor may also be able to prime a qualifying multi-trade contract with an appropriately licensed plumbing subcontractor; confirm this job structure under §7057.",
     "cost_amount_owner": null,
-    "cost_note": "No quote on file. No patch/texture/paint price has been supplied by any party.",
-    "ask": "Ask for a fixed patch-texture-paint price conditional on a defined opening size, and whether work can be scheduled after the plumbing inspection.",
+    "cost_note": "No attributed comparable quote for patch/texture/paint; opening size and finish are unknown.",
+    "ask": "Ask whether the company can coordinate a qualifying single contract with a licensed plumbing subcontractor, or act as named finisher; request a conditional patch/texture/paint price and schedule after required inspection.",
     "short_why": "C-9 + B drywall specialist, paired with a plumbing lead"
   },
   "not_recommended": [
     {
       "provider_id": "P-21",
       "name": "D G Construction",
-      "reason": "B + C-36 capability, but the official CSLB record links to complaint disclosure and the disclosure lists citation 2 2022 002099 dated 2023-03-23 (for disclosure only per B&P §7124.6). The citation substance is not published on that page, so treat as hold until reviewed.",
+      "reason": "B + C-36, but CSLB discloses citation 2 2022 2099 dated 2023-03-23 (for disclosure only); detail describes BPC 7114.A, aided and abetted a non-licensee. Historical disclosure is not proof of current conduct; request explanation before considering.",
       "source_ids": [
         "CSLB-297604",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
       "phone": "(415) 308-0803",
@@ -470,9 +616,11 @@
     {
       "provider_id": "P-11",
       "name": "SF Building Group",
-      "reason": "B only on the checked record, registered in South San Francisco, workers-compensation exemption. Without C-36 the plumbing work needs a separate licensed plumber, so it cannot be the single all-in-one contract.",
+      "reason": "B only and company emphasizes larger planned work. A B-only general contractor may prime a qualifying multi-trade job with appropriately licensed plumbing subcontracting; small-job acceptance and the plumbing party remain unconfirmed.",
       "source_ids": [
-        "CSLB-1106131"
+        "CSLB-1106131",
+        "SFBG",
+        "BPC-7057"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
       "phone": "(415) 297-2246",
@@ -482,10 +630,10 @@
     {
       "provider_id": "P-12",
       "name": "24/7 SF Handyman & Remodeling Service",
-      "reason": "B-2 Residential Remodeling only; no plumbing classification, so it cannot lawfully take the pipe work itself.",
+      "reason": "B-2 residential remodeling only; BPC §7057.5 has specific limits on plumbing-system installation, replacement and substantial alteration. Check scope and an appropriately licensed plumber; small-job acceptance is unconfirmed.",
       "source_ids": [
         "CSLB-1105133",
-        "CSLB-B"
+        "BPC-7057-5"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
       "phone": "(415) 304-1559",
@@ -567,7 +715,7 @@
     {
       "provider_id": "P-23",
       "name": "Clever Plumbing & Rooter",
-      "reason": "C-36 only, registered in San Bruno, workers-compensation exemption, and the licence was issued on 2026-09-04 — no track record yet for delicate occupied-unit work.",
+      "reason": "C-36 license was issued 2026-09-04 and has a workers-comp exemption; no published evidence for this particular scope was found. The issue date alone does not establish the experience of its personnel.",
       "source_ids": [
         "CSLB-1160613"
       ],
@@ -579,9 +727,10 @@
     {
       "provider_id": "P-20",
       "name": "Cahill Contractors",
-      "reason": "A + B general contractor with no plumbing classification; this is a large commercial builder, not a one-fixture repair provider.",
+      "reason": "A + B general contractor, no C-36 on the checked record. A B prime may be possible with an appropriately licensed plumbing subcontractor; no evidence was found that the firm accepts this small residential job.",
       "source_ids": [
-        "CSLB-300647"
+        "CSLB-300647",
+        "BPC-7057"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
       "phone": "(415) 986-0600",
@@ -613,5 +762,6 @@
       "license": "",
       "status": "Unresolved"
     }
-  ]
+  ],
+  "price_policy": "No candidate is awarded or deducted points for price. All candidate-specific comparable project prices are unconfirmed; the three owner-reported amounts and names are shown separately, without assuming the CSLB identity match."
 }
