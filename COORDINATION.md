@@ -975,3 +975,13 @@ stale `scripts/verify_project_site.py` (I-3); conflicting open PRs **#35**, **#3
 **#38** (its `Publish verified bathtub overflow repair dashboard` check is **FAILURE** —
 another racing session's branch, not merged by this session), plus unrelated stale PR **#7**.
 This session merged only its own verified PR #40 and did not touch other sessions' open PRs.
+
+---
+
+## Session `arena/54cba99d-korea8` — focused provider contact/ranking refresh
+
+| ID | Task | Status | Owning session | File scope |
+|---|---|---|---|---|
+| `54-T1` | Add verified official contact links/phones and evidence-based ranked inquiry order; refresh executive decision brief, preserve unknown prices as blank, verify the existing site and flag limitations | in progress | `arena/54cba99d-korea8` | `site-data/providers.json`, `site-data/summary.json`, `scripts/build_overflow_site.py`, generated root provider/summary pages, tests if needed, `COORDINATION.md` |
+
+**Claim boundary:** this task is limited to improving the already-integrated root dashboard and does not modify unrelated GEMS research, legacy archives, other active pull requests, or separate research registries. Ranking is an inquiry priority based on publicly documented scope/license evidence, not a claim of workmanship, review quality, availability, cost, or booking. Phone numbers and service areas will be included only when an official company or CSLB source verifies them; costs remain blank unless directly confirmed from an official source. No provider will be contacted or engaged by this session.
