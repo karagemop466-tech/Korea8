@@ -1159,10 +1159,14 @@ The platform fixes this session to `arena/0404117b-korea8`; no alternate session
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| K8-N1 | Claim released integration scope; review current board, repository and GitHub state | in progress | `arena/0404117b-korea8` | `COORDINATION.md`, `audit/0404117b/**` |
-| K8-N2 | Fresh official-source verification of combined provider, review, requirement, cost and technical records | unclaimed | `arena/0404117b-korea8` | `overflow-integration/data/**`, `audit/0404117b/**` |
-| K8-N3 | Refresh executive summary and clean canonical dashboard; preserve historical/unrelated work | unclaimed | `arena/0404117b-korea8` | root bathtub HTML/CSS, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `overflow-integration/**` |
-| K8-N4 | Independent row/link/privacy checks, build, unit/browser tests and repository review | unclaimed | `arena/0404117b-korea8` | `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `.github/workflows/overflow-pages.yml`, `audit/0404117b/**`, `README.md` top project note only |
-| K8-N5 | Final integration PR to main, merge, specific-commit Pages verification and completion record | unclaimed | `arena/0404117b-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+| K8-N1 | Claim released integration scope; review current board, repository and GitHub state | done | `arena/0404117b-korea8` | `COORDINATION.md`, `audit/0404117b/**` |
+| K8-N2 | Fresh official-source verification of combined provider, review, requirement, cost and technical records | in progress | `arena/0404117b-korea8` | `overflow-integration/data/**`, `audit/0404117b/**` |
+| K8-N3 | Refresh executive summary and clean canonical dashboard; preserve historical/unrelated work | in progress | `arena/0404117b-korea8` | root bathtub HTML/CSS, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `overflow-integration/**` |
+| K8-N4 | Independent row/link/privacy checks, build, unit/browser tests and repository review | in progress | `arena/0404117b-korea8` | `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `.github/workflows/overflow-pages.yml`, `audit/0404117b/**`, `README.md` top project note only |
+| K8-N5 | Final integration PR to main, merge, specific-commit Pages verification and completion record | in progress | `arena/0404117b-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+
+### 2026-11-08T23:11Z — active parallel-work handoff
+
+Main advanced through PRs #47/#48/#46 while this session was researching; PR #46 is merged and its audit/generator/board changes will be preserved by rebase. PR #49 (`arena/55859fbc-korea8`, latest commit 23:08Z) is active and overlaps the canonical generator/data/verifier scope. This session claimed at 23:04Z, before that session's 23:08Z implementation commit, and will not overwrite its work. To avoid simultaneous writes, K8-N2/N3/N4 implementation is paused while this session completes an independent review in its non-overlapping `audit/0404117b/**` scope. The already-developed canonical changes are retained locally, not pushed over the active claim. K8-N5 remains pending release/merge of the active integration work; no other session's PR will be merged or closed. If the active claim becomes stale under the >60-minute rule, a logged handoff may resume this integration with both change sets preserved.
 
 No shared files have been changed before this claim. Source observations will distinguish fresh retrieval, historical transcription, owner statements and analytical judgments. Public content will use neutral repair language. No contractor acceptance, booking or exact-job capability will be claimed without direct evidence.
