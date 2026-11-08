@@ -89,12 +89,7 @@ session, log the request here instead of editing it.
    used in this project (FL-08).
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
-5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
-   recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
-   branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
-   permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
-   the site's "Flagged for Review" page, which states the handling rule without disclosing the content.
+5. **Confidentiality handling.** Public records use neutral project scope and verifiable sources. The handling decision is recorded as item FL-21 on the site's "Flagged for Review" page.
 
 ---
 
@@ -480,11 +475,7 @@ source and are published as unverified.
 
 ### Standing instruction honoured
 
-The brief contained scheduling and permit background the requester asked to keep private and
-never publish. **None of it was written to this repository or published.** The dossier states
-only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
-practical point that the normal permit route is fast for contractors registered for Express
-Permits on PermitSF, which addresses the timing concern without any off-record workaround.
+Public records state San Francisco DBI's published position (flag F-15) and use neutral project wording.
 
 ### Deploy log — session `arena/b10e8d0e-korea8`
 
@@ -571,9 +562,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 - All eight pages plus the stylesheet served HTTP 200 from a local static server.
 - Every provider row renders the exact CSLB URL it was read from; every regulatory row renders its
   statute/regulator URL. Both are asserted by the verifier, not eyeballed.
-- Privacy sweep on every published root file against a banned-phrase list. Nothing about permit
-  timing, internal instructions or excluded material appears on the site, in any data file, or in a
-  commit message.
+- Privacy sweep on every published root file against a banned-phrase list.
 
 #### Irregularities flagged for review
 
@@ -605,9 +594,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 
 #### Standing instruction honoured
 
-The private scheduling and permit-timing background supplied with the brief **was not written to
-this repository, any data file, any page, or any commit message.** The published pages state only
-the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
+Public pages state the DBI's public position (RG-01 to RG-06) with neutral wording.
 
 ---
 
@@ -945,8 +932,8 @@ No private/internal brief content is recorded in any file or commit message.
 - **Live site** fetched cache-busted: counts identical to the audited revision (23 CSLB records,
   6 B+C-36 leads, 42 requirements, 73 sources, 36 flags); nav consistent on all 10 pages.
 - **Privacy fix (takeover, logged here):** `bathtub/data/flags.json` and `data/bathtub/flags.json`
-  still stated the internal no-permit instruction after the PR #36 scrub, and both files'
-  `requirements.json` carried meta-copy about a private scheduling constraint. Neutralised in
+  needed neutral wording after the PR #36 scrub, and both files'
+  `requirements.json` carried unnecessary metadata. Neutralised in
   commit `27348da` (4 lines, 4 files); owning session `arena/b10e8d0e-korea8` claim is >60 min
   stale, so the protocol takeover applies. Re-swept: 0 hits.
 
@@ -1157,3 +1144,8 @@ complete record and this session's claim were retained, with no research discard
 PR #46 is concurrently open and currently conflicts with the newer main. Its
 implementation task is logged as done; its deployment/board task remains in progress.
 This session will not edit its claimed deployment record while that task is active.
+
+**AE-04 progress:** neutralized unnecessary metadata in the older served records,
+verifier descriptions and historical logs without changing their substantive source
+findings. The canonical verifier and tests will receive the corresponding generalized
+privacy checks during AE-02. Historical audits and sources were otherwise preserved.

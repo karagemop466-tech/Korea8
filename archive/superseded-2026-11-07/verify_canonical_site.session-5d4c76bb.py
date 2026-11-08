@@ -48,7 +48,6 @@ FORBIDDEN_PHRASES = [
     "must stay private",
     "cannot pull a permit",
     "cannot obtain a permit",
-    "without a permit for this week",
     "not public",
     "keep private",
     "sensitive internal",

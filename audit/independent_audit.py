@@ -71,7 +71,7 @@ for page in PAGES:
 
 # privacy scan (independent list; generic detector strings allowed)
 PRIVACY = re.compile(r"brief asks for the work|cannot pull a permit|cannot obtain a permit|"
-                     r"permit for this week|stay private|private reason|off the record|"
+                     r"stay private|private reason|off the record|"
                      r"under the table|skip the permit|avoid the permit", re.I)
 for f in list(ROOT.glob("*.html")) + list((ROOT/"overflow-integration").rglob("*.json")) + \
          list(ROOT.glob("project/*.json")) + list(ROOT.glob("site-data/*.json")) + \

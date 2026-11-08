@@ -754,7 +754,7 @@ ANALYSIS = [
      "DBI states a permit is required before cutting into or replacing pipes, particularly pipes that will be covered "
      "by a wall, and that the plumbing inspection happens before the pipes are covered. Separately, BPC 7048's "
      "sub-$1,000 unlicensed exemption applies only where no building permit is required — so a licensed contractor is "
-     "required here regardless of the final price. The timing concern is answerable inside the system: contractors "
+     "required here regardless of the final price. Contractors "
      "registered for Express Permits on PermitSF receive eligible plumbing permits straight away, without City staff "
      "review, and DBI connects authorised agents within two business days.",
      True, "compliance.html"),

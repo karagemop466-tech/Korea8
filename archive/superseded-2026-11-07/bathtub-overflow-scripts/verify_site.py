@@ -223,7 +223,7 @@ def main() -> int:
 
     leaked = [w for w in FORBIDDEN if w.lower() in blob.lower()]
     ok_all &= check("NO-PRIVATE-LEAK",
-                    "no internal permit-timing language appears in the published data or pages",
+                    "no restricted context appears in the published data or pages",
                     not leaked, ", ".join(leaked))
 
     # every requirement and finding has a verification label
