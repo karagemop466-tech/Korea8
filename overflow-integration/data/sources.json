@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "CSLB-1115649",
@@ -841,6 +841,61 @@
       "supports": "Claims, handoffs, merge/deploy logs and preservation decisions.",
       "limitations": "",
       "official": false
+    },
+    {
+      "id": "YELP-FLOWFORM",
+      "url": "https://www.yelp.com/biz/flow-form-plumbing-san-francisco-3",
+      "title": "Flow Form Plumbing — Yelp profile (review lead)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-08",
+      "retrieval": "search excerpt only; business page blocked",
+      "supports": "Search-index review highlight mentions work on very old tub and shower faucets in San Francisco.",
+      "limitations": "Not this exact trip-lever job; no rating/count verified; CSLB identity unresolved."
+    },
+    {
+      "id": "YELP-PLUMBTEC",
+      "url": "https://www.yelp.com/biz/plumbtec-systems-san-francisco-5",
+      "title": "Plumbtec Systems — Yelp profile (review lead)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-08",
+      "retrieval": "search excerpt only; business page blocked",
+      "supports": "Search-index listing shows bathtub repair and drain repair in San Francisco.",
+      "limitations": "Adjacent service listing only; no rating/count verified; CSLB identity unresolved."
+    },
+    {
+      "id": "YELP-HEISE-ALT",
+      "url": "https://www.yelp.com/biz/heises-plumbing-san-francisco?start=60",
+      "title": "Heise’s Plumbing — later Yelp index snapshot",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-08",
+      "retrieval": "search excerpt only; business page blocked",
+      "supports": "Demonstrates that the same profile appears with different review counts in different dated index snapshots.",
+      "limitations": "No count is published as verified; snapshots conflict."
+    },
+    {
+      "id": "REPO-OPEN-PRS",
+      "url": "https://github.com/karagemop466-tech/Korea8/pulls",
+      "title": "Korea8 open pull requests",
+      "publisher": "GitHub / repository primary",
+      "kind": "repository-primary",
+      "checked": "2026-11-08",
+      "retrieval": "direct via GitHub API and web",
+      "supports": "Records the open PRs from prior parallel sessions.",
+      "limitations": "PR state changes over time; point-in-time."
+    },
+    {
+      "id": "CSLB-C36-RECHECK",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "title": "CSLB C-36 Plumbing classification (2026-11-08 recheck)",
+      "publisher": "California Contractors State License Board",
+      "kind": "official-government",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "C-36 covers waste removal, piping, maintenance and replacement.",
+      "limitations": "Classification scope is not a performance rating."
     }
   ]
 }

@@ -1,0 +1,283 @@
+{
+  "as_of": "2026-11-08",
+  "meta": {
+    "title": "Ranked decision analysis — best choice to inquire with first",
+    "nature": "Editorial priority order for inquiry, not an official rating, verified performance score, quotation or booking. No numeric score is assigned because no official source ranks contractors for this repair.",
+    "method": "Order the officially verified licence facts first (active C-36 plumbing; lawful combined-trade structure), then the strongest published adjacent case evidence, then occupied-unit/service evidence, then existing owner-supplied quote scope. Downgrade adverse CSLB status, unresolved identity, insurance expiry, and out-of-scope or ambiguous quotes. Values that cannot be confirmed from an official source are blank and flagged.",
+    "verification": "Every licence, classification, status, expiry and business phone below was re-read on the official CSLB licence-detail page on 2026-11-08. Company-site statements are labelled self-descriptions. Amounts attributed to the owner are labelled unverified; verified amounts remain blank."
+  },
+  "criteria": [
+    {
+      "id": "CR-01",
+      "criterion": "Active C-36 plumbing licence on the checked CSLB record",
+      "why": "The plumbing leg includes waste/overflow piping; C-36 is the official classification that covers removal of waste, piping, maintenance and replacement.",
+      "limit": "A classification is a legal scope, not proof that the firm accepts this exact delicate job.",
+      "source_ids": ["CSLB-C36-RECHECK", "CSLB-1115649"],
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36"
+    },
+    {
+      "id": "CR-02",
+      "criterion": "Lawful single-contract capacity for plumbing plus drywall/restoration",
+      "why": "BPC §7057 allows a B prime contract involving two unrelated trades, or the appropriate specialty class/subcontractor. B + C-36 on one licence, or a named C-9/B restoration partner, fits the requested all-in-one service.",
+      "limit": "B + C-36 is not proof that the firm self-performs drywall texture and paint; the contract must name the party.",
+      "source_ids": ["BPC-7057", "CSLB-C9", "CSLB-B"],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057."
+    },
+    {
+      "id": "CR-03",
+      "criterion": "Published adjacent ceiling-access tub waste/overflow case",
+      "why": "A documented below-ceiling tub waste/overflow replacement is the closest public evidence to the fallback access route described in the brief.",
+      "limit": "Company-published case text is self-reported, not an independent review; the page also embeds a 404 template block (F-17).",
+      "source_ids": ["HEISE-INGLESIDE", "CSLB-1089561"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "id": "CR-04",
+      "criterion": "San Francisco service area and occupied-unit coordination evidence",
+      "why": "The unit is tenant-occupied and the access is in a storage area below; service-area and occupied-space statements matter for a delicate, coordinated visit.",
+      "limit": "Company self-descriptions are not confirmations of availability, insurance or a current written protocol.",
+      "source_ids": ["ACE", "SFBG", "BERNAL", "CIV-1954"],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    },
+    {
+      "id": "CR-05",
+      "criterion": "Existing owner-supplied quote scope",
+      "why": "Three firms have already quoted scopes, which lowers outreach effort, but only one scope wording resembles a full waste-and-overflow replacement.",
+      "limit": "All three amounts are owner-reported and unverified; the scopes differ and none explicitly prices ceiling restoration.",
+      "source_ids": ["OWNER", "CSLB-977638", "CSLB-757796", "CSLB-1024971"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "id": "CR-06",
+      "criterion": "Adverse CSLB status, unresolved identity or expiring insurance",
+      "why": "Suspension, an additional-status warning, a complaint-disclosure record, an unresolved licence match or an insurance expiry raises signing-day risk.",
+      "limit": "CSLB status is point-in-time; re-check the linked page before signing.",
+      "source_ids": ["CSLB-1027286", "CSLB-1009195", "DG-COMPLAINT", "CSLB-SEARCH"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "CR-07",
+      "criterion": "Cost evidence discipline",
+      "why": "Official DBI fees are verified; contractor prices are not. A permit fee is not a repair quote and cannot be added to a quote until inclusions and the DBI category are confirmed.",
+      "limit": "Job-specific permit applicability and the drywall restoration price remain unconfirmed; those cells are blank.",
+      "source_ids": ["SF-FEES", "SF-PERMIT", "OWNER"],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    }
+  ],
+  "ranks": [
+    {
+      "rank": 1,
+      "provider": "Rapid Flow Plumbing & Rooter",
+      "license": "1115649",
+      "phone": "(415) 866-8401",
+      "website": "https://www.rapidflowbayarea.com/",
+      "classes": "B General Building, C-36 Plumbing",
+      "status": "Current and active; expires 2028-01-31",
+      "reason": "Best structural fit for an all-in-one prime contract: one active licence holds both B and C-36, which satisfies the two-unrelated-trades rule for plumbing plus restoration. Its official site self-describes general contracting and simple repairs to renovations. Ranked first on licence structure, not on verified performance.",
+      "cost": "No current written quote on file; the verified price cell is blank. Owner-reported amounts of $614, $550 and $135 belong to three other firms with unlike scopes and are unverified, so they are not a comparable price. Official DBI Category 1P is $290 if that category and a permit apply; off-hour inspection is $555/hour. Ask for one itemized combined quote.",
+      "unverified": "Exact stuck-lever job acceptance, named drywall/texture/paint party, occupied-unit plan, current price, and which published phone number dispatches work (F-37).",
+      "source_ids": ["CSLB-1115649", "RF", "BPC-7057", "SF-FEES", "OWNER", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+    },
+    {
+      "rank": 2,
+      "provider": "Ace Plumbing & Rooter",
+      "license": "829071",
+      "phone": "(415) 824-6444",
+      "website": "https://www.aceplumbingandrooter.com/",
+      "classes": "B, C-36, A, C-4, C-16, C-10",
+      "status": "Current and active; expires 2027-06-30",
+      "reason": "Second-strongest structural fit: active B + C-36 plus the broadest classification set in the register, licensed since 2003. Its official site self-describes long-running work with HOAs and property managers, relevant to an occupied unit. Ranked below Rapid Flow because no published case of this exact access route was found and a 2007 licence reissue is recorded.",
+      "cost": "No quote on file; verified price blank. The owner-reported $614/$550/$135 figures are unverified and belong to other firms. Official DBI fees ($290 Category 1P; $519/hour regular inspection; $259/half-hour reinspection) are separate from any contractor price. Request a written combined scope and price.",
+      "unverified": "Acceptance of a small occupied-unit repair, named restoration party, current protocol and price; older review excerpts are not a current protocol (F-16).",
+      "source_ids": ["CSLB-829071", "ACE", "BPC-7057", "SF-FEES", "OWNER", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "rank": 3,
+      "provider": "Heise’s Plumbing (Taro Group Inc)",
+      "license": "1089561",
+      "phone": "(415) 333-0704",
+      "website": "https://www.heisesplumbing.com/",
+      "classes": "C-36, C-10, A, C-20",
+      "status": "Current and active; expires 2028-04-30",
+      "reason": "Strongest published technical evidence: the company's own Ingleside case describes accessing an exterior ceiling to replace a tub waste-and-overflow assembly, P-trap and trap adapter. It ranks below the B + C-36 leads because this licence has no B or C-9, so a separately named restoration contractor is required for the ceiling.",
+      "cost": "No quote on file; verified price blank. The drywall opening/patch price is also blank because no official source or quote supplies it. Owner-reported amounts are unverified and from other firms. Official DBI fees are separate; a two-contractor scope needs both parties' prices in one written contract.",
+      "unverified": "Restoration party, exact-job acceptance, current price and the case page's embedded 404 block (F-17); case evidence is self-published, not an independent review.",
+      "source_ids": ["CSLB-1089561", "HEISE-INGLESIDE", "CSLB-C9", "SF-FEES", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "rank": 4,
+      "provider": "Bernal Hill Drywall Inc (restoration partner, not a prime plumber)",
+      "license": "995163",
+      "phone": "(415) 533-8274",
+      "website": "https://www.bernalhilldrywall.com/",
+      "classes": "C-9 Drywall, B General Building",
+      "status": "Current and active; expires 2028-07-31",
+      "reason": "The only C-9 drywall specialist in the register and the clearest candidate to restore a ceiling opening, patch, texture and paint. Its official site self-describes small wall repairs through complete build-backs. It is ranked as the partner to name alongside a C-36 plumber, not as the sole hire for the plumbing leg.",
+      "cost": "No quote on file; verified price blank. The below-ceiling drywall opening and restoration cost is blank and flagged (F-04). Owner-reported amounts and official DBI fees do not price restoration. Obtain a written restoration allowance from this or another named C-9/B firm.",
+      "unverified": "Whether it accepts a small ceiling patch as a subcontractor, coordination with the plumbing prime, current price and scheduling (F-19).",
+      "source_ids": ["CSLB-995163", "BERNAL", "CSLB-C9", "SF-FEES", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163"
+    },
+    {
+      "rank": 5,
+      "provider": "We Do Construction Inc",
+      "license": "1096552",
+      "phone": "(415) 416-5494",
+      "website": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "classes": "B General Building, C-36 Plumbing",
+      "status": "Current and active; expires 2028-09-30",
+      "reason": "Active B + C-36 under one corporation with a workers'-compensation policy on file, so it has the same lawful combined-trade structure as ranks 1–2. Its official site self-describes design-build and full-gut bathroom remodels and publishes whole-project price bands, which suggests larger work; small delicate repair acceptance is unconfirmed (F-20).",
+      "cost": "No quote on file; verified price blank. The site's published remodel price bands are for full remodels, not this repair, and are not used as a benchmark. Owner-reported amounts are unverified and from other firms; official DBI fees are separate. Ask whether a small repair is accepted and request an itemized quote.",
+      "unverified": "Small-job acceptance, occupied-unit protocol, named restoration party and current price.",
+      "source_ids": ["CSLB-1096552", "WEDO", "BPC-7057", "SF-FEES", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552"
+    },
+    {
+      "rank": 6,
+      "provider": "Ayoob & Peery Plumbing Co Inc",
+      "license": "392967",
+      "phone": "(415) 550-0975",
+      "website": "https://www.ayoobpeery.com/",
+      "classes": "B, C-36, C-4, C-16, C-20",
+      "status": "Current and active; expires 2028-09-30",
+      "reason": "Longest continuously licensed firm in the register (issued 1980) with active B + C-36 on one licence, so it can lawfully structure the combined scope. Its official site self-describes commercial design/build mechanical work, so a small tenant-occupied repair may not fit its normal project profile (F-20).",
+      "cost": "No quote on file; verified price blank. No official source prices this repair. Owner-reported amounts are unverified and from other firms; official DBI fees are separate. Ask for small-repair acceptance and an itemized combined quote.",
+      "unverified": "Small residential repair acceptance, occupied-unit plan, named restoration party and current price.",
+      "source_ids": ["CSLB-392967", "AYOOB", "BPC-7057", "SF-FEES", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967"
+    },
+    {
+      "rank": 7,
+      "provider": "Save-On-Interior",
+      "license": "749536",
+      "phone": "(415) 668-8000",
+      "website": "",
+      "classes": "B General Building, C-36 Plumbing",
+      "status": "Current and active; expires 2028-05-31",
+      "reason": "Active B + C-36 at the same CSLB street address and business phone as Bay Area Plumbing (#757796), which quoted the owner. That combination could make one conversation cover both trades. Ranked mid-table because the CSLB records do not state who controls each licence, the firm is workers'-comp exempt (certified no employees), and its identity is not otherwise confirmed (F-12, F-28, F-30).",
+      "cost": "No quote on file for this licence; verified price blank. The owner-reported $550 amount belongs to Bay Area Plumbing #757796, is unverified, and cannot be transferred to this entity. Official DBI fees are separate. Confirm the contracting entity before requesting a quote.",
+      "unverified": "Legal/control relationship to #757796, who performs the work, insurance coverage, exact-job acceptance and current price.",
+      "source_ids": ["CSLB-749536", "CSLB-757796", "BPC-7057", "SF-FEES", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536"
+    },
+    {
+      "rank": 8,
+      "provider": "D G Construction Co",
+      "license": "297604",
+      "phone": "(415) 308-0803",
+      "website": "",
+      "classes": "B General Building, C-36 Plumbing",
+      "status": "Current and active; expires 2027-04-30",
+      "reason": "Active B + C-36 since 1974, so it has the combined-trade structure. It is ranked below the other B + C-36 firms because the official CSLB complaint-disclosure page lists a 2022 citation dated 03/23/2023 (status 'FOR DISCLOSURE ONLY PER B&P CODE 7124.6'), and the licence is workers'-comp exempt (F-11, F-28).",
+      "cost": "No quote on file; verified price blank. Owner-reported amounts are unverified and from other firms; official DBI fees are separate. Review the linked disclosure and request an itemized combined quote before shortlisting.",
+      "unverified": "Disclosure context, insurance for onsite workers, exact-job acceptance, named restoration party and current price.",
+      "source_ids": ["CSLB-297604", "DG-COMPLAINT", "BPC-7057", "SF-FEES", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604"
+    },
+    {
+      "rank": 9,
+      "provider": "Expert Plumbing Solutions",
+      "license": "977638",
+      "phone": "(415) 531-5340",
+      "website": "https://www.eplumbingsolutions.com/",
+      "classes": "C-36 Plumbing",
+      "status": "Current and active; expires 2028-10-31",
+      "reason": "One of three firms that already supplied a quote, and its owner-reported scope ('replacing waste and overflow') is the closest wording to the full assembly that may need replacement. Ranked below combined-scope leads because C-36 alone does not cover the drywall/restoration leg, so a second licensed party is needed.",
+      "cost": "Owner-reported $614 for 'replace waste and overflow' (2026-08-30), unverified; the verified amount cell is blank. The wording does not state an access route, ceiling restoration, permit, cleanup or warranty, so it is not an all-in price. Official DBI fees are separate; requote one identical combined scope.",
+      "unverified": "Current validity of the supplied amount, ceiling restoration party and price, exact-job acceptance, and written scope inclusions (F-02, F-03, F-04, F-05).",
+      "source_ids": ["CSLB-977638", "EXPERT", "OWNER", "SF-FEES", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "rank": 10,
+      "provider": "Bay Area Plumbing",
+      "license": "757796",
+      "phone": "(415) 668-8000",
+      "website": "https://www.bayareaplumbingsf.com/",
+      "classes": "C-36 Plumbing",
+      "status": "Current and active; expires 2027-01-31",
+      "reason": "Existing estimate provider with an active C-36 licence since 1999. Its quoted wording ('lever for the bathtub plug and spout with diverter') may describe a different assembly than the waste-and-overflow, so the scope needs clarification. A separate B + C-36 licence (#749536) shares its CSLB address and phone, but common control is unproven (F-12).",
+      "cost": "Owner-reported $550 including labour and materials (2026-08-30), unverified; verified amount blank. Because the scope may cover a tub-fill diverter rather than the waste-and-overflow, this is not comparable with the owner-reported $614 replacement or $135 adjustment. Official DBI fees are separate; requote an identical scope.",
+      "unverified": "What 'spout/diverter' means, current price, contracting entity, restoration party and exact-job acceptance (F-03, F-12).",
+      "source_ids": ["CSLB-757796", "BAY", "CSLB-749536", "OWNER", "SF-FEES"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    },
+    {
+      "rank": 11,
+      "provider": "Fast Response Plumbing & Rooter",
+      "license": "1024971",
+      "phone": "(415) 596-6115",
+      "website": "https://www.fastresponseplumbingsf.com/",
+      "classes": "C-36 Plumbing",
+      "status": "Current and active; expires 2027-03-31",
+      "reason": "Existing estimate provider with an active C-36 licence and an official site self-describing residential work with HOAs/property managers. Ranked low because the owner-reported scope is only a plunger-handle repair/adjustment (the narrowest), the CSLB workers'-compensation policy expires 2026-12-18, and the registered address wording differs from the website (F-29).",
+      "cost": "Owner-reported $135 for 'repair or adjust plunger handle' (2026-08-30), unverified; verified amount blank. An adjustment-only price cannot fund a waste-and-overflow replacement plus ceiling access and restoration. Official DBI fees are separate; requote the full neutral scope and confirm insurance renewal.",
+      "unverified": "Current price, insurance renewal, whether the internals can in fact be freed from above, restoration party and exact-job acceptance (F-02, F-03, F-29).",
+      "source_ids": ["CSLB-1024971", "FAST", "OWNER", "SF-FEES", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    },
+    {
+      "rank": 12,
+      "provider": "Advanced Plumbing and Drain Inc",
+      "license": "1009195",
+      "phone": "(415) 744-4944",
+      "website": "",
+      "classes": "C-36 Plumbing",
+      "status": "Current and active with CSLB additional status; expires 2027-11-30",
+      "reason": "Active C-36 plumbing licence, but CSLB records an additional status: the licence may be suspended at a future date for an unresolved final liability. With no B/C-9 coverage, no quote and no published case evidence, it is the last active inquiry lead rather than a recommended first call (F-10).",
+      "cost": "No quote on file; verified price blank. Owner-reported amounts are unverified and from other firms; official DBI fees are separate. Confirm licence status and obtain a written combined quote before any approach.",
+      "unverified": "CSLB additional-status resolution, exact-job acceptance, restoration party and current price.",
+      "source_ids": ["CSLB-1009195", "SF-FEES", "OWNER", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+    }
+  ],
+  "excluded": [
+    {
+      "provider": "Kenneth Asire Plumbing",
+      "license": "1027286",
+      "reason": "CSLB shows the licence under Contractors Bond Suspension; not eligible for an inquiry lead until status is restored and a bond is verified (F-09).",
+      "source_ids": ["CSLB-1027286", "CSLB-SEARCH"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+    },
+    {
+      "provider": "Portola Plumbing Services",
+      "license": "",
+      "reason": "No CSLB licence record could be matched to the name; licence, phone, address and status cells are blank and flagged (F-13).",
+      "source_ids": ["CSLB-SEARCH", "YELP-PORTOLA"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "provider": "24/7 SF Handyman & Remodeling Service (HARP Services)",
+      "license": "1105133",
+      "reason": "Licence is B-2 Residential Remodeling, not B or C-36. BPC §7057.5 restricts contracts to three or more unrelated trades and limits plumbing-system work; not a sole prime for this job (F-08).",
+      "source_ids": ["CSLB-1105133", "BPC-7057-5"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133"
+    },
+    {
+      "provider": "SF Building Group",
+      "license": "1106131",
+      "reason": "B-only on the checked record; its official site states it focuses on larger projects. It would need a named C-36 plumbing contractor (F-07, F-20).",
+      "source_ids": ["CSLB-1106131", "SFBG", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
+    },
+    {
+      "provider": "Cahill Contractors Inc",
+      "license": "300647",
+      "reason": "A + B classifications but no C-36; a large commercial general contractor with no published evidence of small occupied-unit tub repairs (F-20).",
+      "source_ids": ["CSLB-300647", "CSLB-C36-RECHECK"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647"
+    }
+  ],
+  "cost_notes": [
+    "The three supplied amounts ($614, $550, $135) are owner-reported primary statements dated 2026-08-30, not verified contractor prices; every verified amount cell is blank (F-02).",
+    "The scopes differ (full assembly wording, plug/lever/diverter wording, adjustment-only wording), so the $479 arithmetic spread is not a like-for-like market range (F-03).",
+    "No supplied scope explicitly prices opening and restoring the storage-unit ceiling; that cost remains blank and flagged (F-04).",
+    "Official July 2026 DBI fees are verified but are permit/inspection charges, not a repair total: Category 1P $290, Category 11P/M $320, regular inspection $519/hour, off-hour $555/hour, reinspection $259/half-hour (F-24).",
+    "Do not add a permit fee to a contractor quote until the written scope states whether permits and inspections are included and DBI confirms the job category."
+  ],
+  "cost_note_source_ids": ["OWNER", "SF-FEES", "SF-PERMIT", "CSLB-CONTRACT"],
+  "cost_note_official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+}

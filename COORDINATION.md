@@ -90,7 +90,7 @@ session, log the request here instead of editing it.
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
 5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
+   email, or in any public record, together with background that must not be published. **Neither the internal information nor that background is
    recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
    branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
    permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
@@ -1002,10 +1002,16 @@ third-party case page containing an embedded 404 message), which this session re
 
 | ID | Task | Status | Owning session | Files in scope |
 |---|---|---|---|---|
-| `DB-01` | Claim board, repo review (line by line), irregularity log | in progress | `arena/dbe2d8d2-korea8` | `COORDINATION.md`, `audit/REPORT_2026-11-08_dbe2d8d2.md` |
-| `DB-02` | Independent official-source re-verification of provider/licence rows, phone numbers, code/fee rows; executive summary + requirements + ranked decision analysis | unclaimed → in progress | `arena/dbe2d8d2-korea8` | `site-data/*.json`, `audit/REPORT_2026-11-08_dbe2d8d2.md` |
-| `DB-03` | Rebuild canonical root site (landing + category subpages + Flagged for Review) and enforce strict source-link-per-row, blank/unverified discipline, privacy sweep | unclaimed | `arena/dbe2d8d2-korea8` | root `*.html`, `style.css`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py` |
-| `DB-04` | Full line-by-line verification, link check, build, PR → `main`, merge, confirm Pages deploy, record PR link and merge result | unclaimed | `arena/dbe2d8d2-korea8` | `COORDINATION.md`, `audit/REPORT_2026-11-08_dbe2d8d2.md`, PR to `main` |
+| `DB-01` | Claim board, repo review (line by line), irregularity log | done | `arena/dbe2d8d2-korea8` | `COORDINATION.md`, `audit/REPORT_2026-11-08_dbe2d8d2.md` |
+| `DB-02` | Independent official-source re-verification of provider/licence rows, phone numbers, code/fee rows; executive summary + requirements + ranked decision analysis | done | `arena/dbe2d8d2-korea8` | `overflow-integration/data/*.json`, `overflow-integration/data/ranking.json`, `audit/official_recheck_2026-11-08_dbe2d8d2.json`, `audit/REPORT_2026-11-08_dbe2d8d2.md` |
+| `DB-03` | Rebuild canonical root site (landing + category subpages + Flagged for Review + Decision analysis) and enforce strict source-link-per-row, blank/unverified discipline, privacy sweep | done | `arena/dbe2d8d2-korea8` | root `*.html`, `style.css`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `audit/verify_dbe2d8d2.py`, `audit/independent_audit.py` (stale-tool handoff) |
+| `DB-04` | Full line-by-line verification, link check, build, PR → `main`, merge, confirm Pages deploy, record PR link and merge result | in progress | `arena/dbe2d8d2-korea8` | `COORDINATION.md`, `audit/REPORT_2026-11-08_dbe2d8d2.md`, PR to `main` |
+
+**Scope extension (handoff logged):** the `audit/independent_audit.py` parser from the finished
+session `arena/d120270b-korea8` was extended to the 11-page site and its official-host allowlist
+was completed; the earlier claim is >60 minutes old with no commits. A second, independent parser
+`audit/verify_dbe2d8d2.py` was added so no verification claim rests on the producing script. Both
+changes are verification tooling only; no other session's research content was altered.
 
 **Boundary:** no geothermal/GEMS artefact, no `vendor/`, `registry/`, `src/`, `evidence/`, or other
 session's research tree is modified. Superseded/redirect pages are left intact. Public pages carry only

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "F-01",
@@ -153,8 +153,8 @@
       "severity": "Medium",
       "category": "License status",
       "title": "D G Construction has a complaint-disclosure link",
-      "detail": "#297604 is active B + C-36; the disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
-      "action": "Read the official citation/disclosure and CSLB limits; active status is not a clean-history guarantee.",
+      "detail": "CSLB #297604 (D G Construction Co) has a complaint-disclosure link. The official disclosure page re-read on 2026-11-08 lists one 2022 citation dated 03/23/2023, status \"FOR DISCLOSURE ONLY PER B&P CODE 7124.6\". This is a disclosure record, not a suspension.",
+      "action": "Review the linked CSLB disclosure before shortlisting; do not treat the licence as suspended.",
       "source_ids": [
         "CSLB-297604",
         "DG-COMPLAINT"
@@ -241,13 +241,14 @@
       "severity": "Medium",
       "category": "Technical evidence",
       "title": "Heise’s case studies are self-published and contain a 404 template block",
-      "detail": "The Ingleside/Mission/Marina project pages render project content but embed a “Page Not Found (404)” template block. The Ingleside page describes ceiling access; none proves drywall restoration.",
+      "detail": "Heise’s case studies are company-published, not independent reviews. Re-retrieved 2026-11-08: the Ingleside tub waste/overflow page still displays its case text together with an embedded \"Page Not Found (404)\" template block, so the evidence is usable only with that caveat.",
       "action": "Treat as adjacent company evidence, not independent verification; ask for references and the restoration party.",
       "source_ids": [
         "HEISE-INGLESIDE",
         "HEISE-MISSION",
         "HEISE-MARINA",
-        "CSLB-1089561"
+        "CSLB-1089561",
+        "YELP-HEISE"
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "status": "Open"
@@ -529,6 +530,65 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Low",
+      "category": "Contact",
+      "title": "Rapid Flow publishes a different phone number than CSLB",
+      "detail": "The official CSLB record #1115649 lists (415) 866-8401 as the business phone; the company’s own site advertises 844-BAY-FLOW (844-229-3569). Both are first-party numbers, but they differ.",
+      "action": "Confirm the correct dispatch/estimate number before calling; use the CSLB entity name and licence number to identify the firm.",
+      "source_ids": [
+        "CSLB-1115649",
+        "RF"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "status": "Open"
+    },
+    {
+      "id": "F-38",
+      "severity": "Medium",
+      "category": "Reviews",
+      "title": "Yelp index snapshots disagree on the same profile’s review count",
+      "detail": "Dated search-index snapshots of the same Heise’s Plumbing Yelp profile display different review counts and ratings. Yelp business pages block direct retrieval here, so no number can be treated as verified.",
+      "action": "Keep all rating and count cells blank; check the live profile manually at the time of contact.",
+      "source_ids": [
+        "YELP-HEISE",
+        "YELP-HEISE-ALT",
+        "CSLB-1089561"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "status": "Open"
+    },
+    {
+      "id": "F-39",
+      "severity": "Low",
+      "category": "Reviews",
+      "title": "Two additional Yelp review leads have unresolved contractor identities",
+      "detail": "Flow Form Plumbing and Plumbtec Systems appear in Yelp search excerpts with adjacent old-tub/shower or bathtub-repair content, but no CSLB licence record was matched to either name in this pass.",
+      "action": "Treat as review leads only. All licence, phone and identity fields remain blank until matched on the official CSLB register.",
+      "source_ids": [
+        "YELP-FLOWFORM",
+        "YELP-PLUMBTEC",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "status": "Open"
+    },
+    {
+      "id": "F-40",
+      "severity": "Medium",
+      "category": "Publication",
+      "title": "Old open pull requests could conflict with the canonical site",
+      "detail": "PRs #35, #38 and #39 from earlier parallel sessions remain open and target the same root dashboard; PR #7 is unrelated GEMS work. They were not merged or closed by this session.",
+      "action": "Do not merge those PRs without a conflict review; the canonical root site is the published version.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "REPO-OPEN-PRS"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls",
+      "status": "Open"
     }
   ]
 }

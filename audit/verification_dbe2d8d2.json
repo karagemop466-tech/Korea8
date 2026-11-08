@@ -1,0 +1,39 @@
+{
+  "session": "arena/dbe2d8d2-korea8",
+  "checked_at": "2026-11-08T23:14:14.688199+00:00",
+  "result": "PASS",
+  "stats": {
+    "pages": 11,
+    "tables": 18,
+    "rows": 278,
+    "rows_with_registered_official_link": 278,
+    "internal_links": 186,
+    "rank_rows": 12,
+    "rank_rows_with_cslb_and_phone": 12,
+    "privacy_hits": 0,
+    "amount_occurrences": 27
+  },
+  "registered_official_hosts": [
+    "aa.iapmo.org",
+    "api.github.com",
+    "codelibrary.amlegal.com",
+    "github.com",
+    "leginfo.legislature.ca.gov",
+    "media.api.sf.gov",
+    "sfbuildinggroup.com",
+    "www.aceplumbingandrooter.com",
+    "www.ayoobpeery.com",
+    "www.bayareaplumbingsf.com",
+    "www.bernalhilldrywall.com",
+    "www.cslb.ca.gov",
+    "www.epa.gov",
+    "www.eplumbingsolutions.com",
+    "www.fastresponseplumbingsf.com",
+    "www.heisesplumbing.com",
+    "www.rapidflowbayarea.com",
+    "www.sf.gov",
+    "www.watcomfg.com",
+    "www.wedoconstructions.com"
+  ],
+  "problems": []
+}

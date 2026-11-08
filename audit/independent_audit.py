@@ -6,8 +6,9 @@ import re, sys, json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGES = ["index.html", "executive-summary.html", "requirements.html", "providers.html",
-         "estimates.html", "technical-approach.html", "code-and-permit.html",
-         "sources.html", "verification.html", "flagged-for-review.html"]
+         "decision-analysis.html", "estimates.html", "technical-approach.html",
+         "code-and-permit.html", "sources.html", "verification.html",
+         "flagged-for-review.html"]
 def is_official(url):
     """Official = any government host (.gov/.ca.gov), plus the specific non-gov
     primary sources this project cites (code publisher, manufacturers, registries)."""
@@ -18,10 +19,12 @@ def is_official(url):
         return True
     return any(host.endswith(h) for h in (
         "iapmo.org", "watcomfg.com", "archive.org", "up.codes", "calchamber.com",
-        "cslb.ca.gov", "leginfo.legislature.ca.gov", "sf.gov",
+        "cslb.ca.gov", "leginfo.legislature.ca.gov", "sf.gov", "codelibrary.amlegal.com",
+        "media.api.sf.gov", "epa.gov", "api.github.com",
         # company official sites and review platforms cited as sources
         "heisesplumbing.com", "eplumbingsolutions.com", "bayareaplumbingsf.com",
         "fastresponseplumbingsf.com", "wedoconstructions.com", "sfbuildinggroup.com",
+        "ayoobpeery.com", "bernalhilldrywall.com",
         "rapidflowbayarea.com", "aceplumbingandrooter.com", "diamondcertified.org",
         "yelp.com", "angi.com", "homeguide.com", "bbb.org", "github.com"))
 BLANK_MARK = re.compile(r"blank|unverified|not (captured|confirmed|available|retrieved)|—|\?\?", re.I)

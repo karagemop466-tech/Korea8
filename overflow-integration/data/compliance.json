@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "C-01",
@@ -14,9 +14,10 @@
     {
       "id": "C-02",
       "topic": "Conditional exemptions",
-      "rule": "SF Plumbing Code §104.2 exempts leak repair, unstopping and certain faucet/fixture work only when the stated no-cutting/no-removal conditions hold.",
+      "rule": "SF Plumbing Code §104.2 exempts leak repair, unstopping and certain faucet/fixture work only when the stated no-cutting/no-removal conditions hold; SF.gov links these exemptions and requires a permit before cutting into or replacing pipes.",
       "source_ids": [
-        "SF-CODE-104"
+        "SF-CODE-104",
+        "SF-PERMIT"
       ],
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
       "application": "Do not assume a stuck trip-lever replacement is exempt; match the exact scope to the text."
