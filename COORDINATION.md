@@ -987,3 +987,20 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+---
+
+## Session `arena/5a484185-korea8` — ranked decision analysis + line-by-line re-verification (2026-11-08)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `rk-01` | Claim board, publish session scope | in progress | `5a484185` | `COORDINATION.md` |
+| `rk-02` | Line-by-line re-verification of every provider CSLB record and official business page, 2026-11-08 | in progress | `5a484185` | `overflow-integration/data/ranking.json`, `overflow-integration/data/providers.json` |
+| `rk-03` | Build ranked decision analysis (rank, reasoning, cost basis, official link, phone) | unclaimed | `5a484185` | `overflow-integration/data/ranking.json` |
+| `rk-04` | New `decision-analysis.html` page + nav + dashboard KPI + executive summary section | unclaimed | `5a484185` | `scripts/build_overflow_site.py`, root `*.html` |
+| `rk-05` | Extend verifier + tests for the ranking page (official link + phone per row) | unclaimed | `5a484185` | `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py` |
+| `rk-06` | Integration: PR to `main`, merge, confirm Pages deploy | unclaimed | `5a484185` | `COORDINATION.md` |
+
+**Scope declaration.** This session edits only the files listed above. It does not edit `overflow-integration/data/*.json` other than
+`ranking.json` and `providers.json`, does not touch `bathtub-overflow/**`, `bathtub/**`, `trip-lever/**`, `bathroom-overflow/**`,
+`archive/**`, `audit/**`, `docs/**` (GEMS), `src/**`, `vendor/**` or `registry/**`.
