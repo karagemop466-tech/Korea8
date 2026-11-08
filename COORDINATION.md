@@ -987,3 +987,16 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+
+## Session `arena/3946905e-korea8` — fresh verification and final integration (2026-11-08)
+
+| Task | Status | Owning session ID | Files touched |
+|---|---|---|---|
+| T3946905e-A: fresh official-source provider/review research and line-by-line repository audit | in progress | `arena/3946905e-korea8` | `audit/REPORT_2026-11-08_3946905e.md`, `audit/verification_3946905e/`, `COORDINATION.md` |
+| T3946905e-B: canonical data correction, decision analysis and dashboard integration | in progress (prerequisite research claimed by this same session) | `arena/3946905e-korea8` | `overflow-integration/data/`, `overflow-integration/OWNER_RECORD.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root canonical HTML/CSS and generated summaries/reports, `README.md`, `COORDINATION.md` |
+| T3946905e-C: PR, merge, deploy and live verification | unclaimed (reserved for this session after A/B) | `arena/3946905e-korea8` | `COORDINATION.md`, canonical generated verification/deployment records |
+
+**Claim boundaries:** No other session has an active bathtub task on current `main`; the most recent audit task is done. This session is the final integrator for the unresolved four-row source gap, source deterioration, decision-ranking and publication checks. No historical open PR is assumed merge-ready or authorized for takeover. DOE GEMS code/data and other sessions' scoped drafts are read-only. Any required cross-scope edit will be logged here, not made silently.
+
+**Branch coordination exception:** Arena fixes this session to `arena/3946905e-korea8`; creating/switching to `session-<id>/<task>` branches is prohibited by the active workspace rules. All commits and the integration PR stay on this fixed branch. Coordination edits are append-only and rebase-checked before each push. Historical claims over 60 minutes old are not automatically taken over. No outreach, booking or private circumstances will be published.
