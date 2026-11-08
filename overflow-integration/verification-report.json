@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-07T20:45:05.772816+00:00",
+  "checked_at": "2026-11-08T23:02:41.297225+00:00",
   "result": "PASS",
-  "checks_run": 22,
-  "checks_passed": 22,
+  "checks_run": 28,
+  "checks_passed": 28,
   "checks_failed": 0,
-  "canonical_rows_checked": 236,
+  "canonical_rows_checked": 294,
   "tracked_html_files": 67,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "10/10"
+      "detail": "11/11"
     },
     {
       "check": "HTML tag balance",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "294 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -113,9 +113,39 @@
       "detail": ""
     },
     {
+      "check": "ranking row count parity",
+      "ok": true,
+      "detail": "11/11"
+    },
+    {
+      "check": "ranking screened/excluded parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking scores, order, contacts and source ids",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "no provider both ranked and screened/excluded",
+      "ok": true,
+      "detail": "set()"
+    },
+    {
+      "check": "ranking excludes suspended licence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "only owner-reported amounts appear in ranking costs",
+      "ok": true,
+      "detail": "[135, 550, 614]"
+    },
+    {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "203 links; offenders: "
+      "detail": "240 links; offenders: "
     }
   ]
 }

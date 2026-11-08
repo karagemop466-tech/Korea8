@@ -995,3 +995,52 @@ No private or internal brief content is recorded in any file, page or commit mes
 
 **Claim committed and pushed before any other work** (`claim(rv-01)`).
 
+
+### Log — session `arena/a8da1cca-korea8` (2026-11-08 pass)
+
+**`rv-02` — provider re-verification, done.** All 23 CSLB licence-detail pages were re-read directly on 2026-11-08
+(`Data current as of 11/8/2026 2:57:46 PM` – `2:58:32 PM`, timezone not stated). Every published field was compared with
+the record: legal name, classification list, status, expiry, registered city, business phone and workers'-compensation
+entry all matched the existing dossier, so no value was changed. The row-level `source_timestamp` was refreshed to
+today's CSLB stamp and `verified_on: 2026-11-08` added. Two records were enriched from what the pages now show:
+`#297604` D G Construction (complaint-disclosure link, citation 2 2022 002099 dated 03/23/2023) and `#1027286`
+Kenneth Asire (licence under Contractors Bond Suspension; recorded bond cancelled 08/16/2026). Both were already flagged
+(F-11, F-09); the disclosure page itself was read this session at
+<https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604>.
+
+**`rv-03` — official code/fee re-verification, done.** Re-read directly: SF.gov plumbing/mechanical permit page;
+SF DBI Table 1A-C (July 2026); SF Plumbing Code §104.0 chunk containing §104.2 exempt work and §104.5 permit fees;
+BPC §§7048, 7057; Civil Code §1954; CSLB C-9 and C-36 classification pages; CSLB contract guidance. Results:
+the five published fee amounts ($290 / $320 / $519 / $555 / $259) match the PDF; the permit trigger and allowed
+licence classes match SF.gov; §104.2 lists nine exempt items, the first three conditional on no cutting/removal of
+piping; §104.5 (new row C-13) says a fixture replacement without a change in drainage, piping or venting does not
+require payment of the permit issuance fee; BPC §7048 includes the advertising/employee conditions now published in
+C-07; §1954 notice rules are unchanged. Yelp business pages still return HTTP 403, so no rating or review count is
+published anywhere (F-14 stands).
+
+**`rv-04` — ranked decision analysis, done.** New `overflow-integration/data/ranking.json` + root `ranking.html`.
+Rubric: licence coverage ×3, published adjacent evidence ×2, published small-job fit ×1, written price ×2; deductions
+for complaint disclosure (−2), future suspension (−2), shared identity (−1); maximum 16. Ties broken by documented
+order. Result: 11 ranked, 11 screened, 2 excluded (suspended #1027286; unresolved Portola). Every ranked row carries the
+official CSLB link, the business phone, the reasoning, what to ask next and a cost basis that keeps owner-reported
+amounts and the conditional $290 fee separate and never sums them. Ranking was generated deterministically and the
+order is checked against the recomputed scores.
+
+**`rv-05` — build and verification, done.** `python scripts/build_overflow_site.py`; `python scripts/verify_overflow_site.py`
+→ **28/28 checks PASS** (292 rendered table rows source-checked, 240 tracked-HTML internal links resolved, 11 pages);
+`python -m unittest discover -s tests -p 'test_overflow*.py'` → **16 tests OK** (6 new ranking tests). The two
+unrelated GEMS test modules still fail to import because numpy is absent in this environment — pre-existing and not
+part of this project's CI job.
+
+**Irregularities.** F-37 (ranked order is a decision aid, not a verified performance rating) and F-38 (nine of eleven
+ranked entries carry no price; only three owner-reported amounts exist, covering three different scopes) are new and
+published on the Flagged for review page, which now holds 38 items. No provider was contacted. No private or internal
+brief content was recorded in any file, page or commit message on this branch; the served-tree privacy sweep returns
+zero hits.
+
+**Sources used today (direct):** 23 × `cslb.ca.gov/.../LicenseDetail.aspx?LicNum=…`; the CSLB complaint-disclosure page
+for #297604; `cslb.ca.gov` C-9, C-36 and contract pages; `sf.gov/apply-plumbing-and-mechanical-permit`;
+`media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf`; `codelibrary.amlegal.com` SF Plumbing Code
+§104.0; `leginfo.legislature.ca.gov` BPC §7048, BPC §7057, CIV §1954.
+
+**Publication:** pending — PR and merge result are recorded in the next entry.

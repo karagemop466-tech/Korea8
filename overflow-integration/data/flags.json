@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "F-01",
@@ -529,6 +529,35 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Medium",
+      "category": "Decision analysis",
+      "title": "The ranked order is a documented decision aid, not a verified performance rating",
+      "detail": "Ranks come from four published inputs on the CSLB record and the companies' own sites, minus documented warnings. No workmanship, availability, insurance-claims history or review score was verified, and no provider was contacted. Firms on equal scores are effectively tied.",
+      "action": "Use the order to sequence calls, then replace every score input with what the provider confirms in writing.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "status": "Open"
+    },
+    {
+      "id": "F-38",
+      "severity": "Medium",
+      "category": "Cost basis",
+      "title": "No ranked provider has a verified price; only three owner-reported amounts exist",
+      "detail": "Nine of the eleven ranked entries have no price on file. The three owner-supplied amounts cover three different scopes (removal/replacement, lever/plug/spout with diverter, and adjustment only), and none of them is a verified price. The official $290 Category 1P fee is conditional and §104.5 may remove the issuance fee entirely.",
+      "action": "Request one identical written scope from the top four and treat every amount as unverified until the provider puts it in a signed contract.",
+      "source_ids": [
+        "OWNER",
+        "SF-FEES",
+        "SF-CODE-104"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "status": "Open"
     }
   ]
 }
