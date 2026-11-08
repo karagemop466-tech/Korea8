@@ -1173,3 +1173,9 @@ CSLB and website phones also differ. The older Heise's #787733 is expired and
 is not conflated with current TARO Group #1089561 or its separately sourced case
 study. D G's original citation detail was retrieved and linked. PR #49 remains
 separate and its owner was asked to reconcile its overlapping final integration.
+
+**AE-02 supporting scope (2026-11-08):** claim the new
+`scripts/source_policy.py` helper for explicit, registered source classification;
+also claim `.github/workflows/overflow-pages.yml` for a narrow pre-merge build
+and test trigger without deploying pull requests. These support the already
+claimed final integration; no other active session has claimed these files.
