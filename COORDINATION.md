@@ -994,13 +994,91 @@ Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| `rk-01` | Claim board, publish session scope | in progress | `5a484185` | `COORDINATION.md` |
-| `rk-02` | Line-by-line re-verification of every provider CSLB record and official business page, 2026-11-08 | in progress | `5a484185` | `overflow-integration/data/ranking.json`, `overflow-integration/data/providers.json` |
-| `rk-03` | Build ranked decision analysis (rank, reasoning, cost basis, official link, phone) | unclaimed | `5a484185` | `overflow-integration/data/ranking.json` |
-| `rk-04` | New `decision-analysis.html` page + nav + dashboard KPI + executive summary section | unclaimed | `5a484185` | `scripts/build_overflow_site.py`, root `*.html` |
-| `rk-05` | Extend verifier + tests for the ranking page (official link + phone per row) | unclaimed | `5a484185` | `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py` |
-| `rk-06` | Integration: PR to `main`, merge, confirm Pages deploy | unclaimed | `5a484185` | `COORDINATION.md` |
+| `rk-01` | Claim board, publish session scope | done | `5a484185` | `COORDINATION.md` |
+| `rk-02` | Line-by-line re-verification of every provider CSLB record and official business page, 2026-11-08 | done | `5a484185` | `overflow-integration/data/ranking.json`, `overflow-integration/data/providers.json`, `audit/sources/2026-11-08-5a484185/**` |
+| `rk-03` | Build ranked decision analysis (rank, reasoning, cost basis, official link, phone) | done | `5a484185` | `overflow-integration/data/ranking.json`, `overflow-integration/data/flags.json` |
+| `rk-04` | New `decision-analysis.html` page + nav + dashboard KPI + executive summary section | done | `5a484185` | `scripts/build_overflow_site.py`, root `*.html` |
+| `rk-05` | Extend verifier + tests for the ranking page (official link + phone per row) | done | `5a484185` | `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py` |
+| `rk-06` | Integration: PR to `main`, merge, confirm Pages deploy | in progress | `5a484185` | `COORDINATION.md` |
 
 **Scope declaration.** This session edits only the files listed above. It does not edit `overflow-integration/data/*.json` other than
 `ranking.json` and `providers.json`, does not touch `bathtub-overflow/**`, `bathtub/**`, `trip-lever/**`, `bathroom-overflow/**`,
 `archive/**`, `audit/**`, `docs/**` (GEMS), `src/**`, `vendor/**` or `registry/**`.
+
+### Work log — session `arena/5a484185-korea8`
+
+**What was added.** The owner asked for contractors to be *ranked* best choice to hire first, with reasoning, costs and an
+official verified link plus phone number for each. That page did not exist on `main`: the site had a priority *order* inside a
+prose panel but no per-provider ranked analysis. This session added `decision-analysis.html` and the `ranking.json` register
+behind it.
+
+**Verification performed (line by line, 2026-11-08).**
+
+- **All 23 CSLB licence-detail pages were retrieved directly and compared field by field** with `providers.json`:
+  licence number, legal name, phone, expiry, classifications, registered city and status. **23 of 23 matched; 0 differed.**
+  Five legal names differ only by the separator before `dba`. Transcribed evidence is stored in
+  `audit/sources/2026-11-08-5a484185/cslb_recheck_2026-11-08.json`.
+- **Statutes re-read at leginfo**: BPC §7048 (under-$1,000 exemption and its no-permit condition), §7057 (B prime contract
+  rule), §7057.5 (B-2 restrictions on plumbing-system replacement), Civil Code §1954 (entry, normal business hours, 24-hour
+  presumed notice). All statements on the site match the operative text.
+- **CSLB classification pages re-read**: C-36, C-9, B. All match.
+- **CSLB complaint disclosure for #297604** re-read: citation `2 2022 002099`, dated `03/23/2023`, status "FOR DISCLOSURE ONLY
+  PER B&P CODE 7124.6". Matches the stored detail; the ranking cites it and does not characterise it.
+- **CSLB contracts page** re-read: written contract required over $500; down payment no more than the lesser of 10% or $1,000.
+- **SF.gov plumbing permit page and the July 2026 DBI Table 1A-C** re-read: permit required before cutting into or replacing
+  pipes covered by a wall; Category 1P $290, Category 11P/M $320, regular inspection $519/hour, off-hour $555/hour,
+  reinspection $259 per half hour. All match the stored rows.
+- **Company sites retrieved directly**: Rapid Flow, Ace, Heise's, Expert, Bay Area, Fast Response, We Do Construction,
+  Bernal Hill Drywall, plus Heise's Ingleside case page.
+- **Yelp returned HTTP 403** again for automated retrieval, so no rating or review count was verified and none is used in the
+  ranking (published as F-40).
+
+**Ranking result.** 22 providers ranked in 4 tiers, best first; 2 excluded by the licence screen rather than ranked low.
+Every ranked row carries its CSLB licence link, the CSLB phone number, the reason for that rank, a cost basis that separates
+owner-reported from verified amounts, the three job-fit flags, its limits and its sources. Full method and limits are on the page.
+
+| Rank | Provider | Licence | Basis for the rank |
+|---|---|---|---|
+| 1 | Rapid Flow Plumbing & Rooter | #1115649 | B + C-36 on one licence; publishes simple-repair-to-renovation span |
+| 2 | Ace Plumbing & Rooter | #829071 | B + C-36 plus A/C-4/C-16/C-10; live workers' comp; HOA/property-manager page |
+| 3 | Heise's Plumbing | #1089561 | Strongest adjacent published case: waste-and-overflow replaced via ceiling access |
+| 4 | We Do Construction | #1096552 | B + C-36 with a published trade map; large-project focus is the limit |
+| 5-7 | Expert #977638, Bay Area #757796, Fast Response #1024971 | - | The three owner-estimate providers, ordered by how well the supplied scope matches the fault |
+| 8-10 | Ayoob & Peery #392967, Save-On-Interior #749536, D G Construction #297604 | - | Combined licences, but commercial focus, no verified scope, or published complaint disclosure |
+| 11 | Bernal Hill Drywall | #995163 | Only C-9 + B restoration partner; no C-36, so not a plumbing prime |
+| 12-22 | conditional and registry-pool leads | - | B-2 limits, a possible-suspension status, reissued licences, or no verified service evidence |
+| - | Kenneth Asire #1027286 | - | **Excluded**: CSLB bond suspension |
+| - | Portola Plumbing Services | - | **Excluded**: no CSLB record located; all identity fields blank |
+
+**Cost handling.** No verified price exists for any provider, so every `verified` cost cell is blank and the verifier enforces
+that. The three owner-supplied amounts ($614 Expert, $550 Bay Area, $135 Fast Response) appear only in an owner-reported column
+with an inline "unverified" label. The cost model separates the plumbing trade, the ceiling restoration, the DBI permit fee
+($290 reference, category unconfirmed), inspection rates, the legal deposit cap and the all-in total — and leaves the total blank
+because no provider supplied a combined quote.
+
+**Checks run.** `scripts/verify_overflow_site.py`: **29/29 passed** (7 new ranking checks, including per-row CSLB link, phone
+presence, resolvable source IDs, strict rank order, no invented verified cost, and that every registered provider is either
+ranked or explicitly excluded). `tests/test_overflow_site.py`: **13/13 passed** (3 new). `audit/independent_audit.py`:
+250 rows, 0 problems. `git ls-files '*.html'` link crawl: 215 internal links, 0 broken.
+
+**Irregularities flagged by this session (published as F-37…F-42 on the Flagged for Review page).**
+
+1. **F-37** Rapid Flow publishes 844-BAY-FLOW on its own site while CSLB publishes (415) 866-8401. The ranking lists the CSLB
+   number; the two were not reconciled.
+2. **F-38** Heise's Ingleside case page still returns case content with an embedded "Page Not Found (404)" block. Confirms the
+   2026-11-08 audit's observation; treat as marketing content.
+3. **F-39** Bay Area Plumbing #757796 and Save-On-Interior #749536 share one CSLB address and phone number. Common control is not
+   stated by CSLB and was not established.
+4. **F-40** No review rating or count could be verified for any provider (Yelp HTTP 403; on-site badges are self-published).
+   Review evidence therefore contributes nothing to the ranking.
+5. **F-41** No provider was contacted, so acceptance, availability, restoration party and price are unconfirmed for every row.
+   The output is an inquiry sequence, not a booked shortlist.
+6. **F-42** The earlier independent audit reported four rows without a recognised source link. All four carry links; three point
+   to `codelibrary.amlegal.com`, the City and County of San Francisco code host, and two to company sites absent from that
+   audit's host list. The rows are correctly sourced; that audit's host list is incomplete.
+
+**Privacy handling.** The internal-use instruction in the brief is not repeated, quoted or described anywhere in this session's
+work: not in the data, the pages, the commit messages or this log. The site continues to state only the verifiable code facts and
+gives no advice about circumventing the permit process. The ranking's cost model cites the official permit fee as a real component
+of the job.
+
