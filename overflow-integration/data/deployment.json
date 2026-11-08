@@ -1,10 +1,10 @@
 {
-  "status": "Live \u2014 workflow deploy succeeded; cache-busted live content verified for the merge commit",
-  "pr": "https://github.com/karagemop466-tech/Korea8/pull/46",
-  "merge_commit": "60844f346fb6129fce5eb6b3ac77e19c37d341d6",
+  "status": "Live \u2014 PR #52 merged; exact-commit workflow and Pages build succeeded; cache-busted live content verified",
+  "pr": "https://github.com/karagemop466-tech/Korea8/pull/52",
+  "merge_commit": "3c37250122de2bec21a8d87a51ae64ebd7b9760b",
   "pages_url": "https://karagemop466-tech.github.io/Korea8/",
-  "checked": "2026-11-08T23:09:30+00:00",
-  "workflow_run": "https://github.com/karagemop466-tech/Korea8/actions/runs/42533706759",
+  "checked": "2026-11-08T23:25:22.281838+00:00",
+  "workflow_run": "https://github.com/karagemop466-tech/Korea8/actions/runs/42534974124",
   "pages_build_status": "built",
-  "note": "Workflow build and deploy succeeded for the PR #46 merge commit. Cache-busted live fetches verified the 11-page Verification summary, 10-candidate ranking, 40-flag review page and the new independent freshness audit link/content."
+  "note": "Workflow run 42534974124 and legacy Pages build both report commit 3c37250. Cache-busted index, decision-analysis and flagged-for-review pages returned the merged 24-CSLB/85-source/46-flag dashboard and final-verification note."
 }

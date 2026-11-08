@@ -1126,9 +1126,9 @@ All earlier overlapping implementation claims are more than 60 minutes old and t
 
 | Task | Status | Owning session ID | Files touched |
 |---|---|---|---|
-| T3946905e-A: fresh official-source provider/review research and line-by-line repository audit | in progress | `arena/3946905e-korea8` | `audit/REPORT_2026-11-08_3946905e.md`, `audit/verification_3946905e/`, `COORDINATION.md` |
-| T3946905e-B: canonical data correction, decision analysis and dashboard integration | in progress (prerequisite research claimed by this same session) | `arena/3946905e-korea8` | `overflow-integration/data/`, `overflow-integration/OWNER_RECORD.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root canonical HTML/CSS and generated summaries/reports, `README.md`, `COORDINATION.md` |
-| T3946905e-C: PR, merge, deploy and live verification | unclaimed (reserved for this session after A/B) | `arena/3946905e-korea8` | `COORDINATION.md`, canonical generated verification/deployment records |
+| T3946905e-A: fresh official-source provider/review research and line-by-line repository audit | done | `arena/3946905e-korea8` | `audit/REPORT_2026-11-08_3946905e.md`, `audit/verification_3946905e/`, `COORDINATION.md` |
+| T3946905e-B: canonical data correction, decision analysis and dashboard integration | done | `arena/3946905e-korea8` | `overflow-integration/data/`, `overflow-integration/OWNER_RECORD.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root canonical HTML/CSS and generated summaries/reports, `README.md`, `COORDINATION.md` |
+| T3946905e-C: PR, merge, deploy and live verification | done | `arena/3946905e-korea8` | `COORDINATION.md`, canonical generated verification/deployment records |
 
 **Claim boundaries:** No other session has an active bathtub task on current `main`; the most recent audit task is done. This session is the final integrator for the unresolved four-row source gap, source deterioration, decision-ranking and publication checks. No historical open PR is assumed merge-ready or authorized for takeover. DOE GEMS code/data and other sessions' scoped drafts are read-only. Any required cross-scope edit will be logged here, not made silently.
 
@@ -1140,3 +1140,16 @@ All earlier overlapping implementation claims are more than 60 minutes old and t
 `origin/main` advanced through PRs #45/#46/#47/#48/#50 while this session was verifying sources. The merge conflicted in the shared board, canonical generator/verifier/tests, generated pages/reports, flags and sources. Resolution preserved the merged editorial weighted ranking (`ranking.json` / `decision-analysis.html`) and all prior coordination/audit records, then reapplied this session’s fresh CSLB/company/statute rechecks, Atlas conditional lead, strict official-primary row coverage, corrected AmLegal chunk metadata, phone-discrepancy flags and final-verification gates. This session’s six new flags were renumbered F-41–F-46 to avoid overwriting main’s F-37–F-40. The superseded `decision.json` was removed after its per-provider gates were folded into `ranking.json`.
 
 Combined local checks before merge commit: build OK; `verify_overflow_site.py` 27/27 PASS (300 source-covered rows, 574 tracked-HTML links); 11/11 unit tests; independent audit 300/300 rows recognized, 0 problems. No provider contacted/booked; owner estimates remain owner-reported with verified amounts blank.
+
+
+### T3946905e-C — PR, merge and live deployment record
+
+| Item | Result |
+|---|---|
+| Integration PR | **#52** — https://github.com/karagemop466-tech/Korea8/pull/52 |
+| Merge | **MERGED** 2026-11-08T23:23:45Z; merge commit `3c37250122de2bec21a8d87a51ae64ebd7b9760b` |
+| Workflow | [Run 42534974124](https://github.com/karagemop466-tech/Korea8/actions/runs/42534974124) — build, verify, unit tests and Pages deploy **success** for the exact merge commit |
+| Legacy Pages build | **built**, no error, commit `3c37250122de2bec21a8d87a51ae64ebd7b9760b` |
+| Live verification | Cache-busted `index.html`, `decision-analysis.html` and `flagged-for-review.html` returned the merged dashboard: 24 CSLB records, 25 identities, 85 sources, 46 flags, final-verification note and Atlas conditional hold |
+| Final checks | 27/27 canonical verifier checks; 300/300 rows official-primary source-covered; 11/11 unit tests; independent audit 0 problems |
+| Status | T3946905e-A/B/C **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked. |
