@@ -987,3 +987,28 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+---
+
+## Session `arena/dbe2d8d2-korea8` — final integration, line-by-line re-verification and deploy (2026-11-08)
+
+**Claim written and pushed before any other edit.** The platform pins all work to the single branch
+`arena/dbe2d8d2-korea8`; the brief's `session-<id>/<task>` branch convention cannot be used here and is
+recorded as such rather than silently deviating. This session takes the final-integration role: it owns
+the canonical root index/navigation and the shared table data once all other tasks are done. All earlier
+claims are historical and marked done or superseded; the only outstanding items are the QA requests from
+`arena/9c487d70-korea8` (four rows accepted as blank/unverified without recognized official links, and a
+third-party case page containing an embedded 404 message), which this session resolves.
+
+| ID | Task | Status | Owning session | Files in scope |
+|---|---|---|---|---|
+| `DB-01` | Claim board, repo review (line by line), irregularity log | in progress | `arena/dbe2d8d2-korea8` | `COORDINATION.md`, `audit/REPORT_2026-11-08_dbe2d8d2.md` |
+| `DB-02` | Independent official-source re-verification of provider/licence rows, phone numbers, code/fee rows; executive summary + requirements + ranked decision analysis | unclaimed → in progress | `arena/dbe2d8d2-korea8` | `site-data/*.json`, `audit/REPORT_2026-11-08_dbe2d8d2.md` |
+| `DB-03` | Rebuild canonical root site (landing + category subpages + Flagged for Review) and enforce strict source-link-per-row, blank/unverified discipline, privacy sweep | unclaimed | `arena/dbe2d8d2-korea8` | root `*.html`, `style.css`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py` |
+| `DB-04` | Full line-by-line verification, link check, build, PR → `main`, merge, confirm Pages deploy, record PR link and merge result | unclaimed | `arena/dbe2d8d2-korea8` | `COORDINATION.md`, `audit/REPORT_2026-11-08_dbe2d8d2.md`, PR to `main` |
+
+**Boundary:** no geothermal/GEMS artefact, no `vendor/`, `registry/`, `src/`, `evidence/`, or other
+session's research tree is modified. Superseded/redirect pages are left intact. Public pages carry only
+neutral repair-scope language; the excluded internal background is not recorded in any file, page or
+commit message. Every published table row must carry a source link to an official site, or render blank
+with an explicit unverified flag. No provider contact, quote acceptance or booking is claimed.
