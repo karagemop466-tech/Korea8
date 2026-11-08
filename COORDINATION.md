@@ -983,3 +983,7 @@ This session merged only its own verified PR #40 and did not touch other session
 | Current canonical site, source and deployment audit; document actionable discrepancies | in progress | `arena/9c487d70-korea8` | `audit/REPORT_2026-11-08_9c487d70.md`, `COORDINATION.md` |
 
 This session will not modify files claimed by other sessions. Findings requiring canonical integration will be logged here.
+
+### Audit record — 2026-11-08
+
+Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
