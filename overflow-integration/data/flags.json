@@ -571,6 +571,20 @@
         "REPO"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
+    },
+    {
+      "id": "F-40",
+      "severity": "Low",
+      "category": "Repository",
+      "status": "Open",
+      "title": "Repository hygiene: case-colliding run cards and 26 stale session branches",
+      "detail": "run_card.json and RUN_CARD.json both exist at the repository root. On a case-insensitive filesystem (macOS, Windows) a clone keeps only one, so the two records can silently diverge. In addition, 26 remote arena/* session branches remain after their pull requests merged or closed.",
+      "action": "Rename or archive one of the two run-card files, and delete merged session branches. Neither affects the published dashboard.",
+      "source_ids": [
+        "REPO-BOARD",
+        "REPO"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
     }
   ]
 }
