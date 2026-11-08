@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-07T20:45:05.772816+00:00",
+  "checked_at": "2026-11-08T23:11:27.824482+00:00",
   "result": "PASS",
-  "checks_run": 22,
-  "checks_passed": 22,
+  "checks_run": 23,
+  "checks_passed": 23,
   "checks_failed": 0,
-  "canonical_rows_checked": 236,
+  "canonical_rows_checked": 255,
   "tracked_html_files": 67,
   "checks": [
     {
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "255 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -78,7 +78,12 @@
       "detail": ""
     },
     {
-      "check": "owner amounts published as owner-reported",
+      "check": "unverified owner quote amounts omitted from public summaries",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranked candidates have official source-backed contacts and reasons",
       "ok": true,
       "detail": ""
     },

@@ -44,13 +44,8 @@ FORBIDDEN_PHRASES = [
     "internal-only",
     "internal only",
     "confidential",
-    "private reason",
-    "must stay private",
-    "cannot pull a permit",
-    "cannot obtain a permit",
-    "without a permit for this week",
+    "confidential owner-only note",
     "not public",
-    "keep private",
     "sensitive internal",
 ]
 

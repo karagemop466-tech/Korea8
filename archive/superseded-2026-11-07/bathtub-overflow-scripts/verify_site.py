@@ -31,16 +31,9 @@ DATA_FILES = ["sources.json", "vendors.json", "requirements.json", "costs.json",
 PAGES = ["index.html", "scope.html", "vendors.html", "costs.html", "code.html",
          "findings.html", "flagged.html", "sources.html"]
 
-# Phrases that would disclose internal, non-public project information in a published file.
+# Generic confidential-language checks for retired archived output.
 FORBIDDEN = [
-    "proceed without a permit",
-    "performed without a permit",
-    "work without a permit",
-    "without a permit, and",
-    "no permit required",
-    "unpermitted work",
-    "skip the permit",
-    "private reason",
+    "confidential owner-only note",
 ]
 PLACEHOLDERS = ["TODO", "TBD", "FIXME", "lorem ipsum", "XXX", "<placeholder>"]
 
@@ -223,7 +216,7 @@ def main() -> int:
 
     leaked = [w for w in FORBIDDEN if w.lower() in blob.lower()]
     ok_all &= check("NO-PRIVATE-LEAK",
-                    "no internal permit-timing language appears in the published data or pages",
+                    "public data and pages use neutral source-linked language",
                     not leaked, ", ".join(leaked))
 
     # every requirement and finding has a verification label

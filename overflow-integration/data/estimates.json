@@ -110,9 +110,9 @@
     }
   ],
   "analysis": [
-    "The supplied amounts are owner reports, not independently verified prices. They are shown only in an owner-reported column; verified amounts remain blank.",
-    "The arithmetic spread is $479 and the highest supplied amount is about 4.55 times the lowest, but the scopes differ, so this is not a market range or a like-for-like comparison.",
-    "None of the supplied scopes explicitly mentions opening and restoring the storage-unit ceiling. Silence is not an exclusion; obtain a combined written scope.",
-    "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category."
+    "Owner record says estimates exist, but provider-issued written quote documents were not available for confirmation; displayed price cells remain blank.",
+    "The supplied scope descriptions differ, so the available record does not support a comparable price range or cost ranking.",
+    "None of the supplied scope descriptions explicitly covers opening and restoring the storage-unit ceiling; request a written combined scope.",
+    "Do not include city fees in a contractor comparison unless the applicable fee category and quote inclusions are confirmed from the official schedule and provider."
   ]
 }

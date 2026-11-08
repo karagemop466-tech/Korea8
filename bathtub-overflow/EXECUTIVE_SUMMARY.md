@@ -131,4 +131,4 @@ Full text, evidence and the action to take for each: <https://karagemop466-tech.
 This summary and the site contain only verifiable public information: official licence records, official code and fee
 rules, and the owner-provided estimates. No internal or private information from the brief appears in the repository, the
 data files, the page text or the commit history; the handling rule is recorded as FL-21 without disclosing its content.
-The site is internal-use guidance, not legal advice — the permit determination must come from DBI.
+This project summary is decision support, not legal advice; the job-specific permit determination must come from DBI.

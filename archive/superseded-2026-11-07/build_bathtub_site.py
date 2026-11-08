@@ -754,7 +754,7 @@ ANALYSIS = [
      "DBI states a permit is required before cutting into or replacing pipes, particularly pipes that will be covered "
      "by a wall, and that the plumbing inspection happens before the pipes are covered. Separately, BPC 7048's "
      "sub-$1,000 unlicensed exemption applies only where no building permit is required — so a licensed contractor is "
-     "required here regardless of the final price. The timing concern is answerable inside the system: contractors "
+     "required here regardless of the final price. The standard process is available to contractors "
      "registered for Express Permits on PermitSF receive eligible plumbing permits straight away, without City staff "
      "review, and DBI connects authorised agents within two business days.",
      True, "compliance.html"),
@@ -776,10 +776,8 @@ ANALYSIS = [
      "substitute is a short questionnaire: have they removed a seized trip-lever through the overflow opening before; "
      "what do they do when it will not come; who patches; will they pull the permit; who will be on site.",
      True, "flagged.html#F-08"),
-    ("A10", "Nothing on this site records the requester's private constraints",
-     "The brief contained scheduling and permit background that the requester asked to keep private. No part of it was "
-     "written to this repository, and none of it appears on any page. The site documents only DBI's published, "
-     "publicly citable position on permits, which anyone could look up.",
+    ("A10", "Public claims stay within linked sources",
+     "The site summarizes DBI's publicly available guidance and does not state a job-specific determination that the agency has not made.",
      True, "flagged.html#F-15"),
 ]
 

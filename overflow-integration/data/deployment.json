@@ -1,5 +1,5 @@
 {
-  "status": "Live \u2014 workflow deploy succeeded; cache-busted live content verified",
+  "status": "Baseline deployment was previously confirmed; provider contact/ranking refresh is pending merge and deploy verification.",
   "pr": "https://github.com/karagemop466-tech/Korea8/pull/36",
   "merge_commit": "f44f24a3ae1cb2d5ff1b48490d6fc6377dfd213d",
   "pages_url": "https://karagemop466-tech.github.io/Korea8/",

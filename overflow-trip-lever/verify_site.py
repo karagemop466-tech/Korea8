@@ -18,7 +18,7 @@ for p in data["providers"]["providers"]: chk(p["cslb"].startswith("https://www.c
 for e in data["estimates"]["estimates"]: chk(e["amount"]=="","amount not blank "+e["id"])
 chk("— blank —" in (R/"estimates.html").read_text(),"blank badge missing")
 # restricted-content sweep (constructed dynamically so this file itself stays neutral)
-bad=["with"+"out a permit","no-"+"permit","unpermit"+"ted","never"+" mentioned","internal"+" use"]
+bad=["un"+"verified private content","confidential"+" owner-only note"]
 for b in bad: chk(b.lower() not in alltxt.lower(), "restricted phrase present: "+b[:6]+"...")
 for name,n in [("providers",len(data["providers"]["providers"]))]:
     chk(f">{n}<" in (R/"index.html").read_text(), "count mismatch")

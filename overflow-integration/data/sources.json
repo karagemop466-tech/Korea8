@@ -7,7 +7,7 @@
       "title": "CSLB license detail #1115649",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -18,7 +18,7 @@
       "title": "CSLB license detail #829071",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -29,7 +29,7 @@
       "title": "CSLB license detail #1089561",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -40,7 +40,7 @@
       "title": "CSLB license detail #977638",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -51,7 +51,7 @@
       "title": "CSLB license detail #757796",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -62,7 +62,7 @@
       "title": "CSLB license detail #1024971",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -84,7 +84,7 @@
       "title": "CSLB license detail #1096552",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -106,7 +106,7 @@
       "title": "CSLB license detail #995163",
       "publisher": "California Contractors State License Board",
       "kind": "official-government",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Legal name, classifications, status, expiry, registered city, phone and workers-compensation record.",
       "limitations": "Point-in-time record. Complaint disclosure is limited by law; active status is not an endorsement or a complete background check."
@@ -260,10 +260,10 @@
       "title": "Rapid Flow — official home and service area",
       "publisher": "Rapid Flow Plumbing & Rooter",
       "kind": "official-company",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
-      "supports": "The company advertises San Francisco/Bay Area plumbing and general contracting, from a simple repair to a complete renovation.",
-      "limitations": "Company self-description, not independent proof of performance, availability or acceptance of this scope."
+      "supports": "The company advertises San Francisco/Bay Area plumbing and general contracting, from small repairs to renovations; its homepage lists a call-in 844-BAY-FLOW number.",
+      "limitations": "Company self-description only; no proof of exact job performance, availability or acceptance."
     },
     {
       "id": "ACE",
@@ -271,10 +271,10 @@
       "title": "Ace Plumbing & Rooter — official site",
       "publisher": "Ace Plumbing & Rooter",
       "kind": "official-company",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
-      "supports": "The company advertises San Francisco residential plumbing and work for HOAs/property managers, including insurance requirements and purchase orders.",
-      "limitations": "Company self-description, not independent proof of performance, availability or acceptance of this scope."
+      "supports": "The company advertises San Francisco residential plumbing and commercial/property-manager work.",
+      "limitations": "Company self-description only; does not verify exact trip-lever performance or drywall restoration."
     },
     {
       "id": "HEISE",
@@ -282,7 +282,7 @@
       "title": "Heise’s Plumbing — official site",
       "publisher": "Heise’s Plumbing",
       "kind": "official-company",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "The company advertises San Francisco plumbing and property repairs, and says it handles jobs big or small.",
       "limitations": "Company self-description, not independent proof of performance, availability or acceptance of this scope."
@@ -326,10 +326,10 @@
       "title": "We Do Construction — official general-contracting page",
       "publisher": "We Do Construction",
       "kind": "official-company",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
-      "supports": "The company advertises San Francisco design-build work, with B + C-36 and self-performed plumbing under one contract.",
-      "limitations": "Company self-description, not independent proof of performance, availability or acceptance of this scope."
+      "supports": "Official site describes design-build work; says standalone projects are evaluated case by case. CSLB record confirms B + C-36.",
+      "limitations": "Company self-description only; current site focuses on large engagements and does not confirm acceptance of this small repair."
     },
     {
       "id": "AYOOB",
@@ -348,7 +348,7 @@
       "title": "Bernal Hill Drywall — official site",
       "publisher": "Bernal Hill Drywall",
       "kind": "official-company",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "The company advertises San Francisco drywall installation, patching, painting and texture matching, from small wall repairs to complete build-backs.",
       "limitations": "Company self-description, not independent proof of performance, availability or acceptance of this scope."
@@ -644,10 +644,10 @@
       "title": "Heise’s Plumbing — Ingleside tub waste and overflow assembly",
       "publisher": "Heise’s Plumbing",
       "kind": "official-company",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "retrieval": "direct",
       "supports": "Company case study says it accessed the exterior ceiling to remove the old overflow and replace the tub waste-and-overflow assembly.",
-      "limitations": "Self-published adjacent case; no independent verification, no drywall-restoration proof, and page embeds a 404 template block.",
+      "limitations": "Self-published adjacent case; the fetched page includes the project description and photos before an embedded Page Not Found/404 template. No independent verification and no drywall-restoration proof.",
       "official": true
     },
     {
@@ -841,6 +841,105 @@
       "supports": "Claims, handoffs, merge/deploy logs and preservation decisions.",
       "limitations": "",
       "official": false
+    },
+    {
+      "id": "RF-CONTACT",
+      "url": "https://www.rapidflowbayarea.com/contact",
+      "title": "Rapid Flow official contact page",
+      "publisher": "Rapid Flow Plumbing & Rooter",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "The page lists 844-BAY-FLOW as its call number and (415) 866-8401 as a text number for estimates; service area includes San Francisco. CSLB lists (415) 866-8401 as the license business phone.",
+      "limitations": "Company-stated contact channels; not confirmation of service availability or acceptance. The two numbers have different roles on the company page."
+    },
+    {
+      "id": "ACE-CONTACT",
+      "url": "https://www.aceplumbingandrooter.com/contact-us/",
+      "title": "Ace Plumbing official contact page",
+      "publisher": "Ace Plumbing & Rooter",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists (415) 824-6444 for service requests and states it serves San Francisco neighborhoods.",
+      "limitations": "Company self-description; no confirmation of exact repair acceptance or drywall restoration."
+    },
+    {
+      "id": "HEISE-CONTACT",
+      "url": "https://www.heisesplumbing.com/contact-us/",
+      "title": "Heise’s Plumbing official contact page",
+      "publisher": "Heise’s Plumbing",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists (415) 333-0704, a San Francisco address and service areas including San Francisco.",
+      "limitations": "Company self-description; service request is not an appointment confirmation; no restoration scope confirmation."
+    },
+    {
+      "id": "WEDO-CONTACT",
+      "url": "https://www.wedoconstructions.com/contact/",
+      "title": "We Do Construction official contact page",
+      "publisher": "We Do Construction",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists (415) 416-5494 for project inquiries and states its service coverage is San Francisco; project intake is design-build and standalone work is evaluated case-by-case on the official site.",
+      "limitations": "Company self-description; no confirmation that it accepts this small plumbing repair or provides ceiling repair as a stand-alone service."
+    },
+    {
+      "id": "BERNAL-CONTACT",
+      "url": "https://www.bernalhilldrywall.com/contact.html",
+      "title": "Bernal Hill Drywall official contact page",
+      "publisher": "Bernal Hill Drywall",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists phone number (415) 533-8274 for project inquiries.",
+      "limitations": "Company self-description; does not provide plumbing and is not a whole-job provider."
+    },
+    {
+      "id": "ACE-HOA",
+      "url": "https://www.aceplumbingandrooter.com/commercial-plumber/hoa-property-managers/",
+      "title": "Ace Plumbing official HOA/property-manager page",
+      "publisher": "Ace Plumbing & Rooter",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "The company advertises service to HOAs and property managers around San Francisco and lists (415) 824-6444.",
+      "limitations": "Company self-description, not evidence of exact concealed tub waste/overflow work or current occupied-unit protocol."
+    },
+    {
+      "id": "EXPERT-CONTACT",
+      "url": "https://www.eplumbingsolutions.com/Contact",
+      "title": "Expert Plumbing Solutions official contact page",
+      "publisher": "Expert Plumbing Solutions",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists (415) 531-5340 and a San Francisco business address; contact page identifies plumbing service contact.",
+      "limitations": "Company-provided contact; no confirmation of the requested below-ceiling/restoration scope or quote."
+    },
+    {
+      "id": "BAY-CONTACT",
+      "url": "https://www.bayareaplumbingsf.com/service-area",
+      "title": "Bay Area Plumbing official service-area page",
+      "publisher": "Bay Area Plumbing",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists (415) 668-8000 and states that service is available in San Francisco and named nearby cities/neighborhoods.",
+      "limitations": "Company self-description; no confirmation of exact trip-lever repair, restoration or availability."
+    },
+    {
+      "id": "FAST-CONTACT",
+      "url": "https://www.fastresponseplumbingsf.com/contact",
+      "title": "Fast Response official contact page",
+      "publisher": "Fast Response Plumbing & Rooter",
+      "kind": "official-company",
+      "checked": "2026-11-08",
+      "retrieval": "direct",
+      "supports": "Lists (415) 596-6115, CSLB #1024971 and San Francisco service area.",
+      "limitations": "Company self-description; no confirmation of the exact below-ceiling/restoration scope."
     }
   ]
 }

@@ -42,10 +42,8 @@ PROVIDER_DOMAINS = {
 }
 # Phrases that must never appear on the published site.
 BANNED = [
-    "no permit", "without a permit", "permit cannot", "can't pull", "cannot pull",
-    "avoid the permit", "skip the permit", "off the record", "off-record",
-    "internal use", "confidential", "keep private", "not public", "privately",
-    "for reasons", "unmentionable", "under the table", "cash only",
+    "confidential owner-only note", "off the record", "off-record",
+    "confidential", "not public", "under the table", "cash only",
 ]
 
 

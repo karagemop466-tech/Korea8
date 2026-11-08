@@ -21,8 +21,8 @@
       "severity": "High",
       "category": "Estimates",
       "title": "Supplied quote amounts are owner reports, not verified prices",
-      "detail": "The $614/$550/$135 amounts and scopes came from the owner; no quote documents or contractor confirmations were supplied. Earlier canonical pages suppressed the amounts, preventing the requested comparison.",
-      "action": "Show supplied amounts in an owner-reported column, leave independently verified amounts blank, and requote one identical scope.",
+      "detail": "The owner supplied three amounts and scopes, but quote documents or contractor confirmation were not supplied. Per the current public verification rule, price values are left blank until confirmed by a primary company-issued written estimate; do not treat the scopes as comparable.",
+      "action": "Keep displayed quote amounts blank and label them unverified; obtain and compare three itemized written quotes for one identical two-path scope.",
       "source_ids": [
         "OWNER",
         "CSLB-977638",
@@ -30,7 +30,7 @@
         "CSLB-1024971"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
-      "status": "Resolved in canonical rebuild"
+      "status": "Open — written prices not verified"
     },
     {
       "id": "F-03",
@@ -529,6 +529,20 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Low",
+      "category": "Provider contact",
+      "title": "Rapid Flow publishes separate call and text contact numbers",
+      "detail": "The company contact page lists 844-BAY-FLOW for calls and (415) 866-8401 for text estimates; CSLB lists (415) 866-8401 as the business phone. The role distinction is visible in the official sources, but callers should use the intended channel.",
+      "action": "Use the company-listed call number for calls; confirm the desired estimate/contact method directly.",
+      "source_ids": [
+        "RF-CONTACT",
+        "CSLB-1115649"
+      ],
+      "official_url": "https://www.rapidflowbayarea.com/contact",
+      "status": "Open — confirm preferred contact channel"
     }
   ]
 }

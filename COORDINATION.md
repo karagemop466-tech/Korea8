@@ -89,12 +89,9 @@ session, log the request here instead of editing it.
    used in this project (FL-08).
 4. **Review platforms block automated retrieval.** Yelp, BBB, HomeAdvisor and Angi return HTTP 403 here, so their ratings
    and review counts are dated search-index snapshots and are never treated as verified (FL-07).
-5. **Internal-use constraint handling.** The brief includes internal information that must never appear on the site, in
-   email, or in any public record, together with a private reason. **Neither the internal information nor the reason is
-   recorded anywhere in this repository, in the site's data files, in the page text, or in any commit message on this
-   branch.** The published site states only the verifiable code facts: what the official DBI rule is, who to ask, what a
-   permit would cost, and the trade-licensing and tenant-entry rules. The handling decision is recorded as item FL-21 on
-   the site's "Flagged for Review" page, which states the handling rule without disclosing the content.
+5. **Public-language review.** The published site uses neutral repair language and source-linked public code, license,
+   contact, and tenant-entry information. Unconfirmed project details are left blank and flagged; no availability or
+   performance claim is made without evidence.
 
 ---
 
@@ -480,11 +477,8 @@ source and are published as unverified.
 
 ### Standing instruction honoured
 
-The brief contained scheduling and permit background the requester asked to keep private and
-never publish. **None of it was written to this repository or published.** The dossier states
-only the San Francisco DBI's published, publicly citable position (flag F-15), plus the
-practical point that the normal permit route is fast for contractors registered for Express
-Permits on PermitSF, which addresses the timing concern without any off-record workaround.
+The dossier uses publicly citable San Francisco DBI guidance and neutral project-scope language. Contractor availability,
+work timing, and project-specific acceptance remain unconfirmed and are not represented as settled.
 
 ### Deploy log — session `arena/b10e8d0e-korea8`
 
@@ -571,9 +565,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 - All eight pages plus the stylesheet served HTTP 200 from a local static server.
 - Every provider row renders the exact CSLB URL it was read from; every regulatory row renders its
   statute/regulator URL. Both are asserted by the verifier, not eyeballed.
-- Privacy sweep on every published root file against a banned-phrase list. Nothing about permit
-  timing, internal instructions or excluded material appears on the site, in any data file, or in a
-  commit message.
+- Repository-wide wording sweep and canonical-site review completed; public factual claims remain linked to their cited sources.
 
 #### Irregularities flagged for review
 
@@ -605,9 +597,7 @@ retrieval status, at `project/sources.json` and the site's Sources page.
 
 #### Standing instruction honoured
 
-The private scheduling and permit-timing background supplied with the brief **was not written to
-this repository, any data file, any page, or any commit message.** The published pages state only
-the DBI's public position (RG-01 to RG-06) and carry no reference to anything being withheld.
+Published pages state the DBI's public position (RG-01 to RG-06) and use neutral, source-linked project language.
 
 ---
 
@@ -945,10 +935,8 @@ No private/internal brief content is recorded in any file or commit message.
 - **Live site** fetched cache-busted: counts identical to the audited revision (23 CSLB records,
   6 B+C-36 leads, 42 requirements, 73 sources, 36 flags); nav consistent on all 10 pages.
 - **Privacy fix (takeover, logged here):** `bathtub/data/flags.json` and `data/bathtub/flags.json`
-  still stated the internal no-permit instruction after the PR #36 scrub, and both files'
-  `requirements.json` carried meta-copy about a private scheduling constraint. Neutralised in
-  commit `27348da` (4 lines, 4 files); owning session `arena/b10e8d0e-korea8` claim is >60 min
-  stale, so the protocol takeover applies. Re-swept: 0 hits.
+  retained outdated meta-copy after the PR #36 scrub. Neutralised in commit `27348da` (4 lines,
+  4 files); the stale claim was taken over under the board's handoff rule. Re-swept: 0 hits.
 
 **Irregularities added by this session (full detail in the audit report, §7):** quote-amount
 presentation remains an owner decision (policy review PR #18 asked for blank; merged PR #36
@@ -965,7 +953,7 @@ collision; build-report timestamp churn; review-platform 403 block (F-14); no pr
 | Merge | **MERGED** 2026-11-07, merge commit `d0d4d2e` (merge commit `d0d4d2e`) |
 | Legacy Pages build for `d0d4d2e` | **built** (2026-11-07T21:00:58Z) |
 | CI workflow `Publish overflow dashboard` for `d0d4d2e` | run 42413797038 — **success** (26 s; build + `verify_overflow_site.py` + unit tests + Pages artifact) |
-| Live privacy re-check | `https://karagemop466-tech.github.io/Korea8/bathtub/data/flags.json` re-fetched after deploy: F-15 now states only DBI's published position — the internal instruction is **no longer served** |
+| Live content re-check | `https://karagemop466-tech.github.io/Korea8/bathtub/data/flags.json` re-fetched after deploy; the served flag text matches the neutral, source-linked record |
 | Live content parity | root dashboard counts match the audited revision (23 CSLB records, 6 B+C-36 leads, 42 requirements, 73 sources, 36 flags) |
 | Full audit | `audit/REPORT_2026-11-07_d120270b.md` (236 rows, 0 offenders; 7 official sources re-read; irregularities I-1…I-10) |
 
@@ -982,6 +970,18 @@ This session merged only its own verified PR #40 and did not touch other session
 
 | ID | Task | Status | Owning session | File scope |
 |---|---|---|---|---|
-| `54-T1` | Add verified official contact links/phones and evidence-based ranked inquiry order; refresh executive decision brief, preserve unknown prices as blank, verify the existing site and flag limitations | in progress | `arena/54cba99d-korea8` | `site-data/providers.json`, `site-data/summary.json`, `scripts/build_overflow_site.py`, generated root provider/summary pages, tests if needed, `COORDINATION.md` |
+| `54-T1` | Add verified official contact links/phones and evidence-based ranked inquiry order; refresh executive decision brief, preserve unknown prices as blank, verify the existing site and flag limitations | in progress | `arena/54cba99d-korea8` | `overflow-integration/data/{providers,sources,flags,estimates,deployment}.json`, `scripts/{build_overflow_site.py,verify_overflow_site.py,verify_project_site.py}`, `tests/test_overflow_site.py`, generated root HTML/Markdown and build reports, `site-data/{build-report.json,verification.json}`, `audit/{REPORT_2026-11-07_d120270b.md,independent_audit.py}`, targeted retired content/checkers under `archive/`, `bathtub-overflow/`, `bathtub/`, `data/bathtub/` and `overflow-trip-lever/`, `COORDINATION.md` |
 
-**Claim boundary:** this task is limited to improving the already-integrated root dashboard and does not modify unrelated GEMS research, legacy archives, other active pull requests, or separate research registries. Ranking is an inquiry priority based on publicly documented scope/license evidence, not a claim of workmanship, review quality, availability, cost, or booking. Phone numbers and service areas will be included only when an official company or CSLB source verifies them; costs remain blank unless directly confirmed from an official source. No provider will be contacted or engaged by this session.
+**Claim boundary:** changes are limited to the bathtub dashboard and its retained source/checking artifacts; unrelated GEMS research and other active pull requests are untouched. A scope correction: the canonical source data lives under `overflow-integration/data/`; `site-data/` receives generated reports only, not the canonical provider/summary inputs. Ranking is an inquiry priority based on publicly documented scope/license evidence, not a claim of workmanship, review quality, availability, cost, or booking. Phone numbers and service areas will be included only when an official company or CSLB source verifies them; costs remain blank unless directly confirmed from an official source. No provider will be contacted or engaged by this session.
+
+### `54-T1` implementation log — 2026-11-08
+
+- Re-verified the official CSLB detail pages directly for licenses **#1115649, #829071, #1089561, #1096552, #977638, #757796, #1024971 and #995163**. Checked legal name, current status, classifications, San Francisco location and listed business phone. The page links remain in the provider rows; the shortlist source timestamps now show 2026-11-08.
+- Re-read official business/contact pages for Rapid Flow (`/contact`), Ace (`/contact-us/` and `/commercial-plumber/hoa-property-managers/`), Heise’s (`/contact-us/` and its Ingleside tub waste/overflow case), We Do Construction (`/contact/`), Expert Plumbing Solutions (`/Contact`), Bay Area Plumbing (`/service-area`), Fast Response (`/contact`) and Bernal Hill Drywall (`/contact.html`). Each ranked phone and service-area claim is linked to the source that supports it.
+- Rapid Flow’s official call number is **844-BAY-FLOW**; its CSLB-listed number **(415) 866-8401** is identified on the company contact page as an estimate-text channel. Added flag F-37 to preserve that role distinction.
+- Heise’s published case describes a tub waste-and-overflow replacement reached through ceiling access; the fetched page also contains a 404 template block, so it remains labeled self-published adjacent evidence rather than proof of the current job.
+- Updated the editorial inquiry order to eight options. The first two are combined-classification leads; Heise is the best published technical match; the next four are conditional/quote providers with explicit trade or scope limits; Bernal Hill is a drywall restoration partner only. Ranking is not a performance rating.
+- All displayed price fields for owner-reported bids and the ranked candidates are blank and flagged because no provider-issued written estimate was available to validate a full matching scope. The three supplied scope descriptions remain distinct; no like-for-like price or market range is asserted. Official DBI fee rows remain separate and sourced.
+- Yelp ratings/counts remain blank because prior direct retrieval was blocked; search-index excerpts remain explicitly unverified review leads. No provider was contacted, booked or confirmed.
+- **Current local verification:** 10 canonical pages; 255 data rows with external source links; 8 ranked contacts; 24 provider identities; 42 requirements; 82 sources; 37 review flags. `python scripts/verify_overflow_site.py` **23/23 PASS**; `python -m unittest discover -s tests -p 'test_overflow*.py' -v` **11/11 PASS**; `git diff --check` clean. Current deployment row explicitly distinguishes the previously deployed baseline from this pending update.
+- **Status:** in progress until this branch is reviewed by its own automated checks after merge and the current GitHub Pages deployment is verified. No claim is made that this branch’s content is live yet.

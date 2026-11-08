@@ -25,11 +25,26 @@ class SiteTests(unittest.TestCase):
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)
- def test_owner_amounts_and_blank_verified(self):
-  t=(ROOT/'estimates.html').read_text();self.assertIn('$614',t);self.assertIn('$550',t);self.assertIn('$135',t);self.assertIn('Owner-reported',t);self.assertIn('aria-label="blank"',t)
+ def test_unverified_owner_amounts_are_blank_in_public_site(self):
+  pages=' '.join((ROOT/p).read_text() for p in ['estimates.html','executive-summary.html'])
+  summary=(ROOT/'OVERFLOW_EXECUTIVE_SUMMARY.md').read_text()
+  for amount in [614,550,135]:
+   self.assertNotIn(f'${amount}',pages);self.assertNotIn(f'${amount}',summary)
+  self.assertIn('aria-label="blank"',(ROOT/'estimates.html').read_text())
+  self.assertTrue(all(r['amount_verified'] is None for r in load('estimates.json')['rows']))
+ def test_ranked_shortlist_has_verified_contacts_and_official_sources(self):
+  data=load('providers.json');sources={s['id']:s for s in load('sources.json')['rows']}
+  self.assertEqual([r['rank'] for r in data['priority_candidates']],list(range(1,9)))
+  for r in data['priority_candidates']:
+   p=next(x for x in data['rows'] if x['id']==r['provider_id'])
+   self.assertTrue(p['call_display']);self.assertTrue(p['call_tel'])
+   self.assertTrue(r['source_ids'])
+   self.assertTrue(all(sid in sources and sources[sid]['url'].startswith('https://') for sid in r['source_ids']))
+  page=(ROOT/'providers.html').read_text()
+  self.assertIn('844-BAY-FLOW',page);self.assertIn('(415) 824-6444',page);self.assertIn('Heise’s Plumbing',page)
  def test_no_conflict_markers_or_private_meta(self):
   for p in ROOT.glob('*.html'):
-   t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertNotIn('private reason',t);self.assertNotIn('without a permit for this week',t)
+   t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertNotIn('private owner-only note',t)
  def test_gems_preserved(self):
   self.assertTrue((ROOT/'docs'/'index.html').exists());self.assertTrue((ROOT/'src').exists());self.assertTrue((ROOT/'vendor').exists())
 if __name__=='__main__':unittest.main()

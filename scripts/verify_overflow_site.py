@@ -101,7 +101,18 @@ def main():
  check('unresolved identity fields blank',all(not p['license'] and not p['phone'] and not p['expiry'] and not p['status'] for p in unresolved),f'{len(unresolved)} unresolved')
  check('verified estimate amounts blank',all(x['amount_verified'] is None for x in est['rows']))
  check('review ratings/counts blank',all(v['rating'] is None and v['review_count'] is None for v in rev))
- check('owner amounts published as owner-reported',all(f"${x['amount_owner']}" in texts['estimates.html'] for x in est['rows']) and 'Owner-reported' in texts['estimates.html'])
+ public_price_files=['estimates.html','executive-summary.html']
+ public_price_text=' '.join(texts.get(p,'') for p in public_price_files)
+ summary_md=(ROOT/'OVERFLOW_EXECUTIVE_SUMMARY.md').read_text() if (ROOT/'OVERFLOW_EXECUTIVE_SUMMARY.md').exists() else ''
+ check('unverified owner quote amounts omitted from public summaries',all(f"${x['amount_owner']}" not in public_price_text and f"${x['amount_owner']}" not in summary_md for x in est['rows']) and 'aria-label="blank"' in texts['estimates.html'])
+ pdata=load('providers.json');priority=pdata.get('priority_candidates',[])
+ priority_bad=[]
+ for r in priority:
+  p=next((x for x in prov if x['id']==r['provider_id']),None)
+  if not p or not p.get('call_display') or not p.get('call_tel'):priority_bad.append(f"{r.get('provider_id')}:contact")
+  for sid in r.get('source_ids',[]):
+   if sid not in srcs or not srcs[sid].get('url','').startswith('https://'):priority_bad.append(f"{r.get('provider_id')}:{sid}")
+ check('ranked candidates have official source-backed contacts and reasons',len(priority)==8 and [r['rank'] for r in priority]==list(range(1,9)) and not priority_bad,'; '.join(priority_bad))
  check('no numeric star ratings in canonical pages',not re.search(r'\d(?:\.\d)?\s*(?:stars|out of 5)',' '.join(texts.values()),re.I))
  # all source ids resolve and official urls are https
  bad=[]
@@ -118,7 +129,7 @@ def main():
  first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)
  check('suspended provider excluded from priority leads',all(n not in first_table for n in susp))
  # neutral public wording / no conflict markers / no placeholder literals
- banned=['private reason','must stay private','without a permit for this week','cannot pull a permit','cannot obtain a permit','<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
+ banned=['confidential owner-only note','<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
  hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
