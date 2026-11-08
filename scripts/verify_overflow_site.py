@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
