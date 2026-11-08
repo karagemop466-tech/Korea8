@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-07T20:45:05.772816+00:00",
+  "checked_at": "2026-11-08T23:14:14.165273+00:00",
   "result": "PASS",
-  "checks_run": 22,
-  "checks_passed": 22,
+  "checks_run": 31,
+  "checks_passed": 31,
   "checks_failed": 0,
-  "canonical_rows_checked": 236,
+  "canonical_rows_checked": 278,
   "tracked_html_files": 67,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "10/10"
+      "detail": "11/11"
     },
     {
       "check": "HTML tag balance",
@@ -30,7 +30,12 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "278 rows; offenders: "
+    },
+    {
+      "check": "strict: every row links a registered official/primary host",
+      "ok": true,
+      "detail": "278 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -54,6 +59,46 @@
     },
     {
       "check": "flag count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking count parity",
+      "ok": true,
+      "detail": "12/12"
+    },
+    {
+      "check": "criteria count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "excluded count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "cost note count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking source ids and official urls resolve",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranks are unique 1..N",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "every rank has an official CSLB licence link and a phone",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "every rank explains cost evidence",
       "ok": true,
       "detail": ""
     },
@@ -115,7 +160,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "203 links; offenders: "
+      "detail": "219 links; offenders: "
     }
   ]
 }

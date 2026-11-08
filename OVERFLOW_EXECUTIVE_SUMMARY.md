@@ -1,6 +1,6 @@
 # Executive summary — bathtub wastewater overflow trip lever
 
-Reviewed 2026-11-07. San Francisco tenant-occupied unit. This summary is based on the linked
+Reviewed 2026-11-08. San Francisco tenant-occupied unit. This summary is based on the linked
 official/company sources and a neutral owner record; it is not a contractor booking or legal advice.
 
 ## Decision
@@ -16,6 +16,15 @@ SF Plumbing Code §104.2 exemptions are conditional.
 - Heise’s Plumbing #1089561 — C-36 lead with self-published tub waste/overflow cases, including Ingleside ceiling access; no B/C-9, restoration party unconfirmed.
 - Bernal Hill Drywall #995163 — B + C-9 restoration partner; no C-36.
 - Expert #977638, Bay Area #757796, Fast Response #1024971 — existing estimate providers; requote one identical scope and name the restoration trade.
+
+## Ranked decision analysis
+The site's Decision analysis page ranks 12 active inquiry leads from best structural fit to last
+resort, with reasoning, cost evidence, official CSLB links and business phone numbers for each.
+Ranks 1–2 (Rapid Flow #1115649, Ace #829071) hold active B + C-36 on one licence; rank 3
+(Heise's #1089561) has the closest published ceiling-access tub waste/overflow case but no B/C-9;
+rank 4 (Bernal Hill #995163) is a C-9 + B restoration partner, not a plumber. Five names are
+excluded with reasons. The order is editorial, built only from official licence facts and labelled
+self-descriptions; it is not an official rating, a verified performance score or a booking.
 
 ## Estimates
 Owner-supplied amounts dated 2026-08-30: Expert $614 (replace waste and overflow), Bay Area $550
