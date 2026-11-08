@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "F-01",
@@ -195,8 +195,8 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Business-page fetches returned HTTP 403. Only search-index excerpts were available for some providers; numeric ratings and review counts were not verified.",
-      "action": "Publish review links as unverified leads with retrieval limits; do not present ratings as facts.",
+      "detail": "Yelp returned HTTP 403 to automated retrieval again on 2026-11-08, as it did in earlier sessions. Ratings, review counts and review text are therefore blank on every page; only URL strings and search-index excerpts are recorded.",
+      "action": "Re-check any review figure manually in a browser at the time of contact; never treat an indexed excerpt as a verified review.",
       "source_ids": [
         "YELP-RF",
         "YELP-ACE",
@@ -529,6 +529,48 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Medium",
+      "category": "Ranking",
+      "status": "Open",
+      "title": "The hire ranking is editorial decision support, not a verified performance rating",
+      "detail": "The ranked page orders candidates with a transparent weighted score built only from official CSLB fields, company-published service statements and the owner-supplied quote wording. No provider was contacted and no reference, completion record or verified review was obtained, so the order cannot be read as proof that one firm performs better than another.",
+      "action": "Use the ranking to decide who to call first, then replace the score with documented answers, a written combined scope and a fixed price once providers respond.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-SEARCH",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "F-38",
+      "severity": "Low",
+      "category": "Licensing",
+      "status": "Open",
+      "title": "Clever Plumbing & Rooter was licensed on 2026-09-04",
+      "detail": "The CSLB record shows an issue date of 2026-09-04 with a workers-compensation exemption (certified no employees). The licence is current and active, but there is no tenure or published evidence for delicate occupied-unit work.",
+      "action": "Keep it below the shortlist and treat any quote as unproven until references and insurance are produced.",
+      "source_ids": [
+        "CSLB-1160613"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+    },
+    {
+      "id": "F-39",
+      "severity": "Medium",
+      "category": "Repository",
+      "status": "Open",
+      "title": "Three earlier-session pull requests remain open and unmerged",
+      "detail": "PRs #35, #38 and #39 were opened on 2026-11-07 by other sessions. One of them carries a failing check. They conflict with the merged canonical dashboard, so merging them would revert verified work.",
+      "action": "Owner decision: close them, or have the owning session rebase onto the current main. This session did not touch another session's pull request.",
+      "source_ids": [
+        "REPO-BOARD",
+        "REPO"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
     }
   ]
 }

@@ -21,7 +21,7 @@ class DataTests(unittest.TestCase):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
-  pages=['index.html','executive-summary.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)
