@@ -1002,7 +1002,7 @@ platform pins every session to one branch. This is recorded, not silently ignore
 | `k8-02` | Independent 2026-11-08 re-verification: all 23 CSLB records re-read on cslb.ca.gov, key official rule sources re-read, stored data corrected where the official record differs | done | `arena/b0d7ecf7-korea8` | `overflow-integration/data/*.json`, `audit/REPORT_2026-11-08_b0d7ecf7.md` |
 | `k8-03` | Ranked decision analysis (owner-requested best-choice ranking with reasoning, cost basis, phone and official links) as a new category page | done | `arena/b0d7ecf7-korea8` | `overflow-integration/data/ranking.json`, `overflow-integration/data/providers.json`, `scripts/build_overflow_site.py`, generated root `*.html`, `style.css` |
 | `k8-04` | Rebuild, run verifier and unit tests, internal link check, cache-busted live check | done | `arena/b0d7ecf7-korea8` | `overflow-integration/build-report.json`, `overflow-integration/verification-report.json`, `scripts/verify_overflow_site.py` (checks only, no new data) |
-| `k8-05` | PR → `main`, merge, confirm Pages deploy for the merge commit, record PR link and result here | in progress | `arena/b0d7ecf7-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+| `k8-05` | PR → `main`, merge, confirm Pages deploy for the merge commit, record PR link and result here | done | `arena/b0d7ecf7-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
 
 **Scope rules.** This session edits only the canonical bathtub tree (`overflow-integration/**`, the root dashboard pages
 it generates, and `COORDINATION.md`). It does **not** touch the parallel brief directories
@@ -1072,3 +1072,17 @@ deliverable rather than restating the disclaimers.
 6. Yelp/Google review evidence is still unobtainable automatically (HTTP 403).
 7. PRs **#35, #38, #39** from earlier sessions remain open and conflict with merged work (F-39). This
    session did not merge or close another session's PR.
+
+### `k8-05` — PR, merge and deploy record (session `arena/b0d7ecf7-korea8`, 2026-11-08)
+
+| Item | Value |
+|---|---|
+| Integration PR | **#45** — <https://github.com/karagemop466-tech/Korea8/pull/45> (`arena/b0d7ecf7-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-08T23:03:50Z, merge commit `e7c129a43d0585bd92f37052e0e3fc7ca90bb892` |
+| CI workflow `Publish overflow dashboard` | run 42533302983 — **success** (build + `verify_overflow_site.py` 22/22 + unit tests + Pages artifact) |
+| Legacy Pages build for the merge commit | run 42533302823 — **success**; Pages API status `built` |
+| Live content | cache-busted fetch of `decision-analysis.html` returned the new page (11 nav entries, ranked table, 2026-11-08); cache-busted `index.html` returned "reviewed 2026-11-08", the "Ranked hiring order" snapshot row and the new "Who to call first" panel. The **bare root URL still served the pre-merge cached page** at first check — CDN caching, recorded rather than treated as a deploy failure, matching the pattern logged by sessions `f4bb970c` and `d120270b`. |
+| Local checks | build OK, `verify_overflow_site.py` 22/22 PASS (273 canonical table rows, 234 tracked-HTML internal links), `unittest` 10/10 OK |
+
+Flagged and unverified items remain published on `flagged-for-review.html` and do not block the merge.
+No provider was contacted, booked or paid.
