@@ -166,6 +166,57 @@
         "BERNAL"
       ],
       "limit": "Search excerpt only; review attribution and current profile unavailable. Restoration partner, not a plumber."
+    },
+    {
+      "id": "RV-11",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "Yelp search index",
+      "observation": "A search-indexed FAQ account explicitly names Atlas and describes replacement of stuck bathtub lever assemblies.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=repipe+specialists&find_loc=San+Francisco%2C+CA+94131",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "YELP-ATLAS",
+        "CSLB-868994",
+        "ATLAS"
+      ],
+      "limit": "Search excerpt only; underlying business page blocked. The account is not independently adjudicated and does not establish this job or ceiling restoration."
+    },
+    {
+      "id": "RV-12",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "Angi company-linked profile",
+      "observation": "A 2019 customer praised care in an occupied home; a 2020 customer reported missed follow-up and continuing leaks on a separate job.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/atlas-plumbing-and-rooter-reviews-317113.htm",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "ANGI-ATLAS",
+        "CSLB-868994",
+        "ATLAS"
+      ],
+      "limit": "Directly retrieved old accounts; neither independently verified nor an identical job."
+    },
+    {
+      "id": "RV-13",
+      "provider": "Heise's Plumbing Inc — older identity",
+      "platform": "BBB old-license profile",
+      "observation": "BBB profile lists an older, expired license and contains a customer allegation about cleanup on another job.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=787733",
+      "source_ids": [
+        "BBB-HEISE-OLD",
+        "CSLB-787733",
+        "CSLB-1089561"
+      ],
+      "limit": "BBB profile lists #787733, not current TARO Group #1089561. Do not attribute the allegation to the latter without confirming entity continuity. It is not adjudicated."
     }
   ]
 }

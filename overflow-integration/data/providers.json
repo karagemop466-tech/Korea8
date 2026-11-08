@@ -26,7 +26,7 @@
       "service_source": "RF",
       "service_verified": true,
       "group": "Combined-scope lead",
-      "fit": "First combined-scope inquiry: B + C-36 and a published simple-repair-to-renovation offer. A Yelp-indexed account describes a related tub-plug retrieval, not this exact trip-lever job.",
+      "fit": "Combined-scope inquiry: B + C-36 and a published simple-repair-to-renovation offer. A Yelp-indexed account describes related tub-plug retrieval, not this exact trip-lever job.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -76,11 +76,12 @@
       "quote_confirmed": false,
       "review_url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
       "review_source": "YELP-ACE",
-      "additional_status": "",
+      "additional_status": "CSLB says the license was reissued to another entity in 2007; do not assume the present entity operated continuously since the 2003 issue date.",
       "flags": [
         "F-01",
         "F-14",
-        "F-16"
+        "F-16",
+        "F-46"
       ]
     },
     {
@@ -103,7 +104,9 @@
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
         "CSLB-1089561",
-        "HEISE"
+        "HEISE",
+        "CSLB-787733",
+        "BBB-HEISE-OLD"
       ],
       "website": "https://www.heisesplumbing.com/",
       "service_claim": "The company advertises San Francisco plumbing and property repairs, and says it handles jobs big or small.",
@@ -117,11 +120,12 @@
       "quote_confirmed": false,
       "review_url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
       "review_source": "YELP-HEISE",
-      "additional_status": "",
+      "additional_status": "An older same-name #787733 is expired/canceled; BBB profile points to that older entity. The company website currently lists active TARO Group #1089561. Confirm which entity would contract.",
       "flags": [
         "F-01",
         "F-17",
-        "F-18"
+        "F-18",
+        "F-47"
       ]
     },
     {
@@ -160,7 +164,8 @@
         "F-02",
         "F-03",
         "F-04",
-        "F-05"
+        "F-05",
+        "F-42"
       ]
     },
     {
@@ -199,7 +204,8 @@
         "F-02",
         "F-03",
         "F-04",
-        "F-12"
+        "F-12",
+        "F-42"
       ]
     },
     {
@@ -238,7 +244,8 @@
         "F-02",
         "F-03",
         "F-04",
-        "F-29"
+        "F-29",
+        "F-42"
       ]
     },
     {
@@ -918,6 +925,129 @@
         "F-01",
         "F-41",
         "F-43"
+      ]
+    },
+    {
+      "id": "P-26",
+      "name": "Atlas Plumbing & Rooter",
+      "legal_name": "ATLAS PLUMBING & ROOTER",
+      "license": "868994",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(650) 871-9863",
+      "expiry": "2028-03-31",
+      "status": "Current and active",
+      "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
+      "source_timestamp": "11/8/2026 3:00:50 PM; timezone not stated",
+      "verified_on": "2026-11-08",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS",
+        "ATLAS-FIXTURES",
+        "YELP-ATLAS",
+        "ANGI-ATLAS",
+        "BBB-ATLAS"
+      ],
+      "website": "https://www.atlasplumbingandrooter.com/",
+      "service_claim": "Company advertises San Francisco residential plumbing and fixture repair; website phone (415) 849-2346.",
+      "service_source": "ATLAS-FIXTURES",
+      "service_verified": true,
+      "group": "Technical case-study lead",
+      "fit": "C-36/A specialty inquiry: an indexed review names Atlas in a stuck-bathtub-lever account, but the underlying Yelp page was blocked. Ask about single-contract ceiling restoration.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/atlas-plumbing-and-rooter-reviews-317113.htm",
+      "review_source": "ANGI-ATLAS",
+      "additional_status": "License reissued to another entity 03/25/2008; CSLB and website phone numbers differ.",
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-48"
+      ]
+    },
+    {
+      "id": "P-27",
+      "name": "Discover Plumbing & Rooter",
+      "legal_name": "DISCOVER PLUMBING AND ROOTER INC",
+      "license": "1041846",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 728-2520",
+      "expiry": "2028-07-31",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded; expires 03/03/2027",
+      "source_timestamp": "11/8/2026 3:01:14 PM; timezone not stated",
+      "verified_on": "2026-11-08",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1041846",
+      "source_ids": [
+        "CSLB-1041846",
+        "DISCOVER",
+        "BBB-DISCOVER"
+      ],
+      "website": "https://discoverplumbingandrooter.com/",
+      "service_claim": "Company advertises residential San Francisco plumbing; website phone (415) 689-3544.",
+      "service_source": "DISCOVER",
+      "service_verified": true,
+      "group": "Additional registry candidate",
+      "fit": "C-36/A plumbing backup; ask about this small repair and the named restoration party.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "",
+      "review_source": "",
+      "additional_status": "Website phone differs from the CSLB business phone.",
+      "flags": [
+        "F-01",
+        "F-48"
+      ]
+    },
+    {
+      "id": "P-28",
+      "name": "Plumbing 1 Builder's",
+      "legal_name": "PLUMBING 1 BUILDER'S INC",
+      "license": "1034873",
+      "classifications": [
+        "C-36",
+        "B"
+      ],
+      "registered_city": "Hayward",
+      "phone": "(650) 868-8059",
+      "expiry": "2027-12-31",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded; expires 12/30/2026",
+      "source_timestamp": "11/8/2026 3:01:04 PM; timezone not stated",
+      "verified_on": "2026-11-08",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "source_ids": [
+        "CSLB-1034873",
+        "PLUMBING1"
+      ],
+      "website": "",
+      "service_claim": "",
+      "service_source": "",
+      "service_verified": false,
+      "group": "Conditional combined-scope lead",
+      "fit": "B + C-36 is a possible combined-scope path; San Francisco service, small-job acceptance and restoration are unconfirmed.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "",
+      "review_source": "",
+      "additional_status": "License reissued to another entity 12/14/2021. A similarly named website showed site-not-published and its association to this record is not verified.",
+      "flags": [
+        "F-01",
+        "F-49"
       ]
     }
   ]

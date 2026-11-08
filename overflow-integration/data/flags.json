@@ -153,11 +153,12 @@
       "severity": "Medium",
       "category": "License status",
       "title": "D G Construction has a complaint-disclosure link",
-      "detail": "#297604 is active B + C-36; the disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
+      "detail": "CSLB #297604 is active B + C-36; citation 2 2022 2099 dated 2023-03-23 is for disclosure only. The linked detail describes BPC 7114.A, aided and abetted non-licensee; it does not establish a current violation.",
       "action": "Read the official citation/disclosure and CSLB limits; active status is not a clean-history guarantee.",
       "source_ids": [
         "CSLB-297604",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
       "status": "Open"
@@ -195,7 +196,7 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Yelp returned HTTP 403 to automated retrieval again on 2026-11-08, as it did in earlier sessions. Ratings, review counts and review text are therefore blank on every page; only URL strings and search-index excerpts are recorded.",
+      "detail": "Yelp returned HTTP 403 to automated retrieval. Numeric ratings/counts remain blank; indexed review excerpts are explicitly labeled and are not directly verified.",
       "action": "Re-check any review figure manually in a browser at the time of contact; never treat an indexed excerpt as a verified review.",
       "source_ids": [
         "YELP-RF",
@@ -662,6 +663,65 @@
       ],
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
       "status": "Open"
+    },
+    {
+      "id": "F-46",
+      "severity": "Low",
+      "category": "Provider identity",
+      "status": "Open",
+      "title": "Ace #829071 was reissued to another entity",
+      "detail": "The CSLB record shows an initial 2003 issue date and reissue to another entity in 2007. The issue date alone does not prove the current entity’s tenure since 2003.",
+      "action": "Check the contracting legal entity and recent references; do not conflate license history with uninterrupted company operation.",
+      "source_ids": [
+        "CSLB-829071"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "id": "F-47",
+      "severity": "High",
+      "category": "Provider identity",
+      "status": "Open",
+      "title": "Heise’s older license and BBB profile refer to a different entity",
+      "detail": "The company website displays active TARO Group #1089561; the same-name Heise’s Plumbing Inc #787733 is expired/canceled. A BBB profile uses #787733 and contains a complaint and customer cleanup allegation. Same website and phone do not establish entity continuity.",
+      "action": "Confirm the entity on any quote and current license; ask about the separate BBB record without attributing its allegation to TARO Group automatically.",
+      "source_ids": [
+        "HEISE",
+        "CSLB-1089561",
+        "CSLB-787733",
+        "BBB-HEISE-OLD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=787733"
+    },
+    {
+      "id": "F-48",
+      "severity": "Low",
+      "category": "Contact",
+      "status": "Open",
+      "title": "Atlas and Discover publish numbers different from CSLB",
+      "detail": "Atlas CSLB lists (650) 871-9863; its website lists (415) 849-2346. Discover CSLB lists (415) 728-2520; its website lists (415) 689-3544. Different numbers can serve different purposes; neither is presumed wrong.",
+      "action": "Confirm the legal contracting entity and active contact when calling.",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS",
+        "CSLB-1041846",
+        "DISCOVER"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994"
+    },
+    {
+      "id": "F-49",
+      "severity": "Medium",
+      "category": "Provider website",
+      "status": "Open",
+      "title": "Plumbing 1 Builders website unavailable; identity match unconfirmed",
+      "detail": "A similarly named site returned a site-not-published message. CSLB #1034873 is active B/C-36 in Hayward and notes reissue to another entity in 2021.",
+      "action": "Use the CSLB business phone to confirm the current entity, San Francisco service and willingness to quote; do not infer site ownership.",
+      "source_ids": [
+        "CSLB-1034873",
+        "PLUMBING1"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873"
     }
   ]
 }

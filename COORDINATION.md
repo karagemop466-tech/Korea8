@@ -1163,3 +1163,13 @@ and preserved the amended F-37 explanation. No merged research was discarded.
 PR #49 is concurrently open and conflicts with newer main; its research tasks are
 marked done and its deployment task remains in progress. A comment requested that
 its owner preserve the newer ranking, quote-identity and evidence work when rebasing.
+
+**Parallel research handoff:** PR #49's completed research identified additional
+possible leads. This session independently re-read the underlying CSLB, company,
+BBB and review sources before integrating Atlas, Discover and Plumbing 1 as
+inquiry leads. CSLB's Atlas business phone and employee-service-group workers'
+compensation entry are recorded separately from the website phone; Discover's
+CSLB and website phones also differ. The older Heise's #787733 is expired and
+is not conflated with current TARO Group #1089561 or its separately sourced case
+study. D G's original citation detail was retrieved and linked. PR #49 remains
+separate and its owner was asked to reconcile its overlapping final integration.
