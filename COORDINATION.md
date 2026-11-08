@@ -1140,3 +1140,13 @@ report and all other prior work remain intact.
 claim any vendor has accepted the job, confirmed its availability or issued a new quote
 without direct evidence. Shared data and navigation are changed only as needed for this
 final integration. Unknown values remain blank and are flagged for review.
+
+**Additional narrow takeover (AE-04, 2026-11-08 UTC):** A repository-wide privacy
+check found unnecessary sensitive-context metadata in older served data and historical
+logs. The earlier owner claims are completed or stale by the coordination rule. This
+session will neutralize only that metadata in `bathtub/data/{requirements,flags}.json`,
+`data/bathtub/{requirements,flags}.json`, `bathtub-overflow/data/flagged.json`,
+`bathtub-overflow/evidence/verification.json`, the prior audit report and verifier
+patterns under `audit/` and `archive/superseded-2026-11-07/`, and this board. Existing
+substantive research, historical audit conclusions and unrelated project files remain
+intact. The canonical verifier and its tests are already in AE-02 scope.
