@@ -1,0 +1,799 @@
+{
+  "as_of": "2026-11-08",
+  "license_data_as_of": "2026-11-07",
+  "method": "Qualitative, evidence-tiered inquiry order; no numeric score is assigned because no provider has responded to an identical combined scope. Ranks 15–22 are tied and listed alphabetically. This is not a verified performance ranking or a hiring recommendation.",
+  "criteria": [
+    {
+      "id": "RC-01",
+      "criterion": "Verified license and classification fit",
+      "weight": "Highest",
+      "basis": "CSLB status, B/C-36/C-9 definitions and license-detail records are the basis for trade fit; classifications alone do not prove performance.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "CSLB-B",
+        "CSLB-C9",
+        "CSLB-C36"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "RC-02",
+      "criterion": "Published adjacent technical case",
+      "weight": "High",
+      "basis": "A company-published tub waste-and-overflow ceiling-access case is useful evidence but is self-reported and not proof of acceptance of this exact job.",
+      "source_ids": [
+        "HEISE-INGLESIDE",
+        "CSLB-1089561",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "id": "RC-03",
+      "criterion": "Lawful two-trade structure and named restoration party",
+      "weight": "High",
+      "basis": "BPC §7057 and CSLB contract guidance require an appropriate contract/classification structure; the named drywall/restoration party is not yet confirmed.",
+      "source_ids": [
+        "BPC-7057",
+        "CSLB-CONTRACT",
+        "CSLB-C9"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057."
+    },
+    {
+      "id": "RC-04",
+      "criterion": "Comparable written cost evidence",
+      "weight": "Medium",
+      "basis": "Only three owner-reported amounts with differing scopes are on file; verified amounts stay blank. Official DBI fees are not project quotes.",
+      "source_ids": [
+        "OWNER",
+        "SF-FEES",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    {
+      "id": "RC-05",
+      "criterion": "Occupied-unit and site controls",
+      "weight": "Medium",
+      "basis": "Civil Code §1954 notice, SF.gov permit guidance, storage-unit authority and contents protection are controls; site authority is unconfirmed.",
+      "source_ids": [
+        "CIV-1954",
+        "SF-PERMIT",
+        "OWNER"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "RC-06",
+      "criterion": "Status and identity gate",
+      "weight": "Gate",
+      "basis": "Bond-suspended and unresolved-identity records are excluded; every active status is point-in-time and must be rechecked on signing day.",
+      "source_ids": [
+        "CSLB-1027286",
+        "CSLB-SEARCH",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+    }
+  ],
+  "rows": [
+    {
+      "rank": 1,
+      "provider_id": "P-01",
+      "provider": "Rapid Flow Plumbing & Rooter",
+      "tier": "Tier A — combined-scope lead",
+      "phone": "(415) 866-8401",
+      "license": "1115649",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "website": "https://www.rapidflowbayarea.com/",
+      "reason": "B + C-36 on the current CSLB record; official site advertises simple repair through renovation. Best starting point for one lawful two-trade contract, but the named restoration party must be confirmed.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1115649",
+        "RF",
+        "YELP-RF",
+        "CSLB-C9",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-15"
+      ]
+    },
+    {
+      "rank": 2,
+      "provider_id": "P-02",
+      "provider": "Ace Plumbing & Rooter",
+      "tier": "Tier A — combined-scope lead",
+      "phone": "(415) 824-6444",
+      "license": "829071",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-4",
+        "C-16",
+        "B",
+        "C-10"
+      ],
+      "website": "https://www.aceplumbingandrooter.com/",
+      "reason": "B + C-36 plus other classes; official site advertises residential, HOA and property-manager work. Strong licensing fit, but the exact concealed-assembly and occupied-unit protocol are unconfirmed.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-829071",
+        "ACE",
+        "YELP-ACE",
+        "CSLB-C9",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-16"
+      ]
+    },
+    {
+      "rank": 3,
+      "provider_id": "P-03",
+      "provider": "Heise’s Plumbing",
+      "tier": "Tier B — case/partner pair",
+      "phone": "(415) 333-0704",
+      "license": "1089561",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-10",
+        "A",
+        "C-20"
+      ],
+      "website": "https://www.heisesplumbing.com/",
+      "reason": "Strongest published adjacent case evidence: a San Francisco tub waste-and-overflow replacement described with ceiling access. C-36 only; pair with a named licensed restoration contractor.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "Company case is self-published and carries an embedded 404 block; no B/C-9 on this license.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1089561",
+        "HEISE-INGLESIDE",
+        "HEISE",
+        "CSLB-995163",
+        "BPC-7057"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "flags": [
+        "F-01",
+        "F-17",
+        "F-18"
+      ]
+    },
+    {
+      "rank": 4,
+      "provider_id": "P-10",
+      "provider": "Bernal Hill Drywall",
+      "tier": "Tier B — case/partner pair",
+      "phone": "(415) 533-8274",
+      "license": "995163",
+      "status": "Current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "website": "https://www.bernalhilldrywall.com/",
+      "reason": "B + C-9 restoration partner; official site describes drywall installation, patching, painting and texture matching. Cannot perform the plumbing scope alone.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No C-36 on this record; use a lawful two-trade contract with a licensed plumber.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-995163",
+        "BERNAL",
+        "CSLB-C9",
+        "BPC-7057",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "flags": [
+        "F-19"
+      ]
+    },
+    {
+      "rank": 5,
+      "provider_id": "P-08",
+      "provider": "We Do Construction",
+      "tier": "Tier C — conditional combined-scope lead",
+      "phone": "(415) 416-5494",
+      "license": "1096552",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "website": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "reason": "B + C-36 combined-classification candidate. No exact case, combined quote or occupied-unit plan was retrieved; ask for the named trades before proceeding.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1096552",
+        "WEDO",
+        "YELP-WEDO",
+        "CSLB-B",
+        "CSLB-C9"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "flags": [
+        "F-14",
+        "F-20"
+      ]
+    },
+    {
+      "rank": 6,
+      "provider_id": "P-09",
+      "provider": "Ayoob & Peery",
+      "tier": "Tier C — conditional combined-scope lead",
+      "phone": "(415) 550-0975",
+      "license": "392967",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-4",
+        "C-16",
+        "C-36",
+        "C-20"
+      ],
+      "website": "https://www.ayoobpeery.com/",
+      "reason": "B + C-36 and a long-established CSLB record. Official site emphasizes commercial wet-side/design-build work; small-repair acceptance is unconfirmed.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-392967",
+        "AYOOB",
+        "CSLB-B",
+        "CSLB-C36"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "flags": [
+        "F-20"
+      ]
+    },
+    {
+      "rank": 7,
+      "provider_id": "P-07",
+      "provider": "Save-On-Interior",
+      "tier": "Tier C — identity-conditional lead",
+      "phone": "(415) 668-8000",
+      "license": "749536",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "website": null,
+      "reason": "B + C-36 record at the same address and phone as Bay Area Plumbing, but CSLB does not state who controls each license. Conditional until the legal entity and restoration party are named.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "Shared address/phone is not proof of common ownership; confirm contracting entity.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-749536",
+        "CSLB-757796",
+        "CSLB-B",
+        "CSLB-C36",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "flags": [
+        "F-12",
+        "F-30"
+      ]
+    },
+    {
+      "rank": 8,
+      "provider_id": "P-21",
+      "provider": "D G Construction",
+      "tier": "Tier C — conditional combined-scope lead",
+      "phone": "(415) 308-0803",
+      "license": "297604",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "website": null,
+      "reason": "B + C-36 record with an official complaint-disclosure link and a third-party directory misattribution. Conditional until the official record and exact scope are reviewed.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "Complaint-disclosure link exists; no current disciplinary inference is made.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-297604",
+        "DG-COMPLAINT",
+        "CSLB-B",
+        "CSLB-300647"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "flags": [
+        "F-11",
+        "F-31"
+      ]
+    },
+    {
+      "rank": 9,
+      "provider_id": "P-04",
+      "provider": "Expert Plumbing Solutions",
+      "tier": "Tier C — existing estimate",
+      "phone": "(415) 531-5340",
+      "license": "977638",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": "https://www.eplumbingsolutions.com/",
+      "reason": "C-36 and the closest owner-reported replacement wording ($614). No B/C-9 or ceiling-restoration evidence; requote one identical scope.",
+      "cost_explanation": "Owner-reported $614 for “replace waste and overflow”; no ceiling opening/restoration line. Verified amount: blank / unverified.",
+      "amount_owner": 614,
+      "amount_verified": null,
+      "limit": "Owner report only; scope omits access route, restoration, permit path and warranty.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-977638",
+        "EXPERT",
+        "OWNER",
+        "SF-FEES"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "flags": [
+        "F-02",
+        "F-03",
+        "F-04",
+        "F-05"
+      ]
+    },
+    {
+      "rank": 10,
+      "provider_id": "P-05",
+      "provider": "Bay Area Plumbing",
+      "tier": "Tier C — existing estimate",
+      "phone": "(415) 668-8000",
+      "license": "757796",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": "https://www.bayareaplumbingsf.com/",
+      "reason": "C-36 with an owner-reported $550 lever/plug/spout/diverter scope. The wording may describe a different assembly; no restoration line is supplied.",
+      "cost_explanation": "Owner-reported $550 for lever, plug and spout with diverter; labor and materials. Verified amount: blank / unverified.",
+      "amount_owner": 550,
+      "amount_verified": null,
+      "limit": "Owner report only; confirm parts, legal entity and whether ceiling work is included.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-757796",
+        "BAY",
+        "CSLB-749536",
+        "OWNER",
+        "SF-FEES"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "flags": [
+        "F-02",
+        "F-03",
+        "F-04",
+        "F-12"
+      ]
+    },
+    {
+      "rank": 11,
+      "provider_id": "P-06",
+      "provider": "Fast Response Plumbing & Rooter",
+      "tier": "Tier C — existing estimate",
+      "phone": "(415) 596-6115",
+      "license": "1024971",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": "https://www.fastresponseplumbingsf.com/",
+      "reason": "C-36 with an owner-reported $135 adjustment-only scope. Lowest supplied amount, but it is not comparable to replacement-plus-access work.",
+      "cost_explanation": "Owner-reported $135 for repair/adjust plunger handle. Verified amount: blank / unverified.",
+      "amount_owner": 135,
+      "amount_verified": null,
+      "limit": "Owner report only; adjustment is not a replacement-plus-ceiling-access price.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1024971",
+        "FAST",
+        "OWNER",
+        "SF-FEES"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "flags": [
+        "F-02",
+        "F-03",
+        "F-04",
+        "F-29"
+      ]
+    },
+    {
+      "rank": 12,
+      "provider_id": "P-13",
+      "provider": "Advanced Plumbing and Drain",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 744-4944",
+      "license": "1009195",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": null,
+      "reason": "C-36 registry candidate; the CSLB record carries a future-suspension Additional Status, so it is not ranked above clean active records.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "Recheck CSLB status on the day of contracting; no exact-job evidence retrieved.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1009195",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "flags": [
+        "F-10"
+      ]
+    },
+    {
+      "rank": 13,
+      "provider_id": "P-11",
+      "provider": "SF Building Group",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 297-2246",
+      "license": "1106131",
+      "status": "Current and active",
+      "classifications": [
+        "B"
+      ],
+      "website": "https://sfbuildinggroup.com/",
+      "reason": "B-only registry candidate; plumbing must be performed or subcontracted by an appropriately licensed party.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No C-36 on this record; no exact-job evidence or named plumbing partner retrieved.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1106131",
+        "SFBG",
+        "CSLB-B",
+        "BPC-7057"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "flags": [
+        "F-07",
+        "F-20"
+      ]
+    },
+    {
+      "rank": 14,
+      "provider_id": "P-12",
+      "provider": "24/7 SF Handyman & Remodeling Service",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 304-1559",
+      "license": "1105133",
+      "status": "Current and active",
+      "classifications": [
+        "B-2"
+      ],
+      "website": null,
+      "reason": "B-2 Residential Remodeling registry candidate; not C-36. Conditional on a licensed plumbing subcontractor.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "Classification is B-2; no exact-job evidence or named plumbing partner retrieved.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1105133",
+        "CSLB-B",
+        "BPC-7057"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "flags": [
+        "F-08"
+      ]
+    },
+    {
+      "rank": 15,
+      "provider_id": "P-14",
+      "provider": "Caccia Home Services",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(650) 342-5363",
+      "license": "379364",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-31",
+        "C-34",
+        "C-10"
+      ],
+      "website": null,
+      "reason": "C-36 registry candidate in Burlingame. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-379364",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
+      "flags": []
+    },
+    {
+      "rank": 16,
+      "provider_id": "P-15",
+      "provider": "Flow Masters Plumbing",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 751-1933",
+      "license": "966337",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-16",
+        "C-20"
+      ],
+      "website": null,
+      "reason": "C-36/C-16/C-20 registry candidate in Daly City. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-966337",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
+      "flags": []
+    },
+    {
+      "rank": 17,
+      "provider_id": "P-16",
+      "provider": "Discount Plumbing Rooter Services",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(650) 991-2100",
+      "license": "1140843",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "website": null,
+      "reason": "C-36/A registry candidate in Burlingame. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1140843",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "flags": []
+    },
+    {
+      "rank": 18,
+      "provider_id": "P-17",
+      "provider": "FDL Plumbing",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 678-9557",
+      "license": "1086935",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": null,
+      "reason": "C-36 registry candidate in Daly City. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1086935",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "flags": []
+    },
+    {
+      "rank": 19,
+      "provider_id": "P-18",
+      "provider": "Precision Rooter & Drain",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 724-1824",
+      "license": "961218",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": null,
+      "reason": "C-36 registry candidate in San Francisco. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-961218",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "flags": []
+    },
+    {
+      "rank": 20,
+      "provider_id": "P-19",
+      "provider": "Citywide Plumbing",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 716-1519",
+      "license": "954385",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": null,
+      "reason": "C-36 registry candidate in Daly City. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-954385",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "flags": []
+    },
+    {
+      "rank": 21,
+      "provider_id": "P-20",
+      "provider": "Cahill Contractors",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(415) 986-0600",
+      "license": "300647",
+      "status": "Current and active",
+      "classifications": [
+        "A",
+        "B"
+      ],
+      "website": null,
+      "reason": "A/B registry candidate in San Francisco without C-36. Tier D is tied; a licensed plumbing party would be required.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No C-36 on this record; no exact-job evidence retrieved.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-300647",
+        "CSLB-B",
+        "CSLB-C36"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "flags": []
+    },
+    {
+      "rank": 22,
+      "provider_id": "P-23",
+      "provider": "Clever Plumbing & Rooter",
+      "tier": "Tier D — registry-only (tied)",
+      "phone": "(650) 834-0821",
+      "license": "1160613",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "website": null,
+      "reason": "C-36 registry candidate in San Bruno. Tier D is tied; no source differentiates this firm for the exact job.",
+      "cost_explanation": "No current written combined-scope quote was retrieved. Verified all-in amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "No exact-job acceptance, availability, current price, reference photos, assembly model or occupied-unit plan confirmed.",
+      "excluded": false,
+      "source_ids": [
+        "CSLB-1160613",
+        "CSLB-C36",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
+      "flags": []
+    },
+    {
+      "rank": 23,
+      "provider_id": "P-22",
+      "provider": "Kenneth Asire Plumbing",
+      "tier": "Tier E — excluded",
+      "phone": "(415) 913-8048",
+      "license": "1027286",
+      "status": "Suspended",
+      "classifications": [
+        "C-36"
+      ],
+      "website": null,
+      "reason": "Excluded from hiring priority: the official record shows a bond suspension.",
+      "cost_explanation": "No quote considered for an excluded record. Verified amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "Confirm reinstatement on CSLB before any consideration.",
+      "excluded": true,
+      "source_ids": [
+        "CSLB-1027286",
+        "CSLB-SEARCH",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "flags": [
+        "F-09"
+      ]
+    },
+    {
+      "rank": 24,
+      "provider_id": "P-24",
+      "provider": "Portola Plumbing Services",
+      "tier": "Tier E — excluded",
+      "phone": null,
+      "license": null,
+      "status": null,
+      "classifications": [],
+      "website": null,
+      "reason": "Excluded from hiring priority: the business identity has no confirmed CSLB record.",
+      "cost_explanation": "No quote considered for an unresolved identity. Verified amount: blank / unverified.",
+      "amount_owner": null,
+      "amount_verified": null,
+      "limit": "License, phone, status and registered city are blank/unverified; do not treat as a licensed provider.",
+      "excluded": true,
+      "source_ids": [
+        "CSLB-SEARCH",
+        "YELP-PORTOLA",
+        "REPO-BOARD",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "flags": [
+        "F-13"
+      ]
+    }
+  ]
+}

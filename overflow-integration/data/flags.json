@@ -529,6 +529,71 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "Low",
+      "category": "Verification",
+      "title": "Official-link parser allowlist corrected",
+      "detail": "An earlier independent parser reported four rows as blank/unverified because its host allowlist omitted the official San Francisco code publisher and two official company hosts. The current parser recognizes all 236 canonical rows and the strict verifier requires an official/primary host on every row.",
+      "action": "Keep the host allowlist derived from the source register and re-run the strict verifier after data changes.",
+      "source_ids": [
+        "SF-CODE-104",
+        "AYOOB",
+        "BERNAL",
+        "CSLB-SEARCH",
+        "REPO"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "status": "Resolved in current integration"
+    },
+    {
+      "id": "F-38",
+      "severity": "Low",
+      "category": "Content hygiene",
+      "title": "Legacy verifier literals and reader-facing meta-copy neutralized",
+      "detail": "Older detector lists and historical status prose were replaced in the current text tree with neutral repair-scope wording and an encoded content guard. Historical Git snapshots are retained for audit and were not rewritten because this is a shared multi-session repository.",
+      "action": "Use the encoded guard in future publication checks; request a separate history review only if the owner asks for it.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "GH-ACTIONS"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8",
+      "status": "Resolved in current integration"
+    },
+    {
+      "id": "F-39",
+      "severity": "High",
+      "category": "Decision analysis",
+      "title": "Provider ranking is an inquiry order, not verified performance",
+      "detail": "The explicit ranking uses CSLB classifications/status, company-published adjacent case evidence, lawful two-trade structure, cost-evidence quality and occupied-unit controls. No provider responded to one identical combined scope; availability, exact-job acceptance, restoration party, current total price and schedule remain unconfirmed.",
+      "action": "Send one identical written scope to the ranked leads, record responses, then update ranks and blank verified prices only from provider-issued documents.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "BPC-7057",
+        "SF-PERMIT",
+        "CIV-1954",
+        "OWNER",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "status": "Open"
+    },
+    {
+      "id": "F-40",
+      "severity": "Low",
+      "category": "Parallel work",
+      "title": "Stale unmerged PRs remain open",
+      "detail": "Historical PRs from earlier parallel sessions remain open and are not part of the canonical merged site. Merging them later could reintroduce superseded tables or checks; they were not closed by this session.",
+      "action": "Review and close or rebase each stale PR against the canonical root site before any future work.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "PAGES-API"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls",
+      "status": "Open"
     }
   ]
 }

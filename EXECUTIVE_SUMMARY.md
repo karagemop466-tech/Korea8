@@ -1,3 +1,5 @@
+> **Current project:** For the bathtub wastewater overflow trip-lever executive summary and ranked decision analysis, see [`OVERFLOW_EXECUTIVE_SUMMARY.md`](OVERFLOW_EXECUTIVE_SUMMARY.md) and [`providers.html`](providers.html). The DOE GEMS summary below is the preserved, unrelated archive.
+
 # Executive summary — GEMS Prize Challenge submission pipeline
 
 **Repo:** `karagemop466-tech/Korea8`, branch `arena/057f3280-korea8` (merged to `main`).

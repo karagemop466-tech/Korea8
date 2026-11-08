@@ -108,8 +108,11 @@ def main():
  check('every canonical table row has an official/primary source link',not strict_missing,f'{rowcount} rows; offenders: '+'; '.join(strict_missing[:10]))
  check('every blank cell is explicitly flagged unverified',not blank_bad,'; '.join(blank_bad[:10]))
  # data invariants
- prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
+ prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];rank=load('ranking.json');srcs={s['id']:s for s in load('sources.json')['rows']}
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
+ check('ranking count parity',len(parsed['providers.html'].tables.get('ranking-table',[]))==len(rank['rows']),f"{len(parsed['providers.html'].tables.get('ranking-table',[]))}/{len(rank['rows'])}")
+ check('ranking verified amounts blank',all(r['amount_verified'] is None for r in rank['rows']))
+ check('ranking criteria source ids resolve',all(i in srcs for c in rank['criteria'] for i in c['source_ids']))
  check('requirement count parity',len(parsed['requirements.html'].tables.get('requirements-table',[]))==len(req))
  check('estimate count parity',len(parsed['estimates.html'].tables.get('estimates-table',[]))==len(est['rows']))
  check('source count parity',len(parsed['sources.html'].tables.get('sources-table',[]))==len(srcs))
@@ -130,18 +133,22 @@ def main():
  check('no numeric star ratings in canonical pages',not re.search(r'\d(?:\.\d)?\s*(?:stars|out of 5)',' '.join(texts.values()),re.I))
  # all source ids resolve and official urls are https
  bad=[]
- for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
+ for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json','ranking.json']:
   for r in load(name)['rows']:
    for i in r.get('source_ids',[]):
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')
    if r.get('official_url') and not r['official_url'].startswith('https://'):bad.append(f'{name}:{r.get("id")}:official_url')
  check('all row source ids resolve and official urls are https',not bad,'; '.join(bad[:20]))
- # suspended not in priority shortlist table
- short=parsed['providers.html'].tables.get('',[])
- # first unnamed table is priority leads; ensure suspended name absent from its rows
+ # Ranking exclusions and official contact/link parity.
+ rank_table=parsed['providers.html'].tables.get('ranking-table',[])
+ top22=' | '.join(' '.join(row) for row in rank_table[:22])
  susp=[p['name'] for p in prov if p['status']=='Suspended']
- first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)
- check('suspended provider excluded from priority leads',all(n not in first_table for n in susp))
+ unresolved=[p['name'] for p in prov if not p['license']]
+ check('suspended or unresolved providers excluded from top 22 ranks',all(n not in top22 for n in susp+unresolved))
+ check('last two ranks are explicitly excluded',len(rank_table)>=24 and all('Excluded' in ' '.join(row) for row in rank_table[22:24]))
+ phone_bad=[r['rank'] for r in rank['rows'][:22] if r['phone'] and r['phone'] not in ' '.join(rank_table[r['rank']-1])]
+ lic_bad=[r['license'] for r in rank['rows'][:22] if r['license'] and f'LicNum={r["license"]}' not in texts['providers.html']]
+ check('ranked provider phones and CSLB links present',not phone_bad and not lic_bad,f'phones={phone_bad}; licences={lic_bad}')
  # neutral repair-scope wording / no conflict markers / no placeholder literals
  markers=['<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
  hits=[]
@@ -154,7 +161,7 @@ def main():
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
- check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))
+ check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts']['ranking']==len(rank['rows']))
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()

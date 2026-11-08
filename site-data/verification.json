@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-08T23:11:42.621606+00:00",
+  "checked_at": "2026-11-08T23:21:10.817972+00:00",
   "result": "PASS",
-  "checks_run": 24,
-  "checks_passed": 24,
+  "checks_run": 29,
+  "checks_passed": 29,
   "checks_failed": 0,
-  "canonical_rows_checked": 236,
+  "canonical_rows_checked": 278,
   "tracked_html_files": 67,
   "checks": [
     {
@@ -30,12 +30,12 @@
     {
       "check": "every canonical table row has a source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "278 rows; offenders: "
     },
     {
       "check": "every canonical table row has an official/primary source link",
       "ok": true,
-      "detail": "236 rows; offenders: "
+      "detail": "278 rows; offenders: "
     },
     {
       "check": "every blank cell is explicitly flagged unverified",
@@ -46,6 +46,21 @@
       "check": "provider count parity",
       "ok": true,
       "detail": "24/24"
+    },
+    {
+      "check": "ranking count parity",
+      "ok": true,
+      "detail": "24/24"
+    },
+    {
+      "check": "ranking verified amounts blank",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking criteria source ids resolve",
+      "ok": true,
+      "detail": ""
     },
     {
       "check": "requirement count parity",
@@ -103,9 +118,19 @@
       "detail": ""
     },
     {
-      "check": "suspended provider excluded from priority leads",
+      "check": "suspended or unresolved providers excluded from top 22 ranks",
       "ok": true,
       "detail": ""
+    },
+    {
+      "check": "last two ranks are explicitly excluded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranked provider phones and CSLB links present",
+      "ok": true,
+      "detail": "phones=[]; licences=[]"
     },
     {
       "check": "neutral repair-scope wording and no placeholders/conflict markers",
@@ -125,7 +150,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "203 links; offenders: "
+      "detail": "204 links; offenders: "
     }
   ]
 }

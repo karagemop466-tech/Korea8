@@ -1,4 +1,5 @@
 import json,pathlib,re,sys,unittest
+from urllib.parse import urlparse
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
 sys.path.insert(0,str(ROOT/'overflow-integration'))
@@ -34,4 +35,28 @@ class SiteTests(unittest.TestCase):
    t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertFalse(has_restricted(t),f'restricted digest in {p.name}')
  def test_gems_preserved(self):
   self.assertTrue((ROOT/'docs'/'index.html').exists());self.assertTrue((ROOT/'src').exists());self.assertTrue((ROOT/'vendor').exists())
+ def test_ranked_provider_table(self):
+  t=(ROOT/'providers.html').read_text();rank=load('ranking.json')
+  self.assertIn('id="ranking-table"',t);self.assertIn('Verified amount:',t)
+  for r in rank['rows']:
+   if r['license']:self.assertIn(f'LicNum={r["license"]}',t)
+   if r['phone']:self.assertIn(r['phone'],t)
+  self.assertIn('Tier E',t);self.assertIn('Excluded',t)
+ def test_every_canonical_row_has_official_link(self):
+  srcs=load('sources.json')['rows']
+  hosts={urlparse(s['url']).netloc.lower() for s in srcs if s['kind'].startswith('official-') or s['kind'] in {'repository-primary','official-tool'}}
+  for name in ['providers.json','requirements.json','estimates.json','technical.json','compliance.json','reviews.json','flags.json','ranking.json']:
+   obj=load(name)
+   for r in obj.get('rows',[]):
+    u=r.get('official_url')
+    if u:hosts.add(urlparse(u).netloc.lower())
+   if name=='estimates.json':
+    for r in obj.get('official_fees',[]):
+     u=r.get('official_url')
+     if u:hosts.add(urlparse(u).netloc.lower())
+  for p in ROOT.glob('*.html'):
+   for body in re.findall(r'<tbody>(.*?)</tbody>',p.read_text(),re.S):
+    for tr in re.findall(r'<tr>(.*?)</tr>',body,re.S):
+     urls=re.findall(r'href="(https://[^"]+)"',tr)
+     self.assertTrue(any(urlparse(u).netloc.lower() in hosts or urlparse(u).netloc.lower().endswith(('.gov','.ca.gov')) for u in urls),f'no official link in {p.name}: {tr[:100]}')
 if __name__=='__main__':unittest.main()
