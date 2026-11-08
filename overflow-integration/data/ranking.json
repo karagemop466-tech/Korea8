@@ -1,658 +1,617 @@
 {
   "as_of": "2026-11-08",
-  "title": "Ranked hiring decision analysis — bathtub wastewater overflow trip lever",
-  "method": {
-    "summary": "Each provider is scored from four verifiable inputs — licence coverage, published adjacent evidence, published small-job fit and whether a written price is on file — then reduced for documented warnings. Higher scores rank first; ties are broken by the documented order below. This is an inquiry order, not a quality rating: no provider was contacted, no review score was verified, and no price was confirmed.",
-    "criteria": [
-      {
-        "key": "scope_coverage",
-        "label": "Licence coverage for a combined repair + restoration scope",
-        "weight": 3,
-        "scale": "0–3",
-        "rules": "3 = B and C-36 on the checked record; 2 = C-36 alone, or B with C-9; 1 = B or B-2 alone; 0 = no plumbing or building classification."
-      },
-      {
-        "key": "adjacent_evidence",
-        "label": "Published evidence of adjacent work",
-        "weight": 2,
-        "scale": "0–2",
-        "rules": "2 = company-published tub waste/overflow or ceiling-access case; 1 = company site advertises repair/bathroom plumbing; 0 = none verified."
-      },
-      {
-        "key": "small_job_fit",
-        "label": "Published fit for a small occupied-unit repair",
-        "weight": 1,
-        "scale": "0–1",
-        "rules": "1 = company publishes small-repair or residential occupied-property work; 0 = larger/commercial positioning or unconfirmed."
-      },
-      {
-        "key": "written_price",
-        "label": "Written price on file for a removal/replacement scope",
-        "weight": 2,
-        "scale": "0–1",
-        "rules": "1 = owner-supplied amount whose stated scope includes removal/replacement of the assembly; 0 = no price, or an adjustment-only price."
-      }
-    ],
-    "deductions": [
-      {
-        "reason": "CSLB complaint-disclosure information",
-        "points": 2
-      },
-      {
-        "reason": "CSLB future-suspension warning",
-        "points": 2
-      },
-      {
-        "reason": "Shared address/phone identity ambiguity",
-        "points": 1
-      }
-    ],
-    "tie_break": [
-      "Written price on file for a removal/replacement scope",
-      "Adjacent published evidence",
-      "Broader licence coverage",
-      "Published one-contract combined offer",
-      "Holds C-36 (the trade of the failing part)",
-      "CSLB licence number ascending"
-    ],
-    "ceiling": "Maximum possible score is 16 (3×3 + 2×2 + 1 + 2) before deductions.",
-    "exclusions": "A suspended licence or an unresolved identity is excluded rather than scored.",
-    "limits": "Scores use only what is published and verifiable. They say nothing about workmanship, insurance claims history, availability or price. Two firms with equal scores are effectively tied; the tie-break order is documented but arbitrary below the first three rules.",
-    "ties": "Firms on equal scores are effectively tied; ranks 3–6 and 8–9 are within one tie-break step of each other and should not be over-read."
-  },
-  "cost_rules": {
-    "owner_amounts": "The three supplied amounts are owner reports dated 2026-08-30 and are never presented as verified prices. Verified amounts stay blank.",
-    "permit_fee": "Official San Francisco DBI fee schedule (July 2026): Category 1P $290, Category 11P/M $320, regular inspection $519/hour, off-hour inspection $555/hour, reinspection $259 per half hour. Category applicability for this job is unconfirmed.",
-    "fee_exemption": "San Francisco Plumbing Code §104.5: replacement of a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Whether this job qualifies is unconfirmed.",
-    "no_totals": "Owner-reported amounts and official fees are shown side by side, never summed. No total project cost is published."
-  },
-  "rows": [
+  "method_note": "Editorial decision support, not a verified performance or quality rating. Scores use only the fields on the official CSLB records, company-published service statements and the owner-supplied quote wording, each re-read on 2026-11-08. No provider was contacted, no reference was taken and no availability or price was confirmed.",
+  "weights": [
     {
-      "rank": 1,
-      "provider_id": "P-01",
-      "name": "Rapid Flow Plumbing & Rooter",
-      "license": "1115649",
-      "phone": "(415) 866-8401",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
-      "website": "https://www.rapidflowbayarea.com/",
-      "role": "Combined-scope lead (plumbing + general building)",
-      "score": 12,
-      "criteria": {
-        "scope_coverage": 3,
-        "adjacent_evidence": 1,
-        "small_job_fit": 1,
-        "written_price": 0
-      },
-      "deductions": [],
-      "why": "Ranks first among the two combined-scope firms on the documented tie-break: the CSLB record holds both B and C-36, and the company's own site sells general contracting and plumbing across a simple-repair-to-renovation range. A Yelp-indexed account describes retrieving a tub drain plug through a wall opening; it is unverified and is not treated as proof of this job. Ace scores identically and is an equally reasonable first call.",
-      "ask": "Ask for a written scope covering: tub-side attempt first; below-ceiling fallback; who cuts and restores the ceiling; occupied-unit protection; permit position; current price. Confirm the licence is still current on signing day.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file for this firm. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown: no written price and no confirmed fee category."
-      },
-      "flags": [
-        "F-01",
-        "F-14"
-      ],
+      "id": "C1",
+      "criterion": "Combined plumbing + building capability on one licence",
+      "weight": 0.3,
+      "basis": "B + C-36 on the checked CSLB record supports a single prime contract covering the concealed drainage work and the ceiling repair, subject to BPC §7057. A C-36-only licence needs a named restoration party.",
       "source_ids": [
-        "CSLB-1115649",
-        "RF",
-        "YELP-RF2",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": true,
-      "tie_note": "Tied at 12 points with Ace Plumbing & Rooter (#2); the published one-contract combined offer breaks the tie."
+        "BPC-7057",
+        "CSLB-C36",
+        "CSLB-C9"
+      ]
     },
     {
-      "rank": 2,
+      "id": "C2",
+      "criterion": "Evidence of this specific scope (tub waste-and-overflow / overflow access)",
+      "weight": 0.2,
+      "basis": "Company-published case evidence, owner-supplied quote wording, or indexed review text. Every item is labelled by strength; none is proof of this exact stuck-lever job.",
+      "source_ids": [
+        "HEISE-INGLESIDE",
+        "OWNER",
+        "YELP-RF"
+      ]
+    },
+    {
+      "id": "C3",
+      "criterion": "Licence standing and tenure on the official CSLB record",
+      "weight": 0.2,
+      "basis": "Current-and-active status, years since issue, workers-compensation record, bond record and any additional status or complaint disclosure. Active status is not an endorsement.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "DG-COMPLAINT"
+      ]
+    },
+    {
+      "id": "C4",
+      "criterion": "Occupied-unit and property-management experience",
+      "weight": 0.15,
+      "basis": "Published company statements about HOA/property-manager work, property maintenance or occupied-home protocol. Absence of a statement scores low; it is not evidence of inability.",
+      "source_ids": [
+        "ACE",
+        "HEISE",
+        "ACE"
+      ]
+    },
+    {
+      "id": "C5",
+      "criterion": "Price evidence for a comparable scope",
+      "weight": 0.15,
+      "basis": "Only owner-supplied quote wording dated 2026-08-30 is available; those amounts are owner-reported and not verified. No provider has issued a document to this project.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-977638",
+        "CSLB-757796",
+        "CSLB-1024971"
+      ]
+    }
+  ],
+  "ranked": [
+    {
       "provider_id": "P-02",
       "name": "Ace Plumbing & Rooter",
+      "legal_name": "ACE PLUMBING & ROOTER",
       "license": "829071",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-4",
+        "C-16",
+        "B",
+        "C-10"
+      ],
+      "status": "Current and active",
       "phone": "(415) 824-6444",
+      "city": "San Francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
       "website": "https://www.aceplumbingandrooter.com/",
-      "role": "Combined-scope lead (plumbing + general building)",
-      "score": 12,
-      "criteria": {
-        "scope_coverage": 3,
-        "adjacent_evidence": 1,
-        "small_job_fit": 1,
-        "written_price": 0
-      },
-      "deductions": [],
-      "why": "Holds B, C-36 plus A, C-4, C-16 and C-10, carries workers'-compensation insurance and publishes residential plumbing work for HOAs and property managers. No published statement about tub overflow/trip-lever retrieval was verified, and the small-job fit is inferred from its residential service lines only.",
-      "ask": "Ask whether it self-performs drywall repair and texture, or names a licensed restoration subcontractor; request the same written scope and occupied-unit plan as above.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file for this firm. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown: no written price and no confirmed fee category."
-      },
-      "flags": [
-        "F-01"
-      ],
       "source_ids": [
         "CSLB-829071",
-        "ACE",
-        "SF-FEES",
-        "SF-CODE-104"
+        "ACE"
       ],
-      "combined_offer_published": false,
-      "tie_note": "Tied at 12 points with Rapid Flow (#1); no published one-contract combined statement."
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-16"
+      ],
+      "score_components": {
+        "C1": 5,
+        "C2": 3,
+        "C3": 5,
+        "C4": 4,
+        "C5": 1
+      },
+      "why": "Broadest single-licence coverage in the set: B + C-36 plus A, C-4, C-16 and C-10 on the CSLB record, so one prime contract can lawfully carry both the concealed pipe work and the ceiling repair if it names the trades. Licensed since 2003 with a current workers-compensation policy; the company advertises HOA and property-manager work, which matches a tenant-occupied building. Indexed review text mentions bathtub repair, but no source shows this trip-lever job.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. Owner-supplied comparators for replacement-type scopes are $550 and $614 (owner-reported, unverified); the official DBI Category 1P plumbing fee is $290 if a permit applies (a fee, not a price). Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask for one written combined scope: tub-side attempt first, ceiling opening method, named drywall/texture party, occupied-unit schedule, and a fixed price with the permit position stated.",
+      "short_why": "broadest single-licence coverage (B + C-36 plus A, C-4, C-16, C-10), active since 2003 with current workers comp and published HOA/property-manager work"
     },
     {
-      "rank": 3,
+      "provider_id": "P-03",
+      "name": "Heise’s Plumbing",
+      "legal_name": "TARO GROUP INC · dba HEISES PLUMBING",
+      "license": "1089561",
+      "classifications": [
+        "C-36",
+        "C-10",
+        "A",
+        "C-20"
+      ],
+      "status": "Current and active",
+      "phone": "(415) 333-0704",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "website": "https://www.heisesplumbing.com/",
+      "source_ids": [
+        "CSLB-1089561",
+        "HEISE"
+      ],
+      "flags": [
+        "F-01",
+        "F-17",
+        "F-18"
+      ],
+      "score_components": {
+        "C1": 3,
+        "C2": 5,
+        "C3": 4,
+        "C4": 4,
+        "C5": 1
+      },
+      "why": "The only provider with company-published San Francisco tub waste-and-overflow cases, including one that says the crew accessed the exterior ceiling to remove the old overflow. That is the closest published match to the below-ceiling fallback. The licence is C-36 + C-10 + A + C-20 with no B or C-9, so the drywall half must be subcontracted or separately contracted; the case page also embeds a 404 template block.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask who performs and warrants the ceiling patch and texture, whether the same crew can do both under one contract, and for a price for the two-path scope.",
+      "short_why": "only company-published San Francisco ceiling-access tub waste-and-overflow case, but no B or C-9, so the ceiling party must be named"
+    },
+    {
+      "provider_id": "P-01",
+      "name": "Rapid Flow Plumbing & Rooter",
+      "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+      "license": "1115649",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "status": "Current and active",
+      "phone": "(415) 866-8401",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "website": "https://www.rapidflowbayarea.com/",
+      "source_ids": [
+        "CSLB-1115649",
+        "RF"
+      ],
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-15"
+      ],
+      "score_components": {
+        "C1": 5,
+        "C2": 3,
+        "C3": 3,
+        "C4": 2,
+        "C5": 1
+      },
+      "why": "B + C-36 combined licence and a published offer that runs from simple repairs to complete renovations, which is the shortest single-contract path if the ceiling has to be opened. The licence was issued in 2024 and the CSLB record shows a workers-compensation exemption (certified no employees), so crew size and supervision should be confirmed. The indexed Yelp account describes retrieving a tub plug by opening a wall; it is adjacent evidence, not this job.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. Owner-supplied comparators are $550 and $614 for replacement-type scopes (unverified); no labour or restoration line is documented. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask whether the crew is employees or subcontractors, who patches and textures the ceiling, and for a fixed combined price.",
+      "short_why": "B + C-36 with a published simple-repair-to-renovation offer; 2024 licence and workers-comp exemption to check"
+    },
+    {
+      "provider_id": "P-09",
+      "name": "Ayoob & Peery",
+      "legal_name": "AYOOB & PEERY PLUMBING CO INC",
+      "license": "392967",
+      "classifications": [
+        "B",
+        "C-4",
+        "C-16",
+        "C-36",
+        "C-20"
+      ],
+      "status": "Current and active",
+      "phone": "(415) 550-0975",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "website": "https://www.ayoobpeery.com/",
+      "source_ids": [
+        "CSLB-392967",
+        "AYOOB"
+      ],
+      "flags": [
+        "F-20"
+      ],
+      "score_components": {
+        "C1": 5,
+        "C2": 1,
+        "C3": 5,
+        "C4": 2,
+        "C5": 1
+      },
+      "why": "B + C-36 with C-4, C-16 and C-20, licensed since 1980 and carrying a current workers-compensation policy: the strongest tenure and standing among combined-classification leads. No published tub waste-and-overflow case, no occupied-unit statement and no quote were found, so it ranks on capability rather than evidence.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. No published pricing for this scope was found. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask whether the firm takes small occupied-unit repair work at all, then request the same combined written scope.",
+      "short_why": "B + C-36, licensed since 1980 with current workers comp; no scope evidence yet"
+    },
+    {
+      "provider_id": "P-08",
+      "name": "We Do Construction",
+      "legal_name": "WE DO CONSTRUCTION INC",
+      "license": "1096552",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "status": "Current and active",
+      "phone": "(415) 416-5494",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "website": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "source_ids": [
+        "CSLB-1096552",
+        "WEDO"
+      ],
+      "flags": [
+        "F-14",
+        "F-20"
+      ],
+      "score_components": {
+        "C1": 5,
+        "C2": 1,
+        "C3": 4,
+        "C4": 2,
+        "C5": 1
+      },
+      "why": "B + C-36 with a current workers-compensation policy covering subcontracted construction work. The indexed description positions kitchens and baths inside larger renovation scopes, so a small single-fixture repair may not be accepted; no tub-overflow case or quote was found.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask first whether a one-fixture repair with ceiling patching is in scope, then request the combined written scope.",
+      "short_why": "B + C-36 with current workers comp, but positioned toward larger renovations"
+    },
+    {
       "provider_id": "P-04",
       "name": "Expert Plumbing Solutions",
+      "legal_name": "EXPERT PLUMBING SOLUTIONS",
       "license": "977638",
+      "classifications": [
+        "C-36"
+      ],
+      "status": "Current and active",
       "phone": "(415) 531-5340",
+      "city": "San Francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
       "website": "https://www.eplumbingsolutions.com/",
-      "role": "Plumbing specialist with a written price on file (C-36 only)",
-      "score": 11,
-      "criteria": {
-        "scope_coverage": 2,
-        "adjacent_evidence": 1,
-        "small_job_fit": 1,
-        "written_price": 1
-      },
-      "deductions": [],
-      "why": "The only supplied quote whose wording is closest to the actual failure — replace waste and overflow — so its owner-reported $614 is the most usable reference point in the file. The scope as supplied names no ceiling access, drywall restoration, permit or cleanup, and the licence is C-36 only.",
-      "ask": "Send back one identical scope and ask for a revised written price that separates plumbing from ceiling restoration; ask who performs the drywall work.",
-      "cost": {
-        "owner_reported_amount": 614,
-        "owner_reported_scope": "Replace waste and overflow",
-        "owner_reported_date": "2026-08-30",
-        "verified_amount": null,
-        "cost_note": "Owner-reported amount only; not independently verified. No ceiling/restoration line is included. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Owner-reported $614 plus a conditional $290 fee would not be a verified total; the quote may exclude access and restoration."
-      },
+      "source_ids": [
+        "CSLB-977638",
+        "EXPERT"
+      ],
       "flags": [
         "F-02",
         "F-03",
         "F-04",
         "F-05"
       ],
-      "source_ids": [
-        "CSLB-977638",
-        "EXPERT",
-        "OWNER",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
+      "score_components": {
+        "C1": 2,
+        "C2": 3,
+        "C3": 4,
+        "C5": 5,
+        "C4": 1
+      },
+      "why": "The supplied 2026-08-30 wording — \"replace waste and overflow\" — is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: the licence does not cover the ceiling repair, so a second licensed party is required if the ceiling is opened. This ranking does not endorse the $614 figure, which remains owner-reported.",
+      "cost_amount_owner": 614,
+      "cost_note": "Owner-reported $614 on 2026-08-30 for \"replace waste and overflow\". Verified amount blank; no access route, drywall restoration, permit, cleanup or warranty line is included. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Requote the identical combined scope and ask for the access method and the named restoration party in writing.",
+      "short_why": "C-36 only; owner-reported $614 is the closest supplied scope wording"
     },
     {
-      "rank": 4,
-      "provider_id": "P-03",
-      "name": "Heise’s Plumbing",
-      "license": "1089561",
-      "phone": "(415) 333-0704",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
-      "website": "https://www.heisesplumbing.com/",
-      "role": "Plumbing specialist with adjacent case evidence (C-36 only)",
-      "score": 11,
-      "criteria": {
-        "scope_coverage": 2,
-        "adjacent_evidence": 2,
-        "small_job_fit": 1,
-        "written_price": 0
-      },
-      "deductions": [],
-      "why": "Has the strongest published adjacent evidence of any firm checked: company case studies of San Francisco tub waste-and-overflow replacements, one described as using ceiling access, and a site that says it handles jobs big or small. The licence is C-36 only (no B or C-9), so the ceiling repair must be performed or subcontracted by a properly licensed restoration party.",
-      "ask": "Ask directly whether they have replaced a stuck trip-lever/waste assembly through the ceiling, who closes and textures the opening, and whether they will contract the restoration or work alongside Bernal Hill.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file. A ceiling opening adds a separate restoration cost that is not covered by a plumbing-only licence. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown; two trades are likely to be invoiced."
-      },
+      "provider_id": "P-07",
+      "name": "Save-On-Interior",
+      "legal_name": "SAVE - ON - INTERIOR",
+      "license": "749536",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "status": "Current and active",
+      "phone": "(415) 668-8000",
+      "city": "San Francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "website": "",
+      "source_ids": [
+        "CSLB-749536"
+      ],
       "flags": [
-        "F-17",
-        "F-18"
+        "F-12",
+        "F-30"
       ],
-      "source_ids": [
-        "CSLB-1089561",
-        "HEISE",
-        "HEISE-INGLESIDE",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
+      "score_components": {
+        "C1": 5,
+        "C2": 1,
+        "C3": 3,
+        "C4": 1,
+        "C5": 1
+      },
+      "why": "B + C-36 at the same registered address and phone as Bay Area Plumbing, which makes it the natural second half of that firm's combined scope if the relationship is confirmed. The CSLB record also carries 2015–2016 cash-deposit letters, and the workers-compensation record is an exemption (no employees), so entity and crew questions come before price.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. Owner-reported $550 exists for Bay Area Plumbing only; that price cannot be attributed to this licence. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask whether the two licence holders operate as one contracting entity, and which licence would sign the contract.",
+      "short_why": "B + C-36 at Bay Area Plumbing’s address and phone; entity relationship unconfirmed"
     },
     {
-      "rank": 5,
-      "provider_id": "P-08",
-      "name": "We Do Construction",
-      "license": "1096552",
-      "phone": "(415) 416-5494",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
-      "website": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
-      "role": "Combined-scope lead (plumbing + general building)",
-      "score": 11,
-      "criteria": {
-        "scope_coverage": 3,
-        "adjacent_evidence": 1,
-        "small_job_fit": 0,
-        "written_price": 0
-      },
-      "deductions": [],
-      "why": "Holds B + C-36 and publicly offers self-performed plumbing inside one design-build contract, which is exactly the all-in-one structure this job needs. It is ranked below the specialists because its public positioning emphasises larger renovations, and no small occupied-unit repair acceptance or price is on file.",
-      "ask": "Ask whether the firm will take a small repair of this size, and get an itemised one-contract price that names the plumbing and the ceiling restoration separately.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown; small-job acceptance itself is unconfirmed."
-      },
-      "flags": [
-        "F-20"
-      ],
-      "source_ids": [
-        "CSLB-1096552",
-        "WEDO",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": true
-    },
-    {
-      "rank": 6,
-      "provider_id": "P-09",
-      "name": "Ayoob & Peery",
-      "license": "392967",
-      "phone": "(415) 550-0975",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
-      "website": "https://www.ayoobpeery.com/",
-      "role": "Combined-scope lead (plumbing + general building)",
-      "score": 11,
-      "criteria": {
-        "scope_coverage": 3,
-        "adjacent_evidence": 1,
-        "small_job_fit": 0,
-        "written_price": 0
-      },
-      "deductions": [],
-      "why": "A long-established B + C-36/C-4/C-16/C-20 licence that could lawfully hold a combined contract. Its own site describes a mechanical contractor for commercial building systems, so a small occupied-flat repair is outside its published positioning and no price is on file.",
-      "ask": "Ask whether it accepts a residential small repair and will name the restoration party; otherwise treat it as a fallback for the combined-contract structure only.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown."
-      },
-      "flags": [
-        "F-20"
-      ],
-      "source_ids": [
-        "CSLB-392967",
-        "AYOOB",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
-    },
-    {
-      "rank": 7,
       "provider_id": "P-05",
       "name": "Bay Area Plumbing",
+      "legal_name": "BAY AREA PLUMBING",
       "license": "757796",
+      "classifications": [
+        "C-36"
+      ],
+      "status": "Current and active",
       "phone": "(415) 668-8000",
+      "city": "San Francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "website": "https://www.bayareaplumbingsf.com/",
-      "role": "Plumbing specialist with a written price on file (C-36 only)",
-      "score": 10,
-      "criteria": {
-        "scope_coverage": 2,
-        "adjacent_evidence": 1,
-        "small_job_fit": 1,
-        "written_price": 1
-      },
-      "deductions": [
-        {
-          "reason": "Shares a street address and business phone with licence #749536 (Save-On-Interior); common ownership is not established",
-          "points": 1
-        }
+      "source_ids": [
+        "CSLB-757796",
+        "BAY"
       ],
-      "why": "Supplied an owner-reported $550 for the lever, plug and spout with diverter, labour and materials. That wording may describe a different assembly than the waste-and-overflow body, and the licence is C-36 only, so ceiling restoration is not covered. Its record shares an address and phone with another licence, which must be clarified before signing.",
-      "ask": "Ask which exact parts the $550 covers, who the contracting entity is, and who repairs the ceiling. Compare against Expert's $614 on one identical written scope.",
-      "cost": {
-        "owner_reported_amount": 550,
-        "owner_reported_scope": "Lever, plug and spout with diverter; labour and materials",
-        "owner_reported_date": "2026-08-30",
-        "verified_amount": null,
-        "cost_note": "Owner-reported amount only; scope wording may not match the failed assembly. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Owner-reported $550 plus a conditional $290 fee would not be a verified total."
-      },
       "flags": [
         "F-02",
         "F-03",
         "F-04",
         "F-12"
       ],
-      "source_ids": [
-        "CSLB-757796",
-        "BAY",
-        "OWNER",
-        "CSLB-749536",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
+      "score_components": {
+        "C1": 2,
+        "C2": 2,
+        "C3": 4,
+        "C5": 4,
+        "C4": 1
+      },
+      "why": "Long-standing C-36 licence (since 1999) with an owner-reported $550 for \"lever, plug and spout with diverter, labor and materials\". Those words may describe a spout/diverter assembly rather than the waste-and-overflow body, which is the part at issue, so the price may not cover this job. C-36 only, with a workers-compensation exemption; the shared address and phone with Save-On-Interior do not by themselves prove common ownership.",
+      "cost_amount_owner": 550,
+      "cost_note": "Owner-reported $550 on 2026-08-30 for lever, plug and spout with diverter, labour and materials. Verified amount blank; scope wording may not match the failed assembly. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Confirm in writing that the price covers the overflow body and linkage, not only the spout/diverter, and who restores the ceiling.",
+      "short_why": "C-36 only; owner-reported $550 may describe a spout/diverter rather than the overflow body"
     },
     {
-      "rank": 8,
+      "provider_id": "P-16",
+      "name": "Discount Plumbing Rooter Services",
+      "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "license": "1140843",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "status": "Current and active",
+      "phone": "(650) 991-2100",
+      "city": "Burlingame",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "website": "",
+      "source_ids": [
+        "CSLB-1140843"
+      ],
+      "flags": [],
+      "score_components": {
+        "C1": 4,
+        "C2": 1,
+        "C3": 3,
+        "C4": 1,
+        "C5": 1
+      },
+      "why": "C-36 + A with an unusually complete insurance file on the CSLB record: workers compensation, $2,000,000 liability and a $100,000 LLC employee bond. No B or C-9, and no tub-overflow or occupied-unit evidence was found; the licence was issued in 2025 and the firm is registered in Burlingame.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask whether San Francisco occupied-unit repair work is accepted and who holds the drywall classification.",
+      "short_why": "C-36 + A with $2M liability and LLC bond on file; no building classification"
+    },
+    {
       "provider_id": "P-06",
       "name": "Fast Response Plumbing & Rooter",
+      "legal_name": "JOSEPH TINSLEY · dba FAST RESPONSE PLUMBING AND ROOTER",
       "license": "1024971",
+      "classifications": [
+        "C-36"
+      ],
+      "status": "Current and active",
       "phone": "(415) 596-6115",
+      "city": "San Francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "website": "https://www.fastresponseplumbingsf.com/",
-      "role": "Plumbing specialist — adjustment quote only (C-36 only)",
-      "score": 9,
-      "criteria": {
-        "scope_coverage": 2,
-        "adjacent_evidence": 1,
-        "small_job_fit": 1,
-        "written_price": 0
-      },
-      "deductions": [],
-      "why": "The owner-reported $135 buys a repair or adjustment of the plunger handle, not removal of a stuck assembly or any ceiling access, so it does not rank as a replacement price. Licence is C-36 only. Its workers'-compensation policy expires 12/18/2026, which should be rechecked before work is scheduled.",
-      "ask": "Ask whether the handle can be freed without opening the wall and, if not, for a written replacement-plus-access price.",
-      "cost": {
-        "owner_reported_amount": 135,
-        "owner_reported_scope": "Repair/adjust plunger handle",
-        "owner_reported_date": "2026-08-30",
-        "verified_amount": null,
-        "cost_note": "Owner-reported amount buys adjustment only; it is not a replacement or access price. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "A $135 adjustment is not comparable to the replacement quotes."
-      },
+      "source_ids": [
+        "CSLB-1024971",
+        "FAST"
+      ],
       "flags": [
         "F-02",
         "F-03",
         "F-04",
         "F-29"
       ],
-      "source_ids": [
-        "CSLB-1024971",
-        "FAST",
-        "OWNER",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
-    },
-    {
-      "rank": 9,
-      "provider_id": "P-10",
-      "name": "Bernal Hill Drywall",
-      "license": "995163",
-      "phone": "(415) 533-8274",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
-      "website": "https://www.bernalhilldrywall.com/",
-      "role": "Restoration partner (C-9 + B) — pairs with a plumber",
-      "score": 9,
-      "criteria": {
-        "scope_coverage": 2,
-        "adjacent_evidence": 1,
-        "small_job_fit": 1,
-        "written_price": 0
+      "score_components": {
+        "C1": 2,
+        "C2": 2,
+        "C3": 3,
+        "C4": 1,
+        "C5": 3
       },
-      "deductions": [],
-      "why": "The only checked firm holding C-9 drywall (plus B) with published patching, texture matching and small wall repairs. It cannot do the plumbing, so it is ranked as the restoration half of a two-party job rather than as a standalone hire.",
-      "ask": "Use it for the ceiling opening repair and texture, either as a named subcontractor on the plumber's contract or as a separate written contract with the plumbing scope clearly separated.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file for the ceiling repair.",
-        "total_note": "Restoration cost is a separate unknown line."
-      },
-      "flags": [
-        "F-19"
-      ],
-      "source_ids": [
-        "CSLB-995163",
-        "BERNAL"
-      ],
-      "combined_offer_published": false
-    },
-    {
-      "rank": 10,
-      "provider_id": "P-07",
-      "name": "Save-On-Interior",
-      "license": "749536",
-      "phone": "(415) 668-8000",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
-      "website": null,
-      "role": "Conditional combined-scope record (no published service information)",
-      "score": 8,
-      "criteria": {
-        "scope_coverage": 3,
-        "adjacent_evidence": 0,
-        "small_job_fit": 0,
-        "written_price": 0
-      },
-      "deductions": [
-        {
-          "reason": "Shares address and phone with Bay Area Plumbing; common ownership or use on that quote is not established",
-          "points": 1
-        }
-      ],
-      "why": "Holds B + C-36 and is therefore capable of a combined scope on paper, but no company website or service statement was found, so its willingness to take this job and its relevant experience are both unverified. The CSLB record also carries 2015–2016 miscellaneous cash-deposit entries.",
-      "ask": "Clarify the relationship with Bay Area Plumbing and whether this licence is the contracting entity; ask for the same written scope.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown."
-      },
-      "flags": [
-        "F-12",
-        "F-30"
-      ],
-      "source_ids": [
-        "CSLB-749536",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
-    },
-    {
-      "rank": 11,
-      "provider_id": "P-21",
-      "name": "D G Construction",
-      "license": "297604",
-      "phone": "(415) 308-0803",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
-      "website": null,
-      "role": "Conditional combined-scope record with a CSLB citation disclosure",
-      "score": 7,
-      "criteria": {
-        "scope_coverage": 3,
-        "adjacent_evidence": 0,
-        "small_job_fit": 0,
-        "written_price": 0
-      },
-      "deductions": [
-        {
-          "reason": "CSLB publishes complaint-disclosure information: citation 2 2022 002099 dated 03/23/2023",
-          "points": 2
-        }
-      ],
-      "why": "Holds B + C-36, but the CSLB record carries a complaint-disclosure link listing a 2023 citation, and no company website or service statement was verified. It is ranked last among the combined-scope records so the disclosure is visible rather than buried.",
-      "ask": "Read the official citation disclosure first; if it is acceptable, ask for the same written scope and current licence/bond proof.",
-      "cost": {
-        "owner_reported_amount": null,
-        "owner_reported_scope": null,
-        "owner_reported_date": null,
-        "verified_amount": null,
-        "cost_note": "No price on file. If DBI Category 1P applies, the published fee is $290; §104.5 of the San Francisco Plumbing Code states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee. Category applicability for this job is unconfirmed.",
-        "total_note": "Total unknown."
-      },
-      "flags": [
-        "F-11",
-        "F-31"
-      ],
-      "source_ids": [
-        "CSLB-297604",
-        "DG-COMPLAINT",
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "combined_offer_published": false
+      "why": "The $135 owner-reported price is for \"repair or adjust plunger handle\", an adjustment rather than a replacement, so it is not comparable to the other two. C-36 only; the CSLB workers-compensation policy expires 2026-12-18, before some likely work dates, and the registered address wording differs from the website.",
+      "cost_amount_owner": 135,
+      "cost_note": "Owner-reported $135 on 2026-08-30 for repair or adjust of the plunger handle. Verified amount blank; adjustment-only scope, not a replacement-plus-access price. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+      "ask": "Ask what happens if adjustment fails, and request a replacement scope with ceiling access priced separately.",
+      "short_why": "C-36 only; the $135 quote is adjustment-only, and workers comp expires 2026-12-18"
     }
   ],
-  "screened": [
-    {
-      "provider_id": "P-14",
-      "name": "Caccia Home Services",
-      "license": "379364",
-      "reason": "C-36 record verified and active (Burlingame). No company website or published statement about this type of work was verified, so there is no basis to rank it against the shortlist.",
-      "source_ids": [
-        "CSLB-379364"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364"
+  "partner": {
+    "provider_id": "P-10",
+    "name": "Bernal Hill Drywall",
+    "legal_name": "BERNAL HILL DRYWALL INC",
+    "license": "995163",
+    "classifications": [
+      "C-9",
+      "B"
+    ],
+    "status": "Current and active",
+    "phone": "(415) 533-8274",
+    "city": "San Francisco",
+    "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+    "website": "https://www.bernalhilldrywall.com/",
+    "source_ids": [
+      "CSLB-995163",
+      "BERNAL"
+    ],
+    "flags": [
+      "F-19"
+    ],
+    "score_components": {
+      "C1": 1,
+      "C2": 3,
+      "C3": 4,
+      "C4": 2,
+      "C5": 1
     },
+    "why": "C-9 drywall plus B, active since 2014 with a current workers-compensation policy. This is the only drywall specialist in the register, and it is a restoration partner for whichever plumbing lead is hired, not a candidate for the plumbing work itself (no C-36).",
+    "cost_amount_owner": null,
+    "cost_note": "No quote on file. No patch/texture/paint price has been supplied by any party. Where the City fee does apply, San Francisco Plumbing Code §104.5 states that replacing a plumbing fixture without a change in drainage, piping or venting does not require payment of the permit issuance fee (applicability unconfirmed).",
+    "ask": "Ask for a fixed patch-texture-paint price conditional on a defined opening size, and whether work can be scheduled after the plumbing inspection.",
+    "short_why": "C-9 + B drywall specialist, paired with a plumbing lead"
+  },
+  "not_recommended": [
     {
-      "provider_id": "P-15",
-      "name": "Flow Masters Plumbing",
-      "license": "966337",
-      "reason": "C-36 record verified and active (Daly City). No published service information verified; not ranked.",
+      "provider_id": "P-21",
+      "name": "D G Construction",
+      "reason": "B + C-36 capability, but the official CSLB record links to complaint disclosure and the disclosure lists citation 2 2022 002099 dated 2023-03-23 (for disclosure only per B&P §7124.6). The citation substance is not published on that page, so treat as hold until reviewed.",
       "source_ids": [
-        "CSLB-966337"
+        "CSLB-297604",
+        "DG-COMPLAINT"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337"
-    },
-    {
-      "provider_id": "P-16",
-      "name": "Discount Plumbing Rooter Services",
-      "license": "1140843",
-      "reason": "C-36 + A record verified and active, with $2,000,000 liability insurance recorded. No published service information verified; not ranked.",
-      "source_ids": [
-        "CSLB-1140843"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843"
-    },
-    {
-      "provider_id": "P-17",
-      "name": "FDL Plumbing",
-      "license": "1086935",
-      "reason": "C-36 record verified and active (Daly City). No published service information verified; not ranked.",
-      "source_ids": [
-        "CSLB-1086935"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935"
-    },
-    {
-      "provider_id": "P-18",
-      "name": "Precision Rooter & Drain",
-      "license": "961218",
-      "reason": "C-36 record verified and active (San Francisco). No published service information verified; not ranked.",
-      "source_ids": [
-        "CSLB-961218"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218"
-    },
-    {
-      "provider_id": "P-19",
-      "name": "Citywide Plumbing",
-      "license": "954385",
-      "reason": "C-36 record verified and active; licence reissued to another entity 07/06/2026. No published service information verified; not ranked.",
-      "source_ids": [
-        "CSLB-954385"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385"
-    },
-    {
-      "provider_id": "P-23",
-      "name": "Clever Plumbing & Rooter",
-      "license": "1160613",
-      "reason": "C-36 record verified and active (San Bruno), issued 09/04/2026. No published service information verified; not ranked.",
-      "source_ids": [
-        "CSLB-1160613"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "phone": "(415) 308-0803",
+      "license": "297604",
+      "status": "Current and active"
     },
     {
       "provider_id": "P-11",
       "name": "SF Building Group",
+      "reason": "B only on the checked record, registered in South San Francisco, workers-compensation exemption. Without C-36 the plumbing work needs a separate licensed plumber, so it cannot be the single all-in-one contract.",
+      "source_ids": [
+        "CSLB-1106131"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "phone": "(415) 297-2246",
       "license": "1106131",
-      "reason": "B only on the checked record — no plumbing classification. Would need a licensed plumber for the trip-lever work.",
-      "source_ids": [
-        "CSLB-1106131",
-        "SFBG"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
-    },
-    {
-      "provider_id": "P-13",
-      "name": "Advanced Plumbing and Drain",
-      "license": "1009195",
-      "reason": "C-36 record is active but carries a CSLB future-suspension warning for an unresolved final liability; not ranked until the record clears.",
-      "source_ids": [
-        "CSLB-1009195"
-      ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195"
+      "status": "Current and active"
     },
     {
       "provider_id": "P-12",
       "name": "24/7 SF Handyman & Remodeling Service",
-      "license": "1105133",
-      "reason": "B-2 Residential Remodeling only. B-2 restricts plumbing-system replacement and requires at least three unrelated trades, so this licence cannot cover the plumbing scope.",
+      "reason": "B-2 Residential Remodeling only; no plumbing classification, so it cannot lawfully take the pipe work itself.",
       "source_ids": [
-        "CSLB-1105133"
+        "CSLB-1105133",
+        "CSLB-B"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133"
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "phone": "(415) 304-1559",
+      "license": "1105133",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-13",
+      "name": "Advanced Plumbing and Drain",
+      "reason": "C-36 only, and the CSLB record carries an additional status warning that the licence may be suspended at a future date for an unresolved final liability. Resolve that before any inquiry.",
+      "source_ids": [
+        "CSLB-1009195"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "phone": "(415) 744-4944",
+      "license": "1009195",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-14",
+      "name": "Caccia Home Services",
+      "reason": "C-36 with C-31, C-34 and C-10, no building or drywall classification, registered in Burlingame. No tub-overflow or occupied-unit evidence found.",
+      "source_ids": [
+        "CSLB-379364"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
+      "phone": "(650) 342-5363",
+      "license": "379364",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-15",
+      "name": "Flow Masters Plumbing",
+      "reason": "C-36 with C-16 and C-20 only, registered in Daly City, no building or drywall classification and no evidence for this scope.",
+      "source_ids": [
+        "CSLB-966337"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
+      "phone": "(415) 751-1933",
+      "license": "966337",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-17",
+      "name": "FDL Plumbing",
+      "reason": "C-36 only, registered in Daly City, workers-compensation exemption, no building classification and no evidence for this scope.",
+      "source_ids": [
+        "CSLB-1086935"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "phone": "(415) 678-9557",
+      "license": "1086935",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-19",
+      "name": "Citywide Plumbing",
+      "reason": "C-36 only, workers-compensation exemption, and the CSLB record shows the licence was reissued to another entity on 2026-07-06 — confirm the current operator before relying on older reputation.",
+      "source_ids": [
+        "CSLB-954385"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "phone": "(415) 716-1519",
+      "license": "954385",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-18",
+      "name": "Precision Rooter & Drain",
+      "reason": "C-36 only with a workers-compensation exemption; the indexed description is drain cleaning and rooter work rather than fixture or overflow replacement.",
+      "source_ids": [
+        "CSLB-961218"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "phone": "(415) 724-1824",
+      "license": "961218",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-23",
+      "name": "Clever Plumbing & Rooter",
+      "reason": "C-36 only, registered in San Bruno, workers-compensation exemption, and the licence was issued on 2026-09-04 — no track record yet for delicate occupied-unit work.",
+      "source_ids": [
+        "CSLB-1160613"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
+      "phone": "(650) 834-0821",
+      "license": "1160613",
+      "status": "Current and active"
     },
     {
       "provider_id": "P-20",
       "name": "Cahill Contractors",
-      "license": "300647",
-      "reason": "A + B only, no C-36; the record is a large commercial general contractor. Outside this job's published fit.",
+      "reason": "A + B general contractor with no plumbing classification; this is a large commercial builder, not a one-fixture repair provider.",
       "source_ids": [
         "CSLB-300647"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647"
-    }
-  ],
-  "excluded": [
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "phone": "(415) 986-0600",
+      "license": "300647",
+      "status": "Current and active"
+    },
     {
       "provider_id": "P-22",
       "name": "Kenneth Asire Plumbing",
-      "license": "1027286",
-      "reason": "CSLB reports the licence under Contractors Bond Suspension, with the recorded bond cancelled 08/16/2026. Not eligible for a first call until the suspension is lifted and shown on the official record.",
+      "reason": "Licence is suspended for a contractors-bond suspension on the checked record. Do not hire while suspended.",
       "source_ids": [
         "CSLB-1027286"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "phone": "(415) 913-8048",
+      "license": "1027286",
+      "status": "Suspended"
     },
     {
       "provider_id": "P-24",
       "name": "Portola Plumbing Services",
-      "license": null,
-      "reason": "No exact legal entity or licence match was confirmed, so every identity field is blank. It cannot be contacted or ranked on this evidence.",
+      "reason": "Identity unresolved: no licence number, phone, address or status could be matched on the official CSLB lookup. Every field is left blank.",
       "source_ids": [
         "CSLB-SEARCH",
         "YELP-PORTOLA"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "phone": "",
+      "license": "",
+      "status": "Unresolved"
     }
   ]
 }

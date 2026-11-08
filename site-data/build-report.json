@@ -1,13 +1,13 @@
 {
-  "built_at": "2026-11-08T23:02:40.871639+00:00",
+  "built_at": "2026-11-08T23:05:25.387664+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
     "index.html",
     "executive-summary.html",
+    "decision-analysis.html",
     "requirements.html",
     "providers.html",
-    "ranking.html",
     "estimates.html",
     "technical-approach.html",
     "code-and-permit.html",
@@ -17,9 +17,6 @@
   ],
   "counts": {
     "providers": 24,
-    "ranked": 11,
-    "screened": 11,
-    "excluded": 2,
     "cslb_records": 23,
     "active": 22,
     "suspended": 1,
@@ -32,7 +29,10 @@
     "compliance": 13,
     "reviews": 5,
     "sources": 73,
-    "flags": 38
+    "flags": 40,
+    "ranking": 10,
+    "ranking_held": 13,
+    "ranking_crosscheck": 11
   },
   "preserved": [
     "redirect stubs",

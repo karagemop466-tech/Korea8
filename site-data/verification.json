@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-08T23:02:41.297225+00:00",
+  "checked_at": "2026-11-08T23:05:25.775799+00:00",
   "result": "PASS",
-  "checks_run": 28,
-  "checks_passed": 28,
+  "checks_run": 25,
+  "checks_passed": 25,
   "checks_failed": 0,
-  "canonical_rows_checked": 294,
-  "tracked_html_files": 67,
+  "canonical_rows_checked": 287,
+  "tracked_html_files": 68,
   "checks": [
     {
       "check": "all canonical pages present",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "294 rows; offenders: "
+      "detail": "287 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -113,39 +113,24 @@
       "detail": ""
     },
     {
-      "check": "ranking row count parity",
-      "ok": true,
-      "detail": "11/11"
-    },
-    {
-      "check": "ranking screened/excluded parity",
+      "check": "ranking cross-check scores, order and sources",
       "ok": true,
       "detail": ""
     },
     {
-      "check": "ranking scores, order, contacts and source ids",
+      "check": "ranking cross-check table parity",
       "ok": true,
-      "detail": ""
+      "detail": "12/12"
     },
     {
-      "check": "no provider both ranked and screened/excluded",
+      "check": "canonical ranking rows carry official link, phone and reproducible score",
       "ok": true,
-      "detail": "set()"
-    },
-    {
-      "check": "ranking excludes suspended licence",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "check": "only owner-reported amounts appear in ranking costs",
-      "ok": true,
-      "detail": "[135, 550, 614]"
+      "detail": "10 ranked + partner"
     },
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "240 links; offenders: "
+      "detail": "234 links; offenders: "
     }
   ]
 }

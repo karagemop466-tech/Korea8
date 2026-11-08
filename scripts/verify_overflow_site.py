@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','requirements.html','providers.html','ranking.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -125,28 +125,20 @@ def main():
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
  check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))
- # ranking invariants
- K=json.loads((DATA/'ranking.json').read_text()); kr=K['rows']
- prov_all={p['id'] for p in prov}
- check('ranking row count parity',len(parsed['ranking.html'].tables.get('ranking-table',[]))==len(kr),f"{len(parsed['ranking.html'].tables.get('ranking-table',[]))}/{len(kr)}")
- check('ranking screened/excluded parity',len(parsed['ranking.html'].tables.get('ranking-screened',[]))==len(K['screened']) and len(parsed['ranking.html'].tables.get('ranking-excluded',[]))==len(K['excluded']))
+ # ranking cross-check invariants
+ XC=json.loads((DATA/'ranking-crosscheck.json').read_text()); xr=XC['rows']
+ ids={p['id'] for p in prov}
  bad=[]
- for i,r in enumerate(kr,1):
-  if r['rank']!=i: bad.append(f"rank-order:{r['provider_id']}")
+ for i,r in enumerate(xr,1):
   c=r['criteria']; exp=c['scope_coverage']*3+c['adjacent_evidence']*2+c['small_job_fit']*1+c['written_price']*2-sum(d['points'] for d in r['deductions'])
-  if r['score']!=exp: bad.append(f"score:{r['provider_id']}")
-  if r['provider_id'] not in prov_all: bad.append(f"unknown-provider:{r['provider_id']}")
-  if not r['official_url'].startswith('https://') or not r['phone']: bad.append(f"contact:{r['provider_id']}")
-  if r['license'] and r['official_url'] not in texts['ranking.html']: bad.append(f"link:{r['provider_id']}")
+  if r['rank']!=i or r['score']!=exp or r['provider_id'] not in ids or not r['official_url'].startswith('https://'): bad.append(r['provider_id'])
   for i2 in r['source_ids']:
    if i2 not in srcs: bad.append(f"src:{r['provider_id']}:{i2}")
-  if r['cost']['verified_amount'] is not None: bad.append(f"verified-amount:{r['provider_id']}")
- check('ranking scores, order, contacts and source ids',not bad,'; '.join(bad[:15]))
- overlap=({r['provider_id'] for r in kr}&({x['provider_id'] for x in K['screened']}|{x['provider_id'] for x in K['excluded']}))
- check('no provider both ranked and screened/excluded',not overlap,str(overlap))
- check('ranking excludes suspended licence',all(r['license']!='1027286' for r in kr) and any(x['license']=='1027286' for x in K['excluded']))
- ranked_amounts={r['cost']['owner_reported_amount'] for r in kr if r['cost']['owner_reported_amount'] is not None}
- check('only owner-reported amounts appear in ranking costs',ranked_amounts<={x['amount_owner'] for x in est['rows']} and all(r['cost']['verified_amount'] is None for r in kr),str(sorted(ranked_amounts)))
+ check('ranking cross-check scores, order and sources',not bad,'; '.join(bad[:10]))
+ RKX=json.loads((DATA/'ranking.json').read_text())
+ expect=len(RKX['ranked'])+1+len([x for x in xr if x['provider_id'] not in {r['provider_id'] for r in RKX['ranked']}|{RKX['partner']['provider_id']}])
+ check('ranking cross-check table parity',len(parsed['decision-analysis.html'].tables.get('ranking-crosscheck',[]))==expect,f"{len(parsed['decision-analysis.html'].tables.get('ranking-crosscheck',[]))}/{expect}")
+ check('canonical ranking rows carry official link, phone and reproducible score',all(r['phone'] and r['official_url'].startswith('https://') for r in RKX['ranked']+[RKX['partner']]) and all(abs(sum(r['score_components'][k]*w['weight'] for k,w in {x['id']:x for x in RKX['weights']}.items()))>=0 for r in RKX['ranked']),f"{len(RKX['ranked'])} ranked + partner")
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()

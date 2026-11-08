@@ -6,7 +6,9 @@
 > and is checked by `scripts/verify_overflow_site.py` plus `tests/test_overflow_site.py`.
 > Executive summary: [`OVERFLOW_EXECUTIVE_SUMMARY.md`](OVERFLOW_EXECUTIVE_SUMMARY.md).
 > Ranked hiring decision analysis (reasoning, cost basis, official licence links and phones):
-> [`ranking.html`](ranking.html) from [`overflow-integration/data/ranking.json`](overflow-integration/data/ranking.json).
+> [`decision-analysis.html`](decision-analysis.html) from [`overflow-integration/data/ranking.json`](overflow-integration/data/ranking.json),
+> with an independent second weighting published as a cross-check from
+> [`ranking-crosscheck.json`](overflow-integration/data/ranking-crosscheck.json).
 > Audit: [`overflow-integration/REPO_AUDIT.md`](overflow-integration/REPO_AUDIT.md).
 > Earlier parallel drafts are preserved as redirect stubs/archives.
 > See [`COORDINATION.md`](COORDINATION.md) for claims, sources and publication records.

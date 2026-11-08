@@ -10,30 +10,25 @@ unit only under a written combined contract that names the plumbing and drywall/
 Do not assume a permit exemption: SF.gov requires a permit before cutting/replacing pipes, and
 SF Plumbing Code §104.2 exemptions are conditional.
 
-## Ranked shortlist (best choice to hire)
-Scored on four published inputs (licence coverage ×3, adjacent published evidence ×2, small-job fit ×1, written price ×2)
-minus documented warnings; maximum 16. Full reasoning, cost basis, official links and phones are on `ranking.html`.
+## Ranked hiring order (decision support, not a verified performance rating)
+Weighted on licence capability, scope evidence, licence standing, occupied-unit experience and price
+evidence; full reasoning, scores and cost basis are on the Ranked decision analysis page.
 
-1. **Rapid Flow Plumbing & Rooter #1115649** (12) — B + C-36, publishes general contracting and plumbing from simple repair to
-   renovation; tied with Ace, tie broken by the published one-contract offer. No price on file.
-2. **Ace Plumbing & Rooter #829071** (12) — B, C-36, A, C-4, C-16, C-10; residential/HOA plumbing; workers'-comp insured.
-   No price on file.
-3. **Expert Plumbing Solutions #977638** (11) — owner-reported $614 for "replace waste and overflow", the closest scope wording
-   on file; C-36 only, so the ceiling repair needs a named second party.
-4. **Heise’s Plumbing #1089561** (11) — strongest published adjacent case evidence (tub waste/overflow, including ceiling
-   access); C-36 only, no B or C-9.
-5. **We Do Construction #1096552** (11) — B + C-36 with self-performed plumbing under one contract; larger-project positioning,
-   small-repair acceptance unconfirmed.
-6. **Ayoob & Peery #392967** (11) — B + C-36 but commercial mechanical positioning; fallback for a combined contract.
-7. **Bay Area Plumbing #757796** (10) — owner-reported $550 lever/plug/spout; shared address and phone with #749536 to clarify.
-8. **Fast Response Plumbing & Rooter #1024971** (9) — owner-reported $135 buys adjustment only, not removal or access.
-9. **Bernal Hill Drywall #995163** (9) — C-9 + B restoration partner; pair with one of the plumbers above.
-10. **Save-On-Interior #749536** (8) — B + C-36 on paper, no published service information.
-11. **D G Construction #297604** (7) — B + C-36 but a CSLB citation disclosure is published.
+1. Ace Plumbing & Rooter #829071, (415) 824-6444 — B + C-36 + A/C-4/C-16/C-10, active since 2003, current workers comp, advertised HOA/property-manager work. No quote on file.
+2. Heise’s Plumbing #1089561, (415) 333-0704 — C-36/C-10/A/C-20; only company-published San Francisco ceiling-access tub waste-and-overflow case; no B or C-9, so the ceiling party must be named. No quote on file.
+3. Rapid Flow Plumbing & Rooter #1115649, (415) 866-8401 — B + C-36, published simple-repair-to-renovation offer; 2024 licence, workers-comp exempt. No quote on file.
+4. Ayoob & Peery #392967, (415) 550-0975 — B + C-36, active since 1980, current workers comp; no scope evidence.
+5. We Do Construction #1096552, (415) 416-5494 — B + C-36; larger-scope positioning, small-repair acceptance unconfirmed.
+6. Expert Plumbing Solutions #977638, (415) 531-5340 — C-36 only; owner-reported $614 for "replace waste and overflow".
+7. Save-On-Interior #749536, (415) 668-8000 — B + C-36 at Bay Area Plumbing's address/phone; ownership unproven, 2015–2016 CSLB cash-deposit letters.
+8. Bay Area Plumbing #757796, (415) 668-8000 — C-36 only; owner-reported $550 but the wording may describe a spout/diverter, not the overflow body.
+9. Discount Plumbing Rooter Services #1140843, (650) 991-2100 — C-36 + A, $2M liability and LLC bond on file; Burlingame, no building classification.
+10. Fast Response Plumbing & Rooter #1024971, (415) 596-6115 — C-36 only; owner-reported $135 is adjustment-only; workers comp expires 2026-12-18.
 
-**Excluded:** Kenneth Asire #1027286 (bond suspension) and Portola Plumbing Services (identity unresolved).
-**Screened, not ranked:** eleven further licences with no published basis to compare, including two limited classifications.
-The order is a decision aid, not a verified performance rating; ranks 3–6 and 8–9 are within one tie-break step of each other.
+Restoration partner: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B; not a plumbing candidate.
+Held back: D G Construction (CSLB citation disclosed), Advanced Plumbing (future-suspension warning),
+24/7 SF Handyman (B-2), SF Building Group (B only), Precision (drain cleaning), Clever (licensed 2026-09-04),
+Cahill (no C-36), Kenneth Asire (suspended), Portola (identity unresolved).
 
 ## Estimates
 Owner-supplied amounts dated 2026-08-30: Expert $614 (replace waste and overflow), Bay Area $550

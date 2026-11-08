@@ -195,8 +195,8 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Business-page fetches returned HTTP 403. Only search-index excerpts were available for some providers; numeric ratings and review counts were not verified.",
-      "action": "Publish review links as unverified leads with retrieval limits; do not present ratings as facts.",
+      "detail": "Yelp returned HTTP 403 to automated retrieval again on 2026-11-08, as it did in earlier sessions. Ratings, review counts and review text are therefore blank on every page; only URL strings and search-index excerpts are recorded.",
+      "action": "Re-check any review figure manually in a browser at the time of contact; never treat an indexed excerpt as a verified review.",
       "source_ids": [
         "YELP-RF",
         "YELP-ACE",
@@ -533,24 +533,52 @@
     {
       "id": "F-37",
       "severity": "Medium",
-      "category": "Decision analysis",
-      "title": "The ranked order is a documented decision aid, not a verified performance rating",
-      "detail": "Ranks come from four published inputs on the CSLB record and the companies' own sites, minus documented warnings. No workmanship, availability, insurance-claims history or review score was verified, and no provider was contacted. Firms on equal scores are effectively tied.",
-      "action": "Use the order to sequence calls, then replace every score input with what the provider confirms in writing.",
+      "category": "Ranking",
+      "status": "Open",
+      "title": "The hire ranking is editorial decision support, not a verified performance rating",
+      "detail": "The ranked page orders candidates with a transparent weighted score built only from official CSLB fields, company-published service statements and the owner-supplied quote wording. No provider was contacted and no reference, completion record or verified review was obtained, so the order cannot be read as proof that one firm performs better than another.",
+      "action": "Use the ranking to decide who to call first, then replace the score with documented answers, a written combined scope and a fixed price once providers respond.",
       "source_ids": [
+        "OWNER",
         "CSLB-SEARCH",
         "REPO-BOARD"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
-      "status": "Open"
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
     },
     {
       "id": "F-38",
+      "severity": "Low",
+      "category": "Licensing",
+      "status": "Open",
+      "title": "Clever Plumbing & Rooter was licensed on 2026-09-04",
+      "detail": "The CSLB record shows an issue date of 2026-09-04 with a workers-compensation exemption (certified no employees). The licence is current and active, but there is no tenure or published evidence for delicate occupied-unit work.",
+      "action": "Keep it below the shortlist and treat any quote as unproven until references and insurance are produced.",
+      "source_ids": [
+        "CSLB-1160613"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+    },
+    {
+      "id": "F-39",
+      "severity": "Medium",
+      "category": "Repository",
+      "status": "Open",
+      "title": "Three earlier-session pull requests remain open and unmerged",
+      "detail": "PRs #35, #38 and #39 were opened on 2026-11-07 by other sessions. One of them carries a failing check. They conflict with the merged canonical dashboard, so merging them would revert verified work.",
+      "action": "Owner decision: close them, or have the owning session rebase onto the current main. This session did not touch another session's pull request.",
+      "source_ids": [
+        "REPO-BOARD",
+        "REPO"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
+    },
+    {
+      "id": "F-40",
       "severity": "Medium",
       "category": "Cost basis",
-      "title": "No ranked provider has a verified price; only three owner-reported amounts exist",
-      "detail": "Nine of the eleven ranked entries have no price on file. The three owner-supplied amounts cover three different scopes (removal/replacement, lever/plug/spout with diverter, and adjustment only), and none of them is a verified price. The official $290 Category 1P fee is conditional and §104.5 may remove the issuance fee entirely.",
-      "action": "Request one identical written scope from the top four and treat every amount as unverified until the provider puts it in a signed contract.",
+      "title": "Only three owner-reported amounts exist and none of them is a verified price",
+      "detail": "Ten ranked or partner entries carry no price at all. The three owner-supplied amounts cover three different scopes — removal/replacement of the assembly, lever/plug/spout with diverter, and adjustment of the handle only — and none of the three prices the ceiling opening, the drywall patch or texture. The official $290 Category 1P fee is conditional and §104.5 may remove the issuance fee entirely.",
+      "action": "Request one identical written scope from the top three ranked firms and treat every amount as unverified until it appears in a signed contract.",
       "source_ids": [
         "OWNER",
         "SF-FEES",

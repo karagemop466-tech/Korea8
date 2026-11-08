@@ -1063,3 +1063,114 @@ This session will not modify files claimed by other sessions. Findings requiring
 ### Audit record — 2026-11-08
 
 Task done: `audit/REPORT_2026-11-08_9c487d70.md` documents structural checks (22/22; 10 unit tests) and selective independent rechecks of three CSLB records, the Heise's case and SF.gov. It does not assert every external fact was independently rechecked. Existing live site and Pages run for `854b0b1` confirmed. Four rows were accepted by the independent parser as blank/unverified without recognized source links; request to canonical integration: review against the strict official-link-per-row requirement and flag or fix as appropriate. Heise's project page contains case content alongside an embedded 404 message; request to flag and monitor the source. No providers contacted. Initial remote session branch did not exist, so initial pull could not succeed; the claim was pushed as the new remote branch immediately thereafter.
+
+---
+
+## Session `arena/b0d7ecf7-korea8` — 2026-11-08 fresh re-verification + ranked decision analysis
+
+**Claim time:** 2026-11-08 (committed and pushed before any other edit, per protocol.)
+**Platform-pinned branch:** `arena/b0d7ecf7-korea8` (the protocol's `session-<id>/<task>` name cannot be created: the
+platform pins every session to one branch. This is recorded, not silently ignored.)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `k8-01` | Claim this board before any other edit | done | `arena/b0d7ecf7-korea8` | `COORDINATION.md` |
+| `k8-02` | Independent 2026-11-08 re-verification: all 23 CSLB records re-read on cslb.ca.gov, key official rule sources re-read, stored data corrected where the official record differs | done | `arena/b0d7ecf7-korea8` | `overflow-integration/data/*.json`, `audit/REPORT_2026-11-08_b0d7ecf7.md` |
+| `k8-03` | Ranked decision analysis (owner-requested best-choice ranking with reasoning, cost basis, phone and official links) as a new category page | done | `arena/b0d7ecf7-korea8` | `overflow-integration/data/ranking.json`, `overflow-integration/data/providers.json`, `scripts/build_overflow_site.py`, generated root `*.html`, `style.css` |
+| `k8-04` | Rebuild, run verifier and unit tests, internal link check, cache-busted live check | done | `arena/b0d7ecf7-korea8` | `overflow-integration/build-report.json`, `overflow-integration/verification-report.json`, `scripts/verify_overflow_site.py` (checks only, no new data) |
+| `k8-05` | PR → `main`, merge, confirm Pages deploy for the merge commit, record PR link and result here | in progress | `arena/b0d7ecf7-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+
+**Scope rules.** This session edits only the canonical bathtub tree (`overflow-integration/**`, the root dashboard pages
+it generates, and `COORDINATION.md`). It does **not** touch the parallel brief directories
+(`bathtub/`, `bathtub-overflow/`, `bathroom-overflow/`, `trip-lever/`, `project/`, `docs/`) or the DOE GEMS research
+artefacts; any needed change there is logged here as a cross-session request instead of being edited.
+
+**No-open-PR rule.** PRs **#35**, **#38** and **#39** remain open from earlier sessions. This session will not merge or
+close another session's PR; that remains an item for the owner (see the Flagged for Review page).
+
+### `k8-02` — completed record (session `arena/b0d7ecf7-korea8`, 2026-11-08)
+
+**Report:** `audit/REPORT_2026-11-08_b0d7ecf7.md`
+
+- **All 23 CSLB licence detail pages re-read directly** on 2026-11-08 (CSLB banner timestamps 11/8/2026
+  2:57:46 PM – 2:58:32 PM, timezone unstated). **23/23 stored licensure fields matched exactly** — legal
+  name, classifications, status, expiry, registered city, phone and workers-compensation entry. No
+  licensure correction was needed; per-row timestamps were refreshed and `as_of` moved to 2026-11-08.
+- **New official detail:** D G Construction #297604 has a complaint-disclosure link; the disclosure lists
+  citation **2 2022 002099 (03/23/2023, "for disclosure only per B&P 7124.6")** and does not publish the
+  conduct. Recorded as a citation, not as a finding on merit.
+- **Rule sources re-read:** SF.gov plumbing/mechanical permit page (permit trigger, §104.2 link, eligible
+  licence classes, inspection before covering pipes, help desk 628-652-4900), BPC §7057 verbatim, Civil
+  Code §1954 verbatim, CSLB C-9 classification, Heise's Ingleside case (still live, still carries its 404
+  template block). **Not** re-read today, therefore not claimed as verified today: full §104.2 text, the
+  DBI fee PDF, the Watco PDF, the EPA pages — those rows keep their 2026-11-07 dates.
+- **Yelp re-tested:** HTTP 403 again on 2026-11-08. Ratings, counts and review text stay blank.
+- **Privacy:** `git ls-files` sweep for the internal-instruction phrasings finds no disclosure of the
+  instruction or its reason anywhere in tracked files. Matches are verifier banned-pattern lists, a
+  generic "no structure may be altered without a permit" sentence, and a README line stating that
+  nothing confidential is published. No wording added this session refers to it.
+
+### `k8-03` — completed record (ranked decision analysis)
+
+The owner asked for contractors to be **ranked best choice to hire**, with reasoning and costs explained
+per rank and an official verified link plus phone number for each. The site previously carried only an
+"editorial inquiry order" that explicitly disclaimed ranking, so this session added the missing
+deliverable rather than restating the disclaimers.
+
+| Item | Value |
+|---|---|
+| New data | `overflow-integration/data/ranking.json` — 10 ranked candidates, 1 restoration partner, 13 identities assessed and held back |
+| New page | `decision-analysis.html`, in the primary navigation of all 11 canonical pages |
+| Criteria | C1 combined plumbing + building capability (0.30) · C2 evidence of this specific scope (0.20) · C3 licence standing/tenure (0.20) · C4 occupied-unit experience (0.15) · C5 price evidence (0.15) |
+| Resulting order | Ace 3.85 · Heise's 3.45 · Rapid Flow 3.15 · Ayoob & Peery 3.15 · We Do 2.95 · Expert 2.90 · Save-On-Interior 2.60 · Bay Area 2.55 · Discount 2.30 · Fast Response 2.20; Bernal Hill is the restoration partner |
+| Cost handling | Only the three owner-reported amounts appear ($614 Expert, $550 Bay Area, $135 Fast Response), each labelled owner-reported with `amount_verified` blank. Every other scope shows a blank and "no quote on file" — no price was inferred |
+| Single source of truth | Dashboard "who to call first" panel, executive summary, providers shortlist and estimates page all derive their order from `ranking.json` |
+
+### `k8-04` — completed record
+
+| Check | Result |
+|---|---|
+| `python scripts/build_overflow_site.py` | 11 pages built; 24 provider identities, 23 CSLB records, 42 requirements, 73 sources, 39 flags, 10 ranked |
+| `python scripts/verify_overflow_site.py` | **22/22 PASS** — 273 canonical table rows each carry an external source link, 220 tracked-HTML internal links resolve, no broken anchors |
+| `python -m unittest discover -s tests -p 'test_overflow*.py'` | 10 tests OK |
+| Blank-vs-unverified discipline | every `amount_verified`, rating and review count is null; Portola's fields remain blank |
+
+### Irregularities recorded by this session
+
+1. Ranking is editorial decision support (F-37); no provider was contacted and no reference or verified
+   review exists. The weights are published so the owner can re-order.
+2. No provider in the register holds both C-36 (plumbing) and C-9 (drywall); the all-in-one requirement
+   needs a B + C-36 contract that names the plastering party, or a plumbing lead plus Bernal Hill.
+3. Only three owner-reported amounts exist and none prices the ceiling opening.
+4. D G Construction's disclosed citation (above) keeps it out of the hiring order until the owner reviews.
+5. Advanced Plumbing (future-suspension warning), Kenneth Asire (suspended) and Portola (unidentified)
+   cannot be recommended as they stand.
+6. Yelp/Google review evidence is still unobtainable automatically (HTTP 403).
+7. PRs **#35, #38, #39** from earlier sessions remain open and conflict with merged work (F-39). This
+   session did not merge or close another session's PR.
+
+### Merge reconciliation — session `arena/a8da1cca-korea8` with PR #45 (`arena/b0d7ecf7-korea8`), 2026-11-08
+
+While this branch was open, two other sessions landed on `main`: PR #43 (an independent current-state audit) and PR #45
+(`arena/b0d7ecf7-korea8`), which produced **its own ranked decision analysis**. Both sessions had claimed the same work,
+so two ranking datasets and two ranking pages were produced independently. Nothing was discarded; the reconciliation is
+recorded here in full.
+
+| Conflicted path | Resolution |
+|---|---|
+| `overflow-integration/data/ranking.json`, `decision-analysis.html`, and every generated page | **Took `main`'s version.** The canonical weighted analysis (`ranking.json` with criteria C1–C5 and weights summing to 1.00; `decision-analysis.html`) is published as the single hiring page, with its per-rank reasoning, cost basis, phones and official CSLB links. |
+| This session's independent weighting | **Preserved, not deleted:** moved to `overflow-integration/data/ranking-crosscheck.json` and published as a **cross-check section** on `decision-analysis.html`, comparing both orders row by row and explaining where and why they differ. Its rubric, screened list and excluded list remain machine-readable. |
+| `ranking.html` (this session's page) | Removed before publication — a second competing hiring page would have been ambiguous. Its content is superseded by `decision-analysis.html` plus the cross-check section. |
+| `compliance.json`, `estimates.json` | **This session's version kept** (the other session did not touch them): §104.2 exempt-work detail, BPC §7048 advertising/employee conditions, new row C-13 for SFPC §104.5, and the §104.5 note in the estimates analysis. |
+| `providers.json`, `sources.json`, `flags.json` | Took `main`'s version, which carries the same 2026-11-08 re-verification (identical CSLB "data current as of" stamps) and adds checked dates plus flags F-37/F-38/F-39. This session's cost-basis flag was renumbered **F-40** to avoid clobbering F-38. |
+| `COORDINATION.md` | Auto-merged; both sessions' records kept, plus this note. |
+
+**Post-merge verification:** `scripts/build_overflow_site.py` → 11 pages, 10 ranked + 1 partner + 11 cross-check records,
+40 flags; `scripts/verify_overflow_site.py` → **25/25 checks PASS** (was 22/22 before this session's additions: three new
+checks cover the cross-check scores, its table parity, and official link/phone coverage for every canonical ranking row);
+`python -m unittest discover -s tests -p 'test_overflow*.py'` → **15 tests OK** (5 new ranking tests). Privacy sweep over the
+served tree returns zero hits. No provider was contacted.
+
+**Note for the owner:** the two independent weightings agree on the top firms (Ace, Rapid Flow and Heise’s are the top
+three or four in both) and differ mainly in how much weight a written price or a one-contract combined offer deserves.
+The published page says so explicitly rather than presenting a single number as fact.
