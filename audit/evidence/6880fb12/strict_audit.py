@@ -14,7 +14,7 @@ from urllib.parse import urlsplit, unquote
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 DATA = ROOT / 'overflow-integration' / 'data'
-PRIMARY_KINDS = {'official-government', 'official-company', 'official-manufacturer', 'official-code-publisher', 'official-tool', 'owner-record', 'repository-primary'}
+PRIMARY_KINDS = {'official-government', 'official-company', 'official-manufacturer', 'official-code-publisher', 'official-tool'}
 SOURCES = {s['url']: s for s in json.loads((DATA / 'sources.json').read_text())['rows']}
 
 class TableParser(HTMLParser):

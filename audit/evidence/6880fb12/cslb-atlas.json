@@ -1,0 +1,25 @@
+{
+  "checked": "2026-11-08",
+  "session": "arena/6880fb12-korea8",
+  "method": "Direct fetch_page retrieval of official CSLB license-detail URL after PR #52 added Atlas as a conditional lead.",
+  "row": {
+    "license": "868994",
+    "legal_name": "ATLAS PLUMBING & ROOTER",
+    "address": "3311 MISSION STREET UNIT 165",
+    "registered_city": "SAN FRANCISCO",
+    "phone": "(650) 871-9863",
+    "classifications": [
+      "C36",
+      "A"
+    ],
+    "expiry": "2028-03-31",
+    "status": "Current and active",
+    "workers_comp_kind": "employee service group policy",
+    "workers_comp_expiry": "07/01/2027",
+    "source_timestamp": "11/8/2026 3:19:30 PM; timezone not stated",
+    "note": "License reissued to another entity 03/25/2008. CSLB phone differs from company contact page; canonical register preserves CSLB phone and flags discrepancy.",
+    "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994"
+  },
+  "field_differences": [],
+  "note": "Supplemental to the 23-record baseline transcription; PR #52 main now contains 24 checked CSLB identities plus Portola unresolved."
+}
