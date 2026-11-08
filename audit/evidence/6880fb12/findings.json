@@ -1,0 +1,122 @@
+{
+  "session": "arena/6880fb12-korea8",
+  "checked": "2026-11-08",
+  "baseline_main": "2d680ca20712314ed1461b82c4387a3d78fc8e03",
+  "status": "independent audit complete; canonical application pending active-owner handoff",
+  "structural_result": {
+    "canonical_pages": 11,
+    "canonical_table_rows": 274,
+    "rows_with_recognized_primary_source_link": 274,
+    "tracked_html_files": 68,
+    "internal_links_checked": 235,
+    "broken_internal_links": 0,
+    "canonical_verifier": "22/22 PASS",
+    "unit_tests": "10/10 PASS",
+    "older_independent_parser": "0 problems, but 4 rows were treated as blank-marked exceptions because its hostname allowlist omitted codelibrary.amlegal.com, ayoobpeery.com and bernalhilldrywall.com; manual review confirms those rows do carry primary-source links"
+  },
+  "findings": [
+    {
+      "id": "A6880-01",
+      "severity": "High",
+      "type": "new evidence",
+      "targets": ["overflow-integration/data/sources.json", "overflow-integration/data/ranking.json", "overflow-integration/data/flags.json", "OVERFLOW_EXECUTIVE_SUMMARY.md"],
+      "finding": "Heise's official Paint, Patch & Drywall Repair page expressly advertises plumbing-access drywall cutout repair, ceiling water-stain patching, paint touch-up, occupied rental/tenant-schedule coordination. This is stronger all-in-one service evidence than the current ranking narrative, which only says the drywall half must be subcontracted or separately contracted.",
+      "evidence": "audit/evidence/6880fb12/heise-drywall.json",
+      "official_url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+      "proposed_action": "Add a HEISE-DRYWALL official-company source; update Heise's ranking why/short_why/ask and F-18 to state the advertised restoration service while preserving the unresolved licensing/contract-structure gate. Do not infer B/C-9 self-performance from the service page.",
+      "license_gate": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "id": "A6880-02",
+      "severity": "Medium",
+      "type": "source attribution",
+      "targets": ["overflow-integration/data/sources.json:WATCO", "overflow-integration/data/requirements.json:R-02", "overflow-integration/data/requirements.json:R-40", "overflow-integration/data/technical.json:T-07"],
+      "finding": "The retrieved Watco 500/501/600TL sheet does not explicitly prescribe a fill/operate leak test. Step 7 says to remove/readjust the drop cylinder so the drain stops water when closed and says a slow drip from inside the tee is normal/acceptable.",
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "proposed_action": "Remove the claim that the sheet includes a fill/operate leak test. Keep fill/function/leak testing before covering as a proposed acceptance control, supported by the manufacturer's adjustment/sealing instruction plus DBI inspection-before-covering, not as a verbatim manufacturer test step."
+    },
+    {
+      "id": "A6880-03",
+      "severity": "Low",
+      "type": "source attribution",
+      "targets": ["overflow-integration/data/sources.json:SF-CODE-104", "overflow-integration/data/flags.json:F-22"],
+      "finding": "SF Plumbing Code §104.2 was retrieved in chunk 13; §104.5 was retrieved in chunk 14. Current source/flag wording attributes the exemption text to chunk 14 only.",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "proposed_action": "Correct the retrieval note to §104.2 chunk 13 and §104.5 chunk 14."
+    },
+    {
+      "id": "A6880-04",
+      "severity": "Medium",
+      "type": "omitted official condition",
+      "targets": ["overflow-integration/data/compliance.json", "OVERFLOW_EXECUTIVE_SUMMARY.md"],
+      "finding": "SF Plumbing Code §104.5 says replacement of a plumbing fixture or gas appliance without a change in drainage, piping or venting does not require payment of a permit issuance fee. This is a fee condition, not a permit exemption or a waiver of inspection/final-fee requirements.",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "proposed_action": "Add a separate compliance row with the exact conditional fee wording and a limitation that DBI must confirm applicability; do not subtract fees from any quote automatically."
+    },
+    {
+      "id": "A6880-05",
+      "severity": "Medium",
+      "type": "omitted official condition",
+      "targets": ["overflow-integration/data/compliance.json:C-07", "overflow-integration/data/sources.json:BPC-7048"],
+      "finding": "BPC §7048(c) also excludes a person who advertises/holds out as a contractor or employs another person to perform/assist the work. Current C-07 mentions the under-$1,000/no-permit/larger-operation conditions but not these exclusions.",
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
+      "proposed_action": "Add the advertising/holding-out and employment exclusions to the rule/application/limitations."
+    },
+    {
+      "id": "A6880-06",
+      "severity": "Medium",
+      "type": "omitted official condition",
+      "targets": ["overflow-integration/data/compliance.json:C-05", "overflow-integration/data/sources.json:BPC-7057"],
+      "finding": "BPC §7057(b) expressly says framing/carpentry cannot be counted in the two unrelated trades needed for a B prime/subcontract involving other trades. Current C-05 omits that exclusion.",
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "proposed_action": "Add the framing/carpentry exclusion and preserve the requirement to name the licensed plumbing/restoration parties."
+    },
+    {
+      "id": "A6880-07",
+      "severity": "Low",
+      "type": "provenance",
+      "targets": ["overflow-integration/data/requirements.json:R-03"],
+      "finding": "R-03 is labelled an owner requirement, but the neutral owner record says photographs were not supplied; it does not state an owner requirement to obtain them.",
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "proposed_action": "Change origin to Proposed control while keeping the photo-documentation acceptance check."
+    },
+    {
+      "id": "A6880-08",
+      "severity": "Low",
+      "type": "provenance",
+      "targets": ["overflow-integration/data/requirements.json:R-36", "overflow-integration/data/sources.json"],
+      "finding": "The at-least-three-identical-written-bids guidance is published by CSLB, but R-36 currently cites the owner record and CSLB contract page rather than CSLB's Finding the Right Contractor guidance.",
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "proposed_action": "Add a CSLB-FINDING source and cite it for R-36; label the row as guidance/proposed control rather than an owner-supplied requirement unless the owner record is amended by the owner."
+    },
+    {
+      "id": "A6880-09",
+      "severity": "Medium",
+      "type": "verifier gap",
+      "targets": ["scripts/verify_overflow_site.py", "tests/test_overflow_site.py"],
+      "finding": "The canonical verifier's row-source check only requires any href=\"https://\" in a row. It does not require a registered primary-source kind, and the older independent parser's hostname allowlist creates false blank-marked exceptions.",
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/scripts/verify_overflow_site.py",
+      "proposed_action": "Require every canonical tbody row to contain at least one HTTPS link whose URL resolves to a registered primary-source kind (official-government, official-company, official-manufacturer, official-code-publisher, official-tool, owner-record or repository-primary). Review-platform links alone must not satisfy the check. Add a regression test with a row containing only an unregistered HTTPS link."
+    },
+    {
+      "id": "A6880-10",
+      "severity": "Low",
+      "type": "contact irregularity",
+      "targets": ["overflow-integration/data/providers.json:P-01", "overflow-integration/data/flags.json"],
+      "finding": "Rapid Flow's official site advertises 844-BAY-FLOW while CSLB #1115649 lists (415) 866-8401. The current canonical phone is the CSLB number; the role distinction should remain explicit if a contact page is added.",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "proposed_action": "Preserve the CSLB phone as the registry-verified number; if adding the company call number, source it to the official contact page and flag the difference rather than silently replacing one with the other."
+    }
+  ],
+  "unchanged_verified_values": {
+    "cslb_records_rechecked": 23,
+    "cslb_field_differences": 0,
+    "owner_estimates": [
+      {"provider": "Expert Plumbing Solutions", "amount_owner": 614, "amount_verified": null, "date": "2026-08-30"},
+      {"provider": "Bay Area Plumbing", "amount_owner": 550, "amount_verified": null, "date": "2026-08-30"},
+      {"provider": "Fast Response Plumbing & Rooter", "amount_owner": 135, "amount_verified": null, "date": "2026-08-30"}
+    ],
+    "numeric_review_ratings_published": false,
+    "provider_contacted": false
+  }
+}
