@@ -19,8 +19,8 @@ python3 scripts/verify_canonical_site.py    # independent 15-check verification
 
 `build_project_site.session-0e2dfee2.py` is the parallel integration session's later revision of
 the same generator (kept for provenance; it also writes the root pages and links the retired
-briefs). `scripts/build_redirects.py` and `scripts/verify_project_site.py` from that session are
-left in place in `scripts/`; they target the superseded layout, so treat the canonical pair as:
+briefs). The superseded `verify_project_site.py` is archived here; `scripts/verify_project_site.py`
+and `scripts/verify_canonical_site.py` delegate cleanly to `scripts/verify_overflow_site.py` (`scripts/build_redirects.py` checks retired stubs).
 
 The GEMS research tooling in `scripts/` (`build_site.py`, `dti_metric.py`, `evaluate_holdout.py`,
 …) is untouched and still builds the archived `docs/` evidence site.

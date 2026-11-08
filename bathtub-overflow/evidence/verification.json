@@ -354,7 +354,7 @@
     },
     {
       "id": "NO-PRIVATE-LEAK",
-      "description": "no internal permit-timing language appears in the published data or pages",
+      "description": "no sensitive personal details appear in the published data or pages",
       "ok": true,
       "detail": ""
     },

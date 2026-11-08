@@ -23,6 +23,8 @@ def is_official(url):
         "heisesplumbing.com", "eplumbingsolutions.com", "bayareaplumbingsf.com",
         "fastresponseplumbingsf.com", "wedoconstructions.com", "sfbuildinggroup.com",
         "rapidflowbayarea.com", "aceplumbingandrooter.com", "diamondcertified.org",
+        "amlegal.com", "ayoobpeery.com", "bernalhilldrywall.com",
+        "atlasplumbingandrooter.com", "plumbing1builders.com", "buildzoom.com",
         "yelp.com", "angi.com", "homeguide.com", "bbb.org", "github.com"))
 BLANK_MARK = re.compile(r"blank|unverified|not (captured|confirmed|available|retrieved)|—|\?\?", re.I)
 
@@ -72,10 +74,12 @@ for page in PAGES:
 # privacy scan (independent list; generic detector strings allowed)
 PRIVACY = re.compile(r"brief asks for the work|cannot pull a permit|cannot obtain a permit|"
                      r"permit for this week|stay private|private reason|off the record|"
-                     r"under the table|skip the permit|avoid the permit", re.I)
+                     r"under the table|skip the permit|avoid the permit|"
+                     r"private scheduling|permit-timing", re.I)
 for f in list(ROOT.glob("*.html")) + list((ROOT/"overflow-integration").rglob("*.json")) + \
          list(ROOT.glob("project/*.json")) + list(ROOT.glob("site-data/*.json")) + \
-         list((ROOT/"bathtub").rglob("*.json")) + list((ROOT/"data").rglob("*.json")):
+         list((ROOT/"bathtub").rglob("*.json")) + list((ROOT/"data").rglob("*.json")) + \
+         list((ROOT/"bathtub-overflow").rglob("*.json")):
     t = f.read_text(encoding="utf-8", errors="replace")
     for m in PRIVACY.finditer(t):
         # allow detector lists inside verifier/test scripts only (not matched here: no *.py in glob)

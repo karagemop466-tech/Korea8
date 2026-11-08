@@ -31,7 +31,7 @@
 The bathtub waste-and-overflow trip lever is stuck inside concealed plumbing behind the wall. Removal from above is the
 preferred route, but 5+ licensed plumbers would not attempt it because of the risk to hidden plumbing and instead
 recommend working from below — which means opening the ceiling of the storage unit beneath the tub. The unit is
-occupied by tenants, and the brief asks for **one** licensed contractor able to cover both plumbing and drywall.
+occupied by tenants, and the scope calls for **one** licensed contractor able to cover both plumbing and drywall.
 
 Three estimates were collected on 2026-08-30 — **$135** (plunger handle repair/adjustment), **$550** (lever for the tub
 plug and spout with diverter, labour and materials included), **$614** (replacing waste and overflow). All three are
@@ -128,7 +128,7 @@ Full text, evidence and the action to take for each: <https://karagemop466-tech.
 
 ## 10. Scope of this document
 
-This summary and the site contain only verifiable public information: official licence records, official code and fee
-rules, and the owner-provided estimates. No internal or private information from the brief appears in the repository, the
-data files, the page text or the commit history; the handling rule is recorded as FL-21 without disclosing its content.
+This archived summary and site record verifiable public information: official licence records, official code and fee
+rules, and the owner-provided estimates. Sensitive personal owner details are excluded from the repository; the handling rule
+is recorded as FL-21.
 The site is internal-use guidance, not legal advice — the permit determination must come from DBI.

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "P-01",
@@ -15,18 +15,21 @@
       "expiry": "2028-01-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:18:31 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
       "source_ids": [
         "CSLB-1115649",
-        "RF"
+        "RF",
+        "BZ-RAPIDFLOW",
+        "YELP-RF",
+        "YELP-RF2"
       ],
       "website": "https://www.rapidflowbayarea.com/",
       "service_claim": "The company advertises San Francisco/Bay Area plumbing and general contracting, from a simple repair to a complete renovation.",
       "service_source": "RF",
       "service_verified": true,
       "group": "Combined-scope lead",
-      "fit": "First combined-scope inquiry: B + C-36 and a published simple-repair-to-renovation offer. A Yelp-indexed account describes a related tub-plug retrieval, not this exact trip-lever job.",
+      "fit": "Rank #2 Combined Lead: SF B + C-36 with recent SF permit history and repair-to-GC scope. Must verify general liability certificate, WC status if any crew assists, tub-side attempt policy, and named drywall finish scope.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -38,7 +41,13 @@
         "F-01",
         "F-14",
         "F-15"
-      ]
+      ],
+      "rank": 2,
+      "rank_tier": "#2 Dual-Licensed SF Lead (Check GL/Drywall)",
+      "bbb_status": "Not BBB Accredited / No BBB profile found",
+      "diamond_certified": "",
+      "ranking_reason": "SF-based B + C-36 contractor advertising simple plumbing repairs through renovations with verified 2026-03-31 SF plumbing permit activity on BuildZoom; ranks behind Ace because CSLB record is WC-exempt (no employees certified 02/19/2026) and issued Jan 2024 with shorter track record.",
+      "cost_driver": "Owner-operator / 24/7 dispatch overhead; upfront per-job quoting advertised, but confirm general liability coverage and whether a separate C-9 helper/subcontractor requires WC and adds mobilization."
     },
     {
       "id": "P-02",
@@ -58,18 +67,21 @@
       "expiry": "2027-06-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/13/2027",
-      "source_timestamp": "11/7/2026 12:18:55 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
       "source_ids": [
         "CSLB-829071",
-        "ACE"
+        "ACE",
+        "BBB-ACE",
+        "DC-ACE",
+        "YELP-ACE"
       ],
       "website": "https://www.aceplumbingandrooter.com/",
       "service_claim": "The company advertises San Francisco residential plumbing and work for HOAs/property managers, including insurance requirements and purchase orders.",
       "service_source": "ACE",
       "service_verified": true,
       "group": "Combined-scope lead",
-      "fit": "Combined-scope alternative: B + C-36 and published HOA/property-manager experience. Exact concealed trip-lever work and ceiling finishing remain unconfirmed.",
+      "fit": "Rank #1 Primary Lead: Dual B + C-36, active WC, 22-year BBB A+, Diamond Certified since 2007, and HOA/property-manager positioning. Confirm exact tub trip-lever acceptance, whether drywall is self-performed or C-9 subcontracted, and current written price.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -81,7 +93,13 @@
         "F-01",
         "F-14",
         "F-16"
-      ]
+      ],
+      "rank": 1,
+      "rank_tier": "#1 Primary Combined-Scope Lead",
+      "bbb_status": "BBB A+ Accredited since 08/01/2004 (0 complaints in 3 yrs)",
+      "diamond_certified": "Diamond Certified since 2007 (Oct 2026)",
+      "ranking_reason": "Strongest SF credential stack for an occupied rental: active B + C-36, verified active WC for ~20 employees, BBB A+ for 22 years, Diamond Certified since 2007, and explicit HOA/property-manager and SF inspector/permit coordination.",
+      "cost_driver": "Full-service insured corporate overhead and permit coordination; expect higher diagnostic/minimum charge than solo WC-exempt shops; confirm whether drywall finish is self-performed under B or subcontracted to C-9."
     },
     {
       "id": "P-03",
@@ -99,18 +117,24 @@
       "expiry": "2028-04-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 01/11/2027",
-      "source_timestamp": "11/7/2026 12:17:58 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
         "CSLB-1089561",
-        "HEISE"
+        "CSLB-787733",
+        "HEISE",
+        "HEISE-INGLESIDE",
+        "HEISE-MISSION",
+        "HEISE-MAINT",
+        "BBB-HEISE",
+        "YELP-HEISE"
       ],
       "website": "https://www.heisesplumbing.com/",
       "service_claim": "The company advertises San Francisco plumbing and property repairs, and says it handles jobs big or small.",
       "service_source": "HEISE",
       "service_verified": true,
       "group": "Technical case-study lead",
-      "fit": "Strongest published adjacent case evidence: San Francisco tub waste-and-overflow replacements, including one described as using ceiling access. No C-9/B on this license; ask who handles ceiling restoration.",
+      "fit": "Rank #10 Demoted Backup / Technical Reference: Retain Ingleside case study for scoping questions; require BBB complaint explanation, GL/WC confirmation, and named C-9 restoration partner before contracting.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -121,8 +145,15 @@
       "flags": [
         "F-01",
         "F-17",
-        "F-18"
-      ]
+        "F-18",
+        "F-38"
+      ],
+      "rank": 10,
+      "rank_tier": "#10 Demoted Backup (BBB B- / No B or C-9)",
+      "bbb_status": "BBB B- (Not Accredited; 1 unanswered complaint in last 12 mos)",
+      "diamond_certified": "",
+      "ranking_reason": "Demoted from #3 to #10 on 2026-11-08: while active C-36 + WC and self-published SF tub waste/overflow case studies (Ingleside ceiling access) are useful technical references, direct BBB retrieval shows a B- rating with 1 unanswered complaint in the last 12 months (citing cleanup), lists legacy dissolved #787733, lacks B/C-9, and Ingleside URL still embeds a 404 block.",
+      "cost_driver": "Plumbing-only pricing; must add separate C-9 restoration trade if ceiling opens and verify current service warranty and cleanup protocol in writing."
     },
     {
       "id": "P-04",
@@ -137,18 +168,20 @@
       "expiry": "2028-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/19/2027",
-      "source_timestamp": "11/7/2026 12:17:23 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
       "source_ids": [
         "CSLB-977638",
-        "EXPERT"
+        "EXPERT",
+        "YELP-EXPERT",
+        "OWNER"
       ],
       "website": "https://www.eplumbingsolutions.com/",
       "service_claim": "The company advertises San Francisco residential repairs, drain work and fixture installation.",
       "service_source": "EXPERT",
       "service_verified": true,
       "group": "Existing estimate",
-      "fit": "Requote the common scope. C-36 only on the checked license; a separately licensed restoration trade or properly structured prime contract is needed if the ceiling is opened.",
+      "fit": "Rank #7 Re-Quote Lead: Re-quote on standardized combined scope, clarify access path and hours, and pair with C-9 restoration partner if ceiling opens.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -161,7 +194,13 @@
         "F-03",
         "F-04",
         "F-05"
-      ]
+      ],
+      "rank": 7,
+      "rank_tier": "#7 Existing Quote — Re-Scope (Closest Scope)",
+      "bbb_status": "Not BBB Accredited / Not Rated",
+      "diamond_certified": "",
+      "ranking_reason": "Supplied the closest matching scope ($614 owner-reported 'Replace waste and overflow') and carries active C-36 + active WC in SF Outer Sunset; limited by no B/C-9, no drywall restoration plan, Mon-Fri 7:30am-4pm hours, and Not BBB Accredited.",
+      "cost_driver": "$614 owner-reported amount reflects full concealed waste-and-overflow replacement rather than surface linkage adjustment; total job cost rises once below-ceiling restoration (pair w/ #6 Bernal Hill) and any DBI permit are added."
     },
     {
       "id": "P-05",
@@ -176,18 +215,21 @@
       "expiry": "2027-01-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:16:50 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "source_ids": [
         "CSLB-757796",
-        "BAY"
+        "CSLB-749536",
+        "BAY",
+        "YELP-BAYAREA",
+        "OWNER"
       ],
       "website": "https://www.bayareaplumbingsf.com/",
       "service_claim": "The company advertises San Francisco residential/commercial plumbing, leak repair and kitchen/bathroom work.",
       "service_source": "BAY",
       "service_verified": true,
       "group": "Existing estimate",
-      "fit": "Requote the common scope. The supplied wording includes a spout/diverter, which is not automatically the waste-and-overflow assembly. Confirm the contracting entity and restoration trade.",
+      "fit": "Rank #9 Re-Quote / Entity Check: Confirm exact legal contracting entity (#757796 vs #749536), GL insurance, parts list, and ceiling restoration.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -200,7 +242,13 @@
         "F-03",
         "F-04",
         "F-12"
-      ]
+      ],
+      "rank": 9,
+      "rank_tier": "#9 Existing Quote — Clarify Entity & Parts",
+      "bbb_status": "No accredited BBB profile linked",
+      "diamond_certified": "",
+      "ranking_reason": "$550 owner-reported estimate mixes 'plug lever and spout with diverter' terminology; #757796 is C-36 only and WC-exempt while #749536 Save-On-Interior (B+C-36, also WC-exempt) shares (415) 668-8000 and 335 14th Ave.",
+      "cost_driver": "Clarify exact parts (trip-lever linkage vs bath filler spout) and whether dual-licensed #749536 contracts for ceiling drywall; require general liability proof because both entities certify no employees."
     },
     {
       "id": "P-06",
@@ -215,18 +263,20 @@
       "expiry": "2027-03-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 12/18/2026",
-      "source_timestamp": "11/7/2026 12:18:12 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "source_ids": [
         "CSLB-1024971",
-        "FAST"
+        "FAST",
+        "YELP-FASTRESP",
+        "OWNER"
       ],
       "website": "https://www.fastresponseplumbingsf.com/",
       "service_claim": "The company advertises full-service residential plumbing for San Francisco houses, apartments and HOAs.",
       "service_source": "FAST",
       "service_verified": true,
       "group": "Existing estimate",
-      "fit": "Requote the common scope. A repair/adjustment price is not a replacement-plus-access price. C-36 only on the checked license.",
+      "fit": "Rank #8 Re-Quote Lead: Do not treat $135 as a like-for-like replacement bid; requote the identical waste-and-overflow + access scope in writing.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -239,7 +289,13 @@
         "F-03",
         "F-04",
         "F-29"
-      ]
+      ],
+      "rank": 8,
+      "rank_tier": "#8 Existing Quote — Re-Scope (Adjustment Only)",
+      "bbb_status": "Not BBB Accredited / Not Rated",
+      "diamond_certified": "",
+      "ranking_reason": "Active C-36 + WC, 7-day availability, high search-index visibility, but $135 owner-reported estimate covers 'Repair/adjust plunger handle' only — NOT waste-and-overflow replacement or drywall restoration; Not BBB Accredited and CSLB vs Geary St address differs.",
+      "cost_driver": "$135 owner-reported amount represents diagnostic/minor handle adjustment only; expect major price jump if concealed piping/overflow tee must be cut from below."
     },
     {
       "id": "P-07",
@@ -255,7 +311,7 @@
       "expiry": "2028-05-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:18:40 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
       "source_ids": [
         "CSLB-749536"
@@ -276,7 +332,13 @@
       "flags": [
         "F-12",
         "F-30"
-      ]
+      ],
+      "rank": null,
+      "rank_tier": "Conditional B + C-36 Affiliate",
+      "bbb_status": "",
+      "diamond_certified": "",
+      "ranking_reason": "Holds B + C-36 at same address/phone (335 14th Ave / (415) 668-8000) as Bay Area Plumbing #757796, but WC-exempt and carries 2015-2016 CSLB miscellaneous entries; confirm contracting relationship and GL insurance.",
+      "cost_driver": "Owner-operator structure (WC-exempt); clarify if combined drywall+plumbing quote can be written directly under #749536."
     },
     {
       "id": "P-08",
@@ -292,18 +354,20 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 11/14/2027",
-      "source_timestamp": "11/7/2026 12:18:55 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
       "source_ids": [
         "CSLB-1096552",
-        "WEDO"
+        "WEDO",
+        "BBB-WEDO",
+        "YELP-WEDO"
       ],
       "website": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
       "service_claim": "The company advertises San Francisco design-build work, with B + C-36 and self-performed plumbing under one contract.",
       "service_source": "WEDO",
       "service_verified": true,
       "group": "Conditional combined-scope lead",
-      "fit": "B + C-36 and a one-contract offer, but the public positioning emphasizes larger renovations. Confirm willingness to take a small repair before prioritizing.",
+      "fit": "Rank #4 Combined Backup: Active B + C-36, WC, and BBB A+. Confirm small-repair acceptance and minimum fee before scheduling.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -314,7 +378,13 @@
       "flags": [
         "F-14",
         "F-20"
-      ]
+      ],
+      "rank": 4,
+      "rank_tier": "#4 Dual-Licensed Design-Build Option",
+      "bbb_status": "BBB A+ Accredited since 11/24/2025 (0 complaints)",
+      "diamond_certified": "",
+      "ranking_reason": "Holds active B + C-36, active WC (~9 employees), and BBB A+ accreditation, and confirms C-36 plumbing self-performance on site; ranked #4 behind Ace, Rapid Flow and Atlas because website positions for whole-home/luxury remodels rather than small repairs.",
+      "cost_driver": "Remodel/design-build mobilization minimums ($400-$800/sf positioning) likely elevate pricing vs service plumbers unless company accepts small occupied-unit service calls."
     },
     {
       "id": "P-09",
@@ -333,7 +403,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 08/31/2027",
-      "source_timestamp": "11/7/2026 12:18:38 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
       "source_ids": [
         "CSLB-392967",
@@ -354,7 +424,13 @@
       "additional_status": "",
       "flags": [
         "F-20"
-      ]
+      ],
+      "rank": null,
+      "rank_tier": "Secondary Registry Candidate (Commercial/HVAC Focus)",
+      "bbb_status": "Not BBB Accredited",
+      "diamond_certified": "",
+      "ranking_reason": "Long-standing SF B + C-36 + WC contractor, but website positions heavily toward commercial/HVAC/boiler work and BBB is unaccredited; confirm small residential tub repair acceptance.",
+      "cost_driver": "Commercial/multi-trade hourly and mobilization minimums may make single-fixture tub repair expensive."
     },
     {
       "id": "P-10",
@@ -370,18 +446,20 @@
       "expiry": "2028-07-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 03/10/2027",
-      "source_timestamp": "11/7/2026 12:25:05 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
       "source_ids": [
         "CSLB-995163",
-        "BERNAL"
+        "BERNAL",
+        "BBB-BERNAL",
+        "YELP-BERNAL"
       ],
       "website": "https://www.bernalhilldrywall.com/",
       "service_claim": "The company advertises San Francisco drywall installation, patching, painting and texture matching, from small wall repairs to complete build-backs.",
       "service_source": "BERNAL",
       "service_verified": true,
       "group": "Restoration partner",
-      "fit": "Drywall/patch/texture specialist with C-9 + B. A possible restoration partner under a properly structured combined contract; no C-36 on this license.",
+      "fit": "Rank #6 Essential Restoration Partner: Ideal C-9 + B finish contractor to close ceiling cleanly or build a serviceable access panel after any C-36 plumber opens below.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -391,7 +469,13 @@
       "additional_status": "",
       "flags": [
         "F-19"
-      ]
+      ],
+      "rank": 6,
+      "rank_tier": "#6 Essential Restoration Partner (B + C-9)",
+      "bbb_status": "Not BBB Accredited / Not Rated (0 complaints)",
+      "diamond_certified": "",
+      "ranking_reason": "Premier restoration specialist (C-9 Drywall + B General Building, active WC, 0 BBB complaints) whose site and Yelp excerpts document patching ceilings after leaky-pipe tear-outs. Cannot replace plumbing standalone under BPC §7057; pairs directly with #3 Atlas, #5 Discover, or #7 Expert.",
+      "cost_driver": "Separate second-trade mobilization for drywall patch, tape, texture, prime/paint or framed access panel (~$350-$900+ typical patch range depending on opening size and texture match — confirm by written quote)."
     },
     {
       "id": "P-11",
@@ -406,7 +490,7 @@
       "expiry": "2027-06-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:18:25 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
       "source_ids": [
         "CSLB-1106131",
@@ -428,7 +512,13 @@
       "flags": [
         "F-07",
         "F-20"
-      ]
+      ],
+      "rank": null,
+      "rank_tier": "Conditional combined-scope lead",
+      "ranking_reason": "B-only general contractor advertises occupied-space coordination, but focuses on larger projects. Plumbing must be self-performed only if appropriately licensed or subcontracted; identify the C-36 and C-9 parties.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-12",
@@ -443,7 +533,7 @@
       "expiry": "2027-05-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 04/11/2027",
-      "source_timestamp": "11/7/2026 12:19:07 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
       "source_ids": [
         "CSLB-1105133"
@@ -463,7 +553,13 @@
       "additional_status": "",
       "flags": [
         "F-08"
-      ]
+      ],
+      "rank": null,
+      "rank_tier": "Conditional registry candidate",
+      "ranking_reason": "B-2 is not B or C-36. Statute requires at least three unrelated trades and restricts structural work and plumbing-system replacement; do not treat this as an automatic two-trade fit.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-13",
@@ -478,7 +574,7 @@
       "expiry": "2027-11-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 08/21/2027",
-      "source_timestamp": "11/7/2026 12:18:38 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
       "source_ids": [
         "CSLB-1009195"
@@ -498,7 +594,13 @@
       "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
       "flags": [
         "F-10"
-      ]
+      ],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "Active C-36 record carries a future-suspension warning for an outstanding final liability. Review the official record before any engagement.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-14",
@@ -516,7 +618,7 @@
       "expiry": "2027-04-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 10/01/2027",
-      "source_timestamp": "11/7/2026 12:20:49 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
       "source_ids": [
         "CSLB-379364"
@@ -534,7 +636,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-15",
@@ -551,7 +659,7 @@
       "expiry": "2027-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 06/01/2027",
-      "source_timestamp": "11/7/2026 12:20:49 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
       "source_ids": [
         "CSLB-966337"
@@ -569,7 +677,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-16",
@@ -585,7 +699,7 @@
       "expiry": "2027-07-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 04/01/2027",
-      "source_timestamp": "11/7/2026 12:19:02 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
       "source_ids": [
         "CSLB-1140843"
@@ -603,7 +717,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "CSLB also records $2,000,000 liability insurance and a $100,000 LLC employee/worker bond.",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-17",
@@ -618,7 +738,7 @@
       "expiry": "2028-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 01/21/2027",
-      "source_timestamp": "11/7/2026 12:20:33 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
       "source_ids": [
         "CSLB-1086935"
@@ -636,7 +756,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-18",
@@ -651,7 +777,7 @@
       "expiry": "2027-05-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:20:35 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
       "source_ids": [
         "CSLB-961218"
@@ -669,7 +795,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-19",
@@ -684,7 +816,7 @@
       "expiry": "2028-07-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:20:35 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
       "source_ids": [
         "CSLB-954385"
@@ -702,7 +834,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "License reissued to another entity 07/06/2026.",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-20",
@@ -718,7 +856,7 @@
       "expiry": "2027-11-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/01/2027",
-      "source_timestamp": "11/7/2026 12:19:28 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
       "source_ids": [
         "CSLB-300647"
@@ -736,7 +874,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-21",
@@ -752,18 +896,19 @@
       "expiry": "2027-04-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:20:49 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
       "source_ids": [
         "CSLB-297604",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
       "website": "",
       "service_claim": "",
       "service_source": "",
       "service_verified": false,
-      "group": "Additional registry candidate",
-      "fit": "B + C-36 record has a complaint-disclosure link. The official disclosure lists a citation; review its details rather than treating active status as a clean history.",
+      "group": "High-risk caution — active citation",
+      "fit": "High-risk caution: WC-exempt plus active CSLB Citation #2 2022 2099 (BPC §7114.A aided and abetted non-licensee, 03/23/2023). Prefer higher-ranked active-WC leads.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -773,8 +918,15 @@
       "additional_status": "CSLB links to complaint disclosure information; separate disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
       "flags": [
         "F-11",
-        "F-31"
-      ]
+        "F-31",
+        "F-37"
+      ],
+      "rank": null,
+      "rank_tier": "High-Risk Caution (BPC §7114.A Citation)",
+      "bbb_status": "",
+      "diamond_certified": "",
+      "ranking_reason": "Holds B + C-36 in SF, but WC-exempt and direct 2026-11-08 retrieval of CSLB Complaint & Citation Disclosure shows Citation #2 2022 2099 (03/23/2023) for BPC §7114.A ('Aided and abetted non-licensee'). Exclude from priority consideration.",
+      "cost_driver": "Do not evaluate on price before resolving statutory citation and subcontractor compliance concerns."
     },
     {
       "id": "P-22",
@@ -789,7 +941,7 @@
       "expiry": "2027-05-31",
       "status": "Suspended",
       "workers_comp": "Policy recorded; expires 08/30/2027",
-      "source_timestamp": "11/7/2026 12:20:49 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
       "source_ids": [
         "CSLB-1027286"
@@ -809,7 +961,13 @@
       "additional_status": "License under Contractors Bond Suspension. Recorded bond cancellation date 08/16/2026. CSLB notes a received replacement bond may not yet be processed.",
       "flags": [
         "F-09"
-      ]
+      ],
+      "rank": null,
+      "rank_tier": "Excluded — License Suspended",
+      "bbb_status": "",
+      "diamond_certified": "",
+      "ranking_reason": "CSLB Contractors Bond Suspension confirmed still active on 2026-11-08. Prohibited from contracting while suspended.",
+      "cost_driver": "Ineligible — do not solicit bids."
     },
     {
       "id": "P-23",
@@ -824,7 +982,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/7/2026 12:21:30 PM; timezone not stated",
+      "source_timestamp": "11/8/2026 2:57–3:01 PM; CSLB LicenseDetail rechecked",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
       "source_ids": [
         "CSLB-1160613"
@@ -842,7 +1000,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "rank": null,
+      "rank_tier": "Additional registry candidate",
+      "ranking_reason": "License record checked; exact job fit and service acceptance not established.",
+      "cost_driver": "Plumbing/subcontracted scope varies; obtain itemized quote covering access path, restoration, and DBI permit handling.",
+      "bbb_status": "",
+      "diamond_certified": ""
     },
     {
       "id": "P-24",
@@ -875,6 +1039,192 @@
       "additional_status": "",
       "flags": [
         "F-13"
+      ],
+      "rank": null,
+      "rank_tier": "Identity Unresolved (CSLB Pending)",
+      "bbb_status": "",
+      "diamond_certified": "",
+      "ranking_reason": "No verified CSLB license number on file; do not evaluate or compare until legal entity and CSLB number are supplied.",
+      "cost_driver": "Unverified."
+    },
+    {
+      "id": "P-25",
+      "name": "Atlas Plumbing & Rooter",
+      "legal_name": "ATLAS PLUMBING & ROOTER INC",
+      "license": "868994",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 849-2346",
+      "expiry": "2028-03-31",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded (State Comp Ins Fund); expires 07/01/2027",
+      "source_timestamp": "11/8/2026 2:57:50 PM; CSLB LicenseDetail rechecked",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "CSLB-868994",
+        "ATLAS",
+        "BBB-ATLAS",
+        "DC-ATLAS",
+        "YELP-ATLAS"
+      ],
+      "website": "https://www.atlasplumbingandrooter.com/",
+      "service_claim": "SF residential/commercial plumbing, bathtub/shower repair & replacement; BBB also lists (415) 845-9199; CSLB lists (650) 871-9863.",
+      "service_source": "Company website and direct BBB A+ profile (2026-11-08)",
+      "service_verified": true,
+      "group": "Priority specialty lead",
+      "rank": 3,
+      "rank_tier": "#3 Top C-36 Specialist (Pair w/ C-9)",
+      "bbb_status": "BBB A+ Accredited since 06/03/2021 (~20 employees)",
+      "diamond_certified": "Diamond Certified since 2008 (Nov 2026)",
+      "ranking_reason": "Added 2026-11-08: Highest-credential SF C-36 specialist (BBB A+, Diamond Certified since 2008, active WC for ~20 employees, explicit bathtub service and Yelp excerpt noting stuck bathtub drain lever replacement). Ranked #3 overall (top C-36) because it lacks B/C-9 and must pair with #6 Bernal Hill Drywall if ceiling opens.",
+      "cost_driver": "Best cost efficiency if non-destructive tub-side extraction/linkage service succeeds; if below-ceiling access is required, total = Atlas plumbing + separate C-9 drywall patch (~$350-$900+).",
+      "fit": "Rank #3 Overall / #1 C-36 Specialist: BBB A+, Diamond Certified since 2008, active WC, and bathtub drain-lever evidence. Pair with Bernal Hill Drywall #995163 if below-ceiling access is needed.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2",
+      "review_source": "Yelp search excerpt + direct BBB A+ + Diamond Certified (numeric ratings blank)",
+      "additional_status": "None on CSLB LicenseDetail",
+      "flags": [
+        "F-01",
+        "F-14"
+      ]
+    },
+    {
+      "id": "P-26",
+      "name": "Discover Plumbing & Rooter",
+      "legal_name": "DISCOVER PLUMBING AND ROOTER INC",
+      "license": "1041846",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 728-2520",
+      "expiry": "2028-07-31",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded (State Comp Ins Fund); expires 03/03/2027",
+      "source_timestamp": "11/8/2026 2:57:51 PM; CSLB LicenseDetail rechecked",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1041846",
+      "source_ids": [
+        "CSLB-1041846",
+        "BBB-DISCOVER",
+        "DC-DISCOVER",
+        "YELP-DISCOVER"
+      ],
+      "website": "",
+      "service_claim": "SF & San Mateo plumbing repairs, fixtures and sewer lines; 24/7 dispatch noted in Diamond Certified/BBB records.",
+      "service_source": "Indexed BBB A+ and Diamond Certified profiles (2026-11-08)",
+      "service_verified": false,
+      "group": "Priority specialty lead",
+      "rank": 5,
+      "rank_tier": "#5 High-Credential C-36 Backup",
+      "bbb_status": "BBB A+ Accredited since 05/07/2019",
+      "diamond_certified": "Diamond Certified since July 2020 (Jun 2026)",
+      "ranking_reason": "Added 2026-11-08: SF-based C-36 + A holder with active WC, BBB A+ since 2019, and Diamond Certified since 2020. Ranked #5 as strong C-36 backup to Atlas when pairing with Bernal Hill Drywall (#995163) or if tub-side removal works.",
+      "cost_driver": "24/7 service plumbing rates; flat per-job quoting noted on third-party directories; separate C-9 drywall contract needed if ceiling opens.",
+      "fit": "Rank #5 Overall / Strong C-36 Backup: Active WC, BBB A+, Diamond Certified, SF permit history. Confirm willingness for small tub trip-lever repair and pair with C-9 if ceiling opens.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.yelp.com/biz/discover-plumbing-and-rooter-san-francisco",
+      "review_source": "Indexed BBB A+, Diamond Certified and Yelp profile leads (numeric ratings blank)",
+      "additional_status": "None on CSLB LicenseDetail",
+      "flags": [
+        "F-01",
+        "F-14"
+      ]
+    },
+    {
+      "id": "P-27",
+      "name": "Plumbing 1 Builders",
+      "legal_name": "PLUMBING 1 BUILDER'S INC",
+      "license": "1034873",
+      "classifications": [
+        "C-36",
+        "B"
+      ],
+      "registered_city": "Hayward",
+      "phone": "(650) 868-8059",
+      "expiry": "2027-12-31",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded; expires 12/30/2026",
+      "source_timestamp": "11/8/2026 2:57:50 PM; CSLB LicenseDetail rechecked",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "source_ids": [
+        "CSLB-1034873",
+        "PLUMBING1",
+        "BBB-PLUMBING1",
+        "YELP-PLUMBING1"
+      ],
+      "website": "https://www.plumbing1builders.com/",
+      "service_claim": "Search-indexed property-management plumbing & remodeling serving SF/Peninsula/East Bay; official website returned 'Site not found' on 2026-11-08.",
+      "service_source": "CSLB #1034873 and indexed Yelp/BBB (website 404 on 2026-11-08)",
+      "service_verified": false,
+      "group": "Conditional combined-scope lead",
+      "rank": 11,
+      "rank_tier": "#11 East Bay B + C-36 Backup (Website 404)",
+      "bbb_status": "BBB A (Not Accredited, indexed excerpt)",
+      "diamond_certified": "",
+      "ranking_reason": "Added 2026-11-08: Holds active B + C-36 + WC and BBB A with indexed property-management references, but headquartered in Hayward (East Bay bridge/commute) and official website returned 'Site not found' on 2026-11-08.",
+      "cost_driver": "Hayward-to-SF bridge travel/dispatch time can raise small-job minimums vs SF-based Ace (#1) or Rapid Flow (#2).",
+      "fit": "Conditional B + C-36 East Bay Backup: Verify live phone dispatch, SF service willingness without heavy travel fee, and website status before quoting.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.yelp.com/biz/plumbing-1-builders-hayward",
+      "review_source": "Indexed Yelp/BBB lead (numeric ratings blank); official domain returned 404",
+      "additional_status": "None on CSLB LicenseDetail; company website unavailable on 2026-11-08",
+      "flags": [
+        "F-01",
+        "F-14",
+        "F-39"
+      ]
+    },
+    {
+      "id": "P-28",
+      "name": "LFM Construction and Plumbing",
+      "legal_name": "",
+      "license": "",
+      "classifications": [],
+      "registered_city": "",
+      "phone": "",
+      "expiry": "",
+      "status": "",
+      "workers_comp": "",
+      "source_timestamp": "",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "YELP-LFM"
+      ],
+      "website": "",
+      "service_claim": "Yelp search excerpt lists 471 24th Ave SF, phone (650) 501-8609, water-damaged wall & tub valve work with renters; CSLB license not verified.",
+      "service_source": "Yelp search excerpt (unverified lead)",
+      "service_verified": false,
+      "group": "Identity unresolved",
+      "rank": null,
+      "rank_tier": "Identity Unresolved (CSLB Pending)",
+      "bbb_status": "",
+      "diamond_certified": "",
+      "ranking_reason": "Added 2026-11-08 from Yelp SF search: excerpts mention working with renters, water-damaged walls, and tub valves, but no matching CSLB license has been confirmed (#1029661 verified to belong to unrelated Truckee M Renovations LLC). Keep fields blank and do not hire until exact CSLB license is confirmed.",
+      "cost_driver": "Unverified — confirm CSLB license before requesting any estimate.",
+      "fit": "Identity unresolved: Confirm exact CSLB license number on cslb.ca.gov before any inquiry (all official fields left blank).",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.yelp.com/biz/lfm-construction-and-plumbing-san-francisco",
+      "review_source": "Yelp search excerpt only (numeric ratings blank)",
+      "additional_status": "CSLB license unverified (#1029661 ruled out as unrelated)",
+      "flags": [
+        "F-40"
       ]
     }
   ]

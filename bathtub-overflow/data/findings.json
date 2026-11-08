@@ -29,9 +29,9 @@
   },
   {
    "id": "F-03",
-   "finding": "This scope falls on the wrong side of DBI's published 'no permit needed' line. DBI's answer is that a permit is not required only for minor plumbing work that does not require cutting into or removal of piping; replacing a waste-and-overflow assembly behind the wall requires cutting into the wall and working on concealed waste piping.",
+   "finding": "This scope falls outside DBI's published minor-work exemption line. DBI's answer is that a permit is not required only for minor plumbing work that does not require cutting into or removal of piping; replacing a waste-and-overflow assembly behind the wall requires cutting into the wall and working on concealed waste piping.",
    "evidence": "DBI FAQ (archived October 2020 edition), and the general state rule quoted by CSLB that no structure may be altered or repaired without a permit unless exempt.",
-   "implication": "Get a written permit determination from the DBI Plumbing Inspection Division, (628) 652-3450, before work starts. This is the one blocking item: it changes who can legitimately do the work, the cost ( Category 1P plus inspection time) and the schedule.",
+   "implication": "Get a written permit determination from the DBI Plumbing Inspection Division, (628) 652-3450, before work starts to confirm applicability, Category 1P fees, and inspection sequencing.",
    "verification": "OFFICIAL-VERIFIED (wording from the archived DBI FAQ — reconfirm the current wording, FL-02)",
    "sources": [
     "https://wayback.archive-it.org/20246/20230405153635/https://sfdbi.org/frequently-asked-questions",

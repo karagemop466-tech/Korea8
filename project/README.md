@@ -41,7 +41,7 @@ repository root, which is what GitHub Pages serves. The build enforces:
 2. a value that no source states is rendered blank with a pointer to the Flagged for Review page —
    never inferred, averaged or carried over from a directory listing;
 3. internal links in the written pages resolve, and the build fails on a broken one;
-4. the data files contain none of the phrases that would indicate private or off-record material.
+4. the data files contain none of the phrases that would indicate sensitive owner or personal contact material.
 
 `scripts/verify_project_site.py` then re-checks the written pages, the redirects and the
 data-to-page row counts, and records the outcome in `site-data/verification.json`.

@@ -118,10 +118,14 @@ def main():
  first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)
  check('suspended provider excluded from priority leads',all(n not in first_table for n in susp))
  # neutral public wording / no conflict markers / no placeholder literals
- banned=['private reason','must stay private','without a permit for this week','cannot pull a permit','cannot obtain a permit','<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
+ banned=['private reason','must stay private','without a permit for this week','cannot pull a permit','cannot obtain a permit','private scheduling','permit-timing','<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
  hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
+ # 2026-11-08 review currency and decision-ranking parity
+ as_ofs={n:load(n)['as_of'] for n in ['providers.json','requirements.json','estimates.json','technical.json','compliance.json','reviews.json','flags.json','sources.json']}
+ check('all datasets stamped 2026-11-08',all(v=='2026-11-08' for v in as_ofs.values()),str(as_ofs))
+ check('decision ranking & cost drivers published',all(k in texts['executive-summary.html'] for k in ['#1 Ace','Atlas Plumbing &amp; Rooter','Six factors driving actual total project cost']) and 'Pricing analysis' in texts['estimates.html'] and 'filterbar' in texts['providers.html'])
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
  check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs))

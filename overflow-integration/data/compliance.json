@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "C-01",
@@ -28,10 +28,11 @@
       "source_ids": [
         "SF-PERMIT",
         "SF-AUTH",
-        "SF-REMODEL"
+        "SF-REMODEL",
+        "SF-CODES-2025"
       ],
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
-      "application": "Confirm the actual permit holder and license class; registration is not verified for any lead."
+      "application": "Confirm contractor registration/AUTH on PermitSF (OTC permits moved to PermitSF effective Sept 14, 2026) and verify 2025 SF code compliance."
     },
     {
       "id": "C-04",

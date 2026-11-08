@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "F-01",
@@ -150,16 +150,17 @@
     },
     {
       "id": "F-11",
-      "severity": "Medium",
+      "severity": "High",
       "category": "License status",
-      "title": "D G Construction has a complaint-disclosure link",
-      "detail": "#297604 is active B + C-36; the disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
-      "action": "Read the official citation/disclosure and CSLB limits; active status is not a clean-history guarantee.",
+      "title": "D G Construction (#297604) carries active CSLB Citation #2 2022 2099 (BPC §7114.A)",
+      "detail": "Directly retrieved 2026-11-08 Complaint & Citation Disclosure shows Citation #2 2022 2099 dated 03/23/2023 for BPC §7114.A ('Aided and abetted non-licensee'), alongside WC-exempt status.",
+      "action": "Do not shortlist ahead of clean active-WC providers; review statutory disclosure and avoid unvetted subcontracting.",
       "source_ids": [
         "CSLB-297604",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=&LicNum=297604&LmfPre=&Class=2&FiscalYear=2022&SeqNbr=2099&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=D+G+CONSTRUCTION+CO&StatusDt=03/23/2023",
       "status": "Open"
     },
     {
@@ -195,12 +196,14 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Business-page fetches returned HTTP 403. Only search-index excerpts were available for some providers; numeric ratings and review counts were not verified.",
+      "detail": "Yelp business pages returned HTTP 403 to automated fetch (search-index excerpts only), so numeric Yelp star ratings and review counts remain blank. However, BBB profiles for Ace (A+), Atlas (A+), We Do (A+), Bernal Hill (0 complaints) and Heise's (B-) were directly retrieved on 2026-11-08.",
       "action": "Publish review links as unverified leads with retrieval limits; do not present ratings as facts.",
       "source_ids": [
         "YELP-RF",
         "YELP-ACE",
-        "YELP-WEDO",
+        "BBB-ACE",
+        "BBB-ATLAS",
+        "BBB-HEISE",
         "CSLB-SEARCH"
       ],
       "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
@@ -241,12 +244,12 @@
       "severity": "Medium",
       "category": "Technical evidence",
       "title": "Heise’s case studies are self-published and contain a 404 template block",
-      "detail": "The Ingleside/Mission/Marina project pages render project content but embed a “Page Not Found (404)” template block. The Ingleside page describes ceiling access; none proves drywall restoration.",
+      "detail": "Case studies are company-published and the Ingleside project page continues to embed a 'Page Not Found (404)' block on 2026-11-08. Additionally, direct BBB inspection on 2026-11-08 shows a B- rating (Not Accredited) with 1 unanswered complaint in the last 12 months and legacy expired license #787733.",
       "action": "Treat as adjacent company evidence, not independent verification; ask for references and the restoration party.",
       "source_ids": [
         "HEISE-INGLESIDE",
-        "HEISE-MISSION",
-        "HEISE-MARINA",
+        "BBB-HEISE",
+        "CSLB-787733",
         "CSLB-1089561"
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
@@ -529,6 +532,80 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/commit/a0e5376d36dab007999bed2eb6517d6d45d28f31",
       "status": "Resolved by preservation"
+    },
+    {
+      "id": "F-37",
+      "severity": "High",
+      "category": "Licensing & compliance",
+      "title": "D G Construction (#297604) statutory citation BPC §7114.A confirmed 2026-11-08",
+      "detail": "CSLB Citation Violation Disclosure retrieved 2026-11-08 records Citation #2 2022 2099 (03/23/2023) for aiding and abetting a non-licensee.",
+      "action": "Downgrade #297604 to High-Risk Caution and prioritize clean B+C-36 / C-36+C-9 leads (Ace #1, Rapid Flow #2, Atlas #3 + Bernal Hill #6).",
+      "source_ids": [
+        "DG-CITATION",
+        "DG-COMPLAINT",
+        "CSLB-297604"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=&LicNum=297604&LmfPre=&Class=2&FiscalYear=2022&SeqNbr=2099&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=D+G+CONSTRUCTION+CO&StatusDt=03/23/2023",
+      "status": "Open — high-risk caution"
+    },
+    {
+      "id": "F-38",
+      "severity": "Medium",
+      "category": "Provider fit",
+      "title": "Heise's Plumbing carries BBB B- rating (1 unanswered complaint) and expired #787733 on BBB",
+      "detail": "Direct 2026-11-08 fetch of Heise's BBB profile shows a B- rating, Not BBB Accredited, 1 complaint filed in the last 12 months (unanswered in BBB snippet), a sewage-cleanup complaint review, and legacy license #787733 (expired 03/31/2023, dissolved 02/12/2025); operating license #1089561 remains active.",
+      "action": "Demote Heise's from #3 to #10 backup technical reference; require complaint explanation, named C-9 partner, and current #1089561 contract verification if called.",
+      "source_ids": [
+        "BBB-HEISE",
+        "CSLB-787733",
+        "CSLB-1089561"
+      ],
+      "official_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+      "status": "Open — reflected in ranking"
+    },
+    {
+      "id": "F-39",
+      "severity": "Medium",
+      "category": "Provider fit",
+      "title": "Plumbing 1 Builders (#1034873) website returned 404 / Site not found; Hayward dispatch",
+      "detail": "Although CSLB #1034873 is verified active B + C-36 with WC through 12/30/2026 and BBB A, its listed domain plumbing1builders.com returned 'SITE NOT FOUND' on 2026-11-08 and its CSLB address is in Hayward.",
+      "action": "Keep as #11 East Bay backup; confirm SF service willingness, bridge travel surcharge, and active phone/email before requesting a quote.",
+      "source_ids": [
+        "CSLB-1034873",
+        "PLUMBING1",
+        "BBB-PLUMBING1"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "status": "Open"
+    },
+    {
+      "id": "F-40",
+      "severity": "Medium",
+      "category": "Licensing & compliance",
+      "title": "LFM Construction and Plumbing ((650) 501-8609) CSLB license unverified",
+      "detail": "Yelp search excerpts describe tub-valve and water-damaged wall work in SF with renters, but no CSLB license has been matched (#1029661 checked 2026-11-08 belongs to unrelated Truckee M Renovations LLC).",
+      "action": "Do not solicit work or rank until the contractor provides a verifiable active CSLB number matching its legal entity.",
+      "source_ids": [
+        "YELP-LFM",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "status": "Open — identity unresolved"
+    },
+    {
+      "id": "F-41",
+      "severity": "Low",
+      "category": "Permit & code",
+      "title": "SF PermitSF portal exclusivity (Sept 14, 2026) and 2025 SF Codes (eff. Jan 1, 2026)",
+      "detail": "DBI pages retrieved 2026-11-08 confirm most OTC construction permits moved exclusively to PermitSF starting Sept 14, 2026, and 2025 California/SF codes apply with no grace period for filings on/after Jan 1, 2026.",
+      "action": "Confirm contractor PermitSF registration/AUTH status before filing any plumbing or remodel permit.",
+      "source_ids": [
+        "SF-DBI",
+        "SF-CODES-2025",
+        "SF-AUTH"
+      ],
+      "official_url": "https://www.sf.gov/departments--department-building-inspection/",
+      "status": "Resolved in canonical rebuild"
     }
   ]
 }

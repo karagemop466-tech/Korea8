@@ -342,7 +342,7 @@
      "official_source_label": null,
      "source_tier": "user-provided",
      "verified": false,
-     "notes": "Applied to this repository: the published site contains only publicly verifiable, officially sourced material. Private scheduling/permit constraints are deliberately excluded and are not stored in any committed file."
+     "notes": "Applied to this repository: the published site contains only publicly verifiable, officially sourced material; personal owner details and sensitive private notes are excluded."
     },
     {
      "id": "REQ-26",

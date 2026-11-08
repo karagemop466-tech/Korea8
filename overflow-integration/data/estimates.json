@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "quote_date": "2026-08-30",
   "rows": [
     {
@@ -114,5 +114,83 @@
     "The arithmetic spread is $479 and the highest supplied amount is about 4.55 times the lowest, but the scopes differ, so this is not a market range or a like-for-like comparison.",
     "None of the supplied scopes explicitly mentions opening and restoring the storage-unit ceiling. Silence is not an exclusion; obtain a combined written scope.",
     "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category."
+  ],
+  "cost_drivers": [
+    {
+      "id": "CD-01",
+      "driver": "Scope depth: handle adjustment vs full waste-and-overflow replacement",
+      "impact": "Explains the $135 vs $614 owner-reported gap",
+      "detail": "Fast Response's $135 owner-reported figure reflects 'Repair/adjust bath tub wastewater plunger handle' (surface diagnostic/linkage call), whereas Expert's $614 owner-reported figure covers 'Replacing waste and overflow' (concealed assembly/labor), and Bay Area's $550 owner-reported quote cites plug lever + spout with diverter.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-977638",
+        "CSLB-757796",
+        "CSLB-1024971"
+      ],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+    },
+    {
+      "id": "CD-02",
+      "driver": "Access route: tub-side overflow extraction vs below-ceiling opening",
+      "impact": "Primary cost-step multiplier",
+      "detail": "If a technician extracts/frees the mechanism via the tub overflow plate without damaging concealed piping, demolition and ceiling restoration costs stay near zero. Dropping down to the storage ceiling adds wall/ceiling access, concealed tee/pipe risk, and finish restoration.",
+      "source_ids": [
+        "WATCO",
+        "HEISE-INGLESIDE",
+        "OWNER"
+      ],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    },
+    {
+      "id": "CD-03",
+      "driver": "Drywall restoration, paint, and serviceable access panel (B / C-9 trade)",
+      "impact": "Unquoted across all three 2026-08-30 bids",
+      "detail": "None of the three C-36-only estimate providers explicitly priced drywall patch, tape, texture, prime/paint, or a framed access panel. Either hire a dual-licensed B + C-36 lead (Ace #1 / Rapid Flow #2) with named finish scope or pair a C-36 specialist (Atlas #3) with Bernal Hill Drywall (#6).",
+      "source_ids": [
+        "CSLB-C9",
+        "CSLB-B-FAST",
+        "CSLB-995163",
+        "OWNER"
+      ],
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
+    },
+    {
+      "id": "CD-04",
+      "driver": "SF DBI permit & inspection schedule (July 2026 Table 1A-C)",
+      "impact": "$290–$320+ permit + inspection fees if pipes are cut/replaced",
+      "detail": "DBI requires a permit before cutting into or replacing concealed piping. Official fees (eff. 2026-07-12): Category 1P $290 (max 2 inspections) or 11P/M $320; regular inspection $519/hr; off-hour $555/hr; reinspection $259/half-hr. Separate tenant spaces can affect permit count.",
+      "source_ids": [
+        "SF-FEES",
+        "SF-PERMIT",
+        "SF-CODE-104"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    {
+      "id": "CD-05",
+      "driver": "Contractor size, insurance model, remodel focus & dispatch geography",
+      "impact": "Shapes minimum call-out & GC markup",
+      "detail": "Full-service insured firms (~20 staff, active WC, BBB A+ / Diamond Certified like Ace #1 & Atlas #3) carry higher overhead than solo WC-exempt operators. Remodel-heavy GCs (We Do #4, $400-$800/sf site focus) or East Bay dispatchers (Plumbing 1 #11 in Hayward) may add mobilization or bridge travel surcharges.",
+      "source_ids": [
+        "CSLB-829071",
+        "CSLB-868994",
+        "CSLB-1096552",
+        "CSLB-1034873"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "id": "CD-06",
+      "driver": "Concealed pipe corrosion, tenant notice & pre-1978 environmental screening",
+      "impact": "Contingency via written change order",
+      "detail": "Older SF brass/galvanized/cast-iron drains can fracture under extraction, triggering pipe-section replacement and DBI rough inspection before closure. Civil Code §1954 tenant notice (24h presumed reasonable), water shut-off windows, and conditional EPA RRP lead-safe containment apply if painted finishes are cut.",
+      "source_ids": [
+        "CIV-1954",
+        "EPA-RRP",
+        "EPA-ASBESTOS",
+        "CSLB-CONTRACT"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    }
   ]
 }

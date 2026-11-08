@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "R-01",
@@ -236,12 +236,13 @@
       "id": "R-16",
       "category": "Provider & licensing",
       "requirement": "Recheck license status, bond, workers-compensation record and complaint-disclosure links before signing.",
-      "basis": "CSLB warns status can change and disclosure is limited; one checked license is suspended.",
+      "basis": "CSLB warns status can change; #1027286 remains suspended and #297604 has a BPC §7114.A citation as of 2026-11-08.",
       "acceptance_check": "Signing-day CSLB screenshot/link and any disclosure review are retained.",
       "source_ids": [
         "CSLB-SEARCH",
         "CSLB-1027286",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
       "origin": "Proposed control",
       "status": "Open — confirm in writing",
@@ -300,11 +301,14 @@
       "id": "R-20",
       "category": "Provider & licensing",
       "requirement": "Check third-party reviews, but treat blocked/search-index observations as unverified leads.",
-      "basis": "Yelp business pages returned 403; numeric ratings/counts were not verified.",
+      "basis": "BBB profiles were directly checked on 2026-11-08, while Yelp business pages still returned 403; numeric Yelp ratings/counts remain unverified leads.",
       "acceptance_check": "Review links and retrieval limits are recorded; no rating is presented as verified.",
       "source_ids": [
         "YELP-RF",
         "YELP-ACE",
+        "BBB-ACE",
+        "BBB-ATLAS",
+        "BBB-HEISE",
         "CSLB-SEARCH"
       ],
       "origin": "Owner requirement",

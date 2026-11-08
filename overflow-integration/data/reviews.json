@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "RV-01",
@@ -21,51 +21,53 @@
     {
       "id": "RV-02",
       "provider": "Ace Plumbing & Rooter",
-      "platform": "Yelp search index",
-      "observation": "Indexed bathtub-repair service mention and an older occupied-home precautions account (masking/booties).",
+      "platform": "BBB (direct) / Diamond Certified / Yelp index",
+      "observation": "BBB A+ Accredited since 08/01/2004 (0 complaints in 3 yrs, direct 2026-11-08); Diamond Certified since 2007 (Oct 2026); Yelp index mentions bathtub repair and older occupied-home precautions.",
       "rating": null,
       "review_count": null,
       "verified": false,
       "review_url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
       "source_ids": [
+        "BBB-ACE",
+        "DC-ACE",
         "YELP-ACE",
-        "CSLB-829071",
-        "ACE"
+        "CSLB-829071"
       ],
       "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank."
     },
     {
       "id": "RV-03",
       "provider": "We Do Construction",
-      "platform": "Yelp search index",
-      "observation": "Indexed specialty description positions kitchens/baths within larger scopes rather than standalone small repairs.",
+      "platform": "BBB (direct) / Yelp index",
+      "observation": "BBB A+ Accredited since 11/24/2025 with 0 complaints (direct 2026-11-08); Yelp index highlights luxury whole-home/kitchen-bath remodeling rather than minor single-lever service.",
       "rating": null,
       "review_count": null,
       "verified": false,
       "review_url": "https://www.yelp.com/biz/we-do-construction-san-francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
       "source_ids": [
+        "BBB-WEDO",
         "YELP-WEDO",
-        "CSLB-1096552",
-        "WEDO"
+        "CSLB-1096552"
       ],
       "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank."
     },
     {
       "id": "RV-04",
       "provider": "Heise’s Plumbing",
-      "platform": "Yelp profile lead",
-      "observation": "Profile link retained as a review lead; no review text/rating/count was verified.",
+      "platform": "BBB (direct) / Yelp lead",
+      "observation": "Direct 2026-11-08 BBB profile shows B- rating (Not Accredited) with 1 unanswered complaint in last 12 months, 1 customer review citing sewage cleanup dissatisfaction, and expired legacy #787733; Yelp business page returned 403.",
       "rating": null,
       "review_count": null,
       "verified": false,
       "review_url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
+        "BBB-HEISE",
+        "CSLB-787733",
         "YELP-HEISE",
-        "CSLB-1089561",
-        "HEISE-INGLESIDE"
+        "CSLB-1089561"
       ],
       "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews."
     },
@@ -84,6 +86,141 @@
         "CSLB-SEARCH"
       ],
       "limit": "No exact legal entity/license/phone match; all identity fields remain blank."
+    },
+    {
+      "id": "RV-06",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "BBB (direct) / Diamond Certified / Yelp index",
+      "observation": "BBB A+ Accredited since 06/03/2021 (direct 2026-11-08); Diamond Certified since 2008 (Nov 2026); Yelp search excerpt cites replacement of stuck bathtub drain lever assemblies.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "BBB-ATLAS",
+        "DC-ATLAS",
+        "YELP-ATLAS",
+        "CSLB-868994"
+      ],
+      "limit": "BBB A+ directly retrieved; Diamond Certified & Yelp excerpts from search index; numeric Yelp ratings/counts remain blank."
+    },
+    {
+      "id": "RV-07",
+      "provider": "Discover Plumbing & Rooter",
+      "platform": "BBB / Diamond Certified / Yelp index",
+      "observation": "Indexed BBB A+ Accredited since 05/07/2019 and Diamond Certified since July 2020 (June 2026 update); BuildZoom notes 108 SF permits.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/discover-plumbing-and-rooter-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1041846",
+      "source_ids": [
+        "BBB-DISCOVER",
+        "DC-DISCOVER",
+        "YELP-DISCOVER",
+        "CSLB-1041846"
+      ],
+      "limit": "Third-party credentials captured from search index; Yelp page blocked; numeric ratings/counts remain blank."
+    },
+    {
+      "id": "RV-08",
+      "provider": "Bernal Hill Drywall",
+      "platform": "BBB (direct) / Yelp index",
+      "observation": "BBB profile shows 0 complaints in last 3 years (Not Accredited / Not Rated, direct 2026-11-08); Yelp search excerpts describe clean drywall/ceiling patching after leaky-pipe tear-outs.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco-3",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "source_ids": [
+        "BBB-BERNAL",
+        "YELP-BERNAL",
+        "CSLB-995163"
+      ],
+      "limit": "Direct BBB 0-complaint record; Yelp business page blocked; numeric ratings/counts remain blank."
+    },
+    {
+      "id": "RV-09",
+      "provider": "Expert Plumbing Solutions",
+      "platform": "Yelp index",
+      "observation": "Indexed profile notes Outer Sunset SF location, Mon-Fri 7:30am-4:00pm schedule, and honest upfront quoting testimonials.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_ids": [
+        "YELP-EXPERT",
+        "CSLB-977638"
+      ],
+      "limit": "Search-index observation only; Yelp page blocked; Not BBB Accredited; numeric ratings/counts blank."
+    },
+    {
+      "id": "RV-10",
+      "provider": "Fast Response Plumbing & Rooter",
+      "platform": "Yelp index",
+      "observation": "Indexed listing lists bathtub repair/installation and 7-day hours at 4444 Geary Blvd Ste 203; BBB Not Accredited.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_ids": [
+        "YELP-FASTRESP",
+        "CSLB-1024971"
+      ],
+      "limit": "Search-index observation only; Yelp page blocked; numeric ratings/counts blank."
+    },
+    {
+      "id": "RV-11",
+      "provider": "Bay Area Plumbing",
+      "platform": "Yelp index",
+      "observation": "Indexed listing mentions bathtub/shower drain leak repair and in-wall bathtub valve installations.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_ids": [
+        "YELP-BAYAREA",
+        "CSLB-757796"
+      ],
+      "limit": "Search-index observation only; numeric ratings/counts blank; WC-exempt status requires GL check."
+    },
+    {
+      "id": "RV-12",
+      "provider": "Plumbing 1 Builders",
+      "platform": "BBB / Yelp index",
+      "observation": "Indexed BBB A (Not Accredited) and Yelp excerpts citing property-management dispatch and SF coverage; company site plumbing1builders.com returned 404.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/plumbing-1-builders-hayward",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "source_ids": [
+        "BBB-PLUMBING1",
+        "YELP-PLUMBING1",
+        "PLUMBING1",
+        "CSLB-1034873"
+      ],
+      "limit": "Indexed excerpts only; Hayward base and broken official website require verification; numeric ratings/counts blank."
+    },
+    {
+      "id": "RV-13",
+      "provider": "LFM Construction and Plumbing",
+      "platform": "Yelp index",
+      "observation": "Indexed SF excerpts mention working with renters, water-damaged wall repair, and tub valves ((650) 501-8609); CSLB license unresolved.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/lfm-construction-and-plumbing-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "YELP-LFM",
+        "CSLB-SEARCH"
+      ],
+      "limit": "Unverified lead without confirmed CSLB license; numeric ratings/counts intentionally blank."
     }
   ]
 }
