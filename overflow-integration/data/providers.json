@@ -147,8 +147,8 @@
       "service_claim": "The company advertises San Francisco residential repairs, drain work and fixture installation.",
       "service_source": "EXPERT",
       "service_verified": true,
-      "group": "Existing estimate",
-      "fit": "Requote the common scope. C-36 only on the checked license; a separately licensed restoration trade or properly structured prime contract is needed if the ceiling is opened.",
+      "group": "Possible quote-name match",
+      "fit": "Possible name match to an owner-reported estimate, not confirmed as its issuer. Requote the common scope. C-36 only on the checked license; a separately licensed restoration trade or properly structured prime contract is needed if the ceiling is opened.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -186,8 +186,8 @@
       "service_claim": "The company advertises San Francisco residential/commercial plumbing, leak repair and kitchen/bathroom work.",
       "service_source": "BAY",
       "service_verified": true,
-      "group": "Existing estimate",
-      "fit": "Requote the common scope. The supplied wording includes a spout/diverter, which is not automatically the waste-and-overflow assembly. Confirm the contracting entity and restoration trade.",
+      "group": "Possible quote-name match",
+      "fit": "Possible name match to an owner-reported estimate, not confirmed as its issuer. Requote the common scope. The supplied wording includes a spout/diverter, which is not automatically the waste-and-overflow assembly. Confirm the contracting entity and restoration trade.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -225,8 +225,8 @@
       "service_claim": "The company advertises full-service residential plumbing for San Francisco houses, apartments and HOAs.",
       "service_source": "FAST",
       "service_verified": true,
-      "group": "Existing estimate",
-      "fit": "Requote the common scope. A repair/adjustment price is not a replacement-plus-access price. C-36 only on the checked license.",
+      "group": "Possible quote-name match",
+      "fit": "Possible name match to an owner-reported estimate, not confirmed as its issuer. Requote the common scope. A repair/adjustment price is not a replacement-plus-access price. C-36 only on the checked license.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -875,6 +875,49 @@
       "additional_status": "",
       "flags": [
         "F-13"
+      ]
+    },
+    {
+      "id": "P-25",
+      "name": "In & Out Plumbing and Construction",
+      "legal_name": "IN & OUT PLUMBING AND CONSTRUCTION INC",
+      "license": "878184",
+      "classifications": [
+        "A",
+        "B",
+        "C-36"
+      ],
+      "registered_city": "South San Francisco",
+      "phone": "(650) 589-4855",
+      "expiry": "2028-11-30",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded; expires 03/18/2027",
+      "source_timestamp": "11/8/2026 3:01:43 PM; timezone not stated",
+      "verified_on": "2026-11-08",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=878184",
+      "source_ids": [
+        "CSLB-878184",
+        "IO-SITE",
+        "IO-BATH",
+        "IO-DISCLOSURE"
+      ],
+      "website": "https://inandoutplumbing.com/",
+      "service_claim": "Company advertises plumbing and bathroom reconstruction in San Francisco; its site lists (650) 679-7982 as a customer-service number.",
+      "service_source": "IO-BATH",
+      "service_verified": true,
+      "group": "Combined-scope lead",
+      "fit": "B + C-36 and directly retrieved customer reviews of separate plumbing and drywall work; review the historical CSLB citations and mixed reviews before considering. Exact-job acceptance, a named ceiling finisher and a combined price remain unconfirmed.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "https://www.homeadvisor.com/rated.InAndOutDrainCleaning.17303431.html",
+      "review_source": "HA-IO-MULTI",
+      "additional_status": "CSLB discloses six citations dated 2017–2018: three completed, three for disclosure only. Details include building-permit, trade-standards and down-payment entries; review original records.",
+      "flags": [
+        "F-01",
+        "F-41",
+        "F-43"
       ]
     }
   ]

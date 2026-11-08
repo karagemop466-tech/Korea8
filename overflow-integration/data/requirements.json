@@ -125,14 +125,14 @@
     {
       "id": "R-09",
       "category": "Scope & restoration",
-      "requirement": "Adjust the linkage first if serviceable; replace the waste-and-overflow assembly if it cannot be freed.",
+      "requirement": "Consider linkage adjustment if serviceable; price full waste-and-overflow replacement if needed.",
       "basis": "Owner estimates describe different scopes; manufacturer instructions are model-specific.",
       "acceptance_check": "Written scope distinguishes adjustment, linkage replacement and full assembly replacement.",
       "source_ids": [
         "OWNER",
         "WATCO"
       ],
-      "origin": "Owner requirement",
+      "origin": "Proposed control",
       "status": "Open — confirm in writing",
       "legacy_ids": "root R-09/R-10; bt R-S01",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
@@ -300,11 +300,12 @@
       "id": "R-20",
       "category": "Provider & licensing",
       "requirement": "Check third-party reviews, but treat blocked/search-index observations as unverified leads.",
-      "basis": "Yelp business pages returned 403; numeric ratings/counts were not verified.",
-      "acceptance_check": "Review links and retrieval limits are recorded; no rating is presented as verified.",
+      "basis": "Yelp pages were blocked; some Angi/HomeAdvisor customer reviews were directly retrieved but not independently adjudicated.",
+      "acceptance_check": "Record relevant positive and negative review accounts, source date and retrieval limits; do not treat reviews as proof of this job.",
       "source_ids": [
         "YELP-RF",
-        "YELP-ACE",
+        "ANGI-ACE",
+        "HA-IO-MULTI",
         "CSLB-SEARCH"
       ],
       "origin": "Owner requirement",
@@ -470,11 +471,12 @@
       "id": "R-31",
       "category": "Tenant & occupancy",
       "requirement": "Screen for lead-paint rules before disturbing paint in a pre-1978 rental; building age is unknown.",
-      "basis": "EPA RRP applies conditionally to paid paint-disturbing work in pre-1978 rentals.",
+      "basis": "EPA RRP applies to covered renovations; minor-repair and other exceptions are conditional and depend on actual facts.",
       "acceptance_check": "Age/paint assessment and certified-firm/lead-safe plan are documented if applicable.",
       "source_ids": [
         "EPA-RRP",
-        "EPA-RRP-RULES"
+        "EPA-RRP-RULES",
+        "EPA-RRP-FAQ"
       ],
       "origin": "Official rule",
       "status": "Official source reviewed; job applicability to confirm",
@@ -500,11 +502,13 @@
       "id": "R-33",
       "category": "Commercial & evidence",
       "requirement": "Obtain a written itemized contract covering plumbing, access, restoration, permits, cleanup, schedule, price and warranty.",
-      "basis": "CSLB requires a written contract over $500 and lists essential terms.",
+      "basis": "CSLB and BPC §§7159/7159.10 describe written-contract requirements for home-improvement and qualifying service/repair contracts.",
       "acceptance_check": "Signed contract includes all trades, exclusions, warranty and change-order process.",
       "source_ids": [
         "CSLB-CONTRACT",
-        "OWNER"
+        "OWNER",
+        "BPC-7159",
+        "BPC-7159-10"
       ],
       "origin": "Owner requirement",
       "status": "Open — confirm in writing",
@@ -514,11 +518,12 @@
     {
       "id": "R-34",
       "category": "Commercial & evidence",
-      "requirement": "Limit the down payment to the lesser of 10% or $1,000 unless a statutory exception applies.",
-      "basis": "CSLB contract guidance; rare blanket-bond exception exists.",
+      "requirement": "Apply the correct payment rule: qualifying service-and-repair contracts require no payment until completion; the usual home-improvement down-payment cap and exceptions depend on contract type.",
+      "basis": "CSLB describes the usual home-improvement down-payment cap and a rare blanket-bond exception; qualifying service/repair contracts require no payment until completion.",
       "acceptance_check": "Payment schedule matches the rule and written contract.",
       "source_ids": [
-        "CSLB-CONTRACT"
+        "CSLB-CONTRACT",
+        "BPC-7159-10"
       ],
       "origin": "Official rule",
       "status": "Official source reviewed; job applicability to confirm",

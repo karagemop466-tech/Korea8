@@ -68,7 +68,7 @@
     {
       "id": "C-07",
       "topic": "Small-work exemption",
-      "rule": "BPC §7048 has a conditional under-$1,000 aggregate exemption; it does not apply when a building permit is required or the work is part of a larger operation.",
+      "rule": "BPC §7048 has a conditional under-$1,000 aggregate exemption; it does not apply where a building permit is required, where the work is part of a larger operation, or to a person who advertises as a contractor or employs an assistant.",
       "source_ids": [
         "BPC-7048"
       ],
@@ -88,23 +88,26 @@
     {
       "id": "C-09",
       "topic": "Written contract and payment",
-      "rule": "CSLB requires a written contract over $500; down payment is no more than the lesser of 10% or $1,000, with a rare blanket-bond exception; change orders are written.",
+      "rule": "BPC §7159 covers written home-improvement contracts over $500, with an exception for qualifying service-and-repair contracts under §7159.10. Qualifying service/repair contracts are also written and allow no payment until completion. CSLB describes the usual lesser-of-10%-or-$1,000 down-payment cap for covered home-improvement contracts and a rare blanket-bond exception.",
       "source_ids": [
-        "CSLB-CONTRACT"
+        "CSLB-CONTRACT",
+        "BPC-7159",
+        "BPC-7159-10"
       ],
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
-      "application": "Put scope, permits, cleanup, schedule, price, warranty and payment terms in writing."
+      "application": "Get an itemized written contract regardless of amount. Confirm the applicable contract type, deposit rule and change-order terms; the supplied amounts do not establish qualification."
     },
     {
       "id": "C-10",
       "topic": "Lead-safe work",
-      "rule": "EPA RRP requires certified firms/trained lead-safe practices for paid paint-disturbing work in pre-1978 rentals.",
+      "rule": "EPA RRP requires certified firms and lead-safe practices for covered compensated renovation in pre-1978 housing; limited exceptions, including certain minor repairs, may apply.",
       "source_ids": [
         "EPA-RRP",
-        "EPA-RRP-RULES"
+        "EPA-RRP-RULES",
+        "EPA-RRP-FAQ"
       ],
       "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
-      "application": "Building age is unknown; screen before disturbing paint and leave applicability unconfirmed until assessed."
+      "application": "Building age, finish, area and method are unknown. Screen before disturbing paint; do not assume either coverage or an exception."
     },
     {
       "id": "C-11",

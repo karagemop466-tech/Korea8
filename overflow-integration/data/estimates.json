@@ -5,7 +5,7 @@
     {
       "id": "E-01",
       "provider": "Expert Plumbing Solutions",
-      "license": "977638",
+      "license": null,
       "date": "2026-08-30",
       "scope_owner": "Replace waste and overflow",
       "amount_owner": 614,
@@ -16,12 +16,14 @@
         "CSLB-977638"
       ],
       "status": "Owner-reported; not independently verified",
-      "analysis": "Closest wording to a waste-and-overflow replacement, but no access route, drywall restoration, permit, cleanup or warranty line is supplied."
+      "analysis": "Closest wording to a waste-and-overflow replacement, but no access route, drywall restoration, permit, cleanup or warranty line is supplied. Neither the quoted identity nor any ceiling-restoration inclusion/exclusion has been independently confirmed.",
+      "possible_match_license": "977638",
+      "identity_status": "Possible CSLB name match only; the legal entity that issued the owner-reported estimate is not confirmed."
     },
     {
       "id": "E-02",
       "provider": "Bay Area Plumbing",
-      "license": "757796",
+      "license": null,
       "date": "2026-08-30",
       "scope_owner": "Lever, plug and spout with diverter; labor and materials",
       "amount_owner": 550,
@@ -33,12 +35,14 @@
         "CSLB-749536"
       ],
       "status": "Owner-reported; not independently verified",
-      "analysis": "“Spout/diverter” may describe a different assembly. Confirm parts and contracting entity; shared address/phone with Save-On-Interior does not establish common ownership."
+      "analysis": "“Spout/diverter” may describe a different assembly. Confirm parts and contracting entity; shared address/phone with Save-On-Interior does not establish common ownership. Neither the quoted identity nor any ceiling-restoration inclusion/exclusion has been independently confirmed.",
+      "possible_match_license": "757796",
+      "identity_status": "Possible CSLB name match only; the legal entity that issued the owner-reported estimate is not confirmed."
     },
     {
       "id": "E-03",
-      "provider": "Fast Response Plumbing & Rooter",
-      "license": "1024971",
+      "provider": "Fast Response",
+      "license": null,
       "date": "2026-08-30",
       "scope_owner": "Repair/adjust plunger handle",
       "amount_owner": 135,
@@ -49,7 +53,9 @@
         "CSLB-1024971"
       ],
       "status": "Owner-reported; not independently verified",
-      "analysis": "Adjustment-only wording is not a replacement-plus-access price. Silence about drywall is not proof of exclusion; ask for the written scope."
+      "analysis": "Adjustment-only wording is not a replacement-plus-access price. Silence about drywall is not proof of exclusion; ask for the written scope. Neither the quoted identity nor any ceiling-restoration inclusion/exclusion has been independently confirmed.",
+      "possible_match_license": "1024971",
+      "identity_status": "Possible CSLB name match only; the legal entity that issued the owner-reported estimate is not confirmed."
     }
   ],
   "official_fees": [
@@ -113,6 +119,7 @@
     "The supplied amounts are owner reports, not independently verified prices. They are shown only in an owner-reported column; verified amounts remain blank.",
     "The arithmetic spread is $479 and the highest supplied amount is about 4.55 times the lowest, but the scopes differ, so this is not a market range or a like-for-like comparison.",
     "None of the supplied scopes explicitly mentions opening and restoring the storage-unit ceiling. Silence is not an exclusion; obtain a combined written scope.",
-    "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category."
+    "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category.",
+    "The CSLB records are possible name matches only: no quote document or company confirmation links any of the three amounts to a specific license."
   ]
 }

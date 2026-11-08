@@ -1,11 +1,11 @@
 {
-  "as_of": "2026-11-07",
+  "as_of": "2026-11-08",
   "rows": [
     {
       "id": "RV-01",
       "provider": "Rapid Flow Plumbing & Rooter",
       "platform": "Yelp search index",
-      "observation": "Indexed account describes retrieving a tub drain plug by opening the back of the wall/cutting pipe.",
+      "observation": "A Yelp-indexed account describes retrieving a tub drain plug after opening a wall and cutting pipe; the underlying business page was blocked.",
       "rating": null,
       "review_count": null,
       "verified": false,
@@ -22,7 +22,7 @@
       "id": "RV-02",
       "provider": "Ace Plumbing & Rooter",
       "platform": "Yelp search index",
-      "observation": "Indexed bathtub-repair service mention and an older occupied-home precautions account (masking/booties).",
+      "observation": "An indexed bathtub-repair mention and older occupied-home precautions account; Yelp business page blocked.",
       "rating": null,
       "review_count": null,
       "verified": false,
@@ -84,6 +84,88 @@
         "CSLB-SEARCH"
       ],
       "limit": "No exact legal entity/license/phone match; all identity fields remain blank."
+    },
+    {
+      "id": "RV-06",
+      "provider": "In & Out Plumbing and Construction",
+      "platform": "HomeAdvisor — linked #878184 profile",
+      "observation": "May 2024 customer reports a single contractor completed electrical work and drywall patching for a stove conversion; separate customers report concerns about pricing, diagnosis and a leak.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.homeadvisor.com/rated.InAndOutDrainCleaning.17303431.html",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=878184",
+      "source_ids": [
+        "HA-IO-MULTI",
+        "CSLB-878184",
+        "IO-SITE"
+      ],
+      "limit": "Directly retrieved review page, but customer statements are not independently verified. The projects are different; no exact stuck-lever or ceiling-restoration acceptance."
+    },
+    {
+      "id": "RV-07",
+      "provider": "In & Out — possible profile match",
+      "platform": "HomeAdvisor — same-name South SF profile",
+      "observation": "June 2026 customer describes bathtub drain-pipe replacement viewed through an already-broken garage ceiling; November 2025 reviewer complains that new pipes restricted washing-machine clearance.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.homeadvisor.com/rated.inoutplumbingconstructioninc.159109748.html",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=878184",
+      "source_ids": [
+        "HA-IO-BATH",
+        "CSLB-878184"
+      ],
+      "limit": "Name/city match #878184, but profile does not display a license number. Identity remains probable, not confirmed. Ceiling opening/patching and the identical stuck lever are not established."
+    },
+    {
+      "id": "RV-08",
+      "provider": "Ace Plumbing & Rooter",
+      "platform": "Angi — #829071 profile",
+      "observation": "October 2023 customer praised prompt work while reporting a non-itemized invoice and billing miscommunication later resolved by phone. A 2017 customer reported repeat visits and price concerns.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-reviews-208758.htm",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_ids": [
+        "ANGI-ACE",
+        "CSLB-829071"
+      ],
+      "limit": "Directly retrieved customer accounts; historical, different scope and not independently adjudicated."
+    },
+    {
+      "id": "RV-09",
+      "provider": "Ace Plumbing & Rooter",
+      "platform": "Angi — older #829071 reviews",
+      "observation": "A June 2012 review praises a bathtub-faucet fix; a March 2012 review describes good work as expensive.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-reviews-208758.htm?page=13",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_ids": [
+        "ANGI-ACE-OLD",
+        "CSLB-829071"
+      ],
+      "limit": "Old and not this overflow job; not a current price or performance guarantee."
+    },
+    {
+      "id": "RV-10",
+      "provider": "Bernal Hill Drywall",
+      "platform": "Yelp search index",
+      "observation": "An indexed ceiling-patch mention is associated with a Bernal Hill search result.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=drywall+ceiling+repair&find_loc=San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "source_ids": [
+        "YELP-BERNAL",
+        "CSLB-995163",
+        "BERNAL"
+      ],
+      "limit": "Search excerpt only; review attribution and current profile unavailable. Restoration partner, not a plumber."
     }
   ]
 }

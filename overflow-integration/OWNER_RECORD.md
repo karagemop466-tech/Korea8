@@ -5,7 +5,7 @@ government record or an independently verified contractor quote.
 
 - Location: San Francisco, tenant-occupied unit.
 - Problem: bathtub wastewater overflow trip lever is stuck in concealed plumbing behind the wall.
-- Owner report: five or more licensed plumbers could not remove it from above; below access through
+- Owner report: more than five licensed plumbers expressed concern about damage to concealed plumbing during removal from above; below access through
   the storage-unit ceiling may require a drywall opening.
 - Preference: removal from above if safely possible; otherwise one accountable provider for plumbing
   plus drywall opening/restoration, preferably licensed.
@@ -18,8 +18,10 @@ government record or an independently verified contractor quote.
 |---|---|---:|---|
 | Expert Plumbing Solutions | Replace waste and overflow | $614 | Not independently verified; no quote document supplied |
 | Bay Area Plumbing | Lever, plug and spout with diverter; labor and materials | $550 | Not independently verified; no quote document supplied |
-| Fast Response Plumbing & Rooter | Repair/adjust plunger handle | $135 | Not independently verified; no quote document supplied |
+| Fast Response | Repair/adjust plunger handle | $135 | Not independently verified; no quote document supplied |
 
 The amounts are published only as owner-reported values. Independently verified amounts remain blank.
 The scopes differ and none explicitly names storage-unit ceiling opening/restoration; silence is not
 proof of exclusion. No provider has been contacted, booked or confirmed available by this research.
+
+Names in the estimate table are as reported by the owner; any similarly named CSLB record is only a possible match until the quote document or business confirms the issuing legal entity.

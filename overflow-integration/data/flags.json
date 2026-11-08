@@ -536,7 +536,7 @@
       "category": "Ranking",
       "status": "Open",
       "title": "The hire ranking is editorial decision support, not a verified performance rating",
-      "detail": "The ranked page orders candidates with a transparent weighted score built only from official CSLB fields, company-published service statements and the owner-supplied quote wording. No provider was contacted and no reference, completion record or verified review was obtained, so the order cannot be read as proof that one firm performs better than another.",
+      "detail": "The ranked page is a subjective weighted inquiry order, not a quality rating. Review pages were retrieved, but customer accounts are not independently adjudicated; provider acceptance, exact-job performance and price remain unconfirmed.",
       "action": "Use the ranking to decide who to call first, then replace the score with documented answers, a written combined scope and a fixed price once providers respond.",
       "source_ids": [
         "OWNER",
@@ -585,6 +585,83 @@
         "REPO"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
+    },
+    {
+      "id": "F-41",
+      "severity": "High",
+      "category": "Provider disclosure",
+      "title": "In & Out #878184: six historical CSLB citations",
+      "detail": "CSLB shows an active license and six citations dated 2017–2018: three completed and three for disclosure only. Individual entries include a building-law permit violation, trade standards, contracting classification and down-payment issues. They are historical, not proof of a current violation.",
+      "action": "Read the original disclosure and individual citation links; seek an explanation and extra diligence before hiring. Compare with other candidates and obtain a written, itemized contract.",
+      "source_ids": [
+        "CSLB-878184",
+        "IO-DISCLOSURE",
+        "IO-CITE-1017",
+        "IO-CITE-2536"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=878184",
+      "status": "Open"
+    },
+    {
+      "id": "F-42",
+      "severity": "High",
+      "category": "Estimate identity",
+      "title": "The three owner-quote names are not confirmed license matches",
+      "detail": "The owner supplied names and amounts, but no quote document or company confirmation ties the named estimates to CSLB #977638, #757796 or #1024971. Fast Response is especially generic.",
+      "action": "Ask each business to confirm the issuing entity and obtain the original document; leave verified license/amount fields blank for the quotes.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-977638",
+        "CSLB-757796",
+        "CSLB-1024971"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "status": "Open"
+    },
+    {
+      "id": "F-43",
+      "severity": "Medium",
+      "category": "Reviews",
+      "title": "One In & Out bathtub review is a probable, not proven, profile match",
+      "detail": "The June 2026 bathtub-pipe review is on a same-name South San Francisco HomeAdvisor profile that does not display the license number. The separate electrical/drywall review is on a profile displaying #878184.",
+      "action": "Confirm the first profile belongs to the licensee; do not combine profile ratings or claim either review establishes this exact job.",
+      "source_ids": [
+        "HA-IO-BATH",
+        "HA-IO-MULTI",
+        "CSLB-878184"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=878184",
+      "status": "Open"
+    },
+    {
+      "id": "F-44",
+      "severity": "Medium",
+      "category": "Compliance",
+      "title": "Lead-safe and service-repair contract rules are conditional",
+      "detail": "RRP has limited exceptions and §7159.10 separately governs qualifying service/repair contracts; building conditions and contract type are unknown.",
+      "action": "Screen the actual painted surfaces and work method, and obtain the appropriate written contract; do not infer an exemption from the owner-reported price.",
+      "source_ids": [
+        "EPA-RRP-FAQ",
+        "BPC-7159",
+        "BPC-7159-10"
+      ],
+      "official_url": "https://www.epa.gov/lead/frequent-questions-about-renovations-covered-rrp-rule",
+      "status": "Open"
+    },
+    {
+      "id": "F-45",
+      "severity": "Medium",
+      "category": "Sources",
+      "title": "A source link is not proof of every statement in a row",
+      "detail": "Company pages, official classification/CSLB records, owner statements and independent reviews support different claims. A nearby official context link does not verify an owner-reported estimate or an unadjudicated customer account.",
+      "action": "Use the source-type labels and limitations; check each factual claim against its specific source before relying on it.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-CONTRACT",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "status": "Open"
     }
   ]
 }
