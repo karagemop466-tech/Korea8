@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-08T23:06:33.725549+00:00",
+  "checked_at": "2026-11-08T23:07:44.437653+00:00",
   "result": "PASS",
   "checks_run": 25,
   "checks_passed": 25,
   "checks_failed": 0,
-  "canonical_rows_checked": 287,
+  "canonical_rows_checked": 288,
   "tracked_html_files": 68,
   "checks": [
     {
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has an official/source link",
       "ok": true,
-      "detail": "287 rows; offenders: "
+      "detail": "288 rows; offenders: "
     },
     {
       "check": "provider count parity",
