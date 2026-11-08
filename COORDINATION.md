@@ -975,3 +975,11 @@ stale `scripts/verify_project_site.py` (I-3); conflicting open PRs **#35**, **#3
 **#38** (its `Publish verified bathtub overflow repair dashboard` check is **FAILURE** —
 another racing session's branch, not merged by this session), plus unrelated stale PR **#7**.
 This session merged only its own verified PR #40 and did not touch other sessions' open PRs.
+
+## Session `arena/9c487d70-korea8` — independent current-state audit
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Current canonical site, source and deployment audit; document actionable discrepancies | in progress | `arena/9c487d70-korea8` | `audit/REPORT_2026-11-08_9c487d70.md`, `COORDINATION.md` |
+
+This session will not modify files claimed by other sessions. Findings requiring canonical integration will be logged here.
