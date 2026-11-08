@@ -114,7 +114,8 @@ def main():
     for r in ranking['ranked']:
         if r.get('provider_id') == 'P-03':
             add_unique(r['source_ids'], 'HEISE-DRYWALL')
-            r['score_components']['C4'] = 5
+            # Keep C4 at 4: the page is an advertised service/protocol, not a verified completed occupied-unit restoration reference.
+            r['score_components']['C4'] = 4
             r['why'] = 'The only provider with company-published San Francisco tub waste-and-overflow cases, including one that says the crew accessed the exterior ceiling to remove the old overflow. Its official Paint, Patch & Drywall Repair page also advertises plumbing-access cutout repair, ceiling water-stain patching, paint touch-up, occupied rentals and tenant-schedule coordination. That is the strongest conditional all-in-one service evidence, but the licence is C-36/C-10/A/C-20 with no B or C-9, so the restoration party and lawful contract structure must be named before hiring. The case page also embeds a 404 template block.'
             r['ask'] = 'Ask who performs and warrants the ceiling patch/texture/paint, under which license/contract structure, whether the same crew can do both paths, and for a written two-path price. Confirm whether the exterior-ceiling case resembles this storage-unit access and provide a direct reference.'
             r['short_why'] = 'published ceiling-access tub waste-and-overflow cases plus advertised plumbing-access drywall/ceiling/paint repair and tenant coordination; no B or C-9, so the restoration party must be named'
