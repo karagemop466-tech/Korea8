@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-08T23:12:48.072573+00:00",
+  "checked_at": "2026-11-08T23:20:47.118233+00:00",
   "result": "PASS",
-  "checks_run": 26,
-  "checks_passed": 26,
+  "checks_run": 27,
+  "checks_passed": 27,
   "checks_failed": 0,
-  "canonical_rows_checked": 271,
-  "tracked_html_files": 67,
+  "canonical_rows_checked": 300,
+  "tracked_html_files": 89,
   "checks": [
     {
       "check": "all canonical pages present",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "271 rows; offenders: "
+      "detail": "300 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -108,22 +108,27 @@
       "detail": ""
     },
     {
-      "check": "decision rank parity",
+      "check": "ranking table parity",
       "ok": true,
       "detail": ""
     },
     {
-      "check": "decision excludes suspended/unresolved identities",
+      "check": "ranking hiring order excludes suspended/unresolved identities",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking weights sum to one",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "ranking rows have source ids and official urls",
       "ok": true,
       "detail": ""
     },
     {
       "check": "source kinds explicit",
-      "ok": true,
-      "detail": ""
-    },
-    {
-      "check": "no inferred decision scores",
       "ok": true,
       "detail": ""
     },
@@ -135,7 +140,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "215 links; offenders: "
+      "detail": "574 links; offenders: "
     }
   ]
 }

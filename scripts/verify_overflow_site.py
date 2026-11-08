@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime,html
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','requirements.html','providers.html','decision-analysis.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -108,7 +108,7 @@ def main():
  check('no numeric star ratings in canonical pages',not re.search(r'\d(?:\.\d)?\s*(?:stars|out of 5)',' '.join(texts.values()),re.I))
  # all source ids resolve and official urls are https
  bad=[]
- for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json','decision.json']:
+ for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
   for r in load(name)['rows']:
    for i in r.get('source_ids',[]):
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')
@@ -125,15 +125,16 @@ def main():
  hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
- # decision ranking is contiguous, active-only, and source-linked
- dec=load('decision.json')['rows'];prov_by_id={p['id']:p for p in prov}
- check('decision rank parity',len(parsed['decision-analysis.html'].tables.get('decision-table',[]))==len(dec) and [d['rank'] for d in dec]==list(range(1,len(dec)+1)))
- check('decision excludes suspended/unresolved identities',all(prov_by_id[d['provider_id']]['status']=='Current and active' for d in dec))
+ # ranking is editorial, active-only in the hiring order, source-linked and weight-normalized
+ rk=load('ranking.json');prov_by_id={p['id']:p for p in prov}
+ check('ranking table parity',len(parsed['decision-analysis.html'].tables.get('ranking-table',[]))==len(rk['ranked']))
+ check('ranking hiring order excludes suspended/unresolved identities',all(prov_by_id[r['provider_id']]['status']=='Current and active' for r in rk['ranked']+[rk['partner']]))
+ check('ranking weights sum to one',abs(sum(w['weight'] for w in rk['weights'])-1.0)<1e-9)
+ check('ranking rows have source ids and official urls',all(r.get('source_ids') and r.get('official_url','').startswith('https://') for r in rk['ranked']+[rk['partner']]+rk['not_recommended']))
  check('source kinds explicit',all(s.get('kind') for s in srcs.values()))
- check('no inferred decision scores',all('score' not in d for d in dec))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
- check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts']['decision_rows']==len(load('decision.json')['rows']))
+ check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts']['ranking']==len(rk['ranked']) and br['counts']['ranking_held']==len(rk['not_recommended']))
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess
  tracked=subprocess.check_output(['git','ls-files','*.html'],cwd=ROOT,text=True).splitlines()

@@ -543,6 +543,66 @@
     {
       "id": "F-37",
       "severity": "Medium",
+      "category": "Ranking",
+      "status": "Open",
+      "title": "The hire ranking is editorial decision support, not a verified performance rating",
+      "detail": "The ranked page orders candidates with a transparent weighted score built only from official CSLB fields, company-published service statements and the owner-supplied quote wording. No provider was contacted and no reference, completion record or verified review was obtained, so the order cannot be read as proof that one firm performs better than another.",
+      "action": "Use the ranking to decide who to call first, then replace the score with documented answers, a written combined scope and a fixed price once providers respond.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-SEARCH",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "F-38",
+      "severity": "Low",
+      "category": "Licensing",
+      "status": "Open",
+      "title": "Clever Plumbing & Rooter was licensed on 2026-09-04",
+      "detail": "The CSLB record shows an issue date of 2026-09-04 with a workers-compensation exemption (certified no employees). The licence is current and active, but there is no tenure or published evidence for delicate occupied-unit work.",
+      "action": "Keep it below the shortlist and treat any quote as unproven until references and insurance are produced.",
+      "source_ids": [
+        "CSLB-1160613"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613"
+    },
+    {
+      "id": "F-39",
+      "severity": "Medium",
+      "category": "Repository",
+      "status": "Open",
+      "title": "Three earlier-session pull requests remain open and unmerged",
+      "detail": "PRs #35, #38 and #39 were opened on 2026-11-07 by other sessions. One of them carries a failing check. They conflict with the merged canonical dashboard, so merging them would revert verified work.",
+      "action": "Owner decision: close them, or have the owning session rebase onto the current main. This session did not touch another session's pull request.",
+      "source_ids": [
+        "REPO-BOARD",
+        "REPO",
+        "GH-PAGES",
+        "GH-PR"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
+    },
+    {
+      "id": "F-40",
+      "severity": "Low",
+      "category": "Repository",
+      "status": "Open",
+      "title": "Repository hygiene: case-colliding run cards and 26 stale session branches",
+      "detail": "run_card.json and RUN_CARD.json both exist at the repository root. On a case-insensitive filesystem (macOS, Windows) a clone keeps only one, so the two records can silently diverge. In addition, 26 remote arena/* session branches remain after their pull requests merged or closed.",
+      "action": "Rename or archive one of the two run-card files, and delete merged session branches. Neither affects the published dashboard.",
+      "source_ids": [
+        "REPO-BOARD",
+        "REPO",
+        "GH-PAGES",
+        "GH-PR"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
+    },
+    {
+      "id": "F-41",
+      "severity": "Medium",
       "category": "Repository verification",
       "title": "Independent auditor source allowlist omitted three official primary domains",
       "detail": "The prior audit counted four rows as lacking a recognized source: SF code publisher American Legal, Ayoob & Peery and Bernal Hill Drywall. The rows did contain source links; the independent allowlist omitted amlegal.com, ayoobpeery.com and bernalhilldrywall.com. This was a classifier gap, not permission to publish unsupported rows.",
@@ -557,7 +617,7 @@
       "status": "Resolved in this integration"
     },
     {
-      "id": "F-38",
+      "id": "F-42",
       "severity": "Medium",
       "category": "Provider contact",
       "title": "Atlas phone numbers differ across official primary sources",
@@ -572,7 +632,7 @@
       "status": "Open"
     },
     {
-      "id": "F-39",
+      "id": "F-43",
       "severity": "Medium",
       "category": "Provider contact",
       "title": "Rapid Flow website and CSLB phone numbers differ",
@@ -586,7 +646,7 @@
       "status": "Open"
     },
     {
-      "id": "F-40",
+      "id": "F-44",
       "severity": "Medium",
       "category": "Code source",
       "title": "CSLB B classification page reproduces older statutory text",
@@ -601,7 +661,7 @@
       "status": "Open"
     },
     {
-      "id": "F-41",
+      "id": "F-45",
       "severity": "Low",
       "category": "Repository navigation",
       "title": "Earlier executive-summary redirect stubs point to a superseded project mirror",
@@ -617,7 +677,7 @@
       "status": "Needs review"
     },
     {
-      "id": "F-42",
+      "id": "F-46",
       "severity": "Medium",
       "category": "Decision analysis",
       "title": "No verified comparable all-in price exists for ranking",

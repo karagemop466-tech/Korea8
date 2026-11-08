@@ -1,13 +1,13 @@
 {
-  "built_at": "2026-11-08T23:12:47.764163+00:00",
+  "built_at": "2026-11-08T23:20:46.636904+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
     "index.html",
     "executive-summary.html",
+    "decision-analysis.html",
     "requirements.html",
     "providers.html",
-    "decision-analysis.html",
     "estimates.html",
     "technical-approach.html",
     "code-and-permit.html",
@@ -29,8 +29,9 @@
     "compliance": 12,
     "reviews": 11,
     "sources": 85,
-    "flags": 42,
-    "decision_rows": 10
+    "flags": 46,
+    "ranking": 10,
+    "ranking_held": 14
   },
   "preserved": [
     "redirect stubs",

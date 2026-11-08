@@ -35,12 +35,12 @@
     },
     {
       "topic": "Ranking",
-      "result": "Added explicit inquiry-order decision analysis with per-provider reasoning, cost limits and pre-award gates. No numeric performance scores or verified combined prices invented.",
-      "evidence": "overflow-integration/data/decision.json; decision-analysis.html"
+      "result": "Preserved the merged editorial weighted ranking in ranking.json, enriched it with final-verification gates, and added Atlas as a conditional hold. No verified combined prices or provider acceptance invented.",
+      "evidence": "overflow-integration/data/ranking.json; decision-analysis.html"
     },
     {
       "topic": "Strict source coverage",
-      "result": "Canonical verifier now requires a registered official-primary source link in every tbody row (government/company/manufacturer/code publisher/official tool); review platforms and repository records alone do not count. Independent audit allowlist corrected for AmLegal/Ayoob/Bernal/Atlas and no longer treats Yelp/Angi/BBB/GitHub web as official.",
+      "result": "Canonical verifier requires a registered official-primary source link in every tbody row; review platforms/repository records alone do not count. Independent audit allowlist corrected for AmLegal/Ayoob/Bernal/Atlas and official GitHub docs/API; Yelp/Angi/BBB are not official.",
       "evidence": "scripts/verify_overflow_site.py; audit/independent_audit.py"
     },
     {
@@ -50,7 +50,7 @@
     },
     {
       "topic": "Deployment",
-      "result": "Pending this integration merge; prior live deployment is not proof of the new commit.",
+      "result": "Pending this integration merge; prior live deployment is not proof of the new commit. Parallel main ranking work was preserved during conflict resolution.",
       "evidence": "overflow-integration/data/deployment.json"
     }
   ]
