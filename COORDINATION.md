@@ -1153,3 +1153,22 @@ Combined local checks before merge commit: build OK; `verify_overflow_site.py` 2
 | Live verification | Cache-busted `index.html`, `decision-analysis.html` and `flagged-for-review.html` returned the merged dashboard: 24 CSLB records, 25 identities, 85 sources, 46 flags, final-verification note and Atlas conditional hold |
 | Final checks | 27/27 canonical verifier checks; 300/300 rows official-primary source-covered; 11/11 unit tests; independent audit 0 problems |
 | Status | T3946905e-A/B/C **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked. |
+
+---
+
+## Session `arena/6880fb12-korea8` — independent evidence audit and pending integration handoff
+
+| ID | Task | Status | Owning session | File scope |
+|---|---|---|---|---|
+| K8-6880-1 | Publish immediate claim and reconcile parallel ownership | done | `arena/6880fb12-korea8` | `COORDINATION.md` |
+| K8-6880-2 | Independent official-source audit and new adjacent-service evidence | done | `arena/6880fb12-korea8` | new `audit/REPORT_2026-11-08_6880fb12.md`, `audit/evidence/6880fb12/**`, `COORDINATION.md` only |
+| K8-6880-3 | Canonical corrections and stricter verification | needs review | active canonical owners; request logged by `arena/6880fb12-korea8` | no canonical edits by this session while active claims remain |
+| K8-6880-4 | Final integration after explicit released handoff, PR/merge/live check | unclaimed | pending active-owner release | `COORDINATION.md`; shared scope only after release |
+
+**Branch constraint:** all work stays on the platform-pinned `arena/6880fb12-korea8`; no alternate branch is created or pushed. The initial claim was committed and pushed before research edits. The initial remote branch did not exist, so the prescribed pull reported a missing ref; the first push created it.
+
+**Concurrency correction:** `origin/main` advanced through PRs #45, #47, #48, #46, #50, #52 and #54 while this session was retrieving official sources. PR #52/#54 are merged and their board tasks are done. Active PR #44 (`a8da1cca`), PR #49 (`55859fbc`) and PR #51 (`54cba99d`) still claim overlapping canonical files; parallel branches `aeb846ac` and `0404117b` are being re-checked for released/stale status. This session narrows its implementation scope to the new audit files above and will not edit or merge over their active work. Rebase conflicts in this board are resolved by retaining the complete upstream record and this revised session record; no other session's work is discarded.
+
+**Cross-session requests to active canonical owners:** (1) directly review Heise's official Paint, Patch & Drywall Repair page, which advertises plumbing-access cutout and ceiling patching plus tenant scheduling; this is new evidence not reflected in the current ranking, while CSLB #1089561 still lacks B/C-9 and the restoration contracting party must be named; (2) the retrieved Watco sheet's step 7 describes adjustment so the drain stops water, but does not explicitly prescribe a fill/leak test—retain testing as a proposed acceptance control rather than attributing that exact instruction to the sheet; (3) enforce a recognized primary-source link on every rendered row, not merely any HTTPS link or a blank-marker exception. Full evidence and line-level findings are in `audit/REPORT_2026-11-08_6880fb12.md` and `audit/evidence/6880fb12/findings.json` (A6880-01 through A6880-10). No provider has been contacted or booked.
+
+**Draft integration PR:** [#53](https://github.com/karagemop466-tech/Korea8/pull/53) currently contains only this session's non-overlapping audit evidence/report and board record. It remains draft until active canonical claims are explicitly released or a documented 60-minute stale-claim takeover occurs; canonical corrections will then be applied, rebuilt, verified, merged, and the exact-commit Pages deployment recorded here.
