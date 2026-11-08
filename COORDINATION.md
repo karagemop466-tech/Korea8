@@ -1149,3 +1149,8 @@ This session will not edit its claimed deployment record while that task is acti
 verifier descriptions and historical logs without changing their substantive source
 findings. The canonical verifier and tests will receive the corresponding generalized
 privacy checks during AE-02. Historical audits and sources were otherwise preserved.
+
+**Second rebase record:** main advanced to PR #47 during the cleanup push. A second
+board-only conflict was resolved by retaining both the completed PR #45 deployment
+record and this session's full claim. The privacy cleanup was reapplied on top; no
+research or deployment history was dropped.
