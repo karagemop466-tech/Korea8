@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-08T23:07:28.876695+00:00",
+  "checked_at": "2026-11-08T23:07:56.236110+00:00",
   "result": "PASS",
   "checks_run": 29,
   "checks_passed": 29,
   "checks_failed": 0,
   "canonical_rows_checked": 289,
-  "tracked_html_files": 67,
+  "tracked_html_files": 68,
   "checks": [
     {
       "check": "all canonical pages present",
@@ -150,7 +150,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "215 links; offenders: "
+      "detail": "229 links; offenders: "
     }
   ]
 }
