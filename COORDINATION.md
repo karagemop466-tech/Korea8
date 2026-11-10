@@ -1261,3 +1261,31 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 | Status | `D619-T1`, `D619-T2`, `D619-T3` **done**. Open/unverified items remain published on Flagged for Review (`needs review`, non-blocking). No provider contacted/booked. |
 
 **Rebase conflict resolution (2026-11-10):** While PR #56 was open, concurrent sessions `arena/660ab2dd-korea8`, `arena/35739f62-korea8` and `arena/47d993da-korea8` merged PRs #55, #57, #58, #59, #60 and #61 onto `main` (`b30f89d`), adding `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `audit/REPORT_2026-11-10_35739f62.md`, `audit/2026-11-10-47d993da/REPORT.md`, `HEISE-PATCH` / `CSLB-FINDING` sources, Heise/Watco/BPC §7057(b) clarifications and live-HTTPS workflow checks. Rebased `arena/d6196195-korea8` onto `origin/main` (`b30f89d`) preserving 100% of all three concurrent sessions' board records, data refinements, scripts, workflow and tests; applied this session's 2026-11-10 fresh official-source re-verification timestamps (`as_of: 2026-11-10`, 24/24 CSLB banner timestamps `11/9/2026 4:49 PM`) and linked `audit/2026-11-10-d6196195/REPORT.md` + `freshness-check.json` alongside the concurrent audits. Combined build, 27/27 verifier checks and 18/18 unit tests pass.
+
+
+---
+
+## Session `arena/7ff689a1-korea8` — independent review-platform evidence, provider-fit discovery and 2026-11-10 line-by-line audit
+
+**Claim time:** 2026-11-10T00:55Z, committed and pushed before any research or file edit.
+**Claim conflict check performed first:** session `arena/d6196195-korea8` is ACTIVE on this board (claim
+pushed 2026-11-10T00:49Z, last commit 00:50Z, PR #56 open) and owns `overflow-integration/**`, the root
+canonical HTML/CSS, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`,
+`tests/test_overflow_site.py`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`
+and `audit/2026-11-10-d6196195/**`. **This session therefore does not edit any of those files.** Any change
+needed there is logged below as a cross-session request for the canonical owner (or the next final-integration
+session) to fold in.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `7FF-A` | Claim board before any other edit | done | `arena/7ff689a1-korea8` | `COORDINATION.md` |
+| `7FF-B` | Independent 2026-11-10 official-source audit of every canonical table row the owner depends on: 25 CSLB provider records (name, classifications, status, expiry, phone, city), the three owner-supplied quote rows, and the ranked decision analysis — corrections and unverified cells listed, not silently fixed | in progress | `arena/7ff689a1-korea8` | `audit/2026-11-10-7ff689a1/**` |
+| `7FF-C` | Review-platform evidence collection for this specific work type (tub waste-and-overflow / stuck trip lever / ceiling or wall access panel repair in an occupied SF unit) across Yelp, BBB and other review services; every observation labelled with its retrieval channel and date | in progress | `arena/7ff689a1-korea8` | `audit/2026-11-10-7ff689a1/**` |
+| `7FF-D` | Provider-fit discovery: which listed firms (plus any newly found) publish this exact service, serve a tenant-occupied unit, and can carry plumbing + drywall restoration in one contract; official link + phone per row | in progress | `arena/7ff689a1-korea8` | `audit/2026-11-10-7ff689a1/**` |
+| `7FF-E` | Independent executive summary of the decision (problem, access options, cost basis, ranked shortlist, what to ask each bidder) | pending | `arena/7ff689a1-korea8` | `audit/2026-11-10-7ff689a1/EXECUTIVE_SUMMARY.md` |
+| `7FF-F` | PR → `main`, merge only if the canonical owner's claim has gone stale under the 60-minute rule; otherwise PR left for the active integration session; result recorded here | pending | `arena/7ff689a1-korea8` | `COORDINATION.md`, this PR only |
+
+**Standing rules honoured by this session:** no provider will be contacted, booked or paid; owner-supplied
+quote amounts stay labelled owner-reported with verified amounts left blank; any value that cannot be read
+from an official source is published blank and flagged, never inferred; no internal or private circumstance
+appears in any file, page or commit message on this branch.
