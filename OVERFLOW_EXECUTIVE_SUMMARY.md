@@ -7,8 +7,9 @@ official/company sources and a neutral owner record; it is not a contractor book
 Use a two-path scope: first ask a licensed plumber to identify the assembly and attempt the least
 destructive tub-side adjustment/removal; if that fails, use below-ceiling access through the storage
 unit only under a written combined contract that names the plumbing and drywall/restoration parties.
-Do not assume a permit exemption: SF.gov requires a permit before cutting/replacing pipes, and
-SF Plumbing Code §104.2 exemptions are conditional.
+Do not assume a permit exemption: SF.gov requires a permit before cutting/replacing pipes,
+SF Plumbing Code §104.2 exemptions are conditional, and SFBC §106A.2(10) minor drywall exemptions
+exclude fire-resistive assemblies.
 
 ## Ranked hiring order (decision support, not a verified performance rating)
 Weighted on licence capability, scope evidence, licence standing, occupied-unit experience and price
@@ -27,7 +28,7 @@ evidence; full reasoning, scores and cost basis are on the Ranked decision analy
 
 Restoration partner: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B; not a plumbing candidate.
 Atlas Plumbing & Rooter #868994 is a conditional review lead held outside the hiring order pending a direct trip-lever reference, restoration party and current dispatch number.
-Held back: D G Construction (CSLB citation disclosed), Advanced Plumbing (future-suspension warning),
+Held back: D G Construction (CSLB citation B&P §7114.A disclosed), Advanced Plumbing (future-suspension warning),
 24/7 SF Handyman (B-2), SF Building Group (B only), Precision (drain cleaning), Clever (licensed 2026-09-04),
 Cahill (no C-36), Kenneth Asire (suspended), Portola (identity unresolved), Atlas (conditional review lead).
 
@@ -50,4 +51,4 @@ are unconfirmed.
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 46 items.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 48 items.

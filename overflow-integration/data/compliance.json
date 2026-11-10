@@ -126,6 +126,18 @@
       ],
       "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
       "application": "Fee category and total project cost are unconfirmed; fees are not contractor quotes."
+    },
+    {
+      "id": "C-13",
+      "topic": "Drywall repair & fire-resistive ceiling assembly",
+      "rule": "SFBC §106A.2(8)&(10) exempt painting/papering and minor repairs to existing interior plaster or wallboard from a building permit ONLY except when part of a fire-resistive assembly.",
+      "application": "If below-ceiling access opens a floor-ceiling separation between a dwelling unit and storage/garage below, confirm with DBI/contractor whether the ceiling is fire-rated before cutting and restore with matching fire-resistive detailing if required.",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+      "source_ids": [
+        "SF-CODE-106",
+        "SF-REMODEL",
+        "CSLB-C9"
+      ]
     }
   ]
 }

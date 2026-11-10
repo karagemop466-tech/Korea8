@@ -43,6 +43,20 @@ class SiteTests(unittest.TestCase):
   r={x['id']:x for x in load('requirements.json')['rows']}
   self.assertNotIn('include fill/operate',r['R-40']['basis'])
   self.assertNotIn('include a fill/operate',r['R-02']['basis'])
+ def test_dg_citation_substance_published(self):
+  dg=next(x for x in load('ranking.json')['not_recommended'] if x['provider_id']=='P-21')
+  self.assertIn('DG-CITATION',dg['source_ids']);self.assertIn('7114.A',dg['reason'])
+  self.assertNotIn('substance is not published',dg['reason'])
+ def test_sfbc_106a2_fire_resistive_documented(self):
+  c=next(x for x in load('compliance.json')['rows'] if x['id']=='C-13')
+  self.assertIn('SF-CODE-106',c['source_ids']);self.assertIn('fire-resistive',c['rule'].lower())
+  r=next(x for x in load('requirements.json')['rows'] if x['id']=='R-12')
+  self.assertIn('SF-CODE-106',r['source_ids'])
+ def test_heise_dissolved_prior_license_distinguished(self):
+  srcs={s['id']:s for s in load('sources.json')['rows']}
+  self.assertIn('CSLB-787733',srcs)
+  h=next(x for x in load('providers.json')['rows'] if x['id']=='P-03')
+  self.assertIn('CSLB-787733',h['source_ids']);self.assertIn('1089561',h['additional_status'])
  def test_gems_preserved(self):
   self.assertTrue((ROOT/'docs'/'index.html').exists());self.assertTrue((ROOT/'src').exists());self.assertTrue((ROOT/'vendor').exists())
 if __name__=='__main__':unittest.main()

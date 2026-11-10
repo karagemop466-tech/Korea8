@@ -153,11 +153,12 @@
       "severity": "Medium",
       "category": "License status",
       "title": "D G Construction has a complaint-disclosure link",
-      "detail": "#297604 is active B + C-36; the disclosure lists citation 2 2022 002099 dated 03/23/2023, for disclosure only per B&P 7124.6.",
-      "action": "Read the official citation/disclosure and CSLB limits; active status is not a clean-history guarantee.",
+      "detail": "CSLB ComplaintDisclosure links to CitationViolationDisclosure for citation 2 2022 002099 (03/23/2023, FOR DISCLOSURE ONLY PER B&P CODE 7124.6), which publishes the violation: Business & Professions Code 7114.A — Aided and abetted non-licensee, while #297604 also certifies WC exempt (no employees).",
+      "action": "Hold D G Construction outside the priority hiring order on the strength of the disclosed B&P §7114.A citation.",
       "source_ids": [
         "CSLB-297604",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
       "status": "Open"
@@ -195,14 +196,13 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Rechecked 2026-11-10: Yelp business/search pages still return HTTP 403. Web-search excerpts are available for some providers; BBB and Angi pages were directly retrieved but do not establish this exact job. Numeric ratings/counts remain blank.",
+      "detail": "Yelp business pages returned HTTP 403 again on 2026-11-10, so no Yelp numeric ratings/counts are published. Direct BBB and Angi profiles were retrieved on 2026-11-10 for qualitative/complaint checks with numeric ratings kept blank.",
       "action": "Keep review observations labeled by retrieval method; request direct references and a current occupied-unit plan.",
       "source_ids": [
-        "YELP-RF",
         "YELP-ACE",
-        "YELP-ATLAS",
-        "BBB-ATLAS",
-        "ANGI-SF",
+        "YELP-HEISE",
+        "BBB-ACE",
+        "BBB-HEISE",
         "CSLB-SEARCH"
       ],
       "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
@@ -243,14 +243,15 @@
       "severity": "Medium",
       "category": "Technical evidence",
       "title": "Heise’s case studies are self-published and contain a 404 template block",
-      "detail": "Rechecked 2026-11-10: Ingleside, Mission and Marina pages still render case content alongside a Page Not Found (404) template block. Ingleside says exterior ceiling; that is not confirmed to be the storage-unit ceiling below this tub. None proves drywall restoration for that case; the company separately advertises drywall/ceiling patching.",
+      "detail": "Heise's project pages (#163802 Ingleside, #158154 Mission, #176011 Marina, and Panhandle #171358) are self-published summaries containing an embedded 404 block, and company pages display inconsistent review-volume claims (1,600+ vs 1,700+ vs 1,840 vs 2,000+).",
       "action": "Treat as adjacent self-published evidence only; ask for a direct reference, exact access location and named restoration party.",
       "source_ids": [
         "HEISE-INGLESIDE",
         "HEISE-MISSION",
         "HEISE-MARINA",
-        "CSLB-1089561",
-        "HEISE-PATCH"
+        "HEISE-PANHANDLE",
+        "HEISE-REVIEWS",
+        "CSLB-1089561"
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "status": "Open"
@@ -425,11 +426,13 @@
       "severity": "Low",
       "category": "Address",
       "title": "Fast Response registered-address wording differs from the website",
-      "detail": "CSLB prints “236 W POTRAL AVE #459”; the company site uses a different address presentation. The official record is not silently corrected.",
+      "detail": "Fast Response shows four address variants: CSLB lists 236 W POTRAL AVE #459 (typo), company /faq lists mailing 236 W Portal Ave #259 (94127), /faq footer lists San Francisco, CA 94118, and BBB lists 4444 Geary Blvd #203 (94118); additionally /plumbing-repair-and-replacement returned HTTP 404 on 2026-11-10.",
       "action": "Use the CSLB wording for the license row and confirm the current business address directly.",
       "source_ids": [
         "CSLB-1024971",
-        "FAST"
+        "FAST",
+        "FAST-FAQ",
+        "BBB-FAST"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "status": "Open"
@@ -576,12 +579,11 @@
       "category": "Repository",
       "status": "Open",
       "title": "Three earlier-session pull requests remain open and unmerged",
-      "detail": "PRs #35, #38 and #39 were opened on 2026-11-07 by other sessions. One of them carries a failing check. They conflict with the merged canonical dashboard, so merging them would revert verified work.",
+      "detail": "Nine earlier-session pull requests remain open and unmerged on GitHub as of 2026-11-10 (#7, #35, #38, #39, #44, #49, #51, #53, #63); main already reflects PRs #54–#62.",
       "action": "Owner decision: close them, or have the owning session rebase onto the current main. This session did not touch another session's pull request.",
       "source_ids": [
-        "REPO-BOARD",
         "REPO",
-        "GH-PAGES",
+        "REPO-BOARD",
         "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
@@ -592,12 +594,11 @@
       "category": "Repository",
       "status": "Open",
       "title": "Repository hygiene: case-colliding run cards and 26 stale session branches",
-      "detail": "run_card.json and RUN_CARD.json both exist at the repository root. On a case-insensitive filesystem (macOS, Windows) a clone keeps only one, so the two records can silently diverge. In addition, 26 remote arena/* session branches remain after their pull requests merged or closed.",
+      "detail": "38 arena/* remote branches exist alongside main on origin as of 2026-11-10 (including current branch arena/87e121e1-korea8 and 37 historical session branches).",
       "action": "Rename or archive one of the two run-card files, and delete merged session branches. Neither affects the published dashboard.",
       "source_ids": [
-        "REPO-BOARD",
         "REPO",
-        "GH-PAGES",
+        "REPO-BOARD",
         "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
@@ -623,12 +624,13 @@
       "severity": "Medium",
       "category": "Provider contact",
       "title": "Atlas phone numbers differ across official primary sources",
-      "detail": "CSLB #868994 lists (650) 871-9863; the company contact page lists (415) 849-2346; the directly retrieved BBB profile lists another contact number. The register uses the CSLB business phone and links the company contact page without silently substituting numbers.",
+      "detail": "Atlas shows CSLB phone (650) 871-9863, website phone (415) 849-2346, and BBB primary phone (415) 845-9199, plus 1 answered 10/29/2024 BBB $295 line-flush/warranty dispute.",
       "action": "Confirm the current dispatch number and legal entity before contact; keep the discrepancy visible.",
       "source_ids": [
         "CSLB-868994",
         "ATLAS-CONTACT",
-        "BBB-ATLAS"
+        "BBB-ATLAS",
+        "BBB-ATLAS-COMP"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
       "status": "Open"
@@ -637,15 +639,16 @@
       "id": "F-43",
       "severity": "Medium",
       "category": "Provider contact",
-      "title": "Rapid Flow website and CSLB phone numbers differ",
-      "detail": "CSLB #1115649 lists (415) 866-8401; the official company site advertises 844-BAY-FLOW. Both are primary-source observations, not proof that one is a current dispatch line.",
-      "action": "Show the CSLB phone in the license row and link the company site; confirm the number before scheduling.",
+      "title": "Rapid Flow contact lines clarified: 844-BAY-FLOW dispatch vs CSLB (415) 866-8401",
+      "detail": "Direct check of rapidflowbayarea.com/contact on 2026-11-10 confirms both lines belong to Rapid Flow: 844-BAY-FLOW is the 24/7 dispatch line and (415) 866-8401 (on CSLB) is explicitly published for texting scope photos at 230 Edinburgh St.",
+      "action": "Use either published line for inquiries; both link to active #1115649.",
       "source_ids": [
         "CSLB-1115649",
-        "RF"
+        "RF",
+        "RF-CONTACT"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
-      "status": "Open"
+      "status": "Resolved — clarified"
     },
     {
       "id": "F-44",
@@ -692,6 +695,37 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
       "status": "Open"
+    },
+    {
+      "id": "F-47",
+      "severity": "Medium",
+      "category": "Entity & reviews",
+      "title": "Heise's BBB B- rating, dissolved prior #787733, and misfiled Instagram complaint",
+      "detail": "BBB shows a B- unaccredited profile for Heise's Plumbing Inc carrying superseded CSLB #787733 (which CSLB confirms expired 03/31/2023 and was canceled/SoS dissolved 02/12/2025), 1 negative 08/14/2024 customer review (Kay S), and 1 unanswered 07/05/2026 complaint whose text is an unrelated misfiled Instagram/Meta complaint.",
+      "action": "Contract strictly with active #1089561 TARO GROUP INC dba HEISES PLUMBING (never dissolved #787733); ignore the misfiled Meta complaint while still vetting restoration licensing.",
+      "status": "Open",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_ids": [
+        "CSLB-1089561",
+        "CSLB-787733",
+        "BBB-HEISE",
+        "BBB-HEISE-COMP"
+      ]
+    },
+    {
+      "id": "F-48",
+      "severity": "Medium",
+      "category": "Code & ceiling assembly",
+      "title": "SFBC §106A.2(10) fire-resistive ceiling assembly check for below-ceiling cut/patch",
+      "detail": "Direct reading of SFBC §106A.2(10) on 2026-11-10 shows minor interior plaster or wallboard repair is permit-exempt ONLY except when part of a fire-resistive assembly; whether the ceiling separating the unit from the storage area below is fire-rated is unconfirmed.",
+      "action": "Have the contractor/DBI confirm whether the storage ceiling is fire-rated (e.g., Type X gypsum) before cutting and preserve fire rating upon restoration.",
+      "status": "Open",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+      "source_ids": [
+        "SF-CODE-106",
+        "SF-REMODEL",
+        "CSLB-C9"
+      ]
     }
   ]
 }
