@@ -730,7 +730,7 @@
       "status": "Unresolved"
     }
   ],
-  "final_verification_note": "Final 2026-11-10 review re-read all 24 CSLB records (board banner 11/9/2026 9:49:30–9:51:48 PM; timezone unstated), added BPC §7059(a), corrected SFPC/SFBC source chunks to 14/39, and made the C1–C5 scoring anchors explicit. Discount’s C1 component changed from 4 to 2 because A is not B/C-9; Fast Response moves to #9 and Discount to #10. FDL’s workers-compensation explanation was updated to the current policy record. Heise’s official fixture page was added. No provider was contacted or booked.",
+  "final_verification_note": "Final 2026-11-10 review re-read the original 24 CSLB records (board banner 11/9/2026 9:49:30–9:51:48 PM; timezone unstated); two supplementary CSLB records verified by merged session 6f4c9f79 are preserved. Added BPC §7059(a), corrected SFPC/SFBC source chunks to 14/39, and made C1–C5 anchors explicit. Discount C1 changed from 4 to 2 because A is not B/C-9; Fast Response is #9 and Discount #10. FDL workers-compensation wording was updated. Heise’s official fixture page was added. No provider was contacted or booked.",
   "partners_second_bid": [
     {
       "id": "RV-23",

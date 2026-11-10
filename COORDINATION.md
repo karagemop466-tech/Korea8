@@ -1706,7 +1706,7 @@ No provider will be contacted, quoted, booked or paid. Owner-supplied estimates 
 | `4B-01` | Claim board and inventory active work | done | `arena/4b81abe2-korea8` | `COORDINATION.md` |
 | `4B-02` | Independently review current requirements, provider evidence, ranked decision analysis, estimate provenance and repository irregularities | done | `arena/4b81abe2-korea8` | `audit/2026-11-10-4b81abe2/**` |
 | `4B-03` | Apply only evidenced corrections and usability improvements to the canonical dashboard; preserve owner-reported estimates with verified fields blank | done | `arena/4b81abe2-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only after active handoffs are clear |
-| `4B-04` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify exact-commit Pages deployment and record receipt | in progress | `arena/4b81abe2-korea8` | `COORDINATION.md`, deployment records and generated public output |
+| `4B-04` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify exact-commit Pages deployment and record receipt | done | `arena/4b81abe2-korea8` | `COORDINATION.md`, deployment records and generated public output |
 
 **Coordination note.** Arena fixes this session to `arena/4b81abe2-korea8`; no other branch or worktree will be created or pushed. Existing open PRs #63, #64 and #66 are independent audits and will not be merged, closed or treated as verified without review. Earlier canonical implementation handoffs are merged; any overlapping active scope discovered during review will be left untouched and logged here. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will contain neutral repair-scope language and will not disclose private owner context.
 
@@ -1722,3 +1722,14 @@ No provider will be contacted, quoted, booked or paid. Owner-supplied estimates 
 **Concurrent integration resolution.** `origin/main` advanced through PR #71 (`arena/5651e041-korea8`) during this session. The rebase conflicted in the shared board, canonical generator/data and generated pages. Resolution preserved PR #71's 23 review observations, five review sources, copy-ready quote-request dataset/UI, second-bid ceiling leads, publication-boundary F-52 and checker fixes, then reapplied this session's fresh CSLB/source/ranking corrections. This session's six new flags moved to F-58…F-63 so PR #71's F-52 remains intact. Unverified numeric Yelp values in PR #71's narrative F-14 were removed; all rating/count fields remain blank. Combined result: 135 sources, 60 flags, 23 review observations, 405 source-covered rows and 45 staged files. No other session's work was discarded; open PRs remain untouched.
 
 **Second concurrent deduplication (PR #73).** Main then advanced through `arena/6f4c9f79` with two supplementary CSLB-verified candidates, two more unresolved identities, city-hosted code PDFs, 16 CCR §831, additional source corrections and its own F-53…F-55. Those richer inputs were kept. This session did not claim fresh verification of the supplementary records or §831. It retained only unique additions: exact original-24 issue/source dates, ranking anchors and Discount correction, FDL/B-only wording, cautious §831 application, narrative Yelp-number removal and this audit. Existing F-54 covers the prior-audit formula issue and now also records code chunks; only five unique flags were appended as F-65…F-69. Final combined totals before PR: 29 identities (26 CSLB + 3 unresolved), 135 sources, 60 flags, 405 source-covered rows, 276 tracked links, 40 tests and 45 staged files.
+
+### 4B-04 — PR, merge and live deployment receipt
+
+| Item | Result |
+|---|---|
+| Integration PR | **#76** — https://github.com/karagemop466-tech/Korea8/pull/76 |
+| Merge | **MERGED** 2026-11-10T06:09:23Z; merge commit `0e80a1f0e8d751b6e3dda5654eb60fcbb19436b2` |
+| Exact-commit workflow | [42766610599](https://github.com/karagemop466-tech/Korea8/actions/runs/42766610599) — build, 28/28 verification, 40/40 tests, independent audit, 45-file staging, Pages deploy and live HTTPS assertions **success** |
+| Pages API | Legacy build for `0e80a1f0` reports **built**, no error |
+| Independent live checks | Cache-busted `decision-analysis.html`, `verification.html`, `flagged-for-review.html`, `audit/2026-11-10-4b81abe2/REPORT.md` and `requirements-traceability.json` fetched successfully; corrected order/rubric, new audit links and 60 flags confirmed |
+| Final status | `4B-01`…`4B-04` **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked/paid. |
