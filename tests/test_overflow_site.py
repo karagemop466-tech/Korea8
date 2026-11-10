@@ -35,6 +35,14 @@ class SiteTests(unittest.TestCase):
  def test_no_conflict_markers_or_private_meta(self):
   for p in ROOT.glob('*.html'):
    t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertNotIn('private reason',t);self.assertNotIn('without a permit for this week',t)
+ def test_heise_advertised_restoration_is_sourced_and_conditional(self):
+  h=next(x for x in load('ranking.json')['ranked'] if x['provider_id']=='P-03')
+  self.assertIn('HEISE-PATCH',h['source_ids']); self.assertIn('not independent proof',h['why'])
+  self.assertIn('HEISE-PATCH',(ROOT/'sources.html').read_text())
+ def test_watco_does_not_claim_complete_fill_test(self):
+  r={x['id']:x for x in load('requirements.json')['rows']}
+  self.assertNotIn('include fill/operate',r['R-40']['basis'])
+  self.assertNotIn('include a fill/operate',r['R-02']['basis'])
  def test_gems_preserved(self):
   self.assertTrue((ROOT/'docs'/'index.html').exists());self.assertTrue((ROOT/'src').exists());self.assertTrue((ROOT/'vendor').exists())
 if __name__=='__main__':unittest.main()

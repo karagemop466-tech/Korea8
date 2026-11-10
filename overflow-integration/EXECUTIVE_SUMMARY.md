@@ -15,7 +15,7 @@ Weighted on licence capability, scope evidence, licence standing, occupied-unit 
 evidence; full reasoning, scores and cost basis are on the Ranked decision analysis page.
 
 1. Ace Plumbing & Rooter #829071, (415) 824-6444 — B + C-36 + A/C-4/C-16/C-10, active since 2003, current workers comp, advertised HOA/property-manager work. No quote on file.
-2. Heise’s Plumbing #1089561, (415) 333-0704 — C-36/C-10/A/C-20; only company-published San Francisco ceiling-access tub waste-and-overflow case; no B or C-9, so the ceiling party must be named. No quote on file.
+2. Heise’s Plumbing #1089561, (415) 333-0704 — C-36/C-10/A/C-20; published San Francisco ceiling-access tub waste-and-overflow case and advertised plumbing-access and ceiling patching; no B or C-9, so the restoration party and contract structure must be confirmed. No quote on file.
 3. Rapid Flow Plumbing & Rooter #1115649, (415) 866-8401 — B + C-36, published simple-repair-to-renovation offer; 2024 licence, workers-comp exempt. No quote on file.
 4. Ayoob & Peery #392967, (415) 550-0975 — B + C-36, active since 1980, current workers comp; no scope evidence.
 5. We Do Construction #1096552, (415) 416-5494 — B + C-36; larger-scope positioning, small-repair acceptance unconfirmed.

@@ -104,14 +104,16 @@
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
         "CSLB-1089561",
-        "HEISE"
+        "HEISE",
+        "HEISE-INGLESIDE",
+        "HEISE-PATCH"
       ],
       "website": "https://www.heisesplumbing.com/",
       "service_claim": "The company advertises San Francisco plumbing and property repairs, and says it handles jobs big or small.",
       "service_source": "HEISE",
       "service_verified": true,
       "group": "Technical case-study lead",
-      "fit": "Strongest published adjacent case evidence: San Francisco tub waste-and-overflow replacements, including one described as using ceiling access. No C-9/B on this license; ask who handles ceiling restoration.",
+      "fit": "Published adjacent San Francisco tub waste-and-overflow case describes ceiling access; company also advertises plumbing-access drywall and ceiling patching. No B or C-9 on this licence; confirm restoration party and contract structure.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,

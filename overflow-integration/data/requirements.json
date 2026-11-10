@@ -20,7 +20,7 @@
       "id": "R-02",
       "category": "Problem & outcome",
       "requirement": "Restore a stopper that seals when closed and a drain that runs freely when open.",
-      "basis": "Functional acceptance control; Watco instructions include a fill/operate test for its models.",
+      "basis": "Proposed functional acceptance control. Watco step 7 discusses adjustment to stop water when closed; it does not prescribe this complete fill/operate leak test.",
       "acceptance_check": "Fill, close, open and leak-test; record results before closing any opening.",
       "source_ids": [
         "WATCO",
@@ -41,8 +41,8 @@
         "OWNER",
         "CSLB-CONTRACT"
       ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
+      "origin": "Proposed control",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-04/R-25; bt R-S05; data REQ-24/27",
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
     },
@@ -544,16 +544,17 @@
       "id": "R-36",
       "category": "Commercial & evidence",
       "requirement": "Requote one identical scope across at least three providers, including a combined-scope option.",
-      "basis": "The three supplied estimates cover different work and are not a comparable price range.",
+      "basis": "The owner-reported estimates cover different scopes; CSLB recommends at least three written bids on identical plans, specifications and scope.",
       "acceptance_check": "Comparable bids use the same parts, access path, restoration, permit and cleanup assumptions.",
       "source_ids": [
         "OWNER",
-        "CSLB-CONTRACT"
+        "CSLB-CONTRACT",
+        "CSLB-FINDING"
       ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
+      "origin": "Proposed control",
+      "status": "Proposed control; not yet accepted by a provider",
       "legacy_ids": "root R-11/R-27/R-28; bt R-B01/B02; data REQ-22",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx"
     },
     {
       "id": "R-37",
@@ -605,7 +606,7 @@
       "id": "R-40",
       "category": "Commercial & evidence",
       "requirement": "Leak-test and function-test before closing the ceiling; retain inspection and test records.",
-      "basis": "Watco model instructions include fill/operate testing; DBI requires inspection before covering.",
+      "basis": "Proposed test before restoration; Watco step 7 describes stopper adjustment, not a complete fill/operate leak test. Confirm required inspection before covering with DBI.",
       "acceptance_check": "Test/inspection results and photos are accepted before final restoration.",
       "source_ids": [
         "WATCO",
