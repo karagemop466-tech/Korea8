@@ -24,6 +24,7 @@ def is_official(url):
         "fastresponseplumbingsf.com", "wedoconstructions.com", "sfbuildinggroup.com",
         "rapidflowbayarea.com", "aceplumbingandrooter.com", "diamondcertified.org",
         "amlegal.com", "ayoobpeery.com", "bernalhilldrywall.com", "atlasplumbingandrooter.com",
+        "24-7rooter.com", "plumbingpro.com", "cjplumbing.net",
         "docs.github.com", "api.github.com"))
 BLANK_MARK = re.compile(r"blank|unverified|not (captured|confirmed|available|retrieved)|—|\?\?", re.I)
 

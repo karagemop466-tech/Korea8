@@ -172,12 +172,13 @@
       "id": "R-12",
       "category": "Scope & restoration",
       "requirement": "Restore drywall, tape, texture and paint to an agreed finish after any ceiling opening.",
-      "basis": "C-9 defines drywall/finishing scope; no supplied quote explicitly names restoration.; SFBC §106A.2(10) minor wallboard exemption excludes fire-resistive assemblies.",
+      "basis": "C-9 defines drywall/finishing scope; no supplied quote explicitly names restoration; SFBC §106A.2(10) minor wallboard exemption excludes fire-resistive assemblies.",
       "acceptance_check": "Contract names the restoration party, finish standard and access-panel/patch choice.",
       "source_ids": [
         "CSLB-C9",
         "OWNER",
-        "SF-CODE-106"
+        "SF-CODE-106",
+        "SF-CODE-106-PDF"
       ],
       "origin": "Owner requirement",
       "status": "Owner requirement recorded; provider acceptance unverified",
@@ -218,18 +219,20 @@
     {
       "id": "R-15",
       "category": "Provider & licensing",
-      "requirement": "Structure the combined contract lawfully: B prime with appropriate trades, or named licensed specialty subcontractors.",
-      "basis": "BPC §7057 and CSLB C-9/C-36 definitions; B-2 has separate limits.",
+      "requirement": "Structure the combined contract lawfully: B prime with appropriate trades (§7057), C-36 incidental-and-supplemental patch only when essential (§7059(a)/16 CCR §831), or named C-9 drywall subcontractor.",
+      "basis": "BPC §§7057/7059(a), 16 CCR §831 and CSLB C-9/C-36 definitions; B-2 has separate limits.",
       "acceptance_check": "Contract names who performs plumbing and who performs drywall/restoration, with license numbers.",
       "source_ids": [
         "BPC-7057",
         "CSLB-B-FAST",
         "CSLB-C9",
         "CSLB-C36",
-        "BPC-7057-5"
+        "BPC-7057-5",
+        "BPC-7059",
+        "CSLB-831"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "root R-12/R-17; bt R-L02; data REQ-07",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057."
     },
@@ -342,11 +345,12 @@
       "acceptance_check": "Determination states whether a permit is required, which permit, who pulls it and inspection steps.",
       "source_ids": [
         "SF-PERMIT",
+        "SF-CODE-104-PDF",
         "SF-CODE-104",
         "SF-DBI"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "root R-18; bt R-P01; data REQ-17",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -354,17 +358,18 @@
       "id": "R-23",
       "category": "Permit & code",
       "requirement": "Do not treat leak/unstopping/faucet exemptions as covering cutting into or removing piping/traps.",
-      "basis": "SF Plumbing Code §104.2 text was directly retrieved.",
+      "basis": "2025 SF Plumbing Code §104.2 directly retrieved from SF.gov PDF and AmLegal.",
       "acceptance_check": "Scope is matched against the exact exemption conditions; cutting/replacement is not assumed exempt.",
       "source_ids": [
+        "SF-CODE-104-PDF",
         "SF-CODE-104",
         "SF-PERMIT",
         "SF-CODE-106"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "bt R-P01; root code C-02 correction",
-      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
+      "official_url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf"
     },
     {
       "id": "R-24",
@@ -378,7 +383,7 @@
         "SF-REMODEL"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "bt R-P02; data REQ-19/20",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -393,7 +398,7 @@
         "SF-REMODEL"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "root R-20; bt R-P02; data REQ-18",
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
     },
@@ -438,7 +443,7 @@
         "CIV-1954"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "root R-21; bt R-T01; data REQ-14",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
     },
@@ -452,7 +457,7 @@
         "CIV-1954"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "root R-22; bt R-T01/T02; data REQ-14",
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
     },
@@ -483,7 +488,7 @@
         "EPA-RRP-RULES"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "new conditional control",
       "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
     },
@@ -527,7 +532,7 @@
         "CSLB-CONTRACT"
       ],
       "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+      "status": "Official source rechecked 2026-11-10; job applicability to confirm",
       "legacy_ids": "bt R-L04",
       "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
     },

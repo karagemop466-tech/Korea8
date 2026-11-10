@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-10T01:17:00.994890+00:00",
+  "checked_at": "2026-11-10T05:59:18.517554+00:00",
   "result": "PASS",
-  "checks_run": 27,
-  "checks_passed": 27,
+  "checks_run": 28,
+  "checks_passed": 28,
   "checks_failed": 0,
-  "canonical_rows_checked": 341,
+  "canonical_rows_checked": 374,
   "tracked_html_files": 68,
   "checks": [
     {
@@ -30,12 +30,12 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "341 rows; offenders: "
+      "detail": "374 rows; offenders: "
     },
     {
       "check": "provider count parity",
       "ok": true,
-      "detail": "25/25"
+      "detail": "29/29"
     },
     {
       "check": "requirement count parity",
@@ -44,6 +44,11 @@
     },
     {
       "check": "estimate count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "cost drivers table parity",
       "ok": true,
       "detail": ""
     },
@@ -65,7 +70,7 @@
     {
       "check": "unresolved identity fields blank",
       "ok": true,
-      "detail": "1 unresolved"
+      "detail": "3 unresolved"
     },
     {
       "check": "verified estimate amounts blank",
@@ -140,7 +145,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "256 links; offenders: "
+      "detail": "266 links; offenders: "
     }
   ]
 }

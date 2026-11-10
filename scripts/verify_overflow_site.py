@@ -90,6 +90,7 @@ def main():
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
  check('requirement count parity',len(parsed['requirements.html'].tables.get('requirements-table',[]))==len(req))
  check('estimate count parity',len(parsed['estimates.html'].tables.get('estimates-table',[]))==len(est['rows']))
+ check('cost drivers table parity',len(parsed['estimates.html'].tables.get('cost-drivers-table',[]))==len(est.get('cost_drivers',[])) and len(est.get('cost_drivers',[]))>=6)
  check('source count parity',len(parsed['sources.html'].tables.get('sources-table',[]))==len(srcs))
  check('flag count parity',len(parsed['flagged-for-review.html'].tables.get('flags-table',[]))==len(flags))
  bad=[]
@@ -114,8 +115,6 @@ def main():
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')
    if r.get('official_url') and not r['official_url'].startswith('https://'):bad.append(f'{name}:{r.get("id")}:official_url')
  check('all row source ids resolve and official urls are https',not bad,'; '.join(bad[:20]))
- # suspended not in priority shortlist table
- short=parsed['providers.html'].tables.get('',[])
  # first unnamed table is priority leads; ensure suspended name absent from its rows
  susp=[p['name'] for p in prov if p['status']=='Suspended']
  first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)

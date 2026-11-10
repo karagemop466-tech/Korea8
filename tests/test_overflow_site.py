@@ -58,6 +58,25 @@ class SiteTests(unittest.TestCase):
   self.assertIn('CSLB-787733',srcs)
   h=next(x for x in load('providers.json')['rows'] if x['id']=='P-03')
   self.assertIn('CSLB-787733',h['source_ids']);self.assertIn('1089561',h['additional_status'])
+ def test_bpc_7059_and_city_sfpc_pdf_documented(self):
+  srcs={s['id']:s for s in load('sources.json')['rows']}
+  self.assertIn('BPC-7059',srcs);self.assertIn('CSLB-831',srcs);self.assertIn('SF-CODE-104-PDF',srcs)
+  c2=next(x for x in load('compliance.json')['rows'] if x['id']=='C-02')
+  self.assertIn('SF-CODE-104-PDF',c2['source_ids'])
+  c15=next(x for x in load('compliance.json')['rows'] if x['id']=='C-15')
+  self.assertIn('BPC-7059',c15['source_ids']);self.assertIn('incidental',c15['rule'].lower())
+ def test_cost_drivers_on_estimates_without_inferred_prices(self):
+  est=load('estimates.json')
+  self.assertGreaterEqual(len(est.get('cost_drivers',[])),6)
+  html_text=(ROOT/'estimates.html').read_text()
+  self.assertIn('id="cost-drivers-table"',html_text)
+ def test_sources_urls_fixed_and_unresolved_discovery_blank(self):
+  srcs={s['id']:s for s in load('sources.json')['rows']}
+  self.assertIn('/recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/',srcs['HEISE-PANHANDLE']['url'])
+  self.assertIn('LicName=D+G+CONSTRUCTION+CO',srcs['DG-CITATION']['url'])
+  for name in ("C J's Plumbing & Rooter Service",'Golden Gate Plumbing & Rooter Inc'):
+   p=next(x for x in load('providers.json')['rows'] if x['name']==name)
+   for k in ('license','phone','expiry','status','registered_city','workers_comp'):self.assertFalse(p[k])
  def test_gems_preserved(self):
   self.assertTrue((ROOT/'docs'/'index.html').exists());self.assertTrue((ROOT/'src').exists());self.assertTrue((ROOT/'vendor').exists())
 if __name__=='__main__':unittest.main()

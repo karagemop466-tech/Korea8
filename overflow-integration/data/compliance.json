@@ -14,11 +14,12 @@
     {
       "id": "C-02",
       "topic": "Conditional exemptions",
-      "rule": "SF Plumbing Code §104.2 exempts leak repair, unstopping and certain faucet/fixture work only when the stated no-cutting/no-removal conditions hold.",
+      "rule": "2025 SF Plumbing Code §104.2 lists nine exemptions (including leak repair, unstopping and faucet/angle-stop maintenance), each conditioned on not cutting into or removing piping or traps; §104.1 requires emergency-work permits within 1 business day.",
       "source_ids": [
+        "SF-CODE-104-PDF",
         "SF-CODE-104"
       ],
-      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "official_url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
       "application": "Do not assume a stuck trip-lever replacement is exempt; match the exact scope to the text."
     },
     {
@@ -50,7 +51,8 @@
       "rule": "BPC §7057(b) allows a B prime contract involving other trades when it requires at least two unrelated trades or crafts other than framing or carpentry, or the B holds the appropriate classification or subcontracts with an appropriately licensed contractor. Framing or carpentry cannot count toward the two-trade calculation.",
       "source_ids": [
         "BPC-7057",
-        "CSLB-B-FAST"
+        "CSLB-B-FAST",
+        "BPC-7059"
       ],
       "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
       "application": "Name the plumbing and restoration parties; do not infer drywall self-performance from B + C-36 alone."
@@ -136,7 +138,8 @@
       "source_ids": [
         "SF-CODE-106",
         "SF-REMODEL",
-        "CSLB-C9"
+        "CSLB-C9",
+        "SF-CODE-106-PDF"
       ]
     },
     {
@@ -148,6 +151,19 @@
       ],
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
       "application": "The Permit Center help desk (628-652-4900) and the counter at 49 South Van Ness are closed on 2026-11-11, so the next business day for a permit or exemption determination is Thursday 2026-11-12. A help-desk question left on 2026-11-10 should draw a response by 2026-11-13 on the City's own two-business-day commitment. Schedule any contractor's permit application or DBI question around that date rather than around 2026-11-11."
+    },
+    {
+      "id": "C-15",
+      "topic": "Incidental specialty work (BPC §7059(a))",
+      "rule": "BPC §7059(a) allows a specialty contractor (such as C-36 Plumbing) to contract across crafts only if the other-trade work is incidental and supplemental; 16 CCR §831 defines incidental and supplemental as \"essential to accomplish the work in which the contractor is classified.\"",
+      "source_ids": [
+        "BPC-7059",
+        "CSLB-831",
+        "CSLB-C36",
+        "CSLB-C9"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+      "application": "A C-36 plumber may include a small plumbing access-hole patch essential to the pipe repair, whereas standalone, separately priced, texture-matched or fire-resistive ceiling restoration requires a C-9 or qualifying B contractor."
     }
   ]
 }

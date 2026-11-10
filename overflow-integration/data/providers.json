@@ -15,7 +15,7 @@
       "expiry": "2028-01-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
       "source_ids": [
         "CSLB-1115649",
@@ -61,7 +61,7 @@
       "expiry": "2027-06-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/13/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
       "source_ids": [
         "CSLB-829071",
@@ -104,7 +104,7 @@
       "expiry": "2028-04-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 01/11/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
         "CSLB-1089561",
@@ -112,6 +112,7 @@
         "HEISE-INGLESIDE",
         "HEISE-PANHANDLE",
         "HEISE-PATCH",
+        "HEISE-FIXTURES",
         "HEISE-REVIEWS",
         "CSLB-787733",
         "BBB-HEISE"
@@ -121,7 +122,7 @@
       "service_source": "HEISE",
       "service_verified": true,
       "group": "Technical case-study lead",
-      "fit": "Four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 & Panhandle #171358) and advertised drywall/ceiling patching, but no B or C-9 on active #1089561. Note BBB (B-, unaccredited) still lists dissolved #787733 (canceled 02/12/2025) and shows 1 Aug 2024 review plus 1 unrelated misfiled Instagram complaint; confirm #1089561 TARO GROUP INC legal entity, restoration party and contract structure.",
+      "fit": "Four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 & Panhandle #171358), fixture replacement page (overflow plates/drain assemblies), and advertised plumbing-access drywall patching. Under BPC §7059(a)/16 CCR §831 a small essential access patch may be incidental, whereas standalone/texture/fire-rated ceiling restoration requires C-9 or B. Note BBB (B-, unaccredited) still lists dissolved #787733 (canceled 02/12/2025) and shows 1 Aug 2024 review plus 1 misfiled Instagram complaint; contract strictly with #1089561 TARO GROUP INC.",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -149,7 +150,7 @@
       "expiry": "2028-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/19/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
       "source_ids": [
         "CSLB-977638",
@@ -189,7 +190,7 @@
       "expiry": "2027-01-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "source_ids": [
         "CSLB-757796",
@@ -228,7 +229,7 @@
       "expiry": "2027-03-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 12/18/2026",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "source_ids": [
         "CSLB-1024971",
@@ -271,7 +272,7 @@
       "expiry": "2028-05-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
       "source_ids": [
         "CSLB-749536"
@@ -308,7 +309,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 11/14/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
       "source_ids": [
         "CSLB-1096552",
@@ -351,7 +352,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 08/31/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
       "source_ids": [
         "CSLB-392967",
@@ -389,7 +390,7 @@
       "expiry": "2028-07-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 03/10/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
       "source_ids": [
         "CSLB-995163",
@@ -427,7 +428,7 @@
       "expiry": "2027-06-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
       "source_ids": [
         "CSLB-1106131",
@@ -464,7 +465,7 @@
       "expiry": "2027-05-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 04/11/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
       "source_ids": [
         "CSLB-1105133"
@@ -499,7 +500,7 @@
       "expiry": "2027-11-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 08/21/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
       "source_ids": [
         "CSLB-1009195"
@@ -537,7 +538,7 @@
       "expiry": "2027-04-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 10/01/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
       "source_ids": [
         "CSLB-379364"
@@ -572,7 +573,7 @@
       "expiry": "2027-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 06/01/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
       "source_ids": [
         "CSLB-966337"
@@ -606,7 +607,7 @@
       "expiry": "2027-07-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 04/01/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
       "source_ids": [
         "CSLB-1140843"
@@ -639,7 +640,7 @@
       "expiry": "2028-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 01/21/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
       "source_ids": [
         "CSLB-1086935"
@@ -672,7 +673,7 @@
       "expiry": "2027-05-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
       "source_ids": [
         "CSLB-961218"
@@ -705,7 +706,7 @@
       "expiry": "2028-07-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
       "source_ids": [
         "CSLB-954385"
@@ -739,7 +740,7 @@
       "expiry": "2027-11-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/01/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
       "source_ids": [
         "CSLB-300647"
@@ -773,7 +774,7 @@
       "expiry": "2027-04-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
       "source_ids": [
         "CSLB-297604",
@@ -811,7 +812,7 @@
       "expiry": "2027-05-31",
       "status": "Suspended",
       "workers_comp": "Policy recorded; expires 08/30/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
       "source_ids": [
         "CSLB-1027286"
@@ -846,7 +847,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
       "source_ids": [
         "CSLB-1160613"
@@ -913,7 +914,7 @@
       "expiry": "2028-03-31",
       "status": "Current and active",
       "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
-      "source_timestamp": "11/9/2026 4:49 PM (checked 2026-11-10); timezone not stated",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
       "source_ids": [
         "CSLB-868994",
@@ -941,6 +942,151 @@
         "F-14",
         "F-46",
         "F-42"
+      ]
+    },
+    {
+      "id": "P-26",
+      "name": "24/7 Rooter and Plumbing Services",
+      "legal_name": "24 / 7 ROOTER AND PLUMBING SERVICES INC · dba A & R PLUMBING",
+      "license": "954813",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-61/D-56"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 586-6851",
+      "expiry": "2028-11-30",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded; expires 07/01/2027",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813",
+      "source_ids": [
+        "CSLB-954813",
+        "ROOTER247"
+      ],
+      "website": "https://www.24-7rooter.com/",
+      "service_claim": "Company advertises San Francisco emergency plumbing, water extraction/drying and reconstruction/repairs; site displays dispatch (415) 488-8661 (differs from CSLB (415) 586-6851).",
+      "service_source": "ROOTER247",
+      "service_verified": true,
+      "group": "Additional registry candidate",
+      "fit": "Active SF C-36 + A + D-56 license with advertised water-restoration scope, but no B or C-9 classification (ceiling work beyond a BPC §7059(a) incidental patch needs C-9/B). Confirm current dispatch phone; BBB profile URL returned 404.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "",
+      "review_source": "",
+      "additional_status": "",
+      "flags": [
+        "F-01",
+        "F-52"
+      ]
+    },
+    {
+      "id": "P-27",
+      "name": "George Salet Plumbing",
+      "legal_name": "GEORGE SALET PLUMBING INC",
+      "license": "888630",
+      "classifications": [
+        "C-16",
+        "C-36"
+      ],
+      "registered_city": "Brisbane",
+      "phone": "(415) 334-0733",
+      "expiry": "2026-12-31",
+      "status": "Current and active",
+      "workers_comp": "Policy recorded; expires 01/28/2027",
+      "source_timestamp": "11/9/2026 9:49-9:52 PM (checked 2026-11-10); timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=888630",
+      "source_ids": [
+        "CSLB-888630",
+        "SALET"
+      ],
+      "website": "https://www.plumbingpro.com/residential/toilets-sinks-faucets/",
+      "service_claim": "Company advertises SF/Peninsula fixture repairs, free estimates and flat-rate pricing; claims family-run since 1979 while CSLB license #888630 was issued 12/21/2006.",
+      "service_source": "SALET",
+      "service_verified": true,
+      "group": "Additional registry candidate",
+      "fit": "Secondary option for a tub-side fixture attempt (free estimate advertised), but registered in Brisbane, no B or C-9 classification, and license expires 2026-12-31 inside the near-term hiring window.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "",
+      "review_source": "",
+      "additional_status": "License expires 12/31/2026; confirm renewal before scheduling.",
+      "flags": [
+        "F-01",
+        "F-52"
+      ]
+    },
+    {
+      "id": "P-28",
+      "name": "C J's Plumbing & Rooter Service",
+      "legal_name": "",
+      "license": "",
+      "classifications": [],
+      "registered_city": "",
+      "phone": "",
+      "expiry": "",
+      "status": "",
+      "workers_comp": "",
+      "source_timestamp": "",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "CJS-WEB"
+      ],
+      "website": "https://cjplumbing.net/",
+      "service_claim": "",
+      "service_source": "",
+      "service_verified": false,
+      "group": "Identity unresolved",
+      "fit": "Domain served a GoDaddy \"Launching Soon\" placeholder on 2026-11-10 with no CSLB license published; all regulated fields left blank and excluded.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "",
+      "review_source": "",
+      "additional_status": "",
+      "flags": [
+        "F-52"
+      ]
+    },
+    {
+      "id": "P-29",
+      "name": "Golden Gate Plumbing & Rooter Inc",
+      "legal_name": "",
+      "license": "",
+      "classifications": [],
+      "registered_city": "",
+      "phone": "",
+      "expiry": "",
+      "status": "",
+      "workers_comp": "",
+      "source_timestamp": "",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "AUDIT-20261110-6F4"
+      ],
+      "website": "",
+      "service_claim": "",
+      "service_source": "",
+      "service_verified": false,
+      "group": "Identity unresolved",
+      "fit": "Indexed listing references bathtub overflow repair, but company site failed to load on 2026-11-10 and no CSLB license was confirmed; all regulated fields left blank and excluded.",
+      "exact_job_confirmed": false,
+      "ceiling_restoration_confirmed": false,
+      "availability_confirmed": false,
+      "quote_confirmed": false,
+      "review_url": "",
+      "review_source": "",
+      "additional_status": "",
+      "flags": [
+        "F-52"
       ]
     }
   ]

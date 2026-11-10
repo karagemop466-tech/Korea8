@@ -53,10 +53,13 @@ jobs:
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
           expected = {
               'index.html': 'Trip Lever Project',
-              'verification.html': 'audit/2026-11-10-87e121e1/REPORT.md',
+              'estimates.html': 'cost-drivers-table',
+              'verification.html': 'audit/2026-11-10-6f4c9f79/REPORT.md',
               'flagged-for-review.html': '10 November publication review',
               'audit/2026-11-10-660ab2dd.md': 'Configuration permission limitation',
               'audit/2026-11-10-87e121e1/REPORT.md': '2026-11-10',
+              'audit/2026-11-10-b5ed3a43/REPORT.md': 'Requirements traceability matrix',
+              'audit/2026-11-10-6f4c9f79/REPORT.md': '11/9/2026 9:49',
           }
           for path, marker in expected.items():
               for attempt in range(12):

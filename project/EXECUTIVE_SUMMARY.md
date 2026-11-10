@@ -1,3 +1,5 @@
+> **Superseded 2026-11-07 (historical archive only).** Do not use this draft for current decisions: it reflects an earlier 19-license snapshot and outdated code claims. Use the current canonical dashboard at [../executive-summary.html](../executive-summary.html) and [../OVERFLOW_EXECUTIVE_SUMMARY.md](../OVERFLOW_EXECUTIVE_SUMMARY.md).
+
 # Executive Summary — Bathtub Wastewater Overflow Trip Lever
 _Compiled 2026-11-07 · mirror of `executive-summary.html` (generated from `project/summary.json`)_
 

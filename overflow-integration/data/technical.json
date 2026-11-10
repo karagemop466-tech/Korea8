@@ -65,12 +65,15 @@
     {
       "id": "T-06",
       "topic": "Restoration party",
-      "statement": "Opening a ceiling below the tub requires restoring drywall/plaster, taping, texture and paint, plus confirming under SFBC §106A.2(10) whether the ceiling between unit and storage/garage below is part of a fire-resistive assembly (e.g., Type X gypsum).",
+      "statement": "Opening a ceiling below the tub requires restoring drywall/plaster, taping, texture and paint, confirming under SFBC §106A.2(10) whether the storage-unit ceiling is fire-resistive, and using a C-9 or qualifying B contractor unless work is strictly a small essential plumbing access-hole patch under BPC §7059(a)/16 CCR §831.",
       "source_ids": [
         "SF-CODE-106",
         "CSLB-C9",
         "EPA-RRP",
-        "EPA-ASBESTOS"
+        "EPA-ASBESTOS",
+        "BPC-7059",
+        "CSLB-831",
+        "SF-CODE-106-PDF"
       ],
       "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
       "status": "Official classification evidence",
