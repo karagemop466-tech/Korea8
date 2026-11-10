@@ -1186,6 +1186,9 @@ Arena fixes this session to its existing branch; no separate session branch will
 - **Branch note:** the initial `git pull --rebase origin arena/35739f62-korea8` could not find a remote branch because it had not yet been published; rebased on `origin/main` and pushed the initial claim successfully.
 - **Concurrent integration:** main advanced through another session's publication-boundary work before PR #57 could merge. Rebase conflicted in this shared board; both sessions' entries were retained, with no work discarded. Canonical files from main were kept intact.
 
+- **PR/deploy:** [PR #57](https://github.com/karagemop466-tech/Korea8/pull/57) merged at 2026-11-10 00:51:28 UTC, merge commit `caab44e8403460e9ca18109ce3e3ec03697f609b`; [its dashboard workflow](https://github.com/karagemop466-tech/Korea8/actions/runs/42731489541) succeeded. The legacy Pages build for that commit was canceled after main advanced; a subsequent [dashboard workflow](https://github.com/karagemop466-tech/Korea8/actions/runs/42731535888) succeeded, including live HTTPS confirmation. GitHub Pages was already live before this audit. The post-rebase combined checks passed 27/27 and 16 unit tests.
+- A later rebase again conflicted in this board; both sessions’ entries were retained.
+
 ### 660ab2dd publication receipt
 
 - PR **#55** https://github.com/karagemop466-tech/Korea8/pull/55 merged 2026-11-10T00:50:39Z, commit `21c3ce0430797924727aa06db29518b0dda64c77`.
