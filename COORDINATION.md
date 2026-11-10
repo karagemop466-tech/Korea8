@@ -1641,6 +1641,14 @@ was added anywhere in the repository.
 | Item | Result |
 |---|---|
 | Integration PR | **#71** — https://github.com/karagemop466-tech/Korea8/pull/71 (`arena/5651e041-korea8` → `main`) |
-| Merge | to be recorded |
-| Pages deploy | to be recorded |
+| Merge | **MERGED** 2026-11-10T05:59:40Z by `karagemop466-tech`; merge commit `175e1f91bcaae3079fca5ac3f0137f3354dd83c6` |
+| Actions run | **42765546141** (`Publish overflow dashboard`) — build and deploy **success** for `175e1f91` |
+| Legacy Pages build | **built** for `175e1f91…`, created 2026-11-10T05:59:42Z, no error |
+| Live check | `https://karagemop466-tech.github.io/Korea8/?deployment=175e1f9` serves the new above-the-fold answer bar with the four CSLB phone numbers; `decision-analysis.html` renders the review-evidence column and the second-bid table; `audit/2026-11-10-5651e041/REPORT.md` and `audit/2026-11-10-b5ed3a43/REPORT.md` are both **reachable** (the b5ed3a43 audit had been orphaned — its recorded request is now satisfied) |
 | Live URL | https://karagemop466-tech.github.io/Korea8/ |
+
+**Board conflicts.** None. `main` did not advance while this session worked; the branch was 0 behind at merge time and the merge was a clean fast-forward-equivalent merge commit. No other session's work was displaced, and this session touched no other session's files.
+
+**Open PRs untouched.** #7, #35, #38, #39, #44, #49, #51, #53, #63, #64 and #66 were not merged, closed or assumed safe for takeover. Their existence is already recorded under F-39.
+
+**Note on the working branch after merge.** The platform pins this session to `arena/5651e041-korea8`. The branch is left in place with the merged commits; no branch was renamed, created or deleted.
