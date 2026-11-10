@@ -176,7 +176,22 @@ body=(f'<div class="panel"><h3>How to read this ranking</h3><p>This is editorial
 rows=[]
 for r in R:
  rows.append([e(r['id']),e(r['category']),e(r['requirement']),f"<strong>Basis:</strong> {e(r['basis'])}<br><strong>Acceptance:</strong> {e(r['acceptance_check'])}<br><span class='small'>Legacy mapping: {e(r['legacy_ids'])}</span>",pill(r['origin'],'ok' if r['origin']=='Official rule' else 'warn')+f"<br><span class='small'>{e(r['status'])}</span>",src_links(r['source_ids'],r['official_url'])])
-body=f'<p>{len(R)} requirements deduplicated from the parallel registers. Owner requirements and proposed controls are not presented as official facts; official context links are provided for review.</p>'+table('Full requirement register',['ID','Category','Requirement','Basis / acceptance check','Origin / status','Sources'],rows,'requirements-table')
+OB=load('requirements.json').get('owner_brief_register',{'rows':[],'note':'','as_of':AS_OF})
+obrows=[]
+for r in OB['rows']:
+    kind={'satisfied':'ok','partial':'warn','open':'unv'}.get(r['state'],'unv')
+    obrows.append([f"<strong>{e(r['id'])}</strong>",e(r['category']),e(r['requirement']),
+                   f"<strong>Acceptance test:</strong> {e(r['test'])}<br><strong>Evidence:</strong> {e(r['evidence'])}<br><span class='small'>Artefact: <a href=\"{e(r['artefact'])}\">{e(r['artefact'])}</a></span>",
+                   pill(r['state'],kind),src_links(r['source_ids'])])
+obstates={}
+for r in OB['rows']:
+    obstates[r['state']]=obstates.get(r['state'],0)+1
+obsum=' · '.join(f"{v} {k}" for k,v in sorted(obstates.items(),key=lambda kv:-kv[1]))
+obody=(f"<h2>Owner-brief requirements</h2><p>One row per requirement stated in the brief, with the test a reader can run and the artefact that answers it. "
+       f"<strong>{len(OB['rows'])} rows: {e(obsum)}.</strong> A partial or blocked row is published as it stands rather than rounded up; the reasons are in the evidence text. {e(OB['note'])}</p>"
+       +table('Owner-brief register — requirement, acceptance test and current state',['ID','Category','Requirement','Acceptance test / evidence / artefact','State','Sources'],obrows,'owner-requirements-table')
+       +'<p class="small">State vocabulary: <strong>satisfied</strong> — the artefact answers the requirement and can be checked from a link on the row; <strong>partial</strong> — part is answered and the evidence text names what is missing; <strong>open</strong> — nothing answers it yet.</p>')
+body=obody+f"<h2>Technical requirement register</h2><p>{len(R)} requirements deduplicated from the parallel registers. Owner requirements and proposed controls are not presented as official facts; official context links are provided for review.</p>"+table('Full technical register (R-series)',['ID','Category','Requirement','Basis / acceptance check','Origin / status','Sources'],rows,'requirements-table')
 (ROOT/'requirements.html').write_text(page('requirements.html','Requirements','Full source-linked register with acceptance checks, origin labels and legacy mappings.',body),encoding='utf-8')
 # Providers
 prows=[]

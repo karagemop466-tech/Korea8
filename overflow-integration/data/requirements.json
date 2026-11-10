@@ -1,658 +1,897 @@
 {
+ "as_of": "2026-11-10",
+ "rows": [
+  {
+   "id": "R-01",
+   "category": "Problem & outcome",
+   "requirement": "Free or replace the stuck bathtub waste-and-overflow trip lever without destroying the concealed plumbing.",
+   "basis": "Owner problem statement; manufacturer instructions describe the assembly but do not identify this unit.",
+   "acceptance_check": "Provider documents the existing brand/model, what moved, what remained stuck and the chosen repair path.",
+   "source_ids": [
+    "OWNER",
+    "WATCO"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-01/R-03; bt R-S01/R-S03; data REQ-01/03",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-02",
+   "category": "Problem & outcome",
+   "requirement": "Restore a stopper that seals when closed and a drain that runs freely when open.",
+   "basis": "Proposed functional acceptance control. Watco step 7 discusses adjustment to stop water when closed; it does not prescribe this complete fill/operate leak test.",
+   "acceptance_check": "Fill, close, open and leak-test; record results before closing any opening.",
+   "source_ids": [
+    "WATCO",
+    "OWNER"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "data REQ-02",
+   "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+  },
+  {
+   "id": "R-03",
+   "category": "Problem & outcome",
+   "requirement": "Obtain photographs of the tub, overflow plate, access area and ceiling below before finalizing scope.",
+   "basis": "No photographs were supplied in the repository; description-based analysis is limited.",
+   "acceptance_check": "Before/during/after images are retained with the job record.",
+   "source_ids": [
+    "OWNER",
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-04/R-25; bt R-S05; data REQ-24/27",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-04",
+   "category": "Problem & outcome",
+   "requirement": "Identify the actual waste-and-overflow brand/model, drain size and whether a compatible kit exists.",
+   "basis": "Existing assembly is unknown; model-specific instructions cannot be assumed to fit.",
+   "acceptance_check": "Provider records model/size and compatibility before ordering parts.",
+   "source_ids": [
+    "WATCO",
+    "OWNER"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-A04",
+   "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+  },
+  {
+   "id": "R-05",
+   "category": "Access",
+   "requirement": "Prefer removal from above through the overflow opening if it can be done safely without damaging concealed piping.",
+   "basis": "Owner preference; Watco shows a tub-side service path for its models.",
+   "acceptance_check": "Provider attempts/documents the non-destructive route before cutting finished surfaces.",
+   "source_ids": [
+    "OWNER",
+    "WATCO"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-05; data REQ-04/06",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-06",
+   "category": "Access",
+   "requirement": "Use below-ceiling access through the storage unit only if the above route fails or is judged unsafe.",
+   "basis": "Owner-reported fallback; Heise’s publishes an adjacent ceiling-access case.",
+   "acceptance_check": "Written access decision names the opening location, size and restoration plan.",
+   "source_ids": [
+    "OWNER",
+    "HEISE-INGLESIDE"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-06/R-07; bt R-A01; data REQ-05",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-07",
+   "category": "Access",
+   "requirement": "Confirm ownership, authority and consent to enter/open the storage unit or separate space below.",
+   "basis": "Access may involve a different tenant, owner or common area.",
+   "acceptance_check": "Written authorization and affected-party notice are in the job file.",
+   "source_ids": [
+    "CIV-1954",
+    "OWNER"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-A02/R-A03; data REQ-16",
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+  },
+  {
+   "id": "R-08",
+   "category": "Access",
+   "requirement": "Consider a code-compliant serviceable access panel rather than burying slip-joint connections again.",
+   "basis": "Access-panel dimensions could not be verified from a free official code source; do not assert a fixed 12-inch rule.",
+   "acceptance_check": "Contractor/DBI specifies the required access solution and dimensions in writing.",
+   "source_ids": [
+    "SF-PERMIT",
+    "IAPMO",
+    "WATCO"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-08; bt R-S04",
+   "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+  },
+  {
+   "id": "R-09",
+   "category": "Scope & restoration",
+   "requirement": "Adjust the linkage first if serviceable; replace the waste-and-overflow assembly if it cannot be freed.",
+   "basis": "Owner estimates describe different scopes; manufacturer instructions are model-specific.",
+   "acceptance_check": "Written scope distinguishes adjustment, linkage replacement and full assembly replacement.",
+   "source_ids": [
+    "OWNER",
+    "WATCO"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-09/R-10; bt R-S01",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-10",
+   "category": "Scope & restoration",
+   "requirement": "Clarify whether “spout/diverter” means the tub waste-and-overflow or a separate tub-fill diverter.",
+   "basis": "Bay Area Plumbing wording is not automatically equivalent to waste-and-overflow replacement.",
+   "acceptance_check": "Annotated scope identifies each part to be repaired/replaced.",
+   "source_ids": [
+    "OWNER",
+    "CSLB-C36"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-10; bt R-S02",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-11",
+   "category": "Scope & restoration",
+   "requirement": "Protect existing concealed supply, waste and vent piping; price any unavoidable cutting/replacement separately.",
+   "basis": "Owner preservation requirement; DBI permit rule applies to cutting/replacing pipes.",
+   "acceptance_check": "Change order identifies affected piping, permit/inspection path and price before extra work.",
+   "source_ids": [
+    "OWNER",
+    "SF-PERMIT",
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "bt R-S03",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-12",
+   "category": "Scope & restoration",
+   "requirement": "Restore drywall, tape, texture and paint to an agreed finish after any ceiling opening.",
+   "basis": "C-9 defines drywall/finishing scope; no supplied quote explicitly names restoration.; SFBC §106A.2(10) minor wallboard exemption excludes fire-resistive assemblies.",
+   "acceptance_check": "Contract names the restoration party, finish standard and access-panel/patch choice.",
+   "source_ids": [
+    "CSLB-C9",
+    "OWNER",
+    "SF-CODE-106"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-08/R-12; bt R-S04; data REQ-07",
+   "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
+  },
+  {
+   "id": "R-13",
+   "category": "Scope & restoration",
+   "requirement": "Protect floors/fixtures and stored contents, contain dust, remove debris and leave the space clean/secure each day.",
+   "basis": "Occupied-unit control; CSLB contract guidance includes cleanup.",
+   "acceptance_check": "Daily cleanup/protection checklist and final walkthrough are agreed.",
+   "source_ids": [
+    "CSLB-CONTRACT",
+    "OWNER"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-T04; data REQ-15",
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+  },
+  {
+   "id": "R-14",
+   "category": "Provider & licensing",
+   "requirement": "Use a currently licensed plumbing contractor for the plumbing leg and verify the legal contracting entity.",
+   "basis": "C-36 defines plumbing scope; CSLB records are point-in-time.",
+   "acceptance_check": "CSLB number, legal name, status and classifications match the contract on signing day.",
+   "source_ids": [
+    "CSLB-C36",
+    "BPC-7048",
+    "CSLB-SEARCH"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-13/R-14; bt R-L01/R-L05; data REQ-08/09",
+   "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36"
+  },
+  {
+   "id": "R-15",
+   "category": "Provider & licensing",
+   "requirement": "Structure the combined contract lawfully: B prime with appropriate trades, or named licensed specialty subcontractors.",
+   "basis": "BPC §7057 and CSLB C-9/C-36 definitions; B-2 has separate limits.",
+   "acceptance_check": "Contract names who performs plumbing and who performs drywall/restoration, with license numbers.",
+   "source_ids": [
+    "BPC-7057",
+    "CSLB-B-FAST",
+    "CSLB-C9",
+    "CSLB-C36",
+    "BPC-7057-5"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "root R-12/R-17; bt R-L02; data REQ-07",
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057."
+  },
+  {
+   "id": "R-16",
+   "category": "Provider & licensing",
+   "requirement": "Recheck license status, bond, workers-compensation record and complaint-disclosure links before signing.",
+   "basis": "CSLB warns status can change and disclosure is limited; one checked license is suspended.",
+   "acceptance_check": "Signing-day CSLB screenshot/link and any disclosure review are retained.",
+   "source_ids": [
+    "CSLB-SEARCH",
+    "CSLB-1027286",
+    "DG-COMPLAINT",
+    "DG-CITATION"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-14; bt R-L05/R-V04; data REQ-09",
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+  },
+  {
+   "id": "R-17",
+   "category": "Provider & licensing",
+   "requirement": "Obtain current general-liability evidence and workers-compensation evidence for every onsite party.",
+   "basis": "CSLB workers-comp “exempt” means certified no employees, not general liability coverage.",
+   "acceptance_check": "Certificates name the contracting entity and cover the work date; subcontractors are included.",
+   "source_ids": [
+    "CSLB-1115649",
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-15; bt R-L06/R-V03",
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+  },
+  {
+   "id": "R-18",
+   "category": "Provider & licensing",
+   "requirement": "Confirm the provider actually serves the San Francisco address and accepts a small occupied-unit repair.",
+   "basis": "Registered city is not a service-area guarantee; several sites emphasize larger/commercial work.",
+   "acceptance_check": "Written service-area and job-acceptance confirmation.",
+   "source_ids": [
+    "CSLB-1106131",
+    "WEDO",
+    "AYOOB",
+    "OWNER"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-16; bt R-V05; data REQ-10",
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
+  },
+  {
+   "id": "R-19",
+   "category": "Provider & licensing",
+   "requirement": "Ask for specific waste-and-overflow/trip-lever references, ideally below-ceiling access in an occupied unit.",
+   "basis": "Heise’s has adjacent self-published cases; no provider confirms this exact job.",
+   "acceptance_check": "References/photos identify the actual scope, access route and restoration party.",
+   "source_ids": [
+    "HEISE-INGLESIDE",
+    "HEISE-MISSION",
+    "OWNER"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "bt R-V01; data REQ-11",
+   "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/"
+  },
+  {
+   "id": "R-20",
+   "category": "Provider & licensing",
+   "requirement": "Check third-party reviews, but treat blocked/search-index observations as unverified leads.",
+   "basis": "BBB and Angi profiles were directly verified on 2026-11-10 (identifying stale licenses and a misfiled complaint), while Yelp business pages returned HTTP 403; numeric star averages remain blank.",
+   "acceptance_check": "Review links and retrieval limits are recorded; no rating is presented as verified.",
+   "source_ids": [
+    "YELP-RF",
+    "YELP-ACE",
+    "CSLB-SEARCH",
+    "BBB-ACE",
+    "ANGI-ACE",
+    "BBB-HEISE"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "data REQ-12",
+   "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA"
+  },
+  {
+   "id": "R-21",
+   "category": "Provider & licensing",
+   "requirement": "Prefer a provider that states it coordinates with landlords/property managers and occupied properties.",
+   "basis": "Company self-descriptions and older review excerpts are leads, not current protocols.",
+   "acceptance_check": "Provider supplies a written occupied-unit plan and tenant contact protocol.",
+   "source_ids": [
+    "ACE",
+    "HEISE-MAINT",
+    "YELP-ACE",
+    "OWNER"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "bt R-V02; data REQ-11/13",
+   "official_url": "https://www.aceplumbingandrooter.com/"
+  },
+  {
+   "id": "R-22",
+   "category": "Permit & code",
+   "requirement": "Obtain a written DBI/contractor permit determination for the exact scope before work starts.",
+   "basis": "SF.gov requires a permit before cutting/replacing pipes; §104.2 exemptions are conditional.",
+   "acceptance_check": "Determination states whether a permit is required, which permit, who pulls it and inspection steps.",
+   "source_ids": [
+    "SF-PERMIT",
+    "SF-CODE-104",
+    "SF-DBI"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "root R-18; bt R-P01; data REQ-17",
+   "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+  },
+  {
+   "id": "R-23",
+   "category": "Permit & code",
+   "requirement": "Do not treat leak/unstopping/faucet exemptions as covering cutting into or removing piping/traps.",
+   "basis": "SF Plumbing Code §104.2 text was directly retrieved.",
+   "acceptance_check": "Scope is matched against the exact exemption conditions; cutting/replacement is not assumed exempt.",
+   "source_ids": [
+    "SF-CODE-104",
+    "SF-PERMIT",
+    "SF-CODE-106"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "bt R-P01; root code C-02 correction",
+   "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
+  },
+  {
+   "id": "R-24",
+   "category": "Permit & code",
+   "requirement": "If a permit is required, use the appropriate licensed contractor and PermitSF route.",
+   "basis": "DBI lists eligible classes and registration/AUTH process; owner-self-work is limited.",
+   "acceptance_check": "Permit holder, license class and AUTH/registration status are confirmed.",
+   "source_ids": [
+    "SF-PERMIT",
+    "SF-AUTH",
+    "SF-REMODEL"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "bt R-P02; data REQ-19/20",
+   "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+  },
+  {
+   "id": "R-25",
+   "category": "Permit & code",
+   "requirement": "Schedule required plumbing inspection before pipes or openings are covered.",
+   "basis": "SF.gov states inspection before covering; remodel finals wait for trade finals.",
+   "acceptance_check": "Inspection sign-off is retained before restoration closes the cavity.",
+   "source_ids": [
+    "SF-PERMIT",
+    "SF-REMODEL"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "root R-20; bt R-P02; data REQ-18",
+   "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+  },
+  {
+   "id": "R-26",
+   "category": "Permit & code",
+   "requirement": "Budget official DBI fees separately and confirm the job category; do not present a fee as the total repair price.",
+   "basis": "July 2026 Table 1A-C lists Category 1P $290 and other rates; category is unconfirmed.",
+   "acceptance_check": "Quote lists permit/inspection fees separately or states they are excluded.",
+   "source_ids": [
+    "SF-FEES",
+    "SF-CODE-104"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-19; bt R-P03/R-B03",
+   "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+  },
+  {
+   "id": "R-27",
+   "category": "Permit & code",
+   "requirement": "Confirm the adopted code edition and any access-panel requirement with DBI/contractor; leave unverified dimensions blank.",
+   "basis": "IAPMO operative text was members-only; SF code amendments URL returned 404.",
+   "acceptance_check": "Written code/access requirement is supplied; no inferred 12-inch rule is published as verified.",
+   "source_ids": [
+    "SF-CODE-104",
+    "IAPMO",
+    "SF-DBI"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-P04/R-P05; root code C-15 correction",
+   "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
+  },
+  {
+   "id": "R-28",
+   "category": "Tenant & occupancy",
+   "requirement": "Give affected tenants reasonable written notice with date, approximate time and purpose; 24 hours is presumed reasonable.",
+   "basis": "Civil Code §1954; mailed notice is presumed reasonable at six days.",
+   "acceptance_check": "Notice copies and delivery method are retained for each affected tenancy.",
+   "source_ids": [
+    "CIV-1954"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "root R-21; bt R-T01; data REQ-14",
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+  },
+  {
+   "id": "R-29",
+   "category": "Tenant & occupancy",
+   "requirement": "Enter during normal business hours unless an exception or tenant consent applies.",
+   "basis": "Civil Code §1954 lists emergency, consent and other exceptions.",
+   "acceptance_check": "Work window and any consent are documented.",
+   "source_ids": [
+    "CIV-1954"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "root R-22; bt R-T01/T02; data REQ-14",
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+  },
+  {
+   "id": "R-30",
+   "category": "Tenant & occupancy",
+   "requirement": "Coordinate water shut-off, bathroom usability and any alternative arrangements with affected occupants.",
+   "basis": "Occupied-unit control; no provider has confirmed a work window.",
+   "acceptance_check": "Written schedule identifies shut-off duration, usable facilities and contacts.",
+   "source_ids": [
+    "OWNER",
+    "CIV-1954",
+    "ACE"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-T03; data REQ-13/15",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-31",
+   "category": "Tenant & occupancy",
+   "requirement": "Screen for lead-paint rules before disturbing paint in a pre-1978 rental; building age is unknown.",
+   "basis": "EPA RRP applies conditionally to paid paint-disturbing work in pre-1978 rentals.",
+   "acceptance_check": "Age/paint assessment and certified-firm/lead-safe plan are documented if applicable.",
+   "source_ids": [
+    "EPA-RRP",
+    "EPA-RRP-RULES"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "new conditional control",
+   "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
+  },
+  {
+   "id": "R-32",
+   "category": "Tenant & occupancy",
+   "requirement": "Do not disturb suspect asbestos-containing material; use a trained/accredited professional if sampling or disturbance is possible.",
+   "basis": "EPA guidance; building materials/age are unknown.",
+   "acceptance_check": "Suspect material is left alone until assessed; any abatement party is properly qualified.",
+   "source_ids": [
+    "EPA-ASBESTOS",
+    "CSLB-B-FAST"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-A05",
+   "official_url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos"
+  },
+  {
+   "id": "R-33",
+   "category": "Commercial & evidence",
+   "requirement": "Obtain a written itemized contract covering plumbing, access, restoration, permits, cleanup, schedule, price and warranty.",
+   "basis": "CSLB requires a written contract over $500 and lists essential terms.",
+   "acceptance_check": "Signed contract includes all trades, exclusions, warranty and change-order process.",
+   "source_ids": [
+    "CSLB-CONTRACT",
+    "OWNER"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-26; bt R-L03; data REQ-21",
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+  },
+  {
+   "id": "R-34",
+   "category": "Commercial & evidence",
+   "requirement": "Limit the down payment to the lesser of 10% or $1,000 unless a statutory exception applies.",
+   "basis": "CSLB contract guidance; rare blanket-bond exception exists.",
+   "acceptance_check": "Payment schedule matches the rule and written contract.",
+   "source_ids": [
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Official rule",
+   "status": "Official source rechecked 2026-11-08; job applicability to confirm",
+   "legacy_ids": "bt R-L04",
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+  },
+  {
+   "id": "R-35",
+   "category": "Commercial & evidence",
+   "requirement": "Use written change orders for concealed damage or scope changes before extra work proceeds.",
+   "basis": "CSLB contract guidance; concealed conditions are unknown.",
+   "acceptance_check": "Change order states scope, price, permit/inspection impact and schedule.",
+   "source_ids": [
+    "CSLB-CONTRACT",
+    "SF-PERMIT"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-L03; data REQ-21",
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+  },
+  {
+   "id": "R-36",
+   "category": "Commercial & evidence",
+   "requirement": "Requote one identical scope across at least three providers, including a combined-scope option.",
+   "basis": "The owner-reported estimates cover different scopes; CSLB recommends at least three written bids on identical plans, specifications and scope.",
+   "acceptance_check": "Comparable bids use the same parts, access path, restoration, permit and cleanup assumptions.",
+   "source_ids": [
+    "OWNER",
+    "CSLB-CONTRACT",
+    "CSLB-FINDING"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-11/R-27/R-28; bt R-B01/B02; data REQ-22",
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx"
+  },
+  {
+   "id": "R-37",
+   "category": "Commercial & evidence",
+   "requirement": "Confirm the 2026-08-30 estimates are still valid and obtain a current combined plumbing-plus-restoration price.",
+   "basis": "Quote validity and ceiling-restoration pricing were not supplied.",
+   "acceptance_check": "Current written validity date and combined fallback price are recorded.",
+   "source_ids": [
+    "OWNER",
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "data REQ-23; root R-28",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-38",
+   "category": "Commercial & evidence",
+   "requirement": "Set an owner approval ceiling that includes permit fees, restoration allowance and concealed-condition contingency.",
+   "basis": "No total project budget or drywall allowance was supplied.",
+   "acceptance_check": "Approval ceiling and allowance assumptions are written before authorization.",
+   "source_ids": [
+    "OWNER",
+    "SF-FEES",
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-B03",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-39",
+   "category": "Commercial & evidence",
+   "requirement": "Fix the work window and tenant availability before contracting; do not claim a provider is booked.",
+   "basis": "No provider acceptance, appointment or availability was confirmed.",
+   "acceptance_check": "Written schedule and tenant coordination are retained.",
+   "source_ids": [
+    "OWNER",
+    "CIV-1954"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "bt R-B04; root R-26",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-40",
+   "category": "Commercial & evidence",
+   "requirement": "Leak-test and function-test before closing the ceiling; retain inspection and test records.",
+   "basis": "Proposed test before restoration; Watco step 7 describes stopper adjustment, not a complete fill/operate leak test. Confirm required inspection before covering with DBI.",
+   "acceptance_check": "Test/inspection results and photos are accepted before final restoration.",
+   "source_ids": [
+    "WATCO",
+    "SF-PERMIT"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "root R-24/R-25; data REQ-02/24",
+   "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+  },
+  {
+   "id": "R-41",
+   "category": "Commercial & evidence",
+   "requirement": "Keep a small, comparable call list with one stated scope so providers are not quoting blind.",
+   "basis": "Research produced leads, not confirmed bids or bookings.",
+   "acceptance_check": "Each inquiry uses the same neutral scope sheet and records the response.",
+   "source_ids": [
+    "OWNER",
+    "CSLB-CONTRACT"
+   ],
+   "origin": "Proposed control",
+   "status": "Proposed control; not yet accepted by a provider",
+   "legacy_ids": "bt R-V05",
+   "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+  },
+  {
+   "id": "R-42",
+   "category": "Publication & audit",
+   "requirement": "Publish every factual table row with its source link and retrieval status; leave unconfirmable values blank and flagged.",
+   "basis": "Owner verification instruction; repository audit trail.",
+   "acceptance_check": "Automated row-source, blank-field and link checks pass before publication.",
+   "source_ids": [
+    "REPO",
+    "OWNER",
+    "GH-PAGES"
+   ],
+   "origin": "Owner requirement",
+   "status": "Owner requirement recorded; provider acceptance unverified",
+   "legacy_ids": "root R-29; data REQ-26",
+   "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+  }
+ ],
+ "owner_brief_register": {
   "as_of": "2026-11-10",
+  "note": "One row per requirement stated in the owner brief. The state column records what exists now, not what is intended. A partial or blocked row is published as it stands.",
   "rows": [
-    {
-      "id": "R-01",
-      "category": "Problem & outcome",
-      "requirement": "Free or replace the stuck bathtub waste-and-overflow trip lever without destroying the concealed plumbing.",
-      "basis": "Owner problem statement; manufacturer instructions describe the assembly but do not identify this unit.",
-      "acceptance_check": "Provider documents the existing brand/model, what moved, what remained stuck and the chosen repair path.",
-      "source_ids": [
-        "OWNER",
-        "WATCO"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-01/R-03; bt R-S01/R-S03; data REQ-01/03",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-02",
-      "category": "Problem & outcome",
-      "requirement": "Restore a stopper that seals when closed and a drain that runs freely when open.",
-      "basis": "Proposed functional acceptance control. Watco step 7 discusses adjustment to stop water when closed; it does not prescribe this complete fill/operate leak test.",
-      "acceptance_check": "Fill, close, open and leak-test; record results before closing any opening.",
-      "source_ids": [
-        "WATCO",
-        "OWNER"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "data REQ-02",
-      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
-    },
-    {
-      "id": "R-03",
-      "category": "Problem & outcome",
-      "requirement": "Obtain photographs of the tub, overflow plate, access area and ceiling below before finalizing scope.",
-      "basis": "No photographs were supplied in the repository; description-based analysis is limited.",
-      "acceptance_check": "Before/during/after images are retained with the job record.",
-      "source_ids": [
-        "OWNER",
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-04/R-25; bt R-S05; data REQ-24/27",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-04",
-      "category": "Problem & outcome",
-      "requirement": "Identify the actual waste-and-overflow brand/model, drain size and whether a compatible kit exists.",
-      "basis": "Existing assembly is unknown; model-specific instructions cannot be assumed to fit.",
-      "acceptance_check": "Provider records model/size and compatibility before ordering parts.",
-      "source_ids": [
-        "WATCO",
-        "OWNER"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-A04",
-      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
-    },
-    {
-      "id": "R-05",
-      "category": "Access",
-      "requirement": "Prefer removal from above through the overflow opening if it can be done safely without damaging concealed piping.",
-      "basis": "Owner preference; Watco shows a tub-side service path for its models.",
-      "acceptance_check": "Provider attempts/documents the non-destructive route before cutting finished surfaces.",
-      "source_ids": [
-        "OWNER",
-        "WATCO"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-05; data REQ-04/06",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-06",
-      "category": "Access",
-      "requirement": "Use below-ceiling access through the storage unit only if the above route fails or is judged unsafe.",
-      "basis": "Owner-reported fallback; Heise’s publishes an adjacent ceiling-access case.",
-      "acceptance_check": "Written access decision names the opening location, size and restoration plan.",
-      "source_ids": [
-        "OWNER",
-        "HEISE-INGLESIDE"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-06/R-07; bt R-A01; data REQ-05",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-07",
-      "category": "Access",
-      "requirement": "Confirm ownership, authority and consent to enter/open the storage unit or separate space below.",
-      "basis": "Access may involve a different tenant, owner or common area.",
-      "acceptance_check": "Written authorization and affected-party notice are in the job file.",
-      "source_ids": [
-        "CIV-1954",
-        "OWNER"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-A02/R-A03; data REQ-16",
-      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
-    },
-    {
-      "id": "R-08",
-      "category": "Access",
-      "requirement": "Consider a code-compliant serviceable access panel rather than burying slip-joint connections again.",
-      "basis": "Access-panel dimensions could not be verified from a free official code source; do not assert a fixed 12-inch rule.",
-      "acceptance_check": "Contractor/DBI specifies the required access solution and dimensions in writing.",
-      "source_ids": [
-        "SF-PERMIT",
-        "IAPMO",
-        "WATCO"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-08; bt R-S04",
-      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
-    },
-    {
-      "id": "R-09",
-      "category": "Scope & restoration",
-      "requirement": "Adjust the linkage first if serviceable; replace the waste-and-overflow assembly if it cannot be freed.",
-      "basis": "Owner estimates describe different scopes; manufacturer instructions are model-specific.",
-      "acceptance_check": "Written scope distinguishes adjustment, linkage replacement and full assembly replacement.",
-      "source_ids": [
-        "OWNER",
-        "WATCO"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-09/R-10; bt R-S01",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-10",
-      "category": "Scope & restoration",
-      "requirement": "Clarify whether “spout/diverter” means the tub waste-and-overflow or a separate tub-fill diverter.",
-      "basis": "Bay Area Plumbing wording is not automatically equivalent to waste-and-overflow replacement.",
-      "acceptance_check": "Annotated scope identifies each part to be repaired/replaced.",
-      "source_ids": [
-        "OWNER",
-        "CSLB-C36"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-10; bt R-S02",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-11",
-      "category": "Scope & restoration",
-      "requirement": "Protect existing concealed supply, waste and vent piping; price any unavoidable cutting/replacement separately.",
-      "basis": "Owner preservation requirement; DBI permit rule applies to cutting/replacing pipes.",
-      "acceptance_check": "Change order identifies affected piping, permit/inspection path and price before extra work.",
-      "source_ids": [
-        "OWNER",
-        "SF-PERMIT",
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "bt R-S03",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-12",
-      "category": "Scope & restoration",
-      "requirement": "Restore drywall, tape, texture and paint to an agreed finish after any ceiling opening.",
-      "basis": "C-9 defines drywall/finishing scope; no supplied quote explicitly names restoration.; SFBC §106A.2(10) minor wallboard exemption excludes fire-resistive assemblies.",
-      "acceptance_check": "Contract names the restoration party, finish standard and access-panel/patch choice.",
-      "source_ids": [
-        "CSLB-C9",
-        "OWNER",
-        "SF-CODE-106"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-08/R-12; bt R-S04; data REQ-07",
-      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
-    },
-    {
-      "id": "R-13",
-      "category": "Scope & restoration",
-      "requirement": "Protect floors/fixtures and stored contents, contain dust, remove debris and leave the space clean/secure each day.",
-      "basis": "Occupied-unit control; CSLB contract guidance includes cleanup.",
-      "acceptance_check": "Daily cleanup/protection checklist and final walkthrough are agreed.",
-      "source_ids": [
-        "CSLB-CONTRACT",
-        "OWNER"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-T04; data REQ-15",
-      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
-    },
-    {
-      "id": "R-14",
-      "category": "Provider & licensing",
-      "requirement": "Use a currently licensed plumbing contractor for the plumbing leg and verify the legal contracting entity.",
-      "basis": "C-36 defines plumbing scope; CSLB records are point-in-time.",
-      "acceptance_check": "CSLB number, legal name, status and classifications match the contract on signing day.",
-      "source_ids": [
-        "CSLB-C36",
-        "BPC-7048",
-        "CSLB-SEARCH"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-13/R-14; bt R-L01/R-L05; data REQ-08/09",
-      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36"
-    },
-    {
-      "id": "R-15",
-      "category": "Provider & licensing",
-      "requirement": "Structure the combined contract lawfully: B prime with appropriate trades, or named licensed specialty subcontractors.",
-      "basis": "BPC §7057 and CSLB C-9/C-36 definitions; B-2 has separate limits.",
-      "acceptance_check": "Contract names who performs plumbing and who performs drywall/restoration, with license numbers.",
-      "source_ids": [
-        "BPC-7057",
-        "CSLB-B-FAST",
-        "CSLB-C9",
-        "CSLB-C36",
-        "BPC-7057-5"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "root R-12/R-17; bt R-L02; data REQ-07",
-      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057."
-    },
-    {
-      "id": "R-16",
-      "category": "Provider & licensing",
-      "requirement": "Recheck license status, bond, workers-compensation record and complaint-disclosure links before signing.",
-      "basis": "CSLB warns status can change and disclosure is limited; one checked license is suspended.",
-      "acceptance_check": "Signing-day CSLB screenshot/link and any disclosure review are retained.",
-      "source_ids": [
-        "CSLB-SEARCH",
-        "CSLB-1027286",
-        "DG-COMPLAINT",
-        "DG-CITATION"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-14; bt R-L05/R-V04; data REQ-09",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
-    },
-    {
-      "id": "R-17",
-      "category": "Provider & licensing",
-      "requirement": "Obtain current general-liability evidence and workers-compensation evidence for every onsite party.",
-      "basis": "CSLB workers-comp “exempt” means certified no employees, not general liability coverage.",
-      "acceptance_check": "Certificates name the contracting entity and cover the work date; subcontractors are included.",
-      "source_ids": [
-        "CSLB-1115649",
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-15; bt R-L06/R-V03",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
-    },
-    {
-      "id": "R-18",
-      "category": "Provider & licensing",
-      "requirement": "Confirm the provider actually serves the San Francisco address and accepts a small occupied-unit repair.",
-      "basis": "Registered city is not a service-area guarantee; several sites emphasize larger/commercial work.",
-      "acceptance_check": "Written service-area and job-acceptance confirmation.",
-      "source_ids": [
-        "CSLB-1106131",
-        "WEDO",
-        "AYOOB",
-        "OWNER"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-16; bt R-V05; data REQ-10",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131"
-    },
-    {
-      "id": "R-19",
-      "category": "Provider & licensing",
-      "requirement": "Ask for specific waste-and-overflow/trip-lever references, ideally below-ceiling access in an occupied unit.",
-      "basis": "Heise’s has adjacent self-published cases; no provider confirms this exact job.",
-      "acceptance_check": "References/photos identify the actual scope, access route and restoration party.",
-      "source_ids": [
-        "HEISE-INGLESIDE",
-        "HEISE-MISSION",
-        "OWNER"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "bt R-V01; data REQ-11",
-      "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/"
-    },
-    {
-      "id": "R-20",
-      "category": "Provider & licensing",
-      "requirement": "Check third-party reviews, but treat blocked/search-index observations as unverified leads.",
-      "basis": "BBB and Angi profiles were directly verified on 2026-11-10 (identifying stale licenses and a misfiled complaint), while Yelp business pages returned HTTP 403; numeric star averages remain blank.",
-      "acceptance_check": "Review links and retrieval limits are recorded; no rating is presented as verified.",
-      "source_ids": [
-        "YELP-RF",
-        "YELP-ACE",
-        "CSLB-SEARCH",
-        "BBB-ACE",
-        "ANGI-ACE",
-        "BBB-HEISE"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "data REQ-12",
-      "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA"
-    },
-    {
-      "id": "R-21",
-      "category": "Provider & licensing",
-      "requirement": "Prefer a provider that states it coordinates with landlords/property managers and occupied properties.",
-      "basis": "Company self-descriptions and older review excerpts are leads, not current protocols.",
-      "acceptance_check": "Provider supplies a written occupied-unit plan and tenant contact protocol.",
-      "source_ids": [
-        "ACE",
-        "HEISE-MAINT",
-        "YELP-ACE",
-        "OWNER"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "bt R-V02; data REQ-11/13",
-      "official_url": "https://www.aceplumbingandrooter.com/"
-    },
-    {
-      "id": "R-22",
-      "category": "Permit & code",
-      "requirement": "Obtain a written DBI/contractor permit determination for the exact scope before work starts.",
-      "basis": "SF.gov requires a permit before cutting/replacing pipes; §104.2 exemptions are conditional.",
-      "acceptance_check": "Determination states whether a permit is required, which permit, who pulls it and inspection steps.",
-      "source_ids": [
-        "SF-PERMIT",
-        "SF-CODE-104",
-        "SF-DBI"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "root R-18; bt R-P01; data REQ-17",
-      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
-    },
-    {
-      "id": "R-23",
-      "category": "Permit & code",
-      "requirement": "Do not treat leak/unstopping/faucet exemptions as covering cutting into or removing piping/traps.",
-      "basis": "SF Plumbing Code §104.2 text was directly retrieved.",
-      "acceptance_check": "Scope is matched against the exact exemption conditions; cutting/replacement is not assumed exempt.",
-      "source_ids": [
-        "SF-CODE-104",
-        "SF-PERMIT",
-        "SF-CODE-106"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "bt R-P01; root code C-02 correction",
-      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
-    },
-    {
-      "id": "R-24",
-      "category": "Permit & code",
-      "requirement": "If a permit is required, use the appropriate licensed contractor and PermitSF route.",
-      "basis": "DBI lists eligible classes and registration/AUTH process; owner-self-work is limited.",
-      "acceptance_check": "Permit holder, license class and AUTH/registration status are confirmed.",
-      "source_ids": [
-        "SF-PERMIT",
-        "SF-AUTH",
-        "SF-REMODEL"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "bt R-P02; data REQ-19/20",
-      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
-    },
-    {
-      "id": "R-25",
-      "category": "Permit & code",
-      "requirement": "Schedule required plumbing inspection before pipes or openings are covered.",
-      "basis": "SF.gov states inspection before covering; remodel finals wait for trade finals.",
-      "acceptance_check": "Inspection sign-off is retained before restoration closes the cavity.",
-      "source_ids": [
-        "SF-PERMIT",
-        "SF-REMODEL"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "root R-20; bt R-P02; data REQ-18",
-      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
-    },
-    {
-      "id": "R-26",
-      "category": "Permit & code",
-      "requirement": "Budget official DBI fees separately and confirm the job category; do not present a fee as the total repair price.",
-      "basis": "July 2026 Table 1A-C lists Category 1P $290 and other rates; category is unconfirmed.",
-      "acceptance_check": "Quote lists permit/inspection fees separately or states they are excluded.",
-      "source_ids": [
-        "SF-FEES",
-        "SF-CODE-104"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-19; bt R-P03/R-B03",
-      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
-    },
-    {
-      "id": "R-27",
-      "category": "Permit & code",
-      "requirement": "Confirm the adopted code edition and any access-panel requirement with DBI/contractor; leave unverified dimensions blank.",
-      "basis": "IAPMO operative text was members-only; SF code amendments URL returned 404.",
-      "acceptance_check": "Written code/access requirement is supplied; no inferred 12-inch rule is published as verified.",
-      "source_ids": [
-        "SF-CODE-104",
-        "IAPMO",
-        "SF-DBI"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-P04/R-P05; root code C-15 correction",
-      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
-    },
-    {
-      "id": "R-28",
-      "category": "Tenant & occupancy",
-      "requirement": "Give affected tenants reasonable written notice with date, approximate time and purpose; 24 hours is presumed reasonable.",
-      "basis": "Civil Code §1954; mailed notice is presumed reasonable at six days.",
-      "acceptance_check": "Notice copies and delivery method are retained for each affected tenancy.",
-      "source_ids": [
-        "CIV-1954"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "root R-21; bt R-T01; data REQ-14",
-      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
-    },
-    {
-      "id": "R-29",
-      "category": "Tenant & occupancy",
-      "requirement": "Enter during normal business hours unless an exception or tenant consent applies.",
-      "basis": "Civil Code §1954 lists emergency, consent and other exceptions.",
-      "acceptance_check": "Work window and any consent are documented.",
-      "source_ids": [
-        "CIV-1954"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "root R-22; bt R-T01/T02; data REQ-14",
-      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
-    },
-    {
-      "id": "R-30",
-      "category": "Tenant & occupancy",
-      "requirement": "Coordinate water shut-off, bathroom usability and any alternative arrangements with affected occupants.",
-      "basis": "Occupied-unit control; no provider has confirmed a work window.",
-      "acceptance_check": "Written schedule identifies shut-off duration, usable facilities and contacts.",
-      "source_ids": [
-        "OWNER",
-        "CIV-1954",
-        "ACE"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-T03; data REQ-13/15",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-31",
-      "category": "Tenant & occupancy",
-      "requirement": "Screen for lead-paint rules before disturbing paint in a pre-1978 rental; building age is unknown.",
-      "basis": "EPA RRP applies conditionally to paid paint-disturbing work in pre-1978 rentals.",
-      "acceptance_check": "Age/paint assessment and certified-firm/lead-safe plan are documented if applicable.",
-      "source_ids": [
-        "EPA-RRP",
-        "EPA-RRP-RULES"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "new conditional control",
-      "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
-    },
-    {
-      "id": "R-32",
-      "category": "Tenant & occupancy",
-      "requirement": "Do not disturb suspect asbestos-containing material; use a trained/accredited professional if sampling or disturbance is possible.",
-      "basis": "EPA guidance; building materials/age are unknown.",
-      "acceptance_check": "Suspect material is left alone until assessed; any abatement party is properly qualified.",
-      "source_ids": [
-        "EPA-ASBESTOS",
-        "CSLB-B-FAST"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-A05",
-      "official_url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos"
-    },
-    {
-      "id": "R-33",
-      "category": "Commercial & evidence",
-      "requirement": "Obtain a written itemized contract covering plumbing, access, restoration, permits, cleanup, schedule, price and warranty.",
-      "basis": "CSLB requires a written contract over $500 and lists essential terms.",
-      "acceptance_check": "Signed contract includes all trades, exclusions, warranty and change-order process.",
-      "source_ids": [
-        "CSLB-CONTRACT",
-        "OWNER"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-26; bt R-L03; data REQ-21",
-      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
-    },
-    {
-      "id": "R-34",
-      "category": "Commercial & evidence",
-      "requirement": "Limit the down payment to the lesser of 10% or $1,000 unless a statutory exception applies.",
-      "basis": "CSLB contract guidance; rare blanket-bond exception exists.",
-      "acceptance_check": "Payment schedule matches the rule and written contract.",
-      "source_ids": [
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Official rule",
-      "status": "Official source rechecked 2026-11-08; job applicability to confirm",
-      "legacy_ids": "bt R-L04",
-      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
-    },
-    {
-      "id": "R-35",
-      "category": "Commercial & evidence",
-      "requirement": "Use written change orders for concealed damage or scope changes before extra work proceeds.",
-      "basis": "CSLB contract guidance; concealed conditions are unknown.",
-      "acceptance_check": "Change order states scope, price, permit/inspection impact and schedule.",
-      "source_ids": [
-        "CSLB-CONTRACT",
-        "SF-PERMIT"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-L03; data REQ-21",
-      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
-    },
-    {
-      "id": "R-36",
-      "category": "Commercial & evidence",
-      "requirement": "Requote one identical scope across at least three providers, including a combined-scope option.",
-      "basis": "The owner-reported estimates cover different scopes; CSLB recommends at least three written bids on identical plans, specifications and scope.",
-      "acceptance_check": "Comparable bids use the same parts, access path, restoration, permit and cleanup assumptions.",
-      "source_ids": [
-        "OWNER",
-        "CSLB-CONTRACT",
-        "CSLB-FINDING"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-11/R-27/R-28; bt R-B01/B02; data REQ-22",
-      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx"
-    },
-    {
-      "id": "R-37",
-      "category": "Commercial & evidence",
-      "requirement": "Confirm the 2026-08-30 estimates are still valid and obtain a current combined plumbing-plus-restoration price.",
-      "basis": "Quote validity and ceiling-restoration pricing were not supplied.",
-      "acceptance_check": "Current written validity date and combined fallback price are recorded.",
-      "source_ids": [
-        "OWNER",
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "data REQ-23; root R-28",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-38",
-      "category": "Commercial & evidence",
-      "requirement": "Set an owner approval ceiling that includes permit fees, restoration allowance and concealed-condition contingency.",
-      "basis": "No total project budget or drywall allowance was supplied.",
-      "acceptance_check": "Approval ceiling and allowance assumptions are written before authorization.",
-      "source_ids": [
-        "OWNER",
-        "SF-FEES",
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-B03",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-39",
-      "category": "Commercial & evidence",
-      "requirement": "Fix the work window and tenant availability before contracting; do not claim a provider is booked.",
-      "basis": "No provider acceptance, appointment or availability was confirmed.",
-      "acceptance_check": "Written schedule and tenant coordination are retained.",
-      "source_ids": [
-        "OWNER",
-        "CIV-1954"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "bt R-B04; root R-26",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-40",
-      "category": "Commercial & evidence",
-      "requirement": "Leak-test and function-test before closing the ceiling; retain inspection and test records.",
-      "basis": "Proposed test before restoration; Watco step 7 describes stopper adjustment, not a complete fill/operate leak test. Confirm required inspection before covering with DBI.",
-      "acceptance_check": "Test/inspection results and photos are accepted before final restoration.",
-      "source_ids": [
-        "WATCO",
-        "SF-PERMIT"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "root R-24/R-25; data REQ-02/24",
-      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
-    },
-    {
-      "id": "R-41",
-      "category": "Commercial & evidence",
-      "requirement": "Keep a small, comparable call list with one stated scope so providers are not quoting blind.",
-      "basis": "Research produced leads, not confirmed bids or bookings.",
-      "acceptance_check": "Each inquiry uses the same neutral scope sheet and records the response.",
-      "source_ids": [
-        "OWNER",
-        "CSLB-CONTRACT"
-      ],
-      "origin": "Proposed control",
-      "status": "Proposed control; not yet accepted by a provider",
-      "legacy_ids": "bt R-V05",
-      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
-    },
-    {
-      "id": "R-42",
-      "category": "Publication & audit",
-      "requirement": "Publish every factual table row with its source link and retrieval status; leave unconfirmable values blank and flagged.",
-      "basis": "Owner verification instruction; repository audit trail.",
-      "acceptance_check": "Automated row-source, blank-field and link checks pass before publication.",
-      "source_ids": [
-        "REPO",
-        "OWNER",
-        "GH-PAGES"
-      ],
-      "origin": "Owner requirement",
-      "status": "Owner requirement recorded; provider acceptance unverified",
-      "legacy_ids": "root R-29; data REQ-26",
-      "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
-    }
-  ]
+   {
+    "id": "O-01",
+    "category": "Deliverables",
+    "requirement": "Collect, organise and analyse a full list of requirements.",
+    "test": "Every requirement row carries an ID, a category, a basis and an acceptance check.",
+    "state": "satisfied",
+    "evidence": "R-01..R-42 (technical register) and O-01..O-16 (owner-brief register), all on requirements.html",
+    "artefact": "requirements.html",
+    "source_ids": [
+     "OWNER",
+     "REPO",
+     "GH-PAGES"
+    ]
+   },
+   {
+    "id": "O-02",
+    "category": "Deliverables",
+    "requirement": "Provide an executive summary outlining the important details.",
+    "test": "A summary page states the decision, the shortlist, the estimate comparison and the next steps.",
+    "state": "satisfied",
+    "evidence": "executive-summary.html plus the Markdown mirror overflow-integration/EXECUTIVE_SUMMARY.md",
+    "artefact": "executive-summary.html",
+    "source_ids": [
+     "OWNER",
+     "GH-PAGES",
+     "REPO"
+    ]
+   },
+   {
+    "id": "O-03",
+    "category": "Problem statement",
+    "requirement": "Record that the overflow sits in a hard-to-access area hidden behind the wall and that access may need the drywall ceiling opened.",
+    "test": "The technical page names both access routes and the consequence of forcing the assembly.",
+    "state": "satisfied",
+    "evidence": "technical-approach.html rows T-01..T-08; OWNER_RECORD.md",
+    "artefact": "technical-approach.html",
+    "source_ids": [
+     "OWNER",
+     "WATCO"
+    ]
+   },
+   {
+    "id": "O-04",
+    "category": "Estimates",
+    "requirement": "Record the three supplied estimates with their stated scopes and amounts.",
+    "test": "Each amount is published, dated, labelled owner-reported, and the verified-amount column stays blank.",
+    "state": "satisfied",
+    "evidence": "estimates.html rows E-01..E-03; the verifier asserts all three amount_verified fields are null and that no amount is presented as verified",
+    "artefact": "estimates.html",
+    "source_ids": [
+     "OWNER",
+     "CSLB-977638",
+     "CSLB-757796",
+     "CSLB-1024971"
+    ]
+   },
+   {
+    "id": "O-05",
+    "category": "Access preference",
+    "requirement": "Removal from above is preferred if it can be done without destroying the hidden plumbing.",
+    "test": "The recommended scope attempts the tub-side route first and only then falls back to below.",
+    "state": "satisfied",
+    "evidence": "technical-approach.html; R-01 and R-05; ranking criterion C2 scores published scope evidence",
+    "artefact": "technical-approach.html",
+    "source_ids": [
+     "OWNER",
+     "WATCO"
+    ]
+   },
+   {
+    "id": "O-06",
+    "category": "Problem statement",
+    "requirement": "Record that more than five licensed plumbers could not free it without risking the concealed plumbing.",
+    "test": "The constraint is recorded as an owner report, attributed to the owner and not restated as a finding.",
+    "state": "satisfied",
+    "evidence": "OWNER_RECORD.md; F-03 and the related access flags on flagged-for-review.html",
+    "artefact": "flagged-for-review.html",
+    "source_ids": [
+     "OWNER",
+     "CSLB-CONTRACT",
+     "GH-PAGES"
+    ]
+   },
+   {
+    "id": "O-07",
+    "category": "Scope",
+    "requirement": "Obtain one all-in-one service covering both the plumbing and the drywall opening and repair.",
+    "test": "The shortlist identifies who could legally hold both parts and says what is still unconfirmed.",
+    "state": "partial",
+    "evidence": "Six licence records carry both B and C-36; Bernal Hill Drywall #995163 is the C-9 restoration partner. No provider has confirmed a combined scope or price, and none was contacted.",
+    "artefact": "decision-analysis.html",
+    "source_ids": [
+     "OWNER",
+     "CSLB-C36",
+     "CSLB-C9",
+     "BPC-7057"
+    ]
+   },
+   {
+    "id": "O-08",
+    "category": "Provider search",
+    "requirement": "Search Yelp and other reviewed services for this specific work in San Francisco.",
+    "test": "Every provider row carries an official licence link and any review-platform evidence is labelled by strength.",
+    "state": "partial",
+    "evidence": "Yelp business and search pages return HTTP 403 to this environment, so ratings, review counts and review text remain blank rather than being filled from memory. BBB and Angi observations are recorded separately and labelled qualitative.",
+    "artefact": "providers.html",
+    "source_ids": [
+     "CSLB-SEARCH",
+     "REPO"
+    ]
+   },
+   {
+    "id": "O-09",
+    "category": "Ranking",
+    "requirement": "Rank contractors from best to worst choice, explaining the reasoning and the cost position for each.",
+    "test": "Each ranked row shows its weighted score, the reasoning text and its cost basis, with the weights published.",
+    "state": "satisfied",
+    "evidence": "decision-analysis.html; ranking.json publishes five weights that sum to 1.0 and a source link for every row",
+    "artefact": "decision-analysis.html",
+    "source_ids": [
+     "CSLB-SEARCH",
+     "OWNER"
+    ]
+   },
+   {
+    "id": "O-10",
+    "category": "Provider contact",
+    "requirement": "Provide an official verified link and a phone number for every ranked business.",
+    "test": "Each ranked row links its CSLB licence-detail record and shows the business phone recorded there.",
+    "state": "satisfied",
+    "evidence": "Nine licence records re-read on 2026-11-10 (829071, 1089561, 1115649, 977638, 757796, 1024971, 1027286, 1096552, 995163); phone, expiry, classifications, status and legal name matched the stored rows exactly.",
+    "artefact": "decision-analysis.html",
+    "source_ids": [
+     "CSLB-829071",
+     "CSLB-1089561",
+     "CSLB-1115649",
+     "CSLB-977638",
+     "CSLB-757796",
+     "CSLB-1024971",
+     "CSLB-1027286",
+     "CSLB-1096552",
+     "CSLB-995163"
+    ]
+   },
+   {
+    "id": "O-11",
+    "category": "Licensing",
+    "requirement": "Use a licensed plumber or contractor rather than an unlicensed operator.",
+    "test": "No unlicensed identity appears in the hire order, and every licence number resolves on the official register.",
+    "state": "satisfied",
+    "evidence": "24 CSLB records were checked; the one suspended licence (#1027286) is excluded from the hire order and the one unresolved identity (Portola) has every field blank.",
+    "artefact": "providers.html",
+    "source_ids": [
+     "CSLB-SEARCH",
+     "CSLB-1027286",
+     "CSLB-C36"
+    ]
+   },
+   {
+    "id": "O-12",
+    "category": "Tenant & occupancy",
+    "requirement": "The work happens in a sensitive environment where tenants occupy the unit.",
+    "test": "Occupied-unit protocol is a scoring criterion and the entry-notice rule is stated with its official source.",
+    "state": "satisfied",
+    "evidence": "Ranking criterion C4 (weight 0.15) scores published occupied-unit and property-management experience; the tenant-entry rule is recorded with its official citation. No provider has confirmed its own notice practice.",
+    "artefact": "decision-analysis.html",
+    "source_ids": [
+     "CIV-1954",
+     "OWNER",
+     "ACE"
+    ]
+   },
+   {
+    "id": "O-13",
+    "category": "Automation",
+    "requirement": "No manual input from the owner; the work is completed autonomously.",
+    "test": "Every artefact on the site is generated or checked by a script, and the build and checks are automated.",
+    "state": "satisfied",
+    "evidence": "scripts/build_overflow_site.py generates all eleven pages; scripts/verify_overflow_site.py runs 27 checks; the unit suite runs in CI on every push.",
+    "artefact": "verification.html",
+    "source_ids": [
+     "REPO",
+     "GH-ACTIONS",
+     "GH-PAGES"
+    ]
+   },
+   {
+    "id": "O-14",
+    "category": "Verification",
+    "requirement": "Verify everything line by line from official sources, provide links for manual review, and flag irregularities.",
+    "test": "Every table row links a registered official source; unconfirmed values are blank and appear on the flagged page.",
+    "state": "satisfied",
+    "evidence": "The verifier requires a registered official-primary link in every table row. This session re-read nine CSLB records and the published DBI fee schedule. Limits: Yelp is unreachable (HTTP 403), and no provider has been contacted, so availability, acceptance and price remain unconfirmed.",
+    "artefact": "flagged-for-review.html",
+    "source_ids": [
+     "CSLB-SEARCH",
+     "SF-FEES",
+     "REPO"
+    ]
+   },
+   {
+    "id": "O-15",
+    "category": "Publication",
+    "requirement": "Publish a clean GitHub Pages landing page with subpages organised by category, readable as a dashboard.",
+    "test": "A landing page exists with category subpages, consistent navigation and every entry in a table.",
+    "state": "satisfied",
+    "evidence": "Eleven canonical pages with shared navigation; the live Pages deployment for the merge commit is confirmed by the workflow run and by an independent fetch of the published URL.",
+    "artefact": "index.html",
+    "source_ids": [
+     "GH-PAGES",
+     "PAGES-API",
+     "REPO"
+    ]
+   },
+   {
+    "id": "O-16",
+    "category": "Publication",
+    "requirement": "Restrict what is published to the dashboard itself, and keep unrelated repository material off it.",
+    "test": "The staged publication contains no repository-internal path, and the live origin is checked and recorded.",
+    "state": "partial",
+    "evidence": "The staged artefact is the 32-file link closure and locally contains no internal path; scripts/check_publication_boundary.py now enforces that before upload. The live origin still serves the whole repository root because Pages is set to the legacy root-branch publisher; switching it to GitHub Actions needs the repository UI, since the available token returns HTTP 403 on the Pages API.",
+    "artefact": "verification.html",
+    "source_ids": [
+     "PAGES-API",
+     "REPO",
+     "GH-PAGES"
+    ]
+   }
+  ],
+  "state_vocabulary": {
+   "satisfied": "the artefact answers the requirement and can be checked from a link on the row",
+   "partial": "part of the requirement is answered; the evidence text names what is missing",
+   "open": "nothing answers it yet"
+  }
+ }
 }

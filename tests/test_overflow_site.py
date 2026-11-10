@@ -24,6 +24,34 @@ class DataTests(unittest.TestCase):
   self.assertAlmostEqual(sum(w['weight'] for w in rk['weights']),1.0)
  def test_requirements_have_official_context(self):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
+class OwnerBriefRegisterTests(unittest.TestCase):
+ def test_one_row_per_owner_requirement(self):
+  d=load('requirements.json');ob=d['owner_brief_register']
+  self.assertEqual(len(ob['rows']),16);self.assertEqual([r['id'] for r in ob['rows']],[f'O-{i:02d}' for i in range(1,17)])
+ def test_every_row_states_test_evidence_and_artefact(self):
+  for r in load('requirements.json')['owner_brief_register']['rows']:
+   for k in ('requirement','test','evidence','artefact','category','state','source_ids'):
+    self.assertTrue(r.get(k),f"{r['id']}:{k}")
+ def test_state_vocabulary_is_closed(self):
+  for r in load('requirements.json')['owner_brief_register']['rows']:
+   self.assertIn(r['state'],{'satisfied','partial','open'},r['id'])
+ def test_artefacts_exist_on_disk(self):
+  for r in load('requirements.json')['owner_brief_register']['rows']:
+   self.assertTrue((ROOT/r['artefact']).is_file(),r['artefact'])
+ def test_source_ids_resolve(self):
+  srcs={s['id'] for s in load('sources.json')['rows']}
+  for r in load('requirements.json')['owner_brief_register']['rows']:
+   for i in r['source_ids']:self.assertIn(i,srcs,f"{r['id']}:{i}")
+ def test_partial_rows_name_the_blocker(self):
+  for r in load('requirements.json')['owner_brief_register']['rows']:
+   if r['state']=='partial':self.assertGreater(len(r['evidence']),80,r['id'])
+ def test_register_rendered_with_sources(self):
+  t=(ROOT/'requirements.html').read_text()
+  for r in load('requirements.json')['owner_brief_register']['rows']:
+   self.assertIn(f"<strong>{r['id']}</strong>",t)
+  self.assertIn('owner-requirements-table',t)
+  self.assertIn('State vocabulary',t)
+
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
   pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
