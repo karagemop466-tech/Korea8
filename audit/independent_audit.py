@@ -65,7 +65,8 @@ int_links = 0
 for page in PAGES:
     html = (ROOT / page).read_text(encoding="utf-8")
     for href in re.findall(r'href="([^"]+)"', html):
-        if href.startswith(("http://", "https://", "mailto:", "#")): continue
+        # skip any URL with a scheme (https:, mailto:, tel:, data:, javascript:, ftp:) and bare fragments
+        if re.match(r"^[A-Za-z][A-Za-z0-9+.-]*:", href) or href.startswith("#"): continue
         target = href.split("#")[0].split("?")[0]
         if not target: continue
         int_links += 1

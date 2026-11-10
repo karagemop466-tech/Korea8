@@ -15,6 +15,7 @@ class PublicationTests(unittest.TestCase):
         for name in ('index.html', 'providers.html', 'decision-analysis.html', 'flagged-for-review.html', 'style.css'):
             self.assertIn(Path(name), files)
         self.assertIn(Path('audit/2026-11-10-b5ed3a43/REPORT.md'), files)
+        self.assertIn(Path('audit/2026-11-10-5651e041/REPORT.md'), files)
         self.assertIn(Path('audit/2026-11-10-6f4c9f79/REPORT.md'), files)
         for path in files:
             self.assertNotIn(path.parts[0], {'.git', '.github', 'src', 'vendor', 'scripts', 'tests', 'data'})

@@ -63,4 +63,4 @@ are unconfirmed.
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola, C J’s and Golden Gate identities remain unresolved and blank. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 54 items.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 55 items.

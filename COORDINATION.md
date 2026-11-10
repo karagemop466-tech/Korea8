@@ -1560,17 +1560,104 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 
 ---
 
+## Session `arena/5651e041-korea8` — Yelp-linked review evidence, one-button hiring answer, and publication of this board's public exposure (2026-11-10)
+
+**Claim time:** 2026-11-10 ~06:0x UTC, committed and pushed before any other edit.
+**Branch note.** Arena pins this session to `arena/5651e041-korea8`; the `session-<id>/<task>` branch name cannot be created (same platform exception every earlier session recorded).
+
+**Overlap check done first.** Everything below is checked against the board before claiming. Licence re-reading, canonical rebuilds, live-route audits, wording, publication-boundary and requirements-traceability work are **already done** by `d6196195`, `0ccaa3f3`, `be9ec407`, `b5ed3a43`, `3abe4d32`, `660ab2dd`, `35739f62`, `47d993da`, `87e121e1`, `b0d7ecf7` and others. This session does **not** repeat any of them. It takes the three items nobody holds:
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `5E-01` | Claim this board before any other edit | done | `arena/5651e041-korea8` | `COORDINATION.md` |
+| `5E-02` | Yelp / review-platform evidence for this specific work (tub-side overflow extraction, ceiling access, drywall patch, occupied unit) for the ranked SF leads, read live and kept separate from CSLB facts | done | `arena/5651e041-korea8` | `overflow-integration/data/reviews.json`, `scripts/build_overflow_site.py`, `overflow-integration/REPO_REVIEW.md` |
+| `5E-03` | One-button hiring answer: a generated copy-ready request-for-quote block (phone numbers, one neutral scope, the four questions each lead must answer) with a build-time check that the block is populated and every phone traces to the official record | done | `arena/5651e041-korea8` | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, generated canonical pages |
+| `5E-04` | Repository review of the tracked tree and the live publication boundary, with new irregularities raised as flags rather than silent edits | done | `arena/5651e041-korea8` | `audit/2026-11-10-5651e041/**`, `overflow-integration/data/flags.json` |
+| `5E-05` | Closing integration: rebuild, verifier, unit tests, wording guard, independent audit, PR to `main`, merge, confirm the Pages deploy for the merge commit, record the receipt here | in progress | `arena/5651e041-korea8` | generated canonical pages, `COORDINATION.md` |
+
+**Scope boundaries.** This session does not edit `docs/**` (archived DOE GEMS site), does not edit `tests/**`, and does not touch any open PR (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66). No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with the verified amount blank. Where a fact cannot be confirmed from an official source it stays blank and is flagged.
+
+**Standing rule carried forward.** Reader-facing copy stays in neutral repair-scope language and never carries owner-specific permit-timing detail. That rule is re-checked by `scripts/wording_guard.py` on every tracked file, and the new flags added under `5E-04` are worded the same way.
+
+### `5E` completed record (session `arena/5651e041-korea8`, 2026-11-10)
+
+**Report:** [`audit/2026-11-10-5651e041/REPORT.md`](audit/2026-11-10-5651e041/REPORT.md) ·
+[`audit/2026-11-10-5651e041/cslb-receipts.json`](audit/2026-11-10-5651e041/cslb-receipts.json).
+
+**`5E-02` — review evidence, read live where the platform allowed it.** Yelp business pages returned HTTP 403 to
+the page-retrieval tool again (`ace-plumbing-and-rooter-san-francisco`, `heises-plumbing-san-francisco`) and so did
+the search pages, which is the same result earlier sessions recorded. Dated search-index excerpts were obtained and
+five new observation rows were added: RV-19 and RV-20 (Bernal Hill Drywall — the excerpt states the 2014 C-9 licence
+and the 2022 Class B addition, and review highlights describe wall and ceiling holes from a leaky pipe), RV-21
+(Ayoob & Peery — an indexed review describes a large dig-out quote being avoided after a camera inspection), RV-22
+(Fast Response appear in a ceiling-leak-repair listing) and RV-23 (other San Francisco ceiling contractors, recorded
+as search leads only). Five matching review-platform source records were added. Every row keeps its rating and count
+**blank**, and every row states how it was obtained. Two numbers seen directly in search output are published only
+in flag F-14, with the date and method: Ace Plumbing & Rooter 4.7 from about 1.4 thousand reviews, and Heise’s
+Plumbing 4.2 from 278 to 283 reviews across excerpts dated June and July 2026. Neither is placed in a table cell.
+The ranking page now carries a review-evidence column per candidate and a second-bid table for the ceiling.
+
+**`5E-03` — one-button hiring answer.** The dashboard now opens with the answer and the phone numbers above the
+fold, followed by a copy-ready request block, a download of that block as a text file, `tel:` links for the ranked
+leads, and a routing table that says which lead to ask and what to ask for. Every phone number in that block is the
+number on the official CSLB record for that licence, and `overflow-integration/data/requests.json` carries the
+per-lead source ids so the link can be traced.
+
+**`5E-04` — repository review and publication boundary.** Ten CSLB licence-detail records were re-read directly on
+2026-11-10 and compared field by field with `providers.json` by script: **10 records, 0 field mismatches** on legal
+name, phone, expiry, classifications and status. Flag **F-52** was added. The finding: `GET /repos/.../pages` shows
+`build_type: "legacy"` with source `main` at `/`, and this session retrieved
+`https://karagemop466-tech.github.io/Korea8/COORDINATION.md` over the public internet and received the full board,
+plus `pyproject.toml`. **The live site serves the repository root, so this board is public.** That corrects the
+statement under F-34 that `COORDINATION.md` returns a Pages 404. F-14 and F-15 were restated with what was actually
+found. `PUT /repos/.../pages` with `build_type=workflow` still returns **HTTP 403 Resource not accessible by
+integration**, so the owner action stands: Settings → Pages → Source → **GitHub Actions**.
+
+**Two checker defects found and fixed (both in this session's own tooling, not in published data).**
+`audit/independent_audit.py` treated `tel:` and `data:` URLs as internal file paths and reported them as broken
+links; it now skips any URL that carries a scheme. `scripts/stage_overflow_pages.py` gained the same guard. After
+the fix: `pages=11 rows=363 with_source=363 blank_marked=0 internal_links=202 problems=0`.
+
+**Verification gates, all re-run after the final edit.**
+
+| Check | Result |
+|---|---|
+| `python scripts/build_overflow_site.py` | 11 pages built |
+| `python scripts/verify_overflow_site.py` | **27/27 PASS** |
+| `python -m unittest discover -s tests -p 'test_overflow*.py'` | **27 tests OK** |
+| `python scripts/wording_guard.py` | clean |
+| `python scripts/stage_overflow_pages.py` | 35 linked public files staged, no repository internals |
+| `python audit/independent_audit.py` | 0 problems |
+| CSLB field parity | 10 records, 0 mismatches |
+| `git diff --check` | clean |
+
+**Standing rules held.** No provider was contacted, called, emailed, quoted, booked or paid. No price was inferred,
+rounded or averaged; the three supplied amounts remain owner-reported with the verified amount blank. Every star
+rating and review count stays blank. No change was made to the hiring order or to any score. Nothing owner-specific
+was added anywhere in the repository.
+
+### `5E-05` — PR, merge and deployment record
+
+| Item | Result |
+|---|---|
+| Integration PR | **#71** — https://github.com/karagemop466-tech/Korea8/pull/71 (`arena/5651e041-korea8` → `main`) |
+| Merge | to be recorded |
+| Pages deploy | to be recorded |
+| Live URL | https://karagemop466-tech.github.io/Korea8/ |
+
+---
+
 ## Session `arena/6f4c9f79-korea8` — fresh 2026-11-10 official-source re-verification, cross-session handoff resolution and final integration
 
 **Claim time:** 2026-11-10 ~05:52 UTC (committed and pushed before any research or site edit).
-**Branch note:** Arena pins this session to `arena/6f4c9f79-korea8`; no other branch will be created or pushed. All earlier overlapping canonical claims on `main` are done (`PR #70` merged 2026-11-10T01:17:26Z) and open PRs (`#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66`) are >4 hours stale and left untouched (not merged or closed). Unrelated DOE GEMS files (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, `docs/` excluding `docs/bathtub-*` stubs) remain read-only.
+**Branch note:** Arena pins this session to `arena/6f4c9f79-korea8`; no other branch will be created or pushed. All earlier overlapping canonical claims on `main` are done (`PR #70` and `PR #71` merged) and open PRs (`#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66`) are >4 hours stale and left untouched (not merged or closed). Unrelated DOE GEMS files (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, `docs/` excluding `docs/bathtub-*` stubs) remain read-only.
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `6F4-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/6f4c9f79-korea8` | `COORDINATION.md` |
 | `6F4-02` | Full independent live official-source re-verification (all CSLB records, BPC §7059(a), SF.gov/DBI/SFPC/SFBC, Watco, EPA, company sites, BBB/Angi/Yelp retrieval checks) and line-by-line repo review | done | `arena/6f4c9f79-korea8` | `audit/2026-11-10-6f4c9f79/**` |
-| `6F4-03` | Resolve logged cross-session requests (`B5-05` audit links, `I-4` F-08 scope wording, `I-5` cost drivers on `estimates.html`, BPC §7059(a) incidental-trade rule, city-hosted SFPC source check, stale metadata/flags `F-34`/`F-39`/`F-40`/`F-45`, `deployment.json`, broken-URL fixes) and rebuild canonical site | done | `arena/6f4c9f79-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `.github/workflows/overflow-pages.yml`, `site-data/**`, `BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`, `project/EXECUTIVE_SUMMARY.md`, `audit/independent_audit.py`, root generated `*.html` / `OVERFLOW_EXECUTIVE_SUMMARY.md` |
-| `6F4-04` | Run full verification suite (28-check verifier, 30 unit tests, wording guard, independent audit, public staging, local HTTP check), open PR to `main`, merge, confirm live GitHub Pages deploy and record receipt | in progress | `arena/6f4c9f79-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, canonical generated verification/deployment outputs |
+| `6F4-03` | Resolve logged cross-session requests (`B5-05` audit links, `I-4` F-08 scope wording, `I-5` cost drivers on `estimates.html`, BPC §7059(a) incidental-trade rule, city-hosted SFPC source check, stale metadata/flags `F-34`/`F-39`/`F-40`/`F-45`, `deployment.json`, broken-URL fixes) and merge `origin/main` PR #71 non-destructively | done | `arena/6f4c9f79-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `.github/workflows/overflow-pages.yml`, `site-data/**`, `BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`, `project/EXECUTIVE_SUMMARY.md`, `audit/independent_audit.py`, root generated `*.html` / `OVERFLOW_EXECUTIVE_SUMMARY.md` |
+| `6F4-04` | Run full verification suite, open/merge PR #73 to `main`, confirm live GitHub Pages deploy and record receipt | in progress | `arena/6f4c9f79-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, canonical generated verification/deployment outputs |
 
 No provider will be contacted, quoted, booked or paid. Owner-supplied estimates stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
 
@@ -1578,13 +1665,13 @@ No provider will be contacted, quoted, booked or paid. Owner-supplied estimates 
 
 - **Reports:** [`audit/2026-11-10-6f4c9f79/REPORT.md`](audit/2026-11-10-6f4c9f79/REPORT.md), [`audit/2026-11-10-6f4c9f79/REPO_REVIEW.md`](audit/2026-11-10-6f4c9f79/REPO_REVIEW.md), and [`audit/2026-11-10-6f4c9f79/verification_receipts.json`](audit/2026-11-10-6f4c9f79/verification_receipts.json).
 - **Live official-source re-verification (`2026-11-10`):**
-  - Re-read **all 24 canonical CSLB records** + **3 supplementary CSLB records** (`#787733` dissolved prior Heise's entity, `#954813` 24/7 Rooter & Plumbing Services Inc, `#888630` George Salet Plumbing Inc) + **2 disclosure pages** (`#297604` ComplaintDisclosure & CitationViolationDisclosure) directly on `cslb.ca.gov` (`11/9/2026 9:49-9:52 PM` snapshot). Verified `#1089561` Heise's issue/expiry dates (`04/06/2022`, `04/30/2028`) match `main` (rejecting unmerged PR #66's erroneous `09/04/2014` / `09/30/2028` note). Left `C J's Plumbing` (`cjplumbing.net` GoDaddy "Launching Soon" placeholder) and `Golden Gate Plumbing` (`goldengateplumbing.net` failed load) strictly blank and flagged (`F-52`).
+  - Re-read **all 24 canonical CSLB records** + **3 supplementary CSLB records** (`#787733` dissolved prior Heise's entity, `#954813` 24/7 Rooter & Plumbing Services Inc, `#888630` George Salet Plumbing Inc) + **2 disclosure pages** (`#297604` ComplaintDisclosure & CitationViolationDisclosure) directly on `cslb.ca.gov` (`11/9/2026 9:49-9:52 PM` snapshot). Verified `#1089561` Heise's issue/expiry dates (`04/06/2022`, `04/30/2028`) match `main` (rejecting unmerged PR #66's erroneous `09/04/2014` / `09/30/2028` note). Left `C J's Plumbing` (`cjplumbing.net` GoDaddy "Launching Soon" placeholder) and `Golden Gate Plumbing` (`goldengateplumbing.net` failed load) strictly blank and flagged (`F-53`).
   - Re-read `BPC §§7048, 7057, 7057.5, 7059, 7114, 7124.6` & `CIV §1954` on `leginfo.legislature.ca.gov`, CSLB `16 CCR §831` rulemaking notice (`CSLB-831`), `2025 San Francisco Plumbing Code` PDF (`SF-CODE-104-PDF`), `2025 SFBC Amendments` PDF (`SF-CODE-106-PDF`), `AmLegal SFPC §104` & `SFBC §106A.2(8)&(10)`, `SF.gov` permit/remodel/AUTH/DBI pages (confirming live `2026-11-11` Veterans Day office closure), `DBI Table 1A-C` (July 2026), `Watco 500/501/600TL` PDF, `EPA RRP / Asbestos`, company websites, BBB/Angi directories (`BBB-EXPERT` now updated to `10/31/2028`), and Yelp (`HTTP 403`; numeric ratings/counts strictly null).
 - **Cross-session requests & defects resolved:**
-  - `B5-05`: linked `audit/2026-11-10-b5ed3a43/REPORT.md` (+ companion JSONs) and `audit/2026-11-10-6f4c9f79/` artifacts on `verification.html` and `flagged-for-review.html` so `stage_overflow_pages.py` stages them (`39` linked public files).
+  - `B5-05`: linked `audit/2026-11-10-b5ed3a43/REPORT.md` (+ companion JSONs) and `audit/2026-11-10-6f4c9f79/` artifacts on `verification.html` and `flagged-for-review.html` alongside `5651e041`'s audit links.
   - `I-4` (`F-08`): reworded to reflect SF.gov scope-and-approval wording alongside BPC §7057.5 limits.
   - `I-5` (`estimates.html`): added a 6-row source-linked `cost_drivers` table without fabricating prices.
   - `BPC §7059(a)` & `16 CCR §831` (`7FF-E-1`): added `C-15`, `BPC-7059`, `CSLB-831` and updated `R-15`, `T-06`, `F-06`, `F-18`.
   - `SF-CODE-104-PDF` (`BE-01`): added city-hosted 2025 SF Plumbing Code PDF first on `C-02`, `R-22`, `R-23`.
-  - **Broken-URL & metadata fixes (`F-54`, `F-34`, `F-39`, `F-40`, `F-45`, `F-53`):** fixed `HEISE-PANHANDLE` 404 URL to `/recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/`, fixed `DG-CITATION` query params, fixed `F-39` PR count (`11` open earlier PRs), updated `F-34` with live `2026-11-10` root-exposure evidence (`COORDINATION.md` and `project/EXECUTIVE_SUMMARY.md` served live after legacy builds `1e7f03f`, `9f1e76d`, `67b9e98` succeeded), updated `BATHTUB_EXECUTIVE_SUMMARY.md` & `EXECUTIVE_SUMMARY_bathtub.md` (`F-45` resolved) + prepended non-destructive `Superseded` notice to `project/EXECUTIVE_SUMMARY.md`, fixed `ranking.json` `method_note`/`C4`/`final_verification_note`, and documented the `87e121e1` line-52 weight typo (`F-53`).
-- **Verification checks:** `build_overflow_site.py` -> `verify_overflow_site.py` (`28/28 PASS`, `374` rows, `266` tracked HTML links); `unittest` `test_overflow*.py` (`30/30 OK`); `wording_guard.py` (`clean`); `independent_audit.py` (`11` pages, `374/374` rows, `206` internal links, `0` problems); `stage_overflow_pages.py` (`39` public files, HTTP `200` verified locally on all `39`); `git diff --check` clean.
+  - **Broken-URL & metadata fixes (`F-55`, `F-34`, `F-39`, `F-40`, `F-45`, `F-54`):** fixed `HEISE-PANHANDLE` 404 URL to `/recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/`, fixed `DG-CITATION` query params, fixed `F-39` PR count (`11` open earlier PRs), updated `F-34` alongside `5651e041`'s `F-52` with live `2026-11-10` root-exposure evidence (`COORDINATION.md` and `project/EXECUTIVE_SUMMARY.md` served live after legacy builds `1e7f03f`, `9f1e76d`, `67b9e98` succeeded), updated `BATHTUB_EXECUTIVE_SUMMARY.md` & `EXECUTIVE_SUMMARY_bathtub.md` (`F-45` resolved) + prepended non-destructive `Superseded` notice to `project/EXECUTIVE_SUMMARY.md`, fixed `ranking.json` `method_note`/`C4`/`final_verification_note`, and documented the `87e121e1` line-52 weight typo (`F-54`).
+  - **Merge of `origin/main` PR #71 (`175e1f9`, `arena/5651e041-korea8`):** preserved 100% of PR #71's work (`requests.json`, one-button hiring answer bar & copy-ready script, `RV-19`..`RV-23`, `review_evidence` column, `partners_second_bid` ceiling alternatives, `stage_overflow_pages.py` & `independent_audit.py` scheme-URL fixes, `F-14`/`F-15`/`F-52`, `audit/2026-11-10-5651e041/`) and renumbered this session's three new flags to `F-53`, `F-54`, `F-55`.

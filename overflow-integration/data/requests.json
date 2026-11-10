@@ -1,0 +1,105 @@
+{
+  "as_of": "2026-11-10",
+  "caption": "One identical request goes to every lead. Phone numbers are the ones published on the official CSLB licence record, so the number in this table and the number in the licence record are the same number.",
+  "channels": [
+    {
+      "step": 1,
+      "channel": "Ace Plumbing & Rooter",
+      "kind": "Phone, text or web form",
+      "source_field": "CSLB licence 829071",
+      "ask": "Say you need one written quote for two paths: try the tub side first, then open the storage-unit ceiling and restore it. Ask who does the drywall patch, texture and paint, and ask for the licence number to check.",
+      "source_ids": ["CSLB-829071", "ACE", "BBB-ACE", "ANGI-ACE"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "step": 2,
+      "channel": "Heise’s Plumbing",
+      "kind": "Phone, text or web form",
+      "source_field": "CSLB licence 1089561",
+      "ask": "Ask them to quote the same two paths, and ask specifically who supplies the ceiling patch, since their licence carries plumbing classifications only. Ask that the contract name the active licence 1089561 TARO GROUP INC dba HEISES PLUMBING.",
+      "source_ids": ["CSLB-1089561", "HEISE", "HEISE-INGLESIDE", "HEISE-PATCH"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "step": 3,
+      "channel": "Rapid Flow Plumbing & Rooter",
+      "kind": "Phone or text",
+      "source_field": "CSLB licence 1115649",
+      "ask": "Ask the same two-path question. Their licence carries both general building and plumbing classifications, so ask them to name in writing who performs the ceiling restoration and who supervises the plumbing.",
+      "source_ids": ["CSLB-1115649", "RF", "RF-SERVICES", "RF-CONTACT"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+    },
+    {
+      "step": 4,
+      "channel": "Ayoob & Peery",
+      "kind": "Phone",
+      "source_field": "CSLB licence 392967",
+      "ask": "Ask the same two-path question as a fourth quote. Their licence carries both general building and plumbing classifications; no published scope evidence covers this small repair yet.",
+      "source_ids": ["CSLB-392967", "AYOOB"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967"
+    },
+    {
+      "step": 5,
+      "channel": "We Do Construction",
+      "kind": "Web form",
+      "source_field": "CSLB licence 1096552",
+      "ask": "Ask the same two-path question if a fifth quote is wanted. Their published work is positioned toward larger renovations, so ask directly whether they take a repair of this size.",
+      "source_ids": ["CSLB-1096552", "WEDO"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552"
+    },
+    {
+      "step": 6,
+      "channel": "Bernal Hill Drywall",
+      "kind": "Phone or web form",
+      "source_field": "CSLB licence 995163",
+      "ask": "Ask for a quote on the ceiling half alone: open or enlarge the access, patch, tape, texture and paint back to the existing finish. Ask them to state whether they work under the plumber or under the owner.",
+      "source_ids": ["CSLB-995163", "BERNAL"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163"
+    },
+    {
+      "step": 7,
+      "channel": "Expert Plumbing Solutions",
+      "kind": "Phone or web form",
+      "source_field": "CSLB licence 977638",
+      "ask": "Ask them to requote the same two-path scope so the earlier supplied amount can be compared line by line. Their licence carries the plumbing classification only, so ask who does the patch.",
+      "source_ids": ["CSLB-977638", "EXPERT", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "step": 8,
+      "channel": "Bay Area Plumbing",
+      "kind": "Phone or web form",
+      "source_field": "CSLB licence 757796",
+      "ask": "Ask them to requote the same two-path scope. Their licence carries the plumbing classification only, so ask who does the patch.",
+      "source_ids": ["CSLB-757796", "BAY", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    },
+    {
+      "step": 9,
+      "channel": "Fast Response Plumbing & Rooter",
+      "kind": "Phone",
+      "source_field": "CSLB licence 1024971",
+      "ask": "Ask them to requote the same two-path scope. Their licence carries the plumbing classification only, so ask who does the patch.",
+      "source_ids": ["CSLB-1024971", "FAST", "OWNER"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    },
+    {
+      "step": 10,
+      "channel": "San Francisco Department of Building Inspection, permit counter",
+      "kind": "Permit counter or help desk",
+      "source_field": "City permit counter",
+      "ask": "Ask whether this repair needs a plumbing permit, and ask what the inspection sequence is before the ceiling is closed. City offices are closed Wednesday 2026-11-11, so the next business day is Thursday 2026-11-12.",
+      "source_ids": ["SF-PERMIT", "SF-CODE-104", "SF-CODE-106"],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    }
+  ],
+  "script": {
+    "purpose": "A copy-ready message. Every ranked lead is asked the same four questions so the replies can be compared line by line.",
+    "questions": [
+      "Who performs the drywall patch, texture and paint: your own crew, or a named licensed subcontractor?",
+      "One itemised price covering both paths, with the ceiling restoration as its own line.",
+      "The licence number I should check on the CSLB lookup, and confirmation that the licence covers this scope.",
+      "How an occupied unit is protected: tenant notice, dust containment, water shut-off and clean-up."
+    ]
+  }
+}

@@ -1465,6 +1465,73 @@
       "retrieval": "direct",
       "supports": "Direct re-verification of 27 CSLB records (11/9/2026 9:49-9:52 PM snapshot), BPC §7059(a) & 16 CCR §831, city-hosted 2025 SF Plumbing Code PDF, broken-URL fixes and cross-session request integration.",
       "limitations": "Repository audit artifact cross-referenced to official primary sources."
+    },
+    {
+      "id": "YELP-BERNAL",
+      "url": "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
+      "title": "Yelp — Bernal Hill Drywall, San Francisco (business page)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-10",
+      "retrieval": "business page HTTP 403; web-search excerpt of the business page only",
+      "supports": "Review-evidence row RV-19: the Yelp profile lead, its self-description of a C-9 licence in 2014 and a Class B licence added in 2022, and review highlights about wall and ceiling holes from a leaky pipe",
+      "limitations": "Search-index excerpt, not a profile retrieval. No star rating, review count or review date is published; the excerpt is a point-in-time snapshot that can change."
+    },
+    {
+      "id": "YELP-BERNAL-CEILING",
+      "url": "https://www.yelp.com/search?find_desc=drywall+ceiling+repair&find_loc=San+Francisco%2C+CA",
+      "title": "Yelp — drywall ceiling repair search, San Francisco (listing excerpt)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-10",
+      "retrieval": "search page HTTP 403; web-search excerpt only",
+      "supports": "Review-evidence row RV-20: listing placement for ceiling-repair work and a quoted customer line about major ceiling patches",
+      "limitations": "Search-listing excerpt. Ranking inside a Yelp search or sponsored placement is not a quality measure and no rating is published here."
+    },
+    {
+      "id": "YELP-AYOOB",
+      "url": "https://www.yelp.com/biz/ayoob-and-peery-san-francisco-2",
+      "title": "Yelp — Ayoob & Peery, San Francisco (business page)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-10",
+      "retrieval": "business page HTTP 403; web-search excerpt of the business page only",
+      "supports": "Review-evidence row RV-21: the profile lead and the text of a 2025-indexed review about a $14,000 dig-out quote being avoided by a camera inspection and annual snaking",
+      "limitations": "Search-index excerpt. The excerpt did not carry a star rating, count or exact date, so all three stay blank. The quoted case is drain/root work, not this job."
+    },
+    {
+      "id": "YELP-FAST-CEILING",
+      "url": "https://www.yelp.com/search?find_desc=Ceiling+Leak+Repair&find_loc=San+Francisco%2C+CA",
+      "title": "Yelp — ceiling leak repair search, San Francisco (listing excerpt)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-10",
+      "retrieval": "search page HTTP 403; web-search excerpt only",
+      "supports": "Review-evidence row RV-22: Fast Response appears in a San Francisco ceiling-leak-repair search with a quoted customer line about a straightforward leak repair",
+      "limitations": "Search-listing excerpt only. No rating published; presence in a listing is not evidence of this job."
+    },
+    {
+      "id": "YELP-DRYWALL-SF",
+      "url": "https://www.yelp.com/search?find_desc=drywall+ceiling+repair&find_loc=San+Francisco%2C+CA",
+      "title": "Yelp — drywall ceiling repair search, San Francisco (alternate contractors)",
+      "publisher": "Yelp",
+      "kind": "review-platform",
+      "checked": "2026-11-10",
+      "retrieval": "search page HTTP 403; web-search excerpt only",
+      "supports": "Review-evidence row RV-23: names of other San Francisco ceiling-repair contractors appearing in the same listing, for a second-bid option",
+      "limitations": "Listing excerpt only. These names were not checked against the CSLB register by this session, carry no rating here, and are recorded as a search lead at owner request, not as a recommendation."
+    },
+    {
+      "id": "AUDIT-20261110-5E",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-10-5651e041/REPORT.md",
+      "title": "2026-11-10 Yelp-linked review evidence & publication-boundary audit (5651e041)",
+      "publisher": "Korea8 Repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "Records 10 CSLB direct checks (0 mismatches), five search-index review observations (RV-19..RV-23), one-button request block and live COORDINATION.md exposure verification.",
+      "limitations": "Repository audit artifact cross-referenced to official primary sources."
     }
   ]
 }

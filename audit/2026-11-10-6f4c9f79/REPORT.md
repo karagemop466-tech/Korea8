@@ -21,7 +21,7 @@ All **24 canonical CSLB records** plus **3 supplementary CSLB records** (`#78773
   - `#787733` (`HEISE'S PLUMBING INC`): Expired `03/31/2023`, canceled and Secretary of State dissolved `02/12/2025`.
   - `#954813` (`24 / 7 ROOTER AND PLUMBING SERVICES INC dba A & R PLUMBING`): Current and active (`C-36`, `A`, `C-61/D-56`), SF (`1070 Quesada Ave`), `(415) 586-6851`, issued `11/18/2010`, expires `11/30/2028`, WC current to `07/01/2027`.
   - `#888630` (`GEORGE SALET PLUMBING INC`): Current and active (`C-36`, `C-16`), Brisbane CA, `(415) 334-0733`, issued `12/21/2006`, **expires `12/31/2026`** (inside near-term hiring window), WC current to `01/28/2027`.
-- **Unverified discovery identities kept strictly blank (`F-52`):**
+- **Unverified discovery identities kept strictly blank (`F-53`):**
   - `C J's Plumbing & Rooter Service`: `https://cjplumbing.net/` served a GoDaddy "Launching Soon" placeholder with no CSLB license published; regulated fields left blank.
   - `Golden Gate Plumbing & Rooter Inc`: `http://www.goldengateplumbing.net/` failed to load; regulated fields left blank.
 - **Clean `#297604` citation URL (`DG-CITATION`):** Replaced the abbreviated query string (which caused CSLB to render `"Invalid Parameters passed"` with blank metadata) with CSLB's exact `ComplaintDisclosure.aspx` link (`LicType=LIC&LicNum=297604&LmfPre=&Class=2&FiscalYear=2022&SeqNbr=2099&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=D+G+CONSTRUCTION+CO&StatusDt=03/23/2023`), confirming **`B&P Code 7114.A — Aided and abetted non-licensee`** cleanly.
