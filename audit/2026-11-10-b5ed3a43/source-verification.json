@@ -1,0 +1,151 @@
+{
+  "session": "arena/b5ed3a43-korea8",
+  "audited_at_utc": "2026-11-10T01:04:45Z",
+  "method": "Each official source below was retrieved directly by this session on 2026-11-10 and compared field by field against the canonical row it supports. Sources NOT retrieved by this session are listed separately and are not claimed verified here.",
+  "verified": [
+    {
+      "id": "V-1",
+      "claim": "SF DBI Category 1P permit fee $290",
+      "canonical_row": "estimates.json FEE-01",
+      "official_source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "observed": "CATEGORY 1P - Single Residential Unit - water service, sewer replacement, single plumbing fixture installation, shower pan installation, or a single kitchen or bathroom remodel (maximum two inspections) | $290",
+      "result": "match"
+    },
+    {
+      "id": "V-2",
+      "claim": "SF DBI Category 11P/M miscellaneous fee $320",
+      "canonical_row": "estimates.json FEE-02",
+      "official_source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "observed": "CATEGORY 11P/M Miscellaneous | $320",
+      "result": "match"
+    },
+    {
+      "id": "V-3",
+      "claim": "SF DBI regular inspection $519 per hour",
+      "canonical_row": "estimates.json FEE-03",
+      "official_source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "observed": "Hourly issuance/inspection rates of $519 per hour for regular inspections",
+      "result": "match"
+    },
+    {
+      "id": "V-4",
+      "claim": "SF DBI off-hour inspection $555 per hour",
+      "canonical_row": "estimates.json FEE-04",
+      "official_source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "observed": "and $555 per hour for off-hour inspections (Weekdays 6:00am-8:00am or 4:00pm-6:00pm, two hour minimum; Weekdays before 6:00am or after 6:00pm and weekends, four hour minimum)",
+      "result": "match"
+    },
+    {
+      "id": "V-5",
+      "claim": "SF DBI re-inspection $259 per half hour",
+      "canonical_row": "estimates.json FEE-05",
+      "official_source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "observed": "Re-inspection or additional inspection per Section 108A.8, shall be $259 per half hour.",
+      "result": "match"
+    },
+    {
+      "id": "V-6",
+      "claim": "Fee schedule is July 2026 and applies to permits issued on and after July 12, 2026",
+      "canonical_row": "estimates.html header note",
+      "official_source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "observed": "July 2026 ... The following permit fees apply to all permits issued on and after July 12, 2026.",
+      "result": "match"
+    },
+    {
+      "id": "V-7",
+      "claim": "A permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall",
+      "canonical_row": "code-and-permit.html permit trigger",
+      "official_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "observed": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.",
+      "result": "match"
+    },
+    {
+      "id": "V-8",
+      "claim": "San Francisco Plumbing Code Section 104.2 lists exempt work; work must be inspected before pipes are covered",
+      "canonical_row": "code-and-permit.html",
+      "official_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "observed": "See exemptions in San Francisco Plumbing Code Section 104.2 ... After your permit is issued, have your plumbing or mechanical work inspected before covering pipes",
+      "result": "match"
+    },
+    {
+      "id": "V-9",
+      "claim": "Permit Center help desk 628-652-4900",
+      "canonical_row": "code-and-permit.html",
+      "official_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "observed": "Permit Center help desk 628-652-4900",
+      "result": "match"
+    },
+    {
+      "id": "V-10",
+      "claim": "Eligible licence classes for a plumbing or mechanical permit are A, B, C4, C16, C20, C36, C54",
+      "canonical_row": "code-and-permit.html / flag F-08",
+      "official_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "observed": "Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general.",
+      "result": "match",
+      "nuance": "The page lists licence TYPES. For B it states approval is scope-based: 'B license, after approval based on the scope of work (plumbing work related to a kitchen or bath permit on PermitSF can be approved immediately for B contractors)'. B-2 is a classification within B, so flag F-08's wording that 'A B-2 licence is not eligible' is broader than the official text. Logged as irregularity I-4."
+    },
+    {
+      "id": "V-11",
+      "claim": "Only owners of stand-alone single-family dwellings (R-3) may apply to do the work themselves",
+      "canonical_row": "code-and-permit.html homeowner row",
+      "official_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "observed": "Only property owners of stand-alone single-family dwellings (R-3 occupancy) may apply for a plumbing or mechanical permit to do the work themselves.",
+      "result": "match"
+    },
+    {
+      "id": "V-12",
+      "claim": "BPC 7057(a)/(b): a general building contractor's principal business requires at least two unrelated building trades or crafts, and a B contractor must hold the appropriate classification or subcontract with an appropriately licensed contractor",
+      "canonical_row": "decision-analysis.html criterion C1 basis; requirements rows",
+      "official_source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "observed": "(a) ... requiring in its construction the use of at least two unrelated building trades or crafts ... (b) ... unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed contractor to perform the work.",
+      "result": "match"
+    },
+    {
+      "id": "V-13",
+      "claim": "CSLB C-9 Drywall Contractor classification scope",
+      "canonical_row": "decision-analysis.html restoration partner",
+      "official_source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "observed": "C-9 - Drywall Contractor ... A drywall contractor lays out and installs gypsum wall board and gypsum wall board assemblies including nonstructural metal framing members, and performs the taping and texturing operations ...",
+      "result": "match"
+    },
+    {
+      "id": "V-14",
+      "claim": "Ace Plumbing & Rooter, licence 829071: C36 + A + C-4 + C16 + B + C10, current and active, expire 06/30/2027, 1090 Bryant St SF, (415) 824-6444, bond and workers compensation current",
+      "canonical_row": "providers.json (identity ranked #1); ranking.json",
+      "official_source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "observed": "ACE PLUMBING & ROOTER, 1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417, (415) 824-6444; Issue 12/18/2003; Expire 06/30/2027; This license is current and active; C36, A, C-4, C16, B, C10; bond 101993376 $25,000 effective 09/04/2026; workers compensation with Financial Pacific effective 07/13/2026",
+      "result": "match on every field checked"
+    },
+    {
+      "id": "V-15",
+      "claim": "Bernal Hill Drywall Inc, licence 995163: C-9 + B, current and active, expire 07/31/2028, 720 Anderson St SF, (415) 533-8274, bond and workers compensation current",
+      "canonical_row": "ranking.json partner",
+      "official_source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "observed": "BERNAL HILL DRYWALL INC, 720 ANDERSON ST, SAN FRANCISCO, CA 94110, (415) 533-8274; Issue 07/28/2014; Expire 07/31/2028; This license is current and active; C-9 DRYWALL, B GENERAL BUILDING; bond 100728251 $25,000; workers compensation with Endurance Assurance effective 03/10/2026",
+      "result": "match on every field checked"
+    }
+  ],
+  "not_retrieved_by_this_session": {
+    "reason": "Claimed by other sessions on this board; this session did not re-read them and makes no verification claim about them.",
+    "items": [
+      "the other 22 CSLB licence detail pages",
+      "Watco 500/501/600TL instruction PDF",
+      "Heise's Ingleside case page and other Heise's pages",
+      "AmLegal San Francisco Plumbing Code 104.0 / 104.2 chunks",
+      "Civil Code 1954 text",
+      "all review-platform entries (Yelp returns HTTP 403)"
+    ]
+  },
+  "canonical_register_counts": {
+    "source": "overflow-integration/data/ at origin/main commit 8e7dbd6",
+    "providers": 25,
+    "sources": 87,
+    "flags": 46,
+    "requirements": 42,
+    "ranking_ranked": 10,
+    "ranking_partner": 1,
+    "ranking_not_recommended": 14,
+    "ranking_weights_sum": 1.0,
+    "matches_live_dashboard": true
+  }
+}

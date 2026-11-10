@@ -1,0 +1,66 @@
+{
+  "session": "arena/b5ed3a43-korea8",
+  "audited_at_utc": "2026-11-10T01:04:45Z",
+  "live_site": "https://karagemop466-tech.github.io/Korea8/",
+  "channel": "fetch_page tool (direct curl to github.io is blocked in this sandbox)",
+  "pages_api": {
+    "endpoint": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
+    "build_type": "legacy",
+    "source": {"branch": "main", "path": "/"},
+    "html_url": "https://karagemop466-tech.github.io/Korea8/",
+    "status_field": "errored",
+    "note": "build_type remains legacy root publishing; the workflow stages a 23-file linked closure but the configured Pages source was not switched to workflow (PUT returned HTTP 403 per session arena/660ab2dd-korea8)."
+  },
+  "legacy_page_builds": [
+    {"created_at": "2026-11-10T00:55:17Z", "commit": "7c71101056c4", "status": "built"},
+    {"created_at": "2026-11-10T00:53:15Z", "commit": "b30f89d08dfc", "status": "errored", "error": "Page build failed."},
+    {"created_at": "2026-11-10T00:52:49Z", "commit": "a51068264fa2", "status": "errored", "error": "Page build failed."},
+    {"created_at": "2026-11-10T00:52:13Z", "commit": "a5721decbf2b", "status": "built"},
+    {"created_at": "2026-11-10T00:51:52Z", "commit": "4982df62597e", "status": "built"},
+    {"created_at": "2026-11-10T00:51:30Z", "commit": "caab44e84034", "status": "errored", "error": "Page build failed."}
+  ],
+  "workflow_runs_observed": [
+    {"id": 42732144481, "sha": "8e7dbd6b56", "status": "completed", "conclusion": "success", "at": "2026-11-10T00:56:52Z"},
+    {"id": 42731958314, "sha": "7c71101056", "status": "completed", "conclusion": "success", "at": "2026-11-10T00:55:18Z"},
+    {"id": 42731653034, "sha": "a51068264f", "status": "completed", "conclusion": "success", "at": "2026-11-10T00:52:50Z"},
+    {"id": 42731580658, "sha": "a5721decbf", "status": "completed", "conclusion": "success", "at": "2026-11-10T00:52:14Z"}
+  ],
+  "routes": [
+    {"path": "/", "http_result": "served", "content": "canonical dashboard, current (24 CSLB records, 87 sources, 46 flags, ranked Ace -> Heise's -> Rapid Flow)", "verdict": "ok"},
+    {"path": "/bathroom-overflow/index.html", "http_result": "served", "content": "retired redirect stub forwarding to the canonical dashboard", "verdict": "ok"},
+    {"path": "/bathtub-overflow/index.html", "http_result": "served", "content": "retired redirect stub forwarding to the canonical dashboard", "verdict": "ok"},
+    {"path": "/project/EXECUTIVE_SUMMARY.md", "http_result": "served", "content": "SUPERSEDED brief compiled 2026-11-07 (19 CSLB records, 4 named firms, asserts UPC 402.10 12-inch access panel)", "verdict": "irregularity", "flag": "I-1"},
+    {"path": "/project/flagged.json", "http_result": "served", "content": "SUPERSEDED flag register with older F-01.. numbering and P-04..P-09 provider numbering", "verdict": "irregularity", "flag": "I-1"},
+    {"path": "/bathtub/index.html", "http_result": "404", "content": "GitHub Pages 404 page; file is tracked in the repository", "verdict": "irregularity", "flag": "I-3-routes"},
+    {"path": "/trip-lever/index.html", "http_result": "404", "content": "GitHub Pages 404 page; file is tracked in the repository", "verdict": "irregularity", "flag": "I-3-routes"},
+    {"path": "/README.md", "http_result": "404", "content": "GitHub Pages 404 page; file is tracked at repository root", "verdict": "irregularity", "flag": "I-2"},
+    {"path": "/HYPOTHESES.md", "http_result": "404", "content": "GitHub Pages 404 page; file is tracked at repository root", "verdict": "irregularity", "flag": "I-2"},
+    {"path": "/requirements.txt", "http_result": "404", "content": "GitHub Pages 404 page; file is tracked at repository root", "verdict": "irregularity", "flag": "I-2"}
+  ],
+  "documented_closure_23_files": [
+    "OVERFLOW_EXECUTIVE_SUMMARY.md",
+    "audit/2026-11-08-215f5c79/REPORT.md",
+    "audit/2026-11-10-47d993da/REPORT.md",
+    "audit/2026-11-10-660ab2dd.md",
+    "audit/2026-11-10-d6196195/REPORT.md",
+    "audit/2026-11-10-d6196195/freshness-check.json",
+    "audit/verification_3946905e/REPORT_2026-11-08_3946905e.md",
+    "code-and-permit.html",
+    "decision-analysis.html",
+    "docs/index.html",
+    "estimates.html",
+    "executive-summary.html",
+    "flagged-for-review.html",
+    "index.html",
+    "overflow-integration/REPO_AUDIT.md",
+    "overflow-integration/build-report.json",
+    "overflow-integration/verification-report.json",
+    "providers.html",
+    "requirements.html",
+    "sources.html",
+    "style.css",
+    "technical-approach.html",
+    "verification.html"
+  ],
+  "conclusion": "The live published set matches neither the repository root (root README.md, HYPOTHESES.md and requirements.txt all 404) nor the documented 23-file linked closure (project/EXECUTIVE_SUMMARY.md and project/flagged.json are served although no tracked file links to them). The effective publication boundary is undocumented."
+}
