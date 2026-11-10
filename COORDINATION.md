@@ -1350,3 +1350,122 @@ emailed, quoted, booked or paid. No price was inferred. Owner estimates remain o
 superseded tree, which invites a reader to mistake it for live input. Suggestion for whoever owns the
 generator next: stop emitting `site-data/`, or add a one-line `site-data/README.md` stating it is a
 build mirror. Logged here instead of edited.
+## Session `arena/b5ed3a43-korea8` — independent live-route verification, estimates/cost re-verification and requirements traceability (2026-11-10)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `B5-01` | Claim board before any other edit | done | `arena/b5ed3a43-korea8` | `COORDINATION.md` |
+| `B5-02` | Independent live-route and deployment verification of the published dashboard (all routes, redirect stubs, dead routes, content parity vs canonical data, Pages/workflow receipts) | done | `arena/b5ed3a43-korea8` | `audit/2026-11-10-b5ed3a43/**` |
+| `B5-03` | Independent official-source re-verification of the estimates / cost / technical slice (owner-reported amounts, DBI fee schedule, trip-lever and tenant-entry facts) | done | `arena/b5ed3a43-korea8` | `audit/2026-11-10-b5ed3a43/**` |
+| `B5-04` | Requirements traceability matrix: map every requirement in the original brief to the site artefact that satisfies it; flag gaps | done | `arena/b5ed3a43-korea8` | `audit/2026-11-10-b5ed3a43/**` |
+| `B5-05` | Publish audit artefact + board record; PR to main, merge, confirm Pages deploy | in progress | `arena/b5ed3a43-korea8` | `COORDINATION.md`, `audit/2026-11-10-b5ed3a43/**` |
+
+**Claim boundaries (deliberate non-overlap).** Sessions `arena/d6196195-korea8` (D619-T1/T2/T3: fresh CSLB re-verification + canonical rebuild + final integration, PR #56), `arena/47d993da-korea8` (current independent review, PR #58), `arena/35739f62-korea8` (status audit, PRs #57/#60) and `arena/660ab2dd-korea8` (publication boundary, PRs #55/#59) own the canonical data, generator, verifier, tests, generated root pages and their own audit directories. This session edits **only** `audit/2026-11-10-b5ed3a43/**` and `COORDINATION.md`, and treats everything else as read-only. It does not re-run the canonical rebuild, does not modify provider/requirement/ranking data, does not contact, book or pay any provider, and does not merge or close another session's PR. Any canonical-data defect found here is logged as a cross-session request in this section, not edited silently.
+
+**Verification channels available to this session.** Direct `curl` outbound is restricted to `api.github.com`; the `fetch_page` tool reaches both the live GitHub Pages site and official third-party sources (verified: `https://karagemop466-tech.github.io/Korea8/` and `https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071` retrieved successfully). GitHub API receipts are read with `curl api.github.com`.
+
+**Standing instruction honoured.** No private-circumstance material is recorded, published or referenced. Owner-supplied estimates stay labelled owner-reported with verified amounts blank. No outreach.
+
+**Claim push.** This claim is committed and pushed before any research or site edits, per the shared-board rule.
+### `B5-02` — live-route and deployment verification (done, 2026-11-10)
+
+Routes fetched directly from `https://karagemop466-tech.github.io/Korea8/`:
+
+| Route | Live result |
+|---|---|
+| `/` | Canonical dashboard, current (24 CSLB, 87 sources, 46 flags, ranked Ace → Heise's → Rapid Flow) |
+| `/bathroom-overflow/index.html` | Retired stub forwarding to the canonical dashboard — OK |
+| `/bathtub-overflow/index.html` | Retired stub forwarding to the canonical dashboard — OK |
+| `/project/EXECUTIVE_SUMMARY.md` | **Served** — superseded 2026-11-07 brief, contradicts the canonical dashboard (I-1) |
+| `/project/flagged.json` | **Served** — superseded flag register (I-1) |
+| `/bathtub/index.html` | GitHub Pages 404 (I-3-routes) |
+| `/trip-lever/index.html` | GitHub Pages 404 (I-3-routes) |
+| `/README.md`, `/HYPOTHESES.md`, `/requirements.txt` | GitHub Pages 404 (I-2) |
+
+Deployment receipts read from `api.github.com`: Pages `build_type` is still **`legacy`**, source `/` on `main`;
+legacy builds for `caab44e`, `a510682` and `b30f89d` returned **"Page build failed."** while the
+`Publish overflow dashboard` workflow completed `success` for the same commits. The documented 23-file linked
+closure is neither the whole root nor what is served.
+
+### `B5-03` — official-source re-verification of the estimates / cost / technical slice (done, 2026-11-10)
+
+All 15 checks below were retrieved directly on 2026-11-10 and compared field by field; details and verbatim
+observations are in `audit/2026-11-10-b5ed3a43/source-verification.json`.
+
+- **SF DBI Table 1A-C (July 2026)** — all five canonical fee rows match exactly: Category 1P **$290**,
+  Category 11P/M **$320**, regular inspection **$519/hour**, off-hour inspection **$555/hour**, re-inspection
+  **$259/half hour**. Schedule dated July 2026, effective for permits issued on/after 2026-07-12.
+- **SF.gov plumbing/mechanical permit page** — permit trigger before cutting into or replacing pipes
+  ("particularly pipes that will be covered by a wall"), the §104.2 exempt-work link, "inspected before
+  covering pipes", Permit Center help desk **628-652-4900**, eligible classes **A, B, C4, C16, C20, C36, C54**,
+  and the rule that only owners of stand-alone single-family dwellings (R-3) may self-permit.
+- **BPC §7057(a)/(b)** read verbatim from the California Legislature site — confirms the two-unrelated-trades
+  rule and the "hold the classification or subcontract it" clause that the all-in-one contract reasoning rests on.
+- **CSLB C-9 Drywall Contractor** classification page — scope confirmed.
+- **CSLB #829071 (Ace Plumbing & Rooter)** — legal name, C36 + A + C-4 + C16 + B + C10, current and active,
+  expire 06/30/2027, (415) 824-6444, bond and workers compensation current: **all fields match**.
+- **CSLB #995163 (Bernal Hill Drywall Inc)** — legal name, **C-9 + B**, current and active, expire 07/31/2028,
+  (415) 533-8274, bond and workers compensation current: **all fields match**.
+- Canonical register re-counted at `origin/main` `8e7dbd6`: providers 25 · sources 87 · flags 46 ·
+  requirements 42 · ranked 10 + 1 partner + 14 not recommended; weights C1 0.30 + C2 0.20 + C3 0.20 + C4 0.15
+  + C5 0.15 = 1.00. These match the counts printed on the live dashboard **at the time of the read**.
+  Snapshot caveat: session `arena/87e121e1-korea8` merged later on 2026-11-10 and refreshed the canonical
+  register (its board record states 110 sources, 48 flags, 335 verifier-covered rows, 25 staged public
+  files). This session did not re-check those later numbers and makes no claim about them.
+- **Not re-read by this session and not claimed verified here:** the other 22 CSLB licence pages, the Watco
+  PDF, the Heise's case pages, the AmLegal §104.0/§104.2 chunks, Civil Code §1954, and every review-platform
+  entry (Yelp returns HTTP 403).
+
+### `B5-04` — requirements traceability matrix (done, 2026-11-10)
+
+16 brief requirements mapped to their artefacts in `audit/2026-11-10-b5ed3a43/traceability.json` and §4 of the
+report. 14 satisfied, 1 partially satisfied (brief item 4 — review platforms block automated retrieval, so
+ratings and counts are blank rather than sourced), 1 satisfied-but-not-re-run-by-this-session (brief item 11 —
+the canonical verifier is owned by `arena/d6196195-korea8`).
+
+### Irregularities recorded by this session
+
+1. **I-1 (high) — superseded contradictory copy is publicly served.** `/project/EXECUTIVE_SUMMARY.md` is
+   reachable and reports 19 CSLB records, a different recommendation order, and asserts *"UPC §402.10 requires
+   a 12-inch access panel where a slip joint is concealed."* Canonical requirement **R-08** states the opposite:
+   *"Access-panel dimensions could not be verified from a free official code source; do not assert a fixed
+   12-inch rule."* `/project/flagged.json` is also served with the older flag register. No tracked HTML file
+   links to either file, so their presence is not explained by the documented closure.
+2. **I-2 (high) — the publication boundary is not in force.** Pages source is still `legacy` at `/`; the
+   workflow stages a 23-file closure but the source was never switched (`PUT` returned HTTP 403, recorded by
+   `660ab2dd`). The live set matches neither candidate.
+3. **I-3 (medium) — legacy Page build failures.** Three of the last six legacy builds returned
+   "Page build failed." while the Actions workflow succeeded for the same commits. Two competing deployment
+   paths are in play.
+4. **I-3-routes (medium) — redirect stubs are split.** `bathroom-overflow/` and `bathtub-overflow/` forward
+   correctly; `bathtub/` and `trip-lever/` return 404 although both files are tracked.
+5. **I-4 (medium) — flag F-08 wording is broader than the official text.** F-08 says a B-2 licence is not
+   eligible for a plumbing permit; SF.gov lists licence *types* A, B, C4, C16, C20, C36, C54 and states a B
+   license holder may apply "after approval based on the scope of work". B-2 is a classification within B, so
+   the bar is scope- and approval-based, not categorical.
+6. **I-5 (low) — no canonical cost-driver table.** `estimates.json` keys are `as_of`, `quote_date`, `rows`,
+   `official_fees`, `analysis`; the six cost drivers recorded by `0ad9ad61` live only in the retired
+   `bathtub-overflow/data/costs.json`. Cost reasoning is still available via the "Cost picture" section of
+   `decision-analysis.html`.
+7. **I-6 (low) — an unrelated project's evidence site sits inside the canonical link closure.**
+   `docs/index.html` (archived DOE GEMS site) is one of the 23 linked public files.
+8. **I-7 (informational) — open PRs #35, #38, #39, #44, #49, #51, #53** were left untouched; none was merged,
+   closed or assumed safe for takeover.
+
+### Cross-session requests (logged, not edited)
+
+1. **To the final integration session (`arena/d6196195-korea8`, D619-T3).** I-1 and I-2 are canonical-publication
+   defects. Removing the retired `project/` tree from the published set cannot be done from this session's
+   scope; the effective published file set also needs to be enumerated once the Pages source is settled.
+2. **To whichever session owns `overflow-integration/data/flags.json`.** Flag F-08 (I-4) should be reworded to
+   the scope-based reading of the SF.gov text, or the DBI position confirmed directly.
+3. **To whichever session owns `overflow-integration/data/estimates.json` and `scripts/build_overflow_site.py`.**
+   I-5: consider adding a canonical cost-driver block, or record that the cost drivers live only in the retired
+   tree.
+4. **No canonical file was modified by this session.** All three requests are logged here rather than applied.
+
+### Standing instruction honoured
+
+No private-circumstance material was recorded, published or referred to. Owner-supplied estimates remain
+labelled owner-reported with verified amounts blank. No provider was contacted, booked or paid. Nothing in this
+audit is presented as a verified provider price, availability or acceptance.
