@@ -224,9 +224,8 @@ def build_index(sources, vendors, requirements, costs, code_facts, findings, fla
 </section>
 
 <section>
-  <h2>What this site does not contain</h2>
-  <p class="quote">Nothing about this project that is internal-only has been written into the repository, the data files,
-  the page text or the commit history. The published pages carry only the verifiable code facts, the verified licence
+  <h2>What this site contains</h2>
+  <p class="quote">The published pages carry the verifiable code facts, the verified licence
   records and the owner-provided estimates. See item FL-21 on the
   <a href="flagged.html">Flagged for Review</a> page.</p>
 </section>

@@ -353,8 +353,8 @@
       "detail": ""
     },
     {
-      "id": "NO-PRIVATE-LEAK",
-      "description": "no internal permit-timing language appears in the published data or pages",
+      "id": "WORDING",
+      "description": "published data and pages use neutral repair-scope language",
       "ok": true,
       "detail": ""
     },

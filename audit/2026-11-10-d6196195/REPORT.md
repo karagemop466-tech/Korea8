@@ -92,7 +92,7 @@ fields and numeric review metrics stay blank.
   estimates; all review ratings/counts are null; Portola identity fields are blank.
 - Suspended provider (Kenneth Asire #1027286) is excluded from the priority shortlist and
   from the ranked hiring order.
-- Neutral public wording holds: no private-circumstance phrasing, no conflict markers,
+- Neutral public wording holds: no conflict markers,
   no placeholders, no `None`/`nan` literals in canonical pages.
 - DOE GEMS research (`docs/`, `src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`,
   `submissions/`, GEMS scripts/workflow) is preserved unmodified; the bathtub project is

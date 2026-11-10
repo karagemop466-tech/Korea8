@@ -754,7 +754,7 @@ ANALYSIS = [
      "DBI states a permit is required before cutting into or replacing pipes, particularly pipes that will be covered "
      "by a wall, and that the plumbing inspection happens before the pipes are covered. Separately, BPC 7048's "
      "sub-$1,000 unlicensed exemption applies only where no building permit is required — so a licensed contractor is "
-     "required here regardless of the final price. The timing concern is answerable inside the system: contractors "
+     "required here regardless of the final price. Contractors "
      "registered for Express Permits on PermitSF receive eligible plumbing permits straight away, without City staff "
      "review, and DBI connects authorised agents within two business days.",
      True, "compliance.html"),
@@ -776,9 +776,8 @@ ANALYSIS = [
      "substitute is a short questionnaire: have they removed a seized trip-lever through the overflow opening before; "
      "what do they do when it will not come; who patches; will they pull the permit; who will be on site.",
      True, "flagged.html#F-08"),
-    ("A10", "Nothing on this site records the requester's private constraints",
-     "The brief contained scheduling and permit background that the requester asked to keep private. No part of it was "
-     "written to this repository, and none of it appears on any page. The site documents only DBI's published, "
+    ("A10", "The site documents DBI's published position on permits",
+     "The site documents DBI's published, "
      "publicly citable position on permits, which anyone could look up.",
      True, "flagged.html#F-15"),
 ]
@@ -903,11 +902,9 @@ match is by name and city, and the contractor should be asked to state their lic
 repository (F-13). Model identification matters because the manufacturer documents several model families
 and three different trip-lever mechanisms that are not automatically interchangeable.
 
-## Standing instruction honoured
+## Published permit facts
 
-The brief asked that certain scheduling and background information remain private and never appear on the
-site, in email, or in anything public. Nothing from that part of the brief was written to this repository
-or published. The site states only the San Francisco Department of Building Inspection's published,
+The site states the San Francisco Department of Building Inspection's published,
 publicly citable position on permits.
 """
 

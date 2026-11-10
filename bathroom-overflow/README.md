@@ -35,4 +35,4 @@ This repository's existing GitHub Pages source is the `main` branch root. Once t
 - Yelp links point to third-party listings/customer accounts, not official contractor evidence. A review is anecdotal and not independently inspected.
 - The requester-supplied estimate amounts are not shown: no original quote was supplied and no official published amount was located. Their verified-value cells are intentionally blank.
 - No provider was contacted; no appointment or site inspection was arranged.
-- No private property address, occupant identity, or confidential administrative context is published.
+- No property address or occupant identity is published.

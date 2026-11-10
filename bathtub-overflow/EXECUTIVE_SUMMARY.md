@@ -123,12 +123,10 @@ Full text, evidence and the action to take for each: <https://karagemop466-tech.
 * Nothing was inferred. Where a value could not be confirmed from an official source, the cell is **blank** and the item
   appears on the Flagged for Review page.
 * `scripts/verify_site.py` re-checks all of it mechanically: every rendered table row carries a source link, every source
-  reference resolves, every flag id exists, rendered row counts match the JSON, no internal link is broken, no
-  placeholder text survives, and no internal project information appears in a published file.
+  reference resolves, every flag id exists, rendered row counts match the JSON, no internal link is broken, and no placeholder text survives.
 
 ## 10. Scope of this document
 
-This summary and the site contain only verifiable public information: official licence records, official code and fee
-rules, and the owner-provided estimates. No internal or private information from the brief appears in the repository, the
-data files, the page text or the commit history; the handling rule is recorded as FL-21 without disclosing its content.
-The site is internal-use guidance, not legal advice — the permit determination must come from DBI.
+This summary and the site contain verifiable public information: official licence records, official code and fee
+rules, and the owner-provided estimates (see FL-21).
+The site is planning guidance, not legal advice — the permit determination must come from DBI.
