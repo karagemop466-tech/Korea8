@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "built_at": "2026-11-10T06:08:21.047151+00:00",
-=======
-  "built_at": "2026-11-10T06:08:00.474720+00:00",
->>>>>>> e7a1d27 (record merged verification totals)
+  "built_at": "2026-11-10T06:08:36.599507+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
