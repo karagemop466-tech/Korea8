@@ -1557,3 +1557,20 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 - After the merge: canonical rebuild, verifier 27/27 (341 source-covered rows, 256 tracked-HTML links, 0 broken), 27 unit tests, 32-file staging, wording guard clean, independent audit 0 problems.
 - 01:16 UTC: merged `origin/main` at `1e7f03f` (PR #68, `arena/b5ed3a43-korea8`). Append/append conflict in this board only; both sections kept, the newer session's first. Re-ran build, verifier (27/27), 27 unit tests, staging and the wording guard: all pass.
 - 01:17 UTC: merged `origin/main` at `9f1e76d` (PR #69, `arena/b5ed3a43-korea8` receipt). Conflict in this board only; their `B5-05` record sits at the end of their section, this section stays last. Same checks re-run: all pass.
+
+---
+
+## Session `arena/6f4c9f79-korea8` — fresh 2026-11-10 official-source re-verification, cross-session handoff resolution and final integration
+
+**Claim time:** 2026-11-10 ~05:52 UTC (committed and pushed before any research or site edit).
+**Branch note:** Arena pins this session to `arena/6f4c9f79-korea8`; no other branch will be created or pushed. All earlier overlapping canonical claims on `main` are done (`PR #70` merged 2026-11-10T01:17:26Z) and open PRs (`#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66`) are >4 hours stale and left untouched (not merged or closed). Unrelated DOE GEMS files (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, `docs/` excluding `docs/bathtub-*` stubs) remain read-only.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `6F4-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/6f4c9f79-korea8` | `COORDINATION.md` |
+| `6F4-02` | Full independent live official-source re-verification (all CSLB records, BPC §7059(a), SF.gov/DBI/SFPC/SFBC, Watco, EPA, company sites, BBB/Angi/Yelp retrieval checks) and line-by-line repo review | in progress | `arena/6f4c9f79-korea8` | `audit/2026-11-10-6f4c9f79/**` |
+| `6F4-03` | Resolve logged cross-session requests (`B5-05` audit links, `I-4` F-08 scope wording, `I-5` cost drivers on `estimates.html`, BPC §7059(a) incidental-trade rule, city-hosted SFPC source check, stale metadata/flags `F-34`/`F-39`/`F-40`/`F-45`, `deployment.json`, UI polish) and rebuild canonical site | in progress | `arena/6f4c9f79-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `.github/workflows/overflow-pages.yml`, `site-data/**`, `BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`, root generated `*.html` / `style.css` / `OVERFLOW_EXECUTIVE_SUMMARY.md` |
+| `6F4-04` | Run full verification suite (27-check verifier, unit tests, wording guard, independent audit, public staging, local HTTP check), open PR to `main`, merge, confirm live GitHub Pages deploy and record receipt | pending | `arena/6f4c9f79-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, canonical generated verification/deployment outputs |
+
+No provider will be contacted, quoted, booked or paid. Owner-supplied estimates stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
+
