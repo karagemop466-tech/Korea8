@@ -1,11 +1,19 @@
 {
+<<<<<<< HEAD
   "checked_at": "2026-11-10T06:08:21.611860+00:00",
+=======
+  "checked_at": "2026-11-10T06:08:00.955361+00:00",
+>>>>>>> e7a1d27 (record merged verification totals)
   "result": "PASS",
   "checks_run": 28,
   "checks_passed": 28,
   "checks_failed": 0,
   "canonical_rows_checked": 405,
+<<<<<<< HEAD
   "tracked_html_files": 70,
+=======
+  "tracked_html_files": 68,
+>>>>>>> e7a1d27 (record merged verification totals)
   "checks": [
     {
       "check": "all canonical pages present",
@@ -145,7 +153,11 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
+<<<<<<< HEAD
       "detail": "366 links; offenders: "
+=======
+      "detail": "276 links; offenders: "
+>>>>>>> e7a1d27 (record merged verification totals)
     }
   ]
 }
