@@ -44,3 +44,30 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Confirm deployed dashboard and audit over HTTPS
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import os, time, urllib.request
+          base = os.environ['PAGE_URL'].rstrip('/') + '/'
+          expected = {
+              'index.html': 'Trip Lever Project',
+              'verification.html': '2026-11-10-660ab2dd.md',
+              'flagged-for-review.html': '10 November publication review',
+              'audit/2026-11-10-660ab2dd.md': 'Configuration permission limitation',
+          }
+          for path, marker in expected.items():
+              for attempt in range(12):
+                  try:
+                      url = base + path + '?deployment=' + os.environ['GITHUB_SHA']
+                      with urllib.request.urlopen(url, timeout=30) as response:
+                          text = response.read().decode('utf-8')
+                          assert marker in text, 'Expected content not yet served'
+                          print(f'LIVE VERIFIED {response.status}: {base}{path}')
+                      break
+                  except Exception:
+                      if attempt == 11:
+                          raise
+                      time.sleep(5)
+          PY
