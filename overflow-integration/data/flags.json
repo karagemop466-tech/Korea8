@@ -692,6 +692,21 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
       "status": "Open"
+    },
+    {
+      "id": "F-47",
+      "severity": "Low",
+      "category": "Source quality",
+      "title": "§104.2 exemption text now cited to a city-hosted code PDF as well as the code library",
+      "detail": "On 2026-11-10 the §104.2 (Exempt Work) list was re-read in the City and County of San Francisco's own hosted PDF of the 2025 San Francisco Plumbing Code, which reproduces the exact nine-item exempt list and the no-cutting/no-removal condition on each item. The American Legal Publishing code-library copy remains registered as a secondary reference; the row previously relied on that copy alone.",
+      "action": "Cite both copies; if they ever disagree, follow the city-hosted PDF and confirm the operative scope with SF DBI.",
+      "source_ids": [
+        "SF-CODE-104-PDF",
+        "SF-CODE-104",
+        "SF-PERMIT"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "status": "Resolved"
     }
   ]
 }
