@@ -30,6 +30,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_overflow*.py' -v
       - name: Stage linked public files only
         run: python scripts/stage_overflow_pages.py
+      - name: Enforce publication boundary before upload
+        run: python scripts/check_publication_boundary.py
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -72,3 +74,17 @@ jobs:
                           raise
                       time.sleep(5)
           PY
+      - name: Record what the live origin actually serves
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python scripts/check_publication_boundary.py \
+            --live "$PAGE_URL" \
+            --json build/live-publication-boundary.json \
+            || true
+      - name: Upload publication-boundary report
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-publication-boundary
+          path: build/live-publication-boundary.json
+          if-no-files-found: warn
