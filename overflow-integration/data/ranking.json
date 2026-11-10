@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "method_note": "Editorial decision support, not a verified performance or quality rating. Scores use only the fields on the official CSLB records, company-published service statements and the owner-supplied quote wording, each re-read on 2026-11-08. No provider was contacted, no reference was taken and no availability or price was confirmed.",
   "weights": [
     {
@@ -638,5 +638,6 @@
       ]
     }
   ],
-  "final_verification_note": "Final integration on 2026-11-08 re-fetched all 24 CSLB records, added Atlas as a conditional hold, corrected the AmLegal chunk reference, and added phone-discrepancy flags. The weighted order remains editorial decision support, not a verified performance rating; no provider was contacted or booked."
+  "final_verification_note": "Final integration on 2026-11-08 re-fetched all 24 CSLB records, added Atlas as a conditional hold, corrected the AmLegal chunk reference, and added phone-discrepancy flags. The weighted order remains editorial decision support, not a verified performance rating; no provider was contacted or booked.",
+  "notes": []
 }

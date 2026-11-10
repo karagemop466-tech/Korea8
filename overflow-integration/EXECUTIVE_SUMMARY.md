@@ -1,6 +1,6 @@
 # Executive summary — bathtub wastewater overflow trip lever
 
-Reviewed 2026-11-08. San Francisco tenant-occupied unit. This summary is based on the linked
+Reviewed 2026-11-10. San Francisco tenant-occupied unit. This summary is based on the linked
 official/company sources and a neutral owner record; it is not a contractor booking or legal advice.
 
 ## Decision

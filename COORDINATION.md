@@ -1225,3 +1225,31 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 - Exact-commit workflow: https://github.com/karagemop466-tech/Korea8/actions/runs/42731580658 — build, verification, 18 tests, staged public artifact, deploy and HTTPS confirmation succeeded.
 - Live ranking page https://karagemop466-tech.github.io/Korea8/decision-analysis.html was independently retrieved and includes the sourced Heise advertised restoration clarification. The legacy Pages mode remains enabled; staging does not restrict repository or legacy-root publication.
 - GitHub Actions emitted a non-blocking Node 20 action deprecation/forced Node 24 warning. Fresh source verification remains limited to the cited targeted audit; no provider was contacted.
+
+## Session `arena/d6196195-korea8` — 2026-11-10 fresh re-verification and final integration
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `D619-T1` | Claim board before other edits | done | `arena/d6196195-korea8` | `COORDINATION.md` |
+| `D619-T2` | Fresh official-source re-verification (2026-11-10): all CSLB records, company sites, code/permit/tenant sources, review-platform retrieval test, line-by-line repo audit | done | `arena/d6196195-korea8` | `overflow-integration/**`, `audit/2026-11-10-d6196195/**` |
+| `D619-T3` | Canonical rebuild, verification, PR to main, merge, Pages deploy and live check | in progress | `arena/d6196195-korea8` | root canonical HTML/CSS, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `COORDINATION.md` |
+
+**Claim boundaries:** Arena fixes this session to `arena/d6196195-korea8`; no other branch will be created or pushed. No other session has an active bathtub task on current `main` (last completed: `arena/3946905e-korea8`, PR #52 merged 2026-11-08). Open PRs #35, #38, #39, #44, #49, #51, #53 are other sessions' historical work and will not be merged or closed by this session. DOE GEMS research (`docs/`, `src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, GEMS scripts/workflow) and parallel redirect stubs/archives are read-only. Any required cross-scope edit will be logged here, not made silently. No provider will be contacted, booked or paid. Owner-supplied estimates remain labelled owner-reported with verified amounts blank. Public content uses neutral repair language; no private circumstances are published.
+
+**Claim push:** This claim is committed and pushed before any research or site edits, per the shared-board rule.
+
+### `D619-T2` — completed record (session `arena/d6196195-korea8`, 2026-11-10)
+
+**Report:** `audit/2026-11-10-d6196195/REPORT.md` and `freshness-check.json`
+
+- **All 24 CSLB licence detail pages re-read directly** on 2026-11-10 (CSLB banner: Data current as of 11/9/2026 4:49 PM). **24/24 stored licensure fields matched exactly** — legal name, classifications, status, expiry, registered city, phone and workers-compensation entry. No licensure correction was needed; per-row timestamps were refreshed and `as_of` moved to 2026-11-10.
+- **Rule/company sources re-read:** SF.gov plumbing/mechanical permit page (permit trigger, §104.2 link, eligible classes, inspection before covering, help desk 628-652-4900), July 2026 DBI fee PDF (1P $290, 11P/M $320, $519/hr, $555/hr, $259/half-hour), BPC §7057, §7048, §7057.5 verbatim, Civil Code §1954 verbatim, CSLB C-9 classification, CSLB contract guidance, Watco instructions, Heise’s Ingleside case (still live, still carries its 404 template block), Ace and Rapid Flow homepages.
+- **Yelp re-tested:** HTTP 403 again on 2026-11-10. Ratings, counts and review text stay blank.
+- **Live site:** returned the merged 2026-11-08 dashboard before this rebuild (24 CSLB, 42 requirements, 85 sources, 46 flags).
+- **Privacy:** no private-circumstance phrasing in any published file; verifier banned-pattern check passes. No provider contacted/booked; owner estimates remain owner-reported with verified amounts blank; ranking unchanged.
+
+### `D619-T3` — in progress
+
+Canonical rebuild, verification, PR to main, merge, Pages deploy and live check. Build/verify/tests already run locally: 27/27 PASS, 11/11 tests PASS, `git diff --check` PASS.
+
+**Rebase conflict resolution (2026-11-10):** While PR #56 was open, concurrent sessions `arena/660ab2dd-korea8`, `arena/35739f62-korea8` and `arena/47d993da-korea8` merged PRs #55, #57, #58, #59, #60 and #61 onto `main` (`b30f89d`), adding `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `audit/REPORT_2026-11-10_35739f62.md`, `audit/2026-11-10-47d993da/REPORT.md`, `HEISE-PATCH` / `CSLB-FINDING` sources, Heise/Watco/BPC §7057(b) clarifications and live-HTTPS workflow checks. Rebased `arena/d6196195-korea8` onto `origin/main` (`b30f89d`) preserving 100% of all three concurrent sessions' board records, data refinements, scripts, workflow and tests; applied this session's 2026-11-10 fresh official-source re-verification timestamps (`as_of: 2026-11-10`, 24/24 CSLB banner timestamps `11/9/2026 4:49 PM`) and linked `audit/2026-11-10-d6196195/REPORT.md` + `freshness-check.json` alongside the concurrent audits. Combined build, 27/27 verifier checks and 18/18 unit tests pass.
