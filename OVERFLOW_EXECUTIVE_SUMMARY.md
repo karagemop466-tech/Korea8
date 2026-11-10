@@ -30,7 +30,9 @@ Restoration partner: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B; no
 Atlas Plumbing & Rooter #868994 is a conditional review lead held outside the hiring order pending a direct trip-lever reference, restoration party and current dispatch number.
 Held back: D G Construction (CSLB citation B&P §7114.A disclosed), Advanced Plumbing (future-suspension warning),
 24/7 SF Handyman (B-2), SF Building Group (B only), Precision (drain cleaning), Clever (licensed 2026-09-04),
-Cahill (no C-36), Kenneth Asire (suspended), Portola (identity unresolved), Atlas (conditional review lead).
+Cahill (no C-36), Kenneth Asire (suspended), 24/7 Rooter #954813 (no B/C-9, phone discrepancy),
+George Salet #888630 (Brisbane, expires 2026-12-31), Portola / C J’s / Golden Gate (identities unresolved),
+Atlas (conditional review lead).
 
 ## Estimates
 Owner-supplied amounts dated 2026-08-30: Expert $614 (replace waste and overflow), Bay Area $550
@@ -42,7 +44,10 @@ are unconfirmed.
 
 ## Key controls
 - Verify the legal contracting entity, license status/classifications, bond and insurance on signing day.
-- Name who performs drywall/texture/paint; B + C-36 is not proof of drywall self-performance.
+- Name who performs drywall/texture/paint; B + C-36 is not proof of drywall self-performance, and under
+  BPC §7059(a)/16 CCR §831 a C-36 contractor may perform non-plumbing patching only when strictly
+  incidental and essential to the plumbing repair (standalone/texture/fire-rated ceiling restoration
+  requires C-9 or qualifying B).
 - Get the DBI permit determination and inspection-before-covering path in writing. Note that City
   offices are closed Wednesday 2026-11-11 for Veterans Day, so the Permit Center help desk
   (628-652-4900) and the 49 South Van Ness counter are unavailable that day; the next business day is
@@ -57,5 +62,5 @@ are unconfirmed.
 
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
-Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 52 items.
+Portola, C J’s and Golden Gate identities remain unresolved and blank. Yelp ratings/counts are blank because business pages were blocked.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 55 items.

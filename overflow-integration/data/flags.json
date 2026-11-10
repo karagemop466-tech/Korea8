@@ -81,14 +81,16 @@
       "severity": "High",
       "category": "Licensing",
       "title": "B + C-36 does not automatically prove drywall self-performance",
-      "detail": "Earlier pages said B + C-36 “covers both trades directly.” Official C-9/BPC §7057 sources require an appropriate contract/classification structure; C-36 is plumbing, C-9 is drywall.",
+      "detail": "Earlier pages said B + C-36 \"covers both trades directly.\" Official C-9/BPC §§7057/7059(a)/16 CCR §831 sources require an appropriate contract/classification structure: B + C-36 covers two-trade prime contracts, while C-36-only permits another craft only when incidental and supplemental (essential to the plumbing work); standalone/textured/fire-rated ceiling work needs C-9 or qualifying B.",
       "action": "Name the restoration party and license in the contract; ask whether work is self-performed or subcontracted.",
       "source_ids": [
         "CSLB-C9",
         "CSLB-C36",
         "BPC-7057",
         "CSLB-B-FAST",
-        "REPO-OLD-EXEC"
+        "REPO-OLD-EXEC",
+        "BPC-7059",
+        "CSLB-831"
       ],
       "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
       "status": "Resolved in canonical rebuild"
@@ -112,12 +114,13 @@
       "id": "F-08",
       "severity": "Medium",
       "category": "Licensing",
-      "title": "HARP/24-7 is B-2, not B or C-36",
-      "detail": "#1105133 is B-2 only. BPC §7057.5 requires three unrelated trades and restricts structural work and plumbing-system replacement/substantial alteration.",
+      "title": "HARP/24-7 is B-2, whose plumbing scope and permit eligibility depend on BPC §7057.5 and DBI scope approval",
+      "detail": "#1105133 holds B-2 Residential Remodeling (not B or C-36). Under BPC §7057.5, B-2 requires at least three unrelated trades, restricts structural work and prohibits installing/replacing/substantially altering plumbing systems without C-36 or subcontracting. On SF.gov, plumbing permit eligibility for a B license is determined after DBI approval based on the scope of work rather than being an unconditional general-building grant.",
       "action": "Do not group it with multi-trade B licensees or treat it as an automatic plumbing-plus-drywall fit.",
       "source_ids": [
         "CSLB-1105133",
-        "BPC-7057-5"
+        "BPC-7057-5",
+        "SF-PERMIT"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
       "status": "Resolved in canonical rebuild"
@@ -264,13 +267,15 @@
       "severity": "Medium",
       "category": "Provider fit",
       "title": "Heise’s license has no B or C-9",
-      "detail": "CSLB #1089561 lists A/C-10/C-20/C-36, not B or C-9. The company advertises plumbing-access and ceiling patching, but the person performing restoration, licensing and contract structure for this job remain unconfirmed.",
+      "detail": "CSLB #1089561 lists A/C-10/C-20/C-36, not B or C-9. While BPC §7059(a)/16 CCR §831 lets a specialty plumber include a small essential access patch as incidental and supplemental, standalone or separately priced ceiling restoration (taping, texturing, paint or fire-rated assembly rebuild) requires C-9 or B; the exact contracting structure remains unconfirmed.",
       "action": "Ask the contractor to identify the restoration party and confirm the appropriate licensing and contract structure for the actual scope.",
       "source_ids": [
         "CSLB-1089561",
         "CSLB-C9",
         "BPC-7057",
-        "HEISE-PATCH"
+        "HEISE-PATCH",
+        "BPC-7059",
+        "CSLB-831"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "status": "Open"
@@ -506,8 +511,8 @@
       "severity": "High",
       "category": "Publication",
       "title": "GitHub Pages status has lagged/errored across rapid merges",
-      "detail": "Pages API currently reports build_type \"legacy\" with source branch main and path \"/\", while the repository also has a successful Actions Pages workflow. A prior successful build is not proof of the new merge commit. Retrieved live on 2026-11-10: the legacy Pages builder ERRORED for three commits that day (caab44e, a510682, b30f89d) while the Actions runs for those same commits reported success, and PUT /repos/.../pages with build_type=workflow returns HTTP 403 \"Resource not accessible by integration\". The staged closure is 21 files and COORDINATION.md and pyproject.toml both return GitHub Pages 404 live, so the workflow artefact - not the whole repository root - is what is currently served.",
-      "action": "After this integration merge, verify the specific workflow run, Pages build commit and cache-busted live content. Owner action: set Pages > Build and deployment > Source to \"GitHub Actions\" in the repository UI, because the available automation token cannot (HTTP 403). Until that is done, a legacy build that stops erroring would publish the entire repository root, including internal coordination and audit records.",
+      "detail": "Pages API still reports build_type \"legacy\" with source branch main and path \"/\", while the repository also has a successful Actions Pages workflow staging a 41-file linked public closure. Legacy Pages builds resumed succeeding on 2026-11-10 (1e7f03f, 9f1e76d, 67b9e98), overwriting the workflow artifact and serving repository-root files live (both 5651e041 and this session retrieved /COORDINATION.md and /project/EXECUTIVE_SUMMARY.md live on 2026-11-10; see F-52). PUT /repos/.../pages with build_type=workflow returns HTTP 403 \"Resource not accessible by integration\".",
+      "action": "After this integration merge, verify the workflow run, build commit and cache-busted live content. Owner action: set Pages > Build and deployment > Source to \"GitHub Actions\" in the repository UI so only the staged public closure is published.",
       "source_ids": [
         "PAGES-API",
         "REPO-BOARD",
@@ -582,8 +587,8 @@
       "severity": "Medium",
       "category": "Repository",
       "status": "Open",
-      "title": "Three earlier-session pull requests remain open and unmerged",
-      "detail": "Nine earlier-session pull requests remain open and unmerged on GitHub as of 2026-11-10 (#7, #35, #38, #39, #44, #49, #51, #53, #63); main already reflects PRs #54–#62.",
+      "title": "11 earlier-session pull requests remain open and unmerged",
+      "detail": "11 earlier-session pull requests remain open and unmerged on GitHub as of 2026-11-10 (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66); main already reflects PRs #54-#71. Valuable findings from PRs #63 and #66 were independently re-verified and integrated without merging or closing other sessions’ PRs.",
       "action": "Owner decision: close them, or have the owning session rebase onto the current main. This session did not touch another session's pull request.",
       "source_ids": [
         "REPO",
@@ -598,7 +603,7 @@
       "category": "Repository",
       "status": "Open",
       "title": "Repository hygiene: four case-colliding run cards and stale session branches",
-      "detail": "AGENTS.md and PROJECT_PROMPT.md both require a single JSON run card, but four are tracked with four different schemas: RUN_CARD.json (4,530 bytes, keys run_card_version/protocol/holdout_dti), run_card.json (5,749 bytes, keys competition/deadline_utc/difference_from_prior_repo_work), evidence/run_card.json and docs/evidence/run_card.json (2,695 bytes each, identical schema, keys raster_sha256/uniqueness). All four belong to the archived geothermal project. Separately, 38 arena/* remote branches exist alongside main on origin as of 2026-11-10.",
+      "detail": "AGENTS.md and PROJECT_PROMPT.md both require a single JSON run card, but four are tracked with four different schemas: RUN_CARD.json (4,530 bytes), run_card.json (5,749 bytes), evidence/run_card.json and docs/evidence/run_card.json (2,695 bytes each). All four belong to the archived geothermal project. Separately, 42 prior arena/* remote branches exist alongside main on origin as of 2026-11-10.",
       "action": "Keep one run card for the archived project and archive the other three, and delete merged session branches. Neither affects the published dashboard.",
       "source_ids": [
         "REPO",
@@ -675,7 +680,7 @@
       "severity": "Low",
       "category": "Repository navigation",
       "title": "Earlier executive-summary redirect stubs point to a superseded project mirror",
-      "detail": "BATHTUB_EXECUTIVE_SUMMARY.md and EXECUTIVE_SUMMARY_bathtub.md still describe project/summary.json as authoritative. The canonical build now reads overflow-integration/data and generates OVERFLOW_EXECUTIVE_SUMMARY.md. The old files remain preserved but their wording is stale.",
+      "detail": "BATHTUB_EXECUTIVE_SUMMARY.md and EXECUTIVE_SUMMARY_bathtub.md previously pointed to project/summary.json; both were updated to point to executive-summary.html and OVERFLOW_EXECUTIVE_SUMMARY.md, and project/EXECUTIVE_SUMMARY.md gained a non-destructive Superseded banner.",
       "action": "Use the root executive-summary.html and OVERFLOW_EXECUTIVE_SUMMARY.md; update stubs only in a separately claimed navigation scope.",
       "source_ids": [
         "REPO",
@@ -684,7 +689,7 @@
         "GH-PR"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/OVERFLOW_EXECUTIVE_SUMMARY.md",
-      "status": "Needs review"
+      "status": "Resolved in canonical rebuild"
     },
     {
       "id": "F-46",
@@ -794,6 +799,57 @@
       ],
       "official_url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
       "status": "Open"
+    },
+    {
+      "id": "F-53",
+      "severity": "Medium",
+      "category": "Provider discovery",
+      "status": "Open",
+      "title": "Supplementary discovery leads carry near-term expiry, phone discrepancies or unverified identities",
+      "detail": "24/7 Rooter #954813 is C-36+A+D-56 (no B/C-9) and shows differing phone numbers between CSLB (415) 586-6851 and site (415) 488-8661 while BBB returned 404. George Salet #888630 (C-36+C-16, Brisbane) expires 2026-12-31 inside the hiring window and claims 1979 founding vs 2006 CSLB issue. C J’s Plumbing (GoDaddy Launching Soon placeholder) and Golden Gate Plumbing (site failed to load) had no verifiable CSLB record and remain blank.",
+      "action": "Keep C J’s and Golden Gate blank/excluded unless verified directly on CSLB; verify #888630 renewal receipt and #954813 dispatch phone before any engagement.",
+      "source_ids": [
+        "CSLB-954813",
+        "ROOTER247",
+        "CSLB-888630",
+        "SALET",
+        "CJS-WEB",
+        "CSLB-SEARCH",
+        "AUDIT-20261110-6F4"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "F-54",
+      "severity": "Low",
+      "category": "Repository audit",
+      "status": "Resolved — documented",
+      "title": "Historical audit report 87e121e1 mis-typed ranking weights in prose",
+      "detail": "Line 52 of audit/2026-11-10-87e121e1/REPORT.md typed C1*0.30 + C2*0.25 + C3*0.20 + C4*0.15 + C5*0.10, whereas ranking.json actually uses 0.30 / 0.20 / 0.20 / 0.15 / 0.15 (which sums to 1.000 and yields the exact published totals: Ace 3.85, Heise’s 3.45, Rapid Flow 3.15).",
+      "action": "Preserve the historical audit untouched and document the exact formula in audit/2026-11-10-6f4c9f79/REPO_REVIEW.md.",
+      "source_ids": [
+        "REPO-BOARD",
+        "AUDIT-20261110",
+        "AUDIT-20261110-6F4",
+        "CSLB-829071"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "id": "F-55",
+      "severity": "Medium",
+      "category": "Source verification",
+      "status": "Resolved in canonical rebuild",
+      "title": "Live source re-check corrected broken HEISE-PANHANDLE 404 URL, DG-CITATION query parameters and BBB-EXPERT expiry",
+      "detail": "On 2026-11-10, HEISE-PANHANDLE (/projects/.../171358/) returned 404 and was fixed to working /recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/; DG-CITATION abbreviated query returned \"Invalid Parameters passed\" and was fixed to CSLB’s exact parameter string; BBB Expert now displays 10/31/2028 matching CSLB #977638.",
+      "action": "Keep live URL/parameter checks in audit verification records.",
+      "source_ids": [
+        "HEISE-PANHANDLE",
+        "DG-CITATION",
+        "BBB-EXPERT",
+        "AUDIT-20261110-6F4"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-10",
-  "method_note": "Editorial decision support, not a verified performance or quality rating. Scores use only the fields on the official CSLB records, company-published service statements and the owner-supplied quote wording, each re-read on 2026-11-08. No provider was contacted, no reference was taken and no availability or price was confirmed.",
+  "method_note": "Editorial decision support, not a verified performance or quality rating. Scores use only the fields on the official CSLB records, company-published service statements, directly retrieved BBB/Angi qualitative records, and the owner-supplied quote wording, re-read on 2026-11-10. No provider was contacted, no reference was taken and no availability or price was confirmed.",
   "weights": [
     {
       "id": "C1",
@@ -41,8 +41,7 @@
       "basis": "Published company statements about HOA/property-manager work, property maintenance or occupied-home protocol. Absence of a statement scores low; it is not evidence of inability.",
       "source_ids": [
         "ACE",
-        "HEISE",
-        "ACE"
+        "HEISE"
       ]
     },
     {
@@ -125,7 +124,9 @@
         "HEISE-PANHANDLE",
         "HEISE-PATCH",
         "CSLB-787733",
-        "BBB-HEISE"
+        "BBB-HEISE",
+        "HEISE-FIXTURES",
+        "BPC-7059"
       ],
       "flags": [
         "F-01",
@@ -139,7 +140,7 @@
         "C4": 4,
         "C5": 1
       },
-      "why": "Strongest adjacent evidence: four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 ceiling access and Panhandle #171358) plus advertised drywall/ceiling patching — though company pages are not independent proof of restoration licensing, show varying review-volume claims (1,600+ to 2,000+), and BBB (B-, unaccredited) displays dissolved #787733 (canceled 02/12/2025) alongside 1 negative Aug 2024 review and 1 unrelated misfiled Instagram complaint. No B or C-9 on #1089561.",
+      "why": "Strongest adjacent evidence: four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 ceiling access and Panhandle #171358), fixture overflow-plate replacement claims, and advertised drywall/ceiling patching — though company pages are not independent proof of restoration licensing, show varying review-volume claims (1,600+ to 2,000+), and BBB (B-, unaccredited) displays dissolved #787733 (canceled 02/12/2025) alongside 1 negative Aug 2024 review and 1 unrelated misfiled Instagram complaint. No B or C-9 on #1089561: BPC §7059(a)/16 CCR §831 permits a small essential access patch as incidental, whereas standalone/texture/fire-rated ceiling restoration needs C-9 or B.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources.",
       "ask": "Ensure the written contract names active #1089561 TARO GROUP INC dba HEISES PLUMBING (not dissolved #787733), state who holds the drywall/restoration license if B&P §7048 does not exempt the patch, and provide a current written combined quote.",
@@ -663,9 +664,62 @@
         "F-14",
         "F-42"
       ]
+    },
+    {
+      "provider_id": "P-26",
+      "name": "24/7 Rooter and Plumbing Services",
+      "reason": "Active C-36 + A + C-61/D-56 with advertised water-restoration services, but no B or C-9 classification (ceiling restoration beyond a BPC §7059(a) incidental patch needs C-9 or B), phone discrepancy between CSLB (415) 586-6851 and site (415) 488-8661, and no tub trip-lever case evidence.",
+      "source_ids": [
+        "CSLB-954813",
+        "ROOTER247",
+        "BPC-7059"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813",
+      "phone": "(415) 586-6851",
+      "license": "954813",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-27",
+      "name": "George Salet Plumbing",
+      "reason": "Active C-36 + C-16 advertising SF/Peninsula fixture repairs and free estimates, but registered in Brisbane, no B or C-9 classification, advertised 1979 founding predates 2006 license issue, and license expires 2026-12-31 inside the hiring window.",
+      "source_ids": [
+        "CSLB-888630",
+        "SALET"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=888630",
+      "phone": "(415) 334-0733",
+      "license": "888630",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-28",
+      "name": "C J's Plumbing & Rooter Service",
+      "reason": "Identity unresolved: company domain returned a GoDaddy \"Launching Soon\" placeholder on 2026-11-10 without publishing a verifiable CSLB license number. All regulated fields left blank.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "CJS-WEB"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "phone": "",
+      "license": "",
+      "status": "Unresolved"
+    },
+    {
+      "provider_id": "P-29",
+      "name": "Golden Gate Plumbing & Rooter Inc",
+      "reason": "Identity unresolved: indexed bathtub-overflow service listing could not be confirmed because the company domain failed to load on 2026-11-10 and no CSLB license number was verified. All regulated fields left blank.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "AUDIT-20261110-6F4"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "phone": "",
+      "license": "",
+      "status": "Unresolved"
     }
   ],
-  "final_verification_note": "Full independent verification on 2026-11-10 re-checked all 24 CSLB records (11/9/2026 4:49 PM snapshot), resolved D G Construction citation 2 2022 002099 (B&P Code 7114.A), confirmed dissolved prior Heise license #787733, directly retrieved SFBC §106A.2(8)/(10), verified Rapid Flow /services & /contact, We Do /contact/, Fast Response /faq, Heise #171358 and /reviews/, plus BBB and Angi profiles while Yelp business pages remained HTTP 403. The weighted order remains editorial decision support, not a verified performance rating; no provider was contacted or booked.",
+  "final_verification_note": "Full independent verification on 2026-11-10 re-checked all 24 canonical CSLB records plus #954813, #888630 and dissolved #787733 (11/9/2026 9:49-9:52 PM CSLB snapshot), verified BPC §7059(a) & 16 CCR §831 incidental-work boundaries, verified city-hosted 2025 SF Plumbing Code PDF §104.2 and SFBC §106A.2(10), fixed broken HEISE-PANHANDLE and DG-CITATION URLs, and checked BBB/Angi while Yelp remained HTTP 403. Weights remain editorial decision support; no provider was contacted or booked. Preserved PR #71 review-evidence notes, second-bid ceiling alternatives and copy-ready request block.",
   "partners_second_bid": [
     {
       "id": "RV-23",

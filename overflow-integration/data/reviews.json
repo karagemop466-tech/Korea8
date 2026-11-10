@@ -265,13 +265,13 @@
       "provider_id": "P-04",
       "provider": "Expert Plumbing Solutions",
       "platform": "BBB",
-      "observation": "Direct 2026-11-10 check: BBB Not Rated, 0 complaints in 3 years, 1 employee listed; BBB profile displays stale 10/31/2026 license expiry vs CSLB 10/31/2028.",
+      "observation": "Direct 2026-11-10 check: BBB Not Rated, 0 complaints in 3 years, 1 employee listed; BBB profile displays 10/31/2028 license expiry matching CSLB #977638.",
       "rating": null,
       "review_count": null,
       "verified": false,
       "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
-      "limit": "Third-party expiry field out of date; numeric ratings remain blank.",
+      "limit": "Third-party BBB summary only; no independent customer reviews retrieved; numeric ratings remain blank.",
       "source_ids": [
         "CSLB-977638",
         "BBB-EXPERT"

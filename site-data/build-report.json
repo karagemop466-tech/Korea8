@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-10T05:58:03.992940+00:00",
+  "built_at": "2026-11-10T06:03:16.768971+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
@@ -16,22 +16,22 @@
     "verification.html"
   ],
   "counts": {
-    "providers": 25,
-    "cslb_records": 24,
-    "active": 23,
+    "providers": 29,
+    "cslb_records": 26,
+    "active": 25,
     "suspended": 1,
-    "unresolved": 1,
+    "unresolved": 3,
     "b_c36": 6,
     "c9": 1,
     "requirements": 42,
     "estimates": 3,
     "technical": 8,
-    "compliance": 14,
+    "compliance": 15,
     "reviews": 23,
-    "sources": 117,
-    "flags": 52,
+    "sources": 132,
+    "flags": 55,
     "ranking": 10,
-    "ranking_held": 14
+    "ranking_held": 18
   },
   "preserved": [
     "redirect stubs",

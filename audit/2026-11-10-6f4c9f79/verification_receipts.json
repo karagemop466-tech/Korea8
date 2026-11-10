@@ -1,0 +1,66 @@
+{
+  "audit_session": "arena/6f4c9f79-korea8",
+  "audit_date_utc": "2026-11-10",
+  "baseline_commit": "67b9e98c8364396315ce067aca07938cfc95f369",
+  "cslb_snapshot_observed": "11/9/2026 9:49 PM - 9:52 PM (timezone not stated)",
+  "cslb_records_verified": {
+    "canonical_24": [
+      {"license": "1115649", "name": "RAPID FLOW PLUMBING & ROOTER INC", "status": "Current and active", "classes": ["B", "C-36"], "expiry": "2028-01-31", "wc": "Exempt (eff 02/03/2026)", "match": true},
+      {"license": "829071", "name": "ACE PLUMBING & ROOTER", "status": "Current and active", "classes": ["C-36", "A", "C-4", "C-16", "B", "C-10"], "expiry": "2027-06-30", "wc": "Policy exp 07/13/2027", "match": true},
+      {"license": "1089561", "name": "TARO GROUP INC dba HEISES PLUMBING", "status": "Current and active", "classes": ["C-36", "C-10", "A", "C-20"], "issue": "04/06/2022", "expiry": "2028-04-30", "wc": "Policy exp 01/11/2027", "match": true},
+      {"license": "977638", "name": "EXPERT PLUMBING SOLUTIONS", "status": "Current and active", "classes": ["C-36"], "expiry": "2028-10-31", "wc": "Policy exp 07/19/2027", "match": true},
+      {"license": "757796", "name": "BAY AREA PLUMBING", "status": "Current and active", "classes": ["C-36"], "expiry": "2027-01-31", "wc": "Exempt (eff 12/11/2024)", "match": true},
+      {"license": "1024971", "name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER", "status": "Current and active", "classes": ["C-36"], "expiry": "2027-03-31", "wc": "Policy exp 12/18/2026", "match": true},
+      {"license": "749536", "name": "SAVE - ON - INTERIOR", "status": "Current and active", "classes": ["B", "C-36"], "expiry": "2028-05-31", "wc": "Exempt (eff 04/05/2026)", "match": true},
+      {"license": "1096552", "name": "WE DO CONSTRUCTION INC", "status": "Current and active", "classes": ["B", "C-36"], "expiry": "2028-09-30", "wc": "Policy exp 11/14/2027", "match": true},
+      {"license": "392967", "name": "AYOOB & PEERY PLUMBING CO INC", "status": "Current and active", "classes": ["B", "C-4", "C-16", "C-36", "C-20"], "expiry": "2028-09-30", "wc": "Policy exp 08/31/2027", "match": true},
+      {"license": "995163", "name": "BERNAL HILL DRYWALL INC", "status": "Current and active", "classes": ["C-9", "B"], "expiry": "2028-07-31", "wc": "Policy exp 03/10/2027", "match": true},
+      {"license": "1106131", "name": "SF BUILDING GROUP", "status": "Current and active", "classes": ["B"], "expiry": "2027-06-30", "wc": "Exempt (eff 06/27/2025)", "match": true},
+      {"license": "1105133", "name": "HARP SERVICES dba 24/7 SF HANDYMAN & REMODELING SERVICE", "status": "Current and active", "classes": ["B-2"], "expiry": "2027-05-31", "wc": "Policy exp 04/11/2027", "match": true},
+      {"license": "1009195", "name": "ADVANCED PLUMBING AND DRAIN INC", "status": "Current and active (future-suspension warning)", "classes": ["C-36"], "expiry": "2027-11-30", "wc": "Policy exp 08/21/2027", "match": true},
+      {"license": "379364", "name": "JAMES CACCIA PLUMBING INC dba CACCIA HOME SERVICES", "status": "Current and active", "classes": ["C-36", "C-31", "C-34", "C-10"], "expiry": "2027-04-30", "wc": "Policy exp 10/01/2027", "match": true},
+      {"license": "966337", "name": "FLOW MASTERS PLUMBING INC", "status": "Current and active", "classes": ["C-36", "C-16", "C-20"], "expiry": "2027-10-31", "wc": "Policy exp 06/01/2027", "match": true},
+      {"license": "1140843", "name": "DISCOUNT PLUMBING ROOTER SERVICES LLC", "status": "Current and active", "classes": ["C-36", "A"], "expiry": "2027-07-31", "wc": "Policy exp 04/01/2027 (+$2M LLI, $100k LLC bond)", "match": true},
+      {"license": "1086935", "name": "FDL PLUMBING INC", "status": "Current and active", "classes": ["C-36"], "expiry": "2028-10-31", "wc": "Policy exp 01/21/2027", "match": true},
+      {"license": "961218", "name": "PRECISION ROOTER & DRAIN", "status": "Current and active", "classes": ["C-36"], "expiry": "2027-05-31", "wc": "Exempt (eff 05/06/2025)", "match": true},
+      {"license": "954385", "name": "CW PLUMBING INC dba CITYWIDE PLUMBING", "status": "Current and active (reissued 07/06/2026)", "classes": ["C-36"], "expiry": "2028-07-31", "wc": "Exempt (eff 05/11/2026)", "match": true},
+      {"license": "300647", "name": "CAHILL CONTRACTORS INC", "status": "Current and active", "classes": ["A", "B"], "expiry": "2027-11-30", "wc": "Policy exp 07/01/2027", "match": true},
+      {"license": "297604", "name": "D G CONSTRUCTION CO", "status": "Current and active (ComplaintDisclosure 2 2022 002099 B&P 7114.A)", "classes": ["B", "C-36"], "expiry": "2027-04-30", "wc": "Exempt (eff 04/14/2025)", "match": true},
+      {"license": "1027286", "name": "KENNETH ASIRE PLUMBING", "status": "Suspended (Contractors Bond Suspension; cancelled 08/16/2026)", "classes": ["C-36"], "expiry": "2027-05-31", "wc": "Policy exp 08/30/2027", "match": true},
+      {"license": "1160613", "name": "CLEVER PLUMBING & ROOTER INC", "status": "Current and active (issued 09/04/2026)", "classes": ["C-36"], "expiry": "2028-09-30", "wc": "Exempt (eff 08/05/2026)", "match": true},
+      {"license": "868994", "name": "ATLAS PLUMBING & ROOTER", "status": "Current and active", "classes": ["C-36", "A"], "expiry": "2028-03-31", "wc": "Employee service group policy exp 07/01/2027", "match": true}
+    ],
+    "supplementary_cslb": [
+      {"license": "787733", "name": "HEISE'S PLUMBING INC", "status": "Expired 03/31/2023; canceled / SoS dissolved 02/12/2025", "classes": ["C-36"]},
+      {"license": "954813", "name": "24 / 7 ROOTER AND PLUMBING SERVICES INC dba A & R PLUMBING", "status": "Current and active", "classes": ["C-36", "C-61/D-56", "A"], "issue": "11/18/2010", "expiry": "2028-11-30", "phone": "(415) 586-6851", "wc": "Policy exp 07/01/2027"},
+      {"license": "888630", "name": "GEORGE SALET PLUMBING INC", "status": "Current and active", "classes": ["C-16", "C-36"], "issue": "12/21/2006", "expiry": "2026-12-31", "phone": "(415) 334-0733", "wc": "Policy exp 01/28/2027"}
+    ],
+    "unverified_kept_blank": [
+      {"name": "Portola Plumbing Services", "reason": "No CSLB match confirmed"},
+      {"name": "C J's Plumbing & Rooter Service", "reason": "cjplumbing.net returned GoDaddy Launching Soon placeholder; no CSLB license published"},
+      {"name": "Golden Gate Plumbing & Rooter Inc", "reason": "goldengateplumbing.net failed to load; no CSLB license confirmed"}
+    ]
+  },
+  "statutes_codes_and_agencies": [
+    {"id": "BPC-7059", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.", "status": "verified_direct", "key_fact": "Specialty contractors may contract across crafts only if incidental and supplemental to their licensed craft."},
+    {"id": "CSLB-831", "url": "https://www2.cslb.ca.gov/Resources/LawsAndRegulations/2023/CSLB_-_BESS_-_Notice_-__OAL.pdf", "status": "verified_direct", "key_fact": "16 CCR §831 defines incidental and supplemental as 'essential to accomplish the work in which the contractor is classified'."},
+    {"id": "SF-CODE-104-PDF", "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf", "status": "verified_direct", "key_fact": "2025 SF Plumbing Code §104.2 nine-item exempt list conditioned on not cutting into or removing piping; §104.1 emergency 1-day permit; §104.1.1 owner-occupied SFH homeowner permit."},
+    {"id": "SF-CODE-106-PDF", "url": "https://media.api.sf.gov/documents/2025_SFBC_Amendments.pdf", "status": "verified_direct", "key_fact": "City-hosted 2025 SF Building Code Amendments PDF alongside AmLegal §106A.2(10) fire-resistive assembly exception."},
+    {"id": "SF-PERMIT", "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit", "status": "verified_direct", "key_fact": "Live banner confirms Veterans Day closure Wednesday 2026-11-11; DBI resumes Thursday 2026-11-12."},
+    {"id": "SF-FEES", "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf", "status": "verified_direct", "key_fact": "Category 1P $290, 11P/M $320, regular $519/hr, off-hour $555/hr, reinspection $259/half-hr (July 2026 schedule, eff 2026-07-12)."},
+    {"id": "IAPMO", "url": "https://aa.iapmo.org/?code=UPC&chapter=4", "status": "login_wall", "key_fact": "Redirected to aa.iapmo.org/Login; access-panel dimensions remain blank/unverified."}
+  ],
+  "concrete_fixes_found": [
+    "HEISE-PANHANDLE broken 404 URL replaced with working /recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/",
+    "DG-CITATION invalid-parameters CSLB query replaced with full parameter-valid CSLB disclosure URL",
+    "BBB-EXPERT updated to 10/31/2028 license expiration matching CSLB #977638",
+    "F-39 title/detail PR count mismatch fixed (11 open earlier PRs)",
+    "F-08, F-34, F-40, F-45 and stale 2026-11-08 statuses updated",
+    "Cross-session requests B5-05, I-4, I-5, BPC §7059(a) and SF-CODE-104-PDF integrated"
+  ],
+  "review_platforms_tested": {
+    "yelp": "HTTP 403 on business pages on 2026-11-10; numeric ratings and counts remain null",
+    "bbb": "Direct profile checks retrieved for Ace, Heise's, Fast Response, We Do, Ayoob & Peery, Expert, Bernal Hill, Atlas; 24/7 Rooter BBB returned 404",
+    "angi": "Direct directory/profile checks retrieved; SF directory lists Kenneth Asire Plumbing despite CSLB bond suspension, confirming CSLB-first authority"
+  }
+}

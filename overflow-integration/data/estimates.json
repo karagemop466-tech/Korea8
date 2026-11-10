@@ -114,5 +114,79 @@
     "The arithmetic spread is $479 and the highest supplied amount is about 4.55 times the lowest, but the scopes differ, so this is not a market range or a like-for-like comparison.",
     "None of the supplied scopes explicitly mentions opening and restoring the storage-unit ceiling. Silence is not an exclusion; obtain a combined written scope.",
     "Do not add the official permit fee to a quote until the quote says whether permits/inspections are included and DBI confirms the category."
+  ],
+  "cost_drivers": [
+    {
+      "id": "CD-01",
+      "driver": "Access route (above vs below)",
+      "impact": "Tub-side linkage adjustment or extraction avoids opening and patching the downstairs ceiling; below-ceiling access adds opening, protection and restoration scope.",
+      "status": "Unpriced until site diagnosis",
+      "source_ids": [
+        "WATCO",
+        "HEISE-INGLESIDE",
+        "OWNER"
+      ],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    },
+    {
+      "id": "CD-02",
+      "driver": "Plumbing scope extent",
+      "impact": "Adjusting a plunger/linkage ($135 owner-reported) differs materially from replacing a full waste-and-overflow body/tee/trap assembly ($614 owner-reported) or diverter hardware ($550 owner-reported).",
+      "status": "Owner quotes not like-for-like",
+      "source_ids": [
+        "OWNER",
+        "WATCO",
+        "CSLB-977638"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "id": "CD-03",
+      "driver": "Drywall patch vs finish & access panel",
+      "impact": "Taping, texture matching, painting or framing a serviceable access panel are separate from basic plumbing; standalone restoration requires C-9 or qualifying B contracting.",
+      "status": "No restoration quote on file",
+      "source_ids": [
+        "CSLB-C9",
+        "BPC-7059",
+        "CSLB-831"
+      ],
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
+    },
+    {
+      "id": "CD-04",
+      "driver": "Fire-resistive ceiling assembly check",
+      "impact": "Under SFBC §106A.2(10), minor wallboard repair is not permit-exempt if the ceiling separating unit and storage/garage is part of a fire-resistive assembly (e.g., Type X gypsum).",
+      "status": "Ceiling fire rating unconfirmed",
+      "source_ids": [
+        "SF-CODE-106",
+        "SF-CODE-106-PDF",
+        "SF-REMODEL"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027"
+    },
+    {
+      "id": "CD-05",
+      "driver": "Municipal permits & DBI inspection fees",
+      "impact": "Cutting/replacing concealed piping triggers permit guidance; July 2026 Table 1A-C lists Category 1P ($290), 11P/M ($320), regular inspection ($519/hr), off-hour ($555/hr), reinspection ($259/half-hr).",
+      "status": "Fee category & quote inclusion unconfirmed",
+      "source_ids": [
+        "SF-FEES",
+        "SF-PERMIT",
+        "SF-CODE-104-PDF"
+      ],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    {
+      "id": "CD-06",
+      "driver": "Occupied-unit scheduling & environmental screening",
+      "impact": "Civil Code §1954 written notice for unit and storage-unit entry, water shut-off coordination, contents protection and conditional pre-1978 EPA RRP lead/asbestos screening.",
+      "status": "Building age & tenancies unconfirmed",
+      "source_ids": [
+        "CIV-1954",
+        "EPA-RRP",
+        "EPA-ASBESTOS"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    }
   ]
 }
