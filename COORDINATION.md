@@ -1195,3 +1195,12 @@ Arena fixes this session to its existing branch; no separate session branch will
 - Task implementation **done**; Pages setting limitation and external-source freshness remain **needs review**, publicly documented on the Flagged for Review page and linked audit.
 
 - 660ab2dd concurrent integration: PR #57 advanced main while PR #59 was open. Rebase conflict was confined to this board; both sessions’ complete append-only entries were retained. No canonical data changes were discarded.
+
+
+## Session `arena/47d993da-korea8` — current independent review (2026-11-10)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Current canonical-site, official-source and deployment audit; targeted evidenced corrections and final integration | in progress | `arena/47d993da-korea8` | `audit/2026-11-10-47d993da/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root generated bathtub pages/reports and `COORDINATION.md` |
+
+Prior overlapping claims on this board predate the final PR #54 by over 60 minutes and are superseded by the completed integration handoff. No outstanding PR is assumed safe to merge. This session is constrained to the existing Arena branch, rather than creating a task branch. Preserve other sessions' work; rebase before each push.
