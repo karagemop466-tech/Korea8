@@ -1,0 +1,224 @@
+{
+  "session": "arena/7ff689a1-korea8",
+  "retrieved_utc": "2026-11-10",
+  "why_this_file_exists": "The owner asked for contractors to be judged from Yelp and other review services. Five earlier sessions recorded Yelp business pages as unreachable (HTTP 403). This file records what a sixth session could and could not retrieve on 2026-11-10, so the blank rating cells on the published site are explained by a dated retrieval test rather than by an omission.",
+  "retrieval_tests": [
+    {
+      "target": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco-11",
+      "channel": "direct page fetch",
+      "result": "HTTP 403",
+      "date": "2026-11-10",
+      "consequence": "Rating and review count not verified. Cell stays blank on the published table."
+    },
+    {
+      "target": "https://www.bbb.org/us/ca/san-francisco/profile/plumbing/expert-plumbing-solutions-1131-142714926",
+      "channel": "direct page fetch (guessed profile path)",
+      "result": "HTTP 200 with a Better Business Bureau 'Page not found' body",
+      "date": "2026-11-10",
+      "consequence": "No BBB profile located for Expert Plumbing Solutions from this path. No BBB accreditation status or rating is asserted anywhere in this dossier."
+    },
+    {
+      "target": "yelp.com search and business pages",
+      "channel": "third-party web search index (snippets only)",
+      "result": "snippets returned, containing conflicting rating figures for the same business",
+      "date": "2026-11-10",
+      "consequence": "Search-index snippets are listed below as leads. They are never promoted to verified values, and where two snippets disagree the disagreement itself is the finding."
+    }
+  ],
+  "indexed_review_snippets": [
+    {
+      "provider": "Ace Plumbing & Rooter",
+      "figures_seen": [
+        {
+          "rating": "4.5",
+          "review_count": "685",
+          "snippet_source": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco-11",
+          "page_dated": "2020-05-19"
+        },
+        {
+          "rating": "4.7",
+          "review_count": "1.4k",
+          "snippet_source": "https://www.yelp.com/search?find_desc=Rooter+Service&find_loc=San+Francisco,+CA",
+          "page_dated": "2026"
+        },
+        {
+          "rating": "4.7",
+          "review_count": "1.5k",
+          "snippet_source": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA",
+          "page_dated": "October 2026"
+        }
+      ],
+      "finding": "Three index snapshots of the same business give 4.5/685, 4.7/1.4k and 4.7/1.5k. No two agree and none could be opened. Publishing any one of them as 'the Yelp rating' would be a fabricated precision.",
+      "verified": false
+    },
+    {
+      "provider": "Fast Response Plumbing & Rooter",
+      "figures_seen": [
+        {
+          "rating": "4.8",
+          "review_count": "870",
+          "snippet_source": "https://www.yelp.com/search?find_desc=Rooter+Service&find_loc=San+Francisco,+CA"
+        },
+        {
+          "rating": "4.8",
+          "review_count": "906",
+          "snippet_source": "https://www.yelp.com/questions/loc/san-francisco-ca/looking-247-emergency-plumber-san-francisco-ca-recs/D_d8fqSu9FRfW19c01mDTw",
+          "page_dated": "2026-11-01"
+        }
+      ],
+      "company_self_published": {
+        "rating": "4.9",
+        "review_count": "1,500",
+        "where": "https://www.fastresponseplumbingsf.com/ homepage banner, described by the company as 'Over 1,500 Reviews on Yelp & Google'",
+        "retrieved": "2026-11-10"
+      },
+      "finding": "The company's own site claims 4.9 across 1,500 Yelp and Google reviews while the Yelp index shows 4.8 at about 900 Yelp reviews. The two are not comparable (combined vs single platform) and neither is independently verifiable here.",
+      "verified": false
+    },
+    {
+      "provider": "Heise's Plumbing",
+      "figures_seen": [
+        {
+          "rating": "4.2",
+          "review_count": "267",
+          "snippet_source": "https://m.yelp.com/biz/heises-plumbing-san-francisco?start=240",
+          "page_dated": "December 2025"
+        },
+        {
+          "rating": "4.2",
+          "review_count": "283",
+          "snippet_source": "https://www.yelp.com/search?find_desc=heise%27s+plumbing&find_loc=Visitacion+Valley%2C+San+Francisco%2C+CA",
+          "page_dated": "2026"
+        },
+        {
+          "rating": "4.5",
+          "review_count": "212",
+          "snippet_source": "https://www.yelp.com/biz/heises-plumbing-san-francisco?start=100"
+        }
+      ],
+      "company_self_published": {
+        "rating": "4.9",
+        "review_count": "2,000+",
+        "where": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/ header, retrieved 2026-11-10"
+      },
+      "third_party_directories": [
+        {
+          "source": "https://threebestrated.com/local-plumbers-in-san-francisco-ca",
+          "claim": "4.8 score, 'over 72 years'"
+        },
+        {
+          "source": "https://trustanalytica.org/us/ca/san-francisco/best-plumbers",
+          "claim": "4.9 / 99 reviews, 'Updated 17 Sep 2026'"
+        },
+        {
+          "source": "https://serviceagent.ai/directory/california/san-francisco/plumbing/repair/",
+          "claim": "4.9 across 1,500 Google reviews, listing marked 'Unclaimed listing (Google data)'"
+        }
+      ],
+      "finding": "Four different rating figures circulate for this firm (4.2 Yelp index, 4.5 older index page, 4.8 and 4.9 from third-party directories, 4.9 self-published). One indexed account is directly relevant to the owner's second trade requirement: a customer describes a plaster ceiling repair by the same firm's technicians, 'Yevgeny has done work for me for over a decade, including plumbing/sewage, electrical and now drywall.' That is a lead worth asking about, not a verified capability.",
+      "verified": false
+    },
+    {
+      "provider": "Discount Plumbing Rooter Services",
+      "figures_seen": [
+        {
+          "rating": "4.5",
+          "review_count": "1.3k",
+          "snippet_source": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA",
+          "page_dated": "October 2026"
+        }
+      ],
+      "verified": false
+    }
+  ],
+  "one_indexed_review_worth_reading": {
+    "url": "https://www.yelp.com/search?find_desc=heise%27s+plumbing&find_loc=Visitacion+Valley%2C+San+Francisco%2C+CA",
+    "quote": "I never wanted to call a plumber... 'Had a plaster ceiling collapse in one of our closets. Yevgeny and Valery responded and provided excellent work. They provided me with additional options: increase storage, run electrical or install lighting - all with the intention of improving the area, but without pressure to do so.'",
+    "status": "Search-index snippet; page not retrievable; not a review of this repair type; attributed to a named individual at the firm rather than to the licence."
+  },
+  "review_platform_rule_applied": "Ratings and review counts are left blank in every published table row. They are recorded here only as dated, mutually inconsistent index snapshots, because no official source publishes them and the platforms refuse retrieval. This is the reason requirement RQ-11 (rank providers using review platforms) can only be partly met, and it is a limitation of the tools, not of the shortlist.",
+  "provider_contact_verification": {
+    "note": "Phone numbers on the published table come from the CSLB licence record. Where a company's own website publishes a different number, both are recorded and neither is overwritten.",
+    "checked": [
+      {
+        "license": "829071",
+        "cslb_phone": "(415) 824-6444",
+        "site_phone": "(415) 824-6444",
+        "site": "https://www.aceplumbingandrooter.com/",
+        "agree": true
+      },
+      {
+        "license": "1089561",
+        "cslb_phone": "(415) 333-0704",
+        "site_phone": "(415) 333-0704",
+        "site": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+        "agree": true
+      },
+      {
+        "license": "977638",
+        "cslb_phone": "(415) 531-5340",
+        "site_phone": "415-531-5340",
+        "site": "https://www.eplumbingsolutions.com/",
+        "agree": true
+      },
+      {
+        "license": "757796",
+        "cslb_phone": "(415) 668-8000",
+        "site_phone": "(415) 668-8000",
+        "site": "https://www.bayareaplumbingsf.com/",
+        "agree": true
+      },
+      {
+        "license": "1024971",
+        "cslb_phone": "(415) 596-6115",
+        "site_phone": "(415) 596-6115",
+        "site": "https://www.fastresponseplumbingsf.com/",
+        "agree": true
+      },
+      {
+        "license": "1115649",
+        "cslb_phone": "(415) 866-8401",
+        "site_phone": "844-BAY-FLOW (844-229-3569)",
+        "site": "https://www.rapidflowbayarea.com/",
+        "agree": false,
+        "handling": "CSLB number is used in the table; the toll-free line is recorded in the row notes (matches published flag F-43)."
+      },
+      {
+        "license": "749536",
+        "cslb_phone": "(415) 668-8000",
+        "site_phone": "no company site located",
+        "agree": null,
+        "handling": "Same registered address and phone as licence 757796; relationship unconfirmed (published flag F-12)."
+      }
+    ]
+  },
+  "bbb_comparison_case": {
+    "finding": "Where BBB and CSLB disagree about a licence, CSLB wins.",
+    "example": {
+      "license": "954813",
+      "firm": "24/7 Rooter and Plumbing Services Inc",
+      "bbb_profile": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/247-rooter-plumbing-inc-1116-367551",
+      "bbb_claim": "\"BBB records show a license number of 954813 ... The expiration date of this license is 11/30/2026.\"",
+      "cslb_actual": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813 - active, Expire Date 11/30/2028",
+      "consequence": "A third-party directory that only indexes CSLB was two renewal cycles behind. Any licence fact on this site is taken from cslb.ca.gov, never from a directory."
+    },
+    "additional_phone_divergence": {
+      "firm": "24/7 Rooter and Plumbing Services Inc",
+      "numbers_seen": [
+        {
+          "n": "(415) 586-6851",
+          "where": "CSLB business phone"
+        },
+        {
+          "n": "(415) 886-3019",
+          "where": "https://www.24-7rooter.com/ header"
+        },
+        {
+          "n": "(415) 851-9723",
+          "where": "Yelp business listing index"
+        }
+      ],
+      "handling": "The register uses the CSLB number. A firm reachable on three published numbers is a dispatch-verification risk, not a disqualification."
+    }
+  }
+}

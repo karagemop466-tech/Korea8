@@ -1,6 +1,6 @@
 # Canonical provider table vs. official CSLB records (re-read 2026-11-10)
 
-Canonical `as_of`: 2026-11-08. Verdict `MATCH` means every compared field is identical after date/phone/classification normalisation. Mismatches list the two readings side by side.
+Canonical `as_of`: 2026-11-10. Verdict `MATCH` means every compared field is identical after date/phone/classification normalisation. Mismatches list the two readings side by side.
 
 | Row | Business | Licence | Verdict |
 |---|---|---|---|

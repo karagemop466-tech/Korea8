@@ -1,0 +1,110 @@
+{
+  "session": "arena/7ff689a1-korea8",
+  "retrieved_utc": "2026-11-10",
+  "purpose": "Primary-source provisions read line by line today that decide the three questions this repair turns on: can the part be worked from above, may the plumber also close the opening, and what does the City's own code say about permit timing. Each row is a verbatim transcription with the official URL it was read from. Nothing here is inferred; where the text does not answer a question the row says so.",
+  "rows": [
+    {
+      "id": "7FF-R-01",
+      "topic": "SF Plumbing Code 104.2 - exempt work (verbatim)",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "location": "SECTION 104.0 - PERMITS, chunk 13 of 16",
+      "quote": "104.2 Exempt Work. A permit shall not be required for the following: (1) Repair of leaks not requiring cutting into or removing piping. (2) Unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping. (3) Replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping.",
+      "meaning_for_this_job": "An adjustment of the trip-lever linkage that does not cut or remove piping can sit inside exemption (1)-(3). Removing or replacing the waste-and-overflow assembly removes piping and is therefore outside the exemption as written.",
+      "applies_to_estimate": "E-03 (Fast Response, 'repair or adjust plunger handle')",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-02",
+      "topic": "SF Plumbing Code 104.5 - permit issuance fee for fixture replacement",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "location": "104.5 Permit Fees, chunk 14 of 16",
+      "quote": "Before any permit is issued, the applicant shall pay to the Central Permit Bureau the fees as set forth in Section 110A, Table 1A-C - Plumbing/Mechanical Permit Issuance and Inspection Fees - of the Building Code. The replacement of a plumbing fixture or a gas appliance without a change in drainage, piping or venting shall not require the payment of permit issuance fee.",
+      "meaning_for_this_job": "Even where a permit is filed, the City's code text waives the permit issuance fee for a fixture replacement that does not change drainage, piping or venting. A waste-and-overflow replacement changes the drain piping, so the waiver cannot be assumed to apply.",
+      "applies_to_estimate": "E-01 (Expert Plumbing Solutions, 'replace waste and overflow')",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-03",
+      "topic": "SF Plumbing Code 104.1 - emergency work and permit timing",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "location": "SECTION 104.0 - PERMITS, chunk 13 of 16",
+      "quote": "104.1 Add the following as the second paragraph of this section: Emergency work for the protection of life or limb, health, property and public welfare shall have a permit obtained within one day of commencing such work, excluding Saturdays, Sundays and legal holidays.",
+      "meaning_for_this_job": "The City's own published code supplies a timing path: work the contractor treats as emergency work for the protection of property may proceed with the permit obtained within one day of commencing. Whether this leak qualifies is the DBI's and the contractor's call, not the owner's; the row records only that the provision exists and its text. A plumber who files an Express Permit on PermitSF can also skip City staff review and pay at once, per the SF.gov service page.",
+      "applies_to_estimate": "all three",
+      "verified": true,
+      "note": "Published here only as the code text and the DBI's published process. It is a scheduling fact any licensed contractor can use."
+    },
+    {
+      "id": "7FF-R-04",
+      "topic": "BPC 7059(a) - a specialty contractor may include other trades when incidental",
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059",
+      "location": "BPC Chapter 9, Article 4, section 7059(a), second paragraph (current text, amended by Stats. 2024, Ch. 485 (SB 1455), eff. 01/01/2025)",
+      "quote": "Nothing contained in this section shall prohibit a specialty contractor from taking and executing a contract involving the use of two or more crafts or trades, if the performance of the work in the crafts or trades, other than in which they are licensed, is incidental and supplemental to the performance of the work in the craft for which the specialty contractor is licensed.",
+      "meaning_for_this_job": "This is the provision that makes an all-in-one repair lawful without a general contractor: a C-36 plumbing contractor may contract to make the opening and patch it when that work is incidental and supplemental to the plumbing repair. A standalone drywall, texture and paint restoration contract is not incidental and needs a C-9 or B holder.",
+      "applies_to_estimate": "E-01, E-02, E-03 (all three quoting firms hold C-36 only)",
+      "verified": true,
+      "gap_in_canonical_data": "The canonical register states the C-9 / C-36 split (T-06) and BPC 7057 for B holders, but does not cite BPC 7059(a). This is the row that answers the owner's 'we need all in one service' requirement for a plumber-only bidder."
+    },
+    {
+      "id": "7FF-R-05",
+      "topic": "CSLB C-9 classification scope (verbatim)",
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "location": "CCR Title 16, Division 8, Article 3",
+      "quote": "A drywall contractor lays out and installs gypsum wall board and gypsum wall board assemblies including nonstructural metal framing members, and performs the taping and texturing operations including the application of compounds that adhere to wall board to produce a continuous smooth or textured surface.",
+      "meaning_for_this_job": "Texture matching is inside C-9. If the owner wants the ceiling returned to a matched texture as a distinct deliverable, that element is C-9 work; a plumbing-only bidder is relying on the incidental-work allowance in 7059(a).",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-06",
+      "topic": "CSLB B classification and BPC 7057(b) (verbatim)",
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "location": "BPC 7057, reproduced on the CSLB classification page (Amended by Stats. 1997, Ch. 812 (SB 857))",
+      "quote": "a general building contractor shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor to perform the work.",
+      "meaning_for_this_job": "For the six B + C-36 firms in the register, one prime contract covering plumbing plus the ceiling opening and patch is available either because two unrelated trades are required or because the firm holds the plumbing classification. The contractor must still name who performs the finish work.",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-07",
+      "topic": "CSLB Fast Facts - what B general building can and cannot perform",
+      "official_url": "https://www.cslb.ca.gov/Resources/Contractors/FastFacts-GeneralB.pdf",
+      "location": "CSLB consumer/contractor guidance sheet, footer 'Updated 04/25'",
+      "quote": "A 'B' General Building Contractor Can... Enter a prime or sub-contract for two or more separate and unrelated trades and self-perform the work (framing and carpentry cannot count as one of the trades).",
+      "meaning_for_this_job": "Board-published confirmation that a B + C-36 firm may self-perform this combined scope; it is not a statement that any particular firm will.",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-08",
+      "topic": "Watco 500/501/600-TL instruction sheet - the serviceable path from inside the tub",
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "location": "reverse side, steps 6 and 7; and the SLIP LOCK / TURNSTYLE pages",
+      "quote": "Step 6. Install overflow plate and drop cylinder assembly with overflow plate screws. (See reverse for variations; for QUICK ADJUST, see Drawing A) Make sure brass linkage is not kinked (see Drawing B). Step 7. If necessary, remove overflow plate and drop cylinder assembly and readjust to ensure drain stops water when in the closed position.",
+      "meaning_for_this_job": "The manufacturer's own service path reaches the drop cylinder and linkage through the overflow opening, which is why the tub-side attempt is a real option for a stuck lever. The same sheet shows the overflow elbow, gasket, retainer plate and the slip joint to the tee sitting behind the tub wall, which the tub-side steps do not reach - so a whole-assembly replacement is not a from-above job on this design.",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-09",
+      "topic": "SF.gov plumbing and mechanical permit service page",
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "location": "'What to know' and 'Special cases' sections",
+      "quote": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground. ... Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general. Your permit scope may be further limited depending on your license type. ... If you are a contractor authorized for Express Permits on PermitSF, you can skip City staff review and pay for your permit right away. ... After your permit is issued, have your plumbing or mechanical work inspected before covering pipes.",
+      "meaning_for_this_job": "Two operational facts for the shortlist: every C-36 holder listed may apply for the permit themselves, and the inspection has to happen before the ceiling or wall is closed - so the patch cannot be finished on the same visit as the pipe work unless an inspector is available. Permit Center help desk 628-652-4900.",
+      "verified": true
+    },
+    {
+      "id": "7FF-R-10",
+      "topic": "BPC 7048 - current text of the small-work exemption",
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "location": "BPC 7048(a)-(c) (Amended by Stats. 2025, Ch. 67 (AB 1170), effective January 1, 2026)",
+      "quote": "This chapter does not apply to a work or operation on one undertaking or project by one or more contracts if the aggregate contract price for labor, materials, and all other items is less than one thousand dollars ($1,000), that work or operation being considered of casual, minor, or inconsequential nature, and the work or operation does not require a building permit. (c) This section does not apply to a person who does either of the following: (1) Advertises or puts out a sign or card or other device that might indicate to the public that the person is a contractor ... (2) Employs another person to perform, or assist in performing, the work or operation.",
+      "meaning_for_this_job": "Every firm in the register is licensed, so this row matters only as a boundary: the exemption is conditioned on no building permit being required, and a waste-and-overflow replacement that changes piping is not clearly exempt under SF Plumbing Code 104.2. The safe procurement position is to require a licence and let the contractor's own permit answer decide, which is what the register's rows already do.",
+      "verified": true
+    }
+  ],
+  "not_retrievable": [
+    {
+      "item": "Uniform Plumbing Code concealed-joint / access-panel dimension",
+      "status": "left blank - not verified from a free official source in this session",
+      "detail": "The CPC section text is behind IAPMO member access; the free retrieval of the SF amendment pages covers 104.0-104.5 but not the UPC access-panel dimension. No panel size is asserted in this dossier."
+    }
+  ]
+}

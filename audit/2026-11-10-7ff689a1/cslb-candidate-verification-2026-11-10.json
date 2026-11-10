@@ -1,0 +1,110 @@
+{
+  "session": "arena/7ff689a1-korea8",
+  "retrieved_utc": "2026-11-10",
+  "scope_note": "Discovery of providers not already in the shared register, plus one licence-status test on the register's own top candidate. Nothing in this file edits the canonical table; handoff requests are recorded in COORDINATION.md for the integration session. Licence facts below were read from cslb.ca.gov on 2026-11-10 (board banner: 'Data current as of 11/9/2026').",
+  "additions_verified_at_cslb": [
+    {
+      "name": "24/7 Rooter and Plumbing Services Inc",
+      "dba": "A & R PLUMBING",
+      "license": "954813",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813",
+      "legal_name": "24 / 7 ROOTER AND PLUMBING SERVICES INC",
+      "registered_address": "1070 QUESADA AVE, SAN FRANCISCO, CA 94124",
+      "phone_cslb": "(415) 586-6851",
+      "entity": "Corporation",
+      "issue_date": "2010-11-18",
+      "expiry": "2028-11-30",
+      "status": "current and active",
+      "classifications": [
+        "C-36",
+        "C-61/D-56 Trenching Only",
+        "A General Engineering"
+      ],
+      "workers_comp": "NORGUARD TWWC635243, effective 07/01/2026, expires 07/01/2027",
+      "advertising": "Company site advertises 'emergency plumbing, trenchless sewer repair, hydro jetting, drain cleaning, camera inspections, and water restoration - available 24 hours a day, 7 days a week' and 'BBB A+ Rated' (https://www.24-7rooter.com/).",
+      "why_it_matters": "This is the only SF firm found in discovery that sells plumbing repair and water-damage restoration in one breath, which is the drying-and-closing half of the owner's problem.",
+      "fit": "PARTIAL. C-36 plus General Engineering, but no B and no C-9, so the ceiling opening and patch is not inside a listed classification. Water restoration is not drywall finish work. Would need a patch subcontractor or the 7059(a) incidental allowance to close the access hole.",
+      "irregularities": [
+        "Three different published phone numbers: (415) 586-6851 (CSLB), (415) 886-3019 (own site header), (415) 851-9723 (indexed business listing). Confirm which line dispatches crews.",
+        "A third-party profile states the licence expires 11/30/2026; CSLB shows 11/30/2028. Treat the directory as stale and the board record as controlling."
+      ],
+      "verified": true
+    },
+    {
+      "name": "George Salet Plumbing Inc",
+      "license": "888630",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=888630",
+      "legal_name": "GEORGE SALET PLUMBING INC",
+      "registered_address": "200 VALLEY DRIVE #51, BRISBANE, CA 94005",
+      "phone_cslb": "(415) 334-0733",
+      "entity": "Corporation",
+      "issue_date": "2006-12-21",
+      "expiry": "2026-12-31",
+      "status": "current and active",
+      "classifications": [
+        "C-16 Fire Protection",
+        "C-36"
+      ],
+      "workers_comp": "STATE COMPENSATION INSURANCE FUND 9290922, effective 01/28/2021, expires 01/28/2027",
+      "advertising": "Site advertises San Francisco and Peninsula fixture repair - 'a stopper that never seats?' - with 'Free estimates', '47 years in business, Family-run since 1979', 'Licensed & insured CSLB #888630' (https://www.plumbingpro.com/plumbing/toilet-repair-and-installation/).",
+      "why_it_matters": "The company's own fixture-repair page names the failure class the owner has (a stopper that will not seat) and offers a no-charge estimate, so it is a realistic low-cost source for the tub-side attempt.",
+      "fit": "PARTIAL / SECONDARY. Registered in Brisbane, not SF; C-36 and C-16 only, no B and no C-9; no published drywall or access-hole service line.",
+      "irregularities": [
+        "Advertised tenure 'since 1979' (47 years) cannot be corroborated by the licence, which was issued 12/21/2006. The company may have operated unincorporated before licensing; the record supports 20 years of licensure, not 47.",
+        "Licence expires 12/31/2026 - inside the hiring window; ask for the renewal receipt before booking.",
+        "Board page notes 'Personnel listed on this license are listed on other licenses', which is informational, not adverse."
+      ],
+      "verified": true
+    }
+  ],
+  "found_in_advertising_but_unverifiable": [
+    {
+      "name": "C J's Plumbing & Rooter Service",
+      "website": "https://cjplumbing.net/",
+      "advertising": "Indexed service listing describes same-day bathroom drain, sewer and water-heater work across San Francisco with 24/7 emergency service.",
+      "attempted_verification": "The company's own domain returned a GoDaddy 'Launching Soon' placeholder on 2026-11-10, so no licence number is published by the source that would be entitled to state it.",
+      "licence_number": "",
+      "why_blank": "A licence number seen only in an aggregator snippet cannot be verified against the board by name through the tools available here (CSLB business-name search is an interactive POST form). Guessing a number from memory would be worse than leaving it blank: an unverified number next to a real business name is exactly how a phantom licence enters a register.",
+      "disposition": "Excluded from the shortlist and flagged. It may be re-surfaced by anyone who can read a licence number off a current invoice or the board's own search."
+    },
+    {
+      "name": "Golden Gate Plumbing & Rooter Inc",
+      "website": "http://www.goldengateplumbing.net/",
+      "advertising": "Search index shows a service page titled 'Bathtub Overflow Repair' describing locating the overflow to the tub drain and repairing or replacing it.",
+      "attempted_verification": "The company site would not load (fetch error) on 2026-11-10, and the aggregator page exposes no licence number.",
+      "licence_number": "",
+      "why_blank": "Same as above: no primary source reachable for the number, and no number to verify.",
+      "disposition": "Excluded from the shortlist and flagged. This is the only SF business found that names this exact service in its own advertising, so the flag is worth a manual follow-up."
+    }
+  ],
+  "register_row_retest": {
+    "license": "1089561",
+    "name": "Heise's Plumbing",
+    "canonical_row_before": "P-03 - classifications C-36+C-10+A+C-20, 'No B or C-9 on this licence; confirm restoration party and contract structure.'",
+    "cslb_detail_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+    "cslb_reading_2026_11_10": "TARO GROUP INC dba HEISE'S PLUMBING, 1610 EVANS AVE, SAN FRANCISCO 94124, phone (415) 333-0704, Corporation, issued 09/04/2014, expires 09/30/2028, 'This license is current and active.', classifications C36 - PLUMBING, C10 - ELECTRICIAN, A - GENERAL ENGINEERING, C20 - WARM AIR HEATING AND AIR CONDITIONING. No B. No C-9. No complaint, judgment, arbitration or disciplinary action. No Additional Status.",
+    "correction_this_session_supplies": "The canonical caveat is correct on the facts but incomplete on the law. Under BPC 7059(a) a licensed specialty contractor may 'take and execute a contract involving the use of two or more crafts or trades, if the performance of the work in the crafts or trades, other than in which they are licensed, is incidental and supplemental to the performance of the work in the craft for which the specialty contractor is licensed.' A C-36-only firm may therefore lawfully include a small access-hole patch in the plumbing contract; a separately priced drywall, texture and paint restoration is not incidental and needs a C-9 or B holder (16 CCR Div. 8 Art. 3 puts 'taping and texturing operations' inside C-9).",
+    "capability_evidence_added": [
+      {
+        "source_id": "HEISE-INGLESIDE",
+        "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+        "quote": "Accessed the exterior ceiling to remove the old overflow, installed a new brass P-trap and trap adapter, and replaced the tub waste and overflow assembly",
+        "relevance": "Published method matches the owner's recommendation exactly: work from below, through the ceiling of the space underneath. Cited by the canonical register."
+      },
+      {
+        "source_id": "HEISE-PATCH",
+        "url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+        "quote": "repair of plumbing access cutouts, ceiling patching and paint touch-ups",
+        "relevance": "The restoration half of the same visit, advertised to property managers. Cited by the canonical register."
+      },
+      {
+        "source_id": null,
+        "url": "https://www.heisesplumbing.com/plumbing-fixtures/",
+        "quote": "Tub spouts, overflow plates, drain assemblies, and faucet sets replaced cleanly without unnecessary damage to surrounding tile.",
+        "relevance": "NEW: retrieved 2026-11-10, not yet in canonical sources.json. The firm advertises the overflow-plate / drain-assembly scope itself, and the page's phone '415.333.0704' matches the CSLB business phone exactly.",
+        "suggested_source_id": "HEISE-FIXTURES"
+      }
+    ],
+    "conclusion": "The register's 'strongest adjacent technical case' wording for this firm is supported, and the licence limitation is real but narrower than the row implies. No rank change recommended on the current weights; see PROVIDER-FIT.md."
+  }
+}
