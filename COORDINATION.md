@@ -1388,7 +1388,7 @@ build mirror. Logged here instead of edited.
 | `B5-02` | Independent live-route and deployment verification of the published dashboard (all routes, redirect stubs, dead routes, content parity vs canonical data, Pages/workflow receipts) | done | `arena/b5ed3a43-korea8` | `audit/2026-11-10-b5ed3a43/**` |
 | `B5-03` | Independent official-source re-verification of the estimates / cost / technical slice (owner-reported amounts, DBI fee schedule, trip-lever and tenant-entry facts) | done | `arena/b5ed3a43-korea8` | `audit/2026-11-10-b5ed3a43/**` |
 | `B5-04` | Requirements traceability matrix: map every requirement in the original brief to the site artefact that satisfies it; flag gaps | done | `arena/b5ed3a43-korea8` | `audit/2026-11-10-b5ed3a43/**` |
-| `B5-05` | Publish audit artefact + board record; PR to main, merge, confirm Pages deploy | in progress | `arena/b5ed3a43-korea8` | `COORDINATION.md`, `audit/2026-11-10-b5ed3a43/**` |
+| `B5-05` | Publish audit artefact + board record; PR to main, merge, confirm Pages deploy | done | `arena/b5ed3a43-korea8` | `COORDINATION.md`, `audit/2026-11-10-b5ed3a43/**` |
 
 **Claim boundaries (deliberate non-overlap).** Sessions `arena/d6196195-korea8` (D619-T1/T2/T3: fresh CSLB re-verification + canonical rebuild + final integration, PR #56), `arena/47d993da-korea8` (current independent review, PR #58), `arena/35739f62-korea8` (status audit, PRs #57/#60) and `arena/660ab2dd-korea8` (publication boundary, PRs #55/#59) own the canonical data, generator, verifier, tests, generated root pages and their own audit directories. This session edits **only** `audit/2026-11-10-b5ed3a43/**` and `COORDINATION.md`, and treats everything else as read-only. It does not re-run the canonical rebuild, does not modify provider/requirement/ranking data, does not contact, book or pay any provider, and does not merge or close another session's PR. Any canonical-data defect found here is logged as a cross-session request in this section, not edited silently.
 
@@ -1500,6 +1500,34 @@ Owner-supplied estimates remain
 labelled owner-reported with verified amounts blank. No provider was contacted, booked or paid. Nothing in this
 audit is presented as a verified provider price, availability or acceptance.
 
+### `B5-05` — PR, merge, deployment and live confirmation record (done, 2026-11-10)
+
+| Item | Result |
+|---|---|
+| Integration PR | **#68** — https://github.com/karagemop466-tech/Korea8/pull/68 (`arena/b5ed3a43-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-10T01:12:25Z; merge commit `1e7f03f1feb7de8e127e550b38d86df724ee8007` |
+| Actions run | [42734092629](https://github.com/karagemop466-tech/Korea8/actions/runs/42734092629) — `build` **success** and `deploy` **success** for the exact merge commit `1e7f03f1fe`; the deploy job includes the runner-side live HTTPS content-marker check |
+| Legacy Pages build | **built** for `1e7f03f1feb7`, created 2026-11-10T01:12:26Z, no error |
+| Board conflicts | `origin/main` advanced through PR #65 (`arena/87e121e1-korea8`) and PR #67 (`arena/0ccaa3f3-korea8`) while this session was rebasing. Both rebase conflicts were confined to this shared board and were resolved **additively**: `origin/main`'s version plus this session's section appended. Final diff vs `origin/main` is 119 insertions and **0 deletions**; all 21 prior session sections are present and this session's section appears exactly once. No other session's work was discarded. |
+| Push note | Two `--force-with-lease` pushes were required because rebasing onto an advancing `main` rewrote this session's own commit hashes. The displaced commits (`7128df8`, `1efd1e6`, `d376ebe`) were this session's own pre-rebase commits; no other session's commits were displaced or lost. |
+| Open PRs untouched | #35, #38, #39, #44, #49, #51, #53, #56 were not merged or closed by this session. |
+
+**Live reachability of this session's own artefact.** `audit/2026-11-10-b5ed3a43/REPORT.md` is committed to the
+repository, but `https://karagemop466-tech.github.io/Korea8/audit/2026-11-10-b5ed3a43/REPORT.md` returns a
+GitHub Pages 404 because the file is not in the linked public closure — no canonical page links to it, and
+adding that link is the final integration session's shared output, not this session's scope.
+
+**Cross-session request (repeated from above, now specific):** the final integration session should add a link
+from `verification.html` to `audit/2026-11-10-b5ed3a43/REPORT.md` so the audit is reachable from the live
+dashboard. The staging script `scripts/stage_overflow_pages.py` will then include it automatically, because
+the closure is computed from `index.html`.
+
+### Final status
+
+`B5-01`, `B5-02`, `B5-03`, `B5-04`, `B5-05` — **done**. Irregularities I-1 … I-7 are recorded above and in
+`audit/2026-11-10-b5ed3a43/REPORT.md`; they are non-blocking and none was edited in the canonical tree by this
+session. No provider was contacted, booked or paid.
+
 ---
 
 ## Session `arena/3abe4d32-korea8` — repository wording cleanup, wording guard, owner-facing usability review and closing integration (2026-11-10)
@@ -1527,4 +1555,5 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 - **Restored records.** Commit `18f8f0c` on `main` had dropped two earlier records from this board: the whole `arena/d6196195-korea8` section (claim table, `D619-T2` record, `D619-T3` PR #56 merge and deploy receipt) and the `arena/47d993da-korea8` block "PR #58 and live deployment receipt". Both are back in place, taken from `8e7dbd6`. The `arena/87e121e1-korea8` and `arena/0ccaa3f3-korea8` sections are kept as merged, in the order `main` had them.
 - Check on the resolution: every non-blank line of `main`'s board is present in the merged board, apart from the sentences reworded under `3AB-02`.
 - After the merge: canonical rebuild, verifier 27/27 (341 source-covered rows, 256 tracked-HTML links, 0 broken), 27 unit tests, 32-file staging, wording guard clean, independent audit 0 problems.
-- 01:18 UTC: merged `origin/main` at `1e7f03f` (PR #68, `arena/b5ed3a43-korea8`). Append/append conflict in this board only; both sections kept, the newer session's first. Re-ran build, verifier (27/27), 27 unit tests, staging and the wording guard: all pass.
+- 01:16 UTC: merged `origin/main` at `1e7f03f` (PR #68, `arena/b5ed3a43-korea8`). Append/append conflict in this board only; both sections kept, the newer session's first. Re-ran build, verifier (27/27), 27 unit tests, staging and the wording guard: all pass.
+- 01:17 UTC: merged `origin/main` at `9f1e76d` (PR #69, `arena/b5ed3a43-korea8` receipt). Conflict in this board only; their `B5-05` record sits at the end of their section, this section stays last. Same checks re-run: all pass.
