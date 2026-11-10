@@ -1,0 +1,133 @@
+{
+  "session": "arena/ad747ef0-korea8",
+  "audit_date": "2026-11-10",
+  "audit_type": "independent fresh re-verification",
+  "base_commit": "98b3d09",
+  "base_commit_note": "merged main after resolving rebase conflict with concurrent 87e121e1 session; 5 CSLB + SF.gov + DBI source re-reads fetched directly on 2026-11-10 are independent of the data refresh",
+  "scope": "canonical bathtub-overflow dashboard (overflow-integration/data -> root *.html)",
+  "cslb_banner_as_of": "11/9/2026 4:49 PM (all fetched pages)",
+  "cslb_records_re_read": [
+    {
+      "licence": "829071",
+      "business": "ACE PLUMBING & ROOTER",
+      "legal_entity": "Corporation",
+      "issue_date": "12/18/2003",
+      "expire_date": "06/30/2027",
+      "status": "current and active",
+      "classifications": ["C36", "A", "C-4", "C16", "B", "C10"],
+      "phone": "(415) 824-6444",
+      "city": "San Francisco",
+      "workers_comp": "Financial Pacific Insurance Company, effective 07/13/2026",
+      "bond": "Merchants Bonding Company (Mutual), effective 09/04/2026",
+      "matches_stored": true,
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "licence": "1089561",
+      "business": "TARO GROUP INC dba HEISES PLUMBING",
+      "legal_entity": "Corporation",
+      "issue_date": "04/06/2022",
+      "expire_date": "04/30/2028",
+      "status": "current and active",
+      "classifications": ["C36", "C10", "A", "C20"],
+      "phone": "(415) 333-0704",
+      "city": "San Francisco",
+      "workers_comp": "Employers Preferred Insurance Company, effective 01/11/2026",
+      "bond": "American Contractors Indemnity Company, effective 05/27/2025",
+      "matches_stored": true,
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "licence": "1115649",
+      "business": "RAPID FLOW PLUMBING & ROOTER INC",
+      "legal_entity": "Corporation",
+      "issue_date": "01/29/2024",
+      "expire_date": "01/31/2028",
+      "status": "current and active",
+      "classifications": ["B", "C36"],
+      "phone": "(415) 866-8401",
+      "city": "San Francisco",
+      "workers_comp": "exempt - certified no employees, effective 02/03/2026",
+      "bond": "Merchants Bonding Company (Mutual), effective 03/03/2025",
+      "matches_stored": true,
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649"
+    },
+    {
+      "licence": "995163",
+      "business": "BERNAL HILL DRYWALL INC",
+      "legal_entity": "Corporation",
+      "issue_date": "07/28/2014",
+      "expire_date": "07/31/2028",
+      "status": "current and active",
+      "classifications": ["C-9", "B"],
+      "phone": "(415) 533-8274",
+      "city": "San Francisco",
+      "workers_comp": "Endurance Assurance Corporation, effective 03/10/2026",
+      "bond": "American Contractors Indemnity Company, effective 03/29/2023",
+      "matches_stored": true,
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163"
+    },
+    {
+      "licence": "1027286",
+      "business": "KENNETH ASIRE PLUMBING",
+      "legal_entity": "Sole Ownership",
+      "issue_date": "05/25/2017",
+      "expire_date": "05/31/2027",
+      "status": "suspended - Contractors Bond Suspension",
+      "classifications": ["C36"],
+      "phone": "(415) 913-8048",
+      "city": "San Francisco",
+      "workers_comp": "Employers Compensation Insurance Company, effective 08/30/2026",
+      "bond": "North River Insurance Company, cancelled 08/16/2026",
+      "matches_stored": true,
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286"
+    }
+  ],
+  "permit_source": {
+    "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+    "retrieved": "2026-11-10",
+    "confirms": [
+      "permit required before cutting into or replacing pipes covered by a wall",
+      "SF Plumbing Code Section 104.2 conditional exemptions",
+      "C36/B/A/C4/C16/C20/C54 licence scope for plumbing permits",
+      "fee schedule reference Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    ]
+  },
+  "dbi_fees": {
+    "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+    "retrieved": "2026-11-10",
+    "schedule_date": "July 2026 (applies on and after July 12, 2026)",
+    "fees_confirmed": [
+      {"item": "Category 1P", "amount": 290, "unit": "permit", "match": true},
+      {"item": "Category 11P/M", "amount": 320, "unit": "permit", "match": true},
+      {"item": "Regular inspection", "amount": 519, "unit": "hour", "match": true},
+      {"item": "Off-hour inspection", "amount": 555, "unit": "hour", "match": true},
+      {"item": "Re-inspection (Sec 108A.8)", "amount": 259, "unit": "half hour", "match": true}
+    ]
+  },
+  "structural_checks": {
+    "build": "PASS - 25 providers, 24 CSLB, 110 sources, 48 flags, 10 ranked",
+    "verify_overflow_site": "27/27 PASS - 335 source-covered rows, 303 links, 0 broken",
+    "unit_tests": "21/21 PASS",
+    "git_diff_check": "clean"
+  },
+  "live_deployment": {
+    "pages_status": "built",
+    "source_branch": "main",
+    "html_url": "https://karagemop466-tech.github.io/Korea8/",
+    "pages_refetched": ["index.html", "decision-analysis.html", "flagged-for-review.html"],
+    "content_matches": true
+  },
+  "findings": {
+    "hallucinated_values_found": 0,
+    "defects_corrected": 0,
+    "standing_flags": 48,
+    "summary": "Every official-source value spot-checked (5 CSLB records + SF.gov permit + DBI fee PDF) matches the canonical data exactly; CSLB records current as of 11/9/2026; deployment live and serving current content. Structural counts reflect the merged main (98b3d09) after the concurrent 87e121e1 data refresh."
+  },
+  "limitations": [
+    "5 of 24 CSLB pages re-read independently (top-ranked leads + partner + suspended); remaining 19 verified by prior sessions on 2026-11-08/10",
+    "Yelp business pages blocked (HTTP 403); ratings/counts blank by design",
+    "Heise's case page embeds a 404 template block (already flagged)",
+    "No provider contacted; no availability/schedule/combined price confirmed"
+  ]
+}
