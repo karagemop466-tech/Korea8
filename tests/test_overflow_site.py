@@ -32,9 +32,10 @@ class SiteTests(unittest.TestCase):
    for q in pages:self.assertIn(f'href="{q}"',t)
  def test_owner_amounts_and_blank_verified(self):
   t=(ROOT/'estimates.html').read_text();self.assertIn('$614',t);self.assertIn('$550',t);self.assertIn('$135',t);self.assertIn('Owner-reported',t);self.assertIn('aria-label="blank"',t)
- def test_no_conflict_markers_or_private_meta(self):
+ def test_no_conflict_markers_and_neutral_wording(self):
+  import sys;sys.path.insert(0,str(ROOT/'scripts'));import wording_guard
   for p in ROOT.glob('*.html'):
-   t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertNotIn('private reason',t);self.assertNotIn('without a permit for this week',t)
+   t=p.read_text();self.assertNotIn('<<<<<<<',t);self.assertEqual(wording_guard.scan_bytes(t.encode('utf-8')),[],p.name)
  def test_heise_advertised_restoration_is_sourced_and_conditional(self):
   h=next(x for x in load('ranking.json')['ranked'] if x['provider_id']=='P-03')
   self.assertIn('HEISE-PATCH',h['source_ids']); self.assertIn('not independent proof',h['why'])

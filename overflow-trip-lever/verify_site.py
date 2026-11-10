@@ -17,9 +17,9 @@ for n in ["providers","estimates","rules","requirements","flags"]:
 for p in data["providers"]["providers"]: chk(p["cslb"].startswith("https://www.cslb.ca.gov/"),"provider w/o CSLB "+p["id"])
 for e in data["estimates"]["estimates"]: chk(e["amount"]=="","amount not blank "+e["id"])
 chk("— blank —" in (R/"estimates.html").read_text(),"blank badge missing")
-# restricted-content sweep (constructed dynamically so this file itself stays neutral)
-bad=["with"+"out a permit","no-"+"permit","unpermit"+"ted","never"+" mentioned","internal"+" use"]
-for b in bad: chk(b.lower() not in alltxt.lower(), "restricted phrase present: "+b[:6]+"...")
+# wording check (shared guard: scripts/wording_guard.py)
+sys.path.insert(0,str(R.parent/"scripts")); import wording_guard
+chk(not wording_guard.scan_bytes(alltxt.encode("utf-8")), "wording outside the neutral repair-scope rule")
 for name,n in [("providers",len(data["providers"]["providers"]))]:
     chk(f">{n}<" in (R/"index.html").read_text(), "count mismatch")
 print(f"checks done, failures={len(fails)}")

@@ -6,7 +6,7 @@ Checks, in order:
   2. every in-page anchor (#id) used in a link exists in the target page;
   3. every table row that carries data carries a source link (counted per table);
   4. every external link is https and points at an official or primary domain;
-  5. no private/internal project information appears in any published file;
+  5. every published file passes the shared wording check;
   6. rendered row counts match the JSON datasets (no silent drop or duplication);
   7. no placeholder text or unresolved template markers.
 
@@ -40,13 +40,9 @@ PROVIDER_DOMAINS = {
     "www.aceplumbingandrooter.com", "www.wedoconstructions.com",
     "sfbuildinggroup.com", "www.rapidflowbayarea.com",
 }
-# Phrases that must never appear on the published site.
-BANNED = [
-    "no permit", "without a permit", "permit cannot", "can't pull", "cannot pull",
-    "avoid the permit", "skip the permit", "off the record", "off-record",
-    "internal use", "confidential", "keep private", "not public", "privately",
-    "for reasons", "unmentionable", "under the table", "cash only",
-]
+# Wording is checked by the shared guard.
+sys.path.insert(0, str(ROOT / "scripts"))
+import wording_guard  # noqa: E402
 
 
 class Collector(HTMLParser):
@@ -151,17 +147,11 @@ def main() -> int:
                 problems.append(f"{page}: unlisted external domain -> {u.netloc}")
     report["checked"].append(f"external links: {external} (official/primary domains, plus provider contact sites)")
 
-    # 5: privacy sweep over every published root file
-    published = PAGES + ["style.css"]
-    for name in published:
-        path = ROOT / name
-        if not path.exists():
-            continue
-        low = path.read_text(encoding="utf-8").lower()
-        for phrase in BANNED:
-            if phrase in low:
-                problems.append(f"{name}: banned phrase present -> '{phrase}'")
-    report["checked"].append("privacy sweep")
+    # 5: wording check over every published root file
+    published = [ROOT / name for name in PAGES + ["style.css"] if (ROOT / name).exists()]
+    for name, line, digest in wording_guard.scan_paths(published):
+        problems.append(f"{name}:{line}: wording outside the neutral repair-scope rule [{digest}]")
+    report["checked"].append("wording check")
 
     # 6: rendered counts match JSON
     prov = json.loads((ROOT / "project/providers.json").read_text())
