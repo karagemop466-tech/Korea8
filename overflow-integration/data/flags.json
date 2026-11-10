@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "F-01",
@@ -195,7 +195,7 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Rechecked 2026-11-08: Yelp business/search pages still return HTTP 403. Web-search excerpts are available for some providers; BBB and Angi pages were directly retrieved but do not establish this exact job. Numeric ratings/counts remain blank.",
+      "detail": "Rechecked 2026-11-10: Yelp business/search pages still return HTTP 403. Web-search excerpts are available for some providers; BBB and Angi pages were directly retrieved but do not establish this exact job. Numeric ratings/counts remain blank.",
       "action": "Keep review observations labeled by retrieval method; request direct references and a current occupied-unit plan.",
       "source_ids": [
         "YELP-RF",
@@ -243,7 +243,7 @@
       "severity": "Medium",
       "category": "Technical evidence",
       "title": "Heise’s case studies are self-published and contain a 404 template block",
-      "detail": "Rechecked 2026-11-08: Ingleside, Mission and Marina pages still render case content alongside a Page Not Found (404) template block. Ingleside says exterior ceiling; that is not confirmed to be the storage-unit ceiling below this tub. None proves drywall restoration for that case; the company separately advertises drywall/ceiling patching.",
+      "detail": "Rechecked 2026-11-10: Ingleside, Mission and Marina pages still render case content alongside a Page Not Found (404) template block. Ingleside says exterior ceiling; that is not confirmed to be the storage-unit ceiling below this tub. None proves drywall restoration for that case; the company separately advertises drywall/ceiling patching.",
       "action": "Treat as adjacent self-published evidence only; ask for a direct reference, exact access location and named restoration party.",
       "source_ids": [
         "HEISE-INGLESIDE",

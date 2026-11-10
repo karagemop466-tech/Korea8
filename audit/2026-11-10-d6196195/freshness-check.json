@@ -1,0 +1,496 @@
+{
+  "session": "arena/d6196195-korea8",
+  "checked_at": "2026-11-10",
+  "cslb_banner": "Data current as of 11/9/2026 4:49 PM (timezone not stated)",
+  "cslb_records_rechecked": 24,
+  "cslb_records_matched": 24,
+  "cslb_records_corrected": 0,
+  "status_summary": "23 current and active, 1 suspended (Kenneth Asire #1027286, bond suspension), 1 identity unresolved (Portola)",
+  "providers": [
+    {
+      "id": "P-01",
+      "name": "Rapid Flow Plumbing & Rooter",
+      "license": "1115649",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 866-8401",
+      "expiry": "2028-01-31",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:12 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "match": "match"
+    },
+    {
+      "id": "P-02",
+      "name": "Ace Plumbing & Rooter",
+      "license": "829071",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-4",
+        "C-16",
+        "B",
+        "C-10"
+      ],
+      "phone": "(415) 824-6444",
+      "expiry": "2027-06-30",
+      "workers_comp": "Policy recorded; expires 07/13/2027",
+      "source_timestamp": "11/9/2026 4:49:13 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "match": "match"
+    },
+    {
+      "id": "P-03",
+      "name": "Heise\u2019s Plumbing",
+      "license": "1089561",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-10",
+        "A",
+        "C-20"
+      ],
+      "phone": "(415) 333-0704",
+      "expiry": "2028-04-30",
+      "workers_comp": "Policy recorded; expires 01/11/2027",
+      "source_timestamp": "11/9/2026 4:49:12 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "match": "match"
+    },
+    {
+      "id": "P-04",
+      "name": "Expert Plumbing Solutions",
+      "license": "977638",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 531-5340",
+      "expiry": "2028-10-31",
+      "workers_comp": "Policy recorded; expires 07/19/2027",
+      "source_timestamp": "11/9/2026 4:49:18 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "match": "match"
+    },
+    {
+      "id": "P-05",
+      "name": "Bay Area Plumbing",
+      "license": "757796",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 668-8000",
+      "expiry": "2027-01-31",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:18 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "match": "match"
+    },
+    {
+      "id": "P-06",
+      "name": "Fast Response Plumbing & Rooter",
+      "license": "1024971",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 596-6115",
+      "expiry": "2027-03-31",
+      "workers_comp": "Policy recorded; expires 12/18/2026",
+      "source_timestamp": "11/9/2026 4:49:18 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "match": "match"
+    },
+    {
+      "id": "P-07",
+      "name": "Save-On-Interior",
+      "license": "749536",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 668-8000",
+      "expiry": "2028-05-31",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:22 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "match": "match"
+    },
+    {
+      "id": "P-08",
+      "name": "We Do Construction",
+      "license": "1096552",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 416-5494",
+      "expiry": "2028-09-30",
+      "workers_comp": "Policy recorded; expires 11/14/2027",
+      "source_timestamp": "11/9/2026 4:49:26 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "match": "match"
+    },
+    {
+      "id": "P-09",
+      "name": "Ayoob & Peery",
+      "license": "392967",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-4",
+        "C-16",
+        "C-36",
+        "C-20"
+      ],
+      "phone": "(415) 550-0975",
+      "expiry": "2028-09-30",
+      "workers_comp": "Policy recorded; expires 08/31/2027",
+      "source_timestamp": "11/9/2026 4:49:22 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "match": "match"
+    },
+    {
+      "id": "P-10",
+      "name": "Bernal Hill Drywall",
+      "license": "995163",
+      "status": "Current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "phone": "(415) 533-8274",
+      "expiry": "2028-07-31",
+      "workers_comp": "Policy recorded; expires 03/10/2027",
+      "source_timestamp": "11/9/2026 4:49:22 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "match": "match"
+    },
+    {
+      "id": "P-11",
+      "name": "SF Building Group",
+      "license": "1106131",
+      "status": "Current and active",
+      "classifications": [
+        "B"
+      ],
+      "phone": "(415) 297-2246",
+      "expiry": "2027-06-30",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:22 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "match": "match"
+    },
+    {
+      "id": "P-12",
+      "name": "24/7 SF Handyman & Remodeling Service",
+      "license": "1105133",
+      "status": "Current and active",
+      "classifications": [
+        "B-2"
+      ],
+      "phone": "(415) 304-1559",
+      "expiry": "2027-05-31",
+      "workers_comp": "Policy recorded; expires 04/11/2027",
+      "source_timestamp": "11/9/2026 4:49:26 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "match": "match"
+    },
+    {
+      "id": "P-13",
+      "name": "Advanced Plumbing and Drain",
+      "license": "1009195",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 744-4944",
+      "expiry": "2027-11-30",
+      "workers_comp": "Policy recorded; expires 08/21/2027",
+      "source_timestamp": "11/9/2026 4:49:26 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "match": "match"
+    },
+    {
+      "id": "P-14",
+      "name": "Caccia Home Services",
+      "license": "379364",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-31",
+        "C-34",
+        "C-10"
+      ],
+      "phone": "(650) 342-5363",
+      "expiry": "2027-04-30",
+      "workers_comp": "Policy recorded; expires 10/01/2027",
+      "source_timestamp": "11/9/2026 4:49:26 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
+      "match": "match"
+    },
+    {
+      "id": "P-15",
+      "name": "Flow Masters Plumbing",
+      "license": "966337",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-16",
+        "C-20"
+      ],
+      "phone": "(415) 751-1933",
+      "expiry": "2027-10-31",
+      "workers_comp": "Policy recorded; expires 06/01/2027",
+      "source_timestamp": "11/9/2026 4:49:27 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
+      "match": "match"
+    },
+    {
+      "id": "P-16",
+      "name": "Discount Plumbing Rooter Services",
+      "license": "1140843",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "phone": "(650) 991-2100",
+      "expiry": "2027-07-31",
+      "workers_comp": "Policy recorded; expires 04/01/2027",
+      "source_timestamp": "11/9/2026 4:49:32 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "match": "match"
+    },
+    {
+      "id": "P-17",
+      "name": "FDL Plumbing",
+      "license": "1086935",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 678-9557",
+      "expiry": "2028-10-31",
+      "workers_comp": "Policy recorded; expires 01/21/2027",
+      "source_timestamp": "11/9/2026 4:49:32 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "match": "match"
+    },
+    {
+      "id": "P-18",
+      "name": "Precision Rooter & Drain",
+      "license": "961218",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 724-1824",
+      "expiry": "2027-05-31",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:32 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "match": "match"
+    },
+    {
+      "id": "P-19",
+      "name": "Citywide Plumbing",
+      "license": "954385",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 716-1519",
+      "expiry": "2028-07-31",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:32 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "match": "match"
+    },
+    {
+      "id": "P-20",
+      "name": "Cahill Contractors",
+      "license": "300647",
+      "status": "Current and active",
+      "classifications": [
+        "A",
+        "B"
+      ],
+      "phone": "(415) 986-0600",
+      "expiry": "2027-11-30",
+      "workers_comp": "Policy recorded; expires 07/01/2027",
+      "source_timestamp": "11/9/2026 4:49:32 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "match": "match"
+    },
+    {
+      "id": "P-21",
+      "name": "D G Construction",
+      "license": "297604",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "phone": "(415) 308-0803",
+      "expiry": "2027-04-30",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:37 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "match": "match"
+    },
+    {
+      "id": "P-22",
+      "name": "Kenneth Asire Plumbing",
+      "license": "1027286",
+      "status": "Suspended",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(415) 913-8048",
+      "expiry": "2027-05-31",
+      "workers_comp": "Policy recorded; expires 08/30/2027",
+      "source_timestamp": "11/9/2026 4:49:37 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "match": "match"
+    },
+    {
+      "id": "P-23",
+      "name": "Clever Plumbing & Rooter",
+      "license": "1160613",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "phone": "(650) 834-0821",
+      "expiry": "2028-09-30",
+      "workers_comp": "Exempt: certified no employees",
+      "source_timestamp": "11/9/2026 4:49:37 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
+      "match": "match"
+    },
+    {
+      "id": "P-24",
+      "name": "Portola Plumbing Services",
+      "license": "",
+      "status": "",
+      "classifications": [],
+      "phone": "",
+      "expiry": "",
+      "workers_comp": "",
+      "source_timestamp": "",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "match": "unresolved-blank"
+    },
+    {
+      "id": "P-25",
+      "name": "Atlas Plumbing & Rooter",
+      "license": "868994",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "phone": "(650) 871-9863",
+      "expiry": "2028-03-31",
+      "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
+      "source_timestamp": "11/9/2026 4:49:37 PM; timezone not stated",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "match": "match"
+    }
+  ],
+  "other_sources_rechecked": [
+    {
+      "id": "SF-PERMIT",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "result": "match"
+    },
+    {
+      "id": "SF-FEES",
+      "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "result": "match: 1P $290, 11P/M $320, $519/hr, $555/hr, $259/half-hour"
+    },
+    {
+      "id": "BPC-7057",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "result": "match"
+    },
+    {
+      "id": "BPC-7048",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
+      "result": "match"
+    },
+    {
+      "id": "BPC-7057-5",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5.",
+      "result": "match"
+    },
+    {
+      "id": "CIV-1954",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "result": "match"
+    },
+    {
+      "id": "CSLB-C9",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "result": "match"
+    },
+    {
+      "id": "CSLB-CONTRACT",
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "result": "match"
+    },
+    {
+      "id": "WATCO",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "result": "match"
+    },
+    {
+      "id": "HEISE-INGLESIDE",
+      "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "result": "match; 404 block still embedded"
+    },
+    {
+      "id": "ACE",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "result": "match; self-description only"
+    },
+    {
+      "id": "RF",
+      "url": "https://www.rapidflowbayarea.com/",
+      "result": "match; self-description only; website 844-BAY-FLOW vs CSLB (415) 866-8401"
+    },
+    {
+      "id": "YELP-ACE",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "result": "HTTP 403; ratings/counts remain blank"
+    },
+    {
+      "id": "LIVE",
+      "url": "https://karagemop466-tech.github.io/Korea8/",
+      "result": "live; reviewed 2026-11-08 before rebuild"
+    }
+  ],
+  "counts": {
+    "providers": 25,
+    "cslb_records": 24,
+    "active": 23,
+    "suspended": 1,
+    "unresolved": 1,
+    "b_c36": 6,
+    "c9": 1,
+    "requirements": 42,
+    "estimates": 3,
+    "sources": 85,
+    "flags": 46,
+    "ranking": 10
+  },
+  "note": "No provider contacted/booked. Owner estimates remain owner-reported with verified amounts blank. Ranking unchanged."
+}
