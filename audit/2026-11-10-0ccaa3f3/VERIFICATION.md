@@ -168,9 +168,7 @@ worked around: **set Pages → Build and deployment → Source to "GitHub Action
   `main`. The bare root URL returned a stale "reviewed 2026-11-08" / "85 source records" page —
   CDN caching of the root route, the same pattern sessions `f4bb970c`, `d120270b` and `b0d7ecf7`
   logged. Not a deploy failure; recorded so nobody mistakes the cached root for the deployed state.
-- The privacy boundary holds. A `git ls-files` sweep for the internal-instruction phrasings returns
-  only verifier banned-pattern lists and statements that the content was *not* recorded. No private
-  circumstance, and no reason for one, appears in any tracked file. `COORDINATION.md` is not publicly
+- A `git ls-files` wording check was run. `COORDINATION.md` is not publicly
   served (404).
 
 ## Sources not re-fetched this session (carried forward, labelled)
@@ -222,14 +220,11 @@ Two further repository findings were new and are applied here:
 | 14,052,602 bytes of `.tif` committed against `AGENTS.md` line 39 ("never committed") | **New.** Applied as flag `F-51`. Not previously flagged. |
 | Four run cards with four different schemas | **Pre-existing flag corrected.** `F-40` said "two run-card files"; this session corrected it to four, with byte sizes and distinguishing top-level keys. |
 
-## Privacy verification (final)
+## Wording check (final)
 
-- The canonical verifier's own banned-pattern gate — `['private reason','must stay private','without a
-  permit for this week','cannot pull a permit','cannot obtain a permit', conflict markers, 'TODO',
-  'TBD','Lorem ipsum']` — returns **PASS with zero hits** over all generated pages.
-- A broader sweep of every changed and new file returned exactly one phrase hit, `do not publish`, in
+- The canonical verifier's wording and placeholder gate returns **PASS with zero hits** over all generated pages.
+- A broader check of every changed and new file returned one literal match, `do not publish`, in
   the pre-existing flag **F-31** ("A third-party directory misattributes license #297604"), whose
   action reads "Use CSLB as the license authority; do not publish the directory attribution." That
-  concerns a third-party directory's misattribution of licence #297604 and is unrelated to permits. No new wording added by this session refers to the owner's internal
-  constraint or to any reason for it.
-- `COORDINATION.md` returns GitHub Pages 404 live, so the internal board is not publicly served.
+  concerns a third-party directory's misattribution of licence #297604.
+- `COORDINATION.md` returns GitHub Pages 404 live, so the board is not served by Pages.

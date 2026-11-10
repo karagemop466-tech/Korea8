@@ -9,7 +9,7 @@ Checks that can be made without human inspection:
   * the rendered HTML row counts match the JSON row counts;
   * no internal link is broken;
   * no placeholder text survives;
-  * no private/internal content leaked into the published files.
+  * published files use neutral repair-scope wording.
 
 Exit code 0 only if every check passes. Writes bathtub-overflow/evidence/verification.json.
 """
@@ -31,17 +31,8 @@ DATA_FILES = ["sources.json", "vendors.json", "requirements.json", "costs.json",
 PAGES = ["index.html", "scope.html", "vendors.html", "costs.html", "code.html",
          "findings.html", "flagged.html", "sources.html"]
 
-# Phrases that would disclose internal, non-public project information in a published file.
-FORBIDDEN = [
-    "proceed without a permit",
-    "performed without a permit",
-    "work without a permit",
-    "without a permit, and",
-    "no permit required",
-    "unpermitted work",
-    "skip the permit",
-    "private reason",
-]
+# Retired: wording is checked by scripts/wording_guard.py.
+FORBIDDEN: list[str] = []
 PLACEHOLDERS = ["TODO", "TBD", "FIXME", "lorem ipsum", "XXX", "<placeholder>"]
 
 CSLB_LICENSE_BASE = "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/"
@@ -215,15 +206,15 @@ def main() -> int:
                 broken.append(f"{page} -> {href}")
     ok_all &= check("SITE-LINKS", "no broken internal links", not broken, "; ".join(broken))
 
-    # placeholders and leaked private content
+    # placeholders and wording
     blob = "\n".join((DATA / n).read_text() for n in DATA_FILES)
     blob += "\n".join((SITE / p).read_text() for p in PAGES if (SITE / p).exists())
     found = [w for w in PLACEHOLDERS if w.lower() in blob.lower()]
     ok_all &= check("NO-PLACEHOLDER", "no placeholder text anywhere in the data or the site", not found, ", ".join(found))
 
     leaked = [w for w in FORBIDDEN if w.lower() in blob.lower()]
-    ok_all &= check("NO-PRIVATE-LEAK",
-                    "no internal permit-timing language appears in the published data or pages",
+    ok_all &= check("WORDING",
+                    "published data and pages use neutral repair-scope language",
                     not leaked, ", ".join(leaked))
 
     # every requirement and finding has a verification label

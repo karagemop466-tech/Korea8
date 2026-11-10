@@ -1271,7 +1271,7 @@
       "official": false,
       "checked": "2026-11-10",
       "retrieval": "direct",
-      "supports": "Documents full 2026-11-10 external re-verification, ranking math check, stub/privacy sweep and structural audit",
+      "supports": "Documents full 2026-11-10 external re-verification, ranking math check, stub/wording check and structural audit",
       "limitations": "Repository audit record; cross-referenced to official primary sources"
     },
     {

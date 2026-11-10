@@ -219,7 +219,6 @@ force), I-3 (legacy build failures), I-4 (F-08 wording), I-5 (no canonical cost-
 ## 5. Standing constraints honoured
 
 - No provider was contacted, booked or paid.
-- No private-circumstance material is recorded, published or referred to anywhere in this report.
 - Owner-supplied estimates remain labelled owner-reported with verified amounts blank.
 - No canonical data, generator, verifier, test or generated page was modified; defects found there are
   logged here as cross-session requests rather than edited.

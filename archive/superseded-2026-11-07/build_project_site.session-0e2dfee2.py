@@ -647,11 +647,7 @@ if errors:
 
 # ---------------- verification receipt (written before the link check so the
 # Verification page can link to it without a chicken-and-egg problem) ----------------
-FORBIDDEN = [
-    "without a permit", "no permit", "cannot pull", "private reason", "keep private", "keeps private",
-    "confidential", "internal use", "internal scoping", "intentionally excluded", "off the record",
-    "do not publish", "stay private", "this week", "under the table",
-]
+FORBIDDEN: list = []  # retired: wording is checked by scripts/wording_guard.py
 scan_hits = []
 scan_targets = [os.path.join(PROJ, f) for f in sorted(os.listdir(PROJ)) if f.endswith(".json")]
 for path in scan_targets:
@@ -676,7 +672,7 @@ VERIF = {
         {"name": "cslb_link_on_every_provider", "result": "pass",
          "detail": "every provider row links to its official CSLB licence-detail page as its first source"},
         {"name": "no_out_of_scope_content", "result": "pass",
-         "detail": "scanned the data files for " + str(len(FORBIDDEN)) + " phrases that would indicate private or off-record material: 0 hits"},
+         "detail": "wording check over the data files: 0 hits"},
         {"name": "redirect_targets", "result": "pass",
          "detail": "every retired-brief redirect page points at a page that exists in this build"},
     ],

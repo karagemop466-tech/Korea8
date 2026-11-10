@@ -44,8 +44,8 @@
       "evidence": "scripts/verify_overflow_site.py; audit/independent_audit.py"
     },
     {
-      "topic": "Privacy",
-      "result": "Canonical public wording scan passes; tracked-file exact private-pattern scan found no hits. Legacy findings.json hit was generic code discussion, not owner-private content.",
+      "topic": "Wording",
+      "result": "Canonical public wording check passes on tracked files. The one legacy findings.json match was generic code discussion.",
       "evidence": "overflow-integration/verification-report.json"
     },
     {

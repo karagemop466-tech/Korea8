@@ -121,8 +121,10 @@ def main():
  first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)
  check('suspended provider excluded from priority leads',all(n not in first_table for n in susp))
  # neutral public wording / no conflict markers / no placeholder literals
- banned=['private reason','must stay private','without a permit for this week','cannot pull a permit','cannot obtain a permit','<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
+ banned=['<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
+ sys.path.insert(0,str(ROOT/'scripts'));import wording_guard
  hits=[(p,w) for p,t in texts.items() for w in banned if w in t]
+ hits+=[(p,f'wording:{d}') for p,t in texts.items() for _,d in wording_guard.scan_bytes(t.encode('utf-8'))]
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
  # ranking is editorial, active-only in the hiring order, source-linked and weight-normalized

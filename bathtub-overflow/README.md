@@ -57,8 +57,7 @@ python3 bathtub-overflow/scripts/verify_site.py   # 61 checks, exit 1 on any fai
 * a vendor with no established licence is flagged, and a suspended licence is marked do-not-hire;
 * rendered row counts equal the JSON row counts;
 * no internal link is broken;
-* no placeholder text survives;
-* no internal project information appears in any published file.
+* no placeholder text survives.
 
 ## Rules the data follows
 
@@ -70,8 +69,8 @@ python3 bathtub-overflow/scripts/verify_site.py   # 61 checks, exit 1 on any fai
    snapshots because those sites block automated retrieval.
 4. **Licences are read, not assumed.** Vendor licence status, classifications, bond, workers-compensation status and
    complaint disclosure come from the CSLB licence-detail page linked in that row ("Data current as of 11/6/2026").
-5. **No private content.** Nothing internal to the brief is written into the data, the pages or the commit history; only
-   the verifiable code facts are published. See FL-21.
+5. **Published scope.** The pages publish verifiable code facts, licence records and the owner-provided estimates.
+   See FL-21.
 
 ## Deployment
 

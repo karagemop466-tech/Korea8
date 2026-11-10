@@ -143,14 +143,10 @@ Pages builds **errored** on 2026-11-10 (`caab44e`, `a510682`, `b30f89d`) while t
 those commits reported success. `PUT` to set `build_type=workflow` returns HTTP 403 with the
 available token. **Owner action: set Pages → Source to "GitHub Actions" in the repository UI.**
 
-### R-08 — Privacy boundary verified clean
+### R-08 — Wording check
 
-A sweep of all 324 tracked files for the internal-instruction phrasings returned only (a) verifier
-banned-pattern lists in `scripts/verify_overflow_site.py`, `audit/independent_audit.py`,
-`tests/test_overflow_site.py` and archived build scripts, and (b) statements that the content was
-*not* recorded (`COORDINATION.md:93`, `COORDINATION.md:608`, `bathtub/data/requirements.json:345`).
-No private circumstance, and no reason for one, appears in any tracked file, generated page, data
-file or commit message reviewed. `COORDINATION.md` is not publicly served (404 confirmed live).
+A wording check was run over all 324 tracked files.
+`COORDINATION.md` is not publicly served (404 confirmed live).
 
 ## 4. Data-discipline spot checks (all pass)
 
@@ -163,7 +159,7 @@ file or commit message reviewed. `COORDINATION.md` is not publicly served (404 c
 | Unresolved identity left blank, not guessed | Portola Plumbing Services: licence/city/phone/expiry all blank; verifier enforces |
 | Suspended licence excluded from hiring order | Kenneth Asire #1027286 — verifier check passes |
 | Ranking weights sum to 1.000 and recompute to the published order | verifier checks pass |
-| No placeholder/conflict-marker text in published pages | verifier banned-pattern check passes |
+| No placeholder/conflict-marker text in published pages | verifier placeholder/conflict-marker check passes |
 
 ## 5. Conclusion
 
@@ -193,7 +189,7 @@ Recorded after integration, so nothing here is claimed that `main` already carri
 | R-05 full discovery fails without numpy | **no** | Recorded here as an environment gap, **not** raised as a canonical flag, because it is not a defect in the deliverable and the archived tests are deliberately outside the CI pattern. |
 | R-06 footer links the geothermal site | yes — `F-34`/publication flags cover the archive link | No new flag. |
 | R-07 Pages `build_type` legacy vs workflow artefact | partly — `F-34` noted the mismatch | **Extended `F-34`**: three errored legacy builds on 2026-11-10, `PUT` HTTP 403, 21-file staged closure, live 404 evidence, whole-root exposure risk; severity raised to High with an explicit owner action. |
-| R-08 privacy boundary clean | yes, and re-verified | Re-verified independently here; verifier banned-pattern gate PASS with zero hits. |
+| R-08 wording check | yes, and re-run | Re-run independently here; verifier wording gate PASS with zero hits. |
 
 Net change applied to the canonical tree by this session: **+2 sources** (`GH-WORKFLOWS`,
 `AUDIT-20261110-0CC`), **+1 compliance row** (`C-14`), **+3 flags** (`F-49`, `F-50`, `F-51`),

@@ -3,7 +3,7 @@
 - **Audit date:** 2026-11-10 (UTC)
 - **Session branch:** `arena/87e121e1-korea8` (rebased onto `origin/main` `8e7dbd6`)
 - **Tasks:** `87e121e1-A`, `87e121e1-B`, `87e121e1-C` (`COORDINATION.md`)
-- **Scope:** Full primary-source re-verification, line-by-line JSON & HTML consistency audit, ranking weight verification, 51 redirect-stub integrity audit, repo-wide privacy sweep, canonical rebuild, and live deployment verification.
+- **Scope:** Full primary-source re-verification, line-by-line JSON & HTML consistency audit, ranking weight verification, 51 redirect-stub integrity audit, repo-wide wording check, canonical rebuild, and live deployment verification.
 
 ---
 
@@ -50,4 +50,4 @@ Previous `2026-11-10` publication checks (`audit/2026-11-10-660ab2dd.md`) docume
 1. **Ranking arithmetic verified (`ranking.json`):** Weighted sum `C1*0.30 + C2*0.25 + C3*0.20 + C4*0.15 + C5*0.10` matches exact ordering: Ace (`3.85`), Heise's (`3.45`), Rapid Flow (`3.15`), Ayoob & Peery (`3.15`, tie-broken on `C2`), We Do (`2.95`), Expert (`2.90`), Save-On-Interior (`2.60`), Bay Area (`2.55`), Discount (`2.30`), Fast Response (`2.20`); Restoration Partner Bernal Hill (`2.15`).
 2. **Build generator & workflow fixes:** Replaced hardcoded `2026-11-08` strings and outdated `"Fresh external-source verification could not be performed"` text in `scripts/build_overflow_site.py`; expanded `sources.html` official cross-references for all new `review-platform` / `repository-primary` records; linked this report and `verification_matrix.json` from `verification.html` and `flagged-for-review.html` while preserving backward-compatible `2026-11-10-660ab2dd.md` references; updated `.github/workflows/overflow-pages.yml` live markers accordingly.
 3. **Repository-wide state flags updated:** `F-39` updated to 9 open earlier PRs (`#7`, `#35`, `#38`, `#39`, `#44`, `#49`, `#51`, `#53`, `#63`); `F-40` updated to 38 `arena/*` remote branches (`37` historical + active `arena/87e121e1-korea8`); `README.md` secondary note updated from superseded `project/*.json` to canonical `overflow-integration/data/`.
-4. **Redirect stubs (`51` files), privacy sweep & GEMS preservation:** All 51 tracked stub HTML files resolve cleanly to existing targets; DOE GEMS directories (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, and `docs/` excluding `docs/bathtub-*` stubs) are untouched; repo-wide privacy scan reports 0 violations across canonical data, generated HTML, and audit artifacts.
+4. **Redirect stubs (`51` files), wording check & GEMS preservation:** All 51 tracked stub HTML files resolve cleanly to existing targets; DOE GEMS directories (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, and `docs/` excluding `docs/bathtub-*` stubs) are untouched; repo-wide wording check reports 0 hits across canonical data, generated HTML, and audit artifacts.
