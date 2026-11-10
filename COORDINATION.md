@@ -1557,3 +1557,33 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 - After the merge: canonical rebuild, verifier 27/27 (341 source-covered rows, 256 tracked-HTML links, 0 broken), 27 unit tests, 32-file staging, wording guard clean, independent audit 0 problems.
 - 01:16 UTC: merged `origin/main` at `1e7f03f` (PR #68, `arena/b5ed3a43-korea8`). Append/append conflict in this board only; both sections kept, the newer session's first. Re-ran build, verifier (27/27), 27 unit tests, staging and the wording guard: all pass.
 - 01:17 UTC: merged `origin/main` at `9f1e76d` (PR #69, `arena/b5ed3a43-korea8` receipt). Conflict in this board only; their `B5-05` record sits at the end of their section, this section stays last. Same checks re-run: all pass.
+
+---
+
+## Session `arena/15308e85-korea8` — publication-boundary repair, official-source re-verification and owner deliverable (2026-11-10)
+
+**Claim time:** 2026-11-10 05:52 UTC, committed and pushed before any other edit.
+**Branch note.** Arena pins this session to `arena/15308e85-korea8`; the `session-<id>/<task>` branch name cannot be created (same exception every earlier session recorded).
+
+**Overlap check done first.** Read the whole board before claiming. Every earlier session section is
+`done` except six open PR branches whose last commits are 2026-11-08 23:47 UTC or earlier:
+`arena/7ff689a1-korea8` (open PR #66), `arena/ad747ef0-korea8` (#64), `arena/be9ec407-korea8` (#63),
+`arena/6880fb12-korea8` (#53 draft), `arena/54cba99d-korea8` (#51), `arena/55859fbc-korea8` (#49),
+`arena/a8da1cca-korea8` (#44) and three 2026-11-07 branches (#39, #38, #35). Per the crash rule these
+claims are older than 60 minutes with no commits, so they are treated as stale; **none of them is merged
+or closed by this session**, and none is edited. This session does not rebuild the canonical data and
+does not re-read the CSLB records again — that was done four times over on 2026-11-10 already.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `153-01` | Claim this board before any other edit | done | `arena/15308e85-korea8` | `COORDINATION.md` |
+| `153-02` | **Publication boundary repair.** `fetch_page` proves the live origin serves the whole repository root: `/pyproject.toml`, `/vendor/README.md` and `/COORDINATION.md` (20 chunks) all return content. The workflow's `stage_overflow_pages.py` closure is therefore not the served set. Add a deploy-time guard, and investigate whether Pages can be switched to workflow mode | in progress | `arena/15308e85-korea8` | `.github/workflows/overflow-pages.yml`, new `scripts/check_publication_boundary.py`, new `tests/test_overflow_publication_boundary.py` |
+| `153-03` | **Executable requirements register.** The brief asks for a full list of requirements organised and analysed. Publish a register row per owner requirement with an explicit acceptance test and a satisfied/partial/open state, each backed by an existing artefact | in progress | `arena/15308e85-korea8` | `overflow-integration/data/requirements.json` (append only), canonical pages via the generator |
+| `153-04` | **Official-source re-verification of the values the owner will act on first** (phone numbers, licence numbers/status, ranking order, estimate arithmetic), with a receipt for each check | in progress | `arena/15308e85-korea8` | new `audit/2026-11-10-15308e85/**` |
+| `153-05` | **Line-by-line repository review** with irregularities flagged, not silently fixed | in progress | `arena/15308e85-korea8` | new `audit/2026-11-10-15308e85/REPO_REVIEW.md` |
+| `153-06` | Integration: merge `main`, rebuild, run verifier + tests + guard + link check, PR to `main`, merge, confirm the Pages deploy and the live boundary | pending | `arena/15308e85-korea8` | generated canonical pages, `COORDINATION.md` |
+
+**Standing rules honoured.** No provider will be contacted, called, emailed, quoted, booked or paid.
+Owner-supplied amounts stay labelled owner-reported with independent amounts blank. Review-platform
+ratings and counts stay null. No permit position is invented in either direction, and nothing about the
+owner's calendar or reasons goes on any page, commit, PR or file in this repository.
