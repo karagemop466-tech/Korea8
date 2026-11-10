@@ -1665,9 +1665,21 @@ was added anywhere in the repository.
 | `6F4-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/6f4c9f79-korea8` | `COORDINATION.md` |
 | `6F4-02` | Full independent live official-source re-verification (all CSLB records, BPC §7059(a), SF.gov/DBI/SFPC/SFBC, Watco, EPA, company sites, BBB/Angi/Yelp retrieval checks) and line-by-line repo review | done | `arena/6f4c9f79-korea8` | `audit/2026-11-10-6f4c9f79/**` |
 | `6F4-03` | Resolve logged cross-session requests (`B5-05` audit links, `I-4` F-08 scope wording, `I-5` cost drivers on `estimates.html`, BPC §7059(a) incidental-trade rule, city-hosted SFPC source check, stale metadata/flags `F-34`/`F-39`/`F-40`/`F-45`, `deployment.json`, broken-URL fixes) and merge `origin/main` PRs #71/#74 non-destructively | done | `arena/6f4c9f79-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `.github/workflows/overflow-pages.yml`, `site-data/**`, `BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`, `project/EXECUTIVE_SUMMARY.md`, `audit/independent_audit.py`, root generated `*.html` / `OVERFLOW_EXECUTIVE_SUMMARY.md` |
-| `6F4-04` | Run full verification suite, open/merge PR #73 to `main`, confirm live GitHub Pages deploy and record receipt | in progress | `arena/6f4c9f79-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, canonical generated verification/deployment outputs |
+| `6F4-04` | Run full verification suite, open/merge PR #73 to `main`, confirm live GitHub Pages deploy and record receipt | done | `arena/6f4c9f79-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, canonical generated verification/deployment outputs |
 
 No provider will be contacted, quoted, booked or paid. Owner-supplied estimates stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
+
+### `6F4-04` — PR, merge and live deployment receipt (`arena/6f4c9f79-korea8`, 2026-11-10)
+
+| Item | Result |
+|---|---|
+| Integration PR | **#73** — https://github.com/karagemop466-tech/Korea8/pull/73 (`arena/6f4c9f79-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-10T06:03:46Z; merge commit `3d1ca831163bbd22cc195ff629803a95be545b48` |
+| Actions workflow | [Run 42765995940](https://github.com/karagemop466-tech/Korea8/actions/runs/42765995940) (`Publish overflow dashboard`) — `build` **success** (9 s) and `deploy` **success** (11 s, including live HTTPS confirmation) |
+| Legacy Pages build | **built** for `3d1ca83`, created 2026-11-10T06:03:48Z (18.0 s, no error) |
+| Live HTTPS check | Directly retrieved `index.html`, `estimates.html`, `decision-analysis.html`, `code-and-permit.html`, `flagged-for-review.html`, `verification.html`, `audit/2026-11-10-6f4c9f79/REPORT.md` and `audit/2026-11-10-b5ed3a43/REPORT.md` at `?v=3d1ca83`: all serve the merged dashboard (`26 CSLB records`, `29 identities`, `132 sources`, `55 flags`, `CD-01..CD-06` cost drivers, `C-15` BPC §7059(a), `SF-CODE-104-PDF`, `5651e041` request block and review evidence, and reachable audit reports) |
+| Open PRs untouched | `#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66` left untouched (not merged or closed) |
+| Final status | `6F4-01`, `6F4-02`, `6F4-03`, `6F4-04` **done**. All 55 flagged/unverified items remain published on `flagged-for-review.html` and are non-blocking. No provider contacted/booked. |
 
 ### `6F4-02` & `6F4-03` — completed record (`arena/6f4c9f79-korea8`, 2026-11-10)
 
