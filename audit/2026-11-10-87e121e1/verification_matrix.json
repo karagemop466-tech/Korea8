@@ -1,0 +1,66 @@
+{
+  "audit_date": "2026-11-10",
+  "session_id": "87e121e1",
+  "branch": "arena/87e121e1-korea8",
+  "base_commit": "8e7dbd6",
+  "external_verification": {
+    "cslb_records_checked": 24,
+    "cslb_snapshot_note": "11/9/2026 4:49 PM (fetched directly 2026-11-10)",
+    "cslb_active": 23,
+    "cslb_suspended": ["1027286"],
+    "cslb_unresolved": ["Portola Plumbing Services"],
+    "special_cslb_checks": [
+      {
+        "id": "DG-CITATION",
+        "license": "297604",
+        "finding": "Citation 2 2022 002099 (03/23/2023) publishes B&P Code 7114.A — Aided and abetted non-licensee"
+      },
+      {
+        "id": "CSLB-787733",
+        "license": "787733",
+        "finding": "Former HEISE'S PLUMBING INC license expired 03/31/2023 and SoS dissolved 02/12/2025; distinct from active #1089561 TARO GROUP INC"
+      }
+    ],
+    "codes_and_agencies_checked": [
+      "SFBC §106A.2(8)&(10) (AmLegal 0-0-0-92027 chunks 28-29)",
+      "SFPC §104.2 (AmLegal 0-0-0-85830)",
+      "SF.gov plumbing/remodel/auth/DBI & Table 1A-C (2026)",
+      "CA B&P §§7048, 7057, 7057.5 & CA CIV §1954",
+      "CSLB B/C-9/C-36 classifications, Contracts, Finding Right Contractor",
+      "Watco 500-501-600TL instructions",
+      "EPA RRP, RRP Rules, Asbestos",
+      "IAPMO aa.iapmo.org (login-walled)"
+    ],
+    "company_and_directory_checks": {
+      "official_company_pages_direct": 23,
+      "bbb_profiles_direct": 8,
+      "angi_profiles_direct": 4,
+      "buildzoom_profiles_direct": 3,
+      "yelp_biz_pages_http_403": 5,
+      "broken_company_url_excluded": "https://www.fastresponseplumbingsf.com/plumbing-repair-and-replacement (HTTP 404)"
+    }
+  },
+  "ranking_weights_check": {
+    "weights_sum": 1.0,
+    "ordered_scores": [
+      {"provider_id": "P-02", "name": "Ace Plumbing & Rooter", "score": 3.85},
+      {"provider_id": "P-03", "name": "Heise’s Plumbing", "score": 3.45},
+      {"provider_id": "P-01", "name": "Rapid Flow Plumbing & Rooter", "score": 3.15},
+      {"provider_id": "P-09", "name": "Ayoob & Peery", "score": 3.15},
+      {"provider_id": "P-08", "name": "We Do Construction", "score": 2.95},
+      {"provider_id": "P-04", "name": "Expert Plumbing Solutions", "score": 2.90},
+      {"provider_id": "P-07", "name": "Save-On-Interior", "score": 2.60},
+      {"provider_id": "P-05", "name": "Bay Area Plumbing", "score": 2.55},
+      {"provider_id": "P-16", "name": "Discount Plumbing Rooter Services", "score": 2.30},
+      {"provider_id": "P-06", "name": "Fast Response Plumbing & Rooter", "score": 2.20}
+    ],
+    "partner": {"provider_id": "P-10", "name": "Bernal Hill Drywall", "score": 2.15}
+  },
+  "repo_hygiene": {
+    "redirect_stubs_verified": 51,
+    "open_prior_prs": [7, 35, 38, 39, 44, 49, 51, 53, 63],
+    "remote_arena_branches_count": 38,
+    "numeric_review_scores_published": 0,
+    "verified_estimate_amounts_published": 0
+  }
+}

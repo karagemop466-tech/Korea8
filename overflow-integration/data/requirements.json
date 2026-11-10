@@ -172,11 +172,12 @@
       "id": "R-12",
       "category": "Scope & restoration",
       "requirement": "Restore drywall, tape, texture and paint to an agreed finish after any ceiling opening.",
-      "basis": "C-9 defines drywall/finishing scope; no supplied quote explicitly names restoration.",
+      "basis": "C-9 defines drywall/finishing scope; no supplied quote explicitly names restoration.; SFBC §106A.2(10) minor wallboard exemption excludes fire-resistive assemblies.",
       "acceptance_check": "Contract names the restoration party, finish standard and access-panel/patch choice.",
       "source_ids": [
         "CSLB-C9",
-        "OWNER"
+        "OWNER",
+        "SF-CODE-106"
       ],
       "origin": "Owner requirement",
       "status": "Owner requirement recorded; provider acceptance unverified",
@@ -241,7 +242,8 @@
       "source_ids": [
         "CSLB-SEARCH",
         "CSLB-1027286",
-        "DG-COMPLAINT"
+        "DG-COMPLAINT",
+        "DG-CITATION"
       ],
       "origin": "Proposed control",
       "status": "Proposed control; not yet accepted by a provider",
@@ -300,12 +302,15 @@
       "id": "R-20",
       "category": "Provider & licensing",
       "requirement": "Check third-party reviews, but treat blocked/search-index observations as unverified leads.",
-      "basis": "Yelp business pages returned 403; numeric ratings/counts were not verified.",
+      "basis": "BBB and Angi profiles were directly verified on 2026-11-10 (identifying stale licenses and a misfiled complaint), while Yelp business pages returned HTTP 403; numeric star averages remain blank.",
       "acceptance_check": "Review links and retrieval limits are recorded; no rating is presented as verified.",
       "source_ids": [
         "YELP-RF",
         "YELP-ACE",
-        "CSLB-SEARCH"
+        "CSLB-SEARCH",
+        "BBB-ACE",
+        "ANGI-ACE",
+        "BBB-HEISE"
       ],
       "origin": "Owner requirement",
       "status": "Owner requirement recorded; provider acceptance unverified",
@@ -353,7 +358,8 @@
       "acceptance_check": "Scope is matched against the exact exemption conditions; cutting/replacement is not assumed exempt.",
       "source_ids": [
         "SF-CODE-104",
-        "SF-PERMIT"
+        "SF-PERMIT",
+        "SF-CODE-106"
       ],
       "origin": "Official rule",
       "status": "Official source rechecked 2026-11-08; job applicability to confirm",

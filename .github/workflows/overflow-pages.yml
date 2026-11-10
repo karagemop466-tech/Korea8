@@ -53,9 +53,10 @@ jobs:
           base = os.environ['PAGE_URL'].rstrip('/') + '/'
           expected = {
               'index.html': 'Trip Lever Project',
-              'verification.html': '2026-11-10-660ab2dd.md',
+              'verification.html': 'audit/2026-11-10-87e121e1/REPORT.md',
               'flagged-for-review.html': '10 November publication review',
               'audit/2026-11-10-660ab2dd.md': 'Configuration permission limitation',
+              'audit/2026-11-10-87e121e1/REPORT.md': '2026-11-10',
           }
           for path, marker in expected.items():
               for attempt in range(12):

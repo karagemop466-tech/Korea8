@@ -7,8 +7,9 @@ official/company sources and a neutral owner record; it is not a contractor book
 Use a two-path scope: first ask a licensed plumber to identify the assembly and attempt the least
 destructive tub-side adjustment/removal; if that fails, use below-ceiling access through the storage
 unit only under a written combined contract that names the plumbing and drywall/restoration parties.
-Do not assume a permit exemption: SF.gov requires a permit before cutting/replacing pipes, and
-SF Plumbing Code §104.2 exemptions are conditional.
+Do not assume a permit exemption: SF.gov requires a permit before cutting/replacing pipes,
+SF Plumbing Code §104.2 exemptions are conditional, and SFBC §106A.2(10) minor drywall exemptions
+exclude fire-resistive assemblies.
 
 ## Ranked hiring order (decision support, not a verified performance rating)
 Weighted on licence capability, scope evidence, licence standing, occupied-unit experience and price
@@ -27,7 +28,7 @@ evidence; full reasoning, scores and cost basis are on the Ranked decision analy
 
 Restoration partner: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B; not a plumbing candidate.
 Atlas Plumbing & Rooter #868994 is a conditional review lead held outside the hiring order pending a direct trip-lever reference, restoration party and current dispatch number.
-Held back: D G Construction (CSLB citation disclosed), Advanced Plumbing (future-suspension warning),
+Held back: D G Construction (CSLB citation B&P §7114.A disclosed), Advanced Plumbing (future-suspension warning),
 24/7 SF Handyman (B-2), SF Building Group (B only), Precision (drain cleaning), Clever (licensed 2026-09-04),
 Cahill (no C-36), Kenneth Asire (suspended), Portola (identity unresolved), Atlas (conditional review lead).
 
@@ -42,12 +43,19 @@ are unconfirmed.
 ## Key controls
 - Verify the legal contracting entity, license status/classifications, bond and insurance on signing day.
 - Name who performs drywall/texture/paint; B + C-36 is not proof of drywall self-performance.
-- Get the DBI permit determination and inspection-before-covering path in writing.
+- Get the DBI permit determination and inspection-before-covering path in writing. Note that City
+  offices are closed Wednesday 2026-11-11 for Veterans Day, so the Permit Center help desk
+  (628-652-4900) and the 49 South Van Ness counter are unavailable that day; the next business day is
+  Thursday 2026-11-12, and the City commits to answering help-desk voicemail within 2 business days.
 - Give affected tenants Civil Code §1954 notice; coordinate storage-unit authority, water shut-off and contents protection.
 - Screen conditionally for lead/asbestos before disturbing finishes; building age/materials are unknown.
+- Before cutting the storage-unit ceiling, have the contractor or DBI confirm whether that ceiling is
+  part of a fire-resistive assembly (for example Type X gypsum). San Francisco Building Code
+  §106A.2(10) exempts minor interior plaster or wallboard repair only except when it is part of a
+  fire-resistive assembly, and any fire rating must be preserved on restoration.
 - Use a written itemized contract, lawful down payment, written change orders, leak/function test and photo record.
 
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 46 items.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 51 items.

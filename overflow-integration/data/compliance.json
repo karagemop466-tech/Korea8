@@ -126,6 +126,28 @@
       ],
       "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
       "application": "Fee category and total project cost are unconfirmed; fees are not contractor quotes."
+    },
+    {
+      "id": "C-13",
+      "topic": "Drywall repair & fire-resistive ceiling assembly",
+      "rule": "SFBC §106A.2(8)&(10) exempt painting/papering and minor repairs to existing interior plaster or wallboard from a building permit ONLY except when part of a fire-resistive assembly.",
+      "application": "If below-ceiling access opens a floor-ceiling separation between a dwelling unit and storage/garage below, confirm with DBI/contractor whether the ceiling is fire-rated before cutting and restore with matching fire-resistive detailing if required.",
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+      "source_ids": [
+        "SF-CODE-106",
+        "SF-REMODEL",
+        "CSLB-C9"
+      ]
+    },
+    {
+      "id": "C-14",
+      "topic": "City office closure affecting permit timing",
+      "rule": "The sf.gov plumbing and mechanical permit page carried a live banner on 2026-11-10 reading: \"City offices will be closed on Wednesday, November 11 for Veterans Day.\" The same page states that for the Permit Center help desk, \"Leave a voicemail and include your email address. We will contact you within 2 business days.\"",
+      "source_ids": [
+        "SF-PERMIT"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "application": "The Permit Center help desk (628-652-4900) and the counter at 49 South Van Ness are closed on 2026-11-11, so the next business day for a permit or exemption determination is Thursday 2026-11-12. A help-desk question left on 2026-11-10 should draw a response by 2026-11-13 on the City's own two-business-day commitment. Schedule any contractor's permit application or DBI question around that date rather than around 2026-11-11."
     }
   ]
 }

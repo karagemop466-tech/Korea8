@@ -50,10 +50,13 @@
     {
       "id": "T-05",
       "topic": "Other adjacent cases",
-      "statement": "Heise’s Mission case describes P-trap/overflow replacement; the Marina case describes an overflow gasket service.",
+      "statement": "Heise's Plumbing publishes four SF tub waste-and-overflow/gasket cases (Ingleside #163802, Mission #158154, Marina #176011 and Panhandle #171358), including downstairs ceiling access to locate pipes and test fittings, and advertises plumbing-access drywall/ceiling patching.",
       "source_ids": [
+        "HEISE-INGLESIDE",
         "HEISE-MISSION",
-        "HEISE-MARINA"
+        "HEISE-MARINA",
+        "HEISE-PANHANDLE",
+        "HEISE-PATCH"
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/a-tub-waste-and-overflow-assembly-san-francisco-158154/",
       "status": "Adjacent self-published case evidence",
@@ -62,15 +65,16 @@
     {
       "id": "T-06",
       "topic": "Restoration party",
-      "statement": "C-9 covers drywall installation, taping and texturing; C-36 covers plumbing. A combined contract must name the appropriately licensed parties.",
+      "statement": "Opening a ceiling below the tub requires restoring drywall/plaster, taping, texture and paint, plus confirming under SFBC §106A.2(10) whether the ceiling between unit and storage/garage below is part of a fire-resistive assembly (e.g., Type X gypsum).",
       "source_ids": [
+        "SF-CODE-106",
         "CSLB-C9",
-        "CSLB-C36",
-        "BPC-7057"
+        "EPA-RRP",
+        "EPA-ASBESTOS"
       ],
       "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
       "status": "Official classification evidence",
-      "limit": "B + C-36 is a contract/classification lead, not proof of drywall skill or self-performance."
+      "limit": "Building age and whether the ceiling separation is fire-resistive are unknown; lead/asbestos screening and fire-rated assembly confirmation apply before cutting."
     },
     {
       "id": "T-07",
