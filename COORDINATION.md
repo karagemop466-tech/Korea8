@@ -1153,3 +1153,11 @@ Combined local checks before merge commit: build OK; `verify_overflow_site.py` 2
 | Live verification | Cache-busted `index.html`, `decision-analysis.html` and `flagged-for-review.html` returned the merged dashboard: 24 CSLB records, 25 identities, 85 sources, 46 flags, final-verification note and Atlas conditional hold |
 | Final checks | 27/27 canonical verifier checks; 300/300 rows official-primary source-covered; 11/11 unit tests; independent audit 0 problems |
 | Status | T3946905e-A/B/C **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked. |
+
+## Session `arena/660ab2dd-korea8` — publication boundary and reproducibility audit (2026-11-10)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Re-run canonical checks; audit publication boundary; publish current limitations and deploy | in progress | `arena/660ab2dd-korea8` | `COORDINATION.md`, `.github/workflows/pages.yml`, `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `scripts/build_overflow_site.py` audit-link insertion, generated canonical pages/reports |
+
+Prior canonical implementation tasks are done. This session preserves existing provider research without claiming fresh source verification. Fixed Arena branch is used rather than creating another branch. No outreach or booking. Publication staging will exclude unrelated repository material; no private circumstances will be added.
