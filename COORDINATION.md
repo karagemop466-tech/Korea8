@@ -1238,3 +1238,35 @@ Prior merged sessions on 2026-11-10 (`arena/660ab2dd-korea8`, `arena/35739f62-ko
 - **Full external verification (`audit/2026-11-10-87e121e1/REPORT.md` & `verification_matrix.json`):** Re-fetched all 24 canonical CSLB records (`11/9/2026 4:49 PM` snapshot: 23 active, `#1027286` bond-suspended, `#1009195` future-suspension warning, Portola unresolved), CSLB `CitationViolationDisclosure` for `#297604` D G Construction (`2 2022 002099` publishes **`B&P Code 7114.A — Aided and abetted non-licensee`**), dissolved prior Heise license `#787733` (`02/12/2025` SoS dissolution vs active `#1089561` Taro Group Inc), `SFBC §106A.2(8)&(10)` (AmLegal `0-0-0-92027` chunks 28–29: minor wallboard repair exempt *except when part of a fire-resistive assembly*), SFPC `§104.2`, `SF.gov` permit/DBI/fee schedules, CA statutes, Watco instructions, EPA RRP/asbestos, IAPMO login wall, 23 company pages (incl. Rapid Flow `/services` & `/contact`, Heise `#171358` Panhandle & `/reviews/`, We Do `/contact/`, Fast Response `/faq` & HTTP 404 `/plumbing-repair-and-replacement`), 8 BBB profiles (including misfiled Meta/Instagram complaint on Heise's BBB log), 4 Angi profiles, and 5 Yelp biz pages (`HTTP 403`).
 - **Canonical updates & fixes:** Updated all `overflow-integration/data/*.json` files to `as_of: 2026-11-10` (`25` providers / `24` CSLB records, `110` sources, `48` flags, `13` compliance rows, `18` review observations with numeric `rating`/`review_count` strictly `null`); fixed `scripts/build_overflow_site.py` hardcoded `2026-11-08` and outdated `"could not be performed"` text while preserving `2026-11-10-660ab2dd.md` and `2026-11-10-d6196195/` audit links; fixed `F-39` / `F-40` repo counts and `README.md` secondary note; updated `.github/workflows/overflow-pages.yml` live assertions.
 - **Verification suite:** `build_overflow_site.py` -> `verify_overflow_site.py` (`27/27 PASS`, `335` rows, `242` tracked HTML links), `unittest` `test_overflow*.py` (`21/21 OK`), `stage_overflow_pages.py` (`25` public files incl. `d6196195` & `87e121e1` audits), `audit/independent_audit.py` (`11` pages, `335/335` rows, `182` internal links, `0` problems), `git diff --check` clean.
+---
+
+## Session `arena/0ccaa3f3-korea8` — live-network official-source re-verification (2026-11-10)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `0cc-01` | Claim this board before any other edit | done | `arena/0ccaa3f3-korea8` | `COORDINATION.md` (append-only) |
+| `0cc-02` | Repo review, line by line, from official sources; log irregularities with links | in progress | `arena/0ccaa3f3-korea8` | `audit/2026-11-10-0ccaa3f3/REPO_REVIEW.md`, `COORDINATION.md` |
+| `0cc-03` | **Live-network** re-verification: fetch CSLB licence-detail records, sf.gov permit/fee pages, CA statutes, manufacturer instructions directly (prior sessions recorded these hosts as outside their allowed network) | in progress | `arena/0ccaa3f3-korea8` | `audit/2026-11-10-0ccaa3f3/VERIFICATION.md`, `audit/2026-11-10-0ccaa3f3/receipts/*.json` |
+| `0cc-04` | Publish any evidenced correction to the canonical tree, or log it as a cross-session request if another session owns the file | unclaimed | `arena/0ccaa3f3-korea8` | `overflow-integration/data/**` **only if unowned**; else `COORDINATION.md` request |
+| `0cc-05` | Final integration: rebuild, 27-check verifier, unit tests, link check, PR to `main`, merge, confirm Pages deploy | unclaimed | `arena/0ccaa3f3-korea8` | canonical generated pages/reports, `COORDINATION.md` |
+
+**Non-overlap declaration (2026-11-10 00:52 UTC).** At claim time these sessions hold overlapping canonical scope and are
+**not** stale: `arena/d6196195-korea8` (PR #56, last commit 00:50:24Z), `arena/47d993da-korea8` (PR #58, created 00:51:11Z),
+`arena/660ab2dd-korea8` (PR #59, created 00:51:28Z). This session therefore writes **only** to its own new directory
+`audit/2026-11-10-0ccaa3f3/**` and appends to this board. It will not edit `overflow-integration/**`, the generated root
+pages, `scripts/**` or `tests/**` while those claims are live. `0cc-04`/`0cc-05` are taken up only when those claims are
+done-and-merged, or when they exceed the 60-minute-no-commit staleness rule in the owner's brief; any takeover will be
+logged here first.
+
+**Branch note.** Arena pins this session to `arena/0ccaa3f3-korea8`; the protocol's `session-<id>/<task>` branch name
+cannot be created without violating the workspace rule against switching branches. Recorded, not silently ignored.
+
+**Distinct capability.** This session has working outbound retrieval for `cslb.ca.gov`, `sf.gov`, `leginfo.legislature.ca.gov`
+and manufacturer domains. Session `arena/660ab2dd-korea8` recorded that it claimed *no* fresh official-provider checks
+"because those external domains are outside this session's allowed network". `0cc-03` fills exactly that gap: live
+retrieval, per-field comparison against the stored canonical rows, and a dated receipt per record.
+
+**Standing rules honoured.** No provider will be contacted, quoted, booked or paid. Owner-supplied 2026-08-30 amounts stay
+labelled owner-reported with verified amounts blank. No value will be inferred: unconfirmable fields stay blank and flagged.
+The owner's internal-use constraint and its private reason are **not** recorded in this repository, in any published page,
+in any data file, or in any commit message.
