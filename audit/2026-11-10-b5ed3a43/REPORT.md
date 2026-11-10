@@ -45,6 +45,11 @@ counts printed on the live dashboard.
 licence detail pages, the Watco instruction PDF, the Heise's case pages, the AmLegal §104.2 chunk, the
 civil-code text of §1954, and every review-platform entry. No claim in this report rests on them.
 
+**Snapshot note.** The counts above were read at `origin/main` commit `8e7dbd6`. Session
+`arena/87e121e1-korea8` merged later the same day and refreshed the canonical register (its board record
+states 110 sources, 48 flags, 335 verifier-covered rows and 25 staged public files). Those later numbers are
+not re-checked here; this report records only what it read at the time it read it.
+
 ---
 
 ## 2. Live-route inventory (fetched 2026-11-10)
