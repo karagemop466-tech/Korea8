@@ -89,6 +89,12 @@ def main():
  prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
  check('requirement count parity',len(parsed['requirements.html'].tables.get('requirements-table',[]))==len(req))
+ obr=load('requirements.json').get('owner_brief_register',{}).get('rows',[])
+ check('owner-brief register parity',len(parsed['requirements.html'].tables.get('owner-requirements-table',[]))==len(obr),f"{len(parsed['requirements.html'].tables.get('owner-requirements-table',[]))}/{len(obr)}")
+ check('owner-brief rows well formed',all(r.get('id') and r.get('category') and r.get('requirement') and r.get('test') and r.get('evidence') and r.get('artefact') and r.get('source_ids') and r.get('state') for r in obr))
+ check('owner-brief states are declared',all(r.get('state','') in {'satisfied','partial','open'} for r in obr),str(sorted({r.get('state','') for r in obr})))
+ ob_art=[r['artefact'] for r in obr]
+ check('owner-brief artefacts exist',all((ROOT/a).exists() for a in ob_art),'; '.join(a for a in ob_art if not (ROOT/a).exists()))
  check('estimate count parity',len(parsed['estimates.html'].tables.get('estimates-table',[]))==len(est['rows']))
  check('source count parity',len(parsed['sources.html'].tables.get('sources-table',[]))==len(srcs))
  check('flag count parity',len(parsed['flagged-for-review.html'].tables.get('flags-table',[]))==len(flags))

@@ -1,0 +1,135 @@
+{
+ "audited_by": "arena/15308e85-korea8",
+ "audited_at_utc": "2026-11-10T06:05Z",
+ "purpose": "One arithmetic and provenance pass over the numbers the owner will act on. Each item states what was compared and the outcome.",
+ "items": [
+  {
+   "id": "A-01",
+   "check": "Ranking order is the descending order of the published weighted scores",
+   "method": "Recomputed sum(score_components[k] * weight[k]) for every ranked row and compared with the published sequence.",
+   "weights": {
+    "C1": 0.3,
+    "C2": 0.2,
+    "C3": 0.2,
+    "C4": 0.15,
+    "C5": 0.15
+   },
+   "result": [
+    [
+     "Ace Plumbing & Rooter",
+     "3.850"
+    ],
+    [
+     "Heise's Plumbing",
+     "3.450"
+    ],
+    [
+     "Rapid Flow Plumbing & Rooter",
+     "3.150"
+    ],
+    [
+     "Ayoob & Peery",
+     "3.150"
+    ],
+    [
+     "We Do Construction",
+     "2.950"
+    ],
+    [
+     "Expert Plumbing Solutions",
+     "2.900"
+    ],
+    [
+     "Save-On-Interior",
+     "2.600"
+    ],
+    [
+     "Bay Area Plumbing",
+     "2.550"
+    ],
+    [
+     "Discount Plumbing Rooter Services",
+     "2.300"
+    ],
+    [
+     "Fast Response Plumbing & Rooter",
+     "2.200"
+    ]
+   ],
+   "outcome": "pass — strictly descending except the Rapid Flow / Ayoob tie at 3.150, whose published order matches the stored sequence",
+   "finding": "Rapid Flow and Ayoob & Peery both score 3.150, so positions 3 and 4 are a tie broken by editorial order. The published page does not say that they are tied."
+  },
+  {
+   "id": "A-02",
+   "check": "Published weights sum to one",
+   "method": "Sum of the five C-criterion weights.",
+   "result": "0.30 + 0.20 + 0.20 + 0.15 + 0.15 = 1.00",
+   "outcome": "pass"
+  },
+  {
+   "id": "A-03",
+   "check": "Owner-estimate arithmetic quoted in the estimates analysis",
+   "method": "Recomputed the spread and the ratio from the three owner-reported amounts.",
+   "result": "614 - 135 = 479; 614 / 135 = 4.548",
+   "outcome": "pass — the published '$479' and 'about 4.55 times' both reproduce"
+  },
+  {
+   "id": "A-04",
+   "check": "DBI plumbing and mechanical fee amounts",
+   "method": "Read the July 2026 fee schedule PDF and compared Category 1P and Category 11P/M.",
+   "source": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "result": "Category 1P $290; Category 11P/M $320; hourly $519 regular and $555 off-hour; re-inspection $259 per half hour",
+   "outcome": "pass — the published $290 and $320 match the schedule, and the page labels them fees, not prices"
+  },
+  {
+   "id": "A-05",
+   "check": "No owner amount is presented as verified",
+   "method": "Read amount_verified for all three estimate rows and searched the rendered pages for an unlabelled amount.",
+   "result": "amount_verified is null for E-01, E-02 and E-03; the verifier asserts this on every build",
+   "outcome": "pass"
+  },
+  {
+   "id": "A-06",
+   "check": "No numeric review rating or review count is published",
+   "method": "Read rating and review_count for all 18 review observations and searched the pages for star-rating patterns.",
+   "result": "all null; the verifier rejects numeric star ratings in the pages",
+   "outcome": "pass"
+  },
+  {
+   "id": "A-07",
+   "check": "Every ranked row carries a phone number that matches its official licence record",
+   "method": "Compared the published phone with the business phone on each CSLB licence-detail page retrieved on 2026-11-10.",
+   "result": "10 of 10 ranked rows and the restoration partner match their records",
+   "outcome": "pass",
+   "source": "audit/2026-11-10-15308e85/cslb-receipts.json"
+  },
+  {
+   "id": "A-08",
+   "check": "The suspended licence is not offered as a hire option",
+   "method": "Read the licence-detail page for #1027286 and the rendered ranking page.",
+   "result": "status is Contractors Bond Suspension; the licence appears only in the excluded list and in F-09",
+   "outcome": "pass"
+  },
+  {
+   "id": "A-09",
+   "check": "No provider has been contacted, booked or paid",
+   "method": "Searched the repository for any contact, booking or payment record.",
+   "result": "none found; availability, acceptance and price remain unconfirmed for every provider",
+   "outcome": "pass"
+  },
+  {
+   "id": "A-10",
+   "check": "Yelp review evidence could be retrieved this session",
+   "method": "Requested the Yelp search page for bathtub overflow trip lever repair in San Francisco.",
+   "result": "HTTP 403",
+   "outcome": "blocked — ratings, counts and review text stay blank rather than being supplied from memory. This reproduces the limitation recorded by earlier sessions."
+  }
+ ],
+ "unverified_values_left_blank": [
+  "amount_verified for E-01, E-02, E-03",
+  "rating and review_count for all 18 review observations",
+  "licence number, phone, expiry, status and city for the unresolved Portola identity",
+  "any current availability, acceptance or combined quote"
+ ],
+ "summary": "9 checks passed, 0 failed, 1 blocked by an external site (Yelp HTTP 403). One irregularity recorded: the Rapid Flow / Ayoob tie at 3.150 is not stated on the ranking page."
+}

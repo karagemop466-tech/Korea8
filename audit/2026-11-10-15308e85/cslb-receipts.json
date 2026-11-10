@@ -1,0 +1,330 @@
+{
+ "retrieved_by": "arena/15308e85-korea8",
+ "retrieval_method": "fetch_page live HTTP retrieval of the CSLB licence-detail page (bash curl has no outbound network in this sandbox; the fetch_page tool does)",
+ "retrieved_at_utc": "2026-11-10T06:00Z",
+ "cslb_page_data_current_as_of": "11/9/2026 9:49-9:51 PM (as displayed on each page; the page does not state its timezone)",
+ "purpose": "Independent re-read of the licence records behind the ranked shortlist, the three supplied estimates and the exclusion. Compared field by field with overflow-integration/data/providers.json as stored.",
+ "records": [
+  {
+   "license": "829071",
+   "rank": 1,
+   "stored_name": "Ace Plumbing & Rooter",
+   "legal_name": "ACE PLUMBING & ROOTER",
+   "address": "1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417",
+   "phone": "(415) 824-6444",
+   "issue_date": "12/18/2003",
+   "expire_date": "06/30/2027",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C36 - PLUMBING",
+    "A - GENERAL ENGINEERING",
+    "C-4 - BOILER, HOT WATER HEATING AND STEAM FITTING",
+    "C16 - FIRE PROTECTION",
+    "B - GENERAL BUILDING",
+    "C10 - ELECTRICAL"
+   ],
+   "contractors_bond": {
+    "carrier": "MERCHANTS BONDING COMPANY (MUTUAL)",
+    "number": "101993376",
+    "amount": "$25,000",
+    "effective": "09/04/2026"
+   },
+   "workers_comp": {
+    "carrier": "FINANCIAL PACIFIC INSURANCE COMPANY",
+    "policy": "10147545585",
+    "effective": "07/13/2026",
+    "expire": "07/13/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": []
+  },
+  {
+   "license": "1089561",
+   "rank": 2,
+   "stored_name": "Heise's Plumbing",
+   "legal_name": "TARO GROUP INC dba HEISES PLUMBING",
+   "address": "1610 EVANS AVE, SAN FRANCISCO, CA 94124",
+   "phone": "(415) 333-0704",
+   "issue_date": "04/06/2022",
+   "expire_date": "04/30/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C36 - PLUMBING",
+    "C10 - ELECTRICAL",
+    "A - GENERAL ENGINEERING",
+    "C20 - WARM-AIR HEATING, VENTILATING AND AIR-CONDITIONING"
+   ],
+   "contractors_bond": {
+    "carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY",
+    "number": "100963071",
+    "amount": "$25,000",
+    "effective": "05/27/2025"
+   },
+   "workers_comp": {
+    "carrier": "EMPLOYERS PREFERRED INSURANCE COMPANY",
+    "policy": "EIG6235466",
+    "effective": "01/11/2026",
+    "expire": "01/11/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": [],
+   "note": "No B and no C-9 on this record, which matches the stored row and the published caveat that the restoration party must be named."
+  },
+  {
+   "license": "1115649",
+   "rank": 3,
+   "stored_name": "Rapid Flow Plumbing & Rooter",
+   "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+   "address": "230 EDINBURGH ST, SAN FRANCISCO, CA 94112",
+   "phone": "(415) 866-8401",
+   "issue_date": "01/29/2024",
+   "expire_date": "01/31/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "B - GENERAL BUILDING",
+    "C36 - PLUMBING"
+   ],
+   "contractors_bond": {
+    "carrier": "MERCHANTS BONDING COMPANY (MUTUAL)",
+    "number": "101423907",
+    "amount": "$25,000",
+    "effective": "03/03/2025"
+   },
+   "workers_comp": {
+    "status": "Exempt - certified no employees",
+    "effective": "02/03/2026"
+   },
+   "matches_stored": true,
+   "field_deltas": []
+  },
+  {
+   "license": "392967",
+   "rank": 4,
+   "stored_name": "Ayoob & Peery",
+   "legal_name": "AYOOB & PEERY PLUMBING CO INC",
+   "address": "975 INDIANA ST, SAN FRANCISCO, CA 94107",
+   "phone": "(415) 550-0975",
+   "issue_date": "09/08/1980",
+   "expire_date": "09/30/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "B - GENERAL BUILDING",
+    "C-4",
+    "C16 - FIRE PROTECTION",
+    "C36 - PLUMBING",
+    "C20"
+   ],
+   "workers_comp": {
+    "carrier": "TRAVELERS CASUALTY AND SURETY COMPANY OF AMERICA",
+    "policy": "UB1X0022612626G",
+    "effective": "08/31/2026",
+    "expire": "08/31/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": []
+  },
+  {
+   "license": "1096552",
+   "rank": 5,
+   "stored_name": "We Do Construction",
+   "legal_name": "WE DO CONSTRUCTION INC",
+   "address": "1528 UNION STREET, SAN FRANCISCO, CA 94123",
+   "phone": "(415) 416-5494",
+   "issue_date": "09/14/2022",
+   "expire_date": "09/30/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "B - GENERAL BUILDING",
+    "C36 - PLUMBING"
+   ],
+   "workers_comp": {
+    "carrier": "STATE COMPENSATION INSURANCE FUND",
+    "policy": "9390276",
+    "effective": "11/14/2025",
+    "expire": "11/14/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": []
+  },
+  {
+   "license": "977638",
+   "rank": 6,
+   "stored_name": "Expert Plumbing Solutions",
+   "legal_name": "EXPERT PLUMBING SOLUTIONS",
+   "address": "1465 44TH AVENUE, SAN FRANCISCO, CA 94122",
+   "phone": "(415) 531-5340",
+   "issue_date": "10/09/2012",
+   "expire_date": "10/31/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C36 - PLUMBING"
+   ],
+   "workers_comp": {
+    "carrier": "EVEREST PREMIER INSURANCE COMPANY",
+    "policy": "7600025915261",
+    "effective": "07/19/2026",
+    "expire": "07/19/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": [],
+   "estimate_on_file": "E-01, $614 owner-reported"
+  },
+  {
+   "license": "749536",
+   "rank": 7,
+   "stored_name": "Save-On-Interior",
+   "legal_name": "SAVE - ON - INTERIOR",
+   "address": "335 14TH AVE, SAN FRANCISCO, CA 94118",
+   "phone": "(415) 668-8000",
+   "issue_date": "05/18/1998",
+   "expire_date": "05/31/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "B - GENERAL BUILDING",
+    "C36 - PLUMBING"
+   ],
+   "workers_comp": {
+    "status": "Exempt - certified no employees",
+    "effective": "04/05/2026"
+   },
+   "miscellaneous": [
+    "11/06/2015 - CASH DEPOSIT LTR SENT $15,000",
+    "01/14/2016 - CASH DEPOSIT 15K FOLLOW UP LTR SENT"
+   ],
+   "matches_stored": true,
+   "field_deltas": [],
+   "note": "Shares street address 335 14th Ave and phone (415) 668-8000 with Bay Area Plumbing #757796, as the stored rows record. Common ownership is not established by the register."
+  },
+  {
+   "license": "757796",
+   "rank": 8,
+   "stored_name": "Bay Area Plumbing",
+   "legal_name": "BAY AREA PLUMBING",
+   "address": "335 14TH AVENUE, SAN FRANCISCO, CA 94118",
+   "phone": "(415) 668-8000",
+   "issue_date": "01/07/1999",
+   "expire_date": "01/31/2027",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C36 - PLUMBING"
+   ],
+   "workers_comp": {
+    "status": "Exempt - certified no employees",
+    "effective": "12/11/2024"
+   },
+   "matches_stored": true,
+   "field_deltas": [],
+   "estimate_on_file": "E-02, $550 owner-reported"
+  },
+  {
+   "license": "1140843",
+   "rank": 9,
+   "stored_name": "Discount Plumbing Rooter Services",
+   "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+   "address": "1325 HOWARD AVE BLDG 710, BURLINGAME, CA 94010",
+   "phone": "(650) 991-2100",
+   "issue_date": "07/22/2025",
+   "expire_date": "07/31/2027",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C36 - PLUMBING",
+    "A - GENERAL ENGINEERING"
+   ],
+   "bonds": [
+    "Contractor's bond $25,000 (LEXINGTON NATIONAL)",
+    "LLC employee/worker bond $100,000"
+   ],
+   "workers_comp": {
+    "carrier": "A I U INSURANCE COMPANY",
+    "policy": "020396018",
+    "effective": "04/01/2025",
+    "expire": "04/01/2027"
+   },
+   "liability_insurance": {
+    "carrier": "NATIONAL UNION FIRE INSURANCE COMPANY OF PITTSBURGH, PA",
+    "amount": "$2,000,000",
+    "effective": "04/01/2026",
+    "expire": "04/01/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": []
+  },
+  {
+   "license": "1024971",
+   "rank": 10,
+   "stored_name": "Fast Response Plumbing & Rooter",
+   "legal_name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+   "address": "236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127",
+   "phone": "(415) 596-6115",
+   "issue_date": "03/20/2017",
+   "expire_date": "03/31/2027",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C36 - PLUMBING"
+   ],
+   "workers_comp": {
+    "carrier": "EMPLOYERS PREFERRED INSURANCE COMPANY",
+    "policy": "EIG576950801",
+    "effective": "12/18/2025",
+    "expire": "12/18/2026"
+   },
+   "matches_stored": true,
+   "field_deltas": [],
+   "estimate_on_file": "E-03, $135 owner-reported"
+  },
+  {
+   "license": "995163",
+   "role": "restoration partner",
+   "stored_name": "Bernal Hill Drywall",
+   "legal_name": "BERNAL HILL DRYWALL INC",
+   "address": "720 ANDERSON ST, SAN FRANCISCO, CA 94110",
+   "phone": "(415) 533-8274",
+   "issue_date": "07/28/2014",
+   "expire_date": "07/31/2028",
+   "status": "This license is current and active.",
+   "classifications": [
+    "C-9 - DRYWALL",
+    "B - GENERAL BUILDING"
+   ],
+   "workers_comp": {
+    "carrier": "ENDURANCE ASSURANCE CORPORATION",
+    "policy": "EAW0000274901",
+    "effective": "03/10/2026",
+    "expire": "03/10/2027"
+   },
+   "matches_stored": true,
+   "field_deltas": [],
+   "note": "C-9 drywall with B general building, but no C-36 plumbing, so the plumbing half still needs a separate licensed plumber."
+  },
+  {
+   "license": "1027286",
+   "role": "excluded",
+   "stored_name": "Kenneth Asire Plumbing",
+   "legal_name": "KENNETH ASIRE PLUMBING",
+   "address": "1559 SLOAT BLVD #319, SAN FRANCISCO, CA 94132",
+   "phone": "(415) 913-8048",
+   "issue_date": "05/25/2017",
+   "expire_date": "05/31/2027",
+   "status": "License is under suspension: Contractors Bond Suspension.",
+   "classifications": [
+    "C36 - PLUMBING"
+   ],
+   "contractors_bond": {
+    "carrier": "NORTH RIVER INSURANCE COMPANY (THE)",
+    "number": "04CF616317",
+    "amount": "$25,000",
+    "effective": "03/02/2023",
+    "cancellation_date": "08/16/2026"
+   },
+   "matches_stored": true,
+   "field_deltas": [],
+   "note": "Confirms the exclusion in F-09 and in the ranking. Bond cancellation date 08/16/2026 matches the stored detail."
+  }
+ ],
+ "summary": {
+  "records_read": 12,
+  "matched_stored": 12,
+  "field_deltas": 0,
+  "unresolved_identities_confirmed_blank": 1
+ }
+}
