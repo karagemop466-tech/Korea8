@@ -1219,45 +1219,16 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 - Main then advanced through PR #57; the subsequent rebase conflicted only in the shared board. Both records were kept, including the independent status audit. No other files were discarded.
 - Main advanced through PR #59 before merge. Rebase conflict was confined to this shared board; retained the deploy receipt and both session records. Rebuilt combined site and reran 27/27 verifier checks and 18/18 tests.
 
-### PR #58 and live deployment receipt
-
-- PR: https://github.com/karagemop466-tech/Korea8/pull/58 — merged 2026-11-10T00:52:12Z, commit `a5721decbf2b076acee140c4507fcd2dd1561a34`.
-- Exact-commit workflow: https://github.com/karagemop466-tech/Korea8/actions/runs/42731580658 — build, verification, 18 tests, staged public artifact, deploy and HTTPS confirmation succeeded.
-- Live ranking page https://karagemop466-tech.github.io/Korea8/decision-analysis.html was independently retrieved and includes the sourced Heise advertised restoration clarification. The legacy Pages mode remains enabled; staging does not restrict repository or legacy-root publication.
-- GitHub Actions emitted a non-blocking Node 20 action deprecation/forced Node 24 warning. Fresh source verification remains limited to the cited targeted audit; no provider was contacted.
-
-## Session `arena/d6196195-korea8` — 2026-11-10 fresh re-verification and final integration
-
-| ID | Task | Status | Owner | File scope |
-|---|---|---|---|---|
-| `D619-T1` | Claim board before other edits | done | `arena/d6196195-korea8` | `COORDINATION.md` |
-| `D619-T2` | Fresh official-source re-verification (2026-11-10): all CSLB records, company sites, code/permit/tenant sources, review-platform retrieval test, line-by-line repo audit | done | `arena/d6196195-korea8` | `overflow-integration/**`, `audit/2026-11-10-d6196195/**` |
-| `D619-T3` | Canonical rebuild, verification, PR to main, merge, Pages deploy and live check | done | `arena/d6196195-korea8` | root canonical HTML/CSS, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `OVERFLOW_EXECUTIVE_SUMMARY.md`, `overflow-integration/EXECUTIVE_SUMMARY.md`, `COORDINATION.md` |
-
-**Claim boundaries:** Arena fixes this session to `arena/d6196195-korea8`; no other branch will be created or pushed. No other session has an active bathtub task on current `main` (last completed: `arena/3946905e-korea8`, PR #52 merged 2026-11-08). Open PRs #35, #38, #39, #44, #49, #51, #53 are other sessions' historical work and will not be merged or closed by this session. DOE GEMS research (`docs/`, `src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, GEMS scripts/workflow) and parallel redirect stubs/archives are read-only. Any required cross-scope edit will be logged here, not made silently. No provider will be contacted, booked or paid. Owner-supplied estimates remain labelled owner-reported with verified amounts blank. Public content uses neutral repair language; no private circumstances are published.
-
-**Claim push:** This claim is committed and pushed before any research or site edits, per the shared-board rule.
-
-### `D619-T2` — completed record (session `arena/d6196195-korea8`, 2026-11-10)
-
-**Report:** `audit/2026-11-10-d6196195/REPORT.md` and `freshness-check.json`
-
-- **All 24 CSLB licence detail pages re-read directly** on 2026-11-10 (CSLB banner: Data current as of 11/9/2026 4:49 PM). **24/24 stored licensure fields matched exactly** — legal name, classifications, status, expiry, registered city, phone and workers-compensation entry. No licensure correction was needed; per-row timestamps were refreshed and `as_of` moved to 2026-11-10.
-- **Rule/company sources re-read:** SF.gov plumbing/mechanical permit page (permit trigger, §104.2 link, eligible classes, inspection before covering, help desk 628-652-4900), July 2026 DBI fee PDF (1P $290, 11P/M $320, $519/hr, $555/hr, $259/half-hour), BPC §7057, §7048, §7057.5 verbatim, Civil Code §1954 verbatim, CSLB C-9 classification, CSLB contract guidance, Watco instructions, Heise’s Ingleside case (still live, still carries its 404 template block), Ace and Rapid Flow homepages.
-- **Yelp re-tested:** HTTP 403 again on 2026-11-10. Ratings, counts and review text stay blank.
-- **Live site:** returned the merged 2026-11-08 dashboard before this rebuild (24 CSLB, 42 requirements, 85 sources, 46 flags).
-- **Privacy:** no private-circumstance phrasing in any published file; verifier banned-pattern check passes. No provider contacted/booked; owner estimates remain owner-reported with verified amounts blank; ranking unchanged.
-
-### `D619-T3` — completed PR, merge and live deployment record (session `arena/d6196195-korea8`, 2026-11-10)
-
-| Item | Result |
-|---|---|
-| Integration PR | **#56** — https://github.com/karagemop466-tech/Korea8/pull/56 |
-| Merge | **MERGED** 2026-11-10T00:55:15Z; merge commit `7c71101056c4fee2ec2e6c62cd23eb2b9722ad96` |
-| Workflow | [Run 42731958314](https://github.com/karagemop466-tech/Korea8/actions/runs/42731958314) — build, 27/27 verify, 18/18 unit tests, 23-file linked-public staging, Pages deploy and HTTPS live route verification **success** for exact merge commit |
-| GitHub Pages API | `status: built`, `https://karagemop466-tech.github.io/Korea8/` |
-| Live verification | Cache-busted `index.html`, `verification.html` and `flagged-for-review.html` directly retrieved on 2026-11-10 (`?v=7c71101056c4`), serving `reviewed 2026-11-10`, 24 CSLB records, 25 identities, 42 requirements, 87 sources, 46 flags and links to `audit/2026-11-10-d6196195/REPORT.md` + `freshness-check.json` |
-| Final checks | 27/27 canonical verifier checks PASS; 302/302 rows official-primary source-covered; 244 tracked-HTML links (0 broken); 18/18 unit tests PASS; `git diff --check` PASS |
-| Status | `D619-T1`, `D619-T2`, `D619-T3` **done**. Open/unverified items remain published on Flagged for Review (`needs review`, non-blocking). No provider contacted/booked. |
-
 **Rebase conflict resolution (2026-11-10):** While PR #56 was open, concurrent sessions `arena/660ab2dd-korea8`, `arena/35739f62-korea8` and `arena/47d993da-korea8` merged PRs #55, #57, #58, #59, #60 and #61 onto `main` (`b30f89d`), adding `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `audit/REPORT_2026-11-10_35739f62.md`, `audit/2026-11-10-47d993da/REPORT.md`, `HEISE-PATCH` / `CSLB-FINDING` sources, Heise/Watco/BPC §7057(b) clarifications and live-HTTPS workflow checks. Rebased `arena/d6196195-korea8` onto `origin/main` (`b30f89d`) preserving 100% of all three concurrent sessions' board records, data refinements, scripts, workflow and tests; applied this session's 2026-11-10 fresh official-source re-verification timestamps (`as_of: 2026-11-10`, 24/24 CSLB banner timestamps `11/9/2026 4:49 PM`) and linked `audit/2026-11-10-d6196195/REPORT.md` + `freshness-check.json` alongside the concurrent audits. Combined build, 27/27 verifier checks and 18/18 unit tests pass.
+
+---
+
+## Session `arena/87e121e1-korea8` — full 2026-11-10 line-by-line verification, repo audit and final integration
+
+| ID | Task | Status | Owning session ID | File scope |
+|---|---|---|---|---|
+| `87e121e1-A` | Full 2026-11-10 line-by-line official-source re-verification (all 24 CSLB records, company sites, SF/CA/EPA/Watco docs, Yelp/review leads, and repo-wide hygiene/privacy/consistency audit) | in progress | `arena/87e121e1-korea8` | `audit/2026-11-10-87e121e1/**`, `COORDINATION.md` |
+| `87e121e1-B` | Canonical data refresh, verified findings/irregularity updates, dashboard rebuild and automated/independent verification | in progress | `arena/87e121e1-korea8` | `overflow-integration/**`, `site-data/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `audit/independent_audit.py`, `tests/test_overflow*.py`, root canonical HTML/CSS and generated summaries, `COORDINATION.md` |
+| `87e121e1-C` | PR from `arena/87e121e1-korea8` to `main`, merge, GitHub Pages deploy/live route confirmation and final board record | in progress | `arena/87e121e1-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, generated verification/deployment pages |
+
+Prior merged sessions on 2026-11-10 (`arena/660ab2dd-korea8`, `arena/35739f62-korea8`, `arena/47d993da-korea8`, `arena/d6196195-korea8`) performed publication-boundary/targeted audits or CSLB timestamp refreshes; nine earlier PRs (`#7, #35, #38, #39, #44, #49, #51, #53, #63`) remain open and unmerged. This session is fixed to `arena/87e121e1-korea8` per Arena branch rules and preserves all prior merged work and unrelated DOE GEMS files unmodified. No contractor will be contacted or booked; no private circumstances will be published.
