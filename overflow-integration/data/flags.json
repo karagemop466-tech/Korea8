@@ -195,12 +195,14 @@
       "id": "F-14",
       "severity": "Medium",
       "category": "Reviews",
-      "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Yelp business pages returned HTTP 403 again on 2026-11-10, so no Yelp numeric ratings/counts are published. Direct BBB and Angi profiles were retrieved on 2026-11-10 for qualitative/complaint checks with numeric ratings kept blank.",
-      "action": "Keep review observations labeled by retrieval method; request direct references and a current occupied-unit plan.",
+      "title": "Yelp business pages are blocked; published excerpts are labelled and carry no score",
+      "detail": "Yelp business pages returned HTTP 403 to this session again on 2026-11-10; the two pages named elsewhere in this register (Ace Plumbing & Rooter, Heise’s Plumbing) also returned HTTP 403 to the page-retrieval tool. Review evidence therefore comes from dated search-index excerpts of the business pages and search listings, and every such row is labelled by retrieval method and carries a blank rating and count. Two numbers that were checked directly are stated as such and no others: Ace Plumbing & Rooter showed 4.7 from about 1.4 thousand reviews on 2026-11-10, and Heise’s Plumbing showed 4.2 from 278 to 283 reviews across excerpts dated June and July 2026. Neither number is reproducible from a page this project can fetch, so both are treated as search-index snapshots that can change. Direct BBB and Angi profiles were retrieved on 2026-11-10 for qualitative and complaint checks, with numeric ratings kept blank.",
+      "action": "Keep every review cell labelled by retrieval method, keep star ratings and counts blank in tables, and re-check the two quoted numbers on the live page before any contact. Ask for direct references and a current occupied-unit plan.",
       "source_ids": [
         "YELP-ACE",
         "YELP-HEISE",
+        "YELP-BERNAL",
+        "YELP-AYOOB",
         "BBB-ACE",
         "BBB-HEISE",
         "CSLB-SEARCH"
@@ -213,12 +215,13 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Rapid Flow wall-opening account is adjacent, not exact-job proof",
-      "detail": "A Yelp-indexed account describes tub-plug retrieval through a wall opening/pipe cut. It does not establish this trip-lever job, ceiling restoration or a current protocol.",
-      "action": "Ask for a direct reference and written scope; keep the observation unverified.",
+      "detail": "A Yelp-indexed account of Rapid Flow Plumbing & Rooter describes two named technicians retrieving a tub drain metal plug that had fallen into the drain, and a separate company listing describes dual C-36 and B licensing. Neither establishes this trip-lever job, ceiling restoration or a current protocol. The register’s existing Rapid Flow link points at a general-contractor listing in the Excelsior, and the three-review business excerpt sits in a natural-gas-supplier listing; both are listings, not a verified business profile.",
+      "action": "Record the excerpt as an adjacent case only. Ask for a direct reference covering a concealed overflow or trip-lever retrieval and for a written scope before any award.",
       "source_ids": [
         "YELP-RF",
         "YELP-RF2",
-        "CSLB-1115649"
+        "CSLB-1115649",
+        "RF"
       ],
       "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
       "status": "Open"
@@ -775,6 +778,22 @@
         "AUDIT-20261110-0CC"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/AGENTS.md"
+    },
+    {
+      "id": "F-52",
+      "severity": "High",
+      "category": "Publication boundary",
+      "title": "The legacy Pages builder serves the whole repository root, including this board",
+      "detail": "GitHub Pages is configured with build_type \"legacy\" and source main at \"/\", and the legacy builder succeeded for the 2026-11-10 01:17:38Z commit. On 2026-11-10 this session retrieved https://karagemop466-tech.github.io/Korea8/COORDINATION.md over the public internet and received the full shared task board, which means the repository root — not only the linked public closure — is reachable. The exact-commit Actions workflow stages a linked closure and deploys it, so two publication paths are live at once and the legacy one publishes internal coordination and audit text. This corrects the earlier reading that the repository root returns Pages 404. Observed scope: the board was retrieved. pyproject.toml was also retrieved, and other unrelated-project files were readable at their plain repository paths, but no private owner detail and no provider outreach record sits in those files.",
+      "action": "Owner action in the repository UI: set Settings > Pages > Build and deployment > Source to \"GitHub Actions\", which removes the legacy root publication. The automation token available to this session cannot make that change (HTTP 403). Until it is changed, treat every tracked file as readable by anyone, and leave owner-specific scheduling or access detail out of the repository.",
+      "source_ids": [
+        "PAGES-API",
+        "REPO-BOARD",
+        "GH-ACTIONS",
+        "GH-WORKFLOWS"
+      ],
+      "official_url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
+      "status": "Open"
     }
   ]
 }

@@ -1557,3 +1557,90 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 - After the merge: canonical rebuild, verifier 27/27 (341 source-covered rows, 256 tracked-HTML links, 0 broken), 27 unit tests, 32-file staging, wording guard clean, independent audit 0 problems.
 - 01:16 UTC: merged `origin/main` at `1e7f03f` (PR #68, `arena/b5ed3a43-korea8`). Append/append conflict in this board only; both sections kept, the newer session's first. Re-ran build, verifier (27/27), 27 unit tests, staging and the wording guard: all pass.
 - 01:17 UTC: merged `origin/main` at `9f1e76d` (PR #69, `arena/b5ed3a43-korea8` receipt). Conflict in this board only; their `B5-05` record sits at the end of their section, this section stays last. Same checks re-run: all pass.
+
+---
+
+## Session `arena/5651e041-korea8` — Yelp-linked review evidence, one-button hiring answer, and publication of this board's public exposure (2026-11-10)
+
+**Claim time:** 2026-11-10 ~06:0x UTC, committed and pushed before any other edit.
+**Branch note.** Arena pins this session to `arena/5651e041-korea8`; the `session-<id>/<task>` branch name cannot be created (same platform exception every earlier session recorded).
+
+**Overlap check done first.** Everything below is checked against the board before claiming. Licence re-reading, canonical rebuilds, live-route audits, wording, publication-boundary and requirements-traceability work are **already done** by `d6196195`, `0ccaa3f3`, `be9ec407`, `b5ed3a43`, `3abe4d32`, `660ab2dd`, `35739f62`, `47d993da`, `87e121e1`, `b0d7ecf7` and others. This session does **not** repeat any of them. It takes the three items nobody holds:
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `5E-01` | Claim this board before any other edit | done | `arena/5651e041-korea8` | `COORDINATION.md` |
+| `5E-02` | Yelp / review-platform evidence for this specific work (tub-side overflow extraction, ceiling access, drywall patch, occupied unit) for the ranked SF leads, read live and kept separate from CSLB facts | done | `arena/5651e041-korea8` | `overflow-integration/data/reviews.json`, `scripts/build_overflow_site.py`, `overflow-integration/REPO_REVIEW.md` |
+| `5E-03` | One-button hiring answer: a generated copy-ready request-for-quote block (phone numbers, one neutral scope, the four questions each lead must answer) with a build-time check that the block is populated and every phone traces to the official record | done | `arena/5651e041-korea8` | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, generated canonical pages |
+| `5E-04` | Repository review of the tracked tree and the live publication boundary, with new irregularities raised as flags rather than silent edits | done | `arena/5651e041-korea8` | `audit/2026-11-10-5651e041/**`, `overflow-integration/data/flags.json` |
+| `5E-05` | Closing integration: rebuild, verifier, unit tests, wording guard, independent audit, PR to `main`, merge, confirm the Pages deploy for the merge commit, record the receipt here | in progress | `arena/5651e041-korea8` | generated canonical pages, `COORDINATION.md` |
+
+**Scope boundaries.** This session does not edit `docs/**` (archived DOE GEMS site), does not edit `tests/**`, and does not touch any open PR (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66). No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with the verified amount blank. Where a fact cannot be confirmed from an official source it stays blank and is flagged.
+
+**Standing rule carried forward.** Reader-facing copy stays in neutral repair-scope language and never carries owner-specific permit-timing detail. That rule is re-checked by `scripts/wording_guard.py` on every tracked file, and the new flags added under `5E-04` are worded the same way.
+
+### `5E` completed record (session `arena/5651e041-korea8`, 2026-11-10)
+
+**Report:** [`audit/2026-11-10-5651e041/REPORT.md`](audit/2026-11-10-5651e041/REPORT.md) ·
+[`audit/2026-11-10-5651e041/cslb-receipts.json`](audit/2026-11-10-5651e041/cslb-receipts.json).
+
+**`5E-02` — review evidence, read live where the platform allowed it.** Yelp business pages returned HTTP 403 to
+the page-retrieval tool again (`ace-plumbing-and-rooter-san-francisco`, `heises-plumbing-san-francisco`) and so did
+the search pages, which is the same result earlier sessions recorded. Dated search-index excerpts were obtained and
+five new observation rows were added: RV-19 and RV-20 (Bernal Hill Drywall — the excerpt states the 2014 C-9 licence
+and the 2022 Class B addition, and review highlights describe wall and ceiling holes from a leaky pipe), RV-21
+(Ayoob & Peery — an indexed review describes a large dig-out quote being avoided after a camera inspection), RV-22
+(Fast Response appear in a ceiling-leak-repair listing) and RV-23 (other San Francisco ceiling contractors, recorded
+as search leads only). Five matching review-platform source records were added. Every row keeps its rating and count
+**blank**, and every row states how it was obtained. Two numbers seen directly in search output are published only
+in flag F-14, with the date and method: Ace Plumbing & Rooter 4.7 from about 1.4 thousand reviews, and Heise’s
+Plumbing 4.2 from 278 to 283 reviews across excerpts dated June and July 2026. Neither is placed in a table cell.
+The ranking page now carries a review-evidence column per candidate and a second-bid table for the ceiling.
+
+**`5E-03` — one-button hiring answer.** The dashboard now opens with the answer and the phone numbers above the
+fold, followed by a copy-ready request block, a download of that block as a text file, `tel:` links for the ranked
+leads, and a routing table that says which lead to ask and what to ask for. Every phone number in that block is the
+number on the official CSLB record for that licence, and `overflow-integration/data/requests.json` carries the
+per-lead source ids so the link can be traced.
+
+**`5E-04` — repository review and publication boundary.** Ten CSLB licence-detail records were re-read directly on
+2026-11-10 and compared field by field with `providers.json` by script: **10 records, 0 field mismatches** on legal
+name, phone, expiry, classifications and status. Flag **F-52** was added. The finding: `GET /repos/.../pages` shows
+`build_type: "legacy"` with source `main` at `/`, and this session retrieved
+`https://karagemop466-tech.github.io/Korea8/COORDINATION.md` over the public internet and received the full board,
+plus `pyproject.toml`. **The live site serves the repository root, so this board is public.** That corrects the
+statement under F-34 that `COORDINATION.md` returns a Pages 404. F-14 and F-15 were restated with what was actually
+found. `PUT /repos/.../pages` with `build_type=workflow` still returns **HTTP 403 Resource not accessible by
+integration**, so the owner action stands: Settings → Pages → Source → **GitHub Actions**.
+
+**Two checker defects found and fixed (both in this session's own tooling, not in published data).**
+`audit/independent_audit.py` treated `tel:` and `data:` URLs as internal file paths and reported them as broken
+links; it now skips any URL that carries a scheme. `scripts/stage_overflow_pages.py` gained the same guard. After
+the fix: `pages=11 rows=363 with_source=363 blank_marked=0 internal_links=202 problems=0`.
+
+**Verification gates, all re-run after the final edit.**
+
+| Check | Result |
+|---|---|
+| `python scripts/build_overflow_site.py` | 11 pages built |
+| `python scripts/verify_overflow_site.py` | **27/27 PASS** |
+| `python -m unittest discover -s tests -p 'test_overflow*.py'` | **27 tests OK** |
+| `python scripts/wording_guard.py` | clean |
+| `python scripts/stage_overflow_pages.py` | 35 linked public files staged, no repository internals |
+| `python audit/independent_audit.py` | 0 problems |
+| CSLB field parity | 10 records, 0 mismatches |
+| `git diff --check` | clean |
+
+**Standing rules held.** No provider was contacted, called, emailed, quoted, booked or paid. No price was inferred,
+rounded or averaged; the three supplied amounts remain owner-reported with the verified amount blank. Every star
+rating and review count stays blank. No change was made to the hiring order or to any score. Nothing owner-specific
+was added anywhere in the repository.
+
+### `5E-05` — PR, merge and deployment record
+
+| Item | Result |
+|---|---|
+| Integration PR | **#71** — https://github.com/karagemop466-tech/Korea8/pull/71 (`arena/5651e041-korea8` → `main`) |
+| Merge | to be recorded |
+| Pages deploy | to be recorded |
+| Live URL | https://karagemop466-tech.github.io/Korea8/ |

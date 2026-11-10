@@ -311,6 +311,87 @@
         "BBB-BERNAL",
         "ANGI-BERNAL"
       ]
+    },
+    {
+      "id": "RV-19",
+      "provider": "Bernal Hill Drywall",
+      "platform": "Yelp search index",
+      "observation": "Profile excerpt states the company was established in 2014 with a C-9 drywall licence and added a Class B General Contractor licence in 2022, and advertises complete build-back after water damage. Review highlights include a customer describing many wall and ceiling holes from a leaky pipe.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "source_ids": [
+        "YELP-BERNAL",
+        "CSLB-995163",
+        "BERNAL"
+      ],
+      "limit": "Search-index excerpt only; the business page returned HTTP 403. Licence years are the company's own wording and the C-9 and B classifications are taken from the official CSLB record, not from Yelp. The leak-pipe case is ceiling restoration after a plumbing failure, not this trip-lever job."
+    },
+    {
+      "id": "RV-20",
+      "provider": "Bernal Hill Drywall",
+      "platform": "Yelp search index",
+      "observation": "Appears in San Francisco drywall-ceiling-repair listing excerpts, including a quoted customer line about major ceiling patches that needed attention.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=drywall+ceiling+repair&find_loc=San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "source_ids": [
+        "YELP-BERNAL-CEILING",
+        "CSLB-995163"
+      ],
+      "limit": "Listing excerpt; position in a Yelp listing or a sponsored placement is not a quality measure. No rating, count or date published."
+    },
+    {
+      "id": "RV-21",
+      "provider": "Ayoob & Peery",
+      "platform": "Yelp search index",
+      "observation": "An indexed review describes a $14,000 dig-out and driveway-replacement quote being avoided after a camera inspection found tree roots, with the line snaked annually instead. The same review says the company attends the same day for water-heater and other plumbing calls in an older San Francisco home.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/biz/ayoob-and-peery-san-francisco-2",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "source_ids": [
+        "YELP-AYOOB",
+        "CSLB-392967"
+      ],
+      "limit": "Search-index excerpt only. The excerpt carried no star rating, count or exact date, so those fields stay blank. The account is drain and root work, not this trip-lever scope, and one customer account is not evidence of the company's current practice."
+    },
+    {
+      "id": "RV-22",
+      "provider": "Fast Response Plumbing & Rooter",
+      "platform": "Yelp search index",
+      "observation": "Appears in a San Francisco ceiling-leak-repair listing with a quoted customer line describing a straightforward leak repair attributed to two named technicians.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=Ceiling+Leak+Repair&find_loc=San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_ids": [
+        "YELP-FAST-CEILING",
+        "CSLB-1024971"
+      ],
+      "limit": "Listing excerpt only. No rating published. A ceiling leak repair is not a drywall patch or this access job, and Fast Response holds no B or C-9 classification on the checked CSLB record."
+    },
+    {
+      "id": "RV-23",
+      "provider": "Additional San Francisco ceiling-repair contractors",
+      "platform": "Yelp search index",
+      "observation": "The same San Francisco drywall-ceiling-repair listing excerpt names other contractors, including Amador's Drywall, R & R Drywall, Toms Painters and Peña Drywall, for a second bid on ceiling restoration.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=drywall+ceiling+repair&find_loc=San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_ids": [
+        "YELP-DRYWALL-SF",
+        "CSLB-SEARCH"
+      ],
+      "limit": "Search lead only, recorded because the owner asked for reviewed alternatives. This session did not check any of these names against the CSLB register, so no licence, status, phone number or rating is published here. Verify on the official CSLB lookup before any contact."
     }
   ]
 }
