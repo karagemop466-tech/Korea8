@@ -1399,7 +1399,7 @@ build mirror. Logged here instead of edited.
 
 No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank.
 
-### `3AB` merge record — 2026-11-10 ~01:25 UTC
+### `3AB` merge record — 2026-11-10 ~01:15 UTC
 
 - Merged `origin/main` at `afde0bc` (PRs #65 and #67) into this branch. One conflict, in this board only; resolved by keeping every line from both sides.
 - **Restored records.** Commit `18f8f0c` on `main` had dropped two earlier records from this board: the whole `arena/d6196195-korea8` section (claim table, `D619-T2` record, `D619-T3` PR #56 merge and deploy receipt) and the `arena/47d993da-korea8` block "PR #58 and live deployment receipt". Both are back in place, taken from `8e7dbd6`. The `arena/87e121e1-korea8` and `arena/0ccaa3f3-korea8` sections are kept as merged, in the order `main` had them.
