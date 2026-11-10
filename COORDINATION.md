@@ -1204,7 +1204,7 @@ Arena fixes this session to its existing branch; no separate session branch will
 
 | Task | Status | Owner | Scope |
 |---|---|---|---|
-| Current canonical-site, official-source and deployment audit; targeted evidenced corrections and final integration | in progress | `arena/47d993da-korea8` | `audit/2026-11-10-47d993da/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root generated bathtub pages/reports and `COORDINATION.md` |
+| Current canonical-site, official-source and deployment audit; targeted evidenced corrections and final integration | done | `arena/47d993da-korea8` | `audit/2026-11-10-47d993da/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root generated bathtub pages/reports and `COORDINATION.md` |
 
 Prior overlapping claims on this board predate the final PR #54 by over 60 minutes and are superseded by the completed integration handoff. No outstanding PR is assumed safe to merge. This session is constrained to the existing Arena branch, rather than creating a task branch. Preserve other sessions' work; rebase before each push.
 
@@ -1218,3 +1218,10 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 - Conflict handoff: `origin/main` advanced via PR #55 during integration. Rebase conflicted in this board, the generator's verification paragraph, and generated pages/reports. Preserved both board records, retained the other session's publication-boundary audit/link and staging changes, added this session's audit link and verification limitations, and regenerated outputs. Combined rerun: 27/27 checks, 302 source-linked rows, 311 tracked internal links, 18/18 tests; no other session's work discarded.
 - Main then advanced through PR #57; the subsequent rebase conflicted only in the shared board. Both records were kept, including the independent status audit. No other files were discarded.
 - Main advanced through PR #59 before merge. Rebase conflict was confined to this shared board; retained the deploy receipt and both session records. Rebuilt combined site and reran 27/27 verifier checks and 18/18 tests.
+
+### PR #58 and live deployment receipt
+
+- PR: https://github.com/karagemop466-tech/Korea8/pull/58 — merged 2026-11-10T00:52:12Z, commit `a5721decbf2b076acee140c4507fcd2dd1561a34`.
+- Exact-commit workflow: https://github.com/karagemop466-tech/Korea8/actions/runs/42731580658 — build, verification, 18 tests, staged public artifact, deploy and HTTPS confirmation succeeded.
+- Live ranking page https://karagemop466-tech.github.io/Korea8/decision-analysis.html was independently retrieved and includes the sourced Heise advertised restoration clarification. The legacy Pages mode remains enabled; staging does not restrict repository or legacy-root publication.
+- GitHub Actions emitted a non-blocking Node 20 action deprecation/forced Node 24 warning. Fresh source verification remains limited to the cited targeted audit; no provider was contacted.
