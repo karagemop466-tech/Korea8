@@ -43,12 +43,19 @@ are unconfirmed.
 ## Key controls
 - Verify the legal contracting entity, license status/classifications, bond and insurance on signing day.
 - Name who performs drywall/texture/paint; B + C-36 is not proof of drywall self-performance.
-- Get the DBI permit determination and inspection-before-covering path in writing.
+- Get the DBI permit determination and inspection-before-covering path in writing. Note that City
+  offices are closed Wednesday 2026-11-11 for Veterans Day, so the Permit Center help desk
+  (628-652-4900) and the 49 South Van Ness counter are unavailable that day; the next business day is
+  Thursday 2026-11-12, and the City commits to answering help-desk voicemail within 2 business days.
 - Give affected tenants Civil Code §1954 notice; coordinate storage-unit authority, water shut-off and contents protection.
 - Screen conditionally for lead/asbestos before disturbing finishes; building age/materials are unknown.
+- Before cutting the storage-unit ceiling, have the contractor or DBI confirm whether that ceiling is
+  part of a fire-resistive assembly (for example Type X gypsum). San Francisco Building Code
+  §106A.2(10) exempts minor interior plaster or wallboard repair only except when it is part of a
+  fire-resistive assembly, and any fire rating must be preserved on restoration.
 - Use a written itemized contract, lawful down payment, written change orders, leak/function test and photo record.
 
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 48 items.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 51 items.
