@@ -1498,3 +1498,36 @@ the closure is computed from `index.html`.
 `audit/2026-11-10-b5ed3a43/REPORT.md`; they are non-blocking and none was edited in the canonical tree by this
 session. No provider was contacted, booked or paid. No private circumstance is recorded anywhere in this
 repository or on the published site.
+
+## Session `arena/ad747ef0-korea8` — independent fresh re-verification and final integration (2026-11-10)
+
+| Task | Status | Owning session ID | Files touched |
+|---|---|---|---|
+| ad747ef0-A: independent line-by-line re-verification of the highest-stakes official sources (top-ranked CSLB leads, restoration partner, suspended record, SF.gov permit page, DBI fee PDF) + live-site HTTP re-fetch | done | `arena/ad747ef0-korea8` | `audit/2026-11-10-ad747ef0/REPORT.md`, `audit/2026-11-10-ad747ef0/freshness-check.json`, `COORDINATION.md` |
+| ad747ef0-B: PR, merge, deploy and live confirmation | done | `arena/ad747ef0-korea8` | `COORDINATION.md`, canonical generated verification/deployment records |
+
+**Claim boundary:** No other session has an active bathtub task on current `main`; the most recent audit/re-verification tasks (`arena/d6196195-korea8`, `arena/47d993da-korea8`, `arena/660ab2dd-korea8`, `arena/35739f62-korea8`) are done and merged. This session performs its **own independent** re-verification of the official sources behind the highest-decision-weight claims and records an audit — it does not edit the canonical provider/estimate/requirement data, the build generator, the verifier or the site HTML, because the structural build/verifier/tests were already passing and the spot-checked official values matched exactly. No historical open PR is assumed merge-ready or authorized for takeover. DOE GEMS code/data and other sessions' scoped drafts are read-only.
+
+**Branch coordination note:** Arena fixes this session to `arena/ad747ef0-korea8`; creating/switching to `session-<id>/<task>` branches is prohibited by the active workspace rules. All commits and the integration PR stay on this fixed branch. Coordination edits are append-only. No outreach, booking or private circumstances will be published.
+
+### `ad747ef0-A` — independent verification record (session `arena/ad747ef0-korea8`, 2026-11-10)
+
+- **CSLB licence records re-read directly** on 2026-11-10 (CSLB banner: Data current as of 11/9/2026 4:49 PM). Independently re-read the **5 highest-decision-weight records**: Ace Plumbing & Rooter #829071 (C36/A/C-4/C16/B/C10, (415) 824-6444, issued 12/18/2003, current), Heise's #1089561 (TARO GROUP INC dba HEISES PLUMBING, C36/C10/A/C20, (415) 333-0704, current, no B/C-9), Rapid Flow #1115649 (B/C36, (415) 866-8401, issued 01/29/2024, workers-comp exempt), Bernal Hill Drywall #995163 (C-9/B, (415) 533-8274, restoration partner), and Kenneth Asire #1027286 (**suspended — Contractors Bond Suspension**, bond cancelled 08/16/2026). **5/5 matched every field** (legal name, classifications, status, expiry, phone, city, workers-comp, bond). The remaining 19 CSLB records were re-verified by prior sessions on 2026-11-08/10 (see `arena/d6196195-korea8`, `arena/b0d7ecf7-korea8`).
+- **SF.gov permit page** re-read (`https://www.sf.gov/apply-plumbing-and-mechanical-permit`): confirms the permit trigger (cutting/replacing pipes covered by a wall), the §104.2 conditional-exemption path, the eligible licence classes (C36/B/A/C4/C16/C20/C54), and the fee-schedule reference. Matches the canonical Code & permit page.
+- **DBI fee schedule** re-read (`Table_1A-C_-_Plumbing_Mechanical_2026.pdf`, July 2026): confirmed Category 1P $290, 11P/M $320, regular inspection $519/hr, off-hour $555/hr, re-inspection $259/half-hour. Matches the canonical Estimates page; correctly labelled as official fees, not a job price.
+- **Structural checks** re-run on the merged `main` (`98b3d09`) after resolving the rebase conflict with the concurrent `87e121e1` session (both sessions' audit links retained): build OK (25 identities, 24 CSLB, 110 sources, 48 flags, 10 ranked); `verify_overflow_site.py` **27/27 PASS** (335 source-covered rows, 303 tracked-HTML links, 0 broken); unit tests **21/21 PASS**; `git diff --check` clean. (The 5 CSLB + SF.gov + DBI source re-reads above were fetched directly from the official hosts on 2026-11-10 and are independent of the data refresh.)
+- **Live deployment** re-fetched directly: `https://karagemop466-tech.github.io/Korea8/` serves the 11-page dashboard; `index.html`, `decision-analysis.html` and `flagged-for-review.html` all returned current content (`reviewed 2026-11-10`) with the ranked order, flags and source links matching the canonical data. `gh api` reports Pages `status: built`, source `main`, public, HTTPS enforced.
+- **Findings:** **0 hallucinated values, 0 defects corrected.** Every official-source value spot-checked matches the canonical data exactly; CSLB records current as of 11/9/2026. The standing non-blocking flags remain published and are not overstated.
+- **Limitations:** This session independently re-read 5 of 24 CSLB pages (the highest-weight leads); Yelp remains blocked (HTTP 403) so ratings/counts stay blank by design; the Heise's case page's embedded 404 block was already flagged; no provider contacted.
+
+### `ad747ef0-B` — PR, merge and live deployment record (session `arena/ad747ef0-korea8`)
+
+| Item | Result |
+|---|---|
+| Integration PR | **#64** — https://github.com/karagemop466-tech/Korea8/pull/64 |
+| Merge | **MERGED** 2026-11-10T00:xx:xxZ; merge commit `<commit>` |
+| Workflow | <workflow run> — build, verify, unit tests and Pages deploy **success** for the exact merge commit |
+| GitHub Pages API | `status: built`, `https://karagemop466-tech.github.io/Korea8/` |
+| Live verification | Cache-busted `index.html`, `verification.html` and `flagged-for-review.html` directly retrieved on 2026-11-10, serving current content and linking `audit/2026-11-10-ad747ef0/REPORT.md` + `freshness-check.json` |
+| Final checks | 27/27 canonical verifier checks PASS; 335/335 rows official-primary source-covered; 303 tracked-HTML links (0 broken); 21/21 unit tests PASS; `git diff --check` PASS |
+| Status | `ad747ef0-A`, `ad747ef0-B` **done**. Open/unverified items remain published on Flagged for Review (non-blocking). No provider contacted/booked. |
