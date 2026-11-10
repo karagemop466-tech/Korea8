@@ -117,7 +117,7 @@ The review-search requirement is therefore **partially satisfied**: review servi
 
 ## 9. Requirements and structural verification
 
-[requirements-traceability.json](requirements-traceability.json) maps all 16 request-level requirements to artifacts and primary sources. At the pre-publication review stage, 13 are satisfied and three are partial: review-backed selection (Yelp retrieval block), PR/merge, and exact-commit live deployment. The two deployment items will be updated only after those steps actually complete; review-backed selection remains limited and is not presented as fully verified.
+[requirements-traceability.json](requirements-traceability.json) maps all 16 request-level requirements to artifacts and primary sources. After publication, 15 are satisfied and one is partial: review-backed selection remains limited by Yelp’s retrieval block. PR/merge and exact-commit deployment are complete and are not asserted before their receipts below.
 
 The canonical site has 11 pages, 42 detailed requirements, 29 provider identities (26 CSLB records plus three unresolved), 135 sources, 60 flags, 10 ranked candidates, one restoration partner, 18 held-back identities, three owner-reported estimates, five official fee rows, six cost drivers and 23 review observations.
 
@@ -134,4 +134,10 @@ Final command results are recorded below after the complete rerun. Structural so
 - `python scripts/stage_overflow_pages.py` — **45** linked public files staged.
 - `python scripts/wording_guard.py` and `git diff --check` — clean.
 
-**PR / merge / exact-commit Pages deployment:** pending. This section must not be interpreted as a deployment claim until the receipt is inserted and linked from `COORDINATION.md` and `overflow-integration/data/deployment.json`.
+**PR / merge / exact-commit Pages deployment:** COMPLETE.
+
+- Integration PR: **[#76](https://github.com/karagemop466-tech/Korea8/pull/76)** — merged 2026-11-10T06:09:23Z, merge commit `0e80a1f0e8d751b6e3dda5654eb60fcbb19436b2`.
+- Workflow: **[42766610599](https://github.com/karagemop466-tech/Korea8/actions/runs/42766610599)** — build, 28-check verifier, 40 tests, independent audit, 45-file staging, Pages deployment and runner-side live HTTPS assertions all succeeded for the exact merge commit.
+- GitHub Pages legacy build for `0e80a1f0` also reports **built**, no error.
+- Independent cache-busted live fetches confirmed `decision-analysis.html` (corrected rubric/order), `verification.html` (new audit links), `flagged-for-review.html` (60 flags), this report and `requirements-traceability.json`.
+- Public deployment record: `overflow-integration/data/deployment.json`. Coordination receipt: `COORDINATION.md` session `arena/4b81abe2-korea8`.

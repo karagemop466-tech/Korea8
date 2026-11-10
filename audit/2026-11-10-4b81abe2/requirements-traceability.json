@@ -3,8 +3,8 @@
   "checked": "2026-11-10",
   "summary": {
     "requirements": 16,
-    "satisfied": 13,
-    "partially_satisfied": 3,
+    "satisfied": 15,
+    "partially_satisfied": 1,
     "blocking": 0
   },
   "rows": [
@@ -84,7 +84,7 @@
       "brief_item": 10,
       "requirement": "Review repository and flag irregularities",
       "status": "satisfied",
-      "artifact": "audit/2026-11-10-4b81abe2/REPORT.md; F-32/F-39/F-40/F-50–F-56",
+      "artifact": "audit/2026-11-10-4b81abe2/REPORT.md; F-32/F-39/F-40/F-50–F-55/F-65–F-69",
       "evidence": "Topic split, open PRs, workflow/branch/run-card/raster issues, scoring/source metadata and open-PR discrepancies documented",
       "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8"
     },
@@ -123,17 +123,17 @@
     {
       "brief_item": 15,
       "requirement": "PR to main, merge autonomously, do not merge broken site",
-      "status": "partially_satisfied",
-      "artifact": "Pending final PR/deployment receipt",
-      "evidence": "Local build and 27-check verifier must pass before PR; exact-commit workflow and live routes required after merge",
+      "status": "satisfied",
+      "artifact": "PR #76; merge commit 0e80a1f0e8d751b6e3dda5654eb60fcbb19436b2",
+      "evidence": "Local 28-check verifier and 40 tests passed before merge; exact-commit workflow 42766610599 succeeded, including independent audit and live HTTPS assertions.",
       "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/actions/workflows/overflow-pages.yml"
     },
     {
       "brief_item": 16,
       "requirement": "Confirm Pages deployment and record PR/merge result",
-      "status": "partially_satisfied",
-      "artifact": "Pending deployment.json and COORDINATION.md final receipt",
-      "evidence": "To be completed after exact-merge workflow and cache-busted HTTPS checks; not claimed in advance",
+      "status": "satisfied",
+      "artifact": "overflow-integration/data/deployment.json; COORDINATION.md final receipt; live GitHub Pages routes",
+      "evidence": "PR #76 merged 2026-11-10T06:09:23Z; workflow and legacy Pages built for 0e80a1f0; decision, verification, flags, report and traceability fetched live cache-busted.",
       "official_or_primary_source": "https://api.github.com/repos/karagemop466-tech/Korea8/pages"
     }
   ]

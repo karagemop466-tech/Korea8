@@ -1,9 +1,9 @@
 {
-  "status": "Live — PR #73 merged; exact-commit workflow (run 42765995940) and Pages build succeeded; live HTTPS pages verified on 2026-11-10",
-  "pr": "https://github.com/karagemop466-tech/Korea8/pull/73",
-  "merge_commit": "3d1ca831163bbd22cc195ff629803a95be545b48",
-  "workflow_run": "https://github.com/karagemop466-tech/Korea8/actions/runs/42765995940",
+  "status": "Live \u2014 PR #76 merged; exact-commit workflow (run 42766610599) and Pages build succeeded; cache-busted live content verified on 2026-11-10",
+  "pr": "https://github.com/karagemop466-tech/Korea8/pull/76",
+  "merge_commit": "0e80a1f0e8d751b6e3dda5654eb60fcbb19436b2",
+  "workflow_run": "https://github.com/karagemop466-tech/Korea8/actions/runs/42766610599",
   "pages_url": "https://karagemop466-tech.github.io/Korea8/",
   "pages_status": "built",
-  "checked": "2026-11-10T06:05:30+00:00"
+  "checked": "2026-11-10T06:10:56.954476+00:00"
 }
