@@ -1,0 +1,62 @@
+{
+  "session": "arena/6880fb12-korea8",
+  "checked": "2026-11-08",
+  "url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+  "title": "Paint, Patch & Drywall Repair",
+  "publisher": "Heise's Plumbing",
+  "kind": "official-company",
+  "retrieval": "direct fetch_page chunks 0 and 1",
+  "related_license": {
+    "number": "1089561",
+    "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+    "classifications": ["C-36", "C-10", "A", "C-20"],
+    "missing_for_restoration_self_performance": ["B", "C-9"],
+    "note": "The service page does not change the CSLB classification record. The restoration contracting party and lawful contract structure remain unresolved."
+  },
+  "supports": [
+    {
+      "quote": "Our technicians repair holes, patch drywall cutouts made during maintenance work, sand surfaces smooth, and apply touch-up paint to help blend repairs with surrounding interior walls.",
+      "chunk": 0
+    },
+    {
+      "quote": "From minor doorknob impacts to plumbing access patch-ups, we deliver practical wall maintenance that keeps your building looking well-cared for.",
+      "chunk": 0
+    },
+    {
+      "quote": "Restoring drywall cutouts made during pipe, drain, or valve maintenance and inspection.",
+      "chunk": 0
+    },
+    {
+      "quote": "Repairing dried water-damaged ceiling drywall after underlying plumbing leaks are resolved.",
+      "chunk": 0
+    },
+    {
+      "quote": "Patching drywall inspection openings cut during pipe, drain, or valve repair work.",
+      "chunk": 0
+    },
+    {
+      "quote": "Replacing water-softened ceiling drywall after plumbing leak repairs are verified.",
+      "chunk": 0
+    },
+    {
+      "quote": "We respect tenant schedules and coordinate service calls to minimize downtime and inconvenience.",
+      "chunk": 1
+    },
+    {
+      "quote": "Yes, after underlying plumbing or electrical repairs are completed and verified, we patch drywall access cutouts and prepare surfaces for paint.",
+      "chunk": 1
+    },
+    {
+      "quote": "Yes, we service residential homes, apartment unit turnovers, multi-family properties, and commercial suites across San Francisco and the Peninsula.",
+      "chunk": 1
+    }
+  ],
+  "decision_effect": "Strongest conditional all-in-one service lead: the company expressly advertises post-plumbing drywall/ceiling patching, paint touch-up and tenant-schedule coordination, in addition to adjacent tub waste-and-overflow ceiling-access cases. This is service evidence, not proof of acceptance, price, availability, workmanship or licensed restoration self-performance.",
+  "limitations": [
+    "Company self-published service description; no provider was contacted.",
+    "No price, opening size, texture-match guarantee, warranty or schedule is stated for this job.",
+    "CSLB #1089561 has no B or C-9; name the properly licensed restoration party or lawful subcontract structure before hiring.",
+    "The page's displayed review rating/count is not independently verified and must not be published as a verified numeric review.",
+    "Extensive sagging or moisture-damaged ceiling drywall may require panel replacement rather than a basic patch, per the same page."
+  ]
+}

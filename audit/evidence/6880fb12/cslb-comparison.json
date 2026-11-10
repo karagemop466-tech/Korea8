@@ -1,0 +1,14 @@
+{
+  "checked": "2026-11-08",
+  "rows_compared": 23,
+  "field_differences": [],
+  "fields": [
+    "legal_name",
+    "registered_city",
+    "phone",
+    "classifications",
+    "expiry",
+    "status"
+  ],
+  "note": "Workers-compensation summaries are recorded in cslb.json; wording normalization is not treated as a field mismatch."
+}
