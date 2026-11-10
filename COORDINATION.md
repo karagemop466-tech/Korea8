@@ -1169,3 +1169,19 @@ Prior canonical implementation tasks are done. This session preserves existing p
 - Corrected file scope: workflow is `.github/workflows/overflow-pages.yml` (not the initially named `pages.yml`). Generated report timestamp changes are included.
 - Pages GET API reports legacy root publishing. PUT to change `build_type=workflow` returned HTTP 403 `Resource not accessible by integration`; setting unchanged, limitation published. Custom workflow now uploads only the 20-file linked public closure, but legacy publishing is not claimed eliminated.
 - No provider contacted/booked. No private circumstances introduced. Public repository/history remain public; staging does not redact historical records.
+## Session `arena/35739f62-korea8` — independent status audit (2026-11-10)
+
+| Task | Status | Owner | Files in scope |
+|---|---|---|---|
+| Audit existing canonical site, current deployment and actionable evidence gaps | in progress | `arena/35739f62-korea8` | `audit/REPORT_2026-11-10_35739f62.md`, `COORDINATION.md` |
+
+Arena fixes this session to its existing branch; no separate session branch will be created. Existing canonical site and other sessions' scopes are read-only. This audit does not claim that automated link checks establish factual accuracy or contractor availability.
+
+### Status audit result
+
+- **Status:** done. Selective current official-source checks and limitations are recorded in [`audit/REPORT_2026-11-10_35739f62.md`](audit/REPORT_2026-11-10_35739f62.md); the full repository was not freshly verified line by line by this session.
+- **Sources:** [Ace CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Heise CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561), [Ace](https://www.aceplumbingandrooter.com/), [Heise](https://www.heisesplumbing.com/), [Yelp search](https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA), [live dashboard](https://karagemop466-tech.github.io/Korea8/), [successful workflow](https://github.com/karagemop466-tech/Korea8/actions/runs/42535293518).
+- **Checks:** canonical build, 27/27 structural verification checks and 11/11 unit tests passed. Source coverage is not semantic verification or proof of external link health.
+- **Irregularities:** job acceptance, combined restoration, schedule and all-in price remain unconfirmed; user-reported estimates are not independently verified. Historical open PRs remain untouched. The existing flagged page records prior limitations.
+- **Branch note:** the initial `git pull --rebase origin arena/35739f62-korea8` could not find a remote branch because it had not yet been published; rebased on `origin/main` and pushed the initial claim successfully.
+- **Concurrent integration:** main advanced through another session's publication-boundary work before PR #57 could merge. Rebase conflicted in this shared board; both sessions' entries were retained, with no work discarded. Canonical files from main were kept intact.
