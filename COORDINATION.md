@@ -1158,7 +1158,7 @@ Combined local checks before merge commit: build OK; `verify_overflow_site.py` 2
 
 | Task | Status | Owner | Scope |
 |---|---|---|---|
-| Re-run canonical checks; audit publication boundary; publish current limitations and deploy | in progress | `arena/660ab2dd-korea8` | `COORDINATION.md`, `.github/workflows/pages.yml`, `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `scripts/build_overflow_site.py` audit-link insertion, generated canonical pages/reports |
+| Re-run canonical checks; audit publication boundary; publish current limitations and deploy | done | `arena/660ab2dd-korea8` | `COORDINATION.md`, `.github/workflows/pages.yml`, `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `scripts/build_overflow_site.py` audit-link insertion, generated canonical pages/reports |
 
 Prior canonical implementation tasks are done. This session preserves existing provider research without claiming fresh source verification. Fixed Arena branch is used rather than creating another branch. No outreach or booking. Publication staging will exclude unrelated repository material; no private circumstances will be added.
 
@@ -1218,3 +1218,8 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 - Conflict handoff: `origin/main` advanced via PR #55 during integration. Rebase conflicted in this board, the generator's verification paragraph, and generated pages/reports. Preserved both board records, retained the other session's publication-boundary audit/link and staging changes, added this session's audit link and verification limitations, and regenerated outputs. Combined rerun: 27/27 checks, 302 source-linked rows, 311 tracked internal links, 18/18 tests; no other session's work discarded.
 - Main then advanced through PR #57; the subsequent rebase conflicted only in the shared board. Both records were kept, including the independent status audit. No other files were discarded.
 - Main advanced through PR #59 before merge. Rebase conflict was confined to this shared board; retained the deploy receipt and both session records. Rebuilt combined site and reran 27/27 verifier checks and 18/18 tests.
+### 660ab2dd final live verification receipt
+
+PR #59 https://github.com/karagemop466-tech/Korea8/pull/59 merged at 2026-11-10T00:51:51Z as `4982df62597e85a44b0d58af9582931411140534`. Run https://github.com/karagemop466-tech/Korea8/actions/runs/42731535888 succeeded, including runner-side HTTP 200/content verification of index.html, verification.html, flagged-for-review.html and audit/2026-11-10-660ab2dd.md. All implementation/publication tasks done; documented external-source and legacy-setting limitations remain needs review.
+
+Final receipt rebase also retained PR #60 session 47d993da targeted corrections and complete board entry; conflict was board-only.
