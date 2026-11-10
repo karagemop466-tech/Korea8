@@ -1213,3 +1213,4 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 - Initial claim push: branch had no remote ref, so pull from main was used prior to the first push.
 - Integration/deployment remains in progress pending PR and exact-commit live confirmation.
 - Conflict handoff: `origin/main` advanced via PR #55 during integration. Rebase conflicted in this board, the generator's verification paragraph, and generated pages/reports. Preserved both board records, retained the other session's publication-boundary audit/link and staging changes, added this session's audit link and verification limitations, and regenerated outputs. Combined rerun: 27/27 checks, 302 source-linked rows, 311 tracked internal links, 18/18 tests; no other session's work discarded.
+- Main then advanced through PR #57; the subsequent rebase conflicted only in the shared board. Both records were kept, including the independent status audit. No other files were discarded.
