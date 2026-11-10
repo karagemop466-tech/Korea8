@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-10T05:57:18.821068+00:00",
+  "checked_at": "2026-11-10T05:58:57.222191+00:00",
   "result": "PASS",
   "checks_run": 31,
   "checks_passed": 31,
   "checks_failed": 0,
-  "canonical_rows_checked": 357,
+  "canonical_rows_checked": 359,
   "tracked_html_files": 68,
   "checks": [
     {
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "357 rows; offenders: "
+      "detail": "359 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -160,7 +160,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "272 links; offenders: "
+      "detail": "275 links; offenders: "
     }
   ]
 }
