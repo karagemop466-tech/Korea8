@@ -107,16 +107,16 @@
       "id": "RV-07",
       "provider": "Atlas Plumbing & Rooter",
       "platform": "BBB business profile",
-      "observation": "Directly retrieved profile lists bathtub repair/replacement and a customer review about kitchen-sink drain/pipe repair after another plumber could not clear it.",
+      "observation": "BBB profile directly retrieved 2026-11-10: A+ Accredited since 6/3/2021; 0 open / 1 answered complaint (10/29/2024 $295 line-flush charge & 30-day warranty dispute on a $3,660 invoice, rejected by customer); lists (415) 845-9199 & (415) 849-2346.",
       "rating": null,
       "review_count": null,
       "verified": false,
       "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/atlas-plumbing-rooter-1116-116593",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
       "source_ids": [
-        "BBB-ATLAS",
         "CSLB-868994",
-        "ATLAS"
+        "BBB-ATLAS",
+        "BBB-ATLAS-COMP"
       ],
       "limit": "Profile text retrieved, but review authenticity/outcome not independently investigated; adjacent sink work, not this tub job. BBB rating is not a CSLB endorsement."
     },
@@ -124,7 +124,7 @@
       "id": "RV-08",
       "provider": "Expert Plumbing Solutions",
       "platform": "Yelp search index",
-      "observation": "Indexed profile lists bathtub installation/repair and drain installation/repair.",
+      "observation": "Direct SF plumbing category listing retrieved 2026-11-10 without verified individual trip-lever scoring.",
       "rating": null,
       "review_count": null,
       "verified": false,
@@ -186,6 +186,131 @@
         "CSLB-SEARCH"
       ],
       "limit": "Directory-level ratings are not provider-specific; different-provider review is not evidence for a shortlisted firm."
+    },
+    {
+      "id": "RV-12",
+      "provider_id": "P-02",
+      "provider": "Ace Plumbing & Rooter",
+      "platform": "BBB & Angi",
+      "observation": "Direct 2026-11-10 check: BBB Accredited since 8/1/2004, A+ grade, 0 complaints in 3 years, lists Bathtub Installation/Repair. Angi qualitative reviews commend pipe/fixture troubleshooting; one 2023 complaint seeks clearer upfront estimate itemization.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "limit": "BBB letter grade and qualitative comments only; numeric ratings/counts remain blank; Angi thread includes one misfiled Atlas review.",
+      "source_ids": [
+        "CSLB-829071",
+        "BBB-ACE",
+        "ANGI-ACE"
+      ]
+    },
+    {
+      "id": "RV-13",
+      "provider_id": "P-03",
+      "provider": "Heise's Plumbing",
+      "platform": "BBB & Company Reviews Page",
+      "observation": "Direct 2026-11-10 check: BBB shows B- grade (not Accredited), displays superseded canceled #787733, 1 negative 08/14/2024 customer review (Kay S), and 1 unanswered 07/05/2026 complaint whose text is a misfiled Instagram/Meta complaint. Own pages show varying review-volume claims (1,600+ to 2,000+).",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "limit": "Misfiled Meta/Instagram complaint excluded from plumbing score; numeric star ratings remain blank.",
+      "source_ids": [
+        "CSLB-1089561",
+        "CSLB-787733",
+        "BBB-HEISE",
+        "BBB-HEISE-COMP",
+        "HEISE-REVIEWS"
+      ]
+    },
+    {
+      "id": "RV-14",
+      "provider_id": "P-06",
+      "provider": "Fast Response Plumbing & Rooter",
+      "platform": "BBB & Angi",
+      "observation": "Direct 2026-11-10 check: BBB A+ grade (not Accredited), 0 complaints in 3 years, lists 4444 Geary Blvd #203. Angi holds 2011–2015 leak/tile-access reviews with no recent posts; homepage displays a 2026 Yelp badge while Yelp biz URL is HTTP 403.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "limit": "Angi reviews date from 2011–2015; numeric ratings/counts remain blank.",
+      "source_ids": [
+        "CSLB-1024971",
+        "BBB-FAST",
+        "ANGI-FAST"
+      ]
+    },
+    {
+      "id": "RV-15",
+      "provider_id": "P-08",
+      "provider": "We Do Construction",
+      "platform": "BBB",
+      "observation": "Direct 2026-11-10 check: BBB Accredited since 11/24/2025, A+ grade, 0 complaints in 3 years, lists active #1096552.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/general-contractor/we-do-construction-inc-1116-938702",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "limit": "BBB accreditation and 0-complaint record confirmed; numeric ratings remain blank and small-repair acceptance unconfirmed.",
+      "source_ids": [
+        "CSLB-1096552",
+        "BBB-WEDO"
+      ]
+    },
+    {
+      "id": "RV-16",
+      "provider_id": "P-04",
+      "provider": "Expert Plumbing Solutions",
+      "platform": "BBB",
+      "observation": "Direct 2026-11-10 check: BBB Not Rated, 0 complaints in 3 years, 1 employee listed; BBB profile displays stale 10/31/2026 license expiry vs CSLB 10/31/2028.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "limit": "Third-party expiry field out of date; numeric ratings remain blank.",
+      "source_ids": [
+        "CSLB-977638",
+        "BBB-EXPERT"
+      ]
+    },
+    {
+      "id": "RV-17",
+      "provider_id": "P-09",
+      "provider": "Ayoob & Peery",
+      "platform": "BBB",
+      "observation": "Direct 2026-11-10 check: BBB A+ grade (not Accredited), 0 complaints in 3 years, 80 employees noted.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ayoob-peery-plumbing-1116-13396",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "limit": "Commercial positioning noted on official site; small occupied-unit trip-lever fit unconfirmed.",
+      "source_ids": [
+        "CSLB-392967",
+        "BBB-AYOOB"
+      ]
+    },
+    {
+      "id": "RV-18",
+      "provider_id": "P-10",
+      "provider": "Bernal Hill Drywall",
+      "platform": "BBB & Angi",
+      "observation": "Direct 2026-11-10 check: BBB Not Rated (0 complaints in 3 years); Angi lists Drywall - Repair and Popcorn Acoustic Ceiling Texture as New on Angi.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/insulation-contractors/bernal-hill-drywall-inc-1116-941558",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "limit": "No independent customer reviews retrieved on BBB or Angi; numeric ratings remain blank.",
+      "source_ids": [
+        "CSLB-995163",
+        "BBB-BERNAL",
+        "ANGI-BERNAL"
+      ]
     }
   ]
 }
