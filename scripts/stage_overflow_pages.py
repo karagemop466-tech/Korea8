@@ -39,7 +39,10 @@ def public_files(root=ROOT):
             parser.feed(source.read_text())
             for url in parser.urls:
                 parsed = urlsplit(url)
+                # tel:, data:, mailto: and any other scheme are not files to stage
                 if parsed.scheme or parsed.netloc or not parsed.path:
+                    continue
+                if parsed.path.startswith('data:'):
                     continue
                 path = unquote(parsed.path)
                 target = root / path.lstrip('/') if path.startswith('/') else source.parent / path
