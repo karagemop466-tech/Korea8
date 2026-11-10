@@ -6,7 +6,7 @@
       "id": "C1",
       "criterion": "Combined plumbing + building capability on one licence",
       "weight": 0.3,
-      "basis": "B + C-36 on the checked CSLB record supports a single prime contract covering the concealed drainage work and the ceiling repair, subject to BPC §7057. A C-36-only licence needs a named restoration party.",
+      "basis": "B + C-36 on the checked CSLB record is relevant to combined plumbing and building work, subject to BPC §7057 and the actual scope. A named, appropriately qualified restoration party and contract structure remain to be confirmed.",
       "source_ids": [
         "BPC-7057",
         "CSLB-C36",
@@ -93,7 +93,7 @@
         "C4": 4,
         "C5": 1
       },
-      "why": "Broadest single-licence coverage in the set: B + C-36 plus A, C-4, C-16 and C-10 on the CSLB record, so one prime contract can lawfully carry both the concealed pipe work and the ceiling repair if it names the trades. Licensed since 2003 with a current workers-compensation policy; the company advertises HOA and property-manager work, which matches a tenant-occupied building. Indexed review text mentions bathtub repair, but no source shows this trip-lever job.",
+      "why": "Broadest single-licence coverage in the set: B + C-36 plus A, C-4, C-16 and C-10 on the CSLB record, a useful combination for a potential single prime contract, subject to the actual scope, contract structure and applicable licensing rules. Licensed since 2003 with a current workers-compensation policy; the company advertises HOA and property-manager work, which matches a tenant-occupied building. Indexed review text mentions bathtub repair, but no source shows this trip-lever job.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. Owner-supplied comparators for replacement-type scopes are $550 and $614 (owner-reported, unverified); the official DBI Category 1P plumbing fee is $290 if a permit applies (a fee, not a price).",
       "ask": "Ask for one written combined scope: tub-side attempt first, ceiling opening method, named drywall/texture party, occupied-unit schedule, and a fixed price with the permit position stated. Final verification gate: Confirm drywall/texture/paint party, occupied-unit protections and small-job acceptance.",
@@ -117,7 +117,9 @@
       "website": "https://www.heisesplumbing.com/",
       "source_ids": [
         "CSLB-1089561",
-        "HEISE"
+        "HEISE",
+        "HEISE-INGLESIDE",
+        "HEISE-PATCH"
       ],
       "flags": [
         "F-01",
@@ -131,11 +133,11 @@
         "C4": 4,
         "C5": 1
       },
-      "why": "The only provider with company-published San Francisco tub waste-and-overflow cases, including one that says the crew accessed the exterior ceiling to remove the old overflow. That is the closest published match to the below-ceiling fallback. The licence is C-36 + C-10 + A + C-20 with no B or C-9, so the drywall half must be subcontracted or separately contracted; the case page also embeds a 404 template block.",
+      "why": "Heise’s publishes a San Francisco tub waste-and-overflow case describing exterior-ceiling access and separately advertises plumbing-access patching, ceiling patching and paint touch-ups. Both are company claims, not independent proof of performance or acceptance of this job. Its CSLB licence lists C-36, C-10, A and C-20, but not B or C-9; confirm the restoration party and licensing/contract structure. The case page embeds a 404 template block.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources.",
-      "ask": "Ask who performs and warrants the ceiling patch and texture, whether the same crew can do both under one contract, and for a price for the two-path scope. Final verification gate: Confirm whether exterior-ceiling case resembles this storage-unit access; provide direct reference and restoration subcontractor.",
-      "short_why": "only company-published San Francisco ceiling-access tub waste-and-overflow case, but no B or C-9, so the ceiling party must be named"
+      "ask": "Ask whether one contract covers both trades, who performs and warrants ceiling patch/texture/paint, the applicable licensing and scope, occupied-unit protections, a direct reference, and an itemized two-path price.",
+      "short_why": "published ceiling-access overflow case and advertised plumbing-access drywall and ceiling patching; restoration party and contract structure unconfirmed"
     },
     {
       "provider_id": "P-01",

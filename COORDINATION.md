@@ -1195,3 +1195,23 @@ Arena fixes this session to its existing branch; no separate session branch will
 - Task implementation **done**; Pages setting limitation and external-source freshness remain **needs review**, publicly documented on the Flagged for Review page and linked audit.
 
 - 660ab2dd concurrent integration: PR #57 advanced main while PR #59 was open. Rebase conflict was confined to this board; both sessions’ complete append-only entries were retained. No canonical data changes were discarded.
+
+
+## Session `arena/47d993da-korea8` — current independent review (2026-11-10)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Current canonical-site, official-source and deployment audit; targeted evidenced corrections and final integration | in progress | `arena/47d993da-korea8` | `audit/2026-11-10-47d993da/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root generated bathtub pages/reports and `COORDINATION.md` |
+
+Prior overlapping claims on this board predate the final PR #54 by over 60 minutes and are superseded by the completed integration handoff. No outstanding PR is assumed safe to merge. This session is constrained to the existing Arena branch, rather than creating a task branch. Preserve other sessions' work; rebase before each push.
+
+### 2026-11-10 review and integration record
+
+- Research/corrections completed; full details and limitations: `audit/2026-11-10-47d993da/REPORT.md`. Primary sources read: [Heise's advertised drywall/ceiling repair](https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/), [Heise CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561), [Ace CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Rapid Flow CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649), [Ace website](https://www.aceplumbingandrooter.com/), [Watco instructions](https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf), [CSLB guidance on bids](https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx), and [BPC §7057](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.). Acknowledged earlier [PR #53](https://github.com/karagemop466-tech/Korea8/pull/53) audit, without merging that independently scoped branch.
+- Fixed Heise's missing advertised repair evidence while preserving the restoration licensing and acceptance gate; removed unsupported absolute and overconfident licensing wording; corrected Watco attribution and owner-vs-proposed provenance. Ranking scores unchanged. 46 flags remain published.
+- Automated checks: 27/27 structural checks, 302 linked rows, 236 tracked-HTML internal links, 13/13 tests, and `git diff --check` passed. Link coverage alone does not prove source entailment or external link reachability. This was a **targeted** source review, not a fresh substantive line-by-line re-verification of all rows. No provider was contacted; exact scope, schedule, contract and price remain unconfirmed.
+- Initial claim push: branch had no remote ref, so pull from main was used prior to the first push.
+- Integration/deployment remains in progress pending PR and exact-commit live confirmation.
+- Conflict handoff: `origin/main` advanced via PR #55 during integration. Rebase conflicted in this board, the generator's verification paragraph, and generated pages/reports. Preserved both board records, retained the other session's publication-boundary audit/link and staging changes, added this session's audit link and verification limitations, and regenerated outputs. Combined rerun: 27/27 checks, 302 source-linked rows, 311 tracked internal links, 18/18 tests; no other session's work discarded.
+- Main then advanced through PR #57; the subsequent rebase conflicted only in the shared board. Both records were kept, including the independent status audit. No other files were discarded.
+- Main advanced through PR #59 before merge. Rebase conflict was confined to this shared board; retained the deploy receipt and both session records. Rebuilt combined site and reran 27/27 verifier checks and 18/18 tests.

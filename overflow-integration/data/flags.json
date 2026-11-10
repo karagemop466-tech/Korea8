@@ -243,13 +243,14 @@
       "severity": "Medium",
       "category": "Technical evidence",
       "title": "Heise’s case studies are self-published and contain a 404 template block",
-      "detail": "Rechecked 2026-11-08: Ingleside, Mission and Marina pages still render case content alongside a Page Not Found (404) template block. Ingleside says exterior ceiling; that is not confirmed to be the storage-unit ceiling below this tub. None proves drywall restoration.",
+      "detail": "Rechecked 2026-11-08: Ingleside, Mission and Marina pages still render case content alongside a Page Not Found (404) template block. Ingleside says exterior ceiling; that is not confirmed to be the storage-unit ceiling below this tub. None proves drywall restoration for that case; the company separately advertises drywall/ceiling patching.",
       "action": "Treat as adjacent self-published evidence only; ask for a direct reference, exact access location and named restoration party.",
       "source_ids": [
         "HEISE-INGLESIDE",
         "HEISE-MISSION",
         "HEISE-MARINA",
-        "CSLB-1089561"
+        "CSLB-1089561",
+        "HEISE-PATCH"
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "status": "Open"
@@ -259,12 +260,13 @@
       "severity": "Medium",
       "category": "Provider fit",
       "title": "Heise’s license has no B or C-9",
-      "detail": "#1089561 shows A/C-10/C-20/C-36. It is a strong plumbing case-study lead, not a verified drywall/restoration contractor.",
-      "action": "Name a properly licensed restoration partner or contract structure.",
+      "detail": "CSLB #1089561 lists A/C-10/C-20/C-36, not B or C-9. The company advertises plumbing-access and ceiling patching, but the person performing restoration, licensing and contract structure for this job remain unconfirmed.",
+      "action": "Ask the contractor to identify the restoration party and confirm the appropriate licensing and contract structure for the actual scope.",
       "source_ids": [
         "CSLB-1089561",
         "CSLB-C9",
-        "BPC-7057"
+        "BPC-7057",
+        "HEISE-PATCH"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "status": "Open"

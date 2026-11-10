@@ -973,6 +973,30 @@
       "retrieval": "direct",
       "supports": "PR context, checks, merge blockers and merge refs.",
       "limitations": "Platform documentation, not proof of a specific merge."
+    },
+    {
+      "id": "HEISE-PATCH",
+      "url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+      "title": "Heise’s Plumbing — paint, patch and drywall repair",
+      "publisher": "Heise’s Plumbing",
+      "kind": "official-company",
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "Company advertises repair of plumbing access cutouts, ceiling patching and paint touch-ups in San Francisco and the Peninsula.",
+      "limitations": "Company advertisement, not independently verified execution or this job’s acceptance, pricing, contracting structure, or identity and licence of the restoration party.",
+      "official": true
+    },
+    {
+      "id": "CSLB-FINDING",
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "title": "CSLB — Finding the right licensed contractor",
+      "publisher": "California Contractors State License Board",
+      "kind": "official-government",
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "CSLB recommends at least three written bids on identical plans, specifications and scope.",
+      "limitations": "General consumer guidance, not evidence of provider availability or comparable quotes for this job.",
+      "official": true
     }
   ]
 }
