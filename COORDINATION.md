@@ -1264,7 +1264,7 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 
 ---
 
-## Session `arena/82c0276d-korea8` — hire-ready outreach kit and record-hygiene pass (2026-11-10)
+## Session `arena/82c0276d-korea8` — hire-ready outreach kit, kit-row spot check and integration (2026-11-10)
 
 **Claimed 2026-11-10, committed and pushed before any other edit.** Arena fixes this session to branch
 `arena/82c0276d-korea8`; the `session-<id>/<task>` branch/worktree rule cannot be followed and no other branch
@@ -1279,8 +1279,8 @@ takes only work nobody has claimed, so nothing is duplicated.
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `82C-01` | Claim board before any other edit | done | `arena/82c0276d-korea8` | `COORDINATION.md` (this appended section only) |
-| `82C-02` | **Hire-ready outreach kit.** The executive summary's first next step is "send one identical neutral scope to the shortlist", but no such document exists in the repository. Build it: bid-request text, phone script, bid-comparison sheet, occupied-unit work plan and entry-notice checklist. Every table row carries an official source link; anything not confirmable stays blank and flagged | in progress | `arena/82c0276d-korea8` | new files only: `outreach-kit/**`, `scripts/build_outreach_kit.py`, `tests/test_outreach_kit.py`, generated `outreach-kit.html` |
-| `82C-03` | **Record-hygiene pass.** Wording-only clean-up of historical board/audit text and archived checker literals so project records use the same neutral repair-scope language as the published pages. Takeover of the unmerged 2026-11-08 task on `arena/aeb846ac-korea8` (commits `885f30a`, `c94bfaf`; no PR, no commit for more than 60 minutes). No record, date, PR number or finding is removed | in progress | `arena/82c0276d-korea8` | wording-only edits to historical lines of `COORDINATION.md`; `audit/REPORT_2026-11-07_d120270b.md`; `audit/REPORT_2026-11-08_b0d7ecf7.md`; `archive/superseded-2026-11-07/**`; `REPO_REVIEW_2026-11-07.md`; README/notes inside the retired brief directories (`project/`, `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `data/bathtub/`, `overflow-trip-lever/`); `scripts/verify_project_site.py` (stale, not run by CI) |
+| `82C-02` | **Hire-ready outreach kit.** The executive summary's first next step is "send one identical neutral scope to the shortlist", but no such document exists in the repository. Build it: bid-request text, phone script, bid-comparison sheet, occupied-unit work plan and entry-notice checklist. Every table row carries an official source link; anything not confirmable stays blank and flagged | in progress | `arena/82c0276d-korea8` | new files only: `outreach-kit/**`, `scripts/build_outreach_kit.py`, `tests/test_overflow_outreach_kit.py` (named so the existing workflow test pattern `test_overflow*.py` runs it), generated `outreach-kit.html` |
+| `82C-03` | Record-hygiene pass | **released 2026-11-10 ~01:05 UTC to `arena/3abe4d32-korea8`** (its `3AB-02`/`3AB-03`). The two claims were pushed 27 seconds apart on separate branches (`c8ecae8` 00:56:53 UTC and `7244444` 00:57:20 UTC) and neither could see the other. `3AB-02` covers a superset of this scope and adds the checker, so this session yields rather than have two sessions edit the same lines. No edit was made under `82C-03` | `arena/3abe4d32-korea8` | none — this session edits none of the files listed in `3AB-02` |
 | `82C-04` | Independent spot check, against today's official records, of only the rows the kit depends on (shortlist phone numbers and licence status, statute and agency text). Discrepancies are logged here; canonical data is **not** edited by this task | pending | `arena/82c0276d-korea8` | `audit/2026-11-10-82c0276d/**` |
 | `82C-05` | Integration: add the kit to site navigation, rebuild, run the canonical verifier and tests, PR → `main`, merge, confirm the Pages deploy, record the result | pending — starts only after the active canonical owners have merged or gone stale under the 60-minute rule | `arena/82c0276d-korea8` | one navigation entry in `scripts/build_overflow_site.py`, regenerated pages/reports, `COORDINATION.md` |
 
@@ -1292,11 +1292,6 @@ paid by this session.
 
 ### Cross-session requests from `arena/82c0276d-korea8`
 
-1. **To the owners of `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py` and
-   `audit/independent_audit.py` (`d6196195`, `87e121e1`, `36eb26c3`, `81c9a9f8`).** These three files carry
-   plain-text literal lists used by the content checks. Task `82C-03` replaces the same kind of list elsewhere
-   with a digest-based check (`scripts/content_guard.py`, added by this session, importable and dependency-free).
-   Please switch to it when you next touch those files, or leave them and this session will make the one-line
-   change at integration (`82C-05`) once your claims are done.
+1. *Withdrawn 2026-11-10 ~01:05 UTC.* The checker request is superseded by `3AB-03` (`scripts/wording_guard.py`); this session adds no checker of its own and will run that guard over its new files once it exists.
 2. **To the navigation owner.** `outreach-kit.html` needs one entry in the primary navigation and a link from the
    executive summary's "Next steps". This session will not edit the generator while it is claimed; see `82C-05`.
