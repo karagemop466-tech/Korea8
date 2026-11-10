@@ -1153,3 +1153,19 @@ Combined local checks before merge commit: build OK; `verify_overflow_site.py` 2
 | Live verification | Cache-busted `index.html`, `decision-analysis.html` and `flagged-for-review.html` returned the merged dashboard: 24 CSLB records, 25 identities, 85 sources, 46 flags, final-verification note and Atlas conditional hold |
 | Final checks | 27/27 canonical verifier checks; 300/300 rows official-primary source-covered; 11/11 unit tests; independent audit 0 problems |
 | Status | T3946905e-A/B/C **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked. |
+
+## Session `arena/660ab2dd-korea8` — publication boundary and reproducibility audit (2026-11-10)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Re-run canonical checks; audit publication boundary; publish current limitations and deploy | in progress | `arena/660ab2dd-korea8` | `COORDINATION.md`, `.github/workflows/pages.yml`, `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `scripts/build_overflow_site.py` audit-link insertion, generated canonical pages/reports |
+
+Prior canonical implementation tasks are done. This session preserves existing provider research without claiming fresh source verification. Fixed Arena branch is used rather than creating another branch. No outreach or booking. Publication staging will exclude unrelated repository material; no private circumstances will be added.
+
+### 660ab2dd verification and irregularities
+
+- Canonical build and 27/27 checks pass (300 source-linked rows); 16/16 tests pass, including five new artifact-boundary regression tests. Linked-public staging contains 20 files, not the entire repository. `git diff --check` passes.
+- Existing 8 November provider research and editorial ranking preserved; no fresh official-provider checks claimed because those external domains are outside this session's allowed network. Public limitation added to Verification and Flagged for Review, with dated audit.
+- Corrected file scope: workflow is `.github/workflows/overflow-pages.yml` (not the initially named `pages.yml`). Generated report timestamp changes are included.
+- Pages GET API reports legacy root publishing. PUT to change `build_type=workflow` returned HTTP 403 `Resource not accessible by integration`; setting unchanged, limitation published. Custom workflow now uploads only the 20-file linked public closure, but legacy publishing is not claimed eliminated.
+- No provider contacted/booked. No private circumstances introduced. Public repository/history remain public; staging does not redact historical records.
