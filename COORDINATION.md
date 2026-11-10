@@ -1498,3 +1498,27 @@ the closure is computed from `index.html`.
 `audit/2026-11-10-b5ed3a43/REPORT.md`; they are non-blocking and none was edited in the canonical tree by this
 session. No provider was contacted, booked or paid. No private circumstance is recorded anywhere in this
 repository or on the published site.
+
+### `0cc-05` — PR, merge and live deployment record (session `arena/0ccaa3f3-korea8`, 2026-11-10)
+
+| Item | Result |
+|---|---|
+| Integration PR | **#67** — https://github.com/karagemop466-tech/Korea8/pull/67 (`arena/0ccaa3f3-korea8` → `main`) |
+| Merge state before merge | `mergeable: MERGEABLE`, `mergeStateStatus: CLEAN` |
+| Merge | **MERGED** 2026-11-10T01:11:31Z, merge commit `afde0bc4ffd238492c36cf36cdc3401e6f1fcaf6` |
+| Workflow `Publish overflow dashboard` | run 42733975762 — **completed/success** for the exact merge commit `afde0bc4` |
+| Workflow `pages build and deployment` | run 42733975310 — completed/**cancelled** for `afde0bc4`, superseded by the run for `1e7f03f1` (PR #68 merged immediately afterwards). Recorded, not treated as a failure. |
+| Legacy Pages build API | `built`, commit `afde0bc4`, updated 2026-11-10T01:12:24Z, `error: null`. The following build for `1e7f03f1` is also `built` (01:13:01Z). |
+| Pages site status | `status: built`, `https://karagemop466-tech.github.io/Korea8/`, `build_type` still reports `legacy` — see `F-34`. |
+| Ancestry | `git merge-base --is-ancestor afde0bc4 origin/main` → **true**; this session's work is in `main`. |
+| Live content, cache-busted | `code-and-permit.html?v=…` returns **reviewed 2026-11-10** and the new **C-14** row with the Veterans Day closure verbatim. `audit/2026-11-10-0ccaa3f3/receipts/cslb-complaint-297604.json` is served publicly, proving the staged closure published this session's audit. |
+| Merged-artifact checks at `afde0bc4` | `F-49`, `F-50`, `F-51` all present in `flagged-for-review.html`; all seven `audit/2026-11-10-0ccaa3f3/**` links present in `verification.html`; "Veterans Day" present in `code-and-permit.html`; the closure and SFBC §106A.2(10) controls present in `OVERFLOW_EXECUTIVE_SUMMARY.md`. |
+| Local gates before merge | build 11 pages; verifier **27/27 PASS** (341 source-covered rows, 256 tracked-HTML links, 0 broken); **21/21** overflow unit tests; independent audit `pages=11 rows=341 with_source=341 blank_marked=0 problems=0`; staging 32 files; `git diff --check` clean; banned-pattern gate zero hits. |
+| Status | `0cc-01` … `0cc-05` **done**. All 51 flags remain published on Flagged for Review and are non-blocking. No provider contacted, booked or paid. |
+
+**Concurrency note.** `main` advanced eleven times during this session (PRs #55–#68 across sessions
+`660ab2dd`, `35739f62`, `47d993da`, `d6196195`, `87e121e1`, `b5ed3a43`). Three rebases conflicted, all
+confined to this shared board, and every one was resolved by retaining **both** sessions' complete
+append-only records — no other session's work was discarded or overwritten. This session's canonical
+data edits were made only after PRs #56/#61/#62/#65 had merged, and were verified not to duplicate
+anything already on `main` at `98b3d09` before being applied.
