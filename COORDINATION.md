@@ -1153,3 +1153,17 @@ Combined local checks before merge commit: build OK; `verify_overflow_site.py` 2
 | Live verification | Cache-busted `index.html`, `decision-analysis.html` and `flagged-for-review.html` returned the merged dashboard: 24 CSLB records, 25 identities, 85 sources, 46 flags, final-verification note and Atlas conditional hold |
 | Final checks | 27/27 canonical verifier checks; 300/300 rows official-primary source-covered; 11/11 unit tests; independent audit 0 problems |
 | Status | T3946905e-A/B/C **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked. |
+
+---
+
+## Session `arena/36eb26c3-korea8` — independent re-verification, repo review and integration (2026-11-10)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `36e-01` | Claim the board; record scope before any edit | in progress | `arena/36eb26c3-korea8` | `COORDINATION.md` |
+| `36e-02` | Line-by-line re-read of every official primary source already cited (24 CSLB licence records + code/company/statute sources); record per-field pass/fail; correct only what evidence supports | unclaimed | — | `overflow-integration/data/*.json`, `audit/2026-11-10-36eb26c3/**` |
+| `36e-03` | Repository review line by line; flag irregularities; do not delete unrelated work | unclaimed | — | `REPO_REVIEW_2026-11-10.md`, `COORDINATION.md` |
+| `36e-04` | Site/dashboard verification: rebuild, verify, unit tests, link check, privacy sweep, consolidate duplicate published routes | unclaimed | — | `scripts/**`, root canonical HTML/CSS, tests |
+| `36e-05` | PR, merge to `main`, confirm GitHub Pages deploy, record result | unclaimed | — | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+
+**Claim boundaries:** Arena fixes this session to `arena/36eb26c3-korea8`, so the `session-<id>/<task>` worktree rule is not available and all work stays on this branch (same exception recorded by sessions `215f5c79` and `3946905e`). No other session has an active bathtub claim on current `main`; open PRs #53, #51, #49, #44, #39, #38, #35 and #7 are read-only references and are not assumed merge-ready. No provider will be contacted, booked or paid. The owner's private administrative circumstances are never written to this repository, any commit message, the site, or any public record — this session states only what official code, licensing and fee sources say. Historical claims older than 60 minutes are not silently taken over.
