@@ -1261,3 +1261,67 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 | Status | `D619-T1`, `D619-T2`, `D619-T3` **done**. Open/unverified items remain published on Flagged for Review (`needs review`, non-blocking). No provider contacted/booked. |
 
 **Rebase conflict resolution (2026-11-10):** While PR #56 was open, concurrent sessions `arena/660ab2dd-korea8`, `arena/35739f62-korea8` and `arena/47d993da-korea8` merged PRs #55, #57, #58, #59, #60 and #61 onto `main` (`b30f89d`), adding `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `audit/REPORT_2026-11-10_35739f62.md`, `audit/2026-11-10-47d993da/REPORT.md`, `HEISE-PATCH` / `CSLB-FINDING` sources, Heise/Watco/BPC §7057(b) clarifications and live-HTTPS workflow checks. Rebased `arena/d6196195-korea8` onto `origin/main` (`b30f89d`) preserving 100% of all three concurrent sessions' board records, data refinements, scripts, workflow and tests; applied this session's 2026-11-10 fresh official-source re-verification timestamps (`as_of: 2026-11-10`, 24/24 CSLB banner timestamps `11/9/2026 4:49 PM`) and linked `audit/2026-11-10-d6196195/REPORT.md` + `freshness-check.json` alongside the concurrent audits. Combined build, 27/27 verifier checks and 18/18 unit tests pass.
+
+## Session `arena/81c9a9f8-korea8` — final line-by-line re-verification, repo hygiene and publication (2026-11-10)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Re-run canonical checks; audit publication boundary; publish current limitations and deploy | in progress | `arena/660ab2dd-korea8` | `COORDINATION.md`, `.github/workflows/pages.yml`, `scripts/stage_overflow_pages.py`, `tests/test_overflow_publication.py`, `audit/2026-11-10-660ab2dd.md`, `scripts/build_overflow_site.py` audit-link insertion, generated canonical pages/reports |
+
+Prior canonical implementation tasks are done. This session preserves existing provider research without claiming fresh source verification. Fixed Arena branch is used rather than creating another branch. No outreach or booking. Publication staging will exclude unrelated repository material; no private circumstances will be added.
+
+### 660ab2dd verification and irregularities
+
+- Canonical build and 27/27 checks pass (300 source-linked rows); 16/16 tests pass, including five new artifact-boundary regression tests. Linked-public staging contains 20 files, not the entire repository. `git diff --check` passes.
+- Existing 8 November provider research and editorial ranking preserved; no fresh official-provider checks claimed because those external domains are outside this session's allowed network. Public limitation added to Verification and Flagged for Review, with dated audit.
+- Corrected file scope: workflow is `.github/workflows/overflow-pages.yml` (not the initially named `pages.yml`). Generated report timestamp changes are included.
+- Pages GET API reports legacy root publishing. PUT to change `build_type=workflow` returned HTTP 403 `Resource not accessible by integration`; setting unchanged, limitation published. Custom workflow now uploads only the 20-file linked public closure, but legacy publishing is not claimed eliminated.
+- No provider contacted/booked. No private circumstances introduced. Public repository/history remain public; staging does not redact historical records.
+## Session `arena/35739f62-korea8` — independent status audit (2026-11-10)
+
+| Task | Status | Owner | Files in scope |
+|---|---|---|---|
+| Audit existing canonical site, current deployment and actionable evidence gaps | in progress | `arena/35739f62-korea8` | `audit/REPORT_2026-11-10_35739f62.md`, `COORDINATION.md` |
+
+Arena fixes this session to its existing branch; no separate session branch will be created. Existing canonical site and other sessions' scopes are read-only. This audit does not claim that automated link checks establish factual accuracy or contractor availability.
+
+### Status audit result
+
+- **Status:** done. Selective current official-source checks and limitations are recorded in [`audit/REPORT_2026-11-10_35739f62.md`](audit/REPORT_2026-11-10_35739f62.md); the full repository was not freshly verified line by line by this session.
+- **Sources:** [Ace CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Heise CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561), [Ace](https://www.aceplumbingandrooter.com/), [Heise](https://www.heisesplumbing.com/), [Yelp search](https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA), [live dashboard](https://karagemop466-tech.github.io/Korea8/), [successful workflow](https://github.com/karagemop466-tech/Korea8/actions/runs/42535293518).
+- **Checks:** canonical build, 27/27 structural verification checks and 11/11 unit tests passed. Source coverage is not semantic verification or proof of external link health.
+- **Irregularities:** job acceptance, combined restoration, schedule and all-in price remain unconfirmed; user-reported estimates are not independently verified. Historical open PRs remain untouched. The existing flagged page records prior limitations.
+- **Branch note:** the initial `git pull --rebase origin arena/35739f62-korea8` could not find a remote branch because it had not yet been published; rebased on `origin/main` and pushed the initial claim successfully.
+- **Concurrent integration:** main advanced through another session's publication-boundary work before PR #57 could merge. Rebase conflicted in this shared board; both sessions' entries were retained, with no work discarded. Canonical files from main were kept intact.
+
+- **PR/deploy:** [PR #57](https://github.com/karagemop466-tech/Korea8/pull/57) merged at 2026-11-10 00:51:28 UTC, merge commit `caab44e8403460e9ca18109ce3e3ec03697f609b`; [its dashboard workflow](https://github.com/karagemop466-tech/Korea8/actions/runs/42731489541) succeeded. The legacy Pages build for that commit was canceled after main advanced; a subsequent [dashboard workflow](https://github.com/karagemop466-tech/Korea8/actions/runs/42731535888) succeeded, including live HTTPS confirmation. GitHub Pages was already live before this audit. The post-rebase combined checks passed 27/27 and 16 unit tests.
+- A later rebase again conflicted in this board; both sessions’ entries were retained.
+
+### 660ab2dd publication receipt
+
+- PR **#55** https://github.com/karagemop466-tech/Korea8/pull/55 merged 2026-11-10T00:50:39Z, commit `21c3ce0430797924727aa06db29518b0dda64c77`.
+- Actions run https://github.com/karagemop466-tech/Korea8/actions/runs/42731387693 succeeded: build, 27-check verifier, 16 tests, restricted staging, artifact upload and Pages deployment.
+- Direct sandbox access to `github.io` is also blocked. A follow-up deployment step checks four live HTTPS routes from the GitHub runner rather than claiming an unperformed sandbox browser check.
+- Non-blocking workflow warnings: current actions use deprecated Node 20 declarations (runner forces Node 24); ubuntu-latest migration notice. No build/test/deploy failure.
+- Task implementation **done**; Pages setting limitation and external-source freshness remain **needs review**, publicly documented on the Flagged for Review page and linked audit.
+
+- 660ab2dd concurrent integration: PR #57 advanced main while PR #59 was open. Rebase conflict was confined to this board; both sessions’ complete append-only entries were retained. No canonical data changes were discarded.
+
+
+## Session `arena/47d993da-korea8` — current independent review (2026-11-10)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Current canonical-site, official-source and deployment audit; targeted evidenced corrections and final integration | done | `arena/47d993da-korea8` | `audit/2026-11-10-47d993da/**`, `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, root generated bathtub pages/reports and `COORDINATION.md` |
+
+Prior overlapping claims on this board predate the final PR #54 by over 60 minutes and are superseded by the completed integration handoff. No outstanding PR is assumed safe to merge. This session is constrained to the existing Arena branch, rather than creating a task branch. Preserve other sessions' work; rebase before each push.
+
+### 2026-11-10 review and integration record
+
+- Research/corrections completed; full details and limitations: `audit/2026-11-10-47d993da/REPORT.md`. Primary sources read: [Heise's advertised drywall/ceiling repair](https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/), [Heise CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561), [Ace CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Rapid Flow CSLB](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649), [Ace website](https://www.aceplumbingandrooter.com/), [Watco instructions](https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf), [CSLB guidance on bids](https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx), and [BPC §7057](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.). Acknowledged earlier [PR #53](https://github.com/karagemop466-tech/Korea8/pull/53) audit, without merging that independently scoped branch.
+- Fixed Heise's missing advertised repair evidence while preserving the restoration licensing and acceptance gate; removed unsupported absolute and overconfident licensing wording; corrected Watco attribution and owner-vs-proposed provenance. Ranking scores unchanged. 46 flags remain published.
+- Automated checks: 27/27 structural checks, 302 linked rows, 236 tracked-HTML internal links, 13/13 tests, and `git diff --check` passed. Link coverage alone does not prove source entailment or external link reachability. This was a **targeted** source review, not a fresh substantive line-by-line re-verification of all rows. No provider was contacted; exact scope, schedule, contract and price remain unconfirmed.
+- Initial claim push: branch had no remote ref, so pull from main was used prior to the first push.
+- Integration/deployment remains in progress pending PR and exact-commit live confirmation.
+- Conflict handoff: `origin/main` advanced via PR #55 during integration. Rebase conflicted in this board, the generator's verification paragraph, and generated pages/reports. Preserved both board records, retained the other session's publication-boundary audit/link and staging changes, added this session's audit link and verification limitations, and regenerated outputs. Combined rerun: 27/27 checks, 302 source-linked rows, 311 tracked internal links, 18/18 tests; no other session's work discarded.
+
