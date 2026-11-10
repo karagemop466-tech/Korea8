@@ -1641,22 +1641,30 @@ was added anywhere in the repository.
 | Item | Result |
 |---|---|
 | Integration PR | **#71** — https://github.com/karagemop466-tech/Korea8/pull/71 (`arena/5651e041-korea8` → `main`) |
-| Merge | to be recorded |
-| Pages deploy | to be recorded |
+| Merge | **MERGED** 2026-11-10T05:59:40Z by `karagemop466-tech`; merge commit `175e1f91bcaae3079fca5ac3f0137f3354dd83c6` |
+| Actions run | **42765546141** (`Publish overflow dashboard`) — build and deploy **success** for `175e1f91` |
+| Legacy Pages build | **built** for `175e1f91…`, created 2026-11-10T05:59:42Z, no error |
+| Live check | `https://karagemop466-tech.github.io/Korea8/?deployment=175e1f9` serves the new above-the-fold answer bar with the four CSLB phone numbers; `decision-analysis.html` renders the review-evidence column and the second-bid table; `audit/2026-11-10-5651e041/REPORT.md` and `audit/2026-11-10-b5ed3a43/REPORT.md` are both **reachable** (the b5ed3a43 audit had been orphaned — its recorded request is now satisfied) |
 | Live URL | https://karagemop466-tech.github.io/Korea8/ |
+
+**Board conflicts.** None. `main` did not advance while this session worked; the branch was 0 behind at merge time and the merge was a clean fast-forward-equivalent merge commit. No other session's work was displaced, and this session touched no other session's files.
+
+**Open PRs untouched.** #7, #35, #38, #39, #44, #49, #51, #53, #63, #64 and #66 were not merged, closed or assumed safe for takeover. Their existence is already recorded under F-39.
+
+**Note on the working branch after merge.** The platform pins this session to `arena/5651e041-korea8`. The branch is left in place with the merged commits; no branch was renamed, created or deleted.
 
 ---
 
 ## Session `arena/6f4c9f79-korea8` — fresh 2026-11-10 official-source re-verification, cross-session handoff resolution and final integration
 
 **Claim time:** 2026-11-10 ~05:52 UTC (committed and pushed before any research or site edit).
-**Branch note:** Arena pins this session to `arena/6f4c9f79-korea8`; no other branch will be created or pushed. All earlier overlapping canonical claims on `main` are done (`PR #70` and `PR #71` merged) and open PRs (`#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66`) are >4 hours stale and left untouched (not merged or closed). Unrelated DOE GEMS files (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, `docs/` excluding `docs/bathtub-*` stubs) remain read-only.
+**Branch note:** Arena pins this session to `arena/6f4c9f79-korea8`; no other branch will be created or pushed. All earlier overlapping canonical claims on `main` are done (`PR #70`, `PR #71`, and `PR #74` merged) and open PRs (`#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66`) are >4 hours stale and left untouched (not merged or closed). Unrelated DOE GEMS files (`src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, `docs/` excluding `docs/bathtub-*` stubs) remain read-only.
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `6F4-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/6f4c9f79-korea8` | `COORDINATION.md` |
 | `6F4-02` | Full independent live official-source re-verification (all CSLB records, BPC §7059(a), SF.gov/DBI/SFPC/SFBC, Watco, EPA, company sites, BBB/Angi/Yelp retrieval checks) and line-by-line repo review | done | `arena/6f4c9f79-korea8` | `audit/2026-11-10-6f4c9f79/**` |
-| `6F4-03` | Resolve logged cross-session requests (`B5-05` audit links, `I-4` F-08 scope wording, `I-5` cost drivers on `estimates.html`, BPC §7059(a) incidental-trade rule, city-hosted SFPC source check, stale metadata/flags `F-34`/`F-39`/`F-40`/`F-45`, `deployment.json`, broken-URL fixes) and merge `origin/main` PR #71 non-destructively | done | `arena/6f4c9f79-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `.github/workflows/overflow-pages.yml`, `site-data/**`, `BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`, `project/EXECUTIVE_SUMMARY.md`, `audit/independent_audit.py`, root generated `*.html` / `OVERFLOW_EXECUTIVE_SUMMARY.md` |
+| `6F4-03` | Resolve logged cross-session requests (`B5-05` audit links, `I-4` F-08 scope wording, `I-5` cost drivers on `estimates.html`, BPC §7059(a) incidental-trade rule, city-hosted SFPC source check, stale metadata/flags `F-34`/`F-39`/`F-40`/`F-45`, `deployment.json`, broken-URL fixes) and merge `origin/main` PRs #71/#74 non-destructively | done | `arena/6f4c9f79-korea8` | `overflow-integration/**`, `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `.github/workflows/overflow-pages.yml`, `site-data/**`, `BATHTUB_EXECUTIVE_SUMMARY.md`, `EXECUTIVE_SUMMARY_bathtub.md`, `project/EXECUTIVE_SUMMARY.md`, `audit/independent_audit.py`, root generated `*.html` / `OVERFLOW_EXECUTIVE_SUMMARY.md` |
 | `6F4-04` | Run full verification suite, open/merge PR #73 to `main`, confirm live GitHub Pages deploy and record receipt | in progress | `arena/6f4c9f79-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json`, canonical generated verification/deployment outputs |
 
 No provider will be contacted, quoted, booked or paid. Owner-supplied estimates stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
@@ -1674,4 +1682,5 @@ No provider will be contacted, quoted, booked or paid. Owner-supplied estimates 
   - `BPC §7059(a)` & `16 CCR §831` (`7FF-E-1`): added `C-15`, `BPC-7059`, `CSLB-831` and updated `R-15`, `T-06`, `F-06`, `F-18`.
   - `SF-CODE-104-PDF` (`BE-01`): added city-hosted 2025 SF Plumbing Code PDF first on `C-02`, `R-22`, `R-23`.
   - **Broken-URL & metadata fixes (`F-55`, `F-34`, `F-39`, `F-40`, `F-45`, `F-54`):** fixed `HEISE-PANHANDLE` 404 URL to `/recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/`, fixed `DG-CITATION` query params, fixed `F-39` PR count (`11` open earlier PRs), updated `F-34` alongside `5651e041`'s `F-52` with live `2026-11-10` root-exposure evidence (`COORDINATION.md` and `project/EXECUTIVE_SUMMARY.md` served live after legacy builds `1e7f03f`, `9f1e76d`, `67b9e98` succeeded), updated `BATHTUB_EXECUTIVE_SUMMARY.md` & `EXECUTIVE_SUMMARY_bathtub.md` (`F-45` resolved) + prepended non-destructive `Superseded` notice to `project/EXECUTIVE_SUMMARY.md`, fixed `ranking.json` `method_note`/`C4`/`final_verification_note`, and documented the `87e121e1` line-52 weight typo (`F-54`).
-  - **Merge of `origin/main` PR #71 (`175e1f9`, `arena/5651e041-korea8`):** preserved 100% of PR #71's work (`requests.json`, one-button hiring answer bar & copy-ready script, `RV-19`..`RV-23`, `review_evidence` column, `partners_second_bid` ceiling alternatives, `stage_overflow_pages.py` & `independent_audit.py` scheme-URL fixes, `F-14`/`F-15`/`F-52`, `audit/2026-11-10-5651e041/`) and renumbered this session's three new flags to `F-53`, `F-54`, `F-55`.
+  - **Merge of `origin/main` PRs #71/#74 (`9187a87`, `arena/5651e041-korea8`):** preserved 100% of PR #71/#74's work (`requests.json`, one-button hiring answer bar & copy-ready script, `RV-19`..`RV-23`, `review_evidence` column, `partners_second_bid` ceiling alternatives, `stage_overflow_pages.py` & `independent_audit.py` scheme-URL fixes, `F-14`/`F-15`/`F-52`, `audit/2026-11-10-5651e041/`, and the `5E-05` PR #71 receipt) and renumbered this session's three new flags to `F-53`, `F-54`, `F-55`.
+- **Verification checks:** `build_overflow_site.py` -> `verify_overflow_site.py` (`28/28 PASS`, `397` rows, `550` tracked HTML links); `unittest` `test_overflow*.py` (`30/30 OK`); `wording_guard.py` (`clean`); `independent_audit.py` (`11` pages, `397/397` rows, `212` internal links, `0` problems); `stage_overflow_pages.py` (`41` public files, HTTP `200` verified locally on all `41`); `git diff --check` clean.
