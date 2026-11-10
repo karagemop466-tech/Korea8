@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-10T00:56:27.191090+00:00",
+  "built_at": "2026-11-10T00:57:38.515876+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
@@ -28,8 +28,8 @@
     "technical": 8,
     "compliance": 12,
     "reviews": 11,
-    "sources": 87,
-    "flags": 46,
+    "sources": 88,
+    "flags": 47,
     "ranking": 10,
     "ranking_held": 14
   },

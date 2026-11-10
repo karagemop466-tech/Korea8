@@ -435,6 +435,18 @@
       "official": true
     },
     {
+      "id": "SF-CODE-104-PDF",
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "title": "2025 San Francisco Plumbing Code — Chapter 1, Section 104.0 Permits (§104.2 Exempt Work)",
+      "publisher": "City and County of San Francisco (SF.gov document library)",
+      "kind": "official-government",
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "City-hosted code text retrieved 2026-11-10. §104.2 Exempt Work lists nine exemptions, each conditioned on not cutting into or removing piping: (1) repair of leaks, (2) unstopping of traps/sewers/vents/waste pipes, (3) replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drains, (4) toilet replacement, (5)-(9) further items. §104.1 adds that emergency work must have a permit obtained within one day of commencing.",
+      "limitations": "Amendment text only; the full code is the California Plumbing Code as amended by San Francisco. Job-specific applicability is a DBI determination and is not made here.",
+      "official": true
+    },
+    {
       "id": "SF-REMODEL",
       "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
       "title": "Apply for a kitchen or bath remodel permit",

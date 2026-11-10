@@ -50,4 +50,4 @@ are unconfirmed.
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 46 items.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 47 items.
