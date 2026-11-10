@@ -1,0 +1,186 @@
+{
+  "audit_session": "arena/4b81abe2-korea8",
+  "checked": "2026-11-10",
+  "rows": [
+    {
+      "id": "4B-S01",
+      "source": "California BPC §7059(a)",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+      "retrieval": "direct",
+      "verified_observation": "Specialty contractor may execute a multi-trade contract only when other-trade work is incidental and supplemental to the licensed craft work. Current text amended effective 2025-01-01.",
+      "canonical_use": "C-15, R-15, F-65 and provider/ranking conditions",
+      "result": "MATCH after correction"
+    },
+    {
+      "id": "4B-S02",
+      "source": "California BPC §7057(b)",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "retrieval": "direct",
+      "verified_observation": "B prime contract involving other trades requires two unrelated trades other than framing/carpentry, or appropriate classification/subcontractor.",
+      "canonical_use": "Combined-contract structure; SF Building Group absolute exclusion corrected",
+      "result": "MATCH after correction"
+    },
+    {
+      "id": "4B-S03",
+      "source": "CSLB C-9 Drywall classification",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "retrieval": "direct",
+      "verified_observation": "C-9 includes gypsum wallboard/assemblies, nonstructural metal framing, taping and texturing.",
+      "canonical_use": "Restoration classification and C1 scoring anchors",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S04",
+      "source": "SF Plumbing Code §104.2",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "retrieval": "direct zero-based chunk 14",
+      "verified_observation": "Nine exempt-work items; leak/unstopping/faucet/fixture exemptions include no-cutting/no-removal conditions. Chunk also contains §104.5.",
+      "canonical_use": "C-02 and source metadata",
+      "result": "MATCH after chunk correction from 13 to 14"
+    },
+    {
+      "id": "4B-S05",
+      "source": "SF Building Code §106A.2(8)/(10)",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+      "retrieval": "direct zero-based chunk 39",
+      "verified_observation": "Painting/finish work and minor interior plaster/wallboard repair exemptions; item 10 excludes fire-resistive assemblies.",
+      "canonical_use": "C-13, R-12, F-48 and source metadata",
+      "result": "MATCH after chunk correction from 28–29 to 39"
+    },
+    {
+      "id": "4B-S06",
+      "source": "SF.gov plumbing/mechanical permit service",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "retrieval": "direct",
+      "verified_observation": "Permit before cutting/replacing pipes; inspection before covering; eligible licence types; help desk 628-652-4900; city offices closed 2026-11-11. Banner does not state online filing unavailable.",
+      "canonical_use": "Permit and scheduling controls",
+      "result": "MATCH after online-availability clarification"
+    },
+    {
+      "id": "4B-S07",
+      "source": "SF DBI Table 1A-C July 2026",
+      "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "retrieval": "direct PDF",
+      "verified_observation": "Category 1P $290; 11P/M $320; regular $519/hour; off-hour $555/hour; reinspection/additional $259/half-hour; effective for permits issued on/after 2026-07-12.",
+      "canonical_use": "Official fees only; category applicability remains unconfirmed",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S08",
+      "source": "California Civil Code §1954",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "retrieval": "direct",
+      "verified_observation": "Necessary/agreed repairs, normal business hours, written notice, 24-hour and six-day mailed presumptions, consent/emergency exceptions.",
+      "canonical_use": "Occupied-unit notice controls",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S09",
+      "source": "Watco 500/501/600-TL instructions",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "retrieval": "direct PDF",
+      "verified_observation": "Steps 6–7 install/remove overflow plate and drop-cylinder assembly for adjustment; model-specific. No proof this unknown stuck assembly can be removed from above.",
+      "canonical_use": "Tub-side first path and model limitation",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S10",
+      "source": "Ace official site",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "retrieval": "direct",
+      "verified_observation": "(415) 824-6444, #829071 and B/C-36 plus other classifications; San Francisco residential/commercial plumbing; HOA/property-manager section.",
+      "canonical_use": "Rank #1 capability and occupied-property evidence",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S11",
+      "source": "Heise Ingleside case #163802",
+      "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "retrieval": "direct",
+      "verified_observation": "Company says exterior ceiling access, old overflow removal, brass P-trap/trap adapter and waste/overflow replacement in San Francisco. Page also embeds a 404 template block.",
+      "canonical_use": "Adjacent technical case only",
+      "result": "MATCH; limitations retained"
+    },
+    {
+      "id": "4B-S12",
+      "source": "Heise fixture page",
+      "url": "https://www.heisesplumbing.com/plumbing-fixtures/",
+      "retrieval": "direct",
+      "verified_observation": "Company names tub spouts, overflow plates and drain assemblies and displays (415) 333-0704.",
+      "canonical_use": "Added HEISE-FIXTURES to P-03 and rank #2 evidence",
+      "result": "MATCH after source addition"
+    },
+    {
+      "id": "4B-S13",
+      "source": "Heise drywall/patch page",
+      "url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+      "retrieval": "direct",
+      "verified_observation": "Company advertises plumbing-access hole repair, ceiling patching, taping/texture preparation and paint touch-ups. Advertising does not identify this job’s restoration party or classification structure.",
+      "canonical_use": "C1=3 under published rubric, conditional restoration structure",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S14",
+      "source": "Rapid Flow services",
+      "url": "https://www.rapidflowbayarea.com/services",
+      "retrieval": "direct",
+      "verified_observation": "Shower & Tub Installation and General Contracting including Drywall Repair & Installation, Permit Acquisition & Management and Subcontractor Coordination; Bay Area coverage.",
+      "canonical_use": "Rank #3 combined-contract lead",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S15",
+      "source": "Rapid Flow contact",
+      "url": "https://www.rapidflowbayarea.com/contact",
+      "retrieval": "direct",
+      "verified_observation": "844-BAY-FLOW dispatch, (415) 866-8401 for photos, 230 Edinburgh St, #1115649 B/C-36.",
+      "canonical_use": "Official company contact and CSLB cross-check",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S16",
+      "source": "BBB Ace profile",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941",
+      "retrieval": "direct",
+      "verified_observation": "BBB A+ accreditation since 2004-08-01; bathtub installation/repair listed; no complaints in last 3 years; BBB disclaims endorsement and third-party accuracy. Numeric customer ratings remain outside canonical scoring.",
+      "canonical_use": "Qualitative adjacent scope/complaint check",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S17",
+      "source": "Angi Ace reviews",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-reviews-208758.htm",
+      "retrieval": "direct",
+      "verified_observation": "Qualitative reviews include troubleshooting/cleanup praise and an October 2023 itemization/billing-communication criticism; most visible reviews are old. Numeric averages/counts excluded from scoring.",
+      "canonical_use": "Itemized-estimate follow-up only",
+      "result": "MATCH"
+    },
+    {
+      "id": "4B-S18",
+      "source": "Yelp Ace business page",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "retrieval": "HTTP 403",
+      "verified_observation": "Direct page retrieval blocked. Search-index snippets vary in counts and do not establish this exact trip-lever-plus-ceiling scope.",
+      "canonical_use": "No numeric Yelp rating/count published; no score based on blocked content",
+      "result": "LIMIT retained"
+    },
+    {
+      "id": "4B-S19",
+      "source": "Yelp/BBB/Angi search review",
+      "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=san+francisco%2C+ca",
+      "retrieval": "search-index snippets plus direct platform tests",
+      "verified_observation": "Search results show general plumbers and changing snippets, not verified exact-job references. BBB and Angi direct profiles provide the qualitative evidence separately cited.",
+      "canonical_use": "Review requirement partially satisfied; exact-job review evidence remains unverified",
+      "result": "LIMIT retained"
+    },
+    {
+      "id": "4B-S20",
+      "source": "Owner estimate record",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
+      "retrieval": "owner-provided primary statement",
+      "verified_observation": "Three scopes and amounts supplied by requester dated 2026-08-30; no contractor quote documents or official price confirmation.",
+      "canonical_use": "Owner-reported amounts only; verified amounts blank; unlike scopes not treated as market range",
+      "result": "LIMIT retained"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-10T06:04:51.475167+00:00",
+  "checked_at": "2026-11-10T06:08:21.611860+00:00",
   "result": "PASS",
   "checks_run": 28,
   "checks_passed": 28,
   "checks_failed": 0,
-  "canonical_rows_checked": 397,
-  "tracked_html_files": 68,
+  "canonical_rows_checked": 405,
+  "tracked_html_files": 70,
   "checks": [
     {
       "check": "all canonical pages present",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "397 rows; offenders: "
+      "detail": "405 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -145,7 +145,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "272 links; offenders: "
+      "detail": "366 links; offenders: "
     }
   ]
 }

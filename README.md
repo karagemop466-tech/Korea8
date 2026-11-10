@@ -6,6 +6,7 @@
 > and is checked by `scripts/verify_overflow_site.py` plus `tests/test_overflow_site.py`.
 > Executive summary: [`OVERFLOW_EXECUTIVE_SUMMARY.md`](OVERFLOW_EXECUTIVE_SUMMARY.md).
 > Audit: [`overflow-integration/REPO_AUDIT.md`](overflow-integration/REPO_AUDIT.md).
+> Final current-source review: [`audit/2026-11-10-4b81abe2/REPORT.md`](audit/2026-11-10-4b81abe2/REPORT.md).
 > Earlier parallel drafts are preserved as redirect stubs/archives.
 > See [`COORDINATION.md`](COORDINATION.md) for claims, sources and publication records.
 >

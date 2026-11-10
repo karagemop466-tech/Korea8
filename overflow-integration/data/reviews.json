@@ -16,7 +16,7 @@
         "YELP-RF2",
         "CSLB-1115649"
       ],
-      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation. Rechecked 2026-11-10; still not exact-job confirmation."
     },
     {
       "id": "RV-02",
@@ -34,7 +34,7 @@
         "ACE",
         "YELP-ACE-Q"
       ],
-      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank. Rechecked 2026-11-10; still not exact-job confirmation."
     },
     {
       "id": "RV-03",
@@ -51,7 +51,7 @@
         "CSLB-1096552",
         "WEDO"
       ],
-      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank. Rechecked 2026-11-10; still not exact-job confirmation."
     },
     {
       "id": "RV-04",
@@ -68,7 +68,7 @@
         "CSLB-1089561",
         "HEISE-INGLESIDE"
       ],
-      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews. Rechecked 2026-11-10; still not exact-job confirmation."
     },
     {
       "id": "RV-05",
@@ -84,7 +84,7 @@
         "YELP-PORTOLA",
         "CSLB-SEARCH"
       ],
-      "limit": "No exact legal entity/license/phone match; all identity fields remain blank. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "No exact legal entity/license/phone match; all identity fields remain blank. Rechecked 2026-11-10; still not exact-job confirmation."
     },
     {
       "id": "RV-06",
