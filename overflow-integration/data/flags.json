@@ -81,8 +81,8 @@
       "severity": "High",
       "category": "Licensing",
       "title": "B + C-36 does not automatically prove drywall self-performance",
-      "detail": "Earlier pages said B + C-36 \"covers both trades directly.\" Official C-9/BPC §§7057/7059(a)/16 CCR §831 sources require an appropriate contract/classification structure: B + C-36 covers two-trade prime contracts, while C-36-only permits another craft only when incidental and supplemental (essential to the plumbing work); standalone/textured/fire-rated ceiling work needs C-9 or qualifying B.",
-      "action": "Name the restoration party and license in the contract; ask whether work is self-performed or subcontracted.",
+      "detail": "B + C-36 does not prove who self-performs drywall. C-36 is plumbing and C-9 covers drywall/taping/texturing. BPC §7057 governs B contracts; BPC §7059(a) and 16 CCR §831 allow specialty other-trade work only when incidental/supplemental and essential to the licensed craft.",
+      "action": "Name the restoration party and licence. For a specialty-led bid, document why the restoration is incidental/supplemental and essential; otherwise use an appropriately licensed party and lawful contract structure.",
       "source_ids": [
         "CSLB-C9",
         "CSLB-C36",
@@ -198,9 +198,9 @@
       "id": "F-14",
       "severity": "Medium",
       "category": "Reviews",
-      "title": "Yelp business pages are blocked; published excerpts are labelled and carry no score",
-      "detail": "Yelp business pages returned HTTP 403 to this session again on 2026-11-10; the two pages named elsewhere in this register (Ace Plumbing & Rooter, Heise’s Plumbing) also returned HTTP 403 to the page-retrieval tool. Review evidence therefore comes from dated search-index excerpts of the business pages and search listings, and every such row is labelled by retrieval method and carries a blank rating and count. Two numbers that were checked directly are stated as such and no others: Ace Plumbing & Rooter showed 4.7 from about 1.4 thousand reviews on 2026-11-10, and Heise’s Plumbing showed 4.2 from 278 to 283 reviews across excerpts dated June and July 2026. Neither number is reproducible from a page this project can fetch, so both are treated as search-index snapshots that can change. Direct BBB and Angi profiles were retrieved on 2026-11-10 for qualitative and complaint checks, with numeric ratings kept blank.",
-      "action": "Keep every review cell labelled by retrieval method, keep star ratings and counts blank in tables, and re-check the two quoted numbers on the live page before any contact. Ask for direct references and a current occupied-unit plan.",
+      "title": "Yelp business pages are blocked; all numeric ratings and counts stay blank",
+      "detail": "Yelp business pages returned HTTP 403 again on 2026-11-10. Review observations come from dated search-index excerpts of business pages and search listings, each labelled by retrieval method with blank rating and count fields. Search-index numbers varied across excerpts and could not be verified on the business page, so no numeric Yelp rating or review count is published anywhere in the canonical site. Direct BBB and Angi profiles provide separately labelled qualitative/complaint records.",
+      "action": "Keep every numeric review cell blank and every observation labelled by retrieval method. Do not republish changing search-index ratings or counts as verified facts; ask for direct references and a current occupied-unit plan.",
       "source_ids": [
         "YELP-ACE",
         "YELP-HEISE",
@@ -267,8 +267,8 @@
       "severity": "Medium",
       "category": "Provider fit",
       "title": "Heise’s license has no B or C-9",
-      "detail": "CSLB #1089561 lists A/C-10/C-20/C-36, not B or C-9. While BPC §7059(a)/16 CCR §831 lets a specialty plumber include a small essential access patch as incidental and supplemental, standalone or separately priced ceiling restoration (taping, texturing, paint or fire-rated assembly rebuild) requires C-9 or B; the exact contracting structure remains unconfirmed.",
-      "action": "Ask the contractor to identify the restoration party and confirm the appropriate licensing and contract structure for the actual scope.",
+      "detail": "CSLB #1089561 lists A/C-10/C-20/C-36, not B or C-9. The company advertises plumbing-access and ceiling patching. BPC §7059(a)/16 CCR §831 allow other-trade work only when incidental/supplemental and essential; whether this restoration qualifies and who performs it remain unconfirmed.",
+      "action": "Require a written restoration scope and §7059(a)/§831 rationale. If the work is not incidental/supplemental and essential, name the appropriately licensed restoration party and contract structure.",
       "source_ids": [
         "CSLB-1089561",
         "CSLB-C9",
@@ -333,7 +333,7 @@
       "severity": "Medium",
       "category": "Permit",
       "title": "SF Plumbing Code §104.2 is now retrieved; earlier “unverified” flag is corrected",
-      "detail": "Operative §104.2 text was directly retrieved again on 2026-11-08 in zero-based chunk 13; chunk 14 contains §104.5. Earlier chunk numbering was off by one. The publisher disclaims definitive authority; confirm job applicability with DBI.",
+      "detail": "Operative §104.2 text was directly retrieved again on 2026-11-10 in zero-based chunk 14; that chunk also contains §104.5. Earlier source metadata said chunk 13 and was incorrect. The publisher disclaims definitive authority; confirm job applicability with DBI.",
       "action": "Keep conditional exemptions and publisher limitation visible; do not infer a permit-free path.",
       "source_ids": [
         "SF-CODE-104",
@@ -587,8 +587,8 @@
       "severity": "Medium",
       "category": "Repository",
       "status": "Open",
-      "title": "11 earlier-session pull requests remain open and unmerged",
-      "detail": "11 earlier-session pull requests remain open and unmerged on GitHub as of 2026-11-10 (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66); main already reflects PRs #54-#71. Valuable findings from PRs #63 and #66 were independently re-verified and integrated without merging or closing other sessions’ PRs.",
+      "title": "Earlier-session pull requests remain open and unmerged",
+      "detail": "Eleven earlier-session pull requests remain open and unmerged on GitHub as checked on 2026-11-10 (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66); main already reflects PR #73. Their findings are not treated as merged evidence.",
       "action": "Owner decision: close them, or have the owning session rebase onto the current main. This session did not touch another session's pull request.",
       "source_ids": [
         "REPO",
@@ -712,7 +712,7 @@
       "category": "Entity & reviews",
       "title": "Heise's BBB B- rating, dissolved prior #787733, and misfiled Instagram complaint",
       "detail": "BBB shows a B- unaccredited profile for Heise's Plumbing Inc carrying superseded CSLB #787733 (which CSLB confirms expired 03/31/2023 and was canceled/SoS dissolved 02/12/2025), 1 negative 08/14/2024 customer review (Kay S), and 1 unanswered 07/05/2026 complaint whose text is an unrelated misfiled Instagram/Meta complaint.",
-      "action": "Contract strictly with active #1089561 TARO GROUP INC dba HEISES PLUMBING (never dissolved #787733); ignore the misfiled Meta complaint while still vetting restoration licensing.",
+      "action": "Contract strictly with active #1089561 TARO GROUP INC dba HEISES PLUMBING (not dissolved #787733). Do not treat the misfiled Meta complaint as plumbing evidence; review the remaining BBB record and confirm the restoration structure.",
       "status": "Open",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
@@ -727,7 +727,7 @@
       "severity": "Medium",
       "category": "Code & ceiling assembly",
       "title": "SFBC §106A.2(10) fire-resistive ceiling assembly check for below-ceiling cut/patch",
-      "detail": "Direct reading of SFBC §106A.2(10) on 2026-11-10 shows minor interior plaster or wallboard repair is permit-exempt ONLY except when part of a fire-resistive assembly; whether the ceiling separating the unit from the storage area below is fire-rated is unconfirmed.",
+      "detail": "Direct reading of SFBC §106A.2(10) in zero-based chunk 39 on 2026-11-10 shows minor interior plaster or wallboard repair is permit-exempt except when part of a fire-resistive assembly; whether the ceiling separating the unit from the storage area below is fire-rated is unconfirmed.",
       "action": "Have the contractor/DBI confirm whether the storage ceiling is fire-rated (e.g., Type X gypsum) before cutting and preserve fire rating upon restoration.",
       "status": "Open",
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
@@ -742,9 +742,9 @@
       "severity": "Medium",
       "category": "Code & permit",
       "status": "Open",
-      "title": "Permit Center closed 2026-11-11, so the permit determination slips to 2026-11-12",
-      "detail": "The sf.gov plumbing and mechanical permit page displayed a live banner on 2026-11-10: \"City offices will be closed on Wednesday, November 11 for Veterans Day.\" The Permit Center help desk (628-652-4900) and the second-floor counter at 49 South Van Ness are therefore unavailable on 2026-11-11, and the same page commits to \"We will contact you within 2 business days\" for help-desk voicemail. This is a scheduling constraint on obtaining the permit or exemption determination, not a change in the rule.",
-      "action": "Do not plan a DBI call, counter visit or contractor permit application for 2026-11-11. The next business day is Thursday 2026-11-12; a help-desk question left on 2026-11-10 should draw a response by 2026-11-13. Ask the contractor to state its permit position in writing before any pipe is cut or covered.",
+      "title": "Permit Center offices closed 2026-11-11; online filing availability is not stated",
+      "detail": "The sf.gov plumbing and mechanical permit page displayed a live banner on 2026-11-10: \"City offices will be closed on Wednesday, November 11 for Veterans Day.\" The Permit Center help desk (628-652-4900) and second-floor counter at 49 South Van Ness are therefore unavailable on 2026-11-11, and the page commits to \"We will contact you within 2 business days\" for help-desk voicemail. The banner does not say online PermitSF filing is unavailable.",
+      "action": "Do not plan a help-desk call or counter visit for 2026-11-11. The next business day for an in-person determination is Thursday 2026-11-12; a question left on 2026-11-10 should draw a response by 2026-11-13. Ask the contractor to state its permit position in writing before any pipe is cut or covered; do not infer an online outage.",
       "source_ids": [
         "SF-PERMIT",
         "SF-DBI",
@@ -824,14 +824,17 @@
       "severity": "Low",
       "category": "Repository audit",
       "status": "Resolved — documented",
-      "title": "Historical audit report 87e121e1 mis-typed ranking weights in prose",
-      "detail": "Line 52 of audit/2026-11-10-87e121e1/REPORT.md typed C1*0.30 + C2*0.25 + C3*0.20 + C4*0.15 + C5*0.10, whereas ranking.json actually uses 0.30 / 0.20 / 0.20 / 0.15 / 0.15 (which sums to 1.000 and yields the exact published totals: Ace 3.85, Heise’s 3.45, Rapid Flow 3.15).",
-      "action": "Preserve the historical audit untouched and document the exact formula in audit/2026-11-10-6f4c9f79/REPO_REVIEW.md.",
+      "title": "Historical audit printed the wrong ranking formula and code-chunk locations",
+      "detail": "The merged 87e121e1 audit prints C2 .25/C5 .10, while canonical ranking.json and reproduced totals use C2 .20/C5 .15. It also labels SFPC §104.2 as chunk 13 and SFBC §106A.2 as chunks 28–29; fresh direct retrieval places them in zero-based chunks 14 and 39 respectively. The substantive canonical exemption text was correct.",
+      "action": "Keep the historical audit unchanged, correct canonical source metadata, and link the 4b81abe2 audit that reproduces the ranking arithmetic and code locations.",
       "source_ids": [
         "REPO-BOARD",
         "AUDIT-20261110",
         "AUDIT-20261110-6F4",
-        "CSLB-829071"
+        "CSLB-829071",
+        "AUDIT-20261110-4B",
+        "SF-CODE-104",
+        "SF-CODE-106"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
     },
@@ -850,6 +853,83 @@
         "AUDIT-20261110-6F4"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "id": "F-65",
+      "severity": "High",
+      "category": "Licensing",
+      "title": "Specialty-contractor incidental-work condition was missing",
+      "detail": "Earlier text categorically required a second licensed restoration party for every C-36-only bid. BPC §7059(a) instead permits a specialty contractor to execute a multi-trade contract when other-trade work is incidental and supplemental to its licensed craft. The law does not establish that full ceiling restoration is incidental in this job.",
+      "action": "Correct the absolute statements. Require a written scope-specific §7059(a) rationale and name an appropriately licensed restoration party whenever the condition is not met.",
+      "source_ids": [
+        "BPC-7059",
+        "CSLB-C9",
+        "BPC-7057",
+        "AUDIT-20261110-4B"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-66",
+      "severity": "Medium",
+      "category": "Decision analysis",
+      "title": "Discount’s building-capability score was not supported by its classifications",
+      "detail": "Discount #1140843 holds C-36 + A General Engineering, not B General Building or C-9 Drywall. Its C1 component was 4 under a combined plumbing + building criterion without a published anchor. A reproducible rubric now sets that component to 2; weighted score changes from 2.30 to 1.70, moving Discount from #9 to #10 and Fast Response from #10 to #9. No other component changes.",
+      "action": "Publish the 1–5 anchors for every criterion and the corrected order. Treat scores as editorial decision support, not measured quality.",
+      "source_ids": [
+        "CSLB-1140843",
+        "CSLB-C9",
+        "BPC-7057",
+        "AUDIT-20261110-4B"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-67",
+      "severity": "Medium",
+      "category": "Open pull request",
+      "title": "Unmerged PR #66 contains incorrect Heise licence dates in a secondary memo",
+      "detail": "Its register_row_retest memo says Heise #1089561 was issued 09/04/2014 and expires 09/30/2028. Fresh official CSLB retrieval shows issue date 04/06/2022 and expiry 04/30/2028. Those unmerged values were not copied. The canonical row already matches CSLB.",
+      "action": "Do not merge the erroneous memo values. Retain the canonical CSLB-linked issue/expiry dates and review PR #66 only for independently revalidated findings.",
+      "source_ids": [
+        "CSLB-1089561",
+        "AUDIT-20261110-4B",
+        "GH-PR66"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "status": "Open — external PR not modified"
+    },
+    {
+      "id": "F-68",
+      "severity": "Low",
+      "category": "Decision analysis",
+      "title": "FDL workers-compensation explanation was stale",
+      "detail": "The not-recommended explanation called FDL #1086935 workers-compensation exempt. Fresh CSLB retrieval on 2026-11-10 shows an Everest Premier policy effective 01/21/2026 and expiring 01/21/2027. The canonical provider row already had the policy; only the secondary explanation was wrong.",
+      "action": "Publish the current policy summary and retain FDL outside the priority order for lack of B/C-9 and exact-scope evidence, not for an exemption.",
+      "source_ids": [
+        "CSLB-1086935",
+        "AUDIT-20261110-4B"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "status": "Resolved in canonical rebuild"
+    },
+    {
+      "id": "F-69",
+      "severity": "Low",
+      "category": "Retired repository draft",
+      "title": "Retired findings draft contains a categorical permit assertion",
+      "detail": "bathtub-overflow/data/findings.json says the scope falls on the wrong side of a published no-permit line. That retired JSON is not linked into the staged dashboard, but the statement is broader than the current job-specific official guidance and should not be reused.",
+      "action": "Preserve the retired file as history; use the canonical conditional SF.gov/SFPC analysis and obtain the job-specific determination rather than copying the archived assertion.",
+      "source_ids": [
+        "REPO-RETIRED-PERMIT",
+        "SF-PERMIT",
+        "SF-CODE-104",
+        "AUDIT-20261110-4B"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "status": "Open — retired file not modified"
     }
   ]
 }

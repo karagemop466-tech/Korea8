@@ -1,0 +1,140 @@
+{
+  "audit_session": "arena/4b81abe2-korea8",
+  "checked": "2026-11-10",
+  "summary": {
+    "requirements": 16,
+    "satisfied": 13,
+    "partially_satisfied": 3,
+    "blocking": 0
+  },
+  "rows": [
+    {
+      "brief_item": 1,
+      "requirement": "Collect, organize and analyze a full requirements list",
+      "status": "satisfied",
+      "artifact": "requirements.html; overflow-integration/data/requirements.json",
+      "evidence": "42 deduplicated requirements with basis, acceptance checks, origin and sources",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/data/requirements.json"
+    },
+    {
+      "brief_item": 2,
+      "requirement": "Executive summary with important details",
+      "status": "satisfied",
+      "artifact": "executive-summary.html; OVERFLOW_EXECUTIVE_SUMMARY.md",
+      "evidence": "Decision, ranked contacts, estimate provenance, controls and open items",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/OVERFLOW_EXECUTIVE_SUMMARY.md"
+    },
+    {
+      "brief_item": 3,
+      "requirement": "Prefer tub-side removal; below-ceiling fallback; preserve concealed plumbing",
+      "status": "satisfied",
+      "artifact": "technical-approach.html; R-01/R-05/R-06/R-09/R-11",
+      "evidence": "Watco model-specific service path, adjacent Heise ceiling-access case and acceptance controls",
+      "official_or_primary_source": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    },
+    {
+      "brief_item": 4,
+      "requirement": "Find SF all-in-one plumbing and drywall service; use Yelp and other review services",
+      "status": "partially_satisfied",
+      "artifact": "decision-analysis.html; providers.html; review observations",
+      "evidence": "Ranked combined-capability leads and C-9 partner; BBB/Angi direct qualitative checks. Yelp direct business page HTTP 403; exact-job reviews and numeric ratings blank.",
+      "official_or_primary_source": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco"
+    },
+    {
+      "brief_item": 5,
+      "requirement": "Licensed plumber or contractor; official links and phone numbers",
+      "status": "satisfied",
+      "artifact": "providers.html; cslb-receipts.json",
+      "evidence": "This session freshly compared the original 24 CSLB records; two supplementary records verified by merged session 6f4c9f79 are preserved. Ranked rows include CSLB links, company links where verified and official phones. Three unresolved identities stay blank.",
+      "official_or_primary_source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "brief_item": 6,
+      "requirement": "Sensitive occupied-unit environment and storage-unit access",
+      "status": "satisfied",
+      "artifact": "requirements.html; code-and-permit.html",
+      "evidence": "Civil Code notice, access authority, contents protection, cleanup, lead/asbestos and fire-assembly controls",
+      "official_or_primary_source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    },
+    {
+      "brief_item": 7,
+      "requirement": "Compare supplied estimates and explain costs",
+      "status": "satisfied",
+      "artifact": "estimates.html; decision-analysis.html",
+      "evidence": "Owner-reported $614/$550/$135, verified amounts blank, scope mismatch analysis, official DBI fees and six sourced cost drivers",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md"
+    },
+    {
+      "brief_item": 8,
+      "requirement": "Rank contractors by best choice with reasoning and cost basis",
+      "status": "satisfied",
+      "artifact": "decision-analysis.html; ranking.json",
+      "evidence": "Published C1–C5 weights and 1–5 anchors, per-rank reasoning/cost/ask, excluded candidates and correction log",
+      "official_or_primary_source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "brief_item": 9,
+      "requirement": "No fabrication; unconfirmed values blank and flagged",
+      "status": "satisfied",
+      "artifact": "flagged-for-review.html; canonical verifier/tests",
+      "evidence": "Verified price, Yelp numeric fields and Portola identity fields blank; 60 flags published; structural checks and data tests",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/data/flags.json"
+    },
+    {
+      "brief_item": 10,
+      "requirement": "Review repository and flag irregularities",
+      "status": "satisfied",
+      "artifact": "audit/2026-11-10-4b81abe2/REPORT.md; F-32/F-39/F-40/F-50–F-56",
+      "evidence": "Topic split, open PRs, workflow/branch/run-card/raster issues, scoring/source metadata and open-PR discrepancies documented",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8"
+    },
+    {
+      "brief_item": 11,
+      "requirement": "Clean GitHub Pages dashboard and category subpages",
+      "status": "satisfied",
+      "artifact": "11 canonical root pages; style.css; linked public staging",
+      "evidence": "Dashboard, executive summary, ranking, requirements, providers, estimates, technical, code, sources, flags and verification",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/scripts/build_overflow_site.py"
+    },
+    {
+      "brief_item": 12,
+      "requirement": "Every table row has a source link; no inferred values",
+      "status": "satisfied",
+      "artifact": "verify_overflow_site.py; independent_audit.py",
+      "evidence": "405 canonical table rows source-covered after corrections; no broken source IDs; blank-vs-unverified tests",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/scripts/verify_overflow_site.py"
+    },
+    {
+      "brief_item": 13,
+      "requirement": "Parallel-session coordination and non-overlap",
+      "status": "satisfied",
+      "artifact": "COORDINATION.md claim 4B-01…4B-04",
+      "evidence": "Fixed Arena branch claimed/pushed first; open PRs inspected read-only; historical audits and GEMS preserved",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/blob/main/COORDINATION.md"
+    },
+    {
+      "brief_item": 14,
+      "requirement": "Small frequent commits; pull/rebase before pushes; conflict preservation",
+      "status": "satisfied",
+      "artifact": "Git history and final integration receipt",
+      "evidence": "Claim commit, canonical correction commit and final verification commit; rebase protocol followed",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/commits/arena/4b81abe2-korea8"
+    },
+    {
+      "brief_item": 15,
+      "requirement": "PR to main, merge autonomously, do not merge broken site",
+      "status": "partially_satisfied",
+      "artifact": "Pending final PR/deployment receipt",
+      "evidence": "Local build and 27-check verifier must pass before PR; exact-commit workflow and live routes required after merge",
+      "official_or_primary_source": "https://github.com/karagemop466-tech/Korea8/actions/workflows/overflow-pages.yml"
+    },
+    {
+      "brief_item": 16,
+      "requirement": "Confirm Pages deployment and record PR/merge result",
+      "status": "partially_satisfied",
+      "artifact": "Pending deployment.json and COORDINATION.md final receipt",
+      "evidence": "To be completed after exact-merge workflow and cache-busted HTTPS checks; not claimed in advance",
+      "official_or_primary_source": "https://api.github.com/repos/karagemop466-tech/Korea8/pages"
+    }
+  ]
+}

@@ -430,8 +430,8 @@
       "kind": "official-code-publisher",
       "checked": "2026-11-10",
       "retrieval": "direct",
-      "supports": "Directly retrieved §104.2 in chunk 13 (zero-based): leak repair, unstopping and faucet/fixture exemptions carry no-cutting/no-removal conditions. Chunk 14 contains §104.5 fees. Publisher disclaims definitive authority; confirm with DBI.",
-      "limitations": "Municipal code hosted by American Legal Publishing; retrieved chunk 13 for §104.2. Publisher says posted code may lag and is not definitive; confirm applicability with DBI.",
+      "supports": "Directly retrieved §104.2 in zero-based chunk 14 on 2026-11-10: all nine exempt-work items, including the no-cutting/no-removal conditions. The same chunk also contains §104.5 fees. Publisher disclaims definitive authority; confirm with DBI.",
+      "limitations": "Municipal code hosted by American Legal Publishing; §104.2 is in zero-based chunk 14. Publisher says posted code may lag and is not definitive; confirm applicability with DBI.",
       "official": true
     },
     {
@@ -1031,8 +1031,8 @@
       "official": true,
       "checked": "2026-11-10",
       "retrieval": "direct",
-      "supports": "SFBC §106A.2(8)&(10) retrieved directly in chunks 28–29: painting/finish work and minor interior plaster or wallboard repairs are permit-exempt EXCEPT when part of a fire-resistive assembly",
-      "limitations": "Fire-resistive rating of the subject building ceiling assembly between unit and storage below is unconfirmed; DBI/contractor must verify"
+      "supports": "SFBC §106A.2(8)&(10) directly retrieved in zero-based chunk 39 on 2026-11-10: painting/finish work and minor interior plaster or wallboard repairs are permit-exempt except when part of a fire-resistive assembly.",
+      "limitations": "Fire-resistive rating of the subject ceiling is unconfirmed; DBI/contractor must verify. Earlier chunk 28–29 metadata was incorrect and is superseded."
     },
     {
       "id": "RF-SERVICES",
@@ -1272,7 +1272,7 @@
       "checked": "2026-11-10",
       "retrieval": "direct",
       "supports": "Documents full 2026-11-10 external re-verification, ranking math check, stub/wording check and structural audit",
-      "limitations": "Repository audit record; cross-referenced to official primary sources"
+      "limitations": "Historical repository audit. Its printed ranking formula and SFPC/SFBC chunk labels are superseded by the 4b81abe2 audit; canonical data uses C1 .30/C2 .20/C3 .20/C4 .15/C5 .15, SFPC chunk 14 and SFBC chunk 39."
     },
     {
       "id": "GH-WORKFLOWS",
@@ -1532,6 +1532,42 @@
       "retrieval": "direct",
       "supports": "Records 10 CSLB direct checks (0 mismatches), five search-index review observations (RV-19..RV-23), one-button request block and live COORDINATION.md exposure verification.",
       "limitations": "Repository audit artifact cross-referenced to official primary sources."
+    },
+    {
+      "id": "AUDIT-20261110-4B",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-10-4b81abe2/REPORT.md",
+      "title": "2026-11-10 final current-source review (4b81abe2)",
+      "publisher": "Korea8 Repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "Fresh all-24-CSLB comparison, statutory and code-source checks, ranking-rubric review, requirements traceability and canonical verification.",
+      "limitations": "Repository audit cross-referenced to official sources; not a government record or proof of provider performance, availability or acceptance."
+    },
+    {
+      "id": "GH-PR66",
+      "url": "https://github.com/karagemop466-tech/Korea8/pull/66",
+      "title": "Open PR #66 — independent provider-fit audit",
+      "publisher": "GitHub repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "Unmerged secondary memo reviewed for handoff findings; its BPC §7059(a) lead was independently retrieved, while its Heise #1089561 issue/expiry values conflict with CSLB and were rejected.",
+      "limitations": "Open unmerged pull request; not canonical evidence and not modified by this session."
+    },
+    {
+      "id": "REPO-RETIRED-PERMIT",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/bathtub-overflow/data/findings.json",
+      "title": "Retired bathtub-overflow findings draft",
+      "publisher": "GitHub repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "Archived findings.json contains a categorical job-permit assertion. The file is not linked into the canonical staged site.",
+      "limitations": "Retired owner-draft data; preserved for history and not used as an official permit determination."
     }
   ]
 }

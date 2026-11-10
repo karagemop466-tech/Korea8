@@ -1,17 +1,19 @@
 {
   "as_of": "2026-11-10",
-  "method_note": "Editorial decision support, not a verified performance or quality rating. Scores use only the fields on the official CSLB records, company-published service statements, directly retrieved BBB/Angi qualitative records, and the owner-supplied quote wording, re-read on 2026-11-10. No provider was contacted, no reference was taken and no availability or price was confirmed.",
+  "method_note": "Editorial decision support, not a verified performance or quality rating. All 24 CSLB records were re-read on 2026-11-10. Company, review and owner evidence retains its per-source date and limitations. Scores follow the published rubric; no provider was contacted, no reference was taken, and no availability, acceptance or current price was confirmed.",
   "weights": [
     {
       "id": "C1",
-      "criterion": "Combined plumbing + building capability on one licence",
+      "criterion": "Combined plumbing + restoration capability and contract structure",
       "weight": 0.3,
-      "basis": "B + C-36 on the checked CSLB record is relevant to combined plumbing and building work, subject to BPC §7057 and the actual scope. A named, appropriately qualified restoration party and contract structure remain to be confirmed.",
+      "basis": "Classifications and published restoration evidence are relevant, subject to BPC §§7057 and 7059(a) and the actual scope. A named, appropriately qualified restoration party remains necessary when the other-trade work is not incidental and supplemental.",
       "source_ids": [
         "BPC-7057",
         "CSLB-C36",
-        "CSLB-C9"
-      ]
+        "CSLB-C9",
+        "BPC-7059"
+      ],
+      "rubric": "5 = active B + C-36 on the checked licence; 3 = C-36 plus company-published restoration service, subject to BPC §7059(a) and contract structure; 2 = C-36 without B/C-9 or published restoration; 1 = no C-36. A General Engineering is not B General Building or C-9 Drywall."
     },
     {
       "id": "C2",
@@ -22,7 +24,8 @@
         "HEISE-INGLESIDE",
         "OWNER",
         "YELP-RF"
-      ]
+      ],
+      "rubric": "5 = company-published ceiling-access tub waste/overflow case plus fixture scope; 4 = company-published exact overflow repair without ceiling case; 3 = adjacent company/review evidence or owner replacement wording; 2 = ambiguous or adjustment-only owner wording; 1 = no scope evidence found."
     },
     {
       "id": "C3",
@@ -32,7 +35,8 @@
       "source_ids": [
         "CSLB-SEARCH",
         "DG-COMPLAINT"
-      ]
+      ],
+      "rubric": "5 = active 20+ years with current workers compensation and no flagged additional status; 4 = active with current workers compensation, or longstanding active with exemption and no flagged additional status; 3 = active with shorter tenure, exemption, miscellaneous entry or near-term insurance expiry; 2 = future-suspension/citation concern; 1 = suspended/unresolved. Tenure uses CSLB issue/reissue dates, not advertising."
     },
     {
       "id": "C4",
@@ -41,8 +45,10 @@
       "basis": "Published company statements about HOA/property-manager work, property maintenance or occupied-home protocol. Absence of a statement scores low; it is not evidence of inability.",
       "source_ids": [
         "ACE",
-        "HEISE"
-      ]
+        "HEISE-PATCH",
+        "RF-SERVICES"
+      ],
+      "rubric": "5 = published exact occupied multi-unit repair protocol; 4 = published HOA/property-manager or property-maintenance work; 2 = general residential/commercial work without an occupied-unit protocol; 1 = no relevant statement found. Absence of a statement is not evidence of inability."
     },
     {
       "id": "C5",
@@ -54,7 +60,8 @@
         "CSLB-977638",
         "CSLB-757796",
         "CSLB-1024971"
-      ]
+      ],
+      "rubric": "5 = owner-supplied waste/overflow replacement scope; 4 = owner-supplied but ambiguous parts scope; 3 = owner-supplied adjustment-only scope; 2 = third-party price for a noncomparable scope; 1 = no quote on file. Amounts remain owner-reported and verified price cells stay blank."
     }
   ],
   "ranked": [
@@ -126,7 +133,8 @@
         "CSLB-787733",
         "BBB-HEISE",
         "HEISE-FIXTURES",
-        "BPC-7059"
+        "BPC-7059",
+        "CSLB-831"
       ],
       "flags": [
         "F-01",
@@ -140,10 +148,10 @@
         "C4": 4,
         "C5": 1
       },
-      "why": "Strongest adjacent evidence: four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 ceiling access and Panhandle #171358), fixture overflow-plate replacement claims, and advertised drywall/ceiling patching — though company pages are not independent proof of restoration licensing, show varying review-volume claims (1,600+ to 2,000+), and BBB (B-, unaccredited) displays dissolved #787733 (canceled 02/12/2025) alongside 1 negative Aug 2024 review and 1 unrelated misfiled Instagram complaint. No B or C-9 on #1089561: BPC §7059(a)/16 CCR §831 permits a small essential access patch as incidental, whereas standalone/texture/fire-rated ceiling restoration needs C-9 or B.",
+      "why": "Strongest adjacent evidence: four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 ceiling access and Panhandle #171358), an official fixture page naming overflow plates/drain assemblies, and advertised drywall/ceiling patching. Company pages are not independent proof of restoration licensing, show varying review-volume claims (1,600+ to 2,000+), and BBB (B-, unaccredited) displays dissolved #787733 (canceled 02/12/2025) alongside 1 negative Aug 2024 review and 1 unrelated misfiled Instagram complaint. No B or C-9 is on #1089561; BPC §7059(a) applies only when other-trade work is incidental and supplemental. 16 CCR §831 defines incidental and supplemental as essential to the licensed craft; this job’s restoration structure is still unconfirmed.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources.",
-      "ask": "Ensure the written contract names active #1089561 TARO GROUP INC dba HEISES PLUMBING (not dissolved #787733), state who holds the drywall/restoration license if B&P §7048 does not exempt the patch, and provide a current written combined quote.",
+      "ask": "Ensure the written contract names active #1089561 TARO GROUP INC dba HEISES PLUMBING (not dissolved #787733), document whether ceiling restoration is incidental and supplemental under BPC §7059(a), otherwise name the appropriately licensed restoration party and contract structure, and provide a current written combined quote.",
       "short_why": "published ceiling-access overflow case and advertised plumbing-access drywall and ceiling patching; restoration party and contract structure unconfirmed",
       "review_evidence": "No direct Yelp profile excerpt was found; the four company-published cases and RV-13 (BBB B-, unaccredited) carry the technical and review picture"
     },
@@ -280,7 +288,8 @@
       "source_ids": [
         "CSLB-977638",
         "EXPERT",
-        "BBB-EXPERT"
+        "BBB-EXPERT",
+        "BPC-7059"
       ],
       "flags": [
         "F-02",
@@ -295,10 +304,10 @@
         "C5": 5,
         "C4": 1
       },
-      "why": "The supplied 2026-08-30 wording — \"replace waste and overflow\" — is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: the licence does not cover the ceiling repair, so a second licensed party is required if the ceiling is opened. This ranking does not endorse the $614 figure, which remains owner-reported.",
+      "why": "The supplied 2026-08-30 wording — \"replace waste and overflow\" — is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: for ceiling restoration, BPC §7059(a) allows other-trade work only when incidental and supplemental; otherwise an appropriately licensed restoration party and contract structure are needed. This ranking does not endorse the $614 figure, which remains owner-reported.",
       "cost_amount_owner": 614,
       "cost_note": "Owner-reported $614 on 2026-08-30 for \"replace waste and overflow\". Verified amount blank; no access route, drywall restoration, permit, cleanup or warranty line is included.",
-      "ask": "Requote the identical combined scope and ask for the access method and the named restoration party in writing. Final verification gate: Confirm access route, parts, drywall, permit, cleanup, warranty and validity in writing.",
+      "ask": "Requote the identical combined scope, state the access method, and document whether restoration is incidental and supplemental under BPC §7059(a) or name the restoration party. Confirm access route, parts, drywall, permit, cleanup, warranty and validity in writing.",
       "short_why": "C-36 only; owner-reported $614 is the closest supplied scope wording",
       "review_evidence": "RV-16 (BBB Not Rated, 0 complaints in 3 years) · no direct Yelp profile excerpt was found"
     },
@@ -389,21 +398,22 @@
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
       "website": "",
       "source_ids": [
-        "CSLB-1140843"
+        "CSLB-1140843",
+        "BPC-7059"
       ],
       "flags": [],
       "score_components": {
-        "C1": 4,
+        "C1": 2,
         "C2": 1,
         "C3": 3,
         "C4": 1,
         "C5": 1
       },
-      "why": "C-36 + A with an unusually complete insurance file on the CSLB record: workers compensation, $2,000,000 liability and a $100,000 LLC employee bond. No B or C-9, and no tub-overflow or occupied-unit evidence was found; the licence was issued in 2025 and the firm is registered in Burlingame.",
+      "why": "C-36 + A with an unusually complete insurance file on the CSLB record: workers compensation, $2,000,000 liability and a $100,000 LLC employee/worker bond. A General Engineering is not B General Building or C-9 Drywall, so no combined building/drywall capability is inferred. No tub-overflow or occupied-unit evidence was found; the licence was issued in 2025 and the firm is registered in Burlingame.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file.",
       "ask": "Ask whether San Francisco occupied-unit repair work is accepted and who holds the drywall classification.",
-      "short_why": "C-36 + A with $2M liability and LLC bond on file; no building classification",
+      "short_why": "C-36 + A with $2M liability and LLC bond on file; A is not B/C-9 and no restoration evidence was found",
       "review_evidence": "No direct Yelp profile excerpt was found · no BBB or Angi row on file for this candidate"
     },
     {
@@ -499,9 +509,10 @@
     {
       "provider_id": "P-11",
       "name": "SF Building Group",
-      "reason": "B only on the checked record, registered in South San Francisco, workers-compensation exemption. Without C-36 the plumbing work needs a separate licensed plumber, so it cannot be the single all-in-one contract.",
+      "reason": "B only on the checked record, registered in South San Francisco, workers-compensation exemption. It is not a plumbing lead; a combined prime contract would need the BPC §7057 conditions and an appropriately licensed plumbing party. Small occupied-unit repair acceptance and exact-scope evidence are unconfirmed.",
       "source_ids": [
-        "CSLB-1106131"
+        "CSLB-1106131",
+        "BPC-7057"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
       "phone": "(415) 297-2246",
@@ -560,7 +571,7 @@
     {
       "provider_id": "P-17",
       "name": "FDL Plumbing",
-      "reason": "C-36 only, registered in Daly City, workers-compensation exemption, no building classification and no evidence for this scope.",
+      "reason": "C-36 only, registered in Daly City, with a current workers-compensation policy expiring 2027-01-21 on the fresh CSLB record. No B/C-9 or evidence for this exact scope was found; the earlier exemption wording was stale and has been corrected.",
       "source_ids": [
         "CSLB-1086935"
       ],
@@ -719,7 +730,7 @@
       "status": "Unresolved"
     }
   ],
-  "final_verification_note": "Full independent verification on 2026-11-10 re-checked all 24 canonical CSLB records plus #954813, #888630 and dissolved #787733 (11/9/2026 9:49-9:52 PM CSLB snapshot), verified BPC §7059(a) & 16 CCR §831 incidental-work boundaries, verified city-hosted 2025 SF Plumbing Code PDF §104.2 and SFBC §106A.2(10), fixed broken HEISE-PANHANDLE and DG-CITATION URLs, and checked BBB/Angi while Yelp remained HTTP 403. Weights remain editorial decision support; no provider was contacted or booked. Preserved PR #71 review-evidence notes, second-bid ceiling alternatives and copy-ready request block.",
+  "final_verification_note": "Final 2026-11-10 review re-read all 24 CSLB records (board banner 11/9/2026 9:49:30–9:51:48 PM; timezone unstated), added BPC §7059(a), corrected SFPC/SFBC source chunks to 14/39, and made the C1–C5 scoring anchors explicit. Discount’s C1 component changed from 4 to 2 because A is not B/C-9; Fast Response moves to #9 and Discount to #10. FDL’s workers-compensation explanation was updated to the current policy record. Heise’s official fixture page was added. No provider was contacted or booked.",
   "partners_second_bid": [
     {
       "id": "RV-23",
