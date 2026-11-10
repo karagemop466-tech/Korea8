@@ -1,0 +1,40 @@
+{
+  "retrieved_by": "arena/0ccaa3f3-korea8",
+  "retrieved_at_utc": "2026-11-10T01:05Z",
+  "subject_license": "297604",
+  "contractor_name": "D G CONSTRUCTION CO",
+  "chain_of_official_pages_fetched": [
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604",
+    "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=LIC&LicNum=297604&LmfPre=&Class=2&FiscalYear=2022&SeqNbr=2099&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=D+G+CONSTRUCTION+CO&StatusDt=03/23/2023"
+  ],
+  "complaint_disclosure_page": {
+    "citation_number_as_rendered": "2 2022 002099",
+    "date": "03/23/2023",
+    "status": "FOR DISCLOSURE ONLY PER B&P CODE 7124.6"
+  },
+  "citation_violation_disclosure_page": {
+    "citation_number_as_rendered": "2 2022 2099",
+    "date": "03/23/2023",
+    "status": "FOR DISCLOSURE ONLY PER B&P CODE 7124.6",
+    "violations": [
+      {"code": "Business & Professions Code", "violation": "7114.A", "description": "Aided and abetted non-licensee"}
+    ]
+  },
+  "governing_disclosure_statute": {
+    "citation": "Cal. Bus. & Prof. Code s 7124.6",
+    "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7124.6",
+    "subdivision_e_1_A_verbatim": "Citations shall be disclosed from the date of issuance and for five years after the date of compliance if no additional disciplinary actions have been filed against the licensee during the five-year period. If additional disciplinary actions were filed against the licensee during the five-year period, all disciplinary actions shall be disclosed for as long as the most recent disciplinary action is subject to disclosure under this section. At the end of the specified time period, those citations shall no longer be disclosed.",
+    "subdivision_b_verbatim": "The board shall create a disclaimer that shall accompany the disclosure of a complaint that shall state that the complaint is an allegation. The disclaimer may also contain any other information the board determines would be relevant to a person evaluating the complaint."
+  },
+  "irregularity_found": {
+    "id": "0cc-IR-01",
+    "severity": "material-correction",
+    "prior_canonical_claim": "audit/REPORT_2026-11-08_b0d7ecf7.md and the COORDINATION.md entry for session arena/b0d7ecf7-korea8 state: 'D G Construction #297604 has a complaint-disclosure link; the disclosure lists citation 2 2022 002099 (03/23/2023, \"for disclosure only per B&P 7124.6\") and does not publish the conduct.'",
+    "what_live_retrieval_shows": "The conduct IS published. CSLB exposes it on a third-level page (CitationViolationDisclosure.aspx) reached from the complaint-disclosure page: Business & Professions Code violation 7114.A, description 'Aided and abetted non-licensee'.",
+    "why_it_matters_to_this_job": "The owner's controlling requirement is a single all-in-one contract covering plumbing plus ceiling/drywall work. A citation whose stated description is aiding and abetting a NON-LICENSEE is directly probative of whether this contractor engages properly licensed parties when it subcontracts or shares scope. The existing 'held back' classification is therefore still correct, but for a now-named reason rather than an unnamed disclosure.",
+    "correction_requested": "Update the canonical flag for D G Construction #297604 to record the violation code (BPC 7114.A) and CSLB's own description ('Aided and abetted non-licensee'), remove the assertion that the conduct is not published, and link the third-level CSLB page.",
+    "neutrality_control": "This is a CSLB citation disclosed under B&P 7124.6, not an adjudicated finding. B&P 7124.6(b) requires the board to state that a disclosed complaint is an allegation. No conclusion about merit is drawn here; the record is reported verbatim as CSLB publishes it.",
+    "disclosure_window": "Under s 7124.6(e)(1)(A) the citation is disclosed from issuance and for five years after the date of compliance, absent further disciplinary action; so it is expected to remain visible and is not a transient artefact."
+  }
+}

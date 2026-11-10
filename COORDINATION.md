@@ -1270,3 +1270,83 @@ retrieval, per-field comparison against the stored canonical rows, and a dated r
 labelled owner-reported with verified amounts blank. No value will be inferred: unconfirmable fields stay blank and flagged.
 The owner's internal-use constraint and its private reason are **not** recorded in this repository, in any published page,
 in any data file, or in any commit message.
+
+### `0cc-02` / `0cc-03` — completed record (session `arena/0ccaa3f3-korea8`, 2026-11-10)
+
+**Reports:** [`audit/2026-11-10-0ccaa3f3/VERIFICATION.md`](audit/2026-11-10-0ccaa3f3/VERIFICATION.md) ·
+[`audit/2026-11-10-0ccaa3f3/REPO_REVIEW.md`](audit/2026-11-10-0ccaa3f3/REPO_REVIEW.md) ·
+five machine-readable receipts under `audit/2026-11-10-0ccaa3f3/receipts/`.
+
+**Capability that made this pass different.** In-sandbox `curl` fails to `www.cslb.ca.gov`,
+`www.sf.gov` and `sfplanning.org` (TLS `SSL_ERROR_SYSCALL`), but this session's page-retrieval tool
+reaches them. Twenty official pages were retrieved **directly and live** on 2026-11-10 rather than
+carried forward:
+
+- ten CSLB licence-detail records — #829071, #1089561, #1115649, #1027286, #977638, #757796,
+  #1024971, #1009195, #297604, #995163 — all carrying the CSLB banner *Data current as of
+  11/9/2026 4:49 PM*. **10/10 matched the canonical rows** on legal name, dba, entity,
+  classifications, status, expiry, city, phone and workers-compensation entry. No licensure
+  correction was needed; this independently corroborates the 24/24 results reported by
+  `arena/d6196195-korea8` and `arena/be9ec407-korea8` for the ten records in common.
+- the CSLB **complaint-disclosure** and third-level **citation-violation-disclosure** pages for
+  #297604;
+- Cal. B&P Code **§7114** and **§7124.6** verbatim on leginfo;
+- `sf.gov/apply-plumbing-and-mechanical-permit`;
+- three Heise's company pages including two tub waste-and-overflow case pages;
+- the GitHub **Pages API** (site settings and build history).
+
+**Independent corroboration, credited where it is due.** Two of this session's four findings were
+discovered and merged by `arena/87e121e1-korea8` (PR #65) *before* this session edited anything:
+the D G Construction citation conduct (**BPC §7114.A, "Aided and abetted non-licensee"**, published
+on CSLB's third-level page, which session `arena/b0d7ecf7-korea8` had recorded as *not* published),
+and Heise's Panhandle case **#171358**. Two sessions retrieving separately reached identical values.
+**No duplicate edit was made.** This is recorded as corroboration, not as this session's correction.
+
+### `0cc-04` — canonical corrections applied (session `arena/0ccaa3f3-korea8`)
+
+Applied on `origin/main` at `98b3d09` after PRs #56/#61/#62/#65 had merged, so nothing here
+duplicates another session's landed work.
+
+| Change | Detail |
+|---|---|
+| **+1 compliance row `C-14`** | City offices closed **Wednesday 2026-11-11** for Veterans Day (live sf.gov banner retrieved 2026-11-10). Permit Center help desk 628-652-4900 and the 49 South Van Ness counter unavailable that day; next business day **Thursday 2026-11-12**; the City commits to answering help-desk voicemail within 2 business days. Sourced to `SF-PERMIT`. |
+| **+3 flags `F-49`, `F-50`, `F-51`** | `F-49` the 2026-11-11 closure and its effect on permit timing (new). `F-50` `.github/workflows/gems-pipeline.yml` line 59 hardcodes `git push origin HEAD:arena/d7026453-korea8`, a branch belonging to a session that ended 2026-11-04 — a live cross-session hazard (new). `F-51` 16 tracked `.tif` files totalling **14,052,602 bytes** contradict `AGENTS.md` line 39 ("never committed"), with duplicated pairs under `downloads/` and `docs/downloads/` (new). |
+| **`F-34` corrected and raised to High** | Added the three legacy Pages builds that **errored** on 2026-11-10 (`caab44e`, `a510682`, `b30f89d`) while the Actions runs for those same commits reported **success**; `PUT /repos/.../pages` with `build_type=workflow` returns **HTTP 403 "Resource not accessible by integration"**; the staged closure is 21 files; `COORDINATION.md` and `pyproject.toml` both return GitHub Pages **404** live, proving the workflow artefact — not the whole root — is served. **Owner action: set Pages → Source to "GitHub Actions" in the UI**, because until then a legacy build that stops erroring would publish the entire repository root, including this board. |
+| **`F-40` corrected** | It said "two run-card files"; there are **four**, with four different schemas (`RUN_CARD.json` 4,530 B; `run_card.json` 5,749 B; `evidence/run_card.json` and `docs/evidence/run_card.json` 2,695 B each). All four belong to the archived geothermal project, against `AGENTS.md`'s "one JSON run card" rule. |
+| **+2 sources** | `GH-WORKFLOWS` (official-tool, GitHub Docs — About workflows) and `AUDIT-20261110-0CC` (repository-primary, this session's verification log, with an official cross-reference). |
+| **Executive summary** | Key controls now carry the 2026-11-11 closure and the **SFBC §106A.2(10)** fire-resistive-ceiling check before cutting the storage-unit ceiling (`F-48` existed on `main` but was absent from the summary). |
+| **Verification + Flagged pages** | Now link this session's verification log, repository review and all five receipts. |
+
+Counts after rebuild: **112 sources, 14 compliance rows, 51 flags, 25 identities, 42 requirements**.
+
+**Deliberately NOT raised as a canonical flag:** full `unittest discover` reports 2 import errors
+(`tests/test_metric.py`, `tests/test_uniqueness_gate.py` need `numpy`, absent here and `pip` is
+PEP-668 blocked). Both belong to the archived geothermal project and sit outside the CI pattern
+`-p 'test_overflow*.py'`. This is an environment gap, **not** a defect in the bathtub deliverable, so
+it is recorded in the repository review only — raising it as a project flag would overstate it. The
+residual note is that "CI green" means "18→21 overflow tests green", not "all tests green".
+
+**Ranking unchanged.** No position in `ranking.json` was altered. The #297604 finding reinforces an
+existing exclusion; the closure finding is a scheduling fact. No provider was contacted, called,
+emailed, quoted, booked or paid. No price was inferred. Owner estimates remain owner-reported with
+`amount_verified` null; Yelp/BBB ratings and counts remain null.
+
+### `0cc-04` verification gates (all re-run after the final edit)
+
+| Check | Result |
+|---|---|
+| `python scripts/build_overflow_site.py` | 11 pages built |
+| `python scripts/verify_overflow_site.py` | **27/27 PASS** — 341 canonical table rows each carry an official-primary source link; 256 tracked-HTML internal links, 0 broken |
+| `python -m unittest discover -s tests -p 'test_overflow*.py'` | **21/21 OK** |
+| `python audit/independent_audit.py` | `pages=11 rows=341 with_source=341 blank_marked=0 problems=0` |
+| `python scripts/stage_overflow_pages.py` | 32 linked public files staged |
+| Build determinism | only `built_at` timestamps differ between runs |
+| `git diff --check` | clean |
+| Verifier banned-pattern gate | PASS, zero hits |
+| Privacy sweep of all changed and new files | one hit, `do not publish`, inside pre-existing **F-31** ("Use CSLB as the license authority; do not publish the directory attribution") — a third-party misattribution of #297604, unrelated to permits. No wording added by this session refers to the owner's internal constraint or to any reason for it. |
+
+**Cross-session request (not edited, out of scope).** `site-data/build-report.json` and
+`site-data/verification.json` are rewritten by the canonical build even though `site-data/` is a
+superseded tree, which invites a reader to mistake it for live input. Suggestion for whoever owns the
+generator next: stop emitting `site-data/`, or add a one-line `site-data/README.md` stating it is a
+build mirror. Logged here instead of edited.

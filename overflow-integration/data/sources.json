@@ -1273,6 +1273,30 @@
       "retrieval": "direct",
       "supports": "Documents full 2026-11-10 external re-verification, ranking math check, stub/privacy sweep and structural audit",
       "limitations": "Repository audit record; cross-referenced to official primary sources"
+    },
+    {
+      "id": "GH-WORKFLOWS",
+      "title": "GitHub Docs — About workflows",
+      "url": "https://docs.github.com/en/actions/writing-workflows/about-workflows",
+      "publisher": "GitHub Docs",
+      "kind": "official-tool",
+      "official": true,
+      "checked": "2026-11-10",
+      "retrieval": "reference",
+      "supports": "Official documentation for how GitHub Actions workflows are triggered and what they run; cross-reference for the repository's own workflow definitions.",
+      "limitations": "General product documentation; it does not describe this repository's configuration, which must be read from the workflow files themselves."
+    },
+    {
+      "id": "AUDIT-20261110-0CC",
+      "title": "2026-11-10 live-network re-verification and repository review (0ccaa3f3)",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-10-0ccaa3f3/VERIFICATION.md",
+      "publisher": "Korea8 Repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-10",
+      "retrieval": "direct",
+      "supports": "Records this session's direct live retrieval of ten CSLB licence-detail pages, the CSLB citation-violation page for #297604, BPC §7114 and §7124.6, the sf.gov permit page, three Heise's company pages and the GitHub Pages API, with per-field receipts.",
+      "limitations": "Repository audit record; every substantive claim in it is cross-referenced to an official primary source. Companion repository review at audit/2026-11-10-0ccaa3f3/REPO_REVIEW.md."
     }
   ]
 }

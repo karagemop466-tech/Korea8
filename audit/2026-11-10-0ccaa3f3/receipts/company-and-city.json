@@ -1,0 +1,47 @@
+{
+  "retrieved_by": "arena/0ccaa3f3-korea8",
+  "retrieved_at_utc": "2026-11-10T01:09Z",
+  "findings": [
+    {
+      "id": "0cc-F-01",
+      "severity": "material-new-evidence",
+      "topic": "All-in-one plumbing + drywall capability: Heise's Plumbing publishes the exact restoration scope on its own official site",
+      "official_url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+      "publisher": "heisesplumbing.com (official company site; licence #1089561 TARO GROUP INC dba HEISES PLUMBING)",
+      "verbatim_quotes": [
+        "Heise's Plumbing provides clean drywall patching, wall repair, and interior paint touch-ups for homes and commercial properties across San Francisco and the Peninsula.",
+        "Our technicians repair holes, patch drywall cutouts made during maintenance work, sand surfaces smooth, and apply touch-up paint to help blend repairs with surrounding interior walls.",
+        "From minor doorknob impacts to plumbing access patch-ups, we deliver practical wall maintenance that keeps your building looking well-cared for.",
+        "Plumbing Access Hole Repair - Restoring drywall cutouts made during pipe, drain, or valve maintenance and inspection.",
+        "Water Stain & Ceiling Patching - Repairing dried water-damaged ceiling drywall after underlying plumbing leaks are resolved.",
+        "Post-Plumbing Access Cuts - Patching drywall inspection openings cut during pipe, drain, or valve repair work.",
+        "Surface Sanding & Texture Prep - Sanding patch compounds smooth and prepping wall texture prior to applying final paint touch-ups."
+      ],
+      "phone_on_page": "(415) 333-0704",
+      "why_it_matters": "The owner's controlling requirement is 'all in one service for dry wall and plumbing' because the access path may require opening the ceiling of the storage unit below. The canonical register records Heise's as having no B and no C-9 classification and therefore concludes 'the ceiling party must be named'. That legal-classification statement is still true and is confirmed live (see cslb-batch1.json: C36, C10, A, C20 only). But the canonical record does NOT carry the fact that this same company advertises, as a named service line, patching the drywall access openings its own plumbers cut - including ceilings - and sanding/texturing/painting them. That is the closest published match to the owner's all-in-one requirement anywhere in the 25-identity register.",
+      "licence_vs_advertising_control": "Advertising a service is not proof of legal authority to self-perform it, and it is not proof the company will accept this specific job. The CSLB classification record remains the authority on what the licence covers. Recommendation: ask Heise's directly whether it will self-perform the ceiling opening and restoration under one C-36 contract as patching incidental to its plumbing repair, or whether it will name a C-9/B party; get the answer in the written scope. Do not treat the marketing page as a licence determination.",
+      "company_self_reported_rating_note": "The same page displays a company-authored marketing block reading '4.9 STARS From 2,000+ Customer Reviews'. This is a SELF-PUBLISHED vendor claim, not an independent review-platform rating. It is recorded here as company-published advertising only. The canonical discipline of leaving rating and review-count fields blank is CORRECT and should not be relaxed for this figure: a vendor's own marketing number is not an independent rating and must not be presented as verified."
+    },
+    {
+      "id": "0cc-F-02",
+      "severity": "confirmation-plus-new-detail",
+      "topic": "San Francisco plumbing permit rule, retrieved live from sf.gov",
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "publisher": "City and County of San Francisco, Department of Building Inspection (sf.gov)",
+      "verbatim_quotes": [
+        "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground. See exemptions in San Francisco Plumbing Code Section 104.2.",
+        "Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general. Your permit scope may be further limited depending on your license type.",
+        "After your permit is issued, have your plumbing or mechanical work inspected before covering pipes",
+        "B license, after approval based on the scope of work (plumbing work related to a kitchen or bath permit on PermitSF can be approved immediately for B contractors)",
+        "Only property owners of stand-alone single-family dwellings (R-3 occupancy) may apply for a plumbing or mechanical permit to do the work themselves.",
+        "When doing both plumbing and mechanical work, apply for separate permits for plumbing work and mechanical work."
+      ],
+      "contact": {"permit_center_help_desk_phone": "628-652-4900", "email": "permitsf@sfgov.org", "response_commitment": "Leave a voicemail and include your email address. We will contact you within 2 business days."},
+      "fee_schedule_url": "https://www.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "code_exemption_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "apply_url": "https://sanfranciscoca.portal.opengov.com/categories/1088",
+      "new_time_sensitive_detail": "The page carried a live banner on 2026-11-10 reading: 'City offices will be closed on Wednesday, November 11 for Veterans Day.' So the Permit Center help desk and DBI counter are closed 2026-11-11; the next business day for a phone/counter determination is Thursday 2026-11-12.",
+      "why_it_matters": "Two decision consequences follow from the official text alone. (1) Replacing a waste-and-overflow body means cutting into or replacing pipe that will then be covered by a wall or ceiling, which the City states requires a permit unless a Section 104.2 exemption applies; and the City also requires inspection BEFORE covering pipes, which is precisely the step that is irreversible in this job. (2) Because the affected space is a tenant-occupied unit with a storage unit below, it is not a stand-alone single-family R-3 dwelling that an owner may self-permit; a contractor holding C4/C16/C20/C36/C54/B/A must apply. This is stated here as the published City rule only. No determination about this specific address has been made by DBI, and the exemption question must be put to DBI in writing - the help desk number and email above are the official channel."
+    }
+  ]
+}

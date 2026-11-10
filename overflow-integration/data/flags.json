@@ -500,15 +500,16 @@
     },
     {
       "id": "F-34",
-      "severity": "Medium",
+      "severity": "High",
       "category": "Publication",
       "title": "GitHub Pages status has lagged/errored across rapid merges",
-      "detail": "Pages API currently reports built on legacy main/root source, while the repository also has a successful Actions Pages workflow. A prior successful build is not proof of the new merge commit.",
-      "action": "After this integration merge, verify the specific workflow run, Pages build commit and cache-busted live content.",
+      "detail": "Pages API currently reports build_type \"legacy\" with source branch main and path \"/\", while the repository also has a successful Actions Pages workflow. A prior successful build is not proof of the new merge commit. Retrieved live on 2026-11-10: the legacy Pages builder ERRORED for three commits that day (caab44e, a510682, b30f89d) while the Actions runs for those same commits reported success, and PUT /repos/.../pages with build_type=workflow returns HTTP 403 \"Resource not accessible by integration\". The staged closure is 21 files and COORDINATION.md and pyproject.toml both return GitHub Pages 404 live, so the workflow artefact - not the whole repository root - is what is currently served.",
+      "action": "After this integration merge, verify the specific workflow run, Pages build commit and cache-busted live content. Owner action: set Pages > Build and deployment > Source to \"GitHub Actions\" in the repository UI, because the available automation token cannot (HTTP 403). Until that is done, a legacy build that stops erroring would publish the entire repository root, including internal coordination and audit records.",
       "source_ids": [
         "PAGES-API",
         "REPO-BOARD",
-        "GH-ACTIONS"
+        "GH-ACTIONS",
+        "AUDIT-20261110-0CC"
       ],
       "official_url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
       "status": "Open"
@@ -593,13 +594,14 @@
       "severity": "Low",
       "category": "Repository",
       "status": "Open",
-      "title": "Repository hygiene: case-colliding run cards and 26 stale session branches",
-      "detail": "38 arena/* remote branches exist alongside main on origin as of 2026-11-10 (including current branch arena/87e121e1-korea8 and 37 historical session branches).",
-      "action": "Rename or archive one of the two run-card files, and delete merged session branches. Neither affects the published dashboard.",
+      "title": "Repository hygiene: four case-colliding run cards and stale session branches",
+      "detail": "AGENTS.md and PROJECT_PROMPT.md both require a single JSON run card, but four are tracked with four different schemas: RUN_CARD.json (4,530 bytes, keys run_card_version/protocol/holdout_dti), run_card.json (5,749 bytes, keys competition/deadline_utc/difference_from_prior_repo_work), evidence/run_card.json and docs/evidence/run_card.json (2,695 bytes each, identical schema, keys raster_sha256/uniqueness). All four belong to the archived geothermal project. Separately, 38 arena/* remote branches exist alongside main on origin as of 2026-11-10.",
+      "action": "Keep one run card for the archived project and archive the other three, and delete merged session branches. Neither affects the published dashboard.",
       "source_ids": [
         "REPO",
         "REPO-BOARD",
-        "GH-PR"
+        "GH-PR",
+        "AUDIT-20261110-0CC"
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/pulls"
     },
@@ -726,6 +728,53 @@
         "SF-REMODEL",
         "CSLB-C9"
       ]
+    },
+    {
+      "id": "F-49",
+      "severity": "Medium",
+      "category": "Code & permit",
+      "status": "Open",
+      "title": "Permit Center closed 2026-11-11, so the permit determination slips to 2026-11-12",
+      "detail": "The sf.gov plumbing and mechanical permit page displayed a live banner on 2026-11-10: \"City offices will be closed on Wednesday, November 11 for Veterans Day.\" The Permit Center help desk (628-652-4900) and the second-floor counter at 49 South Van Ness are therefore unavailable on 2026-11-11, and the same page commits to \"We will contact you within 2 business days\" for help-desk voicemail. This is a scheduling constraint on obtaining the permit or exemption determination, not a change in the rule.",
+      "action": "Do not plan a DBI call, counter visit or contractor permit application for 2026-11-11. The next business day is Thursday 2026-11-12; a help-desk question left on 2026-11-10 should draw a response by 2026-11-13. Ask the contractor to state its permit position in writing before any pipe is cut or covered.",
+      "source_ids": [
+        "SF-PERMIT",
+        "SF-DBI",
+        "AUDIT-20261110-0CC"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "F-50",
+      "severity": "Medium",
+      "category": "Repository",
+      "status": "Open",
+      "title": "Archived workflow pushes to a hardcoded branch belonging to a session that ended on 2026-11-04",
+      "detail": ".github/workflows/gems-pipeline.yml line 59 contains \"git push origin HEAD:arena/d7026453-korea8\" - a fixed session branch name baked into a workflow on main. That session's branch is historical. The workflow is workflow_dispatch only, so it does not run on push, but if anyone dispatches it, it will commit generated evidence to an unrelated session's branch. This is a live cross-session hazard given that many sessions share this repository.",
+      "action": "Parameterise the target branch (for example ${{ github.ref_name }}) or delete the archived workflow. Owner decision: this file belongs to the archived geothermal project and is outside the bathtub deliverable's scope, so it was flagged rather than edited.",
+      "source_ids": [
+        "GH-WORKFLOWS",
+        "REPO",
+        "REPO-BOARD",
+        "AUDIT-20261110-0CC"
+      ],
+      "official_url": "https://docs.github.com/en/actions/writing-workflows/about-workflows"
+    },
+    {
+      "id": "F-51",
+      "severity": "Low",
+      "category": "Repository",
+      "status": "Open",
+      "title": "14.05 MB of GeoTIFF is committed although AGENTS.md says the data is never committed",
+      "detail": "AGENTS.md line 39 states that competition data \"is restored on a GitHub Actions runner and never committed\", yet 16 .tif files totalling 14,052,602 bytes are tracked: registry/lattice_s5.tif, nine registry/focus9/GEMSDOE*.tif, submissions/korea8-h1-stepover-relay-prior-*.tif, data/templates/GEMS-grid-template.tif, and duplicated pairs under downloads/ with docs/downloads/. AGENTS.md separately documents registry/focus9/ and lattice_s5.tif as intentionally preserved bytes, so the file contradicts itself rather than being simply wrong. All of it belongs to the archived geothermal project.",
+      "action": "Owner decision: either correct the AGENTS.md sentence to describe what is actually committed, or move the rasters to release assets or Git LFS. No effect on the published dashboard, which stages only its 21 linked public files.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "GH-PR",
+        "AUDIT-20261110-0CC"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/AGENTS.md"
     }
   ]
 }
