@@ -1557,3 +1557,24 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 - After the merge: canonical rebuild, verifier 27/27 (341 source-covered rows, 256 tracked-HTML links, 0 broken), 27 unit tests, 32-file staging, wording guard clean, independent audit 0 problems.
 - 01:16 UTC: merged `origin/main` at `1e7f03f` (PR #68, `arena/b5ed3a43-korea8`). Append/append conflict in this board only; both sections kept, the newer session's first. Re-ran build, verifier (27/27), 27 unit tests, staging and the wording guard: all pass.
 - 01:17 UTC: merged `origin/main` at `9f1e76d` (PR #69, `arena/b5ed3a43-korea8` receipt). Conflict in this board only; their `B5-05` record sits at the end of their section, this section stays last. Same checks re-run: all pass.
+
+---
+
+## Session `arena/5651e041-korea8` — Yelp-linked review evidence, one-button hiring answer, and publication of this board's public exposure (2026-11-10)
+
+**Claim time:** 2026-11-10 ~06:0x UTC, committed and pushed before any other edit.
+**Branch note.** Arena pins this session to `arena/5651e041-korea8`; the `session-<id>/<task>` branch name cannot be created (same platform exception every earlier session recorded).
+
+**Overlap check done first.** Everything below is checked against the board before claiming. Licence re-reading, canonical rebuilds, live-route audits, wording, publication-boundary and requirements-traceability work are **already done** by `d6196195`, `0ccaa3f3`, `be9ec407`, `b5ed3a43`, `3abe4d32`, `660ab2dd`, `35739f62`, `47d993da`, `87e121e1`, `b0d7ecf7` and others. This session does **not** repeat any of them. It takes the three items nobody holds:
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `5E-01` | Claim this board before any other edit | done | `arena/5651e041-korea8` | `COORDINATION.md` |
+| `5E-02` | Yelp / review-platform evidence for this specific work (tub-side overflow extraction, ceiling access, drywall patch, occupied unit) for the ranked SF leads, read live and kept separate from CSLB facts | in progress | `arena/5651e041-korea8` | `overflow-integration/data/reviews.json`, `scripts/build_overflow_site.py`, `overflow-integration/REPO_REVIEW.md` |
+| `5E-03` | One-button hiring answer: a generated copy-ready request-for-quote block (phone numbers, one neutral scope, the four questions each lead must answer) with a build-time check that the block is populated and every phone traces to the official record | in progress | `arena/5651e041-korea8` | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, generated canonical pages |
+| `5E-04` | Repository review of the tracked tree and the live publication boundary, with new irregularities raised as flags rather than silent edits | in progress | `arena/5651e041-korea8` | `audit/2026-11-10-5651e041/**`, `overflow-integration/data/flags.json` |
+| `5E-05` | Closing integration: rebuild, verifier, unit tests, wording guard, independent audit, PR to `main`, merge, confirm the Pages deploy for the merge commit, record the receipt here | pending | `arena/5651e041-korea8` | generated canonical pages, `COORDINATION.md` |
+
+**Scope boundaries.** This session does not edit `docs/**` (archived DOE GEMS site), does not edit `tests/**`, and does not touch any open PR (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66). No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with the verified amount blank. Where a fact cannot be confirmed from an official source it stays blank and is flagged.
+
+**Standing rule carried forward.** Reader-facing copy stays in neutral repair-scope language and never carries owner-specific permit-timing detail. That rule is re-checked by `scripts/wording_guard.py` on every tracked file, and the new flags added under `5E-04` are worded the same way.
