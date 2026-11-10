@@ -692,6 +692,53 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
       "status": "Open"
+    },
+    {
+      "id": "F-47",
+      "severity": "Medium",
+      "category": "Repository content",
+      "title": "A superseded summary in project/ still asserts an unverified access-panel rule",
+      "detail": "project/EXECUTIVE_SUMMARY.md and project/README.md state that 'UPC section 402.10 requires a 12-inch access panel' and that a framed panel 'satisfies UPC section 402.10'. No free official text of that rule could be retrieved (IAPMO chapter 4 redirects to a members-only login), so the canonical site publishes no dimension and flag F-23 stays open. The files are not linked from the generated dashboard but are readable in the public repository.",
+      "action": "Use the canonical technical-approach page and F-23. Treat the project/ wording as superseded and unverified; do not quote a panel dimension until an official code text is retrieved.",
+      "source_ids": [
+        "IAPMO",
+        "SF-CODE-104",
+        "REPO",
+        "REPO-BOARD"
+      ],
+      "official_url": "https://aa.iapmo.org/?code=UPC&chapter=4",
+      "status": "Open"
+    },
+    {
+      "id": "F-48",
+      "severity": "Medium",
+      "category": "Publication",
+      "title": "Live GitHub Pages mode still publishes every root file, including internal project files",
+      "detail": "The repository's Pages configuration reports build_type 'legacy' with source main and path '/', so repository-root files such as COORDINATION.md and PROJECT_PROMPT.md are served at the site URL even though the dashboard does not link them. A staged-artifact workflow exists, but while legacy mode is the active Pages source the whole root tree remains published. A validator test also requires docs/index.html to keep redirecting to the dashboard, so restoring the unrelated DOE GEMS entry page there is not a local fix.",
+      "action": "Owner/administrator decision: switch Pages to the GitHub Actions (staged artifact) source, or move internal files out of the published path. No private content was found in the served text by this session's sweep.",
+      "source_ids": [
+        "PAGES-API",
+        "REPO-BOARD",
+        "REPO",
+        "GH-PAGES"
+      ],
+      "official_url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
+      "status": "Open"
+    },
+    {
+      "id": "F-49",
+      "severity": "Low",
+      "category": "Repository",
+      "title": "About 25 pull requests from earlier parallel sessions remain open",
+      "detail": "Open pull requests still listed on the repository include #35, #38, #39, #44, #49, #51, #53, #56, #57 and others opened on 2026-11-07 to 2026-11-10. Several predate the merged canonical dashboard, so merging them as-is risks reverting verified work. Earlier flags F-36 and F-39 record the same pattern for the pull requests known at the time.",
+      "action": "Owner or owning session decision: close the superseded pull requests or rebase them onto current main. This session did not modify or merge any other session's pull request.",
+      "source_ids": [
+        "REPO",
+        "REPO-BOARD",
+        "GH-PR"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/pulls",
+      "status": "Open"
     }
   ]
 }

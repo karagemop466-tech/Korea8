@@ -1325,3 +1325,59 @@ Prior overlapping claims on this board predate the final PR #54 by over 60 minut
 - Integration/deployment remains in progress pending PR and exact-commit live confirmation.
 - Conflict handoff: `origin/main` advanced via PR #55 during integration. Rebase conflicted in this board, the generator's verification paragraph, and generated pages/reports. Preserved both board records, retained the other session's publication-boundary audit/link and staging changes, added this session's audit link and verification limitations, and regenerated outputs. Combined rerun: 27/27 checks, 302 source-linked rows, 311 tracked internal links, 18/18 tests; no other session's work discarded.
 
+
+| `81C-A` claim board (this entry) | done | `arena/81c9a9f8-korea8` | `COORDINATION.md` |
+| `81C-B` fresh 2026-11-10 line-by-line re-verification of every published table row against the official/primary source | done | `arena/81c9a9f8-korea8` | `overflow-integration/data/*.json` (values only — no score, ranking or scope change without evidence), `audit/2026-11-10-81c9a9f8/**` |
+| `81C-C` repo irregularity review and flags sweep | done | `arena/81c9a9f8-korea8` | `overflow-integration/data/flags.json` (append-only, F-47+), `audit/2026-11-10-81c9a9f8/**` |
+| `81C-D` rebuild, verify, PR, merge, Pages deploy and live confirmation | in progress | `arena/81c9a9f8-korea8` | root generated HTML/reports, `COORDINATION.md` |
+
+**Claim boundaries.** This session performs a *source re-verification and publication* pass, not a re-scoring pass: ranking weights and scores are left untouched unless a source read shows an error. `arena/47d993da-korea8`, `arena/d6196195-korea8`, `arena/35739f62-korea8` and `arena/660ab2dd-korea8` records above are preserved unmodified; their open branches are not merged or closed here. Arena fixes this session to `arena/81c9a9f8-korea8`, so no `session-<id>/<task>` branch is created. No provider is contacted or booked. Internal-only owner constraints are handled by omission only and are not recorded anywhere in this repository.
+
+### `81C-B` — line-by-line re-verification record (2026-11-10)
+
+- **Retrieved directly from the official source on 2026-11-10:** all **24** CSLB licence-detail pages
+  (page banner "Data current as of 11/9/2026 4:49 PM"; timezone not stated). Field-by-field comparison
+  of legal name (including `dba` trade names), classifications, business phone, registered city,
+  expiry date, suspension status and workers'-compensation *exemption* status: **24/24 reproduce
+  every published value**. Machine-readable snapshots and the comparison harness are in
+  `audit/2026-11-10-81c9a9f8/observed_cslb_2026-11-10.py`; the full record is
+  `audit/2026-11-10-81c9a9f8/REPORT.md`.
+- **Re-read at source and matched:** BPC §7057, §7057.5 and §7048 and Civil Code §1954 (leginfo);
+  SF Plumbing Code §104.2 in the 2026 S-96 text (amlegal); sf.gov plumbing/mechanical permit page and
+  AUTH registration page; July 2026 DBI Table 1A-C ($290 1P, $320 11P/M, $519/h, $555/h, $259 per
+  half hour); CSLB C-9, C-36 and B classification pages; CSLB contracts guidance; Watco 500/501/600TL
+  instructions; Heise Ingleside case and Heise's advertised drywall access repair; Ace, Rapid Flow
+  and Atlas contact pages; BBB Atlas profile.
+- **Still unverified by anyone:** current availability, exact-job acceptance, a combined
+  plumbing-plus-restoration price, the job-specific permit determination, the assembly model,
+  building age/lead/asbestos status, storage-unit authority, and every Yelp rating/count (HTTP 403
+  again on 2026-11-10). All remain blank and published.
+- **No score, weight, ranking, scope or amount was changed.** Owner-supplied $614/$550/$135 stay
+  owner-reported with verified amounts blank; Portola stays fully blank; Kenneth Asire stays excluded
+  as bond-suspended.
+- **Automated checks after rebuild:** 11 canonical pages; 27/27 verifier checks (every canonical
+  table row source-covered, no broken internal links, 240 tracked HTML links); 18/18 unit tests;
+  `git diff --check` clean.
+
+### `81C-C` — repository irregularities recorded this session
+
+- Added **F-47**: `project/EXECUTIVE_SUMMARY.md` and `project/README.md` still assert a 12-inch UPC
+  §402.10 access-panel rule as verified while F-23 records that no free official text could be
+  retrieved. The canonical site publishes no dimension. These files are not linked from the
+  dashboard but are readable in the public repository.
+- Added **F-48**: the live GitHub Pages configuration is `build_type: legacy`, `source: main`,
+  `path: /`, so repository-root files including this board and `PROJECT_PROMPT.md` are served at the
+  site URL. A staged-artifact workflow exists but is not the active Pages source. This needs an
+  owner/administrator decision; it is not fixable locally because a validator test requires
+  `docs/index.html` to keep redirecting to the dashboard.
+- Added **F-49**: roughly 25 pull requests from earlier sessions remain open, several predating the
+  canonical dashboard, so merging them as-is would revert verified work. No other session's pull
+  request was touched or merged.
+- **Privacy/neutral-wording sweep:** the published pages, the data files and the owner record
+  disclose no internal-only owner constraint and no reason for it. Handling remains by omission; the
+  decision is recorded here without content. The served text contains no false field, no evasion
+  wording and no placeholder.
+
+### `81C-D` — PR, merge and deployment record
+
+Pending at the time of this edit; completed and recorded below once the merge and live check finish.
