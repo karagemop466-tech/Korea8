@@ -1185,3 +1185,13 @@ Arena fixes this session to its existing branch; no separate session branch will
 - **Irregularities:** job acceptance, combined restoration, schedule and all-in price remain unconfirmed; user-reported estimates are not independently verified. Historical open PRs remain untouched. The existing flagged page records prior limitations.
 - **Branch note:** the initial `git pull --rebase origin arena/35739f62-korea8` could not find a remote branch because it had not yet been published; rebased on `origin/main` and pushed the initial claim successfully.
 - **Concurrent integration:** main advanced through another session's publication-boundary work before PR #57 could merge. Rebase conflicted in this shared board; both sessions' entries were retained, with no work discarded. Canonical files from main were kept intact.
+
+### 660ab2dd publication receipt
+
+- PR **#55** https://github.com/karagemop466-tech/Korea8/pull/55 merged 2026-11-10T00:50:39Z, commit `21c3ce0430797924727aa06db29518b0dda64c77`.
+- Actions run https://github.com/karagemop466-tech/Korea8/actions/runs/42731387693 succeeded: build, 27-check verifier, 16 tests, restricted staging, artifact upload and Pages deployment.
+- Direct sandbox access to `github.io` is also blocked. A follow-up deployment step checks four live HTTPS routes from the GitHub runner rather than claiming an unperformed sandbox browser check.
+- Non-blocking workflow warnings: current actions use deprecated Node 20 declarations (runner forces Node 24); ubuntu-latest migration notice. No build/test/deploy failure.
+- Task implementation **done**; Pages setting limitation and external-source freshness remain **needs review**, publicly documented on the Flagged for Review page and linked audit.
+
+- 660ab2dd concurrent integration: PR #57 advanced main while PR #59 was open. Rebase conflict was confined to this board; both sessions’ complete append-only entries were retained. No canonical data changes were discarded.
