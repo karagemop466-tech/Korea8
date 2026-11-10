@@ -1289,3 +1289,62 @@ session) to fold in.
 quote amounts stay labelled owner-reported with verified amounts left blank; any value that cannot be read
 from an official source is published blank and flagged, never inferred; no internal or private circumstance
 appears in any file, page or commit message on this branch.
+
+### `7FF-B…F` — completed record (session `arena/7ff689a1-korea8`, 2026-11-10)
+
+**Evidence published in-branch:** `audit/2026-11-10-7ff689a1/` — `cslb-fresh-2026-11-10.json` (24 verbatim
+board records + the Portola stub), `compare_providers.py` (idempotent normalising comparator),
+`row-diff.json` / `row-diff.md` (per-row verdicts), `regulatory-findings.json` (10 verbatim provisions with
+the chunk each was read from), `review-platform-evidence.json` (dated retrieval log),
+`cslb-candidate-verification-2026-11-10.json` (discovered candidates), `PROVIDER-FIT.md`,
+`EXECUTIVE_SUMMARY.md`. No canonical file was edited by this session.
+
+| Task | Result |
+|---|---|
+| `7FF-B` | **Independent line-by-line re-verification of the provider table: 24 rows compared, 0 mismatches, 1 unverified.** All 24 CSLB numbers in `overflow-integration/data/providers.json` were re-read from `LicenseDetail.aspx` pages on 2026-11-10 (board banner "Data current as of 11/9/2026") and diffed programmatically against the canonical row: legal name, phone, registered city, expiry, classification set, status state, date/phone/normalisation-insensitive fields. The single unverified row is P-24 Portola Plumbing Services, which carries no licence number to compare. Verdict: the canonical table is accurate as published; nothing needed correcting. Comparator traps recorded for reuse: `"suspend"` is not a substring of `"suspension"`, and `"San Francisco".title()` is a no-op. |
+| `7FF-C` | Review platforms: direct retrieval still refused (Yelp HTTP 403; a guessed BBB profile path for Expert Plumbing Solutions returned "Page not found"). Index snapshots of one business disagree with each other (Ace 4.5/685 vs 4.7/1.4k vs 4.7/1.5k), and self-published site claims (Heise's "4.9 ★ from 2,000+", Rapid Flow "5★ Customer Rated", Fast Response "4.9 · 1,500 reviews on Yelp & Google") are not independent. Every rating cell therefore stays blank and flagged — a documented retrieval limitation, not an omission. Bonus finding: a third-party profile lists licence 954813 as expiring 11/30/2026 where the board says 11/30/2028, evidencing why directories are never used for licence facts. |
+| `7FF-D` | Provider fit: (a) the from-above limit is manufacturer-documented — Watco 500/501/600-TL steps 6–7 and the SLIP LOCK / TURNSTYLE / QUICK ADJUST pages reach only plate, drop cylinder and linkage, while the overflow elbow, tee and trap arms are assembled under/behind the tub; (b) two new candidates verified at the board — 24/7 Rooter and Plumbing Services Inc #954813 (C-36 + A + D56, active, advertises "water restoration") and George Salet Plumbing Inc #888630 (C-36 + C-16, active, expires 12/31/2026, "stopper that never seats?" + free estimates); (c) two candidates found advertising this exact scope but left unverified on purpose and excluded — C J's Plumbing (own domain serving a "Launching Soon" placeholder) and Golden Gate Plumbing & Rooter (site unreachable; a licence number recalled from memory resolved to an unrelated expired Markleeville sole-ownership record, so it was discarded rather than published). Heise's #1089561 re-read: C-36+C-10+A+C-20, no B, no C-9, active, no disclosures. |
+| `7FF-E` | Executive summary and handoff requests below. |
+| `7FF-F` | PR and merge result appended in the next section. |
+
+**Irregularities confirmed from official records, for whoever owns `providers.json`:** Fast Response #1024971
+workers'-compensation coverage on record ends **12/18/2026** (inside the hiring window); Advanced #1009195
+carries an Additional Status pointing at a *future* suspension; Clever #1160613 was issued **09/04/2026**;
+Citywide #954385 was reissued to another entity 07/06/2026; Asire #1027286 remains UNDER SUSPENSION
+(bond cancelled 08/16/2026); Save-On-Interior #749536 and Bay Area Plumbing #757796 share address and phone
+with consecutive Atlantic Specialty bonds 800268353 / 800268354 effective 09/01/2026.
+
+### Cross-session requests from `arena/7ff689a1-korea8` (2026-11-10) — for the canonical owner only
+
+Nothing below was edited by this session; each is a citation-backed change to shared data or pages.
+
+1. **Add BPC §7059(a) and soften the "outside licensed scope" framing.** `grep` for `7059` / `incidental`
+   over `overflow-integration/data/*.json` returns nothing, so the register states the C-9/C-36 split (T-06)
+   without the provision that resolves it. Proposed: source row `BPC-7059` →
+   `https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059`, plus a
+   compliance row stating that a specialty contractor may execute a contract using other trades where that work
+   is "incidental and supplemental", and that a separately priced or full restoration still needs C-9/B.
+   Effect on published text: the P-03 (Heise's) fit note becomes "no B/C-9; the access-hole patch can be
+   incidental under BPC 7059(a), a priced restoration needs a C-9/B party".
+2. **Add the §104.5 fee text, §104.1 emergency timing and the SF.gov scope rules** as source rows with the
+   AmLegal chunk references in `regulatory-findings.json` (7FF-R-01/02/03, 7FF-R-09). §104.5's
+   "replacement of a plumbing fixture … without a change in drainage, piping or venting shall not require the
+   payment of permit issuance fee" and §104.2's exempt list are neutral published code facts and strengthen
+   the permit page without touching any owner-specific circumstance.
+3. **New source row for the Watco instruction sheet** (from-above serviceability limit) — it is the only
+   manufacturer primary source in the corpus and it underwrites requirement T-02/T-03, which currently rest on
+   prose rather than a cited document.
+4. **New capability source row `HEISE-FIXTURES`** → `https://www.heisesplumbing.com/plumbing-fixtures/`
+   ("Tub spouts, overflow plates, drain assemblies, and faucet sets replaced cleanly without unnecessary
+   damage to surrounding tile"; page prints 415.333.0704, matching CSLB #1089561). Not in `sources.json`.
+5. **Add the two verified candidates** (#954813 partial fit, #888630 secondary fit) and **the two flagged
+   unverifiable ones** (C J's, Golden Gate) with licence cells blank + a flag each, so "not found" is
+   distinguishable from "not verifiable".
+6. **Site↔licence divergence rows:** Rapid Flow toll-free 844-229-3569 vs registered (415) 866-8401 (already
+   flag F-43 — keep), 24/7 Rooter three published numbers, Heise's storefront 260 Ocean Ave vs registered
+   1610 Evans Ave, and tenure claims vs issue dates (Fast Response "over 25 years" vs issued 03/20/2017;
+   Bay Area "since 1995" vs issued 01/07/1999; Salet "since 1979" vs issued 12/21/2006).
+7. **Ranking sensitivity, not a re-rank.** Every capability evidence added by this session lands on C2 (20%
+   weight) while Ace leads on C1 (30%). Recommend a sentence on the ranking page stating that a higher
+   specific-capability weight would move Heise's to first, so the ordering is testable rather than presented as
+   settled. No score values were altered here.
