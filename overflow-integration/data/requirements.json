@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "R-01",
@@ -646,6 +646,87 @@
       "status": "Owner requirement recorded; provider acceptance unverified",
       "legacy_ids": "root R-29; data REQ-26",
       "official_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages"
+    },
+    {
+      "id": "R-43",
+      "category": "Contracting entity",
+      "origin": "Proposed control",
+      "requirement": "The quote and contract must name the same legal entity and CSLB licence number that will do the work.",
+      "basis": "BBB publishes licence 787733 for Heise's while CSLB shows that licence expired, and \"Bay Area Plumbing\" matches two different licence records.",
+      "acceptance_check": "Licence number on the contract is verified current on CSLB on signing day and matches the legal entity on the contract.",
+      "source_ids": [
+        "CSLB-787733",
+        "CSLB-1089561",
+        "CSLB-961936",
+        "CSLB-757796"
+      ],
+      "status": "Open — no provider has issued a document",
+      "legacy_ids": "new 2026-11-10",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "R-44",
+      "category": "Reviews",
+      "origin": "Proposed control",
+      "requirement": "Request a specific reference for a seized trip lever or a below-ceiling waste-and-overflow replacement.",
+      "basis": "No review retrieved on 2026-11-10 describes this exact extraction or the ceiling restoration.",
+      "acceptance_check": "Provider supplies at least one reference matching the access route, or states in writing that it has none.",
+      "source_ids": [
+        "BBB-ACE",
+        "BBB-HEISE",
+        "HEISE-INGLESIDE"
+      ],
+      "status": "Open",
+      "legacy_ids": "new 2026-11-10",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "R-45",
+      "category": "Reviews",
+      "origin": "Proposed control",
+      "requirement": "Any platform rating quoted to the owner must be evidenced by a directly retrieved platform page with its date.",
+      "basis": "BBB and Angi displays differ in method and population and were only retrievable as displays, not audited reviews.",
+      "acceptance_check": "Every rating shown in a provider's own material can be traced to a retrievable page, and no rating is used to rank.",
+      "source_ids": [
+        "BBB-ACE",
+        "ANGI-ACE",
+        "CSLB-SEARCH"
+      ],
+      "status": "Open",
+      "legacy_ids": "new 2026-11-10",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "R-46",
+      "category": "Permit",
+      "origin": "Official rule",
+      "requirement": "Confirm who may hold the plumbing permit for a standalone overflow repair before scheduling.",
+      "basis": "SF.gov ties immediate B-contractor plumbing permits to kitchen or bath permits; §104.5 also waives the issuance fee only for fixture swaps with no drainage or piping change.",
+      "acceptance_check": "Written permit route names the permit holder and licence class, or a DBI determination for this address and scope.",
+      "source_ids": [
+        "SF-REMODEL",
+        "SF-PERMIT",
+        "SF-CODE-104"
+      ],
+      "status": "Open — DBI determination not obtained",
+      "legacy_ids": "new 2026-11-10",
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "R-47",
+      "category": "Licence standing",
+      "origin": "Proposed control",
+      "requirement": "Re-check licence status, bond and workers-compensation record within 30 days of the work date.",
+      "basis": "CSLB records are point-in-time; one licence on this register carries a future-suspension warning and another is already suspended.",
+      "acceptance_check": "A dated CSLB record for the contracting licence shows current-and-active status with bond and workers-compensation coverage at signing.",
+      "source_ids": [
+        "CSLB-1009195",
+        "CSLB-1027286",
+        "CSLB-SEARCH"
+      ],
+      "status": "Open",
+      "legacy_ids": "new 2026-11-10",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
     }
   ]
 }

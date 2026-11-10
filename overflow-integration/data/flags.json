@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "F-01",
@@ -195,18 +195,21 @@
       "severity": "Medium",
       "category": "Reviews",
       "title": "Yelp business pages were blocked; ratings/counts are blank",
-      "detail": "Rechecked 2026-11-08: Yelp business/search pages still return HTTP 403. Web-search excerpts are available for some providers; BBB and Angi pages were directly retrieved but do not establish this exact job. Numeric ratings/counts remain blank.",
-      "action": "Keep review observations labeled by retrieval method; request direct references and a current occupied-unit plan.",
+      "detail": "Yelp business and search pages still returned HTTP 403 on 2026-11-10, so no Yelp rating, count or review text is published. BBB and Angi, however, were retrieved directly on 2026-11-10, so the earlier blanket statement that review platforms were blocked is narrowed to Yelp.",
+      "action": "Keep Yelp blank; publish BBB/Angi displays with the platform named, the retrieval date and a clear \"platform display, not independently verified\" label; never convert them into a score.",
       "source_ids": [
-        "YELP-RF",
+        "ANGI-ACE",
+        "ANGI-SF",
+        "BBB-ACE",
+        "BBB-ATLAS",
+        "BBB-HEISE",
+        "CSLB-SEARCH",
         "YELP-ACE",
         "YELP-ATLAS",
-        "BBB-ATLAS",
-        "ANGI-SF",
-        "CSLB-SEARCH"
+        "YELP-RF"
       ],
       "official_url": "https://www.yelp.com/search?find_desc=General+Contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA",
-      "status": "Open"
+      "status": "Partly resolved 2026-11-10 — Yelp still blocked, BBB/Angi now retrieved"
     },
     {
       "id": "F-15",
@@ -621,12 +624,12 @@
       "severity": "Medium",
       "category": "Provider contact",
       "title": "Atlas phone numbers differ across official primary sources",
-      "detail": "CSLB #868994 lists (650) 871-9863; the company contact page lists (415) 849-2346; the directly retrieved BBB profile lists another contact number. The register uses the CSLB business phone and links the company contact page without silently substituting numbers.",
+      "detail": "Atlas publishes three different numbers: CSLB (650) 871-9863, its own contact page (415) 849-2346, and the BBB profile (415) 845-9199. The CSLB number is the licensed record; the others are business-supplied and none is silently substituted.",
       "action": "Confirm the current dispatch number and legal entity before contact; keep the discrepancy visible.",
       "source_ids": [
-        "CSLB-868994",
         "ATLAS-CONTACT",
-        "BBB-ATLAS"
+        "BBB-ATLAS",
+        "CSLB-868994"
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
       "status": "Open"
@@ -690,6 +693,100 @@
       ],
       "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/OWNER_RECORD.md",
       "status": "Open"
+    },
+    {
+      "id": "F-47",
+      "severity": "High",
+      "category": "Provider identity",
+      "status": "Open",
+      "title": "Heise's BBB profile carries a different, expired licence number",
+      "detail": "BBB records licence 787733 for \"Heise's Plumbing, Inc.\" at 260 Ocean Ave. CSLB shows #787733 expired 03/31/2023, cancelled after expiration, with a Secretary of State dissolution recorded 02/12/2025. The active business is TARO GROUP INC dba HEISES PLUMBING #1089561, issued 04/06/2022. BBB also conflicts with the company site on founding year (1950 vs \"since 1954\").",
+      "action": "Ask the provider to name the exact legal entity and licence number that will appear on the contract, and verify that number on CSLB on signing day. Do not rely on the BBB licence field.",
+      "source_ids": [
+        "CSLB-787733",
+        "CSLB-1089561",
+        "BBB-HEISE",
+        "HEISE"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=787733"
+    },
+    {
+      "id": "F-48",
+      "severity": "High",
+      "category": "Provider identity",
+      "status": "Open",
+      "title": "\"Bay Area Plumbing\" matches two different CSLB entities",
+      "detail": "The owner-supplied $550 estimate names \"Bay Area Plumbing\". CSLB #757796 is a San Francisco sole ownership licence that is current and active; CSLB #961936 is \"BAY AREA PLUMBING BAP INC\" of Concord, shown inactive after a workers-compensation exemption cancellation on 09/14/2026, and a separate BBB profile in Pleasant Hill publishes that number.",
+      "action": "Before relying on the $550 figure, require the quote to name the licence number and legal entity, then verify that number on CSLB. Treat the estimate as unattributable until then.",
+      "source_ids": [
+        "CSLB-757796",
+        "CSLB-961936",
+        "BBB-EXPERT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961936"
+    },
+    {
+      "id": "F-49",
+      "severity": "Low",
+      "category": "Third-party data",
+      "status": "Open",
+      "title": "BBB licence-expiry field for Expert Plumbing Solutions is stale",
+      "detail": "BBB prints an expiry of 10/31/2026 for licence 977638; the CSLB record read on 2026-11-10 shows 10/31/2028. Third-party directory fields are secondary copies and can lag the regulator.",
+      "action": "Use the CSLB record as the authority for expiry and status; never quote a directory copy as the licence fact.",
+      "source_ids": [
+        "BBB-EXPERT",
+        "CSLB-977638"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "id": "F-50",
+      "severity": "Medium",
+      "category": "Reviews",
+      "status": "Open",
+      "title": "Platform-displayed ratings are not comparable and are excluded from scoring",
+      "detail": "Direct retrieval on 2026-11-10 produced BBB displays (Ace A+, 4.76/5 over 51; Heise B-; Fast A+; Atlas A+; Expert Not Rated) and an Angi display for Ace (4.8 overall). The aggregation methods and populations differ between platforms and the underlying reviews were not audited.",
+      "action": "Publish them as labelled platform displays with the retrieval date, keep every numeric rating field blank, and keep them out of the weighted hire order.",
+      "source_ids": [
+        "BBB-ACE",
+        "BBB-HEISE",
+        "BBB-FAST",
+        "BBB-ATLAS",
+        "ANGI-ACE",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "F-51",
+      "severity": "Medium",
+      "category": "Reviews",
+      "status": "Open",
+      "title": "No review anywhere confirms this exact stuck-lever extraction or ceiling restoration",
+      "detail": "All review evidence retrieved on 2026-11-10 concerns other work: water heaters, sewers, drains, faucets and general apartment maintenance. The closest scope evidence remains Heise's self-published Ingleside case, which is adjacent rather than this job.",
+      "action": "Ask each shortlisted provider for a specific reference for a seized trip lever or a below-ceiling waste-and-overflow replacement, including the restoration step.",
+      "source_ids": [
+        "BBB-ACE",
+        "BBB-HEISE",
+        "HEISE-INGLESIDE",
+        "OWNER"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "F-52",
+      "severity": "Medium",
+      "category": "Permit",
+      "status": "Open",
+      "title": "A B-only licence may not obtain this plumbing permit on its own",
+      "detail": "SF.gov states that contractors with only a B licence get plumbing permits immediately only when the permit is directly associated with a kitchen or bath permit; otherwise plumbing scope is approved case by case. A standalone overflow repair is not a kitchen or bath remodel permit.",
+      "action": "Confirm permit-holder eligibility for the exact scope before hiring; a B-only lead needs the C-36 party named as permit holder, or written DBI approval.",
+      "source_ids": [
+        "SF-REMODEL",
+        "SF-PERMIT",
+        "BPC-7057"
+      ],
+      "official_url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit"
     }
   ]
 }

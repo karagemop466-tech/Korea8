@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-08T23:25:22.643577+00:00",
+  "checked_at": "2026-11-10T00:59:46.263173+00:00",
   "result": "PASS",
-  "checks_run": 27,
-  "checks_passed": 27,
+  "checks_run": 31,
+  "checks_passed": 31,
   "checks_failed": 0,
-  "canonical_rows_checked": 300,
+  "canonical_rows_checked": 345,
   "tracked_html_files": 68,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "11/11"
+      "detail": "12/12"
     },
     {
       "check": "HTML tag balance",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "300 rows; offenders: "
+      "detail": "345 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -140,7 +140,27 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "236 links; offenders: "
+      "detail": "248 links; offenders: "
+    },
+    {
+      "check": "action plan phases and source ids valid",
+      "ok": true,
+      "detail": "13 steps"
+    },
+    {
+      "check": "action plan rendered in full",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "platform review displays are dated and labelled",
+      "ok": true,
+      "detail": "8 direct / 19 total"
+    },
+    {
+      "check": "review evidence kept out of ranking scores",
+      "ok": true,
+      "detail": ""
     }
   ]
 }

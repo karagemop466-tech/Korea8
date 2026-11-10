@@ -1,0 +1,186 @@
+{
+  "as_of": "2026-11-10",
+  "intro": "A sequenced plan that turns the research into one serviceable outcome. Each step names who does it, what must be true before moving on, and the official source behind the requirement. Steps are ordered; do not skip a gate.",
+  "steps": [
+    {
+      "id": "A-01",
+      "phase": "Before you call",
+      "owner": "Owner",
+      "action": "Photograph the overflow plate, the tub shoe and the storage-unit ceiling, and note the building age if known.",
+      "why": "Every provider asked so far had to guess the assembly; the model and access govern whether a tub-side attempt is even possible.",
+      "done_when": "Photos exist and the assembly type is either identified or explicitly recorded as unknown.",
+      "source_ids": [
+        "OWNER",
+        "WATCO"
+      ],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    },
+    {
+      "id": "A-02",
+      "phase": "Before you call",
+      "owner": "Owner",
+      "action": "Request the permit determination in writing from DBI for this address and scope, using the published permit line and §104.2 exemptions.",
+      "why": "A permit is required before cutting into or replacing pipes; the exemptions turn on not cutting into or removing piping, which is the disputed point.",
+      "done_when": "A written DBI answer states whether a permit is required and which fee category applies.",
+      "source_ids": [
+        "SF-PERMIT",
+        "SF-CODE-104",
+        "SF-DBI"
+      ],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "A-03",
+      "phase": "Before you call",
+      "owner": "Owner",
+      "action": "Confirm authority over the storage unit and serve tenants the written entry notice required for necessary repairs.",
+      "why": "Work on the ceiling below and entry to the occupied unit both need lawful access; notice must state date, approximate time and purpose.",
+      "done_when": "Storage access is confirmed in writing and each affected tenancy has dated notice or recorded consent.",
+      "source_ids": [
+        "CIV-1954",
+        "OWNER"
+      ],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    },
+    {
+      "id": "A-04",
+      "phase": "Shortlist",
+      "owner": "Owner",
+      "action": "Send one identical written scope to the top five leads, with the same access options and the same question set.",
+      "why": "The three supplied prices cover three different scopes, so they cannot be compared. One scope is the only way to get comparable numbers.",
+      "done_when": "Each lead has received the same scope text and a deadline for a written response.",
+      "source_ids": [
+        "OWNER",
+        "CSLB-CONTRACT",
+        "CSLB-829071"
+      ],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+    },
+    {
+      "id": "A-05",
+      "phase": "Shortlist",
+      "owner": "Provider",
+      "action": "Ask each lead to name the exact legal entity, licence number, permit holder and restoration party that will appear on the contract.",
+      "why": "BBB publishes an expired licence for one lead and \"Bay Area Plumbing\" matches two different CSLB entities; the contract must be attributable.",
+      "done_when": "A written answer names a licence number that is current and active on CSLB and matches the contracting entity.",
+      "source_ids": [
+        "CSLB-787733",
+        "CSLB-961936",
+        "CSLB-SEARCH"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "A-06",
+      "phase": "Shortlist",
+      "owner": "Provider",
+      "action": "Ask for one specific reference for a seized trip lever or a below-ceiling waste-and-overflow replacement.",
+      "why": "No retrieved review describes this exact repair; the nearest evidence is an adjacent published case.",
+      "done_when": "A reference is provided that matches the access route, or the provider states in writing that it has none.",
+      "source_ids": [
+        "HEISE-INGLESIDE",
+        "BBB-ACE",
+        "BBB-HEISE"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "A-07",
+      "phase": "Scope design",
+      "owner": "Provider",
+      "action": "Require a two-stage scope: tub-side attempt first, then below-ceiling access only with a written opening and restoration plan.",
+      "why": "Manufacturer instructions support service from the overflow opening, while the stuck assembly may not release; the fallback must be priced and planned, not improvised.",
+      "done_when": "The quote states both stages, the trigger for moving to stage two, and the price of each.",
+      "source_ids": [
+        "WATCO",
+        "REDDIT-TL",
+        "HEISE-INGLESIDE"
+      ],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    },
+    {
+      "id": "A-08",
+      "phase": "Scope design",
+      "owner": "Provider",
+      "action": "Name the C-9 drywall party and price the patch, texture and paint as a line item.",
+      "why": "C-9 covers gypsum board installation, taping and texturing; the plumbing classification does not by itself prove drywall self-performance.",
+      "done_when": "The restoration party is named with its licence number and the finish scope is a priced line.",
+      "source_ids": [
+        "CSLB-C9",
+        "CSLB-C36",
+        "CSLB-995163"
+      ],
+      "official_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
+    },
+    {
+      "id": "A-09",
+      "phase": "Occupied unit",
+      "owner": "Provider",
+      "action": "Agree the occupied-unit plan: working hours, dust containment, water shut-off window, contents protection and daily cleanup.",
+      "why": "Tenants occupy the unit above the storage space and the finishes may be pre-1978; containment protects both the occupants and the work.",
+      "done_when": "The plan is in the contract, with the notice dates attached.",
+      "source_ids": [
+        "CIV-1954",
+        "EPA-RRP",
+        "EPA-ASBESTOS"
+      ],
+      "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
+    },
+    {
+      "id": "A-10",
+      "phase": "Occupied unit",
+      "owner": "Owner",
+      "action": "Screen the finishes for lead and asbestos before any cutting if the building predates 1978 or the material is suspect.",
+      "why": "Federal lead-safe rules apply to paid paint-disturbing work in pre-1978 housing, and suspect asbestos should be sampled by accredited professionals rather than disturbed.",
+      "done_when": "A screening result or a documented age exemption exists before demolition.",
+      "source_ids": [
+        "EPA-RRP",
+        "EPA-ASBESTOS"
+      ],
+      "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
+    },
+    {
+      "id": "A-11",
+      "phase": "Award",
+      "owner": "Owner",
+      "action": "Verify the licence, bond and workers-compensation record on CSLB on the day of signing, and check the complaint disclosure link.",
+      "why": "Records are point-in-time: one licence here carries a future-suspension warning and another is already suspended for a bond lapse.",
+      "done_when": "A dated CSLB screenshot for the contracting licence is filed with the contract.",
+      "source_ids": [
+        "CSLB-SEARCH",
+        "CSLB-1009195",
+        "CSLB-1027286",
+        "DG-COMPLAINT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "A-12",
+      "phase": "Award",
+      "owner": "Owner",
+      "action": "Sign a written contract with the lawful down payment, a completion date, written change orders and a leak/function test before closing.",
+      "why": "A written contract is required over $500, the down payment is capped at the lesser of 10% or $1,000, and inspection must happen before pipes are covered.",
+      "done_when": "Contract, payment schedule and change-order procedure are signed and the inspection step is scheduled.",
+      "source_ids": [
+        "CSLB-CONTRACT",
+        "BPC-7048",
+        "SF-PERMIT"
+      ],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+    },
+    {
+      "id": "A-13",
+      "phase": "Close-out",
+      "owner": "Provider",
+      "action": "Test the drain closed and open, document the repair with photos, and agree future service access.",
+      "why": "The original failure is a seized linkage; a functional test and a recorded access route are what prevent a repeat.",
+      "done_when": "A closed-drain water test holds, the ceiling is restored and photographed, and the access method is recorded.",
+      "source_ids": [
+        "WATCO",
+        "SF-CODE-104",
+        "CSLB-C9"
+      ],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime,html
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html','action-plan.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -149,6 +149,26 @@ def main():
    count+=1;target=(path.parent/u.split('#')[0]).resolve()
    if not target.exists():broken2.append(f'{f}:{u}')
  check('no broken internal links across tracked HTML',not broken2,f'{count} links; offenders: '+'; '.join(broken2[:20]))
+ # action plan integrity
+ ap=load('action_plan.json')
+ phases={'Before you call','Shortlist','Scope design','Occupied unit','Award','Close-out'}
+ check('action plan phases and source ids valid',
+       len(ap['steps'])>=10 and all(x['phase'] in phases for x in ap['steps'])
+       and all(x['source_ids'] and x['done_when'] and x['official_url'].startswith('https://') for x in ap['steps'])
+       and all(i in srcs for x in ap['steps'] for i in x['source_ids']),
+       f"{len(ap['steps'])} steps")
+ check('action plan rendered in full',
+       len(parsed.get('action-plan.html',Parse()).tables.get('action-plan-table',[]))==len(ap['steps']))
+ # review evidence: platform displays are labelled and never become independent ratings
+ revs=load('reviews.json')['rows']
+ check('platform review displays are dated and labelled',
+       all(r.get('retrieved') for r in revs) and all(r.get('retrieval') for r in revs)
+       and sum(1 for r in revs if str(r.get('retrieval','')).startswith('direct'))>=5,
+       f"{sum(1 for r in revs if str(r.get('retrieval','')).startswith('direct'))} direct / {len(revs)} total")
+ check('review evidence kept out of ranking scores',
+       all('review_evidence' in r and 'score_components' in r for r in rk['ranked'])
+       and abs(sum(w['weight'] for w in rk['weights'])-1.0)<1e-9
+       and not any('review' in w['criterion'].lower() or 'rating' in w['criterion'].lower() for w in rk['weights']))
  ok=all(c['ok'] for c in checks)
  report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'result':'PASS' if ok else 'FAIL','checks_run':len(checks),'checks_passed':sum(c['ok'] for c in checks),'checks_failed':sum(not c['ok'] for c in checks),'canonical_rows_checked':rowcount,'tracked_html_files':len(tracked),'checks':checks}
  (ROOT/'overflow-integration'/'verification-report.json').write_text(json.dumps(report,indent=2)+'\n')

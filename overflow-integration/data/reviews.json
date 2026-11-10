@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "RV-01",
@@ -16,7 +16,10 @@
         "YELP-RF2",
         "CSLB-1115649"
       ],
-      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; not this exact trip-lever job; no restoration proof; identity/current protocol need confirmation. Rechecked 2026-11-08; still not exact-job confirmation.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only (Yelp HTTP 403 again on 2026-11-10)",
+      "retrieved": "2026-11-10"
     },
     {
       "id": "RV-02",
@@ -34,7 +37,10 @@
         "ACE",
         "YELP-ACE-Q"
       ],
-      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; old review is not a current written protocol; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-03",
@@ -51,7 +57,10 @@
         "CSLB-1096552",
         "WEDO"
       ],
-      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; confirm small-job acceptance; numeric ratings/counts blank. Rechecked 2026-11-08; still not exact-job confirmation.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-04",
@@ -68,7 +77,10 @@
         "CSLB-1089561",
         "HEISE-INGLESIDE"
       ],
-      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "Business page blocked; adjacent case studies are company-published, not third-party reviews. Rechecked 2026-11-08; still not exact-job confirmation.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-05",
@@ -84,7 +96,10 @@
         "YELP-PORTOLA",
         "CSLB-SEARCH"
       ],
-      "limit": "No exact legal entity/license/phone match; all identity fields remain blank. Rechecked 2026-11-08; still not exact-job confirmation."
+      "limit": "No exact legal entity/license/phone match; all identity fields remain blank. Rechecked 2026-11-08; still not exact-job confirmation.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-06",
@@ -101,7 +116,10 @@
         "CSLB-868994",
         "ATLAS"
       ],
-      "limit": "Business page HTTP 403; search excerpt is unverified, not proof of concealed trip-lever extraction or ceiling restoration."
+      "limit": "Business page HTTP 403; search excerpt is unverified, not proof of concealed trip-lever extraction or ceiling restoration.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-07",
@@ -118,7 +136,10 @@
         "CSLB-868994",
         "ATLAS"
       ],
-      "limit": "Profile text retrieved, but review authenticity/outcome not independently investigated; adjacent sink work, not this tub job. BBB rating is not a CSLB endorsement."
+      "limit": "Profile text retrieved, but review authenticity/outcome not independently investigated; adjacent sink work, not this tub job. BBB rating is not a CSLB endorsement.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-08",
@@ -135,7 +156,10 @@
         "CSLB-977638",
         "EXPERT"
       ],
-      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified."
+      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-09",
@@ -152,7 +176,10 @@
         "CSLB-757796",
         "BAY"
       ],
-      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified."
+      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-10",
@@ -169,7 +196,10 @@
         "CSLB-1024971",
         "FAST"
       ],
-      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified."
+      "limit": "Business page HTTP 403; no exact trip-lever or restoration review verified.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
     },
     {
       "id": "RV-11",
@@ -185,7 +215,162 @@
         "ANGI-SF",
         "CSLB-SEARCH"
       ],
-      "limit": "Directory-level ratings are not provider-specific; different-provider review is not evidence for a shortlisted firm."
+      "limit": "Directory-level ratings are not provider-specific; different-provider review is not evidence for a shortlisted firm.",
+      "display_rating": null,
+      "retrieval": "web-search excerpt only; business page not retrieved (Yelp HTTP 403)",
+      "retrieved": "2026-11-08"
+    },
+    {
+      "id": "RV-12",
+      "provider": "Ace Plumbing & Rooter",
+      "platform": "BBB",
+      "observation": "Accredited since 08/01/2004, A+ display, 4.76/5 average over 51 customer reviews as displayed. Visible reviews describe water heaters, sewer traps and an apartment building.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941/customer-reviews",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_ids": [
+        "BBB-ACE",
+        "CSLB-829071"
+      ],
+      "display_rating": "4.76/5 (51 reviews, as displayed)",
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "Platform display; reviews are self-selected and none describes a stuck trip lever or ceiling restoration. Not used as a ranking score."
+    },
+    {
+      "id": "RV-13",
+      "provider": "Ace Plumbing & Rooter",
+      "platform": "Angi",
+      "observation": "Angi displays 4.8 overall with quality 4.8, value 4.6, professionalism 4.8, responsiveness 4.8 and punctuality 4.8. Review text includes praise and at least one documented dissatisfied account.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-inc-reviews-208758.htm",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_ids": [
+        "ANGI-ACE",
+        "CSLB-829071"
+      ],
+      "display_rating": "4.8/5 overall (as displayed)",
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "Aggregation method is Angi's; not comparable with BBB; not this exact job."
+    },
+    {
+      "id": "RV-14",
+      "provider": "Heise’s Plumbing",
+      "platform": "BBB",
+      "observation": "BBB shows \"Not accredited\", a B- display, 1 complaint in the last 3 years recorded as not responded to, and 1 customer review describing an uncontained sewage spill.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_ids": [
+        "BBB-HEISE",
+        "CSLB-1089561",
+        "CSLB-787733"
+      ],
+      "display_rating": "B- (as displayed)",
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "Complaint and review were not read in full and the business response was not verified; the account is about a sewer job, not this repair. BBB rating is BBB's opinion."
+    },
+    {
+      "id": "RV-15",
+      "provider": "Expert Plumbing Solutions",
+      "platform": "BBB",
+      "observation": "BBB shows \"Not Rated\" and not accredited; licence 977638 is recorded with an expiry of 10/31/2026, which conflicts with the CSLB expiry of 10/31/2028.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_ids": [
+        "BBB-EXPERT",
+        "CSLB-977638"
+      ],
+      "display_rating": "Not Rated",
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "No review evidence; only licence and contact fields were captured (F-49)."
+    },
+    {
+      "id": "RV-16",
+      "provider": "Fast Response Plumbing & Rooter",
+      "platform": "BBB",
+      "observation": "BBB shows an A+ display, not accredited, 19 employees, and licence 1024971 with an expiry matching CSLB. Premises are listed at 4444 Geary Blvd #203.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_ids": [
+        "BBB-FAST",
+        "CSLB-1024971"
+      ],
+      "display_rating": "A+ (as displayed)",
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "No review text captured; A+ is BBB's display, not a quality finding about this job."
+    },
+    {
+      "id": "RV-17",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "BBB",
+      "observation": "BBB shows accredited since 06/03/2021, an A+ display, 20 employees, business started 12/08/2005, and licence 868994 with an expiry of 3/31/2028 matching CSLB. Its service list includes bathtub repair and replacement.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/atlas-plumbing-rooter-1116-116593",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "BBB-ATLAS",
+        "CSLB-868994"
+      ],
+      "display_rating": "A+ (as displayed)",
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "Service list is a business category, not a completed-job record for this repair."
+    },
+    {
+      "id": "RV-18",
+      "provider": "Atlas Plumbing & Rooter",
+      "platform": "Angi",
+      "observation": "The Angi profile page resolves and is linked from the BBB profile; no rating or review text was captured.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/atlas-plumbing-and-rooter-reviews-317113.htm",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_ids": [
+        "ANGI-ATLAS",
+        "CSLB-868994"
+      ],
+      "display_rating": null,
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "Nothing asserted beyond page resolution."
+    },
+    {
+      "id": "RV-19",
+      "provider": "Rapid Flow Plumbing & Rooter",
+      "platform": "Angi",
+      "observation": "The Angi profile URL pattern resolved to a generic template with no business-specific review content.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.angi.com/companylist/us/ca/san-francisco/rapid-flow-plumbing-and-rooter-reviews-1.htm",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "source_ids": [
+        "CSLB-1115649"
+      ],
+      "display_rating": null,
+      "retrieval": "direct page retrieval",
+      "retrieved": "2026-11-10",
+      "limit": "No Angi record for this business was confirmed; absence of a profile is not evidence either way."
     }
   ]
 }

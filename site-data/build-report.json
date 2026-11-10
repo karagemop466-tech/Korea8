@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-08T23:25:22.348895+00:00",
+  "built_at": "2026-11-10T00:59:46.016690+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
@@ -13,7 +13,8 @@
     "code-and-permit.html",
     "sources.html",
     "flagged-for-review.html",
-    "verification.html"
+    "verification.html",
+    "action-plan.html"
   ],
   "counts": {
     "providers": 25,
@@ -23,13 +24,13 @@
     "unresolved": 1,
     "b_c36": 6,
     "c9": 1,
-    "requirements": 42,
+    "requirements": 47,
     "estimates": 3,
-    "technical": 8,
-    "compliance": 12,
-    "reviews": 11,
-    "sources": 85,
-    "flags": 46,
+    "technical": 9,
+    "compliance": 14,
+    "reviews": 19,
+    "sources": 94,
+    "flags": 52,
     "ranking": 10,
     "ranking_held": 14
   },

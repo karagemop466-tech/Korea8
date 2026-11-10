@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "T-01",
@@ -95,6 +95,18 @@
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
       "status": "Open — code text not verified",
       "limit": "Leave dimensions blank; do not publish a 12-inch rule as verified."
+    },
+    {
+      "id": "T-09",
+      "topic": "Field-reported failure modes",
+      "statement": "Practitioner accounts of seized trip levers describe drop cylinders fused by mineral scale, linkages that break when forced, and plumbers who replace the waste-and-overflow instead of extracting it. This matches the owner report that several plumbers declined to force it from above.",
+      "source_ids": [
+        "WATCO",
+        "REDDIT-TL"
+      ],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "status": "Community field accounts; not this unit",
+      "limit": "Anonymous forum anecdotes, not official guidance and not evidence about any named provider. They explain why forcing is avoided; they do not establish that removal from above is impossible here."
     }
   ]
 }

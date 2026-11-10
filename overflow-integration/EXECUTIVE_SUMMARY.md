@@ -1,6 +1,6 @@
 # Executive summary — bathtub wastewater overflow trip lever
 
-Reviewed 2026-11-08. San Francisco tenant-occupied unit. This summary is based on the linked
+Reviewed 2026-11-10. San Francisco tenant-occupied unit. This summary is based on the linked
 official/company sources and a neutral owner record; it is not a contractor booking or legal advice.
 
 ## Decision
@@ -49,5 +49,5 @@ are unconfirmed.
 
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
-Portola’s identity is unresolved. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 46 items.
+Portola’s identity is unresolved. Yelp ratings/counts are blank because Yelp returned HTTP 403 again on 2026-11-10, although BBB and Angi profiles were then read directly and are published as dated platform displays that do not affect the ranking. Two licence-identity conflicts were found on 2026-11-10: BBB publishes an expired licence (#787733) for Heise’s, and “Bay Area Plumbing” matches both the active San Francisco #757796 and an inactive Concord entity #961936 (F-47, F-48).
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 52 items.

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "C-01",
@@ -14,12 +14,13 @@
     {
       "id": "C-02",
       "topic": "Conditional exemptions",
-      "rule": "SF Plumbing Code §104.2 exempts leak repair, unstopping and certain faucet/fixture work only when the stated no-cutting/no-removal conditions hold.",
+      "rule": "SF Plumbing Code §104.2 \"Exempt Work\" lists: (1) repair of leaks not requiring cutting into or removing piping; (2) unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping; (3) replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping.",
       "source_ids": [
-        "SF-CODE-104"
+        "SF-CODE-104",
+        "SF-PERMIT"
       ],
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
-      "application": "Do not assume a stuck trip-lever replacement is exempt; match the exact scope to the text."
+      "application": "A seized trip lever that cannot be freed from the overflow opening is not on this list; the exemptions turn on not cutting into or removing piping, which is exactly the condition in dispute here."
     },
     {
       "id": "C-03",
@@ -126,6 +127,27 @@
       ],
       "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
       "application": "Fee category and total project cost are unconfirmed; fees are not contractor quotes."
+    },
+    {
+      "id": "C-13",
+      "topic": "Fixture replacement without fee",
+      "source_ids": [
+        "SF-CODE-104"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "rule": "SF Plumbing Code §104.5 provides that \"the replacement of a plumbing fixture or a gas appliance without a change in drainage, piping or venting shall not require the payment of permit issuance fee.\"",
+      "application": "Relevant only if the scope is a like-for-like fixture change with no drainage or piping change. A stuck assembly behind the wall is unlikely to meet that condition, and the fee waiver is not a permit exemption."
+    },
+    {
+      "id": "C-14",
+      "topic": "B-licence plumbing permits",
+      "source_ids": [
+        "SF-REMODEL",
+        "SF-PERMIT"
+      ],
+      "official_url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+      "rule": "SF.gov states that contractors with only a B licence get electrical and plumbing permits right away only when those permits are directly associated with a kitchen or bath permit; otherwise plumbing scope is approved based on the scope of work.",
+      "application": "A standalone overflow repair is not a kitchen or bath remodel permit, so a B-only lead may need the C-36 party or written DBI approval to be permit holder."
     }
   ]
 }

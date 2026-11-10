@@ -17,6 +17,17 @@ class DataTests(unittest.TestCase):
   p=[x for x in load('providers.json')['rows'] if x['license']=='1027286'][0];self.assertEqual(p['status'],'Suspended');self.assertIn('F-09',p['flags'])
  def test_no_numeric_reviews(self):
   self.assertTrue(all(v['rating'] is None and v['review_count'] is None for v in load('reviews.json')['rows']))
+ def test_platform_displays_are_labelled(self):
+  rows=load('reviews.json')['rows']
+  self.assertTrue(all(r.get('retrieved') and r.get('retrieval') for r in rows))
+  direct=[r for r in rows if str(r.get('retrieval','')).startswith('direct')]
+  self.assertGreaterEqual(len(direct),5)
+ def test_action_plan_source_covered(self):
+  srcs={s['id'] for s in load('sources.json')['rows']}; ap=load('action_plan.json')
+  self.assertGreaterEqual(len(ap['steps']),10)
+  for st in ap['steps']:
+   self.assertTrue(st['source_ids']); self.assertTrue(st['official_url'].startswith('https://'))
+   for i in st['source_ids']: self.assertIn(i,srcs,f"{st['id']}:{i}")
  def test_ranking_active_and_source_linked(self):
   prov={p['id']:p for p in load('providers.json')['rows']};rk=load('ranking.json')
   for r in rk['ranked']+[rk['partner']]:
@@ -26,7 +37,7 @@ class DataTests(unittest.TestCase):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
-  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html','action-plan.html']
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)

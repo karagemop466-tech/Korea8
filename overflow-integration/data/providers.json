@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-10",
   "rows": [
     {
       "id": "P-01",
@@ -15,7 +15,7 @@
       "expiry": "2028-01-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:57:46 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
       "source_ids": [
         "CSLB-1115649",
@@ -39,7 +39,13 @@
         "F-14",
         "F-15",
         "F-43"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-02",
@@ -59,7 +65,7 @@
       "expiry": "2027-06-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/13/2027",
-      "source_timestamp": "11/8/2026 2:58:07 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
       "source_ids": [
         "CSLB-829071",
@@ -81,8 +87,15 @@
       "flags": [
         "F-01",
         "F-14",
-        "F-16"
-      ]
+        "F-16",
+        "F-50"
+      ],
+      "bbb_rating": "A+ (displayed)",
+      "bbb_accredited": true,
+      "bbb_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941",
+      "angi_rating_display": "4.8/5 overall (displayed)",
+      "angi_url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-inc-reviews-208758.htm",
+      "platform_note": "Directly retrieved 2026-11-10: BBB accredited since 08/01/2004 with an A+ display and a 4.76/5 average over 51 reviews as displayed; Angi displays 4.8 overall. Reviews describe water-heater, sewer and apartment-building work, not this repair."
     },
     {
       "id": "P-03",
@@ -100,7 +113,7 @@
       "expiry": "2028-04-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 01/11/2027",
-      "source_timestamp": "11/8/2026 2:58:07 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
       "source_ids": [
         "CSLB-1089561",
@@ -122,8 +135,16 @@
       "flags": [
         "F-01",
         "F-17",
-        "F-18"
-      ]
+        "F-18",
+        "F-47",
+        "F-50"
+      ],
+      "bbb_rating": "B- (displayed)",
+      "bbb_accredited": false,
+      "bbb_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-41584",
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": "Directly retrieved 2026-11-10: BBB shows \"Not accredited\", a B- display, 1 complaint in the last 3 years recorded as not responded to, and a single negative review. BBB also publishes licence 787733, which CSLB shows as expired since 03/31/2023 (F-47)."
     },
     {
       "id": "P-04",
@@ -138,7 +159,7 @@
       "expiry": "2028-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/19/2027",
-      "source_timestamp": "11/8/2026 2:58:08 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
       "source_ids": [
         "CSLB-977638",
@@ -161,8 +182,15 @@
         "F-02",
         "F-03",
         "F-04",
-        "F-05"
-      ]
+        "F-05",
+        "F-49"
+      ],
+      "bbb_rating": "Not Rated",
+      "bbb_accredited": false,
+      "bbb_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": "Directly retrieved 2026-11-10: BBB \"Not Rated\", not accredited, 1 employee. BBB prints a licence expiry of 10/31/2026 while CSLB shows 10/31/2028; the CSLB record is used and the difference is flagged (F-49)."
     },
     {
       "id": "P-05",
@@ -177,7 +205,7 @@
       "expiry": "2027-01-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:08 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "source_ids": [
         "CSLB-757796",
@@ -188,7 +216,7 @@
       "service_source": "BAY",
       "service_verified": true,
       "group": "Existing estimate",
-      "fit": "Requote the common scope. The supplied wording includes a spout/diverter, which is not automatically the waste-and-overflow assembly. Confirm the contracting entity and restoration trade.",
+      "fit": "Owner-supplied estimate provider. Identity must be confirmed: the quoted \"Bay Area Plumbing\" matches the active San Francisco sole ownership #757796, while a similarly named entity, \"BAY AREA PLUMBING BAP INC\" #961936, is inactive and appears on a separate BBB profile (F-48).",
       "exact_job_confirmed": false,
       "ceiling_restoration_confirmed": false,
       "availability_confirmed": false,
@@ -200,8 +228,15 @@
         "F-02",
         "F-03",
         "F-04",
-        "F-12"
-      ]
+        "F-12",
+        "F-48"
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-06",
@@ -216,7 +251,7 @@
       "expiry": "2027-03-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 12/18/2026",
-      "source_timestamp": "11/8/2026 2:58:12 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "source_ids": [
         "CSLB-1024971",
@@ -239,8 +274,15 @@
         "F-02",
         "F-03",
         "F-04",
-        "F-29"
-      ]
+        "F-29",
+        "F-50"
+      ],
+      "bbb_rating": "A+ (displayed)",
+      "bbb_accredited": false,
+      "bbb_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": "Directly retrieved 2026-11-10: BBB A+ display, not accredited, 19 employees, licence 1024971 with an expiry matching CSLB. BBB lists premises at 4444 Geary Blvd #203, not the CSLB registered address."
     },
     {
       "id": "P-07",
@@ -256,7 +298,7 @@
       "expiry": "2028-05-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:12 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
       "source_ids": [
         "CSLB-749536"
@@ -277,7 +319,13 @@
       "flags": [
         "F-12",
         "F-30"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-08",
@@ -293,7 +341,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 11/14/2027",
-      "source_timestamp": "11/8/2026 2:58:12 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
       "source_ids": [
         "CSLB-1096552",
@@ -315,7 +363,13 @@
       "flags": [
         "F-14",
         "F-20"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-09",
@@ -334,7 +388,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 08/31/2027",
-      "source_timestamp": "11/8/2026 2:58:13 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
       "source_ids": [
         "CSLB-392967",
@@ -355,7 +409,13 @@
       "additional_status": "",
       "flags": [
         "F-20"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-10",
@@ -371,7 +431,7 @@
       "expiry": "2028-07-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 03/10/2027",
-      "source_timestamp": "11/8/2026 2:58:16 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
       "source_ids": [
         "CSLB-995163",
@@ -392,7 +452,13 @@
       "additional_status": "",
       "flags": [
         "F-19"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-11",
@@ -407,7 +473,7 @@
       "expiry": "2027-06-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:16 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
       "source_ids": [
         "CSLB-1106131",
@@ -429,7 +495,13 @@
       "flags": [
         "F-07",
         "F-20"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-12",
@@ -444,7 +516,7 @@
       "expiry": "2027-05-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 04/11/2027",
-      "source_timestamp": "11/8/2026 2:58:16 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
       "source_ids": [
         "CSLB-1105133"
@@ -464,7 +536,13 @@
       "additional_status": "",
       "flags": [
         "F-08"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-13",
@@ -479,7 +557,7 @@
       "expiry": "2027-11-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 08/21/2027",
-      "source_timestamp": "11/8/2026 2:58:17 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
       "source_ids": [
         "CSLB-1009195"
@@ -499,7 +577,13 @@
       "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
       "flags": [
         "F-10"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-14",
@@ -517,7 +601,7 @@
       "expiry": "2027-04-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 10/01/2027",
-      "source_timestamp": "11/8/2026 2:58:22 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
       "source_ids": [
         "CSLB-379364"
@@ -535,7 +619,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-15",
@@ -552,7 +642,7 @@
       "expiry": "2027-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 06/01/2027",
-      "source_timestamp": "11/8/2026 2:58:22 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
       "source_ids": [
         "CSLB-966337"
@@ -570,7 +660,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-16",
@@ -586,7 +682,7 @@
       "expiry": "2027-07-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 04/01/2027",
-      "source_timestamp": "11/8/2026 2:58:22 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
       "source_ids": [
         "CSLB-1140843"
@@ -604,7 +700,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "CSLB also records $2,000,000 liability insurance and a $100,000 LLC employee/worker bond.",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-17",
@@ -619,7 +721,7 @@
       "expiry": "2028-10-31",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 01/21/2027",
-      "source_timestamp": "11/8/2026 2:58:22 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
       "source_ids": [
         "CSLB-1086935"
@@ -637,7 +739,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-18",
@@ -652,7 +760,7 @@
       "expiry": "2027-05-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:27 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
       "source_ids": [
         "CSLB-961218"
@@ -670,7 +778,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-19",
@@ -685,7 +799,7 @@
       "expiry": "2028-07-31",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:27 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
       "source_ids": [
         "CSLB-954385"
@@ -703,7 +817,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "License reissued to another entity 07/06/2026.",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-20",
@@ -719,7 +839,7 @@
       "expiry": "2027-11-30",
       "status": "Current and active",
       "workers_comp": "Policy recorded; expires 07/01/2027",
-      "source_timestamp": "11/8/2026 2:58:27 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
       "source_ids": [
         "CSLB-300647"
@@ -737,7 +857,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-21",
@@ -753,7 +879,7 @@
       "expiry": "2027-04-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:27 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
       "source_ids": [
         "CSLB-297604",
@@ -775,7 +901,13 @@
       "flags": [
         "F-11",
         "F-31"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-22",
@@ -790,7 +922,7 @@
       "expiry": "2027-05-31",
       "status": "Suspended",
       "workers_comp": "Policy recorded; expires 08/30/2027",
-      "source_timestamp": "11/8/2026 2:58:32 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
       "source_ids": [
         "CSLB-1027286"
@@ -810,7 +942,13 @@
       "additional_status": "License under Contractors Bond Suspension. Recorded bond cancellation date 08/16/2026. CSLB notes a received replacement bond may not yet be processed.",
       "flags": [
         "F-09"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-23",
@@ -825,7 +963,7 @@
       "expiry": "2028-09-30",
       "status": "Current and active",
       "workers_comp": "Exempt: certified no employees",
-      "source_timestamp": "11/8/2026 2:58:32 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
       "source_ids": [
         "CSLB-1160613"
@@ -843,7 +981,13 @@
       "review_url": "",
       "review_source": "",
       "additional_status": "",
-      "flags": []
+      "flags": [],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-24",
@@ -876,7 +1020,13 @@
       "additional_status": "",
       "flags": [
         "F-13"
-      ]
+      ],
+      "bbb_rating": null,
+      "bbb_accredited": null,
+      "bbb_url": null,
+      "angi_rating_display": null,
+      "angi_url": null,
+      "platform_note": ""
     },
     {
       "id": "P-25",
@@ -892,7 +1042,7 @@
       "expiry": "2028-03-31",
       "status": "Current and active",
       "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
-      "source_timestamp": "11/8/2026 3:00:50 PM; timezone not stated",
+      "source_timestamp": "11/9/2026 4:49 PM (CSLB page stamp); re-read 2026-11-10",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
       "source_ids": [
         "CSLB-868994",
@@ -910,13 +1060,20 @@
       "quote_confirmed": false,
       "review_url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2?start=240",
       "review_source": "YELP-ATLAS",
-      "additional_status": "CSLB phone differs from the company contact page; both are source-linked, neither is silently substituted.",
+      "additional_status": "CSLB phone (650) 871-9863 differs from the company contact page (415) 849-2346 and from the BBB profile (415) 845-9199; all three are source-linked, none is silently substituted.",
       "flags": [
         "F-01",
         "F-14",
+        "F-42",
         "F-46",
-        "F-42"
-      ]
+        "F-51"
+      ],
+      "bbb_rating": "A+ (displayed)",
+      "bbb_accredited": true,
+      "bbb_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/atlas-plumbing-rooter-1116-116593",
+      "angi_rating_display": null,
+      "angi_url": "https://www.angi.com/companylist/us/ca/san-francisco/atlas-plumbing-and-rooter-reviews-317113.htm",
+      "platform_note": "BBB profile directly re-read 2026-11-10: accredited since 06/03/2021, A+ display, licence 868994 with an expiry of 3/31/2028 matching CSLB, business started 12/08/2005. The BBB \"About\" text lists bathtub repair and replacement among its services."
     }
   ]
 }
