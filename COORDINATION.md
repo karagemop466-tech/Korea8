@@ -1846,3 +1846,10 @@ language only.
 **Second conflict resolution:** PR #79 advanced main while the receipt update was rebased; the shared board conflict was resolved by retaining both the 92 session record and the 20BB receipt. No work discarded.
 
 **Third conflict resolution:** PR #84 advanced main during the receipt update; both 331 and 20BB board records were retained in the rebase. No work discarded.
+### 92 final publication receipt
+
+- **92-01 and 92-02: done.** [PR #79](https://github.com/karagemop466-tech/Korea8/pull/79) merged at 2026-11-11T02:16:49Z as `b6d9b929ff6695b5ccf2d1121295c3e0f8690889`.
+- Exact-commit [workflow run 42944920176](https://github.com/karagemop466-tech/Korea8/actions/runs/42944920176): build **success**, deploy **success**, deployed-dashboard HTTPS assertions **success**. Live dashboard: https://karagemop466-tech.github.io/Korea8/ . Direct local HTTPS access remains unavailable; live confirmation is the GitHub runner's receipt, not a local browser check.
+- Rebase also preserved concurrent PR #81 (`bcf81b2`) board/source metadata updates. Final local result: 28/28 checks, 40/40 tests, 405 source-covered rows, independent audit zero problems and 47 linked public files staged.
+- Non-blocking workflow annotations report action-runtime deprecation and runner-image migration. The build/deploy succeeded. No unrelated workflow was modified.
+- All existing unverified job-specific items remain published. Provider facts were not independently refreshed by this session. Older open PRs remain untouched.
