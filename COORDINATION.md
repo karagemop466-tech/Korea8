@@ -1864,9 +1864,16 @@ language only.
 
 | ID | Task | Status | Owner | Scope |
 |---|---|---|---|---|
-| 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | in progress | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
+| 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | done | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
 | 17E-02 | Link the new audit into the canonical dashboard, verify and publish | in progress | `arena/17e21276-korea8` | `scripts/build_overflow_site.py`, `overflow-integration/data/flags.json`, generated canonical HTML and reports, `site-data/**`, `COORDINATION.md` |
 
 The Arena branch is fixed; no other branch or worktree will be created or pushed. Older task rows are historical; recent open PRs remain untouched. No provider has been contacted, booked or paid. Public material will use neutral repair-scope language.
 
 17E handoff: recent integration scopes were marked done by their owners; open independent PRs are over 20 hours old and remain untouched. The previous Pages source-mode change was denied; retry documented in this audit. Automated checks passed locally before integration; they do not independently prove all external claims.
+
+### 17E current review — 11 November 2026 UTC
+
+- `17E-01` is done. Targeted report: `audit/2026-11-11-17e21276/REPORT.md`; it records source links, timestamps and limitations. Re-read official CSLB records #829071, #1089561, #1115649 and #1024971, Ace's contact page, Rapid Flow's services and selected Heise case pages. This is a spot-check, not a fresh line-by-line verification of all repository content.
+- Added F-70: the fetched Heise project pages show both project narrative and 404 text in the body, and the company index shows mismatched categories. No HTTP error is inferred from body text. Existing F-34/F-52 remain open: Pages API reports legacy root publishing and this public repository is not private. The official API rejected a source-mode update with HTTP 403; no configuration change was made.
+- Yelp Ace page returned HTTP 403. No company contacted, booked, paid, or confirmed as available; historical amounts are owner-reported, unlike scopes, with verified fields blank.
+- Local verification: build, 28/28 checks, 40/40 tests, independent audit 406 rows and zero internal-link problems, 46 staged files, wording guard and `git diff --check` clean. These checks do not independently establish the accuracy of every claim or external-link availability.
