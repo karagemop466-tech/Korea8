@@ -1865,7 +1865,7 @@ language only.
 | ID | Task | Status | Owner | Scope |
 |---|---|---|---|---|
 | 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | done | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
-| 17E-02 | Link the new audit into the canonical dashboard, verify and publish | in progress | `arena/17e21276-korea8` | `scripts/build_overflow_site.py`, `overflow-integration/data/flags.json`, generated canonical HTML and reports, `site-data/**`, `COORDINATION.md` |
+| 17E-02 | Link the new audit into the canonical dashboard, verify and publish | done | `arena/17e21276-korea8` | `scripts/build_overflow_site.py`, `overflow-integration/data/flags.json`, generated canonical HTML and reports, `site-data/**`, `COORDINATION.md` |
 
 The Arena branch is fixed; no other branch or worktree will be created or pushed. Older task rows are historical; recent open PRs remain untouched. No provider has been contacted, booked or paid. Public material will use neutral repair-scope language.
 
@@ -1910,3 +1910,9 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - **Repo review:** `site-data/*.json` historical outputs (2026-11-07) are labelled historical and untouched; root `EXECUTIVE_SUMMARY.md` (unrelated DOE GEMS project) untouched; earlier open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72) were left untouched; Pages `built` with successful `Publish overflow dashboard` runs on `main`.
 - **Verification on the rebased tree:** `build_overflow_site.py` (11 pages); `verify_overflow_site.py` **28/28 PASS**; `unittest test_overflow*.py` **40 OK**; `independent_audit.py` **0 problems**; `wording_guard.py` clean; `stage_overflow_pages.py` linked-closure staging; `git diff --check` clean.
 - **Standing rules held.** No provider contacted, booked or paid. Owner amounts remain owner-reported with verified amounts blank. No hiring-order or score change. No private owner context added to any public artifact.
+
+### 17E-02 merge and publication receipt
+
+- [PR #83](https://github.com/karagemop466-tech/Korea8/pull/83) merged 2026-11-11 02:18:21 UTC, merge commit `258d08f809c7f04dc690d2f8a4ed5ed7d6a8d81e`.
+- [Exact-commit Pages workflow run 42945103895](https://github.com/karagemop466-tech/Korea8/actions/runs/42945103895) completed successfully, including build, checks, staging, deployment and its HTTPS checks. The live flagged page displayed 61 items and the new audit route was retrieved. Later deployments may supersede this exact commit.
+- GitHub returned an actions Node deprecation warning; build and deploy succeeded. Pages mode remains legacy and the public repository is not private. External links and all assertions have not been independently reverified line by line in this session.
