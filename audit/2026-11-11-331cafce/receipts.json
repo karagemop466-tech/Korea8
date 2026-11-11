@@ -1,0 +1,22 @@
+{
+  "session": "arena/331cafce-korea8",
+  "checked_at": "2026-11-11",
+  "cslb": [
+    {"lic": "829071", "legal": "ACE PLUMBING & ROOTER", "phone": "(415) 824-6444", "status": "Current and active", "expiry": "06/30/2027", "classes": ["C-36","A","C-4","C-16","B","C-10"], "result": "match"},
+    {"lic": "1089561", "legal": "TARO GROUP INC dba HEISES PLUMBING", "phone": "(415) 333-0704", "status": "Current and active", "expiry": "04/30/2028", "classes": ["C-36","C-10","A","C-20"], "result": "match"},
+    {"lic": "1115649", "legal": "RAPID FLOW PLUMBING & ROOTER INC", "phone": "(415) 866-8401", "status": "Current and active", "expiry": "01/31/2028", "classes": ["B","C-36"], "result": "match"},
+    {"lic": "995163", "legal": "BERNAL HILL DRYWALL INC", "phone": "(415) 533-8274", "status": "Current and active", "expiry": "07/31/2028", "classes": ["C-9","B"], "result": "match"},
+    {"lic": "977638", "legal": "EXPERT PLUMBING SOLUTIONS", "phone": "(415) 531-5340", "status": "Current and active", "expiry": "10/31/2028", "classes": ["C-36"], "result": "match"},
+    {"lic": "757796", "legal": "BAY AREA PLUMBING", "phone": "(415) 668-8000", "status": "Current and active", "expiry": "01/31/2027", "classes": ["C-36"], "result": "match"},
+    {"lic": "1024971", "legal": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER", "phone": "(415) 596-6115", "status": "Current and active", "expiry": "03/31/2027", "classes": ["C-36"], "result": "match"}
+  ],
+  "other": [
+    {"url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit", "result": "match: closed 2026-11-11 Veterans Day; permit before cutting/replacing pipes; SFPC 104.2; A/B/C4/C16/C20/C36/C54; B after approval based on scope; 628-652-4900"},
+    {"url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.", "result": "match: 7059(a) incidental-and-supplemental specialty-contractor condition"},
+    {"url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/", "result": "match: Ingleside ceiling-access tub waste/overflow replacement; (415) 333-0704"},
+    {"url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco", "result": "HTTP 403; ratings/counts remain blank"},
+    {"url": "https://karagemop466-tech.github.io/Korea8/", "result": "live dashboard serves canonical build"}
+  ],
+  "counts": {"providers": 29, "cslb_records": 26, "active": 25, "suspended": 1, "unresolved": 3, "requirements": 42, "estimates": 3, "sources": 135, "flags": 60, "ranking": 10},
+  "checks": {"build": "exit 0", "verify": "28/28 PASS", "tests": "40/40 OK", "independent_audit": "0 problems", "wording_guard": "clean"}
+}
