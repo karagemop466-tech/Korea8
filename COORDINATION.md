@@ -2069,3 +2069,26 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | Open PRs untouched | #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7 were not merged or closed by this session. |
 
 **Final status.** `203-01`…`203-05` **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked/paid. Owner amounts remain owner-reported with verified amounts blank. Public artifacts use neutral repair-scope language only.
+
+---
+
+## Session `arena/49f9f658-korea8` — 2026-11-11 current-source verification, decision-support refresh and final integration
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `49F-01` | Claim board and inventory active work | done | `arena/49f9f658-korea8` | `COORDINATION.md` |
+| `49F-02` | Fresh official-source provider and scope verification; requirements/questions/answers and repository review | done | `arena/49f9f658-korea8` | `audit/2026-11-11-49f9f658/**`, `overflow-integration/**` |
+| `49F-03` | Rebuild canonical dashboard with only evidenced corrections; preserve owner-reported estimates with verified fields blank | done | `arena/49f9f658-korea8` | canonical generator/verifier/tests, root generated pages/reports, `OVERFLOW_EXECUTIVE_SUMMARY.md` |
+| `49F-04` | Run all checks, PR to `main`, merge, exact-commit Pages/live verification and final record | in progress | `arena/49f9f658-korea8` | `COORDINATION.md`, deployment records and generated public output |
+
+**Coordination note.** Arena fixes this session to `arena/49f9f658-korea8`; no other branch or worktree will be created or pushed. All previous canonical implementation claims have completed handoffs or are more than 60 minutes old without new commits. Historical open PRs remain untouched. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will use neutral repair-scope language and omit private owner context. Every factual table row will retain a primary/official source link; unconfirmable values will remain blank and flagged.
+
+**Claim push:** this claim is committed and pushed before any research or site edits.
+
+### 49F-02 / 49F-03 — integrated source refresh and decision-gap record (2026-11-11)
+
+- Independently re-read all 26 baseline CSLB records on pages reporting data current as of 2026-11-10: 25 current/active, #1027286 suspended, three unresolved identities retained blank. Independently confirmed George Salet #888630's **2028-12-31** expiry. Advanced's warning and D G's disclosure remain; no suitability inferred. No ranking weights/scores changed.
+- During rebase, preserved newer parallel work: 33 total identities (30 identified CSLB + 3 unresolved), 14-question register, four discovery licenses, existing F-70 Heise 404 and F-78 Salet correction. Did not duplicate those records or claim the four new licenses as this session's direct checks.
+- Added independent receipts/audit `audit/2026-11-11-49f9f658/`, source `AUDIT-20261111-49F`, public Verification/Flagged links and **F-85** for current SFBC chunk-13 retrieval metadata. The substantive wallboard/fire-assembly exemption is unchanged; historical audits remain untouched.
+- Owner-reported $614/$550/$135 scopes remain non-comparable; all verified amounts and review ratings/counts remain blank. No provider was contacted/booked/paid; no access feasibility, permit determination or availability was inferred. Yelp observations remain excerpts, not direct reviews.
+- Final integrated local gates after additive rebase: **29/29 checks, 43/43 tests, wording guard clean, independent audit 0 problems**, 450/450 canonical table rows source-covered, 12 pages, 148 sources, 70 flags and 14 questions. Unrelated GEMS files and historical audits unchanged. Also linked the already-merged `692cc7ba` audit/receipts requested for optional integration.

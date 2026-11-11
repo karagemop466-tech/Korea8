@@ -1030,10 +1030,10 @@
       "publisher": "American Legal Publishing",
       "kind": "official-code-publisher",
       "official": true,
-      "checked": "2026-11-10",
+      "checked": "2026-11-11",
       "retrieval": "direct",
-      "supports": "SFBC \u00a7106A.2(8)&(10) directly retrieved in zero-based chunk 39 on 2026-11-10: painting/finish work and minor interior plaster or wallboard repairs are permit-exempt except when part of a fire-resistive assembly.",
-      "limitations": "Fire-resistive rating of the subject ceiling is unconfirmed; DBI/contractor must verify. Earlier chunk 28\u201329 metadata was incorrect and is superseded."
+      "supports": "Current AmLegal \u00a7106A.2(8)&(10) search/direct excerpt retrieved 2026-11-11 in zero-based chunk 13: painting/finish work and minor interior plaster or wallboard repairs are permit-exempt except when part of a fire-resistive assembly.",
+      "limitations": "Fire-resistive rating of the subject ceiling is unconfirmed; DBI/contractor must verify. Current chunk 13 supersedes historical chunk 39 metadata; the substantive exemption text is unchanged."
     },
     {
       "id": "RF-SERVICES",
@@ -1702,6 +1702,18 @@
       "retrieval": "direct",
       "supports": "Session receipts for CSLB re-reads, city-holiday confirmation, questions register and discovery leads.",
       "limitations": "Repository primary record; official facts rest on the linked government and company sources."
+    },
+    {
+      "id": "AUDIT-20261111-49F",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-11-49f9f658/REPORT.md",
+      "title": "2026-11-11 independent 26-record freshness and decision-gap audit (49f9f658)",
+      "publisher": "Korea8 Repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-11",
+      "retrieval": "direct",
+      "supports": "Independent direct review of 26 baseline CSLB records, current permit/code/company sources, Salet renewal confirmation, review-evidence limits and decision-gap analysis.",
+      "limitations": "Repository audit cross-referenced to primary sources. Four parallel discovery licenses are outside this session\u2019s direct 26-record claim; no provider engagement, price verification or site assessment."
     }
   ]
 }

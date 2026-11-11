@@ -1066,6 +1066,21 @@
       ],
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1051650",
       "status": "Open"
+    },
+    {
+      "id": "F-85",
+      "severity": "Low",
+      "category": "Source verification",
+      "status": "Resolved \u2014 historical records preserved",
+      "title": "Current SFBC retrieval chunk differs from the historical citation location",
+      "detail": "The 2026-11-10 canonical source note cited SFBC \u00a7106A.2 at zero-based chunk 39. Independent fresh retrieval on 2026-11-11 places the operative current AmLegal exemption text in zero-based chunk 13. Retrieval chunk numbers are tool/layout metadata, not stable legal citations. The substantive minor-wallboard and fire-resistive-assembly exception is unchanged.",
+      "action": "Use the section number and direct official-code link as the durable citation; current source-location metadata is corrected while historical audits remain unchanged.",
+      "source_ids": [
+        "SF-CODE-106",
+        "SF-CODE-106-PDF",
+        "AUDIT-20261111-49F"
+      ],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027"
     }
   ],
   "caption": "Open items stay on this page rather than being inferred. F-70 is the 17E Heise 404-widget flag. F-71 is the 611bd0aa ranking-array-order correction. F-78 through F-84 are the 2026-11-11 20333975 re-verification items."

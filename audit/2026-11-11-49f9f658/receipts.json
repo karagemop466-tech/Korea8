@@ -1,0 +1,724 @@
+{
+  "audit": "2026-11-11-49f9f658",
+  "accessed": "2026-11-11",
+  "branch": "arena/49f9f658-korea8",
+  "summary": {
+    "identified_cslb_records": 26,
+    "active": 25,
+    "suspended": 1,
+    "unresolved_identities": 3,
+    "material_field_corrections": 0,
+    "providers_contacted": 0,
+    "verified_prices_added": 0,
+    "review_ratings_or_counts_added": 0,
+    "discovery_questions": 18,
+    "independent_confirmations_of_parallel_corrections": 1,
+    "baseline_records_directly_reviewed": 26,
+    "current_integrated_registry_records": 30,
+    "parallel_discovery_records_not_claimed_directly_by_this_session": 4
+  },
+  "cslb_records": [
+    {
+      "license": "1115649",
+      "provider": "Rapid Flow Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 866-8401",
+      "expiry": "2028-01-31",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "829071",
+      "provider": "Ace Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-4",
+        "C-16",
+        "B",
+        "C-10"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 824-6444",
+      "expiry": "2027-06-30",
+      "workers_comp": "Policy recorded; expires 07/13/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1089561",
+      "provider": "Heise’s Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-10",
+        "A",
+        "C-20"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 333-0704",
+      "expiry": "2028-04-30",
+      "workers_comp": "Policy recorded; expires 01/11/2027",
+      "additional_status": "Prior entity #787733 (HEISE'S PLUMBING INC) expired 03/31/2023 and canceled/SoS dissolved 02/12/2025; contracts must name active #1089561 TARO GROUP INC dba HEISES PLUMBING.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "977638",
+      "provider": "Expert Plumbing Solutions",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 531-5340",
+      "expiry": "2028-10-31",
+      "workers_comp": "Policy recorded; expires 07/19/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "757796",
+      "provider": "Bay Area Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 668-8000",
+      "expiry": "2027-01-31",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1024971",
+      "provider": "Fast Response Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 596-6115",
+      "expiry": "2027-03-31",
+      "workers_comp": "Policy recorded; expires 12/18/2026",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "749536",
+      "provider": "Save-On-Interior",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 668-8000",
+      "expiry": "2028-05-31",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "CSLB miscellaneous entries: 11/06/2015 cash deposit letter $15,000; 01/14/2016 follow-up letter. No interpretation supplied.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1096552",
+      "provider": "We Do Construction",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 416-5494",
+      "expiry": "2028-09-30",
+      "workers_comp": "Policy recorded; expires 11/14/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "392967",
+      "provider": "Ayoob & Peery",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-4",
+        "C-16",
+        "C-36",
+        "C-20"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 550-0975",
+      "expiry": "2028-09-30",
+      "workers_comp": "Policy recorded; expires 08/31/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "995163",
+      "provider": "Bernal Hill Drywall",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 533-8274",
+      "expiry": "2028-07-31",
+      "workers_comp": "Policy recorded; expires 03/10/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1106131",
+      "provider": "SF Building Group",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B"
+      ],
+      "registered_city": "South San Francisco",
+      "phone": "(415) 297-2246",
+      "expiry": "2027-06-30",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1105133",
+      "provider": "24/7 SF Handyman & Remodeling Service",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B-2"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 304-1559",
+      "expiry": "2027-05-31",
+      "workers_comp": "Policy recorded; expires 04/11/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1009195",
+      "provider": "Advanced Plumbing and Drain",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 744-4944",
+      "expiry": "2027-11-30",
+      "workers_comp": "Policy recorded; expires 08/21/2027",
+      "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "379364",
+      "provider": "Caccia Home Services",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-31",
+        "C-34",
+        "C-10"
+      ],
+      "registered_city": "Burlingame",
+      "phone": "(650) 342-5363",
+      "expiry": "2027-04-30",
+      "workers_comp": "Policy recorded; expires 10/01/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "966337",
+      "provider": "Flow Masters Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-16",
+        "C-20"
+      ],
+      "registered_city": "Daly City",
+      "phone": "(415) 751-1933",
+      "expiry": "2027-10-31",
+      "workers_comp": "Policy recorded; expires 06/01/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1140843",
+      "provider": "Discount Plumbing Rooter Services",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "Burlingame",
+      "phone": "(650) 991-2100",
+      "expiry": "2027-07-31",
+      "workers_comp": "Policy recorded; expires 04/01/2027",
+      "additional_status": "CSLB also records $2,000,000 liability insurance and a $100,000 LLC employee/worker bond.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1086935",
+      "provider": "FDL Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "Daly City",
+      "phone": "(415) 678-9557",
+      "expiry": "2028-10-31",
+      "workers_comp": "Policy recorded; expires 01/21/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "961218",
+      "provider": "Precision Rooter & Drain",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 724-1824",
+      "expiry": "2027-05-31",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "954385",
+      "provider": "Citywide Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "Daly City",
+      "phone": "(415) 716-1519",
+      "expiry": "2028-07-31",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "License reissued to another entity 07/06/2026.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "300647",
+      "provider": "Cahill Contractors",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "A",
+        "B"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 986-0600",
+      "expiry": "2027-11-30",
+      "workers_comp": "Policy recorded; expires 07/01/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "297604",
+      "provider": "D G Construction",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 308-0803",
+      "expiry": "2027-04-30",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "CSLB CitationViolationDisclosure publishes citation 2 2022 002099 (03/23/2023, FOR DISCLOSURE ONLY PER B&P CODE 7124.6): B&P Code 7114.A — Aided and abetted non-licensee.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1027286",
+      "provider": "Kenneth Asire Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Suspended",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 913-8048",
+      "expiry": "2027-05-31",
+      "workers_comp": "Policy recorded; expires 08/30/2027",
+      "additional_status": "License under Contractors Bond Suspension. Recorded bond cancellation date 08/16/2026. CSLB notes a received replacement bond may not yet be processed.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "1160613",
+      "provider": "Clever Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "registered_city": "San Bruno",
+      "phone": "(650) 834-0821",
+      "expiry": "2028-09-30",
+      "workers_comp": "Exempt: certified no employees",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "868994",
+      "provider": "Atlas Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(650) 871-9863",
+      "expiry": "2028-03-31",
+      "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
+      "additional_status": "CSLB phone differs from the company contact page; both are source-linked, neither is silently substituted.",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "954813",
+      "provider": "24/7 Rooter and Plumbing Services",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-61/D-56"
+      ],
+      "registered_city": "San Francisco",
+      "phone": "(415) 586-6851",
+      "expiry": "2028-11-30",
+      "workers_comp": "Policy recorded; expires 07/01/2027",
+      "additional_status": "",
+      "comparison": "No evidenced canonical status/classification/contact change requiring correction",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    },
+    {
+      "license": "888630",
+      "provider": "George Salet Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=888630",
+      "retrieved": "2026-11-11",
+      "data_current": "2026-11-10",
+      "status": "Current and active",
+      "classifications": [
+        "C-16",
+        "C-36"
+      ],
+      "registered_city": "Brisbane",
+      "phone": "(415) 334-0733",
+      "expiry": "2028-12-31",
+      "workers_comp": "Policy recorded; expires 01/28/2027",
+      "additional_status": "Renewal reflected on fresh CSLB record: expires 12/31/2028; recheck status at signing.",
+      "comparison": "Corrected expiry from 2026-12-31 to 2028-12-31; other identity/status/classification/contact fields retained",
+      "limitations": "Point-in-time registry record; not quality, availability, complaint-free history or exact-job acceptance."
+    }
+  ],
+  "unresolved_identities": [
+    {
+      "name": "Portola Plumbing Services",
+      "license": "",
+      "phone": "",
+      "expiry": "",
+      "status": "",
+      "result": "Unresolved; fields intentionally blank"
+    },
+    {
+      "name": "C J's Plumbing & Rooter Service",
+      "license": "",
+      "phone": "",
+      "expiry": "",
+      "status": "",
+      "result": "Unresolved; fields intentionally blank"
+    },
+    {
+      "name": "Golden Gate Plumbing & Rooter Inc",
+      "license": "",
+      "phone": "",
+      "expiry": "",
+      "status": "",
+      "result": "Unresolved; fields intentionally blank"
+    }
+  ],
+  "source_receipts": [
+    {
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Permit before cutting/replacing pipes; inspect before covering; live Veterans Day closure banner; help desk response within two business days."
+    },
+    {
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "SFPC §104.2 exemptions generally require no cutting/removal of piping or traps; exact scope not determined."
+    },
+    {
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+      "retrieved": "2026-11-11",
+      "result": "Direct current-code excerpt",
+      "finding": "Minor interior plaster/wallboard repair exemption excludes fire-resistive assemblies; operative text in zero-based chunk 13."
+    },
+    {
+      "url": "https://media.api.sf.gov/documents/2025_SFBC_Amendments.pdf",
+      "retrieved": "2026-11-11",
+      "result": "Direct PDF",
+      "finding": "City-hosted municipal amendments retained as complementary code source; subject ceiling assembly remains unknown."
+    },
+    {
+      "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "retrieved": "2026-11-11",
+      "result": "Direct PDF",
+      "finding": "July 2026 Category 1P $290 and Miscellaneous $320; category/inspection applicability unresolved; not a job quote."
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "B general-building two-unrelated-trade and appropriate-classification/subcontracting framework."
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Specialty other-trade work limited to incidental and supplemental work; no scope-specific conclusion inferred."
+    },
+    {
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "C-9 covers gypsum board, taping, texturing and compounds; not plumbing."
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Repair entry, normal hours, written notice, 24-hour/six-day mailed presumptions and consent/emergency exceptions."
+    },
+    {
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Comparable written bids and insurance/license verification guidance."
+    },
+    {
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Written scope/price/permit/schedule/cleanup/change guidance and generally lesser of 10% or $1,000 down payment."
+    },
+    {
+      "url": "https://www.watco.us/wp-content/uploads/2021/04/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "retrieved": "2026-11-11",
+      "result": "Direct PDF",
+      "finding": "Model-specific trip-lever instructions; existing assembly model remains unidentified."
+    },
+    {
+      "url": "https://www.aceplumbingandrooter.com/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "SF residential/commercial plumbing, #829071 and (415) 824-6444; no complete restoration confirmation."
+    },
+    {
+      "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "retrieved": "2026-11-11",
+      "result": "Direct with embedded 404 template irregularity",
+      "finding": "Company case describes exterior-ceiling access and waste/overflow replacement; not this job or restoration proof."
+    },
+    {
+      "url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Advertises plumbing-access cutout/ceiling patching and paint touch-ups; acceptance and lawful contract structure unconfirmed."
+    },
+    {
+      "url": "https://www.rapidflowbayarea.com/services",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Advertises shower/tub, general contracting, drywall, permits and coordination; exact-job acceptance unconfirmed."
+    },
+    {
+      "url": "https://www.ayoobpeery.com/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Commercial wet-side mechanical/design-build focus; small residential repair not established."
+    },
+    {
+      "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Advertised B+C36/self-performed plumbing/design-build; large remodel prices not used for this repair."
+    },
+    {
+      "url": "https://www.eplumbingsolutions.com/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Residential plumbing repairs, drains and fixtures; no ceiling-restoration confirmation."
+    },
+    {
+      "url": "https://www.bayareaplumbingsf.com/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Residential kitchen/bath plumbing scope; no complete restoration confirmation."
+    },
+    {
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Repair scope and free in-person estimates/per-job quotes advertised; no complete restoration confirmation."
+    },
+    {
+      "url": "https://www.bernalhilldrywall.com/",
+      "retrieved": "2026-11-11",
+      "result": "Direct",
+      "finding": "Drywall patching, painting, texture matching and small repairs advertised; no plumbing scope implied."
+    },
+    {
+      "url": "https://www.discountplumbingrooter.com/",
+      "retrieved": "2026-11-11",
+      "result": "Fetch failed",
+      "finding": "Not treated as freshly verified."
+    },
+    {
+      "url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2?start=240",
+      "retrieved": "2026-11-11",
+      "result": "Direct page HTTP 403; separate search excerpt only",
+      "finding": "Search excerpt describes two stuck bathtub drain levers; not directly retrieved review text or exact concealed trip-lever/restoration proof."
+    }
+  ],
+  "unchanged_fields": {
+    "verified_estimate_amounts": "all null/blank",
+    "review_ratings_and_counts": "all null/blank",
+    "provider_exact_job_acceptance": "unconfirmed",
+    "provider_availability": "unconfirmed",
+    "ceiling_restoration_acceptance": "unconfirmed",
+    "access_feasibility": "unconfirmed",
+    "permit_determination": "open",
+    "ranking_weights_and_scores": "unchanged"
+  },
+  "correction_log": [
+    {
+      "flag": "F-70",
+      "field": "George Salet #888630 expiry",
+      "before": "2026-12-31",
+      "after": "2028-12-31",
+      "reason": "Fresh CSLB official record"
+    },
+    {
+      "flag": "F-71",
+      "field": "SF-CODE-106 retrieval metadata",
+      "before": "zero-based chunk 39",
+      "after": "zero-based chunk 13",
+      "reason": "Current AmLegal retrieval; substantive code text unchanged"
+    },
+    {
+      "flag": "F-72",
+      "field": "HEISE-INGLESIDE limitations",
+      "before": "No embedded-template note",
+      "after": "Embedded 404 template irregularity explicitly disclosed",
+      "reason": "Fresh direct company-page retrieval"
+    }
+  ],
+  "integration_note": "The receipt matrix records this session’s direct 26-record baseline review. During rebase, main supplied four additional discovery records and existing F-70/F-78 corrections. Those parallel records are preserved; this session adds only the independent audit, current SFBC metadata correction F-85 and public audit links."
+}
