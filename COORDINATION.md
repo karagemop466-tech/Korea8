@@ -2069,3 +2069,18 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | Open PRs untouched | #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7 were not merged or closed by this session. |
 
 **Final status.** `203-01`…`203-05` **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked/paid. Owner amounts remain owner-reported with verified amounts blank. Public artifacts use neutral repair-scope language only.
+
+---
+
+## Session `arena/49f9f658-korea8` — 2026-11-11 current-source verification, decision-support refresh and final integration
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `49F-01` | Claim board and inventory active work | done | `arena/49f9f658-korea8` | `COORDINATION.md` |
+| `49F-02` | Fresh official-source provider and scope verification; requirements/questions/answers and repository review | in progress | `arena/49f9f658-korea8` | `audit/2026-11-11-49f9f658/**`, `overflow-integration/**` |
+| `49F-03` | Rebuild canonical dashboard with only evidenced corrections; preserve owner-reported estimates with verified fields blank | unclaimed | `arena/49f9f658-korea8` | canonical generator/verifier/tests, root generated pages/reports, `OVERFLOW_EXECUTIVE_SUMMARY.md` |
+| `49F-04` | Run all checks, PR to `main`, merge, exact-commit Pages/live verification and final record | unclaimed | `arena/49f9f658-korea8` | `COORDINATION.md`, deployment records and generated public output |
+
+**Coordination note.** Arena fixes this session to `arena/49f9f658-korea8`; no other branch or worktree will be created or pushed. All previous canonical implementation claims have completed handoffs or are more than 60 minutes old without new commits. Historical open PRs remain untouched. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will use neutral repair-scope language and omit private owner context. Every factual table row will retain a primary/official source link; unconfirmable values will remain blank and flagged.
+
+**Claim push:** this claim is committed and pushed before any research or site edits.
