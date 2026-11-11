@@ -2027,3 +2027,23 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | `00E-05` | Rebuild, run verifier + unit tests + wording guard + independent audit + staging with live HTTPS checks; PR to `main`, merge and confirm the deployment for the exact merge commit | pending | `arena/00e8bf10-korea8` | generated build/verification reports, `COORDINATION.md` |
 
 No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank.
+
+### `00E-02` — fresh official-source re-read (done, 2026-11-11)
+
+- **All 27 identified CSLB licence records fetched directly** on 2026-11-11 (26 in the provider register plus dissolved #787733). Every stored field matched — legal name, entity, city, phone, classifications, status, workers'-compensation position — except one: **George Salet Plumbing #888630** is recorded by CSLB as expiring **12/31/2028**, not the stored `2026-12-31`. The field, its source timestamp, the F-53 sentence and the ranking note were corrected; recorded as **F-72**. No ranking position changes. Receipts: `audit/2026-11-11-00e8bf10/cslb-receipts.json` (27 records, 1 mismatch).
+- Live status observations confirmed rather than corrected: Kenneth Asire #1027286 still under contractor's-bond suspension (bond cancelled 08/16/2026); Advanced Plumbing #1009195 still carries the potential-suspension note; D G Construction #297604 still shows citation 2 2022 002099 (03/23/2023, B&P 7114.A, disclosure-only status); Heise's prior #787733 still expired/cancelled.
+- **Statutes and city pages:** 13 re-read and matching — SF.gov plumbing/mechanical permit page (including today's Veterans Day closure banner), SFPC §104.2 chunk 14 (nine conditional exemptions), DBI Table 1A-C July 2026 fees (1P $290, 2PA $549, 2PB $809, 11P/M $320, $519/hour regular, $555/hour off-hour, $259/half-hour reinspection), BPC §§7057, 7057.5, 7059, Civil Code §1954, CSLB contract guidance, CSLB C-9, CSLB complaint disclosure for #297604. Four sources (SFBC §106A, 16 CCR §831 notice, two EPA pages) were **not** re-fetched and are marked carried forward in `source-checks.json`. Yelp returned HTTP 403 again; no rating or count is published.
+
+### `00E-03` — open-question register (done, 2026-11-11)
+
+- New `overflow-integration/data/questions.json`: 14 decision-blocking questions, each with what the official sources already establish, what is still missing, the concrete step that would produce it, which decision it gates, status and source links. 11 fully open, 3 partially answered.
+- New `questions.html` in the dashboard navigation, with the question table, five discovery steps (photograph the plate and ceiling; one written DBI scope determination; one identical request to three leads; owner-controlled records; licence re-check at booking) and a "what is already settled" list. Linked from the dashboard cards, the dashboard status snapshot, the executive summary and this board.
+- Generator, verifier, unit-test page list and `audit/independent_audit.py` extended to cover the page, with parity and completeness checks.
+
+### `00E-04` — publication-boundary check (done, 2026-11-11)
+
+- Scanned the published closure for context about the occupants, permit claims the official text does not support, unverified numeric review values and placeholder text: none found. Owner amounts remain owner-reported with verified amounts blank. The retired draft that carries a categorical permit assertion stays out of the published closure and remains recorded under F-69.
+
+### Concurrency note
+
+`origin/main` advanced through PRs #79-#87 while this session was working. The rebase conflict was confined to the shared board and to generated files plus `flags.json` / `sources.json` / the build script. Resolution kept every concurrent session's work: flags **F-70** (Heise project-page 404 text) and **F-71** (ranking array order) are untouched, the ranking reorder, the 92cc6407 / 331cafce / 611bd0aa / 17e21276 / 20bb5485 audit sections and their verification-page links remain, and this session's correction is renumbered **F-72**. Generated pages and reports were regenerated from the merged data rather than hand-merged. No other session's work was discarded.
