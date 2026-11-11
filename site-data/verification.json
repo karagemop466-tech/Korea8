@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-11T02:20:34.204901+00:00",
+  "checked_at": "2026-11-11T02:22:51.272950+00:00",
   "result": "PASS",
-  "checks_run": 28,
-  "checks_passed": 28,
+  "checks_run": 35,
+  "checks_passed": 35,
   "checks_failed": 0,
-  "canonical_rows_checked": 408,
-  "tracked_html_files": 68,
+  "canonical_rows_checked": 440,
+  "tracked_html_files": 75,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "11/11"
+      "detail": "12/12"
     },
     {
       "check": "HTML tag balance",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "408 rows; offenders: "
+      "detail": "440 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -138,6 +138,41 @@
       "detail": ""
     },
     {
+      "check": "question count parity",
+      "ok": true,
+      "detail": "27/27"
+    },
+    {
+      "check": "every question row is anchored to a registered official source",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "unanswered question answers published blank",
+      "ok": true,
+      "detail": "18 unanswered"
+    },
+    {
+      "check": "question blocking counts match data",
+      "ok": true,
+      "detail": "{'Low': 3, 'Medium': 11, 'High': 13}"
+    },
+    {
+      "check": "question status counts match data",
+      "ok": true,
+      "detail": "{'partially answered': 4, 'unanswered': 18, 'answered': 5}"
+    },
+    {
+      "check": "question register omits private owner context",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "build report question counts match data",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "check": "build report counts match data",
       "ok": true,
       "detail": ""
@@ -145,7 +180,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "285 links; offenders: "
+      "detail": "538 links; offenders: "
     }
   ]
 }

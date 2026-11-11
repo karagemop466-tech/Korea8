@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime,html
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','questions.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -135,6 +135,32 @@ def main():
  check('source kinds explicit',all(s.get('kind') for s in srcs.values()))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())
+ # question register: parity, official anchor, blank-vs-unverified discipline
+ qn=load('questions.json')['rows']
+ qtbl=parsed['questions.html'].tables.get('questions-table',[])
+ check('question count parity',len(qtbl)==len(qn),f'{len(qtbl)}/{len(qn)}')
+ srcmap={s['id']:s for s in load('sources.json')['rows']}
+ official_kinds={'official-government','official-company','official-manufacturer','official-code-publisher','official-tool'}
+ flagids={x['id'] for x in load('flags.json')['rows']}
+ qbad=[]
+ for q in qn:
+  if not any(srcmap.get(i,{}).get('url')==q['official_url'] and srcmap.get(i,{}).get('kind') in official_kinds for i in q['source_ids']): qbad.append(q['id']+':anchor')
+  qbad += [q['id']+':'+i for i in q['source_ids'] if i not in srcmap]
+  qbad += [q['id']+':flag:'+f for f in q['linked_flags'] if f not in flagids]
+  if q['status'] in {'answered','partially answered'} and not q['answer']: qbad.append(q['id']+':status-without-answer')
+  if q['status']=='unanswered' and q['answer']: qbad.append(q['id']+':answer-without-status')
+ check('every question row is anchored to a registered official source',not qbad,'; '.join(qbad[:12]))
+ qt=texts['questions.html']; unans=len([q for q in qn if not q['answer']])
+ check('unanswered question answers published blank',qt.count('aria-label="blank"')>=unans and 'unanswered' in qt,f'{unans} unanswered')
+ check('question blocking counts match data',
+   all(f'<strong>{len([q for q in qn if q["blocking"]==b])}</strong> {b.lower()}' in qt for b in {q['blocking'] for q in qn}),
+   str({b:len([q for q in qn if q['blocking']==b]) for b in {q['blocking'] for q in qn}}))
+ check('question status counts match data',
+   all(f'<strong>{len([q for q in qn if q["status"]==st])}</strong>' in qt for st in {q['status'] for q in qn}),
+   str({st:len([q for q in qn if q['status']==st]) for st in {q['status'] for q in qn}}))
+ check('question register omits private owner context',
+   not re.search(r'private|confidential|politic|election|visa|immigration',qt,re.I))
+ check('build report question counts match data',br['counts'].get('questions')==len(qn) and br['counts'].get('questions_answered')==len([q for q in qn if q['answer']]))
  check('build report counts match data',br['counts']['providers']==len(prov) and br['counts']['requirements']==len(req) and br['counts']['flags']==len(flags) and br['counts']['sources']==len(srcs) and br['counts']['ranking']==len(rk['ranked']) and br['counts']['ranking_held']==len(rk['not_recommended']))
  # repo-wide tracked HTML internal link crawl (canonical + preserved stubs/docs)
  import subprocess

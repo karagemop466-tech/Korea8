@@ -1,0 +1,615 @@
+{
+ "as_of": "2026-11-11",
+ "note": "Decision-blocker register for the owner's own decision. Each row separates what the dossier already establishes from what is genuinely missing, states whether an answer exists, and names the cheapest way to obtain the missing answer. A blank answer means unanswered: it is never inferred or filled in. Repository-hygiene questions that do not bear on the hire decision are recorded in the audit report instead of here.",
+ "status_legend": {
+  "answered": "The dossier already contains an answer, with the source it rests on.",
+  "partially answered": "Part of the answer is established and the remainder is missing.",
+  "unanswered": "Nothing in the dossier answers it; a blank answer field is published rather than a guess."
+ },
+ "rows": [
+  {
+   "id": "Q-01",
+   "category": "Access & scope",
+   "decision": "Access method",
+   "blocking": "High",
+   "status": "partially answered",
+   "question": "Can the stuck overflow assembly be freed from the tub side, without opening the wall or ceiling?",
+   "known": "Watco 500/501/600TL instructions describe removing the overflow plate and drop cylinder and inserting the SLIP LOCK through the overflow opening. No retrieval confirms this particular unit can be freed that way.",
+   "unknown": "Whether this assembly can be freed from above at all. Five or more licensed plumbers have reported that they could not, which is an owner report and is not independently documented.",
+   "answer": "No. The dossier records the tub-side attempt as the required first step, not as a confirmed outcome.",
+   "method": "Have each ranked lead attempt and document the tub-side removal first and put the finding in writing, including photographs of the assembly before and after. Record the brand and model from the overflow plate.",
+   "evidence": "technical.json T-01/T-02/T-03 · requirements.json R-01 · flags.json F-01",
+   "source_ids": [
+    "OWNER",
+    "WATCO",
+    "HEISE-INGLESIDE"
+   ],
+   "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "linked_flags": [
+    "F-01",
+    "F-27"
+   ]
+  },
+  {
+   "id": "Q-02",
+   "category": "Access & scope",
+   "decision": "Assembly identity",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "Which brand and model is the existing overflow assembly, and what does its own instruction sheet require?",
+   "known": "The Watco 500-, 501- and 600TL-family sheet is the only manufacturer instruction retrieved. It is model-specific.",
+   "unknown": "The installed brand and model. No photograph of the overflow plate, no casting mark and no part number was supplied.",
+   "answer": "",
+   "method": "Photograph the overflow plate and the drain shoe from above, and read any name or number cast into the plate. Match it to the manufacturer sheet before any cut is agreed. The photograph is supplied by the owner or the provider, not inferred here.",
+   "evidence": "technical.json T-01 · requirements.json R-02 · flags.json F-27",
+   "source_ids": [
+    "WATCO",
+    "OWNER"
+   ],
+   "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "linked_flags": [
+    "F-27"
+   ]
+  },
+  {
+   "id": "Q-03",
+   "category": "Access & scope",
+   "decision": "Fallback access",
+   "blocking": "High",
+   "status": "partially answered",
+   "question": "If the tub-side attempt fails, is a ceiling opening below the tub the accepted fallback, and who owns the restoration?",
+   "known": "Heise's Plumbing publishes four San Francisco tub waste-and-overflow cases, one of which states it accessed the exterior ceiling to remove the old overflow. That is a self-published case, not an independent record of this job.",
+   "unknown": "Whether any ranked lead will accept one contract covering both the plumbing and the ceiling restoration for this address, and who performs each part.",
+   "answer": "Partially. Ceiling access is documented as a used method by one lead; acceptance of this job is unconfirmed for every lead.",
+   "method": "Send the identical request script already published on the dashboard to each ranked lead and require the answer in the written reply: the named restoration party, or the incidental-work rationale.",
+   "evidence": "technical.json T-04/T-05/T-06 · requirements.json R-03 · requests.json",
+   "source_ids": [
+    "HEISE-INGLESIDE",
+    "HEISE-MISSION",
+    "HEISE-MARINA",
+    "HEISE-PANHANDLE",
+    "CSLB-C9"
+   ],
+   "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+   "linked_flags": [
+    "F-01",
+    "F-04",
+    "F-17"
+   ]
+  },
+  {
+   "id": "Q-04",
+   "category": "Access & scope",
+   "decision": "Scope definition",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "What exactly counts as done: freeing the lever, replacing the waste-and-overflow assembly, or restoring the ceiling to the existing finish?",
+   "known": "The three supplied estimates use three different scopes, so the amounts are not like-for-like and their spread is not a market range.",
+   "unknown": "One agreed definition of completion. No supplied quote prices the ceiling opening, patching, texture and paint as a separate line.",
+   "answer": "",
+   "method": "Ask every lead to price the same four-line scope: tub-side attempt, assembly replacement if required, ceiling opening and closing, ceiling finish restored to existing. Compare only like-for-like lines.",
+   "evidence": "estimates.json rows · requirements.json R-04/R-05 · flags.json F-03/F-04",
+   "source_ids": [
+    "OWNER",
+    "CSLB-FINDING"
+   ],
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+   "linked_flags": [
+    "F-03",
+    "F-04"
+   ]
+  },
+  {
+   "id": "Q-05",
+   "category": "Access & scope",
+   "decision": "Site survey",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "What is above and below the tub: floor structure, pipe routing, and the ceiling height and construction of the storage unit?",
+   "known": "The dossier records the storage unit below and the concealed plumbing behind the wall, from the owner's description only.",
+   "unknown": "No measurement, photograph, drawing or inspection of either side. Pipe material and routing are unknown.",
+   "answer": "",
+   "method": "Ask the first attending provider to record dimensions and pipe material photographically during the tub-side attempt, before any opening is proposed.",
+   "evidence": "OVERFLOW owner record · technical.json T-06 · flags.json F-26",
+   "source_ids": [
+    "OWNER",
+    "SF-DBI",
+    "SF-PERMIT"
+   ],
+   "official_url": "https://www.sf.gov/departments--department-building-inspection--permit-services-dbi",
+   "linked_flags": [
+    "F-26",
+    "F-27"
+   ]
+  },
+  {
+   "id": "Q-06",
+   "category": "Permit & code",
+   "decision": "Permit trigger",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "Does a San Francisco plumbing permit apply to the chosen path, and which fee category would it fall in?",
+   "known": "The city states a permit is needed before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried. The July 2026 fee table lists Category 1P at $290, with the category applicability unconfirmed.",
+   "unknown": "A job-specific determination for this address. No written answer from the Department of Building Inspection and no contractor position in writing.",
+   "answer": "",
+   "method": "Two independent routes, both recorded in writing: ask the Department of Building Inspection permit counter, and require each bidder to state its permit position in the quote. The published request script already asks for it.",
+   "evidence": "compliance.json C-01 · flags.json F-21 · estimates.json official_fees",
+   "source_ids": [
+    "SF-PERMIT",
+    "SF-FEES",
+    "SF-DBI"
+   ],
+   "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "linked_flags": [
+    "F-21"
+   ]
+  },
+  {
+   "id": "Q-07",
+   "category": "Permit & code",
+   "decision": "Conditional exemptions",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "Do the conditional exemptions in the Plumbing Code reach this repair, and does any small-work exemption apply?",
+   "known": "San Francisco Plumbing Code section 104.2 lists nine conditional exemptions, and Business and Professions Code section 7048 carries a conditional aggregate under-$1,000 exemption. Both are conditional and neither is permission to skip a required permit.",
+   "unknown": "Whether either applies to this scope. The operative text is in the dossier but the job-specific application is not established.",
+   "answer": "",
+   "method": "Put the exemption question to the Department of Building Inspection with the scope described in the request script; keep the reply with the contract.",
+   "evidence": "compliance.json C-02/C-07 · flags.json F-22",
+   "source_ids": [
+    "SF-CODE-104-PDF",
+    "SF-CODE-104",
+    "BPC-7048"
+   ],
+   "official_url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+   "linked_flags": [
+    "F-21",
+    "F-22"
+   ]
+  },
+  {
+   "id": "Q-08",
+   "category": "Permit & code",
+   "decision": "Inspection sequence",
+   "blocking": "Medium",
+   "status": "answered",
+   "question": "If a permit does apply, must the work be inspected before the ceiling is closed again?",
+   "known": "The dossier records that plumbing work must be inspected before pipes are covered, and the DBI fee table lists inspection and reinspection charges.",
+   "unknown": "The actual inspection appointment and the resulting sign-off, which depend on a permit being issued.",
+   "answer": "Yes. Under the published inspection sequence the rough work is inspected before it is covered, so the ceiling closing follows inspection, not the other way round.",
+   "method": "Require this sequence in the written scope and in the contract schedule so the ceiling is not closed early.",
+   "evidence": "compliance.json C-04 · estimates.json official_fees",
+   "source_ids": [
+    "SF-PERMIT",
+    "SF-FEES"
+   ],
+   "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "linked_flags": [
+    "F-21"
+   ]
+  },
+  {
+   "id": "Q-09",
+   "category": "Permit & code",
+   "decision": "Ceiling code",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "Is the storage-unit ceiling a fire-resistive assembly, and does the exemption for minor repairs reach it?",
+   "known": "The Building Code exempts painting and papering and minor repairs to existing interior finishes, and treats fire-resistive assemblies separately.",
+   "unknown": "The ceiling assembly type. No inspection of the storage unit was performed and no drawing was supplied.",
+   "answer": "",
+   "method": "Have the provider photograph the ceiling before opening and identify the assembly; confirm with the Department of Building Inspection whether the repair must restore the rating.",
+   "evidence": "compliance.json C-13 · technical.json T-06 · requirements.json R-12",
+   "source_ids": [
+    "SF-CODE-106",
+    "SF-CODE-106-PDF"
+   ],
+   "official_url": "https://media.api.sf.gov/documents/2025_SFBC_Amendments.pdf",
+   "linked_flags": [
+    "F-26"
+   ]
+  },
+  {
+   "id": "Q-10",
+   "category": "Permit & code",
+   "decision": "Permit holder",
+   "blocking": "Medium",
+   "status": "answered",
+   "question": "Who may hold the permit if one is required: the property owner or the licensed contractor?",
+   "known": "The city sets out eligible licence classes and limits owner work, and contractors use the PermitSF registration route.",
+   "unknown": "Whether the chosen firm is registered for PermitSF, and which licence class it would file under.",
+   "answer": "Either, within the published limits. The dossier records eligible licence classes and the owner-work limits; the registration status of the shortlisted firms was not checked.",
+   "method": "Ask the chosen firm to confirm its PermitSF registration and the licence class it will file under.",
+   "evidence": "compliance.json C-03 · requirements.json",
+   "source_ids": [
+    "SF-AUTH",
+    "SF-PERMIT",
+    "SF-DBI"
+   ],
+   "official_url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf",
+   "linked_flags": [
+    "F-01"
+   ]
+  },
+  {
+   "id": "Q-11",
+   "category": "Licensing & contract",
+   "decision": "Combined licence",
+   "blocking": "High",
+   "status": "partially answered",
+   "question": "Can one firm lawfully take one contract for both the plumbing and the ceiling restoration?",
+   "known": "A specialty contractor may take a contract using two or more trades when the other-trade work is incidental and supplemental to its own licensed craft, and the rulemaking notice defines that as work essential to accomplish the licensed work. A B General Building licence can prime a contract involving other trades under a separate test.",
+   "unknown": "Whether ceiling restoration on this job is incidental and supplemental rather than a separate scope. The law does not settle that for this ceiling.",
+   "answer": "Conditional. One contract is possible, but only when the restoration is genuinely incidental and supplemental, or when a named appropriately licensed restoration party is on the contract.",
+   "method": "Require the written rationale under the quoted section, or the named restoration party, in the reply to the request script.",
+   "evidence": "compliance.json C-05/C-15 · ranking.json weights C1 · requirements.json R-15",
+   "source_ids": [
+    "BPC-7059",
+    "CSLB-831",
+    "BPC-7057",
+    "CSLB-C9",
+    "CSLB-B"
+   ],
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+   "linked_flags": [
+    "F-18",
+    "F-65"
+   ]
+  },
+  {
+   "id": "Q-12",
+   "category": "Licensing & contract",
+   "decision": "Licence standing",
+   "blocking": "High",
+   "status": "answered",
+   "question": "Is every shortlisted firm currently licensed, and are any of them suspended or of unresolved identity?",
+   "known": "Twenty-six licence records were read on the official board records. Twenty-five are current and active; one is suspended and excluded from the priority leads; three identities remain unresolved and are held blank.",
+   "unknown": "Nothing at the level of the board record. Standing can change at any time, so the record must be re-read on the day of hiring.",
+   "answer": "Yes for the ten ranked leads, as read on the official board record on the recorded check date. One suspended licence and three unresolved identities are excluded and held blank.",
+   "method": "Re-read the linked official licence page on the day the contract is signed; the numbers on the site are the numbers on those records.",
+   "evidence": "providers.json 29 rows · ranking.json ranking_hiring_order check",
+   "source_ids": [
+    "CSLB-SEARCH",
+    "CSLB-829071",
+    "CSLB-1089561",
+    "CSLB-1115649"
+   ],
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "linked_flags": [
+    "F-09",
+    "F-13"
+   ]
+  },
+  {
+   "id": "Q-13",
+   "category": "Licensing & contract",
+   "decision": "Contract formalities",
+   "blocking": "Medium",
+   "status": "answered",
+   "question": "Is a written contract required, and what payment terms are lawful?",
+   "known": "The board requires a written home-improvement contract above $500 covering scope, price, permits, schedule and cleanup, with written change orders and a down payment limited to the lesser of 10 percent or $1,000 unless a bond is filed.",
+   "unknown": "The actual contract terms any firm will offer.",
+   "answer": "Yes. All three supplied amounts exceed $500, so the written-contract rule applies to each of them.",
+   "method": "Require the written contract before any work starts, with the ceiling restoration as its own line and the inspection sequence in the schedule.",
+   "evidence": "compliance.json C-09 · requirements.json R-16",
+   "source_ids": [
+    "CSLB-CONTRACT",
+    "CSLB-FINDING"
+   ],
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+   "linked_flags": [
+    "F-02"
+   ]
+  },
+  {
+   "id": "Q-14",
+   "category": "Licensing & contract",
+   "decision": "Insurance & bond",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "What are the workers-compensation, bond and liability-insurance positions of the firm actually hired?",
+   "known": "The workers-compensation summary on each licence record was read, including exemptions and one near-term policy expiry.",
+   "unknown": "Bond amounts and general-liability cover are not recorded on the licence record and were not obtained from any firm.",
+   "answer": "",
+   "method": "Ask the chosen firm for its certificate of insurance and bond details, and re-read the workers-compensation line on the licence record on the day of hiring.",
+   "evidence": "providers.json workers_comp column · flags.json F-43",
+   "source_ids": [
+    "CSLB-SEARCH",
+    "CSLB-CONTRACT"
+   ],
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "linked_flags": [
+    "F-01"
+   ]
+  },
+  {
+   "id": "Q-15",
+   "category": "Tenancy & building",
+   "decision": "Tenant notice",
+   "blocking": "High",
+   "status": "partially answered",
+   "question": "What notice must the tenant receive before the work, and who serves it?",
+   "known": "Civil Code section 1954 permits necessary or agreed repairs during normal business hours with written notice giving the date, an approximate time and the purpose, with stated presumptions for delivery.",
+   "unknown": "The notice actually served, the affected tenancy, and whether any local requirement adds to the state rule.",
+   "answer": "Partially. The statutory notice content and timing are recorded; the notice for this job has not been prepared or served.",
+   "method": "Serve written notice in the recorded form before scheduling, and keep a copy with the contract.",
+   "evidence": "compliance.json C-08 · requirements.json R-17",
+   "source_ids": [
+    "CIV-1954"
+   ],
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+   "linked_flags": [
+    "F-26"
+   ]
+  },
+  {
+   "id": "Q-16",
+   "category": "Tenancy & building",
+   "decision": "Storage authority",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "Who controls the storage unit below, and is authority to open its ceiling confirmed in writing?",
+   "known": "The dossier records the storage unit as a separate space below the tub. Nothing establishes who controls it.",
+   "unknown": "Whether the storage unit is the owner's, another tenant's, or a third party's, and whether consent to open the ceiling has been given.",
+   "answer": "",
+   "method": "Establish control from the lease or title documents, then obtain written consent to open and restore the ceiling before scheduling.",
+   "evidence": "flags.json F-26 · requirements.json",
+   "source_ids": [
+    "OWNER",
+    "CIV-1954"
+   ],
+   "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+   "linked_flags": [
+    "F-26"
+   ]
+  },
+  {
+   "id": "Q-17",
+   "category": "Tenancy & building",
+   "decision": "Lead and asbestos screening",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "When was the building built, and does ceiling work trigger lead-safe or asbestos controls?",
+   "known": "The lead-safe renovation rule applies to paid paint-disturbing work in pre-1978 housing, subject to exceptions, and official guidance for suspect asbestos is to leave it alone and use an accredited professional.",
+   "unknown": "The building year, the paint condition and any suspect material. None was supplied, so applicability stays conditional.",
+   "answer": "",
+   "method": "Establish the year of construction, then have the provider screen the ceiling finish before opening. Treat both rules as conditional controls until the year is known.",
+   "evidence": "compliance.json C-10/C-11 · flags.json F-25",
+   "source_ids": [
+    "EPA-RRP",
+    "EPA-RRP-RULES",
+    "EPA-ASBESTOS"
+   ],
+   "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+   "linked_flags": [
+    "F-25"
+   ]
+  },
+  {
+   "id": "Q-18",
+   "category": "Tenancy & building",
+   "decision": "Occupied-unit protocol",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "How will dust, water shut-off, contents protection and cleanup be handled while the tenant is in place?",
+   "known": "The published request script already asks every lead for its occupied-unit plan. No reply has been received.",
+   "unknown": "Any firm's actual protocol, and the tenant's availability window.",
+   "answer": "",
+   "method": "Take the protocol in writing in the quote reply, then agree the working window with the tenant in the notice.",
+   "evidence": "requests.json script · ranking.json weights C4 · requirements.json R-18",
+   "source_ids": [
+    "OWNER",
+    "ACE",
+    "HEISE-PATCH",
+    "RF-SERVICES"
+   ],
+   "official_url": "https://www.aceplumbingandrooter.com/",
+   "linked_flags": [
+    "F-01"
+   ]
+  },
+  {
+   "id": "Q-19",
+   "category": "Provider & pricing",
+   "decision": "Provider acceptance",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "Will any ranked lead actually accept this job, and when could it attend?",
+   "known": "The ranking is editorial decision support built from licence records, published company pages and owner-supplied scope wording. No provider was contacted, so no availability or acceptance exists.",
+   "unknown": "Acceptance, availability, lead time and whether the firm will take both parts of the scope.",
+   "answer": "",
+   "method": "Send the published request script to the ranked leads by the phone numbers on their licence records and record each reply against this register.",
+   "evidence": "ranking.json method_note · flags.json F-01",
+   "source_ids": [
+    "CSLB-829071",
+    "CSLB-1089561",
+    "CSLB-1115649"
+   ],
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+   "linked_flags": [
+    "F-01"
+   ]
+  },
+  {
+   "id": "Q-20",
+   "category": "Provider & pricing",
+   "decision": "Price comparison",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "What is the current verified price for the agreed scope, as distinct from the three amounts supplied in August?",
+   "known": "Three amounts were supplied on 2026-08-30: $614 for a waste-and-overflow replacement, $550 for a lever, plug and spout with diverter, and $135 for a repair or adjustment. All three are owner-reported, no quote document was supplied, and the verified amount column is deliberately blank.",
+   "unknown": "Any current price, any written quote, and any price for the ceiling opening and restoration.",
+   "answer": "",
+   "method": "Require one written itemised quote per lead against the identical four-line scope, then compare line to line rather than total to total.",
+   "evidence": "estimates.json rows · flags.json F-02/F-03/F-05",
+   "source_ids": [
+    "OWNER",
+    "CSLB-FINDING",
+    "CSLB-977638",
+    "CSLB-757796",
+    "CSLB-1024971"
+   ],
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+   "linked_flags": [
+    "F-02",
+    "F-03",
+    "F-05"
+   ]
+  },
+  {
+   "id": "Q-21",
+   "category": "Provider & pricing",
+   "decision": "Quote validity",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "Are the August amounts still valid, and do they include the ceiling work?",
+   "known": "The amounts carry a supplied date of 2026-08-30 and no validity period. None of the three scope wordings names ceiling opening or restoration.",
+   "unknown": "Whether the amounts hold, and whether ceiling work is included. Silence in a scope wording is not proof of exclusion.",
+   "answer": "",
+   "method": "Ask each lead to restate its price and validity date in writing, with ceiling restoration either priced or expressly excluded.",
+   "evidence": "estimates.json analysis · flags.json F-04/F-05",
+   "source_ids": [
+    "OWNER",
+    "CSLB-CONTRACT",
+    "CSLB-FINDING"
+   ],
+   "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+   "linked_flags": [
+    "F-04",
+    "F-05"
+   ]
+  },
+  {
+   "id": "Q-22",
+   "category": "Provider & pricing",
+   "decision": "Restoration partner",
+   "blocking": "Medium",
+   "status": "answered",
+   "question": "Is there a licence-checked drywall and restoration partner if the plumbing firm cannot cover the ceiling?",
+   "known": "One drywall contractor holds a C-9 Drywall plus B licence and is ranked as the restoration partner rather than as a plumber. A further set of ceiling-repair names appears only as a search lead and was not licence-checked.",
+   "unknown": "That partner's availability, price and willingness to work under another firm's contract.",
+   "answer": "Yes, one licence-checked partner is recorded. Availability and price are unconfirmed.",
+   "method": "Ask the chosen plumbing firm whether it will name that partner, and ask the partner for a written ceiling line.",
+   "evidence": "ranking.json partner · providers.json · reviews.json RV-20..RV-23",
+   "source_ids": [
+    "CSLB-995163",
+    "BERNAL",
+    "BBB-BERNAL"
+   ],
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+   "linked_flags": [
+    "F-19"
+   ]
+  },
+  {
+   "id": "Q-23",
+   "category": "Provider & pricing",
+   "decision": "Review evidence",
+   "blocking": "Low",
+   "status": "unanswered",
+   "question": "What do independent reviews say about this exact kind of work, and can any rating be verified?",
+   "known": "Review platforms returned an access-denied response to automated retrieval on the recorded dates, so every rating and count is held blank. Observations are labelled by retrieval method: profile read directly, dated search excerpt, or bare search lead.",
+   "unknown": "Any verified rating, and any review that describes freeing a stuck overflow from above or opening a ceiling for this scope.",
+   "answer": "",
+   "method": "Read the review profiles manually in a browser, and record the date, the exact text and the profile link; do not republish a numeric rating without the page itself.",
+   "evidence": "reviews.json 23 observations · flags.json F-14",
+   "source_ids": [
+    "YELP-ACE",
+    "BBB-ACE",
+    "ANGI-ACE",
+    "CSLB-SEARCH"
+   ],
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "linked_flags": [
+    "F-14"
+   ]
+  },
+  {
+   "id": "Q-24",
+   "category": "Evidence & verification",
+   "decision": "Photographs",
+   "blocking": "Medium",
+   "status": "unanswered",
+   "question": "Are there reference photographs of the overflow, the wall and the storage-unit ceiling?",
+   "known": "The owner record states that reference photographs were not supplied.",
+   "unknown": "Any photograph of the assembly, the surrounding tile or plaster, or the ceiling below.",
+   "answer": "",
+   "method": "Take three photographs before any work: the overflow plate with the lever, the wall behind the tub, and the storage-unit ceiling. Attach them to the request.",
+   "evidence": "OVERFLOW owner record · flags.json F-27",
+   "source_ids": [
+    "OWNER",
+    "WATCO"
+   ],
+   "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "linked_flags": [
+    "F-27"
+   ]
+  },
+  {
+   "id": "Q-25",
+   "category": "Evidence & verification",
+   "decision": "Service access",
+   "blocking": "Low",
+   "status": "unanswered",
+   "question": "Should a serviceable access panel be installed so the assembly can be reached next time without opening the ceiling?",
+   "known": "The technical register raises a serviceable access solution, but the operative access-panel dimension was not verified from a free official code source.",
+   "unknown": "The required or accepted panel size and whether the authority having jurisdiction requires one.",
+   "answer": "",
+   "method": "Ask the Department of Building Inspection at the same time as the permit question whether an access panel is required or preferred, and record the answer.",
+   "evidence": "technical.json T-08",
+   "source_ids": [
+    "SF-DBI",
+    "SF-CODE-106"
+   ],
+   "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+   "linked_flags": [
+    "F-21"
+   ]
+  },
+  {
+   "id": "Q-26",
+   "category": "Evidence & verification",
+   "decision": "Case-study reliability",
+   "blocking": "Low",
+   "status": "unanswered",
+   "question": "How much weight can the company-published ceiling-access cases carry?",
+   "known": "Four cases are published by one lead, and at least one page carries a template block that returns a 404. The pages are self-published and are not independent records.",
+   "unknown": "Whether those cases describe the same assembly type or the same ceiling construction as this address.",
+   "answer": "",
+   "method": "Ask the lead to describe a comparable completed job during the quote conversation, and treat the published pages as adjacent evidence only.",
+   "evidence": "technical.json T-04/T-05 · flags.json F-17",
+   "source_ids": [
+    "HEISE-INGLESIDE",
+    "HEISE-FIXTURES",
+    "HEISE-PATCH"
+   ],
+   "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+   "linked_flags": [
+    "F-17"
+   ]
+  },
+  {
+   "id": "Q-27",
+   "category": "Evidence & verification",
+   "decision": "Current retrieval",
+   "blocking": "High",
+   "status": "unanswered",
+   "question": "Has every published official value been re-read today, and what is the check date on this page?",
+   "known": "Each source record carries the date it was retrieved and the retrieval method. The most recent official re-verification recorded in the dossier is dated 2026-11-11 for seven licence records; the remaining records rest on earlier receipts.",
+   "unknown": "A same-day re-read of every external source. This session's own environment could reach only code and package hosts, so it could not re-read any agency or company page and does not claim to have done so.",
+   "answer": "",
+   "method": "Re-read each linked record on the day of hiring. The site publishes the check date per row so any value can be traced to the date it was read.",
+   "evidence": "sources.json checked/retrieval columns · audit/2026-11-11-8837e140/REPORT.md",
+   "source_ids": [
+    "REPO",
+    "AUDIT-20261110-4B",
+    "CSLB-SEARCH",
+    "CIV-1954"
+   ],
+   "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+   "linked_flags": [
+    "F-14"
+   ]
+  }
+ ]
+}

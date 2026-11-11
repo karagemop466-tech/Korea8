@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-11T02:20:33.878390+00:00",
+  "built_at": "2026-11-11T02:22:50.928675+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
@@ -7,6 +7,7 @@
     "executive-summary.html",
     "decision-analysis.html",
     "requirements.html",
+    "questions.html",
     "providers.html",
     "estimates.html",
     "technical-approach.html",
@@ -30,9 +31,12 @@
     "reviews": 23,
     "cost_drivers": 6,
     "sources": 136,
-    "flags": 62,
+    "flags": 67,
     "ranking": 10,
-    "ranking_held": 18
+    "ranking_held": 18,
+    "questions": 27,
+    "questions_answered": 9,
+    "questions_blocking": 13
   },
   "preserved": [
     "redirect stubs",

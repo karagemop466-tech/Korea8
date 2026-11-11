@@ -24,9 +24,39 @@ class DataTests(unittest.TestCase):
   self.assertAlmostEqual(sum(w['weight'] for w in rk['weights']),1.0)
  def test_requirements_have_official_context(self):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
+class QuestionRegisterTests(unittest.TestCase):
+ def test_every_row_is_anchored_to_a_registered_official_source(self):
+  srcs={x['id']:x for x in load('sources.json')['rows']}
+  official={'official-government','official-company','official-manufacturer','official-code-publisher','official-tool'}
+  for q in load('questions.json')['rows']:
+   self.assertTrue(q['source_ids'],q['id'])
+   for i in q['source_ids']:self.assertIn(i,srcs,q['id'])
+   self.assertTrue(any(srcs[i]['url']==q['official_url'] and srcs[i]['kind'] in official for i in q['source_ids']),q['id'])
+ def test_blank_answer_is_unanswered_and_never_filled(self):
+  for q in load('questions.json')['rows']:
+   self.assertIn(q['status'],{'answered','partially answered','unanswered'},q['id'])
+   if q['status']=='unanswered':self.assertEqual(q['answer'],'',q['id'])
+   else:self.assertTrue(q['answer'],q['id'])
+ def test_rows_are_unique_and_complete(self):
+  rows=load('questions.json')['rows'];ids=[r['id'] for r in rows]
+  self.assertEqual(len(ids),len(set(ids)))
+  for r in rows:
+   for k in ('question','known','unknown','method','blocking','category'):
+    self.assertTrue(r[k],f"{r['id']}:{k}")
+ def test_linked_flags_exist(self):
+  fids={f['id'] for f in load('flags.json')['rows']}
+  for q in load('questions.json')['rows']:
+   for f in q['linked_flags']:self.assertIn(f,fids,q['id'])
+ def test_page_publishes_every_row_and_blanks_unanswered(self):
+  t=(ROOT/'questions.html').read_text();rows=load('questions.json')['rows']
+  for r in rows:self.assertIn(r['id'],t)
+  unans=len([r for r in rows if not r['answer']])
+  self.assertGreaterEqual(t.count('aria-label="blank"'),unans)
+  self.assertIn('questions-table',t)
+
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
-  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','questions.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)

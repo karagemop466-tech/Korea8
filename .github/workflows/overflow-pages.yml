@@ -57,6 +57,8 @@ jobs:
               'index.html': 'Trip Lever Project',
               'decision-analysis.html': 'A General Engineering is not B General Building or C-9 Drywall',
               'estimates.html': 'cost-drivers-table',
+              'questions.html': 'Decision-question register',
+              'audit/2026-11-11-8837e140/REPORT.md': 'decision-blocker register',
               'verification.html': 'audit/2026-11-10-6f4c9f79/REPORT.md',
               'flagged-for-review.html': '10 November publication review',
               'audit/2026-11-10-660ab2dd.md': 'Configuration permission limitation',

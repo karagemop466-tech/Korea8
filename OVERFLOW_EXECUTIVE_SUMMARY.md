@@ -58,7 +58,14 @@ are unconfirmed.
   fire-resistive assembly, and any fire rating must be preserved on restoration.
 - Use a written itemized contract, lawful down payment, written change orders, leak/function test and photo record.
 
+## Questions that must be settled before a decision
+The full register of 27 questions is on the Questions page. 13 are high-blocking,
+9 carry an answer in this dossier (5 fully answered, 4 partly) and 18 are published blank because nothing here answers them.
+The five steps that unblock the most are: photograph the assembly and read its model; ask each ranked lead the same four questions in
+writing; get the permit position in writing from both the city and the bidder; establish control of the storage unit and serve the tenant
+notice; and establish the year of construction before any ceiling is opened. See [Questions to settle](questions.html).
+
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola, C J’s and Golden Gate identities remain unresolved and blank. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 62 items, including the BPC §7059(a), scoring-rubric and source-metadata corrections.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 67 items, including the BPC §7059(a), scoring-rubric and source-metadata corrections.

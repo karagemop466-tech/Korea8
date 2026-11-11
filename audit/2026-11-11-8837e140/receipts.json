@@ -1,0 +1,134 @@
+{
+ "session": "arena/8837e140-korea8",
+ "date": "2026-11-11",
+ "base_commit_at_start": "b4912259465a85efaa6d49f370c7ab276c16e324",
+ "base_commit_after_rebase": "b6d9b92 (origin/main, PR #79)",
+ "external_retrieval": "NOT PERFORMED \u2014 sandbox resolved only github.com, api.github.com, codeload.github.com, registry.npmjs.org, pypi.org, files.pythonhosted.org; every agency, company and review host returned a connection failure",
+ "checks": [
+  {
+   "check": "every registered source id is unique",
+   "result": "pass",
+   "detail": "135 ids, 135 unique"
+  },
+  {
+   "check": "every source id cited by any row resolves",
+   "result": "pass",
+   "detail": "0 dangling in providers, requirements, ranking, estimates, technical, compliance, reviews, flags, requests, weights"
+  },
+  {
+   "check": "every linked flag id resolves",
+   "result": "pass",
+   "detail": "0 dangling across all registers"
+  },
+  {
+   "check": "ranking weighted scores reproduce from the published weights and components",
+   "result": "pass",
+   "detail": "recomputed A*0.30+B*0.20+C*0.20+D*0.15+E*0.15 for all 10 ranked rows plus the partner"
+  },
+  {
+   "check": "rendered hiring order equals the recomputed score order",
+   "result": "pass",
+   "detail": "Ace 3.85, Heise 3.45, Rapid Flow 3.15, Ayoob & Peery 3.15, We Do 2.95, Expert 2.90, Save-On 2.60, Bay Area 2.55, Fast Response 2.20, Discount 1.70"
+  },
+  {
+   "check": "linked score-identical tie (Rapid Flow / Ayoob & Peery at 3.15) breaks on the published C2 component then name",
+   "result": "pass",
+   "detail": "C2 4 vs 3; deterministic"
+  },
+  {
+   "check": "ranking phone equals provider-register phone for all 11 identities",
+   "result": "pass",
+   "detail": "0 mismatches"
+  },
+  {
+   "check": "no ranked or partner identity is suspended or unresolved",
+   "result": "pass",
+   "detail": "1 suspended and 3 unresolved identities are excluded and held blank"
+  },
+  {
+   "check": "owner amounts published as owner-reported with verified amounts blank",
+   "result": "pass",
+   "detail": "614 / 550 / 135; all verified cells None"
+  },
+  {
+   "check": "review ratings and counts remain blank everywhere",
+   "result": "pass",
+   "detail": "0 numeric ratings in any register or page"
+  },
+  {
+   "check": "flag identifiers are unique",
+   "result": "pass",
+   "detail": "65 rows"
+  },
+  {
+   "check": "every question row is anchored to a registered official source",
+   "result": "pass",
+   "detail": "27 rows; the anchor url is itself a registered official-kind source cited on that row"
+  },
+  {
+   "check": "no question row answers a blank",
+   "result": "pass",
+   "detail": "18 unanswered rows carry an empty answer field"
+  },
+  {
+   "check": "no private owner context on any page",
+   "result": "pass",
+   "detail": "regex scan for private/confidential/politic/election/visa/immigration on the register page"
+  },
+  {
+   "check": "wording guard over every tracked text file",
+   "result": "pass",
+   "detail": "clean"
+  },
+  {
+   "check": "git whitespace check",
+   "result": "pass",
+   "detail": "git diff --check clean"
+  }
+ ],
+ "irregularities": [
+  {
+   "id": "F-70",
+   "severity": "Medium",
+   "summary": "Source record SF-CODE-104 is titled Plumbing Code \u00a7104.0 but its stored URL carries the sf_building library segment. Thirteen rows cite it. The \u00a7104.2 text is separately sourced from the city-hosted Plumbing Code PDF."
+  },
+  {
+   "id": "F-71",
+   "severity": "Low",
+   "summary": "Nine consecutive flag numbers (F-56 to F-64) are absent. No canonical page, audit file or linked document cites them; the board records two renumbering passes during concurrent merges."
+  },
+  {
+   "id": "F-72",
+   "severity": "Low",
+   "summary": "Four registered sources are not cited by any row: BPC \u00a77114, BPC \u00a77124.6, and two earlier audit reports."
+  },
+  {
+   "id": "F-73",
+   "severity": "Low",
+   "summary": "Two Yelp source records share one search URL under different titles and support different observations."
+  },
+  {
+   "id": "F-74",
+   "severity": "Medium",
+   "summary": "This session could not re-read any external source; all claims are structural, traceability and consistency checks only."
+  },
+  {
+   "id": "F-35",
+   "severity": "Medium",
+   "summary": "Pre-existing and unchanged: the Pages root publisher serves repository files beyond the staged dashboard closure."
+  }
+ ],
+ "not_modified": [
+  "provider rows",
+  "estimate amounts",
+  "compliance rows",
+  "requirement rows",
+  "ranking order or scores",
+  "reviews",
+  "unrelated GEMS files",
+  "open pull requests"
+ ],
+ "not_contacted": [
+  "every provider, agency and review platform"
+ ]
+}
