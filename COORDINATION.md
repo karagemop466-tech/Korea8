@@ -1916,3 +1916,34 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - [PR #83](https://github.com/karagemop466-tech/Korea8/pull/83) merged 2026-11-11 02:18:21 UTC, merge commit `258d08f809c7f04dc690d2f8a4ed5ed7d6a8d81e`.
 - [Exact-commit Pages workflow run 42945103895](https://github.com/karagemop466-tech/Korea8/actions/runs/42945103895) completed successfully, including build, checks, staging, deployment and its HTTPS checks. The live flagged page displayed 61 items and the new audit route was retrieved. Later deployments may supersede this exact commit.
 - GitHub returned an actions Node deprecation warning; build and deploy succeeded. Pages mode remains legacy and the public repository is not private. External links and all assertions have not been independently reverified line by line in this session.
+
+## Session `arena/8837e140-korea8` — decision-blocker question register, line-by-line repo review and publication (2026-11-11)
+
+Arena fixes this session to `arena/8837e140-korea8`; that is the only branch this session creates, commits to or pushes. The
+`session-<id>/<task>` branch convention recorded in the brief cannot be used here because the working branch name is fixed by
+the session, so the claim below is made in this file on this branch and pushed before any file in scope is edited.
+
+| ID | Task | Status | Owner / session | Files in scope |
+|---|---|---|---|---|
+| `8E-01` | Claim the board and inventory active work before editing | done | `arena/8837e140-korea8` | `COORDINATION.md` |
+| `8E-02` | Build the decision-blocker register: every question, the information already held, the answer status, and a suggested way to obtain each missing answer | in progress | `arena/8837e140-korea8` | `overflow-integration/data/questions.json`, `overflow-integration/data/sources.json` (append-only if a new source is required), `audit/2026-11-11-8837e140/**` |
+| `8E-03` | Publish the register as a twelfth canonical page and wire it into the generator, verifier, tests and independent audit | unclaimed | — | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `audit/independent_audit.py`, generated root HTML |
+| `8E-04` | Line-by-line review of the current repository state with irregularities flagged and receipts | unclaimed | — | `audit/2026-11-11-8837e140/**` |
+| `8E-05` | Integration: rebuild, run every check, open one PR to `main`, merge, confirm the exact-commit Pages deployment, record the receipt | unclaimed | — | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+
+**Baseline at claim time.** `origin/main` = `b491225` (PR #77). Rebuilt and re-ran the full gate on the untouched baseline
+before editing: `build_overflow_site.py` → `verify_overflow_site.py` **28/28 PASS** (405 rows, 276 tracked links),
+`unittest discover -p 'test_overflow*.py'` **40/40 OK**, `audit/independent_audit.py` **0 problems** (11 pages, 405/405 rows),
+`wording_guard.py` **clean**, `git diff --check` clean. So the baseline is green and any failure later is caused by this session's edits.
+
+**Scope discipline.** This session edits only the files listed above. It does not re-rank providers, does not alter any provider,
+estimate, compliance, requirement or flag row, does not contact any provider, and does not touch unrelated GEMS files.
+
+**Retrieval limitation, stated up front.** This session's sandbox resolves outbound traffic only to `github.com`,
+`api.github.com`, `codeload.github.com`, `registry.npmjs.org`, `pypi.org` and `files.pythonhosted.org`. Every other host —
+`cslb.ca.gov`, `sf.gov`, `leginfo.legislature.ca.gov`, `amlegal.com`, company sites, Yelp, BBB — returns `HTTP 000` (DNS/connection
+refused). This session therefore **cannot** independently re-read those external sources, and it will not claim to have done so.
+What it can and will do is stated precisely in its report: (a) re-parse every published row and re-run every automated gate,
+(b) trace each published value back to the row and source record that already carries an independent retrieval date and receipt,
+(c) report internal inconsistencies between data files, generated pages and the claims made about them, and (d) record the
+retrieval limitation itself as an open item rather than silently inheriting "verified" status.
