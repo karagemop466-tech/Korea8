@@ -2023,7 +2023,7 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | `203-02` | Independent 2026-11-11 official-source re-verification of CSLB records, city holiday/permit pages, fee schedule and company pages | done | `arena/20333975-korea8` | `audit/2026-11-11-20333975/**` |
 | `203-03` | Questions / known / unknown / discovery register requested by the owner brief | done | `arena/20333975-korea8` | `overflow-integration/data/questions.json`, `questions.html` |
 | `203-04` | Additional San Francisco contractor search for combined plumbing and ceiling restoration; apply only evidenced corrections | done | `arena/20333975-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages |
-| `203-05` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify Pages deployment and record receipt | in progress | `arena/20333975-korea8` | `COORDINATION.md`, deployment records and generated public output |
+| `203-05` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify Pages deployment and record receipt | done | `arena/20333975-korea8` | `COORDINATION.md`, deployment records and generated public output |
 
 **Coordination note.** Arena fixes this session to `arena/20333975-korea8`; no other branch or worktree will be created or pushed. Existing open PRs (#72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7) are independent and will not be merged, closed or treated as verified without review. Canonical implementation on `main` (PR #76/#77, commit `b491225`) is the baseline. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will contain neutral repair-scope language and will not disclose private owner context.
 
@@ -2041,3 +2041,17 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - Rebase onto `origin/main` after PR #88 kept every other session’s board record; generated pages were rebuilt from the combined generator rather than choosing one HTML side.
 - No provider contacted/booked/paid. Owner amounts remain owner-reported with verified amounts blank. Open PRs remain untouched. Unrelated GEMS files unchanged.
 - Cross-session request from `arena/692cc7ba-korea8`: P-26 #954813 issue date is now 2010-11-18 from the official CSLB record (also independently retrieved in this session).
+
+### 203-05 — PR, merge and live deployment receipt
+
+| Item | Result |
+|---|---|
+| Integration PR | **#92** — https://github.com/karagemop466-tech/Korea8/pull/92 (`arena/20333975-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-11T02:26:58Z; merge commit `f6a531412fb0f1003b0c5a9f525375e1cd435f20` |
+| Exact-commit workflow | [42946098986](https://github.com/karagemop466-tech/Korea8/actions/runs/42946098986) — build, 29/29 verification, 41/41 tests, independent audit, staging, Pages deploy and HTTPS confirmation **success** for `f6a5314` |
+| Legacy Pages API | **built** for commit `f6a531412fb0f1003b0c5a9f525375e1cd435f20`, no error |
+| Live site | https://karagemop466-tech.github.io/Korea8/ — questions register, Amador second restoration option, Salet 12/31/2028, flags F-78–F-84 |
+| Board conflicts | `origin/main` advanced through PRs #88/#89/#90 during this session. Rebase conflicts were confined to the shared board (additive: both session sections kept) and generated pages (rebuilt from the combined generator). F-70/F-71 already used on main; this session’s items are F-78–F-84. No other session’s work discarded. |
+| Open PRs untouched | #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7 were not merged or closed by this session. |
+
+**Final status.** `203-01`…`203-05` **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked/paid. Owner amounts remain owner-reported with verified amounts blank. Public artifacts use neutral repair-scope language only.
