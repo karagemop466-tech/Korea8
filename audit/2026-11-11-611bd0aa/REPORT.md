@@ -66,7 +66,7 @@ Ranks 3 and 4 tie at 3.15. The generator tie-break is higher C2 first
 the published rule. The published order on `decision-analysis.html` and
 `OVERFLOW_EXECUTIVE_SUMMARY.md` matches this recompute.
 
-## Irregularity found and corrected (F-70)
+## Irregularity found and corrected (F-71)
 
 The stored `ranking.json` array listed Discount Plumbing Rooter Services
 at position 9 and Fast Response Plumbing & Rooter at position 10, while
@@ -75,7 +75,7 @@ Fast Response #9 and Discount #10, as the stored final verification note
 also states. The published site was correct; only the stored array order
 differed. This session reordered the stored array to the published score
 order. No score, weight or published rank changed, and the generator
-output is identical before and after. Recorded as flag F-70 with source
+output is identical before and after. Recorded as flag F-71 with source
 AUDIT-20261111-61. Counts move from 135 sources / 60 flags to
 136 sources / 61 flags.
 

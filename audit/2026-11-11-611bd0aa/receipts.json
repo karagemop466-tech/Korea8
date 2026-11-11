@@ -115,6 +115,6 @@
       {"rank": 10, "provider": "Discount Plumbing Rooter Services", "score": 1.7}
     ],
     "tie_note": "Ranks 3 and 4 tie at 3.15; published tie-break is higher C2 first (Rapid Flow C2 3, Ayoob & Peery C2 1).",
-    "correction": "F-70: stored ranking.json array order (Discount before Fast Response) reordered to published score order; no score or published rank changed."
+    "correction": "F-71: stored ranking.json array order (Discount before Fast Response) reordered to published score order; no score or published rank changed."
   }
 }

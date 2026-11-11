@@ -1743,7 +1743,7 @@ Arena fixes this session to the existing branch. Prior historical in-progress en
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `20BB-01` | Independently review current canonical dashboard, source verification, tests and publication; record material gaps | done | `arena/20bb5485-korea8` | `audit/2026-11-11-20bb5485/**`, `COORDINATION.md` |
-| `20BB-02` | Integrate any substantiated corrections and publish if safe, after checking other sessions' claims | in progress | `arena/20bb5485-korea8` | Scope to be claimed after audit |
+| `20BB-02` | Integrate any substantiated corrections and publish if safe, after checking other sessions' claims | done | `arena/20bb5485-korea8` | Scope to be claimed after audit |
 
 ### `20BB-02` integration claim — 2026-11-11 UTC
 
@@ -1819,24 +1819,94 @@ All earlier canonical implementation claims end in completed integration receipt
 
 **Concurrent integration:** PR #78 advanced `main` during publication. Rebased onto `449025a`, retained both board entries, preserved the other session's 11 November spot-check link and data corrections, and regenerated conflicted HTML/reports from the combined generator. No prior work discarded. Generated independent-audit report is also within this session's verification-output scope.
 
+### 331-04 — PR, merge and live deployment receipt (done, 2026-11-11)
+
+| Item | Result |
+|---|---|
+| Integration PR | **#81** — https://github.com/karagemop466-tech/Korea8/pull/81 (`arena/331cafce-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-11T02:16:28Z; merge commit `bcf81b2de07e0abbe06327d1a1bdbe6f03c9eed3` |
+| Exact-commit workflow | [42944881840](https://github.com/karagemop466-tech/Korea8/actions/runs/42944881840) — build, 28/28 verification, 40/40 tests, independent audit, 45-file staging, Pages deploy and live HTTPS assertions **success** for `bcf81b2` |
+| Live site | https://karagemop466-tech.github.io/Korea8/ serves canonical dashboard (Ace/Heise/Rapid Flow call-first, 26 CSLB records, 42 requirements, 60 flags) |
+| Board conflicts | `origin/main` advanced through PR #78 (`arena/20bb5485-korea8`) during this session. Rebase conflicts were confined to the shared board (additive: both session sections kept) and timestamp-only build reports (resolved to regenerated values). No other session's work discarded. Main later advanced through PR #79 (`arena/92cc6407-korea8`); this session rebased cleanly onto it. |
+| Open PRs untouched | #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7 were not merged or closed by this session. |
+
+**Final status.** `331-01`…`331-04` **done**. Irregularities recorded in
+`audit/2026-11-11-331cafce/REPORT.md` §6 are non-blocking and published on the
+Flagged for Review page. No provider contacted/booked/paid. Owner amounts remain
+owner-reported with verified amounts blank. Public artifacts use neutral repair-scope
+language only.
+### `20BB-02` publication receipt
+
+- Integration [PR #78](https://github.com/karagemop466-tech/Korea8/pull/78) **merged** 2026-11-11T02:15:40Z as `449025a4489f7496099fc807d4b779f3e2b4d0d2`.
+- Exact-commit [workflow 42944787447](https://github.com/karagemop466-tech/Korea8/actions/runs/42944787447) completed successfully, including build, tests, staging, deploy and HTTPS assertions; legacy Pages API also reports built for the merge commit. The [live verification page](https://karagemop466-tech.github.io/Korea8/verification.html?deployment=449025a) and new [targeted report](https://karagemop466-tech.github.io/Korea8/audit/2026-11-11-20bb5485/REPORT.md?deployment=449025a) were fetched independently.
+- The dual publication configuration remains a flagged limitation; the settings API rejected the attempted correction. No current provider acceptance or all-in quote was obtained.
+
+**Conflict resolution:** On 2026-11-11 PR #81 advanced `main` during the receipt update. Rebase conflicted in this shared board; both the 331 session record and the 20BB publication receipt were retained, with no other session work discarded.
+
+**Second conflict resolution:** PR #79 advanced main while the receipt update was rebased; the shared board conflict was resolved by retaining both the 92 session record and the 20BB receipt. No work discarded.
+
+**Third conflict resolution:** PR #84 advanced main during the receipt update; both 331 and 20BB board records were retained in the rebase. No work discarded.
+### 92 final publication receipt
+
+- **92-01 and 92-02: done.** [PR #79](https://github.com/karagemop466-tech/Korea8/pull/79) merged at 2026-11-11T02:16:49Z as `b6d9b929ff6695b5ccf2d1121295c3e0f8690889`.
+- Exact-commit [workflow run 42944920176](https://github.com/karagemop466-tech/Korea8/actions/runs/42944920176): build **success**, deploy **success**, deployed-dashboard HTTPS assertions **success**. Live dashboard: https://karagemop466-tech.github.io/Korea8/ . Direct local HTTPS access remains unavailable; live confirmation is the GitHub runner's receipt, not a local browser check.
+- Rebase also preserved concurrent PR #81 (`bcf81b2`) board/source metadata updates. Final local result: 28/28 checks, 40/40 tests, 405 source-covered rows, independent audit zero problems and 47 linked public files staged.
+- Non-blocking workflow annotations report action-runtime deprecation and runner-image migration. The build/deploy succeeded. No unrelated workflow was modified.
+- All existing unverified job-specific items remain published. Provider facts were not independently refreshed by this session. Older open PRs remain untouched.
+
+
+
+
+
+---
+
+## Session `arena/17e21276-korea8` — publication and current-decision audit
+
+| ID | Task | Status | Owner | Scope |
+|---|---|---|---|---|
+| 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | done | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
+| 17E-02 | Link the new audit into the canonical dashboard, verify and publish | in progress | `arena/17e21276-korea8` | `scripts/build_overflow_site.py`, `overflow-integration/data/flags.json`, generated canonical HTML and reports, `site-data/**`, `COORDINATION.md` |
+
+The Arena branch is fixed; no other branch or worktree will be created or pushed. Older task rows are historical; recent open PRs remain untouched. No provider has been contacted, booked or paid. Public material will use neutral repair-scope language.
+
+17E handoff: recent integration scopes were marked done by their owners; open independent PRs are over 20 hours old and remain untouched. The previous Pages source-mode change was denied; retry documented in this audit. Automated checks passed locally before integration; they do not independently prove all external claims.
+
+### 17E current review — 11 November 2026 UTC
+
+- `17E-01` is done. Targeted report: `audit/2026-11-11-17e21276/REPORT.md`; it records source links, timestamps and limitations. Re-read official CSLB records #829071, #1089561, #1115649 and #1024971, Ace's contact page, Rapid Flow's services and selected Heise case pages. This is a spot-check, not a fresh line-by-line verification of all repository content.
+- Added F-70: the fetched Heise project pages show both project narrative and 404 text in the body, and the company index shows mismatched categories. No HTTP error is inferred from body text. Existing F-34/F-52 remain open: Pages API reports legacy root publishing and this public repository is not private. The official API rejected a source-mode update with HTTP 403; no configuration change was made.
+- Yelp Ace page returned HTTP 403. No company contacted, booked, paid, or confirmed as available; historical amounts are owner-reported, unlike scopes, with verified fields blank.
+- Local verification: build, 28/28 checks, 40/40 tests, independent audit 406 rows and zero internal-link problems, 46 staged files, wording guard and `git diff --check` clean. These checks do not independently establish the accuracy of every claim or external-link availability.
+
+**Concurrent integration and conflict:** PR #78 (`arena/20bb5485-korea8`) merged while this session was working, after the last pre-claim fetch. Its integration claim was therefore not visible at claim time. Rebase conflicted in the board and generated reports/pages; both board entries and all of PR #78's F-52 and audit-link changes were retained. The combined generator and data were rebuilt rather than selecting one generated side. PR #78 is already merged; its in-progress board row is preserved as written by its owner. No further change to its unique audit files was made.
+
+**Second concurrent integration:** PR #81 (`arena/331cafce-korea8`) merged after PR #78 while this branch was being prepared. Rebase produced a board conflict; both session records and PR #81's independent audit files were preserved. This session's prior local checks preceded that merge; the combined tree was checked again below.
+
+**Third concurrent integration:** PR #79 (`arena/92cc6407-korea8`) advanced `main` during rebase. Its reproducibility audit and both generated audit links were retained alongside this session's link; generated conflicts were rebuilt from the combined generator. Board conflict was resolved by retaining both records. No other session's work was discarded.
+
+**Fourth concurrent integration:** PR #84 recorded the PR #81 deployment receipt on `main`. The shared-board conflict was resolved preserving both sessions’ records.
+
+**Fifth concurrent integration:** PR #82 added the PR #78 deployment receipt. The board conflict was resolved preserving both records.
+
+**Sixth concurrent integration:** PR #85 added the PR #79 deployment receipt. The board conflict was resolved preserving both records.
 
 ## Session `arena/611bd0aa-korea8` — 2026-11-11 fresh re-verification and line-by-line repo review
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `61-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/611bd0aa-korea8` | `COORDINATION.md` |
-| `61-02` | Fresh official-source re-verification (CSLB top leads, SF.gov permit service, BPC §7059) and line-by-line repo review | done | `arena/611bd0aa-korea8` | `audit/2026-11-11-611bd0aa/**` |
-| `61-03` | Apply only evidenced corrections; rebuild and run full verification suite | done | `arena/611bd0aa-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only if an evidenced correction is required |
-| `61-04` | Open PR to `main`, merge, confirm Pages deploy and record receipt | in progress | `arena/611bd0aa-korea8` | `COORDINATION.md`, deployment records and generated public output |
+| `61-02` | Fresh official-source re-verification (CSLB leads, SF.gov permit service, BPC §7059) and line-by-line repo review | done | `arena/611bd0aa-korea8` | `audit/2026-11-11-611bd0aa/**` |
+| `61-03` | Apply only evidenced corrections; rebuild and run full verification suite | done | `arena/611bd0aa-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only where an evidenced correction was required |
+| `61-04` | Open PR to `main`, merge, confirm Pages deploy and record receipt | in progress | `arena/611bd0aa-korea8` | `COORDINATION.md`, deployment records, generated public output |
 
-**Coordination note.** Arena pins this session to `arena/611bd0aa-korea8`; no other branch or worktree will be created or pushed. Baseline is `main` at `b491225` (PR #77 merge). Earlier canonical handoffs are merged (PR #76, PR #77); open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72) are independent audits and will not be merged, closed or treated as verified without review. Unrelated DOE GEMS files remain read-only. No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
+**Coordination note.** Arena pins this session to `arena/611bd0aa-korea8`; no other branch or worktree was created or pushed. Baseline was `main` at `b491225`; `main` advanced during the session (PRs #78/#79/#81/#82/#83), and each rebase/merge preserved both sides — no other session's record, flag or correction was discarded. Unrelated DOE GEMS files remain read-only. No provider was contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
 
 ### `61-02` & `61-03` — completed record (`arena/611bd0aa-korea8`, 2026-11-11)
 
 - **Reports:** [`audit/2026-11-11-611bd0aa/REPORT.md`](audit/2026-11-11-611bd0aa/REPORT.md) and [`audit/2026-11-11-611bd0aa/receipts.json`](audit/2026-11-11-611bd0aa/receipts.json), linked from `verification.html`.
 - **Fresh reads (2026-11-11):** seven CSLB licence-detail pages (#829071, #1089561, #1115649, #995163, #977638, #1024971, #1027286) all matched the canonical register on legal name, phone, status, classifications, expiry and issue date (board banner "Data current as of 11/10/2026"). SF.gov permit service and BPC §7059(a) text re-read and matched the published permit/licensing analysis, including the 2026-11-11 Veterans Day closure note and the 2026-11-12 next-business-day note.
 - **Ranking recompute:** weights sum to 1.00; recomputed scores 3.85, 3.45, 3.15, 3.15, 2.95, 2.90, 2.60, 2.55, 2.20, 1.70 match the published order. Ranks 3/4 tie at 3.15; the published higher-C2 tie-break places Rapid Flow #3.
-- **Correction (F-70):** the stored `ranking.json` array listed Discount before Fast Response while the generator sorts by score and all published pages place Fast Response #9 (2.20) and Discount #10 (1.70). The stored array was reordered to the published order; no score, weight or published rank changed. New source AUDIT-20261111-61 added; counts are now 136 sources and 61 flags.
-- **Repo review:** `site-data/*.json` historical outputs (2026-11-07) are labelled historical and untouched; root `EXECUTIVE_SUMMARY.md` (unrelated DOE GEMS project) untouched; open PRs #7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72 left untouched; Pages `built` for `b491225` with successful `Publish overflow dashboard` runs on `main`.
-- **Verification:** `build_overflow_site.py` (11 pages); `verify_overflow_site.py` **28/28 PASS** (407 rows); `unittest test_overflow*.py` **40 OK**; `independent_audit.py` **0 problems**; `wording_guard.py` clean; `stage_overflow_pages.py` **47 files** including the new audit; `git diff --check` clean.
+- **Correction (F-71):** the stored `ranking.json` array listed Discount before Fast Response while the generator sorts by score and all published pages place Fast Response #9 (2.20) and Discount #10 (1.70). The stored array was reordered to the published order; no score, weight or published rank changed. New source AUDIT-20261111-61 added. Numbered F-71 because another session took F-70 on 2026-11-11.
+- **Repo review:** `site-data/*.json` historical outputs (2026-11-07) are labelled historical and untouched; root `EXECUTIVE_SUMMARY.md` (unrelated DOE GEMS project) untouched; earlier open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72) were left untouched; Pages `built` with successful `Publish overflow dashboard` runs on `main`.
+- **Verification on the rebased tree:** `build_overflow_site.py` (11 pages); `verify_overflow_site.py` **28/28 PASS**; `unittest test_overflow*.py` **40 OK**; `independent_audit.py` **0 problems**; `wording_guard.py` clean; `stage_overflow_pages.py` linked-closure staging; `git diff --check` clean.
 - **Standing rules held.** No provider contacted, booked or paid. Owner amounts remain owner-reported with verified amounts blank. No hiring-order or score change. No private owner context added to any public artifact.
