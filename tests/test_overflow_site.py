@@ -113,8 +113,8 @@ class FinalCurrentSourceTests(unittest.TestCase):
   self.assertIn('BPC-7059',r['source_ids'])
  def test_code_chunk_metadata_matches_direct_retrieval(self):
   sources={s['id']:s for s in load('sources.json')['rows']}
-  self.assertIn('chunk 14',sources['SF-CODE-104']['supports'])
-  self.assertIn('chunk 13',sources['SF-CODE-106']['supports'])
+  self.assertIn('§104.2',sources['SF-CODE-104']['supports'])
+  self.assertIn('§106A.2',sources['SF-CODE-106']['supports'])
   self.assertNotIn('chunks 28–29',sources['SF-CODE-106']['supports'])
  def test_cost_drivers_have_sources_and_no_inferred_amounts(self):
   rows=load('estimates.json').get('cost_drivers',[])
@@ -183,3 +183,22 @@ class IndependentFreshnessIntegrationTests(unittest.TestCase):
   self.assertIn('unchanged',rows['F-85']['detail'])
   self.assertIn('F-70',rows);self.assertIn('F-78',rows)
   self.assertNotEqual(rows['F-70']['title'],rows['F-85']['title'])
+ def test_rv15_attribution_and_second_bid_cslb_parity(self):
+  rk=load('ranking.json'); rev={r['id']:r for r in load('reviews.json')['rows']}
+  for r in rk['ranked']+[rk['partner']]:
+   for ref in re.findall(r'\bRV-\d+\b',r.get('review_evidence','')):
+    self.assertIn(ref,rev,r['provider_id'])
+    self.assertEqual(rev[ref]['official_url'],r['official_url'],f"{r['provider_id']}:{ref}")
+  p01=next(r for r in rk['ranked'] if r['provider_id']=='P-01')
+  p07=next(r for r in rk['ranked'] if r['provider_id']=='P-07')
+  p08=next(r for r in rk['ranked'] if r['provider_id']=='P-08')
+  self.assertNotIn('RV-15',p01['review_evidence'])
+  self.assertNotIn('RV-15',p07['review_evidence'])
+  self.assertIn('RV-15',p08['review_evidence'])
+  srcs={s['id']:s for s in load('sources.json')['rows']}
+  self.assertIn('CSLB-347110',srcs); self.assertIn('BBB-AMADOR',srcs)
+  self.assertIn('1 canceled',(ROOT/'index.html').read_text())
+  self.assertNotIn('These are search leads only: no licence, status, phone number or rating is published for them',(ROOT/'decision-analysis.html').read_text())
+  f53={x['id']:x for x in load('flags.json')['rows']}['F-53']
+  self.assertNotIn('expires 2026-12-31',f53['detail'])
+  self.assertIn('12/31/2028',f53['detail'])

@@ -116,10 +116,10 @@ def main():
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')
    if r.get('official_url') and not r['official_url'].startswith('https://'):bad.append(f'{name}:{r.get("id")}:official_url')
  check('all row source ids resolve and official urls are https',not bad,'; '.join(bad[:20]))
- # first unnamed table is priority leads; ensure suspended name absent from its rows
- susp=[p['name'] for p in prov if p['status']=='Suspended']
+ # first unnamed table is priority leads; ensure suspended/canceled names absent from its rows
+ inelig=[p['name'] for p in prov if p['status'] in {'Suspended','Canceled'}]
  first_table=re.search(r'<tbody>(.*?)</tbody>',texts['providers.html'],re.S).group(1)
- check('suspended provider excluded from priority leads',all(n not in first_table for n in susp))
+ check('suspended/canceled providers excluded from priority leads',all(n not in first_table for n in inelig))
  # neutral public wording / no conflict markers / no placeholder literals
  banned=['<<<<<<<','>>>>>>>','=======','TODO','TBD','Lorem ipsum']
  sys.path.insert(0,str(ROOT/'scripts'));import wording_guard
@@ -128,11 +128,13 @@ def main():
  check('neutral public wording and no placeholders/conflict markers',not hits,str(hits))
  check('no None/nan literals in canonical pages',not re.search(r'>\s*(?:None|nan|NaN)\s*<',' '.join(texts.values())))
  # ranking is editorial, active-only in the hiring order, source-linked and weight-normalized
- rk=load('ranking.json');prov_by_id={p['id']:p for p in prov}
+ rk=load('ranking.json');prov_by_id={p['id']:p for p in prov};rev_by_id={v['id']:v for v in rev}
  check('ranking table parity',len(parsed['decision-analysis.html'].tables.get('ranking-table',[]))==len(rk['ranked']))
  check('ranking hiring order excludes suspended/unresolved identities',all(prov_by_id[r['provider_id']]['status']=='Current and active' for r in rk['ranked']+[rk['partner']]))
  check('ranking weights sum to one',abs(sum(w['weight'] for w in rk['weights'])-1.0)<1e-9)
  check('ranking rows have source ids and official urls',all(r.get('source_ids') and r.get('official_url','').startswith('https://') for r in rk['ranked']+[rk['partner']]+rk['not_recommended']))
+ rv_mismatches=[f"{r['provider_id']}:{m}" for r in rk['ranked']+[rk['partner']] for m in re.findall(r'\bRV-\d+\b',r.get('review_evidence','')) if m not in rev_by_id or rev_by_id[m]['official_url']!=r['official_url']]
+ check('ranking review-ID citations match cited provider official license URL',not rv_mismatches,'; '.join(rv_mismatches))
  check('source kinds explicit',all(s.get('kind') for s in srcs.values()))
  # build report parity
  br=json.loads((ROOT/'overflow-integration'/'build-report.json').read_text())

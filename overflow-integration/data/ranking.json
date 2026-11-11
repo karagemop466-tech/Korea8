@@ -6,14 +6,14 @@
       "id": "C1",
       "criterion": "Combined plumbing + restoration capability and contract structure",
       "weight": 0.3,
-      "basis": "Classifications and published restoration evidence are relevant, subject to BPC §§7057 and 7059(a) and the actual scope. A named, appropriately qualified restoration party remains necessary when the other-trade work is not incidental and supplemental.",
+      "basis": "Classifications and published restoration evidence are relevant, subject to BPC \u00a7\u00a77057 and 7059(a) and the actual scope. A named, appropriately qualified restoration party remains necessary when the other-trade work is not incidental and supplemental.",
       "source_ids": [
         "BPC-7057",
         "CSLB-C36",
         "CSLB-C9",
         "BPC-7059"
       ],
-      "rubric": "5 = active B + C-36 on the checked licence; 3 = C-36 plus company-published restoration service, subject to BPC §7059(a) and contract structure; 2 = C-36 without B/C-9 or published restoration; 1 = no C-36. A General Engineering is not B General Building or C-9 Drywall."
+      "rubric": "5 = active B + C-36 on the checked licence; 3 = C-36 plus company-published restoration service, subject to BPC \u00a77059(a) and contract structure; 2 = C-36 without B/C-9 or published restoration; 1 = no C-36. A General Engineering is not B General Building or C-9 Drywall."
     },
     {
       "id": "C2",
@@ -106,12 +106,12 @@
       "cost_note": "No quote on file. Owner-supplied comparators for replacement-type scopes are $550 and $614 (owner-reported, unverified); the official DBI Category 1P plumbing fee is $290 if a permit applies (a fee, not a price).",
       "ask": "Confirm whether drywall/texture/paint after ceiling access is self-performed or subbed, request an itemized written estimate covering tub-side attempt, below-ceiling fallback and permit handling, and verify occupied-unit notice scheduling.",
       "short_why": "broadest single-licence coverage (B + C-36 plus A, C-4, C-16, C-10), active since 2003 with current workers comp and published HOA/property-manager work",
-      "review_evidence": "RV-02 (bathtub-repair service mention; older occupied-home precautions account) and RV-12 (BBB A+ accredited since 2004) · no direct Yelp profile excerpt was found"
+      "review_evidence": "RV-02 (bathtub-repair service mention; older occupied-home precautions account) and RV-12 (BBB A+ accredited since 2004) \u00b7 no direct Yelp profile excerpt was found"
     },
     {
       "provider_id": "P-03",
-      "name": "Heise’s Plumbing",
-      "legal_name": "TARO GROUP INC · dba HEISES PLUMBING",
+      "name": "Heise\u2019s Plumbing",
+      "legal_name": "TARO GROUP INC \u00b7 dba HEISES PLUMBING",
       "license": "1089561",
       "classifications": [
         "C-36",
@@ -148,10 +148,10 @@
         "C4": 4,
         "C5": 1
       },
-      "why": "Strongest adjacent evidence: four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 ceiling access and Panhandle #171358), an official fixture page naming overflow plates/drain assemblies, and advertised drywall/ceiling patching. Company pages are not independent proof of restoration licensing, show varying review-volume claims (1,600+ to 2,000+), and BBB (B-, unaccredited) displays dissolved #787733 (canceled 02/12/2025) alongside 1 negative Aug 2024 review and 1 unrelated misfiled Instagram complaint. No B or C-9 is on #1089561; BPC §7059(a) applies only when other-trade work is incidental and supplemental. 16 CCR §831 defines incidental and supplemental as essential to the licensed craft; this job’s restoration structure is still unconfirmed.",
+      "why": "Strongest adjacent evidence: four published SF tub waste/overflow/gasket cases (incl. Ingleside #163802 ceiling access and Panhandle #171358), an official fixture page naming overflow plates/drain assemblies, and advertised drywall/ceiling patching. Company pages are not independent proof of restoration licensing, show varying review-volume claims (1,600+ to 2,000+), and BBB (B-, unaccredited) displays dissolved #787733 (canceled 02/12/2025) alongside 1 negative Aug 2024 review and 1 unrelated misfiled Instagram complaint. No B or C-9 is on #1089561; BPC \u00a77059(a) applies only when other-trade work is incidental and supplemental. 16 CCR \u00a7831 defines incidental and supplemental as essential to the licensed craft; this job\u2019s restoration structure is still unconfirmed.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. The published case does not state a price, and no ceiling-restoration line is priced anywhere in the sources.",
-      "ask": "Ensure the written contract names active #1089561 TARO GROUP INC dba HEISES PLUMBING (not dissolved #787733), document whether ceiling restoration is incidental and supplemental under BPC §7059(a), otherwise name the appropriately licensed restoration party and contract structure, and provide a current written combined quote.",
+      "ask": "Ensure the written contract names active #1089561 TARO GROUP INC dba HEISES PLUMBING (not dissolved #787733), document whether ceiling restoration is incidental and supplemental under BPC \u00a77059(a), otherwise name the appropriately licensed restoration party and contract structure, and provide a current written combined quote.",
       "short_why": "published ceiling-access overflow case and advertised plumbing-access drywall and ceiling patching; restoration party and contract structure unconfirmed",
       "review_evidence": "No direct Yelp profile excerpt was found; the four company-published cases and RV-13 (BBB B-, unaccredited) carry the technical and review picture"
     },
@@ -179,7 +179,8 @@
         "F-01",
         "F-14",
         "F-15",
-        "F-43"
+        "F-43",
+        "F-86"
       ],
       "score_components": {
         "C1": 5,
@@ -193,7 +194,7 @@
       "cost_note": "No quote on file. Owner-supplied comparators are $550 and $614 for replacement-type scopes (unverified); no labour or restoration line is documented.",
       "ask": "Ask whether the crew is employees or subcontractors, who patches and textures the ceiling, and for a fixed combined price. Final verification gate: Name restoration party; confirm occupied-unit plan, insurance, permit path and current phone.",
       "short_why": "B + C-36 with a published simple-repair-to-renovation offer; 2024 licence and workers-comp exemption to check",
-      "review_evidence": "RV-01 (adjacent tub-plug retrieval through a wall opening) and RV-15 (BBB A+, accredited 2025) · 0 direct Yelp rows: no business-profile excerpt was found"
+      "review_evidence": "RV-01 (indexed account of adjacent tub-plug retrieval through a behind-wall opening) \u00b7 no San Francisco BBB or Angi profile found on 2026-11-11 \u00b7 0 direct Yelp page reads (HTTP 403)"
     },
     {
       "provider_id": "P-09",
@@ -265,7 +266,7 @@
         "C4": 2,
         "C5": 1
       },
-      "why": "B + C-36 active license and BBB A+ Accreditation since 11/24/2025 (0 complaints), offering one-contract design-build and self-performed plumbing, but /contact/ intake tiers start at $60K–$150K alongside $55K–$120K+ bath remodel positioning. Small occupied-unit repair acceptance is unconfirmed.",
+      "why": "B + C-36 active license and BBB A+ Accreditation since 11/24/2025 (0 complaints), offering one-contract design-build and self-performed plumbing, but /contact/ intake tiers start at $60K\u2013$150K alongside $55K\u2013$120K+ bath remodel positioning. Small occupied-unit repair acceptance is unconfirmed.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file.",
       "ask": "Ask first whether a one-fixture repair with ceiling patching is in scope, then request the combined written scope. Final verification gate: Confirm minimum job size, restoration self-performance and occupied-unit plan.",
@@ -304,12 +305,12 @@
         "C5": 5,
         "C4": 1
       },
-      "why": "The supplied 2026-08-30 wording — \"replace waste and overflow\" — is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: for ceiling restoration, BPC §7059(a) allows other-trade work only when incidental and supplemental; otherwise an appropriately licensed restoration party and contract structure are needed. This ranking does not endorse the $614 figure, which remains owner-reported.",
+      "why": "The supplied 2026-08-30 wording \u2014 \"replace waste and overflow\" \u2014 is the closest of the three owner-supplied scopes to the actual work, and the CSLB record has been active since 2012 with a current workers-compensation policy. C-36 only: for ceiling restoration, BPC \u00a77059(a) allows other-trade work only when incidental and supplemental; otherwise an appropriately licensed restoration party and contract structure are needed. This ranking does not endorse the $614 figure, which remains owner-reported.",
       "cost_amount_owner": 614,
       "cost_note": "Owner-reported $614 on 2026-08-30 for \"replace waste and overflow\". Verified amount blank; no access route, drywall restoration, permit, cleanup or warranty line is included.",
-      "ask": "Requote the identical combined scope, state the access method, and document whether restoration is incidental and supplemental under BPC §7059(a) or name the restoration party. Confirm access route, parts, drywall, permit, cleanup, warranty and validity in writing.",
+      "ask": "Requote the identical combined scope, state the access method, and document whether restoration is incidental and supplemental under BPC \u00a77059(a) or name the restoration party. Confirm access route, parts, drywall, permit, cleanup, warranty and validity in writing.",
       "short_why": "C-36 only; owner-reported $614 is the closest supplied scope wording",
-      "review_evidence": "RV-16 (BBB Not Rated, 0 complaints in 3 years) · no direct Yelp profile excerpt was found"
+      "review_evidence": "RV-16 (BBB Not Rated, 0 complaints in 3 years) \u00b7 no direct Yelp profile excerpt was found"
     },
     {
       "provider_id": "P-07",
@@ -330,7 +331,8 @@
       ],
       "flags": [
         "F-12",
-        "F-30"
+        "F-30",
+        "F-86"
       ],
       "score_components": {
         "C1": 5,
@@ -339,12 +341,12 @@
         "C4": 1,
         "C5": 1
       },
-      "why": "B + C-36 at the same registered address and phone as Bay Area Plumbing, which makes it the natural second half of that firm's combined scope if the relationship is confirmed. The CSLB record also carries 2015–2016 cash-deposit letters, and the workers-compensation record is an exemption (no employees), so entity and crew questions come before price.",
+      "why": "B + C-36 at the same registered address and phone as Bay Area Plumbing, which makes it the natural second half of that firm's combined scope if the relationship is confirmed. The CSLB record also carries 2015\u20132016 cash-deposit letters, and the workers-compensation record is an exemption (no employees), so entity and crew questions come before price.",
       "cost_amount_owner": null,
       "cost_note": "No quote on file. Owner-reported $550 exists for Bay Area Plumbing only; that price cannot be attributed to this licence.",
       "ask": "Ask whether the two licence holders operate as one contracting entity, and which licence would sign the contract.",
-      "short_why": "B + C-36 at Bay Area Plumbing’s address and phone; entity relationship unconfirmed",
-      "review_evidence": "RV-15 family profile shared with P-05 (BBB A+) · no direct Yelp profile excerpt was found"
+      "short_why": "B + C-36 at Bay Area Plumbing\u2019s address and phone; entity relationship unconfirmed",
+      "review_evidence": "No San Francisco BBB, Angi or direct Yelp profile excerpt found on 2026-11-11 (shares 2450 Taraval St and (415) 668-8000 with Bay Area Plumbing; corporate relationship unverified)"
     },
     {
       "provider_id": "P-05",
@@ -381,12 +383,12 @@
       "cost_note": "Owner-reported $550 on 2026-08-30 for lever, plug and spout with diverter, labour and materials. Verified amount blank; scope wording may not match the failed assembly.",
       "ask": "Confirm in writing that the price covers the overflow body and linkage, not only the spout/diverter, and who restores the ceiling. Final verification gate: Confirm legal contracting entity, license, exact parts and restoration party before comparison.",
       "short_why": "C-36 only; owner-reported $550 may describe a spout/diverter rather than the overflow body",
-      "review_evidence": "RV-09 (bathtub and shower drain leak repair photos; apartment-specific account) · no direct Yelp profile excerpt was found"
+      "review_evidence": "RV-09 (bathtub and shower drain leak repair photos; apartment-specific account) \u00b7 no direct Yelp profile excerpt was found"
     },
     {
       "provider_id": "P-06",
       "name": "Fast Response Plumbing & Rooter",
-      "legal_name": "JOSEPH TINSLEY · dba FAST RESPONSE PLUMBING AND ROOTER",
+      "legal_name": "JOSEPH TINSLEY \u00b7 dba FAST RESPONSE PLUMBING AND ROOTER",
       "license": "1024971",
       "classifications": [
         "C-36"
@@ -421,7 +423,7 @@
       "cost_note": "Owner-reported $135 on 2026-08-30 for repair or adjust of the plunger handle. Verified amount blank; adjustment-only scope, not a replacement-plus-access price.",
       "ask": "Ask what happens if adjustment fails, and request a replacement scope with ceiling access priced separately. Final verification gate: Clarify whether adjustment can free this stuck assembly; price fallback separately.",
       "short_why": "C-36 only; the $135 quote is adjustment-only, and workers comp expires 2026-12-18",
-      "review_evidence": "RV-14 (BBB A+, not accredited) and RV-22 (ceiling-leak listing excerpt) · no direct Yelp profile excerpt was found"
+      "review_evidence": "RV-14 (BBB A+, not accredited) and RV-22 (ceiling-leak listing excerpt) \u00b7 no direct Yelp profile excerpt was found"
     },
     {
       "provider_id": "P-16",
@@ -454,7 +456,7 @@
       "cost_note": "No quote on file.",
       "ask": "Ask whether San Francisco occupied-unit repair work is accepted and who holds the drywall classification.",
       "short_why": "C-36 + A with $2M liability and LLC bond on file; A is not B/C-9 and no restoration evidence was found",
-      "review_evidence": "No direct Yelp profile excerpt was found · no BBB or Angi row on file for this candidate"
+      "review_evidence": "No direct Yelp profile excerpt was found \u00b7 no BBB or Angi row on file for this candidate"
     }
   ],
   "partner": {
@@ -495,7 +497,7 @@
     {
       "provider_id": "P-21",
       "name": "D G Construction",
-      "reason": "B + C-36 capability, but CSLB CitationViolationDisclosure publishes citation 2 2022 002099 (03/23/2023, FOR DISCLOSURE ONLY PER B&P CODE 7124.6) for violation B&P Code 7114.A — Aided and abetted non-licensee, while also certifying WC exempt (no employees). Held outside the hiring order.",
+      "reason": "B + C-36 capability, but CSLB CitationViolationDisclosure publishes citation 2 2022 002099 (03/23/2023, FOR DISCLOSURE ONLY PER B&P CODE 7124.6) for violation B&P Code 7114.A \u2014 Aided and abetted non-licensee, while also certifying WC exempt (no employees). Held outside the hiring order.",
       "source_ids": [
         "CSLB-297604",
         "DG-COMPLAINT",
@@ -509,7 +511,7 @@
     {
       "provider_id": "P-11",
       "name": "SF Building Group",
-      "reason": "B only on the checked record, registered in South San Francisco, workers-compensation exemption. It is not a plumbing lead; a combined prime contract would need the BPC §7057 conditions and an appropriately licensed plumbing party. Small occupied-unit repair acceptance and exact-scope evidence are unconfirmed.",
+      "reason": "B only on the checked record, registered in South San Francisco, workers-compensation exemption. It is not a plumbing lead; a combined prime contract would need the BPC \u00a77057 conditions and an appropriately licensed plumbing party. Small occupied-unit repair acceptance and exact-scope evidence are unconfirmed.",
       "source_ids": [
         "CSLB-1106131",
         "BPC-7057"
@@ -583,7 +585,7 @@
     {
       "provider_id": "P-19",
       "name": "Citywide Plumbing",
-      "reason": "C-36 only, workers-compensation exemption, and the CSLB record shows the licence was reissued to another entity on 2026-07-06 — confirm the current operator before relying on older reputation.",
+      "reason": "C-36 only, workers-compensation exemption, and the CSLB record shows the licence was reissued to another entity on 2026-07-06 \u2014 confirm the current operator before relying on older reputation.",
       "source_ids": [
         "CSLB-954385"
       ],
@@ -607,7 +609,7 @@
     {
       "provider_id": "P-23",
       "name": "Clever Plumbing & Rooter",
-      "reason": "C-36 only, registered in San Bruno, workers-compensation exemption, and the licence was issued on 2026-09-04 — no track record yet for delicate occupied-unit work.",
+      "reason": "C-36 only, registered in San Bruno, workers-compensation exemption, and the licence was issued on 2026-09-04 \u2014 no track record yet for delicate occupied-unit work.",
       "source_ids": [
         "CSLB-1160613"
       ],
@@ -679,7 +681,7 @@
     {
       "provider_id": "P-26",
       "name": "24/7 Rooter and Plumbing Services",
-      "reason": "Active C-36 + A + C-61/D-56 with advertised water-restoration services, but no B or C-9 classification (ceiling restoration beyond a BPC §7059(a) incidental patch needs C-9 or B), phone discrepancy between CSLB (415) 586-6851 and site (415) 488-8661, and no tub trip-lever case evidence.",
+      "reason": "Active C-36 + A + C-61/D-56 with advertised water-restoration services, but no B or C-9 classification (ceiling restoration beyond a BPC \u00a77059(a) incidental patch needs C-9 or B), phone discrepancy between CSLB (415) 586-6851 and site (415) 488-8661, and no tub trip-lever case evidence.",
       "source_ids": [
         "CSLB-954813",
         "ROOTER247",
@@ -766,32 +768,50 @@
       "status": "Canceled"
     }
   ],
-  "final_verification_note": "2026-11-11 review re-read every previously listed CSLB record and four discovery records. George Salet #888630 expiry on the official record is 12/31/2028 (was published as 12/31/2026). Issue dates filled for #888630 (12/21/2006) and #954813 (11/18/2010). Starboy #1051650 and Pipe Whisperer #1055209 are active C-36-only San Francisco records. Amador’s Drywall #1031231 is an active C-9 + B restoration option; CSLB and company phones differ. Eric Brand #920294 is canceled. Portola remains unresolved. Ranking scores for the existing top ten were not changed.",
+  "final_verification_note": "2026-11-11 review re-read all 30 canonical CSLB records plus five historical/disambiguation records (including #347110 R R Drywall) and 100+ statute, code, city, company and BBB/Angi URLs. George Salet #888630 expiry on the official record is 12/31/2028; issue dates are filled for #888630 (12/21/2006) and #954813 (11/18/2010), and reissue date 03/14/2019 is recorded for #1031231. Removed cross-provider RV-15 BBB misattributions from P-01 Rapid Flow and P-07 Save-On-Interior (RV-15 belongs solely to P-08 We Do Construction #1096552; F-86). Amador\u2019s Drywall #1031231 (C-9 + B, BBB A+ accredited) and R R Drywall #347110 (B + C-33 + C-9, Brisbane; confirm sole-ownership entity vs Yelp-listed RnR Drywall Inc) are documented for second restoration bids. Eric Brand #920294 is canceled. Portola, C J\u2019s and Golden Gate remain unresolved. Ranking scores and top-ten order are unchanged.",
   "partners_second_bid": [
     {
       "id": "RV-24",
-      "name": "Amador’s Drywall",
-      "platform": "CSLB license detail + company contact page",
-      "observation": "Official CSLB record #1031231 is current and active, C-9 + B, South San Francisco, workers-compensation policy expiring 02/08/2027. Company contact page lists the same Grand Avenue address and describes small repairs and tenant improvements. CSLB phone (415) 756-4958 differs from the contact-page number (628) 529-7248.",
+      "name": "Amador\u2019s Drywall",
+      "platform": "CSLB license detail + BBB + company contact page",
+      "observation": "Official CSLB record #1031231 is current and active, C-9 + B, South San Francisco (reissued 03/14/2019), workers-compensation policy expiring 02/08/2027. Direct 2026-11-11 BBB check confirms BBB Accredited Since 09/13/2024 (A+ grade) at 235 Grand Ave Ste 201. CSLB phone (415) 756-4958 differs from the contact-page number (628) 529-7248.",
       "why_it_matters": "A second C-9 + B restoration option if Bernal Hill cannot take the ceiling half. Not a plumbing candidate. Confirm the dispatch number before calling. No quote on file and no exact ceiling-opening acceptance.",
       "rating": null,
       "review_count": null,
       "verified": false,
-      "review_url": "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=Glen+Park%2C+San+Francisco%2C+CA",
+      "review_url": "https://www.bbb.org/us/ca/s-san-francisco/profile/drywall-contractors/amadors-drywall-1116-932807",
       "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1031231",
       "source_ids": [
         "CSLB-1031231",
         "AMADOR",
         "AMADOR-CONTACT",
+        "BBB-AMADOR",
+        "CSLB-C9"
+      ]
+    },
+    {
+      "id": "RV-25",
+      "name": "R R Drywall (listed on Yelp as R & R Drywall / RnR Drywall Inc)",
+      "platform": "CSLB license detail + Yelp search index",
+      "observation": "Official CSLB record #347110 (R R DRYWALL, Sole Ownership, 480 San Bruno Ave, Brisbane, (415) 467-3149, issued 11/17/1977, expires 10/31/2027) is current and active for B + C-33 + C-9, with a workers-compensation exemption (certified no employees). Yelp search excerpts name \"RnR Drywall Inc\" for bathroom-ceiling leak patching and mention a 2020 retirement/handoff.",
+      "why_it_matters": "CSLB-checked B + C-33 + C-9 candidate in adjacent Brisbane, but do not assume corporate \"RnR Drywall Inc\" is covered by Sole Ownership license #347110 \u2014 verify exact contracting entity and workers-comp status in writing before any work.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=drywall+ceiling+repair&find_loc=San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=347110",
+      "source_ids": [
+        "CSLB-347110",
+        "YELP-DRYWALL-SF",
         "CSLB-C9"
       ]
     },
     {
       "id": "RV-23",
-      "name": "R & R Drywall · Toms Painters · Peña Drywall",
+      "name": "Toms Painters \u00b7 Pe\u00f1a Drywall",
       "platform": "Yelp search index",
-      "observation": "The San Francisco drywall-ceiling-repair listing excerpt still names these firms, with quoted customer lines about bathroom-ceiling repair after a leak and about ceiling patches. Amador’s Drywall was removed from this unchecked grouping after a direct CSLB check.",
-      "why_it_matters": "These remain search leads only for a second bid on the patch. This session did not check them against the CSLB register, so no licence, status, phone number or rating is published.",
+      "observation": "Remaining names from the San Francisco drywall-ceiling-repair listing excerpt after direct CSLB verification of Amador\u2019s Drywall (#1031231) and R R Drywall (#347110).",
+      "why_it_matters": "Unchecked search leads only: no CSLB licence number, status, phone number or rating is published for these two names, and each must be verified on the official CSLB lookup before any contact.",
       "rating": null,
       "review_count": null,
       "verified": false,

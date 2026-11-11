@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-11T02:39:38.732451+00:00",
+  "built_at": "2026-11-11T02:51:11.801066+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
@@ -21,6 +21,7 @@
     "cslb_records": 30,
     "active": 28,
     "suspended": 1,
+    "canceled": 1,
     "unresolved": 3,
     "b_c36": 6,
     "c9": 2,
@@ -30,8 +31,8 @@
     "compliance": 15,
     "reviews": 23,
     "cost_drivers": 6,
-    "sources": 148,
-    "flags": 70,
+    "sources": 152,
+    "flags": 74,
     "questions": 14,
     "ranking": 10,
     "ranking_held": 21
