@@ -1926,10 +1926,10 @@ the session, so the claim below is made in this file on this branch and pushed b
 | ID | Task | Status | Owner / session | Files in scope |
 |---|---|---|---|---|
 | `8E-01` | Claim the board and inventory active work before editing | done | `arena/8837e140-korea8` | `COORDINATION.md` |
-| `8E-02` | Build the decision-blocker register: every question, the information already held, the answer status, and a suggested way to obtain each missing answer | in progress | `arena/8837e140-korea8` | `overflow-integration/data/questions.json`, `overflow-integration/data/sources.json` (append-only if a new source is required), `audit/2026-11-11-8837e140/**` |
-| `8E-03` | Publish the register as a twelfth canonical page and wire it into the generator, verifier, tests and independent audit | unclaimed | — | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `audit/independent_audit.py`, generated root HTML |
-| `8E-04` | Line-by-line review of the current repository state with irregularities flagged and receipts | unclaimed | — | `audit/2026-11-11-8837e140/**` |
-| `8E-05` | Integration: rebuild, run every check, open one PR to `main`, merge, confirm the exact-commit Pages deployment, record the receipt | unclaimed | — | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
+| `8E-02` | Build the decision-blocker register: every question, the information already held, the answer status, and a suggested way to obtain each missing answer | done | `arena/8837e140-korea8` | `overflow-integration/data/questions.json`, `overflow-integration/data/sources.json` (append-only if a new source is required), `audit/2026-11-11-8837e140/**` |
+| `8E-03` | Publish the register as a twelfth canonical page and wire it into the generator, verifier, tests and independent audit | done | `arena/8837e140-korea8` | `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow_site.py`, `audit/independent_audit.py`, generated root HTML |
+| `8E-04` | Line-by-line review of the current repository state with irregularities flagged and receipts | done | `arena/8837e140-korea8` | `audit/2026-11-11-8837e140/**` |
+| `8E-05` | Integration: rebuild, run every check, open one PR to `main`, merge, confirm the exact-commit Pages deployment, record the receipt | in progress | `arena/8837e140-korea8` | `COORDINATION.md`, `overflow-integration/data/deployment.json` |
 
 **Baseline at claim time.** `origin/main` = `b491225` (PR #77). Rebuilt and re-ran the full gate on the untouched baseline
 before editing: `build_overflow_site.py` → `verify_overflow_site.py` **28/28 PASS** (405 rows, 276 tracked links),
@@ -1947,3 +1947,52 @@ What it can and will do is stated precisely in its report: (a) re-parse every pu
 (b) trace each published value back to the row and source record that already carries an independent retrieval date and receipt,
 (c) report internal inconsistencies between data files, generated pages and the claims made about them, and (d) record the
 retrieval limitation itself as an open item rather than silently inheriting "verified" status.
+
+### 8E-02 / 8E-03 / 8E-04 — completed record (2026-11-11)
+
+**What was built.** `overflow-integration/data/questions.json`, a decision-blocker register of **27 questions**, published as
+a twelfth canonical page `questions.html` and wired into the nav, the dashboard KPI strip, the dashboard card grid, the
+executive summary (markdown and HTML), the verification page, the verifier, the unit tests, the independent audit and the
+Pages workflow's live-content assertions. Each row publishes four separate things that the rest of the dossier keeps apart
+but never lined up: what is already established with the source for that row, what is specifically missing, the answer
+(**blank and marked unverified when nothing answers it**), and the cheapest concrete route to the missing answer.
+Status split: **9 answered, 4 partially answered, 18 unanswered**. Blocking split: **13 high, 11 medium, 3 low**.
+
+Every row's anchor URL is itself a registered official-kind source cited on that row, so the canonical rule that every
+table row carries a registered official-primary source link holds without exception. The summary counts that have no source
+to cite are rendered as panels rather than tables, so no unsourced table row was introduced.
+
+**Verification performed.** `build_overflow_site.py` ok (12 pages); `verify_overflow_site.py` **35/35 PASS** (was 28/28 —
+seven new checks cover question parity, official anchoring, blank-vs-unanswered discipline, count parity, build-report
+parity and a private-context scan); `unittest discover -p 'test_overflow*.py'` **45/45 OK** (five new tests);
+`audit/independent_audit.py` **12 pages, 440/440 rows source-linked, 252 internal links, 0 problems**;
+`stage_overflow_pages.py` 53 linked public files with no repository internals; `wording_guard.py` clean; `git diff --check` clean.
+
+**Line-by-line review.** Re-derived every published claim from the raw data rather than trusting the existing verifiers.
+Recomputed `A*0.30 + B*0.20 + C*0.20 + D*0.15 + E*0.15` for all ten ranked rows plus the partner and confirmed the rendered
+order matches exactly (Ace 3.85, Heise's 3.45, Rapid Flow 3.15, Ayoob & Peery 3.15, We Do 2.95, Expert 2.90, Save-On 2.60,
+Bay Area 2.55, Fast Response 2.20, Discount 1.70), with the one exact 3.15 tie broken deterministically on the published C2
+component. Confirmed ranking phone equals register phone for all eleven identities; no suspended or unresolved identity is in
+the hiring order; all 135 source identifiers are unique and every cited identifier resolves; all 67 flag identifiers are
+unique and every referenced flag exists; owner amounts remain owner-reported with verified cells blank; no numeric rating or
+review count appears anywhere. Receipts: `audit/2026-11-11-8837e140/receipts.json`.
+
+**Irregularities recorded — F-72 to F-76.** F-72 (Medium): source record `SF-CODE-104` is titled Plumbing Code §104.0 but its
+stored URL carries the `sf_building` library segment; thirteen rows cite it, and the §104.2 text is separately sourced from
+the city-hosted Plumbing Code PDF. F-73 (Low): F-56 to F-64 are absent from the register after two renumbering passes, and no
+file cites them. F-74 (Low): four registered sources are cited by no row. F-75 (Low): two Yelp records share one locator.
+F-76 (Medium): this session could not re-read any external source.
+
+**Retrieval limitation.** The sandbox resolved outbound traffic only to `github.com`, `api.github.com`, `codeload.github.com`,
+`registry.npmjs.org`, `pypi.org` and `files.pythonhosted.org`. Every agency, company and review host returned a connection
+failure. **No agency, company or review page was re-read by this session and no fresh external verification is claimed
+anywhere.** The register states this to the owner in question Q-27. Per-row check dates published on the site remain the
+record of when each value was actually read.
+
+**Concurrent merges.** `origin/main` advanced twice during this work, to `b6d9b92` (PR #79) and then `071979b` (PR #80), and
+another session published flags F-70 and F-71 on the same day. Both rebases conflicted in this board and in the generated
+pages. Resolution kept every other session's board record in full each time, regenerated the conflicted HTML/JSON/markdown
+from the combined generator, and renumbered this session's five findings to F-72 to F-76 so no identifier is reused.
+Nothing from another session was discarded and no other session's claim was edited. No provider, estimate, compliance,
+requirement, ranking, review or technical row was altered; no provider, agency or review platform was contacted; no open
+pull request was merged, closed or modified; no unrelated GEMS file was touched.

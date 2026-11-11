@@ -1,11 +1,11 @@
 {
-  "checked_at": "2026-11-11T02:22:51.272950+00:00",
+  "checked_at": "2026-11-11T02:23:05.235938+00:00",
   "result": "PASS",
   "checks_run": 35,
   "checks_passed": 35,
   "checks_failed": 0,
   "canonical_rows_checked": 440,
-  "tracked_html_files": 75,
+  "tracked_html_files": 69,
   "checks": [
     {
       "check": "all canonical pages present",
@@ -155,12 +155,12 @@
     {
       "check": "question blocking counts match data",
       "ok": true,
-      "detail": "{'Low': 3, 'Medium': 11, 'High': 13}"
+      "detail": "{'Low': 3, 'High': 13, 'Medium': 11}"
     },
     {
       "check": "question status counts match data",
       "ok": true,
-      "detail": "{'partially answered': 4, 'unanswered': 18, 'answered': 5}"
+      "detail": "{'answered': 5, 'unanswered': 18, 'partially answered': 4}"
     },
     {
       "check": "question register omits private owner context",
@@ -180,7 +180,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "538 links; offenders: "
+      "detail": "312 links; offenders: "
     }
   ]
 }

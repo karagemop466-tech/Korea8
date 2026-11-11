@@ -2,7 +2,7 @@
  "session": "arena/8837e140-korea8",
  "date": "2026-11-11",
  "base_commit_at_start": "b4912259465a85efaa6d49f370c7ab276c16e324",
- "base_commit_after_rebase": "b6d9b92 (origin/main, PR #79)",
+ "base_commit_after_rebase": "071979b (origin/main, PR #80)",
  "external_retrieval": "NOT PERFORMED \u2014 sandbox resolved only github.com, api.github.com, codeload.github.com, registry.npmjs.org, pypi.org, files.pythonhosted.org; every agency, company and review host returned a connection failure",
  "checks": [
   {
@@ -88,27 +88,27 @@
  ],
  "irregularities": [
   {
-   "id": "F-70",
+   "id": "F-72",
    "severity": "Medium",
    "summary": "Source record SF-CODE-104 is titled Plumbing Code \u00a7104.0 but its stored URL carries the sf_building library segment. Thirteen rows cite it. The \u00a7104.2 text is separately sourced from the city-hosted Plumbing Code PDF."
   },
   {
-   "id": "F-71",
+   "id": "F-73",
    "severity": "Low",
    "summary": "Nine consecutive flag numbers (F-56 to F-64) are absent. No canonical page, audit file or linked document cites them; the board records two renumbering passes during concurrent merges."
   },
   {
-   "id": "F-72",
+   "id": "F-74",
    "severity": "Low",
    "summary": "Four registered sources are not cited by any row: BPC \u00a77114, BPC \u00a77124.6, and two earlier audit reports."
   },
   {
-   "id": "F-73",
+   "id": "F-75",
    "severity": "Low",
    "summary": "Two Yelp source records share one search URL under different titles and support different observations."
   },
   {
-   "id": "F-74",
+   "id": "F-76",
    "severity": "Medium",
    "summary": "This session could not re-read any external source; all claims are structural, traceability and consistency checks only."
   },
@@ -130,5 +130,6 @@
  ],
  "not_contacted": [
   "every provider, agency and review platform"
- ]
+ ],
+ "concurrent_note": "Flags F-70 and F-71 were published by another session on 2026-11-11 while this work was in progress; this session's five findings were renumbered to F-72 to F-76."
 }

@@ -36,7 +36,7 @@ is attributable to this session's changes.
 | `build_overflow_site.py` | ok — 12 pages, 27 questions, 65 flags |
 | `verify_overflow_site.py` | **35/35 PASS** (was 28/28; 7 new checks for the register) |
 | `unittest discover -p 'test_overflow*.py'` | **45/45 OK** (5 new tests) |
-| `audit/independent_audit.py` | 12 pages, **432/432 rows source-linked**, 246 internal links, **0 problems** |
+| `audit/independent_audit.py` | 12 pages, **440/440 rows source-linked**, 252 internal links, **0 problems** |
 | `stage_overflow_pages.py` | 48 linked public files, no repository internals staged |
 | `wording_guard.py` | clean |
 | `git diff --check` | clean |
@@ -64,15 +64,17 @@ the ranking from its own published weights and components.
 
 ## 5. Irregularities found and flagged
 
-Five new flags, none of them introduced by this session's edits, all published on the Flagged for Review page:
+Five new flags, none of them introduced by this session's edits, all published on the Flagged for Review page. Another session
+merged F-70 and F-71 on the same day while this work was in progress, so these five were renumbered to **F-72 to F-76** to avoid
+colliding with identifiers already in use:
 
 | Flag | Severity | Finding |
 |---|---|---|
-| **F-70** | Medium | Source record `SF-CODE-104` is titled *San Francisco Plumbing Code §104.0 — Permits* and its retrieval note describes Plumbing Code §104.2, but its stored URL carries the **`sf_building`** library segment. Thirteen rows cite it. The §104.2 text itself is separately sourced from the city-hosted 2025 Plumbing Code PDF, so the content is sourced and only the deep-link path is questionable. |
-| **F-71** | Low | Sixty flags are published and the highest identifier is F-69, but **F-56 through F-64 are absent**. The board records two renumbering passes during concurrent merges. No canonical file, generated page, audit file or linked document cites the missing range. |
-| **F-72** | Low | **Four registered sources are cited by no row**: BPC §7114, BPC §7124.6 and two earlier audit reports. Nothing was deleted, because deleting a source would erase a citation trail. |
-| **F-73** | Low | Two Yelp source records share one search URL under different titles while supporting different observations. |
-| **F-74** | Medium | **This session could not re-read any external source.** All findings here are structural, traceability and consistency checks against receipts recorded by earlier sessions. |
+| **F-72** | Medium | Source record `SF-CODE-104` is titled *San Francisco Plumbing Code §104.0 — Permits* and its retrieval note describes Plumbing Code §104.2, but its stored URL carries the **`sf_building`** library segment. Thirteen rows cite it. The §104.2 text itself is separately sourced from the city-hosted 2025 Plumbing Code PDF, so the content is sourced and only the deep-link path is questionable. |
+| **F-73** | Low | The highest identifier is F-76, and **F-56 through F-64 are absent**. The board records two renumbering passes during concurrent merges. No canonical file, generated page, audit file or linked document cites the missing range. |
+| **F-74** | Low | **Four registered sources are cited by no row**: BPC §7114, BPC §7124.6 and two earlier audit reports. Nothing was deleted, because deleting a source would erase a citation trail. |
+| **F-75** | Low | Two Yelp source records share one search URL under different titles while supporting different observations. |
+| **F-76** | Medium | **This session could not re-read any external source.** All findings here are structural, traceability and consistency checks against receipts recorded by earlier sessions. |
 
 Pre-existing and unchanged: **F-52/F-35**, the Pages root publisher serving repository files beyond the staged
 dashboard closure.
@@ -85,6 +87,14 @@ This sandbox resolved outbound traffic only to `github.com`, `api.github.com`, `
 company or review page was re-read by this session, and no claim of fresh external verification is made anywhere in
 this report or in the register.** The per-row check dates already published on the site remain the record of when each
 value was actually read. The register's question Q-27 states this in the same words to the owner.
+
+## 6a. Concurrent sessions
+
+`origin/main` advanced twice while this work was in progress, first to `b6d9b92` (PR #79) and then to `071979b` (PR #80),
+and another session had already published flags F-70 and F-71 on the same day. Both rebases conflicted in the shared board
+and in the generated pages. Resolution in both cases kept every other session's board record in full and regenerated the
+conflicted HTML, JSON reports and markdown from the combined generator. My five findings were renumbered to F-72 to F-76 so
+that no identifier is reused. Nothing from another session was discarded, and no other session's claim was edited.
 
 ## 7. What was not touched
 
