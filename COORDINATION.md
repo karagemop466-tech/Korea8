@@ -1800,3 +1800,21 @@ fresh-verified here. No provider contacted/booked/paid.
 PR from `arena/331cafce-korea8` to `main` to follow. Open PRs #72, #66, #64, #63, #53,
 #51, #49, #44, #39, #38, #35, #7 remain untouched. Flagged irregularities and unverified
 items do not block merge; they remain published on the Flagged for Review page.
+## Session `arena/92cc6407-korea8` — 2026-11-11 reproducibility and publication audit
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| 92-01 | Claim isolated audit scope and check existing implementation | in progress | `arena/92cc6407-korea8` | `COORDINATION.md`, `audit/2026-11-11-92cc6407/**` |
+| 92-02 | Link current reproducibility audit; test and publish through PR | in progress | `arena/92cc6407-korea8` | canonical generator audit-link section, generated `verification.html`, generated build/verification reports |
+
+All earlier canonical implementation claims end in completed integration receipts; stale open PRs remain untouched. This session uses only the Arena-pinned branch. Existing provider facts retain their original source-check dates. Network access in this session is limited to GitHub and package registries, so direct external-source re-verification cannot be claimed. No contractor contact, booking or payment is authorized or performed. Public outputs use neutral repair-scope wording.
+
+### 92-01 / 92-02 audit results
+
+- Scope refinement: the audit notice is linked on both generated `verification.html` and `flagged-for-review.html`; no provider, ranking or source-check date changed.
+- Report: `audit/2026-11-11-92cc6407/REPORT.md`. GitHub Pages baseline API snapshots retained in the same audit directory.
+- Verified locally: 28/28 structural checks, 405 official-source-linked rows, 40/40 tests, independent audit zero problems, 46-file public staging, wording guard clean and `git diff --check` clean. No fresh external-source retrieval is claimed.
+- Existing publication-mode irregularity and missing job-specific confirmations are explicitly retained on the site's Flagged for Review page. Older open PRs untouched.
+- First branch pull could not find the not-yet-published session branch; fetched/rebased against `origin/main` instead, then published the fixed session branch successfully. No merge conflict or discarded work.
+
+**Concurrent integration:** PR #78 advanced `main` during publication. Rebased onto `449025a`, retained both board entries, preserved the other session's 11 November spot-check link and data corrections, and regenerated conflicted HTML/reports from the combined generator. No prior work discarded. Generated independent-audit report is also within this session's verification-output scope.
