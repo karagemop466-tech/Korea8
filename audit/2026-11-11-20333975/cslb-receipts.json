@@ -1,0 +1,565 @@
+{
+  "audit_session": "arena/20333975-korea8",
+  "checked": "2026-11-11",
+  "method": "Direct retrieval of every official CSLB LicenseDetail page with the repository fetch tool; field-by-field comparison to canonical providers.json. CSLB banners still read Data current as of 11/10/2026.",
+  "comparison_fields": [
+    "legal_name",
+    "registered_city",
+    "phone",
+    "expiry",
+    "status",
+    "classifications",
+    "workers_comp",
+    "issue_date"
+  ],
+  "result": {
+    "cslb_records": 30,
+    "previously_listed_matched": 25,
+    "corrected": 1,
+    "new_discovery_records": 4,
+    "canceled": 1,
+    "suspended": 1,
+    "unresolved_identity_excluded": "Portola Plumbing Services; C J\u2019s Plumbing & Rooter Service; Golden Gate Plumbing & Rooter Inc"
+  },
+  "rows": [
+    {
+      "provider_id": "P-01",
+      "license": "1115649",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "cslb_data_current": "11/10/2026 6:14:20 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+      "registered_city": "San Francisco",
+      "phone": "(415) 866-8401",
+      "issue_date": "2024-01-29",
+      "expiry": "2028-01-31",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-02",
+      "license": "829071",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "cslb_data_current": "11/10/2026 6:13:25 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "ACE PLUMBING & ROOTER",
+      "registered_city": "San Francisco",
+      "phone": "(415) 824-6444",
+      "issue_date": "2003-12-18",
+      "expiry": "2027-06-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-4",
+        "C-16",
+        "B",
+        "C-10"
+      ],
+      "workers_comp": "Policy recorded; expires 07/13/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-03",
+      "license": "1089561",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "cslb_data_current": "11/10/2026 6:14:19 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "TARO GROUP INC \u00b7 dba HEISES PLUMBING",
+      "registered_city": "San Francisco",
+      "phone": "(415) 333-0704",
+      "issue_date": "2022-04-06",
+      "expiry": "2028-04-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-10",
+        "A",
+        "C-20"
+      ],
+      "workers_comp": "Policy recorded; expires 01/11/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-04",
+      "license": "977638",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "cslb_data_current": "11/10/2026 6:15:10 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "EXPERT PLUMBING SOLUTIONS",
+      "registered_city": "San Francisco",
+      "phone": "(415) 531-5340",
+      "issue_date": "2012-10-09",
+      "expiry": "2028-10-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 07/19/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-05",
+      "license": "757796",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "cslb_data_current": "11/10/2026 6:15:40 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "BAY AREA PLUMBING",
+      "registered_city": "San Francisco",
+      "phone": "(415) 668-8000",
+      "issue_date": "1999-01-07",
+      "expiry": "2027-01-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-06",
+      "license": "1024971",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "cslb_data_current": "11/10/2026 6:15:03 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "JOSEPH TINSLEY \u00b7 dba FAST RESPONSE PLUMBING AND ROOTER",
+      "registered_city": "San Francisco",
+      "phone": "(415) 596-6115",
+      "issue_date": "2017-03-20",
+      "expiry": "2027-03-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 12/18/2026",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-07",
+      "license": "749536",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "cslb_data_current": "11/10/2026 6:15:53 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "SAVE - ON - INTERIOR",
+      "registered_city": "San Francisco",
+      "phone": "(415) 668-8000",
+      "issue_date": "1998-05-18",
+      "expiry": "2028-05-31",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-08",
+      "license": "1096552",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "cslb_data_current": "11/10/2026 6:15:51 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "WE DO CONSTRUCTION INC",
+      "registered_city": "San Francisco",
+      "phone": "(415) 416-5494",
+      "issue_date": "2022-09-14",
+      "expiry": "2028-09-30",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 11/14/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-09",
+      "license": "392967",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "cslb_data_current": "11/10/2026 6:15:50 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "AYOOB & PEERY PLUMBING CO INC",
+      "registered_city": "San Francisco",
+      "phone": "(415) 550-0975",
+      "issue_date": "1980-09-08",
+      "expiry": "2028-09-30",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-4",
+        "C-16",
+        "C-36",
+        "C-20"
+      ],
+      "workers_comp": "Policy recorded; expires 08/31/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-10",
+      "license": "995163",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "cslb_data_current": "11/10/2026 6:15:10 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "BERNAL HILL DRYWALL INC",
+      "registered_city": "San Francisco",
+      "phone": "(415) 533-8274",
+      "issue_date": "2014-07-28",
+      "expiry": "2028-07-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "workers_comp": "Policy recorded; expires 03/10/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-11",
+      "license": "1106131",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "cslb_data_current": "11/10/2026 6:16:07 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "SF BUILDING GROUP",
+      "registered_city": "South San Francisco",
+      "phone": "(415) 297-2246",
+      "issue_date": "2023-06-18",
+      "expiry": "2027-06-30",
+      "status": "Current and active",
+      "classifications": [
+        "B"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-12",
+      "license": "1105133",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1105133",
+      "cslb_data_current": "11/10/2026 6:16:08 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "HARP SERVICES \u00b7 dba 24/7 SF HANDYMAN & REMODELING SERVICE",
+      "registered_city": "San Francisco",
+      "phone": "(415) 304-1559",
+      "issue_date": "2023-05-22",
+      "expiry": "2027-05-31",
+      "status": "Current and active",
+      "classifications": [
+        "B-2"
+      ],
+      "workers_comp": "Policy recorded; expires 04/11/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-13",
+      "license": "1009195",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "cslb_data_current": "11/10/2026 6:16:09 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "ADVANCED PLUMBING AND DRAIN INC",
+      "registered_city": "San Francisco",
+      "phone": "(415) 744-4944",
+      "issue_date": "2015-11-24",
+      "expiry": "2027-11-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 08/21/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-14",
+      "license": "379364",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=379364",
+      "cslb_data_current": "11/10/2026 6:16:10 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "JAMES CACCIA PLUMBING INC \u00b7 dba CACCIA HOME SERVICES",
+      "registered_city": "Burlingame",
+      "phone": "(650) 342-5363",
+      "issue_date": "1979-07-26",
+      "expiry": "2027-04-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-31",
+        "C-34",
+        "C-10"
+      ],
+      "workers_comp": "Policy recorded; expires 10/01/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-15",
+      "license": "966337",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=966337",
+      "cslb_data_current": "11/10/2026 6:16:11 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "FLOW MASTERS PLUMBING INC",
+      "registered_city": "Daly City",
+      "phone": "(415) 751-1933",
+      "issue_date": "2011-10-04",
+      "expiry": "2027-10-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "C-16",
+        "C-20"
+      ],
+      "workers_comp": "Policy recorded; expires 06/01/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-16",
+      "license": "1140843",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "cslb_data_current": "11/10/2026 6:15:57 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "registered_city": "Burlingame",
+      "phone": "(650) 991-2100",
+      "issue_date": "2025-07-22",
+      "expiry": "2027-07-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "workers_comp": "Policy recorded; expires 04/01/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-17",
+      "license": "1086935",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1086935",
+      "cslb_data_current": "11/10/2026 6:16:13 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "FDL PLUMBING INC",
+      "registered_city": "Daly City",
+      "phone": "(415) 678-9557",
+      "issue_date": "2022-02-03",
+      "expiry": "2028-10-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 01/21/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-18",
+      "license": "961218",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=961218",
+      "cslb_data_current": "11/10/2026 6:16:14 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "PRECISION ROOTER & DRAIN",
+      "registered_city": "San Francisco",
+      "phone": "(415) 724-1824",
+      "issue_date": "2011-05-19",
+      "expiry": "2027-05-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-19",
+      "license": "954385",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954385",
+      "cslb_data_current": "11/10/2026 6:16:15 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "CW PLUMBING INC \u00b7 dba CITYWIDE PLUMBING",
+      "registered_city": "Daly City",
+      "phone": "(415) 716-1519",
+      "issue_date": "2010-11-08",
+      "expiry": "2028-07-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-20",
+      "license": "300647",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=300647",
+      "cslb_data_current": "11/10/2026 6:16:23 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "CAHILL CONTRACTORS INC",
+      "registered_city": "San Francisco",
+      "phone": "(415) 986-0600",
+      "issue_date": "1974-12-05",
+      "expiry": "2027-11-30",
+      "status": "Current and active",
+      "classifications": [
+        "A",
+        "B"
+      ],
+      "workers_comp": "Policy recorded; expires 07/01/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-21",
+      "license": "297604",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=297604",
+      "cslb_data_current": "11/10/2026 6:16:23 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "D G CONSTRUCTION CO",
+      "registered_city": "San Francisco",
+      "phone": "(415) 308-0803",
+      "issue_date": "1974-08-23",
+      "expiry": "2027-04-30",
+      "status": "Current and active",
+      "classifications": [
+        "B",
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-22",
+      "license": "1027286",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "cslb_data_current": "11/10/2026 6:14:57 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "KENNETH ASIRE PLUMBING",
+      "registered_city": "San Francisco",
+      "phone": "(415) 913-8048",
+      "issue_date": "2017-05-25",
+      "expiry": "2027-05-31",
+      "status": "Suspended",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 08/30/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-23",
+      "license": "1160613",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1160613",
+      "cslb_data_current": "11/10/2026 6:16:25 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "CLEVER PLUMBING & ROOTER INC",
+      "registered_city": "San Bruno",
+      "phone": "(650) 834-0821",
+      "issue_date": "2026-09-04",
+      "expiry": "2028-09-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-25",
+      "license": "868994",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "cslb_data_current": "11/10/2026 6:16:26 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "ATLAS PLUMBING & ROOTER",
+      "registered_city": "San Francisco",
+      "phone": "(650) 871-9863",
+      "issue_date": "2005-12-08",
+      "expiry": "2028-03-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "workers_comp": "Employee service group policy recorded; expires 07/01/2027",
+      "comparison": "MATCH all compared fields"
+    },
+    {
+      "provider_id": "P-26",
+      "license": "954813",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813",
+      "cslb_data_current": "11/10/2026 6:16:27 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "24 / 7 ROOTER AND PLUMBING SERVICES INC \u00b7 dba A & R PLUMBING",
+      "registered_city": "San Francisco",
+      "phone": "(415) 586-6851",
+      "issue_date": "2010-11-18",
+      "expiry": "2028-11-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36",
+        "A",
+        "C-61/D-56"
+      ],
+      "workers_comp": "Policy recorded; expires 07/01/2027",
+      "comparison": "MATCH; filled previously blank issue_date 2010-11-18"
+    },
+    {
+      "provider_id": "P-27",
+      "license": "888630",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=888630",
+      "cslb_data_current": "11/10/2026 6:16:03 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "GEORGE SALET PLUMBING INC",
+      "registered_city": "Brisbane",
+      "phone": "(415) 334-0733",
+      "issue_date": "2006-12-21",
+      "expiry": "2028-12-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-16",
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expires 01/28/2027",
+      "comparison": "CORRECTED expiry 2026-12-31 -> 2028-12-31; filled issue_date 2006-12-21"
+    },
+    {
+      "provider_id": "P-30",
+      "license": "1051650",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1051650",
+      "cslb_data_current": "11/10/2026 6:16:02 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "STARBOY PLUMBING INC",
+      "registered_city": "San Francisco",
+      "phone": "(650) 290-1350",
+      "issue_date": "2019-03-25",
+      "expiry": "2027-03-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "NEW 2026-11-11 discovery; fields taken from this CSLB page"
+    },
+    {
+      "provider_id": "P-31",
+      "license": "1055209",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1055209",
+      "cslb_data_current": "11/10/2026 6:16:02 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "PIPE WHISPERER",
+      "registered_city": "San Francisco",
+      "phone": "(415) 745-0600",
+      "issue_date": "2019-06-27",
+      "expiry": "2027-06-30",
+      "status": "Current and active",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Exempt: certified no employees",
+      "comparison": "NEW 2026-11-11 discovery; fields taken from this CSLB page"
+    },
+    {
+      "provider_id": "P-32",
+      "license": "1031231",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1031231",
+      "cslb_data_current": "11/10/2026 6:16:03 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "AMADOR'S DRYWALL",
+      "registered_city": "South San Francisco",
+      "phone": "(415) 756-4958",
+      "issue_date": "2017-09-22",
+      "expiry": "2027-03-31",
+      "status": "Current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "workers_comp": "Policy recorded; expires 02/08/2027",
+      "comparison": "NEW 2026-11-11 discovery; fields taken from this CSLB page"
+    },
+    {
+      "provider_id": "P-33",
+      "license": "920294",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=920294",
+      "cslb_data_current": "11/10/2026 6:16:03 PM (retrieved 2026-11-11); timezone not stated",
+      "legal_name": "RAYNA BRAND \u00b7 dba ERIC BRAND PLUMBING",
+      "registered_city": "San Francisco",
+      "phone": "(415) 572-5991",
+      "issue_date": "2008-08-04",
+      "expiry": "2024-08-31",
+      "status": "Canceled",
+      "classifications": [
+        "C-36"
+      ],
+      "workers_comp": "Policy recorded; expired 05/01/2025",
+      "comparison": "NEW 2026-11-11 discovery; fields taken from this CSLB page"
+    }
+  ]
+}

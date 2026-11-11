@@ -12,7 +12,7 @@ spec.loader.exec_module(stage)
 class PublicationTests(unittest.TestCase):
     def test_canonical_pages_staged_without_repository_internals(self):
         files = stage.public_files()
-        for name in ('index.html', 'providers.html', 'decision-analysis.html', 'flagged-for-review.html', 'style.css'):
+        for name in ('index.html', 'providers.html', 'decision-analysis.html', 'questions.html', 'flagged-for-review.html', 'style.css'):
             self.assertIn(Path(name), files)
         self.assertIn(Path('audit/2026-11-10-b5ed3a43/REPORT.md'), files)
         self.assertIn(Path('audit/2026-11-10-5651e041/REPORT.md'), files)

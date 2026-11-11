@@ -1,6 +1,6 @@
 # Executive summary — bathtub wastewater overflow trip lever
 
-Reviewed 2026-11-10. San Francisco tenant-occupied unit. This summary is based on the linked
+Reviewed 2026-11-11. San Francisco tenant-occupied unit. This summary is based on the linked
 official/company sources and a neutral owner record; it is not a contractor booking or legal advice.
 
 ## Decision
@@ -26,13 +26,13 @@ evidence; full reasoning, scores and cost basis are on the Ranked decision analy
 9. Fast Response Plumbing & Rooter #1024971, (415) 596-6115 — C-36 only; owner-reported $135 is adjustment-only; workers comp expires 2026-12-18.
 10. Discount Plumbing Rooter Services #1140843, (650) 991-2100 — C-36 + A, $2M liability and LLC bond on file; Burlingame. A General Engineering is not B General Building or C-9 Drywall.
 
-Restoration partner: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B; not a plumbing candidate.
+Restoration partners: Bernal Hill Drywall #995163, (415) 533-8274 — C-9 + B, San Francisco; Amador’s Drywall #1031231, (415) 756-4958 — C-9 + B, South San Francisco (CSLB phone; company contact page lists a different number). Neither is a plumbing candidate.
 Atlas Plumbing & Rooter #868994 is a conditional review lead held outside the hiring order pending a direct trip-lever reference, restoration party and current dispatch number.
 Held back: D G Construction (CSLB citation B&P §7114.A disclosed), Advanced Plumbing (future-suspension warning),
 24/7 SF Handyman (B-2), SF Building Group (B only), Caccia Home Services, Flow Masters, FDL, Citywide,
 Precision (drain cleaning), Clever (licensed 2026-09-04),
 Cahill (no C-36), Kenneth Asire (suspended), 24/7 Rooter #954813 (no B/C-9, phone discrepancy),
-George Salet #888630 (Brisbane, expires 2026-12-31), Portola / C J’s / Golden Gate (identities unresolved),
+George Salet #888630 (Brisbane, expires 2028-12-31), Starboy #1051650 and Pipe Whisperer #1055209 (C-36 only), Eric Brand #920294 (canceled), Portola / C J’s / Golden Gate (identities unresolved),
 Atlas (conditional review lead).
 
 ## Estimates
@@ -61,4 +61,4 @@ are unconfirmed.
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola, C J’s and Golden Gate identities remain unresolved and blank. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 62 items, including the BPC §7059(a), scoring-rubric and source-metadata corrections.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 69 items, including the BPC §7059(a), scoring-rubric and source-metadata corrections.

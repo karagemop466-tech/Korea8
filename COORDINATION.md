@@ -2019,14 +2019,24 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| `203-01` | Claim board and inventory active work | in progress | `arena/20333975-korea8` | `COORDINATION.md` |
-| `203-02` | Independent 2026-11-11 official-source re-verification of CSLB records, city holiday/permit pages, fee schedule and company pages | unclaimed | `arena/20333975-korea8` | `audit/2026-11-11-20333975/**` |
-| `203-03` | Questions / known / unknown / discovery register requested by the owner brief | unclaimed | `arena/20333975-korea8` | `overflow-integration/data/questions.json`, generated questions page after 203-02 |
-| `203-04` | Additional San Francisco contractor search for combined plumbing and ceiling restoration; apply only evidenced corrections | unclaimed | `arena/20333975-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages |
-| `203-05` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify Pages deployment and record receipt | unclaimed | `arena/20333975-korea8` | `COORDINATION.md`, deployment records and generated public output |
+| `203-01` | Claim board and inventory active work | done | `arena/20333975-korea8` | `COORDINATION.md` |
+| `203-02` | Independent 2026-11-11 official-source re-verification of CSLB records, city holiday/permit pages, fee schedule and company pages | done | `arena/20333975-korea8` | `audit/2026-11-11-20333975/**` |
+| `203-03` | Questions / known / unknown / discovery register requested by the owner brief | done | `arena/20333975-korea8` | `overflow-integration/data/questions.json`, `questions.html` |
+| `203-04` | Additional San Francisco contractor search for combined plumbing and ceiling restoration; apply only evidenced corrections | done | `arena/20333975-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages |
+| `203-05` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify Pages deployment and record receipt | in progress | `arena/20333975-korea8` | `COORDINATION.md`, deployment records and generated public output |
 
 **Coordination note.** Arena fixes this session to `arena/20333975-korea8`; no other branch or worktree will be created or pushed. Existing open PRs (#72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7) are independent and will not be merged, closed or treated as verified without review. Canonical implementation on `main` (PR #76/#77, commit `b491225`) is the baseline. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will contain neutral repair-scope language and will not disclose private owner context.
 
 **Claim boundaries.** This session edits `COORDINATION.md`, `audit/2026-11-11-20333975/**`, `overflow-integration/**`, canonical generator/verifier/tests, generated root pages, and the overflow Pages workflow only if a live-check marker must be added for this audit. Parallel draft trees (`bathroom-overflow/`, `bathtub-overflow/`, `trip-lever/`, `docs/`, `project/` source) remain untouched unless a cross-session request is logged here.
 
 **Claim push.** This claim is committed and pushed before research or site edits, per the shared-board rule.
+
+### 203 research and correction record — 2026-11-11
+
+- Direct CSLB retrieval of every previously listed record plus four discovery records. Page banners still read Data current as of 11/10/2026 evening. **George Salet #888630 expire date is 12/31/2028** (was published as 12/31/2026); issue date 12/21/2006 filled. #954813 issue date 11/18/2010 filled. Kenneth Asire remains suspended. Advanced future-suspension warning unchanged.
+- Live sf.gov permit page and SF Planning Permit Center page still show the Veterans Day closure banner on 2026-11-11 itself. DBI Table 1A-C fees unchanged. Heise’s Ingleside ceiling-access case page still present.
+- Yelp search-index discovery, then CSLB check: Starboy #1051650 and Pipe Whisperer #1055209 are active C-36 only (not ranked). Amador’s Drywall #1031231 is active C-9 + B (second restoration option; CSLB phone differs from company contact). Eric Brand #920294 is canceled. Portola remains unresolved.
+- Questions register: 14 rows with known / unknown / how to discover; hire-blocking items published. Ranked scores for the existing top ten were not changed.
+- Flag IDs: main already used F-70 (Heise 404-widget) and F-71 (ranking-array order). This session’s items are F-78 (Salet expiry), F-79 (Fast Response workers compensation), F-80 (Amador phones), F-81 (Eric Brand canceled), F-82 (CSLB 11/10 banners), F-83 (Portola), F-84 (C-36-only discovery).
+- Rebase onto `origin/main` after PR #88 kept every other session’s board record; generated pages were rebuilt from the combined generator rather than choosing one HTML side.
+- No provider contacted/booked/paid. Owner amounts remain owner-reported with verified amounts blank. Open PRs remain untouched. Unrelated GEMS files unchanged.

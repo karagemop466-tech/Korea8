@@ -1,6 +1,6 @@
 {
-  "as_of": "2026-11-10",
-  "method_note": "Editorial decision support, not a verified performance or quality rating. All 24 CSLB records were re-read on 2026-11-10. Company, review and owner evidence retains its per-source date and limitations. Scores follow the published rubric; no provider was contacted, no reference was taken, and no availability, acceptance or current price was confirmed.",
+  "as_of": "2026-11-11",
+  "method_note": "Editorial decision support, not a verified performance or quality rating. All previously listed CSLB records plus four newly identified records were re-read on 2026-11-11 (CSLB page banners still read Data current as of 11/10/2026, evening Pacific-unstated). Company, review and owner evidence retains its per-source date and limitations. Scores follow the published rubric; no provider was contacted, no reference was taken, and no availability, acceptance or current price was confirmed.",
   "weights": [
     {
       "id": "C1",
@@ -693,7 +693,7 @@
     {
       "provider_id": "P-27",
       "name": "George Salet Plumbing",
-      "reason": "Active C-36 + C-16 advertising SF/Peninsula fixture repairs and free estimates, but registered in Brisbane, no B or C-9 classification, advertised 1979 founding predates 2006 license issue, and license expires 2026-12-31 inside the hiring window.",
+      "reason": "Active C-36 + C-16 advertising SF/Peninsula fixture repairs and free estimates, but registered in Brisbane, no B or C-9 classification, and advertised 1979 founding predates the 2006-12-21 CSLB issue date. Expiry on the official record is 2028-12-31.",
       "source_ids": [
         "CSLB-888630",
         "SALET"
@@ -728,16 +728,70 @@
       "phone": "",
       "license": "",
       "status": "Unresolved"
+    },
+    {
+      "provider_id": "P-30",
+      "name": "Starboy Plumbing",
+      "reason": "Active C-36 only, workers-compensation exempt, no B or C-9, and no published waste-and-overflow or ceiling-restoration evidence. Indexed on Yelp bathtub-repair listings; not a combined-scope lead.",
+      "source_ids": [
+        "CSLB-1051650"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1051650",
+      "phone": "(650) 290-1350",
+      "license": "1051650",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-31",
+      "name": "Pipe Whisperer",
+      "reason": "Active C-36 only, workers-compensation exempt, no B or C-9, and no published waste-and-overflow or ceiling-restoration evidence. Indexed on Yelp plumbing listings; not a combined-scope lead.",
+      "source_ids": [
+        "CSLB-1055209"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1055209",
+      "phone": "(415) 745-0600",
+      "license": "1055209",
+      "status": "Current and active"
+    },
+    {
+      "provider_id": "P-33",
+      "name": "Eric Brand Plumbing",
+      "reason": "Official CSLB record: this license is canceled and not able to contract (expire 08/31/2024). It still appears in current Yelp plumbing listings. Do not hire.",
+      "source_ids": [
+        "CSLB-920294"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=920294",
+      "phone": "(415) 572-5991",
+      "license": "920294",
+      "status": "Canceled"
     }
   ],
-  "final_verification_note": "Final 2026-11-10 review re-read the original 24 CSLB records (board banner 11/9/2026 9:49:30–9:51:48 PM; timezone unstated); two supplementary CSLB records verified by merged session 6f4c9f79 are preserved. Added BPC §7059(a), corrected SFPC/SFBC source chunks to 14/39, and made C1–C5 anchors explicit. Discount C1 changed from 4 to 2 because A is not B/C-9; Fast Response is #9 and Discount #10. FDL workers-compensation wording was updated. Heise’s official fixture page was added. No provider was contacted or booked.",
+  "final_verification_note": "2026-11-11 review re-read every previously listed CSLB record and four discovery records. George Salet #888630 expiry on the official record is 12/31/2028 (was published as 12/31/2026). Issue dates filled for #888630 (12/21/2006) and #954813 (11/18/2010). Starboy #1051650 and Pipe Whisperer #1055209 are active C-36-only San Francisco records. Amador’s Drywall #1031231 is an active C-9 + B restoration option; CSLB and company phones differ. Eric Brand #920294 is canceled. Portola remains unresolved. Ranking scores for the existing top ten were not changed.",
   "partners_second_bid": [
     {
+      "id": "RV-24",
+      "name": "Amador’s Drywall",
+      "platform": "CSLB license detail + company contact page",
+      "observation": "Official CSLB record #1031231 is current and active, C-9 + B, South San Francisco, workers-compensation policy expiring 02/08/2027. Company contact page lists the same Grand Avenue address and describes small repairs and tenant improvements. CSLB phone (415) 756-4958 differs from the contact-page number (628) 529-7248.",
+      "why_it_matters": "A second C-9 + B restoration option if Bernal Hill cannot take the ceiling half. Not a plumbing candidate. Confirm the dispatch number before calling. No quote on file and no exact ceiling-opening acceptance.",
+      "rating": null,
+      "review_count": null,
+      "verified": false,
+      "review_url": "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=Glen+Park%2C+San+Francisco%2C+CA",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1031231",
+      "source_ids": [
+        "CSLB-1031231",
+        "AMADOR",
+        "AMADOR-CONTACT",
+        "CSLB-C9"
+      ]
+    },
+    {
       "id": "RV-23",
-      "name": "Amador’s Drywall · R & R Drywall · Toms Painters · Peña Drywall",
+      "name": "R & R Drywall · Toms Painters · Peña Drywall",
       "platform": "Yelp search index",
-      "observation": "The San Francisco drywall-ceiling-repair listing excerpt names Amador’s Drywall, R & R Drywall, Toms Painters and Peña Drywall, with quoted customer lines about bathroom-ceiling repair after a leak and about ceiling patches.",
-      "why_it_matters": "The owner asked for reviewed alternatives for the ceiling half of the job. These are search leads for a second bid on the patch; this session did not check any of them against the CSLB register, so no licence, status, phone number or rating is published.",
+      "observation": "The San Francisco drywall-ceiling-repair listing excerpt still names these firms, with quoted customer lines about bathroom-ceiling repair after a leak and about ceiling patches. Amador’s Drywall was removed from this unchecked grouping after a direct CSLB check.",
+      "why_it_matters": "These remain search leads only for a second bid on the patch. This session did not check them against the CSLB register, so no licence, status, phone number or rating is published.",
       "rating": null,
       "review_count": null,
       "verified": false,
