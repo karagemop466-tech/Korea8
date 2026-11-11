@@ -2010,3 +2010,23 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
    (retrieved 2026-11-11, receipt in `audit/2026-11-11-692cc7ba/receipts.json`). Blank is
    conservative and not an error; the integration owner may populate it from that receipt at
    their discretion. This session did not edit any canonical file.
+
+---
+
+---
+
+## Session `arena/20333975-korea8` — 2026-11-11 independent re-verification, questions register and publication
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `203-01` | Claim board and inventory active work | in progress | `arena/20333975-korea8` | `COORDINATION.md` |
+| `203-02` | Independent 2026-11-11 official-source re-verification of CSLB records, city holiday/permit pages, fee schedule and company pages | unclaimed | `arena/20333975-korea8` | `audit/2026-11-11-20333975/**` |
+| `203-03` | Questions / known / unknown / discovery register requested by the owner brief | unclaimed | `arena/20333975-korea8` | `overflow-integration/data/questions.json`, generated questions page after 203-02 |
+| `203-04` | Additional San Francisco contractor search for combined plumbing and ceiling restoration; apply only evidenced corrections | unclaimed | `arena/20333975-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages |
+| `203-05` | Rebuild, run all canonical checks, open PR from the fixed Arena branch to `main`, merge, verify Pages deployment and record receipt | unclaimed | `arena/20333975-korea8` | `COORDINATION.md`, deployment records and generated public output |
+
+**Coordination note.** Arena fixes this session to `arena/20333975-korea8`; no other branch or worktree will be created or pushed. Existing open PRs (#72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7) are independent and will not be merged, closed or treated as verified without review. Canonical implementation on `main` (PR #76/#77, commit `b491225`) is the baseline. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will contain neutral repair-scope language and will not disclose private owner context.
+
+**Claim boundaries.** This session edits `COORDINATION.md`, `audit/2026-11-11-20333975/**`, `overflow-integration/**`, canonical generator/verifier/tests, generated root pages, and the overflow Pages workflow only if a live-check marker must be added for this audit. Parallel draft trees (`bathroom-overflow/`, `bathtub-overflow/`, `trip-lever/`, `docs/`, `project/` source) remain untouched unless a cross-session request is logged here.
+
+**Claim push.** This claim is committed and pushed before research or site edits, per the shared-board rule.
