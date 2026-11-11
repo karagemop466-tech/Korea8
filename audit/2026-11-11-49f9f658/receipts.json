@@ -11,11 +11,11 @@
     "providers_contacted": 0,
     "verified_prices_added": 0,
     "review_ratings_or_counts_added": 0,
-    "discovery_questions": 18,
     "independent_confirmations_of_parallel_corrections": 1,
     "baseline_records_directly_reviewed": 26,
     "current_integrated_registry_records": 30,
-    "parallel_discovery_records_not_claimed_directly_by_this_session": 4
+    "parallel_discovery_records_not_claimed_directly_by_this_session": 4,
+    "integrated_discovery_questions": 14
   },
   "cslb_records": [
     {

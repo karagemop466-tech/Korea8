@@ -135,3 +135,14 @@ The new audit report and receipts are linked into the generated public closure s
 The pre-rebase standalone refresh passed 31/31 checks and 43/43 tests, but those numbers belong to the superseded baseline and are not claimed for the integrated result. The final integrated run passed **29/29 canonical checks, 43/43 tests, wording guard clean, independent audit `problems=0`, and 450/450 canonical table rows source-covered**. The integrated dashboard contains 12 pages, 33 provider identities (30 identified CSLB records plus three unresolved), 148 source records, 70 flags and 14 questions. Machine-readable results are in `overflow-integration/verification-report.json`.
 
 No merge or deployment is claimed until the exact-commit Actions workflow, Pages deployment and live HTTPS assertions succeed. Final receipts belong in `COORDINATION.md` and `overflow-integration/data/deployment.json`.
+
+## Deployment receipt — PR #95
+
+- Integration PR: <https://github.com/karagemop466-tech/Korea8/pull/95>
+- Merged: 2026-11-11T02:40:53Z
+- Merge commit: `3a5f1fa3adafce9111bde11e2a1fecd1ac38a57d`
+- Exact-commit Actions run: <https://github.com/karagemop466-tech/Korea8/actions/runs/42947674530> — build and deploy succeeded, including live HTTPS assertions.
+- Pages API latest build: `built` for the same merge commit, no error.
+- Independent cache-busted HTTPS retrieval succeeded for `index.html`, `verification.html`, `flagged-for-review.html`, this report and `receipts.json`; the new F-85/audit content and integrated 30-record/70-flag dashboard were present.
+
+A subsequent receipt-only pull request updates the generated deployment field and this audit's integrated question count. It does not change provider facts, ranking, prices or scope conclusions.

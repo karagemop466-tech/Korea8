@@ -2092,3 +2092,14 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - Added independent receipts/audit `audit/2026-11-11-49f9f658/`, source `AUDIT-20261111-49F`, public Verification/Flagged links and **F-85** for current SFBC chunk-13 retrieval metadata. The substantive wallboard/fire-assembly exemption is unchanged; historical audits remain untouched.
 - Owner-reported $614/$550/$135 scopes remain non-comparable; all verified amounts and review ratings/counts remain blank. No provider was contacted/booked/paid; no access feasibility, permit determination or availability was inferred. Yelp observations remain excerpts, not direct reviews.
 - Final integrated local gates after additive rebase: **29/29 checks, 43/43 tests, wording guard clean, independent audit 0 problems**, 450/450 canonical table rows source-covered, 12 pages, 148 sources, 70 flags and 14 questions. Unrelated GEMS files and historical audits unchanged. Also linked the already-merged `692cc7ba` audit/receipts requested for optional integration.
+
+### 49F-04 — PR #95, exact-commit deployment and live receipt
+
+| Item | Result |
+|---|---|
+| Integration PR | **#95** — https://github.com/karagemop466-tech/Korea8/pull/95 |
+| Merge | **MERGED** 2026-11-11T02:40:53Z; merge commit `3a5f1fa3adafce9111bde11e2a1fecd1ac38a57d` |
+| Exact-commit workflow | [42947674530](https://github.com/karagemop466-tech/Korea8/actions/runs/42947674530) — build and deploy **success**, including live HTTPS assertions |
+| Pages API | **built** for `3a5f1fa3adafce9111bde11e2a1fecd1ac38a57d`, no error |
+| Independent live checks | Cache-busted `index.html`, `verification.html`, `flagged-for-review.html`, `audit/2026-11-11-49f9f658/REPORT.md` and `receipts.json` retrieved successfully; integrated 30-record/70-flag content, F-85 and new audit links confirmed |
+| Receipt follow-up | A receipt-only PR updates stale PR #76 deployment metadata to PR #95 and aligns the receipt question count with the preserved 14-row register. No provider fact, ranking, price or scope conclusion changes. |
