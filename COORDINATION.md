@@ -1818,3 +1818,20 @@ All earlier canonical implementation claims end in completed integration receipt
 - First branch pull could not find the not-yet-published session branch; fetched/rebased against `origin/main` instead, then published the fixed session branch successfully. No merge conflict or discarded work.
 
 **Concurrent integration:** PR #78 advanced `main` during publication. Rebased onto `449025a`, retained both board entries, preserved the other session's 11 November spot-check link and data corrections, and regenerated conflicted HTML/reports from the combined generator. No prior work discarded. Generated independent-audit report is also within this session's verification-output scope.
+
+### 331-04 — PR, merge and live deployment receipt (done, 2026-11-11)
+
+| Item | Result |
+|---|---|
+| Integration PR | **#81** — https://github.com/karagemop466-tech/Korea8/pull/81 (`arena/331cafce-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-11T02:16:28Z; merge commit `bcf81b2de07e0abbe06327d1a1bdbe6f03c9eed3` |
+| Exact-commit workflow | [42944881840](https://github.com/karagemop466-tech/Korea8/actions/runs/42944881840) — build, 28/28 verification, 40/40 tests, independent audit, 45-file staging, Pages deploy and live HTTPS assertions **success** for `bcf81b2` |
+| Live site | https://karagemop466-tech.github.io/Korea8/ serves canonical dashboard (Ace/Heise/Rapid Flow call-first, 26 CSLB records, 42 requirements, 60 flags) |
+| Board conflicts | `origin/main` advanced through PR #78 (`arena/20bb5485-korea8`) during this session. Rebase conflicts were confined to the shared board (additive: both session sections kept) and timestamp-only build reports (resolved to regenerated values). No other session's work discarded. Main later advanced through PR #79 (`arena/92cc6407-korea8`); this session rebased cleanly onto it. |
+| Open PRs untouched | #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7 were not merged or closed by this session. |
+
+**Final status.** `331-01`…`331-04` **done**. Irregularities recorded in
+`audit/2026-11-11-331cafce/REPORT.md` §6 are non-blocking and published on the
+Flagged for Review page. No provider contacted/booked/paid. Owner amounts remain
+owner-reported with verified amounts blank. Public artifacts use neutral repair-scope
+language only.
