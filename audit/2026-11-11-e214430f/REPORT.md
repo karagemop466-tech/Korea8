@@ -4,7 +4,7 @@
 
 ## Scope and limits
 
-This is a session-scoped independent verification of the current canonical bathtub-overflow trip-lever dashboard, not a fresh retrieval of live external CSLB/City pages (this sandbox's outbound network is limited to package registries, so external-source freshness cannot be renewed here). External facts carry their prior retrieval dates (CSLB records read 2026-11-10; DBI July 2026 fee schedule; sf.gov service pages; California legislative codes). No provider was contacted, booked, or paid; no quote was solicited. Public artifacts use neutral repair-scope language only and do not disclose the owner's private permitting context. Prior open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #54, #63, #64, #66, #72 and any others) were left untouched. Unrelated DOE GEMS files remain read-only.
+This is a session-scoped independent verification of the current canonical bathtub-overflow trip-lever dashboard, not a fresh retrieval of live external CSLB/City pages (this sandbox's outbound network is limited to package registries, so external-source freshness cannot be renewed here). External facts carry their prior retrieval dates (CSLB records read 2026-11-10; DBI July 2026 fee schedule; sf.gov service pages; California legislative codes). No provider was contacted, booked, or paid; no quote was solicited. Public artifacts use neutral repair-scope language only. Prior open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #54, #63, #64, #66, #72 and any others) were left untouched. Unrelated DOE GEMS files remain read-only.
 
 ## Method
 

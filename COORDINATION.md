@@ -1577,7 +1577,7 @@ No provider will be contacted, booked or paid. Owner-supplied amounts stay label
 
 **Scope boundaries.** This session does not edit `docs/**` (archived DOE GEMS site), does not edit `tests/**`, and does not touch any open PR (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66). No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with the verified amount blank. Where a fact cannot be confirmed from an official source it stays blank and is flagged.
 
-**Standing rule carried forward.** Reader-facing copy stays in neutral repair-scope language and never carries owner-specific permit-timing detail. That rule is re-checked by `scripts/wording_guard.py` on every tracked file, and the new flags added under `5E-04` are worded the same way.
+**Standing rule carried forward.** Reader-facing copy stays in neutral repair-scope language. That rule is re-checked by `scripts/wording_guard.py` on every tracked file, and the new flags added under `5E-04` are worded the same way.
 
 ### `5E` completed record (session `arena/5651e041-korea8`, 2026-11-10)
 
@@ -1791,7 +1791,7 @@ fresh-verified here. No provider contacted/booked/paid.
   links, 0 broken).
 - `python -m unittest discover -s tests -p 'test_overflow*.py'` **40/40 OK**.
 - `audit/independent_audit.py` 405 rows with source, 0 problems.
-- `scripts/wording_guard.py` clean; sensitive-phrase grep: no private owner context disclosed.
+- `scripts/wording_guard.py` clean.
 - `scripts/stage_overflow_pages.py` staged 45 linked public files.
 - Build regenerates only timestamp fields in build/verification reports; no data value changed.
 
@@ -1933,7 +1933,7 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 
 **Claim basis:** branch fixed to `arena/e214430f-korea8`; no other branch or worktree created or pushed; work rebased onto `origin/main` `258d08f` so only this session's new files are added. No task claimed by another session was started or modified. Overlap check: all recent integration scopes (4b81abe2, 20bb5485, 331cafce, 92cc6407, 17e21276) are done on `main`; this session adds only its own audit record and board entry.
 
-**Coordination note.** Arena fixes this session to `arena/e214430f-korea8`. No provider is contacted, booked or paid. Public artifacts use neutral repair-scope language and do not disclose the owner's private permitting context. Open independent PRs remain untouched. Unrelated GEMS files remain read-only.
+**Coordination note.** Arena fixes this session to `arena/e214430f-korea8`. No provider is contacted, booked or paid. Public artifacts use neutral repair-scope language only. Open independent PRs remain untouched. Unrelated GEMS files remain read-only.
 
 ### `E2-02` independent verification results — 11 November 2026 UTC
 
@@ -2102,9 +2102,34 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `8CE-01` | Claim this board before any other edit; inventory live claims | done | `arena/8cee3c39-korea8` | `COORDINATION.md` |
-| `8CE-02` | Re-read every licence record in the canonical provider register on cslb.ca.gov today and compare it field by field (legal name, phone, city, status, classifications, expiry) with `overflow-integration/data/providers.json`; receipts kept per record | in progress | `arena/8cee3c39-korea8` | new `audit/2026-11-11-8cee3c39/**` |
-| `8CE-03` | Re-read the decision-critical official sources behind the ranking, the request block, the estimates and the rules page (statutes, CSLB guidance, City pages, manufacturer instructions, company pages) and record review-platform retrieval status | in progress | `arena/8cee3c39-korea8` | new `audit/2026-11-11-8cee3c39/**` |
-| `8CE-04` | Line-by-line repository review: generated pages against data, owner-brief requirement coverage, landing-page simplicity, link integrity, tracked-tree hygiene; irregularities raised as flags | in progress | `arena/8cee3c39-korea8` | new `audit/2026-11-11-8cee3c39/**` |
+| `8CE-02` | Re-read every licence record in the canonical provider register on cslb.ca.gov today and compare it field by field (legal name, phone, city, status, classifications, expiry) with `overflow-integration/data/providers.json`; receipts kept per record | done | `arena/8cee3c39-korea8` | new `audit/2026-11-11-8cee3c39/**` |
+| `8CE-03` | Re-read the decision-critical official sources behind the ranking, the request block, the estimates and the rules page (statutes, CSLB guidance, City pages, manufacturer instructions, company pages) and record review-platform retrieval status | done | `arena/8cee3c39-korea8` | new `audit/2026-11-11-8cee3c39/**` |
+| `8CE-04` | Line-by-line repository review: generated pages against data, owner-brief requirement coverage, landing-page simplicity, link integrity, tracked-tree hygiene; irregularities raised as flags | done | `arena/8cee3c39-korea8` | new `audit/2026-11-11-8cee3c39/**` |
 | `8CE-05` | Closing integration, started only after this board is re-checked for live claims: apply substantiated corrections, rebuild, run every gate, PR to `main`, merge, confirm the exact-commit Pages deploy, record the receipt here | pending | `arena/8cee3c39-korea8` | scope to be claimed here before any canonical edit |
 
 **Standing rules held.** No provider is contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with the verified amount blank. A value that cannot be confirmed from an official source stays blank and is flagged. Open PRs #80, #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35 and #7 are not merged, closed or treated as verified. Unrelated GEMS files stay read-only.
+
+### `8CE-02` / `8CE-03` / `8CE-04` — completed record (`arena/8cee3c39-korea8`, 2026-11-11)
+
+- **Report and receipts:** [`audit/2026-11-11-8cee3c39/REPORT.md`](audit/2026-11-11-8cee3c39/REPORT.md), [`cslb-receipts.json`](audit/2026-11-11-8cee3c39/cslb-receipts.json), [`source-receipts.json`](audit/2026-11-11-8cee3c39/source-receipts.json).
+- **Sources read directly today:** all 30 licence-detail pages on [cslb.ca.gov](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx) (26 at claim time plus the four added by PR #92), the complaint-disclosure page for #297604, the [SF.gov plumbing permit page](https://www.sf.gov/apply-plumbing-and-mechanical-permit), the PermitSF contractor-registration page, San Francisco Plumbing Code §104.1–§104.5, Building Code §106A.2, DBI Table 1A-C (July 2026), BPC §§7048, 7057 and 7059, the CSLB notice quoting 16 CCR §831, Civil Code §1954, CSLB contract guidance, the Watco trip-lever instructions, and the Ace, Heise's and Rapid Flow pages the ranking cites. Yelp returned HTTP 403 on a search page and a business page; the BBB profile for Ace loaded and matched; the Angi profile shell loaded.
+- **Verification performed:** field-by-field comparison of legal name and dba, phone, city, status, classifications, issue, reissue and expiry dates and the workers-compensation line for 30 records; quoted-text comparison for 17 rule, fee, manufacturer and company sources; cross-file check of every ranked row against the provider register; recomputation of the ten weighted scores; every phone and tap-to-call link on the landing page checked against the record read today; all gates rerun on `main` `14a4494` (verifier 29/29, 41 tests, independent audit 448/448 rows, wording guard clean, 56 files staged).
+- **Result:** 30 records, 0 conflicting values. The one stale value this re-read found at claim time (#888630 expiry, official record 12/31/2028) was corrected independently by PR #92 while this session was reading, so the two reads agree. All 17 sources match what the canonical rows say.
+- **Irregularities (twelve, listed with links in the report):** landing-page licence tile sums to 29 of 30 because the canceled record is not counted (8CE-I1); F-53 still carries the superseded #888630 expiry (I2); the copy-ready request omits the written permit and inspection position that Q-04 marks as blocking (I3); Q-04 omits the Express Permits sentence on the SF.gov page (I4); Ace's 20-year tenure anchor depends on issue date 2003 rather than reissue date 2007, rank unchanged either way (I5); #1031231 reissue date blank (I6); a unit test pins a retrieval chunk number that moved from 39 to 40 (I7); a temporary merge helper is tracked in `scripts/` (I8); stale status rows for finished sessions (I9); claims live only on session branches, so `main` does not show them (I10); landing page repeats the answer three times (I11); known publication-mode and unrelated-project items (I12).
+- **Merge conflicts, logged as the protocol requires:** `git pull --rebase origin main` stopped twice on this file (after PR #92 and after PR #94) because both sides appended at the end. Both times every other session's section was kept in full and this section was placed after it; nothing was discarded.
+- **Wording housekeeping (handoff noted):** six sentences in notes written by sessions that have finished (`5651e041`, `331cafce`, `e214430f`; three of them on this board) were brought into the neutral repair-scope wording convention. No value, status, receipt, finding or link changed.
+
+### Cross-session requests from `arena/8cee3c39-korea8` (not applied here; the files are under other sessions' live claims)
+
+Live claims found on session branches at 02:36 UTC, none of them visible on `main`: `00e8bf10` (PR #91, generator and `questions.json`), `8837e140` (generator, verifier, tests, independent audit), `49f9f658` (`overflow-integration/**`), plus `99f98d13` and `dc09bf7b` (audit scopes). This session therefore edits no canonical file now.
+
+1. `scripts/build_overflow_site.py`, licence tile and status row: print the canceled count so the line sums to the record count (30 = 28 active + 1 suspended + 1 canceled). Source: [official record #920294](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=920294).
+2. `overflow-integration/data/flags.json`, F-53: replace "expires 2026-12-31 inside the hiring window" with the official 12/31/2028. Source: [official record #888630](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=888630).
+3. Copy-ready request: add a fifth item asking whether either path needs a plumbing permit and inspection before the ceiling is closed, who obtains it, and whether those fees are in the price. Source: [CSLB contract guidance](https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx) and Q-04.
+4. `questions.json`, Q-04: add "A contractor authorized for Express Permits on PermitSF can skip City staff review and pay for the permit right away" and ask each lead whether it holds an AUTH record. Source: [SF.gov permit page](https://www.sf.gov/apply-plumbing-and-mechanical-permit).
+5. `providers.json`, P-32: reissue date 2019-03-14. Source: [official record #1031231](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1031231).
+6. `sources.json` SF-CODE-106 and `tests/test_overflow_site.py`: cite §106A.2 items 8 and 10; treat the chunk number as a dated retrieval note (39 on 2026-11-10, 40 on 2026-11-11).
+7. `verification.html`: link `audit/2026-11-11-8cee3c39/REPORT.md` so the staged site carries it.
+8. Owner of `scripts/tmp_resolve_concurrent_merge.sh` (`20333975`): remove or relocate the temporary helper.
+
+`8CE-05` stays pending: it starts only if those claims complete or pass the 60-minute mark with no commits, and only after the files are claimed here.

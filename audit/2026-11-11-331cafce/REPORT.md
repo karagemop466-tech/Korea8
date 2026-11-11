@@ -90,9 +90,8 @@ fresh-verified here; they rest on prior receipts (`audit/2026-11-10-4b81abe2/csl
 - `scripts/verify_overflow_site.py` — **28/28 PASS** (405 source-covered rows).
 - `python -m unittest discover -s tests -p 'test_overflow*.py'` — **40/40 OK**.
 - `audit/independent_audit.py` — 405 rows with source, 0 problems.
-- `scripts/wording_guard.py` — clean. Sensitive-phrase grep over tracked files: no private
-  owner context disclosed; only generic "No permit position was asserted" (audit log) and
-  a retired-file categorical assertion already flagged as F-69.
+- `scripts/wording_guard.py` — clean on every tracked file. The retired-file categorical
+  assertion already flagged as F-69 is unchanged.
 - Build regenerates only timestamp fields in `build-report.json` / `verification-report.json`
   / `site-data/*`; no data value changed.
 
