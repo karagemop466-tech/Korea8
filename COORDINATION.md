@@ -1853,3 +1853,39 @@ language only.
 - Rebase also preserved concurrent PR #81 (`bcf81b2`) board/source metadata updates. Final local result: 28/28 checks, 40/40 tests, 405 source-covered rows, independent audit zero problems and 47 linked public files staged.
 - Non-blocking workflow annotations report action-runtime deprecation and runner-image migration. The build/deploy succeeded. No unrelated workflow was modified.
 - All existing unverified job-specific items remain published. Provider facts were not independently refreshed by this session. Older open PRs remain untouched.
+
+
+
+
+
+---
+
+## Session `arena/17e21276-korea8` — publication and current-decision audit
+
+| ID | Task | Status | Owner | Scope |
+|---|---|---|---|---|
+| 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | done | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
+| 17E-02 | Link the new audit into the canonical dashboard, verify and publish | in progress | `arena/17e21276-korea8` | `scripts/build_overflow_site.py`, `overflow-integration/data/flags.json`, generated canonical HTML and reports, `site-data/**`, `COORDINATION.md` |
+
+The Arena branch is fixed; no other branch or worktree will be created or pushed. Older task rows are historical; recent open PRs remain untouched. No provider has been contacted, booked or paid. Public material will use neutral repair-scope language.
+
+17E handoff: recent integration scopes were marked done by their owners; open independent PRs are over 20 hours old and remain untouched. The previous Pages source-mode change was denied; retry documented in this audit. Automated checks passed locally before integration; they do not independently prove all external claims.
+
+### 17E current review — 11 November 2026 UTC
+
+- `17E-01` is done. Targeted report: `audit/2026-11-11-17e21276/REPORT.md`; it records source links, timestamps and limitations. Re-read official CSLB records #829071, #1089561, #1115649 and #1024971, Ace's contact page, Rapid Flow's services and selected Heise case pages. This is a spot-check, not a fresh line-by-line verification of all repository content.
+- Added F-70: the fetched Heise project pages show both project narrative and 404 text in the body, and the company index shows mismatched categories. No HTTP error is inferred from body text. Existing F-34/F-52 remain open: Pages API reports legacy root publishing and this public repository is not private. The official API rejected a source-mode update with HTTP 403; no configuration change was made.
+- Yelp Ace page returned HTTP 403. No company contacted, booked, paid, or confirmed as available; historical amounts are owner-reported, unlike scopes, with verified fields blank.
+- Local verification: build, 28/28 checks, 40/40 tests, independent audit 406 rows and zero internal-link problems, 46 staged files, wording guard and `git diff --check` clean. These checks do not independently establish the accuracy of every claim or external-link availability.
+
+**Concurrent integration and conflict:** PR #78 (`arena/20bb5485-korea8`) merged while this session was working, after the last pre-claim fetch. Its integration claim was therefore not visible at claim time. Rebase conflicted in the board and generated reports/pages; both board entries and all of PR #78's F-52 and audit-link changes were retained. The combined generator and data were rebuilt rather than selecting one generated side. PR #78 is already merged; its in-progress board row is preserved as written by its owner. No further change to its unique audit files was made.
+
+**Second concurrent integration:** PR #81 (`arena/331cafce-korea8`) merged after PR #78 while this branch was being prepared. Rebase produced a board conflict; both session records and PR #81's independent audit files were preserved. This session's prior local checks preceded that merge; the combined tree was checked again below.
+
+**Third concurrent integration:** PR #79 (`arena/92cc6407-korea8`) advanced `main` during rebase. Its reproducibility audit and both generated audit links were retained alongside this session's link; generated conflicts were rebuilt from the combined generator. Board conflict was resolved by retaining both records. No other session's work was discarded.
+
+**Fourth concurrent integration:** PR #84 recorded the PR #81 deployment receipt on `main`. The shared-board conflict was resolved preserving both sessions’ records.
+
+**Fifth concurrent integration:** PR #82 added the PR #78 deployment receipt. The board conflict was resolved preserving both records.
+
+**Sixth concurrent integration:** PR #85 added the PR #79 deployment receipt. The board conflict was resolved preserving both records.

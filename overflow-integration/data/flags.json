@@ -930,6 +930,21 @@
       ],
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
       "status": "Open — retired file not modified"
+    },
+    {
+      "id": "F-70",
+      "severity": "Medium",
+      "category": "Source reliability",
+      "title": "Heise project pages contain conflicting 404 text",
+      "detail": "On 11 November 2026 UTC the fetched Ingleside, Panhandle and Mission project pages included substantive project narratives alongside a Page Not Found (404) message in the body. The property-maintenance index also linked cases under mismatched project categories. The cause and impact are unconfirmed; body text alone does not establish an HTTP error.",
+      "action": "Reopen the company case and confirm the specific experience and restoration arrangements with the company; treat project narratives as self-reported, not independent proof.",
+      "source_ids": [
+        "HEISE-INGLESIDE",
+        "HEISE-PANHANDLE",
+        "HEISE"
+      ],
+      "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "status": "Open"
     }
   ]
 }
