@@ -1885,3 +1885,5 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 **Third concurrent integration:** PR #79 (`arena/92cc6407-korea8`) advanced `main` during rebase. Its reproducibility audit and both generated audit links were retained alongside this session's link; generated conflicts were rebuilt from the combined generator. Board conflict was resolved by retaining both records. No other session's work was discarded.
 
 **Fourth concurrent integration:** PR #84 recorded the PR #81 deployment receipt on `main`. The shared-board conflict was resolved preserving both sessions’ records.
+
+**Fifth concurrent integration:** PR #82 added the PR #78 deployment receipt. The board conflict was resolved preserving both records.
