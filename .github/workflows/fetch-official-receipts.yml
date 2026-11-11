@@ -1,0 +1,64 @@
+name: Fetch official-source receipts
+
+on:
+  push:
+    paths:
+      - 'audit/2026-11-11-99f98d13/run-receipts'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Optional space-separated licence numbers (blank = every licence in the register)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  receipts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve official pages and hash the responses
+        id: retrieve
+        continue-on-error: true
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          set -o pipefail
+          if [ -n "$ONLY" ]; then
+            python scripts/fetch_official_receipts.py --out build/receipts --only $ONLY 2>&1 | tee /tmp/receipts.log
+          else
+            python scripts/fetch_official_receipts.py --out build/receipts 2>&1 | tee /tmp/receipts.log
+          fi
+      - name: Show a compact summary
+        if: always()
+        run: |
+          sed -n '1,400p' /tmp/receipts.log || true
+          python - <<'PY'
+          import json, pathlib
+          p = pathlib.Path('build/receipts/official-receipts.json')
+          if not p.exists():
+              print('no receipt file written'); raise SystemExit(0)
+          d = json.loads(p.read_text())
+          print(f"SUMMARY licences={len(d['licences'])} sources={len(d['sources'])} failures={len(d['failures'])}")
+          for f in d['failures']:
+              print('  FAILED', f['target'], f['error'])
+          PY
+      - name: Commit the receipts back to this branch
+        if: always()
+        run: |
+          mkdir -p audit/2026-11-11-99f98d13/receipts
+          if [ -f build/receipts/official-receipts.json ]; then
+            cp build/receipts/official-receipts.json audit/2026-11-11-99f98d13/receipts/official-receipts.json
+            git config user.name "official-source receipts"
+            git config user.email "actions@users.noreply.github.com"
+            git add audit/2026-11-11-99f98d13/receipts/official-receipts.json
+            git diff --cached --quiet || git commit -m "99-02: official-source receipt retrieval ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          else
+            echo "no receipts to commit"
+          fi
