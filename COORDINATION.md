@@ -1916,3 +1916,40 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - [PR #83](https://github.com/karagemop466-tech/Korea8/pull/83) merged 2026-11-11 02:18:21 UTC, merge commit `258d08f809c7f04dc690d2f8a4ed5ed7d6a8d81e`.
 - [Exact-commit Pages workflow run 42945103895](https://github.com/karagemop466-tech/Korea8/actions/runs/42945103895) completed successfully, including build, checks, staging, deployment and its HTTPS checks. The live flagged page displayed 61 items and the new audit route was retrieved. Later deployments may supersede this exact commit.
 - GitHub returned an actions Node deprecation warning; build and deploy succeeded. Pages mode remains legacy and the public repository is not private. External links and all assertions have not been independently reverified line by line in this session.
+
+
+---
+
+---
+
+## Session `arena/e214430f-korea8` — independent verification and publication receipt (2026-11-11)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `E2-01` | Claim board and inventory active work | done | `arena/e214430f-korea8` | `COORDINATION.md` |
+| `E2-02` | Independently verify the current canonical dashboard (build, verifier, tests, wording guard, independent audit, public staging) | done | `arena/e214430f-korea8` | `overflow-integration/**` (read-only execution only), `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `scripts/wording_guard.py`, `audit/independent_audit.py`, `scripts/stage_overflow_pages.py` (read-only execution only) |
+| `E2-03` | Publish independent verification record and board entry | done | `arena/e214430f-korea8` | `audit/2026-11-11-e214430f/REPORT.md`, `COORDINATION.md` |
+| `E2-04` | Open PR from this branch to `main`, merge, verify GitHub Pages deploy, record PR link and merge result | in progress | `arena/e214430f-korea8` | `COORDINATION.md` (receipt update after merge) |
+
+**Claim basis:** branch fixed to `arena/e214430f-korea8`; no other branch or worktree created or pushed; work rebased onto `origin/main` `258d08f` so only this session's new files are added. No task claimed by another session was started or modified. Overlap check: all recent integration scopes (4b81abe2, 20bb5485, 331cafce, 92cc6407, 17e21276) are done on `main`; this session adds only its own audit record and board entry.
+
+**Coordination note.** Arena fixes this session to `arena/e214430f-korea8`. No provider is contacted, booked or paid. Public artifacts use neutral repair-scope language and do not disclose the owner's private permitting context. Open independent PRs remain untouched. Unrelated GEMS files remain read-only.
+
+### `E2-02` independent verification results — 11 November 2026 UTC
+
+- Rebased onto `origin/main` `258d08f`; `git diff --check` clean.
+- `build_overflow_site.py`: build report OK (29 providers, 26 CSLB records, 25 active, 1 suspended — Kenneth Asire #1027286 excluded from hiring — 3 identity-unresolved identities left blank, 6 B + C-36 leads, 1 C-9 restoration partner, 42 requirements, 3 owner-reported estimates with verified amounts blank, 6 cost drivers, 135 sources, 61 flags, 10 ranked leads, 18 not-recommended identities).
+- `verify_overflow_site.py`: 28/28 PASS (406 source-covered rows, 68 pages, 281 internal links, 0 offenders; blank-vs-unverified discipline; suspended provider excluded; owner amounts owner-reported; review ratings/counts blank).
+- `tests/test_overflow*.py`: 40/40 OK.
+- `wording_guard.py`: clean, exit 0.
+- `audit/independent_audit.py`: PASS (pages=11, rows=406, with_source=406, internal_links=221, problems=0).
+- `stage_overflow_pages.py`: 48 linked public files staged; no repository internals exposed.
+- Record: `audit/2026-11-11-e214430f/REPORT.md`.
+
+### `E2-04` PR, merge and deployment receipt (pending)
+
+- Integration PR: to be created from `arena/e214430f-korea8` to `main`.
+- Live dashboard: https://karagemop466-tech.github.io/Korea8/ (GitHub Pages, source `main` path `/`, latest legacy build `built` with no error).
+- Irregularities carried forward (non-blocking, published on the Flagged for Review page): F-34 and F-52 (Pages legacy root publication; public repository exposure; Pages source-mode change denied with HTTP 403), F-70 (Heise case page body contradiction — reconfirm directly). All other open items and the owner-reported estimate amounts are published and flagged.
+
+
