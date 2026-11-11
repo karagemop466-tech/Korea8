@@ -1743,7 +1743,7 @@ Arena fixes this session to the existing branch. Prior historical in-progress en
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
 | `20BB-01` | Independently review current canonical dashboard, source verification, tests and publication; record material gaps | done | `arena/20bb5485-korea8` | `audit/2026-11-11-20bb5485/**`, `COORDINATION.md` |
-| `20BB-02` | Integrate any substantiated corrections and publish if safe, after checking other sessions' claims | in progress | `arena/20bb5485-korea8` | Scope to be claimed after audit |
+| `20BB-02` | Integrate any substantiated corrections and publish if safe, after checking other sessions' claims | done | `arena/20bb5485-korea8` | Scope to be claimed after audit |
 
 ### `20BB-02` integration claim — 2026-11-11 UTC
 
@@ -1835,3 +1835,14 @@ All earlier canonical implementation claims end in completed integration receipt
 Flagged for Review page. No provider contacted/booked/paid. Owner amounts remain
 owner-reported with verified amounts blank. Public artifacts use neutral repair-scope
 language only.
+### `20BB-02` publication receipt
+
+- Integration [PR #78](https://github.com/karagemop466-tech/Korea8/pull/78) **merged** 2026-11-11T02:15:40Z as `449025a4489f7496099fc807d4b779f3e2b4d0d2`.
+- Exact-commit [workflow 42944787447](https://github.com/karagemop466-tech/Korea8/actions/runs/42944787447) completed successfully, including build, tests, staging, deploy and HTTPS assertions; legacy Pages API also reports built for the merge commit. The [live verification page](https://karagemop466-tech.github.io/Korea8/verification.html?deployment=449025a) and new [targeted report](https://karagemop466-tech.github.io/Korea8/audit/2026-11-11-20bb5485/REPORT.md?deployment=449025a) were fetched independently.
+- The dual publication configuration remains a flagged limitation; the settings API rejected the attempted correction. No current provider acceptance or all-in quote was obtained.
+
+**Conflict resolution:** On 2026-11-11 PR #81 advanced `main` during the receipt update. Rebase conflicted in this shared board; both the 331 session record and the 20BB publication receipt were retained, with no other session work discarded.
+
+**Second conflict resolution:** PR #79 advanced main while the receipt update was rebased; the shared board conflict was resolved by retaining both the 92 session record and the 20BB receipt. No work discarded.
+
+**Third conflict resolution:** PR #84 advanced main during the receipt update; both 331 and 20BB board records were retained in the rebase. No work discarded.
