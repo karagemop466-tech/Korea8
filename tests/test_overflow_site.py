@@ -5,7 +5,7 @@ def load(n):return json.loads((DATA/n).read_text())
 class DataTests(unittest.TestCase):
  def test_source_ids_resolve(self):
   srcs={s['id'] for s in load('sources.json')['rows']}
-  for name in ['providers.json','requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
+  for name in ['providers.json','requirements.json','technical.json','compliance.json','reviews.json','flags.json','questions.json']:
    for r in load(name)['rows']:
     for i in r.get('source_ids',[]):self.assertIn(i,srcs,f'{name}:{r.get("id")}')
  def test_estimates_owner_reported_verified_blank(self):
@@ -26,7 +26,7 @@ class DataTests(unittest.TestCase):
   for r in load('requirements.json')['rows']:self.assertTrue(r['official_url'].startswith('https://'));self.assertTrue(r['source_ids'])
 class SiteTests(unittest.TestCase):
  def test_pages_exist_and_nav(self):
-  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+  pages=['index.html','executive-summary.html','decision-analysis.html','requirements.html','questions.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
   for p in pages:
    t=(ROOT/p).read_text();self.assertIn('<!doctype html>',t)
    for q in pages:self.assertIn(f'href="{q}"',t)
@@ -146,4 +146,23 @@ class MergedReviewAndRequestTests(unittest.TestCase):
   rows=load('flags.json')['rows'];ids=[x['id'] for x in rows]
   self.assertEqual(len(ids),len(set(ids)))
   self.assertIn('F-52',ids)
-  for i in range(65,70):self.assertIn(f'F-{i}',ids)
+  for i in range(65,72):self.assertIn(f'F-{i}',ids)
+  for i in (78,79,80,81,82,83,84):self.assertIn(f'F-{i}',ids)
+ def test_20261111_cslb_corrections_and_questions_register(self):
+  p={x['id']:x for x in load('providers.json')['rows']}
+  self.assertEqual(p['P-27']['expiry'],'2028-12-31')
+  self.assertEqual(p['P-27']['issue_date'],'2006-12-21')
+  self.assertEqual(p['P-33']['status'],'Canceled')
+  self.assertEqual(p['P-32']['classifications'],['C-9','B'])
+  self.assertEqual(p['P-32']['phone'],'(415) 756-4958')
+  self.assertTrue(p['P-02']['source_timestamp'].find('checked 2026-11-10')>=0)
+  q=load('questions.json')['rows']
+  self.assertGreaterEqual(len(q),12)
+  self.assertTrue(all(r['official_url'].startswith('https://') and r['source_ids'] for r in q))
+  html=(ROOT/'questions.html').read_text()
+  self.assertIn('id="questions-table"',html)
+  self.assertIn('Q-04',html)
+  self.assertIn('Veterans Day',(ROOT/'code-and-permit.html').read_text())
+  held={r['provider_id']:r for r in load('ranking.json')['not_recommended']}
+  self.assertNotIn('2026-12-31',held['P-27']['reason'])
+  self.assertIn('2028-12-31',held['P-27']['reason'])

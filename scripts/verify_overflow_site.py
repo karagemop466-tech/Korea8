@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime,html
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','questions.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -89,6 +89,7 @@ def main():
  prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
  check('requirement count parity',len(parsed['requirements.html'].tables.get('requirements-table',[]))==len(req))
+ check('questions count parity',len(parsed['questions.html'].tables.get('questions-table',[]))==len(load('questions.json')['rows']))
  check('estimate count parity',len(parsed['estimates.html'].tables.get('estimates-table',[]))==len(est['rows']))
  check('cost drivers table parity',len(parsed['estimates.html'].tables.get('cost-drivers-table',[]))==len(est.get('cost_drivers',[])) and len(est.get('cost_drivers',[]))>=6)
  check('source count parity',len(parsed['sources.html'].tables.get('sources-table',[]))==len(srcs))
@@ -109,7 +110,7 @@ def main():
  check('no numeric star ratings in canonical pages',not re.search(r'\d(?:\.\d)?\s*(?:stars|out of 5)',' '.join(texts.values()),re.I))
  # all source ids resolve and official urls are https
  bad=[]
- for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json']:
+ for name in ['requirements.json','technical.json','compliance.json','reviews.json','flags.json','questions.json']:
   for r in load(name)['rows']:
    for i in r.get('source_ids',[]):
     if i not in srcs:bad.append(f'{name}:{r.get("id")}:{i}')

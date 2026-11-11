@@ -5,7 +5,7 @@ discipline are re-parsed from the published HTML with this script alone."""
 import re, sys, json, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PAGES = ["index.html", "executive-summary.html", "requirements.html", "providers.html",
+PAGES = ["index.html", "executive-summary.html", "requirements.html", "questions.html", "providers.html",
          "estimates.html", "technical-approach.html", "code-and-permit.html",
          "sources.html", "verification.html", "flagged-for-review.html", "decision-analysis.html"]
 def is_official(url):
@@ -24,7 +24,7 @@ def is_official(url):
         "fastresponseplumbingsf.com", "wedoconstructions.com", "sfbuildinggroup.com",
         "rapidflowbayarea.com", "aceplumbingandrooter.com", "diamondcertified.org",
         "amlegal.com", "ayoobpeery.com", "bernalhilldrywall.com", "atlasplumbingandrooter.com",
-        "24-7rooter.com", "plumbingpro.com", "cjplumbing.net",
+        "24-7rooter.com", "plumbingpro.com", "cjplumbing.net", "amadorsdrywall.com",
         "docs.github.com", "api.github.com"))
 BLANK_MARK = re.compile(r"blank|unverified|not (captured|confirmed|available|retrieved)|—|\?\?", re.I)
 

@@ -1,0 +1,48 @@
+{
+  "audit_session": "arena/20333975-korea8",
+  "checked": "2026-11-11",
+  "rows": [
+    {
+      "id": "SF-PERMIT",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "result": "Live banner present: City offices will be closed on Wednesday, November 11 for Veterans Day. Permit trigger, eligible classes, help desk 628-652-4900, inspection before covering, and two-business-day voicemail commitment unchanged. Banner does not state that online PermitSF filing is unavailable.",
+      "status": "confirmed"
+    },
+    {
+      "id": "SF-PLANNING-PERMITS",
+      "url": "https://sfplanning.org/permits",
+      "result": "Live banner: City offices will be closed on Wednesday, November 11 in observance of Veterans Day. Permit Center 49 South Van Ness.",
+      "status": "confirmed"
+    },
+    {
+      "id": "SF-FEES",
+      "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "result": "July 2026 Table 1A-C: Category 1P $290, Category 11P/M $320, regular inspection $519/hour, off-hour $555/hour, reinspection $259/half hour. Matches canonical fee rows.",
+      "status": "confirmed"
+    },
+    {
+      "id": "HEISE-INGLESIDE",
+      "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "result": "Project text still present: Accessed the exterior ceiling to remove the old overflow, installed a new brass P-trap and trap adapter, and replaced the tub waste and overflow assembly. A 404 widget also appeared in the same capture.",
+      "status": "confirmed-with-widget-noise"
+    },
+    {
+      "id": "AMADOR",
+      "url": "https://www.amadorsdrywall.com/",
+      "result": "Company describes licensed drywall and general-contractor work including small repairs and tenant improvements.",
+      "status": "confirmed"
+    },
+    {
+      "id": "AMADOR-CONTACT",
+      "url": "https://www.amadorsdrywall.com/contact",
+      "result": "Headquarters 235 Grand Avenue Suite 201, South San Francisco CA 94080; phone (628) 529-7248. Address matches CSLB; phone does not.",
+      "status": "phone-discrepancy"
+    },
+    {
+      "id": "YELP-SEARCH",
+      "url": "https://www.yelp.com/search?find_desc=Plumbing&find_loc=San+Francisco%2C+CA",
+      "result": "Search-index excerpts still name Ace, Fast Response, Bay Area, Portola, Starboy, Pipe Whisperer, Atlas and Eric Brand. Numeric ratings not used. Eric Brand is canceled on CSLB. Portola still has no CSLB match.",
+      "status": "discovery-only"
+    }
+  ]
+}

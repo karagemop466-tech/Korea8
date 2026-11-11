@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-10",
+  "as_of": "2026-11-11",
   "rows": [
     {
       "id": "C-01",
@@ -145,12 +145,13 @@
     {
       "id": "C-14",
       "topic": "City office closure affecting permit timing",
-      "rule": "The sf.gov plumbing and mechanical permit page carried a live banner on 2026-11-10 reading: \"City offices will be closed on Wednesday, November 11 for Veterans Day.\" The same page states that for the Permit Center help desk, \"Leave a voicemail and include your email address. We will contact you within 2 business days.\"",
+      "rule": "The sf.gov plumbing and mechanical permit page carried a live banner on 2026-11-10 and still carried it when retrieved on 2026-11-11 reading: \"City offices will be closed on Wednesday, November 11 for Veterans Day.\" SF Planning’s Permit Center page displayed the same observance wording on 2026-11-11. The sf.gov page states that for the Permit Center help desk, \"Leave a voicemail and include your email address. We will contact you within 2 business days.\"",
       "source_ids": [
-        "SF-PERMIT"
+        "SF-PERMIT",
+        "SF-PLANNING-PERMITS"
       ],
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
-      "application": "The Permit Center help desk (628-652-4900) and the counter at 49 South Van Ness are closed on 2026-11-11; the next business day for an in-person determination is Thursday 2026-11-12. A help-desk question left on 2026-11-10 should draw a response by 2026-11-13 on the City’s two-business-day commitment. The banner does not state that online PermitSF filing is unavailable, so do not infer an online outage."
+      "application": "Today is Wednesday 2026-11-11. The Permit Center help desk (628-652-4900) and the counter at 49 South Van Ness are closed. The next business day for an in-person determination is Thursday 2026-11-12. The banner does not state that online PermitSF filing is unavailable, so do not infer an online outage."
     },
     {
       "id": "C-15",
