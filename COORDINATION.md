@@ -1800,3 +1800,11 @@ fresh-verified here. No provider contacted/booked/paid.
 PR from `arena/331cafce-korea8` to `main` to follow. Open PRs #72, #66, #64, #63, #53,
 #51, #49, #44, #39, #38, #35, #7 remain untouched. Flagged irregularities and unverified
 items do not block merge; they remain published on the Flagged for Review page.
+## Session `arena/92cc6407-korea8` — 2026-11-11 reproducibility and publication audit
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| 92-01 | Claim isolated audit scope and check existing implementation | in progress | `arena/92cc6407-korea8` | `COORDINATION.md`, `audit/2026-11-11-92cc6407/**` |
+| 92-02 | Link current reproducibility audit; test and publish through PR | in progress | `arena/92cc6407-korea8` | canonical generator audit-link section, generated `verification.html`, generated build/verification reports |
+
+All earlier canonical implementation claims end in completed integration receipts; stale open PRs remain untouched. This session uses only the Arena-pinned branch. Existing provider facts retain their original source-check dates. Network access in this session is limited to GitHub and package registries, so direct external-source re-verification cannot be claimed. No contractor contact, booking or payment is authorized or performed. Public outputs use neutral repair-scope wording.
