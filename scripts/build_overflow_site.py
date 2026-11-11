@@ -298,7 +298,7 @@ body = '<div class="panel"><h2>11 November reproducibility audit</h2><p><a href=
 # Add a dated, explicitly scoped independent spot-check to the verification page.
 verification_path = ROOT / 'verification.html'
 verification_html = verification_path.read_text(encoding='utf-8')
-verification_html = verification_html.replace('</main>', '<p><strong>11 November targeted spot-check:</strong> <a href="audit/2026-11-11-20bb5485/REPORT.md">Top-three sources, permit guidance and Pages configuration review</a>. This is not a full fresh verification of all entries.</p></main>', 1)
+verification_html = verification_html.replace('</main>', '<p><strong>11 November targeted spot-check:</strong> <a href="audit/2026-11-11-20bb5485/REPORT.md">Top-three sources, permit guidance and Pages configuration review</a>. This is not a full fresh verification of all entries.</p><p><strong>11 November final-integration verification (331cafce):</strong> <a href="audit/2026-11-11-331cafce/REPORT.md">7 CSLB records, SF.gov permit page, BPC 7059(a) and Heise case re-read; Yelp HTTP 403; 28/28 checks</a> · <a href="audit/2026-11-11-331cafce/receipts.json">Receipts JSON</a>.</p></main>', 1)
 verification_path.write_text(verification_html, encoding='utf-8')
 # CSS
 css='''
