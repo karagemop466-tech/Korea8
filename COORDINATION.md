@@ -1865,6 +1865,8 @@ language only.
 | ID | Task | Status | Owner | Scope |
 |---|---|---|---|---|
 | 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | in progress | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
-| 17E-02 | Integrate any needed corrections after checking for overlapping active claims, verify and publish | unclaimed | — | To be determined after audit |
+| 17E-02 | Link the new audit into the canonical dashboard, verify and publish | in progress | `arena/17e21276-korea8` | `scripts/build_overflow_site.py`, generated canonical HTML and reports, `site-data/**`, `COORDINATION.md` |
 
 The Arena branch is fixed; no other branch or worktree will be created or pushed. Older task rows are historical; recent open PRs remain untouched. No provider has been contacted, booked or paid. Public material will use neutral repair-scope language.
+
+17E handoff: recent integration scopes were marked done by their owners; open independent PRs are over 20 hours old and remain untouched. The previous Pages source-mode change was denied; retry documented in this audit. Automated checks passed locally before integration; they do not independently prove all external claims.
