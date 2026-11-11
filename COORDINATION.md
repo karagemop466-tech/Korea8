@@ -1964,7 +1964,7 @@ to cite are rendered as panels rather than tables, so no unsourced table row was
 
 **Verification performed.** `build_overflow_site.py` ok (12 pages); `verify_overflow_site.py` **35/35 PASS** (was 28/28 —
 seven new checks cover question parity, official anchoring, blank-vs-unanswered discipline, count parity, build-report
-parity and a private-context scan); `unittest discover -p 'test_overflow*.py'` **45/45 OK** (five new tests);
+parity and a scan for undisclosed owner context); `unittest discover -p 'test_overflow*.py'` **45/45 OK** (five new tests);
 `audit/independent_audit.py` **12 pages, 440/440 rows source-linked, 252 internal links, 0 problems**;
 `stage_overflow_pages.py` 53 linked public files with no repository internals; `wording_guard.py` clean; `git diff --check` clean.
 
