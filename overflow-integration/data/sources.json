@@ -1568,6 +1568,18 @@
       "retrieval": "direct",
       "supports": "Archived findings.json contains a categorical job-permit assertion. The file is not linked into the canonical staged site.",
       "limitations": "Retired owner-draft data; preserved for history and not used as an official permit determination."
+    },
+    {
+      "id": "AUDIT-20261111-61",
+      "url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-11-611bd0aa/REPORT.md",
+      "title": "2026-11-11 fresh re-verification and repo review (611bd0aa)",
+      "publisher": "Korea8 Repository",
+      "kind": "repository-primary",
+      "official": false,
+      "checked": "2026-11-11",
+      "retrieval": "direct",
+      "supports": "Fresh CSLB reads for seven records, SF.gov permit service, BPC 7059 text, ranking recompute and line-by-line repo review; ranking array order correction.",
+      "limitations": "Repository audit cross-referenced to official sources; not a government record or proof of provider performance, availability or acceptance."
     }
   ]
 }

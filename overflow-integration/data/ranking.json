@@ -384,39 +384,6 @@
       "review_evidence": "RV-09 (bathtub and shower drain leak repair photos; apartment-specific account) · no direct Yelp profile excerpt was found"
     },
     {
-      "provider_id": "P-16",
-      "name": "Discount Plumbing Rooter Services",
-      "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
-      "license": "1140843",
-      "classifications": [
-        "C-36",
-        "A"
-      ],
-      "status": "Current and active",
-      "phone": "(650) 991-2100",
-      "city": "Burlingame",
-      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
-      "website": "",
-      "source_ids": [
-        "CSLB-1140843",
-        "BPC-7059"
-      ],
-      "flags": [],
-      "score_components": {
-        "C1": 2,
-        "C2": 1,
-        "C3": 3,
-        "C4": 1,
-        "C5": 1
-      },
-      "why": "C-36 + A with an unusually complete insurance file on the CSLB record: workers compensation, $2,000,000 liability and a $100,000 LLC employee/worker bond. A General Engineering is not B General Building or C-9 Drywall, so no combined building/drywall capability is inferred. No tub-overflow or occupied-unit evidence was found; the licence was issued in 2025 and the firm is registered in Burlingame.",
-      "cost_amount_owner": null,
-      "cost_note": "No quote on file.",
-      "ask": "Ask whether San Francisco occupied-unit repair work is accepted and who holds the drywall classification.",
-      "short_why": "C-36 + A with $2M liability and LLC bond on file; A is not B/C-9 and no restoration evidence was found",
-      "review_evidence": "No direct Yelp profile excerpt was found · no BBB or Angi row on file for this candidate"
-    },
-    {
       "provider_id": "P-06",
       "name": "Fast Response Plumbing & Rooter",
       "legal_name": "JOSEPH TINSLEY · dba FAST RESPONSE PLUMBING AND ROOTER",
@@ -455,6 +422,39 @@
       "ask": "Ask what happens if adjustment fails, and request a replacement scope with ceiling access priced separately. Final verification gate: Clarify whether adjustment can free this stuck assembly; price fallback separately.",
       "short_why": "C-36 only; the $135 quote is adjustment-only, and workers comp expires 2026-12-18",
       "review_evidence": "RV-14 (BBB A+, not accredited) and RV-22 (ceiling-leak listing excerpt) · no direct Yelp profile excerpt was found"
+    },
+    {
+      "provider_id": "P-16",
+      "name": "Discount Plumbing Rooter Services",
+      "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "license": "1140843",
+      "classifications": [
+        "C-36",
+        "A"
+      ],
+      "status": "Current and active",
+      "phone": "(650) 991-2100",
+      "city": "Burlingame",
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "website": "",
+      "source_ids": [
+        "CSLB-1140843",
+        "BPC-7059"
+      ],
+      "flags": [],
+      "score_components": {
+        "C1": 2,
+        "C2": 1,
+        "C3": 3,
+        "C4": 1,
+        "C5": 1
+      },
+      "why": "C-36 + A with an unusually complete insurance file on the CSLB record: workers compensation, $2,000,000 liability and a $100,000 LLC employee/worker bond. A General Engineering is not B General Building or C-9 Drywall, so no combined building/drywall capability is inferred. No tub-overflow or occupied-unit evidence was found; the licence was issued in 2025 and the firm is registered in Burlingame.",
+      "cost_amount_owner": null,
+      "cost_note": "No quote on file.",
+      "ask": "Ask whether San Francisco occupied-unit repair work is accepted and who holds the drywall classification.",
+      "short_why": "C-36 + A with $2M liability and LLC bond on file; A is not B/C-9 and no restoration evidence was found",
+      "review_evidence": "No direct Yelp profile excerpt was found · no BBB or Angi row on file for this candidate"
     }
   ],
   "partner": {

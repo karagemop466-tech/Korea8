@@ -930,6 +930,21 @@
       ],
       "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
       "status": "Open — retired file not modified"
+    },
+    {
+      "id": "F-70",
+      "severity": "Low",
+      "category": "Ranking data order",
+      "title": "Ranking array order differed from the published order",
+      "detail": "ranking.json listed Discount Plumbing Rooter Services before Fast Response Plumbing & Rooter, while the generator sorts by weighted score and the published pages and final verification note place Fast Response #9 (2.20) and Discount #10 (1.70). The published order was correct; only the stored array order differed.",
+      "action": "Reordered the stored array to the published score order on 2026-11-11. No score, weight or published rank changed; the generator output is identical before and after.",
+      "source_ids": [
+        "AUDIT-20261111-61",
+        "REPO",
+        "CSLB-829071"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-11-611bd0aa/REPORT.md",
+      "status": "Open — corrected 2026-11-11; published order unchanged"
     }
   ]
 }

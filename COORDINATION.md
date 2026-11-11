@@ -1824,9 +1824,19 @@ All earlier canonical implementation claims end in completed integration receipt
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| `61-01` | Claim board on `COORDINATION.md` and push immediately | in progress | `arena/611bd0aa-korea8` | `COORDINATION.md` |
-| `61-02` | Fresh official-source re-verification (CSLB top leads, SF.gov permit service, BPC §7059) and line-by-line repo review | unclaimed | `arena/611bd0aa-korea8` | `audit/2026-11-11-611bd0aa/**` |
-| `61-03` | Apply only evidenced corrections; rebuild and run full verification suite | unclaimed | `arena/611bd0aa-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only if an evidenced correction is required |
-| `61-04` | Open PR to `main`, merge, confirm Pages deploy and record receipt | unclaimed | `arena/611bd0aa-korea8` | `COORDINATION.md`, deployment records and generated public output |
+| `61-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/611bd0aa-korea8` | `COORDINATION.md` |
+| `61-02` | Fresh official-source re-verification (CSLB top leads, SF.gov permit service, BPC §7059) and line-by-line repo review | done | `arena/611bd0aa-korea8` | `audit/2026-11-11-611bd0aa/**` |
+| `61-03` | Apply only evidenced corrections; rebuild and run full verification suite | done | `arena/611bd0aa-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only if an evidenced correction is required |
+| `61-04` | Open PR to `main`, merge, confirm Pages deploy and record receipt | in progress | `arena/611bd0aa-korea8` | `COORDINATION.md`, deployment records and generated public output |
 
 **Coordination note.** Arena pins this session to `arena/611bd0aa-korea8`; no other branch or worktree will be created or pushed. Baseline is `main` at `b491225` (PR #77 merge). Earlier canonical handoffs are merged (PR #76, PR #77); open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72) are independent audits and will not be merged, closed or treated as verified without review. Unrelated DOE GEMS files remain read-only. No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
+
+### `61-02` & `61-03` — completed record (`arena/611bd0aa-korea8`, 2026-11-11)
+
+- **Reports:** [`audit/2026-11-11-611bd0aa/REPORT.md`](audit/2026-11-11-611bd0aa/REPORT.md) and [`audit/2026-11-11-611bd0aa/receipts.json`](audit/2026-11-11-611bd0aa/receipts.json), linked from `verification.html`.
+- **Fresh reads (2026-11-11):** seven CSLB licence-detail pages (#829071, #1089561, #1115649, #995163, #977638, #1024971, #1027286) all matched the canonical register on legal name, phone, status, classifications, expiry and issue date (board banner "Data current as of 11/10/2026"). SF.gov permit service and BPC §7059(a) text re-read and matched the published permit/licensing analysis, including the 2026-11-11 Veterans Day closure note and the 2026-11-12 next-business-day note.
+- **Ranking recompute:** weights sum to 1.00; recomputed scores 3.85, 3.45, 3.15, 3.15, 2.95, 2.90, 2.60, 2.55, 2.20, 1.70 match the published order. Ranks 3/4 tie at 3.15; the published higher-C2 tie-break places Rapid Flow #3.
+- **Correction (F-70):** the stored `ranking.json` array listed Discount before Fast Response while the generator sorts by score and all published pages place Fast Response #9 (2.20) and Discount #10 (1.70). The stored array was reordered to the published order; no score, weight or published rank changed. New source AUDIT-20261111-61 added; counts are now 136 sources and 61 flags.
+- **Repo review:** `site-data/*.json` historical outputs (2026-11-07) are labelled historical and untouched; root `EXECUTIVE_SUMMARY.md` (unrelated DOE GEMS project) untouched; open PRs #7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72 left untouched; Pages `built` for `b491225` with successful `Publish overflow dashboard` runs on `main`.
+- **Verification:** `build_overflow_site.py` (11 pages); `verify_overflow_site.py` **28/28 PASS** (407 rows); `unittest test_overflow*.py` **40 OK**; `independent_audit.py` **0 problems**; `wording_guard.py` clean; `stage_overflow_pages.py` **47 files** including the new audit; `git diff --check` clean.
+- **Standing rules held.** No provider contacted, booked or paid. Owner amounts remain owner-reported with verified amounts blank. No hiring-order or score change. No private owner context added to any public artifact.
