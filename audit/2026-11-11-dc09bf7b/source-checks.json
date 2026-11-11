@@ -1,0 +1,255 @@
+{
+  "session": "arena/dc09bf7b-korea8",
+  "checked_date": "2026-11-11",
+  "summary": {
+    "statutes_codes_and_agency_pages": 24,
+    "company_websites_and_case_pages": 19,
+    "bbb_and_angi_profiles": 13,
+    "blocked_or_gated_platforms_tested": 3,
+    "github_and_live_pages_routes": 5,
+    "key_findings": [
+      "RV-15 in ranking.json was misattributed to P-01 (Rapid Flow #1115649) and P-07 (Save-On-Interior #749536); direct BBB retrieval proves RV-15 belongs solely to P-08 (We Do Construction Inc #1096552) and neither P-01, P-05, nor P-07 has a San Francisco BBB profile.",
+      "Amador's Drywall (#1031231) holds an active BBB Accredited A+ profile (since 09/13/2024) at its South San Francisco Grand Ave address in addition to its active C-9 + B CSLB record.",
+      "R R Drywall (#347110, Brisbane) holds an active B + C-33 + C-9 Sole Ownership CSLB record (exp 10/31/2027, WC exempt), while Yelp indexes RnR Drywall Inc with a 2020 transfer note.",
+      "All four Heise project URLs (Ingleside 163802, Panhandle 171358, Mission 158154, Marina 176011) return HTTP 200 with full project narratives above an embedded Page Not Found (404) template block.",
+      "PAGES-API (https://api.github.com/repos/karagemop466-tech/Korea8/pages) returns HTTP 404 to unauthenticated callers and requires GitHub API auth; live public HTTPS routes return HTTP 200.",
+      "SF.gov permit/remodel/DBI pages and SF Planning Permit Center continue to display the Wednesday, November 11 Veterans Day office closure banner on 2026-11-11."
+    ]
+  },
+  "checks": [
+    {
+      "id": "SF-PERMIT",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "status": "HTTP 200",
+      "finding": "Confirmed permit trigger before cutting/replacing pipes, 2025 SFPC \u00a7104.2 link, eligible classes A/B/C4/C16/C20/C36/C54, inspection before covering, help desk 628-652-4900, and live Wednesday Nov 11 Veterans Day closure banner."
+    },
+    {
+      "id": "SF-REMODEL",
+      "url": "https://www.sf.gov/remodel-your-bathroom-or-kitchen-in-house-permit",
+      "status": "HTTP 200",
+      "finding": "Confirmed R-2 apartment owners may perform drywall/sheetrock work on remodel permits while hiring licensed contractors for plumbing/electrical; carries live Wednesday Nov 11 Veterans Day closure banner."
+    },
+    {
+      "id": "SF-AUTH",
+      "url": "https://www.sf.gov/authorize-agent-apply-permits",
+      "status": "HTTP 200",
+      "finding": "Confirmed contractor authorization requirements and live Nov 11 closure banner."
+    },
+    {
+      "id": "SF-DBI",
+      "url": "https://www.sf.gov/departments--department-building-inspection",
+      "status": "HTTP 200",
+      "finding": "Confirmed 49 South Van Ness Ave Ste 200/500 address, 628-652-3200 contact, and live Nov 11 Veterans Day closure banner."
+    },
+    {
+      "id": "SF-PLANNING-PERMITS",
+      "url": "https://sfplanning.org/permits",
+      "status": "HTTP 200",
+      "finding": "Confirmed Permit Center 2nd floor 49 South Van Ness Ave and live Nov 11 Veterans Day closure banner."
+    },
+    {
+      "id": "SF-FEES",
+      "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+      "status": "HTTP 200 PDF",
+      "finding": "Confirmed July 2026 Table 1A-C effective 2026-07-12: Category 1P $290, 2PA $549, 3PA $1,045, 3PB $2,104, 11P/M $320, hourly inspection $519/hr, off-hour $555/hr, reinspection $259/half-hour."
+    },
+    {
+      "id": "SF-CODE-104",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_plumbing/0-0-0-85830",
+      "status": "HTTP 200 (chunk 14)",
+      "finding": "Confirmed 2025 SFPC \u00a7104.1 permit requirement and \u00a7104.2 conditional exemptions (stoppage clearing and leak/defect repair without new piping arrangement)."
+    },
+    {
+      "id": "SF-CODE-104-PDF",
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "status": "HTTP 200 PDF",
+      "finding": "Confirmed city-hosted 2025 SF Plumbing Code PDF effective Jan 1, 2026."
+    },
+    {
+      "id": "SF-CODE-106",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+      "status": "HTTP 200 (chunk 39)",
+      "finding": "Confirmed 2025 SFBC \u00a7106A.2(8) painting/tiling/finish exemption and \u00a7106A.2(10) minor interior plaster/wallboard repair exemption except when part of a fire-resistive assembly."
+    },
+    {
+      "id": "SF-CODE-106-PDF",
+      "url": "https://media.api.sf.gov/documents/2025_SFBC_Amendments.pdf",
+      "status": "HTTP 200 PDF",
+      "finding": "Confirmed city-hosted 2025 SF Building Code Amendments PDF."
+    },
+    {
+      "id": "BPC-7048",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
+      "status": "HTTP 200",
+      "finding": "Confirmed $1,000 minor-work exemption conditions (effective Jan 1, 2025, AB 2622) and limits when employing workers or advertising as a contractor."
+    },
+    {
+      "id": "BPC-7057",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "status": "HTTP 200",
+      "finding": "Confirmed B General Building two-unrelated-trades rule and \u00a77057(b) hold-classification-or-subcontract rule for single specialty trades."
+    },
+    {
+      "id": "BPC-7057-5",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5.",
+      "status": "HTTP 200",
+      "finding": "Confirmed B-2 Residential Remodeling three-unrelated-trades nonstructural framing/surface rule."
+    },
+    {
+      "id": "BPC-7059",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+      "status": "HTTP 200",
+      "finding": "Confirmed \u00a77059(a) specialty contractor rule allowing incidental and supplemental other-trade work."
+    },
+    {
+      "id": "BPC-7114",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7114.",
+      "status": "HTTP 200",
+      "finding": "Confirmed \u00a77114(a) aiding or abetting an unlicensed person to evade chapter provisions."
+    },
+    {
+      "id": "BPC-7124-6",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7124.6.",
+      "status": "HTTP 200",
+      "finding": "Confirmed public disclosure scope and statutory limitations on CSLB complaint disclosure."
+    },
+    {
+      "id": "CIV-1954",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+      "status": "HTTP 200",
+      "finding": "Confirmed landlord entry grounds and written 24-hour reasonable-notice presumption for occupied units."
+    },
+    {
+      "id": "CSLB-B-FAST",
+      "url": "https://www.cslb.ca.gov/Resources/IndustryBulletins/2021/B-2_Fast_Facts.pdf",
+      "status": "HTTP 200 PDF",
+      "finding": "Confirmed CSLB B-2 Fast Facts sheet (Updated 04/25): three or more unrelated trades required."
+    },
+    {
+      "id": "CSLB-C9",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "status": "HTTP 200",
+      "finding": "Confirmed C-9 Drywall scope covering gypsum drywall ceiling/wall installation and taping/texturing."
+    },
+    {
+      "id": "CSLB-CONTRACT",
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "status": "HTTP 200",
+      "finding": "Confirmed written HIC requirement over $500, 10% or $1,000 down-payment cap, and written change orders."
+    },
+    {
+      "id": "CSLB-831",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Laws/California_Code_of_Regulations/831.aspx",
+      "status": "HTTP 200",
+      "finding": "Confirmed 16 CCR \u00a7831 definition of incidental and supplemental work as essential to accomplish the primary licensed craft."
+    },
+    {
+      "id": "WATCO",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "status": "HTTP 200 PDF",
+      "finding": "Confirmed Watco 500/501/600TL trip-lever linkage/plunger instructions and 5-year limited warranty."
+    },
+    {
+      "id": "EPA-RRP",
+      "url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+      "status": "HTTP 200",
+      "finding": "Confirmed EPA RRP rule triggers for painted surface disturbance in pre-1978 residential housing."
+    },
+    {
+      "id": "EPA-ASBESTOS",
+      "url": "https://www.epa.gov/asbestos/overview-asbestos-national-emission-standards-hazardous-air-pollutants-neshap",
+      "status": "HTTP 200",
+      "finding": "Confirmed NESHAP renovation inspection/handling requirements before disturbing suspect ACM."
+    },
+    {
+      "id": "BBB-WEDO",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/general-contractor/we-do-construction-inc-1116-938702",
+      "status": "HTTP 200",
+      "finding": "Confirmed We Do Construction, Inc. (#1096552) is BBB Accredited Since 11/24/2025, Rating A+. Proves RV-15 belongs to P-08 only, not P-01 or P-07."
+    },
+    {
+      "id": "BBB-AMADOR",
+      "url": "https://www.bbb.org/us/ca/s-san-francisco/profile/drywall-contractors/amadors-drywall-1116-932807",
+      "status": "HTTP 200",
+      "finding": "Confirmed Amador's Drywall (#1031231, 235 Grand Ave Ste 201, SSF) is BBB Accredited Since 9/13/2024, Rating A+."
+    },
+    {
+      "id": "BBB-ACE",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-84546",
+      "status": "HTTP 200",
+      "finding": "Confirmed BBB Accredited Since 8/1/2004, Rating A+, #829071."
+    },
+    {
+      "id": "BBB-HEISE",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/heises-plumbing-inc-1116-15223",
+      "status": "HTTP 200",
+      "finding": "Confirmed Rating B-, not accredited, 1 complaint closed in last 12 months, still displays old #787733."
+    },
+    {
+      "id": "BBB-FAST",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-and-rooter-1116-880169",
+      "status": "HTTP 200",
+      "finding": "Confirmed Rating A+, not accredited, 0 complaints, #1024971."
+    },
+    {
+      "id": "BBB-AYOOB",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ayoob-peery-plumbing-company-1116-15014",
+      "status": "HTTP 200",
+      "finding": "Confirmed Rating A+, not accredited."
+    },
+    {
+      "id": "BBB-EXPERT",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-927512",
+      "status": "HTTP 200",
+      "finding": "Confirmed Rating NR, not accredited."
+    },
+    {
+      "id": "BBB-BERNAL",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/drywall-contractors/bernal-hill-drywall-inc-1116-925433",
+      "status": "HTTP 200",
+      "finding": "Confirmed Rating NR, not accredited."
+    },
+    {
+      "id": "BBB-ATLAS",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/atlas-plumbing-rooter-inc-1116-175572",
+      "status": "HTTP 200",
+      "finding": "Confirmed BBB Accredited Since 6/3/2021, Rating A+, #868994."
+    },
+    {
+      "id": "HEISE-CASES",
+      "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+      "status": "HTTP 200",
+      "finding": "All 4 Heise recent-job URLs (163802, 171358, 158154, 176011) return HTTP 200 with project narrative and photos above an embedded Page Not Found (404) template block."
+    },
+    {
+      "id": "COMPANY-SITES",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "status": "HTTP 200",
+      "finding": "All 14 active company sites (RF, ACE, HEISE, HEISE-PATCH, EXPERT, BAY, FAST, WEDO, AYOOB, BERNAL, SFBG, ATLAS, ROOTER247, SALET, AMADOR-CONTACT) returned HTTP 200; CJS-WEB returned HTTP 200 GoDaddy Launching Soon placeholder."
+    },
+    {
+      "id": "ANGI-PROFILES",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-inc-reviews-298431.htm",
+      "status": "HTTP 200",
+      "finding": "ANGI-ACE, ANGI-FAST, ANGI-BERNAL, ANGI-ATLAS all returned HTTP 200."
+    },
+    {
+      "id": "YELP-ACE",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco-2",
+      "status": "HTTP 403",
+      "finding": "Direct fetch blocked by HTTP 403 bot protection on 2026-11-11; numeric ratings/counts properly remain null."
+    },
+    {
+      "id": "IAPMO",
+      "url": "https://epubs.iapmo.org/2024/UPC/",
+      "status": "Redirect to Login",
+      "finding": "Redirects to aa.iapmo.org/Login; city-hosted 2025 SF Plumbing Code PDF supplies official text."
+    },
+    {
+      "id": "PAGES-API",
+      "url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages",
+      "status": "HTTP 404 unauth / 200 auth",
+      "finding": "Returns HTTP 404 without GitHub token and HTTP 200 via authenticated gh api (status: built, build_type: legacy); live HTTPS site https://karagemop466-tech.github.io/Korea8/ returns HTTP 200."
+    }
+  ]
+}

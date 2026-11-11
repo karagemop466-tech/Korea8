@@ -1,0 +1,64 @@
+# Line-by-Line Repository Review — Session `arena/dc09bf7b-korea8` (2026-11-11)
+
+**Repository:** `karagemop466-tech/Korea8`  
+**Baseline reviewed:** `origin/main` at `21c9ade` (including merged PRs `#78`–`#96`)  
+**Review date:** 2026-11-11 UTC  
+**Scope:** Canonical bathtub wastewater overflow trip-lever dashboard (`overflow-integration/**`, root generated HTML/CSS/summaries, `scripts/*overflow*`, `scripts/wording_guard.py`, `tests/test_overflow*.py`, `audit/**`, `.github/workflows/overflow-pages.yml`), retired/parallel bathtub drafts, and read-only boundary audit of unrelated DOE GEMS research assets.
+
+---
+
+## 1. Repository Layout & Boundary Inventory
+
+| Path / Tree | Role | Status on `main` (`21c9ade`) | Review Finding |
+|---|---|---|---|
+| `overflow-integration/data/*.json` (10 files) | Canonical structured registers (`providers`, `ranking`, `questions`, `requirements`, `estimates`, `technical`, `compliance`, `reviews`, `sources`, `flags`, `requests`) | Active canonical source of truth (`as_of: 2026-11-11` / `2026-11-10`) | **3 defects found** (see Section 2: `RV-15` cross-provider misattribution in `ranking.json`; stale `2026-11-10` check metadata and incomplete `PAGES-API` / `HEISE-MISSION` / `HEISE-MARINA` limitation notes in `sources.json`; verified CSLB `#347110` and `BBB-AMADOR` missing from second-bid restoration metadata). |
+| Root HTML & CSS (`index.html`, `executive-summary.html`, `decision-analysis.html`, `requirements.html`, `questions.html`, `providers.html`, `estimates.html`, `technical-approach.html`, `code-and-permit.html`, `sources.html`, `flagged-for-review.html`, `verification.html`, `style.css`) | 12 generated public dashboard pages | Active generated public pages | **3 generator/rendering defects found** (see Section 2: `index.html` KPI sublabel omits `1 canceled` so `28 + 1 != 30`; `decision-analysis.html` intro above `partners_second_bid` falsely claims no license/status/phone is published right above Amador's `#1031231`; `verification.html` omits links to merged 11 Nov audits `692cc7ba` and `e214430f` and states `1 restoration partner`). |
+| `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `scripts/stage_overflow_pages.py`, `scripts/wording_guard.py`, `audit/independent_audit.py` | Build, 29-check verifier, linked-file stager, neutral-wording guard, independent HTML row/link auditor | Active tooling | **2 verifier gaps found** (`verify_overflow_site.py` checks only `Suspended` rather than `{'Suspended', 'Canceled'}` for priority-lead exclusion, and has no cross-file check preventing `RV-*` review-ID misattribution in `ranking.json`). |
+| `scripts/tmp_resolve_concurrent_merge.sh` | Ad-hoc merge-conflict shell helper committed to `scripts/` | Tracked on `main` | **Repo hygiene irregularity (`F-89`)**: hardcodes `/home/user/Korea8`, writes to `/tmp/*.log`, and concatenates both sides of any non-generated conflict via regex, which would corrupt `.json` files if run on a JSON conflict. Preserved per non-destructive multi-session rules and flagged rather than deleted. |
+| `site-data/` | Legacy 2026-11-07 data directory plus mirrored `build-report.json` & `verification.json` | Historical + build mirror | Documented in `F-34`/`F-39`; excluded from staged workflow artifact (`build/pages`), though still reachable if GitHub Pages remains in legacy root mode. |
+| `bathroom-overflow/`, `bathtub-overflow/`, `bathtub/`, `trip-lever/`, `project/`, `archive/` | Retired parallel drafts and HTML redirect stubs | Preserved historical drafts / stubs | Redirect stubs (`bathroom-overflow/index.html`, `bathtub-overflow/index.html`) resolve cleanly; retired `bathtub-overflow/data/findings.json` categorical permit phrasing remains documented in `F-69`. Untouched per non-destructive rules. |
+| `docs/`, `src/`, `vendor/`, `registry/`, `evidence/`, `downloads/`, `submissions/`, `.github/workflows/gems-pipeline.yml`, `AGENTS.md`, `EXECUTIVE_SUMMARY.md` | Unrelated DOE GEMS geothermal research | Read-only out-of-scope tree | Preserved untouched (`0` edits). Previously documented GEMS irregularities (`F-39`, `F-40`, `F-50`, `F-51`) remain accurately recorded in `flags.json`. |
+| `.github/workflows/overflow-pages.yml` | CI build, verification, unit test, independent audit, linked-closure staging, Pages deploy & live HTTPS check | Active CI/CD | Passing on `main`; live HTTPS check verifies 12 deployed routes with cache-busting `?deployment=$GITHUB_SHA`. |
+
+---
+
+## 2. Detailed Line-by-Line Findings & Dispositions
+
+### Irregularity 1 — High: Cross-Provider `RV-15` Review/BBB Misattribution in `ranking.json` (`F-86`)
+- **Location:** [`overflow-integration/data/ranking.json`](https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/data/ranking.json) (`P-01` Rapid Flow Plumbing & Rooter and `P-07` Save-On-Interior) and rendered [`decision-analysis.html`](https://github.com/karagemop466-tech/Korea8/blob/main/decision-analysis.html).
+- **What was published:**
+  - Rank #3 `P-01` (`Rapid Flow Plumbing & Rooter`, CSLB `#1115649`) stated: `"RV-01 (adjacent tub-plug retrieval through a wall opening) and RV-15 (BBB A+, accredited 2025) · 0 direct Yelp rows: no business-profile excerpt was found"`.
+  - Rank #7 `P-07` (`Save-On-Interior`, CSLB `#749536`) stated: `"RV-15 family profile shared with P-05 (BBB A+) · no direct Yelp profile excerpt was found"`.
+- **Official/primary source check (2026-11-11):**
+  - In `overflow-integration/data/reviews.json`, `RV-15` is `provider_id: "P-08"` (`We Do Construction`, CSLB `#1096552`), sourced to [`BBB-WEDO`](https://www.bbb.org/us/ca/san-francisco/profile/general-contractor/we-do-construction-inc-1116-938702) (`BBB Accredited Since: 11/24/2025`, Rating `A+`).
+  - Direct searches of `bbb.org` on 2026-11-11 confirm **no San Francisco BBB profile exists** for `Rapid Flow Plumbing & Rooter Inc` (`#1115649`), `Save-On-Interior` (`#749536`), or `Bay Area Plumbing` (`#757796`).
+- **Disposition:** Remove the false `RV-15` / `BBB A+` attributions from `P-01` and `P-07` in `ranking.json` (scoring components `C1`–`C5` and rank order are unaffected because scores rest on CSLB classifications/standing and company/owner scope records), log `F-86` in `flags.json`, and add an automated cross-file check in `scripts/verify_overflow_site.py` and `tests/test_overflow_site.py` asserting that every `RV-\d+` token in `ranking.json` belongs to the same provider (or an explicitly documented shared-address sibling in `reviews.json`).
+
+### Irregularity 2 — Medium: Dashboard KPI & Verifier Omit Canceled License Status (`#920294`) (`F-87`)
+- **Location:** [`scripts/build_overflow_site.py`](https://github.com/karagemop466-tech/Korea8/blob/main/scripts/build_overflow_site.py) (KPI card 1, snapshot row 1, `verification.html` summary, `build-report.json`) and [`scripts/verify_overflow_site.py`](https://github.com/karagemop466-tech/Korea8/blob/main/scripts/verify_overflow_site.py).
+- **What was published:** After `P-33` (`Eric Brand Plumbing`, CSLB `#920294`, `status: "Canceled"`) was added to `providers.json`, `index.html` displayed `30 CSLB records rechecked` with sublabel `28 active · 1 suspended · 3 identity unresolved` (`28 + 1 = 29`, omitting `1 canceled`), `verification.html` stated `1 restoration partner` while two (`#995163` and `#1031231`) are in `providers.json`, and `verify_overflow_site.py` checked only `Suspended` (not `Canceled`) for exclusion from the priority shortlist table.
+- **Disposition:** Include `canceled` explicitly in `build_overflow_site.py` KPI/snapshot/verification/build-report summaries (`28 active · 1 suspended · 1 canceled · 3 identity unresolved`), update `verification.html` restoration-partner text to reflect both `C-9 + B` records (`1 scored primary partner + 1 CSLB-checked second-bid option`), and tighten `verify_overflow_site.py` to enforce exclusion of both `Suspended` and `Canceled` providers from priority leads. Log `F-87`.
+
+### Irregularity 3 — Medium: Contradictory Heading Copy Above `partners_second_bid` & Unchecked `R & R Drywall` Lead (`F-88`)
+- **Location:** [`scripts/build_overflow_site.py`](https://github.com/karagemop466-tech/Korea8/blob/main/scripts/build_overflow_site.py) (`Second-bid options for the ceiling` section on `decision-analysis.html`) and [`overflow-integration/data/ranking.json`](https://github.com/karagemop466-tech/Korea8/blob/main/overflow-integration/data/ranking.json) (`partners_second_bid`).
+- **What was published:** The paragraph immediately above `partners_second_bid` stated `"These are search leads only: no licence, status, phone number or rating is published for them"`, contradicting row 1 (`RV-24` `Amador's Drywall`, which publishes CSLB `#1031231`, `Current and active`, `C-9 + B`, `(415) 756-4958`). In addition, `Amador's Drywall` holds a directly verifiable BBB Accredited `A+` profile (`BBB-AMADOR`, accredited `09/13/2024`), and `R & R Drywall` in row 2 (`RV-23`) matches active CSLB `#347110` (`R R DRYWALL`, 480 San Bruno Ave, Brisbane, `(415) 467-3149`, Sole Ownership, issued `11/17/1977`, expires `10/31/2027`, `B + C-33 + C-9`, WC exempt) — with an entity-continuity caveat because Yelp indexes `"RnR Drywall Inc"` and notes a 2020 ownership transfer, while `Toms Painters` and `Peña Drywall` remain unchecked search leads.
+- **Disposition:** Update the `Second-bid options for the ceiling` intro in `scripts/build_overflow_site.py` so it accurately distinguishes CSLB-checked second-bid options from unresolved search-only names; add `CSLB-347110` and `BBB-AMADOR` to `sources.json`; document `#347110` (with its Brisbane sole-ownership vs `"RnR Drywall Inc"` caveat) alongside `Amador's Drywall` (`BBB-AMADOR`) while keeping `Toms Painters` and `Peña Drywall` clearly marked as unchecked search leads; and log `F-88`.
+
+### Irregularity 4 — Low: Source Metadata & Limitation Completeness (`PAGES-API`, `HEISE-MISSION`, `HEISE-MARINA`, `SF-REMODEL`) + Merged Audit Links (`F-89`)
+- **Location:** `overflow-integration/data/sources.json`, `scripts/build_overflow_site.py`, and `scripts/tmp_resolve_concurrent_merge.sh`.
+- **Findings:**
+  1. `PAGES-API` (`https://api.github.com/repos/karagemop466-tech/Korea8/pages`) returns `HTTP 404` when queried without a GitHub token even on a public repository; public readers must verify live publication via `https://karagemop466-tech.github.io/Korea8/` while authenticated workflows/CLI (`gh api`) receive `HTTP 200` (`status: built`, `build_type: legacy`).
+  2. `HEISE-MISSION` (`158154`) and `HEISE-MARINA` (`176011`), like `HEISE-INGLESIDE` and `HEISE-PANHANDLE`, return `HTTP 200` with full project descriptions above an embedded `"Page Not Found (404)"` template block; their `limitations` fields did not yet note that template block.
+  3. `SF-REMODEL` (`https://www.sf.gov/remodel-your-bathroom-or-kitchen-in-house-permit`) explicitly confirms that apartment-building (`R-2`) owners may self-perform drywall/sheetrock under a remodel permit while hiring licensed plumbing/electrical contractors, and carries the live `Wednesday, November 11` Veterans Day closure banner.
+  4. Merged 11 November audit artifacts `audit/2026-11-11-692cc7ba/REPORT.md` + `receipts.json` (explicitly requested in `COORDINATION.md` by `arena/692cc7ba-korea8`) and `audit/2026-11-11-e214430f/REPORT.md` were not yet linked from `verification.html`, preventing `stage_overflow_pages.py` from staging them into the Pages artifact.
+  5. `scripts/tmp_resolve_concurrent_merge.sh` remains tracked in `scripts/` with hardcoded `/home/user/Korea8` paths and non-JSON-safe conflict concatenation.
+- **Disposition:** Refresh `checked: "2026-11-11"` on all sources directly re-verified today, add exact limitation notes to `PAGES-API`, `HEISE-MISSION`, `HEISE-MARINA`, and `SF-REMODEL`, link `692cc7ba`, `e214430f`, and `dc09bf7b` audit artifacts on `verification.html`, and record `F-89` for `scripts/tmp_resolve_concurrent_merge.sh` without deleting another session's file.
+
+---
+
+## 3. Compliance With Standing Project Constraints
+
+- **No outreach / no booking:** Zero contractors, agencies, or tenants were contacted, quoted, booked, or paid.
+- **Blank-vs-unverified discipline:** Unresolved leads (`Portola Plumbing Services`, `C J's Plumbing & Rooter Service`, `Golden Gate Plumbing & Rooter Inc`, plus `Toms Painters` / `Peña Drywall`) keep unverified regulated fields blank; owner-reported 2026-08-30 estimates (`$614`, `$550`, `$135`) keep `amount_verified: null`; review rows keep `rating: null` and `review_count: null`.
+- **Neutral repair-scope wording:** Verified clean via `python3 scripts/wording_guard.py`.
+- **Non-destructive multi-session hygiene:** All merged sibling sessions' records, flags (`F-01`..`F-71`, `F-78`..`F-84`), questions register (`Q-01`..`Q-14`), open PRs, retired stubs, and DOE GEMS files are preserved intact.

@@ -807,9 +807,9 @@
       "severity": "Medium",
       "category": "Provider discovery",
       "status": "Open",
-      "title": "Supplementary discovery leads carry near-term expiry, phone discrepancies or unverified identities",
-      "detail": "24/7 Rooter #954813 is C-36+A+D-56 (no B/C-9) and shows differing phone numbers between CSLB (415) 586-6851 and site (415) 488-8661 while BBB returned 404. George Salet #888630 (C-36+C-16, Brisbane) expires 2026-12-31 inside the hiring window and claims 1979 founding vs 2006 CSLB issue. C J\u2019s Plumbing (GoDaddy Launching Soon placeholder) and Golden Gate Plumbing (site failed to load) had no verifiable CSLB record and remain blank.",
-      "action": "Keep C J\u2019s and Golden Gate blank/excluded unless verified directly on CSLB; verify #888630 renewal receipt and #954813 dispatch phone before any engagement.",
+      "title": "Supplementary discovery leads carry phone discrepancies, founding-year differences or unverified identities",
+      "detail": "24/7 Rooter #954813 is C-36+A+D-56 (no B/C-9) and shows differing phone numbers between CSLB (415) 586-6851 and site (415) 488-8661 while BBB returned 404. George Salet #888630 (C-36+C-16, Brisbane, renewed through 12/31/2028 on the 2026-11-11 CSLB check) claims a 1979 founding vs its 12/21/2006 CSLB issue date. C J\u2019s Plumbing (GoDaddy Launching Soon placeholder) and Golden Gate Plumbing (site failed to load) had no verifiable CSLB record and remain blank.",
+      "action": "Keep C J\u2019s and Golden Gate blank/excluded unless verified directly on CSLB; confirm #954813 dispatch phone and contracting entity before any engagement.",
       "source_ids": [
         "CSLB-954813",
         "ROOTER247",
@@ -1081,6 +1081,74 @@
         "AUDIT-20261111-49F"
       ],
       "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027"
+    },
+    {
+      "id": "F-86",
+      "severity": "High",
+      "category": "Review evidence attribution",
+      "title": "Cross-provider RV-15 BBB attribution on Rapid Flow and Save-On-Interior removed",
+      "detail": "ranking.json previously cited \"RV-15 (BBB A+, accredited 2025)\" on P-01 Rapid Flow (#1115649) and \"RV-15 family profile shared with P-05 (BBB A+)\" on P-07 Save-On-Interior (#749536). In reviews.json and on bbb.org, RV-15 belongs solely to P-08 We Do Construction Inc (#1096552, BBB-WEDO, accredited 11/24/2025). Direct 2026-11-11 BBB checks confirmed no San Francisco BBB profile exists for P-01, P-05 or P-07.",
+      "action": "Removed the erroneous RV-15 BBB claims from P-01 and P-07 in ranking.json and added an automated RV-ID provider-attribution check to verify_overflow_site.py and unit tests. Weighted C1\u2013C5 scores and hiring order are unchanged.",
+      "source_ids": [
+        "BBB-WEDO",
+        "CSLB-1096552",
+        "CSLB-1115649",
+        "CSLB-749536",
+        "AUDIT-20261111-DC09"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "status": "Resolved in 2026-11-11 rebuild"
+    },
+    {
+      "id": "F-87",
+      "severity": "Medium",
+      "category": "Dashboard summary parity",
+      "title": "KPI sublabel and priority-lead verifier omitted canceled license status (#920294)",
+      "detail": "After Eric Brand Plumbing #920294 (status: Canceled) was added, index.html displayed \"30 CSLB records rechecked\" with sublabel \"28 active \u00b7 1 suspended \u00b7 3 identity unresolved\" (omitting 1 canceled), verification.html still stated \"1 restoration partner\", and verify_overflow_site.py checked only Suspended (not Canceled) for exclusion from priority leads.",
+      "action": "Updated build_overflow_site.py KPI/snapshot/verification/build-report summaries to report 1 canceled explicitly alongside 28 active and 1 suspended, updated restoration-partner summary text, and extended verify_overflow_site.py to enforce priority-lead exclusion for both Suspended and Canceled records.",
+      "source_ids": [
+        "CSLB-920294",
+        "CSLB-1031231",
+        "AUDIT-20261111-DC09",
+        "AUDIT-20261111-8CE"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=920294",
+      "status": "Resolved in 2026-11-11 rebuild"
+    },
+    {
+      "id": "F-88",
+      "severity": "Medium",
+      "category": "Restoration second-bid leads",
+      "title": "Second-bid section header contradicted published CSLB #1031231 data; R R Drywall #347110 entity check added",
+      "detail": "decision-analysis.html stated above partners_second_bid that no license, status or phone was published for those rows even though row 1 published Amador\u2019s Drywall #1031231. Direct 2026-11-11 checks also confirmed Amador\u2019s BBB A+ accreditation (09/13/2024, reissue 03/14/2019) and active CSLB #347110 (R R DRYWALL, Sole Ownership, Brisbane, B + C-33 + C-9, WC exempt), whereas Yelp indexes \"RnR Drywall Inc\" with a 2020 transfer note.",
+      "action": "Corrected the section intro on decision-analysis.html, added BBB-AMADOR and CSLB-347110, warned to verify contracting-entity continuity between Sole Ownership #347110 and \"RnR Drywall Inc\", and kept Toms Painters and Pe\u00f1a Drywall marked as unchecked search leads.",
+      "source_ids": [
+        "CSLB-1031231",
+        "BBB-AMADOR",
+        "CSLB-347110",
+        "YELP-DRYWALL-SF",
+        "AUDIT-20261111-DC09"
+      ],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=347110",
+      "status": "Open \u2014 verify entity continuity before any second-bid contract"
+    },
+    {
+      "id": "F-89",
+      "severity": "Low",
+      "category": "Repository & source metadata",
+      "title": "PAGES-API unauthenticated 404, Heise case 404-widget parity and tracked merge helper noted",
+      "detail": "Direct 2026-11-11 checks showed api.github.com/.../pages returns HTTP 404 without a GitHub token (authenticated API returns 200 built), Heise Mission (158154) and Marina (176011) pages embed the same 404 template widget below project text as Ingleside/Panhandle, and scripts/tmp_resolve_concurrent_merge.sh on main uses regex conflict concatenation that is unsafe on JSON files.",
+      "action": "Documented PAGES-API and Heise Mission/Marina limitations in sources.json, linked merged 11 Nov audits (692cc7ba, e214430f, 8cee3c39, dc09bf7b) on verification.html, and preserved tmp_resolve_concurrent_merge.sh untouched while flagging not to run it on JSON conflicts.",
+      "source_ids": [
+        "PAGES-API",
+        "GH-PAGES",
+        "HEISE-MISSION",
+        "HEISE-MARINA",
+        "AUDIT-20261111-DC09",
+        "AUDIT-20261111-8CE"
+      ],
+      "official_url": "https://karagemop466-tech.github.io/Korea8/",
+      "status": "Open \u2014 helper script preserved per non-destructive rule"
     }
   ],
   "caption": "Open items stay on this page rather than being inferred. F-70 is the 17E Heise 404-widget flag. F-71 is the 611bd0aa ranking-array-order correction. F-78 through F-84 are the 2026-11-11 20333975 re-verification items."

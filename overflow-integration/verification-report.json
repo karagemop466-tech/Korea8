@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-11-11T02:39:39.038298+00:00",
+  "checked_at": "2026-11-11T02:51:12.115193+00:00",
   "result": "PASS",
-  "checks_run": 29,
-  "checks_passed": 29,
+  "checks_run": 30,
+  "checks_passed": 30,
   "checks_failed": 0,
-  "canonical_rows_checked": 450,
+  "canonical_rows_checked": 459,
   "tracked_html_files": 69,
   "checks": [
     {
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "450 rows; offenders: "
+      "detail": "459 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -103,7 +103,7 @@
       "detail": ""
     },
     {
-      "check": "suspended provider excluded from priority leads",
+      "check": "suspended/canceled providers excluded from priority leads",
       "ok": true,
       "detail": ""
     },
@@ -138,6 +138,11 @@
       "detail": ""
     },
     {
+      "check": "ranking review-ID citations match cited provider official license URL",
+      "ok": true,
+      "detail": ""
+    },
+    {
       "check": "source kinds explicit",
       "ok": true,
       "detail": ""
@@ -150,7 +155,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "327 links; offenders: "
+      "detail": "338 links; offenders: "
     }
   ]
 }
