@@ -1890,6 +1890,27 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 
 **Sixth concurrent integration:** PR #85 added the PR #79 deployment receipt. The board conflict was resolved preserving both records.
 
+## Session `arena/611bd0aa-korea8` — 2026-11-11 fresh re-verification and line-by-line repo review
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `61-01` | Claim board on `COORDINATION.md` and push immediately | done | `arena/611bd0aa-korea8` | `COORDINATION.md` |
+| `61-02` | Fresh official-source re-verification (CSLB leads, SF.gov permit service, BPC §7059) and line-by-line repo review | done | `arena/611bd0aa-korea8` | `audit/2026-11-11-611bd0aa/**` |
+| `61-03` | Apply only evidenced corrections; rebuild and run full verification suite | done | `arena/611bd0aa-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only where an evidenced correction was required |
+| `61-04` | Open PR to `main`, merge, confirm Pages deploy and record receipt | in progress | `arena/611bd0aa-korea8` | `COORDINATION.md`, deployment records, generated public output |
+
+**Coordination note.** Arena pins this session to `arena/611bd0aa-korea8`; no other branch or worktree was created or pushed. Baseline was `main` at `b491225`; `main` advanced during the session (PRs #78/#79/#81/#82/#83), and each rebase/merge preserved both sides — no other session's record, flag or correction was discarded. Unrelated DOE GEMS files remain read-only. No provider was contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
+
+### `61-02` & `61-03` — completed record (`arena/611bd0aa-korea8`, 2026-11-11)
+
+- **Reports:** [`audit/2026-11-11-611bd0aa/REPORT.md`](audit/2026-11-11-611bd0aa/REPORT.md) and [`audit/2026-11-11-611bd0aa/receipts.json`](audit/2026-11-11-611bd0aa/receipts.json), linked from `verification.html`.
+- **Fresh reads (2026-11-11):** seven CSLB licence-detail pages (#829071, #1089561, #1115649, #995163, #977638, #1024971, #1027286) all matched the canonical register on legal name, phone, status, classifications, expiry and issue date (board banner "Data current as of 11/10/2026"). SF.gov permit service and BPC §7059(a) text re-read and matched the published permit/licensing analysis, including the 2026-11-11 Veterans Day closure note and the 2026-11-12 next-business-day note.
+- **Ranking recompute:** weights sum to 1.00; recomputed scores 3.85, 3.45, 3.15, 3.15, 2.95, 2.90, 2.60, 2.55, 2.20, 1.70 match the published order. Ranks 3/4 tie at 3.15; the published higher-C2 tie-break places Rapid Flow #3.
+- **Correction (F-71):** the stored `ranking.json` array listed Discount before Fast Response while the generator sorts by score and all published pages place Fast Response #9 (2.20) and Discount #10 (1.70). The stored array was reordered to the published order; no score, weight or published rank changed. New source AUDIT-20261111-61 added. Numbered F-71 because another session took F-70 on 2026-11-11.
+- **Repo review:** `site-data/*.json` historical outputs (2026-11-07) are labelled historical and untouched; root `EXECUTIVE_SUMMARY.md` (unrelated DOE GEMS project) untouched; earlier open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72) were left untouched; Pages `built` with successful `Publish overflow dashboard` runs on `main`.
+- **Verification on the rebased tree:** `build_overflow_site.py` (11 pages); `verify_overflow_site.py` **28/28 PASS**; `unittest test_overflow*.py` **40 OK**; `independent_audit.py` **0 problems**; `wording_guard.py` clean; `stage_overflow_pages.py` linked-closure staging; `git diff --check` clean.
+- **Standing rules held.** No provider contacted, booked or paid. Owner amounts remain owner-reported with verified amounts blank. No hiring-order or score change. No private owner context added to any public artifact.
+
 ### 17E-02 merge and publication receipt
 
 - [PR #83](https://github.com/karagemop466-tech/Korea8/pull/83) merged 2026-11-11 02:18:21 UTC, merge commit `258d08f809c7f04dc690d2f8a4ed5ed7d6a8d81e`.

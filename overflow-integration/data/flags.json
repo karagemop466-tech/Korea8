@@ -945,6 +945,21 @@
       ],
       "official_url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
       "status": "Open"
+    },
+    {
+      "id": "F-71",
+      "severity": "Low",
+      "category": "Ranking data order",
+      "title": "Ranking array order differed from the published order",
+      "detail": "ranking.json listed Discount Plumbing Rooter Services before Fast Response Plumbing & Rooter, while the generator sorts by weighted score and the published pages and the stored final verification note place Fast Response #9 (2.20) and Discount #10 (1.70). The published site was correct; only the stored array order differed. Rechecked 2026-11-11 by recomputing all ten weighted scores from the stored components: weights sum to 1.00 and the recomputed order matches the published pages.",
+      "action": "Reordered the stored array to the published score order on 2026-11-11. No score, weight or published rank changed; the generator output is identical before and after. Flag numbering is F-71 because F-70 was assigned to another session's finding on the same day.",
+      "source_ids": [
+        "AUDIT-20261111-61",
+        "REPO",
+        "CSLB-829071"
+      ],
+      "official_url": "https://github.com/karagemop466-tech/Korea8/blob/main/audit/2026-11-11-611bd0aa/REPORT.md",
+      "status": "Open — corrected 2026-11-11; published order unchanged"
     }
   ]
 }

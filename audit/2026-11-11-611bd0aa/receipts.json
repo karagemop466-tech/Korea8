@@ -1,0 +1,120 @@
+{
+  "session": "arena/611bd0aa-korea8",
+  "checked": "2026-11-11",
+  "cslb_banner": "Data current as of 11/10/2026 (board snapshot; timezone unstated)",
+  "cslb_records": [
+    {
+      "license": "829071",
+      "legal_name": "ACE PLUMBING & ROOTER",
+      "phone": "(415) 824-6444",
+      "status": "Current and active",
+      "classifications": ["C-36", "A", "C-4", "C-16", "B", "C-10"],
+      "issue_date": "12/18/2003",
+      "expiry": "06/30/2027",
+      "workers_comp": "Financial Pacific Insurance Company, policy 10147545585, expires 07/13/2027",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "canonical_match": true
+    },
+    {
+      "license": "1089561",
+      "legal_name": "TARO GROUP INC dba HEISES PLUMBING",
+      "phone": "(415) 333-0704",
+      "status": "Current and active",
+      "classifications": ["C-36", "C-10", "A", "C-20"],
+      "issue_date": "04/06/2022",
+      "expiry": "04/30/2028",
+      "workers_comp": "Employers Preferred Insurance Company, policy EIG6235466, expires 01/11/2027",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "canonical_match": true
+    },
+    {
+      "license": "1115649",
+      "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+      "phone": "(415) 866-8401",
+      "status": "Current and active",
+      "classifications": ["B", "C-36"],
+      "issue_date": "01/29/2024",
+      "expiry": "01/31/2028",
+      "workers_comp": "Exempt; certified no employees at this time; effective 02/03/2026",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "canonical_match": true
+    },
+    {
+      "license": "995163",
+      "legal_name": "BERNAL HILL DRYWALL INC",
+      "phone": "(415) 533-8274",
+      "status": "Current and active",
+      "classifications": ["C-9", "B"],
+      "issue_date": "07/28/2014",
+      "expiry": "07/31/2028",
+      "workers_comp": "Endurance Assurance Corporation, policy EAW0000274901, expires 03/10/2027",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "canonical_match": true
+    },
+    {
+      "license": "977638",
+      "legal_name": "EXPERT PLUMBING SOLUTIONS",
+      "phone": "(415) 531-5340",
+      "status": "Current and active",
+      "classifications": ["C-36"],
+      "issue_date": "10/09/2012",
+      "expiry": "10/31/2028",
+      "workers_comp": "Everest Premier Insurance Company, policy 7600025915261, expires 07/19/2027",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "canonical_match": true
+    },
+    {
+      "license": "1024971",
+      "legal_name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "phone": "(415) 596-6115",
+      "status": "Current and active",
+      "classifications": ["C-36"],
+      "issue_date": "03/20/2017",
+      "expiry": "03/31/2027",
+      "workers_comp": "Employers Preferred Insurance Company, policy EIG576950801, expires 12/18/2026",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "canonical_match": true
+    },
+    {
+      "license": "1027286",
+      "legal_name": "KENNETH ASIRE PLUMBING",
+      "phone": "(415) 913-8048",
+      "status": "Suspended (Contractors Bond Suspension)",
+      "classifications": ["C-36"],
+      "issue_date": "05/25/2017",
+      "expiry": "05/31/2027",
+      "workers_comp": "Employers Compensation Insurance Company, policy EIG6112246, expires 08/30/2027",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "canonical_match": true
+    }
+  ],
+  "other_official_reads": [
+    {
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "finding": "Permit needed before cutting into or replacing pipes; exemptions in SFPC 104.2; city offices closed Wednesday November 11 for Veterans Day; online filing availability not stated.",
+      "canonical_match": true
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+      "finding": "BPC 7059(a) incidental-and-supplemental sentence for specialty contractors present as published.",
+      "canonical_match": true
+    }
+  ],
+  "ranking_recompute": {
+    "weights": {"C1": 0.3, "C2": 0.2, "C3": 0.2, "C4": 0.15, "C5": 0.15},
+    "scores": [
+      {"rank": 1, "provider": "Ace Plumbing & Rooter", "score": 3.85},
+      {"rank": 2, "provider": "Heise's Plumbing", "score": 3.45},
+      {"rank": 3, "provider": "Rapid Flow Plumbing & Rooter", "score": 3.15},
+      {"rank": 4, "provider": "Ayoob & Peery", "score": 3.15},
+      {"rank": 5, "provider": "We Do Construction", "score": 2.95},
+      {"rank": 6, "provider": "Expert Plumbing Solutions", "score": 2.9},
+      {"rank": 7, "provider": "Save-On-Interior", "score": 2.6},
+      {"rank": 8, "provider": "Bay Area Plumbing", "score": 2.55},
+      {"rank": 9, "provider": "Fast Response Plumbing & Rooter", "score": 2.2},
+      {"rank": 10, "provider": "Discount Plumbing Rooter Services", "score": 1.7}
+    ],
+    "tie_note": "Ranks 3 and 4 tie at 3.15; published tie-break is higher C2 first (Rapid Flow C2 3, Ayoob & Peery C2 1).",
+    "correction": "F-71: stored ranking.json array order (Discount before Fast Response) reordered to published score order; no score or published rank changed."
+  }
+}
