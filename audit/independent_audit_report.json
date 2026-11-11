@@ -1,10 +1,10 @@
 {
-  "pages_audited": 11,
+  "pages_audited": 12,
   "row_report": {
-    "total_rows": 408,
-    "rows_with_source": 408,
+    "total_rows": 426,
+    "rows_with_source": 426,
     "rows_blank_marked": 0
   },
-  "internal_links_checked": 225,
+  "internal_links_checked": 261,
   "problems": []
 }

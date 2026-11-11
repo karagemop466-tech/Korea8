@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-11-11T02:20:34.204901+00:00",
+  "checked_at": "2026-11-11T02:23:21.789684+00:00",
   "result": "PASS",
-  "checks_run": 28,
-  "checks_passed": 28,
+  "checks_run": 31,
+  "checks_passed": 31,
   "checks_failed": 0,
-  "canonical_rows_checked": 408,
-  "tracked_html_files": 68,
+  "canonical_rows_checked": 426,
+  "tracked_html_files": 69,
   "checks": [
     {
       "check": "all canonical pages present",
       "ok": true,
-      "detail": "11/11"
+      "detail": "12/12"
     },
     {
       "check": "HTML tag balance",
@@ -30,7 +30,7 @@
     {
       "check": "every canonical table row has a registered official-primary source link",
       "ok": true,
-      "detail": "408 rows; offenders: "
+      "detail": "426 rows; offenders: "
     },
     {
       "check": "provider count parity",
@@ -39,6 +39,21 @@
     },
     {
       "check": "requirement count parity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "open-question count parity",
+      "ok": true,
+      "detail": "14/14"
+    },
+    {
+      "check": "every open question states what is missing and how to obtain it",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "check": "open-question source ids resolve",
       "ok": true,
       "detail": ""
     },
@@ -145,7 +160,7 @@
     {
       "check": "no broken internal links across tracked HTML",
       "ok": true,
-      "detail": "285 links; offenders: "
+      "detail": "321 links; offenders: "
     }
   ]
 }

@@ -1,0 +1,230 @@
+{
+ "retrieved": "2026-11-11",
+ "method": "Each listed page fetched directly where re_read is true; key text transcribed from the page. Pages not re-fetched today are marked so and are carried forward from the earlier recorded retrieval.",
+ "re_read_count": 13,
+ "carried_forward_count": 4,
+ "checks": [
+  {
+   "id": "SF-PERMIT",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground. See exemptions in San Francisco Plumbing Code Section 104.2. Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general. After your permit is issued, have your plumbing or mechanical work inspected before covering pipes. Banner on the page: 'City offices will be closed on Wednesday, November 11 for Veterans Day.' Contact: 628-652-4900, permitsf@sfgov.org.",
+   "supports_rows": [
+    "C-01",
+    "C-03",
+    "C-04",
+    "C-14",
+    "F-49"
+   ],
+   "matches": true,
+   "note": "Banner observed directly, so the closure statement on the site is current as of this retrieval."
+  },
+  {
+   "id": "SF-CODE-104",
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "Chunk 14 contains §104.2 Exempt Work with nine numbered items: (1) leak repair not requiring cutting into or removing piping; (2) unstopping traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping; (3) faucet, angle stop, hose bibb or roof drain replacement/repair/maintenance not requiring cutting or removal of piping; (4) toilet replacement except with alternate water piping; (5) furnace filters; (6) removal of piping after approved disconnection under a permit; (7) display set-up not connected to supply or drainage; (8) water conservation device replacement not requiring cutting or removal; (9) State and Federal government buildings. §104.5 permit fees with no issuance fee where a fixture is replaced without a change in drainage, piping or venting.",
+   "supports_rows": [
+    "C-02"
+   ],
+   "matches": true,
+   "note": "Nine-item list and the no-cutting/no-removal condition confirmed at chunk 14, as recorded."
+  },
+  {
+   "id": "SF-FEES",
+   "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "July 2026 schedule applies to permits issued on or after July 12, 2026. Category 1P $290; Category 2PA $549; Category 2PB $809; Category 11P/M $320; regular hourly issuance/inspection $519 per hour; off-hour $555 per hour with two- and four-hour minimums; reinspection or additional inspection $259 per half hour.",
+   "supports_rows": [
+    "C-12",
+    "E official_fees"
+   ],
+   "matches": true,
+   "note": "Each published amount on the site's fee table matches the PDF."
+  },
+  {
+   "id": "BPC-7057",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "A general building contractor may not take a prime contract for a project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the contractor holds the appropriate licence classification or subcontracts with an appropriately licensed contractor.",
+   "supports_rows": [
+    "C-05",
+    "F-06"
+   ],
+   "matches": true,
+   "note": "No amendment after the 2013 version recorded."
+  },
+  {
+   "id": "BPC-7057-5",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5.",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "B-2 residential remodeling requires at least three unrelated trades for a single contract; the contractor may not make structural changes and may not install, replace, substantially alter or extend plumbing systems unless it holds the appropriate classification or subcontracts with an appropriately licensed contractor; minor alterations are permitted to effectuate installing, repairing or replacing fixtures.",
+   "supports_rows": [
+    "C-06",
+    "F-08"
+   ],
+   "matches": true,
+   "note": ""
+  },
+  {
+   "id": "BPC-7059",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "Nothing in this section prohibits a specialty contractor from taking and executing a contract involving two or more crafts or trades if the performance of the work in the other crafts or trades is incidental and supplemental to the work for which the specialty contractor is licensed. Amended by Stats. 2024, Ch. 485 (SB 1455), effective January 1, 2025.",
+   "supports_rows": [
+    "C-15",
+    "F-47"
+   ],
+   "matches": true,
+   "note": ""
+  },
+  {
+   "id": "CIV-1954",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "Entry permitted to make necessary or agreed repairs; entry during normal business hours except in an emergency or with consent; written notice stating date, approximate time and purpose; 24 hours presumed reasonable; six days for mailed notice; oral agreement possible for agreed repairs within one week.",
+   "supports_rows": [
+    "C-08",
+    "Q-09"
+   ],
+   "matches": true,
+   "note": ""
+  },
+  {
+   "id": "CSLB-CONTRACT",
+   "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "A written contract is required for all home improvement projects over $500 in combined labour and materials; the contract must identify the contractor with address and licence number; the down payment should never exceed 10 percent of the contract price or $1,000, whichever is less, except with a blanket performance and payment bond; changes must be in writing on a change order; cancellation within three days in writing.",
+   "supports_rows": [
+    "C-09",
+    "Q-11"
+   ],
+   "matches": true,
+   "note": "The generic /Consumers/Contracts/ path returns 404; the recorded URL resolves."
+  },
+  {
+   "id": "CSLB-C9",
+   "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "A drywall contractor lays out and installs gypsum wall board and assemblies including nonstructural metal framing, and performs taping and texturing including compounds that produce a continuous smooth or textured surface. Authority: BPC §7008 and §7059.",
+   "supports_rows": [
+    "C-13",
+    "F-19"
+   ],
+   "matches": true,
+   "note": "The classification text does not include plumbing work."
+  },
+  {
+   "id": "DG-CITATION",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "Complaint disclosure for #297604 D G CONSTRUCTION CO lists citation 2 2022 002099 dated 03/23/2023, status FOR DISCLOSURE ONLY PER B&P CODE 7124.6. The citation detail page shows violation 7114.A, description 'Aided and abetted non-licensee'.",
+   "supports_rows": [
+    "P-21",
+    "F-11"
+   ],
+   "matches": true,
+   "note": "The citation URL needs its full parameter set; without it the page returns 'Invalid Parameters passed'."
+  },
+  {
+   "id": "ACE",
+   "url": "https://www.aceplumbingandrooter.com/",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "Company site lists Contractors License #829071, A, B, C4, C10, C16 and C36 classifications, and a published HOA and property-manager offer covering insurance requirements and purchase orders.",
+   "supports_rows": [
+    "P-02",
+    "F-06"
+   ],
+   "matches": true,
+   "note": "Company self-description, not a government record."
+  },
+  {
+   "id": "HEISE-PANHANDLE",
+   "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-171358/",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "Company project page: 'replaced the tub waste and overflow assembly in a residence. They removed the old overflow, installed a new assembly, and tested the bathtub for leaks.'",
+   "supports_rows": [
+    "P-03",
+    "F-17"
+   ],
+   "matches": true,
+   "note": "Company self-description of an adjacent job; it does not confirm access through a ceiling."
+  },
+  {
+   "id": "YELP-ACE",
+   "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+   "retrieved": "2026-11-11",
+   "re_read": true,
+   "key_text": "HTTP 403 — page not retrievable.",
+   "supports_rows": [
+    "F-14"
+   ],
+   "matches": true,
+   "note": "Returned 403 again on 2026-11-11, so no Yelp rating or count is published anywhere on the site."
+  },
+  {
+   "id": "SF-CODE-106",
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+   "retrieved": "2026-11-11",
+   "re_read": false,
+   "key_text": "",
+   "supports_rows": [
+    "C-13",
+    "Q-05"
+   ],
+   "matches": null,
+   "note": "Not re-fetched in this review. The published wording rests on the 2026-11-10 direct retrieval recorded in sources.json; treat as carried forward, not re-verified today."
+  },
+  {
+   "id": "CSLB-831",
+   "url": "https://www2.cslb.ca.gov/Resources/LawsAndRegulations/2023/CSLB_-_BESS_-_Notice_-__OAL.pdf",
+   "retrieved": "2026-11-11",
+   "re_read": false,
+   "key_text": "",
+   "supports_rows": [
+    "C-15",
+    "F-18"
+   ],
+   "matches": null,
+   "note": "Not re-fetched in this review; carried forward from the 2026-11-10 direct retrieval."
+  },
+  {
+   "id": "EPA-RRP",
+   "url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
+   "retrieved": "2026-11-11",
+   "re_read": false,
+   "key_text": "",
+   "supports_rows": [
+    "C-10",
+    "Q-06"
+   ],
+   "matches": null,
+   "note": "Not re-fetched in this review; carried forward from the 2026-11-10 direct retrieval."
+  },
+  {
+   "id": "EPA-ASBESTOS",
+   "url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos",
+   "retrieved": "2026-11-11",
+   "re_read": false,
+   "key_text": "",
+   "supports_rows": [
+    "C-11",
+    "Q-06"
+   ],
+   "matches": null,
+   "note": "Not re-fetched in this review; carried forward from the 2026-11-10 direct retrieval."
+  }
+ ]
+}

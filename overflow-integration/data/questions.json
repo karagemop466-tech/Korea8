@@ -1,0 +1,192 @@
+{
+  "as_of": "2026-11-11",
+  "caption": "Decision-blocking questions: what is already established, what is still missing, and how to obtain the missing information.",
+  "rows": [
+    {
+      "id": "Q-01",
+      "question": "Does this repair need a plumbing permit, and which operations would change that answer?",
+      "established": "SF.gov states a permit is required before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground, and lists the licence types that may apply. The 2025 San Francisco Plumbing Code §104.2 lists nine exemptions, each conditioned on not cutting into or removing piping or traps. No source establishes which item, if any, applies to this unit's assembly.",
+      "missing": "The assembly type and the exact operations (linkage adjustment, plate removal, assembly replacement, wall or ceiling opening), plus a DBI determination for this address.",
+      "discovery": "Send photographs and the proposed operations to the DBI Permit Center help desk — 628-652-4900, permitsf@sfgov.org, or 49 South Van Ness Avenue, second floor — and ask for the scope determination in writing. City offices are closed 2026-11-11; the next business day is 2026-11-12.",
+      "blocks": "Whether a permit application is part of the job, and which licence holders can take it.",
+      "status": "Open — no DBI scope determination on file",
+      "source_ids": ["SF-PERMIT", "SF-CODE-104", "SF-CODE-104-PDF"],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "Q-02",
+      "question": "Can the stuck trip lever be freed from above through the overflow opening?",
+      "established": "The Watco 500/501/600TL instructions describe removing and readjusting the overflow plate and drop cylinder from the tub side for those models. The owner reports that five or more licensed plumbers could not free it from above. The installed brand and model are not documented anywhere in the register.",
+      "missing": "The actual assembly brand and model, and what each plumber attempted and observed.",
+      "discovery": "Photograph the overflow plate and any brand marks; ask each lead to state in writing what it attempted and what happened; ask one lead to identify the model from the plate before any below-ceiling work is priced.",
+      "blocks": "Whether below-ceiling access is needed at all.",
+      "status": "Partially answered — manufacturer path published, this unit unidentified",
+      "source_ids": ["WATCO", "OWNER", "HEISE-PANHANDLE"],
+      "official_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf"
+    },
+    {
+      "id": "Q-03",
+      "question": "What is behind the wall — drain size, fitting type and condition?",
+      "established": "No entry in the register documents the drain size, fitting type, wall construction or the condition of the concealed connection. The assembly is described only as stuck inside concealed plumbing.",
+      "missing": "Pipe material and size, fitting arrangement, condition of the slip joints, and whether a compatible replacement kit exists.",
+      "discovery": "Ask the provider to photograph what is visible once the overflow plate is removed, and to photograph the trap and overflow connection before any opening is closed. Require a compatibility check before parts are ordered.",
+      "blocks": "Parts selection and whether a replacement matches the existing drain.",
+      "status": "Open — no provider document on file",
+      "source_ids": ["WATCO", "SF-PERMIT"],
+      "official_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "Q-04",
+      "question": "Who may authorize opening the ceiling of the storage unit below?",
+      "established": "The owner record states that below access is through a storage unit and that ownership or consent has not been supplied. California Civil Code §1954 sets the notice rules for entering a rented dwelling unit to make necessary or agreed repairs.",
+      "missing": "Who controls the storage space, whether the ceiling is a common area, and written authorization to open it.",
+      "discovery": "Check the deed or lease for the storage space and ask the property manager or owner of record; obtain written authorization before any opening and name the party that restores the ceiling.",
+      "blocks": "Any below-ceiling route and the schedule.",
+      "status": "Open — authority and consent not supplied",
+      "source_ids": ["OWNER", "CIV-1954"],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    },
+    {
+      "id": "Q-05",
+      "question": "Is the storage ceiling part of a fire-resistive assembly?",
+      "established": "San Francisco Building Code §106A.2(8) and (10) exempt painting and finishing and minor interior plaster or wallboard repairs from a building permit, except when the work is part of a fire-resistive assembly.",
+      "missing": "Whether this floor-ceiling separation is rated, and what restoration detail the rating requires.",
+      "discovery": "Ask DBI records or the building plans at 49 South Van Ness Avenue; ask the contractor to state in writing whether the ceiling is rated and what restoration detail is required before cutting.",
+      "blocks": "Whether the patch needs a building permit and how the ceiling must be restored.",
+      "status": "Open — building records not obtained",
+      "source_ids": ["SF-CODE-106", "SF-CODE-106-PDF", "SF-REMODEL"],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027"
+    },
+    {
+      "id": "Q-06",
+      "question": "Is the building old enough for lead-paint and asbestos rules to apply to the opening?",
+      "established": "EPA's Renovation, Repair and Painting Program covers paid paint-disturbing work in pre-1978 housing and child-occupied facilities, and EPA publishes guidance for suspect asbestos-containing material. The building's year built has not been supplied.",
+      "missing": "Year built, paint condition in the work area, and whether any suspect material will be disturbed.",
+      "discovery": "Obtain the year built from permit records, Assessor records or the property manager; ask each lead whether its firm is RRP-certified and how it will handle suspect material; test only where material will actually be disturbed.",
+      "blocks": "Contractor credentials and the work method.",
+      "status": "Open — building age not supplied",
+      "source_ids": ["EPA-RRP", "EPA-RRP-RULES", "EPA-ASBESTOS"],
+      "official_url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program"
+    },
+    {
+      "id": "Q-07",
+      "question": "Will one licensed provider do both the plumbing and the ceiling restoration, or are two contracts needed?",
+      "established": "Ace Plumbing & Rooter (#829071) holds B + C-36. Heise's Plumbing (#1089561) holds C-36 without B or C-9; BPC §7059(a) and 16 CCR §831 allow other-trade work only if it is incidental, supplemental and essential to the licensed craft. Bernal Hill Drywall (#995163) holds C-9 + B and no C-36. No provider has confirmed who performs the patch, texture and paint.",
+      "missing": "The named party for the ceiling work and the contract structure that covers it lawfully.",
+      "discovery": "Ask each lead in writing: who performs the ceiling opening and restoration, under which licence number, and is it one contract or two? Put the named party in the contract and keep the reply.",
+      "blocks": "Contract structure and the combined price.",
+      "status": "Open — no provider answer on file",
+      "source_ids": ["CSLB-829071", "CSLB-1089561", "CSLB-995163", "BPC-7059"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071"
+    },
+    {
+      "id": "Q-08",
+      "question": "What does each shortlisted provider charge today for one identical written scope?",
+      "established": "Three amounts were supplied by the owner on 2026-08-30 ($614, $550 and $135) against different scopes. None is a verified price and the scopes differ. Official DBI plumbing fees are published separately and are not project quotes.",
+      "missing": "Current written quotes for one identical scope, itemised.",
+      "discovery": "Send the copy-ready request on this dashboard to the top three leads, asking for itemised prices for the plumbing work, the opening, the patch/texture/paint, and any permit or inspection fee; keep every written reply.",
+      "blocks": "Cost comparison and selection.",
+      "status": "Open — no current written quote on file",
+      "source_ids": ["OWNER", "CSLB-CONTRACT", "SF-FEES"],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+    },
+    {
+      "id": "Q-09",
+      "question": "When can the work be done, and how is the occupied unit protected?",
+      "established": "Civil Code §1954 permits entry to make necessary or agreed repairs, requires reasonable written notice stating the date, approximate time and purpose, presumes 24 hours reasonable, and limits entry to normal business hours unless the tenant consents. No provider availability has been confirmed.",
+      "missing": "Each lead's earliest start date and working hours, and the tenant's availability.",
+      "discovery": "Ask each lead for its earliest start and working hours in writing; agree a schedule with the tenant and serve written notice stating date, approximate time and purpose.",
+      "blocks": "Scheduling and tenant coordination.",
+      "status": "Open — no availability confirmed",
+      "source_ids": ["CIV-1954", "OWNER"],
+      "official_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954."
+    },
+    {
+      "id": "Q-10",
+      "question": "Who will actually be on site, and is the work insured for this job?",
+      "established": "CSLB records state each licence's workers'-compensation position; several listed licences are exempt because the holder certified no employees. A CSLB record is a licence record, not a job-specific certificate of insurance.",
+      "missing": "A certificate of insurance for this job and the names of the people who will attend.",
+      "discovery": "Ask for a certificate of insurance showing the policy and dates, and ask which licence holder and which employees or subcontractors will attend; compare the answer with the CSLB record.",
+      "blocks": "Hire decision and risk allocation.",
+      "status": "Open — no certificate requested yet",
+      "source_ids": ["CSLB-829071", "CSLB-757796", "CSLB-SEARCH"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "Q-11",
+      "question": "What must the written contract contain, and what payment schedule is lawful?",
+      "established": "CSLB states that a written contract is required for home improvement projects over $500 in combined labour and materials, that it must identify the contractor with address and licence number, and that a down payment should not exceed 10% of the contract price or $1,000, whichever is less, except where the contractor holds a blanket performance and payment bond. Changes must be in writing.",
+      "missing": "The provider's draft contract, payment schedule and change-order terms.",
+      "discovery": "Request the draft contract before signing; check the licence number and legal name against the CSLB record; confirm the payment schedule, cancellation terms and change-order process in writing.",
+      "blocks": "Signing and payment.",
+      "status": "Open — no draft contract on file",
+      "source_ids": ["CSLB-CONTRACT", "CSLB-SEARCH"],
+      "official_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx"
+    },
+    {
+      "id": "Q-12",
+      "question": "Which DBI fee category and inspection charges apply if a permit is required?",
+      "established": "The July 2026 DBI Table 1A-C lists plumbing and mechanical permit fee categories and hourly inspection charges. SF.gov states that plumbing work must be inspected before pipes are covered.",
+      "missing": "Which fee category applies to this scope and whether inspection is required.",
+      "discovery": "Once the scope is settled, ask DBI which fee category applies and add that amount to each quote before comparing costs.",
+      "blocks": "All-in cost comparison.",
+      "status": "Partially answered — fee schedule published, category not determined",
+      "source_ids": ["SF-FEES", "SF-PERMIT"],
+      "official_url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf"
+    },
+    {
+      "id": "Q-13",
+      "question": "What is the agreed decision point before any finished surface is cut?",
+      "established": "The technical page records the sequence: attempt the tub-side path first, then use below-ceiling access under a written opening and restoration plan. Nothing in the register sets a decision rule or names who authorizes the cut.",
+      "missing": "A written rule for when to stop and seek approval, and the person who authorizes the opening.",
+      "discovery": "Ask the lead to state in writing the point at which it will stop for approval, the opening size it expects and the restoration it will perform; agree the approval contact before work starts.",
+      "blocks": "Scope control and liability.",
+      "status": "Open — no written stop-and-approve rule",
+      "source_ids": ["WATCO", "SF-CODE-106", "OWNER"],
+      "official_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027"
+    },
+    {
+      "id": "Q-14",
+      "question": "Are the shortlisted licence records still current at the moment the job is booked?",
+      "established": "Every identified CSLB record was re-read on 2026-11-11 for this review; one stored field differed — George Salet Plumbing #888630 is recorded by CSLB as expiring 12/31/2028, not 12/31/2026 — and was corrected (F-72). Status can change, and three identities remain unresolved and blank.",
+      "missing": "A same-day status check at booking and the provider's licence card.",
+      "discovery": "Re-run the CSLB licence check for the chosen licence number, compare the legal name with the contract, and ask to see the licence card. Leave Portola Plumbing, C J's Plumbing and Golden Gate Plumbing blank unless a CSLB record is found.",
+      "blocks": "Booking with a currently licensed party.",
+      "status": "Partially answered — records checked 2026-11-11, re-check at booking",
+      "source_ids": ["CSLB-SEARCH", "CSLB-888630"],
+      "official_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    }
+  ],
+  "discovery_kit": [
+    {
+      "id": "D-01",
+      "label": "Photograph the overflow plate and the ceiling below",
+      "detail": "Two photographs close the identification question fastest: the overflow plate (front and edge, for brand marks) and the storage-unit ceiling under the tub. No photographs were supplied with the brief.",
+      "source_ids": ["OWNER", "WATCO"]
+    },
+    {
+      "id": "D-02",
+      "label": "Ask DBI for one written scope determination",
+      "detail": "One inquiry to the Permit Center help desk (628-652-4900, permitsf@sfgov.org) covering the opening, the pipe work and the ceiling patch answers the permit question for the whole job. Offices are closed 2026-11-11; the next business day is 2026-11-12.",
+      "source_ids": ["SF-PERMIT", "SF-DBI"]
+    },
+    {
+      "id": "D-03",
+      "label": "Send one identical request to three leads",
+      "detail": "The copy-ready request on the dashboard is written so the replies are comparable: same scope, itemised prices, named restoration party, occupied-unit schedule and the provider's permit position.",
+      "source_ids": ["CSLB-CONTRACT", "OWNER"]
+    },
+    {
+      "id": "D-04",
+      "label": "Ask for records the owner controls",
+      "detail": "Building year built, storage-space deed or lease, and any prior plumbing records for the unit. These are the only items no contractor or agency can supply on the owner's behalf.",
+      "source_ids": ["OWNER", "EPA-RRP", "CIV-1954"]
+    },
+    {
+      "id": "D-05",
+      "label": "Re-check the licence on the day of booking",
+      "detail": "The CSLB licence-detail pages are the authoritative check; compare the licence number and legal name with the contract before signing.",
+      "source_ids": ["CSLB-SEARCH", "CSLB-CONTRACT"]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Executive summary — bathtub wastewater overflow trip lever
 
-Reviewed 2026-11-10. San Francisco tenant-occupied unit. This summary is based on the linked
+Reviewed 2026-11-11. San Francisco tenant-occupied unit. This summary is based on the linked
 official/company sources and a neutral owner record; it is not a contractor booking or legal advice.
 
 ## Decision
@@ -61,4 +61,12 @@ are unconfirmed.
 ## Open items
 No provider has confirmed this exact stuck-lever job, ceiling restoration, availability or price.
 Portola, C J’s and Golden Gate identities remain unresolved and blank. Yelp ratings/counts are blank because business pages were blocked.
-Access-panel dimensions remain unverified. See the Flagged for Review page for all 62 items, including the BPC §7059(a), scoring-rubric and source-metadata corrections.
+Access-panel dimensions remain unverified. See the Flagged for Review page for all 63 items, including the BPC §7059(a), scoring-rubric and source-metadata corrections.
+
+## Questions to close before booking
+
+14 decision-blocking questions are tracked on `questions.html`. Each states what the official
+sources already establish, what is still missing, and the concrete step that would produce it. The five
+discovery steps are: photograph the overflow plate and the ceiling below; ask DBI for one written scope
+determination; send one identical request to three leads; obtain the records only the owner controls
+(building age, storage-space authority); and re-check the licence on the day of booking.

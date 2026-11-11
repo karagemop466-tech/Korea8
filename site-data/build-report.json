@@ -1,11 +1,12 @@
 {
-  "built_at": "2026-11-11T02:20:33.878390+00:00",
+  "built_at": "2026-11-11T02:23:21.437641+00:00",
   "generator": "scripts/build_overflow_site.py",
   "data": "overflow-integration/data",
   "pages": [
     "index.html",
     "executive-summary.html",
     "decision-analysis.html",
+    "questions.html",
     "requirements.html",
     "providers.html",
     "estimates.html",
@@ -29,8 +30,8 @@
     "compliance": 15,
     "reviews": 23,
     "cost_drivers": 6,
-    "sources": 136,
-    "flags": 62,
+    "sources": 137,
+    "flags": 63,
     "ranking": 10,
     "ranking_held": 18
   },

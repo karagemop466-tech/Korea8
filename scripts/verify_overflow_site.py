@@ -5,7 +5,7 @@ import json,pathlib,re,sys,datetime,html
 from html.parser import HTMLParser
 ROOT=pathlib.Path(__file__).resolve().parent.parent
 DATA=ROOT/'overflow-integration'/'data'
-PAGES=['index.html','executive-summary.html','decision-analysis.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
+PAGES=['index.html','executive-summary.html','decision-analysis.html','questions.html','requirements.html','providers.html','estimates.html','technical-approach.html','code-and-permit.html','sources.html','flagged-for-review.html','verification.html']
 checks=[]
 def check(name,ok,detail=''):
  checks.append({'check':name,'ok':bool(ok),'detail':detail})
@@ -89,6 +89,10 @@ def main():
  prov=load('providers.json')['rows'];req=load('requirements.json')['rows'];est=load('estimates.json');rev=load('reviews.json')['rows'];flags=load('flags.json')['rows'];srcs={s['id']:s for s in load('sources.json')['rows']}
  check('provider count parity',len(parsed['providers.html'].tables.get('providers-table',[]))==len(prov),f"{len(parsed['providers.html'].tables.get('providers-table',[]))}/{len(prov)}")
  check('requirement count parity',len(parsed['requirements.html'].tables.get('requirements-table',[]))==len(req))
+ qn=load('questions.json')['rows']
+ check('open-question count parity',len(parsed['questions.html'].tables.get('questions-table',[]))==len(qn),f"{len(parsed['questions.html'].tables.get('questions-table',[]))}/{len(qn)}")
+ check('every open question states what is missing and how to obtain it',all(q.get('missing') and q.get('discovery') and q.get('established') for q in qn))
+ check('open-question source ids resolve',all(i in srcs for q in qn for i in q['source_ids']))
  check('estimate count parity',len(parsed['estimates.html'].tables.get('estimates-table',[]))==len(est['rows']))
  check('cost drivers table parity',len(parsed['estimates.html'].tables.get('cost-drivers-table',[]))==len(est.get('cost_drivers',[])) and len(est.get('cost_drivers',[]))>=6)
  check('source count parity',len(parsed['sources.html'].tables.get('sources-table',[]))==len(srcs))
