@@ -1882,4 +1882,6 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 
 **Second concurrent integration:** PR #81 (`arena/331cafce-korea8`) merged after PR #78 while this branch was being prepared. Rebase produced a board conflict; both session records and PR #81's independent audit files were preserved. This session's prior local checks preceded that merge; the combined tree was checked again below.
 
-**Third concurrent integration:** PR #82 (`arena/92cc6407-korea8`) advanced `main` during rebase. Its reproducibility audit and both generated audit links were retained alongside this session's link; generated conflicts were rebuilt from the combined generator. Board conflict was resolved by retaining both records. No other session's work was discarded.
+**Third concurrent integration:** PR #79 (`arena/92cc6407-korea8`) advanced `main` during rebase. Its reproducibility audit and both generated audit links were retained alongside this session's link; generated conflicts were rebuilt from the combined generator. Board conflict was resolved by retaining both records. No other session's work was discarded.
+
+**Fourth concurrent integration:** PR #84 recorded the PR #81 deployment receipt on `main`. The shared-board conflict was resolved preserving both sessions’ records.
