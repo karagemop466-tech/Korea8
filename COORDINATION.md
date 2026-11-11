@@ -1966,7 +1966,42 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| `692-01` | Claim board and inventory active work | in progress | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
-| `692-02` | Independent fresh re-verification of items **not** covered by the 2026-11-11 `331cafce` pass: a subset of the remaining 19 CSLB records, official company websites of top-ranked leads, BPC §§7057/7057.5 on leginfo, and the July 2026 DBI fee schedule | unclaimed | `arena/692cc7ba-korea8` | `audit/2026-11-11-692cc7ba/**` |
-| `692-03` | Confirm the live Pages deployment of current `main` (`bcf81b2` or later) serves the canonical dashboard, and run the full canonical health suite (build, verifier, unit tests, independent audit, wording guard) on a scratch copy without editing tracked files | unclaimed | `arena/692cc7ba-korea8` | `audit/2026-11-11-692cc7ba/**` |
-| `692-04` | Open PR from `arena/692cc7ba-korea8` to `main`, merge, verify exact-commit Pages deployment and record the receipt on this board | unclaimed | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
+| `692-01` | Claim board and inventory active work | done | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
+| `692-02` | Independent fresh re-verification of items **not** covered by the 2026-11-11 `331cafce` pass: a subset of the remaining 19 CSLB records, official company websites of top-ranked leads, BPC §§7057/7057.5 on leginfo, and the July 2026 DBI fee schedule | done | `arena/692cc7ba-korea8` | `audit/2026-11-11-692cc7ba/**` |
+| `692-03` | Confirm the live Pages deployment of current `main` (`bcf81b2` or later) serves the canonical dashboard, and run the full canonical health suite (build, verifier, unit tests, independent audit, wording guard) on a scratch copy without editing tracked files | done | `arena/692cc7ba-korea8` | `audit/2026-11-11-692cc7ba/**` |
+| `692-04` | Open PR from `arena/692cc7ba-korea8` to `main`, merge, verify exact-commit Pages deployment and record the receipt on this board | in progress | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
+
+### 692-02 / 692-03 — completion record (2026-11-11)
+
+- **Sources checked (direct fetch, 2026-11-11 ~02:17–02:21 UTC):** CSLB licence-detail records
+  #392967, #1096552, #749536, #1140843, #1027286, #1106131, #868994, #954813 (all state
+  "Data current as of 11/10/2026"); BPC §7057 and §7057.5 on leginfo.legislature.ca.gov;
+  DBI Table 1A-C July 2026 fee schedule PDF on media.api.sf.gov; company sites
+  ayoobpeery.com and wedoconstructions.com (general-contractor service page);
+  Pages API, `overflow-pages.yml` runs and three live routes on
+  https://karagemop466-tech.github.io/Korea8/.
+- **Verification performed:** field-by-field comparison of legal name, registered city, phone,
+  entity type, issue/reissue/expiry dates, status, classifications and workers-compensation
+  summaries for the 8 CSLB records against `overflow-integration/data/providers.json`;
+  all 5 canonical fee rows against the July 2026 PDF; statute text against canonical
+  conditional readings (BPC-7057, BPC-7057-5 / F-07, F-08 treatments); service claims
+  against live site text. **Result: 0 mismatches.** Full receipts:
+  `audit/2026-11-11-692cc7ba/receipts.json`; narrative: `audit/2026-11-11-692cc7ba/REPORT.md`.
+- **Health suite (scratch copy, no tracked file edited):** build exit 0; verifier **28/28 PASS**
+  (277 tracked links, 0 broken); unit tests **40/40 OK**; independent audit 405/405 rows with
+  source, 0 problems; wording guard clean; staging 46 files. Working tree confirmed unmodified.
+- **Live publication:** Pages API `built` (commit `dff1a3ca`, no error); workflow runs
+  42945238155/42945140421/42945103895 all success; `index.html`, `verification.html` and
+  `flagged-for-review.html` (61 items) served canonical content on fetch.
+- **Irregularities found:** none against canonical data. Kenneth Asire #1027286 remains
+  suspended (bond cancellation 08/16/2026) — canonical exclusion still correct. The shared
+  (415) 668-8000 phone on #749536/#757796 is CSLB-listed on both records; the relationship
+  question stays covered by the existing published flag. No provider contacted/booked/paid.
+
+### Cross-session request from `arena/692cc7ba-korea8` (do not edit outside own scope)
+
+1. **Optional enrichment for the integration owner:** canonical P-26 (24/7 Rooter and Plumbing
+   Services Inc, CSLB #954813) has `issue_date` blank while the CSLB record shows 11/18/2010
+   (retrieved 2026-11-11, receipt in `audit/2026-11-11-692cc7ba/receipts.json`). Blank is
+   conservative and not an error; the integration owner may populate it from that receipt at
+   their discretion. This session did not edit any canonical file.
