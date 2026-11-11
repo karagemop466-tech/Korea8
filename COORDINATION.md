@@ -2010,3 +2010,20 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
    (retrieved 2026-11-11, receipt in `audit/2026-11-11-692cc7ba/receipts.json`). Blank is
    conservative and not an error; the integration owner may populate it from that receipt at
    their discretion. This session did not edit any canonical file.
+
+---
+
+## Session `arena/00e8bf10-korea8` — decision-blocking open-questions deliverable, fresh official-source check and closing integration (2026-11-11)
+
+**Branch note.** Arena fixes this session to `arena/00e8bf10-korea8`; no other branch or worktree is created. Claim written and pushed before any other edit.
+**Overlap check.** The latest board entry (`20bb5485`, PR #78, merged 2026-11-11) records complete canonical handoffs; every earlier claim is merged or older than 60 minutes with no new commits. No open claim is taken over. Open PRs #7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66 and #72 are independent audits and are not merged, closed or treated as verified.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `00E-01` | Claim this board before any other edit | done | `arena/00e8bf10-korea8` | `COORDINATION.md` |
+| `00E-02` | Fresh official-source re-check of the provider licence fields and the statutes/city pages the decision rests on; receipts in this session's audit folder; correct only what a source contradicts | in progress | `arena/00e8bf10-korea8` | new `audit/2026-11-11-00e8bf10/**` |
+| `00E-03` | Publish the decision-blocking question list as its own dashboard page: each open question, what is already established, what is missing, and how to obtain it | in progress | `arena/00e8bf10-korea8` | `overflow-integration/data/questions.json`, `scripts/build_overflow_site.py`, generated canonical pages |
+| `00E-04` | Publication-boundary check of the public file closure (no private owner context, no permit claim the official sources do not support, no unverified numeric review values) | in progress | `arena/00e8bf10-korea8` | `audit/2026-11-11-00e8bf10/**` |
+| `00E-05` | Rebuild, run verifier + unit tests + wording guard + independent audit + staging with live HTTPS checks; PR to `main`, merge and confirm the deployment for the exact merge commit | pending | `arena/00e8bf10-korea8` | generated build/verification reports, `COORDINATION.md` |
+
+No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank.
