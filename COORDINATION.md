@@ -1818,3 +1818,15 @@ All earlier canonical implementation claims end in completed integration receipt
 - First branch pull could not find the not-yet-published session branch; fetched/rebased against `origin/main` instead, then published the fixed session branch successfully. No merge conflict or discarded work.
 
 **Concurrent integration:** PR #78 advanced `main` during publication. Rebased onto `449025a`, retained both board entries, preserved the other session's 11 November spot-check link and data corrections, and regenerated conflicted HTML/reports from the combined generator. No prior work discarded. Generated independent-audit report is also within this session's verification-output scope.
+
+
+## Session `arena/611bd0aa-korea8` — 2026-11-11 fresh re-verification and line-by-line repo review
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `61-01` | Claim board on `COORDINATION.md` and push immediately | in progress | `arena/611bd0aa-korea8` | `COORDINATION.md` |
+| `61-02` | Fresh official-source re-verification (CSLB top leads, SF.gov permit service, BPC §7059) and line-by-line repo review | unclaimed | `arena/611bd0aa-korea8` | `audit/2026-11-11-611bd0aa/**` |
+| `61-03` | Apply only evidenced corrections; rebuild and run full verification suite | unclaimed | `arena/611bd0aa-korea8` | `overflow-integration/**`, canonical generator/verifier/tests and generated root pages only if an evidenced correction is required |
+| `61-04` | Open PR to `main`, merge, confirm Pages deploy and record receipt | unclaimed | `arena/611bd0aa-korea8` | `COORDINATION.md`, deployment records and generated public output |
+
+**Coordination note.** Arena pins this session to `arena/611bd0aa-korea8`; no other branch or worktree will be created or pushed. Baseline is `main` at `b491225` (PR #77 merge). Earlier canonical handoffs are merged (PR #76, PR #77); open PRs (#7, #35, #38, #39, #44, #49, #51, #53, #63, #64, #66, #72) are independent audits and will not be merged, closed or treated as verified without review. Unrelated DOE GEMS files remain read-only. No provider will be contacted, booked or paid. Owner-supplied amounts stay labelled owner-reported with verified amounts blank. Public content uses neutral repair-scope language checked with `scripts/wording_guard.py`.
