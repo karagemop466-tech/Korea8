@@ -1733,3 +1733,24 @@ No provider will be contacted, quoted, booked or paid. Owner-supplied estimates 
 | Pages API | Legacy build for `0e80a1f0` reports **built**, no error |
 | Independent live checks | Cache-busted `decision-analysis.html`, `verification.html`, `flagged-for-review.html`, `audit/2026-11-10-4b81abe2/REPORT.md` and `requirements-traceability.json` fetched successfully; corrected order/rubric, new audit links and 60 flags confirmed |
 | Final status | `4B-01`…`4B-04` **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked/paid. |
+
+---
+
+## Session `arena/20bb5485-korea8` — independent current-state and publication review
+
+Arena fixes this session to the existing branch. Prior historical in-progress entries are not assumed to be current; no files under another live claim will be edited. Public artifacts use neutral repair-scope language. No provider will be contacted or booked without confirmation.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `20BB-01` | Independently review current canonical dashboard, source verification, tests and publication; record material gaps | done | `arena/20bb5485-korea8` | `audit/2026-11-11-20bb5485/**`, `COORDINATION.md` |
+| `20BB-02` | Integrate any substantiated corrections and publish if safe, after checking other sessions' claims | in progress | `arena/20bb5485-korea8` | Scope to be claimed after audit |
+
+### `20BB-02` integration claim — 2026-11-11 UTC
+
+Prior canonical handoffs in the last board entry are complete, and historical outstanding claims have no new commits for over 60 minutes. Claiming the following narrow integration scope: `overflow-integration/data/flags.json`, `scripts/build_overflow_site.py`, generated canonical pages and generated build/verification reports, `site-data/**`, and `COORDINATION.md`. Prior work will be preserved. The `20BB-01` audit is restricted to `audit/2026-11-11-20bb5485/**`. No other branch will be created or pushed. Scope: record the current publication-configuration access failure and the targeted independent check, without representing it as a full fresh review of every external claim.
+
+### 20BB targeted review — 2026-11-11
+
+- Targeted independent checks (not a fresh line-by-line audit of every repository entry): [report](audit/2026-11-11-20bb5485/REPORT.md), including three direct [CSLB records](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx), their company scope claims and [City guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit). Yelp returned HTTP 403; no ratings were invented. No provider contacted or booked; exact acceptance and combined price remain unknown.
+- GitHub [Pages API](https://api.github.com/repos/karagemop466-tech/Korea8/pages) still reports legacy main /; attempting a switch to workflow returned HTTP 403. The current board route displayed a 404 document, different from the prior recorded successful fetch; this does not establish a reliable boundary. F-52 updated. Repository is public independently of Pages.
+- Build, verifier 28/28, 40 unit tests, independent audit (405 rows; 0 internal link problems), 46-file staging, wording guard and `git diff --check` passed. External links were spot-checked only; structural checks do not establish factual support or reachability for each link.
