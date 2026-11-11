@@ -1,0 +1,608 @@
+{
+ "session": "arena/8cee3c39-korea8",
+ "task": "8CE-02",
+ "retrieved_on": "2026-11-11",
+ "method": "Every licence number held in the canonical register (26 at the start of this session, 30 after PR #92 merged during it) was read. Each CSLB licence-detail page was retrieved directly from cslb.ca.gov in this session and the fields below were transcribed from the returned page. Classification codes are written as the page prints them. The banner is the page's own 'Data current as of' line; the page does not state a time zone.",
+ "url_pattern": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=<license>",
+ "records": [
+  {
+   "license": "829071",
+   "legal_name": "ACE PLUMBING & ROOTER",
+   "dba": "",
+   "address": "1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417",
+   "city": "San Francisco",
+   "phone": "(415) 824-6444",
+   "entity": "Corporation",
+   "issue_date": "12/18/2003",
+   "reissue_date": "06/07/2007",
+   "expire_date": "06/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "A",
+    "C-4",
+    "C16",
+    "B",
+    "C10"
+   ],
+   "workers_comp": "Policy on file; expire date 07/13/2027",
+   "banner": "11/10/2026 6:13:25 PM"
+  },
+  {
+   "license": "1115649",
+   "legal_name": "RAPID FLOW PLUMBING & ROOTER INC",
+   "dba": "",
+   "address": "230 EDINBURGH ST, SAN FRANCISCO, CA 94112",
+   "city": "San Francisco",
+   "phone": "(415) 866-8401",
+   "entity": "Corporation",
+   "issue_date": "01/29/2024",
+   "reissue_date": "",
+   "expire_date": "01/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "B",
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 02/03/2026)",
+   "banner": "11/10/2026 6:14:20 PM"
+  },
+  {
+   "license": "1089561",
+   "legal_name": "TARO GROUP INC",
+   "dba": "HEISES PLUMBING",
+   "address": "1610 EVANS AVE, SAN FRANCISCO, CA 94124",
+   "city": "San Francisco",
+   "phone": "(415) 333-0704",
+   "entity": "Corporation",
+   "issue_date": "04/06/2022",
+   "reissue_date": "",
+   "expire_date": "04/30/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "C10",
+    "A",
+    "C20"
+   ],
+   "workers_comp": "Policy on file; expire date 01/11/2027",
+   "banner": "11/10/2026 6:14:19 PM"
+  },
+  {
+   "license": "977638",
+   "legal_name": "EXPERT PLUMBING SOLUTIONS",
+   "dba": "",
+   "address": "1465 44TH AVENUE, SAN FRANCISCO, CA 94122",
+   "city": "San Francisco",
+   "phone": "(415) 531-5340",
+   "entity": "Corporation",
+   "issue_date": "10/09/2012",
+   "reissue_date": "",
+   "expire_date": "10/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 07/19/2027",
+   "banner": "11/10/2026 6:15:10 PM"
+  },
+  {
+   "license": "757796",
+   "legal_name": "BAY AREA PLUMBING",
+   "dba": "",
+   "address": "335 14TH AVENUE, SAN FRANCISCO, CA 94118",
+   "city": "San Francisco",
+   "phone": "(415) 668-8000",
+   "entity": "Sole Ownership",
+   "issue_date": "01/07/1999",
+   "reissue_date": "",
+   "expire_date": "01/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 12/11/2024)",
+   "banner": "11/10/2026 6:15:40 PM"
+  },
+  {
+   "license": "1024971",
+   "legal_name": "JOSEPH TINSLEY",
+   "dba": "FAST RESPONSE PLUMBING AND ROOTER",
+   "address": "236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127",
+   "city": "San Francisco",
+   "phone": "(415) 596-6115",
+   "entity": "Sole Ownership",
+   "issue_date": "03/20/2017",
+   "reissue_date": "",
+   "expire_date": "03/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 12/18/2026",
+   "banner": "11/10/2026 6:15:03 PM"
+  },
+  {
+   "license": "749536",
+   "legal_name": "SAVE - ON - INTERIOR",
+   "dba": "",
+   "address": "335 14TH AVE, SAN FRANCISCO, CA 94118",
+   "city": "San Francisco",
+   "phone": "(415) 668-8000",
+   "entity": "Sole Ownership",
+   "issue_date": "05/18/1998",
+   "reissue_date": "",
+   "expire_date": "05/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "Miscellaneous information: 11/06/2015 cash deposit letter sent $15,000; 01/14/2016 cash deposit 15K follow-up letter sent",
+   "classifications_as_printed": [
+    "B",
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 04/05/2026)",
+   "banner": "11/10/2026 6:15:53 PM"
+  },
+  {
+   "license": "1096552",
+   "legal_name": "WE DO CONSTRUCTION INC",
+   "dba": "",
+   "address": "1528 UNION STREET, SAN FRANCISCO, CA 94123",
+   "city": "San Francisco",
+   "phone": "(415) 416-5494",
+   "entity": "Corporation",
+   "issue_date": "09/14/2022",
+   "reissue_date": "",
+   "expire_date": "09/30/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "B",
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 11/14/2027",
+   "banner": "11/10/2026 6:15:51 PM"
+  },
+  {
+   "license": "392967",
+   "legal_name": "AYOOB & PEERY PLUMBING CO INC",
+   "dba": "",
+   "address": "975 INDIANA ST, SAN FRANCISCO, CA 94107",
+   "city": "San Francisco",
+   "phone": "(415) 550-0975",
+   "entity": "Corporation",
+   "issue_date": "09/08/1980",
+   "reissue_date": "",
+   "expire_date": "09/30/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "B",
+    "C-4",
+    "C16",
+    "C36",
+    "C20"
+   ],
+   "workers_comp": "Policy on file; expire date 08/31/2027",
+   "banner": "11/10/2026 6:15:50 PM"
+  },
+  {
+   "license": "995163",
+   "legal_name": "BERNAL HILL DRYWALL INC",
+   "dba": "",
+   "address": "720 ANDERSON ST, SAN FRANCISCO, CA 94110",
+   "city": "San Francisco",
+   "phone": "(415) 533-8274",
+   "entity": "Corporation",
+   "issue_date": "07/28/2014",
+   "reissue_date": "",
+   "expire_date": "07/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C-9",
+    "B"
+   ],
+   "workers_comp": "Policy on file; expire date 03/10/2027",
+   "banner": "11/10/2026 6:15:10 PM"
+  },
+  {
+   "license": "1106131",
+   "legal_name": "SF BUILDING GROUP",
+   "dba": "",
+   "address": "2128 GREENDALE DR, SOUTH SAN FRANCISCO, CA 94080",
+   "city": "South San Francisco",
+   "phone": "(415) 297-2246",
+   "entity": "Corporation",
+   "issue_date": "06/18/2023",
+   "reissue_date": "",
+   "expire_date": "06/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "B"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 06/27/2025)",
+   "banner": "11/10/2026 6:16:07 PM"
+  },
+  {
+   "license": "1105133",
+   "legal_name": "HARP SERVICES",
+   "dba": "24/7 SF HANDYMAN & REMODELING SERVICE",
+   "address": "1546 GUERRERO STREET, SAN FRANCISCO, CA 94110",
+   "city": "San Francisco",
+   "phone": "(415) 304-1559",
+   "entity": "Corporation",
+   "issue_date": "05/22/2023",
+   "reissue_date": "",
+   "expire_date": "05/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "B-2"
+   ],
+   "workers_comp": "Policy on file; expire date 04/11/2027",
+   "banner": "11/10/2026 6:16:08 PM"
+  },
+  {
+   "license": "1009195",
+   "legal_name": "ADVANCED PLUMBING AND DRAIN INC",
+   "dba": "",
+   "address": "3450 SACRAMENTO ST 204, SAN FRANCISCO, CA 94118",
+   "city": "San Francisco",
+   "phone": "(415) 744-4944",
+   "entity": "Corporation",
+   "issue_date": "11/24/2015",
+   "reissue_date": "",
+   "expire_date": "11/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 08/21/2027",
+   "banner": "11/10/2026 6:16:09 PM"
+  },
+  {
+   "license": "379364",
+   "legal_name": "JAMES CACCIA PLUMBING INC",
+   "dba": "CACCIA HOME SERVICES",
+   "address": "1660 GILBRETH RD, BURLINGAME, CA 94010",
+   "city": "Burlingame",
+   "phone": "(650) 342-5363",
+   "entity": "Corporation",
+   "issue_date": "07/26/1979",
+   "reissue_date": "04/26/2001",
+   "expire_date": "04/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "C31",
+    "C34",
+    "C10"
+   ],
+   "workers_comp": "Policy on file; expire date 10/01/2027",
+   "banner": "11/10/2026 6:16:10 PM"
+  },
+  {
+   "license": "966337",
+   "legal_name": "FLOW MASTERS PLUMBING INC",
+   "dba": "",
+   "address": "6169 MISSION ST, DALY CITY, CA 94014",
+   "city": "Daly City",
+   "phone": "(415) 751-1933",
+   "entity": "Corporation",
+   "issue_date": "10/04/2011",
+   "reissue_date": "",
+   "expire_date": "10/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "C16",
+    "C20"
+   ],
+   "workers_comp": "Policy on file; expire date 06/01/2027",
+   "banner": "11/10/2026 6:16:11 PM"
+  },
+  {
+   "license": "1140843",
+   "legal_name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+   "dba": "",
+   "address": "1325 HOWARD AVE BLDG 710, BURLINGAME, CA 94010",
+   "city": "Burlingame",
+   "phone": "(650) 991-2100",
+   "entity": "Ltd Liability",
+   "issue_date": "07/22/2025",
+   "reissue_date": "",
+   "expire_date": "07/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "A"
+   ],
+   "workers_comp": "Policy on file; expire date 04/01/2027",
+   "banner": "11/10/2026 6:15:57 PM"
+  },
+  {
+   "license": "1086935",
+   "legal_name": "FDL PLUMBING INC",
+   "dba": "",
+   "address": "4547 CALLAN BLVD, DALY CITY, CA 94015",
+   "city": "Daly City",
+   "phone": "(415) 678-9557",
+   "entity": "Corporation",
+   "issue_date": "02/03/2022",
+   "reissue_date": "10/11/2022",
+   "expire_date": "10/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 01/21/2027",
+   "banner": "11/10/2026 6:16:13 PM"
+  },
+  {
+   "license": "961218",
+   "legal_name": "PRECISION ROOTER & DRAIN",
+   "dba": "",
+   "address": "945 TARAVAL ST UNIT 1214, SAN FRANCISCO, CA 94116",
+   "city": "San Francisco",
+   "phone": "(415) 724-1824",
+   "entity": "Sole Ownership",
+   "issue_date": "05/19/2011",
+   "reissue_date": "",
+   "expire_date": "05/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 05/06/2025)",
+   "banner": "11/10/2026 6:16:14 PM"
+  },
+  {
+   "license": "954385",
+   "legal_name": "CW PLUMBING INC",
+   "dba": "CITYWIDE PLUMBING",
+   "address": "244 DENNIS DR, DALY CITY, CA 94015",
+   "city": "Daly City",
+   "phone": "(415) 716-1519",
+   "entity": "Corporation",
+   "issue_date": "11/08/2010",
+   "reissue_date": "07/06/2026",
+   "expire_date": "07/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 05/11/2026)",
+   "banner": "11/10/2026 6:16:15 PM"
+  },
+  {
+   "license": "300647",
+   "legal_name": "CAHILL CONTRACTORS INC",
+   "dba": "",
+   "address": "425 CALIFORNIA ST STE 2200, SAN FRANCISCO, CA 94104",
+   "city": "San Francisco",
+   "phone": "(415) 986-0600",
+   "entity": "Corporation",
+   "issue_date": "12/05/1974",
+   "reissue_date": "",
+   "expire_date": "11/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "A",
+    "B"
+   ],
+   "workers_comp": "Policy on file; expire date 07/01/2027",
+   "banner": "11/10/2026 6:16:23 PM"
+  },
+  {
+   "license": "297604",
+   "legal_name": "D G CONSTRUCTION CO",
+   "dba": "",
+   "address": "P O BOX 22217, SAN FRANCISCO, CA 94122",
+   "city": "San Francisco",
+   "phone": "(415) 308-0803",
+   "entity": "Sole Ownership",
+   "issue_date": "08/23/1974",
+   "reissue_date": "",
+   "expire_date": "04/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "There is Complaint Disclosure information for this license.",
+   "classifications_as_printed": [
+    "B",
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 04/14/2025)",
+   "banner": "11/10/2026 6:16:23 PM"
+  },
+  {
+   "license": "1027286",
+   "legal_name": "KENNETH ASIRE PLUMBING",
+   "dba": "",
+   "address": "1559 SLOAT BLVD #319, SAN FRANCISCO, CA 94132",
+   "city": "San Francisco",
+   "phone": "(415) 913-8048",
+   "entity": "Sole Ownership",
+   "issue_date": "05/25/2017",
+   "reissue_date": "",
+   "expire_date": "05/31/2027",
+   "status": "License is under suspension: Contractors Bond Suspension (bond cancellation date 08/16/2026).",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 08/30/2027",
+   "banner": "11/10/2026 6:14:57 PM"
+  },
+  {
+   "license": "1160613",
+   "legal_name": "CLEVER PLUMBING & ROOTER INC",
+   "dba": "",
+   "address": "585 HUNTINGTON AVE APT 4, SAN BRUNO, CA 94066",
+   "city": "San Bruno",
+   "phone": "(650) 834-0821",
+   "entity": "Corporation",
+   "issue_date": "09/04/2026",
+   "reissue_date": "",
+   "expire_date": "09/30/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 08/05/2026)",
+   "banner": "11/10/2026 6:16:25 PM"
+  },
+  {
+   "license": "868994",
+   "legal_name": "ATLAS PLUMBING & ROOTER",
+   "dba": "",
+   "address": "3311 MISSION STREET UNIT 165, SAN FRANCISCO, CA 94110",
+   "city": "San Francisco",
+   "phone": "(650) 871-9863",
+   "entity": "Corporation",
+   "issue_date": "12/08/2005",
+   "reissue_date": "03/25/2008",
+   "expire_date": "03/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "A"
+   ],
+   "workers_comp": "Employee service group holds the policy; expire date 07/01/2027",
+   "banner": "11/10/2026 6:16:26 PM"
+  },
+  {
+   "license": "954813",
+   "legal_name": "24 / 7 ROOTER AND PLUMBING SERVICES INC",
+   "dba": "A & R PLUMBING",
+   "address": "1070 QUESADA AVE, SAN FRANCISCO, CA 94124",
+   "city": "San Francisco",
+   "phone": "(415) 586-6851",
+   "entity": "Corporation",
+   "issue_date": "11/18/2010",
+   "reissue_date": "",
+   "expire_date": "11/30/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36",
+    "C-61 / D56",
+    "A"
+   ],
+   "workers_comp": "Policy on file; expire date 07/01/2027",
+   "banner": "11/10/2026 6:16:27 PM"
+  },
+  {
+   "license": "888630",
+   "legal_name": "GEORGE SALET PLUMBING INC",
+   "dba": "",
+   "address": "200 VALLEY DRIVE #51, BRISBANE, CA 94005",
+   "city": "Brisbane",
+   "phone": "(415) 334-0733",
+   "entity": "Corporation",
+   "issue_date": "12/21/2006",
+   "reissue_date": "",
+   "expire_date": "12/31/2028",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C16",
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 01/28/2027",
+   "banner": "11/10/2026 6:16:03 PM"
+  },
+  {
+   "license": "1051650",
+   "legal_name": "STARBOY PLUMBING INC",
+   "dba": "",
+   "address": "1580 FOLSOM ST, SAN FRANCISCO, CA 94103",
+   "city": "San Francisco",
+   "phone": "(650) 290-1350",
+   "entity": "Corporation",
+   "issue_date": "03/25/2019",
+   "reissue_date": "",
+   "expire_date": "03/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 02/06/2025)",
+   "banner": "11/10/2026 6:16:02 PM"
+  },
+  {
+   "license": "1055209",
+   "legal_name": "PIPE WHISPERER",
+   "dba": "",
+   "address": "1501 LINCOLN WAY APT 202, SAN FRANCISCO, CA 94122",
+   "city": "San Francisco",
+   "phone": "(415) 745-0600",
+   "entity": "Sole Ownership",
+   "issue_date": "06/27/2019",
+   "reissue_date": "",
+   "expire_date": "06/30/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Exempt; certified no employees (effective 05/18/2025)",
+   "banner": "11/10/2026 6:16:02 PM"
+  },
+  {
+   "license": "1031231",
+   "legal_name": "AMADOR'S DRYWALL",
+   "dba": "",
+   "address": "235 GRAND AVE STE 201, SOUTH SAN FRANCISCO, CA 94080",
+   "city": "South San Francisco",
+   "phone": "(415) 756-4958",
+   "entity": "Corporation",
+   "issue_date": "09/22/2017",
+   "reissue_date": "03/14/2019",
+   "expire_date": "03/31/2027",
+   "status": "This license is current and active.",
+   "additional_status": "",
+   "classifications_as_printed": [
+    "C-9",
+    "B"
+   ],
+   "workers_comp": "Policy on file; expire date 02/08/2027",
+   "banner": "11/10/2026 6:16:03 PM"
+  },
+  {
+   "license": "920294",
+   "legal_name": "RAYNA BRAND",
+   "dba": "ERIC BRAND PLUMBING",
+   "address": "174 BYXBEE STREET, SAN FRANCISCO, CA 94132",
+   "city": "San Francisco",
+   "phone": "(415) 572-5991",
+   "entity": "Sole Ownership",
+   "issue_date": "08/04/2008",
+   "reissue_date": "",
+   "expire_date": "08/31/2024",
+   "status": "This license is canceled and not able to contract.",
+   "additional_status": "Miscellaneous information: 01/26/2024 authority to continue until 11/03/2024; bond cancellation date 12/05/2024",
+   "classifications_as_printed": [
+    "C36"
+   ],
+   "workers_comp": "Policy on file; expire date 05/01/2025",
+   "banner": "11/10/2026 6:16:03 PM"
+  }
+ ]
+}

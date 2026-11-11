@@ -89,10 +89,9 @@ closure the Actions workflow stages.
 This corrects the statement recorded under flag F-34 that `COORDINATION.md` and `pyproject.toml` "both return GitHub
 Pages 404". They return 200 and the file content. New flag **F-52** records the finding.
 
-Consequence for this project: anything committed to the repository should be assumed publicly readable. The owner's
-request that no owner-specific scheduling or permit-timing detail ever becomes public is respected in this
-repository — a repository-wide scan for that class of wording returned only the neutral scope statements already
-published — but the durable fix is a repository setting.
+Consequence for this project: anything committed to the repository should be assumed publicly readable. Tracked
+copy is limited to neutral repair-scope statements, which `scripts/wording_guard.py` checks on every tracked file;
+the durable fix is a repository setting.
 
 **Owner action, in the repository UI, which this session cannot perform:** Settings → Pages → Build and deployment →
 Source → **GitHub Actions**. Attempting `PUT /repos/.../pages` with `build_type=workflow` returns **HTTP 403
