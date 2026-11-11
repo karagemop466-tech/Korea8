@@ -1969,7 +1969,17 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | `692-01` | Claim board and inventory active work | done | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
 | `692-02` | Independent fresh re-verification of items **not** covered by the 2026-11-11 `331cafce` pass: a subset of the remaining 19 CSLB records, official company websites of top-ranked leads, BPC §§7057/7057.5 on leginfo, and the July 2026 DBI fee schedule | done | `arena/692cc7ba-korea8` | `audit/2026-11-11-692cc7ba/**` |
 | `692-03` | Confirm the live Pages deployment of current `main` (`bcf81b2` or later) serves the canonical dashboard, and run the full canonical health suite (build, verifier, unit tests, independent audit, wording guard) on a scratch copy without editing tracked files | done | `arena/692cc7ba-korea8` | `audit/2026-11-11-692cc7ba/**` |
-| `692-04` | Open PR from `arena/692cc7ba-korea8` to `main`, merge, verify exact-commit Pages deployment and record the receipt on this board | in progress | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
+| `692-04` | Open PR from `arena/692cc7ba-korea8` to `main`, merge, verify exact-commit Pages deployment and record the receipt on this board | done | `arena/692cc7ba-korea8` | `COORDINATION.md` (append-only) |
+
+### `692-04` — PR, merge and deployment receipt
+
+| Item | Result |
+|---|---|
+| Integration PR | **#90** — https://github.com/karagemop466-tech/Korea8/pull/90 (`arena/692cc7ba-korea8` → `main`) |
+| Merge | **MERGED** 2026-11-11T02:25:50Z; merge commit `b783f1918439c83ef407e5244ebeb8d85e797c78` |
+| Exact-commit workflow | Run [42945970439](https://github.com/karagemop466-tech/Korea8/actions/runs/42945970439) (`Publish overflow dashboard`, head `b783f191`): build job success (build, verifier, unit tests, independent audit, staging, artifact upload) and deploy job success (Deploy to GitHub Pages + live HTTPS confirmation) |
+| Live checks | https://karagemop466-tech.github.io/Korea8/ serves the canonical dashboard after the merge; `index.html`, `verification.html` and `flagged-for-review.html` fetched successfully on 2026-11-11 |
+| Final status | `692-01`…`692-04` **done**. 0 canonical mismatches found; open/unverified items remain published and non-blocking. No provider contacted, booked or paid. This session edited no canonical file; both board conflicts on rebase were resolved keeping every concurrent record in full. |
 
 ### 692-02 / 692-03 — completion record (2026-11-11)
 
@@ -2010,7 +2020,11 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
    (retrieved 2026-11-11, receipt in `audit/2026-11-11-692cc7ba/receipts.json`). Blank is
    conservative and not an error; the integration owner may populate it from that receipt at
    their discretion. This session did not edit any canonical file.
-
+2. **Optional link for the integration owner:** `audit/2026-11-11-692cc7ba/REPORT.md` and its
+   `receipts.json` are merged to `main` (PR #90) but are not yet linked from the generated
+   `verification.html`, so the staging script does not publish them on Pages. The integration
+   owner may add them to the audit-link list at the next canonical regeneration, alongside the
+   other 11 November audits. Non-blocking; the board links them in the meantime.
 ---
 
 ---
