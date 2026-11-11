@@ -1853,3 +1853,18 @@ language only.
 - Rebase also preserved concurrent PR #81 (`bcf81b2`) board/source metadata updates. Final local result: 28/28 checks, 40/40 tests, 405 source-covered rows, independent audit zero problems and 47 linked public files staged.
 - Non-blocking workflow annotations report action-runtime deprecation and runner-image migration. The build/deploy succeeded. No unrelated workflow was modified.
 - All existing unverified job-specific items remain published. Provider facts were not independently refreshed by this session. Older open PRs remain untouched.
+
+
+
+
+
+---
+
+## Session `arena/17e21276-korea8` — publication and current-decision audit
+
+| ID | Task | Status | Owner | Scope |
+|---|---|---|---|---|
+| 17E-01 | Audit current publication boundary and actionable shortlist evidence; record current limitations | in progress | `arena/17e21276-korea8` | `audit/2026-11-11-17e21276/**`, `COORDINATION.md` |
+| 17E-02 | Integrate any needed corrections after checking for overlapping active claims, verify and publish | unclaimed | — | To be determined after audit |
+
+The Arena branch is fixed; no other branch or worktree will be created or pushed. Older task rows are historical; recent open PRs remain untouched. No provider has been contacted, booked or paid. Public material will use neutral repair-scope language.
