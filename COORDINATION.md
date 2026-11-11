@@ -1816,3 +1816,5 @@ All earlier canonical implementation claims end in completed integration receipt
 - Verified locally: 28/28 structural checks, 405 official-source-linked rows, 40/40 tests, independent audit zero problems, 46-file public staging, wording guard clean and `git diff --check` clean. No fresh external-source retrieval is claimed.
 - Existing publication-mode irregularity and missing job-specific confirmations are explicitly retained on the site's Flagged for Review page. Older open PRs untouched.
 - First branch pull could not find the not-yet-published session branch; fetched/rebased against `origin/main` instead, then published the fixed session branch successfully. No merge conflict or discarded work.
+
+**Concurrent integration:** PR #78 advanced `main` during publication. Rebased onto `449025a`, retained both board entries, preserved the other session's 11 November spot-check link and data corrections, and regenerated conflicted HTML/reports from the combined generator. No prior work discarded. Generated independent-audit report is also within this session's verification-output scope.
