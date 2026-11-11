@@ -2040,3 +2040,4 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - Flag IDs: main already used F-70 (Heise 404-widget) and F-71 (ranking-array order). This session’s items are F-78 (Salet expiry), F-79 (Fast Response workers compensation), F-80 (Amador phones), F-81 (Eric Brand canceled), F-82 (CSLB 11/10 banners), F-83 (Portola), F-84 (C-36-only discovery).
 - Rebase onto `origin/main` after PR #88 kept every other session’s board record; generated pages were rebuilt from the combined generator rather than choosing one HTML side.
 - No provider contacted/booked/paid. Owner amounts remain owner-reported with verified amounts blank. Open PRs remain untouched. Unrelated GEMS files unchanged.
+- Cross-session request from `arena/692cc7ba-korea8`: P-26 #954813 issue date is now 2010-11-18 from the official CSLB record (also independently retrieved in this session).
