@@ -1754,3 +1754,49 @@ Prior canonical handoffs in the last board entry are complete, and historical ou
 - Targeted independent checks (not a fresh line-by-line audit of every repository entry): [report](audit/2026-11-11-20bb5485/REPORT.md), including three direct [CSLB records](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx), their company scope claims and [City guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit). Yelp returned HTTP 403; no ratings were invented. No provider contacted or booked; exact acceptance and combined price remain unknown.
 - GitHub [Pages API](https://api.github.com/repos/karagemop466-tech/Korea8/pages) still reports legacy main /; attempting a switch to workflow returned HTTP 403. The current board route displayed a 404 document, different from the prior recorded successful fetch; this does not establish a reliable boundary. F-52 updated. Repository is public independently of Pages.
 - Build, verifier 28/28, 40 unit tests, independent audit (405 rows; 0 internal link problems), 46-file staging, wording guard and `git diff --check` passed. External links were spot-checked only; structural checks do not establish factual support or reachability for each link.
+## Session `arena/331cafce-korea8` — final integration: fresh verification, rebuild, PR, merge and live confirmation (2026-11-11)
+
+**Claim time:** 2026-11-11 ~02:16 UTC, committed and pushed before any other edit.
+**Branch note.** Arena pins this session to `arena/331cafce-korea8`; no other branch or worktree will be created or pushed. This is the final integration session: it owns shared outputs (canonical data, generator/verifier, generated root pages, COORDINATION.md) only after confirming no active overlapping scope. Overlap check: last merged integration was `arena/4b81abe2-korea8` (PR #77, merge commit `b491225`, 2026-11-10). Open PRs #72, #66, #64, #63, #53, #51, #49, #44, #39, #38, #35, #7 are independent audits/drafts and will not be merged, closed or treated as verified without review. Unrelated GEMS files remain read-only. No provider will be contacted, booked or paid. Public artifacts will contain neutral repair-scope language only.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `331-01` | Claim board and inventory active work | in progress | `arena/331cafce-korea8` | `COORDINATION.md` |
+| `331-02` | Fresh official-source verification (CSLB top leads, SF permit/code, Heise case, Yelp block status, DBI fees) with receipts in own audit folder | unclaimed | `arena/331cafce-korea8` | `audit/2026-11-11-331cafce/**` |
+| `331-03` | Rebuild canonical dashboard, run all canonical checks (build, verify, tests, independent audit, wording guard, link check), confirm no broken links | unclaimed | `arena/331cafce-korea8` | generated root pages + `overflow-integration/build-report.json`, `overflow-integration/verification-report.json`, `site-data/*` (timestamp refresh only) |
+| `331-04` | Open PR from `arena/331cafce-korea8` to `main`, merge, verify exact-commit Pages deployment and record receipt | unclaimed | `arena/331cafce-korea8` | `COORDINATION.md`, deployment records |
+
+**Coordination note.** If a task requires changing a file owned by another session, the request will be logged here instead of editing it. Small frequent commits; `git pull --rebase` before every push. Flagged irregularities and unverified items do not block merge; they are published on the Flagged for Review page.
+
+### 331-02 — fresh official-source verification (done, 2026-11-11)
+
+Fresh direct retrieval on 2026-11-11: 7/7 CSLB licence-detail records match the canonical
+register (Ace #829071, Heise #1089561, Rapid Flow #1115649, Bernal Hill #995163,
+Expert #977638, Bay Area #757796, Fast Response #1024971 — legal names, phones,
+status, expiry, classifications and workers-compensation summaries all match; CSLB pages
+state "Data current as of 11/10/2026"). SF.gov plumbing/mechanical permit page, BPC
+§7059(a) incidental-and-supplemental text, and Heise's Ingleside ceiling-access case all
+match canonical wording. Yelp business page returns HTTP 403; ratings/counts remain blank
+(search-index snippets recorded only as snapshots, never as verified values). Live site
+`https://karagemop466-tech.github.io/Korea8/` serves the canonical dashboard. Receipts:
+`audit/2026-11-11-331cafce/REPORT.md`, `audit/2026-11-11-331cafce/receipts.json`.
+The other 19 CSLB records were not re-read by this session and are not claimed
+fresh-verified here. No provider contacted/booked/paid.
+
+### 331-03 — rebuild and canonical checks (done, 2026-11-11)
+
+- `scripts/build_overflow_site.py` exit 0 (29 providers / 26 CSLB / 42 requirements /
+  3 estimates / 135 sources / 60 flags / 10 ranked).
+- `scripts/verify_overflow_site.py` **28/28 PASS** (405 source-covered rows, 276 tracked
+  links, 0 broken).
+- `python -m unittest discover -s tests -p 'test_overflow*.py'` **40/40 OK**.
+- `audit/independent_audit.py` 405 rows with source, 0 problems.
+- `scripts/wording_guard.py` clean; sensitive-phrase grep: no private owner context disclosed.
+- `scripts/stage_overflow_pages.py` staged 45 linked public files.
+- Build regenerates only timestamp fields in build/verification reports; no data value changed.
+
+### 331-04 — PR, merge and live confirmation (in progress)
+
+PR from `arena/331cafce-korea8` to `main` to follow. Open PRs #72, #66, #64, #63, #53,
+#51, #49, #44, #39, #38, #35, #7 remain untouched. Flagged irregularities and unverified
+items do not block merge; they remain published on the Flagged for Review page.
