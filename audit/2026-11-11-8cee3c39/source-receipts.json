@@ -1,0 +1,251 @@
+{
+ "session": "arena/8cee3c39-korea8",
+ "task": "8CE-03",
+ "retrieved_on": "2026-11-11",
+ "method": "Each page was retrieved directly in this session and the quoted words were read on the returned page. 'match' means the canonical claim that cites the source is supported by the words quoted here. Nothing was taken from a search snippet unless the row says so.",
+ "official_and_code_sources": [
+  {
+   "source_id": "SF-PERMIT",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "retrieval": "success",
+   "read": [
+    "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground. See exemptions in San Francisco Plumbing Code Section 104.2.",
+    "Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general.",
+    "If you are a contractor authorized for Express Permits on PermitSF, you can skip City staff review and pay for your permit right away.",
+    "After your permit is issued, have your plumbing or mechanical work inspected before covering pipes",
+    "Only property owners of stand-alone single-family dwellings (R-3 occupancy) may apply for a plumbing or mechanical permit to do the work themselves.",
+    "Permit Center help desk 628-652-4900. Leave a voicemail and include your email address. We will contact you within 2 business days.",
+    "Banner: City offices will be closed on Wednesday, November 11 for Veterans Day."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "SF-AUTH",
+   "url": "https://www.sf.gov/licensed-contractors-register-yourself-or-authorized-agents-on-permitsf",
+   "retrieval": "success",
+   "read": [
+    "For eligible electrical, plumbing and mechanical, reroofing, and kitchen or bath projects, applicants connected to an AUTH record can get their permit right away.",
+    "We will review your application, verify your license and whether you're listed on your CSLB personnel list, and connect any authorized agents to your license in PermitSF within 2 business days."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "SF-CODE-104",
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+   "retrieval": "success; section 104.1 in zero-based chunk 13, sections 104.2 and 104.5 in chunk 14",
+   "read": [
+    "104.1: Emergency work for the protection of life or limb, health, property and public welfare shall have a permit obtained within one day of commencing such work, excluding Saturdays, Sundays and legal holidays.",
+    "104.1.1 Homeowner's Permit: single-family dwelling which is, or is intended to be, occupied by the owner.",
+    "104.2 Exempt Work. A permit shall not be required for the following: (1) Repair of leaks not requiring cutting into or removing piping. (2) Unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping. (3) Replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping. (4) Replacement of toilets except in structures with alternate water piping. (5) Replacement of furnace filters. (6) Removal of drainage, water or gas piping from a building when the water supply, gas and drainage lines have been disconnected in an approved manner under a permit. (7) Work involved in setting up for display of plumbing fixtures or appliances, when not connected to any supply or drainage lines, in a sales establishment. (8) Replacement of water conservation devices not requiring cutting into or removal of piping. (9) Work performed in buildings or structures owned and occupied by the State and Federal governments.",
+    "104.5: The replacement of a plumbing fixture or a gas appliance without a change in drainage, piping or venting shall not require the payment of permit issuance fee."
+   ],
+   "result": "match (nine exempt-work items; none names a tub waste-and-overflow or trip-lever assembly, so job-specific applicability stays open)"
+  },
+  {
+   "source_id": "SF-CODE-106",
+   "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92027",
+   "retrieval": "success; section 106A.2 found in zero-based chunk 40 today",
+   "read": [
+    "106A.2 Work exempt from permit ... A building permit shall not be required for the following: ... 8. Painting, papering and similar finish work. ... 10. Minor repairs to existing interior plaster or wallboard, except when part of a fire-resistive assembly."
+   ],
+   "result": "match on the text; the canonical source note records chunk 39 for 2026-11-10, and the same text sat in chunk 40 on 2026-11-11, so the chunk number is a retrieval aid that drifts and is not a citation"
+  },
+  {
+   "source_id": "SF-FEES",
+   "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+   "retrieval": "success",
+   "read": [
+    "July 2026. The following permit fees apply to all permits issued on and after July 12, 2026.",
+    "CATEGORY 1P Single Residential Unit - water service, sewer replacement, single plumbing fixture installation, shower pan installation, or a single kitchen or bathroom remodel (maximum two inspections) $290",
+    "CATEGORY 11P/M Miscellaneous $320",
+    "Hourly issuance/inspection rates of $519 per hour for regular inspections and $555 per hour for off-hour inspections",
+    "Re-inspection or additional inspection per Section 108A.8, shall be $259 per half hour."
+   ],
+   "result": "match (all five published fee rows)"
+  },
+  {
+   "source_id": "BPC-7057",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+   "retrieval": "success",
+   "read": [
+    "(b) ... a general building contractor shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed contractor to perform the work.",
+    "Amended by Stats. 2013, Ch. 377, Sec. 3. (AB 433) Effective January 1, 2014."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "BPC-7059",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.",
+   "retrieval": "success",
+   "read": [
+    "Nothing contained in this section shall prohibit a specialty contractor from taking and executing a contract involving the use of two or more crafts or trades, if the performance of the work in the crafts or trades, other than in which they are licensed, is incidental and supplemental to the performance of the work in the craft for which the specialty contractor is licensed.",
+    "Amended by Stats. 2024, Ch. 485, Sec. 6. (SB 1455) Effective January 1, 2025."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "CSLB-831",
+   "url": "https://www2.cslb.ca.gov/Resources/LawsAndRegulations/2023/CSLB_-_BESS_-_Notice_-__OAL.pdf",
+   "retrieval": "success",
+   "read": [
+    "Section 831 of Title 16 of the CCR provides such work is \"incidental and supplemental\" when it is \"essential to accomplish the work in which the contractor is classified.\""
+   ],
+   "result": "match (a CSLB rulemaking notice quoting the regulation, not the regulation text itself)"
+  },
+  {
+   "source_id": "BPC-7048",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048.",
+   "retrieval": "success",
+   "read": [
+    "(a) This chapter does not apply to a work or operation on one undertaking or project by one or more contracts if the aggregate contract price for labor, materials, and all other items is less than one thousand dollars ($1,000), that work or operation being considered of casual, minor, or inconsequential nature, and the work or operation does not require a building permit.",
+    "(c) This section does not apply to a person who ... (1) Advertises ... that the person is a contractor ... (2) Employs another person to perform, or assist in performing, the work or operation.",
+    "Amended by Stats. 2025, Ch. 67, Sec. 12. (AB 1170) Effective January 1, 2026."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "CIV-1954",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954.",
+   "retrieval": "success",
+   "read": [
+    "(a)(2) To make necessary or agreed repairs ...",
+    "(b) ... entry may not be made during other than normal business hours unless the tenant consents ...",
+    "(d)(1) ... reasonable notice in writing ... The notice shall include the date, approximate time, and purpose of the entry. ... Twenty-four hours shall be presumed to be reasonable notice in absence of evidence to the contrary. ... Mailing of the notice at least six days prior to an intended entry is presumed reasonable notice ...",
+    "(d)(3) The tenant and the landlord may agree orally to an entry to make agreed repairs ... within one week of the agreement."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "CSLB-CONTRACT",
+   "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+   "retrieval": "success",
+   "read": [
+    "In California, there must be a written contract for all home improvement projects over $500 in combined labor and materials costs.",
+    "It should detail the work, price, when payments will be made, who gets the necessary building permits, and when the job will be finished.",
+    "That down payment should never exceed 10 percent of the contract price or $1,000, whichever is less."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "DG-COMPLAINT",
+   "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=297604",
+   "retrieval": "success",
+   "read": [
+    "Citation # 2 2022 002099; Date 03/23/2023; Status FOR DISCLOSURE ONLY PER B&P CODE 7124.6"
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "WATCO",
+   "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+   "retrieval": "success",
+   "read": [
+    "Step 6. Install overflow plate and drop cylinder assembly with overflow plate screws.",
+    "Step 7. If necessary, remove overflow plate and drop cylinder assembly and readjust to ensure drain stops water when in the closed position.",
+    "SLIP LOCK A. Insert drop-cylinder assembly into overflow with trip lever in down (open) position."
+   ],
+   "result": "match (model-specific; the installed assembly is not identified)"
+  }
+ ],
+ "company_pages": [
+  {
+   "source_id": "ACE",
+   "url": "https://www.aceplumbingandrooter.com/",
+   "retrieval": "success",
+   "read": [
+    "Contractors License #829071; A - General Engineering; B - General Contractor; C4; C10; C16; C36 - Plumbing",
+    "HOAs & Property Managers ... Whether it be insurance requirements, purchase orders, or working within NTE's ...",
+    "(415) 824-6444"
+   ],
+   "result": "match with the CSLB record on licence number, classifications and phone",
+   "note": "The page says 'For over 25 years'; the CSLB issue date is 12/18/2003 and the BBB profile says business started 11/1/2003. Advertising tenure is not used in the ranking."
+  },
+  {
+   "source_id": "HEISE-INGLESIDE",
+   "url": "https://www.heisesplumbing.com/recent-jobs/projects/the-tub-waste-and-overflow-assembly-san-francisco-163802/",
+   "retrieval": "success",
+   "read": [
+    "The Problem: A tub waste and overflow assembly required replacement.",
+    "Our Solution: Accessed the exterior ceiling to remove the old overflow, installed a new brass P-trap and trap adapter, and replaced the tub waste and overflow assembly.",
+    "Area: Ingleside; City: San Francisco, CA"
+   ],
+   "result": "match",
+   "note": "A 'Page Not Found (404)' block is still embedded in the page body under the project table (flag F-70 stands)."
+  },
+  {
+   "source_id": "HEISE-PATCH",
+   "url": "https://www.heisesplumbing.com/property-maintenance/paint-patch-and-drywall-repair/",
+   "retrieval": "success",
+   "read": [
+    "Plumbing Access Hole Repair: Restoring drywall cutouts made during pipe, drain, or valve maintenance and inspection.",
+    "Water Stain & Ceiling Patching: Repairing dried water-damaged ceiling drywall after underlying plumbing leaks are resolved.",
+    "(415) 333-0704"
+   ],
+   "result": "match",
+   "note": "Self-reported banner on this page reads '4.9 STARS From 2,000+ Customer Reviews'; the fixtures page reads 'From 1,700+ Customer Reviews'. Both are company claims and neither is published as a verified rating. The 'Since 1954' banner predates the CSLB issue date of 04/06/2022 for the current licensed entity."
+  },
+  {
+   "source_id": "HEISE-FIXTURES",
+   "url": "https://www.heisesplumbing.com/plumbing-fixtures/",
+   "retrieval": "success",
+   "read": [
+    "Bathtub Fixture Replacement: Tub spouts, overflow plates, drain assemblies, and faucet sets replaced cleanly without unnecessary damage to surrounding tile."
+   ],
+   "result": "match"
+  },
+  {
+   "source_id": "RF-SERVICES",
+   "url": "https://www.rapidflowbayarea.com/services",
+   "retrieval": "success",
+   "read": [
+    "CA License #1115649",
+    "Fixture & Appliance Services: Shower & Tub Installation",
+    "General Contracting: Bathroom Remodeling; Drywall Repair & Installation; Permit Acquisition & Management; Subcontractor Coordination"
+   ],
+   "result": "match"
+  }
+ ],
+ "review_platforms": [
+  {
+   "platform": "Yelp search",
+   "url": "https://www.yelp.com/search?find_desc=bathtub+overflow+trip+lever+repair&find_loc=San+Francisco%2C+CA",
+   "retrieval": "HTTP 403",
+   "result": "not retrievable; no rating or review count is taken from Yelp"
+  },
+  {
+   "platform": "Yelp business page",
+   "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+   "retrieval": "HTTP 403",
+   "result": "not retrievable"
+  },
+  {
+   "platform": "BBB",
+   "source_id": "BBB-ACE",
+   "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941",
+   "retrieval": "success",
+   "read": [
+    "BBB Accredited Since: 8/1/2004",
+    "A+ BBB rating",
+    "no complaints filed with BBB in the last 3 years",
+    "51 customer reviews on BBB",
+    "license number of 829071 ... expiration date of this license is 6/30/2027",
+    "(415) 824-6444; 1090 Bryant St, San Francisco, CA 94103-4417",
+    "Products and Services include Bathtub Installation, Bathtub Repair"
+   ],
+   "result": "match"
+  },
+  {
+   "platform": "Angi",
+   "source_id": "ANGI-ACE",
+   "url": "https://www.angi.com/companylist/us/ca/san-francisco/ace-plumbing-and-rooter-reviews-208758.htm",
+   "retrieval": "success for the profile shell and service list; the individual review text behind the canonical billing-clarity note was not re-read in this session",
+   "result": "partial; the 2023 billing note stays attributed to the earlier retrieval"
+  },
+  {
+   "platform": "Search index",
+   "query": "Yelp San Francisco plumber bathtub overflow trip lever / bathtub repair",
+   "retrieval": "search results returned Yelp list-page excerpts",
+   "result": "the excerpts name Ace, Fast Response, Discount, Bay Area Plumbing, Precision Rooter, Advanced and Portola among bathtub-repair listings; two excerpts for the same business carried different review totals, so none of those figures is used"
+  }
+ ]
+}
