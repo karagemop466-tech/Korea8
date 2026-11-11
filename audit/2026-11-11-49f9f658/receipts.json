@@ -7,11 +7,15 @@
     "active": 25,
     "suspended": 1,
     "unresolved_identities": 3,
-    "material_field_corrections": 1,
+    "material_field_corrections": 0,
     "providers_contacted": 0,
     "verified_prices_added": 0,
     "review_ratings_or_counts_added": 0,
-    "discovery_questions": 18
+    "discovery_questions": 18,
+    "independent_confirmations_of_parallel_corrections": 1,
+    "baseline_records_directly_reviewed": 26,
+    "current_integrated_registry_records": 30,
+    "parallel_discovery_records_not_claimed_directly_by_this_session": 4
   },
   "cslb_records": [
     {
@@ -715,5 +719,6 @@
       "after": "Embedded 404 template irregularity explicitly disclosed",
       "reason": "Fresh direct company-page retrieval"
     }
-  ]
+  ],
+  "integration_note": "The receipt matrix records this session’s direct 26-record baseline review. During rebase, main supplied four additional discovery records and existing F-70/F-78 corrections. Those parallel records are preserved; this session adds only the independent audit, current SFBC metadata correction F-85 and public audit links."
 }

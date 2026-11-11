@@ -114,7 +114,7 @@ class FinalCurrentSourceTests(unittest.TestCase):
  def test_code_chunk_metadata_matches_direct_retrieval(self):
   sources={s['id']:s for s in load('sources.json')['rows']}
   self.assertIn('chunk 14',sources['SF-CODE-104']['supports'])
-  self.assertIn('chunk 39',sources['SF-CODE-106']['supports'])
+  self.assertIn('chunk 13',sources['SF-CODE-106']['supports'])
   self.assertNotIn('chunks 28–29',sources['SF-CODE-106']['supports'])
  def test_cost_drivers_have_sources_and_no_inferred_amounts(self):
   rows=load('estimates.json').get('cost_drivers',[])
@@ -166,3 +166,20 @@ class MergedReviewAndRequestTests(unittest.TestCase):
   held={r['provider_id']:r for r in load('ranking.json')['not_recommended']}
   self.assertNotIn('2026-12-31',held['P-27']['reason'])
   self.assertIn('2028-12-31',held['P-27']['reason'])
+
+
+class IndependentFreshnessIntegrationTests(unittest.TestCase):
+ def test_independent_receipts_scope_and_public_links(self):
+  receipt=json.loads((ROOT/'audit/2026-11-11-49f9f658/receipts.json').read_text())
+  self.assertEqual(len(receipt['cslb_records']),26)
+  self.assertEqual(receipt['summary']['providers_contacted'],0)
+  self.assertEqual(receipt['summary']['verified_prices_added'],0)
+  self.assertEqual(receipt['summary']['current_integrated_registry_records'],30)
+  self.assertIn('audit/2026-11-11-49f9f658/REPORT.md',(ROOT/'verification.html').read_text())
+  self.assertIn('audit/2026-11-11-49f9f658/receipts.json',(ROOT/'flagged-for-review.html').read_text())
+ def test_f85_records_metadata_correction_without_changing_rule(self):
+  rows={x['id']:x for x in load('flags.json')['rows']}
+  self.assertIn('chunk 13',rows['F-85']['detail'])
+  self.assertIn('unchanged',rows['F-85']['detail'])
+  self.assertIn('F-70',rows);self.assertIn('F-78',rows)
+  self.assertNotEqual(rows['F-70']['title'],rows['F-85']['title'])

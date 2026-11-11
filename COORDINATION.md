@@ -2085,9 +2085,10 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 
 **Claim push:** this claim is committed and pushed before any research or site edits.
 
-### 49F-02 / 49F-03 — completed source refresh and discovery record (2026-11-11)
+### 49F-02 / 49F-03 — integrated source refresh and decision-gap record (2026-11-11)
 
-- Directly re-read all 26 identified CSLB records on pages reporting data current as of 2026-11-10: 25 current/active, #1027286 suspended, three unresolved identities retained blank. Corrected George Salet #888630 expiry from stale 2026-12-31 to **2028-12-31**; retained Advanced's warning and D G's disclosure without inferring suitability. No ranking weights/scores changed.
-- Added 18-question known/answer/missing/next-evidence discovery matrix; kept all 42 detailed requirements. Added F-70 Salet correction, F-71 current SFBC retrieval-location correction and F-72 Heise embedded-404 source irregularity. Audit/receipts: `audit/2026-11-11-49f9f658/`.
+- Independently re-read all 26 baseline CSLB records on pages reporting data current as of 2026-11-10: 25 current/active, #1027286 suspended, three unresolved identities retained blank. Independently confirmed George Salet #888630's **2028-12-31** expiry. Advanced's warning and D G's disclosure remain; no suitability inferred. No ranking weights/scores changed.
+- During rebase, preserved newer parallel work: 33 total identities (30 identified CSLB + 3 unresolved), 14-question register, four discovery licenses, existing F-70 Heise 404 and F-78 Salet correction. Did not duplicate those records or claim the four new licenses as this session's direct checks.
+- Added independent receipts/audit `audit/2026-11-11-49f9f658/`, source `AUDIT-20261111-49F`, public Verification/Flagged links and **F-85** for current SFBC chunk-13 retrieval metadata. The substantive wallboard/fire-assembly exemption is unchanged; historical audits remain untouched.
 - Owner-reported $614/$550/$135 scopes remain non-comparable; all verified amounts and review ratings/counts remain blank. No provider was contacted/booked/paid; no access feasibility, permit determination or availability was inferred. Yelp observations remain excerpts, not direct reviews.
-- Rebuilt canonical pages/reports. Local gates: **31/31 checks, 43/43 tests, wording guard clean, independent audit 0 problems**, 427/427 canonical table rows source-covered. Unrelated GEMS files and historical audits unchanged.
+- Final integrated local gates after additive rebase: **29/29 checks, 43/43 tests, wording guard clean, independent audit 0 problems**, 450/450 canonical table rows source-covered, 12 pages, 148 sources, 70 flags and 14 questions. Unrelated GEMS files and historical audits unchanged. Also linked the already-merged `692cc7ba` audit/receipts requested for optional integration.
