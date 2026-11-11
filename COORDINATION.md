@@ -1929,7 +1929,7 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 | `E2-01` | Claim board and inventory active work | done | `arena/e214430f-korea8` | `COORDINATION.md` |
 | `E2-02` | Independently verify the current canonical dashboard (build, verifier, tests, wording guard, independent audit, public staging) | done | `arena/e214430f-korea8` | `overflow-integration/**` (read-only execution only), `scripts/build_overflow_site.py`, `scripts/verify_overflow_site.py`, `tests/test_overflow*.py`, `scripts/wording_guard.py`, `audit/independent_audit.py`, `scripts/stage_overflow_pages.py` (read-only execution only) |
 | `E2-03` | Publish independent verification record and board entry | done | `arena/e214430f-korea8` | `audit/2026-11-11-e214430f/REPORT.md`, `COORDINATION.md` |
-| `E2-04` | Open PR from this branch to `main`, merge, verify GitHub Pages deploy, record PR link and merge result | in progress | `arena/e214430f-korea8` | `COORDINATION.md` (receipt update after merge) |
+| `E2-04` | Open PR from this branch to `main`, merge, verify GitHub Pages deploy, record PR link and merge result | done | `arena/e214430f-korea8` | `COORDINATION.md` (receipt recorded below) |
 
 **Claim basis:** branch fixed to `arena/e214430f-korea8`; no other branch or worktree created or pushed; work rebased onto `origin/main` `258d08f` so only this session's new files are added. No task claimed by another session was started or modified. Overlap check: all recent integration scopes (4b81abe2, 20bb5485, 331cafce, 92cc6407, 17e21276) are done on `main`; this session adds only its own audit record and board entry.
 
@@ -1946,10 +1946,15 @@ The Arena branch is fixed; no other branch or worktree will be created or pushed
 - `stage_overflow_pages.py`: 48 linked public files staged; no repository internals exposed.
 - Record: `audit/2026-11-11-e214430f/REPORT.md`.
 
-### `E2-04` PR, merge and deployment receipt (pending)
+### `E2-04` PR, merge and deployment receipt (done, 11 November 2026 UTC)
 
-- Integration PR: to be created from `arena/e214430f-korea8` to `main`.
-- Live dashboard: https://karagemop466-tech.github.io/Korea8/ (GitHub Pages, source `main` path `/`, latest legacy build `built` with no error).
+- Integration PR: **#88** — https://github.com/karagemop466-tech/Korea8/pull/88 (`arena/e214430f-korea8` → `main`)
+- Merge: **MERGED**; merge commit `02dbb5a0755643c224833aacfefcfb196bb91595`
+- Exact-commit workflow run 42945651441 (`Publish overflow dashboard`): **build success** (9 s) and **deploy success**; GitHub Actions Node 20 deprecation annotation only, no build/deploy impact
+- Pages API: legacy build for `02dbb5a` reports **built**, no error
+- Live dashboard: https://karagemop466-tech.github.io/Korea8/ serves the merged session (source `main`, path `/`)
 - Irregularities carried forward (non-blocking, published on the Flagged for Review page): F-34 and F-52 (Pages legacy root publication; public repository exposure; Pages source-mode change denied with HTTP 403), F-70 (Heise case page body contradiction — reconfirm directly). All other open items and the owner-reported estimate amounts are published and flagged.
+
+**Final status.** `E2-01`…`E2-04` **done**. Open flags remain non-blocking and are the owner's review list after the site is live. No provider contacted, booked or paid. Owner amounts remain owner-reported with verified amounts blank. Public artifacts use neutral repair-scope language only.
 
 
