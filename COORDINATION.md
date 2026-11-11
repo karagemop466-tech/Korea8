@@ -1733,3 +1733,14 @@ No provider will be contacted, quoted, booked or paid. Owner-supplied estimates 
 | Pages API | Legacy build for `0e80a1f0` reports **built**, no error |
 | Independent live checks | Cache-busted `decision-analysis.html`, `verification.html`, `flagged-for-review.html`, `audit/2026-11-10-4b81abe2/REPORT.md` and `requirements-traceability.json` fetched successfully; corrected order/rubric, new audit links and 60 flags confirmed |
 | Final status | `4B-01`…`4B-04` **done**. Open/unverified items remain published and non-blocking. No provider contacted/booked/paid. |
+
+---
+
+## Session `arena/20bb5485-korea8` — independent current-state and publication review
+
+Arena fixes this session to the existing branch. Prior historical in-progress entries are not assumed to be current; no files under another live claim will be edited. Public artifacts use neutral repair-scope language. No provider will be contacted or booked without confirmation.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| `20BB-01` | Independently review current canonical dashboard, source verification, tests and publication; record material gaps | in progress | `arena/20bb5485-korea8` | `audit/2026-11-11-20bb5485/**`, `COORDINATION.md` |
+| `20BB-02` | Integrate any substantiated corrections and publish if safe, after checking other sessions' claims | unclaimed | `arena/20bb5485-korea8` | Scope to be claimed after audit |
