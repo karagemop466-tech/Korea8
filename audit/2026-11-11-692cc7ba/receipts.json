@@ -1,0 +1,245 @@
+{
+  "session": "arena/692cc7ba-korea8",
+  "task_ids": ["692-02", "692-03"],
+  "performed_utc": "2026-11-11T02:17:00Z/2026-11-11T02:21:30Z",
+  "method": "Direct retrieval of each linked official/company page on 2026-11-11, field-by-field comparison against overflow-integration/data canonical rows. No provider contacted, booked or paid. No private owner context recorded. Canonical files were not edited by this session; health scripts were run on a scratch copy so no tracked file changed.",
+  "cslb_license_detail_checks": [
+    {
+      "provider_id": "P-07",
+      "license": "749536",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=749536",
+      "cslb_data_current_as_of": "11/10/2026 6:15:53 PM",
+      "retrieved_utc": "2026-11-11T02:18Z",
+      "fields": {
+        "legal_name": {"cslb": "SAVE - ON - INTERIOR", "canonical": "SAVE - ON - INTERIOR", "match": true},
+        "address": {"cslb": "335 14TH AVE, SAN FRANCISCO, CA 94118", "canonical_registered_city": "San Francisco", "match": true},
+        "phone": {"cslb": "(415) 668-8000", "canonical": "(415) 668-8000", "match": true, "note": "Same phone as CSLB #757796 (Bay Area Plumbing); CSLB-listed for both records. Existing flag covers the unproven relationship."},
+        "entity": {"cslb": "Sole Ownership"},
+        "issue_date": {"cslb": "05/18/1998", "canonical": "1998-05-18", "match": true},
+        "expire_date": {"cslb": "05/31/2028", "canonical": "2028-05-31", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["B", "C36"], "canonical": ["B", "C-36"], "match": true},
+        "workers_comp": {"cslb": "Exempt; certified no employees; effective 04/05/2026", "canonical": "Exempt: certified no employees", "match": true},
+        "miscellaneous": {"cslb": ["11/06/2015 - CASH DEPOSIT LTR SENT $15,000", "01/14/2016 - CASH DEPOSIT 15K FOLLOW UP LTR SENT"], "note": "Matches the existing canonical flag about 2015-2016 CSLB miscellaneous entries."}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-08",
+      "license": "1096552",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1096552",
+      "cslb_data_current_as_of": "11/10/2026 6:15:51 PM",
+      "retrieved_utc": "2026-11-11T02:18Z",
+      "fields": {
+        "legal_name": {"cslb": "WE DO CONSTRUCTION INC", "canonical": "WE DO CONSTRUCTION INC", "match": true},
+        "address": {"cslb": "1528 UNION STREET, SAN FRANCISCO, CA 94123", "canonical_registered_city": "San Francisco", "match": true},
+        "phone": {"cslb": "(415) 416-5494", "canonical": "(415) 416-5494", "match": true},
+        "entity": {"cslb": "Corporation"},
+        "issue_date": {"cslb": "09/14/2022", "canonical": "2022-09-14", "match": true},
+        "expire_date": {"cslb": "09/30/2028", "canonical": "2028-09-30", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["B", "C36"], "canonical": ["B", "C-36"], "match": true},
+        "workers_comp": {"cslb": "State Compensation Insurance Fund policy 9390276, 11/14/2025-11/14/2027", "canonical": "Policy recorded; expires 11/14/2027", "match": true}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-09",
+      "license": "392967",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=392967",
+      "cslb_data_current_as_of": "11/10/2026 6:15:50 PM",
+      "retrieved_utc": "2026-11-11T02:18Z",
+      "fields": {
+        "legal_name": {"cslb": "AYOOB & PEERY PLUMBING CO INC", "canonical": "AYOOB & PEERY PLUMBING CO INC", "match": true},
+        "address": {"cslb": "975 INDIANA ST, SAN FRANCISCO, CA 94107", "canonical_registered_city": "San Francisco", "match": true},
+        "phone": {"cslb": "(415) 550-0975", "canonical": "(415) 550-0975", "match": true},
+        "entity": {"cslb": "Corporation"},
+        "issue_date": {"cslb": "09/08/1980", "canonical": "1980-09-08", "match": true},
+        "expire_date": {"cslb": "09/30/2028", "canonical": "2028-09-30", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["B", "C-4", "C16", "C36", "C20"], "canonical": ["B", "C-4", "C-16", "C-36", "C-20"], "match": true},
+        "workers_comp": {"cslb": "Travelers policy UB1X0022612626G, 08/31/2026-08/31/2027", "canonical": "Policy recorded; expires 08/31/2027", "match": true}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-11",
+      "license": "1106131",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1106131",
+      "cslb_data_current_as_of": "11/10/2026 6:16:07 PM",
+      "retrieved_utc": "2026-11-11T02:19Z",
+      "fields": {
+        "legal_name": {"cslb": "SF BUILDING GROUP", "canonical": "SF BUILDING GROUP", "match": true},
+        "address": {"cslb": "2128 GREENDALE DR, SOUTH SAN FRANCISCO, CA 94080", "canonical_registered_city": "South San Francisco", "match": true},
+        "phone": {"cslb": "(415) 297-2246", "canonical": "(415) 297-2246", "match": true},
+        "entity": {"cslb": "Corporation"},
+        "issue_date": {"cslb": "06/18/2023", "canonical": "2023-06-18", "match": true},
+        "expire_date": {"cslb": "06/30/2027", "canonical": "2027-06-30", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["B"], "canonical": ["B"], "match": true, "note": "B only; no C-36. Existing flag F-07 already records this."},
+        "workers_comp": {"cslb": "Exempt; certified no employees; effective 06/27/2025", "canonical": "Exempt: certified no employees", "match": true}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-16",
+      "license": "1140843",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "cslb_data_current_as_of": "11/10/2026 6:15:57 PM",
+      "retrieved_utc": "2026-11-11T02:19Z",
+      "fields": {
+        "legal_name": {"cslb": "DISCOUNT PLUMBING ROOTER SERVICES LLC", "canonical": "DISCOUNT PLUMBING ROOTER SERVICES LLC", "match": true},
+        "address": {"cslb": "1325 HOWARD AVE BLDG 710, BURLINGAME, CA 94010", "canonical_registered_city": "Burlingame", "match": true},
+        "phone": {"cslb": "(650) 991-2100", "canonical": "(650) 991-2100", "match": true},
+        "entity": {"cslb": "Ltd Liability"},
+        "issue_date": {"cslb": "07/22/2025", "canonical": "2025-07-22", "match": true},
+        "expire_date": {"cslb": "07/31/2027", "canonical": "2027-07-31", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["C36", "A"], "canonical": ["C-36", "A"], "match": true},
+        "workers_comp": {"cslb": "A I U Insurance Company policy 020396018, 04/01/2025-04/01/2027", "canonical": "Policy recorded; expires 04/01/2027", "match": true},
+        "liability_insurance": {"cslb": "National Union Fire policy 9952707, $2,000,000, 04/01/2026-04/01/2027", "note": "Recorded for completeness; canonical row does not carry a liability field."}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-22",
+      "license": "1027286",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1027286",
+      "cslb_data_current_as_of": "11/10/2026 6:14:57 PM",
+      "retrieved_utc": "2026-11-11T02:19Z",
+      "fields": {
+        "legal_name": {"cslb": "KENNETH ASIRE PLUMBING", "canonical": "KENNETH ASIRE PLUMBING", "match": true},
+        "address": {"cslb": "1559 SLOAT BLVD #319, SAN FRANCISCO, CA 94132", "canonical_registered_city": "San Francisco", "match": true},
+        "phone": {"cslb": "(415) 913-8048", "canonical": "(415) 913-8048", "match": true},
+        "entity": {"cslb": "Sole Ownership"},
+        "issue_date": {"cslb": "05/25/2017", "canonical": "2017-05-25", "match": true},
+        "expire_date": {"cslb": "05/31/2027", "canonical": "2027-05-31", "match": true},
+        "status": {"cslb": "License is under suspension (Contractors Bond Suspension; bond cancellation date 08/16/2026)", "canonical": "Suspended", "match": true, "note": "Suspension still in effect on the 11/10/2026 CSLB data date; canonical exclusion from the shortlist remains correct."},
+        "classifications": {"cslb": ["C36"], "canonical": ["C-36"], "match": true},
+        "workers_comp": {"cslb": "Employers Compensation Insurance Company policy EIG6112246, 08/30/2026-08/30/2027", "canonical": "Policy recorded; expires 08/30/2027", "match": true}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-25",
+      "license": "868994",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "cslb_data_current_as_of": "11/10/2026 6:16:26 PM",
+      "retrieved_utc": "2026-11-11T02:20Z",
+      "fields": {
+        "legal_name": {"cslb": "ATLAS PLUMBING & ROOTER", "canonical": "ATLAS PLUMBING & ROOTER", "match": true},
+        "address": {"cslb": "3311 MISSION STREET UNIT 165, SAN FRANCISCO, CA 94110", "canonical_registered_city": "San Francisco", "match": true},
+        "phone": {"cslb": "(650) 871-9863", "canonical": "(650) 871-9863", "match": true},
+        "entity": {"cslb": "Corporation"},
+        "issue_date": {"cslb": "12/08/2005", "canonical": "2005-12-08", "match": true},
+        "reissue_date": {"cslb": "03/25/2008 (LICENSE REISSUED TO ANOTHER ENTITY)", "canonical": "2008-03-25", "match": true},
+        "expire_date": {"cslb": "03/31/2028", "canonical": "2028-03-31", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["C36", "A"], "canonical": ["C-36", "A"], "match": true},
+        "workers_comp": {"cslb": "Employee service group policy WC051666394CA, 07/01/2026-07/01/2027", "canonical": "Employee service group policy recorded; expires 07/01/2027", "match": true}
+      },
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-26",
+      "license": "954813",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=954813",
+      "cslb_data_current_as_of": "11/10/2026 6:16:27 PM",
+      "retrieved_utc": "2026-11-11T02:20Z",
+      "fields": {
+        "legal_name": {"cslb": "24 / 7 ROOTER AND PLUMBING SERVICES INC dba A & R PLUMBING", "canonical": "24 / 7 ROOTER AND PLUMBING SERVICES INC · dba A & R PLUMBING", "match": true},
+        "address": {"cslb": "1070 QUESADA AVE, SAN FRANCISCO, CA 94124", "canonical_registered_city": "San Francisco", "match": true},
+        "phone": {"cslb": "(415) 586-6851", "canonical": "(415) 586-6851", "match": true},
+        "entity": {"cslb": "Corporation"},
+        "issue_date": {"cslb": "11/18/2010", "canonical": null, "match": null, "note": "Canonical issue_date is blank; CSLB shows 11/18/2010. Blank is conservative, not an error. Logged as an optional enrichment request for the integration owner."},
+        "expire_date": {"cslb": "11/30/2028", "canonical": "2028-11-30", "match": true},
+        "status": {"cslb": "current and active", "canonical": "Current and active", "match": true},
+        "classifications": {"cslb": ["C36", "C-61 / D56", "A"], "canonical": ["C-36", "A", "C-61/D-56"], "match": true},
+        "workers_comp": {"cslb": "Norguard Insurance Company policy TWWC635243, 07/01/2026-07/01/2027", "canonical": "Policy recorded; expires 07/01/2027", "match": true}
+      },
+      "result": "MATCH"
+    }
+  ],
+  "statute_checks": [
+    {
+      "id": "BPC-7057",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.",
+      "retrieved_utc": "2026-11-11T02:20Z",
+      "finding": "Full section text retrieved. Subdivision (b): a B general building contractor shall not take a prime contract involving trades other than framing/carpentry unless it requires at least two unrelated building trades or crafts, or the contractor holds the appropriate classification or subcontracts with an appropriately licensed contractor.",
+      "canonical_use": "Conditional combined-scope analysis for B + C-36 leads and B-only leads",
+      "result": "MATCH"
+    },
+    {
+      "id": "BPC-7057-5",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057.5.",
+      "retrieved_utc": "2026-11-11T02:20Z",
+      "finding": "Full section text retrieved. B-2 Residential Remodeling: contract must include three or more unrelated trades; (b)(1)(A) drywall and (b)(1)(K) plumbing fixtures including tubs are listed trades; (c)(3)(A) shall not install, replace, substantially alter or extend plumbing systems or component parts without the appropriate classification or a licensed subcontractor; (c)(3)(B) minor alterations to existing systems to effectuate fixture installation/repair/replacement are allowed when the contract requires at least three unrelated trades.",
+      "canonical_use": "Flag F-08 treatment of the B-2 lead",
+      "result": "MATCH"
+    }
+  ],
+  "fee_schedule_check": {
+    "id": "SF-FEES",
+    "url": "https://media.api.sf.gov/documents/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+    "retrieved_utc": "2026-11-11T02:20Z",
+    "document": "City and County of San Francisco DBI Fee Schedule, Plumbing/Mechanical Issuance and Inspection Fees, July 2026; applies to permits issued on and after July 12, 2026",
+    "rows_compared": [
+      {"canonical_id": "FEE-01", "pdf": "CATEGORY 1P - Single Residential Unit - water service, sewer replacement, single plumbing fixture installation, shower pan installation, or a single kitchen or bathroom remodel (maximum two inspections)", "pdf_amount": 290, "canonical_amount": 290, "match": true},
+      {"canonical_id": "FEE-02", "pdf": "CATEGORY 11P/M - Miscellaneous", "pdf_amount": 320, "canonical_amount": 320, "match": true},
+      {"canonical_id": "FEE-03", "pdf": "regular inspections hourly rate", "pdf_amount": 519, "canonical_amount": 519, "unit": "hour", "match": true},
+      {"canonical_id": "FEE-04", "pdf": "off-hour inspections hourly rate (weekday minimums stated)", "pdf_amount": 555, "canonical_amount": 555, "unit": "hour", "match": true},
+      {"canonical_id": "FEE-05", "pdf": "Re-inspection or additional inspection per Section 108A.8", "pdf_amount": 259, "canonical_amount": 259, "unit": "half-hour", "match": true}
+    ],
+    "result": "MATCH (5/5 rows)"
+  },
+  "company_website_checks": [
+    {
+      "provider_id": "P-09",
+      "url": "https://www.ayoobpeery.com/",
+      "retrieved_utc": "2026-11-11T02:21Z",
+      "finding": "Site live. Self-description: locally owned mechanical contractor based in San Francisco; focus on wet-side mechanical building systems including general plumbing, steam heating, hydronics and fire protection; design/build firm; headline 'DESIGN / BUILD SOLUTIONS FOR COMMERCIAL APPLICATIONS'. Call link shows 415-550-0975, equal to the CSLB business phone.",
+      "canonical_service_claim": "The company describes itself as a San Francisco mechanical contractor focused on wet-side building systems and design/build solutions for commercial applications.",
+      "result": "MATCH"
+    },
+    {
+      "provider_id": "P-08",
+      "url": "https://www.wedoconstructions.com/services/general-contractor-in-san-francisco/",
+      "retrieved_utc": "2026-11-11T02:21Z",
+      "finding": "Page live. States 'CSLB #1096552 - Class B + C-36 - Design-Build', design-build under one contract, bathroom remodeling with C-36 self-performed, and that a firm holding C-36 can self-perform supply, drain and gas work. License number equals the CSLB record.",
+      "canonical_service_claim": "The company advertises San Francisco design-build work, with B + C-36 and self-performed plumbing under one contract.",
+      "result": "MATCH"
+    }
+  ],
+  "health_suite_on_scratch_copy": {
+    "note": "Run in /tmp/k8-health (a copy of the working tree at bcf81b2 plus this claim commit) so that no tracked file in the session working tree changed. `git status --porcelain` in /home/user/Korea8 was empty after the run apart from this audit folder.",
+    "checks": [
+      {"check": "scripts/build_overflow_site.py", "result": "exit 0; ranking 10, ranking_held 18"},
+      {"check": "scripts/verify_overflow_site.py", "result": "28/28 checks passed; 277 tracked HTML links, 0 broken"},
+      {"check": "python -m unittest discover -s tests -p 'test_overflow*.py'", "result": "Ran 40 tests, OK"},
+      {"check": "audit/independent_audit.py", "result": "pages=11 rows=405 with_source=405 blank_marked=0 internal_links=217 problems=0"},
+      {"check": "scripts/wording_guard.py", "result": "clean"},
+      {"check": "scripts/stage_overflow_pages.py", "result": "Staged 46 linked public files"}
+    ],
+    "executed_utc": "2026-11-11T02:20Z/2026-11-11T02:21Z"
+  },
+  "live_publication_checks": {
+    "base_url": "https://karagemop466-tech.github.io/Korea8/",
+    "pages_api": {"url": "https://api.github.com/repos/karagemop466-tech/Korea8/pages", "status": "built", "build_type": "legacy", "source": "main /", "latest_build_commit": "dff1a3ca61ffb415f350a7bd84e97c3768fabc80", "error": null, "checked_utc": "2026-11-11T02:21Z"},
+    "workflow_runs": [
+      {"run_id": 42945238155, "head_sha": "dff1a3ca", "status": "completed", "conclusion": "success", "created": "2026-11-11T02:19:35Z"},
+      {"run_id": 42945140421, "head_sha": "53145f11", "status": "completed", "conclusion": "success", "created": "2026-11-11T02:18:44Z"},
+      {"run_id": 42945103895, "head_sha": "258d08f8", "status": "completed", "conclusion": "success", "created": "2026-11-11T02:18:24Z"}
+    ],
+    "routes_fetched": [
+      {"path": "index.html", "result": "HTTP 200 via fetch; canonical dashboard hero, call-first block (Ace, Heise's, Rapid Flow, Bernal Hill partner), status snapshot served", "checked_utc": "2026-11-11T02:20Z"},
+      {"path": "verification.html", "result": "HTTP 200 via fetch; serves 11 November audit links (92cc6407, 17e21276) and the PR #76 deployment record", "checked_utc": "2026-11-11T02:21Z"},
+      {"path": "flagged-for-review.html", "result": "HTTP 200 via fetch; serves 61 flagged items with source links", "checked_utc": "2026-11-11T02:21Z"}
+    ]
+  },
+  "discrepancies_found": [],
+  "observations": [
+    "P-26 canonical issue_date is blank while CSLB shows 11/18/2010; blank is conservative and not an error. Optional enrichment logged as a cross-session request for the integration owner.",
+    "P-07 and P-05 share the CSLB-listed business phone (415) 668-8000; the relationship question is already covered by an existing published flag; this session adds a fresh confirmation that both CSLB records list that number.",
+    "P-22 remains suspended on the 11/10/2026 CSLB data date; the canonical exclusion of this record from the shortlist remains correct."
+  ]
+}
